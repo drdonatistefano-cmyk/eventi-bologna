@@ -1,0 +1,2144 @@
+[
+ {
+  "nome": "Bravo Caffè",
+  "dominio": "bravocaffe.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress + The Events Calendar",
+   "feed_dichiarati": [
+    "https://bravocaffe.it/feed/",
+    "https://bravocaffe.it/comments/feed/",
+    "https://bravocaffe.it/home/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://bravocaffe.it/feed/",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://bravocaffe.it/feed/?post_type=tribe_events",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://bravocaffe.it/eventi/feed/",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://bravocaffe.it/rss",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://bravocaffe.it/?feed=rss2",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "ics",
+    "url": "https://bravocaffe.it/?ical=1",
+    "cosa": "ICS (30 eventi)"
+   },
+   {
+    "tipo": "ics",
+    "url": "https://bravocaffe.it/eventi/?ical=1",
+    "cosa": "ICS (30 eventi)"
+   },
+   {
+    "tipo": "ics",
+    "url": "https://bravocaffe.it/events/?ical=1",
+    "cosa": "ICS (30 eventi)"
+   },
+   {
+    "tipo": "ics",
+    "url": "https://bravocaffe.it/?post_type=tribe_events&ical=1",
+    "cosa": "ICS (30 eventi)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://bravocaffe.it/wp-json/tribe/events/v1/events?per_page=5",
+    "cosa": "JSON Events Calendar (45 eventi)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://bravocaffe.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://bravocaffe.it/wp-json/wp/v2/types",
+    "cosa": "WP con Events Calendar (tipo tribe_events)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://bravocaffe.it/sitemap.xml",
+    "cosa": "sitemap (7 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://bravocaffe.it/sitemap_index.xml",
+    "cosa": "sitemap (7 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://bravocaffe.it/wp-sitemap.xml",
+    "cosa": "sitemap (7 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://bravocaffe.it/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://bravocaffe.it/home/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "A – calendario strutturato (ICS/JSON eventi)"
+ },
+ {
+  "nome": "CantaBO",
+  "dominio": "cantabo.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://www.cantabo.it/feed/",
+    "https://www.cantabo.it/comments/feed/",
+    "https://www.cantabo.it/home/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://cantabo.it/feed/",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://cantabo.it/feed/?post_type=tribe_events",
+    "cosa": "RSS (5 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://cantabo.it/eventi/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://cantabo.it/events/feed/",
+    "cosa": "RSS (5 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://cantabo.it/rss",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://cantabo.it/?feed=rss2",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "ics",
+    "url": "https://cantabo.it/?ical=1",
+    "cosa": "ICS (4 eventi)"
+   },
+   {
+    "tipo": "ics",
+    "url": "https://cantabo.it/eventi/?ical=1",
+    "cosa": "ICS (4 eventi)"
+   },
+   {
+    "tipo": "ics",
+    "url": "https://cantabo.it/events/?ical=1",
+    "cosa": "ICS (4 eventi)"
+   },
+   {
+    "tipo": "ics",
+    "url": "https://cantabo.it/?post_type=tribe_events&ical=1",
+    "cosa": "ICS (4 eventi)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://cantabo.it/wp-json/tribe/events/v1/events?per_page=5",
+    "cosa": "JSON Events Calendar (5 eventi)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://cantabo.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://cantabo.it/wp-json/wp/v2/types",
+    "cosa": "WP con Events Calendar (tipo tribe_events)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://cantabo.it/sitemap.xml",
+    "cosa": "sitemap (11 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://cantabo.it/wp-sitemap.xml",
+    "cosa": "sitemap (11 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.cantabo.it/feed/",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.cantabo.it/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.cantabo.it/home/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "A – calendario strutturato (ICS/JSON eventi)"
+ },
+ {
+  "nome": "Teatro Laura Betti",
+  "dominio": "teatrocasalecchio.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress + The Events Calendar",
+   "feed_dichiarati": [
+    "https://www.teatrocasalecchio.it/feed/",
+    "https://www.teatrocasalecchio.it/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://teatrocasalecchio.it/?feed=rss2",
+    "cosa": "RSS (0 voci)"
+   },
+   {
+    "tipo": "ics",
+    "url": "https://teatrocasalecchio.it/?ical=1",
+    "cosa": "ICS (24 eventi)"
+   },
+   {
+    "tipo": "ics",
+    "url": "https://teatrocasalecchio.it/eventi/?ical=1",
+    "cosa": "ICS (24 eventi)"
+   },
+   {
+    "tipo": "ics",
+    "url": "https://teatrocasalecchio.it/events/?ical=1",
+    "cosa": "ICS (24 eventi)"
+   },
+   {
+    "tipo": "ics",
+    "url": "https://teatrocasalecchio.it/?post_type=tribe_events&ical=1",
+    "cosa": "ICS (24 eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.teatrocasalecchio.it/feed/",
+    "cosa": "RSS (0 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.teatrocasalecchio.it/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "A – calendario strutturato (ICS/JSON eventi)"
+ },
+ {
+  "nome": "Accademia Filarmonica",
+  "dominio": "accademiafilarmonica.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "Drupal",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://accademiafilarmonica.it/rss.xml",
+    "cosa": "RSS (10 voci, con eventi)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "AngelicA",
+  "dominio": "aaa-angelica.com",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://aaa-angelica.com/aaa/feed/",
+    "https://aaa-angelica.com/aaa/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://aaa-angelica.com/feed/",
+    "cosa": "RSS (2 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://aaa-angelica.com/feed/?post_type=tribe_events",
+    "cosa": "RSS (2 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://aaa-angelica.com/rss",
+    "cosa": "RSS (2 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://aaa-angelica.com/?feed=rss2",
+    "cosa": "RSS (2 voci)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://aaa-angelica.com/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://aaa-angelica.com/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://aaa-angelica.com/sitemap_index.xml",
+    "cosa": "sitemap (2 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://aaa-angelica.com/wp-sitemap.xml",
+    "cosa": "sitemap (2 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://aaa-angelica.com/aaa/feed/",
+    "cosa": "RSS (2 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://aaa-angelica.com/aaa/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Arena del Sole / ERT (Moline, DAMSLab)",
+  "dominio": "bologna.emiliaromagnateatro.com",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://bologna.emiliaromagnateatro.com/feed/",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://bologna.emiliaromagnateatro.com/feed/?post_type=tribe_events",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://bologna.emiliaromagnateatro.com/rss",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://bologna.emiliaromagnateatro.com/?feed=rss2",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://bologna.emiliaromagnateatro.com/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://bologna.emiliaromagnateatro.com/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, wp_block)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://bologna.emiliaromagnateatro.com/sitemap.xml",
+    "cosa": "sitemap (10 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://bologna.emiliaromagnateatro.com/sitemap_index.xml",
+    "cosa": "sitemap (10 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://bologna.emiliaromagnateatro.com/wp-sitemap.xml",
+    "cosa": "sitemap (10 url)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Bologna Festival",
+  "dominio": "bolognafestival.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://bolognafestival.it/feed/",
+    "cosa": "RSS (12 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://bolognafestival.it/feed/?post_type=tribe_events",
+    "cosa": "RSS (12 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://bolognafestival.it/rss",
+    "cosa": "RSS (12 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://bolognafestival.it/?feed=rss2",
+    "cosa": "RSS (12 voci)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://bolognafestival.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://bolognafestival.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Bologna da vivere",
+  "dominio": "bolognadavivere.com",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://www.bolognadavivere.com/feed/",
+    "https://www.bolognadavivere.com/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://bolognadavivere.com/feed/",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://bolognadavivere.com/feed/?post_type=tribe_events",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://bolognadavivere.com/rss",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://bolognadavivere.com/?feed=rss2",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://bolognadavivere.com/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://bolognadavivere.com/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://bolognadavivere.com/sitemap.xml",
+    "cosa": "sitemap (3 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://bolognadavivere.com/sitemap_index.xml",
+    "cosa": "sitemap (17 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://bolognadavivere.com/wp-sitemap.xml",
+    "cosa": "sitemap (17 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.bolognadavivere.com/feed/",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.bolognadavivere.com/comments/feed/",
+    "cosa": "RSS (10 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Cantina Bentivoglio",
+  "dominio": "cantinabentivoglio.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://www.cantinabentivoglio.it/feed",
+    "https://www.cantinabentivoglio.it/comments/feed"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://cantinabentivoglio.it/feed/",
+    "cosa": "RSS (1 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://cantinabentivoglio.it/feed/?post_type=tribe_events",
+    "cosa": "RSS (1 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://cantinabentivoglio.it/eventi/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://cantinabentivoglio.it/events/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://cantinabentivoglio.it/rss",
+    "cosa": "RSS (1 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://cantinabentivoglio.it/?feed=rss2",
+    "cosa": "RSS (1 voci)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://cantinabentivoglio.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://cantinabentivoglio.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.cantinabentivoglio.it/feed",
+    "cosa": "RSS (1 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.cantinabentivoglio.it/comments/feed",
+    "cosa": "RSS (1 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Cartellone Emilia-Romagna",
+  "dominio": "cartellone.emiliaromagnacultura.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://cartellone.emiliaromagnacultura.it/eventi/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://cartellone.emiliaromagnacultura.it/events/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://cartellone.emiliaromagnacultura.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://cartellone.emiliaromagnacultura.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://cartellone.emiliaromagnacultura.it/sitemap.xml",
+    "cosa": "sitemap (61 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://cartellone.emiliaromagnacultura.it/sitemap_index.xml",
+    "cosa": "sitemap (61 url)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Concerti a Bologna",
+  "dominio": "concertiabologna.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 20
+  },
+  "trovati": [
+   {
+    "tipo": "sitemap",
+    "url": "https://concertiabologna.it/sitemap.xml",
+    "cosa": "sitemap (377 url)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Covo Club",
+  "dominio": "covoclub.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://covoclub.it/feed/",
+    "https://covoclub.it/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://covoclub.it/feed/",
+    "cosa": "RSS (0 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://covoclub.it/feed/?post_type=tribe_events",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://covoclub.it/eventi/feed/",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://covoclub.it/rss",
+    "cosa": "RSS (0 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://covoclub.it/?feed=rss2",
+    "cosa": "RSS (0 voci)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://covoclub.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "JSON generico"
+   },
+   {
+    "tipo": "json",
+    "url": "https://covoclub.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://covoclub.it/sitemap.xml",
+    "cosa": "sitemap (2 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://covoclub.it/sitemap_index.xml",
+    "cosa": "sitemap (2 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://covoclub.it/wp-sitemap.xml",
+    "cosa": "sitemap (2 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://covoclub.it/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "DumBO",
+  "dominio": "dumbospace.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://dumbospace.it/feed/",
+    "https://dumbospace.it/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://dumbospace.it/feed/",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://dumbospace.it/feed/?post_type=tribe_events",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://dumbospace.it/eventi/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://dumbospace.it/rss",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://dumbospace.it/?feed=rss2",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://dumbospace.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://dumbospace.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://dumbospace.it/sitemap.xml",
+    "cosa": "sitemap (10 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://dumbospace.it/sitemap_index.xml",
+    "cosa": "sitemap (10 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://dumbospace.it/wp-sitemap.xml",
+    "cosa": "sitemap (10 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://dumbospace.it/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Gender Bender",
+  "dominio": "genderbender.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://genderbender.it/feed/",
+    "https://genderbender.it/comments/feed/",
+    "https://genderbender.it/sample-page/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://genderbender.it/feed/",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://genderbender.it/feed/?post_type=tribe_events",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://genderbender.it/eventi/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://genderbender.it/events/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://genderbender.it/rss",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://genderbender.it/?feed=rss2",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://genderbender.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://genderbender.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://genderbender.it/sitemap.xml",
+    "cosa": "sitemap (10 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://genderbender.it/wp-sitemap.xml",
+    "cosa": "sitemap (0 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://genderbender.it/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://genderbender.it/sample-page/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Genus Bononiae (San Colombano)",
+  "dominio": "genusbononiae.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://genusbononiae.it/feed/",
+    "https://genusbononiae.it/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://genusbononiae.it/feed/",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://genusbononiae.it/feed/?post_type=tribe_events",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://genusbononiae.it/rss",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://genusbononiae.it/?feed=rss2",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://genusbononiae.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://genusbononiae.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://genusbononiae.it/sitemap.xml",
+    "cosa": "sitemap (4 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://genusbononiae.it/wp-sitemap.xml",
+    "cosa": "sitemap (0 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://genusbononiae.it/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Locomotiv Club",
+  "dominio": "locomotivclub.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://www.locomotivclub.it/feed/",
+    "https://www.locomotivclub.it/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://locomotivclub.it/feed/",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://locomotivclub.it/feed/?post_type=tribe_events",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://locomotivclub.it/eventi/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://locomotivclub.it/events/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://locomotivclub.it/rss",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://locomotivclub.it/?feed=rss2",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://locomotivclub.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://locomotivclub.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://locomotivclub.it/sitemap.xml",
+    "cosa": "sitemap (21 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://locomotivclub.it/wp-sitemap.xml",
+    "cosa": "sitemap (21 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.locomotivclub.it/feed/",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.locomotivclub.it/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Musica Insieme",
+  "dominio": "musicainsiemebologna.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://www.musicainsiemebologna.it/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://musicainsiemebologna.it/feed/",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://musicainsiemebologna.it/feed/?post_type=tribe_events",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://musicainsiemebologna.it/rss",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://musicainsiemebologna.it/?feed=rss2",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://musicainsiemebologna.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://musicainsiemebologna.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://musicainsiemebologna.it/sitemap.xml",
+    "cosa": "sitemap (13 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://musicainsiemebologna.it/wp-sitemap.xml",
+    "cosa": "sitemap (13 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.musicainsiemebologna.it/feed/",
+    "cosa": "RSS (10 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Oratorio San Filippo Neri",
+  "dominio": "oratoriosanfilipponeri.com",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://www.oratoriosanfilipponeri.com/feed/",
+    "https://www.oratoriosanfilipponeri.com/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://oratoriosanfilipponeri.com/feed/",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://oratoriosanfilipponeri.com/feed/?post_type=tribe_events",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://oratoriosanfilipponeri.com/eventi/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://oratoriosanfilipponeri.com/events/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://oratoriosanfilipponeri.com/rss",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://oratoriosanfilipponeri.com/?feed=rss2",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://oratoriosanfilipponeri.com/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://oratoriosanfilipponeri.com/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, wp_block)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.oratoriosanfilipponeri.com/feed/",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.oratoriosanfilipponeri.com/comments/feed/",
+    "cosa": "RSS (2 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Teatri di Vita",
+  "dominio": "teatridivita.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://www.teatridivita.it/feed/",
+    "https://www.teatridivita.it/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://teatridivita.it/feed/",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://teatridivita.it/feed/?post_type=tribe_events",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://teatridivita.it/rss",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://teatridivita.it/?feed=rss2",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://teatridivita.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://teatridivita.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://teatridivita.it/sitemap.xml",
+    "cosa": "sitemap (14 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://teatridivita.it/sitemap_index.xml",
+    "cosa": "sitemap (14 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://teatridivita.it/wp-sitemap.xml",
+    "cosa": "sitemap (14 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.teatridivita.it/feed/",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.teatridivita.it/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Teatro Antoniano",
+  "dominio": "antoniano.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://www.antoniano.it/feed/",
+    "https://www.antoniano.it/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://antoniano.it/feed/",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://antoniano.it/feed/?post_type=tribe_events",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://antoniano.it/rss",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://antoniano.it/?feed=rss2",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://antoniano.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://antoniano.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://antoniano.it/sitemap.xml",
+    "cosa": "sitemap (4 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://antoniano.it/sitemap_index.xml",
+    "cosa": "sitemap (4 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://antoniano.it/wp-sitemap.xml",
+    "cosa": "sitemap (4 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.antoniano.it/feed/",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.antoniano.it/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Teatro EuropAuditorium",
+  "dominio": "teatroeuropa.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://teatroeuropa.it/feed/",
+    "https://teatroeuropa.it/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "json",
+    "url": "https://teatroeuropa.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://teatroeuropa.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://teatroeuropa.it/sitemap.xml",
+    "cosa": "sitemap (5 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://teatroeuropa.it/sitemap_index.xml",
+    "cosa": "sitemap (5 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://teatroeuropa.it/wp-sitemap.xml",
+    "cosa": "sitemap (5 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://teatroeuropa.it/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Teatro Mazzacorati",
+  "dominio": "teatromazzacorati1763.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://www.teatromazzacorati1763.it/feed/",
+    "https://www.teatromazzacorati1763.it/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://teatromazzacorati1763.it/feed/",
+    "cosa": "RSS (1 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://teatromazzacorati1763.it/feed/?post_type=tribe_events",
+    "cosa": "RSS (1 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://teatromazzacorati1763.it/eventi/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://teatromazzacorati1763.it/events/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://teatromazzacorati1763.it/rss",
+    "cosa": "RSS (1 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://teatromazzacorati1763.it/?feed=rss2",
+    "cosa": "RSS (1 voci)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://teatromazzacorati1763.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://teatromazzacorati1763.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://teatromazzacorati1763.it/sitemap.xml",
+    "cosa": "sitemap (4 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://teatromazzacorati1763.it/wp-sitemap.xml",
+    "cosa": "sitemap (4 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.teatromazzacorati1763.it/feed/",
+    "cosa": "RSS (1 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.teatromazzacorati1763.it/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Teatro Testoni Ragazzi",
+  "dominio": "testoniragazzi.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://www.testoniragazzi.it/feed/",
+    "https://www.testoniragazzi.it/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://testoniragazzi.it/feed/",
+    "cosa": "RSS (0 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://testoniragazzi.it/feed/?post_type=tribe_events",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://testoniragazzi.it/eventi/feed/",
+    "cosa": "RSS (10 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://testoniragazzi.it/rss",
+    "cosa": "RSS (0 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://testoniragazzi.it/?feed=rss2",
+    "cosa": "RSS (0 voci)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://testoniragazzi.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "JSON generico"
+   },
+   {
+    "tipo": "json",
+    "url": "https://testoniragazzi.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://testoniragazzi.it/sitemap_index.xml",
+    "cosa": "sitemap (3 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://testoniragazzi.it/wp-sitemap.xml",
+    "cosa": "sitemap (3 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.testoniragazzi.it/feed/",
+    "cosa": "RSS (0 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.testoniragazzi.it/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Teatro Tivoli",
+  "dominio": "teatrotivoli.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://www.cinemativoli.it/feed/",
+    "https://www.cinemativoli.it/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://www.cinemativoli.it/feed/",
+    "cosa": "RSS (2 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.cinemativoli.it/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Unipol Arena",
+  "dominio": "unipolarena.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://www.unipolarena.it/feed/",
+    "https://www.unipolarena.it/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://unipolarena.it/feed/",
+    "cosa": "RSS (3 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://unipolarena.it/feed/?post_type=tribe_events",
+    "cosa": "RSS (3 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://unipolarena.it/eventi/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://unipolarena.it/events/feed/",
+    "cosa": "RSS (0 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://unipolarena.it/rss",
+    "cosa": "RSS (3 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://unipolarena.it/?feed=rss2",
+    "cosa": "RSS (3 voci, con eventi)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://unipolarena.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "WP REST (articoli)"
+   },
+   {
+    "tipo": "json",
+    "url": "https://unipolarena.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://unipolarena.it/sitemap.xml",
+    "cosa": "sitemap (7 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://unipolarena.it/wp-sitemap.xml",
+    "cosa": "sitemap (7 url)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.unipolarena.it/feed/",
+    "cosa": "RSS (3 voci, con eventi)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://www.unipolarena.it/comments/feed/",
+    "cosa": "RSS (1 voci, con eventi)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "ZolAuditorium",
+  "dominio": "zolauditorium.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [
+    "https://cultura.vivizola.it/feed/",
+    "https://cultura.vivizola.it/comments/feed/"
+   ],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "rss",
+    "url": "https://zolauditorium.it/?feed=rss2",
+    "cosa": "RSS (0 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://cultura.vivizola.it/feed/",
+    "cosa": "RSS (10 voci)"
+   },
+   {
+    "tipo": "rss",
+    "url": "https://cultura.vivizola.it/comments/feed/",
+    "cosa": "RSS (0 voci)"
+   }
+  ],
+  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
+ },
+ {
+  "nome": "Camera Jazz",
+  "dominio": "camerajazzclub.com",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "json",
+    "url": "https://camerajazzclub.com/api/events",
+    "cosa": "JSON generico"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://camerajazzclub.com/sitemap.xml",
+    "cosa": "sitemap (40 url)"
+   }
+  ],
+  "livello": "C – solo pagine HTML (sitemap/CMS): leggibile con parser dedicato"
+ },
+ {
+  "nome": "Conoscere la Musica",
+  "dominio": "conoscerelamusica.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "sitemap",
+    "url": "https://conoscerelamusica.it/sitemap.xml",
+    "cosa": "sitemap (75 url)"
+   }
+  ],
+  "livello": "C – solo pagine HTML (sitemap/CMS): leggibile con parser dedicato"
+ },
+ {
+  "nome": "Estragon Club",
+  "dominio": "estragon.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "sitemap",
+    "url": "https://estragon.it/sitemap.xml",
+    "cosa": "sitemap (14 url)"
+   }
+  ],
+  "livello": "C – solo pagine HTML (sitemap/CMS): leggibile con parser dedicato"
+ },
+ {
+  "nome": "MAST",
+  "dominio": "mast.org",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "sitemap",
+    "url": "https://mast.org/sitemap.xml",
+    "cosa": "sitemap (678 url)"
+   }
+  ],
+  "livello": "C – solo pagine HTML (sitemap/CMS): leggibile con parser dedicato"
+ },
+ {
+  "nome": "Open data Comune di Bologna",
+  "dominio": "opendata.comune.bologna.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "sitemap",
+    "url": "https://opendata.comune.bologna.it/sitemap.xml",
+    "cosa": "sitemap (706 url)"
+   }
+  ],
+  "livello": "C – solo pagine HTML (sitemap/CMS): leggibile con parser dedicato"
+ },
+ {
+  "nome": "TCBO stagione 2027",
+  "dominio": "stagione2027.tcbo.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "json",
+    "url": "https://stagione2027.tcbo.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "JSON generico"
+   },
+   {
+    "tipo": "json",
+    "url": "https://stagione2027.tcbo.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://stagione2027.tcbo.it/sitemap.xml",
+    "cosa": "sitemap (1 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://stagione2027.tcbo.it/sitemap_index.xml",
+    "cosa": "sitemap (1 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://stagione2027.tcbo.it/wp-sitemap.xml",
+    "cosa": "sitemap (1 url)"
+   }
+  ],
+  "livello": "C – solo pagine HTML (sitemap/CMS): leggibile con parser dedicato"
+ },
+ {
+  "nome": "Teatro Alemanni",
+  "dominio": "teatroalemanni.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "sitemap",
+    "url": "https://teatroalemanni.it/sitemap.xml",
+    "cosa": "sitemap (2 url)"
+   }
+  ],
+  "livello": "C – solo pagine HTML (sitemap/CMS): leggibile con parser dedicato"
+ },
+ {
+  "nome": "Teatro Comunale (TCBO)",
+  "dominio": "tcbo.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "WordPress",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "json",
+    "url": "https://tcbo.it/wp-json/wp/v2/posts?per_page=1",
+    "cosa": "JSON generico"
+   },
+   {
+    "tipo": "json",
+    "url": "https://tcbo.it/wp-json/wp/v2/types",
+    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://tcbo.it/sitemap.xml",
+    "cosa": "sitemap (24 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://tcbo.it/sitemap_index.xml",
+    "cosa": "sitemap (24 url)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://tcbo.it/wp-sitemap.xml",
+    "cosa": "sitemap (24 url)"
+   }
+  ],
+  "livello": "C – solo pagine HTML (sitemap/CMS): leggibile con parser dedicato"
+ },
+ {
+  "nome": "Teatro Dehon",
+  "dominio": "teatrodehon.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "Joomla",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "C – solo pagine HTML (sitemap/CMS): leggibile con parser dedicato"
+ },
+ {
+  "nome": "Teatro del Navile",
+  "dominio": "teatrodelnavile.org",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "sitemap",
+    "url": "https://teatrodelnavile.org/sitemap.xml",
+    "cosa": "sitemap (6 url)"
+   }
+  ],
+  "livello": "C – solo pagine HTML (sitemap/CMS): leggibile con parser dedicato"
+ },
+ {
+  "nome": "Zero Bologna",
+  "dominio": "zero.eu",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "sitemap",
+    "url": "https://zero.eu/sitemap.xml",
+    "cosa": "sitemap (779 url)"
+   }
+  ],
+  "livello": "C – solo pagine HTML (sitemap/CMS): leggibile con parser dedicato"
+ },
+ {
+  "nome": "ATELIERsì",
+  "dominio": "ateliersi.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "D – sito dinamico o protetto: serve browser o Claude"
+ },
+ {
+  "nome": "Bologna Jazz Festival",
+  "dominio": "bolognajazzfestival.com",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "D – sito dinamico o protetto: serve browser o Claude"
+ },
+ {
+  "nome": "Bologna Welcome",
+  "dominio": "bolognawelcome.com",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "D – sito dinamico o protetto: serve browser o Claude"
+ },
+ {
+  "nome": "Città della Musica (Comune)",
+  "dominio": "cittadellamusica.comune.bologna.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "D – sito dinamico o protetto: serve browser o Claude"
+ },
+ {
+  "nome": "Cultura Bologna (Comune)",
+  "dominio": "culturabologna.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "D – sito dinamico o protetto: serve browser o Claude"
+ },
+ {
+  "nome": "DICE",
+  "dominio": "dice.fm",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "D – sito dinamico o protetto: serve browser o Claude"
+ },
+ {
+  "nome": "Fever",
+  "dominio": "feverup.com",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "D – sito dinamico o protetto: serve browser o Claude"
+ },
+ {
+  "nome": "ITC Teatro",
+  "dominio": "teatrodellargine.org",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "D – sito dinamico o protetto: serve browser o Claude"
+ },
+ {
+  "nome": "Orchestra Mozart",
+  "dominio": "orchestramozart.com",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "D – sito dinamico o protetto: serve browser o Claude"
+ },
+ {
+  "nome": "Palazzo Pepoli",
+  "dominio": "palazzopepoli.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "D – sito dinamico o protetto: serve browser o Claude"
+ },
+ {
+  "nome": "TicketOne",
+  "dominio": "ticketone.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "D – sito dinamico o protetto: serve browser o Claude"
+ },
+ {
+  "nome": "Vivaticket",
+  "dominio": "vivaticket.com",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "D – sito dinamico o protetto: serve browser o Claude"
+ },
+ {
+  "nome": "Alchemica",
+  "dominio": "alchemicamusicclub.it",
+  "home": {
+   "raggiungibile": false,
+   "stato": 0,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "X – non raggiungibile"
+ },
+ {
+  "nome": "Freakout Club",
+  "dominio": "freakoutclub.it",
+  "home": {
+   "raggiungibile": false,
+   "stato": 0,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "X – non raggiungibile"
+ },
+ {
+  "nome": "Sghetto Club",
+  "dominio": "sghettoclub.it",
+  "home": {
+   "raggiungibile": false,
+   "stato": 403,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "X – non raggiungibile"
+ },
+ {
+  "nome": "Teatro Celebrazioni",
+  "dominio": "teatrocelebrazioni.it",
+  "home": {
+   "raggiungibile": false,
+   "stato": 502,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "X – non raggiungibile"
+ },
+ {
+  "nome": "Teatro Duse",
+  "dominio": "teatroduse.it",
+  "home": {
+   "raggiungibile": false,
+   "stato": 502,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "X – non raggiungibile"
+ }
+]
