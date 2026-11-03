@@ -419,6 +419,22 @@ $("#wa").onpointerdown=$("#wa").onfocus=()=>{$("#wa").href=waHref()};
 $("#wa").onclick=()=>{$("#wa").href=waHref();setTimeout(closeDlg,300)};
 $("#ics").onclick=()=>{dl(visible(),"eventi-bologna.ics");toast("File calendario scaricato")};
 
+
+/* statistiche (GoatCounter, senza cookie) */
+const GC="__GC__";
+if(GC&&WEB&&!ART){try{window.goatcounter={no_onload:false};const s=document.createElement("script");s.async=true;s.dataset.goatcounter=`https://${GC}.goatcounter.com/count`;s.src="https://gc.zgo.at/count.js";document.body.appendChild(s)}catch(_){}}
+function track(path,title){try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:path.slice(0,200),title:title||path,event:true})}catch(_){}}
+document.addEventListener("click",e=>{const a=e.target.closest("a.act.primary");if(a){const c=a.closest(".card");track("biglietti/"+(c?c.querySelector(".title").textContent:""),"Clic biglietti")}
+ const i=e.target.closest("a.act:not(.primary)");if(i){const c=i.closest(".card");track("info/"+(c?c.querySelector(".title").textContent:""),"Clic info")}
+ const v=e.target.closest("a.venue");if(v)track("mappa/"+v.textContent.trim(),"Apertura mappa");
+ const g=e.target.closest("#genres .chip");if(g)track("filtro/genere/"+(g.dataset.g||"tutti"),"Filtro genere");
+ const m=e.target.closest("#months .chip");if(m)track("filtro/periodo/"+m.dataset.m,"Filtro periodo");
+ const f=e.target.closest(".fopt");if(f)track("filtro/"+f.dataset.k+"/"+f.dataset.v,"Filtro avanzato");
+ const s=e.target.closest("#wa,#copy,#native,#send,#ics");if(s)track("condividi/"+s.id,"Condivisione");
+ if(e.target.closest("#share"))track("condividi/apri","Apertura condividi");
+ if(e.target.closest("[data-cal]"))track("calendario/singolo","Salva in calendario");
+ if(e.target.closest("#more"))track("lista/mostra-altri","Mostra altri");},true);
+let qtT;document.getElementById("q").addEventListener("input",e=>{clearTimeout(qtT);const v=e.target.value.trim().toLowerCase();if(v.length>=3)qtT=setTimeout(()=>track("ricerca/"+v,"Ricerca"),1500)});
 render(true);setBarH();onScroll();
 </script>
 </body>

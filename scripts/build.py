@@ -8,6 +8,7 @@ import json, re, sys, datetime, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE_URL = "https://drdonatistefano-cmyk.github.io/eventi-bologna/"
+GOATCOUNTER = ""  # nome scelto su goatcounter.com, es. "eventibologna"
 oggi = sys.argv[1] if len(sys.argv) > 1 else datetime.date.today().isoformat()
 
 t = (ROOT / "scripts/template.html").read_text(encoding="utf-8")
@@ -19,7 +20,7 @@ for e in ev:
             e[k] = re.sub(r"\?utm_[^\"]*$", "", e[k])
 ev.sort(key=lambda e: (e["data"], e.get("ora") or ""))
 html = (t.replace("__DATA__", json.dumps(ev, ensure_ascii=False).replace("</", "<\\/"))
-         .replace("__UPDATED__", oggi).replace("__SITE_URL__", SITE_URL))
+         .replace("__UPDATED__", oggi).replace("__SITE_URL__", SITE_URL).replace("__GC__", GOATCOUNTER))
 (ROOT / "index.html").write_text(html, encoding="utf-8")
 (ROOT / "dati/eventi.json").write_text(json.dumps(ev, ensure_ascii=False, indent=0), encoding="utf-8")
 print(f"{len(ev)} eventi, aggiornato al {oggi}")
