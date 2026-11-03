@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eventi a Bologna – concerti e teatro</title>
+<meta name="description" content="Concerti, teatro e grandi eventi a Bologna nei prossimi 12 mesi: date, orari, luoghi e link ai biglietti.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Eventi a Bologna – concerti e teatro">
+<meta property="og:description" content="Concerti, teatro e grandi eventi a Bologna nei prossimi 12 mesi: date, orari, luoghi e link ai biglietti.">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f6efe4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161311" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23a3402a'/%3E%3Cpath d='M14 50V26a18 18 0 0 1 36 0v24' fill='none' stroke='%23f6efe4' stroke-width='6'/%3E%3C/svg%3E">
+<style>
+:root{
+ --bg:#f6efe4;--paper:#fffdf9;--ink:#231d18;--mute:#7a6f63;--faint:#a99d8f;--line:#e8ddcc;
+ --terra:#a3402a;--terra-soft:#f5e6dc;--terra-ink:#8a3a26;--ochre:#c8892b;
+ --rock:#b8382a;--jazz:#2f6a8a;--pop:#7d4f9a;--teatro:#3f7a4c;--classica:#a07416;
+ --shadow:0 1px 2px rgba(60,40,20,.06),0 4px 14px rgba(60,40,20,.06);
+ --r:16px;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+ --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif}
+@media (prefers-color-scheme:dark){:root{
+ --bg:#161311;--paper:#201c19;--ink:#f1e9df;--mute:#ab9f92;--faint:#7d7268;--line:#332d28;
+ --terra:#e2775d;--terra-soft:#33241f;--terra-ink:#eba08c;--ochre:#e0a64f;
+ --rock:#e0675a;--jazz:#5ea3c7;--pop:#b48ad0;--teatro:#6fb07d;--classica:#d9ad52;--shadow:none}}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--terra);outline-offset:2px;border-radius:8px}
+
+/* HERO */
+.hero{max-width:860px;margin:auto;padding:max(28px,env(safe-area-inset-top)) 20px 18px;position:relative}
+.kick{display:flex;align-items:center;gap:12px;margin-bottom:14px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--terra)}
+.arches{display:flex;gap:6px}
+.arches i{width:18px;height:22px;border:2.5px solid var(--terra);border-bottom:0;border-radius:10px 10px 0 0;opacity:.85}
+.arches i:nth-child(2){opacity:.6}.arches i:nth-child(3){opacity:.35}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(2rem,6vw,3rem);line-height:1.05;margin:0;letter-spacing:-.01em}
+h1 em{color:var(--terra);font-style:italic}
+.lede{color:var(--mute);margin:10px 0 0;font-size:15.5px;max-width:52ch}
+.stats{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:22px;margin-top:16px}
+.stat b{display:block;font-family:var(--serif);font-size:1.5rem;line-height:1}
+.stat span{font-size:12.5px;color:var(--mute)}
+
+/* TOOLBAR */
+.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
+.bar.stuck{border-color:var(--line)}
+.bar-in{max-width:860px;margin:auto;padding:10px 20px 8px}
+.searchrow{display:flex;gap:8px}
+.search{flex:1;position:relative}
+.search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--faint)}
+.search input{width:100%;height:44px;padding:0 38px 0 38px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);font-size:16px;box-shadow:var(--shadow)}
+.search input::placeholder{color:var(--faint)}
+.search .x{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:0;background:none;width:32px;height:32px;border-radius:50%;cursor:pointer;color:var(--mute);display:none}
+.search.has .x{display:block}
+.iconbtn{height:44px;min-width:44px;padding:0 14px;border-radius:12px;border:0;background:var(--terra);color:#fff;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:7px;box-shadow:var(--shadow);white-space:nowrap}
+.iconbtn span{font-size:14.5px}
+@media(max-width:520px){.iconbtn span{display:none}}
+.rail{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:8px -20px 0;padding:2px 20px}
+.rail::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;height:34px;padding:0 13px;border-radius:999px;border:1px solid var(--line);background:var(--paper);cursor:pointer;font-size:14px;display:flex;align-items:center;gap:6px;transition:background .15s,border-color .15s,color .15s}
+.chip small{font-size:11.5px;color:var(--faint);font-variant-numeric:tabular-nums}
+.chip .dot{width:8px;height:8px;border-radius:50%}
+.chip.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.chip.on small{color:inherit;opacity:.7}
+.chip:disabled{opacity:.4;cursor:default}
+.rail.sm .chip{height:30px;font-size:13px;padding:0 11px}
+.iconbtn.ghost{background:var(--paper);color:var(--ink);border:1px solid var(--line);position:relative}
+.iconbtn.ghost.active{border-color:var(--ink)}
+.badge{position:absolute;top:-6px;right:-6px;min-width:20px;height:20px;padding:0 5px;border-radius:10px;background:var(--terra);color:#fff;font-size:11.5px;display:grid;place-items:center;font-weight:700}
+.actives{margin-top:6px}
+.apill{flex:0 0 auto;height:30px;padding:0 6px 0 12px;border-radius:999px;border:0;background:var(--terra-soft);color:var(--terra-ink);font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px}
+.apill span{width:20px;height:20px;border-radius:50%;display:grid;place-items:center;font-size:10px;background:color-mix(in srgb,var(--terra) 14%,transparent)}
+.sheet.fsheet{max-height:88vh;overflow-y:auto;padding-bottom:0;overscroll-behavior:contain}
+@media(min-width:600px){.fsheet{max-height:84vh}}
+.fttl{display:flex;justify-content:space-between;align-items:center}
+.xbtn{width:36px;height:36px;border-radius:50%;border:0;background:var(--bg);cursor:pointer;font-size:14px}
+.fsec{padding:14px 0;border-top:1px solid var(--line)}
+.fhead{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
+.fhead h4{margin:0;font-size:15px}
+.fclr{border:0;background:none;color:var(--terra);font-weight:600;font-size:13px;cursor:pointer}
+.fsearch input{height:40px;margin-bottom:10px;font-size:15px}
+.fopts{display:flex;flex-wrap:wrap;gap:7px}
+.fopt{min-height:36px;padding:4px 12px 4px 8px;border-radius:10px;border:1px solid var(--line);background:var(--paper);cursor:pointer;font-size:14px;display:flex;align-items:center;gap:7px;text-align:left}
+.fopt small{color:var(--faint);font-size:12px;font-variant-numeric:tabular-nums}
+.fopt .ck{width:18px;height:18px;border-radius:5px;border:1.5px solid var(--faint);display:grid;place-items:center;font-size:12px;font-weight:800;flex:0 0 auto}
+.fopt.on{border-color:var(--ink);background:var(--bg)}
+.fopt.on .ck{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.fopt:disabled{opacity:.38;cursor:default}
+.ffoot{position:sticky;bottom:0;background:var(--paper);display:grid;grid-template-columns:1fr 2fr;gap:8px;padding:12px 0 max(16px,env(safe-area-inset-bottom));border-top:1px solid var(--line);margin-top:4px}
+.ffoot .big.primary{grid-column:auto}
+.big:disabled{opacity:.45;cursor:default}
+.sep{flex:0 0 1px;background:var(--line);margin:4px 2px}
+
+/* LIST */
+main{max-width:860px;margin:auto;padding:4px 20px 90px}
+.status{display:flex;justify-content:space-between;align-items:center;color:var(--mute);font-size:13.5px;margin:14px 0 4px;min-height:24px}
+.reset{border:0;background:none;color:var(--terra);font-weight:600;cursor:pointer;font-size:13.5px;padding:4px 0}
+.month{font-family:var(--serif);font-size:1.45rem;font-weight:600;margin:28px 0 6px;text-transform:capitalize;display:flex;align-items:baseline;gap:10px}
+.month small{font-family:var(--sans);font-size:13px;color:var(--faint);font-weight:400}
+.day{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
+.day:first-of-type{border-top:0}
+.dlabel{text-align:center;padding-top:6px;position:sticky;top:var(--barh,140px);align-self:start}
+.dlabel .wd{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
+.dlabel .n{font-family:var(--serif);font-size:1.9rem;line-height:1;font-weight:600}
+.dlabel.today .n{color:var(--terra)}
+.dlabel .tg{font-size:10.5px;color:var(--terra);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.cards{display:flex;flex-direction:column;gap:8px;min-width:0}
+.card{background:var(--paper);border-radius:var(--r);box-shadow:var(--shadow);border:1px solid var(--line);padding:13px 14px 11px 16px;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--g)}
+.top{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:12.5px;color:var(--mute);margin-bottom:3px}
+.time{font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+.gname{color:var(--g);font-weight:600}
+.rs{font-style:italic}
+.title{font-family:var(--sans);font-size:1.22rem;font-weight:800;line-height:1.22;letter-spacing:-.012em;margin:1px 0 0;color:var(--ink)}
+.venue{display:inline-flex;align-items:center;gap:4px;font-size:14px;color:var(--mute);text-decoration:none;margin-top:3px}
+.venue:hover{color:var(--terra)}
+.desc{font-size:14.5px;margin:6px 0 0;color:color-mix(in srgb,var(--ink) 88%,var(--mute));display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer}
+.desc.open{-webkit-line-clamp:unset}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.pill{font-size:11.5px;padding:2px 8px;border-radius:999px;background:var(--bg);color:var(--mute);border:1px solid var(--line)}
+.pill.ok{color:#2f7a4c;border-color:color-mix(in srgb,#2f7a4c 35%,transparent);background:color-mix(in srgb,#2f7a4c 9%,transparent)}
+.pill.few{color:#b06a0e;border-color:color-mix(in srgb,#c8892b 45%,transparent);background:color-mix(in srgb,#c8892b 12%,transparent)}
+.pill.no{color:var(--faint);text-decoration:line-through}
+.actions{display:flex;gap:6px;margin-top:10px}
+.act{height:34px;padding:0 12px;border-radius:10px;border:1px solid var(--line);background:none;font-size:13.5px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:var(--ink)}
+.act.primary{background:var(--terra-soft);border-color:color-mix(in srgb,var(--terra) 22%,transparent);color:var(--terra-ink)}
+.act:hover{border-color:color-mix(in srgb,var(--terra) 45%,transparent)}
+.more{display:block;margin:24px auto 0;height:44px;padding:0 22px;border-radius:12px;border:1px solid var(--line);background:var(--paper);font-weight:600;cursor:pointer;box-shadow:var(--shadow)}
+.empty{text-align:center;padding:50px 10px;color:var(--mute)}
+.empty b{display:block;font-family:var(--serif);font-size:1.3rem;color:var(--ink);margin-bottom:4px}
+
+.fab{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--paper);box-shadow:0 6px 20px rgba(0,0,0,.15);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s;display:grid;place-items:center;z-index:15}
+.fab.show{opacity:1;pointer-events:auto}
+
+/* SHEET */
+dialog{border:0;padding:0;background:transparent;max-width:none;max-height:none;width:100%;height:100%;margin:0}
+dialog::backdrop{background:rgba(20,12,8,.45)}
+.sheet{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:min(520px,100%);background:var(--paper);color:var(--ink);border-radius:22px 22px 0 0;padding:10px 20px max(20px,env(safe-area-inset-bottom));animation:up .22s ease-out}
+@media(min-width:600px){.sheet{bottom:auto;top:50%;transform:translate(-50%,-50%);border-radius:22px;animation:none}}
+@keyframes up{from{transform:translate(-50%,100%)}}
+.grab{width:40px;height:4px;border-radius:2px;background:var(--line);margin:0 auto 12px}
+.sheet h3{font-family:var(--serif);font-size:1.35rem;margin:0 0 4px}
+.sheet p{margin:0 0 14px;color:var(--mute);font-size:14px}
+.scope{background:var(--bg);border-radius:12px;padding:10px 12px;font-size:13.5px;margin-bottom:14px}
+.scope b{color:var(--ink)}
+.sheet label{font-size:13px;font-weight:600;display:block;margin-bottom:6px}
+.sheet input{width:100%;height:46px;padding:0 12px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font-size:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.big{height:48px;border-radius:12px;border:1px solid var(--line);background:none;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px}
+.big.wa{background:#e3f3e8;border-color:#bfe3cb;color:#1d6b3a}
+@media (prefers-color-scheme:dark){.big.wa{background:#1d2e23;border-color:#2c4a36;color:#7fd39c}}
+.big.primary{background:var(--terra);border-color:var(--terra);color:#fff;grid-column:1/-1}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:12px;font-size:14px;opacity:0;transition:.25s;z-index:50;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%)}
+footer{max-width:860px;margin:auto;padding:0 20px 40px;color:var(--faint);font-size:12.5px;text-align:center}
+@media(max-width:480px){.stats{gap:14px}.stat span{font-size:11.5px;display:block;line-height:1.25}.stat b{font-size:1.3rem}.day{grid-template-columns:44px 1fr;gap:10px}.dlabel .n{font-size:1.6rem}.hero{padding-left:16px;padding-right:16px}.bar-in,main{padding-left:16px;padding-right:16px}.rail{margin:8px -16px 0;padding:2px 16px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="kick"><div class="arches" aria-hidden="true"><i></i><i></i><i></i></div><span>Eventi a Bologna</span></div>
+ <h1>Sotto i portici,<br><em>stasera</em> e oltre.</h1>
+ <p class="lede">Concerti, teatro, classica, rassegne e grandi eventi a Bologna e dintorni nei prossimi 12 mesi.</p>
+ <div class="stats">
+  <div class="stat"><b id="sTot">–</b><span>eventi in calendario</span></div>
+  <div class="stat"><b id="sWeek">–</b><span>nei prossimi 7 giorni</span></div>
+  <div class="stat"><b id="sUpd">–</b><span>ultimo aggiornamento</span></div>
+ </div>
+</header>
+
+<div class="bar" id="bar"><div class="bar-in">
+ <div class="searchrow">
+  <div class="search" id="sw">
+   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+   <input type="search" id="q" placeholder="Artista, spettacolo, teatro…" autocomplete="off" enterkeyhint="search" aria-label="Cerca">
+   <button class="x" id="qx" aria-label="Cancella ricerca">✕</button>
+  </div>
+  <button class="iconbtn ghost" id="fbtn" aria-label="Filtri"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span>Filtri</span><b class="badge" id="fbadge" hidden>0</b></button>
+  <button class="iconbtn" id="share" aria-label="Condividi"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="m16 6-4-4-4 4"/><path d="M12 2v13"/></svg><span>Condividi</span></button>
+ </div>
+ <div class="rail" id="genres" role="group" aria-label="Genere"></div>
+ <div class="rail sm" id="months" role="group" aria-label="Mese"></div>
+ <div class="rail actives" id="active" hidden></div>
+</div></div>
+
+<main>
+ <div class="status"><span id="count" aria-live="polite"></span><button class="reset" id="reset" hidden>Azzera filtri</button></div>
+ <div id="list"></div>
+ <button class="more" id="more" hidden>Mostra altri eventi</button>
+</main>
+<footer>Date, orari e disponibilità possono cambiare: verifica sempre sul sito del luogo o della biglietteria prima dell'acquisto.</footer>
+
+<button class="fab" id="top" aria-label="Torna su"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></button>
+<div class="toast" id="toast"></div>
+
+<dialog id="fdlg"><div class="sheet fsheet" role="document">
+ <div class="grab"></div>
+ <div class="fttl"><h3>Filtri</h3><button class="xbtn" id="fclose" aria-label="Chiudi">✕</button></div>
+ <p>Puoi scegliere più opzioni in ogni gruppo.</p>
+ <div id="fbody"></div>
+ <div class="ffoot"><button class="big" id="freset">Azzera</button><button class="big primary" id="fapply">Mostra eventi</button></div>
+</div></dialog>
+<dialog id="dlg"><div class="sheet" role="document">
+ <div class="grab"></div>
+ <h3>Condividi il calendario</h3>
+ <p>Manda il link a chi vuoi, con l'elenco degli eventi che stai guardando.</p>
+ <div class="scope" id="scope"></div>
+ <label for="to">Email dei destinatari</label>
+ <input id="to" type="email" multiple inputmode="email" placeholder="nome@esempio.it, altro@esempio.it">
+ <div class="grid2">
+  <button class="big primary" id="send">✉️ Invia per email</button>
+  <a class="big wa" id="wa" href="https://wa.me/" target="_blank" rel="noopener"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.4-.3z"/></svg>WhatsApp</a>
+  <button class="big" id="copy">🔗 Copia</button>
+  <button class="big" id="native" style="grid-column:1/-1">📤 Altre app</button>
+  <button class="big" id="ics" style="grid-column:1/-1">📅 Aggiungi tutti al calendario (.ics)</button>
+ </div>
+</div></dialog>
+
+<script>
+const UPDATED="__UPDATED__";
+const EVENTS=__DATA__;
+const G={"Rock":{c:"--rock",l:"Rock"},"Jazz":{c:"--jazz",l:"Jazz"},"Pop e altra musica":{c:"--pop",l:"Pop e altro"},"Classica":{c:"--classica",l:"Classica"},"Teatro":{c:"--teatro",l:"Teatro"}};
+const PAGE=60;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pad=n=>String(n).padStart(2,"0");
+const iso=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const D=s=>new Date(s+"T12:00:00");
+const now=new Date(),today=iso(now);
+const addDays=(s,n)=>{const d=D(s);d.setDate(d.getDate()+n);return iso(d)};
+const in7=addDays(today,7);
+const fmt0=(s,o)=>new Date(s+"T12:00:00").toLocaleDateString("it-IT",o);
+const fri=(()=>{const d=new Date(now);const w=d.getDay();const off=w===0?5:w===6?-1:5-w;d.setDate(d.getDate()+off);return iso(d)})();
+const sun=addDays(fri,2);
+const wkLabel=D(fri).getMonth()===D(sun).getMonth()?`${D(fri).getDate()}–${fmt0(sun,{day:"numeric",month:"short"})}`:`${fmt0(fri,{day:"numeric",month:"short"})}–${fmt0(sun,{day:"numeric",month:"short"})}`;
+const fmt=(s,o)=>D(s).toLocaleDateString("it-IT",o);
+const end=e=>e.fino||e.data;
+const ALL=EVENTS.filter(e=>end(e)>=today).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));
+
+/* state, persisted in URL so shared links keep filters */
+const FACETS={
+ g:{label:"Genere",get:e=>e.genere,name:v=>(G[v]||{l:v}).l},
+ r:{label:"Rassegna",get:e=>e.rassegna||"Altri eventi"},
+ t:{label:"Tipo di spettacolo",get:e=>e.tipo||(e.genere==="Teatro"?"Altro spettacolo":"Concerto")},
+ l:{label:"Luogo",get:e=>e.luogo},
+ c:{label:"Città",get:e=>e.citta||"Bologna"},
+ d:{label:"Disponibilità",get:e=>{const d=(e.disp||"").toLowerCase();return d==="disponibile"?"Biglietti disponibili":d==="pochi posti"?"Ultimi posti":d==="non ancora in vendita"?"Vendita non ancora aperta":(d==="sold out"||d==="non disponibile")?"Esaurito":"Da verificare"}}
+};
+const KEYS=Object.keys(FACETS);
+const st={m:"tutti",q:"",n:PAGE};KEYS.forEach(k=>st[k]=new Set());
+(()=>{try{const p=new URLSearchParams(location.hash.slice(1));if(p.get("m"))st.m=p.get("m");if(p.get("q"))st.q=p.get("q");
+ KEYS.forEach(k=>{const v=p.get(k);if(v)v.split("|").forEach(x=>x&&st[k].add(x))})}catch(_){}})();
+const WEB=/^https?:/.test(location.protocol);
+const SITE_URL="__SITE_URL__";
+const ART=/claude\.ai/.test(SITE_URL);
+const pageURL=()=>ART?SITE_URL:(WEB?location.href:(SITE_URL?SITE_URL+(location.hash||""):""));
+function syncURL(){if(!WEB||ART)return;const p=new URLSearchParams();if(st.m!=="tutti")p.set("m",st.m);if(st.q)p.set("q",st.q);KEYS.forEach(k=>{if(st[k].size)p.set(k,[...st[k]].join("|"))});try{history.replaceState(null,"",p.toString()?"#"+p:location.pathname+location.search)}catch(_){}}
+
+const overlaps=(e,a,b)=>e.data<=b&&end(e)>=a;
+function inMonth(e,m){if(m==="tutti")return true;if(m==="oggi")return overlaps(e,today,today);if(m==="weekend")return overlaps(e,fri,sun);if(m==="7g")return overlaps(e,today,in7);return e.data.slice(0,7)<=m&&end(e).slice(0,7)>=m}
+const norm=s=>String(s||"").toLowerCase().normalize("NFD").replace(/\p{M}/gu,"");
+const matchQ=e=>!st.q||norm([e.artista,e.luogo,e.citta,e.descrizione,e.tipo,e.genere,e.rassegna].join(" ")).includes(norm(st.q));
+const matchF=(e,skip)=>KEYS.every(k=>k===skip||!st[k].size||st[k].has(FACETS[k].get(e)));
+const visible=()=>ALL.filter(e=>matchF(e)&&inMonth(e,st.m)&&matchQ(e));
+const nActive=()=>KEYS.reduce((a,k)=>a+st[k].size,0);
+const nSheet=()=>KEYS.filter(k=>k!=="g").reduce((a,k)=>a+st[k].size,0);
+function facetCounts(k){const m=new Map();for(const e of ALL){if(!matchF(e,k)||!inMonth(e,st.m)||!matchQ(e))continue;const v=FACETS[k].get(e);m.set(v,(m.get(v)||0)+1)}return m}
+const LAST=new Set(["Altri eventi","Da verificare","Altro spettacolo"]);
+function allValues(k){const m=new Map();for(const e of ALL){const v=FACETS[k].get(e);m.set(v,(m.get(v)||0)+1)}return [...m.entries()].sort((a,b)=>(LAST.has(a[0])-LAST.has(b[0]))||b[1]-a[1]||a[0].localeCompare(b[0],"it")).map(x=>x[0])}
+
+/* hero stats */
+$("#sTot").textContent=ALL.length;
+$("#sWeek").textContent=ALL.filter(e=>overlaps(e,today,in7)).length;
+$("#sUpd").textContent=fmt(UPDATED,{day:"numeric",month:"short"});
+
+const MONTHS=[...new Set(ALL.map(e=>e.data.slice(0,7)))].sort();
+function chips(){
+ const gc=facetCounts("g");const tot=ALL.filter(e=>matchF(e,"g")&&inMonth(e,st.m)&&matchQ(e)).length;
+ $("#genres").innerHTML=`<button class="chip${st.g.size?"":" on"}" data-g="">Tutti <small>${tot}</small></button>`+Object.entries(G).map(([k,v])=>{
+  const n=gc.get(k)||0,on=st.g.has(k);
+  return `<button class="chip${on?" on":""}" data-g="${esc(k)}" aria-pressed="${on}" ${n||on?"":"disabled"}><span class="dot" style="background:var(${v.c})"></span>${v.l} <small>${n}</small></button>`}).join("");
+ const gb=ALL.filter(e=>matchF(e)&&matchQ(e));
+ const quick=[["tutti","Tutte le date"],["oggi","Oggi"],["weekend","Weekend "+wkLabel],["7g","7 giorni"]];
+ $("#months").innerHTML=quick.map(([k,l])=>`<button class="chip${st.m===k?" on":""}" data-m="${k}">${l}</button>`).join("")+'<span class="sep"></span>'+
+  MONTHS.map(m=>{const n=gb.filter(e=>inMonth(e,m)).length;const l=fmt(m+"-15",{month:"short"})+(m.slice(0,4)!==today.slice(0,4)?" ’"+m.slice(2,4):"");
+   return `<button class="chip${st.m===m?" on":""}" data-m="${m}" ${n||st.m===m?"":"disabled"}>${l} <small>${n}</small></button>`}).join("");
+ const on=$("#months .chip.on");if(on)on.scrollIntoView({inline:"nearest",block:"nearest"});
+ const ns=nSheet();$("#fbadge").textContent=ns;$("#fbadge").hidden=!ns;$("#fbtn").classList.toggle("active",!!ns);
+ $("#active").innerHTML=KEYS.filter(k=>k!=="g").flatMap(k=>[...st[k]].map(v=>`<button class="apill" data-k="${k}" data-v="${esc(v)}" aria-label="Rimuovi ${esc(v)}">${esc(v)}<span>✕</span></button>`)).join("");
+ $("#active").hidden=!ns;
+}
+
+/* filter sheet */
+function renderSheet(){
+ let h="";
+ for(const k of ["r","t","l","c","d"]){
+  const cnt=facetCounts(k),vals=allValues(k);
+  h+=`<section class="fsec"><div class="fhead"><h4>${FACETS[k].label}</h4>${st[k].size?`<button class="fclr" data-clr="${k}">Deseleziona</button>`:""}</div>
+  ${k==="l"?`<div class="fsearch"><input id="lq" type="search" placeholder="Cerca un luogo…" value="${esc(lq)}" autocomplete="off"></div>`:""}
+  <div class="fopts">${vals.filter(v=>k!=="l"||!lq||norm(v).includes(norm(lq))).map(v=>{const n=cnt.get(v)||0,on=st[k].has(v);
+   return `<button class="fopt${on?" on":""}" data-k="${k}" data-v="${esc(v)}" aria-pressed="${on}" ${n||on?"":"disabled"}><span class="ck">${on?"✓":""}</span>${esc(v)}<small>${n}</small></button>`}).join("")}</div></section>`}
+ $("#fbody").innerHTML=h;
+ const n=visible().length;$("#fapply").textContent=n===1?"Mostra 1 evento":`Mostra ${n} eventi`;$("#fapply").disabled=!n;
+ $("#freset").disabled=!nSheet();
+ const li=$("#lq");if(li&&lqFocus){li.focus();li.setSelectionRange(li.value.length,li.value.length)}
+}
+let lq="",lqFocus=false;
+
+function dispPill(e){const d=(e.disp||"").toLowerCase();
+ return d==="disponibile"?'<span class="pill ok">Biglietti disponibili</span>':d==="pochi posti"?'<span class="pill few">Ultimi posti</span>':(d==="sold out"||d==="non disponibile")?'<span class="pill no">Esaurito</span>':d==="non ancora in vendita"?'<span class="pill">Vendita non ancora aperta</span>':""}
+const maps=e=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(e.luogo+", "+(e.citta||"Bologna"));
+function card(e){
+ const g=G[e.genere]||{c:"--mute",l:e.genere};
+ const t=/\d/.test(e.ora||"")?e.ora:"";
+ const multi=e.fino&&e.fino!==e.data?`dal ${fmt(e.data,{day:"numeric",month:"short"})} al ${fmt(e.fino,{day:"numeric",month:"short"})}`:"";
+ return `<article class="card" style="--g:var(${g.c})">
+ <div class="top">${t?`<span class="time">${esc(t)}</span>·`:""}<span class="gname">${esc(g.l)}</span>${e.tipo?`<span>· ${esc(e.tipo)}</span>`:""}${e.rassegna?`<span class="rs">· ${esc(e.rassegna)}</span>`:""}${multi?`<span>· ${multi}</span>`:""}</div>
+ <h3 class="title">${esc(e.artista)}</h3>
+ <a class="venue" href="${maps(e)}" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>${esc(e.luogo)}${e.citta&&e.citta!=="Bologna"?" · "+esc(e.citta):""}</a>
+ ${e.descrizione?`<p class="desc" title="Tocca per espandere">${esc(e.descrizione)}</p>`:""}
+ ${dispPill(e)?`<div class="meta">${dispPill(e)}</div>`:""}
+ <div class="actions">
+  ${e.biglietti?`<a class="act primary" href="${esc(e.biglietti)}" target="_blank" rel="noopener">🎟 Biglietti</a>`:""}
+  ${e.fonte&&e.fonte!==e.biglietti?`<a class="act" href="${esc(e.fonte)}" target="_blank" rel="noopener">Info</a>`:""}
+  ${ART?"":`<button class="act" data-cal="${esc(e.id)}" aria-label="Aggiungi al calendario">📅 Salva</button>`}
+ </div></article>`}
+
+function render(resetPage){
+ if(resetPage)st.n=PAGE;
+ syncURL();chips();
+ $("#sw").classList.toggle("has",!!st.q);
+ const ev=visible(),shown=ev.slice(0,st.n);
+ const filtered=nActive()||st.m!=="tutti"||st.q;
+ $("#count").textContent=ev.length===1?"1 evento":`${ev.length} eventi`;
+ $("#reset").hidden=!filtered;
+ if(!ev.length){$("#list").innerHTML=`<div class="empty"><b>Nessun evento trovato</b>Prova a cambiare mese o genere, oppure azzera i filtri.</div>`;$("#more").hidden=true;return}
+ // group: month -> day (multi-day events listed on their first date, or today if already running)
+ const groups=new Map();
+ for(const e of shown){const key=e.data<today?today:e.data;const m=key.slice(0,7);
+  if(!groups.has(m))groups.set(m,new Map());const dm=groups.get(m);if(!dm.has(key))dm.set(key,[]);dm.get(key).push(e)}
+ let h="";
+ for(const [m,days] of groups){
+  const tot=[...days.values()].reduce((a,b)=>a+b.length,0);
+  h+=`<h2 class="month">${fmt(m+"-15",{month:"long",year:"numeric"})}<small>${tot}</small></h2>`;
+  for(const [d,list] of days){
+   const tag=d===today?"Oggi":d===addDays(today,1)?"Domani":"";
+   h+=`<section class="day"><div class="dlabel${tag==="Oggi"?" today":""}"><div class="wd">${fmt(d,{weekday:"short"})}</div><div class="n">${D(d).getDate()}</div>${tag?`<div class="tg">${tag}</div>`:""}</div><div class="cards">${list.map(card).join("")}</div></section>`}
+ }
+ $("#list").innerHTML=h;
+ const rest=ev.length-shown.length;
+ $("#more").hidden=rest<=0;$("#more").textContent=`Mostra altri ${Math.min(rest,PAGE)} eventi (${rest} rimanenti)`;
+}
+
+/* events */
+$("#genres").onclick=e=>{const b=e.target.closest(".chip");if(!b||b.disabled)return;const g=b.dataset.g;if(!g)st.g.clear();else st.g.has(g)?st.g.delete(g):st.g.add(g);render(true)};
+$("#active").onclick=e=>{const b=e.target.closest(".apill");if(!b)return;st[b.dataset.k].delete(b.dataset.v);render(true)};
+function openDlg(d){try{d.showModal()}catch(_){d.setAttribute("open","")}}
+function closeD(d){try{d.close()}catch(_){d.removeAttribute("open")}}
+$("#fbtn").onclick=()=>{lq="";lqFocus=false;renderSheet();openDlg($("#fdlg"))};
+$("#fclose").onclick=$("#fapply").onclick=()=>{closeD($("#fdlg"));render(true);scrollToList()};
+$("#fdlg").onclick=e=>{if(e.target.id==="fdlg"){closeD($("#fdlg"));render(true)}};
+$("#fdlg").addEventListener("close",()=>render(true));
+$("#freset").onclick=()=>{KEYS.filter(k=>k!=="g").forEach(k=>st[k].clear());renderSheet()};
+$("#fbody").onclick=e=>{const c=e.target.closest("[data-clr]");if(c){st[c.dataset.clr].clear();lqFocus=false;renderSheet();return}
+ const b=e.target.closest(".fopt");if(!b||b.disabled)return;const s=st[b.dataset.k],v=b.dataset.v;s.has(v)?s.delete(v):s.add(v);lqFocus=false;const y=$("#fdlg .sheet").scrollTop;renderSheet();$("#fdlg .sheet").scrollTop=y};
+$("#fbody").oninput=e=>{if(e.target.id==="lq"){lq=e.target.value;lqFocus=true;const y=$("#fdlg .sheet").scrollTop;renderSheet();$("#fdlg .sheet").scrollTop=y}};
+$("#months").onclick=e=>{const b=e.target.closest(".chip");if(!b||b.disabled)return;st.m=b.dataset.m;render(true);scrollToList()};
+let qt;$("#q").value=st.q;$("#q").oninput=e=>{clearTimeout(qt);qt=setTimeout(()=>{st.q=e.target.value.trim();render(true)},120)};
+$("#qx").onclick=()=>{$("#q").value="";st.q="";render(true);$("#q").focus()};
+$("#reset").onclick=()=>{KEYS.forEach(k=>st[k].clear());st.m="tutti";st.q="";$("#q").value="";render(true)};
+$("#more").onclick=()=>{st.n+=PAGE;render()};
+$("#list").onclick=e=>{const c=e.target.closest("[data-cal]");if(c){const ev=ALL.find(x=>x.id===c.dataset.cal);dl([ev],slug(ev.artista)+".ics");toast("Evento scaricato: aprilo per aggiungerlo al calendario");return}
+ const d=e.target.closest(".desc");if(d)d.classList.toggle("open")};
+function scrollToList(){const y=$("main").getBoundingClientRect().top+scrollY-$("#bar").offsetHeight;if(scrollY>y)scrollTo({top:y})}
+const bar=$("#bar"),fab=$("#top");
+function onScroll(){const r=bar.getBoundingClientRect().top;bar.classList.toggle("stuck",r<=0);fab.classList.toggle("show",scrollY>900)}
+addEventListener("scroll",onScroll,{passive:true});
+fab.onclick=()=>scrollTo({top:0});
+const setBarH=()=>{try{_setBarH()}catch(_){}};const _setBarH=()=>document.documentElement.style.setProperty("--barh",bar.offsetHeight+8+"px");
+addEventListener("resize",setBarH);
+let tt;function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("show"),2600)}
+const slug=s=>(s||"evento").normalize("NFD").replace(/[^\w]+/g,"_").slice(0,50);
+
+/* calendar */
+function icsFor(list){
+ const p=s=>String(s||"").replace(/[\\;,]/g,m=>"\\"+m).replace(/\n/g,"\\n");
+ const L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Eventi Bologna//IT","CALSCALE:GREGORIAN","X-WR-CALNAME:Eventi a Bologna"];
+ for(const e of list){const d=e.data.replace(/-/g,"");const o=(e.ora||"").match(/(\d{1,2})[:.](\d{2})/);
+  L.push("BEGIN:VEVENT","UID:"+e.id+"@eventi-bologna","DTSTAMP:"+new Date().toISOString().replace(/[-:]/g,"").slice(0,15)+"Z");
+  if(o){const h=pad(o[1]),m=o[2],eh=pad((+h+2)%24);L.push(`DTSTART;TZID=Europe/Rome:${d}T${h}${m}00`,`DTEND;TZID=Europe/Rome:${d}T${eh}${m}00`)}
+  else L.push("DTSTART;VALUE=DATE:"+d,"DTEND;VALUE=DATE:"+addDays(e.data,1).replace(/-/g,""));
+  L.push("SUMMARY:"+p(e.artista),"LOCATION:"+p(e.luogo+", "+(e.citta||"Bologna")),"DESCRIPTION:"+p((e.descrizione||"")+(e.biglietti?"\nBiglietti: "+e.biglietti:"")),"END:VEVENT")}
+ L.push("END:VCALENDAR");return L.join("\r\n")}
+function dl(list,name){try{const b=new Blob([icsFor(list)],{type:"text/calendar"});const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),3000)}catch(_){toast("Download non disponibile in anteprima: apri la pagina dal link")}}
+
+/* share */
+function scopeLabel(){const parts=[];if(st.g.size)parts.push([...st.g].map(g=>G[g].l).join(", "));["r","t","l","c","d"].forEach(k=>{if(st[k].size)parts.push([...st[k]].join(", "))});
+ const ml={tutti:"",oggi:"oggi",weekend:"weekend "+wkLabel,"7g":"prossimi 7 giorni"};parts.push(st.m in ml?ml[st.m]:fmt(st.m+"-15",{month:"long",year:"numeric"}));if(st.q)parts.push(`“${st.q}”`);return parts.filter(Boolean).join(" · ")}
+function shareText(){const ev=visible(),list=ev.slice(0,20);
+ const lines=list.map(e=>`• ${fmt(e.data,{weekday:"short",day:"numeric",month:"short"})}${/\d/.test(e.ora||"")?" ore "+e.ora:""} – ${e.artista} (${e.luogo})`);
+ return `Ecco il calendario degli eventi a Bologna${scopeLabel()?" – "+scopeLabel():""}:\n${pageURL()?pageURL()+"\n\n":"\n"}${lines.join("\n")}${ev.length>20?`\n…e altri ${ev.length-20} sul sito.`:""}`}
+$("#share").onclick=()=>{const n=visible().length;$("#scope").innerHTML=`Stai condividendo <b>${n} eventi</b>${scopeLabel()?` · ${esc(scopeLabel())}`:" · tutto il calendario"}. ${ART?"":"Chi apre il link vedrà gli stessi filtri."}`;$("#native").hidden=!navigator.share||ART;$("#ics").hidden=ART;$("#wa").href=waHref();try{$("#dlg").showModal()}catch(_){$("#dlg").setAttribute("open","")}};
+$("#dlg").onclick=e=>{if(e.target.id==="dlg")closeDlg()};
+function closeDlg(){try{$("#dlg").close()}catch(_){$("#dlg").removeAttribute("open")}}
+$("#send").onclick=()=>{const to=$("#to").value.split(/[,;\s]+/).filter(Boolean).join(",");
+ openURL(`mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent("Eventi a Bologna"+(scopeLabel()?" – "+scopeLabel():""))}&body=${encodeURIComponent(shareText())}`);closeDlg()};
+function openURL(u){try{const a=document.createElement("a");a.href=u;a.target="_top";a.rel="noopener";document.body.appendChild(a);a.click();a.remove()}catch(_){try{location.href=u}catch(__){}}}
+$("#native").onclick=async()=>{try{await navigator.share({title:"Eventi a Bologna",text:shareText(),...(pageURL()?{url:pageURL()}:{})});closeDlg()}catch(_){}};
+$("#copy").onclick=async()=>{const txt=pageURL()||shareText();const ok=await copyText(txt);toast(ok?(pageURL()?"Link copiato: incollalo dove vuoi":"Elenco eventi copiato"):"Copia non consentita qui: usa WhatsApp o Altre app")};
+async function copyText(s){try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(s);return true}}catch(_){}
+ try{const ta=document.createElement("textarea");ta.value=s;ta.setAttribute("readonly","");ta.style.cssText="position:fixed;top:0;left:0;opacity:0;font-size:16px";document.body.appendChild(ta);ta.focus();ta.select();ta.setSelectionRange(0,s.length);const ok=document.execCommand("copy");ta.remove();return ok}catch(_){return false}}
+const waHref=()=>"https://wa.me/?text="+encodeURIComponent(shareText());
+$("#wa").onpointerdown=$("#wa").onfocus=()=>{$("#wa").href=waHref()};
+$("#wa").onclick=()=>{$("#wa").href=waHref();setTimeout(closeDlg,300)};
+$("#ics").onclick=()=>{dl(visible(),"eventi-bologna.ics");toast("File calendario scaricato")};
+
+render(true);setBarH();onScroll();
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+name: Censimento fonti
+on:
+  workflow_dispatch:
+  push:
+    paths: ["scripts/censimento_fonti.py"]
+permissions:
+  contents: write
+jobs:
+  censimento:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Censimento
+        run: cd dati && python3 ../scripts/censimento_fonti.py
+      - name: Salva risultato
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dati/censimento.md dati/censimento.json
+          git commit -m "Censimento fonti $(date +%F)" || echo "nessuna modifica"
+          git push
