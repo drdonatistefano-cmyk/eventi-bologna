@@ -14,3 +14,5 @@ Sito pubblico: https://drdonatistefano-cmyk.github.io/eventi-bologna/
 Aggiornamento: ogni lunedì un'attività programmata di Claude aggiorna eventi.js e mostre.js qui e sulla pagina claude.ai.
 
 Statistiche: GoatCounter (senza cookie), attivo solo sul sito GitHub quando in `index.html` la costante `GC` contiene il nome dell'account (eventibologna). Cruscotto: https://eventibologna.goatcounter.com
+
+Statistiche esportate: il flusso `.github/workflows/statistiche.yml` ogni mattina legge l'API di GoatCounter (`scripts/statistiche.py`) e salva `dati/statistiche.json` e `dati/statistiche.md` (visite per giorno e per settimana dal lancio, clic sui biglietti, filtri, ricerche, condivisioni, provenienze). Serve il segreto `GOATCOUNTER_TOKEN` nelle impostazioni del repository; senza, il flusso non fa nulla.
