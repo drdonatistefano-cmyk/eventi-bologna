@@ -9,7 +9,7 @@ pagine ed eventi (clic, filtri, ricerche, condivisioni) e scrive:
   dati/statistiche.md    – riepilogo leggibile
 Senza GOATCOUNTER_TOKEN non scrive nulla ed esce senza errore.
 """
-import json, os, sys, re, datetime, urllib.request, urllib.parse, collections
+import json, os, sys, re, datetime, urllib.request, urllib.parse, urllib.error, collections
 
 SITO = os.environ.get("GOATCOUNTER_SITE", "eventibologna")
 LANCIO = "2026-11-04"
@@ -21,8 +21,20 @@ def chiedi(percorso, **param):
     req = urllib.request.Request(url, headers={
         "Authorization": "Bearer " + os.environ["GOATCOUNTER_TOKEN"],
         "Content-Type": "application/json", "User-Agent": "eventi-bologna-statistiche"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.load(r)
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        print(f"Errore {e.code} da GoatCounter su {percorso}: {e.read().decode('utf-8', 'replace')[:500]}")
+        raise
+
+
+def ora_iso(giorno, fine=False):
+    """GoatCounter vuole data e ora RFC 3339 arrotondate all'ora, non nel futuro."""
+    d = datetime.datetime.fromisoformat(giorno).replace(tzinfo=datetime.timezone.utc)
+    if fine:
+        d = min(d + datetime.timedelta(days=1), datetime.datetime.now(datetime.timezone.utc).replace(minute=0, second=0, microsecond=0))
+    return d.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def tipo_evento(path):
@@ -54,10 +66,24 @@ def main():
     dal = a[a.index("--dal") + 1] if "--dal" in a else LANCIO
     al = a[a.index("--al") + 1] if "--al" in a else oggi.isoformat()
 
-    tot = chiedi("/stats/total", start=dal, end=al)
-    giorni = {s["day"][:10]: s.get("daily", 0) for s in tot.get("stats", [])}
-
-    hits = chiedi("/stats/hits", start=dal, end=al, limit=200, daily="true").get("hits", [])
+    try:
+        me = chiedi("/me"); print("Collegato a GoatCounter come", me.get("email", "?"))
+    except Exception:
+        pass
+    s0, s1 = ora_iso(dal), ora_iso(al, fine=True)
+    tot = chiedi("/stats/total", start=s0, end=s1)
+    hits, dopo = [], None
+    for _ in range(10):  # pagine da 100 percorsi
+        par = dict(start=s0, end=s1, limit=100, daily="true")
+        if dopo: par["exclude_paths"] = ",".join(str(h["path_id"]) for h in hits if "path_id" in h)
+        r = chiedi("/stats/hits", **par); hits += r.get("hits", [])
+        if not r.get("more"): break
+        dopo = True
+    giorni = collections.Counter()
+    for h in hits:  # visite per giorno = somma delle pagine viste (non eventi)
+        if not h.get("event"):
+            for s in h.get("stats", []) or []:
+                giorni[s["day"][:10]] += s.get("daily", 0)
     pagine, eventi = [], collections.Counter()
     eventi_giorno = collections.defaultdict(collections.Counter)
     for h in hits:
@@ -72,7 +98,7 @@ def main():
 
     try:
         refs = [{"origine": r.get("name") or "(diretto)", "conteggio": r.get("count", 0)}
-                for r in chiedi("/stats/toprefs", start=dal, end=al).get("stats", [])]
+                for r in chiedi("/stats/toprefs", start=s0, end=s1).get("stats", [])]
     except Exception as e:  # le provenienze sono un di più
         refs = [{"errore": str(e)}]
 
