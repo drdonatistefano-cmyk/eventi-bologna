@@ -118,7 +118,7 @@ def main():
                           "al": min(inizio + datetime.timedelta(days=6), datetime.date.fromisoformat(al)).isoformat(), **sett[k]})
 
     out = {"generato": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
-           "dal": dal, "al": al, "visite_totali": tot.get("total", sum(giorni.values())),
+           "dal": dal, "al": al, "visite_totali": sum(giorni.values()), "totale_goatcounter": tot.get("total"),
            "eventi_totali": tot.get("total_events", sum(eventi.values())),
            "eventi_per_tipo": dict(eventi.most_common()), "settimane": settimane,
            "eventi_per_giorno": {d: dict(c) for d, c in sorted(eventi_giorno.items())},
