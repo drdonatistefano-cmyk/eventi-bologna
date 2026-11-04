@@ -786,7 +786,7 @@ $("#wa").onclick=()=>{$("#wa").href=waHref();setTimeout(()=>closeD($("#dlg")),30
 
 
 /* ---------- statistiche (GoatCounter: senza cookie, solo sul sito pubblico GitHub) ---------- */
-const GC="";/* nome dell'account goatcounter.com, es. "eventibologna" */
+const GC="eventibologna";/* nome dell'account goatcounter.com, es. "eventibologna" */
 if(GC&&ON_WEB){try{const s=document.createElement("script");s.async=true;s.dataset.goatcounter=`https://${GC}.goatcounter.com/count`;s.src="https://gc.zgo.at/count.js";document.body.appendChild(s)}catch(_){}}
 function track(path,title){try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:String(path).slice(0,180),title:title||path,event:true})}catch(_){}}
 const tTitle=el=>{const c=el.closest(".card");return c&&c.querySelector(".title")?c.querySelector(".title").textContent.trim():""};

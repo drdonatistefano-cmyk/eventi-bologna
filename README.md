@@ -13,4 +13,4 @@ Sito pubblico: https://drdonatistefano-cmyk.github.io/eventi-bologna/
 
 Aggiornamento: ogni lunedì un'attività programmata di Claude aggiorna eventi.js e mostre.js qui e sulla pagina claude.ai.
 
-Statistiche: GoatCounter (senza cookie), attivo solo sul sito GitHub quando in `index.html` la costante `GC` contiene il nome dell'account.
+Statistiche: GoatCounter (senza cookie), attivo solo sul sito GitHub quando in `index.html` la costante `GC` contiene il nome dell'account (eventibologna). Cruscotto: https://eventibologna.goatcounter.com
