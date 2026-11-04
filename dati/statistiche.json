@@ -1,0 +1,199 @@
+{
+ "generato": "2026-11-04T18:15:31+00:00",
+ "dal": "2026-11-04",
+ "al": "2026-11-04",
+ "visite_totali": 55,
+ "eventi_totali": 28,
+ "eventi_per_tipo": {
+  "cambio scheda": 6,
+  "filtri": 6,
+  "cambio vista": 4,
+  "clic biglietti": 3,
+  "luoghi aperti": 3,
+  "clic info spettacoli": 2,
+  "apri filtri": 2,
+  "mostra altri": 1,
+  "azzera filtri": 1
+ },
+ "settimane": [
+  {
+   "settimana": 1,
+   "dal": "2026-11-04",
+   "al": "2026-11-04",
+   "visite": 27,
+   "cambio scheda": 6,
+   "filtri": 6,
+   "cambio vista": 4,
+   "mostra altri": 1,
+   "clic info spettacoli": 2,
+   "clic biglietti": 3,
+   "azzera filtri": 1,
+   "apri filtri": 2,
+   "luoghi aperti": 3
+  }
+ ],
+ "eventi_per_giorno": {
+  "2026-11-04": {
+   "cambio scheda": 6,
+   "filtri": 6,
+   "cambio vista": 4,
+   "mostra altri": 1,
+   "clic info spettacoli": 2,
+   "clic biglietti": 3,
+   "azzera filtri": 1,
+   "apri filtri": 2,
+   "luoghi aperti": 3
+  }
+ },
+ "giorni": [
+  {
+   "giorno": "2026-11-04",
+   "visite": 27
+  }
+ ],
+ "provenienze": [
+  {
+   "origine": "(diretto)",
+   "conteggio": 55
+  }
+ ],
+ "pagine_ed_eventi": [
+  {
+   "path": "/eventi-bologna",
+   "titolo": "Eventi a Bologna – concerti e teatro",
+   "conteggio": 27
+  },
+  {
+   "path": "scheda/mostre",
+   "titolo": "Cambio scheda",
+   "conteggio": 4,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Rock",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "mostre/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 2,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "scheda/spettacoli",
+   "titolo": "Cambio scheda",
+   "conteggio": 2,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "spettacoli/mostra-altri",
+   "titolo": "Mostra altri",
+   "conteggio": 1,
+   "tipo": "mostra altri"
+  },
+  {
+   "path": "spettacoli/clic-info/Lazin' on a sunny afternoon",
+   "titolo": "Clic «Info»",
+   "conteggio": 1,
+   "tipo": "clic info spettacoli"
+  },
+  {
+   "path": "spettacoli/clic-biglietti/Gender Bender Festival 2026 (24ª edizione)",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 1,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "spettacoli/clic-biglietti/Joe Jackson + Band",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 1,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "spettacoli/clic-info/Joe Jackson + Band",
+   "titolo": "Clic «Info»",
+   "conteggio": 1,
+   "tipo": "clic info spettacoli"
+  },
+  {
+   "path": "spettacoli/clic-biglietti/Tito & Tarantula",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 1,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "spettacoli/azzera-filtri",
+   "titolo": "Azzera filtri",
+   "conteggio": 1,
+   "tipo": "azzera filtri"
+  },
+  {
+   "path": "spettacoli/apri-filtri",
+   "titolo": "Apertura filtri",
+   "conteggio": 1,
+   "tipo": "apri filtri"
+  },
+  {
+   "path": "mostre/apri-filtri",
+   "titolo": "Apertura filtri",
+   "conteggio": 1,
+   "tipo": "apri filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Comici",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Teatro",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "mostre/luogo/Palazzo Pallavicini",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 1,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "mostre/luogo/Palazzo Albergati",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "mostre/filtro/Categoria/Arte moderna e contemporanea",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "mostre/filtro/Periodo/arrivo",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "mostre/vista/elenco",
+   "titolo": "Cambio vista",
+   "conteggio": 1,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "mostre/luogo/Biblioteca Salaborsa",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  }
+ ]
+}
