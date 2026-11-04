@@ -95,6 +95,7 @@ def main():
            "dal": dal, "al": al, "visite_totali": tot.get("total", sum(giorni.values())),
            "eventi_totali": tot.get("total_events", sum(eventi.values())),
            "eventi_per_tipo": dict(eventi.most_common()), "settimane": settimane,
+           "eventi_per_giorno": {d: dict(c) for d, c in sorted(eventi_giorno.items())},
            "giorni": [{"giorno": d, "visite": giorni[d]} for d in sorted(giorni)],
            "provenienze": refs[:20], "pagine_ed_eventi": pagine[:200]}
     os.makedirs("dati", exist_ok=True)
