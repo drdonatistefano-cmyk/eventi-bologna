@@ -1,0 +1,36 @@
+name: Cinema (aggiornamento automatico)
+on:
+  schedule:
+    - cron: "41 8 * * *"   # ogni giorno alle 9:41 ora italiana (inverno), 10:41 d'estate
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+jobs:
+  cinema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Legge film e orari di oggi
+        id: leggi
+        continue-on-error: true
+        run: python3 scripts/cinema_auto.py
+      - name: Salva il risultato
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dati/cinema.json dati/cinema_stato.json cinema.js
+          git commit -m "Cinema $(TZ=Europe/Rome date +%F)" || echo "nessuna modifica"
+          git pull --rebase && git push
+      - name: Segnala il problema (Claude interviene come riserva)
+        if: steps.leggi.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          T="Cinema: aggiornamento automatico non riuscito"
+          B="Lettura del $(TZ=Europe/Rome date +%F) non riuscita. Dettagli in dati/cinema_stato.json. Il controllo di riserva di Claude interviene in giornata."
+          n=$(gh issue list --state open --search "$T in:title" --json number -q '.[0].number')
+          if [ -n "$n" ]; then gh issue comment "$n" --body "$B"; else gh issue create --title "$T" --body "$B"; fi
+          exit 1
