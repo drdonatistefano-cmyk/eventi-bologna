@@ -107,6 +107,25 @@ h1 em{color:var(--terra);font-style:italic}
 .freset:hover:not(:disabled){background:var(--terra-soft)}
 .freset:disabled,.resetbtn:disabled,.chip.rz:disabled{opacity:.45;cursor:default;border-color:var(--line);color:var(--mute)}
 .chip.rz{border:1.5px solid var(--terra);color:var(--terra-ink);font-weight:700}
+/* filtri rapidi: sempre visibili, con etichetta del gruppo */
+.rlab{flex:none;align-self:center;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);padding:0 2px 0 4px}
+.chip.q{border-style:dashed}.chip.q.on{border-style:solid}
+@media(min-width:760px){.railw{margin-top:10px}.rail{flex-wrap:wrap;overflow:visible;margin:0;padding:0;-webkit-mask-image:none;mask-image:none;row-gap:8px}.railw .rz{display:none}}
+@media(max-width:759px){.rlab{display:none}#fbtn .lbl{display:inline!important}#fbtn{padding:0 12px}}
+.cnote{display:flex;gap:10px;align-items:flex-start;margin:12px 0 4px;padding:12px 14px;border-radius:14px;background:var(--terra-soft);color:var(--terra-ink);font-size:14px;line-height:1.4}
+.cnote b{color:var(--ink)}
+.srows{display:grid;gap:0;margin-top:8px;border-top:1px solid var(--line)}
+.srow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
+.card .srow .sn{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;width:auto;height:auto;margin:0;min-width:0;border:0;background:none;padding:0;text-align:left;cursor:pointer;color:inherit;font:inherit}
+.card .srow .sn b{text-align:left;font-size:14.5px;font-weight:650;line-height:1.25}
+.card .srow .sn small{text-align:left;font-size:12px;color:var(--mute)}
+.srow .sn:hover b{color:var(--terra)}
+.times{display:flex;flex-wrap:wrap;gap:5px;grid-column:1/-1}
+.times span{font-size:13px;font-weight:700;font-variant-numeric:tabular-nums;padding:3px 8px;border-radius:8px;background:var(--bg);border:1px solid var(--line)}
+.times span.vo{border-color:color-mix(in srgb,var(--g) 45%,var(--line));background:color-mix(in srgb,var(--g) 10%,var(--paper))}
+.srow .act{height:30px;font-size:12.5px;padding:0 10px}
+.fmeta{font-size:13.5px;color:var(--mute);margin-top:2px}
+.vob{display:inline-flex;align-items:center;height:20px;padding:0 7px;border-radius:999px;font-size:11px;font-weight:700;background:var(--ink);color:var(--bg);letter-spacing:.02em}
 .pop{position:absolute;top:calc(100% - 4px);z-index:30;width:min(400px,calc(100vw - 24px));max-height:min(70vh,620px);display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:16px;box-shadow:0 14px 40px rgba(20,30,45,.20)}
 .phd{display:flex;align-items:center;justify-content:space-between;padding:12px 16px 6px}
 .phd b{font-family:var(--serif);font-size:1.15rem}
@@ -341,6 +360,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
  .row1 .iconbtn .lbl{display:none}
  :root{--mute:#62574c}
  .modes{gap:6px}.modes button{height:46px;font-size:15.5px;max-width:none}.modes button .mi{font-size:18px}
+ .modes button{min-width:0;padding:0 6px;gap:6px}
  .rail .chip,.chip.rz{height:38px;font-size:14.5px}
  .period{font-size:15px}.orari{font-size:14.5px}
  .month{font-size:1.55rem;margin:28px 0 4px}
@@ -371,6 +391,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
 @media(max-width:759px) and (prefers-color-scheme:dark){:root{--mute:#bcb0a3}.act.primary{color:var(--terra-ink)}}
 @media(max-width:380px){.gopts{grid-template-columns:1fr 1fr}.gopt{padding-left:11px}.mgrid{grid-template-columns:repeat(3,1fr)}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:430px){.modes button small{display:none}.modes button{font-size:15px}}
 </style>
 </head>
 <body>
@@ -386,7 +407,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
  </div>
 </header>
 
-<nav class="modes wrap" role="tablist" aria-label="Sezione"><button data-mode="s" class="on" role="tab" aria-selected="true"><span class="mi">🎭</span>Spettacoli<small id="nS"></small></button><button data-mode="m" role="tab" aria-selected="false"><span class="mi">🖼️</span>Mostre<small id="nM"></small></button></nav>
+<nav class="modes wrap" role="tablist" aria-label="Sezione"><button data-mode="s" class="on" role="tab" aria-selected="true"><span class="mi">🎭</span>Spettacoli<small id="nS"></small></button><button data-mode="m" role="tab" aria-selected="false"><span class="mi">🖼️</span>Mostre<small id="nM"></small></button><button data-mode="c" role="tab" aria-selected="false"><span class="mi">🎬</span>Cinema<small id="nC"></small></button></nav>
 <div class="bar" id="bar"><div class="bar-in wrap">
  <div class="row1">
   <div class="search" id="sw">
@@ -398,7 +419,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
   <button class="iconbtn ghost only-phone" id="fbtn" aria-label="Filtri"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span class="lbl">Filtri</span><b class="badge" id="fbadge" hidden>0</b></button>
   <button class="iconbtn" id="share" aria-label="Condividi"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="m16 6-4-4-4 4"/><path d="M12 2v13"/></svg><span class="lbl">Condividi</span></button>
  </div>
- <div class="railw only-phone"><button class="chip rz" id="rzm" data-reset>✕ Azzera</button><div class="rail" id="grail" role="group" aria-label="Genere"></div></div>
+ <div class="railw"><button class="chip rz" id="rzm" data-reset hidden>✕ Azzera</button><div class="rail" id="grail" role="group" aria-label="Filtri rapidi"></div></div>
  <div class="fbar only-wide" id="fbar" role="group" aria-label="Filtri"></div>
 </div>
 <div class="pop" id="pop" hidden role="dialog" aria-label="Scelta filtro"></div></div>
@@ -406,6 +427,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
 <div class="wrap">
  <main>
   <div class="status"><span class="cnt" id="count" aria-live="polite"></span><div class="seg only-phone topctl" role="group" aria-label="Vista"><button data-view="cal" class="on">Calendario</button><button data-view="luoghi">Luoghi</button></div><span class="pills" id="active"></span></div>
+  <div class="cnote" id="cnote" hidden></div>
   <section class="vhead" id="vhead" hidden></section>
   <div id="list"></div>
   <div id="places" hidden></div>
@@ -438,6 +460,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
 
 <script src="eventi.js"></script>
 <script src="mostre.js"></script>
+<script src="cinema.js"></script>
 <script>
 "use strict";
 /* ---------- dati ---------- */
@@ -448,6 +471,10 @@ const EVENTS=(Array.isArray(DATA.eventi)?DATA.eventi:[]).filter(e=>e&&ISO.test(e
 const MD=(window.MOSTRE_DATA&&typeof window.MOSTRE_DATA==="object")?window.MOSTRE_DATA:{aggiornato:"",mostre:[]};
 const ING={gratuito:"Ingresso gratuito","a pagamento":"A pagamento"};
 const MOSTRE=(Array.isArray(MD.mostre)?MD.mostre:[]).filter(m=>m&&ISO.test(m.inizio||"")&&ISO.test(m.fine||"")&&m.titolo&&m.sede).map(m=>({id:m.id,_kind:"m",data:m.inizio,fino:m.fine,ora:"",artista:m.titolo,luogo:m.sede,citta:m.citta||"Bologna",genere:m.categoria||"",tipo:"",rassegna:"",descrizione:m.descrizione||"",fonte:m.fonte||"",biglietti:"",orari:m.orari||"",_ing:ING[(m.ingresso||"").toLowerCase()]||"Da verificare",sito_luogo:m.sito||""}));
+const CD=(window.CINEMA_DATA&&typeof window.CINEMA_DATA==="object")?window.CINEMA_DATA:{aggiornato:"",sale:[]};
+const CGIORNO=ISO.test(CD.giorno_orari||"")?CD.giorno_orari:(ISO.test(CD.aggiornato||"")?CD.aggiornato:"");
+const SALE=(Array.isArray(CD.sale)?CD.sale:[]).filter(s=>s&&s.nome);
+const CINEMA=CGIORNO?SALE.flatMap(s=>(Array.isArray(s.film)?s.film:[]).filter(f=>f&&f.titolo).map(f=>({_kind:"c",id:s.id,data:CGIORNO,fino:(()=>{const d=new Date(CGIORNO+"T12:00:00");d.setDate(d.getDate()+6);return d.toISOString().slice(0,10)})(),ora:"",artista:f.titolo,luogo:s.nome,citta:s.citta||"Bologna",genere:s.tipo||"Sala di comunità",tipo:"",rassegna:"",descrizione:[f.genere,f.regia?"regia di "+f.regia:""].filter(Boolean).join(" · "),fonte:s.fonte||"",biglietti:"",sito_luogo:s.sito||"",_orari:(Array.isArray(f.orari)?f.orari:[]).filter(x=>/^\d{1,2}:\d{2}$/.test(x)),_vo:/v\.?o\b|originale|sottotitol/i.test(f.versione||""),_ver:f.versione||"",_ind:s.indirizzo||""}))):[];
 const ART_URL="https://claude.ai/artifact/VkNm64jekYZkPj73i3mQAa",WEB_URL="https://drdonatistefano-cmyk.github.io/eventi-bologna/";
 const ON_WEB=/(^|\.)github\.io$/.test(location.hostname);
 const SITE_URL=ON_WEB?WEB_URL:ART_URL;
@@ -464,8 +491,9 @@ const ZONA={},ZLAB={},ZORD=ZONE.map(z=>z[0]),CORD=[];ZONE.forEach(([k,l,cs])=>{Z
 const G={"Rock":{c:"--rock",l:"Rock"},"Jazz":{c:"--jazz",l:"Jazz"},"Pop e altra musica":{c:"--pop",l:"Pop e altro"},"Classica":{c:"--classica",l:"Classica"},"Teatro":{c:"--teatro",l:"Teatro"}};
 const GOPTS_S=[{k:"Teatro",l:"Teatro",em:"🎭",c:"--teatro"},{k:"Comici",l:"Comici",em:"😂",c:"--ochre"},{k:"Classica",l:"Classica",em:"🎻",c:"--classica"},{k:"Jazz",l:"Jazz",em:"🎷",c:"--jazz"},{k:"Rock",l:"Rock",em:"🎸",c:"--rock"},{k:"Pop e altra musica",l:"Pop e altro",em:"🎤",c:"--pop"}];
 const GOPTS_M=[{k:"Arte antica e Ottocento",l:"Arte antica",em:"🏛️",c:"--classica"},{k:"Arte moderna e contemporanea",l:"Moderna e contemporanea",em:"🖼️",c:"--pop"},{k:"Fotografia",l:"Fotografia",em:"📷",c:"--jazz"},{k:"Cinema e design",l:"Cinema e design",em:"🎬",c:"--ochre"},{k:"Storia e società",l:"Storia",em:"📜",c:"--teatro"},{k:"Scienza e tecnica",l:"Scienza",em:"🔭",c:"--rock"}];
+const GOPTS_C=[{k:"Multisala",l:"Multisala",em:"🍿",c:"--rock"},{k:"D'essai",l:"D'essai",em:"🎞️",c:"--jazz"},{k:"Cineteca",l:"Cineteca",em:"📽️",c:"--classica"},{k:"Sala di comunità",l:"Sale di comunità",em:"🏘️",c:"--teatro"},{k:"Arena",l:"Arena",em:"🌙",c:"--pop"}];
 let MODE="s",GOPTS=GOPTS_S,GLAB=Object.fromEntries(GOPTS.map(o=>[o.k,o]));
-const NOUN=()=>MODE==="m"?["mostra","mostre"]:["evento","eventi"];
+const NOUN=()=>MODE==="m"?["mostra","mostre"]:MODE==="c"?["proiezione","proiezioni"]:["evento","eventi"];
 const nn=n=>n===1?NOUN()[0]:NOUN()[1];
 const PAGE=60;
 
@@ -486,11 +514,12 @@ const end=e=>e.fino||e.data;
 const overlaps=(e,a,b)=>e.data<=b&&end(e)>=a;
 const norm=s=>String(s||"").toLowerCase().normalize("NFD").replace(/\p{M}/gu,"");
 const PIN='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
-const TIPOV=e=>e.tipo||(e.genere==="Teatro"?"Altro spettacolo":"Concerto");
+const TIPOV=e=>e._kind==="c"?(e._vo?"In lingua originale":"Versione italiana"):e.tipo||(e.genere==="Teatro"?"Altro spettacolo":"Concerto");
 const DISPV=e=>{if(e._kind==="m")return e._ing;const d=(e.disp||"").toLowerCase();return d==="disponibile"?"Biglietti disponibili":d==="pochi posti"?"Ultimi posti":d==="non ancora in vendita"?"Vendita non ancora aperta":(d==="sold out"||d==="non disponibile")?"Esaurito":"Da verificare"};
 
 function prep(list){const A=list.filter(e=>end(e)>=today);for(const e of A){e._c=e.citta||"Bologna";e._z=ZONA[e._c]||"Altro";e._q=norm([e.artista,e.luogo,e._c,e.descrizione,e.tipo,e.genere,e.rassegna,ZLAB[e._z]].join(" "))}return A}
 const ALL_S=prep(EVENTS).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));
+const ALL_C=prep(CINEMA).sort((a,b)=>a.artista.localeCompare(b.artista,"it")||a.luogo.localeCompare(b.luogo,"it"));
 const ALL_M=prep(MOSTRE).sort((a,b)=>{const ra=a.data<=today,rb=b.data<=today;if(ra!==rb)return ra?-1:1;return ra?a.fino.localeCompare(b.fino):a.data.localeCompare(b.data)});
 const lim=addDays(today,365);
 const monthsOf=A=>{const s=new Set();for(const e of A){let m=(e.data<today?today:e.data).slice(0,7);const last=(end(e)>lim?lim:end(e)).slice(0,7);let g=0;while(m<=last&&g++<14){s.add(m);const d=D(m+"-15");d.setMonth(d.getMonth()+1);m=iso(d).slice(0,7)}}return [...s].sort()};
@@ -539,8 +568,9 @@ function cityPills(){const out=[];const rest=new Set(st.c);
 
 function optRow(k,v,label,n){const on=st[k].has(v);
  return `<button class="opt${on?" on":""}" data-k="${k}" data-v="${esc(v)}" aria-pressed="${on}" ${n||on?"":"disabled"}><span class="ck"></span><span class="ol">${esc(label)}</span><small>${n||0}</small></button>`}
-const SECS_S=[["g","Genere"],["m","Quando"],["c","Dove"],["l","Teatro o locale"],["t","Tipo"],["r","Rassegna"],["d","Biglietti"]];
+const SECS_S=[["g","Genere"],["m","Date"],["c","Dove"],["l","Teatro o locale"],["t","Tipo"],["r","Rassegna"],["d","Disponibilità"]];
 const SECS_M=[["g","Categoria"],["m","Periodo"],["c","Dove"],["l","Museo o sede"],["d","Ingresso"]];
+const SECS_C=[["g","Tipo di sala"],["c","Dove"],["l","Cinema"],["t","Lingua"]];
 const SHORT={"Teatro o locale":"Luogo","Museo o sede":"Sede"};
 let SECS=SECS_S,STITLE=Object.fromEntries(SECS);
 const DO=["Ingresso gratuito","A pagamento","Biglietti disponibili","Ultimi posti","Vendita non ancora aperta","Da verificare","Esaurito"];
@@ -582,8 +612,8 @@ function renderPanels(){const p=$("#fdlg .panel");if(!$("#fdlg").open)return;con
 /* iPad e computer: barra orizzontale di menu a tendina */
 let popK="";
 function renderFbar(){
- $("#fbar").innerHTML=`<div class="fbtns">`+SECS.map(([k,t])=>{const s=nOf(k),sv=summ(k);
-  return `<button class="fbtn${s?" has":""}${popK===k?" open":""}" data-pop="${k}" aria-expanded="${popK===k}" title="${esc(sv||t)}"><span class="ft">${SHORT[t]?`<span class="lg">${t}</span><span class="sm">${SHORT[t]}</span>`:t}</span>${s?`<span class="fv">${esc(sv)}</span>`:""}<i class="cv"></i></button>`}).join("")+`</div><button class="freset" data-reset ${active()?"":"disabled"}>✕ Azzera filtri</button>`;
+ $("#fbar").innerHTML=`<div class="fbtns">`+SECS.filter(([k])=>k!=="g").map(([k,t])=>{const s=nOf(k),sv=summ(k);
+  return `<button class="fbtn${s?" has":""}${popK===k?" open":""}" data-pop="${k}" aria-expanded="${popK===k}" title="${esc(sv||t)}"><span class="ft">${SHORT[t]?`<span class="lg">${t}</span><span class="sm">${SHORT[t]}</span>`:t}</span>${s?`<span class="fv">${esc(sv)}</span>`:""}<i class="cv"></i></button>`}).join("")+`</div><button class="freset" data-reset ${active()?"":"hidden"}>✕ Azzera filtri</button>`;
  renderPop()}
 function renderPop(){const pop=$("#pop");if(!popK){pop.hidden=true;return}
  const btn=$(`#fbar [data-pop="${popK}"]`);if(!btn){popK="";pop.hidden=true;return}
@@ -595,9 +625,14 @@ function renderPop(){const pop=$("#pop");if(!popK){pop.hidden=true;return}
  keepFocus(pop,"pop")}
 function renderRail(){
  const gc=countBy("g",e=>e.tipo==="Comicità"?[e.genere,"Comici"]:e.genere);
- $("#rzm").disabled=!active();
- $("#grail").innerHTML=`<button class="chip${st.g.size?"":" on"}" data-gall style="--g:var(--ink)">Tutto</button>`+GOPTS.map(o=>{const c=gc.get(o.k)||0,on=st.g.has(o.k);
-  return `<button class="chip${on?" on":""}" data-k="g" data-v="${esc(o.k)}" aria-pressed="${on}" style="--g:var(${o.c})" ${c||on?"":"disabled"}><span>${o.em}</span>${o.l} <small>${c}</small></button>`}).join("")+(MODE==="m"?(()=>{const mc=countBy("m",e=>Object.keys(QUICK).filter(q=>qTest(q,e)));return `<span class="rsep"></span>`+[["ultimi","⏳ Ultimi giorni"],["arrivo","✨ In arrivo"],["oggi","Aperte oggi"]].map(([q,l])=>{const on=st.m.has(q),c=mc.get(q)||0;return `<button class="chip${on?" on":""}" data-k="m" data-v="${q}" aria-pressed="${on}" style="--g:var(--terra)" ${c||on?"":"disabled"}>${l} <small>${c}</small></button>`}).join("")})():"");
+ $("#rzm").hidden=!active();
+ const QR=MODE==="m"?[["oggi","Aperte oggi"],["weekend","Weekend "+wkLabel],["ultimi","⏳ Ultimi giorni"],["arrivo","✨ In arrivo"]]:MODE==="s"?[["oggi","Oggi"],["weekend","Weekend "+wkLabel],["7g","Prossimi 7 giorni"]]:[];
+ const qc=QR.length?countBy("m",e=>Object.keys(QUICK).filter(q=>qTest(q,e))):new Map();
+ const quick=QR.map(([q,l])=>{const on=st.m.has(q),c=qc.get(q)||0;return `<button class="chip q${on?" on":""}" data-k="m" data-v="${q}" aria-pressed="${on}" style="--g:var(--terra)" ${c||on?"":"disabled"}>${l} <small>${c}</small></button>`}).join("");
+ const gen=`<button class="chip${st.g.size?"":" on"}" data-gall style="--g:var(--ink)">${MODE==="c"?"Tutte le sale":"Tutto"}</button>`+GOPTS.map(o=>{const c=gc.get(o.k)||0,on=st.g.has(o.k);if(!c&&!on&&MODE==="c")return "";
+  return `<button class="chip${on?" on":""}" data-k="g" data-v="${esc(o.k)}" aria-pressed="${on}" style="--g:var(${o.c})" ${c||on?"":"disabled"}><span>${o.em}</span>${o.l} <small>${c}</small></button>`}).join("");
+ const vo=MODE==="c"?(()=>{const n=countBy("t",TIPOV).get("In lingua originale")||0,on=st.t.has("In lingua originale");return n||on?`<span class="rsep"></span><button class="chip${on?" on":""}" data-k="t" data-v="In lingua originale" aria-pressed="${on}" style="--g:var(--jazz)">🗣️ Lingua originale <small>${n}</small></button>`:""})():"";
+ $("#grail").innerHTML=(quick?`<span class="rlab">Quando</span>${quick}<span class="rsep"></span>`:"")+`<span class="rlab">${MODE==="m"?"Categoria":MODE==="c"?"Sala":"Genere"}</span>`+gen+vo;
  const ns=nSel();$("#fbadge").textContent=ns;$("#fbadge").hidden=!ns;$("#fbtn").classList.toggle("active",!!ns);
  $$(".seg button").forEach(b=>b.classList.toggle("on",b.dataset.view===st.view))}
 
@@ -664,7 +699,25 @@ function card(e){
  </div></article>`}
 
 const EMPTY0=()=>`<div class="empty"><b>Nessun risultato con queste scelte</b>Togli qualche filtro o allarga il periodo.<br><button class="big reset" data-reset style="margin:14px auto 0;padding:0 20px">Azzera filtri</button></div>`;
+const giornoC=()=>CGIORNO?fmt(CGIORNO,{weekday:"long",day:"numeric",month:"long"}):"";
+function cardC(title,rows){
+ const vo=rows.some(r=>r._vo),meta=(rows.find(r=>r.descrizione)||{}).descrizione||"";
+ const byT=new Map();rows.forEach(r=>{if(!byT.has(r.genere))byT.set(r.genere,0);byT.set(r.genere,byT.get(r.genere)+1)});
+ const g=GLAB[[...byT.entries()].sort((a,b)=>b[1]-a[1])[0][0]]||{c:"--mute",l:"Cinema",em:"🎬"};
+ const srow=r=>{const gg=GLAB[r.genere]||g;return `<div class="srow" style="--g:var(${gg.c})"><button class="sn where" data-venue="${esc(r.luogo)}" title="Tutti i film di ${esc(r.luogo)}"><b class="wv">${esc(r.luogo)}</b><small>${esc(r._c+(r._c!=="Bologna"&&ZLAB[r._z]?" · "+ZLAB[r._z]:""))}${r._ver?" · "+esc(r._ver):""}</small></button>${/^https:/.test(r.sito_luogo||r.fonte||"")?`<a class="act" href="${esc(r.sito_luogo||r.fonte)}" target="_blank" rel="noopener">Programma</a>`:"<span></span>"}${r._orari.length?`<div class="times">${r._orari.map(o=>`<span${r._vo?' class="vo"':""}>${esc(o)}</span>`).join("")}</div>`:`<div class="times"><small class="nt">Orari sul sito della sala</small></div>`}</div>`};
+ return `<article class="card cine" style="--g:var(${g.c})">
+ <div class="top"><span class="gtag">🎬 ${rows.length===1?"1 sala":rows.length+" sale"}</span>${vo?'<span class="vob">V.O.</span>':""}</div>
+ <h3 class="title">${esc(title)}</h3>${meta?`<div class="fmeta">${esc(meta)}</div>`:""}
+ <div class="srows">${rows.map(srow).join("")}</div></article>`}
 function renderList(ev){
+ if(MODE==="c"){
+  if(!CINEMA.length){$("#list").innerHTML=`<div class="empty"><b>Programmazione dei cinema in preparazione</b>Torna tra qualche giorno: l'elenco si aggiorna ogni settimana.</div>`;$("#more").hidden=true;return}
+  if(!ev.length){$("#list").innerHTML=EMPTY0();$("#more").hidden=true;return}
+  const F=new Map();for(const e of ev){const k=norm(e.artista);if(!F.has(k))F.set(k,{t:e.artista,r:[]});F.get(k).r.push(e)}
+  const films=[...F.values()].sort((a,b)=>b.r.length-a.r.length||a.t.localeCompare(b.t,"it"));
+  const shown=films.slice(0,st.n);
+  $("#list").innerHTML=`<h2 class="month nt">${st.venue?"In programma":"Film in sala"}<small>${films.length}</small></h2><div class="cards">${shown.map(f=>cardC(f.t,f.r)).join("")}</div>`;
+  const rest=films.length-shown.length;$("#more").hidden=rest<=0;$("#more").textContent=`Mostra altri ${Math.min(rest,PAGE)} film (${rest} rimanenti)`;return}
  if(MODE==="m"){
   if(!MOSTRE.length){$("#list").innerHTML=`<div class="empty"><b>Elenco delle mostre in preparazione</b>Ricarica la pagina tra qualche istante.</div>`;$("#more").hidden=true;return}
   if(!ev.length){$("#list").innerHTML=EMPTY0();$("#more").hidden=true;return}
@@ -686,8 +739,8 @@ function renderList(ev){
  const rest=ev.length-shown.length;$("#more").hidden=rest<=0;$("#more").textContent=`Mostra altri ${Math.min(rest,PAGE)} (${rest} rimanenti)`}
 
 function renderVenue(n){const l=ALL.filter(e=>e.luogo===st.venue),c=(l[0]||{})._c||"Bologna",sito=(l.find(e=>/^https:/.test(e.sito_luogo||""))||{}).sito_luogo||"";
- $("#vhead").innerHTML=`<div class="k">${MODE==="m"?"Mostre":"Programma"}</div><h2>${esc(st.venue)}</h2><p>${esc(c)} · <b>${n}</b> ${MODE==="m"?nn(n):(n===1?"appuntamento":"appuntamenti")}${n!==l.length?` con queste scelte, ${l.length} in tutto`:" nei prossimi mesi"}</p>
- <div class="vacts"><button class="act dark" data-back>← ${st.view==="luoghi"?(MODE==="m"?"Tutte le sedi":"Tutti i luoghi"):"Torna all'elenco"}</button>${sito?`<a class="act" href="${esc(sito)}" target="_blank" rel="noopener">Sito del luogo</a>`:""}<a class="act" href="${esc(maps(st.venue,c))}" target="_blank" rel="noopener">${PIN} Mappa</a></div>`}
+ $("#vhead").innerHTML=`<div class="k">${MODE==="m"?"Mostre":MODE==="c"?"Cinema":"Programma"}</div><h2>${esc(st.venue)}</h2><p>${esc(c)} · <b>${n}</b> ${MODE==="m"?nn(n):MODE==="c"?"film":(n===1?"appuntamento":"appuntamenti")}${n!==l.length?` con queste scelte, ${l.length} in tutto`:" nei prossimi mesi"}</p>
+ <div class="vacts"><button class="act dark" data-back>← ${st.view==="luoghi"?(MODE==="m"?"Tutte le sedi":MODE==="c"?"Tutte le sale":"Tutti i luoghi"):"Torna all'elenco"}</button>${sito?`<a class="act" href="${esc(sito)}" target="_blank" rel="noopener">${MODE==="c"?"Programma della sala":"Sito del luogo"}</a>`:""}<a class="act" href="${esc(maps(st.venue,c))}" target="_blank" rel="noopener">${PIN} Mappa</a></div>`}
 function renderPlaces(){
  const base=ALL.filter(e=>pass(e,"l")),V=new Map(),R=new Map();
  for(const e of base){if(!V.has(e.luogo))V.set(e.luogo,{n:0,c:e._c,z:e._z,g:{},first:e});const v=V.get(e.luogo);v.n++;v.g[e.genere]=(v.g[e.genere]||0)+1;if(e.rassegna)R.set(e.rassegna,(R.get(e.rassegna)||0)+1)}
@@ -696,10 +749,10 @@ function renderPlaces(){
  const byZ=new Map();for(const x of vis){if(!byZ.has(x[1].z))byZ.set(x[1].z,[]);byZ.get(x[1].z).push(x)}
  let h="";
  for(const z of ZORD.concat(["Altro"])){const list=byZ.get(z);if(!list)continue;list.sort((a,b)=>b[1].n-a[1].n||a[0].localeCompare(b[0],"it"));
-  h+=`<h2 class="ptitle">${esc(ZLAB[z])}<small>${list.length} ${list.length===1?"luogo":"luoghi"}</small></h2><div class="vgrid">`+list.map(([name,v])=>{
+  h+=`<h2 class="ptitle">${esc(ZLAB[z])}<small>${list.length} ${MODE==="c"?(list.length===1?"sala":"sale"):(list.length===1?"luogo":"luoghi")}</small></h2><div class="vgrid">`+list.map(([name,v])=>{
    const f=v.first,d=f.data<today?today:f.data,when=d===today?"oggi":d===addDays(today,1)?"domani":fmt(d,{weekday:"short",day:"numeric",month:"short"});
    const bar=GOPTS.filter(o=>v.g[o.k]).map(o=>`<i style="--g:var(${o.c});width:${(100*v.g[o.k]/v.n).toFixed(1)}%"></i>`).join("");
-   return `<button class="vtile" data-venue="${esc(name)}"><div class="vtop"><span class="vname">${esc(name)}</span><span class="vn"><b>${v.n}</b> ${nn(v.n)}</span></div>${v.c!=="Bologna"?`<div class="vcity">${esc(v.c)}</div>`:""}<div class="vnext">${MODE==="m"?(f.data<=today?`In corso: <b>${esc(f.artista)}</b>`:`Dal ${esc(when)}: <b>${esc(f.artista)}</b>`):`Prossimo: <b>${esc(when)}</b> · ${esc(f.artista)}`}</div><div class="vbar">${bar}</div></button>`}).join("")+`</div>`}
+   return `<button class="vtile" data-venue="${esc(name)}"><div class="vtop"><span class="vname">${esc(name)}</span><span class="vn"><b>${v.n}</b> ${MODE==="c"?"film":nn(v.n)}</span></div>${v.c!=="Bologna"?`<div class="vcity">${esc(v.c)}</div>`:""}<div class="vnext">${MODE==="c"?`In sala: <b>${esc(f.artista)}</b>${v.n>1?` e altri ${v.n-1}`:""}`:MODE==="m"?(f.data<=today?`In corso: <b>${esc(f.artista)}</b>`:`Dal ${esc(when)}: <b>${esc(f.artista)}</b>`):`Prossimo: <b>${esc(when)}</b> · ${esc(f.artista)}`}</div><div class="vbar">${bar}</div></button>`}).join("")+`</div>`}
  const rs=[...R.entries()].filter(x=>!st.r.has(x[0])).sort((a,b)=>b[1]-a[1]);
  if(rs.length)h+=`<h2 class="ptitle">Rassegne e stagioni<small>${rs.length}</small></h2><div class="rsx">${rs.map(([r,n])=>`<button class="rchip" data-r="${esc(r)}">${esc(r)}<small>${n}</small></button>`).join("")}</div>`;
  $("#places").innerHTML=h;return vis.length}
@@ -712,26 +765,28 @@ function render(resetPage){
   const ev=visible(),places=st.view==="luoghi"&&!st.venue;
   $("#places").hidden=!places;$("#list").hidden=places;$("#vhead").hidden=!st.venue;
   if(st.venue)renderVenue(ev.length);
-  if(places){const nv=renderPlaces();renderStatus(ev.length,`<b>${nv}</b> ${nv===1?"luogo":"luoghi"} · ${ev.length} ${nn(ev.length)}`);$("#more").hidden=true}
-  else{renderList(ev);renderStatus(ev.length,`<b>${ev.length}</b> ${nn(ev.length)}`)}
+  if(places){const nv=renderPlaces();renderStatus(ev.length,MODE==="c"?`<b>${nv}</b> ${nv===1?"sala":"sale"} · ${new Set(ev.map(e=>norm(e.artista))).size} film`:`<b>${nv}</b> ${nv===1?"luogo":"luoghi"} · ${ev.length} ${nn(ev.length)}`);$("#more").hidden=true;$("#cnote").hidden=true}
+  else{renderList(ev);if(MODE==="c"){const nf=new Set(ev.map(e=>norm(e.artista))).size,ns=new Set(ev.map(e=>e.luogo)).size;renderStatus(ev.length,`<b>${nf}</b> film in <b>${ns}</b> ${ns===1?"sala":"sale"}`)}else renderStatus(ev.length,`<b>${ev.length}</b> ${nn(ev.length)}`)}
+  const cn=$("#cnote");cn.hidden=MODE!=="c"||!CINEMA.length;if(!cn.hidden)cn.innerHTML=`<span>🕒</span><span>Orari di <b>${esc(giornoC())}</b>: negli altri giorni possono cambiare. Prima di uscire apri <b>Programma</b> sul sito della sala.</span>`;
  }catch(err){console.error(err);$("#list").hidden=false;$("#list").innerHTML=`<div class="empty"><b>Qualcosa non ha funzionato</b>Ricarica la pagina.</div>`}}
 
 /* ---------- modalità: spettacoli / mostre ---------- */
 const TXT={s:{lede:"Concerti, teatro, comici, classica e grandi eventi a Bologna e nei comuni della Città metropolitana, nei prossimi 12 mesi.",ph:"Cerca artista o teatro…",luoghi:"Teatri e luoghi",luoghiS:"Luoghi",tot:"eventi",w:"nei prossimi 7 giorni",upd:UPDATED},
- m:{lede:"Mostre d'arte, fotografia, storia e cinema a Bologna e nei comuni della Città metropolitana: in corso e in arrivo.",ph:"Cerca mostra, artista, museo…",luoghi:"Musei e sedi",luoghiS:"Sedi",tot:"mostre",w:"aperte oggi",upd:ISO.test(MD.aggiornato||"")?MD.aggiornato:""}};
+ m:{lede:"Mostre d'arte, fotografia, storia e cinema a Bologna e nei comuni della Città metropolitana: in corso e in arrivo.",ph:"Cerca mostra, artista, museo…",luoghi:"Musei e sedi",luoghiS:"Sedi",tot:"mostre",w:"aperte oggi",upd:ISO.test(MD.aggiornato||"")?MD.aggiornato:""},
+ c:{lede:"Film in sala a Bologna e nei comuni della Città metropolitana: cosa danno, in quale cinema e a che ora.",ph:"Cerca film o cinema…",luoghi:"Cinema e sale",luoghiS:"Sale",tot:"film in sala",w:"sale con film",upd:ISO.test(CD.aggiornato||"")?CD.aggiornato:""}};
 function heroStats(){const x=TXT[MODE];
- $("#sTot").textContent=ALL.length;$("#lTot").textContent=x.tot;
- $("#sWeek").textContent=MODE==="m"?ALL.filter(e=>overlaps(e,today,today)).length:ALL.filter(e=>overlaps(e,today,in7)).length;$("#lWeek").textContent=x.w;
+ $("#sTot").textContent=MODE==="c"?new Set(ALL.map(e=>norm(e.artista))).size:ALL.length;$("#lTot").textContent=x.tot;
+ $("#sWeek").textContent=MODE==="c"?new Set(ALL.map(e=>e.luogo)).size:MODE==="m"?ALL.filter(e=>overlaps(e,today,today)).length:ALL.filter(e=>overlaps(e,today,in7)).length;$("#lWeek").textContent=x.w;
  $("#sCom").textContent=COMUNI_CON.size;$("#lCom").textContent=COMUNI_CON.size===1?"comune":"comuni";$("#sUpd").textContent=x.upd?fmt(x.upd,{day:"numeric",month:"short"}):"–";
  $(".lede").textContent=x.lede;$("#q").placeholder=x.ph;
- $$('.seg [data-view="cal"]').forEach(b=>{b.textContent=MODE==="m"?"Elenco":"Calendario"});
+ $$('.seg [data-view="cal"]').forEach(b=>{b.textContent=MODE==="m"?"Elenco":MODE==="c"?"Film":"Calendario"});
  $$('.seg [data-view="luoghi"]').forEach(b=>{b.textContent=b.closest(".topctl")?x.luoghiS:x.luoghi});
  $$(".modes [data-mode]").forEach(b=>{const on=b.dataset.mode===MODE;b.classList.toggle("on",on);b.setAttribute("aria-selected",on)});
- $("#nS").textContent=ALL_S.length;$("#nM").textContent=ALL_M.length;
- document.body.classList.toggle("mode-m",MODE==="m")}
-function setMode(m){if(m===MODE)return;MODE=m;ALL=m==="m"?ALL_M:ALL_S;GOPTS=m==="m"?GOPTS_M:GOPTS_S;GLAB=Object.fromEntries(GOPTS.map(o=>[o.k,o]));
- SECS=m==="m"?SECS_M:SECS_S;QUICK=m==="m"?QUICK_M:QUICK_S;STITLE=Object.fromEntries(SECS);MONTHS=monthsOf(ALL);COMUNI_CON=new Set(ALL.map(e=>e._c));
- resetAll();st.view="cal";st.venue="";popK="";openZ.clear();lAll=false;openSec.clear();(m==="m"?["g","m","c","d"]:["g","m","c"]).forEach(k=>openSec.add(k));heroStats();render(true);
+ $("#nS").textContent=ALL_S.length;$("#nM").textContent=ALL_M.length;$("#nC").textContent=new Set(ALL_C.map(e=>norm(e.artista))).size||"";
+ document.body.classList.toggle("mode-m",MODE==="m");document.body.classList.toggle("mode-c",MODE==="c")}
+function setMode(m){if(m===MODE)return;MODE=m;ALL=m==="m"?ALL_M:m==="c"?ALL_C:ALL_S;GOPTS=m==="m"?GOPTS_M:m==="c"?GOPTS_C:GOPTS_S;GLAB=Object.fromEntries(GOPTS.map(o=>[o.k,o]));
+ SECS=m==="m"?SECS_M:m==="c"?SECS_C:SECS_S;QUICK=m==="m"?QUICK_M:m==="c"?{}:QUICK_S;STITLE=Object.fromEntries(SECS);MONTHS=monthsOf(ALL);COMUNI_CON=new Set(ALL.map(e=>e._c));
+ resetAll();st.view="cal";st.venue="";popK="";openZ.clear();lAll=false;openSec.clear();(m==="m"?["g","m","c","d"]:m==="c"?["g","c","l"]:["g","m","c"]).forEach(k=>openSec.add(k));heroStats();render(true);
  const y=$(".modes").getBoundingClientRect().top+scrollY-8;if(scrollY>y)scrollTo({top:y})}
 
 /* ---------- interazioni ---------- */
@@ -785,8 +840,8 @@ let tt;function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("sh
 function scopeLabel(){const parts=[];if(st.venue)parts.push(st.venue);if(st.g.size)parts.push([...st.g].map(k=>GLAB[k].l).join(", "));
  if(st.m.size)parts.push([...st.m].map(mLabel).join(", "));if(hasR())parts.push(rLabel());if(st.c.size)parts.push(cityLabel());["l","t","r","d"].forEach(k=>{if(st[k].size)parts.push([...st[k]].join(", "))});if(st.q)parts.push(`“${st.q}”`);return parts.join(" · ")}
 function shareText(){const ev=visible(),list=ev.slice(0,20);
- const lines=list.map(e=>MODE==="m"?`• ${e.data>today?"dal "+fdate(e.data):"fino al "+fdate(e.fino)} – ${e.artista} (${e.luogo}${e._c!=="Bologna"?", "+e._c:""})`:`• ${fmt(e.data,{weekday:"short",day:"numeric",month:"short"})}${/\d/.test(e.ora||"")?" ore "+e.ora:""} – ${e.artista} (${e.luogo}${e._c!=="Bologna"?", "+e._c:""})`);
- return `${MODE==="m"?"Ecco le mostre a Bologna":"Ecco il calendario degli eventi a Bologna"}${scopeLabel()?" – "+scopeLabel():""}:\n${SITE_URL}\n\n${lines.join("\n")}${ev.length>20?`\n…e altri ${ev.length-20} sul sito.`:""}`}
+ const lines=list.map(e=>MODE==="c"?`• ${e.artista} – ${e.luogo}${e._c!=="Bologna"?", "+e._c:""}${e._orari.length?" ("+e._orari.join(", ")+")":""}`:MODE==="m"?`• ${e.data>today?"dal "+fdate(e.data):"fino al "+fdate(e.fino)} – ${e.artista} (${e.luogo}${e._c!=="Bologna"?", "+e._c:""})`:`• ${fmt(e.data,{weekday:"short",day:"numeric",month:"short"})}${/\d/.test(e.ora||"")?" ore "+e.ora:""} – ${e.artista} (${e.luogo}${e._c!=="Bologna"?", "+e._c:""})`);
+ return `${MODE==="m"?"Ecco le mostre a Bologna":MODE==="c"?`Ecco i film nei cinema di Bologna (orari di ${giornoC()})`:"Ecco il calendario degli eventi a Bologna"}${scopeLabel()?" – "+scopeLabel():""}:\n${SITE_URL}\n\n${lines.join("\n")}${ev.length>20?`\n…e altri ${ev.length-20} sul sito.`:""}`}
 const waHref=()=>"https://wa.me/?text="+encodeURIComponent(shareText());
 $("#share").onclick=()=>{const n=visible().length;$("#scope").innerHTML=`Stai condividendo <b>${n} ${nn(n)}</b> · ${scopeLabel()?esc(scopeLabel()):"tutto il calendario"}.`;$("#wa").href=waHref();openDlg($("#dlg"))};
 $("#dlg").addEventListener("click",e=>{if(e.target.id==="dlg")closeD($("#dlg"))});
@@ -803,12 +858,12 @@ const GC="eventibologna";/* nome dell'account goatcounter.com, es. "eventibologn
 if(GC&&ON_WEB){try{const s=document.createElement("script");s.async=true;s.dataset.goatcounter=`https://${GC}.goatcounter.com/count`;s.src="https://gc.zgo.at/count.js";document.body.appendChild(s)}catch(_){}}
 function track(path,title){try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:String(path).slice(0,180),title:title||path,event:true})}catch(_){}}
 const tTitle=el=>{const c=el.closest(".card");return c&&c.querySelector(".title")?c.querySelector(".title").textContent.trim():""};
-const tm=()=>MODE==="m"?"mostre":"spettacoli";
+const tm=()=>MODE==="m"?"mostre":MODE==="c"?"cinema":"spettacoli";
 document.addEventListener("click",e=>{if(!GC||!ON_WEB)return;const t=e.target;
  const a=t.closest(".card a.act");if(a){const lab=a.textContent.trim().replace(/^🎟\s*/,"");track(`${tm()}/clic-${norm(lab).replace(/\s+/g,"-")}/${tTitle(a)}`,`Clic «${lab}»`);return}
  const w=t.closest(".card .where");if(w){track(`${tm()}/luogo/${(w.querySelector(".wv")||w).textContent.trim()}`,w.tagName==="A"?"Apertura mappa":"Apertura programma del luogo");return}
  const vt=t.closest(".vtile");if(vt){track(`${tm()}/luogo/${vt.dataset.venue}`,"Apertura programma del luogo");return}
- const mo=t.closest("[data-mode]");if(mo){track(`scheda/${mo.dataset.mode==="m"?"mostre":"spettacoli"}`,"Cambio scheda");return}
+ const mo=t.closest("[data-mode]");if(mo){track(`scheda/${{m:"mostre",c:"cinema"}[mo.dataset.mode]||"spettacoli"}`,"Cambio scheda");return}
  const vw=t.closest("[data-view]");if(vw){track(`${tm()}/vista/${vw.dataset.view==="luoghi"?"luoghi":"elenco"}`,"Cambio vista");return}
  const o=t.closest("[data-k][data-v]");if(o&&!o.disabled){track(`${tm()}/filtro/${STITLE[o.dataset.k]||o.dataset.k}/${o.dataset.v}`,"Filtro");return}
  const z=t.closest("[data-zone]");if(z){track(`${tm()}/filtro/zona/${ZLAB[z.dataset.zone]||z.dataset.zone}`,"Filtro");return}

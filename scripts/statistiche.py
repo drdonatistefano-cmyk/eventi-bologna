@@ -42,7 +42,7 @@ def tipo_evento(path):
     p = path.strip("/").lower()
     if p.startswith("condividi/"): return "condivisioni"
     if p.startswith("scheda/"): return "cambio scheda"
-    m = re.match(r"^(spettacoli|mostre)/(.+)$", p)
+    m = re.match(r"^(spettacoli|mostre|cinema)/(.+)$", p)
     if not m: return "altro"
     scheda, resto = m.groups()
     if resto.startswith("clic-"):
@@ -50,6 +50,7 @@ def tipo_evento(path):
         if scheda == "spettacoli" and lab in ("acquista", "biglietteria"): return "clic biglietti"
         if scheda == "spettacoli" and lab == "info": return "clic info spettacoli"
         if scheda == "mostre": return "clic mostre (scheda o sito)"
+        if scheda == "cinema": return "clic cinema (programma della sala)"
         return f"clic {lab}"
     for pref, nome in (("filtro/", "filtri"), ("ricerca/", "ricerche"), ("luogo/", "luoghi aperti"),
                        ("vista/", "cambio vista"), ("mostra-altri", "mostra altri"),
