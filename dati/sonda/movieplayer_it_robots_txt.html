@@ -1,0 +1,81 @@
+# Allow everything for Amazon
+User-agent: AmazonAdBot
+Allow: /
+
+# Bad Bots
+User-agent: Acunetix
+User-agent: ChinaClaw
+User-agent: DotBot
+User-agent: FHscan
+User-agent: MJ12Bot
+User-agent: MauiBot
+User-agent: NPBot*
+User-agent: NPBot-1/2.0
+User-agent: Teleport
+Disallow: /
+#
+# Good Bots
+# 
+User-agent: *
+User-agent: Googlebot
+User-agent: AdsBot-Google
+User-agent: Mediapartners-Google
+Disallow: /admin/
+Disallow: /backoffice/
+Disallow: /misc/
+Disallow: /ricerca/
+Disallow: /ricerca/?*
+Disallow: /api/
+Disallow: /ajax_filtered_fields/
+Disallow: /testing/
+Disallow: /video-footer*
+Disallow: /film/boxoffice-weeks/
+Disallow: /autocomplete-light/
+Disallow: /*/json/*/
+Disallow: /cinema/localizza/
+Disallow: /cinema/programmazione/*
+
+# area utenti
+Disallow: /bookmarks/
+Disallow: /password/
+Disallow: /login/
+Disallow: /registrazione*
+Disallow: /account/
+Disallow: /logout/
+Disallow: /account/utente/*/*/votati/*
+Allow: /account/utente/*/*/
+
+# filtri/ordinamenti in qs
+Disallow: /*?o=
+Disallow: /*?*&o=
+Disallow: /*?*settimana=
+Disallow: /*?*data=
+Disallow: /*?*giorno=
+Disallow: /*?*davedere=
+Disallow: /*?*distributore=
+Disallow: /*?*genere=
+Disallow: /*?*anno=
+Disallow: /*?*nazione=
+Disallow: /*?*_=
+
+# sottopagina galleria con e senza filtri
+Disallow: /film/*/galleria/
+Disallow: /serietv/*/galleria/
+Disallow: /personaggi/*/galleria/
+
+# sottopagina video con e senza filtri
+Disallow: /film/*/video/
+Disallow: /serietv/*/video/
+
+# sottopagine personaggi
+Disallow: /personaggi/*/curiosita/
+Disallow: /personaggi/*/video/
+
+# altre qs
+Disallow: /*?*paese=
+Disallow: /*?*citta=
+Disallow: /*?*image_page=
+Disallow: /*?*fb_comment_id=
+
+Sitemap: https://movieplayer.it/sitemap/sitemap.xml
+Sitemap: https://movieplayer.it/sitemap/sitemap-google-news.xml
