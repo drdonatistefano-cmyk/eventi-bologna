@@ -715,16 +715,6 @@
    ]
   },
   {
-   "id": "c026",
-   "nome": "Cinema Centrale",
-   "citta": "Imola",
-   "indirizzo": "Via Emilia 212, Imola",
-   "tipo": "D'essai",
-   "sito": "",
-   "fonte": "https://cinema.emiliaromagnacultura.it/luogo/cinema-centrale-3/",
-   "film": []
-  },
-  {
    "id": "c027",
    "nome": "Cinema Astra/Star Multisala",
    "citta": "Valsamoggia",
@@ -931,7 +921,7 @@
    "nome": "Cinema Century CineCi",
    "citta": "Sant'Agata Bolognese",
    "indirizzo": "",
-   "tipo": "Sala di comunità",
+   "tipo": "Multisala",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/century-cineci_230/",
    "film": [
