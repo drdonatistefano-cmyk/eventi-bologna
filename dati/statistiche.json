@@ -1,67 +1,83 @@
 {
- "generato": "2026-11-04T18:15:31+00:00",
+ "generato": "2026-11-05T06:13:45+00:00",
  "dal": "2026-11-04",
- "al": "2026-11-04",
- "visite_totali": 55,
- "eventi_totali": 28,
+ "al": "2026-11-05",
+ "visite_totali": 33,
+ "totale_goatcounter": 71,
+ "eventi_totali": 38,
  "eventi_per_tipo": {
+  "filtri": 8,
   "cambio scheda": 6,
-  "filtri": 6,
-  "cambio vista": 4,
-  "clic biglietti": 3,
-  "luoghi aperti": 3,
-  "clic info spettacoli": 2,
+  "cambio vista": 5,
+  "clic biglietti": 5,
+  "luoghi aperti": 5,
+  "mostra altri": 3,
+  "clic info spettacoli": 3,
   "apri filtri": 2,
-  "mostra altri": 1,
   "azzera filtri": 1
  },
  "settimane": [
   {
    "settimana": 1,
    "dal": "2026-11-04",
-   "al": "2026-11-04",
-   "visite": 27,
+   "al": "2026-11-05",
+   "visite": 33,
    "cambio scheda": 6,
-   "filtri": 6,
-   "cambio vista": 4,
-   "mostra altri": 1,
-   "clic info spettacoli": 2,
-   "clic biglietti": 3,
+   "mostra altri": 3,
+   "filtri": 8,
+   "cambio vista": 5,
+   "clic biglietti": 5,
+   "luoghi aperti": 5,
+   "clic info spettacoli": 3,
    "azzera filtri": 1,
-   "apri filtri": 2,
-   "luoghi aperti": 3
+   "apri filtri": 2
   }
  ],
  "eventi_per_giorno": {
   "2026-11-04": {
    "cambio scheda": 6,
-   "filtri": 6,
-   "cambio vista": 4,
-   "mostra altri": 1,
-   "clic info spettacoli": 2,
-   "clic biglietti": 3,
+   "mostra altri": 2,
+   "filtri": 8,
+   "cambio vista": 5,
+   "clic biglietti": 4,
+   "luoghi aperti": 5,
+   "clic info spettacoli": 3,
    "azzera filtri": 1,
-   "apri filtri": 2,
-   "luoghi aperti": 3
+   "apri filtri": 2
+  },
+  "2026-11-05": {
+   "cambio scheda": 0,
+   "mostra altri": 1,
+   "filtri": 0,
+   "cambio vista": 0,
+   "clic biglietti": 1,
+   "luoghi aperti": 0,
+   "clic info spettacoli": 0,
+   "azzera filtri": 0,
+   "apri filtri": 0
   }
  },
  "giorni": [
   {
    "giorno": "2026-11-04",
-   "visite": 27
+   "visite": 32
+  },
+  {
+   "giorno": "2026-11-05",
+   "visite": 1
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 55
+   "conteggio": 71
   }
  ],
  "pagine_ed_eventi": [
   {
    "path": "/eventi-bologna",
    "titolo": "Eventi a Bologna – concerti e teatro",
-   "conteggio": 27
+   "conteggio": 33
   },
   {
    "path": "scheda/mostre",
@@ -70,7 +86,25 @@
    "tipo": "cambio scheda"
   },
   {
+   "path": "spettacoli/mostra-altri",
+   "titolo": "Mostra altri",
+   "conteggio": 3,
+   "tipo": "mostra altri"
+  },
+  {
    "path": "spettacoli/filtro/Genere/Rock",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Comici",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Teatro",
    "titolo": "Filtro",
    "conteggio": 2,
    "tipo": "filtri"
@@ -88,10 +122,40 @@
    "tipo": "cambio scheda"
   },
   {
-   "path": "spettacoli/mostra-altri",
-   "titolo": "Mostra altri",
+   "path": "spettacoli/clic-biglietti/ERJ Orchestra",
+   "titolo": "Clic «Biglietti»",
    "conteggio": 1,
-   "tipo": "mostra altri"
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "spettacoli/clic-biglietti/Sfondi una porta aperta",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 1,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "spettacoli/luogo/Locomotiv Club",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/vista/elenco",
+   "titolo": "Cambio vista",
+   "conteggio": 1,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "spettacoli/clic-info/I Solisti dell'Orchestra Mozart – Mozart, Gran Partita",
+   "titolo": "Clic «Info»",
+   "conteggio": 1,
+   "tipo": "clic info spettacoli"
+  },
+  {
+   "path": "spettacoli/luogo/Conservatorio G.B. Martini – Sala Bossi",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
   },
   {
    "path": "spettacoli/clic-info/Lazin' on a sunny afternoon",
@@ -140,18 +204,6 @@
    "titolo": "Apertura filtri",
    "conteggio": 1,
    "tipo": "apri filtri"
-  },
-  {
-   "path": "spettacoli/filtro/Genere/Comici",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "spettacoli/filtro/Genere/Teatro",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
   },
   {
    "path": "mostre/luogo/Palazzo Pallavicini",
