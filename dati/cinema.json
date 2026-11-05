@@ -57,16 +57,17 @@
       "21:00"
      ],
      "versione": "Versione originale",
-     "genere": "Poliziesco, Drammatico, Thriller",
+     "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
-     "durata": null,
+     "durata": 118,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "21:00"
       ]
-     }
+     },
+     "paese": "Regno Unito"
     }
    ]
   },
@@ -97,7 +98,7 @@
       "21:15"
      ],
      "versione": "",
-     "genere": "Commedia, Drammatico, Romantico",
+     "genere": "Drammatico",
      "regia": "Ang Lee",
      "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
      "durata": 136,
@@ -108,7 +109,8 @@
        "18:45",
        "21:15"
       ]
-     }
+     },
+     "paese": "USA"
     }
    ]
   },
@@ -137,16 +139,17 @@
       "15:30"
      ],
      "versione": "",
-     "genere": "Animazione, Commedia, Ragazzi, Horror",
+     "genere": "Animazione",
      "regia": "Steve Cox e Matthew Walker",
      "interpreti": "Justin Fletcher, John Sparkes e Kate Harbour",
-     "durata": null,
+     "durata": 91,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "15:30"
       ]
-     }
+     },
+     "paese": "Regno Unito"
     }
    ]
   },
@@ -167,10 +170,10 @@
       "21:15"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Commedia",
      "regia": "Giovanni Veronesi",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "durata": 114,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
@@ -178,7 +181,8 @@
        "18:45",
        "21:15"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "L'estranea",
@@ -188,10 +192,10 @@
       "21:30"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Thriller",
      "regia": "Paolo Strippoli",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano, Adriano Giannini e Valeria Bruni Tedeschi",
+     "durata": 115,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
@@ -199,7 +203,8 @@
        "19:00",
        "21:30"
       ]
-     }
+     },
+     "paese": "Italia"
     }
    ]
   },
@@ -239,17 +244,18 @@
       "21:10"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Commedia",
      "regia": "Giovanni Veronesi",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "durata": 114,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "19:00",
        "21:10"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "Wild Horse Nine",
@@ -258,17 +264,18 @@
       "21:10"
      ],
      "versione": "",
-     "genere": "Poliziesco, Drammatico, Thriller",
+     "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
-     "durata": null,
+     "durata": 118,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "19:00",
        "21:10"
       ]
-     }
+     },
+     "paese": "Regno Unito"
     }
    ]
   },
@@ -289,10 +296,10 @@
       "21:00"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Biografico",
      "regia": "Nicola Prosatore",
      "interpreti": "Massimiliano Caiazzo",
-     "durata": null,
+     "durata": 105,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
@@ -300,7 +307,8 @@
        "18:45",
        "21:00"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "L'estranea",
@@ -310,10 +318,10 @@
       "21:15"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Thriller",
      "regia": "Paolo Strippoli",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano, Adriano Giannini e Valeria Bruni Tedeschi",
+     "durata": 115,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
@@ -321,7 +329,8 @@
        "18:45",
        "21:15"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "Ragione e sentimento",
@@ -331,7 +340,7 @@
       "21:00"
      ],
      "versione": "Versione originale (solo ore 21:00)",
-     "genere": "Commedia, Drammatico, Romantico",
+     "genere": "Drammatico",
      "regia": "Ang Lee",
      "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
      "durata": 136,
@@ -342,7 +351,8 @@
        "18:15",
        "21:00"
       ]
-     }
+     },
+     "paese": "USA"
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
@@ -352,10 +362,10 @@
       "20:45"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Commedia",
      "regia": "Massimiliano Bruno",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Claudia Pandolfi, Pietro Sermonti, Diego Abatantuono e Stefania Sandrelli",
+     "durata": 98,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
@@ -363,7 +373,8 @@
        "18:30",
        "20:45"
       ]
-     }
+     },
+     "paese": "Italia"
     }
    ]
   },
@@ -414,10 +425,10 @@
       "21:00"
      ],
      "versione": "Versione originale (solo ore 21:00)",
-     "genere": "",
+     "genere": "Drammatico, Thriller",
      "regia": "Andrey Zvyagintsev",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
+     "durata": 135,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
@@ -425,7 +436,8 @@
        "18:15",
        "21:00"
       ]
-     }
+     },
+     "paese": "Francia"
     },
     {
      "titolo": "Wild Horse Nine",
@@ -435,10 +447,10 @@
       "21:15"
      ],
      "versione": "Versione originale (solo ore 21:15)",
-     "genere": "Poliziesco, Drammatico, Thriller",
+     "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
-     "durata": null,
+     "durata": 118,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
@@ -446,7 +458,8 @@
        "18:45",
        "21:15"
       ]
-     }
+     },
+     "paese": "Regno Unito"
     }
    ]
   },
@@ -468,10 +481,10 @@
       "21:15"
      ],
      "versione": "Versione originale (solo ore 21:15)",
-     "genere": "",
+     "genere": "Drammatico",
      "regia": "Paweł Pawlikowski",
      "interpreti": "Sandra Hüller e Hanns Zischler",
-     "durata": null,
+     "durata": 82,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
@@ -480,7 +493,8 @@
        "19:30",
        "21:15"
       ]
-     }
+     },
+     "paese": "Italia"
     }
    ]
   },
@@ -509,16 +523,17 @@
       "20:40"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Commedia",
      "regia": "Giovanni Veronesi",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "durata": 114,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "20:40"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "Hope",
@@ -528,10 +543,10 @@
       "21:45"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Azione, Fantascienza, Horror",
      "regia": "Na Hong-jin",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
+     "durata": 145,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
@@ -539,7 +554,8 @@
        "20:10",
        "21:45"
       ]
-     }
+     },
+     "paese": "Corea del sud"
     },
     {
      "titolo": "Ice Cream Man",
@@ -547,7 +563,7 @@
       "22:15"
      ],
      "versione": "",
-     "genere": "Commedia, Horror, Thriller",
+     "genere": "Horror",
      "regia": "Eli Roth",
      "interpreti": "Eli Roth, Dylan Hawco e Ben Davis",
      "durata": 86,
@@ -556,7 +572,8 @@
       "2026-11-05": [
        "22:15"
       ]
-     }
+     },
+     "paese": "USA"
     },
     {
      "titolo": "Il gatto col cappello",
@@ -565,17 +582,18 @@
       "18:15"
      ],
      "versione": "",
-     "genere": "Animazione, Ragazzi, Commedia, Avventura, Fantastico",
+     "genere": "Animazione",
      "regia": "Alessandro Carloni e Erica Rivinoja",
      "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
-     "durata": null,
+     "durata": 107,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "15:30",
        "18:15"
       ]
-     }
+     },
+     "paese": "USA"
     },
     {
      "titolo": "It Ends",
@@ -584,7 +602,7 @@
       "22:55"
      ],
      "versione": "",
-     "genere": "Horror",
+     "genere": "Horror, Drammatico, Fantastico",
      "regia": "Alexander Ullom",
      "interpreti": "Phinehas Yoon, Akira Jackson e Noah Toth",
      "durata": 89,
@@ -594,7 +612,8 @@
        "19:50",
        "22:55"
       ]
-     }
+     },
+     "paese": "USA"
     },
     {
      "titolo": "Je so' pazzo",
@@ -602,16 +621,17 @@
       "15:10"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Biografico",
      "regia": "Nicola Prosatore",
      "interpreti": "Massimiliano Caiazzo",
-     "durata": null,
+     "durata": 105,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "15:10"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "L'estranea",
@@ -619,16 +639,17 @@
       "15:00"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Thriller",
      "regia": "Paolo Strippoli",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano, Adriano Giannini e Valeria Bruni Tedeschi",
+     "durata": 115,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "15:00"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
@@ -637,17 +658,18 @@
       "17:40"
      ],
      "versione": "",
-     "genere": "Animazione, Commedia, Ragazzi, Horror",
+     "genere": "Animazione",
      "regia": "Steve Cox e Matthew Walker",
      "interpreti": "Justin Fletcher, John Sparkes e Kate Harbour",
-     "durata": null,
+     "durata": 91,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "15:45",
        "17:40"
       ]
-     }
+     },
+     "paese": "Regno Unito"
     },
     {
      "titolo": "The Nameless Ballad",
@@ -655,16 +677,17 @@
       "22:10"
      ],
      "versione": "",
-     "genere": "Horror, Drammatico",
+     "genere": "Horror",
      "regia": "Federico Zampaglione",
      "interpreti": "Alana Boden, Vincenzo De Michele e Fabrizio Ferracane",
-     "durata": null,
+     "durata": 87,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "22:10"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
@@ -673,17 +696,18 @@
       "20:25"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Commedia",
      "regia": "Massimiliano Bruno",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Claudia Pandolfi, Pietro Sermonti, Diego Abatantuono e Stefania Sandrelli",
+     "durata": 98,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "17:45",
        "20:25"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "Wild Horse Nine",
@@ -694,10 +718,10 @@
       "20:50"
      ],
      "versione": "",
-     "genere": "Poliziesco, Drammatico, Thriller",
+     "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
-     "durata": null,
+     "durata": 118,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
@@ -706,7 +730,8 @@
        "19:00",
        "20:50"
       ]
-     }
+     },
+     "paese": "Regno Unito"
     },
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
@@ -714,16 +739,17 @@
       "16:00"
      ],
      "versione": "",
-     "genere": "Animazione, Avventura, Ragazzi",
+     "genere": "Animazione, Avventura, Drammatico",
      "regia": "Travis Knight",
      "interpreti": "Peyton Elizabeth Lee, Jacob Tremblay e Carey Mulligan",
-     "durata": null,
+     "durata": 139,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "16:00"
       ]
-     }
+     },
+     "paese": "USA"
     }
    ]
   },
@@ -742,7 +768,7 @@
       "16:00"
      ],
      "versione": "Versione originale in russo con sottotitoli in italiano",
-     "genere": "",
+     "genere": "Drammatico, Thriller",
      "regia": "Andrey Zvyagintsev",
      "paese": "Francia-Germania-Lettonia",
      "anno": 2026,
@@ -775,7 +801,8 @@
        "16:00",
        "21:45"
       ]
-     }
+     },
+     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk"
     },
     {
      "titolo": "Wild Horse Nine",
@@ -785,7 +812,7 @@
       "22:15"
      ],
      "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "",
+     "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "paese": "GB-USA",
      "anno": 2026,
@@ -839,7 +866,7 @@
       "18:15"
      ],
      "versione": "Versione originale in tedesco con sottotitoli in italiano",
-     "genere": "",
+     "genere": "Drammatico",
      "regia": "Paweł Pawlikowski",
      "paese": "Germania-Polonia-Italia-Francia",
      "anno": 2026,
@@ -879,7 +906,7 @@
       "21:30"
      ],
      "versione": "Versione originale in coreano con sottotitoli in italiano",
-     "genere": "",
+     "genere": "Azione, Fantascienza, Horror",
      "regia": "Na Hong-jin",
      "paese": "Corea del Sud",
      "anno": 2026,
@@ -914,7 +941,8 @@
        "18:30",
        "21:30"
       ]
-     }
+     },
+     "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender"
     }
    ]
   },
@@ -950,7 +978,7 @@
       "18:00"
      ],
      "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "",
+     "genere": "Drammatico",
      "regia": "John Huston",
      "paese": "USA",
      "anno": 1972,
@@ -959,7 +987,8 @@
       "2026-11-05": [
        "18:00"
       ]
-     }
+     },
+     "interpreti": "Jeff Bridges, Stacy Keach e Susan Tyrrell"
     },
     {
      "titolo": "Our Body Is an Expanding Star",
@@ -984,7 +1013,7 @@
       "22:15"
      ],
      "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "",
+     "genere": "Drammatico",
      "regia": "Martin Scorsese",
      "paese": "USA",
      "anno": 1973,
@@ -996,7 +1025,8 @@
       "2026-11-06": [
        "10:30"
       ]
-     }
+     },
+     "interpreti": "Robert Carradine, Harvey Keitel, Robert De Niro e Cesare Danova"
     },
     {
      "titolo": "Le margheritine",
@@ -1429,7 +1459,7 @@
       "21:45"
      ],
      "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "",
+     "genere": "Drammatico, Commedia",
      "regia": "Alejandro González Iñárritu",
      "paese": "USA-GB-Messico",
      "anno": 2026,
@@ -1507,16 +1537,17 @@
       "21:00"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Commedia",
      "regia": "Giovanni Veronesi",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "durata": 114,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "21:00"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "Fast and Furious",
@@ -1542,17 +1573,18 @@
       "21:40"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Azione, Fantascienza, Horror",
      "regia": "Na Hong-jin",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
+     "durata": 145,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "18:40",
        "21:40"
       ]
-     }
+     },
+     "paese": "Corea del sud"
     },
     {
      "titolo": "Ice Cream Man",
@@ -1560,7 +1592,7 @@
       "23:00"
      ],
      "versione": "",
-     "genere": "Commedia, Horror, Thriller",
+     "genere": "Horror",
      "regia": "Eli Roth",
      "interpreti": "Eli Roth, Dylan Hawco e Ben Davis",
      "durata": 86,
@@ -1569,7 +1601,8 @@
       "2026-11-05": [
        "23:00"
       ]
-     }
+     },
+     "paese": "USA"
     },
     {
      "titolo": "Il gatto col cappello",
@@ -1579,10 +1612,10 @@
       "19:15"
      ],
      "versione": "",
-     "genere": "Animazione, Ragazzi, Commedia, Avventura, Fantastico",
+     "genere": "Animazione",
      "regia": "Alessandro Carloni e Erica Rivinoja",
      "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
-     "durata": null,
+     "durata": 107,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
@@ -1590,7 +1623,8 @@
        "17:00",
        "19:15"
       ]
-     }
+     },
+     "paese": "USA"
     },
     {
      "titolo": "It Ends",
@@ -1598,7 +1632,7 @@
       "22:10"
      ],
      "versione": "",
-     "genere": "Horror",
+     "genere": "Horror, Drammatico, Fantastico",
      "regia": "Alexander Ullom",
      "interpreti": "Phinehas Yoon, Akira Jackson e Noah Toth",
      "durata": 89,
@@ -1607,7 +1641,8 @@
       "2026-11-05": [
        "22:10"
       ]
-     }
+     },
+     "paese": "USA"
     },
     {
      "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
@@ -1615,16 +1650,17 @@
       "16:40"
      ],
      "versione": "",
-     "genere": "Animazione, Commedia, Ragazzi, Horror",
+     "genere": "Animazione",
      "regia": "Steve Cox e Matthew Walker",
      "interpreti": "Justin Fletcher, John Sparkes e Kate Harbour",
-     "durata": null,
+     "durata": 91,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "16:40"
       ]
-     }
+     },
+     "paese": "Regno Unito"
     },
     {
      "titolo": "The Nameless Ballad",
@@ -1632,16 +1668,17 @@
       "22:20"
      ],
      "versione": "",
-     "genere": "Horror, Drammatico",
+     "genere": "Horror",
      "regia": "Federico Zampaglione",
      "interpreti": "Alana Boden, Vincenzo De Michele e Fabrizio Ferracane",
-     "durata": null,
+     "durata": 87,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "22:20"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
@@ -1650,17 +1687,18 @@
       "20:00"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Commedia",
      "regia": "Massimiliano Bruno",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Claudia Pandolfi, Pietro Sermonti, Diego Abatantuono e Stefania Sandrelli",
+     "durata": 98,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "17:45",
        "20:00"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "Wild Horse Nine",
@@ -1671,10 +1709,10 @@
       "21:10"
      ],
      "versione": "Versione originale (solo ore 19:40)",
-     "genere": "Poliziesco, Drammatico, Thriller",
+     "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
-     "durata": null,
+     "durata": 118,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
@@ -1683,7 +1721,8 @@
        "19:40",
        "21:10"
       ]
-     }
+     },
+     "paese": "Regno Unito"
     }
    ]
   },
@@ -1702,16 +1741,17 @@
       "21:00"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Commedia",
      "regia": "Giovanni Veronesi",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "durata": 114,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "21:00"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
@@ -1719,16 +1759,17 @@
       "21:00"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Commedia",
      "regia": "Massimiliano Bruno",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Claudia Pandolfi, Pietro Sermonti, Diego Abatantuono e Stefania Sandrelli",
+     "durata": 98,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "21:00"
       ]
-     }
+     },
+     "paese": "Italia"
     }
    ],
    "auto": true
@@ -1759,16 +1800,17 @@
       "18:30"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Commedia",
      "regia": "Giovanni Veronesi",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "durata": 114,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "18:30"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "Giulio Regeni - Tutto il male del mondo",
@@ -1839,7 +1881,7 @@
       "21:00"
      ],
      "versione": "",
-     "genere": "Commedia, Drammatico, Romantico",
+     "genere": "Drammatico",
      "regia": "Ang Lee",
      "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
      "durata": 136,
@@ -1849,7 +1891,8 @@
        "18:15",
        "21:00"
       ]
-     }
+     },
+     "paese": "USA"
     }
    ],
    "auto": true
@@ -1891,16 +1934,17 @@
       "21:00"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Commedia",
      "regia": "Giovanni Veronesi",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "durata": 114,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "21:00"
       ]
-     }
+     },
+     "paese": "Italia"
     }
    ],
    "auto": true
@@ -1953,16 +1997,17 @@
       "21:15"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Commedia",
      "regia": "Giovanni Veronesi",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "durata": 114,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "21:15"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "Hope",
@@ -1970,16 +2015,17 @@
       "20:30"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Azione, Fantascienza, Horror",
      "regia": "Na Hong-jin",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
+     "durata": 145,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "20:30"
       ]
-     }
+     },
+     "paese": "Corea del sud"
     },
     {
      "titolo": "Ice Cream Man",
@@ -1987,7 +2033,7 @@
       "21:20"
      ],
      "versione": "",
-     "genere": "Commedia, Horror, Thriller",
+     "genere": "Horror",
      "regia": "Eli Roth",
      "interpreti": "Eli Roth, Dylan Hawco e Ben Davis",
      "durata": 86,
@@ -1996,7 +2042,8 @@
       "2026-11-05": [
        "21:20"
       ]
-     }
+     },
+     "paese": "USA"
     },
     {
      "titolo": "Il gatto col cappello",
@@ -2004,16 +2051,17 @@
       "19:35"
      ],
      "versione": "",
-     "genere": "Animazione, Ragazzi, Commedia, Avventura, Fantastico",
+     "genere": "Animazione",
      "regia": "Alessandro Carloni e Erica Rivinoja",
      "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
-     "durata": null,
+     "durata": 107,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "19:35"
       ]
-     }
+     },
+     "paese": "USA"
     },
     {
      "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
@@ -2021,16 +2069,17 @@
       "19:45"
      ],
      "versione": "",
-     "genere": "Animazione, Commedia, Ragazzi, Horror",
+     "genere": "Animazione",
      "regia": "Steve Cox e Matthew Walker",
      "interpreti": "Justin Fletcher, John Sparkes e Kate Harbour",
-     "durata": null,
+     "durata": 91,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "19:45"
       ]
-     }
+     },
+     "paese": "Regno Unito"
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
@@ -2038,16 +2087,17 @@
       "21:15"
      ],
      "versione": "",
-     "genere": "",
+     "genere": "Commedia",
      "regia": "Massimiliano Bruno",
-     "interpreti": "",
-     "durata": null,
+     "interpreti": "Claudia Pandolfi, Pietro Sermonti, Diego Abatantuono e Stefania Sandrelli",
+     "durata": 98,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "21:15"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "Wild Horse Nine",
@@ -2055,16 +2105,17 @@
       "21:15"
      ],
      "versione": "",
-     "genere": "Poliziesco, Drammatico, Thriller",
+     "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
-     "durata": null,
+     "durata": 118,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "21:15"
       ]
-     }
+     },
+     "paese": "Regno Unito"
     },
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
@@ -2072,16 +2123,17 @@
       "21:15"
      ],
      "versione": "",
-     "genere": "Animazione, Avventura, Ragazzi",
+     "genere": "Animazione, Avventura, Drammatico",
      "regia": "Travis Knight",
      "interpreti": "Peyton Elizabeth Lee, Jacob Tremblay e Carey Mulligan",
-     "durata": null,
+     "durata": 139,
      "anno": 2026,
      "giorni": {
       "2026-11-05": [
        "21:15"
       ]
-     }
+     },
+     "paese": "USA"
     }
    ],
    "auto": true
