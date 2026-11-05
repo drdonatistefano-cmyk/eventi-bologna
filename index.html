@@ -147,7 +147,7 @@ main{max-width:none}
 .qc{height:34px;min-width:0;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:var(--bg);display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:14px;cursor:pointer;transition:background .15s,border-color .15s;color:var(--ink)}
 .qc .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .qc small{flex:none;color:var(--faint);font-size:12px;font-variant-numeric:tabular-nums}
-.qc .em{flex:none}
+.qc .em{flex:none;margin-right:5px}
 .qc.on{background:color-mix(in srgb,var(--g,var(--terra)) 15%,var(--paper));border-color:var(--g,var(--terra));box-shadow:inset 0 0 0 1px var(--g,var(--terra));font-weight:650}
 .qc.on small{color:var(--ink)}
 .qc:disabled{opacity:.38;cursor:default}
@@ -672,12 +672,13 @@ const TESTS={
  c:e=>!st.c.size||st.c.has(e._c),
  l:e=>!st.l.size||st.l.has(e.luogo),
  t:e=>!st.t.size||st.t.has(TIPOV(e)),
- r:e=>!st.r.size||st.r.has(e.rassegna||""),
+ r:e=>!st.r.size||(e._kind==="c"?glist(e).some(x=>st.r.has(x)):st.r.has(e.rassegna||"")),
  d:e=>!st.d.size||st.d.has(DISPV(e)),
  v:e=>!st.venue||e.luogo===st.venue};
 const TK=Object.keys(TESTS);
 const pass=(e,skip)=>{for(const k of TK)if(k!==skip&&!(skip==="m"&&k==="p")&&!TESTS[k](e))return false;return true};
 const visible=()=>ALL.filter(e=>pass(e));
+function cntF(skip,fn){const m=new Map();for(const e of ALL){if(!pass(e,skip))continue;const v=fn(e);for(const x of Array.isArray(v)?v:[v]){if(x==null)continue;if(!m.has(x))m.set(x,new Set());m.get(x).add(norm(e.artista))}}return new Map([...m].map(([k,s])=>[k,s.size]))}
 function countBy(skip,fn){const m=new Map();for(const e of ALL){if(!pass(e,skip))continue;const v=fn(e);for(const x of Array.isArray(v)?v:[v])if(x!=null)m.set(x,(m.get(x)||0)+1)}return m}
 const hasR=()=>!!(st.pf||st.pt);
 const rLabel=()=>st.pf&&st.pt?`dal ${fdate(st.pf)} al ${fdate(st.pt)}`:st.pf?`dal ${fdate(st.pf)}`:st.pt?`fino al ${fdate(st.pt)}`:"";
@@ -701,7 +702,7 @@ function optRow(k,v,label,n){const on=st[k].has(v);
  return `<button class="opt${on?" on":""}" data-k="${k}" data-v="${esc(v)}" aria-pressed="${on}" ${n||on?"":"disabled"}><span class="ck"></span><span class="ol">${esc(label)}</span><small>${n||0}</small></button>`}
 const SECS_S=[["g","Genere"],["m","Date"],["c","Dove"],["l","Teatro o locale"],["t","Tipo"],["r","Rassegna"],["d","Disponibilità"]];
 const SECS_M=[["g","Categoria"],["m","Periodo"],["c","Dove"],["l","Museo o sede"],["d","Ingresso"]];
-const SECS_C=[["m","Giorno e orario"],["g","Tipo di sala"],["c","Dove"],["l","Cinema"],["t","Lingua"]];
+const SECS_C=[["m","Giorno e orario"],["r","Genere del film"],["g","Tipo di sala"],["c","Dove"],["l","Cinema"],["t","Lingua"]];
 const SHORT={"Teatro o locale":"Luogo","Museo o sede":"Sede"};
 let SECS=SECS_S,STITLE=Object.fromEntries(SECS);
 const DO=["Ingresso gratuito","A pagamento","Biglietti disponibili","Ultimi posti","Vendita non ancora aperta","Da verificare","Esaurito"];
@@ -711,7 +712,7 @@ function body(k,ctx){
  if(k==="g"){const gc=countBy("g",e=>e.tipo==="Comicità"?[e.genere,"Comici"]:e.genere);
   return `<div class="gopts">`+GOPTS.map(o=>{const c=gc.get(o.k)||0,on=st.g.has(o.k);
    return `<button class="gopt${on?" on":""}" data-k="g" data-v="${esc(o.k)}" aria-pressed="${on}" style="--g:var(${o.c})" ${c||on?"":"disabled"}><span class="em">${o.em}</span><span><b>${o.l}</b><small>${c}</small></span></button>`}).join("")+`</div>`}
- if(k==="m"&&MODE==="c"){const mc=countBy("m",cQuickKeys),impl=!dayKeys().length||(!st.m.has("sett")&&![...st.m].some(x=>x.startsWith("g:")));
+ if(k==="m"&&MODE==="c"){const mc=cntF("m",cQuickKeys),impl=!dayKeys().length||(!st.m.has("sett")&&![...st.m].some(x=>x.startsWith("g:")));
   const dr=(v,l)=>{const on=st.m.has(v)||(impl&&v==="g:"+today);return `<button class="opt${on?" on":""}" data-k="m" data-v="${esc(v)}" aria-pressed="${on}" ${mc.get(v)||on?"":"disabled"}><span class="ck"></span><span class="ol">${esc(l)}</span><small>${mc.get(v)||0}</small></button>`};
   return `<div class="msub">Giorno</div><div class="opts">${CDAYS.map(d=>dr("g:"+d,dLab(d,true))).join("")}${dr("sett","Tutta la settimana")}</div><div class="msub" style="margin-top:14px">Orario</div><div class="opts">${Object.entries(FAS).map(([q,l])=>optRow("m",q,l,mc.get(q)||0)).join("")}</div><p class="phint" style="margin-top:12px">Orari esatti per le sale della Cineteca per tutta la settimana; per le altre sale gli orari sono quelli di oggi e, per gli altri giorni, il film è indicato «in cartellone» con il link al programma della sala.</p>`}
  if(k==="m"){const mc=countBy("m",e=>{const a=[];for(const m of MONTHS)if(e.data.slice(0,7)<=m&&end(e).slice(0,7)>=m)a.push(m);for(const q of Object.keys(QUICK))if(qTest(q,e))a.push(q);return a});
@@ -731,6 +732,7 @@ function body(k,ctx){
   lv.sort((a,b)=>(st.l.has(b)-st.l.has(a))||(lc.get(b)||0)-(lc.get(a)||0)||a.localeCompare(b,"it"));
   const sh=lAll||lq||ctx==="sheet"?lv:lv.slice(0,10);
   return `<input class="lsearch" data-ls="${ctx}" type="search" placeholder="Cerca un luogo…" value="${esc(lq)}" autocomplete="off"><div class="opts">${sh.map(v=>optRow("l",v,v,lc.get(v)||0)).join("")||`<small style="color:var(--mute)">Nessun luogo</small>`}</div>${sh.length<lv.length?`<button class="lmore" data-lall>Mostra tutti i ${lv.length} luoghi</button>`:""}`}
+ if(k==="r"&&MODE==="c"){const c=cntF("r",glist);return `<div class="opts">${CGEN.filter(o=>c.get(o.k)||st.r.has(o.k)).map(o=>optRow("r",o.k,o.em+"  "+o.k,c.get(o.k)||0)).join("")}</div><p class="phint" style="margin-top:12px">«Altri film» raccoglie i titoli di cui non conosciamo il genere (spesso classici e rassegne della Cineteca).</p>`}
  const fn=k==="t"?TIPOV:k==="r"?(e=>e.rassegna||""):DISPV;const c=countBy(k,fn);
  let vs=[...new Set(ALL.map(fn))].filter(v=>v&&(c.get(v)||st[k].has(v)));
  vs.sort(k==="d"?((a,b)=>DO.indexOf(a)-DO.indexOf(b)):((a,b)=>(c.get(b)||0)-(c.get(a)||0)||a.localeCompare(b,"it")));
@@ -747,7 +749,7 @@ function panelHTML(){const n=visible().length;
  else{const s=nOf(sub);
   head=`<div class="shead"><button class="back" data-sub="">Filtri</button><h3>${esc(STITLE[sub])}</h3>${s?`<button class="sreset" data-clr="${sub}">Deseleziona</button>`:""}</div>`;
   mid=`<div class="fb">${body(sub,"sheet")}</div>`}
- return head+`<div class="panel${subAnim?" in":""}">${mid}</div><div class="pfoot"><button class="big primary" data-close>${n?`Mostra ${n} ${MODE==="c"?(n===1?"proiezione":"proiezioni"):nn(n)}`:"Nessun risultato"}</button></div>`}
+ return head+`<div class="panel${subAnim?" in":""}">${mid}</div><div class="pfoot"><button class="big primary" data-close>${n?(MODE==="c"?(()=>{const f=new Set(visible().map(e=>norm(e.artista))).size;return `Mostra ${f} film`})():`Mostra ${n} ${nn(n)}`):"Nessun risultato"}</button></div>`}
 function keepFocus(root,ctx){if(lFocus===ctx){const i=root.querySelector(".lsearch");if(i){i.focus();i.setSelectionRange(i.value.length,i.value.length)}}}
 function renderPanels(){const w=$("#fdlg .fwrap");if(!$("#fdlg").open)return;const p0=w.querySelector(".panel"),sc=p0&&!subAnim?p0.scrollTop:0;w.innerHTML=panelHTML();const p=w.querySelector(".panel");p.scrollTop=sc;subAnim=false;keepFocus(w,"sheet")}
 /* iPad e computer: barra orizzontale di menu a tendina */
@@ -765,16 +767,18 @@ function renderPop(){const pop=$("#pop");if(!popK){pop.hidden=true;return}
  pop.style.left=Math.max(12,Math.min(b.left-host.left,host.width-w-12))+"px";
  keepFocus(pop,"pop")}
 function renderRail(){
- const SH={["Weekend "+wkLabel]:"Weekend","Prossimi 7 giorni":"7 giorni","Sale di comunità":"Comunità","Lingua orig.":"V.O.","Moderna e contemporanea":"Contemporanea","Sera 18–21":"Sera","Cinema e design":"Cinema e design"};
+ const SH={...Object.fromEntries(CGEN.filter(c=>c.s).map(c=>[c.k,c.s])),["Weekend "+wkLabel]:"Weekend","Prossimi 7 giorni":"7 giorni","Sale di comunità":"Comunità","Lingua orig.":"V.O.","Moderna e contemporanea":"Contemporanea","Sera 18–21":"Sera","Cinema e design":"Cinema e design"};
  const qc=(k,v,l,n,on,g,em)=>{const s=SH[l]||l;return `<button class="qc${on?" on":""}" data-k="${k}" data-v="${esc(v)}" aria-pressed="${on}" style="--g:var(${g||"--terra"})" ${n||on?"":"disabled"} title="${esc(l)}"><span class="t">${em?`<span class="em">${em}</span>`:""}${s!==l?`<span class="lg">${esc(l)}</span><span class="sm">${esc(s)}</span>`:esc(l)}</span>${n!=null?`<small>${n}</small>`:""}</button>`};
  const grp=(lab,cols,chips,clr)=>`<section class="qg" style="--cols:${cols}"><div class="qh"><span class="qlab">${lab}</span>${clr?`<button class="qclr" data-qclr="${clr}">Togli</button>`:""}</div><div class="qchips">${chips}</div></section>`;
- const gc=countBy("g",e=>e.tipo==="Comicità"?[e.genere,"Comici"]:e.genere);
+ const gc=(MODE==="c"?cntF:countBy)("g",e=>e.tipo==="Comicità"?[e.genere,"Comici"]:e.genere);
  const gens=GOPTS.filter(o=>MODE!=="c"||gc.get(o.k)||st.g.has(o.k)).map(o=>qc("g",o.k,o.l,gc.get(o.k)||0,st.g.has(o.k),o.c,o.em)).join("");
  let h="";
- if(MODE==="c"){const mc=countBy("m",cQuickKeys),sd=[...st.m].filter(isDay);
+ if(MODE==="c"){const mc=cntF("m",cQuickKeys),sd=[...st.m].filter(isDay);
   h+=grp("Giorno",4,CDAYS.map(d=>{const v="g:"+d;return qc("m",v,dLab(d),mc.get(v)||0,st.m.has(v)||(!sd.length&&d===today))}).join("")+qc("m","sett","Settimana",mc.get("sett")||0,st.m.has("sett")),sd.length?"day":"");
   h+=grp("Orario",2,Object.keys(FAS).map(q=>qc("m",q,{ancora:"Da adesso",pom:"Pomeriggio",sera:"Sera 18–21",notte:"Dopo le 21"}[q],mc.get(q)||0,st.m.has(q))).join(""),fasSel().length?"fas":"");
-  const n=countBy("t",TIPOV).get("In lingua originale")||0,vo=st.t.has("In lingua originale");
+  const gc2=cntF("r",glist);
+  h+=grp("Genere",3,CGEN.filter(o=>gc2.get(o.k)||st.r.has(o.k)).map(o=>qc("r",o.k,o.k,gc2.get(o.k)||0,st.r.has(o.k),"--pop",o.em)).join(""),st.r.size?"r":"");
+  const n=cntF("t",TIPOV).get("In lingua originale")||0,vo=st.t.has("In lingua originale");
   h+=grp("Sala",3,gens+(n||vo?qc("t","In lingua originale","Lingua orig.",n,vo,"--jazz","🗣️"):""),st.g.size||vo?"sala":"")}
  else{const QR=MODE==="m"?[["oggi","Aperte oggi"],["weekend","Weekend "+wkLabel],["ultimi","Ultimi giorni","⏳"],["arrivo","In arrivo","✨"]]:[["oggi","Oggi"],["weekend","Weekend "+wkLabel],["7g","Prossimi 7 giorni"]];
   const mc=countBy("m",e=>Object.keys(QUICK).filter(q=>qTest(q,e)));
@@ -888,6 +892,8 @@ function cTimes(r){const dk=dayKeys(),many=dk.length>1,fs=fasSel(),rows=[];
   let j=i;while(j+1<rows.length&&rows[j+1].prev)j++;
   h+=`<div class="tday"><b>${i===j?esc(dLab(x.d)):esc(dLab(x.d))+"–"+esc(dLab(rows[j].d))}</b><em class="prev">in cartellone · orari sul sito della sala</em></div>`;i=j+1}
  return `<div class="times wk">${h}</div>`}
+const CGEN=[{k:"Commedia",em:"😂",rx:/commedia|comic/i},{k:"Drammatico",s:"Dramma",em:"🎭",rx:/dramm|biograf|storic|guerra/i},{k:"Thriller e giallo",s:"Thriller",em:"🔪",rx:/thriller|giallo|polizi|noir|crime|gangster/i},{k:"Horror",em:"👻",rx:/horror/i},{k:"Animazione",s:"Cartoni",em:"🎨",rx:/animazione|cartoni/i},{k:"Azione e avventura",s:"Azione",em:"💥",rx:/azione|avventura|western/i},{k:"Fantascienza e fantasy",s:"Fantasy",em:"🚀",rx:/fantascienza|fantastic|fantasy/i},{k:"Sentimentale",s:"Amore",em:"❤️",rx:/sentiment|romantic/i},{k:"Documentario",s:"Doc",em:"🎥",rx:/documentar/i},{k:"Famiglia e ragazzi",s:"Famiglia",em:"🧸",rx:/ragazzi|famiglia|family|bambini/i},{k:"Musicale",em:"🎵",rx:/musical/i},{k:"Altri film",s:"Altri",em:"🎞️",rx:null}];
+function glist(e){if(e._gl)return e._gl;const g=fInfo(e.artista).g||"";const l=CGEN.filter(c=>c.rx&&c.rx.test(g)).map(c=>c.k);return e._gl=l.length?l:["Altri film"]}
 let FI=null;
 function fInfo(t){if(!FI){FI=new Map();for(const e of CINEMA){const k=norm(e.artista),x=FI.get(k)||{};for(const [a,b] of [["g",e._gen],["r",e._reg],["i",e._int],["d",e._dur],["y",e._anno],["p",e._paese]])if(b&&!x[a])x[a]=b;FI.set(k,x)}}return FI.get(norm(t))||{}}
 function fMeta(t,full){const x=fInfo(t),g=x.g?x.g.split(/\s*,\s*/).slice(0,full?6:2).join(", "):"";
