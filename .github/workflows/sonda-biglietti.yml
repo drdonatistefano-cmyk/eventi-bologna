@@ -1,0 +1,19 @@
+name: sonda-biglietti
+on: workflow_dispatch
+jobs:
+  s:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          set +e
+          UA="Mozilla/5.0 (EventiBolognaBot)"
+          for u in https://ccb.18tickets.it/ https://lumiere.cinetecabologna.18tickets.it/ https://modernissimo.cinetecabologna.18tickets.it/ https://cinetecabologna.18tickets.it/ https://cervi.cinetecabologna.18tickets.it/ https://popupcinema.18tickets.it/ https://popup.18tickets.it/ https://www.thespacecinema.it/cinema/bologna/al-cinema https://www.ucicinemas.it/ https://www.circuitocinemabologna.it/ https://www.popupcinema.it/ https://www.cinemabellinzona.it/ https://www.nosadella.it/ https://www.cinemachaplin.it/ https://www.cineci.it/ https://www.cinemaastrastar.it/; do
+            c=$(curl -s -o /tmp/p.html -w "%{http_code} %{url_effective}" -L -A "$UA" --max-time 20 "$u" || echo ERR)
+            echo "== $u -> $c"
+            grep -oiE 'https?://[a-z0-9.-]*(18tickets|webtic|vivaticket|boxol|ticket)[a-z0-9./_?=&-]*' /tmp/p.html | sort -u | head -15
+            grep -oiE 'href="[^"]*meridiana[^"]*"' /tmp/p.html | sort -u | head -5
+            rm -f /tmp/p.html
+          done
+          echo "== mymovies"
+          curl -s -L -A "$UA" --max-time 25 https://www.mymovies.it/cinema/bologna/ -o /tmp/m.html
+          grep -oiE 'https?://[a-z0-9.-]*(18tickets|webtic|vivaticket|boxol|thespace|ucicinemas)[a-z0-9./_?=&-]*' /tmp/m.html | sed -E 's#(https?://[^/]+/?[^/?]*).*#\1#' | sort | uniq -c | sort -rn | head -40
