@@ -11,12 +11,10 @@ jobs:
         run: |
           rm -rf sonda; mkdir -p sonda
           UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"
-          curl -sS -A "$UA" -o sonda/odeon.html https://movieplayer.it/cinema/odeon_205/
-          for u in $(grep -o 'href="/film/[a-z0-9-]*_[0-9]*/"' sonda/odeon.html | sort -u | head -3 | sed 's#href="#https://movieplayer.it#; s#"$##'); do
-            n=$(echo "$u" | sed 's#https://##; s#[^a-zA-Z0-9]#_#g'); curl -sS -A "$UA" -o "sonda/$n.html" "$u"; echo "$u" >> sonda/esito.txt; done
-          grep -c 'href="/film/' sonda/odeon.html >> sonda/esito.txt
+          for u in https://cinetecadibologna.it/programmazione/proiezione/minotaur/ https://cinetecadibologna.it/programmazione/proiezione/digger/ https://movieplayer.it/articoli/dio-ride-recensione-film-di-giovanni-veronesi_37921/; do
+            n=$(echo "$u" | sed 's#https://##; s#[^a-zA-Z0-9]#_#g'); curl -sS -L -A "$UA" -o "sonda/$n.html" -w "%{http_code} $u\n" "$u" >> sonda/esito.txt; done
       - name: Salva
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add sonda && git commit -m "Sonda cinema 4" && git pull --rebase && git push
+          git add sonda && git commit -m "Sonda cinema 5" && git pull --rebase && git push
