@@ -52,7 +52,7 @@ def tipo_evento(path):
         if scheda == "mostre": return "clic mostre (scheda o sito)"
         if scheda == "cinema": return "clic cinema (programma della sala)"
         return f"clic {lab}"
-    for pref, nome in (("filtro/", "filtri"), ("ricerca/", "ricerche"), ("luogo/", "luoghi aperti"),
+    for pref, nome in (("dettaglio/", "schede aperte"), ("filtro/", "filtri"), ("ricerca/", "ricerche"), ("luogo/", "luoghi aperti"),
                        ("vista/", "cambio vista"), ("mostra-altri", "mostra altri"),
                        ("azzera-filtri", "azzera filtri"), ("apri-filtri", "apri filtri")):
         if resto.startswith(pref): return nome

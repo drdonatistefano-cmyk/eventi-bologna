@@ -289,7 +289,47 @@ main{min-width:0;padding-bottom:90px}
 .dlabel.today .n{color:var(--terra)}
 .dlabel .tg{font-size:10.5px;color:var(--terra);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
 .cards{display:grid;gap:8px;min-width:0}
-@media(min-width:1120px){.cards{grid-template-columns:1fr 1fr}}
+@media(min-width:760px){.cards{grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}}
+/* schede compatte: un tocco apre la scheda completa */
+.card.mini{cursor:pointer;padding:12px 14px 11px 17px;gap:0}
+.card.mini .title{font-size:1.18rem;line-height:1.2;margin-top:1px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card.mini:focus-visible{outline:2px solid var(--terra);outline-offset:2px}
+@media(hover:hover){.card.mini:hover{border-color:color-mix(in srgb,var(--g) 45%,var(--line));transform:translateY(-1px)}}
+.card.mini{transition:border-color .15s,transform .15s}
+.mloc{display:flex;align-items:center;gap:5px;margin-top:5px;font-size:13.5px;color:var(--mute);min-width:0}
+.mloc svg{flex:none;width:13px;height:13px}
+.mloc span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mfoot{display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:8px}
+.mfoot:empty{display:none}
+.card.mini{padding-right:34px}
+.mfoot .pill{margin:0}
+.mgo{position:absolute;right:14px;top:50%;width:9px;height:9px;margin-top:-5px;border-right:2.4px solid color-mix(in srgb,var(--g) 55%,var(--faint));border-bottom:2.4px solid color-mix(in srgb,var(--g) 55%,var(--faint));transform:rotate(-45deg)}
+.mper{font-size:13.5px;color:var(--ink);margin-top:4px}
+.mper small{color:var(--mute);font-size:13px}
+.mbar{height:4px;border-radius:99px;background:color-mix(in srgb,var(--g) 15%,transparent);margin-top:6px;overflow:hidden}
+.mbar i{display:block;height:100%;background:var(--g);min-width:3px}
+.msr{display:flex;align-items:baseline;gap:8px;font-size:13.5px;margin-top:4px;min-width:0}
+.msr b{flex:none;max-width:52%;font-weight:650;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.msr span{color:var(--mute);font-variant-numeric:tabular-nums;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.msr.mx{color:var(--mute);font-size:12.5px}
+.fmeta{font-size:14px;color:color-mix(in srgb,var(--ink) 82%,var(--mute));margin-top:3px;line-height:1.35}
+.fmeta .fg{color:color-mix(in srgb,var(--g) 75%,var(--ink));font-weight:650}
+.fmeta b{font-weight:650;color:var(--ink)}
+.fcast{font-size:13.5px;color:var(--mute);margin-top:1px;line-height:1.35}
+.card.mini .fmeta,.card.mini .fcast{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card.mini .fmeta{margin-bottom:3px}
+/* finestra dei dettagli */
+.dsheet{max-height:90vh;max-height:90dvh;display:flex;flex-direction:column;padding-bottom:max(10px,env(safe-area-inset-bottom))}
+.dx{position:absolute;top:12px;right:12px;z-index:2}
+.dbody{overflow:auto;padding:10px 16px 14px;overscroll-behavior:contain}
+.dbody .card{box-shadow:none;border:0;border-radius:0;padding:6px 0 4px 16px;background:none}
+.dbody .card::before{border-radius:3px}
+.dbody .title{font-size:1.65rem;padding-right:42px}
+.dbody .desc{-webkit-line-clamp:unset;display:block;cursor:auto;font-size:15.5px}
+.dwhen{font-size:15px;font-weight:650;color:var(--ink);margin:6px 0 2px}
+.dvacts{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px 16px}
+@media(min-width:760px){#ddlg .dsheet{bottom:auto;top:50%;transform:translate(-50%,-50%);width:min(640px,92vw);border-radius:22px;animation:pop .18s ease-out}#ddlg .grab{display:none}#ddlg .dbody{padding:22px 24px 18px}}
+@keyframes pop{from{opacity:0;transform:translate(-50%,-48%)}}
 .card{background:var(--paper);border-radius:var(--r);box-shadow:var(--shadow);border:1px solid var(--line);padding:14px 16px 12px 18px;position:relative;overflow:hidden;display:flex;flex-direction:column;transition:border-color .15s}
 @media(hover:hover){.card:hover{border-color:color-mix(in srgb,var(--g) 35%,var(--line))}}
 .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--g)}
@@ -507,6 +547,11 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
  <div class="grab"></div>
  <div class="fwrap"></div>
 </div></dialog>
+<dialog id="ddlg" aria-label="Dettagli"><div class="sheet dsheet">
+ <div class="grab"></div>
+ <button class="xbtn dx" data-ddclose aria-label="Chiudi">✕</button>
+ <div class="dbody"></div>
+</div></dialog>
 <dialog id="dlg" aria-label="Condividi"><div class="sheet pad">
  <div class="grab"></div>
  <h3>Condividi il calendario</h3>
@@ -543,7 +588,7 @@ const CINEMA=CGIORNO?SALE.flatMap(s=>(Array.isArray(s.film)?s.film:[]).filter(f=
  const g={};if(f.giorni&&typeof f.giorni==="object")for(const [k,v] of Object.entries(f.giorni))if(ISO.test(k)&&Array.isArray(v))g[k]=srtT(v.filter(x=>HM.test(x)));
  if(!Object.keys(g).length&&Array.isArray(f.orari))g[CGIORNO]=srtT(f.orari.filter(x=>HM.test(x)));
  const ks=Object.keys(g).sort(),wk=/^(Multisala|D'essai)$/.test(s.tipo||"")&&g[CGIORNO]!==undefined;
- return {_kind:"c",id:s.id,data:ks[0]||CGIORNO,fino:[ks[ks.length-1]||CGIORNO,wk?wkEnd(CGIORNO):CGIORNO].sort().pop(),ora:"",artista:f.titolo,luogo:s.nome,citta:s.citta||"Bologna",genere:s.tipo||"Sala di comunità",tipo:"",rassegna:"",descrizione:[f.genere,f.regia?"regia di "+f.regia:""].filter(Boolean).join(" · "),fonte:s.fonte||"",biglietti:"",sito_luogo:s.sito||"",_g:g,_wk:wk,_orari:g[CGIORNO]||[],_vo:/v\.?o\b|originale|sottotitol/i.test(f.versione||""),_ver:f.versione||"",_ind:s.indirizzo||""}})):[];
+ return {_kind:"c",id:s.id,data:ks[0]||CGIORNO,fino:[ks[ks.length-1]||CGIORNO,wk?wkEnd(CGIORNO):CGIORNO].sort().pop(),ora:"",artista:f.titolo,luogo:s.nome,citta:s.citta||"Bologna",genere:s.tipo||"Sala di comunità",tipo:"",rassegna:"",descrizione:[f.genere,f.regia?"di "+f.regia:"",f.interpreti?"con "+f.interpreti:""].filter(Boolean).join(" · "),fonte:s.fonte||"",_gen:f.genere||"",_reg:f.regia||"",_int:f.interpreti||"",_dur:f.durata||null,_anno:f.anno||null,_paese:f.paese||"",biglietti:"",sito_luogo:s.sito||"",_g:g,_wk:wk,_orari:g[CGIORNO]||[],_vo:/v\.?o\b|originale|sottotitol/i.test(f.versione||""),_ver:f.versione||"",_ind:s.indirizzo||""}})):[];
 const ART_URL="https://claude.ai/artifact/VkNm64jekYZkPj73i3mQAa",WEB_URL="https://drdonatistefano-cmyk.github.io/eventi-bologna/";
 const ON_WEB=/(^|\.)github\.io$/.test(location.hostname);
 const SITE_URL=ON_WEB?WEB_URL:ART_URL;
@@ -800,6 +845,33 @@ function card(e){
   ${/^https:/.test(e.fonte||"")&&e.fonte!==e.biglietti?`<a class="act" href="${esc(e.fonte)}" target="_blank" rel="noopener">Info</a>`:""}
  </div></article>`}
 
+let OPEN=[];const reg=x=>OPEN.push(x)-1;
+const miniA=(i,lab,g,inner)=>`<article class="card mini" data-open="${i}" tabindex="0" role="button" aria-label="Apri la scheda: ${esc(lab)}" style="--g:var(${g})"><span class="mgo" aria-hidden="true"></span>${inner}<div class="mfoot">${"%FOOT%"}</div></article>`;
+function mini(e){
+ if(e._kind==="m")return miniM(e);
+ const g=G[e.genere]||{c:"--mute",l:e.genere},tm0=/\d/.test(e.ora||"")?e.ora:"";
+ const multi=e.fino&&e.fino!==e.data?`dal ${fmt(e.data,{day:"numeric",month:"short"})} al ${fmt(e.fino,{day:"numeric",month:"short"})}`:"";
+ const inner=`<div class="top">${tm0?`<span class="time">${esc(tm0)}</span>`:""}<span class="gtag">${esc(e.tipo==="Comicità"?"Comici":g.l)}${e.tipo&&e.tipo!=="Comicità"?" · "+esc(e.tipo):""}</span>${multi?`<span class="multi">${multi}</span>`:""}</div><h3 class="title">${esc(e.artista)}</h3>${st.venue?"":`<div class="mloc">${PIN}<span>${esc(e.luogo)}${e._c!=="Bologna"?" · "+esc(e._c):""}</span></div>`}`;
+ return miniA(reg({k:"e",e}),e.artista,g.c,inner).replace("%FOOT%",dispPill(e))}
+function miniM(e){
+ const g=GLAB[e.genere]||{c:"--mute",l:e.genere||"Mostra",em:"🖼️"},left=Math.round((D(e.fino)-D(today))/864e5),fut=e.data>today;
+ const tot=Math.max(1,Math.round((D(e.fino)-D(e.data))/864e5)+1),pct=fut?0:Math.min(100,Math.max(0,100*(tot-left-1)/tot));
+ const st0=fut?{c:"soon",l:`Apre il ${fmt(e.data,{day:"numeric",month:"short"})}`}:left<=14?{c:"last",l:left===0?"Ultimo giorno":"Ultimi giorni"}:{c:"open",l:"In corso"};
+ const per=fut?`Dal <b>${fY(e.data)}</b> al ${fY(e.fino)}`:`Fino al <b>${fY(e.fino)}</b> <small>· ${left===0?"oggi l'ultimo giorno":"ancora "+dur(left)}</small>`;
+ const inner=`<div class="top"><span class="gtag">${g.em||""} ${esc(g.l)}</span><span class="mst ${st0.c}">${st0.l}</span></div><h3 class="title">${esc(e.artista)}</h3><div class="mper">${per}</div>${fut?"":`<div class="mbar"><i style="width:${pct.toFixed(1)}%"></i></div>`}${st.venue?"":`<div class="mloc">${PIN}<span>${esc(e.luogo)}${e._c!=="Bologna"?" · "+esc(e._c):""}</span></div>`}`;
+ return miniA(reg({k:"m",e}),e.artista,g.c,inner).replace("%FOOT%",`<span class="pill${e._ing==="Ingresso gratuito"?" ok":""}">${esc(e._ing)}</span>`)}
+function miniC(f){
+ const rows=f.r,vo=rows.some(r=>r._vo),d0=dayKeys()[0],many=dayKeys().length>1,fs=fasSel();
+ const byT=new Map();rows.forEach(r=>byT.set(r.genere,(byT.get(r.genere)||0)+1));const g=GLAB[[...byT.entries()].sort((a,b)=>b[1]-a[1])[0][0]]||{c:"--mute"};
+ const line=r=>{let s;if(many){const ds=dayKeys().filter(d=>(tOn(r,d)||[]).length);s=ds.length?ds.slice(0,3).map(d=>dLab(d)).join(", ")+(ds.length>3?"…":""):"in cartellone"}else{const x=(tOn(r,d0)||[]).filter(o=>passF(o,d0,fs));s=x.length?x.join(" · "):"orari sul sito"}return `<div class="msr"><b>${esc(r.luogo.replace(/^Cinema /,""))}</b><span>${esc(s)}</span></div>`};
+ const inner=`<div class="top"><span class="gtag">🎬 ${rows.length===1?"1 sala":rows.length+" sale"}</span>${vo?'<span class="vob">V.O.</span>':""}</div><h3 class="title">${esc(f.t)}</h3>${fMeta(f.t,false)}${rows.slice(0,2).map(line).join("")}${rows.length>2?`<div class="msr mx">+ altre ${rows.length-2} ${rows.length-2===1?"sala":"sale"}</div>`:""}`;
+ return miniA(reg({k:"c",f}),f.t,g.c,inner).replace("%FOOT%","")}
+function openDetail(i){const x=OPEN[+i];if(!x)return;let h,lab;
+ if(x.k==="c"){h=cardC(x.f.t,x.f.r);lab=x.f.t}
+ else{const e=x.e;lab=e.artista;h=x.k==="m"?cardM(e):card(e);
+  if(x.k==="e"){const tt=/\d/.test(e.ora||"")?", ore "+e.ora:"",w=e.fino&&e.fino!==e.data?`Dal ${fmt(e.data,{weekday:"long",day:"numeric",month:"long"})} al ${fmt(e.fino,{weekday:"long",day:"numeric",month:"long",year:"numeric"})}`:fmt(e.data,{weekday:"long",day:"numeric",month:"long",year:"numeric"})+tt;h=h.replace("</h3>",`</h3><div class="dwhen">🗓️ ${esc(w.charAt(0).toUpperCase()+w.slice(1))}</div>`)}
+  h+=`<div class="dvacts"><button class="act" data-venue="${esc(e.luogo)}">${x.k==="m"?"Tutte le mostre della sede":"Tutto il programma del luogo"}</button><a class="act" href="${esc(maps(e.luogo,e._c))}" target="_blank" rel="noopener">${PIN} Mappa</a></div>`}
+ const b=$("#ddlg .dbody");b.innerHTML=h;b.scrollTop=0;openDlg($("#ddlg"));track(`${tm()}/dettaglio/${lab}`,"Apertura scheda")}
 const EMPTY0=()=>`<div class="empty"><b>Nessun risultato con queste scelte</b>Togli qualche filtro o allarga il periodo.<br><button class="big reset" data-reset style="margin:14px auto 0;padding:0 20px">Azzera filtri</button></div>`;
 const giornoC=()=>CGIORNO?fmt(CGIORNO,{weekday:"long",day:"numeric",month:"long"}):"";
 function cTimes(r){const dk=dayKeys(),many=dk.length>1,fs=fasSel(),rows=[];
@@ -816,16 +888,23 @@ function cTimes(r){const dk=dayKeys(),many=dk.length>1,fs=fasSel(),rows=[];
   let j=i;while(j+1<rows.length&&rows[j+1].prev)j++;
   h+=`<div class="tday"><b>${i===j?esc(dLab(x.d)):esc(dLab(x.d))+"–"+esc(dLab(rows[j].d))}</b><em class="prev">in cartellone · orari sul sito della sala</em></div>`;i=j+1}
  return `<div class="times wk">${h}</div>`}
+let FI=null;
+function fInfo(t){if(!FI){FI=new Map();for(const e of CINEMA){const k=norm(e.artista),x=FI.get(k)||{};for(const [a,b] of [["g",e._gen],["r",e._reg],["i",e._int],["d",e._dur],["y",e._anno],["p",e._paese]])if(b&&!x[a])x[a]=b;FI.set(k,x)}}return FI.get(norm(t))||{}}
+function fMeta(t,full){const x=fInfo(t),g=x.g?x.g.split(/\s*,\s*/).slice(0,full?6:2).join(", "):"";
+ const a=[g?`<span class="fg">${esc(g)}</span>`:(x.p?esc(x.p):""),x.r?`di <b>${esc(x.r)}</b>`:""].filter(Boolean);
+ if(full){if(x.y)a.push(String(x.y));if(x.d)a.push(x.d+" min")}else if(!g&&x.y)a.splice(1,0,String(x.y));
+ return (a.length?`<div class="fmeta">${a.join(" · ")}</div>`:"")+(x.i?`<div class="fcast">con ${esc(x.i)}</div>`:"")}
 function cardC(title,rows){
- const vo=rows.some(r=>r._vo),meta=(rows.find(r=>r.descrizione)||{}).descrizione||"";
+ const vo=rows.some(r=>r._vo);
  const byT=new Map();rows.forEach(r=>{if(!byT.has(r.genere))byT.set(r.genere,0);byT.set(r.genere,byT.get(r.genere)+1)});
  const g=GLAB[[...byT.entries()].sort((a,b)=>b[1]-a[1])[0][0]]||{c:"--mute",l:"Cinema",em:"🎬"};
  const srow=r=>{const gg=GLAB[r.genere]||g;return `<div class="srow" style="--g:var(${gg.c})"><button class="sn where" data-venue="${esc(r.luogo)}" title="Tutti i film di ${esc(r.luogo)}"><b class="wv">${esc(r.luogo)}</b><small>${esc(r._c+(r._c!=="Bologna"&&ZLAB[r._z]?" · "+ZLAB[r._z]:""))}${r._ver?" · "+esc(r._ver):""}</small></button>${/^https:/.test(r.sito_luogo||r.fonte||"")?`<a class="act" href="${esc(r.sito_luogo||r.fonte)}" target="_blank" rel="noopener">Programma</a>`:"<span></span>"}${cTimes(r)}</div>`};
  return `<article class="card cine" style="--g:var(${g.c})">
  <div class="top"><span class="gtag">🎬 ${rows.length===1?"1 sala":rows.length+" sale"}</span>${vo?'<span class="vob">V.O.</span>':""}</div>
- <h3 class="title">${esc(title)}</h3>${meta?`<div class="fmeta">${esc(meta)}</div>`:""}
+ <h3 class="title">${esc(title)}</h3>${fMeta(title,true)}
  <div class="srows">${rows.map(srow).join("")}</div></article>`}
 function renderList(ev){
+ OPEN=[];
  if(MODE==="c"){
   if(!CINEMA.length){$("#list").innerHTML=`<div class="empty"><b>Programmazione dei cinema in preparazione</b>Torna tra qualche giorno: l'elenco si aggiorna ogni settimana.</div>`;$("#more").hidden=true;return}
   if(!ev.length){$("#list").innerHTML=EMPTY0();$("#more").hidden=true;return}
@@ -833,15 +912,15 @@ function renderList(ev){
   const dk0=dayKeys()[0],hasT=r=>(tOn(r,dk0)||[]).length?0:1;F.forEach(f=>f.r.sort((a,b)=>hasT(a)-hasT(b)));
   const films=[...F.values()].sort((a,b)=>b.r.length-a.r.length||a.t.localeCompare(b.t,"it"));
   const shown=films.slice(0,st.n);
-  $("#list").innerHTML=`<h2 class="month nt">${st.venue?"In programma":"Film in sala"}<small>${films.length}</small></h2><div class="cards">${shown.map(f=>cardC(f.t,f.r)).join("")}</div>`;
+  $("#list").innerHTML=`<h2 class="month nt">${st.venue?"In programma":"Film in sala"}<small>${films.length}</small></h2><div class="cards">${shown.map(miniC).join("")}</div>`;
   const rest=films.length-shown.length;$("#more").hidden=rest<=0;$("#more").textContent=`Mostra altri ${Math.min(rest,PAGE)} film (${rest} rimanenti)`;return}
  if(MODE==="m"){
   if(!MOSTRE.length){$("#list").innerHTML=`<div class="empty"><b>Elenco delle mostre in preparazione</b>Ricarica la pagina tra qualche istante.</div>`;$("#more").hidden=true;return}
   if(!ev.length){$("#list").innerHTML=EMPTY0();$("#more").hidden=true;return}
   const shown=ev.slice(0,st.n),now=shown.filter(e=>e.data<=today),next=shown.filter(e=>e.data>today);
   let h="";
-  if(now.length)h+=`<h2 class="month nt">In corso<small>${ev.filter(e=>e.data<=today).length}</small></h2><div class="cards">${now.map(card).join("")}</div>`;
-  if(next.length)h+=`<h2 class="month nt">Prossime aperture<small>${ev.filter(e=>e.data>today).length}</small></h2><div class="cards">${next.map(card).join("")}</div>`;
+  if(now.length)h+=`<h2 class="month nt">In corso<small>${ev.filter(e=>e.data<=today).length}</small></h2><div class="cards">${now.map(mini).join("")}</div>`;
+  if(next.length)h+=`<h2 class="month nt">Prossime aperture<small>${ev.filter(e=>e.data>today).length}</small></h2><div class="cards">${next.map(mini).join("")}</div>`;
   $("#list").innerHTML=h;const rest=ev.length-shown.length;$("#more").hidden=rest<=0;$("#more").textContent=`Mostra altre ${Math.min(rest,PAGE)} (${rest} rimanenti)`;return}
  if(!EVENTS.length){$("#list").innerHTML=`<div class="empty"><b>Calendario momentaneamente non disponibile</b>Ricarica la pagina tra qualche istante.</div>`;$("#more").hidden=true;return}
  if(!ev.length){$("#list").innerHTML=EMPTY0();$("#more").hidden=true;return}
@@ -851,7 +930,7 @@ function renderList(ev){
  for(const [m,days] of groups){
   h+=`<h2 class="month">${fmt(m+"-15",{month:"long",year:"numeric"})}<small>${[...days.values()].reduce((a,b)=>a+b.length,0)}</small></h2>`;
   for(const [d,list] of days){const tag=d===today?"Oggi":d===addDays(today,1)?"Domani":"";
-   h+=`<section class="day"><div class="dlabel${tag==="Oggi"?" today":""}"><div class="wd">${fmt(d,{weekday:"short"})}</div><div class="n">${D(d).getDate()}</div><div class="mo">${fmt(d,{weekday:"long",day:"numeric",month:"long"})}</div>${tag?`<div class="tg">${tag}</div>`:""}</div><div class="cards">${list.map(card).join("")}</div></section>`}}
+   h+=`<section class="day"><div class="dlabel${tag==="Oggi"?" today":""}"><div class="wd">${fmt(d,{weekday:"short"})}</div><div class="n">${D(d).getDate()}</div><div class="mo">${fmt(d,{weekday:"long",day:"numeric",month:"long"})}</div>${tag?`<div class="tg">${tag}</div>`:""}</div><div class="cards">${list.map(mini).join("")}</div></section>`}}
  $("#list").innerHTML=h;
  const rest=ev.length-shown.length;$("#more").hidden=rest<=0;$("#more").textContent=`Mostra altri ${Math.min(rest,PAGE)} (${rest} rimanenti)`}
 
@@ -912,6 +991,8 @@ function openVenue(name){st.venue=name;render(true);scrollToList()}
 document.addEventListener("click",e=>{
  const t=e.target;
  const mo=t.closest("[data-mode]");if(mo){setMode(mo.dataset.mode);return}
+ if(t.closest("[data-ddclose]")){closeD($("#ddlg"));return}
+ const op=t.closest("[data-open]");if(op){openDetail(op.dataset.open);return}
  const qx=t.closest("[data-qclr]");if(qx){const w=qx.dataset.qclr;if(w==="day")[...st.m].filter(isDay).forEach(x=>st.m.delete(x));else if(w==="fas")fasSel().forEach(x=>st.m.delete(x));else if(w==="sala"){st.g.clear();st.t.delete("In lingua originale")}else st[w].clear();render(true);return}
  const sb=t.closest("[data-sub]");if(sb){sub=sb.dataset.sub;subAnim=true;lAll=false;lq="";renderPanels();return}
  const pb=t.closest("[data-pop]");if(pb){popK=popK===pb.dataset.pop?"":pb.dataset.pop;lAll=false;renderFbar();return}
@@ -930,7 +1011,7 @@ document.addEventListener("click",e=>{
  const p=t.closest("[data-pill]");if(p){const x=PILLS[+p.dataset.pill];if(x){x.act();render(true)}return}
  const vw=t.closest("[data-view]");if(vw){st.view=vw.dataset.view;st.venue="";render(true);scrollToList();return}
  if(t.closest("[data-close]")){closeD($("#fdlg"));scrollToList();return}
- const vb=t.closest("[data-venue]");if(vb){openVenue(vb.dataset.venue);return}
+ const vb=t.closest("[data-venue]");if(vb){if($("#ddlg").open)closeD($("#ddlg"));openVenue(vb.dataset.venue);return}
  if(t.closest("[data-back]")){st.venue="";render(true);scrollToList();return}
  const r=t.closest("[data-r]");if(r){st.r.clear();st.r.add(r.dataset.r);st.view="cal";render(true);scrollToList();return}
  const d=t.closest(".desc");if(d)d.classList.toggle("open");
@@ -964,6 +1045,8 @@ function shareText(){const ev=visible(),list=ev.slice(0,20);
 const waHref=()=>"https://wa.me/?text="+encodeURIComponent(shareText());
 $("#share").onclick=()=>{const n=visible().length;$("#scope").innerHTML=`Stai condividendo <b>${n} ${nn(n)}</b> · ${scopeLabel()?esc(scopeLabel()):"tutto il calendario"}.`;$("#wa").href=waHref();openDlg($("#dlg"))};
 $("#dlg").addEventListener("click",e=>{if(e.target.id==="dlg")closeD($("#dlg"))});
+$("#ddlg").addEventListener("click",e=>{if(e.target.id==="ddlg")closeD($("#ddlg"))});
+document.addEventListener("keydown",e=>{const o=e.target.closest&&e.target.closest("[data-open]");if(o&&(e.key==="Enter"||e.key===" ")){e.preventDefault();openDetail(o.dataset.open)}});
 function openURL(u){try{const a=document.createElement("a");a.href=u;a.target="_top";a.rel="noopener";document.body.appendChild(a);a.click();a.remove()}catch(_){try{location.href=u}catch(__){}}}
 $("#send").onclick=()=>{const to=$("#to").value.split(/[,;\s]+/).filter(Boolean).join(",");openURL(`mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent((MODE==="m"?"Mostre a Bologna":"Eventi a Bologna")+(scopeLabel()?" – "+scopeLabel():""))}&body=${encodeURIComponent(shareText())}`);closeD($("#dlg"))};
 async function copyText(s){try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(s);return true}}catch(_){}
