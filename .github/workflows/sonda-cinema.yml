@@ -9,9 +9,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Scarica pagine di prova
         run: |
-          mkdir -p sonda
+          rm -rf sonda; mkdir -p sonda
           UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"
-          for u in "https://www.mymovies.it/robots.txt" "https://www.mymovies.it/cinema/bologna/" "https://www.comingsoon.it/robots.txt" "https://www.comingsoon.it/cinema/bologna/" "https://cinetecadibologna.it/programmazione/film-in-programma/" "https://www.thespacecinema.it/robots.txt" "https://www.ucicinemas.it/robots.txt" "https://www.ucicinemas.it/cinema/emilia-romagna/bologna/uci-cinemas-meridiana-bologna/" "https://www.cinemadibologna.it/" "https://www.circuitocinemabologna.it/" ; do
+          for u in "https://www.mymovies.it/cinema/bologna/5565/" "https://www.mymovies.it/cinema/bologna/5454/" "https://www.thespacecinema.it/i-nostri-cinema/bologna/al-cinema"; do
             n=$(echo "$u" | sed 's#https://##; s#[^a-zA-Z0-9]#_#g')
             code=$(curl -sS -L -A "$UA" -o "sonda/$n.html" -w "%{http_code}" "$u" || echo ERR)
             echo "$code $(wc -c < sonda/$n.html) $u" | tee -a sonda/esito.txt
@@ -20,4 +20,4 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add sonda && git commit -m "Sonda cinema 2" && git pull --rebase && git push
+          git add sonda && git commit -m "Sonda cinema 3" && git pull --rebase && git push
