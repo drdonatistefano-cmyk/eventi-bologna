@@ -17,6 +17,7 @@ from zoneinfo import ZoneInfo
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATI = os.path.join(RADICE, "dati", "cinema.json")
 STATO = os.path.join(RADICE, "dati", "cinema_stato.json")
+CACHE = os.path.join(RADICE, "dati", "film_info.json")   # schede dei film già lette: ogni film si legge una volta sola
 UA = "Mozilla/5.0 (compatible; EventiBolognaBot/1.0; +https://drdonatistefano-cmyk.github.io/eventi-bologna/)"
 CINETECA = "https://cinetecadibologna.it/programmazione/film-in-programma/"  # tutta la settimana
 CT_SALE = {"lumi": "Cinema Lumière", "modernissimo": "Cinema Modernissimo", "cervi": "Sala Cervi"}
@@ -128,7 +129,8 @@ def leggi_cineteca(h, oggi):
         du = re.search(r"\((\d+)′\)", info)
         ver = re.search(r'audio-info.*?info-item-text">(.*?)</div>', b, re.S)
         titolo = testo(tit.group(1))
-        f = per_sala.setdefault(sala, {}).setdefault(titolo.lower(), {"titolo": titolo, "orari": [], "versione": testo(ver.group(1)) if ver else "", "genere": "", "regia": regia.group(1) if regia else "", "paese": pa.group(1).strip() if pa else "", "anno": int(pa.group(2)) if pa else None, "durata": int(du.group(1)) if du else None})
+        link = re.search(r'href="(https://cinetecadibologna\.it/programmazione/proiezione/[^"?]+/)', b)
+        f = per_sala.setdefault(sala, {}).setdefault(titolo.lower(), {"titolo": titolo, "orari": [], "versione": testo(ver.group(1)) if ver else "", "genere": "", "regia": regia.group(1) if regia else "", "paese": pa.group(1).strip() if pa else "", "anno": int(pa.group(2)) if pa else None, "durata": int(du.group(1)) if du else None, "_scheda": link.group(1) if link else ""})
         f["orari"].append(dt.group(2))
     for films in per_sala.values():
         for f in films.values():
@@ -209,6 +211,22 @@ def main():
                     x["giorni"][g] = f["orari"]
                     if k == 0:
                         x["orari"] = f["orari"]
+        cache = json.load(open(CACHE, encoding="utf-8")) if os.path.exists(CACHE) else {}
+        nuove = 0
+        for films in ct.values():
+            for f in films.values():
+                u = f.pop("_scheda", "")
+                if u and u not in cache and nuove < 40:
+                    try:
+                        h = scarica(u)
+                        m = re.search(r'Con: ([^<"\n]+)', h)
+                        cache[u] = {"interpreti": html.unescape(m.group(1)).strip() if m else ""}
+                        nuove += 1
+                    except Exception as e:
+                        log.append(f"scheda film {u}: {e}")
+                if u in cache and cache[u].get("interpreti") and not f.get("interpreti"):
+                    f["interpreti"] = cache[u]["interpreti"]
+        json.dump(cache, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         for s in d["sale"]:
             if s["nome"] in CT_SALE.values():
                 s["film"] = list(ct.get(s["nome"], {}).values())
