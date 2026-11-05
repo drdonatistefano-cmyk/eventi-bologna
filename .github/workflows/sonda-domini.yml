@@ -12,17 +12,17 @@ jobs:
           set +e
           sudo apt-get install -y -qq whois >/dev/null 2>&1
           mkdir -p sonda; : > sonda/nomi.txt
-          NOMI="tonightout outtonight goingout goingoutnow nightplan tonightplan plantonight eventsnow eventlist showlist showspot stagepass nightpass showfinder gigfinder whatsontonight goout gooutnow letsgoout outandabout freetonight weekendplan nightlist eventfeed seeyouthere meetmethere nightguide showtonight gigtonight eventstonight tonightevents outly eventzy gigzy showzy nexto evenzo onstage frontrow firstrow nightsout nightoutnow myeventsguide eventsguide eventmap"
-          for n in $NOMI; do
-            c=$(curl -s -o /dev/null -w "%{http_code}" "https://rdap.verisign.com/com/v1/domain/$n.com")
-            [ "$c" = "404" ] && com=LIBERO || com=preso
-            w=$(whois -h whois.nic.it "$n.it" 2>/dev/null | grep -m1 -i "^Status:" | awk '{print $2}')
-            [ "$w" = "AVAILABLE" ] && it=LIBERO || it="preso"
-            echo "$n | .com $com | .it $it" | tee -a sonda/nomi.txt
-            sleep 1
+          for n in tonightout showtonight stagepass firstrow gigzy showzy eventzy nightoutnow outtonight letsgoout; do
+            r=""
+            for tld in app live events club co; do
+              c=$(curl -s -L -o /dev/null -w "%{http_code}" "https://rdap.org/domain/$n.$tld" || echo ERR)
+              [ "$c" = "404" ] && r="$r .$tld LIBERO" || r="$r .$tld preso($c)"
+              sleep 1
+            done
+            echo "$n |$r" | tee -a sonda/nomi.txt
           done
       - name: Salva
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add sonda && git commit -m "Verifica nomi inglesi" && git pull --rebase && git push
+          git add sonda && git commit -m "Verifica estensioni" && git pull --rebase && git push
