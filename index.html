@@ -136,6 +136,40 @@ h1 em{color:var(--terra);font-style:italic}
 .pft .big{height:40px;padding:0 22px}
 .zx0{width:36px;flex:none}
 main{max-width:none}
+/* Filtri rapidi: un riquadro con un gruppo per riga (Quando, Genere…); su iPhone griglie a colonne uguali */
+.qbar{display:grid;gap:10px;margin:4px 0 2px;padding:12px 14px;border-radius:18px;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow)}
+.qg{display:grid;grid-template-columns:104px minmax(0,1fr);align-items:start;gap:8px}
+.qg+.qg{padding-top:10px;border-top:1px dashed var(--line)}
+.qh{display:flex;flex-direction:column;justify-content:center;min-height:34px;gap:1px}
+.qlab{font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.qclr{align-self:flex-start;border:0;background:none;color:var(--terra);font-weight:700;font-size:12.5px;padding:0;cursor:pointer}
+.qchips{display:flex;flex-wrap:wrap;gap:6px}
+.qc{height:34px;min-width:0;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:var(--bg);display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:14px;cursor:pointer;transition:background .15s,border-color .15s;color:var(--ink)}
+.qc .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.qc small{flex:none;color:var(--faint);font-size:12px;font-variant-numeric:tabular-nums}
+.qc .em{flex:none}
+.qc.on{background:color-mix(in srgb,var(--g,var(--terra)) 15%,var(--paper));border-color:var(--g,var(--terra));box-shadow:inset 0 0 0 1px var(--g,var(--terra));font-weight:650}
+.qc.on small{color:var(--ink)}
+.qc:disabled{opacity:.38;cursor:default}
+@media(hover:hover){.qc:not(:disabled):not(.on):hover{border-color:color-mix(in srgb,var(--g,var(--terra)) 50%,var(--line))}}
+@media(max-width:759px){
+ .qbar{gap:12px;padding:12px 12px 13px;margin-top:2px}
+ .qg{grid-template-columns:1fr;gap:7px}
+ .qg+.qg{padding-top:11px}
+ .qh{flex-direction:row;align-items:baseline;justify-content:space-between;min-height:0}
+ .qchips{display:grid;grid-template-columns:repeat(var(--cols,3),minmax(0,1fr));gap:6px}
+ .qc{height:50px;padding:4px 6px;border-radius:13px;font-size:14px;flex-direction:column;gap:1px;line-height:1.15}
+ .qc .t{max-width:100%}
+ .qc .em{margin-right:3px}
+ .qc small{font-size:11.5px}
+ .qc .lg{display:none}
+ .qg[style*="--cols:4"] .qc{padding:4px 2px;font-size:13.5px}}
+@media(min-width:760px){.qc .sm{display:none}}
+.srow .tday{display:flex;flex-wrap:wrap;align-items:center;gap:5px;grid-column:1/-1}
+.srow .tday b{font-size:12px;font-weight:700;color:var(--mute);min-width:44px;text-transform:capitalize}
+.srow .prev{font-size:13px;color:var(--mute);font-style:italic}
+.times.wk{display:grid;gap:5px}
+.srow .tday b{min-width:52px}
 /* Pannello filtri: pagina principale con una riga per filtro, poi la pagina del singolo filtro */
 .fwrap{display:flex;flex-direction:column;flex:1;min-height:0}
 .fsheet .shead{gap:8px;padding:8px 16px 10px;border-bottom:1px solid var(--line)}
@@ -449,11 +483,11 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
   <button class="iconbtn ghost" id="fbtn" aria-label="Filtri"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span class="lbl">Filtri</span><b class="badge" id="fbadge" hidden>0</b></button>
   <button class="iconbtn" id="share" aria-label="Condividi"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="m16 6-4-4-4 4"/><path d="M12 2v13"/></svg><span class="lbl">Condividi</span></button>
  </div>
- <div class="railw"><button class="chip rz" id="rzm" data-reset hidden>✕ Azzera</button><div class="rail" id="grail" role="group" aria-label="Filtri rapidi"></div></div>
  <div class="fbar" id="fbar" hidden></div>
 </div>
 <div class="pop" id="pop" hidden role="dialog" aria-label="Scelta filtro"></div></div>
 
+<div class="wrap"><div class="qbar" id="qbar" role="group" aria-label="Filtri rapidi"></div></div>
 <div class="wrap">
  <main>
   <div class="status"><span class="cnt" id="count" aria-live="polite"></span><div class="seg only-phone topctl" role="group" aria-label="Vista"><button data-view="cal" class="on">Calendario</button><button data-view="luoghi">Luoghi</button></div><span class="pills" id="active"></span></div>
@@ -503,7 +537,13 @@ const MOSTRE=(Array.isArray(MD.mostre)?MD.mostre:[]).filter(m=>m&&ISO.test(m.ini
 const CD=(window.CINEMA_DATA&&typeof window.CINEMA_DATA==="object")?window.CINEMA_DATA:{aggiornato:"",sale:[]};
 const CGIORNO=ISO.test(CD.giorno_orari||"")?CD.giorno_orari:(ISO.test(CD.aggiornato||"")?CD.aggiornato:"");
 const SALE=(Array.isArray(CD.sale)?CD.sale:[]).filter(s=>s&&s.nome);
-const CINEMA=CGIORNO?SALE.flatMap(s=>(Array.isArray(s.film)?s.film:[]).filter(f=>f&&f.titolo).map(f=>({_kind:"c",id:s.id,data:CGIORNO,fino:(()=>{const d=new Date(CGIORNO+"T12:00:00");d.setDate(d.getDate()+6);return d.toISOString().slice(0,10)})(),ora:"",artista:f.titolo,luogo:s.nome,citta:s.citta||"Bologna",genere:s.tipo||"Sala di comunità",tipo:"",rassegna:"",descrizione:[f.genere,f.regia?"regia di "+f.regia:""].filter(Boolean).join(" · "),fonte:s.fonte||"",biglietti:"",sito_luogo:s.sito||"",_orari:(Array.isArray(f.orari)?f.orari:[]).filter(x=>/^\d{1,2}:\d{2}$/.test(x)),_vo:/v\.?o\b|originale|sottotitol/i.test(f.versione||""),_ver:f.versione||"",_ind:s.indirizzo||""}))):[];
+const HM=/^\d{1,2}:\d{2}$/,srtT=a=>[...new Set(a)].sort((x,y)=>x.padStart(5,"0").localeCompare(y.padStart(5,"0")));
+const wkEnd=s=>{const d=new Date(s+"T12:00:00"),o=(3-d.getDay()+7)%7;d.setDate(d.getDate()+o);return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`};
+const CINEMA=CGIORNO?SALE.flatMap(s=>(Array.isArray(s.film)?s.film:[]).filter(f=>f&&f.titolo).map(f=>{
+ const g={};if(f.giorni&&typeof f.giorni==="object")for(const [k,v] of Object.entries(f.giorni))if(ISO.test(k)&&Array.isArray(v))g[k]=srtT(v.filter(x=>HM.test(x)));
+ if(!Object.keys(g).length&&Array.isArray(f.orari))g[CGIORNO]=srtT(f.orari.filter(x=>HM.test(x)));
+ const ks=Object.keys(g).sort(),wk=/^(Multisala|D'essai)$/.test(s.tipo||"")&&g[CGIORNO]!==undefined;
+ return {_kind:"c",id:s.id,data:ks[0]||CGIORNO,fino:[ks[ks.length-1]||CGIORNO,wk?wkEnd(CGIORNO):CGIORNO].sort().pop(),ora:"",artista:f.titolo,luogo:s.nome,citta:s.citta||"Bologna",genere:s.tipo||"Sala di comunità",tipo:"",rassegna:"",descrizione:[f.genere,f.regia?"regia di "+f.regia:""].filter(Boolean).join(" · "),fonte:s.fonte||"",biglietti:"",sito_luogo:s.sito||"",_g:g,_wk:wk,_orari:g[CGIORNO]||[],_vo:/v\.?o\b|originale|sottotitol/i.test(f.versione||""),_ver:f.versione||"",_ind:s.indirizzo||""}})):[];
 const ART_URL="https://claude.ai/artifact/VkNm64jekYZkPj73i3mQAa",WEB_URL="https://drdonatistefano-cmyk.github.io/eventi-bologna/";
 const ON_WEB=/(^|\.)github\.io$/.test(location.hostname);
 const SITE_URL=ON_WEB?WEB_URL:ART_URL;
@@ -557,7 +597,20 @@ let ALL=ALL_S,MONTHS=monthsOf(ALL),COMUNI_CON=new Set(ALL.map(e=>e._c));
 /* ---------- stato e filtri (tutti a scelta multipla) ---------- */
 const QUICK_S={oggi:"Oggi",weekend:"Weekend "+wkLabel,"7g":"Prossimi 7 giorni"};
 const QUICK_M={oggi:"Aperte oggi",weekend:"Aperte nel weekend "+wkLabel,ultimi:"Ultimi giorni (chiudono entro 14 gg)",arrivo:"In arrivo (aprono entro 30 gg)"};
-const QUICK_C={ancora:"Da adesso",pom:"Pomeriggio (prima delle 18)",sera:"Sera (18–21)",notte:"Dopo le 21"};
+const CDAYS=[...Array(7)].map((_,i)=>{const d=new Date();d.setDate(d.getDate()+i);return iso(d)});
+const dLab=(d,long)=>{if(d===today)return "Oggi";if(d===CDAYS[1])return "Domani";const s=fmt(d,long?{weekday:"long",day:"numeric",month:"long"}:{weekday:"short",day:"numeric"});return s.charAt(0).toUpperCase()+s.slice(1)};
+const FAS={ancora:"Da adesso",pom:"Pomeriggio (prima delle 18)",sera:"Sera (18–21)",notte:"Dopo le 21"};
+const QUICK_C=Object.assign(Object.fromEntries(CDAYS.map(d=>["g:"+d,dLab(d,true)])),{sett:"Tutta la settimana"},FAS);
+const isDay=k=>k.startsWith("g:")||k==="sett";
+const dayKeys=()=>{if(st.m.has("sett"))return CDAYS;const d=[...st.m].filter(k=>k.startsWith("g:")).map(k=>k.slice(2));return d.length?d:[today]};
+const fasSel=()=>[...st.m].filter(k=>FAS[k]);
+const passF=(o,d,fs)=>{fs=fs||fasSel();return !fs.length||fs.some(q=>q==="ancora"?(d===today&&o>=nowHM):FASCIA[q](o))};
+const tOn=(e,d)=>e._g[d];
+const prevOn=(e,d)=>!e._g[d]&&e._wk&&d>CGIORNO&&d<=wkEnd(CGIORNO);
+const availOn=(e,d,fs)=>{fs=fs||fasSel();const x=tOn(e,d);return x?(x.length?x.some(o=>passF(o,d,fs)):!fs.length):(prevOn(e,d)&&!fs.length)};
+const cinemaPass=e=>dayKeys().some(d=>availOn(e,d));
+const cQuickKeys=e=>{const fs=fasSel(),out=CDAYS.filter(d=>availOn(e,d,fs)).map(d=>"g:"+d);if(out.length)out.push("sett");
+ for(const q of Object.keys(FAS))if(dayKeys().some(d=>(tOn(e,d)||[]).some(o=>passF(o,d,[q]))))out.push(q);return out};
 const nowHM=(()=>{const d=new Date();return pad(d.getHours())+":"+pad(d.getMinutes())})();
 const FASCIA={ancora:o=>CGIORNO===today&&o>=nowHM,pom:o=>o<"18:00",sera:o=>o>="18:00"&&o<"21:00",notte:o=>o>="21:00"};
 const tOK=o=>{const f=[...st.m].filter(q=>FASCIA[q]);return !f.length||f.some(q=>FASCIA[q](o))};
@@ -565,7 +618,7 @@ let QUICK=QUICK_S;const in14=addDays(today,14),in30=addDays(today,30);
 const qTest=(q,e)=>FASCIA[q]?(e._orari||[]).some(FASCIA[q]):q==="oggi"?overlaps(e,today,today):q==="weekend"?overlaps(e,wkStart,sun):q==="7g"?overlaps(e,today,in7):q==="ultimi"?(e.data<=today&&end(e)<=in14):q==="arrivo"?(e.data>today&&e.data<=in30):false;
 const SETS=["m","g","c","l","t","r","d"];
 const st={q:"",qn:"",view:"cal",venue:"",n:PAGE,pf:"",pt:""};SETS.forEach(k=>st[k]=new Set());
-const mM=e=>{if(!st.m.size)return true;for(const m of st.m){if(m.length<7?qTest(m,e):(e.data.slice(0,7)<=m&&end(e).slice(0,7)>=m))return true}return false};
+const mM=e=>{if(e._kind==="c")return cinemaPass(e);if(!st.m.size)return true;for(const m of st.m){if(m.length<7?qTest(m,e):(e.data.slice(0,7)<=m&&end(e).slice(0,7)>=m))return true}return false};
 const TESTS={
  q:e=>!st.qn||e._q.includes(st.qn),
  m:mM,
@@ -603,7 +656,7 @@ function optRow(k,v,label,n){const on=st[k].has(v);
  return `<button class="opt${on?" on":""}" data-k="${k}" data-v="${esc(v)}" aria-pressed="${on}" ${n||on?"":"disabled"}><span class="ck"></span><span class="ol">${esc(label)}</span><small>${n||0}</small></button>`}
 const SECS_S=[["g","Genere"],["m","Date"],["c","Dove"],["l","Teatro o locale"],["t","Tipo"],["r","Rassegna"],["d","Disponibilità"]];
 const SECS_M=[["g","Categoria"],["m","Periodo"],["c","Dove"],["l","Museo o sede"],["d","Ingresso"]];
-const SECS_C=[["m","Quando (oggi)"],["g","Tipo di sala"],["c","Dove"],["l","Cinema"],["t","Lingua"]];
+const SECS_C=[["m","Giorno e orario"],["g","Tipo di sala"],["c","Dove"],["l","Cinema"],["t","Lingua"]];
 const SHORT={"Teatro o locale":"Luogo","Museo o sede":"Sede"};
 let SECS=SECS_S,STITLE=Object.fromEntries(SECS);
 const DO=["Ingresso gratuito","A pagamento","Biglietti disponibili","Ultimi posti","Vendita non ancora aperta","Da verificare","Esaurito"];
@@ -613,8 +666,9 @@ function body(k,ctx){
  if(k==="g"){const gc=countBy("g",e=>e.tipo==="Comicità"?[e.genere,"Comici"]:e.genere);
   return `<div class="gopts">`+GOPTS.map(o=>{const c=gc.get(o.k)||0,on=st.g.has(o.k);
    return `<button class="gopt${on?" on":""}" data-k="g" data-v="${esc(o.k)}" aria-pressed="${on}" style="--g:var(${o.c})" ${c||on?"":"disabled"}><span class="em">${o.em}</span><span><b>${o.l}</b><small>${c}</small></span></button>`}).join("")+`</div>`}
- if(k==="m"&&MODE==="c"){const mc=countBy("m",e=>Object.keys(QUICK).filter(q=>qTest(q,e)));
-  return `<p class="phint" style="margin:0 0 10px">Orari di ${esc(giornoC())}. Puoi sceglierne più di una.</p><div class="opts">`+Object.entries(QUICK).map(([q,l])=>optRow("m",q,l,mc.get(q)||0)).join("")+`</div>`}
+ if(k==="m"&&MODE==="c"){const mc=countBy("m",cQuickKeys),impl=!dayKeys().length||(!st.m.has("sett")&&![...st.m].some(x=>x.startsWith("g:")));
+  const dr=(v,l)=>{const on=st.m.has(v)||(impl&&v==="g:"+today);return `<button class="opt${on?" on":""}" data-k="m" data-v="${esc(v)}" aria-pressed="${on}" ${mc.get(v)||on?"":"disabled"}><span class="ck"></span><span class="ol">${esc(l)}</span><small>${mc.get(v)||0}</small></button>`};
+  return `<div class="msub">Giorno</div><div class="opts">${CDAYS.map(d=>dr("g:"+d,dLab(d,true))).join("")}${dr("sett","Tutta la settimana")}</div><div class="msub" style="margin-top:14px">Orario</div><div class="opts">${Object.entries(FAS).map(([q,l])=>optRow("m",q,l,mc.get(q)||0)).join("")}</div><p class="phint" style="margin-top:12px">Orari esatti per le sale della Cineteca per tutta la settimana; per le altre sale gli orari sono quelli di oggi e, per gli altri giorni, il film è indicato «in cartellone» con il link al programma della sala.</p>`}
  if(k==="m"){const mc=countBy("m",e=>{const a=[];for(const m of MONTHS)if(e.data.slice(0,7)<=m&&end(e).slice(0,7)>=m)a.push(m);for(const q of Object.keys(QUICK))if(qTest(q,e))a.push(q);return a});
   let mb=`<div class="qrow">`+Object.entries(QUICK).map(([q,l])=>{const on=st.m.has(q);return `<button class="chip${on?" on":""}" style="--g:var(--terra)" data-k="m" data-v="${q}" aria-pressed="${on}">${l} <small>${mc.get(q)||0}</small></button>`}).join("")+`</div>`+(MODE==="m"?`<div class="msub">Intervallo di date</div><div class="prange"><label>Dal<input type="date" data-pr="pf" min="${today}" max="${lim}" value="${st.pf}"></label><label>Al<input type="date" data-pr="pt" min="${st.pf||today}" max="${lim}" value="${st.pt}"></label></div><p class="phint">Mostre aperte almeno un giorno nell'intervallo scelto.</p><div class="msub">Oppure per mese</div>`:"")+`<div class="mgrid">`;
   let yr="";for(const m of MONTHS){if(m.slice(0,4)!==yr){if(yr)mb+=`<span class="myear">${m.slice(0,4)}</span>`;yr=m.slice(0,4)}const c=mc.get(m)||0,on=st.m.has(m);
@@ -666,18 +720,24 @@ function renderPop(){const pop=$("#pop");if(!popK){pop.hidden=true;return}
  pop.style.left=Math.max(12,Math.min(b.left-host.left,host.width-w-12))+"px";
  keepFocus(pop,"pop")}
 function renderRail(){
+ const SH={["Weekend "+wkLabel]:"Weekend","Prossimi 7 giorni":"7 giorni","Sale di comunità":"Comunità","Lingua orig.":"V.O.","Moderna e contemporanea":"Contemporanea","Sera 18–21":"Sera","Cinema e design":"Cinema e design"};
+ const qc=(k,v,l,n,on,g,em)=>{const s=SH[l]||l;return `<button class="qc${on?" on":""}" data-k="${k}" data-v="${esc(v)}" aria-pressed="${on}" style="--g:var(${g||"--terra"})" ${n||on?"":"disabled"} title="${esc(l)}"><span class="t">${em?`<span class="em">${em}</span>`:""}${s!==l?`<span class="lg">${esc(l)}</span><span class="sm">${esc(s)}</span>`:esc(l)}</span>${n!=null?`<small>${n}</small>`:""}</button>`};
+ const grp=(lab,cols,chips,clr)=>`<section class="qg" style="--cols:${cols}"><div class="qh"><span class="qlab">${lab}</span>${clr?`<button class="qclr" data-qclr="${clr}">Togli</button>`:""}</div><div class="qchips">${chips}</div></section>`;
  const gc=countBy("g",e=>e.tipo==="Comicità"?[e.genere,"Comici"]:e.genere);
- $("#rzm").hidden=!active();
- const QR=MODE==="m"?[["oggi","Aperte oggi"],["weekend","Weekend "+wkLabel],["ultimi","⏳ Ultimi giorni"],["arrivo","✨ In arrivo"]]:MODE==="s"?[["oggi","Oggi"],["weekend","Weekend "+wkLabel],["7g","Prossimi 7 giorni"]]:[["ancora","Da adesso"],["pom","Pomeriggio"],["sera","Sera"],["notte","Dopo le 21"]];
- const qc=QR.length?countBy("m",e=>Object.keys(QUICK).filter(q=>qTest(q,e))):new Map();
- const quick=QR.map(([q,l])=>{const on=st.m.has(q),c=qc.get(q)||0;return `<button class="chip q${on?" on":""}" data-k="m" data-v="${q}" aria-pressed="${on}" style="--g:var(--terra)" ${c||on?"":"disabled"}>${l} <small>${c}</small></button>`}).join("");
- const gen=`<button class="chip${st.g.size?"":" on"}" data-gall style="--g:var(--ink)">${MODE==="c"?"Tutte le sale":"Tutto"}</button>`+GOPTS.map(o=>{const c=gc.get(o.k)||0,on=st.g.has(o.k);if(!c&&!on&&MODE==="c")return "";
-  return `<button class="chip${on?" on":""}" data-k="g" data-v="${esc(o.k)}" aria-pressed="${on}" style="--g:var(${o.c})" ${c||on?"":"disabled"}><span>${o.em}</span>${o.l} <small>${c}</small></button>`}).join("");
- const vo=MODE==="c"?(()=>{const n=countBy("t",TIPOV).get("In lingua originale")||0,on=st.t.has("In lingua originale");return n||on?`<span class="rsep"></span><button class="chip${on?" on":""}" data-k="t" data-v="In lingua originale" aria-pressed="${on}" style="--g:var(--jazz)">🗣️ Lingua originale <small>${n}</small></button>`:""})():"";
- $("#grail").innerHTML=(quick?`<span class="rlab">${MODE==="c"?"Oggi":"Quando"}</span>${quick}<span class="rsep"></span>`:"")+`<span class="rlab">${MODE==="m"?"Categoria":MODE==="c"?"Sala":"Genere"}</span>`+gen+vo;
+ const gens=GOPTS.filter(o=>MODE!=="c"||gc.get(o.k)||st.g.has(o.k)).map(o=>qc("g",o.k,o.l,gc.get(o.k)||0,st.g.has(o.k),o.c,o.em)).join("");
+ let h="";
+ if(MODE==="c"){const mc=countBy("m",cQuickKeys),sd=[...st.m].filter(isDay);
+  h+=grp("Giorno",4,CDAYS.map(d=>{const v="g:"+d;return qc("m",v,dLab(d),mc.get(v)||0,st.m.has(v)||(!sd.length&&d===today))}).join("")+qc("m","sett","Settimana",mc.get("sett")||0,st.m.has("sett")),sd.length?"day":"");
+  h+=grp("Orario",2,Object.keys(FAS).map(q=>qc("m",q,{ancora:"Da adesso",pom:"Pomeriggio",sera:"Sera 18–21",notte:"Dopo le 21"}[q],mc.get(q)||0,st.m.has(q))).join(""),fasSel().length?"fas":"");
+  const n=countBy("t",TIPOV).get("In lingua originale")||0,vo=st.t.has("In lingua originale");
+  h+=grp("Sala",3,gens+(n||vo?qc("t","In lingua originale","Lingua orig.",n,vo,"--jazz","🗣️"):""),st.g.size||vo?"sala":"")}
+ else{const QR=MODE==="m"?[["oggi","Aperte oggi"],["weekend","Weekend "+wkLabel],["ultimi","Ultimi giorni","⏳"],["arrivo","In arrivo","✨"]]:[["oggi","Oggi"],["weekend","Weekend "+wkLabel],["7g","Prossimi 7 giorni"]];
+  const mc=countBy("m",e=>Object.keys(QUICK).filter(q=>qTest(q,e)));
+  h+=grp("Quando",MODE==="m"?2:3,QR.map(([q,l,em])=>qc("m",q,l,mc.get(q)||0,st.m.has(q),"--terra",em)).join(""),[...st.m].some(x=>QR.some(r=>r[0]===x))?"m":"");
+  h+=grp(MODE==="m"?"Categoria":"Genere",MODE==="m"?2:3,gens,st.g.size?"g":"")}
+ $("#qbar").innerHTML=h;
  const ns=nSel();$("#fbadge").textContent=ns;$("#fbadge").hidden=!ns;$("#fbtn").classList.toggle("active",!!ns);
  $$(".seg button").forEach(b=>b.classList.toggle("on",b.dataset.view===st.view))}
-
 let PILLS=[];
 function renderStatus(n,label){
  $("#count").innerHTML=label;
@@ -742,11 +802,25 @@ function card(e){
 
 const EMPTY0=()=>`<div class="empty"><b>Nessun risultato con queste scelte</b>Togli qualche filtro o allarga il periodo.<br><button class="big reset" data-reset style="margin:14px auto 0;padding:0 20px">Azzera filtri</button></div>`;
 const giornoC=()=>CGIORNO?fmt(CGIORNO,{weekday:"long",day:"numeric",month:"long"}):"";
+function cTimes(r){const dk=dayKeys(),many=dk.length>1,fs=fasSel(),rows=[];
+ for(const d of dk){const x=tOn(r,d);
+  if(x&&x.length){const ok=x.filter(o=>passF(o,d,fs));if(ok.length)rows.push({d,ok})}
+  else if((x||prevOn(r,d))&&!fs.length)rows.push({d,prev:true})}
+ if(!rows.length)return "";
+ const chips=a=>a.map(o=>`<span${r._vo?' class="vo"':""}>${esc(o)}</span>`).join("");
+ const note=`<em class="prev">orari sul sito della sala</em>`;
+ if(!many)return `<div class="times">${rows[0].ok?chips(rows[0].ok):note}</div>`;
+ let h="",i=0;
+ while(i<rows.length){const x=rows[i];
+  if(x.ok){h+=`<div class="tday"><b>${esc(dLab(x.d))}</b>${chips(x.ok)}</div>`;i++;continue}
+  let j=i;while(j+1<rows.length&&rows[j+1].prev)j++;
+  h+=`<div class="tday"><b>${i===j?esc(dLab(x.d)):esc(dLab(x.d))+"–"+esc(dLab(rows[j].d))}</b><em class="prev">in cartellone · orari sul sito della sala</em></div>`;i=j+1}
+ return `<div class="times wk">${h}</div>`}
 function cardC(title,rows){
  const vo=rows.some(r=>r._vo),meta=(rows.find(r=>r.descrizione)||{}).descrizione||"";
  const byT=new Map();rows.forEach(r=>{if(!byT.has(r.genere))byT.set(r.genere,0);byT.set(r.genere,byT.get(r.genere)+1)});
  const g=GLAB[[...byT.entries()].sort((a,b)=>b[1]-a[1])[0][0]]||{c:"--mute",l:"Cinema",em:"🎬"};
- const srow=r=>{const gg=GLAB[r.genere]||g;return `<div class="srow" style="--g:var(${gg.c})"><button class="sn where" data-venue="${esc(r.luogo)}" title="Tutti i film di ${esc(r.luogo)}"><b class="wv">${esc(r.luogo)}</b><small>${esc(r._c+(r._c!=="Bologna"&&ZLAB[r._z]?" · "+ZLAB[r._z]:""))}${r._ver?" · "+esc(r._ver):""}</small></button>${/^https:/.test(r.sito_luogo||r.fonte||"")?`<a class="act" href="${esc(r.sito_luogo||r.fonte)}" target="_blank" rel="noopener">Programma</a>`:"<span></span>"}${r._orari.length?`<div class="times">${r._orari.filter(tOK).map(o=>`<span${r._vo?' class="vo"':""}>${esc(o)}</span>`).join("")}</div>`:`<div class="times"><small class="nt">Orari sul sito della sala</small></div>`}</div>`};
+ const srow=r=>{const gg=GLAB[r.genere]||g;return `<div class="srow" style="--g:var(${gg.c})"><button class="sn where" data-venue="${esc(r.luogo)}" title="Tutti i film di ${esc(r.luogo)}"><b class="wv">${esc(r.luogo)}</b><small>${esc(r._c+(r._c!=="Bologna"&&ZLAB[r._z]?" · "+ZLAB[r._z]:""))}${r._ver?" · "+esc(r._ver):""}</small></button>${/^https:/.test(r.sito_luogo||r.fonte||"")?`<a class="act" href="${esc(r.sito_luogo||r.fonte)}" target="_blank" rel="noopener">Programma</a>`:"<span></span>"}${cTimes(r)}</div>`};
  return `<article class="card cine" style="--g:var(${g.c})">
  <div class="top"><span class="gtag">🎬 ${rows.length===1?"1 sala":rows.length+" sale"}</span>${vo?'<span class="vob">V.O.</span>':""}</div>
  <h3 class="title">${esc(title)}</h3>${meta?`<div class="fmeta">${esc(meta)}</div>`:""}
@@ -756,6 +830,7 @@ function renderList(ev){
   if(!CINEMA.length){$("#list").innerHTML=`<div class="empty"><b>Programmazione dei cinema in preparazione</b>Torna tra qualche giorno: l'elenco si aggiorna ogni settimana.</div>`;$("#more").hidden=true;return}
   if(!ev.length){$("#list").innerHTML=EMPTY0();$("#more").hidden=true;return}
   const F=new Map();for(const e of ev){const k=norm(e.artista);if(!F.has(k))F.set(k,{t:e.artista,r:[]});F.get(k).r.push(e)}
+  const dk0=dayKeys()[0],hasT=r=>(tOn(r,dk0)||[]).length?0:1;F.forEach(f=>f.r.sort((a,b)=>hasT(a)-hasT(b)));
   const films=[...F.values()].sort((a,b)=>b.r.length-a.r.length||a.t.localeCompare(b.t,"it"));
   const shown=films.slice(0,st.n);
   $("#list").innerHTML=`<h2 class="month nt">${st.venue?"In programma":"Film in sala"}<small>${films.length}</small></h2><div class="cards">${shown.map(f=>cardC(f.t,f.r)).join("")}</div>`;
@@ -809,7 +884,7 @@ function render(resetPage){
   if(st.venue)renderVenue(ev.length);
   if(places){const nv=renderPlaces();renderStatus(ev.length,MODE==="c"?`<b>${nv}</b> ${nv===1?"sala":"sale"} · ${new Set(ev.map(e=>norm(e.artista))).size} film`:`<b>${nv}</b> ${nv===1?"luogo":"luoghi"} · ${ev.length} ${nn(ev.length)}`);$("#more").hidden=true;$("#cnote").hidden=true}
   else{renderList(ev);if(MODE==="c"){const nf=new Set(ev.map(e=>norm(e.artista))).size,ns=new Set(ev.map(e=>e.luogo)).size;renderStatus(ev.length,`<b>${nf}</b> film in <b>${ns}</b> ${ns===1?"sala":"sale"}`)}else renderStatus(ev.length,`<b>${ev.length}</b> ${nn(ev.length)}`)}
-  const cn=$("#cnote");cn.hidden=MODE!=="c"||!CINEMA.length;if(!cn.hidden)cn.innerHTML=`<span>🕒</span><span>Orari di <b>${esc(giornoC())}</b>: negli altri giorni possono cambiare. Prima di uscire apri <b>Programma</b> sul sito della sala.</span>`;
+  const cn=$("#cnote");cn.hidden=MODE!=="c"||!CINEMA.length;if(!cn.hidden){const dk=dayKeys();cn.innerHTML=dk.length>1?`<span>🗓️</span><span><b>Tutta la settimana.</b> Orari esatti per le sale della Cineteca; per le altre sale gli orari di oggi e, negli altri giorni, i film in cartellone: gli orari sono sul sito della sala (<b>Programma</b>).</span>`:dk[0]===today?`<span>🕒</span><span>Orari di <b>oggi, ${esc(fmt(today,{weekday:"long",day:"numeric",month:"long"}))}</b>. Prima di uscire controlla su <b>Programma</b>, il sito della sala.</span>`:`<span>🗓️</span><span><b>${esc(dLab(dk[0],true))}</b>: orari esatti per le sale della Cineteca; per le altre sale il film è in cartellone questa settimana e gli orari di quel giorno sono su <b>Programma</b>.</span>`}
  }catch(err){console.error(err);$("#list").hidden=false;$("#list").innerHTML=`<div class="empty"><b>Qualcosa non ha funzionato</b>Ricarica la pagina.</div>`}}
 
 /* ---------- modalità: spettacoli / mostre ---------- */
@@ -837,13 +912,14 @@ function openVenue(name){st.venue=name;render(true);scrollToList()}
 document.addEventListener("click",e=>{
  const t=e.target;
  const mo=t.closest("[data-mode]");if(mo){setMode(mo.dataset.mode);return}
+ const qx=t.closest("[data-qclr]");if(qx){const w=qx.dataset.qclr;if(w==="day")[...st.m].filter(isDay).forEach(x=>st.m.delete(x));else if(w==="fas")fasSel().forEach(x=>st.m.delete(x));else if(w==="sala"){st.g.clear();st.t.delete("In lingua originale")}else st[w].clear();render(true);return}
  const sb=t.closest("[data-sub]");if(sb){sub=sb.dataset.sub;subAnim=true;lAll=false;lq="";renderPanels();return}
  const pb=t.closest("[data-pop]");if(pb){popK=popK===pb.dataset.pop?"":pb.dataset.pop;lAll=false;renderFbar();return}
  if(t.closest("[data-popclose]")){popK="";renderFbar();return}
  if(popK&&!t.closest("#pop")&&t.isConnected){popK="";renderFbar()}
  const o=t.closest("[data-k][data-v]");
  if(o&&!o.disabled){const k=o.dataset.k,v=o.dataset.v;
-  if(k==="m"&&MODE==="c")toggle(st.m,v);else if(k==="m"){if(QUICK[v]){const was=st.m.has(v);st.m.clear();if(!was)st.m.add(v)}else{Object.keys(QUICK).forEach(q=>st.m.delete(q));toggle(st.m,v)}}
+  if(k==="m"&&MODE==="c"){if(isDay(v)){const was=st.m.has(v);[...st.m].filter(isDay).forEach(x=>st.m.delete(x));if(!was&&v!=="g:"+today)st.m.add(v)}else toggle(st.m,v)}else if(k==="m"){if(QUICK[v]){const was=st.m.has(v);st.m.clear();if(!was)st.m.add(v)}else{Object.keys(QUICK).forEach(q=>st.m.delete(q));toggle(st.m,v)}}
   else toggle(st[k],v);render(true);return}
  const z=t.closest("[data-zone]");if(z&&!z.disabled){const cs=zoneComuni(z.dataset.zone);const all=cs.every(c=>st.c.has(c));cs.forEach(c=>all?st.c.delete(c):st.c.add(c));render(true);return}
  const zx=t.closest("[data-zx]");if(zx){toggle(openZ,zx.dataset.zx);renderPanels();renderPop();return}
@@ -883,8 +959,8 @@ let tt;function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("sh
 function scopeLabel(){const parts=[];if(st.venue)parts.push(st.venue);if(st.g.size)parts.push([...st.g].map(k=>GLAB[k].l).join(", "));
  if(st.m.size)parts.push([...st.m].map(mLabel).join(", "));if(hasR())parts.push(rLabel());if(st.c.size)parts.push(cityLabel());["l","t","r","d"].forEach(k=>{if(st[k].size)parts.push([...st[k]].join(", "))});if(st.q)parts.push(`“${st.q}”`);return parts.join(" · ")}
 function shareText(){const ev=visible(),list=ev.slice(0,20);
- const lines=list.map(e=>MODE==="c"?`• ${e.artista} – ${e.luogo}${e._c!=="Bologna"?", "+e._c:""}${e._orari.length?" ("+e._orari.join(", ")+")":""}`:MODE==="m"?`• ${e.data>today?"dal "+fdate(e.data):"fino al "+fdate(e.fino)} – ${e.artista} (${e.luogo}${e._c!=="Bologna"?", "+e._c:""})`:`• ${fmt(e.data,{weekday:"short",day:"numeric",month:"short"})}${/\d/.test(e.ora||"")?" ore "+e.ora:""} – ${e.artista} (${e.luogo}${e._c!=="Bologna"?", "+e._c:""})`);
- return `${MODE==="m"?"Ecco le mostre a Bologna":MODE==="c"?`Ecco i film nei cinema di Bologna (orari di ${giornoC()})`:"Ecco il calendario degli eventi a Bologna"}${scopeLabel()?" – "+scopeLabel():""}:\n${SITE_URL}\n\n${lines.join("\n")}${ev.length>20?`\n…e altri ${ev.length-20} sul sito.`:""}`}
+ const lines=list.map(e=>MODE==="c"?`• ${e.artista} – ${e.luogo}${e._c!=="Bologna"?", "+e._c:""}${(tOn(e,dayKeys()[0])||[]).length?" ("+tOn(e,dayKeys()[0]).join(", ")+")":""}`:MODE==="m"?`• ${e.data>today?"dal "+fdate(e.data):"fino al "+fdate(e.fino)} – ${e.artista} (${e.luogo}${e._c!=="Bologna"?", "+e._c:""})`:`• ${fmt(e.data,{weekday:"short",day:"numeric",month:"short"})}${/\d/.test(e.ora||"")?" ore "+e.ora:""} – ${e.artista} (${e.luogo}${e._c!=="Bologna"?", "+e._c:""})`);
+ return `${MODE==="m"?"Ecco le mostre a Bologna":MODE==="c"?`Ecco i film nei cinema di Bologna (${dayKeys().length>1?"questa settimana":dLab(dayKeys()[0],true)})`:"Ecco il calendario degli eventi a Bologna"}${scopeLabel()?" – "+scopeLabel():""}:\n${SITE_URL}\n\n${lines.join("\n")}${ev.length>20?`\n…e altri ${ev.length-20} sul sito.`:""}`}
 const waHref=()=>"https://wa.me/?text="+encodeURIComponent(shareText());
 $("#share").onclick=()=>{const n=visible().length;$("#scope").innerHTML=`Stai condividendo <b>${n} ${nn(n)}</b> · ${scopeLabel()?esc(scopeLabel()):"tutto il calendario"}.`;$("#wa").href=waHref();openDlg($("#dlg"))};
 $("#dlg").addEventListener("click",e=>{if(e.target.id==="dlg")closeD($("#dlg"))});
