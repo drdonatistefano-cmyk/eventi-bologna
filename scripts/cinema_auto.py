@@ -85,11 +85,22 @@ def leggi_movieplayer(h):
         cast = testo(cast.group(1)) if cast else ""
         regia = re.search(r"film di (.+?)(?: con |$)", cast)
         regia = regia.group(1).strip() if regia else ""
+        inter = re.search(r"\bcon (.+)$", cast)
+        inter = inter.group(1).strip() if inter else ""
+        inter = re.sub(r"\s+,", ",", inter)
+        if not regia:   # ripiego: il titolo del link alla recensione («… del film di Nome Cognome»)
+            rr = re.search(r'title="[^"]*\bfilm di ([A-ZÀ-Ý][^"<>]{2,60}?)(?: con [^"]*)?"', item)
+            regia = html.unescape(rr.group(1)).strip() if rr else ""
+        date = re.search(r'media__dates[^>]*>(.*?)</p>', item, re.S)
+        date = testo(date.group(1)) if date else ""
+        durata = re.search(r"(\d{2,3}) min", date)
+        anno = re.match(r"\s*(\d{4})", date)
         versione = ""
         if vo_ore:
             versione = "Versione originale" + ("" if len(vo_ore) == len(orari) else " (solo ore " + ", ".join(vo_ore) + ")")
         if titolo:
-            out.append({"titolo": titolo, "orari": sorted(set(orari)), "versione": versione, "genere": generi, "regia": regia})
+            out.append({"titolo": titolo, "orari": sorted(set(orari)), "versione": versione, "genere": generi, "regia": regia,
+                        "interpreti": inter, "durata": int(durata.group(1)) if durata else None, "anno": int(anno.group(1)) if anno else None})
     return out
 
 
@@ -111,10 +122,13 @@ def leggi_cineteca(h, oggi):
         if not sala:
             continue
         info = re.search(r'c-repeat-loop__title-info">(.*?)</p>', b, re.S)
-        regia = re.search(r"\bdi (.+?) \(\d+", testo(info.group(1))) if info else None
+        info = testo(info.group(1)) if info else ""
+        regia = re.search(r"\bdi (.+?) \(\d+", info)
+        pa = re.match(r"\((?:[^,()]*, )?([^/()]+)/(\d{4})\)", info)
+        du = re.search(r"\((\d+)′\)", info)
         ver = re.search(r'audio-info.*?info-item-text">(.*?)</div>', b, re.S)
         titolo = testo(tit.group(1))
-        f = per_sala.setdefault(sala, {}).setdefault(titolo.lower(), {"titolo": titolo, "orari": [], "versione": testo(ver.group(1)) if ver else "", "genere": "", "regia": regia.group(1) if regia else ""})
+        f = per_sala.setdefault(sala, {}).setdefault(titolo.lower(), {"titolo": titolo, "orari": [], "versione": testo(ver.group(1)) if ver else "", "genere": "", "regia": regia.group(1) if regia else "", "paese": pa.group(1).strip() if pa else "", "anno": int(pa.group(2)) if pa else None, "durata": int(du.group(1)) if du else None})
         f["orari"].append(dt.group(2))
     for films in per_sala.values():
         for f in films.values():
@@ -191,7 +205,7 @@ def main():
             for sala, films in leggi_cineteca(hct, g).items():
                 acc = ct.setdefault(sala, {})
                 for f in films:
-                    x = acc.setdefault(f["titolo"].lower(), {"titolo": f["titolo"], "orari": [], "versione": f["versione"], "genere": "", "regia": f["regia"], "giorni": {}})
+                    x = acc.setdefault(f["titolo"].lower(), {**f, "orari": [], "giorni": {}})
                     x["giorni"][g] = f["orari"]
                     if k == 0:
                         x["orari"] = f["orari"]
