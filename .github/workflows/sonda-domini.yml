@@ -1,0 +1,25 @@
+name: Verifica domini (una tantum)
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  domini:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Controllo
+        run: |
+          set +e
+          sudo apt-get install -y -qq whois >/dev/null 2>&1
+          mkdir -p sonda; : > sonda/nomi.txt
+          for n in firstraw firstrow first-row thefirstrow myfirstrow firstrowbo firstrowevents firstrowitalia; do
+            c=$(curl -s -o /dev/null -w "%{http_code}" "https://rdap.verisign.com/com/v1/domain/$n.com"); [ "$c" = "404" ] && com=LIBERO || com=preso
+            w=$(whois -h whois.nic.it "$n.it" 2>/dev/null | grep -m1 -i "^Status:" | awk '{print $2}'); [ "$w" = "AVAILABLE" ] && it=LIBERO || it=preso
+            r=""; for tld in app events co eu; do c=$(curl -s -L -o /dev/null -w "%{http_code}" "https://rdap.org/domain/$n.$tld" || echo ERR); [ "$c" = "404" ] && r="$r .$tld LIBERO" || r="$r .$tld preso"; sleep 1; done
+            echo "$n | .com $com | .it $it |$r" | tee -a sonda/nomi.txt
+          done
+      - name: Salva
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sonda && git commit -m "Verifica firstrow" && git pull --rebase && git push
