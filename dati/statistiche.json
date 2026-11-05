@@ -1,36 +1,36 @@
 {
- "generato": "2026-11-05T06:13:45+00:00",
+ "generato": "2026-11-05T14:46:31+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-05",
- "visite_totali": 33,
- "totale_goatcounter": 71,
- "eventi_totali": 38,
+ "visite_totali": 38,
+ "totale_goatcounter": 85,
+ "eventi_totali": 47,
  "eventi_per_tipo": {
-  "filtri": 8,
+  "filtri": 15,
   "cambio scheda": 6,
   "cambio vista": 5,
   "clic biglietti": 5,
   "luoghi aperti": 5,
   "mostra altri": 3,
+  "apri filtri": 3,
   "clic info spettacoli": 3,
-  "apri filtri": 2,
-  "azzera filtri": 1
+  "azzera filtri": 2
  },
  "settimane": [
   {
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-05",
-   "visite": 33,
+   "visite": 38,
    "cambio scheda": 6,
    "mostra altri": 3,
-   "filtri": 8,
+   "filtri": 15,
+   "azzera filtri": 2,
+   "apri filtri": 3,
    "cambio vista": 5,
    "clic biglietti": 5,
    "luoghi aperti": 5,
-   "clic info spettacoli": 3,
-   "azzera filtri": 1,
-   "apri filtri": 2
+   "clic info spettacoli": 3
   }
  ],
  "eventi_per_giorno": {
@@ -38,23 +38,23 @@
    "cambio scheda": 6,
    "mostra altri": 2,
    "filtri": 8,
+   "azzera filtri": 1,
+   "apri filtri": 2,
    "cambio vista": 5,
    "clic biglietti": 4,
    "luoghi aperti": 5,
-   "clic info spettacoli": 3,
-   "azzera filtri": 1,
-   "apri filtri": 2
+   "clic info spettacoli": 3
   },
   "2026-11-05": {
    "cambio scheda": 0,
    "mostra altri": 1,
-   "filtri": 0,
+   "filtri": 7,
+   "azzera filtri": 1,
+   "apri filtri": 1,
    "cambio vista": 0,
    "clic biglietti": 1,
    "luoghi aperti": 0,
-   "clic info spettacoli": 0,
-   "azzera filtri": 0,
-   "apri filtri": 0
+   "clic info spettacoli": 0
   }
  },
  "giorni": [
@@ -64,20 +64,20 @@
   },
   {
    "giorno": "2026-11-05",
-   "visite": 1
+   "visite": 6
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 71
+   "conteggio": 85
   }
  ],
  "pagine_ed_eventi": [
   {
    "path": "/eventi-bologna",
    "titolo": "Eventi a Bologna – concerti e teatro",
-   "conteggio": 33
+   "conteggio": 38
   },
   {
    "path": "scheda/mostre",
@@ -92,6 +92,24 @@
    "tipo": "mostra altri"
   },
   {
+   "path": "spettacoli/filtro/Genere/Teatro",
+   "titolo": "Filtro",
+   "conteggio": 3,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/azzera-filtri",
+   "titolo": "Azzera filtri",
+   "conteggio": 2,
+   "tipo": "azzera filtri"
+  },
+  {
+   "path": "spettacoli/apri-filtri",
+   "titolo": "Apertura filtri",
+   "conteggio": 2,
+   "tipo": "apri filtri"
+  },
+  {
    "path": "spettacoli/filtro/Genere/Rock",
    "titolo": "Filtro",
    "conteggio": 2,
@@ -99,12 +117,6 @@
   },
   {
    "path": "spettacoli/filtro/Genere/Comici",
-   "titolo": "Filtro",
-   "conteggio": 2,
-   "tipo": "filtri"
-  },
-  {
-   "path": "spettacoli/filtro/Genere/Teatro",
    "titolo": "Filtro",
    "conteggio": 2,
    "tipo": "filtri"
@@ -120,6 +132,42 @@
    "titolo": "Cambio scheda",
    "conteggio": 2,
    "tipo": "cambio scheda"
+  },
+  {
+   "path": "spettacoli/filtro/Quando/oggi",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Biglietti/Biglietti disponibili",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Pop e altra musica",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/zona/Bologna città",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Quando/7g",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Quando/weekend",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
   },
   {
    "path": "spettacoli/clic-biglietti/ERJ Orchestra",
@@ -186,18 +234,6 @@
    "titolo": "Clic «Biglietti»",
    "conteggio": 1,
    "tipo": "clic biglietti"
-  },
-  {
-   "path": "spettacoli/azzera-filtri",
-   "titolo": "Azzera filtri",
-   "conteggio": 1,
-   "tipo": "azzera filtri"
-  },
-  {
-   "path": "spettacoli/apri-filtri",
-   "titolo": "Apertura filtri",
-   "conteggio": 1,
-   "tipo": "apri filtri"
   },
   {
    "path": "mostre/apri-filtri",
