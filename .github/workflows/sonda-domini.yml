@@ -7,15 +7,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Interroga RDAP
+      - name: Controllo whois e DNS
         run: |
           set +e
-          mkdir -p sonda
-          for d in advisoryevents.com advisory-events.com advisoryevents.it advisory-events.it advisoryevents.eu advisoryevents.net advisoryevents.org advisoryevents.info advisoryevents.co advisoryevents.app advisory.events advisoryevent.com advisoryeventi.com advisoryeventi.it theadvisoryevents.com myadvisoryevents.com advisoryevents.club eventsadvisory.com eventadvisory.com eventadvisory.it eventiadvisory.it; do
-            c=$(curl -s -L -o /tmp/r.json -w "%{http_code}" "https://rdap.org/domain/$d" || echo ERR)
-            st=$(python3 -c "import json;d=json.load(open('/tmp/r.json'));print(','.join(d.get('status',[]))[:60]+' | '+next((e.get('eventDate','')[:10] for e in d.get('events',[]) if e.get('eventAction')=='expiration'),''))" 2>/dev/null)
-            echo "$d $c $st" | tee -a sonda/domini.txt
-            sleep 1
+          sudo apt-get install -y -qq whois dnsutils >/dev/null 2>&1
+          mkdir -p sonda; : > sonda/whois.txt
+          for d in advisoryevents.com advisory-events.com advisoryevents.it advisoryevents.eu advisoryevents.net advisoryeventi.it; do
+            w=$(whois "$d" 2>&1 | grep -i -m3 -E "no match|not found|status:|available|domain name:|registrar:|expir" | tr '\n' ' ')
+            ns=$(dig +short NS "$d" | tr '\n' ' ')
+            echo "$d | whois: $w | NS: ${ns:-nessuno}" | tee -a sonda/whois.txt
+            sleep 2
           done
       - name: Salva
         run: |
