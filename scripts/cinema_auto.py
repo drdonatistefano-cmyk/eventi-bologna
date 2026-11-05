@@ -138,6 +138,42 @@ def leggi_cineteca(h, oggi):
     return {k: list(v.values()) for k, v in per_sala.items()}
 
 
+def chiave(s):
+    s = unicodedata.normalize("NFD", html.unescape(s).lower())
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9]+", " ", s).strip()
+
+
+def leggi_mymovies(h):
+    """Scheda breve di ogni film in programmazione a Bologna (genere, paese, anno, durata, regia, interpreti)."""
+    if "schedine-titolo" not in h:
+        raise ValueError("struttura della pagina mymovies cambiata")
+    out = {}
+    for b in h.split('class="schedine-titolo"')[1:]:
+        b = b[:6000]
+        tt = re.search(r'<a href="https://www\.mymovies\.it/film/\d{4}/[^"]+" title="([^"]+)"', b)
+        if not tt:
+            continue
+        lancio = re.search(r'schedine-lancio">(.*?)</div>', b, re.S)
+        lancio = lancio.group(1) if lancio else ""
+        gen = [html.unescape(g) for g in re.findall(r'title="Film [^"]+" href="https://www\.mymovies\.it/film/[a-z-]+/">([^<]+)</a>', lancio)]
+        pa = re.search(r'\?country=[^"]+">([^<]+)</a>', lancio)
+        du = re.search(r"Durata (\d+) Minuti", lancio)
+        an = re.search(r'/film/(\d{4})/">\d{4}</a>', lancio)
+        reg = re.search(r"Un film di (.*?)\.\s*(?:<span|<strong|</div>)", b, re.S)
+        con = re.search(r"<span>Con (.*?)</span>", b, re.S)
+        nomi = lambda s: [html.unescape(x).strip() for x in re.findall(r">([^<]+)</a>", s)]
+        r_ = nomi(reg.group(1)) if reg else []
+        c_ = nomi(con.group(1))[:4] if con else []
+        info = {"genere": ", ".join(gen), "paese": html.unescape(pa.group(1)).strip() if pa else "",
+                "durata": int(du.group(1)) if du else None, "anno": int(an.group(1)) if an else None,
+                "regia": " e ".join(r_), "interpreti": (", ".join(c_[:-1]) + " e " + c_[-1]) if len(c_) > 1 else "".join(c_)}
+        titolo = html.unescape(tt.group(1))
+        for k in {chiave(titolo), chiave(titolo.split(" - ")[0])}:
+            out.setdefault(k, info)
+    return out
+
+
 def tipo_da_nome(n):
     n = n.lower()
     if re.search(r"uci|space|multisala|giometti|starplex|medusa|cineci|century|cinecomfort", n): return "Multisala"
@@ -239,6 +275,24 @@ def main():
             if s["nome"] in CT_SALE.values():
                 s["film"] = []
         fallite.append(f"Cineteca: {e}")
+    # schede dei film da mymovies (una sola pagina): genere uniforme, regia e interpreti mancanti
+    try:
+        mm = leggi_mymovies(scarica("https://www.mymovies.it/cinema/bologna/"))
+        trovati = 0
+        for s in d["sale"]:
+            for f in s["film"]:
+                info = mm.get(chiave(f["titolo"])) or mm.get(chiave(f["titolo"].split(" - ")[0]))
+                if not info:
+                    continue
+                trovati += 1
+                if info["genere"]:
+                    f["genere"] = info["genere"]
+                for k in ("regia", "interpreti", "paese", "durata", "anno"):
+                    if info.get(k) and not f.get(k):
+                        f[k] = info[k]
+        log.append(f"mymovies: {len(mm)} schede, {trovati} film abbinati")
+    except Exception as e:
+        log.append(f"mymovies non letto: {e}")
     nmp = len(lette) - (1 if ct_ok else 0)
     tot_mp = nmp + sum(1 for f in fallite if not f.startswith("Cineteca"))
     film = {f["titolo"].lower() for s in d["sale"] for f in s["film"]}
