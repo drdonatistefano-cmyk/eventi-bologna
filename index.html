@@ -117,7 +117,7 @@ h1 em{color:var(--terra);font-style:italic}
 .srows{display:grid;gap:0;margin-top:8px;border-top:1px solid var(--line)}
 .srow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
 .card .srow .sn{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;width:auto;height:auto;margin:0;min-width:0;border:0;background:none;padding:0;text-align:left;cursor:pointer;color:inherit;font:inherit}
-.card .srow .sn b{text-align:left;font-size:14.5px;font-weight:650;line-height:1.25}
+.card .srow .sn b{text-align:left;font-size:14.5px;font-weight:700;line-height:1.25;color:var(--ink)}
 .card .srow .sn small{text-align:left;font-size:12px;color:var(--mute)}
 .srow .sn:hover b{color:var(--terra)}
 .times{display:flex;flex-wrap:wrap;gap:5px;grid-column:1/-1}
@@ -298,7 +298,7 @@ main{min-width:0;padding-bottom:90px}
 .card.mini{transition:border-color .15s,transform .15s}
 .mloc{display:flex;align-items:center;gap:5px;margin-top:5px;font-size:13.5px;color:var(--mute);min-width:0}
 .mloc svg{flex:none;width:13px;height:13px}
-.mloc span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mloc span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:var(--ink)}
 .mfoot{display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:8px}
 .mfoot:empty{display:none}
 .card.mini{padding-right:34px}
@@ -309,12 +309,12 @@ main{min-width:0;padding-bottom:90px}
 .mbar{height:4px;border-radius:99px;background:color-mix(in srgb,var(--g) 15%,transparent);margin-top:6px;overflow:hidden}
 .mbar i{display:block;height:100%;background:var(--g);min-width:3px}
 .msr{display:flex;align-items:baseline;gap:8px;font-size:13.5px;margin-top:4px;min-width:0}
-.msr b{flex:none;max-width:52%;font-weight:650;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.msr b{flex:none;max-width:52%;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .msr span{color:var(--mute);font-variant-numeric:tabular-nums;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .msr.mx{color:var(--mute);font-size:12.5px}
 .fmeta{font-size:14px;color:color-mix(in srgb,var(--ink) 82%,var(--mute));margin-top:3px;line-height:1.35}
 .fmeta .fg{color:color-mix(in srgb,var(--g) 75%,var(--ink));font-weight:650}
-.fmeta b{font-weight:650;color:var(--ink)}
+.fmeta b,.fcast b{font-weight:700;color:var(--ink)}
 .fcast{font-size:13.5px;color:var(--mute);margin-top:1px;line-height:1.35}
 .card.mini .fmeta,.card.mini .fcast{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .card.mini .fmeta{margin-bottom:3px}
@@ -375,7 +375,7 @@ main{min-width:0;padding-bottom:90px}
 .wpin{flex:none;width:16px;height:16px;display:grid;place-items:center;background:none;color:var(--mute)}
 .wpin svg{width:14px;height:14px}
 .wtx{flex:1;min-width:0;display:grid;gap:1px}
-.wv{font-size:14px;font-weight:500;line-height:1.3;color:var(--mute)}
+.wv{font-size:14px;font-weight:700;line-height:1.3;color:var(--ink)}
 .wl{font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--faint)}
 .where .go{flex:none;color:var(--faint);font-weight:600;font-size:15px;line-height:1}
 a.where .go{font-size:13px}
@@ -411,7 +411,7 @@ a.where .go{font-size:13px}
 .vtile{display:grid;gap:6px;align-content:start;padding:14px 15px 13px;border-radius:var(--r);border:1px solid var(--line);background:var(--paper);box-shadow:var(--shadow);cursor:pointer;text-align:left;transition:transform .15s,border-color .15s}
 .vtile:hover{transform:translateY(-1px);border-color:color-mix(in srgb,var(--terra) 40%,var(--line))}
 .vtop{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
-.vname{font-family:var(--serif);font-size:1.12rem;font-weight:600;line-height:1.2}
+.vname{font-family:var(--serif);font-size:1.12rem;font-weight:700;line-height:1.2}
 .vn{flex:none;font-size:12.5px;color:var(--mute);font-variant-numeric:tabular-nums}
 .vn b{font-size:1.05rem;color:var(--ink)}
 .vcity{font-size:12.5px;color:var(--mute);margin-top:-3px}
@@ -899,7 +899,7 @@ function fInfo(t){if(!FI){FI=new Map();for(const e of CINEMA){const k=norm(e.art
 function fMeta(t,full){const x=fInfo(t),g=x.g?x.g.split(/\s*,\s*/).slice(0,full?6:2).join(", "):"";
  const a=[g?`<span class="fg">${esc(g)}</span>`:(x.p?esc(x.p):""),x.r?`di <b>${esc(x.r)}</b>`:""].filter(Boolean);
  if(full){if(x.y)a.push(String(x.y));if(x.d)a.push(x.d+" min")}else if(!g&&x.y)a.splice(1,0,String(x.y));
- return (a.length?`<div class="fmeta">${a.join(" · ")}</div>`:"")+(x.i?`<div class="fcast">con ${esc(x.i)}</div>`:"")}
+ return (a.length?`<div class="fmeta">${a.join(" · ")}</div>`:"")+(x.i?`<div class="fcast">con <b>${esc(x.i)}</b></div>`:"")}
 function cardC(title,rows){
  const vo=rows.some(r=>r._vo);
  const byT=new Map();rows.forEach(r=>{if(!byT.has(r.genere))byT.set(r.genere,0);byT.set(r.genere,byT.get(r.genere)+1)});
