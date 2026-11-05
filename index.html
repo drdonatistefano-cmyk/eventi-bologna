@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eventi a Bologna – concerti e teatro</title>
-<meta name="description" content="Concerti, teatro e grandi eventi a Bologna e nella Città metropolitana nei prossimi 12 mesi: date, orari, luoghi e link ai biglietti.">
+<title>Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna</title>
+<meta name="description" content="Ach&#39;s Events Guide: concerti, teatro, mostre e cinema a Bologna e nella Città metropolitana, con date, orari, luoghi e link ai biglietti.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Eventi a Bologna – concerti e teatro">
+<meta property="og:title" content="Ach&#39;s Events Guide – concerti, teatro, mostre e cinema a Bologna">
 <meta property="og:description" content="Concerti, teatro e grandi eventi a Bologna e nella Città metropolitana nei prossimi 12 mesi.">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary">
@@ -515,7 +515,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
 </head>
 <body>
 <header class="hero wrap">
- <div class="kick"><div class="arches" aria-hidden="true"><i></i><i></i><i></i></div><span>Eventi a Bologna</span></div>
+ <div class="kick"><div class="arches" aria-hidden="true"><i></i><i></i><i></i></div><span>Ach&#39;s Events Guide</span></div>
  <h1>Sotto i portici,<br><em>stasera</em> e oltre.</h1>
  <p class="lede">Concerti, teatro, comici, classica e grandi eventi a Bologna e nei comuni della Città metropolitana, nei prossimi 12 mesi.</p>
  <div class="stats">
@@ -1062,14 +1062,14 @@ function scopeLabel(){const parts=[];if(st.venue)parts.push(st.venue);if(st.g.si
  if(st.m.size)parts.push([...st.m].map(mLabel).join(", "));if(hasR())parts.push(rLabel());if(st.c.size)parts.push(cityLabel());["l","t","r","d"].forEach(k=>{if(st[k].size)parts.push([...st[k]].join(", "))});if(st.q)parts.push(`“${st.q}”`);return parts.join(" · ")}
 function shareText(){const ev=visible(),list=ev.slice(0,20);
  const lines=list.map(e=>MODE==="c"?`• ${e.artista} – ${e.luogo}${e._c!=="Bologna"?", "+e._c:""}${(tOn(e,dayKeys()[0])||[]).length?" ("+tOn(e,dayKeys()[0]).join(", ")+")":""}`:MODE==="m"?`• ${e.data>today?"dal "+fdate(e.data):"fino al "+fdate(e.fino)} – ${e.artista} (${e.luogo}${e._c!=="Bologna"?", "+e._c:""})`:`• ${fmt(e.data,{weekday:"short",day:"numeric",month:"short"})}${/\d/.test(e.ora||"")?" ore "+e.ora:""} – ${e.artista} (${e.luogo}${e._c!=="Bologna"?", "+e._c:""})`);
- return `${MODE==="m"?"Ecco le mostre a Bologna":MODE==="c"?`Ecco i film nei cinema di Bologna (${dayKeys().length>1?"questa settimana":dLab(dayKeys()[0],true)})`:"Ecco il calendario degli eventi a Bologna"}${scopeLabel()?" – "+scopeLabel():""}:\n${SITE_URL}\n\n${lines.join("\n")}${ev.length>20?`\n…e altri ${ev.length-20} sul sito.`:""}`}
+ return `${MODE==="m"?"Ecco le mostre a Bologna da Ach's Events Guide":MODE==="c"?`Ecco i film nei cinema di Bologna su Ach's Events Guide (${dayKeys().length>1?"questa settimana":dLab(dayKeys()[0],true)})`:"Ecco gli eventi a Bologna da Ach's Events Guide"}${scopeLabel()?" – "+scopeLabel():""}:\n${SITE_URL}\n\n${lines.join("\n")}${ev.length>20?`\n…e altri ${ev.length-20} sul sito.`:""}`}
 const waHref=()=>"https://wa.me/?text="+encodeURIComponent(shareText());
 $("#share").onclick=()=>{const n=visible().length;$("#scope").innerHTML=`Stai condividendo <b>${n} ${nn(n)}</b> · ${scopeLabel()?esc(scopeLabel()):"tutto il calendario"}.`;$("#wa").href=waHref();openDlg($("#dlg"))};
 $("#dlg").addEventListener("click",e=>{if(e.target.id==="dlg")closeD($("#dlg"))});
 $("#ddlg").addEventListener("click",e=>{if(e.target.id==="ddlg")closeD($("#ddlg"))});
 document.addEventListener("keydown",e=>{const o=e.target.closest&&e.target.closest("[data-open]");if(o&&(e.key==="Enter"||e.key===" ")){e.preventDefault();openDetail(o.dataset.open)}});
 function openURL(u){try{const a=document.createElement("a");a.href=u;a.target="_top";a.rel="noopener";document.body.appendChild(a);a.click();a.remove()}catch(_){try{location.href=u}catch(__){}}}
-$("#send").onclick=()=>{const to=$("#to").value.split(/[,;\s]+/).filter(Boolean).join(",");openURL(`mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent((MODE==="m"?"Mostre a Bologna":"Eventi a Bologna")+(scopeLabel()?" – "+scopeLabel():""))}&body=${encodeURIComponent(shareText())}`);closeD($("#dlg"))};
+$("#send").onclick=()=>{const to=$("#to").value.split(/[,;\s]+/).filter(Boolean).join(",");openURL(`mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(("Ach's Events Guide – "+(MODE==="m"?"mostre a Bologna":MODE==="c"?"cinema a Bologna":"eventi a Bologna"))+(scopeLabel()?" – "+scopeLabel():""))}&body=${encodeURIComponent(shareText())}`);closeD($("#dlg"))};
 async function copyText(s){try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(s);return true}}catch(_){}
  try{const ta=document.createElement("textarea");ta.value=s;ta.setAttribute("readonly","");ta.style.cssText="position:fixed;top:0;left:0;opacity:0;font-size:16px";document.body.appendChild(ta);ta.select();ta.setSelectionRange(0,s.length);const ok=document.execCommand("copy");ta.remove();return ok}catch(_){return false}}
 $("#copy").onclick=async()=>{toast(await copyText(SITE_URL)?"Link copiato: incollalo dove vuoi":"Copia non consentita qui: usa WhatsApp")};
