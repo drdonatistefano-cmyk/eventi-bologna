@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: "41 8 * * *"   # ogni giorno alle 9:41 ora italiana (inverno), 10:41 d'estate
   workflow_dispatch:
+    inputs:
+      scopri:
+        description: "Cerca anche sale nuove nei comuni (si fa da solo il lunedì)"
+        type: boolean
+        default: false
 permissions:
   contents: write
   issues: write
@@ -16,7 +21,7 @@ jobs:
       - name: Legge film e orari di oggi
         id: leggi
         continue-on-error: true
-        run: python3 scripts/cinema_auto.py
+        run: python3 scripts/cinema_auto.py ${{ inputs.scopri && '--scopri' || '' }}
       - name: Salva il risultato
         run: |
           git config user.name "github-actions[bot]"
