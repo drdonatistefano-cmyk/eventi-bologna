@@ -723,6 +723,303 @@
    "sito": "",
    "fonte": "https://cinema.emiliaromagnacultura.it/luogo/cinema-centrale-3/",
    "film": []
+  },
+  {
+   "id": "c027",
+   "nome": "Cinema Astra/Star Multisala",
+   "citta": "Valsamoggia",
+   "indirizzo": "",
+   "tipo": "Multisala",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/astrastar-multisala_2884/",
+   "film": [
+    {
+     "titolo": "Dio ride",
+     "orari": [
+      "21:00"
+     ],
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Un tranquillo funerale di famiglia",
+     "orari": [
+      "21:00"
+     ],
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    }
+   ],
+   "auto": true
+  },
+  {
+   "id": "c028",
+   "nome": "Cinema Arena Gran Reno",
+   "citta": "Casalecchio di Reno",
+   "indirizzo": "",
+   "tipo": "Arena",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/arena-gran-reno_1780/",
+   "film": [],
+   "auto": true
+  },
+  {
+   "id": "c029",
+   "nome": "Cinema Jolly",
+   "citta": "Castel San Pietro Terme",
+   "indirizzo": "",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/jolly_215/",
+   "film": [
+    {
+     "titolo": "Dio ride",
+     "orari": [
+      "18:30"
+     ],
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Giulio Regeni - Tutto il male del mondo",
+     "orari": [
+      "21:00"
+     ],
+     "versione": "",
+     "genere": "Documentario",
+     "regia": "Simone Manetti"
+    }
+   ],
+   "auto": true
+  },
+  {
+   "id": "c030",
+   "nome": "Cinema Don Bosco",
+   "citta": "Castello d'Argile",
+   "indirizzo": "",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/don-bosco_216/",
+   "film": [],
+   "auto": true
+  },
+  {
+   "id": "c031",
+   "nome": "Cinema Italia",
+   "citta": "Castenaso",
+   "indirizzo": "",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/italia_217/",
+   "film": [],
+   "auto": true
+  },
+  {
+   "id": "c032",
+   "nome": "Cinema Centrale",
+   "citta": "Imola",
+   "indirizzo": "",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/centrale_2716/",
+   "film": [],
+   "auto": true
+  },
+  {
+   "id": "c033",
+   "nome": "Cinema Cristallo",
+   "citta": "Imola",
+   "indirizzo": "",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/cristallo_2024/",
+   "film": [
+    {
+     "titolo": "Ragione e sentimento",
+     "orari": [
+      "18:15",
+      "21:00"
+     ],
+     "versione": "",
+     "genere": "Commedia, Drammatico, Romantico",
+     "regia": "Ang Lee"
+    }
+   ],
+   "auto": true
+  },
+  {
+   "id": "c034",
+   "nome": "Cinema Don Fiorentini Cinema Teatro",
+   "citta": "Imola",
+   "indirizzo": "",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/don-fiorentini-cinema-teatro_220/",
+   "film": [],
+   "auto": true
+  },
+  {
+   "id": "c035",
+   "nome": "Cinema Aurora",
+   "citta": "Monghidoro",
+   "indirizzo": "",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/aurora_223/",
+   "film": [],
+   "auto": true
+  },
+  {
+   "id": "c036",
+   "nome": "Cinema Kursaal",
+   "citta": "Alto Reno Terme",
+   "indirizzo": "",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/kursaal_225/",
+   "film": [
+    {
+     "titolo": "Dio ride",
+     "orari": [
+      "21:00"
+     ],
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    }
+   ],
+   "auto": true
+  },
+  {
+   "id": "c037",
+   "nome": "Cinema Giada Cinecomfort Bi-Space",
+   "citta": "San Giovanni in Persiceto",
+   "indirizzo": "",
+   "tipo": "Multisala",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/giada-cinecomfort-bi-space_228/",
+   "film": [],
+   "auto": true
+  },
+  {
+   "id": "c038",
+   "nome": "Cinema Arena Corte del Cinema",
+   "citta": "San Lazzaro di Savena",
+   "indirizzo": "",
+   "tipo": "Arena",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/arena-corte-del-cinema_1760/",
+   "film": [],
+   "auto": true
+  },
+  {
+   "id": "c039",
+   "nome": "Cinema Italia",
+   "citta": "San Pietro in Casale",
+   "indirizzo": "",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/italia_229/",
+   "film": [],
+   "auto": true
+  },
+  {
+   "id": "c040",
+   "nome": "Cinema Century CineCi",
+   "citta": "Sant'Agata Bolognese",
+   "indirizzo": "",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/century-cineci_230/",
+   "film": [
+    {
+     "titolo": "Dio ride",
+     "orari": [
+      "21:15"
+     ],
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Hope",
+     "orari": [
+      "20:30"
+     ],
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Ice Cream Man",
+     "orari": [
+      "21:20"
+     ],
+     "versione": "",
+     "genere": "Commedia, Horror, Thriller",
+     "regia": "Eli Roth"
+    },
+    {
+     "titolo": "Il gatto col cappello",
+     "orari": [
+      "19:35"
+     ],
+     "versione": "",
+     "genere": "Animazione, Ragazzi, Commedia, Avventura, Fantastico",
+     "regia": "Alessandro Carloni e Erica Rivinoja"
+    },
+    {
+     "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
+     "orari": [
+      "19:45"
+     ],
+     "versione": "",
+     "genere": "Animazione, Commedia, Ragazzi, Horror",
+     "regia": "Steve Cox e Matthew Walker"
+    },
+    {
+     "titolo": "Un tranquillo funerale di famiglia",
+     "orari": [
+      "21:15"
+     ],
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Wild Horse Nine",
+     "orari": [
+      "21:15"
+     ],
+     "versione": "",
+     "genere": "Poliziesco, Drammatico, Thriller",
+     "regia": "Martin McDonagh"
+    },
+    {
+     "titolo": "Wildwood - I segreti del bosco proibito",
+     "orari": [
+      "21:15"
+     ],
+     "versione": "",
+     "genere": "Animazione, Avventura, Ragazzi",
+     "regia": "Travis Knight"
+    }
+   ],
+   "auto": true
+  },
+  {
+   "id": "c041",
+   "nome": "Cinema Marconi",
+   "citta": "Sasso Marconi",
+   "indirizzo": "",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/marconi_231/",
+   "film": [],
+   "auto": true
   }
  ],
  "fonti": [
