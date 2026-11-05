@@ -1,0 +1,28 @@
+name: Verifica domini (una tantum)
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  domini:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Controllo .com (RDAP Verisign) e .it (whois NIC)
+        run: |
+          set +e
+          sudo apt-get install -y -qq whois >/dev/null 2>&1
+          mkdir -p sonda; : > sonda/nomi.txt
+          NOMI="stasera chesifa chefacciamo dovestasera staseradove escostasera usciamo andiamo serata serate cartellone locandina sipario platea palco agendina inprogramma eventa eventu evvai uscite seratona daifuori fuoriporta bellaserata buonaserata staseraesco sottoiportici portici eventiora eventioggi fuoriprogramma prossimamente inscena primafila primeserate giraeventi eventiamo stasevai"
+          for n in $NOMI; do
+            c=$(curl -s -o /dev/null -w "%{http_code}" "https://rdap.verisign.com/com/v1/domain/$n.com")
+            [ "$c" = "404" ] && com=LIBERO || com=preso
+            w=$(whois -h whois.nic.it "$n.it" 2>/dev/null | grep -m1 -i "^Status:" | awk '{print $2}')
+            [ "$w" = "AVAILABLE" ] && it=LIBERO || it="preso"
+            echo "$n | .com $com | .it $it" | tee -a sonda/nomi.txt
+            sleep 1
+          done
+      - name: Salva
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sonda && git commit -m "Verifica nomi" && git pull --rebase && git push
