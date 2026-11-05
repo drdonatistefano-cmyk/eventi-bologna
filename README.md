@@ -16,3 +16,6 @@ Aggiornamento: ogni lunedì un'attività programmata di Claude aggiorna eventi.j
 Statistiche: GoatCounter (senza cookie), attivo solo sul sito GitHub quando in `index.html` la costante `GC` contiene il nome dell'account (eventibologna). Cruscotto: https://eventibologna.goatcounter.com
 
 Statistiche esportate: il flusso `.github/workflows/statistiche.yml` ogni mattina legge l'API di GoatCounter (`scripts/statistiche.py`) e salva `dati/statistiche.json` e `dati/statistiche.md` (visite per giorno e per settimana dal lancio, clic sui biglietti, filtri, ricerche, condivisioni, provenienze). Serve il segreto `GOATCOUNTER_TOKEN` nelle impostazioni del repository; senza, il flusso non fa nulla.
+
+Pagina delle statistiche: https://drdonatistefano-cmyk.github.io/eventi-bologna/statistiche.html
+Si aggiorna ogni ora con il workflow "Cruscotto statistiche" (scripts/cruscotto.py), che salva stats.json nel ramo `statistiche` senza ripubblicare il sito. Il riepilogo giornaliero in dati/statistiche.* resta del workflow "Statistiche".

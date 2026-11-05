@@ -1,0 +1,33 @@
+name: Cruscotto statistiche
+# Per la pagina statistiche.html. Legge visite e clic da GoatCounter e lo stato del sito, e salva stats.json
+# nel ramo "statistiche" (non tocca il sito, quindi non lo ripubblica).
+on:
+  schedule:
+    - cron: "17 * * * *"   # ogni ora
+  workflow_dispatch: {}     # pulsante "Run workflow" per aggiornare subito
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: cruscotto
+  cancel-in-progress: true
+jobs:
+  leggi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with: { sparse-checkout: scripts }
+      - name: Leggi statistiche
+        env:
+          GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/cruscotto.py /tmp/stats.json
+      - name: Salva nel ramo statistiche
+        run: |
+          cd /tmp && rm -rf pub && mkdir pub && cd pub
+          git init -q -b statistiche
+          cp /tmp/stats.json .
+          git -c user.name="statistiche-bot" -c user.email="actions@github.com" add stats.json
+          git -c user.name="statistiche-bot" -c user.email="actions@github.com" commit -q -m "Statistiche $(date -u +%FT%TZ)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" statistiche
