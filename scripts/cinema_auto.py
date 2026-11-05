@@ -18,7 +18,7 @@ RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATI = os.path.join(RADICE, "dati", "cinema.json")
 STATO = os.path.join(RADICE, "dati", "cinema_stato.json")
 UA = "Mozilla/5.0 (compatible; EventiBolognaBot/1.0; +https://drdonatistefano-cmyk.github.io/eventi-bologna/)"
-CINETECA = "https://cinetecadibologna.it/programmazione/"
+CINETECA = "https://cinetecadibologna.it/programmazione/film-in-programma/"  # tutta la settimana
 CT_SALE = {"lumi": "Cinema Lumière", "modernissimo": "Cinema Modernissimo", "cervi": "Sala Cervi"}
 # comuni della Città metropolitana come li chiama movieplayer → nome ufficiale
 COMUNI_MP = {"bazzano": "Valsamoggia", "porretta-terme": "Alto Reno Terme"}
@@ -175,6 +175,8 @@ def main():
             continue
         try:
             s["film"] = leggi_movieplayer(scarica(u))
+            for f in s["film"]:
+                f["giorni"] = {oggi.isoformat(): f["orari"]}
             lette.append(s["nome"])
         except Exception as e:
             s["film"] = []          # mai orari vecchi
@@ -182,10 +184,20 @@ def main():
     # Cineteca
     ct_ok = True
     try:
-        ct = leggi_cineteca(scarica(CINETECA), oggi.isoformat())
+        hct = scarica(CINETECA)
+        ct = {}
+        for k in range(8):   # oggi e i 7 giorni seguenti
+            g = (oggi + datetime.timedelta(days=k)).isoformat()
+            for sala, films in leggi_cineteca(hct, g).items():
+                acc = ct.setdefault(sala, {})
+                for f in films:
+                    x = acc.setdefault(f["titolo"].lower(), {"titolo": f["titolo"], "orari": [], "versione": f["versione"], "genere": "", "regia": f["regia"], "giorni": {}})
+                    x["giorni"][g] = f["orari"]
+                    if k == 0:
+                        x["orari"] = f["orari"]
         for s in d["sale"]:
             if s["nome"] in CT_SALE.values():
-                s["film"] = ct.get(s["nome"], [])
+                s["film"] = list(ct.get(s["nome"], {}).values())
         lette.append("Cineteca")
         if not ct:
             log.append("Cineteca: nessuna proiezione oggi trovata")

@@ -29,6 +29,13 @@ for s in d.get("sale", []):
         bad = [x for x in o if not re.match(r"^\d{1,2}:\d{2}$", x)]
         if bad: ERR.append(f"{n} / {f.get('titolo')}: orari non validi {bad}")
         f["orari"] = sorted(set(x for x in o if x not in bad), key=lambda x: (int(x.split(':')[0]), x))
+        g = f.get("giorni") or {}
+        if not isinstance(g, dict): ERR.append(f"{n} / {f.get('titolo')}: giorni deve essere un oggetto data → orari")
+        else:
+            for k, v in list(g.items()):
+                if not ISO.match(k) or not isinstance(v, list) or any(not re.match(r"^\d{1,2}:\d{2}$", x) for x in v):
+                    ERR.append(f"{n} / {f.get('titolo')}: giorno non valido {k}: {v}")
+                else: g[k] = sorted(set(v), key=lambda x: (int(x.split(':')[0]), x))
 try:
     g = datetime.date.fromisoformat(d.get("giorno_orari", ""))
     if (datetime.date.today() - g).days > 7: AVV.append(f"orari vecchi di {(datetime.date.today()-g).days} giorni")
