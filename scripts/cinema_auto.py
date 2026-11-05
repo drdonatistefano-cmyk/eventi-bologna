@@ -181,8 +181,18 @@ def leggi_18tickets(h):
         u = re.search(r"href=['\"](https://[^'\"]+/film/\d+)", b)
         t = re.search(r"<p[^>]*page-heading[^>]*>(.*?)</p>", b, re.S) or re.search(r"<h\d[^>]*>(.*?)</h\d>", b, re.S)
         if u and t and testo(t.group(1)):
-            out.setdefault(chiave(testo(t.group(1))), u.group(1).replace("://www.", "://"))
+            tt, link = testo(t.group(1)), u.group(1).replace("://www.", "://")
+            out.setdefault(chiave(tt), link)
+            out.setdefault(chiave(re.sub(r"\s*[(\[].*?[)\]]", "", tt)), link)  # senza titolo originale tra parentesi
     return out
+
+
+def cerca_link(tk, titolo):
+    for k in (chiave(titolo), chiave(titolo.split(" - ")[0]), chiave(re.split(r"\s[–-]\s", titolo)[0])):
+        if k and k in tk:
+            return tk[k]
+    k = chiave(titolo)
+    return next((v for c, v in tk.items() if len(k) > 5 and (c.startswith(k + " ") or k.startswith(c + " "))), None)
 
 
 def permesso(url):
@@ -331,7 +341,7 @@ def main():
             n = 0
             for s in sale:
                 for f in s["film"]:
-                    u = tk.get(chiave(f["titolo"])) or tk.get(chiave(f["titolo"].split(" - ")[0]))
+                    u = cerca_link(tk, f["titolo"])
                     if u:
                         f["biglietti"] = u
                         n += 1
