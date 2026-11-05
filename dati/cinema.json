@@ -151,7 +151,8 @@
        "15:30"
       ]
      },
-     "paese": "Regno Unito"
+     "paese": "Regno Unito",
+     "biglietti": "https://ccb.18tickets.it/film/123699"
     }
    ],
    "biglietti": "https://ccb.18tickets.it/"
@@ -185,7 +186,8 @@
        "21:15"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "biglietti": "https://fossolo.ccroma.18tickets.it/film/86747"
     },
     {
      "titolo": "L'estranea",
@@ -207,7 +209,8 @@
        "21:30"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "biglietti": "https://fossolo.ccroma.18tickets.it/film/79652"
     }
    ],
    "biglietti": "https://fossolo.ccroma.18tickets.it/"
@@ -261,7 +264,8 @@
        "21:10"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "biglietti": "https://nosadella.18tickets.it/film/94922"
     },
     {
      "titolo": "Wild Horse Nine",
@@ -281,7 +285,8 @@
        "21:10"
       ]
      },
-     "paese": "Regno Unito"
+     "paese": "Regno Unito",
+     "biglietti": "https://nosadella.18tickets.it/film/97166"
     }
    ],
    "biglietti": "https://nosadella.18tickets.it/"
@@ -315,7 +320,8 @@
        "21:00"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "biglietti": "https://ccb.18tickets.it/film/113602"
     },
     {
      "titolo": "L'estranea",
@@ -337,7 +343,8 @@
        "21:15"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "biglietti": "https://ccb.18tickets.it/film/113568"
     },
     {
      "titolo": "Ragione e sentimento",
@@ -381,7 +388,8 @@
        "20:45"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "biglietti": "https://ccb.18tickets.it/film/118652"
     }
    ],
    "biglietti": "https://ccb.18tickets.it/"
@@ -468,7 +476,8 @@
        "21:15"
       ]
      },
-     "paese": "Regno Unito"
+     "paese": "Regno Unito",
+     "biglietti": "https://ccb.18tickets.it/film/118653"
     }
    ],
    "biglietti": "https://ccb.18tickets.it/"
@@ -504,7 +513,8 @@
        "21:15"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "biglietti": "https://ccb.18tickets.it/film/113603"
     }
    ],
    "biglietti": "https://ccb.18tickets.it/"
@@ -775,104 +785,6 @@
    "fonte": "https://europa-cinemas.org/en/portraits/cinema-lumière-Bologna",
    "film": [
     {
-     "titolo": "Minotaur",
-     "orari": [
-      "16:00"
-     ],
-     "versione": "Versione originale in russo con sottotitoli in italiano",
-     "genere": "Drammatico, Thriller",
-     "regia": "Andrey Zvyagintsev",
-     "paese": "Francia-Germania-Lettonia",
-     "anno": 2026,
-     "durata": 135,
-     "giorni": {
-      "2026-11-05": [
-       "16:00"
-      ],
-      "2026-11-06": [
-       "19:00"
-      ],
-      "2026-11-07": [
-       "16:00",
-       "17:45",
-       "21:45"
-      ],
-      "2026-11-08": [
-       "17:15",
-       "21:30"
-      ],
-      "2026-11-09": [
-       "17:15",
-       "21:30"
-      ],
-      "2026-11-10": [
-       "16:00",
-       "21:45"
-      ],
-      "2026-11-11": [
-       "16:00",
-       "21:45"
-      ]
-     },
-     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk"
-    },
-    {
-     "titolo": "Wild Horse Nine",
-     "orari": [
-      "16:00",
-      "20:00",
-      "22:15"
-     ],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "Commedia, Drammatico",
-     "regia": "Martin McDonagh",
-     "paese": "GB-USA",
-     "anno": 2026,
-     "durata": 118,
-     "giorni": {
-      "2026-11-05": [
-       "16:00",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-06": [
-       "16:00",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-07": [
-       "15:30",
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-08": [
-       "11:00",
-       "15:30",
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-09": [
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-10": [
-       "16:00",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-11": [
-       "10:00",
-       "16:00",
-       "20:00",
-       "22:15"
-      ]
-     },
-     "interpreti": "Sam Rockwell, John Malkovich e Steve Buscemi"
-    },
-    {
      "titolo": "Fatherland",
      "orari": [
       "18:15"
@@ -909,7 +821,8 @@
        "18:15"
       ]
      },
-     "interpreti": "Sandra Hüller"
+     "interpreti": "Sandra Hüller",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/92249"
     },
     {
      "titolo": "Hope",
@@ -954,7 +867,100 @@
        "21:30"
       ]
      },
-     "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender"
+     "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/101225"
+    },
+    {
+     "titolo": "Wild Horse Nine",
+     "orari": [
+      "20:00",
+      "22:15"
+     ],
+     "versione": "Versione originale in inglese con sottotitoli in italiano",
+     "genere": "Commedia, Drammatico",
+     "regia": "Martin McDonagh",
+     "paese": "GB-USA",
+     "anno": 2026,
+     "durata": 118,
+     "giorni": {
+      "2026-11-05": [
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-06": [
+       "16:00",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-07": [
+       "15:30",
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-08": [
+       "11:00",
+       "15:30",
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-09": [
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-10": [
+       "16:00",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-11": [
+       "10:00",
+       "16:00",
+       "20:00",
+       "22:15"
+      ]
+     },
+     "interpreti": "Sam Rockwell, John Malkovich e Steve Buscemi",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/100367"
+    },
+    {
+     "titolo": "Minotaur",
+     "orari": [],
+     "versione": "Versione originale in russo con sottotitoli in italiano",
+     "genere": "Drammatico, Thriller",
+     "regia": "Andrey Zvyagintsev",
+     "paese": "Francia-Germania-Lettonia",
+     "anno": 2026,
+     "durata": 135,
+     "giorni": {
+      "2026-11-06": [
+       "19:00"
+      ],
+      "2026-11-07": [
+       "16:00",
+       "17:45",
+       "21:45"
+      ],
+      "2026-11-08": [
+       "17:15",
+       "21:30"
+      ],
+      "2026-11-09": [
+       "17:15",
+       "21:30"
+      ],
+      "2026-11-10": [
+       "16:00",
+       "21:45"
+      ],
+      "2026-11-11": [
+       "16:00",
+       "21:45"
+      ]
+     },
+     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk"
     }
    ],
    "biglietti": "https://lumiere.cinetecabologna.18tickets.it/"
@@ -968,23 +974,6 @@
    "sito": "https://cinetecadibologna.it/programmazione/film-in-programma/",
    "fonte": "https://www.bolognawelcome.com/it/luoghi/cinema-e-teatri/cinema-modernissimo",
    "film": [
-    {
-     "titolo": "Le creature",
-     "orari": [
-      "16:00"
-     ],
-     "versione": "Versione originale in francese con sottotitoli in italiano",
-     "genere": "",
-     "regia": "Agnès Varda",
-     "paese": "Francia-Svezia",
-     "anno": 1966,
-     "durata": 90,
-     "giorni": {
-      "2026-11-05": [
-       "16:00"
-      ]
-     }
-    },
     {
      "titolo": "Città amara",
      "orari": [
@@ -1039,7 +1028,8 @@
        "10:30"
       ]
      },
-     "interpreti": "Robert Carradine, Harvey Keitel, Robert De Niro e Cesare Danova"
+     "interpreti": "Robert Carradine, Harvey Keitel, Robert De Niro e Cesare Danova",
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/5485"
     },
     {
      "titolo": "Le margheritine",
@@ -1069,7 +1059,8 @@
       "2026-11-06": [
        "15:30"
       ]
-     }
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101357"
     },
     {
      "titolo": "Les Demoiselles de Rochefort",
@@ -1114,7 +1105,8 @@
       "2026-11-06": [
        "22:15"
       ]
-     }
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101423"
     },
     {
      "titolo": "Talk con Alex Majoli – La fotografia tra realtà e rappresentazione",
@@ -1144,7 +1136,8 @@
       "2026-11-07": [
        "16:00"
       ]
-     }
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101456"
     },
     {
      "titolo": "Age – Come sente il presente",
@@ -1174,7 +1167,8 @@
       "2026-11-07": [
        "20:15"
       ]
-     }
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/6277"
     },
     {
      "titolo": "The Chaser",
@@ -1189,7 +1183,8 @@
       "2026-11-07": [
        "22:15"
       ]
-     }
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101489"
     },
     {
      "titolo": "La gioia",
@@ -1205,7 +1200,8 @@
        "10:30"
       ]
      },
-     "interpreti": "Jasmine Trinca, Valeria Golino e Saul Nanni"
+     "interpreti": "Jasmine Trinca, Valeria Golino e Saul Nanni",
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/71360"
     },
     {
      "titolo": "L’albero di molto lontano",
@@ -1286,7 +1282,8 @@
       "2026-11-09": [
        "18:00"
       ]
-     }
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101588"
     },
     {
      "titolo": "La rabbia giovane",
@@ -1301,7 +1298,8 @@
       "2026-11-09": [
        "22:15"
       ]
-     }
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/23828"
     },
     {
      "titolo": "Black Lions, Roman Wolves",
@@ -1316,7 +1314,8 @@
       "2026-11-10": [
        "10:30"
       ]
-     }
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101621"
     },
     {
      "titolo": "Incontro con Haile Gerima",
@@ -1361,7 +1360,8 @@
       "2026-11-11": [
        "15:30"
       ]
-     }
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101654"
     },
     {
      "titolo": "Nashville",
@@ -1376,7 +1376,8 @@
       "2026-11-11": [
        "17:30"
       ]
-     }
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/20137"
     },
     {
      "titolo": "Ombre",
@@ -1391,7 +1392,8 @@
       "2026-11-11": [
        "20:15"
       ]
-     }
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/13237"
     },
     {
      "titolo": "Cento e una notte",
@@ -1406,7 +1408,8 @@
       "2026-11-12": [
        "15:00"
       ]
-     }
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101655"
     },
     {
      "titolo": "Fjord",
@@ -1421,7 +1424,8 @@
       "2026-11-12": [
        "17:00"
       ]
-     }
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101656"
     },
     {
      "titolo": "Lo svitato",
@@ -1436,7 +1440,8 @@
       "2026-11-12": [
        "20:15"
       ]
-     }
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101687"
     },
     {
      "titolo": "En el camino",
@@ -1451,7 +1456,8 @@
       "2026-11-12": [
        "22:00"
       ]
-     }
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101720"
     }
    ],
    "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/"
@@ -1517,7 +1523,8 @@
        "21:45"
       ]
      },
-     "interpreti": "Tom Cruise e John Goodman"
+     "interpreti": "Tom Cruise e John Goodman",
+     "biglietti": "https://cervi.cinetecabologna.18tickets.it/film/93866"
     },
     {
      "titolo": "Viale del tramonto",
