@@ -20,11 +20,12 @@ for s in d.get("sale", []):
     if s.get("id") in ids: ERR.append(f"id ripetuto {s.get('id')}")
     ids.add(s.get("id"))
     if s.get("tipo") not in TIPI: ERR.append(f"{n}: tipo «{s.get('tipo')}» non ammesso")
-    for u in (s.get("sito"), s.get("fonte")):
+    for u in (s.get("sito"), s.get("fonte"), s.get("biglietti")):
         if u and not u.startswith("https://"): ERR.append(f"{n}: link non https {u}")
     if not (s.get("sito") or s.get("fonte")): AVV.append(f"{n}: nessun link al programma")
     for f in s.get("film", []):
         if not f.get("titolo"): ERR.append(f"{n}: film senza titolo")
+        if f.get("biglietti") and not f["biglietti"].startswith("https://"): ERR.append(f"{n} / {f.get('titolo')}: link biglietti non https")
         o = f.get("orari", [])
         bad = [x for x in o if not re.match(r"^\d{1,2}:\d{2}$", x)]
         if bad: ERR.append(f"{n} / {f.get('titolo')}: orari non validi {bad}")

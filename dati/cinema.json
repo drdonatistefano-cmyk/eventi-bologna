@@ -40,7 +40,8 @@
    "tipo": "D'essai",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/arlecchino_187/",
-   "film": []
+   "film": [],
+   "biglietti": "https://arlecchino.popupcinema.18tickets.it/"
   },
   {
    "id": "c005",
@@ -112,7 +113,8 @@
      },
      "paese": "USA"
     }
-   ]
+   ],
+   "biglietti": "https://www.webtic.it/app/shopping/loadLocal/BO/5373"
   },
   {
    "id": "c008",
@@ -151,7 +153,8 @@
      },
      "paese": "Regno Unito"
     }
-   ]
+   ],
+   "biglietti": "https://ccb.18tickets.it/"
   },
   {
    "id": "c010",
@@ -206,7 +209,8 @@
      },
      "paese": "Italia"
     }
-   ]
+   ],
+   "biglietti": "https://fossolo.ccroma.18tickets.it/"
   },
   {
    "id": "c011",
@@ -216,7 +220,8 @@
    "tipo": "Multisala",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/jolly_198/",
-   "film": []
+   "film": [],
+   "biglietti": "https://jolly.popupcinema.18tickets.it/"
   },
   {
    "id": "c012",
@@ -226,7 +231,8 @@
    "tipo": "Multisala",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/medica-palace-cinema-teatro_201/",
-   "film": []
+   "film": [],
+   "biglietti": "https://medica.popupcinema.18tickets.it/"
   },
   {
    "id": "c013",
@@ -277,7 +283,8 @@
      },
      "paese": "Regno Unito"
     }
-   ]
+   ],
+   "biglietti": "https://nosadella.18tickets.it/"
   },
   {
    "id": "c014",
@@ -376,7 +383,8 @@
      },
      "paese": "Italia"
     }
-   ]
+   ],
+   "biglietti": "https://ccb.18tickets.it/"
   },
   {
    "id": "c015",
@@ -406,7 +414,8 @@
    "tipo": "Multisala",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/pop-up-cinema-bristol_2890/",
-   "film": []
+   "film": [],
+   "biglietti": "https://bristol.popupcinema.18tickets.it/"
   },
   {
    "id": "c018",
@@ -461,7 +470,8 @@
      },
      "paese": "Regno Unito"
     }
-   ]
+   ],
+   "biglietti": "https://ccb.18tickets.it/"
   },
   {
    "id": "c019",
@@ -496,7 +506,8 @@
      },
      "paese": "Italia"
     }
-   ]
+   ],
+   "biglietti": "https://ccb.18tickets.it/"
   },
   {
    "id": "c020",
@@ -751,7 +762,8 @@
      },
      "paese": "USA"
     }
-   ]
+   ],
+   "biglietti": "https://www.thespacecinema.it/cinema/bologna/al-cinema"
   },
   {
    "id": "c022",
@@ -944,7 +956,8 @@
      },
      "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender"
     }
-   ]
+   ],
+   "biglietti": "https://lumiere.cinetecabologna.18tickets.it/"
   },
   {
    "id": "c023",
@@ -1440,7 +1453,8 @@
       ]
      }
     }
-   ]
+   ],
+   "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/"
   },
   {
    "id": "c024",
@@ -1520,7 +1534,8 @@
       ]
      }
     }
-   ]
+   ],
+   "biglietti": "https://cervi.cinetecabologna.18tickets.it/"
   },
   {
    "id": "c025",
@@ -1724,7 +1739,8 @@
      },
      "paese": "Regno Unito"
     }
-   ]
+   ],
+   "biglietti": "https://www.ucicinemas.it/"
   },
   {
    "id": "c027",

@@ -174,6 +174,29 @@ def leggi_mymovies(h):
     return out
 
 
+def leggi_18tickets(h):
+    """Biglietterie 18tickets: {chiave(titolo): link alla pagina d'acquisto del film}."""
+    out = {}
+    for b in re.split(r"<li[^>]*class=['\"]splide__slide", h)[1:]:
+        u = re.search(r"href=['\"](https://[^'\"]+/film/\d+)", b)
+        t = re.search(r"<p[^>]*page-heading[^>]*>(.*?)</p>", b, re.S) or re.search(r"<h\d[^>]*>(.*?)</h\d>", b, re.S)
+        if u and t and testo(t.group(1)):
+            out.setdefault(chiave(testo(t.group(1))), u.group(1).replace("://www.", "://"))
+    return out
+
+
+def permesso(url):
+    import urllib.robotparser
+    from urllib.parse import urlsplit
+    r = urllib.robotparser.RobotFileParser()
+    p = urlsplit(url)
+    try:
+        r.parse(scarica(f"{p.scheme}://{p.netloc}/robots.txt").splitlines())
+    except Exception:
+        return True  # robots.txt assente: lettura permessa
+    return r.can_fetch(UA, url)
+
+
 def tipo_da_nome(n):
     n = n.lower()
     if re.search(r"uci|space|multisala|giometti|starplex|medusa|cineci|century|cinecomfort", n): return "Multisala"
@@ -293,6 +316,30 @@ def main():
         log.append(f"mymovies: {len(mm)} schede, {trovati} film abbinati")
     except Exception as e:
         log.append(f"mymovies non letto: {e}")
+    # link d'acquisto dei singoli film dalle biglietterie 18tickets (una pagina per biglietteria)
+    pagine = {}
+    for s in d["sale"]:
+        b = s.get("biglietti", "")
+        if "18tickets.it" in b and s["film"]:
+            pagine.setdefault(b, []).append(s)
+    for b, sale in pagine.items():
+        try:
+            if not permesso(b):
+                log.append(f"biglietteria {b}: vietata da robots.txt")
+                continue
+            tk = leggi_18tickets(scarica(b))
+            n = 0
+            for s in sale:
+                for f in s["film"]:
+                    u = tk.get(chiave(f["titolo"])) or tk.get(chiave(f["titolo"].split(" - ")[0]))
+                    if u:
+                        f["biglietti"] = u
+                        n += 1
+                    else:
+                        f.pop("biglietti", None)
+            log.append(f"biglietteria {b}: {len(tk)} film in vendita, {n} abbinati")
+        except Exception as e:
+            log.append(f"biglietteria {b} non letta: {e}")
     nmp = len(lette) - (1 if ct_ok else 0)
     tot_mp = nmp + sum(1 for f in fallite if not f.startswith("Cineteca"))
     film = {f["titolo"].lower() for s in d["sale"] for f in s["film"]}
