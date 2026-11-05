@@ -165,6 +165,21 @@ main{max-width:none}
  .qc .lg{display:none}
  .qg[style*="--cols:4"] .qc{padding:4px 2px;font-size:13.5px}}
 @media(min-width:760px){.qc .sm{display:none}}
+@media(min-width:760px){
+ .qwrap{position:sticky;top:var(--barh);z-index:19;padding-top:0;padding-bottom:8px;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px)}
+ .bar{border-bottom:0!important}
+ .qbar{display:flex;flex-wrap:wrap;align-items:center;column-gap:20px;row-gap:6px;margin:0;padding:8px 12px;border-radius:14px}
+ .qg{display:flex;align-items:center;gap:7px;min-width:0}
+ .qg+.qg{padding-top:0;border-top:0}
+ .qh{flex-direction:row;align-items:center;gap:6px;min-height:0}
+ .qlab{font-size:10.5px;letter-spacing:.09em}
+ .qclr{font-size:11.5px}
+ .qchips{gap:5px}
+ .qc{height:30px;padding:0 10px;font-size:13px;gap:4px}
+ .qc small{font-size:11px}
+ .qc .em{margin-right:3px}
+ .status{margin-top:10px}
+ .mode-c .qc .lg{display:none}.mode-c .qc .sm{display:inline}}
 .srow .tday{display:flex;flex-wrap:wrap;align-items:center;gap:5px;grid-column:1/-1}
 .srow .tday b{font-size:12px;font-weight:700;color:var(--mute);min-width:44px;text-transform:capitalize}
 .srow .prev{font-size:13px;color:var(--mute);font-style:italic}
@@ -283,7 +298,7 @@ main{min-width:0;padding-bottom:90px}
 .month small{font-family:var(--sans);font-size:13px;color:var(--faint);font-weight:400}
 .day{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
 .day:first-of-type{border-top:0}
-.dlabel{text-align:center;padding-top:6px;position:sticky;top:calc(var(--barh) + 6px);align-self:start}
+.dlabel{text-align:center;padding-top:6px;position:sticky;top:calc(var(--barh) + var(--qh,0px) + 6px);align-self:start}
 .dlabel .wd{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
 .dlabel .n{font-family:var(--serif);font-size:1.6rem;line-height:1;font-weight:500}
 .dlabel.today .n{color:var(--terra)}
@@ -527,7 +542,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
 </div>
 <div class="pop" id="pop" hidden role="dialog" aria-label="Scelta filtro"></div></div>
 
-<div class="wrap"><div class="qbar" id="qbar" role="group" aria-label="Filtri rapidi"></div></div>
+<div class="wrap qwrap" id="qwrap"><div class="qbar" id="qbar" role="group" aria-label="Filtri rapidi"></div></div>
 <div class="wrap">
  <main>
   <div class="status"><span class="cnt" id="count" aria-live="polite"></span><div class="seg only-phone topctl" role="group" aria-label="Vista"><button data-view="cal" class="on">Calendario</button><button data-view="luoghi">Luoghi</button></div><span class="pills" id="active"></span></div>
@@ -963,7 +978,7 @@ function render(resetPage){
  if(resetPage)st.n=PAGE;
  try{
   $("#sw").classList.toggle("has",!!st.q);
-  renderRail();renderPanels();renderFbar();
+  renderRail();renderPanels();renderFbar();setBarH();
   const ev=visible(),places=st.view==="luoghi"&&!st.venue;
   $("#places").hidden=!places;$("#list").hidden=places;$("#vhead").hidden=!st.venue;
   if(st.venue)renderVenue(ev.length);
@@ -992,7 +1007,7 @@ function setMode(m){if(m===MODE)return;MODE=m;ALL=m==="m"?ALL_M:m==="c"?ALL_C:AL
  const y=$(".modes").getBoundingClientRect().top+scrollY-8;if(scrollY>y)scrollTo({top:y})}
 
 /* ---------- interazioni ---------- */
-function scrollToList(){const y=$("main").getBoundingClientRect().top+scrollY-$("#bar").offsetHeight-4;if(scrollY>y)scrollTo({top:y})}
+function scrollToList(){const y=$("main").getBoundingClientRect().top+scrollY-$("#bar").offsetHeight-(innerWidth>=760?$("#qwrap").offsetHeight:0)-4;if(scrollY>y)scrollTo({top:y})}
 function openVenue(name){st.venue=name;render(true);scrollToList()}
 document.addEventListener("click",e=>{
  const t=e.target;
@@ -1035,7 +1050,7 @@ $("#fbtn").onclick=()=>{lAll=false;sub="";openDlg($("#fdlg"));renderPanels()};
 $("#fdlg").addEventListener("close",()=>{lFocus=null});
 $("#fdlg").addEventListener("click",e=>{if(e.target.id==="fdlg")closeD($("#fdlg"))});
 const bar=$("#bar"),fab=$("#top");
-const setBarH=()=>{try{document.documentElement.style.setProperty("--barh",bar.offsetHeight+"px")}catch(_){}};
+const setBarH=()=>{try{document.documentElement.style.setProperty("--barh",bar.offsetHeight+"px");document.documentElement.style.setProperty("--qh",(innerWidth>=760?$("#qwrap").offsetHeight:0)+"px")}catch(_){}};
 function onScroll(){bar.classList.toggle("stuck",bar.getBoundingClientRect().top<=0);fab.classList.toggle("show",scrollY>900)}
 addEventListener("scroll",onScroll,{passive:true});addEventListener("keydown",e=>{if(e.key==="Escape"&&popK){popK="";renderFbar()}});
 addEventListener("resize",()=>{setBarH();if(popK){popK="";renderFbar()}});
