@@ -50,7 +50,17 @@
    "tipo": "D'essai",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/bellinzona-d-essai_188/",
-   "film": []
+   "film": [
+    {
+     "titolo": "Wild Horse Nine",
+     "orari": [
+      "21:00"
+     ],
+     "versione": "Versione originale",
+     "genere": "Poliziesco, Drammatico, Thriller",
+     "regia": "Martin McDonagh"
+    }
+   ]
   },
   {
    "id": "c006",
@@ -102,7 +112,17 @@
    "tipo": "D'essai",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/europa-cinema_192/",
-   "film": []
+   "film": [
+    {
+     "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
+     "orari": [
+      "15:30"
+     ],
+     "versione": "",
+     "genere": "Animazione, Commedia, Ragazzi, Horror",
+     "regia": "Steve Cox e Matthew Walker"
+    }
+   ]
   },
   {
    "id": "c010",
@@ -112,7 +132,30 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/fossolo_194/",
-   "film": []
+   "film": [
+    {
+     "titolo": "Dio ride",
+     "orari": [
+      "16:15",
+      "18:45",
+      "21:15"
+     ],
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "L'estranea",
+     "orari": [
+      "16:30",
+      "19:00",
+      "21:30"
+     ],
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    }
+   ]
   },
   {
    "id": "c011",
@@ -142,7 +185,28 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/nuovo-nosadella_203/",
-   "film": []
+   "film": [
+    {
+     "titolo": "Dio ride",
+     "orari": [
+      "19:00",
+      "21:10"
+     ],
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Wild Horse Nine",
+     "orari": [
+      "19:00",
+      "21:10"
+     ],
+     "versione": "",
+     "genere": "Poliziesco, Drammatico, Thriller",
+     "regia": "Martin McDonagh"
+    }
+   ]
   },
   {
    "id": "c014",
@@ -182,7 +246,7 @@
       "18:15",
       "21:00"
      ],
-     "versione": "Originale (solo ore 21:00)",
+     "versione": "Versione originale (solo ore 21:00)",
      "genere": "Commedia, Drammatico, Romantico",
      "regia": "Ang Lee"
     },
@@ -195,7 +259,7 @@
      ],
      "versione": "",
      "genere": "",
-     "regia": "Massimiliano Bruno"
+     "regia": ""
     }
    ]
   },
@@ -207,35 +271,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/orione_207/",
-   "film": [
-    {
-     "titolo": "Era meglio domani",
-     "orari": [
-      "16:30"
-     ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Vinciane Millereau"
-    },
-    {
-     "titolo": "Santiago - Un cammino per ricominciare",
-     "orari": [
-      "18:30"
-     ],
-     "versione": "",
-     "genere": "",
-     "regia": ""
-    },
-    {
-     "titolo": "Calle Malaga",
-     "orari": [
-      "21:00"
-     ],
-     "versione": "",
-     "genere": "",
-     "regia": ""
-    }
-   ]
+   "film": []
   },
   {
    "id": "c016",
@@ -273,9 +309,9 @@
       "18:15",
       "21:00"
      ],
-     "versione": "Originale (solo ore 21:00)",
+     "versione": "Versione originale (solo ore 21:00)",
      "genere": "",
-     "regia": "Andrey Zvyagintsev"
+     "regia": ""
     },
     {
      "titolo": "Wild Horse Nine",
@@ -284,7 +320,7 @@
       "18:45",
       "21:15"
      ],
-     "versione": "Originale (solo ore 21:15)",
+     "versione": "Versione originale (solo ore 21:15)",
      "genere": "Poliziesco, Drammatico, Thriller",
      "regia": "Martin McDonagh"
     }
@@ -307,9 +343,9 @@
       "19:30",
       "21:15"
      ],
-     "versione": "",
+     "versione": "Versione originale (solo ore 21:15)",
      "genere": "",
-     "regia": "Pawel Pawlikowski"
+     "regia": ""
     }
    ]
   },
@@ -339,7 +375,7 @@
      ],
      "versione": "",
      "genere": "",
-     "regia": "Giovanni Veronesi"
+     "regia": ""
     },
     {
      "titolo": "Hope",
@@ -350,7 +386,7 @@
      ],
      "versione": "",
      "genere": "",
-     "regia": "Na Hong-jin"
+     "regia": ""
     },
     {
      "titolo": "Ice Cream Man",
@@ -368,8 +404,8 @@
       "18:15"
      ],
      "versione": "",
-     "genere": "Animazione, Ragazzi, Commedia",
-     "regia": "Alessandro Carloni, Erica Rivinoja"
+     "genere": "Animazione, Ragazzi, Commedia, Avventura, Fantastico",
+     "regia": "Alessandro Carloni e Erica Rivinoja"
     },
     {
      "titolo": "It Ends",
@@ -397,7 +433,7 @@
      ],
      "versione": "",
      "genere": "",
-     "regia": "Paolo Strippoli"
+     "regia": ""
     },
     {
      "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
@@ -406,8 +442,8 @@
       "17:40"
      ],
      "versione": "",
-     "genere": "Animazione, Commedia, Ragazzi",
-     "regia": "Steve Cox, Matthew Walker"
+     "genere": "Animazione, Commedia, Ragazzi, Horror",
+     "regia": "Steve Cox e Matthew Walker"
     },
     {
      "titolo": "The Nameless Ballad",
@@ -426,7 +462,7 @@
      ],
      "versione": "",
      "genere": "",
-     "regia": "Massimiliano Bruno"
+     "regia": ""
     },
     {
      "titolo": "Wild Horse Nine",
@@ -580,67 +616,101 @@
    "fonte": "https://movieplayer.it/cinema/uci-cinemas-meridiana_214/",
    "film": [
     {
-     "titolo": "Wild Horse Nine",
-     "orari": [],
-     "versione": "",
-     "genere": "Poliziesco, Drammatico, Thriller",
-     "regia": "Martin McDonagh"
-    },
-    {
      "titolo": "Dio ride",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "versione": "",
      "genere": "",
-     "regia": "Giovanni Veronesi"
+     "regia": ""
     },
     {
-     "titolo": "Un tranquillo funerale di famiglia",
-     "orari": [],
+     "titolo": "Fast and Furious",
+     "orari": [
+      "18:35"
+     ],
      "versione": "",
-     "genere": "",
-     "regia": "Massimiliano Bruno"
-    },
-    {
-     "titolo": "Il gatto col cappello",
-     "orari": [],
-     "versione": "",
-     "genere": "Animazione, Ragazzi, Commedia",
-     "regia": "Alessandro Carloni, Erica Rivinoja"
+     "genere": "Azione",
+     "regia": "Rob Cohen"
     },
     {
      "titolo": "Hope",
-     "orari": [],
+     "orari": [
+      "18:40",
+      "21:40"
+     ],
      "versione": "",
      "genere": "",
-     "regia": "Na Hong-jin"
-    },
-    {
-     "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
-     "orari": [],
-     "versione": "",
-     "genere": "Animazione, Commedia, Ragazzi",
-     "regia": "Steve Cox, Matthew Walker"
+     "regia": ""
     },
     {
      "titolo": "Ice Cream Man",
-     "orari": [],
+     "orari": [
+      "23:00"
+     ],
      "versione": "",
      "genere": "Commedia, Horror, Thriller",
      "regia": "Eli Roth"
     },
     {
+     "titolo": "Il gatto col cappello",
+     "orari": [
+      "16:00",
+      "17:00",
+      "19:15"
+     ],
+     "versione": "",
+     "genere": "Animazione, Ragazzi, Commedia, Avventura, Fantastico",
+     "regia": "Alessandro Carloni e Erica Rivinoja"
+    },
+    {
      "titolo": "It Ends",
-     "orari": [],
+     "orari": [
+      "22:10"
+     ],
      "versione": "",
      "genere": "Horror",
      "regia": "Alexander Ullom"
     },
     {
+     "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
+     "orari": [
+      "16:40"
+     ],
+     "versione": "",
+     "genere": "Animazione, Commedia, Ragazzi, Horror",
+     "regia": "Steve Cox e Matthew Walker"
+    },
+    {
      "titolo": "The Nameless Ballad",
-     "orari": [],
+     "orari": [
+      "22:20"
+     ],
      "versione": "",
      "genere": "Horror, Drammatico",
      "regia": "Federico Zampaglione"
+    },
+    {
+     "titolo": "Un tranquillo funerale di famiglia",
+     "orari": [
+      "17:45",
+      "20:00"
+     ],
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Wild Horse Nine",
+     "orari": [
+      "16:00",
+      "18:10",
+      "19:40",
+      "21:10"
+     ],
+     "versione": "Versione originale (solo ore 19:40)",
+     "genere": "Poliziesco, Drammatico, Thriller",
+     "regia": "Martin McDonagh"
     }
    ]
   },
@@ -658,5 +728,6 @@
  "fonti": [
   "movieplayer.it (pagine delle singole sale)",
   "cinetecadibologna.it/programmazione"
- ]
+ ],
+ "fonte_aggiornamento": "automatico (GitHub)"
 }
