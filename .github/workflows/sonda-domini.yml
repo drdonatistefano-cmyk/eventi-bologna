@@ -12,7 +12,7 @@ jobs:
           set +e
           sudo apt-get install -y -qq whois >/dev/null 2>&1
           mkdir -p sonda; : > sonda/nomi.txt
-          NOMI="stasera chesifa chefacciamo dovestasera staseradove escostasera usciamo andiamo serata serate cartellone locandina sipario platea palco agendina inprogramma eventa eventu evvai uscite seratona daifuori fuoriporta bellaserata buonaserata staseraesco sottoiportici portici eventiora eventioggi fuoriprogramma prossimamente inscena primafila primeserate giraeventi eventiamo stasevai"
+          NOMI="staserafuori fuoristasera seratefuori doveandiamo cosafacciamo escofuori bellastasera laserata unaserata eventino eventini uscitina dopocena seratebelle dovesiesce chesisuona cheseratae quistasera staseraqui serataok dovevado vadoa vaistasera tuttistasera ognisera seratime laprimafila serataggio buonaserata"
           for n in $NOMI; do
             c=$(curl -s -o /dev/null -w "%{http_code}" "https://rdap.verisign.com/com/v1/domain/$n.com")
             [ "$c" = "404" ] && com=LIBERO || com=preso
@@ -25,4 +25,4 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add sonda && git commit -m "Verifica nomi" && git pull --rebase && git push
+          git add sonda && git commit -m "Verifica nomi 2" && git pull --rebase && git push
