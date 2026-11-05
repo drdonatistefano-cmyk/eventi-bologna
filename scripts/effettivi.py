@@ -1,11 +1,12 @@
 """Converte dati/statistiche.json nelle misure effettive del cruscotto
-"Sito eventi Bologna – visite attese e reali".
+"Ach's Events Guide – visite attese e reali".
 
 Uso: python3 scripts/effettivi.py [dati/statistiche.json] [effettivi.json]
 
 Per ogni periodo del cruscotto già iniziato somma visite e interazioni dei giorni
 misurati e scrive una riga per metrica: {periodo, metrica, effettivo, giorni, al}.
-Scrive solo i periodi conclusi, per confrontarli con gli obiettivi del periodo intero.
+I periodi non ancora conclusi escono con "parziale": true e i giorni misurati finora:
+il cruscotto li mostra come «in corso» senza confrontarli con l'obiettivo del periodo intero.
 """
 import json, sys, datetime
 
@@ -27,17 +28,18 @@ def main():
     ultimo = max(visite) if visite else None
     righe = []
     for nome, dal, al in PERIODI:
-        if not ultimo or ultimo < al: continue  # solo periodi conclusi
-        fine = al
+        if not ultimo or ultimo < dal: continue  # periodo non ancora iniziato
+        fine = min(al, ultimo)
+        parz = fine < al
         gg = [d for d in visite if dal <= d <= fine]
         n_giorni = (datetime.date.fromisoformat(fine) - datetime.date.fromisoformat(dal)).days + 1
         v = sum(visite[d] for d in gg)
-        righe.append({"periodo": nome, "metrica": "Visite", "effettivo": v, "giorni": n_giorni, "al": fine})
+        righe.append({"periodo": nome, "metrica": "Visite", "effettivo": v, "giorni": n_giorni, "al": fine, "parziale": parz})
         tot = {k: sum(giorni_ev.get(d, {}).get(t, 0) for d in giorni_ev if dal <= d <= fine) for k, t in METRICHE.items()}
         for k, n in tot.items():
-            righe.append({"periodo": nome, "metrica": k, "effettivo": n, "giorni": n_giorni, "al": fine})
+            righe.append({"periodo": nome, "metrica": k, "effettivo": n, "giorni": n_giorni, "al": fine, "parziale": parz})
         ric = round(tot["Clic sui biglietti"] * COMMISSIONE + v * PAGINE * RPM / 1000, 2)
-        righe.append({"periodo": nome, "metrica": "Ricavo potenziale", "effettivo": ric, "giorni": n_giorni, "al": fine})
+        righe.append({"periodo": nome, "metrica": "Ricavo potenziale", "effettivo": ric, "giorni": n_giorni, "al": fine, "parziale": parz})
     json.dump(righe, open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"Scritte {len(righe)} righe in {out} (dati fino al {ultimo})")
 
