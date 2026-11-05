@@ -251,7 +251,7 @@ function renderInterest(){
   listBox("Condivisioni","",cond),
  ].join("");
 }
-const REF={"(diretto)":"Accesso diretto o app di messaggi","Phones":"Telefoni","Tablets":"Tablet","Computer monitors":"Computer","Computer monitors larger than HD":"Schermi grandi","Italy":"Italia","Germany":"Germania","France":"Francia","Spain":"Spagna","Switzerland":"Svizzera","United States":"Stati Uniti","United Kingdom":"Regno Unito","Unknown":"Non noto","(unknown)":"Non noto"};
+const REF={"(diretto)":"Accesso diretto o app di messaggi","Phones":"Telefoni","phone":"Telefoni","largephone":"Telefoni grandi","tablet":"Tablet","desktop":"Computer","desktophd":"Schermi grandi","unknown":"Non noto","Japan":"Giappone","Norway":"Norvegia","Tablets":"Tablet","Computer monitors":"Computer","Computer monitors larger than HD":"Schermi grandi","Italy":"Italia","Germany":"Germania","France":"Francia","Spain":"Spagna","Switzerland":"Svizzera","United States":"Stati Uniti","United Kingdom":"Regno Unito","Unknown":"Non noto","(unknown)":"Non noto"};
 function renderOrigin(){
  const k=R==="oggi"?"7g":R;const s=S[k];
  const m=a=>(a||[]).map(x=>({l:REF[x.nome]||x.nome,n:x.n}));

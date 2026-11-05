@@ -87,7 +87,7 @@ else:
             for page in ("toprefs", "locations", "systems", "browsers", "sizes"):
                 try:
                     rr = gc(f"/stats/{page}", start=iso(s0), end=iso(hour), limit=12)
-                    sez[page] = [{"nome": y.get("name") or "(diretto)", "n": y.get("count", 0)} for y in rr.get("stats", [])]
+                    sez[page] = [{"nome": y.get("name") or (y.get("id") if page == "sizes" else "") or "(diretto)", "n": y.get("count", 0)} for y in rr.get("stats", [])]
                 except Exception:
                     sez[page] = []
             out[k] = sez
