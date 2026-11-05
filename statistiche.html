@@ -162,7 +162,7 @@ async function getStats(){
 }
 async function liveData(f,v){try{const r=await fetch(`${f}?t=${Date.now()}`,{cache:"no-store"});if(!r.ok)return{ok:false,http:r.status};const t=await r.text();const m=t.match(/=\s*(\{[\s\S]*\})\s*;?\s*$/);const d=JSON.parse(m[1]);return{ok:true,n:(d[v]||[]).length,agg:d.aggiornato}}catch(_){return{ok:false}}}
 async function livePages(){try{const r=await fetch(`https://api.github.com/repos/${REPO}/actions/runs?per_page=15`,{cache:"no-store"});if(!r.ok)return null;const j=await r.json();const p=j.workflow_runs.filter(x=>x.name==="pages build and deployment");return p.length?{esito:p[0].conclusion||p[0].status,quando:p[0].updated_at,url:p[0].html_url,fail7:p.filter(x=>x.conclusion==="failure"&&Date.now()-new Date(x.created_at)<7*864e5).length}:null}catch(_){return null}}
-async function liveSite(){try{const r=await fetch(`./?t=${Date.now()}`,{cache:"no-store"});const t=await r.text();return{ok:r.ok&&t.includes("Eventi a Bologna"),gc:/const GC="eventibologna"/.test(t)}}catch(_){return{ok:false}}}
+async function liveSite(){try{const r=await fetch(`./?t=${Date.now()}`,{cache:"no-store"});const t=await r.text();return{ok:r.ok&&t.includes("eventi.js"),gc:/const GC="eventibologna"/.test(t)}}catch(_){return{ok:false}}}
 
 function nextMonday(){const d=new Date();const day=d.getDay();let add=(8-day)%7;const t=new Date(d);t.setDate(d.getDate()+add);t.setHours(7,32,0,0);if(t<=d)t.setDate(t.getDate()+7);return t}
 function check(cls,title,tag,desc){const ic={ok:"✓",warn:"!",bad:"✕",wait:"…"}[cls];return`<li class="${cls}"><span class="ic" aria-hidden="true">${ic}</span><b>${title}</b><span class="tag">${tag}</span><span class="d">${desc}</span></li>`}

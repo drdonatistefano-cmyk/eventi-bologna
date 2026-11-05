@@ -43,7 +43,7 @@ out = {"generato": iso(now), "stato": {}, "errore": ""}
 # ---------- stato del sito ----------
 st = out["stato"]
 code, html = get(SITE + f"?t={int(time.time())}", raw=True)
-st["sito"] = {"http": code, "ok": code == 200 and "Eventi a Bologna" in html, "statistiche_attive": f'const GC="{GC}"' in html}
+st["sito"] = {"http": code, "ok": code == 200 and "eventi.js" in html, "statistiche_attive": f'const GC="{GC}"' in html}
 for f, var in (("eventi.js", "eventi"), ("mostre.js", "mostre")):
     c, t = get(SITE + f + f"?t={int(time.time())}", raw=True)
     info = {"http": c, "ok": False, "n": 0, "aggiornato": ""}
@@ -59,9 +59,10 @@ if not TOKEN:
 else:
     try:
         today = now.date()
-        days = [today - dt.timedelta(days=i) for i in range(29, -1, -1)]
+        lancio = dt.date(2026, 11, 4)  # GoatCounter risponde 404 per periodi prima della nascita del sito
+        days = [d for d in (today - dt.timedelta(days=i) for i in range(29, -1, -1)) if d >= lancio]
         s30 = dt.datetime.combine(days[0], dt.time(), dt.timezone.utc)
-        start = {"oggi": today, "7g": days[-7], "30g": days[0]}
+        start = {"oggi": today, "7g": max(today - dt.timedelta(days=6), lancio), "30g": days[0]}
         # tutti i percorsi degli ultimi 30 giorni, con il dettaglio giornaliero
         hits = []
         for _ in range(10):
