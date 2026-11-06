@@ -1,0 +1,15 @@
+name: sonda-bigl
+on: workflow_dispatch
+jobs:
+  s:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          set +e
+          UA="Mozilla/5.0 (EventiBolognaBot)"
+          for r in https://www.ticketone.it/robots.txt https://www.vivaticket.com/robots.txt https://feverup.com/robots.txt; do echo "== $r"; curl -s -A "$UA" --max-time 20 "$r" | grep -iE "user-agent: \*|^disallow|^allow|sitemap" | head -30; done
+          for u in "https://www.ticketone.it/city/bologna-208/" "https://www.vivaticket.com/it/ricerca?q=bologna" "https://www.vivaticket.com/it/luoghi/bologna" "https://www.vivaticket.com/it/citta/bologna"; do
+            c=$(curl -s -o /tmp/p.html -w "%{http_code} %{url_effective} %{size_download}" -L -A "$UA" --max-time 25 "$u"); echo "== $u -> $c"
+            grep -oE 'href="[^"]*(/event/|/ticket/|/biglietti/|/it/ticket/)[^"]*"' /tmp/p.html | sort -u | head -8
+            grep -o 'application/ld+json' /tmp/p.html | wc -l
+          done
