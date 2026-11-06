@@ -1,18 +1,19 @@
 {
- "generato": "2026-11-05T14:50:39+00:00",
+ "generato": "2026-11-06T06:13:27+00:00",
  "dal": "2026-11-04",
- "al": "2026-11-05",
- "visite_totali": 38,
- "totale_goatcounter": 85,
- "eventi_totali": 47,
+ "al": "2026-11-06",
+ "visite_totali": 44,
+ "totale_goatcounter": 118,
+ "eventi_totali": 74,
  "eventi_per_tipo": {
-  "filtri": 15,
-  "cambio scheda": 6,
-  "cambio vista": 5,
+  "filtri": 22,
+  "cambio scheda": 12,
+  "cambio vista": 9,
+  "luoghi aperti": 9,
+  "apri filtri": 6,
   "clic biglietti": 5,
-  "luoghi aperti": 5,
   "mostra altri": 3,
-  "apri filtri": 3,
+  "schede aperte": 3,
   "clic info spettacoli": 3,
   "azzera filtri": 2
  },
@@ -20,40 +21,55 @@
   {
    "settimana": 1,
    "dal": "2026-11-04",
-   "al": "2026-11-05",
-   "visite": 38,
-   "cambio scheda": 6,
+   "al": "2026-11-06",
+   "visite": 44,
+   "cambio scheda": 12,
+   "apri filtri": 6,
+   "cambio vista": 9,
    "mostra altri": 3,
-   "filtri": 15,
+   "filtri": 22,
    "azzera filtri": 2,
-   "apri filtri": 3,
-   "cambio vista": 5,
+   "luoghi aperti": 9,
+   "schede aperte": 3,
    "clic biglietti": 5,
-   "luoghi aperti": 5,
    "clic info spettacoli": 3
   }
  ],
  "eventi_per_giorno": {
   "2026-11-04": {
    "cambio scheda": 6,
+   "apri filtri": 2,
+   "cambio vista": 5,
    "mostra altri": 2,
    "filtri": 8,
    "azzera filtri": 1,
-   "apri filtri": 2,
-   "cambio vista": 5,
-   "clic biglietti": 4,
    "luoghi aperti": 5,
+   "schede aperte": 0,
+   "clic biglietti": 4,
    "clic info spettacoli": 3
   },
   "2026-11-05": {
-   "cambio scheda": 0,
+   "cambio scheda": 6,
+   "apri filtri": 4,
+   "cambio vista": 4,
    "mostra altri": 1,
-   "filtri": 7,
+   "filtri": 14,
    "azzera filtri": 1,
-   "apri filtri": 1,
-   "cambio vista": 0,
+   "luoghi aperti": 4,
+   "schede aperte": 3,
    "clic biglietti": 1,
+   "clic info spettacoli": 0
+  },
+  "2026-11-06": {
+   "cambio scheda": 0,
+   "apri filtri": 0,
+   "cambio vista": 0,
+   "mostra altri": 0,
+   "filtri": 0,
+   "azzera filtri": 0,
    "luoghi aperti": 0,
+   "schede aperte": 0,
+   "clic biglietti": 0,
    "clic info spettacoli": 0
   }
  },
@@ -64,26 +80,48 @@
   },
   {
    "giorno": "2026-11-05",
-   "visite": 6
+   "visite": 12
+  },
+  {
+   "giorno": "2026-11-06",
+   "visite": 0
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 85
+   "conteggio": 118
   }
  ],
  "pagine_ed_eventi": [
   {
    "path": "/eventi-bologna",
    "titolo": "Eventi a Bologna – concerti e teatro",
-   "conteggio": 38
+   "conteggio": 44
   },
   {
    "path": "scheda/mostre",
    "titolo": "Cambio scheda",
+   "conteggio": 6,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "spettacoli/apri-filtri",
+   "titolo": "Apertura filtri",
+   "conteggio": 4,
+   "tipo": "apri filtri"
+  },
+  {
+   "path": "scheda/spettacoli",
+   "titolo": "Cambio scheda",
    "conteggio": 4,
    "tipo": "cambio scheda"
+  },
+  {
+   "path": "spettacoli/vista/elenco",
+   "titolo": "Cambio vista",
+   "conteggio": 3,
+   "tipo": "cambio vista"
   },
   {
    "path": "spettacoli/mostra-altri",
@@ -92,9 +130,39 @@
    "tipo": "mostra altri"
   },
   {
+   "path": "spettacoli/filtro/Genere/Rock",
+   "titolo": "Filtro",
+   "conteggio": 3,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Comici",
+   "titolo": "Filtro",
+   "conteggio": 3,
+   "tipo": "filtri"
+  },
+  {
    "path": "spettacoli/filtro/Genere/Teatro",
    "titolo": "Filtro",
    "conteggio": 3,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 3,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "scheda/cinema",
+   "titolo": "Cambio scheda",
+   "conteggio": 2,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Pop e altra musica",
+   "titolo": "Filtro",
+   "conteggio": 2,
    "tipo": "filtri"
   },
   {
@@ -104,34 +172,82 @@
    "tipo": "azzera filtri"
   },
   {
-   "path": "spettacoli/apri-filtri",
-   "titolo": "Apertura filtri",
-   "conteggio": 2,
-   "tipo": "apri filtri"
-  },
-  {
-   "path": "spettacoli/filtro/Genere/Rock",
-   "titolo": "Filtro",
-   "conteggio": 2,
-   "tipo": "filtri"
-  },
-  {
-   "path": "spettacoli/filtro/Genere/Comici",
-   "titolo": "Filtro",
-   "conteggio": 2,
-   "tipo": "filtri"
-  },
-  {
    "path": "mostre/vista/luoghi",
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
   },
   {
-   "path": "scheda/spettacoli",
-   "titolo": "Cambio scheda",
-   "conteggio": 2,
-   "tipo": "cambio scheda"
+   "path": "cinema/apri-filtri",
+   "titolo": "Apertura filtri",
+   "conteggio": 1,
+   "tipo": "apri filtri"
+  },
+  {
+   "path": "spettacoli/luogo/Teatro Duse",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/filtro/Date/2026-12",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "mostre/filtro/Periodo/oggi",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Date/weekend",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Date/oggi",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "mostre/dettaglio/Golgota",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "cinema/luogo/The Space Cinema Bologna",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "cinema/luogo/Cinema Century CineCi",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "cinema/dettaglio/Un tranquillo funerale di famiglia",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "cinema/luogo/Cinema Nuovo Nosadella",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "cinema/dettaglio/Dio ride",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
   },
   {
    "path": "spettacoli/filtro/Quando/oggi",
@@ -141,12 +257,6 @@
   },
   {
    "path": "spettacoli/filtro/Biglietti/Biglietti disponibili",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "spettacoli/filtro/Genere/Pop e altra musica",
    "titolo": "Filtro",
    "conteggio": 1,
    "tipo": "filtri"
@@ -186,12 +296,6 @@
    "titolo": "Apertura programma del luogo",
    "conteggio": 1,
    "tipo": "luoghi aperti"
-  },
-  {
-   "path": "spettacoli/vista/elenco",
-   "titolo": "Cambio vista",
-   "conteggio": 1,
-   "tipo": "cambio vista"
   },
   {
    "path": "spettacoli/clic-info/I Solisti dell'Orchestra Mozart – Mozart, Gran Partita",
@@ -246,12 +350,6 @@
    "titolo": "Apertura programma del luogo",
    "conteggio": 1,
    "tipo": "luoghi aperti"
-  },
-  {
-   "path": "spettacoli/vista/luoghi",
-   "titolo": "Cambio vista",
-   "conteggio": 1,
-   "tipo": "cambio vista"
   },
   {
    "path": "mostre/luogo/Palazzo Albergati",
