@@ -27,8 +27,8 @@ ZONE = {
 }
 ZONE_MI = {
  "Milano": ["Milano"],
- "Nord e Ovest": ["Rho","Pero","Arese","Bollate","Sesto San Giovanni","Cinisello Balsamo","Cologno Monzese","Legnano"],
- "Sud ed Est": ["Assago","Rozzano","San Donato Milanese","San Giuliano Milanese","Segrate","Peschiera Borromeo","Pioltello","Cernusco sul Naviglio"],
+ "Nord e Ovest": ["Rho","Pero","Arese","Bollate","Sesto San Giovanni","Cinisello Balsamo","Cologno Monzese","Legnano","Paderno Dugnano","Cusano Milanino","Novate Milanese","Cormano","Bresso"],
+ "Sud ed Est": ["Assago","Rozzano","San Donato Milanese","San Giuliano Milanese","Segrate","Peschiera Borromeo","Pioltello","Cernusco sul Naviglio","Settala","Corsico","Buccinasco"],
 }
 # --citta mi: perimetro di Milano (stesse zone di index.html, CITTA_CFG.mi)
 if "--citta" in sys.argv and sys.argv[sys.argv.index("--citta") + 1] == "mi":
