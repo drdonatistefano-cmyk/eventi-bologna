@@ -1,7 +1,7 @@
 name: Statistiche
 on:
   schedule:
-    - cron: "17 5 * * *"   # ogni giorno alle 6:17 ora italiana (inverno)
+    - cron: "7,37 * * * *"   # ogni mezz'ora: il cruscotto delle visite legge dati/effettivi.json
   workflow_dispatch:
 permissions:
   contents: write
@@ -15,11 +15,13 @@ jobs:
       - name: Scarica le statistiche da GoatCounter
         env:
           GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
-        run: python3 scripts/statistiche.py
+        run: |
+          python3 scripts/statistiche.py
+          python3 scripts/effettivi.py dati/statistiche.json dati/effettivi.json --con-oggi
       - name: Salva il risultato
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dati/statistiche.json dati/statistiche.md 2>/dev/null || true
-          git commit -m "Statistiche $(date +%F)" || echo "nessuna modifica"
+          git add dati/statistiche.json dati/statistiche.md dati/effettivi.json 2>/dev/null || true
+          git commit -m "Statistiche $(date '+%F %H:%M')" || { echo "nessuna modifica"; exit 0; }
           git pull --rebase && git push
