@@ -1,0 +1,19 @@
+name: Sentinella cartelloni
+on:
+  schedule:
+    - cron: "17 21 * * 0"   # domenica sera, prima del giro del lunedì
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  controlla:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/sentinella.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dati/sentinella_stato.json
+          git commit -m "Sentinella $(TZ=Europe/Rome date +%F)" || echo "nessuna modifica"
+          git pull --rebase && git push
