@@ -15,8 +15,11 @@ import datetime, html, json, os, re, subprocess, sys, time, unicodedata, urllib.
 from zoneinfo import ZoneInfo
 
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATI = os.path.join(RADICE, "dati", "cinema.json")
-STATO = os.path.join(RADICE, "dati", "cinema_stato.json")
+# --citta mi: Milano (dati in milano/dati/, pagina in milano/cinema.js); senza opzione: Bologna
+CITTA = sys.argv[sys.argv.index("--citta") + 1] if "--citta" in sys.argv else "bo"
+CART = os.path.join(RADICE, "milano") if CITTA == "mi" else RADICE
+DATI = os.path.join(CART, "dati", "cinema.json")
+STATO = os.path.join(CART, "dati", "cinema_stato.json")
 CACHE = os.path.join(RADICE, "dati", "film_info.json")   # schede dei film già lette: ogni film si legge una volta sola
 UA = "Mozilla/5.0 (compatible; EventiBolognaBot/1.0; +https://achevents.com/)"
 CINETECA = "https://cinetecadibologna.it/programmazione/film-in-programma/"  # tutta la settimana
@@ -33,6 +36,13 @@ UFFICIALI = ["Casalecchio di Reno", "Zola Predosa", "Sasso Marconi", "Valsamoggi
     "Fontanelice", "Castel del Rio", "Alto Reno Terme", "Camugnano", "Castel d'Aiano", "Castel di Casio",
     "Castiglione dei Pepoli", "Gaggio Montano", "Grizzana Morandi", "Lizzano in Belvedere", "Marzabotto",
     "Monzuno", "San Benedetto Val di Sambro", "Vergato"]
+MP_CITTA, MM_CITTA = "bologna", "bologna"     # pagine città su movieplayer e mymovies
+if CITTA == "mi":
+    MP_CITTA, MM_CITTA = "milano", "milano"
+    COMUNI_MP = {}
+    UFFICIALI = ["Milano", "Rho", "Pero", "Arese", "Bollate", "Sesto San Giovanni", "Cinisello Balsamo", "Cologno Monzese",
+        "Legnano", "Assago", "Rozzano", "San Donato Milanese", "San Giuliano Milanese", "Segrate", "Peschiera Borromeo",
+        "Pioltello", "Cernusco sul Naviglio"]
 
 
 def slug(s):
@@ -217,15 +227,15 @@ def tipo_da_nome(n):
 
 def scopri(d, log):
     """Cerca sale nuove nelle pagine dei comuni della provincia su movieplayer."""
-    h = scarica("https://movieplayer.it/cinema/bologna/")
+    h = scarica(f"https://movieplayer.it/cinema/{MP_CITTA}/")
     note = {s.get("fonte") for s in d["sale"]}
     nuove = 0
-    for cslug in sorted(set(re.findall(r'href="/cinema/bologna/([a-z0-9-]+)/"', h))):
+    for cslug in sorted(set(re.findall(rf'href="/cinema/{MP_CITTA}/([a-z0-9-]+)/"', h))):
         comune = COMUNI_MP.get(cslug) or UFF.get(cslug)
         if not comune:
             continue
         try:
-            p = scarica(f"https://movieplayer.it/cinema/bologna/{cslug}/")
+            p = scarica(f"https://movieplayer.it/cinema/{MP_CITTA}/{cslug}/")
         except Exception as e:
             log.append(f"scoperta {cslug}: {e}")
             continue
@@ -236,7 +246,7 @@ def scopri(d, log):
                 continue
             note.add(url)
             nome = html.unescape(nome).strip()
-            nid = "c%03d" % (1 + max(int(s["id"][1:]) for s in d["sale"]))
+            nid = "c%03d" % (1 + max([int(s["id"][1:]) for s in d["sale"]] or [0]))
             d["sale"].append({"id": nid, "nome": nome if nome.lower().startswith("cinema") or "uci" in nome.lower() else "Cinema " + nome,
                               "citta": comune, "indirizzo": "", "tipo": tipo_da_nome(nome), "sito": "", "fonte": url, "film": [], "auto": True})
             nuove += 1
@@ -247,7 +257,7 @@ def main():
     oggi = datetime.datetime.now(ZoneInfo("Europe/Rome")).date()
     d = json.load(open(DATI, encoding="utf-8"))
     log, lette, fallite = [], [], []
-    if "--scopri" in sys.argv or oggi.weekday() == 0:
+    if "--scopri" in sys.argv or oggi.weekday() == 0 or not d["sale"]:
         try:
             n = scopri(d, log)
             log.append(f"sale nuove trovate: {n}")
@@ -269,6 +279,8 @@ def main():
     # Cineteca
     ct_ok = True
     try:
+        if CITTA != "bo":
+            raise LookupError("salta")   # la Cineteca è solo a Bologna
         hct = scarica(CINETECA)
         ct = {}
         for k in range(8):   # oggi e i 7 giorni seguenti
@@ -302,6 +314,8 @@ def main():
         lette.append("Cineteca")
         if not ct:
             log.append("Cineteca: nessuna proiezione oggi trovata")
+    except LookupError:
+        pass
     except Exception as e:
         ct_ok = False
         for s in d["sale"]:
@@ -310,7 +324,7 @@ def main():
         fallite.append(f"Cineteca: {e}")
     # schede dei film da mymovies (una sola pagina): genere uniforme, regia e interpreti mancanti
     try:
-        mm = leggi_mymovies(scarica("https://www.mymovies.it/cinema/bologna/"))
+        mm = leggi_mymovies(scarica(f"https://www.mymovies.it/cinema/{MM_CITTA}/"))
         trovati = 0
         for s in d["sale"]:
             for f in s["film"]:
@@ -350,7 +364,7 @@ def main():
             log.append(f"biglietteria {b}: {len(tk)} film in vendita, {n} abbinati")
         except Exception as e:
             log.append(f"biglietteria {b} non letta: {e}")
-    nmp = len(lette) - (1 if ct_ok else 0)
+    nmp = len(lette) - (1 if ct_ok and CITTA == "bo" else 0)
     tot_mp = nmp + sum(1 for f in fallite if not f.startswith("Cineteca"))
     film = {f["titolo"].lower() for s in d["sale"] for f in s["film"]}
     ok = ct_ok and tot_mp > 0 and nmp / tot_mp >= 0.6 and len(film) >= 8
@@ -362,7 +376,7 @@ def main():
         d["aggiornato"] = d["giorno_orari"] = oggi.isoformat()
         d["fonte_aggiornamento"] = "automatico (GitHub)"
         json.dump(d, open(DATI, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-        r = subprocess.run([sys.executable, os.path.join(RADICE, "scripts", "cinema.py"), DATI, os.path.join(RADICE, "cinema.js")])
+        r = subprocess.run([sys.executable, os.path.join(RADICE, "scripts", "cinema.py"), DATI, os.path.join(CART, "cinema.js")])
         if r.returncode:
             stato["ok"] = False
             stato["note"].append("cinema.py ha segnalato errori: cinema.js non aggiornato")

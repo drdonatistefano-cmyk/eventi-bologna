@@ -3,6 +3,7 @@
 Uso:
   python3 aggiorna.py <eventi.json | eventi.js> [--oggi AAAA-MM-GG] [--out eventi.js]
   python3 aggiorna.py <mostre.json | mostre.js> --mostre [--oggi AAAA-MM-GG] [--out mostre.js]
+  Aggiungi --citta mi per Milano (lancia lo script dentro la cartella milano/).
 
 Legge l'elenco eventi (JSON puro, oppure il file eventi.js pubblicato),
 lo controlla, toglie gli eventi già finiti, unisce i doppioni,
@@ -24,6 +25,15 @@ ZONE = {
  "Imolese": ["Imola","Castel San Pietro Terme","Medicina","Dozza","Castel Guelfo di Bologna","Mordano","Borgo Tossignano","Casalfiumanese","Fontanelice","Castel del Rio"],
  "Appennino": ["Alto Reno Terme","Camugnano","Castel d'Aiano","Castel di Casio","Castiglione dei Pepoli","Gaggio Montano","Grizzana Morandi","Lizzano in Belvedere","Marzabotto","Monzuno","San Benedetto Val di Sambro","Vergato"],
 }
+ZONE_MI = {
+ "Milano": ["Milano"],
+ "Nord e Ovest": ["Rho","Pero","Arese","Bollate","Sesto San Giovanni","Cinisello Balsamo","Cologno Monzese","Legnano"],
+ "Sud ed Est": ["Assago","Rozzano","San Donato Milanese","San Giuliano Milanese","Segrate","Peschiera Borromeo","Pioltello","Cernusco sul Naviglio"],
+}
+# --citta mi: perimetro di Milano (stesse zone di index.html, CITTA_CFG.mi)
+if "--citta" in sys.argv and sys.argv[sys.argv.index("--citta") + 1] == "mi":
+    ZONE = ZONE_MI
+MINIMO = 50 if ZONE is not ZONE_MI else 20
 COMUNE = {c: z for z, cs in ZONE.items() for c in cs}
 ALIAS = {"porretta terme": "Alto Reno Terme", "casalecchio": "Casalecchio di Reno", "san lazzaro": "San Lazzaro di Savena",
          "zola": "Zola Predosa", "persiceto": "San Giovanni in Persiceto", "castel san pietro": "Castel San Pietro Terme",
@@ -139,7 +149,7 @@ def main():
         if c not in COMUNE:
             m = [x for x in COMUNE if norm(x) == norm(c)]
             if m: c = m[0]
-            else: errori.append(f"{rif}: comune sconosciuto '{c}' (deve essere uno dei 55 della Città metropolitana)")
+            else: errori.append(f"{rif}: comune sconosciuto '{c}' (fuori dal perimetro: {', '.join(COMUNE)})" if ZONE is ZONE_MI else f"{rif}: comune sconosciuto '{c}' (deve essere uno dei 55 della Città metropolitana)")
         e["citta"] = c
         if e.get("genere") not in GENERI: errori.append(f"{rif}: genere '{e.get('genere')}' non ammesso {sorted(GENERI)}")
         if not e.get("luogo"): errori.append(f"{rif}: manca il luogo")
@@ -185,8 +195,8 @@ def main():
         print(f"\n{len(errori)} ERRORI – niente è stato scritto:")
         for x in errori: print("  errore:", x)
         sys.exit(1)
-    if len(unici) < 50:
-        print("\nERRORE: meno di 50 eventi, probabilmente l'elenco è incompleto – niente è stato scritto."); sys.exit(1)
+    if len(unici) < MINIMO:
+        print(f"\nERRORE: meno di {MINIMO} eventi, probabilmente l'elenco è incompleto – niente è stato scritto."); sys.exit(1)
     blob = json.dumps({"aggiornato": oggi, "eventi": unici}, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     open(out, "w", encoding="utf-8").write("window.EVENTI_DATA=" + blob + ";\n")
     json.dump(unici, open("eventi.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
