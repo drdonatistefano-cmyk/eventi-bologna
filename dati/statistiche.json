@@ -1,14 +1,14 @@
 {
- "generato": "2026-11-06T20:02:06+00:00",
+ "generato": "2026-11-06T20:44:19+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-06",
- "visite_totali": 114,
- "totale_goatcounter": 302,
- "eventi_totali": 188,
+ "visite_totali": 119,
+ "totale_goatcounter": 309,
+ "eventi_totali": 190,
  "eventi_per_tipo": {
   "filtri": 70,
-  "cambio scheda": 38,
-  "cambio vista": 18,
+  "cambio scheda": 39,
+  "cambio vista": 19,
   "schede aperte": 17,
   "apri filtri": 12,
   "luoghi aperti": 10,
@@ -25,10 +25,10 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-06",
-   "visite": 114,
-   "cambio scheda": 38,
+   "visite": 119,
+   "cambio scheda": 39,
    "apri filtri": 12,
-   "cambio vista": 18,
+   "cambio vista": 19,
    "filtri": 70,
    "mostra altri": 4,
    "luoghi aperti": 10,
@@ -73,9 +73,9 @@
    "clic cinema (programma della sala)": 0
   },
   "2026-11-06": {
-   "cambio scheda": 26,
+   "cambio scheda": 27,
    "apri filtri": 6,
-   "cambio vista": 9,
+   "cambio vista": 10,
    "filtri": 48,
    "mostra altri": 1,
    "luoghi aperti": 1,
@@ -99,13 +99,13 @@
   },
   {
    "giorno": "2026-11-06",
-   "visite": 70
+   "visite": 75
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 261
+   "conteggio": 268
   },
   {
    "origine": "achevents.com",
@@ -133,12 +133,12 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 45
+   "conteggio": 46
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 22
+   "conteggio": 26
   },
   {
    "path": "scheda/mostre",
@@ -183,6 +183,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "milano/scheda/spettacoli",
+   "titolo": "Cambio scheda",
+   "conteggio": 5,
+   "tipo": "cambio scheda"
+  },
+  {
    "path": "milano/scheda/cinema",
    "titolo": "Cambio scheda",
    "conteggio": 5,
@@ -207,12 +213,6 @@
    "tipo": "filtri"
   },
   {
-   "path": "milano/scheda/spettacoli",
-   "titolo": "Cambio scheda",
-   "conteggio": 4,
-   "tipo": "cambio scheda"
-  },
-  {
    "path": "spettacoli/mostra-altri",
    "titolo": "Mostra altri",
    "conteggio": 4,
@@ -223,6 +223,12 @@
    "titolo": "Filtro",
    "conteggio": 4,
    "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 3,
+   "tipo": "cambio vista"
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
@@ -253,12 +259,6 @@
    "titolo": "Filtro",
    "conteggio": 3,
    "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/vista/luoghi",
-   "titolo": "Cambio vista",
-   "conteggio": 2,
-   "tipo": "cambio vista"
   },
   {
    "path": "milano/spettacoli/apri-filtri",
