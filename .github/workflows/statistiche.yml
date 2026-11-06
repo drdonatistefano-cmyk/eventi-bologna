@@ -1,7 +1,7 @@
 name: Statistiche
 on:
   schedule:
-    - cron: "7,37 * * * *"   # ogni mezz'ora: il cruscotto delle visite legge dati/effettivi.json
+    - cron: "7,22,37,52 * * * *"   # ogni quarto d ora: il cruscotto delle visite legge dati/effettivi.json
   workflow_dispatch:
 permissions:
   contents: write
