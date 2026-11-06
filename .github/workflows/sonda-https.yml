@@ -1,0 +1,9 @@
+name: sonda-https
+on: workflow_dispatch
+jobs:
+  s:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          set +e
+          for u in http://achevents.com/ http://www.achevents.com/ https://www.achevents.com/ https://drdonatistefano-cmyk.github.io/eventi-bologna/ https://achevents.com/; do echo "== $u"; curl -sI -m 15 "$u" | grep -iE "^HTTP|^location" ; done
