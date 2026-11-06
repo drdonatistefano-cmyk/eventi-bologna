@@ -1,13 +1,13 @@
 {
- "generato": "2026-11-06T18:17:44+00:00",
+ "generato": "2026-11-06T19:13:41+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-06",
- "visite_totali": 108,
- "totale_goatcounter": 295,
- "eventi_totali": 187,
+ "visite_totali": 110,
+ "totale_goatcounter": 298,
+ "eventi_totali": 188,
  "eventi_per_tipo": {
   "filtri": 70,
-  "cambio scheda": 37,
+  "cambio scheda": 38,
   "cambio vista": 18,
   "schede aperte": 17,
   "apri filtri": 12,
@@ -25,8 +25,8 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-06",
-   "visite": 108,
-   "cambio scheda": 37,
+   "visite": 110,
+   "cambio scheda": 38,
    "apri filtri": 12,
    "cambio vista": 18,
    "filtri": 70,
@@ -73,7 +73,7 @@
    "clic cinema (programma della sala)": 0
   },
   "2026-11-06": {
-   "cambio scheda": 25,
+   "cambio scheda": 26,
    "apri filtri": 6,
    "cambio vista": 9,
    "filtri": 48,
@@ -99,13 +99,13 @@
   },
   {
    "giorno": "2026-11-06",
-   "visite": 64
+   "visite": 66
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 254
+   "conteggio": 257
   },
   {
    "origine": "achevents.com",
@@ -133,12 +133,12 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 43
+   "conteggio": 44
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 18
+   "conteggio": 19
   },
   {
    "path": "scheda/mostre",
@@ -207,6 +207,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "milano/scheda/spettacoli",
+   "titolo": "Cambio scheda",
+   "conteggio": 4,
+   "tipo": "cambio scheda"
+  },
+  {
    "path": "spettacoli/mostra-altri",
    "titolo": "Mostra altri",
    "conteggio": 4,
@@ -229,12 +235,6 @@
    "titolo": "Filtro",
    "conteggio": 3,
    "tipo": "filtri"
-  },
-  {
-   "path": "milano/scheda/spettacoli",
-   "titolo": "Cambio scheda",
-   "conteggio": 3,
-   "tipo": "cambio scheda"
   },
   {
    "path": "spettacoli/filtro/Date/oggi",
