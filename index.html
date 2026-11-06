@@ -597,9 +597,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
  </div>
 </div></dialog>
 
-<script src="eventi.js"></script>
-<script src="mostre.js"></script>
-<script src="cinema.js"></script>
+<script>/* dati sempre freschi: il numero cambia ogni 10 minuti, così browser e Cloudflare non tengono copie vecchie */(function(){var v=Math.floor(Date.now()/6e5);["eventi","mostre","cinema"].forEach(function(f){document.write('<script src="'+f+'.js?v='+v+'"><\/script>')})})();</script>
 <script>
 "use strict";
 /* ---------- città: un solo motore per tutte le città ----------
