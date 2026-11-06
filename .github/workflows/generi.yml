@@ -1,0 +1,21 @@
+name: Generi artisti (MusicBrainz)
+on:
+  workflow_dispatch:
+  push:
+    paths: ["dati/generi_da_verificare.json"]
+permissions:
+  contents: write
+jobs:
+  generi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/generi.py
+      - name: Salva
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dati/generi_artisti.json
+          git diff --cached --quiet || git commit -m "Generi artisti da MusicBrainz"
+          git pull --rebase && git push
