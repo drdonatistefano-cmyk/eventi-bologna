@@ -8,7 +8,7 @@ Variabili: GOATCOUNTER_TOKEN (segreto), GITHUB_TOKEN, GITHUB_REPOSITORY."""
 import json, os, sys, time, re, collections, datetime as dt, urllib.request, urllib.error, urllib.parse
 
 GC = "eventibologna"
-SITE = "https://drdonatistefano-cmyk.github.io/eventi-bologna/"
+SITE = "https://achevents.com/"
 API = f"https://{GC}.goatcounter.com/api/v0"
 TOKEN = os.environ.get("GOATCOUNTER_TOKEN", "").strip()
 GH = os.environ.get("GITHUB_TOKEN", "")

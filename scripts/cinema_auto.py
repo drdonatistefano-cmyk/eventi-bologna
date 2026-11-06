@@ -18,7 +18,7 @@ RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATI = os.path.join(RADICE, "dati", "cinema.json")
 STATO = os.path.join(RADICE, "dati", "cinema_stato.json")
 CACHE = os.path.join(RADICE, "dati", "film_info.json")   # schede dei film già lette: ogni film si legge una volta sola
-UA = "Mozilla/5.0 (compatible; EventiBolognaBot/1.0; +https://drdonatistefano-cmyk.github.io/eventi-bologna/)"
+UA = "Mozilla/5.0 (compatible; EventiBolognaBot/1.0; +https://achevents.com/)"
 CINETECA = "https://cinetecadibologna.it/programmazione/film-in-programma/"  # tutta la settimana
 CT_SALE = {"lumi": "Cinema Lumière", "modernissimo": "Cinema Modernissimo", "cervi": "Sala Cervi"}
 # comuni della Città metropolitana come li chiama movieplayer → nome ufficiale

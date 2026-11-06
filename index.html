@@ -6,6 +6,7 @@
 <title>Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna</title>
 <meta name="description" content="Ach&#39;s Events Guide: concerti, teatro, mostre e cinema a Bologna e nella Città metropolitana, con date, orari, luoghi e link ai biglietti.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://achevents.com/">
 <meta property="og:title" content="Ach&#39;s Events Guide – concerti, teatro, mostre e cinema a Bologna">
 <meta property="og:description" content="Concerti, teatro e grandi eventi a Bologna e nella Città metropolitana nei prossimi 12 mesi.">
 <meta property="og:locale" content="it_IT">
@@ -605,8 +606,8 @@ const CINEMA=CGIORNO?SALE.flatMap(s=>(Array.isArray(s.film)?s.film:[]).filter(f=
  if(!Object.keys(g).length&&Array.isArray(f.orari))g[CGIORNO]=srtT(f.orari.filter(x=>HM.test(x)));
  const ks=Object.keys(g).sort(),wk=/^(Multisala|D'essai)$/.test(s.tipo||"")&&g[CGIORNO]!==undefined;
  return {_kind:"c",id:s.id,data:ks[0]||CGIORNO,fino:[ks[ks.length-1]||CGIORNO,wk?wkEnd(CGIORNO):CGIORNO].sort().pop(),ora:"",artista:f.titolo,luogo:s.nome,citta:s.citta||"Bologna",genere:s.tipo||"Sala di comunità",tipo:"",rassegna:"",descrizione:[f.genere,f.regia?"di "+f.regia:"",f.interpreti?"con "+f.interpreti:""].filter(Boolean).join(" · "),fonte:s.fonte||"",_gen:f.genere||"",_reg:f.regia||"",_int:f.interpreti||"",_dur:f.durata||null,_anno:f.anno||null,_paese:f.paese||"",biglietti:f.biglietti||s.biglietti||"",_bfilm:!!f.biglietti,sito_luogo:s.sito||"",_g:g,_wk:wk,_orari:g[CGIORNO]||[],_vo:/v\.?o\b|originale|sottotitol/i.test(f.versione||""),_ver:f.versione||"",_ind:s.indirizzo||""}})):[];
-const ART_URL="https://claude.ai/artifact/VkNm64jekYZkPj73i3mQAa",WEB_URL="https://drdonatistefano-cmyk.github.io/eventi-bologna/";
-const ON_WEB=/(^|\.)github\.io$/.test(location.hostname);
+const ART_URL="https://claude.ai/artifact/VkNm64jekYZkPj73i3mQAa",WEB_URL="https://achevents.com/";
+const ON_WEB=/(^|\.)(github\.io|achevents\.com)$/.test(location.hostname);
 const SITE_URL=ON_WEB?WEB_URL:ART_URL;
 const ZONE=[
  ["Bologna","Bologna città",["Bologna"]],

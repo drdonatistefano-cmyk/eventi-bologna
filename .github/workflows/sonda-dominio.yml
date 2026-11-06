@@ -1,0 +1,19 @@
+name: sonda-dominio
+on: workflow_dispatch
+permissions:
+  pages: write
+  contents: read
+jobs:
+  s:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          for h in achevents.com www.achevents.com; do echo "== $h"; dig +short A $h; dig +short CNAME $h; done
+          echo "== pages"; gh api repos/${{ github.repository }}/pages --jq '{cname,status,https_enforced,https_certificate}' 
+          echo "== http"; curl -sI -m 15 http://achevents.com/ | head -5
+          echo "== https"; curl -sI -m 15 https://achevents.com/ | head -5
+          echo "== vecchio"; curl -sI -m 15 https://drdonatistefano-cmyk.github.io/eventi-bologna/ | head -5
+          echo "== enforce"; gh api -X PUT repos/${{ github.repository }}/pages -F https_enforced=true 2>&1 | head -3

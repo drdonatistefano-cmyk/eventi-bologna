@@ -2,7 +2,7 @@
 
 Concerti, teatro, comici, classica, grandi eventi e mostre a Bologna e nei 55 comuni della Città metropolitana, nei prossimi 12 mesi.
 
-Sito pubblico: https://drdonatistefano-cmyk.github.io/eventi-bologna/
+Sito pubblico: https://achevents.com/
 (la stessa pagina è anche su claude.ai: https://claude.ai/artifact/VkNm64jekYZkPj73i3mQAa)
 
 - `index.html` — la pagina (schede Spettacoli e Mostre). Gli eventi passati vengono nascosti dalla pagina stessa.
@@ -17,5 +17,5 @@ Statistiche: GoatCounter (senza cookie), attivo solo sul sito GitHub quando in `
 
 Statistiche esportate: il flusso `.github/workflows/statistiche.yml` ogni mattina legge l'API di GoatCounter (`scripts/statistiche.py`) e salva `dati/statistiche.json` e `dati/statistiche.md` (visite per giorno e per settimana dal lancio, clic sui biglietti, filtri, ricerche, condivisioni, provenienze). Serve il segreto `GOATCOUNTER_TOKEN` nelle impostazioni del repository; senza, il flusso non fa nulla.
 
-Pagina delle statistiche: https://drdonatistefano-cmyk.github.io/eventi-bologna/statistiche.html
+Pagina delle statistiche: https://achevents.com/statistiche.html
 Si aggiorna ogni ora con il workflow "Cruscotto statistiche" (scripts/cruscotto.py), che salva stats.json nel ramo `statistiche` senza ripubblicare il sito. Il riepilogo giornaliero in dati/statistiche.* resta del workflow "Statistiche".
