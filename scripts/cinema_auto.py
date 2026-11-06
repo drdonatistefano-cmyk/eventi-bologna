@@ -219,9 +219,9 @@ def permesso(url):
 
 def tipo_da_nome(n):
     n = n.lower()
-    if re.search(r"uci|space|multisala|giometti|starplex|medusa|cineci|century|cinecomfort", n): return "Multisala"
+    if re.search(r"uci|space|multisala|giometti|starplex|medusa|cineci|century|cinecomfort|notorious|filmcenter|colosseo|odeon|plinius|orfeo|ducale", n): return "Multisala"
     if "arena" in n: return "Arena"
-    if "essai" in n: return "D'essai"
+    if re.search(r"essai|anteo|arlecchino|mexico|beltrade|centrale", n): return "D'essai"
     return "Sala di comunità"
 
 

@@ -706,7 +706,7 @@ let QUICK=QUICK_S;const in14=addDays(today,14),in30=addDays(today,30);
 const qTest=(q,e)=>FASCIA[q]?(e._orari||[]).some(FASCIA[q]):q==="oggi"?overlaps(e,today,today):q==="weekend"?overlaps(e,wkStart,sun):q==="7g"?overlaps(e,today,in7):q==="ultimi"?(e.data<=today&&end(e)<=in14):q==="arrivo"?(e.data>today&&e.data<=in30):false;
 const SETS=["m","g","c","l","t","r","d"];
 const st={q:"",qn:"",view:"cal",venue:"",n:PAGE,pf:"",pt:""};SETS.forEach(k=>st[k]=new Set());
-const mM=e=>{if(e._kind==="c")return cinemaPass(e);if(!st.m.size)return true;for(const m of st.m){if(m.length<7?qTest(m,e):(e.data.slice(0,7)<=m&&end(e).slice(0,7)>=m))return true}return false};
+const mM=e=>{if(e._kind==="c")return cinemaPass(e);if(!st.m.size)return true;for(const m of st.m){if(!/^\d{4}-\d{2}$/.test(m)?qTest(m,e):(e.data.slice(0,7)<=m&&end(e).slice(0,7)>=m))return true}return false};
 const TESTS={
  q:e=>!st.qn||e._q.includes(st.qn),
  m:mM,
