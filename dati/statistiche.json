@@ -1,22 +1,23 @@
 {
- "generato": "2026-11-06T15:45:16+00:00",
+ "generato": "2026-11-06T16:33:29+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-06",
- "visite_totali": 93,
- "totale_goatcounter": 237,
- "eventi_totali": 144,
+ "visite_totali": 99,
+ "totale_goatcounter": 279,
+ "eventi_totali": 180,
  "eventi_per_tipo": {
-  "filtri": 52,
-  "cambio scheda": 31,
-  "cambio vista": 15,
-  "schede aperte": 11,
+  "filtri": 65,
+  "cambio scheda": 36,
+  "cambio vista": 18,
+  "schede aperte": 16,
+  "apri filtri": 12,
   "luoghi aperti": 10,
-  "apri filtri": 9,
-  "clic biglietti": 5,
-  "mostra altri": 3,
-  "clic info spettacoli": 3,
+  "clic biglietti": 7,
+  "clic info spettacoli": 5,
+  "mostra altri": 4,
+  "clic mostre (scheda o sito)": 3,
   "azzera filtri": 2,
-  "clic mostre (scheda o sito)": 2,
+  "condivisioni": 1,
   "clic cinema (programma della sala)": 1
  },
  "settimane": [
@@ -24,63 +25,67 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-06",
-   "visite": 93,
-   "cambio scheda": 31,
-   "filtri": 52,
-   "apri filtri": 9,
-   "cambio vista": 15,
-   "mostra altri": 3,
+   "visite": 99,
+   "cambio scheda": 36,
+   "apri filtri": 12,
+   "cambio vista": 18,
+   "filtri": 65,
+   "mostra altri": 4,
    "luoghi aperti": 10,
    "azzera filtri": 2,
-   "schede aperte": 11,
-   "clic mostre (scheda o sito)": 2,
-   "clic cinema (programma della sala)": 1,
-   "clic biglietti": 5,
-   "clic info spettacoli": 3
+   "clic biglietti": 7,
+   "schede aperte": 16,
+   "clic info spettacoli": 5,
+   "clic mostre (scheda o sito)": 3,
+   "condivisioni": 1,
+   "clic cinema (programma della sala)": 1
   }
  ],
  "eventi_per_giorno": {
   "2026-11-04": {
    "cambio scheda": 6,
-   "filtri": 8,
    "apri filtri": 2,
    "cambio vista": 5,
+   "filtri": 8,
    "mostra altri": 2,
    "luoghi aperti": 5,
    "azzera filtri": 1,
-   "schede aperte": 0,
-   "clic mostre (scheda o sito)": 0,
-   "clic cinema (programma della sala)": 0,
    "clic biglietti": 4,
-   "clic info spettacoli": 3
+   "schede aperte": 0,
+   "clic info spettacoli": 3,
+   "clic mostre (scheda o sito)": 0,
+   "condivisioni": 0,
+   "clic cinema (programma della sala)": 0
   },
   "2026-11-05": {
    "cambio scheda": 6,
-   "filtri": 14,
    "apri filtri": 4,
    "cambio vista": 4,
+   "filtri": 14,
    "mostra altri": 1,
    "luoghi aperti": 4,
    "azzera filtri": 1,
-   "schede aperte": 3,
-   "clic mostre (scheda o sito)": 0,
-   "clic cinema (programma della sala)": 0,
    "clic biglietti": 1,
-   "clic info spettacoli": 0
+   "schede aperte": 3,
+   "clic info spettacoli": 0,
+   "clic mostre (scheda o sito)": 0,
+   "condivisioni": 0,
+   "clic cinema (programma della sala)": 0
   },
   "2026-11-06": {
-   "cambio scheda": 19,
-   "filtri": 30,
-   "apri filtri": 3,
-   "cambio vista": 6,
-   "mostra altri": 0,
+   "cambio scheda": 24,
+   "apri filtri": 6,
+   "cambio vista": 9,
+   "filtri": 43,
+   "mostra altri": 1,
    "luoghi aperti": 1,
    "azzera filtri": 0,
-   "schede aperte": 8,
-   "clic mostre (scheda o sito)": 2,
-   "clic cinema (programma della sala)": 1,
-   "clic biglietti": 0,
-   "clic info spettacoli": 0
+   "clic biglietti": 2,
+   "schede aperte": 13,
+   "clic info spettacoli": 2,
+   "clic mostre (scheda o sito)": 3,
+   "condivisioni": 1,
+   "clic cinema (programma della sala)": 1
   }
  },
  "giorni": [
@@ -94,21 +99,21 @@
   },
   {
    "giorno": "2026-11-06",
-   "visite": 49
+   "visite": 55
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 209
+   "conteggio": 241
   },
   {
    "origine": "achevents.com",
-   "conteggio": 13
+   "conteggio": 21
   },
   {
    "origine": "achevents.com/milano",
-   "conteggio": 11
+   "conteggio": 13
   },
   {
    "origine": "teams.public.onecdn.static.microsoft",
@@ -128,21 +133,45 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 34
+   "conteggio": 36
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 12
+   "conteggio": 16
   },
   {
    "path": "scheda/mostre",
    "titolo": "Cambio scheda",
-   "conteggio": 8,
+   "conteggio": 10,
    "tipo": "cambio scheda"
   },
   {
+   "path": "spettacoli/apri-filtri",
+   "titolo": "Apertura filtri",
+   "conteggio": 7,
+   "tipo": "apri filtri"
+  },
+  {
    "path": "milano/scheda/mostre",
+   "titolo": "Cambio scheda",
+   "conteggio": 6,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "scheda/cinema",
+   "titolo": "Cambio scheda",
+   "conteggio": 6,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 6,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "scheda/spettacoli",
    "titolo": "Cambio scheda",
    "conteggio": 6,
    "tipo": "cambio scheda"
@@ -160,39 +189,33 @@
    "tipo": "cambio scheda"
   },
   {
-   "path": "spettacoli/apri-filtri",
-   "titolo": "Apertura filtri",
-   "conteggio": 5,
-   "tipo": "apri filtri"
-  },
-  {
-   "path": "spettacoli/vista/luoghi",
-   "titolo": "Cambio vista",
-   "conteggio": 5,
-   "tipo": "cambio vista"
-  },
-  {
-   "path": "scheda/spettacoli",
-   "titolo": "Cambio scheda",
-   "conteggio": 5,
-   "tipo": "cambio scheda"
-  },
-  {
-   "path": "scheda/cinema",
-   "titolo": "Cambio scheda",
-   "conteggio": 4,
-   "tipo": "cambio scheda"
-  },
-  {
    "path": "spettacoli/vista/elenco",
    "titolo": "Cambio vista",
-   "conteggio": 4,
+   "conteggio": 5,
    "tipo": "cambio vista"
   },
   {
    "path": "spettacoli/filtro/Genere/Comici",
    "titolo": "Filtro",
+   "conteggio": 5,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/mostra-altri",
+   "titolo": "Mostra altri",
    "conteggio": 4,
+   "tipo": "mostra altri"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Rock",
+   "titolo": "Filtro",
+   "conteggio": 4,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Rock",
+   "titolo": "Filtro",
+   "conteggio": 3,
    "tipo": "filtri"
   },
   {
@@ -208,13 +231,7 @@
    "tipo": "cambio scheda"
   },
   {
-   "path": "spettacoli/mostra-altri",
-   "titolo": "Mostra altri",
-   "conteggio": 3,
-   "tipo": "mostra altri"
-  },
-  {
-   "path": "spettacoli/filtro/Genere/Rock",
+   "path": "spettacoli/filtro/Genere/Pop e altra musica",
    "titolo": "Filtro",
    "conteggio": 3,
    "tipo": "filtri"
@@ -226,13 +243,31 @@
    "tipo": "filtri"
   },
   {
+   "path": "milano/spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 2,
+   "tipo": "cambio vista"
+  },
+  {
    "path": "milano/spettacoli/apri-filtri",
    "titolo": "Apertura filtri",
    "conteggio": 2,
    "tipo": "apri filtri"
   },
   {
-   "path": "milano/spettacoli/filtro/Genere/Rock",
+   "path": "milano/spettacoli/filtro/Genere/Jazz",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Classica",
    "titolo": "Filtro",
    "conteggio": 2,
    "tipo": "filtri"
@@ -256,22 +291,124 @@
    "tipo": "filtri"
   },
   {
-   "path": "spettacoli/filtro/Genere/Pop e altra musica",
-   "titolo": "Filtro",
-   "conteggio": 2,
-   "tipo": "filtri"
-  },
-  {
    "path": "spettacoli/azzera-filtri",
    "titolo": "Azzera filtri",
    "conteggio": 2,
    "tipo": "azzera filtri"
   },
   {
+   "path": "mostre/apri-filtri",
+   "titolo": "Apertura filtri",
+   "conteggio": 2,
+   "tipo": "apri filtri"
+  },
+  {
    "path": "mostre/vista/luoghi",
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "spettacoli/clic-biglietti/Daniele Silvestri – Teatri a sdraio",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 1,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "spettacoli/dettaglio/Daniele Silvestri – Teatri a sdraio",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/clic-info/Max Pezzali",
+   "titolo": "Clic «Info»",
+   "conteggio": 1,
+   "tipo": "clic info spettacoli"
+  },
+  {
+   "path": "spettacoli/dettaglio/Max Pezzali",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Cesare Cremonini",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/clic-biglietti/Blue",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 1,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "milano/spettacoli/clic-info/Blue",
+   "titolo": "Clic «Info»",
+   "conteggio": 1,
+   "tipo": "clic info spettacoli"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Blue",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "mostre/clic-scheda-della-mostra/Giuseppe Spagnulo. Oltre la materia, verso il pensiero formante",
+   "titolo": "Clic «Scheda della mostra»",
+   "conteggio": 1,
+   "tipo": "clic mostre (scheda o sito)"
+  },
+  {
+   "path": "mostre/dettaglio/Giuseppe Spagnulo. Oltre la materia, verso il pensiero formante",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "mostre/filtro/Categoria/Scultura",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "condividi/apri",
+   "titolo": "Condivisione",
+   "conteggio": 1,
+   "tipo": "condivisioni"
+  },
+  {
+   "path": "cinema/filtro/Giorno e orario/sett",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "cinema/filtro/Giorno e orario/g:2026-11-09",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "cinema/filtro/Giorno e orario/g:2026-11-12",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "cinema/filtro/Giorno e orario/g:2026-11-08",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "cinema/filtro/Giorno e orario/g:2026-11-07",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
   },
   {
    "path": "milano/mostre/filtro/Categoria/Pittura",
@@ -284,12 +421,6 @@
    "titolo": "Apertura scheda",
    "conteggio": 1,
    "tipo": "schede aperte"
-  },
-  {
-   "path": "milano/spettacoli/vista/luoghi",
-   "titolo": "Cambio vista",
-   "conteggio": 1,
-   "tipo": "cambio vista"
   },
   {
    "path": "milano/spettacoli/filtro/zona/Milano città",
@@ -329,24 +460,6 @@
   },
   {
    "path": "milano/spettacoli/filtro/Date/oggi",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Genere/Jazz",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Genere/Classica",
    "titolo": "Filtro",
    "conteggio": 1,
    "tipo": "filtri"
@@ -602,12 +715,6 @@
    "titolo": "Clic «Biglietti»",
    "conteggio": 1,
    "tipo": "clic biglietti"
-  },
-  {
-   "path": "mostre/apri-filtri",
-   "titolo": "Apertura filtri",
-   "conteggio": 1,
-   "tipo": "apri filtri"
   },
   {
    "path": "mostre/luogo/Palazzo Pallavicini",
