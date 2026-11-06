@@ -230,15 +230,17 @@ def scopri(d, log):
     h = scarica(f"https://movieplayer.it/cinema/{MP_CITTA}/")
     note = {s.get("fonte") for s in d["sale"]}
     nuove = 0
+    # le sale del capoluogo stanno sulla pagina della provincia (Bologna le ha già, censite a mano)
+    pagine = [] if CITTA == "bo" else [(UFFICIALI[0], h)]
     for cslug in sorted(set(re.findall(rf'href="/cinema/{MP_CITTA}/([a-z0-9-]+)/"', h))):
         comune = COMUNI_MP.get(cslug) or UFF.get(cslug)
         if not comune:
             continue
         try:
-            p = scarica(f"https://movieplayer.it/cinema/{MP_CITTA}/{cslug}/")
+            pagine.append((comune, scarica(f"https://movieplayer.it/cinema/{MP_CITTA}/{cslug}/")))
         except Exception as e:
             log.append(f"scoperta {cslug}: {e}")
-            continue
+    for comune, p in pagine:
         sel = p[p.find("Seleziona il cinema"):] if "Seleziona il cinema" in p else ""
         for href, nome in re.findall(r'href="(/cinema/[a-z0-9-]+_\d+/)"[^>]*>([^<]+)</a>', sel[:20000]):
             url = "https://movieplayer.it" + href
