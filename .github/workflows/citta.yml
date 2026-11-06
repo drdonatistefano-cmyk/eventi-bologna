@@ -1,0 +1,19 @@
+name: Pagine delle città
+on:
+  push:
+    branches: [main]
+    paths: [index.html, scripts/citta.py]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  genera:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/citta.py
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add milano
+          git diff --cached --quiet || (git commit -m "Pagine delle città da index.html" && git push)

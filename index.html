@@ -513,11 +513,24 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
 @media(max-width:380px){.gopts{grid-template-columns:1fr 1fr}.gopt{padding-left:11px}.mgrid{grid-template-columns:repeat(3,1fr)}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media (max-width:430px){.modes button small{display:none}.modes button{font-size:15px}}
+
+/* selettore città BO|MI */
+.hero{position:relative}
+.city{position:absolute;top:max(18px,env(safe-area-inset-top));right:max(14px,env(safe-area-inset-right));display:inline-grid;grid-template-columns:1fr 1fr;align-items:center;width:96px;height:42px;padding:4px;border-radius:999px;border:1px solid var(--line);background:var(--paper);box-shadow:var(--shadow);cursor:pointer;-webkit-tap-highlight-color:transparent;font:inherit}
+.city[hidden]{display:none}
+.city .k{position:absolute;top:4px;left:4px;width:44px;height:32px;border-radius:999px;background:var(--terra);transition:transform .28s cubic-bezier(.3,.7,.2,1)}
+.city[data-c="mi"] .k{transform:translateX(44px)}
+.city b{position:relative;z-index:1;text-align:center;font-size:14px;font-weight:800;letter-spacing:.04em;color:var(--mute);transition:color .2s}
+.city[data-c="bo"] b.bo,.city[data-c="mi"] b.mi{color:#fff}
+.city:focus-visible{outline:2px solid var(--terra);outline-offset:3px}
+.arches[hidden],.msym[hidden]{display:none}.msym{display:block;color:var(--terra)}
+@media(min-width:900px){.city{top:max(16px,env(safe-area-inset-top));height:38px}.city .k{height:28px}.hero .stats{margin-top:14px}}
 </style>
 </head>
 <body>
 <header class="hero wrap">
- <div class="kick"><div class="arches" aria-hidden="true"><i></i><i></i><i></i></div><span>Ach&#39;s Events Guide</span></div>
+ <button class="city" id="city" data-c="bo" hidden aria-label="Cambia città"><span class="k"></span><b class="bo">BO</b><b class="mi">MI</b></button>
+ <div class="kick"><div class="arches" aria-hidden="true"><i></i><i></i><i></i></div><svg class="msym" data-s="mi" hidden width="66" height="22" viewBox="0 0 66 22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g opacity=".85"><path d="M4.5 19.5V10.2A3.2 3.2 0 0 1 7.7 7H58.3A3.2 3.2 0 0 1 61.5 10.2V19.5ZM2.5 21.5H63.5"/></g><g opacity=".6"><path d="M10 10.5H18V14.5H10ZM22 10.5H30V14.5H22ZM36 10.5H44V14.5H36ZM48 10.5H56V14.5H48Z"/></g><g opacity=".35"><path d="M28 7L33 2.5L38 7M25 2.5H41"/></g></svg><span>Ach&#39;s Events Guide</span></div>
  <h1>Eventi Bologna,<br><em>stasera</em> e oltre.</h1>
  <p class="lede">Concerti, teatro, comici, classica e grandi eventi a Bologna e nei comuni della Città metropolitana, nei prossimi 12 mesi.</p>
  <div class="stats">
@@ -588,6 +601,26 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
 <script src="cinema.js"></script>
 <script>
 "use strict";
+/* ---------- città: un solo motore per tutte le città ----------
+   Bologna = "/", Milano = "/milano/". Ogni cartella ha i suoi eventi.js, mostre.js, cinema.js.
+   CITTA_ATTIVE: le città che compaiono nel selettore (aggiungere "mi" quando i dati di Milano sono pronti). */
+const CITTA_ATTIVE=["bo"];
+const CITTA_CFG={
+ bo:{k:"bo",sigla:"BO",nome:"Bologna",capo:"Bologna",area:"a Bologna e nei comuni della Città metropolitana",path:"/",url:"https://achevents.com/",
+  zone:[
+ ["Bologna","Bologna città",["Bologna"]],
+ ["Colli","Colli e Valsamoggia",["Casalecchio di Reno","Zola Predosa","Sasso Marconi","Valsamoggia","Monte San Pietro"]],
+ ["Acqua","Terre d'Acqua",["San Giovanni in Persiceto","Anzola dell'Emilia","Calderara di Reno","Crevalcore","Sala Bolognese","Sant'Agata Bolognese"]],
+ ["Galliera","Reno Galliera",["Castel Maggiore","Argelato","Bentivoglio","Castello d'Argile","Galliera","Pieve di Cento","San Giorgio di Piano","San Pietro in Casale"]],
+ ["Pianura","Terre di Pianura",["Budrio","Baricella","Granarolo dell'Emilia","Malalbergo","Minerbio","Molinella","Castenaso"]],
+ ["Savena","Savena e Idice",["San Lazzaro di Savena","Ozzano dell'Emilia","Pianoro","Loiano","Monghidoro","Monterenzio"]],
+ ["Imolese","Imolese",["Imola","Castel San Pietro Terme","Medicina","Dozza","Castel Guelfo di Bologna","Mordano","Borgo Tossignano","Casalfiumanese","Fontanelice","Castel del Rio"]],
+ ["Appennino","Appennino",["Alto Reno Terme","Camugnano","Castel d'Aiano","Castel di Casio","Castiglione dei Pepoli","Gaggio Montano","Grizzana Morandi","Lizzano in Belvedere","Marzabotto","Monzuno","San Benedetto Val di Sambro","Vergato"]]]},
+ mi:{k:"mi",sigla:"MI",nome:"Milano",capo:"Milano",area:"a Milano e nei grandi luoghi dell’area metropolitana",path:"/milano/",url:"https://achevents.com/milano/",
+  zone:[["Milano","Milano città",["Milano"]],
+   ["Nord","Nord e Ovest",["Rho","Pero","Arese","Bollate","Sesto San Giovanni","Cinisello Balsamo","Cologno Monzese","Legnano"]],
+   ["Sud","Sud ed Est",["Assago","Rozzano","San Donato Milanese","San Giuliano Milanese","Segrate","Peschiera Borromeo","Pioltello","Cernusco sul Naviglio"]]]}};
+const CITY=/^\/milano(\/|$)/.test(location.pathname)?CITTA_CFG.mi:CITTA_CFG.bo;
 /* ---------- dati ---------- */
 const DATA=(window.EVENTI_DATA&&typeof window.EVENTI_DATA==="object")?window.EVENTI_DATA:{aggiornato:"",eventi:[]};
 const ISO=/^\d{4}-\d{2}-\d{2}$/;
@@ -595,7 +628,7 @@ const UPDATED=ISO.test(DATA.aggiornato||"")?DATA.aggiornato:"";
 const EVENTS=(Array.isArray(DATA.eventi)?DATA.eventi:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista);
 const MD=(window.MOSTRE_DATA&&typeof window.MOSTRE_DATA==="object")?window.MOSTRE_DATA:{aggiornato:"",mostre:[]};
 const ING={gratuito:"Ingresso gratuito","a pagamento":"A pagamento"};
-const MOSTRE=(Array.isArray(MD.mostre)?MD.mostre:[]).filter(m=>m&&ISO.test(m.inizio||"")&&ISO.test(m.fine||"")&&m.titolo&&m.sede).map(m=>({id:m.id,_kind:"m",data:m.inizio,fino:m.fine,ora:"",artista:m.titolo,luogo:m.sede,citta:m.citta||"Bologna",genere:m.categoria||"",tipo:"",rassegna:"",descrizione:m.descrizione||"",fonte:m.fonte||"",biglietti:"",orari:m.orari||"",_ing:ING[(m.ingresso||"").toLowerCase()]||"Da verificare",sito_luogo:m.sito||""}));
+const MOSTRE=(Array.isArray(MD.mostre)?MD.mostre:[]).filter(m=>m&&ISO.test(m.inizio||"")&&ISO.test(m.fine||"")&&m.titolo&&m.sede).map(m=>({id:m.id,_kind:"m",data:m.inizio,fino:m.fine,ora:"",artista:m.titolo,luogo:m.sede,citta:m.citta||CITY.capo,genere:m.categoria||"",tipo:"",rassegna:"",descrizione:m.descrizione||"",fonte:m.fonte||"",biglietti:"",orari:m.orari||"",_ing:ING[(m.ingresso||"").toLowerCase()]||"Da verificare",sito_luogo:m.sito||""}));
 const CD=(window.CINEMA_DATA&&typeof window.CINEMA_DATA==="object")?window.CINEMA_DATA:{aggiornato:"",sale:[]};
 const CGIORNO=ISO.test(CD.giorno_orari||"")?CD.giorno_orari:(ISO.test(CD.aggiornato||"")?CD.aggiornato:"");
 const SALE=(Array.isArray(CD.sale)?CD.sale:[]).filter(s=>s&&s.nome);
@@ -605,19 +638,11 @@ const CINEMA=CGIORNO?SALE.flatMap(s=>(Array.isArray(s.film)?s.film:[]).filter(f=
  const g={};if(f.giorni&&typeof f.giorni==="object")for(const [k,v] of Object.entries(f.giorni))if(ISO.test(k)&&Array.isArray(v))g[k]=srtT(v.filter(x=>HM.test(x)));
  if(!Object.keys(g).length&&Array.isArray(f.orari))g[CGIORNO]=srtT(f.orari.filter(x=>HM.test(x)));
  const ks=Object.keys(g).sort(),wk=/^(Multisala|D'essai)$/.test(s.tipo||"")&&g[CGIORNO]!==undefined;
- return {_kind:"c",id:s.id,data:ks[0]||CGIORNO,fino:[ks[ks.length-1]||CGIORNO,wk?wkEnd(CGIORNO):CGIORNO].sort().pop(),ora:"",artista:f.titolo,luogo:s.nome,citta:s.citta||"Bologna",genere:s.tipo||"Sala di comunità",tipo:"",rassegna:"",descrizione:[f.genere,f.regia?"di "+f.regia:"",f.interpreti?"con "+f.interpreti:""].filter(Boolean).join(" · "),fonte:s.fonte||"",_gen:f.genere||"",_reg:f.regia||"",_int:f.interpreti||"",_dur:f.durata||null,_anno:f.anno||null,_paese:f.paese||"",biglietti:f.biglietti||s.biglietti||"",_bfilm:!!f.biglietti,sito_luogo:s.sito||"",_g:g,_wk:wk,_orari:g[CGIORNO]||[],_vo:/v\.?o\b|originale|sottotitol/i.test(f.versione||""),_ver:f.versione||"",_ind:s.indirizzo||""}})):[];
-const ART_URL="https://claude.ai/artifact/VkNm64jekYZkPj73i3mQAa",WEB_URL="https://achevents.com/";
+ return {_kind:"c",id:s.id,data:ks[0]||CGIORNO,fino:[ks[ks.length-1]||CGIORNO,wk?wkEnd(CGIORNO):CGIORNO].sort().pop(),ora:"",artista:f.titolo,luogo:s.nome,citta:s.citta||CITY.capo,genere:s.tipo||"Sala di comunità",tipo:"",rassegna:"",descrizione:[f.genere,f.regia?"di "+f.regia:"",f.interpreti?"con "+f.interpreti:""].filter(Boolean).join(" · "),fonte:s.fonte||"",_gen:f.genere||"",_reg:f.regia||"",_int:f.interpreti||"",_dur:f.durata||null,_anno:f.anno||null,_paese:f.paese||"",biglietti:f.biglietti||s.biglietti||"",_bfilm:!!f.biglietti,sito_luogo:s.sito||"",_g:g,_wk:wk,_orari:g[CGIORNO]||[],_vo:/v\.?o\b|originale|sottotitol/i.test(f.versione||""),_ver:f.versione||"",_ind:s.indirizzo||""}})):[];
+const ART_URL="https://claude.ai/artifact/VkNm64jekYZkPj73i3mQAa",WEB_URL=CITY.url;
 const ON_WEB=/(^|\.)(github\.io|achevents\.com)$/.test(location.hostname);
 const SITE_URL=ON_WEB?WEB_URL:ART_URL;
-const ZONE=[
- ["Bologna","Bologna città",["Bologna"]],
- ["Colli","Colli e Valsamoggia",["Casalecchio di Reno","Zola Predosa","Sasso Marconi","Valsamoggia","Monte San Pietro"]],
- ["Acqua","Terre d'Acqua",["San Giovanni in Persiceto","Anzola dell'Emilia","Calderara di Reno","Crevalcore","Sala Bolognese","Sant'Agata Bolognese"]],
- ["Galliera","Reno Galliera",["Castel Maggiore","Argelato","Bentivoglio","Castello d'Argile","Galliera","Pieve di Cento","San Giorgio di Piano","San Pietro in Casale"]],
- ["Pianura","Terre di Pianura",["Budrio","Baricella","Granarolo dell'Emilia","Malalbergo","Minerbio","Molinella","Castenaso"]],
- ["Savena","Savena e Idice",["San Lazzaro di Savena","Ozzano dell'Emilia","Pianoro","Loiano","Monghidoro","Monterenzio"]],
- ["Imolese","Imolese",["Imola","Castel San Pietro Terme","Medicina","Dozza","Castel Guelfo di Bologna","Mordano","Borgo Tossignano","Casalfiumanese","Fontanelice","Castel del Rio"]],
- ["Appennino","Appennino",["Alto Reno Terme","Camugnano","Castel d'Aiano","Castel di Casio","Castiglione dei Pepoli","Gaggio Montano","Grizzana Morandi","Lizzano in Belvedere","Marzabotto","Monzuno","San Benedetto Val di Sambro","Vergato"]]];
+const ZONE=CITY.zone;;
 const ZONA={},ZLAB={},ZORD=ZONE.map(z=>z[0]),CORD=[];ZONE.forEach(([k,l,cs])=>{ZLAB[k]=l;cs.forEach(c=>{ZONA[c]=k;CORD.push(c)})});ZLAB.Altro="Altri luoghi";
 const G={"Rock":{c:"--rock",l:"Rock"},"Jazz":{c:"--jazz",l:"Jazz"},"Pop e altra musica":{c:"--pop",l:"Pop e altro"},"Classica":{c:"--classica",l:"Classica"},"Teatro":{c:"--teatro",l:"Teatro"}};
 const GOPTS_S=[{k:"Teatro",l:"Teatro",em:"🎭",c:"--teatro"},{k:"Comici",l:"Comici",em:"😂",c:"--ochre"},{k:"Classica",l:"Classica",em:"🎻",c:"--classica"},{k:"Jazz",l:"Jazz",em:"🎷",c:"--jazz"},{k:"Rock",l:"Rock",em:"🎸",c:"--rock"},{k:"Pop e altra musica",l:"Pop e altro",em:"🎤",c:"--pop"}];
@@ -648,7 +673,7 @@ const PIN='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="c
 const TIPOV=e=>e._kind==="c"?(e._vo?"In lingua originale":"Versione italiana"):e.tipo||(e.genere==="Teatro"?"Altro spettacolo":"Concerto");
 const DISPV=e=>{if(e._kind==="m")return e._ing;const d=(e.disp||"").toLowerCase();return d==="disponibile"?"Biglietti disponibili":d==="pochi posti"?"Ultimi posti":d==="non ancora in vendita"?"Vendita non ancora aperta":(d==="sold out"||d==="non disponibile")?"Esaurito":"Da verificare"};
 
-function prep(list){const A=list.filter(e=>end(e)>=today);for(const e of A){e._c=e.citta||"Bologna";e._z=ZONA[e._c]||"Altro";e._q=norm([e.artista,e.luogo,e._c,e.descrizione,e.tipo,e.genere,e.rassegna,ZLAB[e._z]].join(" "))}return A}
+function prep(list){const A=list.filter(e=>end(e)>=today);for(const e of A){e._c=e.citta||CITY.capo;e._z=ZONA[e._c]||"Altro";e._q=norm([e.artista,e.luogo,e._c,e.descrizione,e.tipo,e.genere,e.rassegna,ZLAB[e._z]].join(" "))}return A}
 const ALL_S=prep(EVENTS).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));
 const ALL_C=prep(CINEMA).sort((a,b)=>a.artista.localeCompare(b.artista,"it")||a.luogo.localeCompare(b.luogo,"it"));
 const ALL_M=prep(MOSTRE).sort((a,b)=>{const ra=a.data<=today,rb=b.data<=today;if(ra!==rb)return ra?-1:1;return ra?a.fino.localeCompare(b.fino):a.data.localeCompare(b.data)});
@@ -712,7 +737,7 @@ function cityLabel(){if(!st.c.size)return "";const out=[];const rest=new Set(st.
  for(const z of ZORD.concat(["Altro"])){const cs=zoneComuni(z);if(cs.length&&cs.every(c=>st.c.has(c))){out.push(ZLAB[z]);cs.forEach(c=>rest.delete(c))}}
  return out.concat([...rest]).join(", ")}
 function cityPills(){const out=[];const rest=new Set(st.c);
- for(const z of ZORD.concat(["Altro"])){const cs=zoneComuni(z);if(cs.length>0&&cs.every(c=>st.c.has(c))&&(cs.length>1||z!=="Bologna")){out.push({lab:ZLAB[z],act:()=>cs.forEach(c=>st.c.delete(c))});cs.forEach(c=>rest.delete(c))}}
+ for(const z of ZORD.concat(["Altro"])){const cs=zoneComuni(z);if(cs.length>0&&cs.every(c=>st.c.has(c))&&(cs.length>1||z!==ZORD[0])){out.push({lab:ZLAB[z],act:()=>cs.forEach(c=>st.c.delete(c))});cs.forEach(c=>rest.delete(c))}}
  for(const c of rest)out.push({lab:c,act:()=>st.c.delete(c)});return out}
 
 function optRow(k,v,label,n){const on=st[k].has(v);
@@ -820,7 +845,7 @@ function renderStatus(n,label){
 /* ---------- elenco ---------- */
 function dispPill(e){const d=(e.disp||"").toLowerCase();
  return d==="disponibile"?'<span class="pill ok">Biglietti disponibili</span>':d==="pochi posti"?'<span class="pill few">Ultimi posti</span>':(d==="sold out"||d==="non disponibile")?'<span class="pill no">Esaurito</span>':d==="non ancora in vendita"?'<span class="pill">Vendita non ancora aperta</span>':""}
-const maps=(l,c)=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(l+", "+(c||"Bologna"));
+const maps=(l,c)=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(l+", "+(c||CITY.capo));
 const fdate=s=>fmt(s,{day:"numeric",month:"short"})+(s.slice(0,4)!==today.slice(0,4)?" "+s.slice(0,4):"");
 const fY=s=>fmt(s,{day:"numeric",month:"short",year:"numeric"});
 const dur=n=>n>=60?`${Math.round(n/30.44)} mesi`:n===1?"1 giorno":`${n} giorni`;
@@ -833,7 +858,7 @@ function cardM(e){
  const g=GLAB[e.genere]||{c:"--mute",l:e.genere||"Mostra",em:"🖼️"};
  const left=Math.round((D(e.fino)-D(today))/864e5);
  const st0=e.data>today?{c:"soon",l:`Apre il ${fmt(e.data,{day:"numeric",month:"long"})}`}:left<=14?{c:"last",l:left===0?"Ultimo giorno":`Ultimi giorni · chiude il ${fmt(e.fino,{day:"numeric",month:"short"})}`}:{c:"open",l:"In corso"};
- const loc=e._c+(e._c!=="Bologna"&&ZLAB[e._z]?` · ${ZLAB[e._z]}`:"");
+ const loc=e._c+(e._c!==CITY.capo&&ZLAB[e._z]?` · ${ZLAB[e._z]}`:"");
  const wbody=`<span class="wpin">${PIN}</span><span class="wtx"><b class="wv">${esc(e.luogo)}</b><span class="wl">${esc(loc)}</span></span>`;
  const free=e._ing==="Ingresso gratuito";
  return `<article class="card mostra" style="--g:var(${g.c})">
@@ -853,7 +878,7 @@ function card(e){
  const g=G[e.genere]||{c:"--mute",l:e.genere};
  const t=/\d/.test(e.ora||"")?e.ora:"";
  const multi=e.fino&&e.fino!==e.data?`dal ${fmt(e.data,{day:"numeric",month:"short"})} al ${fmt(e.fino,{day:"numeric",month:"short"})}`:"";
- const loc=e._c+(e._c!=="Bologna"&&ZLAB[e._z]?` · ${ZLAB[e._z]}`:"");
+ const loc=e._c+(e._c!==CITY.capo&&ZLAB[e._z]?` · ${ZLAB[e._z]}`:"");
  const wbody=`<span class="wpin">${PIN}</span><span class="wtx"><b class="wv">${esc(e.luogo)}</b><span class="wl">${esc(loc)}</span></span>`;
  return `<article class="card" style="--g:var(${g.c})">
  <div class="top">${t?`<span class="time">${esc(t)}</span>`:""}<span class="gtag">${esc(e.tipo==="Comicità"?"Comici":g.l)}${e.tipo&&e.tipo!=="Comicità"?" · "+esc(e.tipo):""}</span>${multi?`<span class="multi">${multi}</span>`:""}</div>${e.rassegna?`<div class="rs">${esc(e.rassegna)}</div>`:""}
@@ -872,14 +897,14 @@ function mini(e){
  if(e._kind==="m")return miniM(e);
  const g=G[e.genere]||{c:"--mute",l:e.genere},tm0=/\d/.test(e.ora||"")?e.ora:"";
  const multi=e.fino&&e.fino!==e.data?`dal ${fmt(e.data,{day:"numeric",month:"short"})} al ${fmt(e.fino,{day:"numeric",month:"short"})}`:"";
- const inner=`<div class="top">${tm0?`<span class="time">${esc(tm0)}</span>`:""}<span class="gtag">${esc(e.tipo==="Comicità"?"Comici":g.l)}${e.tipo&&e.tipo!=="Comicità"?" · "+esc(e.tipo):""}</span>${multi?`<span class="multi">${multi}</span>`:""}</div><h3 class="title">${esc(e.artista)}</h3>${st.venue?"":`<div class="mloc">${PIN}<span>${esc(e.luogo)}${e._c!=="Bologna"?" · "+esc(e._c):""}</span></div>`}`;
+ const inner=`<div class="top">${tm0?`<span class="time">${esc(tm0)}</span>`:""}<span class="gtag">${esc(e.tipo==="Comicità"?"Comici":g.l)}${e.tipo&&e.tipo!=="Comicità"?" · "+esc(e.tipo):""}</span>${multi?`<span class="multi">${multi}</span>`:""}</div><h3 class="title">${esc(e.artista)}</h3>${st.venue?"":`<div class="mloc">${PIN}<span>${esc(e.luogo)}${e._c!==CITY.capo?" · "+esc(e._c):""}</span></div>`}`;
  return miniA(reg({k:"e",e}),e.artista,g.c,inner).replace("%FOOT%",dispPill(e))}
 function miniM(e){
  const g=GLAB[e.genere]||{c:"--mute",l:e.genere||"Mostra",em:"🖼️"},left=Math.round((D(e.fino)-D(today))/864e5),fut=e.data>today;
  const tot=Math.max(1,Math.round((D(e.fino)-D(e.data))/864e5)+1),pct=fut?0:Math.min(100,Math.max(0,100*(tot-left-1)/tot));
  const st0=fut?{c:"soon",l:`Apre il ${fmt(e.data,{day:"numeric",month:"short"})}`}:left<=14?{c:"last",l:left===0?"Ultimo giorno":"Ultimi giorni"}:{c:"open",l:"In corso"};
  const per=fut?`Dal <b>${fY(e.data)}</b> al ${fY(e.fino)}`:`Fino al <b>${fY(e.fino)}</b> <small>· ${left===0?"oggi l'ultimo giorno":"ancora "+dur(left)}</small>`;
- const inner=`<div class="top"><span class="gtag">${g.em||""} ${esc(g.l)}</span><span class="mst ${st0.c}">${st0.l}</span></div><h3 class="title">${esc(e.artista)}</h3><div class="mper">${per}</div>${fut?"":`<div class="mbar"><i style="width:${pct.toFixed(1)}%"></i></div>`}${st.venue?"":`<div class="mloc">${PIN}<span>${esc(e.luogo)}${e._c!=="Bologna"?" · "+esc(e._c):""}</span></div>`}`;
+ const inner=`<div class="top"><span class="gtag">${g.em||""} ${esc(g.l)}</span><span class="mst ${st0.c}">${st0.l}</span></div><h3 class="title">${esc(e.artista)}</h3><div class="mper">${per}</div>${fut?"":`<div class="mbar"><i style="width:${pct.toFixed(1)}%"></i></div>`}${st.venue?"":`<div class="mloc">${PIN}<span>${esc(e.luogo)}${e._c!==CITY.capo?" · "+esc(e._c):""}</span></div>`}`;
  return miniA(reg({k:"m",e}),e.artista,g.c,inner).replace("%FOOT%",`<span class="pill${e._ing==="Ingresso gratuito"?" ok":""}">${esc(e._ing)}</span>`)}
 function miniC(f){
  const rows=f.r,vo=rows.some(r=>r._vo),d0=dayKeys()[0],many=dayKeys().length>1,fs=fasSel();
@@ -921,7 +946,7 @@ function cardC(title,rows){
  const vo=rows.some(r=>r._vo);
  const byT=new Map();rows.forEach(r=>{if(!byT.has(r.genere))byT.set(r.genere,0);byT.set(r.genere,byT.get(r.genere)+1)});
  const g=GLAB[[...byT.entries()].sort((a,b)=>b[1]-a[1])[0][0]]||{c:"--mute",l:"Cinema",em:"🎬"};
- const srow=r=>{const gg=GLAB[r.genere]||g;return `<div class="srow" style="--g:var(${gg.c})"><button class="sn where" data-venue="${esc(r.luogo)}" title="Tutti i film di ${esc(r.luogo)}"><b class="wv">${esc(r.luogo)}</b><small>${esc(r._c+(r._c!=="Bologna"&&ZLAB[r._z]?" · "+ZLAB[r._z]:""))}${r._ver?" · "+esc(r._ver):""}</small></button><span class="sacts">${/^https:/.test(r.biglietti||"")?`<a class="act primary" href="${esc(r.biglietti)}" target="_blank" rel="noopener" title="${r._bfilm?"Acquista i biglietti di questo film":"Biglietteria online della sala"}">🎟 Biglietti</a>`:""}${/^https:/.test(r.sito_luogo||r.fonte||"")&&(r.sito_luogo||r.fonte)!==r.biglietti?`<a class="act" href="${esc(r.sito_luogo||r.fonte)}" target="_blank" rel="noopener">Programma</a>`:""}</span>${cTimes(r)}</div>`};
+ const srow=r=>{const gg=GLAB[r.genere]||g;return `<div class="srow" style="--g:var(${gg.c})"><button class="sn where" data-venue="${esc(r.luogo)}" title="Tutti i film di ${esc(r.luogo)}"><b class="wv">${esc(r.luogo)}</b><small>${esc(r._c+(r._c!==CITY.capo&&ZLAB[r._z]?" · "+ZLAB[r._z]:""))}${r._ver?" · "+esc(r._ver):""}</small></button><span class="sacts">${/^https:/.test(r.biglietti||"")?`<a class="act primary" href="${esc(r.biglietti)}" target="_blank" rel="noopener" title="${r._bfilm?"Acquista i biglietti di questo film":"Biglietteria online della sala"}">🎟 Biglietti</a>`:""}${/^https:/.test(r.sito_luogo||r.fonte||"")&&(r.sito_luogo||r.fonte)!==r.biglietti?`<a class="act" href="${esc(r.sito_luogo||r.fonte)}" target="_blank" rel="noopener">Programma</a>`:""}</span>${cTimes(r)}</div>`};
  return `<article class="card cine" style="--g:var(${g.c})">
  <div class="top"><span class="gtag">🎬 ${rows.length===1?"1 sala":rows.length+" sale"}</span>${vo?'<span class="vob">V.O.</span>':""}</div>
  <h3 class="title">${esc(title)}</h3>${fMeta(title,true)}
@@ -957,7 +982,7 @@ function renderList(ev){
  $("#list").innerHTML=h;
  const rest=ev.length-shown.length;$("#more").hidden=rest<=0;$("#more").textContent=`Mostra altri ${Math.min(rest,PAGE)} (${rest} rimanenti)`}
 
-function renderVenue(n){const l=ALL.filter(e=>e.luogo===st.venue),c=(l[0]||{})._c||"Bologna",sito=(l.find(e=>/^https:/.test(e.sito_luogo||""))||{}).sito_luogo||"";
+function renderVenue(n){const l=ALL.filter(e=>e.luogo===st.venue),c=(l[0]||{})._c||CITY.capo,sito=(l.find(e=>/^https:/.test(e.sito_luogo||""))||{}).sito_luogo||"";
  $("#vhead").innerHTML=`<div class="k">${MODE==="m"?"Mostre":MODE==="c"?"Cinema":"Programma"}</div><h2>${esc(st.venue)}</h2><p>${esc(c)} · <b>${n}</b> ${MODE==="m"?nn(n):MODE==="c"?"film":(n===1?"appuntamento":"appuntamenti")}${n!==l.length?` con queste scelte, ${l.length} in tutto`:" nei prossimi mesi"}</p>
  <div class="vacts"><button class="act dark" data-back>← ${st.view==="luoghi"?(MODE==="m"?"Tutte le sedi":MODE==="c"?"Tutte le sale":"Tutti i luoghi"):"Torna all'elenco"}</button>${sito?`<a class="act" href="${esc(sito)}" target="_blank" rel="noopener">${MODE==="c"?"Programma della sala":"Sito del luogo"}</a>`:""}<a class="act" href="${esc(maps(st.venue,c))}" target="_blank" rel="noopener">${PIN} Mappa</a></div>`}
 function renderPlaces(){
@@ -971,7 +996,7 @@ function renderPlaces(){
   h+=`<h2 class="ptitle">${esc(ZLAB[z])}<small>${list.length} ${MODE==="c"?(list.length===1?"sala":"sale"):(list.length===1?"luogo":"luoghi")}</small></h2><div class="vgrid">`+list.map(([name,v])=>{
    const f=v.first,d=f.data<today?today:f.data,when=d===today?"oggi":d===addDays(today,1)?"domani":fmt(d,{weekday:"short",day:"numeric",month:"short"});
    const bar=GOPTS.filter(o=>v.g[o.k]).map(o=>`<i style="--g:var(${o.c});width:${(100*v.g[o.k]/v.n).toFixed(1)}%"></i>`).join("");
-   return `<button class="vtile" data-venue="${esc(name)}"><div class="vtop"><span class="vname">${esc(name)}</span><span class="vn"><b>${v.n}</b> ${MODE==="c"?"film":nn(v.n)}</span></div>${v.c!=="Bologna"?`<div class="vcity">${esc(v.c)}</div>`:""}<div class="vnext">${MODE==="c"?`In sala: <b>${esc(f.artista)}</b>${v.n>1?` e altri ${v.n-1}`:""}`:MODE==="m"?(f.data<=today?`In corso: <b>${esc(f.artista)}</b>`:`Dal ${esc(when)}: <b>${esc(f.artista)}</b>`):`Prossimo: <b>${esc(when)}</b> · ${esc(f.artista)}`}</div><div class="vbar">${bar}</div></button>`}).join("")+`</div>`}
+   return `<button class="vtile" data-venue="${esc(name)}"><div class="vtop"><span class="vname">${esc(name)}</span><span class="vn"><b>${v.n}</b> ${MODE==="c"?"film":nn(v.n)}</span></div>${v.c!==CITY.capo?`<div class="vcity">${esc(v.c)}</div>`:""}<div class="vnext">${MODE==="c"?`In sala: <b>${esc(f.artista)}</b>${v.n>1?` e altri ${v.n-1}`:""}`:MODE==="m"?(f.data<=today?`In corso: <b>${esc(f.artista)}</b>`:`Dal ${esc(when)}: <b>${esc(f.artista)}</b>`):`Prossimo: <b>${esc(when)}</b> · ${esc(f.artista)}`}</div><div class="vbar">${bar}</div></button>`}).join("")+`</div>`}
  const rs=[...R.entries()].filter(x=>!st.r.has(x[0])).sort((a,b)=>b[1]-a[1]);
  if(rs.length)h+=`<h2 class="ptitle">Rassegne e stagioni<small>${rs.length}</small></h2><div class="rsx">${rs.map(([r,n])=>`<button class="rchip" data-r="${esc(r)}">${esc(r)}<small>${n}</small></button>`).join("")}</div>`;
  $("#places").innerHTML=h;return vis.length}
@@ -990,9 +1015,9 @@ function render(resetPage){
  }catch(err){console.error(err);$("#list").hidden=false;$("#list").innerHTML=`<div class="empty"><b>Qualcosa non ha funzionato</b>Ricarica la pagina.</div>`}}
 
 /* ---------- modalità: spettacoli / mostre ---------- */
-const TXT={s:{lede:"Concerti, teatro, comici, classica e grandi eventi a Bologna e nei comuni della Città metropolitana, nei prossimi 12 mesi.",ph:"Cerca artista o teatro…",luoghi:"Teatri e luoghi",luoghiS:"Luoghi",tot:"eventi",w:"nei prossimi 7 giorni",upd:UPDATED},
- m:{lede:"Mostre d'arte, fotografia, storia e cinema a Bologna e nei comuni della Città metropolitana: in corso e in arrivo.",ph:"Cerca mostra, artista, museo…",luoghi:"Musei e sedi",luoghiS:"Sedi",tot:"mostre",w:"aperte oggi",upd:ISO.test(MD.aggiornato||"")?MD.aggiornato:""},
- c:{lede:"Film in sala a Bologna e nei comuni della Città metropolitana: cosa danno, in quale cinema e a che ora.",ph:"Cerca film o cinema…",luoghi:"Cinema e sale",luoghiS:"Sale",tot:"film in sala",w:"sale con film",upd:ISO.test(CD.aggiornato||"")?CD.aggiornato:""}};
+const TXT={s:{lede:"Concerti, teatro, comici, classica e grandi eventi "+CITY.area+", nei prossimi 12 mesi.",ph:"Cerca artista o teatro…",luoghi:"Teatri e luoghi",luoghiS:"Luoghi",tot:"eventi",w:"nei prossimi 7 giorni",upd:UPDATED},
+ m:{lede:"Mostre d'arte, fotografia, storia e cinema "+CITY.area+": in corso e in arrivo.",ph:"Cerca mostra, artista, museo…",luoghi:"Musei e sedi",luoghiS:"Sedi",tot:"mostre",w:"aperte oggi",upd:ISO.test(MD.aggiornato||"")?MD.aggiornato:""},
+ c:{lede:"Film in sala "+CITY.area+": cosa danno, in quale cinema e a che ora.",ph:"Cerca film o cinema…",luoghi:"Cinema e sale",luoghiS:"Sale",tot:"film in sala",w:"sale con film",upd:ISO.test(CD.aggiornato||"")?CD.aggiornato:""}};
 function heroStats(){const x=TXT[MODE];
  $("#sTot").textContent=MODE==="c"?new Set(ALL.map(e=>norm(e.artista))).size:ALL.length;$("#lTot").textContent=x.tot;
  $("#sWeek").textContent=MODE==="c"?new Set(ALL.map(e=>e.luogo)).size:MODE==="m"?ALL.filter(e=>overlaps(e,today,today)).length:ALL.filter(e=>overlaps(e,today,in7)).length;$("#lWeek").textContent=x.w;
@@ -1063,15 +1088,15 @@ let tt;function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("sh
 function scopeLabel(){const parts=[];if(st.venue)parts.push(st.venue);if(st.g.size)parts.push([...st.g].map(k=>GLAB[k].l).join(", "));
  if(st.m.size)parts.push([...st.m].map(mLabel).join(", "));if(hasR())parts.push(rLabel());if(st.c.size)parts.push(cityLabel());["l","t","r","d"].forEach(k=>{if(st[k].size)parts.push([...st[k]].join(", "))});if(st.q)parts.push(`“${st.q}”`);return parts.join(" · ")}
 function shareText(){const ev=visible(),list=ev.slice(0,20);
- const lines=list.map(e=>MODE==="c"?`• ${e.artista} – ${e.luogo}${e._c!=="Bologna"?", "+e._c:""}${(tOn(e,dayKeys()[0])||[]).length?" ("+tOn(e,dayKeys()[0]).join(", ")+")":""}`:MODE==="m"?`• ${e.data>today?"dal "+fdate(e.data):"fino al "+fdate(e.fino)} – ${e.artista} (${e.luogo}${e._c!=="Bologna"?", "+e._c:""})`:`• ${fmt(e.data,{weekday:"short",day:"numeric",month:"short"})}${/\d/.test(e.ora||"")?" ore "+e.ora:""} – ${e.artista} (${e.luogo}${e._c!=="Bologna"?", "+e._c:""})`);
- return `${MODE==="m"?"Ecco le mostre a Bologna da Ach's Events Guide":MODE==="c"?`Ecco i film nei cinema di Bologna su Ach's Events Guide (${dayKeys().length>1?"questa settimana":dLab(dayKeys()[0],true)})`:"Ecco gli eventi a Bologna da Ach's Events Guide"}${scopeLabel()?" – "+scopeLabel():""}:\n${SITE_URL}\n\n${lines.join("\n")}${ev.length>20?`\n…e altri ${ev.length-20} sul sito.`:""}`}
+ const lines=list.map(e=>MODE==="c"?`• ${e.artista} – ${e.luogo}${e._c!==CITY.capo?", "+e._c:""}${(tOn(e,dayKeys()[0])||[]).length?" ("+tOn(e,dayKeys()[0]).join(", ")+")":""}`:MODE==="m"?`• ${e.data>today?"dal "+fdate(e.data):"fino al "+fdate(e.fino)} – ${e.artista} (${e.luogo}${e._c!==CITY.capo?", "+e._c:""})`:`• ${fmt(e.data,{weekday:"short",day:"numeric",month:"short"})}${/\d/.test(e.ora||"")?" ore "+e.ora:""} – ${e.artista} (${e.luogo}${e._c!==CITY.capo?", "+e._c:""})`);
+ return `${MODE==="m"?"Ecco le mostre a "+CITY.nome+" da Ach's Events Guide":MODE==="c"?`Ecco i film nei cinema di ${CITY.nome} su Ach's Events Guide (${dayKeys().length>1?"questa settimana":dLab(dayKeys()[0],true)})`:"Ecco gli eventi a "+CITY.nome+" da Ach's Events Guide"}${scopeLabel()?" – "+scopeLabel():""}:\n${SITE_URL}\n\n${lines.join("\n")}${ev.length>20?`\n…e altri ${ev.length-20} sul sito.`:""}`}
 const waHref=()=>"https://wa.me/?text="+encodeURIComponent(shareText());
 $("#share").onclick=()=>{const n=visible().length;$("#scope").innerHTML=`Stai condividendo <b>${n} ${nn(n)}</b> · ${scopeLabel()?esc(scopeLabel()):"tutto il calendario"}.`;$("#wa").href=waHref();openDlg($("#dlg"))};
 $("#dlg").addEventListener("click",e=>{if(e.target.id==="dlg")closeD($("#dlg"))});
 $("#ddlg").addEventListener("click",e=>{if(e.target.id==="ddlg")closeD($("#ddlg"))});
 document.addEventListener("keydown",e=>{const o=e.target.closest&&e.target.closest("[data-open]");if(o&&(e.key==="Enter"||e.key===" ")){e.preventDefault();openDetail(o.dataset.open)}});
 function openURL(u){try{const a=document.createElement("a");a.href=u;a.target="_top";a.rel="noopener";document.body.appendChild(a);a.click();a.remove()}catch(_){try{location.href=u}catch(__){}}}
-$("#send").onclick=()=>{const to=$("#to").value.split(/[,;\s]+/).filter(Boolean).join(",");openURL(`mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(("Ach's Events Guide – "+(MODE==="m"?"mostre a Bologna":MODE==="c"?"cinema a Bologna":"eventi a Bologna"))+(scopeLabel()?" – "+scopeLabel():""))}&body=${encodeURIComponent(shareText())}`);closeD($("#dlg"))};
+$("#send").onclick=()=>{const to=$("#to").value.split(/[,;\s]+/).filter(Boolean).join(",");openURL(`mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(("Ach's Events Guide – "+(MODE==="m"?"mostre a "+CITY.nome:MODE==="c"?"cinema a "+CITY.nome:"eventi a "+CITY.nome))+(scopeLabel()?" – "+scopeLabel():""))}&body=${encodeURIComponent(shareText())}`);closeD($("#dlg"))};
 async function copyText(s){try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(s);return true}}catch(_){}
  try{const ta=document.createElement("textarea");ta.value=s;ta.setAttribute("readonly","");ta.style.cssText="position:fixed;top:0;left:0;opacity:0;font-size:16px";document.body.appendChild(ta);ta.select();ta.setSelectionRange(0,s.length);const ok=document.execCommand("copy");ta.remove();return ok}catch(_){return false}}
 $("#copy").onclick=async()=>{toast(await copyText(SITE_URL)?"Link copiato: incollalo dove vuoi":"Copia non consentita qui: usa WhatsApp")};
@@ -1087,7 +1112,18 @@ const AFF={awin:"3146807",mid:{"ticketone.it":0,"vivaticket.com":0,"vivaticket.i
 function affUrl(u){try{const h=new URL(u).hostname.replace(/^www\./,"");for(const d in AFF.mid){if(AFF.awin&&AFF.mid[d]&&(h===d||h.endsWith("."+d)))return "https://www.awin1.com/cread.php?awinmid="+AFF.mid[d]+"&awinaffid="+AFF.awin+"&ued="+encodeURIComponent(u)}}catch(_){}return u}
 document.addEventListener("click",e=>{const a=e.target.closest("a[href^='https://']");if(a&&!a.dataset.aff){const v=affUrl(a.href);if(v!==a.href){a.dataset.aff=a.href;a.href=v}}},true);
 if(AFF.awin&&Object.values(AFF.mid).some(Boolean)){const f=document.querySelector("footer");if(f)f.insertAdjacentHTML("beforeend"," Alcuni link ai biglietti sono affiliati: se acquisti, il sito riceve una piccola commissione senza costi in più per te.")}
-function track(path,title){try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:String(path).slice(0,180),title:title||path,event:true})}catch(_){}}
+
+/* ---------- selettore città e testi della città ---------- */
+(function(){const h=document.querySelector(".hero h1");
+ if(CITY.k!=="bo"){h.innerHTML=`Eventi ${CITY.nome},<br><em>stasera</em> e oltre.`;document.querySelector(".arches").hidden=true;const sy=document.querySelector(`.msym[data-s="${CITY.k}"]`);if(sy)sy.removeAttribute("hidden")}
+ const b=$("#city");if(!ON_WEB||CITTA_ATTIVE.length<2)return;b.hidden=false;b.dataset.c=CITY.k;
+ const other=CITTA_CFG[CITTA_ATTIVE.find(k=>k!==CITY.k)];b.setAttribute("aria-label",`Città: ${CITY.nome}. Tocca per ${other.nome}`);
+ const go=()=>{b.dataset.c=other.k;try{localStorage.setItem("citta",other.k)}catch(_){}setTimeout(()=>{location.href=other.path},240)};
+ b.addEventListener("click",go);let x0=null;
+ b.addEventListener("touchstart",e=>{x0=e.touches[0].clientX},{passive:true});
+ b.addEventListener("touchend",e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;x0=null;if(Math.abs(dx)>18&&((dx>0)===(other.k==="mi"))){e.preventDefault();go()}});
+})();
+function track(path,title){if(CITY.k!=="bo")path=CITY.nome.toLowerCase()+"/"+path;try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:String(path).slice(0,180),title:title||path,event:true})}catch(_){}}
 const tTitle=el=>{const c=el.closest(".card");return c&&c.querySelector(".title")?c.querySelector(".title").textContent.trim():""};
 const tm=()=>MODE==="m"?"mostre":MODE==="c"?"cinema":"spettacoli";
 document.addEventListener("click",e=>{if(!GC||!ON_WEB)return;const t=e.target;
