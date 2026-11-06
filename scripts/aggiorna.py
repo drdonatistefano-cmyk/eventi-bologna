@@ -188,7 +188,7 @@ def main():
     print(f"Eventi validi: {len(unici)} · tolti perché finiti: {passati} · doppioni uniti: {doppi}")
     pz = collections.Counter(COMUNE.get(e["citta"], "?") for e in unici)
     print("Per zona: " + ", ".join(f"{z} {pz[z]}" for z in ZONE if pz[z]))
-    print(f"Comuni con eventi: {len(set(e['citta'] for e in unici))}/55")
+    print(f"Comuni con eventi: {len(set(e['citta'] for e in unici))}/{len(COMUNE)}")
     for x in avvisi[:40]: print("  avviso:", x)
     if len(avvisi) > 40: print(f"  …altri {len(avvisi)-40} avvisi")
     if errori:

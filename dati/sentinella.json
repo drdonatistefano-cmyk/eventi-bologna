@@ -1,23 +1,150 @@
-{"nota": "Pagine controllate ogni settimana dalla sentinella (scripts/sentinella.py). Aggiungi qui i cartelloni dei luoghi che NON vendono sulle biglietterie dei feed.",
+{
+ "nota": "Pagine controllate ogni settimana dalla sentinella (scripts/sentinella.py). Aggiungi qui i cartelloni dei luoghi che NON vendono sulle biglietterie dei feed.",
  "pagine": [
-  {"citta": "bo", "nome": "Cultura Bologna – agenda", "url": "https://www.culturabologna.it/events"},
-  {"citta": "bo", "nome": "Bologna Welcome – eventi", "url": "https://www.bolognawelcome.com/it/eventi"},
-  {"citta": "bo", "nome": "Bologna Teatro", "url": "https://www.bolognateatro.it/"},
-  {"citta": "bo", "nome": "Teatro Duse", "url": "https://teatroduse.it/"},
-  {"citta": "bo", "nome": "Teatro Comunale (TCBO)", "url": "https://www.tcbo.it/"},
-  {"citta": "bo", "nome": "ERT – Arena del Sole e Moline", "url": "https://bologna.emiliaromagnateatro.com/"},
-  {"citta": "bo", "nome": "Teatro Celebrazioni", "url": "https://teatrocelebrazioni.it/"},
-  {"citta": "bo", "nome": "Teatro Dehon", "url": "https://www.teatrodehon.it/index.php"},
-  {"citta": "bo", "nome": "Teatro Testoni Ragazzi", "url": "https://www.testoniragazzi.it/"},
-  {"citta": "bo", "nome": "Unipol Arena", "url": "https://www.unipolarena.it/"},
-  {"citta": "bo", "nome": "Teatro Stignani (Imola)", "url": "https://www.teatrostignani.it/"},
-  {"citta": "bo", "nome": "Teatro Laura Betti (Casalecchio)", "url": "https://www.teatrocasalecchio.it/"},
-  {"citta": "bo", "nome": "Teatro Consorziale (Budrio)", "url": "https://www.teatroconsorzialebudrio.it/"},
-  {"citta": "bo", "nome": "Stagione Agorà (Reno Galliera)", "url": "https://stagioneagora.it/"},
-  {"citta": "bo", "nome": "Teatro Cassero (Castel San Pietro)", "url": "https://www.labottegadelbuonumore.it/teatro-comunale-cassero/"},
-  {"citta": "bo", "nome": "Teatro Spazio Reno (Calderara)", "url": "https://www.culturara.it/"},
-  {"citta": "bo", "nome": "ITC Teatro (San Lazzaro)", "url": "https://www.teatrodellargine.org/itcteatro"},
-  {"citta": "bo", "nome": "Appennino bolognese – eventi", "url": "https://appenninobolognese.cittametropolitana.bo.it/it/eventi"},
-  {"citta": "bo", "nome": "Cultura Imola", "url": "https://www.culturaimola.it/"},
-  {"citta": "bo", "nome": "Porretta Cinema", "url": "https://porrettacinema.com/"}
- ]}
+  {
+   "citta": "bo",
+   "nome": "Bologna Welcome – eventi",
+   "url": "https://www.bolognawelcome.com/it/eventi"
+  },
+  {
+   "citta": "bo",
+   "nome": "Bologna Teatro",
+   "url": "https://www.bolognateatro.it/"
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Duse",
+   "url": "https://teatroduse.it/"
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Comunale (TCBO)",
+   "url": "https://www.tcbo.it/"
+  },
+  {
+   "citta": "bo",
+   "nome": "ERT – Arena del Sole e Moline",
+   "url": "https://bologna.emiliaromagnateatro.com/"
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Celebrazioni",
+   "url": "https://teatrocelebrazioni.it/"
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Dehon",
+   "url": "https://www.teatrodehon.it/index.php"
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Testoni Ragazzi",
+   "url": "https://www.testoniragazzi.it/"
+  },
+  {
+   "citta": "bo",
+   "nome": "Unipol Arena",
+   "url": "https://www.unipolarena.it/"
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Stignani (Imola)",
+   "url": "https://www.teatrostignani.it/"
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Laura Betti (Casalecchio)",
+   "url": "https://www.teatrocasalecchio.it/"
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Consorziale (Budrio)",
+   "url": "https://www.teatroconsorzialebudrio.it/"
+  },
+  {
+   "citta": "bo",
+   "nome": "Stagione Agorà (Reno Galliera)",
+   "url": "https://stagioneagora.it/"
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Cassero (Castel San Pietro)",
+   "url": "https://www.labottegadelbuonumore.it/teatro-comunale-cassero/"
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Spazio Reno (Calderara)",
+   "url": "https://www.culturara.it/"
+  },
+  {
+   "citta": "bo",
+   "nome": "ITC Teatro (San Lazzaro)",
+   "url": "https://www.teatrodellargine.org/itcteatro"
+  },
+  {
+   "citta": "bo",
+   "nome": "Appennino bolognese – eventi",
+   "url": "https://appenninobolognese.cittametropolitana.bo.it/it/eventi"
+  },
+  {
+   "citta": "bo",
+   "nome": "Cultura Imola",
+   "url": "https://www.culturaimola.it/"
+  },
+  {
+   "citta": "bo",
+   "nome": "Porretta Cinema",
+   "url": "https://porrettacinema.com/"
+  },
+  {
+   "citta": "mi",
+   "nome": "Songkick – concerti Milano",
+   "url": "https://www.songkick.com/metro-areas/30338-italy-milan"
+  },
+  {
+   "citta": "mi",
+   "nome": "Teatro alla Scala – stagione",
+   "url": "https://www.teatroallascala.org/it/stagione/2026-2027"
+  },
+  {
+   "citta": "mi",
+   "nome": "Piccolo Teatro",
+   "url": "https://www.piccoloteatro.org/it"
+  },
+  {
+   "citta": "mi",
+   "nome": "Teatro Manzoni",
+   "url": "https://www.teatromanzoni.it/"
+  },
+  {
+   "citta": "mi",
+   "nome": "Teatro Arcimboldi",
+   "url": "https://www.teatroarcimboldi.it/"
+  },
+  {
+   "citta": "mi",
+   "nome": "Teatro dal Verme – I Pomeriggi Musicali",
+   "url": "https://www.ipomeriggi.it/"
+  },
+  {
+   "citta": "mi",
+   "nome": "Teatro Franco Parenti",
+   "url": "https://www.teatrofrancoparenti.it/"
+  },
+  {
+   "citta": "mi",
+   "nome": "Teatro Elfo Puccini",
+   "url": "https://www.elfo.org/"
+  },
+  {
+   "citta": "mi",
+   "nome": "Blue Note Milano",
+   "url": "https://www.bluenotemilano.com/"
+  },
+  {
+   "citta": "mi",
+   "nome": "arte.it – mostre a Milano",
+   "url": "https://www.arte.it/calendario-arte/milano"
+  }
+ ]
+}

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var m=document.cookie.match(/(?:^|; )citta=(bo|mi)/),q=/[?&]citta=(bo|mi)/.exec(location.search),qui=/^\/milano(\/|$)/.test(location.pathname)?"mi":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||m[1]!=="mi"||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace("/milano/")}catch(_){}})();</script>
 <title>Ach's Events Guide – concerti, teatro, mostre e cinema a Milano</title>
 <meta name="description" content="Ach&#39;s Events Guide: concerti, teatro, mostre e cinema a Milano e nella Città metropolitana, con date, orari, luoghi e link ai biglietti.">
 <meta property="og:type" content="website">
@@ -604,7 +605,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
 /* ---------- città: un solo motore per tutte le città ----------
    Bologna = "/", Milano = "/milano/". Ogni cartella ha i suoi eventi.js, mostre.js, cinema.js.
    CITTA_ATTIVE: le città che compaiono nel selettore (aggiungere "mi" quando i dati di Milano sono pronti). */
-const CITTA_ATTIVE=["bo"];
+const CITTA_ATTIVE=["bo","mi"];
 const CITTA_CFG={
  bo:{k:"bo",sigla:"BO",nome:"Bologna",capo:"Bologna",area:"a Bologna e nei comuni della Città metropolitana",path:"/",url:"https://achevents.com/",
   zone:[
@@ -1118,7 +1119,7 @@ if(AFF.awin&&Object.values(AFF.mid).some(Boolean)){const f=document.querySelecto
  if(CITY.k!=="bo"){h.innerHTML=`Eventi ${CITY.nome},<br><em>stasera</em> e oltre.`;document.querySelector(".arches").hidden=true;const sy=document.querySelector(`.msym[data-s="${CITY.k}"]`);if(sy)sy.removeAttribute("hidden")}
  const b=$("#city");if(!ON_WEB||CITTA_ATTIVE.length<2)return;b.hidden=false;b.dataset.c=CITY.k;
  const other=CITTA_CFG[CITTA_ATTIVE.find(k=>k!==CITY.k)];b.setAttribute("aria-label",`Città: ${CITY.nome}. Tocca per ${other.nome}`);
- const go=()=>{b.dataset.c=other.k;try{localStorage.setItem("citta",other.k)}catch(_){}setTimeout(()=>{location.href=other.path},240)};
+ const go=()=>{b.dataset.c=other.k;try{localStorage.setItem("citta",other.k)}catch(_){}document.cookie="citta="+other.k+";path=/;max-age=31536000;SameSite=Lax";setTimeout(()=>{location.href=other.path},240)};
  b.addEventListener("click",go);let x0=null;
  b.addEventListener("touchstart",e=>{x0=e.touches[0].clientX},{passive:true});
  b.addEventListener("touchend",e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;x0=null;if(Math.abs(dx)>18&&((dx>0)===(other.k==="mi"))){e.preventDefault();go()}});
