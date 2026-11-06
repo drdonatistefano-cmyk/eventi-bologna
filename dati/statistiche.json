@@ -1,15 +1,15 @@
 {
- "generato": "2026-11-06T16:33:29+00:00",
+ "generato": "2026-11-06T17:24:31+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-06",
- "visite_totali": 99,
- "totale_goatcounter": 279,
- "eventi_totali": 180,
+ "visite_totali": 107,
+ "totale_goatcounter": 294,
+ "eventi_totali": 187,
  "eventi_per_tipo": {
-  "filtri": 65,
-  "cambio scheda": 36,
+  "filtri": 70,
+  "cambio scheda": 37,
   "cambio vista": 18,
-  "schede aperte": 16,
+  "schede aperte": 17,
   "apri filtri": 12,
   "luoghi aperti": 10,
   "clic biglietti": 7,
@@ -25,16 +25,16 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-06",
-   "visite": 99,
-   "cambio scheda": 36,
+   "visite": 107,
+   "cambio scheda": 37,
    "apri filtri": 12,
    "cambio vista": 18,
-   "filtri": 65,
+   "filtri": 70,
    "mostra altri": 4,
    "luoghi aperti": 10,
    "azzera filtri": 2,
+   "schede aperte": 17,
    "clic biglietti": 7,
-   "schede aperte": 16,
    "clic info spettacoli": 5,
    "clic mostre (scheda o sito)": 3,
    "condivisioni": 1,
@@ -50,8 +50,8 @@
    "mostra altri": 2,
    "luoghi aperti": 5,
    "azzera filtri": 1,
-   "clic biglietti": 4,
    "schede aperte": 0,
+   "clic biglietti": 4,
    "clic info spettacoli": 3,
    "clic mostre (scheda o sito)": 0,
    "condivisioni": 0,
@@ -65,23 +65,23 @@
    "mostra altri": 1,
    "luoghi aperti": 4,
    "azzera filtri": 1,
-   "clic biglietti": 1,
    "schede aperte": 3,
+   "clic biglietti": 1,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
    "condivisioni": 0,
    "clic cinema (programma della sala)": 0
   },
   "2026-11-06": {
-   "cambio scheda": 24,
+   "cambio scheda": 25,
    "apri filtri": 6,
    "cambio vista": 9,
-   "filtri": 43,
+   "filtri": 48,
    "mostra altri": 1,
    "luoghi aperti": 1,
    "azzera filtri": 0,
+   "schede aperte": 14,
    "clic biglietti": 2,
-   "schede aperte": 13,
    "clic info spettacoli": 2,
    "clic mostre (scheda o sito)": 3,
    "condivisioni": 1,
@@ -99,13 +99,13 @@
   },
   {
    "giorno": "2026-11-06",
-   "visite": 55
+   "visite": 63
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 241
+   "conteggio": 253
   },
   {
    "origine": "achevents.com",
@@ -113,7 +113,7 @@
   },
   {
    "origine": "achevents.com/milano",
-   "conteggio": 13
+   "conteggio": 16
   },
   {
    "origine": "teams.public.onecdn.static.microsoft",
@@ -133,12 +133,12 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 36
+   "conteggio": 42
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 16
+   "conteggio": 18
   },
   {
    "path": "scheda/mostre",
@@ -147,16 +147,16 @@
    "tipo": "cambio scheda"
   },
   {
+   "path": "milano/scheda/mostre",
+   "titolo": "Cambio scheda",
+   "conteggio": 7,
+   "tipo": "cambio scheda"
+  },
+  {
    "path": "spettacoli/apri-filtri",
    "titolo": "Apertura filtri",
    "conteggio": 7,
    "tipo": "apri filtri"
-  },
-  {
-   "path": "milano/scheda/mostre",
-   "titolo": "Cambio scheda",
-   "conteggio": 6,
-   "tipo": "cambio scheda"
   },
   {
    "path": "scheda/cinema",
@@ -201,6 +201,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "milano/spettacoli/filtro/Genere/Rock",
+   "titolo": "Filtro",
+   "conteggio": 4,
+   "tipo": "filtri"
+  },
+  {
    "path": "spettacoli/mostra-altri",
    "titolo": "Mostra altri",
    "conteggio": 4,
@@ -213,7 +219,7 @@
    "tipo": "filtri"
   },
   {
-   "path": "milano/spettacoli/filtro/Genere/Rock",
+   "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
    "titolo": "Filtro",
    "conteggio": 3,
    "tipo": "filtri"
@@ -229,6 +235,12 @@
    "titolo": "Cambio scheda",
    "conteggio": 3,
    "tipo": "cambio scheda"
+  },
+  {
+   "path": "spettacoli/filtro/Date/oggi",
+   "titolo": "Filtro",
+   "conteggio": 3,
+   "tipo": "filtri"
   },
   {
    "path": "spettacoli/filtro/Genere/Pop e altra musica",
@@ -255,13 +267,13 @@
    "tipo": "apri filtri"
   },
   {
-   "path": "milano/spettacoli/filtro/Genere/Jazz",
+   "path": "milano/spettacoli/filtro/Date/oggi",
    "titolo": "Filtro",
    "conteggio": 2,
    "tipo": "filtri"
   },
   {
-   "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
+   "path": "milano/spettacoli/filtro/Genere/Jazz",
    "titolo": "Filtro",
    "conteggio": 2,
    "tipo": "filtri"
@@ -285,12 +297,6 @@
    "tipo": "filtri"
   },
   {
-   "path": "spettacoli/filtro/Date/oggi",
-   "titolo": "Filtro",
-   "conteggio": 2,
-   "tipo": "filtri"
-  },
-  {
    "path": "spettacoli/azzera-filtri",
    "titolo": "Azzera filtri",
    "conteggio": 2,
@@ -307,6 +313,18 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Jazz",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/dettaglio/Fabrizio Moro",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
   },
   {
    "path": "spettacoli/clic-biglietti/Daniele Silvestri – Teatri a sdraio",
@@ -454,12 +472,6 @@
   },
   {
    "path": "milano/cinema/filtro/Genere del film/Fantascienza e fantasy",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Date/oggi",
    "titolo": "Filtro",
    "conteggio": 1,
    "tipo": "filtri"
