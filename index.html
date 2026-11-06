@@ -1080,12 +1080,12 @@ $("#wa").onclick=()=>{$("#wa").href=waHref();setTimeout(()=>closeD($("#dlg")),30
 /* ---------- statistiche (GoatCounter: senza cookie, solo sul sito pubblico GitHub) ---------- */
 const GC="eventibologna";/* nome dell'account goatcounter.com, es. "eventibologna" */
 if(GC&&ON_WEB){try{const s=document.createElement("script");s.async=true;s.dataset.goatcounter=`https://${GC}.goatcounter.com/count`;s.src="https://gc.zgo.at/count.js";document.body.appendChild(s)}catch(_){}}
-/* Affiliazioni: inserire i codici quando le iscrizioni sono approvate (vuoto = link invariati).
-   awin = ID publisher Awin; mid = ID inserzionista Awin per dominio (TicketOne IT = 9567). */
-const AFF={awin:"",mid:{"ticketone.it":9567,"vivaticket.com":0,"vivaticket.it":0}};
+/* Affiliazioni Awin (publisher Achevents, ID 3146807). mid = ID inserzionista per dominio:
+   0 = programma non ancora approvato, link invariati. TicketOne IT = 9567 dopo l'approvazione. */
+const AFF={awin:"3146807",mid:{"ticketone.it":0,"vivaticket.com":0,"vivaticket.it":0}};
 function affUrl(u){try{const h=new URL(u).hostname.replace(/^www\./,"");for(const d in AFF.mid){if(AFF.awin&&AFF.mid[d]&&(h===d||h.endsWith("."+d)))return "https://www.awin1.com/cread.php?awinmid="+AFF.mid[d]+"&awinaffid="+AFF.awin+"&ued="+encodeURIComponent(u)}}catch(_){}return u}
 document.addEventListener("click",e=>{const a=e.target.closest("a[href^='https://']");if(a&&!a.dataset.aff){const v=affUrl(a.href);if(v!==a.href){a.dataset.aff=a.href;a.href=v}}},true);
-if(AFF.awin){const f=document.querySelector("footer");if(f)f.insertAdjacentHTML("beforeend"," Alcuni link ai biglietti sono affiliati: se acquisti, il sito riceve una piccola commissione senza costi in più per te.")}
+if(AFF.awin&&Object.values(AFF.mid).some(Boolean)){const f=document.querySelector("footer");if(f)f.insertAdjacentHTML("beforeend"," Alcuni link ai biglietti sono affiliati: se acquisti, il sito riceve una piccola commissione senza costi in più per te.")}
 function track(path,title){try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:String(path).slice(0,180),title:title||path,event:true})}catch(_){}}
 const tTitle=el=>{const c=el.closest(".card");return c&&c.querySelector(".title")?c.querySelector(".title").textContent.trim():""};
 const tm=()=>MODE==="m"?"mostre":MODE==="c"?"cinema":"spettacoli";
