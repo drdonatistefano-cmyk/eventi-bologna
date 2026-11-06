@@ -23,7 +23,8 @@ def main():
     src = sys.argv[1] if len(sys.argv) > 1 else "dati/statistiche.json"
     out = sys.argv[2] if len(sys.argv) > 2 else "effettivi.json"
     s = json.load(open(src, encoding="utf-8"))
-    visite = {g["giorno"]: g["visite"] for g in s.get("giorni", [])}
+    oggi = str(s.get("generato", ""))[:10]  # il giorno della lettura non è concluso: non si conta
+    visite = {g["giorno"]: g["visite"] for g in s.get("giorni", []) if not oggi or g["giorno"] < oggi}
     giorni_ev = s.get("eventi_per_giorno", {})
     ultimo = max(visite) if visite else None
     righe = []
