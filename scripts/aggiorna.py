@@ -65,7 +65,7 @@ def pulisci_url(u):
     u = re.sub(r"[?&]utm_[^#]*", "", u)
     return u if re.match(r"^https://", u) else ""
 
-CATEGORIE = {"Arte antica e Ottocento", "Arte moderna e contemporanea", "Fotografia", "Cinema e design", "Storia e società", "Scienza e tecnica"}
+CATEGORIE = {"Pittura", "Scultura", "Fotografia", "Arte contemporanea e installazioni", "Disegno, grafica e illustrazione", "Design e moda", "Cinema e spettacolo", "Storia e archeologia", "Scienza e tecnica", "Esperienze immersive"}
 CAMPI_M = ["id","titolo","sede","citta","inizio","fine","categoria","descrizione","ingresso","orari","fonte","sito"]
 
 def leggi_mostre(path):
