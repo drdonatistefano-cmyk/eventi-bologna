@@ -1,3 +1,4 @@
+// INSTALLATO su Cloudflare il 6/11/2026: Worker "achevents-citta", rotta achevents.com/ . Se modifichi questo file, incolla la nuova versione anche lì.
 // Cloudflare Worker per achevents.com – apre la città giusta in base a dove si trova il visitatore.
 // Solo la home "/" viene smistata: chi è in Lombardia va su /milano/, tutti gli altri restano su Bologna.
 // La scelta fatta col pulsante BO|MI (cookie "citta") vince sempre sulla posizione.
