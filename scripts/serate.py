@@ -58,6 +58,7 @@ def leggi_pagina(t, chiave):
         luogo, ora = (mo.group(1).strip(), mo.group(2) or "n.d.") if mo else (small, "n.d.")
         if not luogo or SCARTA_LUOGHI.match(luogo): continue
         titolo = html.unescape(re.sub(r"<[^>]+>", "", titolo)).strip()
+        if not titolo or SCARTA_LUOGHI.match(titolo): continue  # titolo ancora "TBA"
         luogo = RINOMINA.get(luogo, luogo)
         e = ld.get(url, {})
         artisti = [p.get("name", "").strip() for p in (e.get("performer") or []) if isinstance(p, dict) and p.get("name")]
