@@ -1,21 +1,21 @@
 {
- "generato": "2026-11-07T08:22:48+00:00",
+ "generato": "2026-11-07T09:19:40+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-07",
  "visite_totali": 124,
- "totale_goatcounter": 334,
- "eventi_totali": 210,
+ "totale_goatcounter": 342,
+ "eventi_totali": 218,
  "eventi_per_tipo": {
-  "filtri": 79,
-  "cambio scheda": 42,
+  "filtri": 80,
+  "cambio scheda": 43,
   "cambio vista": 22,
-  "schede aperte": 18,
-  "apri filtri": 13,
+  "schede aperte": 22,
+  "apri filtri": 14,
   "luoghi aperti": 12,
   "clic biglietti": 7,
   "clic info spettacoli": 5,
   "mostra altri": 4,
-  "azzera filtri": 3,
+  "azzera filtri": 4,
   "clic mostre (scheda o sito)": 3,
   "condivisioni": 1,
   "clic cinema (programma della sala)": 1
@@ -26,14 +26,14 @@
    "dal": "2026-11-04",
    "al": "2026-11-07",
    "visite": 124,
-   "cambio scheda": 42,
-   "apri filtri": 13,
+   "cambio scheda": 43,
+   "apri filtri": 14,
    "cambio vista": 22,
-   "filtri": 79,
+   "filtri": 80,
    "mostra altri": 4,
    "luoghi aperti": 12,
-   "azzera filtri": 3,
-   "schede aperte": 18,
+   "azzera filtri": 4,
+   "schede aperte": 22,
    "clic biglietti": 7,
    "clic info spettacoli": 5,
    "clic mostre (scheda o sito)": 3,
@@ -88,14 +88,14 @@
    "clic cinema (programma della sala)": 1
   },
   "2026-11-07": {
-   "cambio scheda": 3,
-   "apri filtri": 1,
+   "cambio scheda": 4,
+   "apri filtri": 2,
    "cambio vista": 3,
-   "filtri": 9,
+   "filtri": 10,
    "mostra altri": 0,
    "luoghi aperti": 2,
-   "azzera filtri": 1,
-   "schede aperte": 1,
+   "azzera filtri": 2,
+   "schede aperte": 5,
    "clic biglietti": 0,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
@@ -124,7 +124,7 @@
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 290
+   "conteggio": 298
   },
   {
    "origine": "achevents.com",
@@ -174,7 +174,7 @@
   {
    "path": "spettacoli/apri-filtri",
    "titolo": "Apertura filtri",
-   "conteggio": 7,
+   "conteggio": 8,
    "tipo": "apri filtri"
   },
   {
@@ -182,6 +182,12 @@
    "titolo": "Cambio vista",
    "conteggio": 7,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "scheda/spettacoli",
+   "titolo": "Cambio scheda",
+   "conteggio": 7,
+   "tipo": "cambio scheda"
   },
   {
    "path": "milano/scheda/spettacoli",
@@ -206,12 +212,6 @@
    "titolo": "Cambio vista",
    "conteggio": 6,
    "tipo": "cambio vista"
-  },
-  {
-   "path": "scheda/spettacoli",
-   "titolo": "Cambio scheda",
-   "conteggio": 6,
-   "tipo": "cambio scheda"
   },
   {
    "path": "milano/spettacoli/filtro/Date/weekend",
@@ -286,6 +286,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "spettacoli/azzera-filtri",
+   "titolo": "Azzera filtri",
+   "conteggio": 3,
+   "tipo": "azzera filtri"
+  },
+  {
    "path": "spettacoli/filtro/Genere/Teatro",
    "titolo": "Filtro",
    "conteggio": 3,
@@ -316,12 +322,6 @@
    "tipo": "filtri"
   },
   {
-   "path": "spettacoli/azzera-filtri",
-   "titolo": "Azzera filtri",
-   "conteggio": 2,
-   "tipo": "azzera filtri"
-  },
-  {
    "path": "mostre/apri-filtri",
    "titolo": "Apertura filtri",
    "conteggio": 2,
@@ -332,6 +332,36 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "spettacoli/dettaglio/Much Much Bass",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Wasted Generation feat. Alessandro Lanzoni",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Svaneborg Kardyb",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Wish you Were Here",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/filtro/Tipo di luogo/Teatri",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
   },
   {
    "path": "spettacoli/luogo/Estragon",
