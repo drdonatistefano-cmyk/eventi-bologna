@@ -1,0 +1,332 @@
+User-agent: *
+
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Disallow: /cdn-cgi/
+Disallow: /*preview=*
+Disallow: /*&u=*
+Disallow: /*?u=*
+Disallow: /*upage=*
+Disallow: /*author=*
+Disallow: /*sort=*
+Disallow: /*order=*
+Disallow: /*orderby=*
+Disallow: /*?y=*
+Disallow: /*&y=*
+Disallow: /*page_id=*
+Disallow: /*page=*
+Disallow: /*search=*
+Disallow: /*?id=*
+Disallow: /*&id=*
+Disallow: /*curpage*
+Disallow: /*ucat=*
+Disallow: /*format=*
+Disallow: /*?p=*
+Disallow: /*&p=*
+Disallow: /*?_=*
+Disallow: /*&_=*
+Disallow: /*utm_*
+# 15 Eyl 2026: tek parametreli festival/playlist facet sayfalari (month_year, continent, country, city, season, genre) taranabilir;
+# gecmis aylar temada otomatik noindex. Birden fazla parametreli kombinasyonlar taranmaz:
+Disallow: /*?*&*
+# 15 Eyl 2026: yazi/etiket/yazar RSS feed'leri (GSC "crawled, not indexed" 2.458 kaydinin ~%95'i) taranmaz; ana /feed acik kalir
+Disallow: /*/feed
+Disallow: /*/feed/
+Disallow: /comments/feed
+Disallow: /*filter=*
+Disallow: /*filterby=*
+Disallow: /*filter_by=*
+Disallow: /*term=*
+Disallow: /*fbclid*
+Disallow: /*?single*
+Disallow: /*?packages*
+Disallow: /*&single*
+Disallow: /*&packages*
+Disallow: /*?cat=*
+Disallow: /*&cat=*
+Disallow: /*?tag=*
+Disallow: /*tag_id=*
+Disallow: /*post_type=*
+Disallow: /*?amp=*
+Disallow: /*&amp=*
+Disallow: /*?post=*
+Disallow: /*&post=*
+Disallow: /*&ved=*
+Disallow: /*?ved=*
+Disallow: /print/
+Disallow: /*attribute=*
+Disallow: /*attribute_*
+Disallow: /*trk=*
+Disallow: /*filter_year=*
+Disallow: /*/embed*
+Disallow: /*.pdf$
+Disallow: /*.html$
+Disallow: /*.log$
+Disallow: /*.docx$
+Disallow: /*.mp4$
+Disallow: /*.mp3$
+Disallow: /*param=*
+Disallow: /*cat=*
+Disallow: /*?s=*
+Disallow: /*&s=*
+Disallow: /*occasion=*
+Disallow: /*add-to-cart=*
+
+Disallow: /techno-playlists?genre=techno$
+Disallow: /readme.html$
+
+Disallow: /print/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /backup/
+Disallow: /event-country/
+Disallow: /search/
+
+Allow: /techno-festivals?city=Amsterdam$
+Allow: /techno-festivals?continent=europe$
+Allow: /techno-festivals?country=Germany$
+Allow: /techno-festivals?country=Netherlands$
+Allow: /techno-festivals?country=Portugal$
+Allow: /techno-festivals?country=United%20Kingdom$
+Allow: /techno-festivals?country=Barcelona$
+Allow: /techno-festivals?country=Belgium$
+Allow: /techno-festivals?country=United%20States$
+Allow: /techno-festivals?city=Groningen$
+Allow: /techno-festivals?city=Melbourne$
+Allow: /techno-festivals?city=London$
+Allow: /techno-festivals?country=Poland$
+Allow: /techno-festivals?country=Croatia$
+Allow: /techno-festivals?city=Hamburg$
+Allow: /techno-festivals?country=Romania$
+Allow: /techno-festivals?country=Australia$
+Allow: /techno-festivals?city=Frankfurt$
+Allow: /techno-festivals?country=Switzerland$
+Allow: /techno-festivals?country=Ireland$
+Allow: /techno-festivals?city=Sydney$
+Allow: /techno-festivals?month_year=2025-08$
+Allow: /techno-festivals?city=New%20York$
+Allow: /techno-festivals?season=winter$
+Allow: /techno-festivals?season=summer$
+Allow: /techno-festivals?country=France$
+Allow: /techno-festivals?city=Toronto$
+Allow: /techno-festivals?month_year=2025-12$
+Allow: /techno-festivals?country=Spain$
+Allow: /techno-festivals?city=Las%20Vegas$
+Allow: /techno-festivals?city=Tulum$
+Allow: /techno-festivals?city=California$
+Allow: /techno-festivals?country=Canada$
+Allow: /techno-festivals?country=Scotland$
+Allow: /techno-festivals?country=Greece$
+Allow: /techno-festivals?city=Vancouver$
+Allow: /techno-festivals?month_year=2025-07$
+Allow: /techno-festivals?city=Rotterdam$
+Allow: /techno-festivals?country=Thailand$
+Allow: /techno-festivals?continent=europe&season=winter$
+Allow: /techno-festivals?month_year=2025-08&continent=europe$
+Allow: /techno-festivals?month_year=2025-11$
+Allow: /techno-festivals?month_year=2025-09$
+Allow: /techno-festivals?month_year=2025-04$
+Allow: /techno-festivals?continent=asia$
+Allow: /techno-festivals?city=Berlin$
+Allow: /techno-festivals?month_year=2025-10&continent=europe$
+
+Allow: /techno-playlists?genre=melodic_techno$
+Allow: /techno-playlists?genre=hard_techno$
+Allow: /techno-playlists?genre=dark_techno$
+Allow: /techno-playlists?genre=minimal_techno$
+Allow: /techno-playlists?genre=acid_techno$
+Allow: /techno-playlists?genre=house$
+Allow: /techno-playlists?genre=tech_house$
+Allow: /techno-playlists?genre=afro_house$
+Allow: /techno-playlists?genre=deep_minimal_house$
+Allow: /techno-playlists?vibe=rave$
+Allow: /techno-playlists?vibe=fitness_gym$
+Allow: /techno-playlists?vibe=chill$
+Allow: /techno-playlists?vibe=house_party$
+Allow: /techno-playlists?genre=melodic_techno&vibe=chill$
+Allow: /techno-playlists?genre=hard_techno&vibe=rave$
+Allow: /techno-playlists?genre=hard_techno&vibe=fitness_gym$
+Allow: /techno-playlists?genre=minimal_techno&vibe=rave$
+Allow: /techno-playlists?genre=minimal_techno&vibe=chill$
+Allow: /techno-playlists?genre=house&vibe=fitness_gym$
+Allow: /techno-playlists?genre=house&vibe=house_party$
+Allow: /techno-playlists?genre=house&vibe=happy$
+Allow: /techno-playlists?genre=house&vibe=summer$
+Allow: /techno-playlists?genre=house&vibe=chill$
+Allow: /techno-playlists?genre=deep_minimal_house&vibe=chill$
+
+Sitemap: https://www.technoairlines.com/sitemap_index.xml
+Sitemap: https://www.technoairlines.com/news-sitemap.xml
+Sitemap: https://www.technoairlines.com/post-sitemap1.xml
+Sitemap: https://www.technoairlines.com/post-sitemap2.xml
+Sitemap: https://www.technoairlines.com/page-sitemap.xml
+Sitemap: https://www.technoairlines.com/festival-sitemap.xml
+Sitemap: https://www.technoairlines.com/playlist-sitemap.xml
+Sitemap: https://www.technoairlines.com/category-sitemap.xml
+Sitemap: https://www.technoairlines.com/post_tag-sitemap.xml
+Sitemap: https://www.technoairlines.com/video-sitemap.xml
+Sitemap: https://www.technoairlines.com/local-sitemap.xml
+Sitemap: https://www.technoairlines.com/festival-archive-sitemap.xml
+Sitemap: https://www.technoairlines.com/playlist-archive-sitemap.xml
+
+User-agent: FeedFetcher-Google
+Allow: /*/feed
+Allow: /*/rss
+Allow: /*/atom
+Allow: /*format=rss
+Allow: /*format=feed
+
+User-agent: Googlebot-News
+Allow: /*/feed
+Allow: /*/rss
+Allow: /*/atom
+Allow: /*format=rss
+Allow: /*format=feed
+
+User-agent: Google-Discovery
+Allow: /*/feed
+Allow: /*/rss
+Allow: /*/atom
+Allow: /*format=rss
+Allow: /*format=feed
+
+User-agent: Googlebot-Video/1.0
+Allow: /*.mp4$
+Allow: /*.mp3$
+Allow: /*.avi$
+Allow: /*.mov$
+Allow: /*.wmv$
+Allow: /*.flv$
+Allow: /*.webm$
+Allow: /*.mkv$
+Allow: /*.m4v$
+Allow: /*.ogg$
+Allow: /*/embed
+Allow: /*/media
+
+User-agent: Googlebot-Image/1.0
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.bmp$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.tiff$
+Allow: /*.ico$
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: GoogleOther-Image/1.0
+Allow: /
+
+User-agent: GoogleOther-Video/1.0
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Yandex
+Allow: /*/feed
+Allow: /*/rss
+Allow: /*/atom
+Allow: /*format=rss
+Allow: /*format=feed
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.bmp$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.tiff$
+Allow: /*.ico$
+Allow: /*.mp4$
+Allow: /*.mp3$
+Allow: /*.avi$
+Allow: /*.mov$
+Allow: /*.wmv$
+Allow: /*.flv$
+Allow: /*.webm$
+Allow: /*.mkv$
+Allow: /*.m4v$
+Allow: /*.ogg$
+Allow: /*/embed
+Allow: /*/media
+
+User-agent: Bingbot
+Allow: /*/feed
+Allow: /*/rss
+Allow: /*/atom
+Allow: /*format=rss
+Allow: /*format=feed
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.bmp$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.tiff$
+Allow: /*.ico$
+Allow: /*.mp4$
+Allow: /*.mp3$
+Allow: /*.avi$
+Allow: /*.mov$
+Allow: /*.wmv$
+Allow: /*.flv$
+Allow: /*.webm$
+Allow: /*.mkv$
+Allow: /*.m4v$
+Allow: /*.ogg$
+Allow: /*/embed
+Allow: /*/media
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: censys.io
+Disallow: /
+
+User-agent: shodan
+Disallow: /
+
+User-agent: AspiegelBot
+Disallow: /
+
+User-agent: MauiBot
+Disallow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+Sitemap: https://www.technoairlines.com/clubs-sitemap.xml
+Sitemap: https://www.technoairlines.com/clubs-archive-sitemap.xml
+Sitemap: https://www.technoairlines.com/artists-sitemap.xml
+Sitemap: https://www.technoairlines.com/labels-sitemap.xml
