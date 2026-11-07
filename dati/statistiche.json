@@ -1,21 +1,21 @@
 {
- "generato": "2026-11-07T22:52:11+00:00",
+ "generato": "2026-11-07T23:33:56+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-07",
  "visite_totali": 158,
- "totale_goatcounter": 408,
- "eventi_totali": 250,
+ "totale_goatcounter": 419,
+ "eventi_totali": 261,
  "eventi_per_tipo": {
   "filtri": 91,
-  "cambio scheda": 47,
-  "schede aperte": 28,
-  "cambio vista": 24,
-  "luoghi aperti": 18,
+  "cambio scheda": 49,
+  "schede aperte": 31,
+  "cambio vista": 25,
+  "luoghi aperti": 22,
   "apri filtri": 15,
   "clic biglietti": 8,
+  "azzera filtri": 5,
   "clic info spettacoli": 5,
   "mostra altri": 4,
-  "azzera filtri": 4,
   "clic mostre (scheda o sito)": 3,
   "condivisioni": 2,
   "clic cinema (programma della sala)": 1
@@ -26,15 +26,15 @@
    "dal": "2026-11-04",
    "al": "2026-11-07",
    "visite": 158,
-   "cambio scheda": 47,
+   "cambio scheda": 49,
    "apri filtri": 15,
-   "cambio vista": 24,
+   "cambio vista": 25,
    "filtri": 91,
-   "luoghi aperti": 18,
+   "luoghi aperti": 22,
    "mostra altri": 4,
-   "azzera filtri": 4,
+   "azzera filtri": 5,
    "condivisioni": 2,
-   "schede aperte": 28,
+   "schede aperte": 31,
    "clic biglietti": 8,
    "clic info spettacoli": 5,
    "clic mostre (scheda o sito)": 3,
@@ -101,6 +101,21 @@
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
+  },
+  "2026-11-08": {
+   "cambio scheda": 2,
+   "apri filtri": 0,
+   "cambio vista": 1,
+   "filtri": 0,
+   "luoghi aperti": 4,
+   "mostra altri": 0,
+   "azzera filtri": 1,
+   "condivisioni": 0,
+   "schede aperte": 3,
+   "clic biglietti": 0,
+   "clic info spettacoli": 0,
+   "clic mostre (scheda o sito)": 0,
+   "clic cinema (programma della sala)": 0
   }
  },
  "giorni": [
@@ -119,20 +134,24 @@
   {
    "giorno": "2026-11-07",
    "visite": 38
+  },
+  {
+   "giorno": "2026-11-08",
+   "visite": 0
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 347
-  },
-  {
-   "origine": "achevents.com/milano",
-   "conteggio": 29
+   "conteggio": 348
   },
   {
    "origine": "achevents.com",
-   "conteggio": 28
+   "conteggio": 35
+  },
+  {
+   "origine": "achevents.com/milano",
+   "conteggio": 32
   },
   {
    "origine": "teams.public.onecdn.static.microsoft",
@@ -166,15 +185,15 @@
    "tipo": "cambio scheda"
   },
   {
-   "path": "milano/scheda/mostre",
+   "path": "milano/scheda/cinema",
    "titolo": "Cambio scheda",
    "conteggio": 9,
    "tipo": "cambio scheda"
   },
   {
-   "path": "milano/scheda/cinema",
+   "path": "milano/scheda/mostre",
    "titolo": "Cambio scheda",
-   "conteggio": 8,
+   "conteggio": 9,
    "tipo": "cambio scheda"
   },
   {
@@ -196,16 +215,16 @@
    "tipo": "cambio scheda"
   },
   {
+   "path": "milano/scheda/spettacoli",
+   "titolo": "Cambio scheda",
+   "conteggio": 7,
+   "tipo": "cambio scheda"
+  },
+  {
    "path": "milano/spettacoli/filtro/Date/weekend",
    "titolo": "Filtro",
    "conteggio": 6,
    "tipo": "filtri"
-  },
-  {
-   "path": "milano/scheda/spettacoli",
-   "titolo": "Cambio scheda",
-   "conteggio": 6,
-   "tipo": "cambio scheda"
   },
   {
    "path": "scheda/cinema",
@@ -322,6 +341,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "milano/spettacoli/azzera-filtri",
+   "titolo": "Azzera filtri",
+   "conteggio": 2,
+   "tipo": "azzera filtri"
+  },
+  {
    "path": "milano/spettacoli/filtro/Tipo di luogo/Teatri",
    "titolo": "Filtro",
    "conteggio": 2,
@@ -361,6 +386,54 @@
    "path": "mostre/vista/luoghi",
    "titolo": "Cambio vista",
    "conteggio": 2,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/spettacoli/luogo/Teatro Dal Verme",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/dettaglio/Il ritorno di Ulisse in patria",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/cinema/dettaglio/Je so' pazzo",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Bono",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/luogo/Teatro Auditorium Manzoni",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/luogo/Teatro Celebrazioni",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "milano/spettacoli/luogo/Unipol Dome",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "milano/spettacoli/vista/elenco",
+   "titolo": "Cambio vista",
+   "conteggio": 1,
    "tipo": "cambio vista"
   },
   {
@@ -494,12 +567,6 @@
    "titolo": "Apertura scheda",
    "conteggio": 1,
    "tipo": "schede aperte"
-  },
-  {
-   "path": "milano/spettacoli/azzera-filtri",
-   "titolo": "Azzera filtri",
-   "conteggio": 1,
-   "tipo": "azzera filtri"
   },
   {
    "path": "milano/spettacoli/filtro/Tipo di luogo/All'aperto",
