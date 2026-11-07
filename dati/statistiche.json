@@ -1,22 +1,22 @@
 {
- "generato": "2026-11-07T07:25:48+00:00",
+ "generato": "2026-11-07T08:22:48+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-07",
- "visite_totali": 120,
- "totale_goatcounter": 310,
- "eventi_totali": 190,
+ "visite_totali": 124,
+ "totale_goatcounter": 334,
+ "eventi_totali": 210,
  "eventi_per_tipo": {
-  "filtri": 70,
-  "cambio scheda": 39,
-  "cambio vista": 19,
-  "schede aperte": 17,
-  "apri filtri": 12,
-  "luoghi aperti": 10,
+  "filtri": 79,
+  "cambio scheda": 42,
+  "cambio vista": 22,
+  "schede aperte": 18,
+  "apri filtri": 13,
+  "luoghi aperti": 12,
   "clic biglietti": 7,
   "clic info spettacoli": 5,
   "mostra altri": 4,
+  "azzera filtri": 3,
   "clic mostre (scheda o sito)": 3,
-  "azzera filtri": 2,
   "condivisioni": 1,
   "clic cinema (programma della sala)": 1
  },
@@ -25,15 +25,15 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-07",
-   "visite": 120,
-   "cambio scheda": 39,
-   "apri filtri": 12,
-   "cambio vista": 19,
-   "filtri": 70,
+   "visite": 124,
+   "cambio scheda": 42,
+   "apri filtri": 13,
+   "cambio vista": 22,
+   "filtri": 79,
    "mostra altri": 4,
-   "luoghi aperti": 10,
-   "azzera filtri": 2,
-   "schede aperte": 17,
+   "luoghi aperti": 12,
+   "azzera filtri": 3,
+   "schede aperte": 18,
    "clic biglietti": 7,
    "clic info spettacoli": 5,
    "clic mostre (scheda o sito)": 3,
@@ -88,14 +88,14 @@
    "clic cinema (programma della sala)": 1
   },
   "2026-11-07": {
-   "cambio scheda": 0,
-   "apri filtri": 0,
-   "cambio vista": 0,
-   "filtri": 0,
+   "cambio scheda": 3,
+   "apri filtri": 1,
+   "cambio vista": 3,
+   "filtri": 9,
    "mostra altri": 0,
-   "luoghi aperti": 0,
-   "azzera filtri": 0,
-   "schede aperte": 0,
+   "luoghi aperti": 2,
+   "azzera filtri": 1,
+   "schede aperte": 1,
    "clic biglietti": 0,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
@@ -118,13 +118,13 @@
   },
   {
    "giorno": "2026-11-07",
-   "visite": 0
+   "visite": 4
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 269
+   "conteggio": 290
   },
   {
    "origine": "achevents.com",
@@ -132,7 +132,7 @@
   },
   {
    "origine": "achevents.com/milano",
-   "conteggio": 16
+   "conteggio": 19
   },
   {
    "origine": "teams.public.onecdn.static.microsoft",
@@ -145,19 +145,19 @@
  ],
  "pagine_ed_eventi": [
   {
+   "path": "/milano",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
+   "conteggio": 48
+  },
+  {
    "path": "/eventi-bologna",
    "titolo": "Eventi a Bologna – concerti e teatro",
    "conteggio": 47
   },
   {
-   "path": "/milano",
-   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 46
-  },
-  {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 27
+   "conteggio": 29
   },
   {
    "path": "scheda/mostre",
@@ -168,7 +168,7 @@
   {
    "path": "milano/scheda/mostre",
    "titolo": "Cambio scheda",
-   "conteggio": 7,
+   "conteggio": 8,
    "tipo": "cambio scheda"
   },
   {
@@ -178,13 +178,31 @@
    "tipo": "apri filtri"
   },
   {
+   "path": "spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 7,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/scheda/spettacoli",
+   "titolo": "Cambio scheda",
+   "conteggio": 6,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "milano/scheda/cinema",
+   "titolo": "Cambio scheda",
+   "conteggio": 6,
+   "tipo": "cambio scheda"
+  },
+  {
    "path": "scheda/cinema",
    "titolo": "Cambio scheda",
    "conteggio": 6,
    "tipo": "cambio scheda"
   },
   {
-   "path": "spettacoli/vista/luoghi",
+   "path": "spettacoli/vista/elenco",
    "titolo": "Cambio vista",
    "conteggio": 6,
    "tipo": "cambio vista"
@@ -202,31 +220,25 @@
    "tipo": "filtri"
   },
   {
-   "path": "milano/scheda/spettacoli",
-   "titolo": "Cambio scheda",
-   "conteggio": 5,
-   "tipo": "cambio scheda"
-  },
-  {
-   "path": "milano/scheda/cinema",
-   "titolo": "Cambio scheda",
-   "conteggio": 5,
-   "tipo": "cambio scheda"
-  },
-  {
-   "path": "spettacoli/vista/elenco",
-   "titolo": "Cambio vista",
-   "conteggio": 5,
-   "tipo": "cambio vista"
-  },
-  {
    "path": "spettacoli/filtro/Genere/Comici",
    "titolo": "Filtro",
    "conteggio": 5,
    "tipo": "filtri"
   },
   {
+   "path": "milano/spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 4,
+   "tipo": "cambio vista"
+  },
+  {
    "path": "milano/spettacoli/filtro/Genere/Rock",
+   "titolo": "Filtro",
+   "conteggio": 4,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
    "titolo": "Filtro",
    "conteggio": 4,
    "tipo": "filtri"
@@ -244,22 +256,22 @@
    "tipo": "filtri"
   },
   {
-   "path": "milano/spettacoli/vista/luoghi",
-   "titolo": "Cambio vista",
+   "path": "milano/spettacoli/apri-filtri",
+   "titolo": "Apertura filtri",
    "conteggio": 3,
-   "tipo": "cambio vista"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
-   "titolo": "Filtro",
-   "conteggio": 3,
-   "tipo": "filtri"
+   "tipo": "apri filtri"
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Comici",
    "titolo": "Filtro",
    "conteggio": 3,
    "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/luogo/Teatro Duse",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 3,
+   "tipo": "luoghi aperti"
   },
   {
    "path": "spettacoli/filtro/Date/oggi",
@@ -280,12 +292,6 @@
    "tipo": "filtri"
   },
   {
-   "path": "milano/spettacoli/apri-filtri",
-   "titolo": "Apertura filtri",
-   "conteggio": 2,
-   "tipo": "apri filtri"
-  },
-  {
    "path": "milano/spettacoli/filtro/Date/oggi",
    "titolo": "Filtro",
    "conteggio": 2,
@@ -302,12 +308,6 @@
    "titolo": "Filtro",
    "conteggio": 2,
    "tipo": "filtri"
-  },
-  {
-   "path": "spettacoli/luogo/Teatro Duse",
-   "titolo": "Apertura programma del luogo",
-   "conteggio": 2,
-   "tipo": "luoghi aperti"
   },
   {
    "path": "spettacoli/filtro/Date/weekend",
@@ -332,6 +332,72 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "spettacoli/luogo/Estragon",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/filtro/Tipo di luogo/Club e locali",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Tipo di luogo/Altri luoghi",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/dettaglio/Eclettica 03: Special 7th anniversary",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/azzera-filtri",
+   "titolo": "Azzera filtri",
+   "conteggio": 1,
+   "tipo": "azzera filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Tipo di luogo/All'aperto",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Tipo di luogo/Auditorium",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Tipo di luogo/Teatri",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Tipo di luogo/Club e locali",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Serate e club",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Teatro",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
   },
   {
    "path": "spettacoli/filtro/Genere/Jazz",
