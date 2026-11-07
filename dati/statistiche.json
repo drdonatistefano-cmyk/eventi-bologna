@@ -1,13 +1,13 @@
 {
- "generato": "2026-11-07T14:57:55+00:00",
+ "generato": "2026-11-07T15:35:19+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-07",
- "visite_totali": 139,
- "totale_goatcounter": 362,
- "eventi_totali": 223,
+ "visite_totali": 144,
+ "totale_goatcounter": 368,
+ "eventi_totali": 224,
  "eventi_per_tipo": {
   "filtri": 81,
-  "cambio scheda": 43,
+  "cambio scheda": 44,
   "schede aperte": 24,
   "cambio vista": 22,
   "apri filtri": 14,
@@ -25,8 +25,8 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-07",
-   "visite": 139,
-   "cambio scheda": 43,
+   "visite": 144,
+   "cambio scheda": 44,
    "apri filtri": 14,
    "cambio vista": 22,
    "filtri": 81,
@@ -88,7 +88,7 @@
    "clic cinema (programma della sala)": 1
   },
   "2026-11-07": {
-   "cambio scheda": 4,
+   "cambio scheda": 5,
    "apri filtri": 2,
    "cambio vista": 3,
    "filtri": 11,
@@ -118,13 +118,13 @@
   },
   {
    "giorno": "2026-11-07",
-   "visite": 19
+   "visite": 24
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 317
+   "conteggio": 323
   },
   {
    "origine": "achevents.com",
@@ -147,7 +147,7 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 60
+   "conteggio": 65
   },
   {
    "path": "/eventi-bologna",
@@ -178,6 +178,12 @@
    "tipo": "apri filtri"
   },
   {
+   "path": "milano/scheda/cinema",
+   "titolo": "Cambio scheda",
+   "conteggio": 7,
+   "tipo": "cambio scheda"
+  },
+  {
    "path": "spettacoli/vista/luoghi",
    "titolo": "Cambio vista",
    "conteggio": 7,
@@ -191,12 +197,6 @@
   },
   {
    "path": "milano/scheda/spettacoli",
-   "titolo": "Cambio scheda",
-   "conteggio": 6,
-   "tipo": "cambio scheda"
-  },
-  {
-   "path": "milano/scheda/cinema",
    "titolo": "Cambio scheda",
    "conteggio": 6,
    "tipo": "cambio scheda"
