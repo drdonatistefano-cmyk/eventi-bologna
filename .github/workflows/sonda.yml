@@ -1,5 +1,7 @@
 name: Sonda fonte serate
 on: workflow_dispatch
+permissions:
+  contents: write
 jobs:
   sonda:
     runs-on: ubuntu-latest
@@ -12,5 +14,7 @@ jobs:
           curl -sSL -A "$UA" https://www.technoairlines.com/event/bunker-damore-ex-dynamo-2026-11-28 -o out/ev.html || true
           curl -sSL -A "$UA" "https://www.technoairlines.com/sitemap.xml" -o out/sitemap.xml || true
           ls -la out
-      - uses: actions/upload-artifact@v4
-        with: { name: sonda, path: out }
+      - run: |
+          cd out && git init -q && git checkout -q -b sonda && git add -A
+          git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm sonda
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" sonda
