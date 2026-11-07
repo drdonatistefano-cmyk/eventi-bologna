@@ -1,15 +1,15 @@
 {
- "generato": "2026-11-07T10:04:21+00:00",
+ "generato": "2026-11-07T10:41:32+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-07",
- "visite_totali": 126,
- "totale_goatcounter": 344,
- "eventi_totali": 218,
+ "visite_totali": 128,
+ "totale_goatcounter": 349,
+ "eventi_totali": 221,
  "eventi_per_tipo": {
-  "filtri": 80,
+  "filtri": 81,
   "cambio scheda": 43,
+  "schede aperte": 23,
   "cambio vista": 22,
-  "schede aperte": 22,
   "apri filtri": 14,
   "luoghi aperti": 12,
   "clic biglietti": 7,
@@ -17,7 +17,7 @@
   "mostra altri": 4,
   "azzera filtri": 4,
   "clic mostre (scheda o sito)": 3,
-  "condivisioni": 1,
+  "condivisioni": 2,
   "clic cinema (programma della sala)": 1
  },
  "settimane": [
@@ -25,19 +25,19 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-07",
-   "visite": 126,
+   "visite": 128,
    "cambio scheda": 43,
    "apri filtri": 14,
    "cambio vista": 22,
-   "filtri": 80,
+   "filtri": 81,
    "mostra altri": 4,
    "luoghi aperti": 12,
    "azzera filtri": 4,
-   "schede aperte": 22,
+   "condivisioni": 2,
+   "schede aperte": 23,
    "clic biglietti": 7,
    "clic info spettacoli": 5,
    "clic mostre (scheda o sito)": 3,
-   "condivisioni": 1,
    "clic cinema (programma della sala)": 1
   }
  ],
@@ -50,11 +50,11 @@
    "mostra altri": 2,
    "luoghi aperti": 5,
    "azzera filtri": 1,
+   "condivisioni": 0,
    "schede aperte": 0,
    "clic biglietti": 4,
    "clic info spettacoli": 3,
    "clic mostre (scheda o sito)": 0,
-   "condivisioni": 0,
    "clic cinema (programma della sala)": 0
   },
   "2026-11-05": {
@@ -65,11 +65,11 @@
    "mostra altri": 1,
    "luoghi aperti": 4,
    "azzera filtri": 1,
+   "condivisioni": 0,
    "schede aperte": 3,
    "clic biglietti": 1,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
-   "condivisioni": 0,
    "clic cinema (programma della sala)": 0
   },
   "2026-11-06": {
@@ -80,26 +80,26 @@
    "mostra altri": 1,
    "luoghi aperti": 1,
    "azzera filtri": 0,
+   "condivisioni": 1,
    "schede aperte": 14,
    "clic biglietti": 2,
    "clic info spettacoli": 2,
    "clic mostre (scheda o sito)": 3,
-   "condivisioni": 1,
    "clic cinema (programma della sala)": 1
   },
   "2026-11-07": {
    "cambio scheda": 4,
    "apri filtri": 2,
    "cambio vista": 3,
-   "filtri": 10,
+   "filtri": 11,
    "mostra altri": 0,
    "luoghi aperti": 2,
    "azzera filtri": 2,
-   "schede aperte": 5,
+   "condivisioni": 1,
+   "schede aperte": 6,
    "clic biglietti": 0,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
-   "condivisioni": 0,
    "clic cinema (programma della sala)": 0
   }
  },
@@ -118,13 +118,13 @@
   },
   {
    "giorno": "2026-11-07",
-   "visite": 6
+   "visite": 8
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 299
+   "conteggio": 304
   },
   {
    "origine": "achevents.com",
@@ -157,7 +157,7 @@
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 30
+   "conteggio": 32
   },
   {
    "path": "scheda/mostre",
@@ -298,6 +298,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "condividi/apri",
+   "titolo": "Condivisione",
+   "conteggio": 2,
+   "tipo": "condivisioni"
+  },
+  {
    "path": "milano/spettacoli/filtro/Date/oggi",
    "titolo": "Filtro",
    "conteggio": 2,
@@ -332,6 +338,18 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Serate e club",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/dettaglio/Accabadora",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
   },
   {
    "path": "spettacoli/dettaglio/Much Much Bass",
@@ -506,12 +524,6 @@
    "titolo": "Filtro",
    "conteggio": 1,
    "tipo": "filtri"
-  },
-  {
-   "path": "condividi/apri",
-   "titolo": "Condivisione",
-   "conteggio": 1,
-   "tipo": "condivisioni"
   },
   {
    "path": "cinema/filtro/Giorno e orario/sett",
