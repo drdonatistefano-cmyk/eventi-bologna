@@ -153,6 +153,13 @@ main{max-width:none}
 .qc .em{flex:none;margin-right:5px}
 .qc.on{background:color-mix(in srgb,var(--g,var(--terra)) 15%,var(--paper));border-color:var(--g,var(--terra));box-shadow:inset 0 0 0 1px var(--g,var(--terra));font-weight:650}
 .qc.on small{color:var(--ink)}
+/* Azzera filtri: ben visibile, nell'angolo del riquadro dei filtri rapidi (che su iPad e computer resta in vista scorrendo) */
+.qbar{position:relative}
+.qreset{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:34px;padding:0 14px;border-radius:999px;border:0;background:var(--terra);color:var(--on);font:inherit;font-size:13.5px;font-weight:700;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.15)}
+.qreset i{font-style:normal;font-size:12px}
+@media(hover:hover){.qreset:hover{filter:brightness(1.1)}}
+@media(max-width:759px){.qreset{width:100%;height:42px;font-size:15px}}
+@media(min-width:760px){.qreset{position:absolute;top:7px;right:10px;height:30px;font-size:13px;z-index:2}}
 .qc:disabled{opacity:.38;cursor:default}
 @media(hover:hover){.qc:not(:disabled):not(.on):hover{border-color:color-mix(in srgb,var(--g,var(--terra)) 50%,var(--line))}}
 @media(max-width:759px){
@@ -867,7 +874,8 @@ function renderRail(){
   h+=grp("Quando",MODE==="m"?2:3,QR.map(([q,l,em])=>qc("m",q,l,mc.get(q)||0,st.m.has(q),"--terra",em)).join(""),[...st.m].some(x=>QR.some(r=>r[0]===x))?"m":"");
   h+=grp(MODE==="m"?"Categoria":"Genere",MODE==="m"?2:3,gens,st.g.size?"g":"");
   const yc=countBy("y",e=>e._lt),LT=MODE==="m"?LT_M:LT_S;
-  h+=grp("Luogo",3,LT.filter(([k])=>yc.get(k)||st.y.has(k)).map(([k,em])=>qc("y",k,k,yc.get(k)||0,st.y.has(k),"--terra",em)).join(""),st.y.size?"y":"","qscroll")}
+  const LTP=new Set(ALL.map(e=>e._lt));h+=grp("Luogo",3,LT.filter(([k])=>LTP.has(k)||st.y.has(k)).map(([k,em])=>qc("y",k,k,yc.get(k)||0,st.y.has(k),"--terra",em)).join(""),st.y.size?"y":"","qscroll")}
+ if(active())h+=`<button class="qreset" data-reset aria-label="Azzera tutti i filtri"><i>✕</i> Azzera filtri</button>`;
  $("#qbar").innerHTML=h;
  const ns=nSel();$("#fbadge").textContent=ns;$("#fbadge").hidden=!ns;$("#fbtn").classList.toggle("active",!!ns);
  $$(".seg button").forEach(b=>b.classList.toggle("on",b.dataset.view===st.view))}
