@@ -666,7 +666,7 @@ const D=s=>new Date(s+"T12:00:00");
 const today=iso(new Date());
 const addDays=(s,n)=>{const d=D(s);d.setDate(d.getDate()+n);return iso(d)};
 const in7=addDays(today,6);
-const fmt=(s,o)=>D(s).toLocaleDateString("it-IT",o);
+const _DF=new Map();const fmt=(s,o)=>{const k=o?JSON.stringify(o):"";let f=_DF.get(k);if(!f){f=new Intl.DateTimeFormat("it-IT",o);_DF.set(k,f)}return f.format(D(s))};/* formattatori riusati: molto più veloci di toLocaleDateString ripetuto */
 const fri=(()=>{const d=D(today),w=d.getDay();d.setDate(d.getDate()+(w===0?-2:w===6?-1:5-w));return iso(d)})();
 const sun=addDays(fri,2),wkStart=fri<today?today:fri;
 const wkLabel=`${D(wkStart).getDate()}–${fmt(sun,{day:"numeric",month:"short"})}`;
