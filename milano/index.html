@@ -12,19 +12,19 @@
 <meta property="og:description" content="Concerti, teatro e grandi eventi a Milano e area metropolitana nei prossimi 12 mesi.">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#f6efe4" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#161311" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6efe4">
+<meta name="color-scheme" content="light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233d5f7d'/%3E%3Cpath d='M14 50V26a18 18 0 0 1 36 0v24' fill='none' stroke='%23f6efe4' stroke-width='6'/%3E%3C/svg%3E">
 <style>
 /* Portici: carta calda, terracotta, una banda di colore per genere. iPhone = foglio filtri; iPad/desktop = colonna filtri fissa. */
-:root{
+:root{color-scheme:light;
  --bg:#f6efe4;--paper:#fffdf9;--ink:#231d18;--mute:#7a6f63;--faint:#a99d8f;--line:#e8ddcc;
  --terra:#3d5f7d;--terra-soft:#e4ecf3;--terra-ink:#2f4d68;--ochre:#3a8fb7;--on:#fff;
  --rock:#4f5fb0;--jazz:#2a7f7a;--pop:#7d4f9a;--teatro:#3f7a4c;--classica:#8a7356;--club:#a8466e;
  --shadow:0 1px 2px rgba(60,40,20,.06),0 4px 14px rgba(60,40,20,.06);
  --r:16px;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;--barh:64px;--side:clamp(270px,30vw,320px)}
-@media (prefers-color-scheme:dark){:root{
+@media (prefers-color-scheme:dark) and (min-width:1000000px){:root{
  --bg:#161311;--paper:#201c19;--ink:#f1e9df;--mute:#ab9f92;--faint:#7d7268;--line:#332d28;
  --terra:#8fb3d3;--terra-soft:#1f2a35;--terra-ink:#b9d0e4;--ochre:#72bde0;--on:#102131;
  --rock:#93a0f0;--jazz:#5fbdb6;--pop:#b48ad0;--teatro:#6fb07d;--classica:#c4ae90;--club:#e08aac;--shadow:none}}
@@ -368,7 +368,7 @@ main{min-width:0;padding-bottom:90px}
 .dvacts{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px 16px}
 @media(min-width:760px){#ddlg .dsheet{bottom:auto;top:50%;transform:translate(-50%,-50%);width:min(640px,92vw);border-radius:22px;animation:pop .18s ease-out}#ddlg .grab{display:none}#ddlg .dbody{padding:22px 24px 18px}}
 @keyframes pop{from{opacity:0;transform:translate(-50%,-48%)}}
-.card{background:color-mix(in srgb,var(--g,transparent) 9%,var(--paper));border-radius:var(--r);box-shadow:var(--shadow);border:1px solid var(--line);padding:14px 16px 12px 18px;position:relative;overflow:hidden;display:flex;flex-direction:column;transition:border-color .15s}
+.card{background:color-mix(in srgb,var(--g,transparent) 10%,var(--paper));border-radius:var(--r);box-shadow:var(--shadow);border:1px solid var(--line);padding:14px 16px 12px 18px;position:relative;overflow:hidden;display:flex;flex-direction:column;transition:border-color .15s}
 @media(hover:hover){.card:hover{border-color:color-mix(in srgb,var(--g) 35%,var(--line))}}
 .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--g)}
 .top{display:flex;gap:6px 8px;align-items:center;flex-wrap:wrap;font-size:12.5px;color:var(--mute);margin-bottom:3px}
@@ -425,7 +425,7 @@ a.where .go{font-size:13px}
 .pill.ok{color:#2f7a4c;border-color:color-mix(in srgb,#2f7a4c 35%,transparent);background:color-mix(in srgb,#2f7a4c 9%,transparent)}
 .pill.few{color:#6b5a1c;border-color:color-mix(in srgb,#a08a3a 45%,transparent);background:color-mix(in srgb,#a08a3a 12%,transparent)}
 .pill.no{color:var(--faint);text-decoration:line-through}
-@media (prefers-color-scheme:dark){.pill.ok{color:#7fd39c}.pill.few{color:#d3c27a}}
+@media (prefers-color-scheme:dark) and (min-width:1000000px){.pill.ok{color:#7fd39c}.pill.few{color:#d3c27a}}
 .actions{display:flex;gap:6px;margin-top:auto;padding-top:10px}
 .act{height:34px;padding:0 12px;border-radius:10px;border:1px solid var(--line);background:none;font-size:13.5px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:var(--ink)}
 .act.primary{background:var(--terra-soft);border-color:color-mix(in srgb,var(--terra) 22%,transparent);color:var(--terra-ink)}
@@ -487,7 +487,7 @@ dialog::backdrop{background:rgba(10,18,28,.45)}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
 .grid2 .primary{grid-column:1/-1}
 .big.wa{background:#e3f3e8;border-color:#bfe3cb;color:#1d6b3a;text-decoration:none}
-@media (prefers-color-scheme:dark){.big.wa{background:#1d2e23;border-color:#2c4a36;color:#7fd39c}}
+@media (prefers-color-scheme:dark) and (min-width:1000000px){.big.wa{background:#1d2e23;border-color:#2c4a36;color:#7fd39c}}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:12px;font-size:14px;opacity:0;transition:.25s;z-index:50;pointer-events:none}
 .toast.show{opacity:1;transform:translateX(-50%)}
 footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
@@ -530,7 +530,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
  .act.primary{background:var(--terra-soft);border-color:color-mix(in srgb,var(--terra) 25%,var(--line));color:var(--terra-ink)}
  .rs{font-size:13.5px}
 }
-@media(max-width:759px) and (prefers-color-scheme:dark){:root{--mute:#bcb0a3}.act.primary{color:var(--terra-ink)}}
+@media(max-width:759px) and (prefers-color-scheme:dark) and (min-width:1000000px){:root{--mute:#bcb0a3}.act.primary{color:var(--terra-ink)}}
 @media(max-width:380px){.gopts{grid-template-columns:1fr 1fr}.gopt{padding-left:11px}.mgrid{grid-template-columns:repeat(3,1fr)}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media (max-width:430px){.modes button small{display:none}.modes button{font-size:15px}}
