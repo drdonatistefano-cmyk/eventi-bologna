@@ -12,7 +12,7 @@ Se trova errori NON scrive nulla e termina con codice 1: correggi e rilancia.
 """
 import json, re, sys, datetime, unicodedata, collections
 
-GENERI = {"Rock", "Jazz", "Pop e altra musica", "Classica", "Teatro"}
+GENERI = {"Rock", "Jazz", "Pop e altra musica", "Classica", "Teatro", "Serate e club"}
 DISP = {"disponibile", "pochi posti", "sold out", "non disponibile", "non ancora in vendita", "da verificare"}
 BIG = {"Acquista", "Biglietteria", "Info", ""}
 ZONE = {

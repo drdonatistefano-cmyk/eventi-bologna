@@ -20,14 +20,14 @@
 :root{
  --bg:#f6efe4;--paper:#fffdf9;--ink:#231d18;--mute:#7a6f63;--faint:#a99d8f;--line:#e8ddcc;
  --terra:#3d5f7d;--terra-soft:#e4ecf3;--terra-ink:#2f4d68;--ochre:#3a8fb7;--on:#fff;
- --rock:#4f5fb0;--jazz:#2a7f7a;--pop:#7d4f9a;--teatro:#3f7a4c;--classica:#8a7356;
+ --rock:#4f5fb0;--jazz:#2a7f7a;--pop:#7d4f9a;--teatro:#3f7a4c;--classica:#8a7356;--club:#a8466e;
  --shadow:0 1px 2px rgba(60,40,20,.06),0 4px 14px rgba(60,40,20,.06);
  --r:16px;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;--barh:64px;--side:clamp(270px,30vw,320px)}
 @media (prefers-color-scheme:dark){:root{
  --bg:#161311;--paper:#201c19;--ink:#f1e9df;--mute:#ab9f92;--faint:#7d7268;--line:#332d28;
  --terra:#8fb3d3;--terra-soft:#1f2a35;--terra-ink:#b9d0e4;--ochre:#72bde0;--on:#102131;
- --rock:#93a0f0;--jazz:#5fbdb6;--pop:#b48ad0;--teatro:#6fb07d;--classica:#c4ae90;--shadow:none}}
+ --rock:#93a0f0;--jazz:#5fbdb6;--pop:#b48ad0;--teatro:#6fb07d;--classica:#c4ae90;--club:#e08aac;--shadow:none}}
 *{box-sizing:border-box}[hidden]{display:none!important}
 button,a,input,summary{-webkit-tap-highlight-color:transparent}
 ::selection{background:color-mix(in srgb,var(--terra) 22%,transparent)}
@@ -597,7 +597,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
  </div>
 </div></dialog>
 
-<script>/* dati sempre freschi: il numero cambia ogni 10 minuti, così browser e Cloudflare non tengono copie vecchie */(function(){var v=Math.floor(Date.now()/6e5);["eventi","mostre","cinema"].forEach(function(f){document.write('<script src="'+f+'.js?v='+v+'"><\/script>')})})();</script>
+<script>/* dati sempre freschi: il numero cambia ogni 10 minuti, così browser e Cloudflare non tengono copie vecchie */(function(){var v=Math.floor(Date.now()/6e5);["eventi","serate","mostre","cinema"].forEach(function(f){document.write('<script src="'+f+'.js?v='+v+'"><\/script>')})})();</script>
 <script>
 "use strict";
 /* ---------- città: un solo motore per tutte le città ----------
@@ -624,7 +624,12 @@ const CITY=/^\/milano(\/|$)/.test(location.pathname)?CITTA_CFG.mi:CITTA_CFG.bo;
 const DATA=(window.EVENTI_DATA&&typeof window.EVENTI_DATA==="object")?window.EVENTI_DATA:{aggiornato:"",eventi:[]};
 const ISO=/^\d{4}-\d{2}-\d{2}$/;
 const UPDATED=ISO.test(DATA.aggiornato||"")?DATA.aggiornato:"";
-const EVENTS=(Array.isArray(DATA.eventi)?DATA.eventi:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista);
+const EVENTS0=(Array.isArray(DATA.eventi)?DATA.eventi:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista);
+/* serate nei club (serate.js, aggiornato da solo due volte a settimana): saltate se nello stesso giorno e locale c'è già uno spettacolo */
+const SRD=(window.SERATE_DATA&&typeof window.SERATE_DATA==="object")?window.SERATE_DATA:{serate:[]};
+const vkey=s=>String(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\b(club|circolo|teatro|milano|bologna)\b/g,"").replace(/[^a-z0-9]/g,"");
+const GIA=new Set(EVENTS0.map(e=>e.data+"|"+vkey(e.luogo)));
+const EVENTS=EVENTS0.concat((Array.isArray(SRD.serate)?SRD.serate:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista&&e.luogo&&!GIA.has(e.data+"|"+vkey(e.luogo))));
 const MD=(window.MOSTRE_DATA&&typeof window.MOSTRE_DATA==="object")?window.MOSTRE_DATA:{aggiornato:"",mostre:[]};
 const ING={gratuito:"Ingresso gratuito","a pagamento":"A pagamento"};
 const MOSTRE=(Array.isArray(MD.mostre)?MD.mostre:[]).filter(m=>m&&ISO.test(m.inizio||"")&&ISO.test(m.fine||"")&&m.titolo&&m.sede).map(m=>({id:m.id,_kind:"m",data:m.inizio,fino:m.fine,ora:"",artista:m.titolo,luogo:m.sede,citta:m.citta||CITY.capo,genere:m.categoria||"",tipo:"",rassegna:"",descrizione:m.descrizione||"",fonte:m.fonte||"",biglietti:"",orari:m.orari||"",_ing:ING[(m.ingresso||"").toLowerCase()]||"Da verificare",sito_luogo:m.sito||""}));
@@ -643,8 +648,8 @@ const ON_WEB=/(^|\.)(github\.io|achevents\.com)$/.test(location.hostname);
 const SITE_URL=ON_WEB?WEB_URL:ART_URL;
 const ZONE=CITY.zone;;
 const ZONA={},ZLAB={},ZORD=ZONE.map(z=>z[0]),CORD=[];ZONE.forEach(([k,l,cs])=>{ZLAB[k]=l;cs.forEach(c=>{ZONA[c]=k;CORD.push(c)})});ZLAB.Altro="Altri luoghi";
-const G={"Rock":{c:"--rock",l:"Rock"},"Jazz":{c:"--jazz",l:"Jazz"},"Pop e altra musica":{c:"--pop",l:"Pop e altro"},"Classica":{c:"--classica",l:"Classica"},"Teatro":{c:"--teatro",l:"Teatro"}};
-const GOPTS_S=[{k:"Teatro",l:"Teatro",em:"🎭",c:"--teatro"},{k:"Comici",l:"Comici",em:"😂",c:"--ochre"},{k:"Classica",l:"Classica",em:"🎻",c:"--classica"},{k:"Jazz",l:"Jazz",em:"🎷",c:"--jazz"},{k:"Rock",l:"Rock",em:"🎸",c:"--rock"},{k:"Pop e altra musica",l:"Pop e altro",em:"🎤",c:"--pop"}];
+const G={"Rock":{c:"--rock",l:"Rock"},"Jazz":{c:"--jazz",l:"Jazz"},"Pop e altra musica":{c:"--pop",l:"Pop e altro"},"Classica":{c:"--classica",l:"Classica"},"Teatro":{c:"--teatro",l:"Teatro"},"Serate e club":{c:"--club",l:"Club"}};
+const GOPTS_S=[{k:"Teatro",l:"Teatro",em:"🎭",c:"--teatro"},{k:"Comici",l:"Comici",em:"😂",c:"--ochre"},{k:"Classica",l:"Classica",em:"🎻",c:"--classica"},{k:"Jazz",l:"Jazz",em:"🎷",c:"--jazz"},{k:"Rock",l:"Rock",em:"🎸",c:"--rock"},{k:"Pop e altra musica",l:"Pop e altro",em:"🎤",c:"--pop"},{k:"Serate e club",l:"Club",em:"🪩",c:"--club"}];
 const GOPTS_M=[{k:"Pittura",l:"Pittura",em:"🎨",c:"--classica"},{k:"Scultura",l:"Scultura",em:"🗿",c:"--teatro"},{k:"Fotografia",l:"Fotografia",em:"📷",c:"--jazz"},{k:"Arte contemporanea e installazioni",l:"Contemporanea",em:"🌀",c:"--pop"},{k:"Disegno, grafica e illustrazione",l:"Disegno e grafica",em:"✏️",c:"--rock"},{k:"Design e moda",l:"Design e moda",em:"🪡",c:"--ochre"},{k:"Cinema e spettacolo",l:"Cinema",em:"🎬",c:"--terra"},{k:"Storia e archeologia",l:"Storia",em:"🏛️",c:"--classica"},{k:"Scienza e tecnica",l:"Scienza",em:"🔭",c:"--rock"},{k:"Esperienze immersive",l:"Immersive",em:"✨",c:"--pop"}];
 const GOPTS_C=[{k:"Multisala",l:"Multisala",em:"🍿",c:"--rock"},{k:"D'essai",l:"D'essai",em:"🎞️",c:"--jazz"},{k:"Cineteca",l:"Cineteca",em:"📽️",c:"--classica"},{k:"Sala di comunità",l:"Sale di comunità",em:"🏘️",c:"--teatro"},{k:"Arena",l:"Arena",em:"🌙",c:"--pop"}];
 let MODE="s",GOPTS=GOPTS_S,GLAB=Object.fromEntries(GOPTS.map(o=>[o.k,o]));
