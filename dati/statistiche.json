@@ -1,9 +1,9 @@
 {
- "generato": "2026-11-07T16:13:47+00:00",
+ "generato": "2026-11-07T16:55:04+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-07",
- "visite_totali": 147,
- "totale_goatcounter": 371,
+ "visite_totali": 148,
+ "totale_goatcounter": 372,
  "eventi_totali": 224,
  "eventi_per_tipo": {
   "filtri": 81,
@@ -25,7 +25,7 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-07",
-   "visite": 147,
+   "visite": 148,
    "cambio scheda": 44,
    "apri filtri": 14,
    "cambio vista": 22,
@@ -118,13 +118,13 @@
   },
   {
    "giorno": "2026-11-07",
-   "visite": 27
+   "visite": 28
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 326
+   "conteggio": 327
   },
   {
    "origine": "achevents.com",
@@ -147,7 +147,7 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 66
+   "conteggio": 67
   },
   {
    "path": "/eventi-bologna",
