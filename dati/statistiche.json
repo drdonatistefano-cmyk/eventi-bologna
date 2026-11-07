@@ -1,14 +1,14 @@
 {
- "generato": "2026-11-07T18:06:48+00:00",
+ "generato": "2026-11-07T18:45:25+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-07",
- "visite_totali": 152,
- "totale_goatcounter": 376,
- "eventi_totali": 224,
+ "visite_totali": 153,
+ "totale_goatcounter": 382,
+ "eventi_totali": 229,
  "eventi_per_tipo": {
-  "filtri": 81,
+  "filtri": 84,
   "cambio scheda": 44,
-  "schede aperte": 24,
+  "schede aperte": 26,
   "cambio vista": 22,
   "apri filtri": 14,
   "luoghi aperti": 12,
@@ -25,17 +25,17 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-07",
-   "visite": 152,
+   "visite": 153,
    "cambio scheda": 44,
    "apri filtri": 14,
    "cambio vista": 22,
-   "filtri": 81,
+   "filtri": 84,
    "mostra altri": 4,
    "luoghi aperti": 12,
    "azzera filtri": 4,
    "condivisioni": 2,
+   "schede aperte": 26,
    "clic biglietti": 8,
-   "schede aperte": 24,
    "clic info spettacoli": 5,
    "clic mostre (scheda o sito)": 3,
    "clic cinema (programma della sala)": 1
@@ -51,8 +51,8 @@
    "luoghi aperti": 5,
    "azzera filtri": 1,
    "condivisioni": 0,
-   "clic biglietti": 4,
    "schede aperte": 0,
+   "clic biglietti": 4,
    "clic info spettacoli": 3,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
@@ -66,8 +66,8 @@
    "luoghi aperti": 4,
    "azzera filtri": 1,
    "condivisioni": 0,
-   "clic biglietti": 1,
    "schede aperte": 3,
+   "clic biglietti": 1,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
@@ -81,8 +81,8 @@
    "luoghi aperti": 1,
    "azzera filtri": 0,
    "condivisioni": 1,
-   "clic biglietti": 2,
    "schede aperte": 14,
+   "clic biglietti": 2,
    "clic info spettacoli": 2,
    "clic mostre (scheda o sito)": 3,
    "clic cinema (programma della sala)": 1
@@ -91,13 +91,13 @@
    "cambio scheda": 5,
    "apri filtri": 2,
    "cambio vista": 3,
-   "filtri": 11,
+   "filtri": 14,
    "mostra altri": 0,
    "luoghi aperti": 2,
    "azzera filtri": 2,
    "condivisioni": 1,
+   "schede aperte": 9,
    "clic biglietti": 1,
-   "schede aperte": 7,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
@@ -118,7 +118,7 @@
   },
   {
    "giorno": "2026-11-07",
-   "visite": 32
+   "visite": 33
   }
  ],
  "provenienze": [
@@ -127,12 +127,12 @@
    "conteggio": 330
   },
   {
-   "origine": "achevents.com",
-   "conteggio": 22
+   "origine": "achevents.com/milano",
+   "conteggio": 26
   },
   {
-   "origine": "achevents.com/milano",
-   "conteggio": 20
+   "origine": "achevents.com",
+   "conteggio": 22
   },
   {
    "origine": "teams.public.onecdn.static.microsoft",
@@ -157,7 +157,7 @@
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 35
+   "conteggio": 36
   },
   {
    "path": "scheda/mostre",
@@ -298,6 +298,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "spettacoli/filtro/Tipo di luogo/Club e locali",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
    "path": "condividi/apri",
    "titolo": "Condivisione",
    "conteggio": 2,
@@ -338,6 +344,30 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "spettacoli/filtro/Tipo di luogo/All'aperto",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Tipo di luogo/Stadi",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/dettaglio/Milone meets the Doctors",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Farinelli, una voce regina",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
   },
   {
    "path": "milano/spettacoli/clic-biglietti/Marco Mengoni – Allo Sbagliato",
@@ -398,12 +428,6 @@
    "titolo": "Apertura programma del luogo",
    "conteggio": 1,
    "tipo": "luoghi aperti"
-  },
-  {
-   "path": "spettacoli/filtro/Tipo di luogo/Club e locali",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
   },
   {
    "path": "spettacoli/filtro/Tipo di luogo/Altri luoghi",
