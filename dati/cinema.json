@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-06",
- "giorno_orari": "2026-11-06",
+ "aggiornato": "2026-11-07",
+ "giorno_orari": "2026-11-07",
  "sale": [
   {
    "id": "c001",
@@ -55,6 +55,7 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
+      "15:30",
       "18:15",
       "21:00"
      ],
@@ -65,7 +66,8 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
+       "15:30",
        "18:15",
        "21:00"
       ]
@@ -96,7 +98,8 @@
     {
      "titolo": "Ragione e sentimento",
      "orari": [
-      "16:00"
+      "16:00",
+      "18:45"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -105,8 +108,9 @@
      "durata": 136,
      "anno": 1995,
      "giorni": {
-      "2026-11-06": [
-       "16:00"
+      "2026-11-07": [
+       "16:00",
+       "18:45"
       ]
      },
      "paese": "USA"
@@ -145,7 +149,7 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
        "15:30"
       ]
      },
@@ -178,7 +182,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
        "16:15",
        "18:45",
        "21:15"
@@ -201,7 +205,7 @@
      "durata": 115,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
        "16:30",
        "19:00",
        "21:30"
@@ -247,8 +251,9 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "19:00",
-      "21:10"
+      "15:30",
+      "19:30",
+      "21:30"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -257,19 +262,42 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "19:00",
-       "21:10"
+      "2026-11-07": [
+       "15:30",
+       "19:30",
+       "21:30"
       ]
      },
      "paese": "Italia",
      "biglietti": "https://nosadella.18tickets.it/film/94922"
     },
     {
+     "titolo": "Il gatto col cappello",
+     "orari": [
+      "15:30",
+      "17:30"
+     ],
+     "versione": "",
+     "genere": "Animazione",
+     "regia": "Alessandro Carloni e Erica Rivinoja",
+     "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
+     "durata": 107,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-07": [
+       "15:30",
+       "17:30"
+      ]
+     },
+     "paese": "USA",
+     "biglietti": "https://nosadella.18tickets.it/film/98783"
+    },
+    {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "19:00",
-      "21:10"
+      "17:30",
+      "19:30",
+      "21:30"
      ],
      "versione": "",
      "genere": "Commedia, Drammatico",
@@ -278,9 +306,10 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "19:00",
-       "21:10"
+      "2026-11-07": [
+       "17:30",
+       "19:30",
+       "21:30"
       ]
      },
      "paese": "Regno Unito",
@@ -312,7 +341,7 @@
      "durata": 105,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
        "16:30",
        "18:45",
        "21:00"
@@ -335,7 +364,7 @@
      "durata": 115,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
        "16:15",
        "18:45",
        "21:15"
@@ -358,7 +387,7 @@
      "durata": 136,
      "anno": 1995,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
        "15:30",
        "18:15",
        "21:00"
@@ -381,7 +410,7 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
        "16:15",
        "18:30",
        "20:45"
@@ -405,7 +434,7 @@
     {
      "titolo": "La casa delle donne",
      "orari": [
-      "16:30"
+      "21:00"
      ],
      "versione": "",
      "genere": "",
@@ -414,33 +443,15 @@
      "durata": null,
      "anno": 2025,
      "giorni": {
-      "2026-11-06": [
-       "16:30"
+      "2026-11-07": [
+       "21:00"
       ]
      }
     },
     {
-     "titolo": "Palestina 36",
-     "orari": [
-      "18:45"
-     ],
-     "versione": "",
-     "genere": "Drammatico, Guerra, Storico",
-     "regia": "Annemarie Jacir",
-     "interpreti": "Jeremy Irons, Liam Cunningham e Robert Aramayo",
-     "durata": 115,
-     "anno": 2025,
-     "giorni": {
-      "2026-11-06": [
-       "18:45"
-      ]
-     },
-     "paese": "Regno Unito"
-    },
-    {
      "titolo": "Serpenti",
      "orari": [
-      "21:00"
+      "19:00"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -449,8 +460,8 @@
      "durata": 88,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "21:00"
+      "2026-11-07": [
+       "19:00"
       ]
      },
      "paese": "Italia"
@@ -501,7 +512,7 @@
      "durata": 135,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
        "15:30",
        "18:15",
        "21:00"
@@ -524,7 +535,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
        "16:15",
        "18:45",
        "21:15"
@@ -560,7 +571,7 @@
      "durata": 82,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
        "16:00",
        "17:45",
        "19:30",
@@ -593,10 +604,27 @@
    "fonte": "https://movieplayer.it/cinema/the-space-cinema-bologna_202/",
    "film": [
     {
+     "titolo": "Clayface",
+     "orari": [
+      "23:25"
+     ],
+     "versione": "",
+     "genere": "Horror, Avventura, Azione",
+     "regia": "James Watkins",
+     "interpreti": "Eddie Marsan, Naomi Ackie e Max Minghella",
+     "durata": 108,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-07": [
+       "23:25"
+      ]
+     }
+    },
+    {
      "titolo": "Dio ride",
      "orari": [
-      "16:00",
-      "20:40"
+      "18:30",
+      "20:15"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -605,18 +633,35 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "16:00",
-       "20:40"
+      "2026-11-07": [
+       "18:30",
+       "20:15"
       ]
      },
      "paese": "Italia"
     },
     {
+     "titolo": "Fast and Furious - Solo parti originali",
+     "orari": [
+      "13:15"
+     ],
+     "versione": "",
+     "genere": "Azione",
+     "regia": "Justin Lin",
+     "interpreti": "Vin Diesel, Paul Walker e Michelle Rodriguez",
+     "durata": 99,
+     "anno": 2009,
+     "giorni": {
+      "2026-11-07": [
+       "13:15"
+      ]
+     }
+    },
+    {
      "titolo": "Hope",
      "orari": [
-      "17:15",
-      "21:15"
+      "21:30",
+      "23:00"
      ],
      "versione": "",
      "genere": "Azione, Fantascienza, Horror",
@@ -625,17 +670,38 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "17:15",
-       "21:15"
+      "2026-11-07": [
+       "21:30",
+       "23:00"
       ]
      },
      "paese": "Corea del sud"
     },
     {
+     "titolo": "Ice Cream Man",
+     "orari": [
+      "00:05",
+      "14:00"
+     ],
+     "versione": "",
+     "genere": "Horror",
+     "regia": "Eli Roth",
+     "interpreti": "Eli Roth, Dylan Hawco e Ben Davis",
+     "durata": 86,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-07": [
+       "00:05",
+       "14:00"
+      ]
+     },
+     "paese": "USA"
+    },
+    {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "15:30",
+      "12:50",
+      "15:45",
       "18:15"
      ],
      "versione": "",
@@ -645,8 +711,9 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "15:30",
+      "2026-11-07": [
+       "12:50",
+       "15:45",
        "18:15"
       ]
      },
@@ -655,7 +722,8 @@
     {
      "titolo": "It Ends",
      "orari": [
-      "22:20"
+      "00:20",
+      "22:25"
      ],
      "versione": "",
      "genere": "Horror, Drammatico, Fantastico",
@@ -664,8 +732,9 @@
      "durata": 89,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "22:20"
+      "2026-11-07": [
+       "00:20",
+       "22:25"
       ]
      },
      "paese": "USA"
@@ -673,8 +742,8 @@
     {
      "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
      "orari": [
-      "15:00",
-      "17:00"
+      "13:30",
+      "17:45"
      ],
      "versione": "",
      "genere": "Animazione",
@@ -683,9 +752,9 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "15:00",
-       "17:00"
+      "2026-11-07": [
+       "13:30",
+       "17:45"
       ]
      },
      "paese": "Regno Unito"
@@ -693,25 +762,24 @@
     {
      "titolo": "The Nameless Ballad",
      "orari": [
-      "22:10"
+      "00:35"
      ],
      "versione": "",
-     "genere": "Horror",
+     "genere": "Horror, Drammatico",
      "regia": "Federico Zampaglione",
      "interpreti": "Alana Boden, Vincenzo De Michele e Fabrizio Ferracane",
-     "durata": 87,
+     "durata": null,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "22:10"
+      "2026-11-07": [
+       "00:35"
       ]
-     },
-     "paese": "Italia"
+     }
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
-      "18:40",
+      "16:00",
       "21:50"
      ],
      "versione": "",
@@ -721,8 +789,8 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "18:40",
+      "2026-11-07": [
+       "16:00",
        "21:50"
       ]
      },
@@ -731,10 +799,9 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "16:15",
+      "15:15",
       "19:00",
-      "19:20",
-      "20:50"
+      "21:15"
      ],
      "versione": "",
      "genere": "Commedia, Drammatico",
@@ -743,11 +810,10 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "16:15",
+      "2026-11-07": [
+       "15:15",
        "19:00",
-       "19:20",
-       "20:50"
+       "21:15"
       ]
      },
      "paese": "Regno Unito"
@@ -755,7 +821,7 @@
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
-      "15:45"
+      "14:20"
      ],
      "versione": "",
      "genere": "Animazione, Avventura, Drammatico",
@@ -764,8 +830,8 @@
      "durata": 139,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "15:45"
+      "2026-11-07": [
+       "14:20"
       ]
      },
      "paese": "USA"
@@ -783,9 +849,130 @@
    "fonte": "https://europa-cinemas.org/en/portraits/cinema-lumière-Bologna",
    "film": [
     {
-     "titolo": "Hope",
+     "titolo": "Wild Horse Nine",
+     "orari": [
+      "15:30",
+      "17:45",
+      "20:00",
+      "22:15"
+     ],
+     "versione": "Versione originale in inglese con sottotitoli in italiano",
+     "genere": "Commedia, Drammatico",
+     "regia": "Martin McDonagh",
+     "paese": "GB-USA",
+     "anno": 2026,
+     "durata": 118,
+     "giorni": {
+      "2026-11-07": [
+       "15:30",
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-08": [
+       "11:00",
+       "15:30",
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-09": [
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-10": [
+       "16:00",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-11": [
+       "10:00",
+       "17:45",
+       "22:15"
+      ]
+     },
+     "interpreti": "Sam Rockwell, John Malkovich e Steve Buscemi",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/100367"
+    },
+    {
+     "titolo": "Minotaur",
      "orari": [
       "16:00",
+      "17:45",
+      "21:45"
+     ],
+     "versione": "Versione originale in russo con sottotitoli in italiano",
+     "genere": "Drammatico, Thriller",
+     "regia": "Andrey Zvyagintsev",
+     "paese": "Francia-Germania-Lettonia",
+     "anno": 2026,
+     "durata": 135,
+     "giorni": {
+      "2026-11-07": [
+       "16:00",
+       "17:45",
+       "21:45"
+      ],
+      "2026-11-08": [
+       "17:15",
+       "21:30"
+      ],
+      "2026-11-09": [
+       "17:15",
+       "21:30"
+      ],
+      "2026-11-10": [
+       "16:00",
+       "21:45"
+      ],
+      "2026-11-11": [
+       "16:00",
+       "21:45"
+      ]
+     },
+     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/103271"
+    },
+    {
+     "titolo": "Fatherland",
+     "orari": [
+      "16:15",
+      "20:15"
+     ],
+     "versione": "Versione originale in tedesco con sottotitoli in italiano",
+     "genere": "Drammatico",
+     "regia": "Paweł Pawlikowski",
+     "paese": "Germania-Polonia-Italia-Francia",
+     "anno": 2026,
+     "durata": 82,
+     "giorni": {
+      "2026-11-07": [
+       "16:15",
+       "20:15"
+      ],
+      "2026-11-08": [
+       "16:00",
+       "19:45"
+      ],
+      "2026-11-09": [
+       "16:30",
+       "19:45"
+      ],
+      "2026-11-10": [
+       "18:15"
+      ],
+      "2026-11-11": [
+       "16:00"
+      ]
+     },
+     "interpreti": "Sandra Hüller",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/92249"
+    },
+    {
+     "titolo": "Hope",
+     "orari": [
+      "18:30",
       "21:30"
      ],
      "versione": "Versione originale in coreano con sottotitoli in italiano",
@@ -795,10 +982,6 @@
      "anno": 2026,
      "durata": 157,
      "giorni": {
-      "2026-11-06": [
-       "16:00",
-       "21:30"
-      ],
       "2026-11-07": [
        "18:30",
        "21:30"
@@ -825,133 +1008,20 @@
      "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/101225"
     },
     {
-     "titolo": "Wild Horse Nine",
-     "orari": [
-      "16:00",
-      "20:00",
-      "22:15"
-     ],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "Commedia, Drammatico",
-     "regia": "Martin McDonagh",
-     "paese": "GB-USA",
+     "titolo": "Look Back",
+     "orari": [],
+     "versione": "Versione originale in giapponese con sottotitoli in italiano",
+     "genere": "",
+     "regia": "Hirokazu Koreeda",
+     "paese": "Giappone",
      "anno": 2026,
-     "durata": 118,
+     "durata": 100,
      "giorni": {
-      "2026-11-06": [
-       "16:00",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-07": [
-       "15:30",
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-08": [
-       "11:00",
-       "15:30",
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-09": [
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-10": [
-       "16:00",
-       "20:00",
-       "22:15"
-      ],
       "2026-11-11": [
-       "10:00",
-       "16:00",
-       "20:00",
-       "22:15"
+       "20:00"
       ]
      },
-     "interpreti": "Sam Rockwell, John Malkovich e Steve Buscemi",
-     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/100367"
-    },
-    {
-     "titolo": "Fatherland",
-     "orari": [
-      "18:15"
-     ],
-     "versione": "Versione originale in tedesco con sottotitoli in italiano",
-     "genere": "Drammatico",
-     "regia": "Paweł Pawlikowski",
-     "paese": "Germania-Polonia-Italia-Francia",
-     "anno": 2026,
-     "durata": 82,
-     "giorni": {
-      "2026-11-06": [
-       "18:15"
-      ],
-      "2026-11-07": [
-       "16:15",
-       "20:15"
-      ],
-      "2026-11-08": [
-       "16:00",
-       "19:45"
-      ],
-      "2026-11-09": [
-       "16:30",
-       "19:45"
-      ],
-      "2026-11-10": [
-       "18:15"
-      ],
-      "2026-11-11": [
-       "18:15"
-      ]
-     },
-     "interpreti": "Sandra Hüller",
-     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/92249"
-    },
-    {
-     "titolo": "Minotaur",
-     "orari": [
-      "19:00"
-     ],
-     "versione": "Versione originale in russo con sottotitoli in italiano",
-     "genere": "Drammatico, Thriller",
-     "regia": "Andrey Zvyagintsev",
-     "paese": "Francia-Germania-Lettonia",
-     "anno": 2026,
-     "durata": 135,
-     "giorni": {
-      "2026-11-06": [
-       "19:00"
-      ],
-      "2026-11-07": [
-       "16:00",
-       "17:45",
-       "21:45"
-      ],
-      "2026-11-08": [
-       "17:15",
-       "21:30"
-      ],
-      "2026-11-09": [
-       "17:15",
-       "21:30"
-      ],
-      "2026-11-10": [
-       "16:00",
-       "21:45"
-      ],
-      "2026-11-11": [
-       "16:00",
-       "21:45"
-      ]
-     },
-     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
-     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/103271"
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/105713"
     }
    ],
    "biglietti": "https://lumiere.cinetecabologna.18tickets.it/"
@@ -966,114 +1036,10 @@
    "fonte": "https://www.bolognawelcome.com/it/luoghi/cinema-e-teatri/cinema-modernissimo",
    "film": [
     {
-     "titolo": "Mean Streets",
-     "orari": [
-      "10:30"
-     ],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "Drammatico",
-     "regia": "Martin Scorsese",
-     "paese": "USA",
-     "anno": 1973,
-     "durata": 112,
-     "giorni": {
-      "2026-11-06": [
-       "10:30"
-      ]
-     },
-     "interpreti": "Robert Carradine, Harvey Keitel, Robert De Niro e Cesare Danova"
-    },
-    {
-     "titolo": "Le margheritine",
-     "orari": [
-      "13:00"
-     ],
-     "versione": "Versione originale in ceco con sottotitoli in italiano",
-     "genere": "",
-     "regia": "Vera Chytilová",
-     "paese": "Cecoslovacchia",
-     "anno": 1966,
-     "durata": 75,
-     "giorni": {
-      "2026-11-06": [
-       "13:00"
-      ]
-     }
-    },
-    {
-     "titolo": "Malombra",
-     "orari": [
-      "15:30"
-     ],
-     "versione": "Film in lingua italiana",
-     "genere": "Drammatico",
-     "regia": "Mario Soldati",
-     "paese": "Italia",
-     "anno": 1942,
-     "durata": 135,
-     "giorni": {
-      "2026-11-06": [
-       "15:30"
-      ]
-     },
-     "interpreti": "Lyda Borelli, Amleto Novelli, Augusto Mastripietri e Amedeo Ciaffi",
-     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101357"
-    },
-    {
-     "titolo": "Les Demoiselles de Rochefort",
-     "orari": [
-      "17:45"
-     ],
-     "versione": "Versione originale in francese con sottotitoli in italiano",
-     "genere": "",
-     "regia": "Jacques Demy",
-     "paese": "Francia",
-     "anno": 1967,
-     "durata": 125,
-     "giorni": {
-      "2026-11-06": [
-       "17:45"
-      ]
-     }
-    },
-    {
-     "titolo": "Downtown",
-     "orari": [
-      "20:00"
-     ],
-     "versione": "Versione originale in olandese con sottotitoli in italiano",
-     "genere": "",
-     "regia": "Michiel Van Erp",
-     "paese": "Paesi Bassi",
-     "anno": 2026,
-     "durata": 98,
-     "giorni": {
-      "2026-11-06": [
-       "20:00"
-      ]
-     }
-    },
-    {
-     "titolo": "Let My Puppets Come",
-     "orari": [
-      "22:15"
-     ],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "",
-     "regia": "Gerard Damiano",
-     "paese": "USA",
-     "anno": 1976,
-     "durata": 75,
-     "giorni": {
-      "2026-11-06": [
-       "22:15"
-      ]
-     },
-     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101423"
-    },
-    {
      "titolo": "Talk con Alex Majoli – La fotografia tra realtà e rappresentazione",
-     "orari": [],
+     "orari": [
+      "11:00"
+     ],
      "versione": "",
      "genere": "",
      "regia": "",
@@ -1088,9 +1054,11 @@
     },
     {
      "titolo": "Coyote vs. Acme",
-     "orari": [],
+     "orari": [
+      "16:00"
+     ],
      "versione": "Versione con doppiaggio italiano",
-     "genere": "",
+     "genere": "Animazione, Avventura, Commedia",
      "regia": "Dave Green",
      "paese": "USA",
      "anno": 2026,
@@ -1100,11 +1068,14 @@
        "16:00"
       ]
      },
+     "interpreti": "John Cena, Lana Condor, Will Forte e P.J. Byrne",
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101456"
     },
     {
      "titolo": "Age – Come sente il presente",
-     "orari": [],
+     "orari": [
+      "18:00"
+     ],
      "versione": "Film in lingua italiana",
      "genere": "",
      "regia": "Bruno Leggieri e CollettivO CineticO experimental performing arts",
@@ -1119,9 +1090,11 @@
     },
     {
      "titolo": "Orlando",
-     "orari": [],
+     "orari": [
+      "20:15"
+     ],
      "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "",
+     "genere": "Drammatico",
      "regia": "Sally Potter",
      "paese": "GB-URSS-Italia-Francia-Olanda",
      "anno": 1992,
@@ -1131,11 +1104,14 @@
        "20:15"
       ]
      },
+     "interpreti": "Michele Placido, Christelle Cornil, Anis Gharbi e Daniela Giordano",
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/6277"
     },
     {
      "titolo": "The Chaser",
-     "orari": [],
+     "orari": [
+      "22:15"
+     ],
      "versione": "Versione originale in coreano con sottotitoli in italiano",
      "genere": "",
      "regia": "Na Hong-jin",
@@ -1225,7 +1201,7 @@
     {
      "titolo": "Little Miss Sunshine",
      "orari": [],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
+     "versione": "Versione con doppiaggio italiano con sottotitoli in italiano",
      "genere": "",
      "regia": "Jonathan Dayton e Valerie Faris",
      "paese": "USA",
@@ -1265,6 +1241,9 @@
      "giorni": {
       "2026-11-09": [
        "22:15"
+      ],
+      "2026-11-14": [
+       "10:30"
       ]
      },
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/23828"
@@ -1489,6 +1468,69 @@
       ]
      },
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/4603"
+    },
+    {
+     "titolo": "Rufus – Il draghetto marino che non sapeva nuotare",
+     "orari": [],
+     "versione": "Versione con doppiaggio italiano",
+     "genere": "",
+     "regia": "Endre Skandfer",
+     "paese": "Norvegia-Belgio-Germania",
+     "anno": 2026,
+     "durata": 80,
+     "giorni": {
+      "2026-11-14": [
+       "16:00"
+      ]
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101786"
+    },
+    {
+     "titolo": "Talk con César Rodríguez – Mexico, A Changing Climate",
+     "orari": [],
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "paese": "",
+     "anno": null,
+     "durata": null,
+     "giorni": {
+      "2026-11-14": [
+       "18:00"
+      ]
+     }
+    },
+    {
+     "titolo": "The Yellow Sea",
+     "orari": [],
+     "versione": "Versione originale in coreano con sottotitoli in italiano",
+     "genere": "",
+     "regia": "Na Hong-jin",
+     "paese": "Corea del Sud-USA-Hong Kong",
+     "anno": 2010,
+     "durata": 157,
+     "giorni": {
+      "2026-11-14": [
+       "19:45"
+      ]
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101819"
+    },
+    {
+     "titolo": "Non aprite quella porta",
+     "orari": [],
+     "versione": "Versione originale in inglese con sottotitoli in italiano",
+     "genere": "",
+     "regia": "Tobe Hooper",
+     "paese": "USA",
+     "anno": 1974,
+     "durata": 83,
+     "giorni": {
+      "2026-11-14": [
+       "22:30"
+      ]
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/15738"
     }
    ],
    "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/"
@@ -1505,7 +1547,8 @@
     {
      "titolo": "Digger",
      "orari": [
-      "17:00",
+      "15:00",
+      "17:15",
       "19:30",
       "21:45"
      ],
@@ -1516,11 +1559,6 @@
      "anno": 2026,
      "durata": 128,
      "giorni": {
-      "2026-11-06": [
-       "17:00",
-       "19:30",
-       "21:45"
-      ],
       "2026-11-07": [
        "15:00",
        "17:15",
@@ -1582,19 +1620,19 @@
     {
      "titolo": "Clayface",
      "orari": [
-      "16:15",
-      "18:50"
+      "00:00",
+      "22:10"
      ],
      "versione": "",
-     "genere": "Azione, Avventura, Fantastico, Horror, Fantascienza, Thriller",
+     "genere": "Horror, Avventura, Azione",
      "regia": "James Watkins",
      "interpreti": "Eddie Marsan, Naomi Ackie e Max Minghella",
-     "durata": null,
+     "durata": 108,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "16:15",
-       "18:50"
+      "2026-11-07": [
+       "00:00",
+       "22:10"
       ]
      }
     },
@@ -1610,7 +1648,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
        "19:40"
       ]
      },
@@ -1619,7 +1657,7 @@
     {
      "titolo": "Fast and Furious",
      "orari": [
-      "18:35"
+      "13:10"
      ],
      "versione": "",
      "genere": "Azione",
@@ -1628,16 +1666,19 @@
      "durata": 106,
      "anno": 2001,
      "giorni": {
-      "2026-11-06": [
-       "18:35"
+      "2026-11-07": [
+       "13:10"
       ]
      }
     },
     {
      "titolo": "Hope",
      "orari": [
+      "12:00",
+      "15:00",
       "18:40",
-      "21:40"
+      "21:40",
+      "22:15"
      ],
      "versione": "",
      "genere": "Azione, Fantascienza, Horror",
@@ -1646,9 +1687,12 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
+       "12:00",
+       "15:00",
        "18:40",
-       "21:40"
+       "21:40",
+       "22:15"
       ]
      },
      "paese": "Corea del sud"
@@ -1656,25 +1700,28 @@
     {
      "titolo": "Ice Cream Man",
      "orari": [
-      "23:00"
+      "23:15"
      ],
      "versione": "",
-     "genere": "Commedia, Horror, Thriller",
+     "genere": "Horror",
      "regia": "Eli Roth",
      "interpreti": "Eli Roth, Dylan Hawco e Ben Davis",
      "durata": 86,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "23:00"
+      "2026-11-07": [
+       "23:15"
       ]
-     }
+     },
+     "paese": "USA"
     },
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "16:00",
-      "17:00"
+      "12:00",
+      "14:30",
+      "17:00",
+      "18:20"
      ],
      "versione": "",
      "genere": "Animazione",
@@ -1683,9 +1730,11 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "16:00",
-       "17:00"
+      "2026-11-07": [
+       "12:00",
+       "14:30",
+       "17:00",
+       "18:20"
       ]
      },
      "paese": "USA"
@@ -1693,7 +1742,7 @@
     {
      "titolo": "It Ends",
      "orari": [
-      "22:10"
+      "20:00"
      ],
      "versione": "",
      "genere": "Horror, Drammatico, Fantastico",
@@ -1702,16 +1751,35 @@
      "durata": 89,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "22:10"
+      "2026-11-07": [
+       "20:00"
       ]
      },
      "paese": "USA"
     },
     {
+     "titolo": "Je so' pazzo",
+     "orari": [
+      "15:50"
+     ],
+     "versione": "",
+     "genere": "Biografico",
+     "regia": "Nicola Prosatore",
+     "interpreti": "Massimiliano Caiazzo",
+     "durata": 105,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-07": [
+       "15:50"
+      ]
+     },
+     "paese": "Italia"
+    },
+    {
      "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
      "orari": [
-      "16:40"
+      "12:10",
+      "17:20"
      ],
      "versione": "",
      "genere": "Animazione",
@@ -1720,8 +1788,9 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "16:40"
+      "2026-11-07": [
+       "12:10",
+       "17:20"
       ]
      },
      "paese": "Regno Unito"
@@ -1732,23 +1801,24 @@
       "22:20"
      ],
      "versione": "",
-     "genere": "Horror",
+     "genere": "Horror, Drammatico",
      "regia": "Federico Zampaglione",
      "interpreti": "Alana Boden, Vincenzo De Michele e Fabrizio Ferracane",
-     "durata": 87,
+     "durata": null,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
        "22:20"
       ]
-     },
-     "paese": "Italia"
+     }
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
+      "12:30",
+      "14:50",
       "17:45",
-      "20:00"
+      "19:50"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -1757,34 +1827,69 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
+       "12:30",
+       "14:50",
        "17:45",
-       "20:00"
+       "19:50"
       ]
      },
      "paese": "Italia"
     },
     {
+     "titolo": "Verity",
+     "orari": [
+      "23:50"
+     ],
+     "versione": "",
+     "genere": "Thriller",
+     "regia": "Michael Showalter",
+     "interpreti": "Dakota Johnson, Anne Hathaway e Josh Hartnett",
+     "durata": null,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-07": [
+       "23:50"
+      ]
+     }
+    },
+    {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "16:00",
       "18:10",
       "21:10"
      ],
-     "versione": "Versione originale (solo ore 18:10)",
+     "versione": "",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "16:00",
+      "2026-11-07": [
        "18:10",
        "21:10"
       ]
      },
      "paese": "Regno Unito"
+    },
+    {
+     "titolo": "Wildwood - I segreti del bosco proibito",
+     "orari": [
+      "15:15"
+     ],
+     "versione": "",
+     "genere": "Animazione, Avventura, Drammatico",
+     "regia": "Travis Knight",
+     "interpreti": "Peyton Elizabeth Lee, Jacob Tremblay e Carey Mulligan",
+     "durata": 139,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-07": [
+       "15:15"
+      ]
+     },
+     "paese": "USA"
     }
    ],
    "biglietti": "https://www.ucicinemas.it/"
@@ -1801,6 +1906,7 @@
     {
      "titolo": "Dio ride",
      "orari": [
+      "18:40",
       "21:00"
      ],
      "versione": "",
@@ -1810,7 +1916,8 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
+       "18:40",
        "21:00"
       ]
      },
@@ -1819,6 +1926,7 @@
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
+      "18:40",
       "21:00"
      ],
      "versione": "",
@@ -1828,7 +1936,8 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
+       "18:40",
        "21:00"
       ]
      },
@@ -1856,7 +1965,61 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/jolly_215/",
-   "film": [],
+   "film": [
+    {
+     "titolo": "Dio ride",
+     "orari": [
+      "21:15"
+     ],
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Giovanni Veronesi",
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "durata": 114,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-07": [
+       "21:15"
+      ]
+     },
+     "paese": "Italia"
+    },
+    {
+     "titolo": "Giulio Regeni - Tutto il male del mondo",
+     "orari": [
+      "10:30"
+     ],
+     "versione": "",
+     "genere": "Documentario",
+     "regia": "Simone Manetti",
+     "interpreti": "",
+     "durata": 96,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-07": [
+       "10:30"
+      ]
+     }
+    },
+    {
+     "titolo": "Il gatto col cappello",
+     "orari": [
+      "18:30"
+     ],
+     "versione": "",
+     "genere": "Animazione",
+     "regia": "Alessandro Carloni e Erica Rivinoja",
+     "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
+     "durata": 107,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-07": [
+       "18:30"
+      ]
+     },
+     "paese": "USA"
+    }
+   ],
    "auto": true
   },
   {
@@ -1867,7 +2030,25 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/don-bosco_216/",
-   "film": [],
+   "film": [
+    {
+     "titolo": "The Invite - Il piacere è tutto nostro",
+     "orari": [
+      "21:00"
+     ],
+     "versione": "",
+     "genere": "Commedia, Drammatico",
+     "regia": "Olivia Wilde",
+     "interpreti": "Seth Rogen, Olivia Wilde e Penelope Cruz",
+     "durata": 108,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-07": [
+       "21:00"
+      ]
+     }
+    }
+   ],
    "auto": true
   },
   {
@@ -1882,7 +2063,8 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "20:30"
+      "15:00",
+      "19:00"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -1891,8 +2073,9 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "20:30"
+      "2026-11-07": [
+       "15:00",
+       "19:00"
       ]
      },
      "paese": "Italia"
@@ -1919,7 +2102,26 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/cristallo_2024/",
-   "film": [],
+   "film": [
+    {
+     "titolo": "Ragione e sentimento",
+     "orari": [
+      "16:00"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Ang Lee",
+     "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
+     "durata": 136,
+     "anno": 1995,
+     "giorni": {
+      "2026-11-07": [
+       "16:00"
+      ]
+     },
+     "paese": "USA"
+    }
+   ],
    "auto": true
   },
   {
@@ -1934,6 +2136,7 @@
     {
      "titolo": "Dio ride",
      "orari": [
+      "18:30",
       "21:00"
      ],
      "versione": "",
@@ -1943,7 +2146,8 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
+       "18:30",
        "21:00"
       ]
      },
@@ -1960,7 +2164,44 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/aurora_223/",
-   "film": [],
+   "film": [
+    {
+     "titolo": "Dio ride",
+     "orari": [
+      "21:00"
+     ],
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Giovanni Veronesi",
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "durata": 114,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-07": [
+       "21:00"
+      ]
+     },
+     "paese": "Italia"
+    },
+    {
+     "titolo": "Il gatto col cappello",
+     "orari": [
+      "18:30"
+     ],
+     "versione": "",
+     "genere": "Animazione",
+     "regia": "Alessandro Carloni e Erica Rivinoja",
+     "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
+     "durata": 107,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-07": [
+       "18:30"
+      ]
+     },
+     "paese": "USA"
+    }
+   ],
    "auto": true
   },
   {
@@ -1984,7 +2225,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
        "21:00"
       ]
      },
@@ -2014,11 +2255,29 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
        "21:00"
       ]
      },
      "paese": "Italia"
+    },
+    {
+     "titolo": "Minotaur",
+     "orari": [
+      "18:30"
+     ],
+     "versione": "",
+     "genere": "Drammatico, Thriller",
+     "regia": "Andrey Zvyagintsev",
+     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
+     "durata": 135,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-07": [
+       "18:30"
+      ]
+     },
+     "paese": "Francia"
     }
    ],
    "auto": true
@@ -2042,7 +2301,26 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/italia_229/",
-   "film": [],
+   "film": [
+    {
+     "titolo": "Dio ride",
+     "orari": [
+      "21:00"
+     ],
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Giovanni Veronesi",
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "durata": 114,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-07": [
+       "21:00"
+      ]
+     },
+     "paese": "Italia"
+    }
+   ],
    "auto": true
   },
   {
@@ -2057,6 +2335,8 @@
     {
      "titolo": "Dio ride",
      "orari": [
+      "16:20",
+      "18:20",
       "20:30",
       "22:30"
      ],
@@ -2067,7 +2347,9 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
+       "16:20",
+       "18:20",
        "20:30",
        "22:30"
       ]
@@ -2086,7 +2368,7 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
        "21:30"
       ]
      },
@@ -2095,24 +2377,29 @@
     {
      "titolo": "Ice Cream Man",
      "orari": [
+      "20:45",
       "22:30"
      ],
      "versione": "",
-     "genere": "Commedia, Horror, Thriller",
+     "genere": "Horror",
      "regia": "Eli Roth",
      "interpreti": "Eli Roth, Dylan Hawco e Ben Davis",
      "durata": 86,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
+       "20:45",
        "22:30"
       ]
-     }
+     },
+     "paese": "USA"
     },
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "20:30"
+      "16:15",
+      "17:00",
+      "18:15"
      ],
      "versione": "",
      "genere": "Animazione",
@@ -2121,8 +2408,28 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "20:30"
+      "2026-11-07": [
+       "16:15",
+       "17:00",
+       "18:15"
+      ]
+     },
+     "paese": "USA"
+    },
+    {
+     "titolo": "Ragione e sentimento",
+     "orari": [
+      "20:15"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Ang Lee",
+     "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
+     "durata": 136,
+     "anno": 1995,
+     "giorni": {
+      "2026-11-07": [
+       "20:15"
       ]
      },
      "paese": "USA"
@@ -2130,7 +2437,9 @@
     {
      "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
      "orari": [
-      "19:45"
+      "16:20",
+      "17:00",
+      "18:30"
      ],
      "versione": "",
      "genere": "Animazione",
@@ -2139,8 +2448,10 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "19:45"
+      "2026-11-07": [
+       "16:20",
+       "17:00",
+       "18:30"
       ]
      },
      "paese": "Regno Unito"
@@ -2148,6 +2459,7 @@
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
+      "18:45",
       "20:40",
       "22:30"
      ],
@@ -2158,7 +2470,8 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
+       "18:45",
        "20:40",
        "22:30"
       ]
@@ -2168,6 +2481,8 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
+      "16:15",
+      "18:15",
       "20:20",
       "22:30"
      ],
@@ -2178,7 +2493,9 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
+      "2026-11-07": [
+       "16:15",
+       "18:15",
        "20:20",
        "22:30"
       ]
@@ -2188,7 +2505,7 @@
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
-      "20:15"
+      "18:00"
      ],
      "versione": "",
      "genere": "Animazione, Avventura, Drammatico",
@@ -2197,8 +2514,8 @@
      "durata": 139,
      "anno": 2026,
      "giorni": {
-      "2026-11-06": [
-       "20:15"
+      "2026-11-07": [
+       "18:00"
       ]
      },
      "paese": "USA"
