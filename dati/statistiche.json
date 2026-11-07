@@ -1,17 +1,17 @@
 {
- "generato": "2026-11-07T22:12:05+00:00",
+ "generato": "2026-11-07T22:52:11+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-07",
- "visite_totali": 155,
- "totale_goatcounter": 384,
- "eventi_totali": 229,
+ "visite_totali": 158,
+ "totale_goatcounter": 408,
+ "eventi_totali": 250,
  "eventi_per_tipo": {
-  "filtri": 84,
-  "cambio scheda": 44,
-  "schede aperte": 26,
-  "cambio vista": 22,
-  "apri filtri": 14,
-  "luoghi aperti": 12,
+  "filtri": 91,
+  "cambio scheda": 47,
+  "schede aperte": 28,
+  "cambio vista": 24,
+  "luoghi aperti": 18,
+  "apri filtri": 15,
   "clic biglietti": 8,
   "clic info spettacoli": 5,
   "mostra altri": 4,
@@ -25,16 +25,16 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-07",
-   "visite": 155,
-   "cambio scheda": 44,
-   "apri filtri": 14,
-   "cambio vista": 22,
-   "filtri": 84,
+   "visite": 158,
+   "cambio scheda": 47,
+   "apri filtri": 15,
+   "cambio vista": 24,
+   "filtri": 91,
+   "luoghi aperti": 18,
    "mostra altri": 4,
-   "luoghi aperti": 12,
    "azzera filtri": 4,
    "condivisioni": 2,
-   "schede aperte": 26,
+   "schede aperte": 28,
    "clic biglietti": 8,
    "clic info spettacoli": 5,
    "clic mostre (scheda o sito)": 3,
@@ -47,8 +47,8 @@
    "apri filtri": 2,
    "cambio vista": 5,
    "filtri": 8,
-   "mostra altri": 2,
    "luoghi aperti": 5,
+   "mostra altri": 2,
    "azzera filtri": 1,
    "condivisioni": 0,
    "schede aperte": 0,
@@ -62,8 +62,8 @@
    "apri filtri": 4,
    "cambio vista": 4,
    "filtri": 14,
-   "mostra altri": 1,
    "luoghi aperti": 4,
+   "mostra altri": 1,
    "azzera filtri": 1,
    "condivisioni": 0,
    "schede aperte": 3,
@@ -77,8 +77,8 @@
    "apri filtri": 6,
    "cambio vista": 10,
    "filtri": 48,
-   "mostra altri": 1,
    "luoghi aperti": 1,
+   "mostra altri": 1,
    "azzera filtri": 0,
    "condivisioni": 1,
    "schede aperte": 14,
@@ -88,15 +88,15 @@
    "clic cinema (programma della sala)": 1
   },
   "2026-11-07": {
-   "cambio scheda": 5,
-   "apri filtri": 2,
-   "cambio vista": 3,
-   "filtri": 14,
+   "cambio scheda": 8,
+   "apri filtri": 3,
+   "cambio vista": 5,
+   "filtri": 21,
+   "luoghi aperti": 8,
    "mostra altri": 0,
-   "luoghi aperti": 2,
    "azzera filtri": 2,
    "condivisioni": 1,
-   "schede aperte": 9,
+   "schede aperte": 11,
    "clic biglietti": 1,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
@@ -118,21 +118,21 @@
   },
   {
    "giorno": "2026-11-07",
-   "visite": 35
+   "visite": 38
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 332
+   "conteggio": 347
   },
   {
    "origine": "achevents.com/milano",
-   "conteggio": 26
+   "conteggio": 29
   },
   {
    "origine": "achevents.com",
-   "conteggio": 22
+   "conteggio": 28
   },
   {
    "origine": "teams.public.onecdn.static.microsoft",
@@ -147,7 +147,7 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 72
+   "conteggio": 74
   },
   {
    "path": "/eventi-bologna",
@@ -157,7 +157,7 @@
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 36
+   "conteggio": 37
   },
   {
    "path": "scheda/mostre",
@@ -167,6 +167,12 @@
   },
   {
    "path": "milano/scheda/mostre",
+   "titolo": "Cambio scheda",
+   "conteggio": 9,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "milano/scheda/cinema",
    "titolo": "Cambio scheda",
    "conteggio": 8,
    "tipo": "cambio scheda"
@@ -178,22 +184,22 @@
    "tipo": "apri filtri"
   },
   {
-   "path": "milano/scheda/cinema",
-   "titolo": "Cambio scheda",
-   "conteggio": 7,
-   "tipo": "cambio scheda"
-  },
-  {
    "path": "spettacoli/vista/luoghi",
    "titolo": "Cambio vista",
-   "conteggio": 7,
+   "conteggio": 8,
    "tipo": "cambio vista"
   },
   {
    "path": "scheda/spettacoli",
    "titolo": "Cambio scheda",
-   "conteggio": 7,
+   "conteggio": 8,
    "tipo": "cambio scheda"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Date/weekend",
+   "titolo": "Filtro",
+   "conteggio": 6,
+   "tipo": "filtri"
   },
   {
    "path": "milano/scheda/spettacoli",
@@ -214,7 +220,13 @@
    "tipo": "cambio vista"
   },
   {
-   "path": "milano/spettacoli/filtro/Date/weekend",
+   "path": "milano/spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 5,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Rock",
    "titolo": "Filtro",
    "conteggio": 5,
    "tipo": "filtri"
@@ -226,22 +238,22 @@
    "tipo": "filtri"
   },
   {
-   "path": "milano/spettacoli/vista/luoghi",
-   "titolo": "Cambio vista",
+   "path": "milano/spettacoli/apri-filtri",
+   "titolo": "Apertura filtri",
    "conteggio": 4,
-   "tipo": "cambio vista"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Genere/Rock",
-   "titolo": "Filtro",
-   "conteggio": 4,
-   "tipo": "filtri"
+   "tipo": "apri filtri"
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
    "titolo": "Filtro",
    "conteggio": 4,
    "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/luogo/Teatro Duse",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 4,
+   "tipo": "luoghi aperti"
   },
   {
    "path": "spettacoli/mostra-altri",
@@ -256,22 +268,22 @@
    "tipo": "filtri"
   },
   {
-   "path": "milano/spettacoli/apri-filtri",
-   "titolo": "Apertura filtri",
+   "path": "milano/spettacoli/filtro/Date/oggi",
+   "titolo": "Filtro",
    "conteggio": 3,
-   "tipo": "apri filtri"
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Jazz",
+   "titolo": "Filtro",
+   "conteggio": 3,
+   "tipo": "filtri"
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Comici",
    "titolo": "Filtro",
    "conteggio": 3,
    "tipo": "filtri"
-  },
-  {
-   "path": "spettacoli/luogo/Teatro Duse",
-   "titolo": "Apertura programma del luogo",
-   "conteggio": 3,
-   "tipo": "luoghi aperti"
   },
   {
    "path": "spettacoli/filtro/Date/oggi",
@@ -298,7 +310,19 @@
    "tipo": "filtri"
   },
   {
+   "path": "spettacoli/luogo/Estragon",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 2,
+   "tipo": "luoghi aperti"
+  },
+  {
    "path": "spettacoli/filtro/Tipo di luogo/Club e locali",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Tipo di luogo/Teatri",
    "titolo": "Filtro",
    "conteggio": 2,
    "tipo": "filtri"
@@ -310,13 +334,7 @@
    "tipo": "condivisioni"
   },
   {
-   "path": "milano/spettacoli/filtro/Date/oggi",
-   "titolo": "Filtro",
-   "conteggio": 2,
-   "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Genere/Jazz",
+   "path": "milano/mostre/filtro/Categoria/Pittura",
    "titolo": "Filtro",
    "conteggio": 2,
    "tipo": "filtri"
@@ -344,6 +362,48 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Amon Amarth, Soilwork, Orbit Culture",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/luogo/Alcatraz",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "milano/spettacoli/luogo/Teatro Arcimboldi",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/luogo/Link",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/luogo/Teatro Comunale",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "milano/cinema/dettaglio/Wild Horse Nine",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/cinema/filtro/Giorno e orario/g:2026-11-08",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
   },
   {
    "path": "spettacoli/filtro/Tipo di luogo/All'aperto",
@@ -424,12 +484,6 @@
    "tipo": "filtri"
   },
   {
-   "path": "spettacoli/luogo/Estragon",
-   "titolo": "Apertura programma del luogo",
-   "conteggio": 1,
-   "tipo": "luoghi aperti"
-  },
-  {
    "path": "spettacoli/filtro/Tipo di luogo/Altri luoghi",
    "titolo": "Filtro",
    "conteggio": 1,
@@ -455,12 +509,6 @@
   },
   {
    "path": "milano/spettacoli/filtro/Tipo di luogo/Auditorium",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Tipo di luogo/Teatri",
    "titolo": "Filtro",
    "conteggio": 1,
    "tipo": "filtri"
@@ -587,12 +635,6 @@
   },
   {
    "path": "cinema/filtro/Giorno e orario/g:2026-11-07",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "milano/mostre/filtro/Categoria/Pittura",
    "titolo": "Filtro",
    "conteggio": 1,
    "tipo": "filtri"
