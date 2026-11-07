@@ -182,7 +182,20 @@ main{max-width:none}
  .qc small{font-size:11px}
  .qc .em{margin-right:3px}
  .status{margin-top:10px}
- .mode-c .qc .lg{display:none}.mode-c .qc .sm{display:inline}}
+ .mode-c .qc .lg{display:none}.mode-c .qc .sm{display:inline}
+ /* iPad e computer: un gruppo per riga, etichette in colonna, pulsanti su una sola riga (scorrono di lato se non ci stanno) */
+ .qbar{display:grid;row-gap:6px}
+ .qg{display:grid;grid-template-columns:78px minmax(0,1fr);align-items:center;gap:8px}
+ .qh{flex-direction:column;align-items:flex-start;gap:0}
+ .qchips{display:flex;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent);padding-right:22px}
+ .qchips::-webkit-scrollbar{display:none}
+ .qc{flex:none}}
+/* telefono: la riga «Luogo» scorre di lato invece di occupare tre righe */
+@media(max-width:759px){
+ .qg.qscroll .qchips{display:flex;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -12px;padding:0 12px}
+ .qg.qscroll .qchips::-webkit-scrollbar{display:none}
+ .qg.qscroll .qc{flex:none;height:40px;flex-direction:row;padding:0 12px;border-radius:999px;gap:5px}
+ .qg.qscroll .qc .lg{display:inline}.qg.qscroll .qc .sm{display:none}}
 .srow .tday{display:flex;flex-wrap:wrap;align-items:center;gap:5px;grid-column:1/-1}
 .srow .tday b{font-size:12px;font-weight:700;color:var(--mute);min-width:44px;text-transform:capitalize}
 .srow .prev{font-size:13px;color:var(--mute);font-style:italic}
@@ -677,7 +690,28 @@ const PIN='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="c
 const TIPOV=e=>e._kind==="c"?(e._vo?"In lingua originale":"Versione italiana"):e.tipo||(e.genere==="Teatro"?"Altro spettacolo":"Concerto");
 const DISPV=e=>{if(e._kind==="m")return e._ing;const d=(e.disp||"").toLowerCase();return d==="disponibile"?"Biglietti disponibili":d==="pochi posti"?"Ultimi posti":d==="non ancora in vendita"?"Vendita non ancora aperta":(d==="sold out"||d==="non disponibile")?"Esaurito":"Da verificare"};
 
-function prep(list){const A=list.filter(e=>end(e)>=today);for(const e of A){e._c=e.citta||CITY.capo;e._z=ZONA[e._c]||"Altro";e._q=norm([e.artista,e.luogo,e._c,e.descrizione,e.tipo,e.genere,e.rassegna,ZLAB[e._z]].join(" "))}return A}
+/* tipo di luogo (riga «Luogo» dei filtri): dedotto dal nome del luogo, nessun dato in più da mantenere */
+const LT_S=[["Club e locali","🪩"],["Teatri","🎭"],["Auditorium","🎼"],["Palazzetti","🏟️"],["Stadi","⚽"],["All'aperto","🌳"],["Chiese","⛪"],["Palazzi e musei","🏛️"],["Altri luoghi","📍"]];
+const LT_M=[["Musei","🏛️"],["Palazzi storici","🏰"],["Gallerie","🖼️"],["Fondazioni e spazi","🏢"],["Biblioteche e chiese","📚"],["Altri luoghi","📍"]];
+const ltS=e=>{const v=norm(e.luogo);
+ if(e.genere==="Serate e club")return "Club e locali";
+ if(/stadio|ippodromo/.test(v))return "Stadi";
+ if(/unipol (arena|forum|dome)|palasport|paladozza|palazzetto|fiera milano live|^forum|arena milano|mediolanum/.test(v))return "Palazzetti";
+ if(/piazza|parco|carroponte|sequoie|idroscalo|giardin|chapiteau|cortile/.test(v))return "All'aperto";
+ if(/\bclub\b|circolo|\barci\b|fabrique|alcatraz|magazzini generali|santeria|biko|\bgate\b|legend|slaughter|\blime\b|locomotiv|estragon|covo|freakout|dumbo|baumhaus|atelier|camera jazz|bravo caff|birreria|brewpub|birrofila|station live|\bduro\b|apollo|detune|department|black hole|gemma|labrutepoque|10 gradi|house of stories|q-hub|base milano|blue note|cava delle arti|germi|alveare|incubazione/.test(v))return "Club e locali";
+ if(/chiesa|basilica|oratorio|tempio|santuario|duomo|abbazia/.test(v))return "Chiese";
+ if(/auditorium|conservatorio|sala verdi|dal verme|accademia filarmonica|filarmonica|sala bibiena|foyer|circolo lirico|^sala (prof|giulietta)|loggione/.test(v))return "Auditorium";
+ if(/teatr|zelig|elfo|pimoff|piccolo|arcimboldi|celebrazioni|dehon|duse|scala|lirico|repower|arena del sole|cassero|sala del suffragio|sala argentia|cineteatro|cinema|sistina/.test(v))return "Teatri";
+ if(/palazzo|villa|museo|biblioteca|triennale|mast|fabbrica del vapore|superstudio|damslab|salaborsa|bookstore|aula magna/.test(v))return "Palazzi e musei";
+ return "Altri luoghi"};
+const ltM=e=>{const v=norm(e.luogo);
+ if(/biblioteca|chiesa|basilica|diocesano/.test(v))return "Biblioteche e chiese";
+ if(/palazzo|villa|castello/.test(v))return "Palazzi storici";
+ if(/museo|pinacoteca|\bgam\b|mudec|\bpac\b|mubit|\bmic\b|museum/.test(v))return "Musei";
+ if(/fondazione|hangar|silos|superstudio|fabbrica|spazio|cubo|city oval|milanosesto|building|volvo|camera di commercio|\bmast\b|varesina/.test(v))return "Fondazioni e spazi";
+ if(/galler|galerie|studio|arte\b|bottegantica|fine art|area|lorenzelli|marconi|immagini|labs|m77|otto/.test(v))return "Gallerie";
+ return "Altri luoghi"};
+function prep(list){const A=list.filter(e=>end(e)>=today);for(const e of A){e._c=e.citta||CITY.capo;e._z=ZONA[e._c]||"Altro";e._q=norm([e.artista,e.luogo,e._c,e.descrizione,e.tipo,e.genere,e.rassegna,ZLAB[e._z]].join(" "));if(e._kind!=="c")e._lt=e._kind==="m"?ltM(e):ltS(e)}return A}
 const ALL_S=prep(EVENTS).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));
 const ALL_C=prep(CINEMA).sort((a,b)=>a.artista.localeCompare(b.artista,"it")||a.luogo.localeCompare(b.luogo,"it"));
 const ALL_M=prep(MOSTRE).sort((a,b)=>{const ra=a.data<=today,rb=b.data<=today;if(ra!==rb)return ra?-1:1;return ra?a.fino.localeCompare(b.fino):a.data.localeCompare(b.data)});
@@ -707,7 +741,7 @@ const FASCIA={ancora:o=>CGIORNO===today&&o>=nowHM,pom:o=>o<"18:00",sera:o=>o>="1
 const tOK=o=>{const f=[...st.m].filter(q=>FASCIA[q]);return !f.length||f.some(q=>FASCIA[q](o))};
 let QUICK=QUICK_S;const in14=addDays(today,14),in30=addDays(today,30);
 const qTest=(q,e)=>FASCIA[q]?(e._orari||[]).some(FASCIA[q]):q==="oggi"?overlaps(e,today,today):q==="weekend"?overlaps(e,wkStart,sun):q==="7g"?overlaps(e,today,in7):q==="ultimi"?(e.data<=today&&end(e)<=in14):q==="arrivo"?(e.data>today&&e.data<=in30):false;
-const SETS=["m","g","c","l","t","r","d"];
+const SETS=["m","g","c","y","l","t","r","d"];
 const st={q:"",qn:"",view:"cal",venue:"",n:PAGE,pf:"",pt:""};SETS.forEach(k=>st[k]=new Set());
 const mM=e=>{if(e._kind==="c")return cinemaPass(e);if(!st.m.size)return true;for(const m of st.m){if(!/^\d{4}-\d{2}$/.test(m)?qTest(m,e):(e.data.slice(0,7)<=m&&end(e).slice(0,7)>=m))return true}return false};
 const TESTS={
@@ -716,6 +750,7 @@ const TESTS={
  p:e=>(!st.pf&&!st.pt)||overlaps(e,st.pf||today,st.pt||"9999-12-31"),
  g:e=>!st.g.size||st.g.has(e.genere)||(st.g.has("Comici")&&e.tipo==="Comicità"),
  c:e=>!st.c.size||st.c.has(e._c),
+ y:e=>!st.y.size||st.y.has(e._lt),
  l:e=>!st.l.size||st.l.has(e.luogo),
  t:e=>!st.t.size||st.t.has(TIPOV(e)),
  r:e=>!st.r.size||(e._kind==="c"?glist(e).some(x=>st.r.has(x)):st.r.has(e.rassegna||"")),
@@ -746,8 +781,8 @@ function cityPills(){const out=[];const rest=new Set(st.c);
 
 function optRow(k,v,label,n){const on=st[k].has(v);
  return `<button class="opt${on?" on":""}" data-k="${k}" data-v="${esc(v)}" aria-pressed="${on}" ${n||on?"":"disabled"}><span class="ck"></span><span class="ol">${esc(label)}</span><small>${n||0}</small></button>`}
-const SECS_S=[["g","Genere"],["m","Date"],["c","Dove"],["l","Teatro o locale"],["t","Tipo"],["r","Rassegna"],["d","Disponibilità"]];
-const SECS_M=[["g","Categoria"],["m","Periodo"],["c","Dove"],["l","Museo o sede"],["d","Ingresso"]];
+const SECS_S=[["g","Genere"],["m","Date"],["c","Dove"],["y","Tipo di luogo"],["l","Teatro o locale"],["t","Tipo"],["r","Rassegna"],["d","Disponibilità"]];
+const SECS_M=[["g","Categoria"],["m","Periodo"],["c","Dove"],["y","Tipo di sede"],["l","Museo o sede"],["d","Ingresso"]];
 const SECS_C=[["m","Giorno e orario"],["r","Genere del film"],["g","Tipo di sala"],["c","Dove"],["l","Cinema"],["t","Lingua"]];
 const SHORT={"Teatro o locale":"Luogo","Museo o sede":"Sede"};
 let SECS=SECS_S,STITLE=Object.fromEntries(SECS);
@@ -779,9 +814,10 @@ function body(k,ctx){
   const sh=lAll||lq||ctx==="sheet"?lv:lv.slice(0,10);
   return `<input class="lsearch" data-ls="${ctx}" type="search" placeholder="Cerca un luogo…" value="${esc(lq)}" autocomplete="off"><div class="opts">${sh.map(v=>optRow("l",v,v,lc.get(v)||0)).join("")||`<small style="color:var(--mute)">Nessun luogo</small>`}</div>${sh.length<lv.length?`<button class="lmore" data-lall>Mostra tutti i ${lv.length} luoghi</button>`:""}`}
  if(k==="r"&&MODE==="c"){const c=cntF("r",glist);return `<div class="opts">${CGEN.filter(o=>c.get(o.k)||st.r.has(o.k)).map(o=>optRow("r",o.k,o.em+"  "+o.k,c.get(o.k)||0)).join("")}</div><p class="phint" style="margin-top:12px">«Altri film» raccoglie i titoli di cui non conosciamo il genere (spesso classici e rassegne della Cineteca).</p>`}
- const fn=k==="t"?TIPOV:k==="r"?(e=>e.rassegna||""):DISPV;const c=countBy(k,fn);
+ const fn=k==="t"?TIPOV:k==="r"?(e=>e.rassegna||""):k==="y"?(e=>e._lt):DISPV;const c=countBy(k,fn);
  let vs=[...new Set(ALL.map(fn))].filter(v=>v&&(c.get(v)||st[k].has(v)));
- vs.sort(k==="d"?((a,b)=>DO.indexOf(a)-DO.indexOf(b)):((a,b)=>(c.get(b)||0)-(c.get(a)||0)||a.localeCompare(b,"it")));
+ const LO=(MODE==="m"?LT_M:LT_S).map(x=>x[0]);
+ vs.sort(k==="d"?((a,b)=>DO.indexOf(a)-DO.indexOf(b)):k==="y"?((a,b)=>LO.indexOf(a)-LO.indexOf(b)):((a,b)=>(c.get(b)||0)-(c.get(a)||0)||a.localeCompare(b,"it")));
  return `<div class="opts">${vs.map(v=>optRow(k,v,v,c.get(v)||0)).join("")}</div>`}
 const nOf=k=>k==="c"?cityPills().length:st[k].size+(k==="m"&&hasR()?1:0);
 /* Pannello filtri: pagina principale (una riga per filtro) e pagina del singolo filtro. Telefono: foglio dal basso; computer: pannello laterale */
@@ -815,7 +851,7 @@ function renderPop(){const pop=$("#pop");if(!popK){pop.hidden=true;return}
 function renderRail(){
  const SH={...Object.fromEntries(CGEN.filter(c=>c.s).map(c=>[c.k,c.s])),["Weekend "+wkLabel]:"Weekend","Prossimi 7 giorni":"7 giorni","Sale di comunità":"Comunità","Lingua orig.":"V.O.","Arte contemporanea e installazioni":"Contemporanea","Disegno, grafica e illustrazione":"Disegno","Esperienze immersive":"Immersive","Sera 18–21":"Sera","Cinema e design":"Cinema e design"};
  const qc=(k,v,l,n,on,g,em)=>{const s=SH[l]||l;return `<button class="qc${on?" on":""}" data-k="${k}" data-v="${esc(v)}" aria-pressed="${on}" style="--g:var(${g||"--terra"})" ${n||on?"":"disabled"} title="${esc(l)}"><span class="t">${em?`<span class="em">${em}</span>`:""}${s!==l?`<span class="lg">${esc(l)}</span><span class="sm">${esc(s)}</span>`:esc(l)}</span>${n!=null?`<small>${n}</small>`:""}</button>`};
- const grp=(lab,cols,chips,clr)=>`<section class="qg" style="--cols:${cols}"><div class="qh"><span class="qlab">${lab}</span>${clr?`<button class="qclr" data-qclr="${clr}">Togli</button>`:""}</div><div class="qchips">${chips}</div></section>`;
+ const grp=(lab,cols,chips,clr,cls)=>`<section class="qg${cls?" "+cls:""}" style="--cols:${cols}"><div class="qh"><span class="qlab">${lab}</span>${clr?`<button class="qclr" data-qclr="${clr}">Togli</button>`:""}</div><div class="qchips">${chips}</div></section>`;
  const gc=(MODE==="c"?cntF:countBy)("g",e=>e.tipo==="Comicità"?[e.genere,"Comici"]:e.genere);
  const gens=GOPTS.filter(o=>MODE!=="c"||gc.get(o.k)||st.g.has(o.k)).map(o=>qc("g",o.k,o.l,gc.get(o.k)||0,st.g.has(o.k),o.c,o.em)).join("");
  let h="";
@@ -829,7 +865,9 @@ function renderRail(){
  else{const QR=MODE==="m"?[["oggi","Aperte oggi"],["weekend","Weekend "+wkLabel],["ultimi","Ultimi giorni","⏳"],["arrivo","In arrivo","✨"]]:[["oggi","Oggi"],["weekend","Weekend "+wkLabel],["7g","Prossimi 7 giorni"]];
   const mc=countBy("m",e=>Object.keys(QUICK).filter(q=>qTest(q,e)));
   h+=grp("Quando",MODE==="m"?2:3,QR.map(([q,l,em])=>qc("m",q,l,mc.get(q)||0,st.m.has(q),"--terra",em)).join(""),[...st.m].some(x=>QR.some(r=>r[0]===x))?"m":"");
-  h+=grp(MODE==="m"?"Categoria":"Genere",MODE==="m"?2:3,gens,st.g.size?"g":"")}
+  h+=grp(MODE==="m"?"Categoria":"Genere",MODE==="m"?2:3,gens,st.g.size?"g":"");
+  const yc=countBy("y",e=>e._lt),LT=MODE==="m"?LT_M:LT_S;
+  h+=grp("Luogo",3,LT.filter(([k])=>yc.get(k)||st.y.has(k)).map(([k,em])=>qc("y",k,k,yc.get(k)||0,st.y.has(k),"--terra",em)).join(""),st.y.size?"y":"","qscroll")}
  $("#qbar").innerHTML=h;
  const ns=nSel();$("#fbadge").textContent=ns;$("#fbadge").hidden=!ns;$("#fbtn").classList.toggle("active",!!ns);
  $$(".seg button").forEach(b=>b.classList.toggle("on",b.dataset.view===st.view))}
@@ -841,7 +879,7 @@ function renderStatus(n,label){
  for(const m of st.m)PILLS.push({lab:mLabel(m),act:()=>st.m.delete(m)});
  if(hasR())PILLS.push({lab:rLabel(),act:()=>{st.pf=st.pt=""}});
  for(const p of cityPills())PILLS.push(p);
- for(const k of ["l","t","r","d"])for(const v of st[k])PILLS.push({lab:v,act:()=>st[k].delete(v)});
+ for(const k of ["y","l","t","r","d"])for(const v of st[k])PILLS.push({lab:v,act:()=>st[k].delete(v)});
  if(st.q)PILLS.push({lab:"«"+st.q+"»",act:()=>{st.q=st.qn="";$("#q").value=""}});
  $("#active").innerHTML=PILLS.map((p,i)=>`<button class="apill" data-pill="${i}" ${p.g?`style="--g:var(${p.g})"`:""} aria-label="Togli ${esc(p.lab)}"><span>${esc(p.lab)}</span><i>✕</i></button>`).join("");
  }
@@ -1090,7 +1128,7 @@ let tt;function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("sh
 
 /* ---------- condivisione ---------- */
 function scopeLabel(){const parts=[];if(st.venue)parts.push(st.venue);if(st.g.size)parts.push([...st.g].map(k=>GLAB[k].l).join(", "));
- if(st.m.size)parts.push([...st.m].map(mLabel).join(", "));if(hasR())parts.push(rLabel());if(st.c.size)parts.push(cityLabel());["l","t","r","d"].forEach(k=>{if(st[k].size)parts.push([...st[k]].join(", "))});if(st.q)parts.push(`“${st.q}”`);return parts.join(" · ")}
+ if(st.m.size)parts.push([...st.m].map(mLabel).join(", "));if(hasR())parts.push(rLabel());if(st.c.size)parts.push(cityLabel());["y","l","t","r","d"].forEach(k=>{if(st[k].size)parts.push([...st[k]].join(", "))});if(st.q)parts.push(`“${st.q}”`);return parts.join(" · ")}
 function shareText(){const ev=visible(),list=ev.slice(0,20);
  const lines=list.map(e=>MODE==="c"?`• ${e.artista} – ${e.luogo}${e._c!==CITY.capo?", "+e._c:""}${(tOn(e,dayKeys()[0])||[]).length?" ("+tOn(e,dayKeys()[0]).join(", ")+")":""}`:MODE==="m"?`• ${e.data>today?"dal "+fdate(e.data):"fino al "+fdate(e.fino)} – ${e.artista} (${e.luogo}${e._c!==CITY.capo?", "+e._c:""})`:`• ${fmt(e.data,{weekday:"short",day:"numeric",month:"short"})}${/\d/.test(e.ora||"")?" ore "+e.ora:""} – ${e.artista} (${e.luogo}${e._c!==CITY.capo?", "+e._c:""})`);
  return `${MODE==="m"?"Ecco le mostre a "+CITY.nome+" da Ach's Events Guide":MODE==="c"?`Ecco i film nei cinema di ${CITY.nome} su Ach's Events Guide (${dayKeys().length>1?"questa settimana":dLab(dayKeys()[0],true)})`:"Ecco gli eventi a "+CITY.nome+" da Ach's Events Guide"}${scopeLabel()?" – "+scopeLabel():""}:\n${SITE_URL}\n\n${lines.join("\n")}${ev.length>20?`\n…e altri ${ev.length-20} sul sito.`:""}`}
