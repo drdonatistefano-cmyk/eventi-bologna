@@ -1,18 +1,18 @@
 {
- "generato": "2026-11-07T14:20:02+00:00",
+ "generato": "2026-11-07T14:57:55+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-07",
- "visite_totali": 138,
- "totale_goatcounter": 359,
- "eventi_totali": 221,
+ "visite_totali": 139,
+ "totale_goatcounter": 362,
+ "eventi_totali": 223,
  "eventi_per_tipo": {
   "filtri": 81,
   "cambio scheda": 43,
-  "schede aperte": 23,
+  "schede aperte": 24,
   "cambio vista": 22,
   "apri filtri": 14,
   "luoghi aperti": 12,
-  "clic biglietti": 7,
+  "clic biglietti": 8,
   "clic info spettacoli": 5,
   "mostra altri": 4,
   "azzera filtri": 4,
@@ -25,7 +25,7 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-07",
-   "visite": 138,
+   "visite": 139,
    "cambio scheda": 43,
    "apri filtri": 14,
    "cambio vista": 22,
@@ -34,8 +34,8 @@
    "luoghi aperti": 12,
    "azzera filtri": 4,
    "condivisioni": 2,
-   "schede aperte": 23,
-   "clic biglietti": 7,
+   "clic biglietti": 8,
+   "schede aperte": 24,
    "clic info spettacoli": 5,
    "clic mostre (scheda o sito)": 3,
    "clic cinema (programma della sala)": 1
@@ -51,8 +51,8 @@
    "luoghi aperti": 5,
    "azzera filtri": 1,
    "condivisioni": 0,
-   "schede aperte": 0,
    "clic biglietti": 4,
+   "schede aperte": 0,
    "clic info spettacoli": 3,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
@@ -66,8 +66,8 @@
    "luoghi aperti": 4,
    "azzera filtri": 1,
    "condivisioni": 0,
-   "schede aperte": 3,
    "clic biglietti": 1,
+   "schede aperte": 3,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
@@ -81,8 +81,8 @@
    "luoghi aperti": 1,
    "azzera filtri": 0,
    "condivisioni": 1,
-   "schede aperte": 14,
    "clic biglietti": 2,
+   "schede aperte": 14,
    "clic info spettacoli": 2,
    "clic mostre (scheda o sito)": 3,
    "clic cinema (programma della sala)": 1
@@ -96,8 +96,8 @@
    "luoghi aperti": 2,
    "azzera filtri": 2,
    "condivisioni": 1,
-   "schede aperte": 6,
-   "clic biglietti": 0,
+   "clic biglietti": 1,
+   "schede aperte": 7,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
@@ -118,13 +118,13 @@
   },
   {
    "giorno": "2026-11-07",
-   "visite": 18
+   "visite": 19
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 314
+   "conteggio": 317
   },
   {
    "origine": "achevents.com",
@@ -147,7 +147,7 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 59
+   "conteggio": 60
   },
   {
    "path": "/eventi-bologna",
@@ -338,6 +338,18 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/spettacoli/clic-biglietti/Marco Mengoni – Allo Sbagliato",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 1,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Marco Mengoni – Allo Sbagliato",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
   },
   {
    "path": "spettacoli/filtro/Genere/Serate e club",
