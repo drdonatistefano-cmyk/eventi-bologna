@@ -1,20 +1,20 @@
 {
- "generato": "2026-11-08T19:26:07+00:00",
+ "generato": "2026-11-08T20:12:06+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-08",
- "visite_totali": 178,
- "totale_goatcounter": 487,
- "eventi_totali": 309,
+ "visite_totali": 180,
+ "totale_goatcounter": 504,
+ "eventi_totali": 324,
  "eventi_per_tipo": {
-  "filtri": 102,
-  "cambio scheda": 54,
-  "schede aperte": 45,
-  "cambio vista": 29,
-  "luoghi aperti": 23,
+  "filtri": 107,
+  "cambio scheda": 57,
+  "schede aperte": 47,
+  "cambio vista": 31,
+  "luoghi aperti": 25,
   "apri filtri": 17,
   "clic biglietti": 10,
   "clic info spettacoli": 8,
-  "azzera filtri": 6,
+  "azzera filtri": 7,
   "clic mostre (scheda o sito)": 5,
   "mostra altri": 4,
   "condivisioni": 4,
@@ -26,16 +26,16 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-08",
-   "visite": 178,
-   "cambio scheda": 54,
+   "visite": 180,
+   "cambio scheda": 57,
+   "cambio vista": 31,
    "apri filtri": 17,
-   "cambio vista": 29,
-   "filtri": 102,
-   "luoghi aperti": 23,
+   "filtri": 107,
+   "luoghi aperti": 25,
    "mostra altri": 4,
-   "azzera filtri": 6,
+   "azzera filtri": 7,
    "condivisioni": 4,
-   "schede aperte": 45,
+   "schede aperte": 47,
    "altro": 1,
    "clic info spettacoli": 8,
    "clic biglietti": 10,
@@ -46,8 +46,8 @@
  "eventi_per_giorno": {
   "2026-11-04": {
    "cambio scheda": 6,
-   "apri filtri": 2,
    "cambio vista": 5,
+   "apri filtri": 2,
    "filtri": 8,
    "luoghi aperti": 5,
    "mostra altri": 2,
@@ -62,8 +62,8 @@
   },
   "2026-11-05": {
    "cambio scheda": 6,
-   "apri filtri": 4,
    "cambio vista": 4,
+   "apri filtri": 4,
    "filtri": 14,
    "luoghi aperti": 4,
    "mostra altri": 1,
@@ -78,8 +78,8 @@
   },
   "2026-11-06": {
    "cambio scheda": 27,
-   "apri filtri": 6,
    "cambio vista": 10,
+   "apri filtri": 6,
    "filtri": 48,
    "luoghi aperti": 1,
    "mostra altri": 1,
@@ -94,8 +94,8 @@
   },
   "2026-11-07": {
    "cambio scheda": 8,
-   "apri filtri": 3,
    "cambio vista": 5,
+   "apri filtri": 3,
    "filtri": 21,
    "luoghi aperti": 8,
    "mostra altri": 0,
@@ -109,15 +109,15 @@
    "clic cinema (programma della sala)": 0
   },
   "2026-11-08": {
-   "cambio scheda": 7,
+   "cambio scheda": 10,
+   "cambio vista": 7,
    "apri filtri": 2,
-   "cambio vista": 5,
-   "filtri": 11,
-   "luoghi aperti": 5,
+   "filtri": 16,
+   "luoghi aperti": 7,
    "mostra altri": 0,
-   "azzera filtri": 2,
+   "azzera filtri": 3,
    "condivisioni": 2,
-   "schede aperte": 17,
+   "schede aperte": 19,
    "altro": 1,
    "clic info spettacoli": 3,
    "clic biglietti": 2,
@@ -144,21 +144,21 @@
   },
   {
    "giorno": "2026-11-08",
-   "visite": 20
+   "visite": 22
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 402
+   "conteggio": 403
+  },
+  {
+   "origine": "achevents.com/milano",
+   "conteggio": 49
   },
   {
    "origine": "achevents.com",
    "conteggio": 48
-  },
-  {
-   "origine": "achevents.com/milano",
-   "conteggio": 33
   },
   {
    "origine": "teams.public.onecdn.static.microsoft",
@@ -173,7 +173,7 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 85
+   "conteggio": 86
   },
   {
    "path": "/eventi-bologna",
@@ -183,7 +183,13 @@
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 45
+   "conteggio": 46
+  },
+  {
+   "path": "scheda/mostre",
+   "titolo": "Cambio scheda",
+   "conteggio": 12,
+   "tipo": "cambio scheda"
   },
   {
    "path": "milano/scheda/mostre",
@@ -192,9 +198,9 @@
    "tipo": "cambio scheda"
   },
   {
-   "path": "scheda/mostre",
+   "path": "scheda/spettacoli",
    "titolo": "Cambio scheda",
-   "conteggio": 11,
+   "conteggio": 10,
    "tipo": "cambio scheda"
   },
   {
@@ -204,9 +210,15 @@
    "tipo": "cambio scheda"
   },
   {
-   "path": "scheda/spettacoli",
-   "titolo": "Cambio scheda",
+   "path": "spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
    "conteggio": 9,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "scheda/cinema",
+   "titolo": "Cambio scheda",
+   "conteggio": 8,
    "tipo": "cambio scheda"
   },
   {
@@ -216,12 +228,6 @@
    "tipo": "apri filtri"
   },
   {
-   "path": "spettacoli/vista/luoghi",
-   "titolo": "Cambio vista",
-   "conteggio": 8,
-   "tipo": "cambio vista"
-  },
-  {
    "path": "milano/spettacoli/vista/luoghi",
    "titolo": "Cambio vista",
    "conteggio": 7,
@@ -229,12 +235,6 @@
   },
   {
    "path": "milano/scheda/spettacoli",
-   "titolo": "Cambio scheda",
-   "conteggio": 7,
-   "tipo": "cambio scheda"
-  },
-  {
-   "path": "scheda/cinema",
    "titolo": "Cambio scheda",
    "conteggio": 7,
    "tipo": "cambio scheda"
@@ -270,13 +270,25 @@
    "tipo": "cambio vista"
   },
   {
+   "path": "spettacoli/filtro/Genere/Comici",
+   "titolo": "Filtro",
+   "conteggio": 6,
+   "tipo": "filtri"
+  },
+  {
    "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
    "titolo": "Filtro",
    "conteggio": 5,
    "tipo": "filtri"
   },
   {
-   "path": "spettacoli/filtro/Genere/Comici",
+   "path": "spettacoli/luogo/Teatro Duse",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 5,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Rock",
    "titolo": "Filtro",
    "conteggio": 5,
    "tipo": "filtri"
@@ -294,19 +306,19 @@
    "tipo": "filtri"
   },
   {
-   "path": "spettacoli/luogo/Teatro Duse",
-   "titolo": "Apertura programma del luogo",
-   "conteggio": 4,
-   "tipo": "luoghi aperti"
-  },
-  {
    "path": "spettacoli/mostra-altri",
    "titolo": "Mostra altri",
    "conteggio": 4,
    "tipo": "mostra altri"
   },
   {
-   "path": "spettacoli/filtro/Genere/Rock",
+   "path": "spettacoli/azzera-filtri",
+   "titolo": "Azzera filtri",
+   "conteggio": 4,
+   "tipo": "azzera filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Teatro",
    "titolo": "Filtro",
    "conteggio": 4,
    "tipo": "filtri"
@@ -337,18 +349,6 @@
   },
   {
    "path": "spettacoli/filtro/Genere/Pop e altra musica",
-   "titolo": "Filtro",
-   "conteggio": 3,
-   "tipo": "filtri"
-  },
-  {
-   "path": "spettacoli/azzera-filtri",
-   "titolo": "Azzera filtri",
-   "conteggio": 3,
-   "tipo": "azzera filtri"
-  },
-  {
-   "path": "spettacoli/filtro/Genere/Teatro",
    "titolo": "Filtro",
    "conteggio": 3,
    "tipo": "filtri"
@@ -396,6 +396,12 @@
    "tipo": "condivisioni"
   },
   {
+   "path": "cinema/filtro/Giorno e orario/g:2026-11-08",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
    "path": "milano/mostre/filtro/Categoria/Pittura",
    "titolo": "Filtro",
    "conteggio": 2,
@@ -406,6 +412,12 @@
    "titolo": "Apertura scheda",
    "conteggio": 2,
    "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Classica",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
   },
   {
    "path": "spettacoli/filtro/Date/weekend",
@@ -424,6 +436,30 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "cinema/luogo/Cinema Modernissimo",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "cinema/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 1,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "cinema/dettaglio/Wild Horse Nine",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Lazin' on a sunny afternoon",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
   },
   {
    "path": "guide/vai-dinners",
@@ -852,12 +888,6 @@
    "tipo": "filtri"
   },
   {
-   "path": "cinema/filtro/Giorno e orario/g:2026-11-08",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
    "path": "cinema/filtro/Giorno e orario/g:2026-11-07",
    "titolo": "Filtro",
    "conteggio": 1,
@@ -976,12 +1006,6 @@
    "titolo": "Apertura scheda",
    "conteggio": 1,
    "tipo": "schede aperte"
-  },
-  {
-   "path": "spettacoli/filtro/Genere/Classica",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
   },
   {
    "path": "spettacoli/filtro/Date/7g",
