@@ -1,15 +1,15 @@
 {
- "generato": "2026-11-07T23:33:56+00:00",
+ "generato": "2026-11-08T00:06:59+00:00",
  "dal": "2026-11-04",
- "al": "2026-11-07",
+ "al": "2026-11-08",
  "visite_totali": 158,
- "totale_goatcounter": 419,
- "eventi_totali": 261,
+ "totale_goatcounter": 425,
+ "eventi_totali": 267,
  "eventi_per_tipo": {
-  "filtri": 91,
-  "cambio scheda": 49,
+  "filtri": 95,
+  "cambio scheda": 50,
   "schede aperte": 31,
-  "cambio vista": 25,
+  "cambio vista": 26,
   "luoghi aperti": 22,
   "apri filtri": 15,
   "clic biglietti": 8,
@@ -24,12 +24,12 @@
   {
    "settimana": 1,
    "dal": "2026-11-04",
-   "al": "2026-11-07",
+   "al": "2026-11-08",
    "visite": 158,
-   "cambio scheda": 49,
+   "cambio scheda": 50,
    "apri filtri": 15,
-   "cambio vista": 25,
-   "filtri": 91,
+   "cambio vista": 26,
+   "filtri": 95,
    "luoghi aperti": 22,
    "mostra altri": 4,
    "azzera filtri": 5,
@@ -103,10 +103,10 @@
    "clic cinema (programma della sala)": 0
   },
   "2026-11-08": {
-   "cambio scheda": 2,
+   "cambio scheda": 3,
    "apri filtri": 0,
-   "cambio vista": 1,
-   "filtri": 0,
+   "cambio vista": 2,
+   "filtri": 4,
    "luoghi aperti": 4,
    "mostra altri": 0,
    "azzera filtri": 1,
@@ -147,7 +147,7 @@
   },
   {
    "origine": "achevents.com",
-   "conteggio": 35
+   "conteggio": 41
   },
   {
    "origine": "achevents.com/milano",
@@ -179,6 +179,12 @@
    "conteggio": 37
   },
   {
+   "path": "milano/scheda/mostre",
+   "titolo": "Cambio scheda",
+   "conteggio": 10,
+   "tipo": "cambio scheda"
+  },
+  {
    "path": "scheda/mostre",
    "titolo": "Cambio scheda",
    "conteggio": 10,
@@ -186,12 +192,6 @@
   },
   {
    "path": "milano/scheda/cinema",
-   "titolo": "Cambio scheda",
-   "conteggio": 9,
-   "tipo": "cambio scheda"
-  },
-  {
-   "path": "milano/scheda/mostre",
    "titolo": "Cambio scheda",
    "conteggio": 9,
    "tipo": "cambio scheda"
@@ -263,7 +263,19 @@
    "tipo": "apri filtri"
   },
   {
+   "path": "milano/spettacoli/filtro/Date/oggi",
+   "titolo": "Filtro",
+   "conteggio": 4,
+   "tipo": "filtri"
+  },
+  {
    "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
+   "titolo": "Filtro",
+   "conteggio": 4,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Comici",
    "titolo": "Filtro",
    "conteggio": 4,
    "tipo": "filtri"
@@ -287,19 +299,13 @@
    "tipo": "filtri"
   },
   {
-   "path": "milano/spettacoli/filtro/Date/oggi",
-   "titolo": "Filtro",
-   "conteggio": 3,
-   "tipo": "filtri"
-  },
-  {
    "path": "milano/spettacoli/filtro/Genere/Jazz",
    "titolo": "Filtro",
    "conteggio": 3,
    "tipo": "filtri"
   },
   {
-   "path": "milano/spettacoli/filtro/Genere/Comici",
+   "path": "milano/spettacoli/filtro/Genere/Classica",
    "titolo": "Filtro",
    "conteggio": 3,
    "tipo": "filtri"
@@ -353,6 +359,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "milano/spettacoli/filtro/Genere/Teatro",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
    "path": "condividi/apri",
    "titolo": "Condivisione",
    "conteggio": 2,
@@ -360,12 +372,6 @@
   },
   {
    "path": "milano/mostre/filtro/Categoria/Pittura",
-   "titolo": "Filtro",
-   "conteggio": 2,
-   "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Genere/Classica",
    "titolo": "Filtro",
    "conteggio": 2,
    "tipo": "filtri"
@@ -386,6 +392,12 @@
    "path": "mostre/vista/luoghi",
    "titolo": "Cambio vista",
    "conteggio": 2,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/mostre/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 1,
    "tipo": "cambio vista"
   },
   {
@@ -588,12 +600,6 @@
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Serate e club",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Genere/Teatro",
    "titolo": "Filtro",
    "conteggio": 1,
    "tipo": "filtri"
