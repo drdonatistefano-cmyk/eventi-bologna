@@ -3,6 +3,13 @@ on:
   schedule:
     - cron: "7,22,37,52 * * * *"   # ogni quarto d ora: il cruscotto delle visite legge dati/effettivi.json
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/statistiche.py"
+      - "scripts/effettivi.py"
+      - "scripts/visite_guide.py"
+      - ".github/workflows/statistiche.yml"
 permissions:
   contents: write
 jobs:
