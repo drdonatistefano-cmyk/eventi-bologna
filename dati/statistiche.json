@@ -1,16 +1,16 @@
 {
- "generato": "2026-11-08T22:11:35+00:00",
+ "generato": "2026-11-08T22:51:31+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-08",
- "visite_totali": 180,
- "totale_goatcounter": 504,
- "eventi_totali": 324,
+ "visite_totali": 182,
+ "totale_goatcounter": 511,
+ "eventi_totali": 329,
  "eventi_per_tipo": {
   "filtri": 107,
-  "cambio scheda": 57,
+  "cambio scheda": 59,
   "schede aperte": 47,
-  "cambio vista": 31,
-  "luoghi aperti": 25,
+  "cambio vista": 32,
+  "luoghi aperti": 26,
   "apri filtri": 17,
   "clic biglietti": 10,
   "clic info spettacoli": 8,
@@ -18,7 +18,7 @@
   "clic mostre (scheda o sito)": 5,
   "mostra altri": 4,
   "condivisioni": 4,
-  "altro": 1,
+  "altro": 2,
   "clic cinema (programma della sala)": 1
  },
  "settimane": [
@@ -26,17 +26,17 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-08",
-   "visite": 180,
-   "cambio scheda": 57,
-   "cambio vista": 31,
+   "visite": 182,
+   "cambio scheda": 59,
+   "cambio vista": 32,
    "apri filtri": 17,
    "filtri": 107,
-   "luoghi aperti": 25,
+   "luoghi aperti": 26,
    "mostra altri": 4,
    "azzera filtri": 7,
+   "altro": 2,
    "condivisioni": 4,
    "schede aperte": 47,
-   "altro": 1,
    "clic info spettacoli": 8,
    "clic biglietti": 10,
    "clic mostre (scheda o sito)": 5,
@@ -52,9 +52,9 @@
    "luoghi aperti": 5,
    "mostra altri": 2,
    "azzera filtri": 1,
+   "altro": 0,
    "condivisioni": 0,
    "schede aperte": 0,
-   "altro": 0,
    "clic info spettacoli": 3,
    "clic biglietti": 4,
    "clic mostre (scheda o sito)": 0,
@@ -68,9 +68,9 @@
    "luoghi aperti": 4,
    "mostra altri": 1,
    "azzera filtri": 1,
+   "altro": 0,
    "condivisioni": 0,
    "schede aperte": 3,
-   "altro": 0,
    "clic info spettacoli": 0,
    "clic biglietti": 1,
    "clic mostre (scheda o sito)": 0,
@@ -84,9 +84,9 @@
    "luoghi aperti": 1,
    "mostra altri": 1,
    "azzera filtri": 0,
+   "altro": 0,
    "condivisioni": 1,
    "schede aperte": 14,
-   "altro": 0,
    "clic info spettacoli": 2,
    "clic biglietti": 2,
    "clic mostre (scheda o sito)": 3,
@@ -100,25 +100,25 @@
    "luoghi aperti": 8,
    "mostra altri": 0,
    "azzera filtri": 2,
+   "altro": 0,
    "condivisioni": 1,
    "schede aperte": 11,
-   "altro": 0,
    "clic info spettacoli": 0,
    "clic biglietti": 1,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
   },
   "2026-11-08": {
-   "cambio scheda": 10,
-   "cambio vista": 7,
+   "cambio scheda": 12,
+   "cambio vista": 8,
    "apri filtri": 2,
    "filtri": 16,
-   "luoghi aperti": 7,
+   "luoghi aperti": 8,
    "mostra altri": 0,
    "azzera filtri": 3,
+   "altro": 2,
    "condivisioni": 2,
    "schede aperte": 19,
-   "altro": 1,
    "clic info spettacoli": 3,
    "clic biglietti": 2,
    "clic mostre (scheda o sito)": 2,
@@ -144,21 +144,21 @@
   },
   {
    "giorno": "2026-11-08",
-   "visite": 22
+   "visite": 24
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 403
+   "conteggio": 405
   },
   {
    "origine": "achevents.com/milano",
-   "conteggio": 49
+   "conteggio": 53
   },
   {
    "origine": "achevents.com",
-   "conteggio": 48
+   "conteggio": 49
   },
   {
    "origine": "teams.public.onecdn.static.microsoft",
@@ -173,7 +173,7 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 86
+   "conteggio": 87
   },
   {
    "path": "/eventi-bologna",
@@ -183,12 +183,12 @@
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 46
+   "conteggio": 47
   },
   {
    "path": "scheda/mostre",
    "titolo": "Cambio scheda",
-   "conteggio": 12,
+   "conteggio": 13,
    "tipo": "cambio scheda"
   },
   {
@@ -200,20 +200,20 @@
   {
    "path": "scheda/spettacoli",
    "titolo": "Cambio scheda",
-   "conteggio": 10,
+   "conteggio": 11,
    "tipo": "cambio scheda"
+  },
+  {
+   "path": "spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 10,
+   "tipo": "cambio vista"
   },
   {
    "path": "milano/scheda/cinema",
    "titolo": "Cambio scheda",
    "conteggio": 9,
    "tipo": "cambio scheda"
-  },
-  {
-   "path": "spettacoli/vista/luoghi",
-   "titolo": "Cambio vista",
-   "conteggio": 9,
-   "tipo": "cambio vista"
   },
   {
    "path": "scheda/cinema",
@@ -354,6 +354,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "guide/vai-dinners",
+   "titolo": "Vai a Ach's Dinners Guide",
+   "conteggio": 2,
+   "tipo": "altro"
+  },
+  {
    "path": "milano/spettacoli/vista/elenco",
    "titolo": "Cambio vista",
    "conteggio": 2,
@@ -438,6 +444,12 @@
    "tipo": "cambio vista"
   },
   {
+   "path": "spettacoli/luogo/Cinema Perla",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
    "path": "cinema/luogo/Cinema Modernissimo",
    "titolo": "Apertura programma del luogo",
    "conteggio": 1,
@@ -460,12 +472,6 @@
    "titolo": "Apertura scheda",
    "conteggio": 1,
    "tipo": "schede aperte"
-  },
-  {
-   "path": "guide/vai-dinners",
-   "titolo": "Vai a Ach's Dinners Guide",
-   "conteggio": 1,
-   "tipo": "altro"
   },
   {
    "path": "milano/spettacoli/clic-info/Sergio Cammariere",
