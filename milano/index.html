@@ -348,6 +348,12 @@ main{min-width:0;padding-bottom:90px}
 .card.mini .act.tkt svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 @media(hover:hover){.card.mini .act.tkt:hover{filter:brightness(1.08);transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.14),0 6px 14px color-mix(in srgb,var(--terra) 34%,transparent)}}
 .card.mini .act.tkt:active{transform:translateY(0);filter:brightness(.96)}
+/* stesso pulsante, più grande, nella scheda aperta */
+.act.primary.tkt{border:0;border-radius:999px;padding:0 18px 0 14px;gap:7px;font-weight:700;color:#fff;
+ background:linear-gradient(180deg,color-mix(in srgb,var(--terra) 88%,#fff),var(--terra));box-shadow:0 1px 2px rgba(0,0,0,.12),0 3px 8px color-mix(in srgb,var(--terra) 28%,transparent);transition:transform .12s,box-shadow .12s,filter .12s}
+.act.primary.tkt svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media(hover:hover){.act.primary.tkt:hover{filter:brightness(1.08);transform:translateY(-1px)}}
+.srow .act.primary.tkt{padding:0 12px 0 9px;gap:5px}.srow .act.primary.tkt svg{width:15px;height:15px}
 .mfoot:empty{display:none}
 .card.mini{padding-right:34px}
 .mfoot .pill{margin:0}
@@ -951,7 +957,7 @@ function card(e){
  ${e.descrizione?`<p class="desc">${esc(e.descrizione)}</p>`:""}
  ${dispPill(e)?`<div class="meta">${dispPill(e)}</div>`:""}
  <div class="actions">
-  ${/^https:/.test(e.biglietti||"")?`<a class="act primary" href="${esc(e.biglietti)}" target="_blank" rel="noopener">🎟 Biglietti</a>`:""}
+  ${/^https:/.test(e.biglietti||"")?`<a class="act primary tkt" href="${esc(e.biglietti)}" target="_blank" rel="noopener">${TKT}<span>Biglietti</span></a>`:""}
   ${/^https:/.test(e.fonte||"")&&e.fonte!==e.biglietti?`<a class="act" href="${esc(e.fonte)}" target="_blank" rel="noopener">Info</a>`:""}
  </div></article>`}
 
@@ -1014,7 +1020,7 @@ function cardC(title,rows){
  const vo=rows.some(r=>r._vo);
  const byT=new Map();rows.forEach(r=>{if(!byT.has(r.genere))byT.set(r.genere,0);byT.set(r.genere,byT.get(r.genere)+1)});
  const g=GLAB[[...byT.entries()].sort((a,b)=>b[1]-a[1])[0][0]]||{c:"--mute",l:"Cinema",em:"🎬"};
- const srow=r=>{const gg=GLAB[r.genere]||g;return `<div class="srow" style="--g:var(${gg.c})"><button class="sn where" data-venue="${esc(r.luogo)}" title="Tutti i film di ${esc(r.luogo)}"><b class="wv">${esc(r.luogo)}</b><small>${esc(r._c+(r._c!==CITY.capo&&ZLAB[r._z]?" · "+ZLAB[r._z]:""))}${r._ver?" · "+esc(r._ver):""}</small></button><span class="sacts">${/^https:/.test(r.biglietti||"")?`<a class="act primary" href="${esc(r.biglietti)}" target="_blank" rel="noopener" title="${r._bfilm?"Acquista i biglietti di questo film":"Biglietteria online della sala"}">🎟 Biglietti</a>`:""}${/^https:/.test(r.sito_luogo||r.fonte||"")&&(r.sito_luogo||r.fonte)!==r.biglietti?`<a class="act" href="${esc(r.sito_luogo||r.fonte)}" target="_blank" rel="noopener">Programma</a>`:""}</span>${cTimes(r)}</div>`};
+ const srow=r=>{const gg=GLAB[r.genere]||g;return `<div class="srow" style="--g:var(${gg.c})"><button class="sn where" data-venue="${esc(r.luogo)}" title="Tutti i film di ${esc(r.luogo)}"><b class="wv">${esc(r.luogo)}</b><small>${esc(r._c+(r._c!==CITY.capo&&ZLAB[r._z]?" · "+ZLAB[r._z]:""))}${r._ver?" · "+esc(r._ver):""}</small></button><span class="sacts">${/^https:/.test(r.biglietti||"")?`<a class="act primary tkt" href="${esc(r.biglietti)}" target="_blank" rel="noopener" title="${r._bfilm?"Acquista i biglietti di questo film":"Biglietteria online della sala"}">${TKT}<span>Biglietti</span></a>`:""}${/^https:/.test(r.sito_luogo||r.fonte||"")&&(r.sito_luogo||r.fonte)!==r.biglietti?`<a class="act" href="${esc(r.sito_luogo||r.fonte)}" target="_blank" rel="noopener">Programma</a>`:""}</span>${cTimes(r)}</div>`};
  return `<article class="card cine" style="--g:var(${g.c})">
  <div class="top"><span class="gtag">🎬 ${rows.length===1?"1 sala":rows.length+" sale"}</span>${vo?'<span class="vob">V.O.</span>':""}</div>
  <h3 class="title">${esc(title)}</h3>${fMeta(title,true)}
