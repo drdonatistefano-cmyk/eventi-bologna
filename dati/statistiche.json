@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-08T22:51:31+00:00",
+ "generato": "2026-11-08T23:21:17+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-08",
  "visite_totali": 182,
@@ -123,6 +123,22 @@
    "clic biglietti": 2,
    "clic mostre (scheda o sito)": 2,
    "clic cinema (programma della sala)": 0
+  },
+  "2026-11-09": {
+   "cambio scheda": 0,
+   "cambio vista": 0,
+   "apri filtri": 0,
+   "filtri": 0,
+   "luoghi aperti": 0,
+   "mostra altri": 0,
+   "azzera filtri": 0,
+   "altro": 0,
+   "condivisioni": 0,
+   "schede aperte": 0,
+   "clic info spettacoli": 0,
+   "clic biglietti": 0,
+   "clic mostre (scheda o sito)": 0,
+   "clic cinema (programma della sala)": 0
   }
  },
  "giorni": [
@@ -145,6 +161,10 @@
   {
    "giorno": "2026-11-08",
    "visite": 24
+  },
+  {
+   "giorno": "2026-11-09",
+   "visite": 0
   }
  ],
  "provenienze": [
