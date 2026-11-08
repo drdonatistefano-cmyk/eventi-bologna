@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var m=document.cookie.match(/(?:^|; )citta=(bo|mi)/),q=/[?&]citta=(bo|mi)/.exec(location.search),qui=/^\/milano(\/|$)/.test(location.pathname)?"mi":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||m[1]!=="mi"||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace("/milano/")}catch(_){}})();</script>
+<script>/* anticipo: chiede subito versioni.js (senza bloccare la pagina) e fa partire i file dei dati mentre arriva il resto; più in basso la pagina li usa dalla memoria */(function(){try{var s=document.createElement("script");s.async=true;s.src="versioni.js?v="+Math.floor(Date.now()/6e5);s.onload=function(){var V=window.ACH_VERSIONI||{};["eventi","serate","mostre","cinema"].forEach(function(f){if(V[f]){var l=document.createElement("link");l.rel="preload";l.as="script";l.href=f+".js?h="+V[f];document.head.appendChild(l)}})};document.head.appendChild(s)}catch(e){}})();</script>
 <title>Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna</title>
 <meta name="description" content="Ach&#39;s Events Guide: concerti, teatro, mostre e cinema a Bologna e nella Città metropolitana, con date, orari, luoghi e link ai biglietti.">
 <meta property="og:type" content="website">
@@ -164,22 +165,25 @@ main{max-width:none}
 .qreset{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:34px;padding:0 14px;border-radius:999px;border:0;background:var(--terra);color:var(--on);font:inherit;font-size:13.5px;font-weight:700;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.15)}
 .qreset i{font-style:normal;font-size:12px}
 @media(hover:hover){.qreset:hover{filter:brightness(1.1)}}
-@media(max-width:759px){.qreset{width:100%;height:42px;font-size:15px}}
+
 @media(min-width:760px){.qreset{position:absolute;top:7px;right:10px;height:30px;font-size:13px;z-index:2}}
 .qc:disabled{opacity:.38;cursor:default}
 @media(hover:hover){.qc:not(:disabled):not(.on):hover{border-color:color-mix(in srgb,var(--g,var(--terra)) 50%,var(--line))}}
 @media(max-width:759px){
- .qbar{gap:12px;padding:12px 12px 13px;margin-top:2px}
- .qg{grid-template-columns:1fr;gap:7px}
- .qg+.qg{padding-top:11px}
- .qh{flex-direction:row;align-items:baseline;justify-content:space-between;min-height:0}
- .qchips{display:grid;grid-template-columns:repeat(var(--cols,3),minmax(0,1fr));gap:6px}
- .qc{height:50px;padding:4px 6px;border-radius:13px;font-size:14px;flex-direction:column;gap:1px;line-height:1.15}
- .qc .t{max-width:100%}
- .qc .em{margin-right:3px}
+ /* telefono: ogni gruppo su una sola riga compatta, etichetta a sinistra, pulsanti che scorrono di lato */
+ .qbar{gap:0;padding:6px 0 6px 12px;margin-top:2px;overflow:hidden}
+ .qg{grid-template-columns:52px minmax(0,1fr);align-items:center;gap:6px;padding:5px 0}
+ .qg+.qg{padding-top:5px;border-top:1px dashed var(--line)}
+ .qh{flex-direction:column;align-items:flex-start;justify-content:center;min-height:0;gap:0}
+ .qlab{font-size:10px;letter-spacing:.05em}.qclr{font-size:11px;padding:0}
+ .qchips{display:flex;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;gap:6px;padding-right:22px;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent)}
+ .qchips::-webkit-scrollbar{display:none}
+ .qc{flex:none;height:34px;padding:0 11px;border-radius:999px;font-size:14px;flex-direction:row;gap:5px;line-height:1}
+ .qc .t{max-width:none;white-space:nowrap}
+ .qc .em{margin-right:1px}
  .qc small{font-size:11.5px}
  .qc .lg{display:none}
- .qg[style*="--cols:4"] .qc{padding:4px 2px;font-size:13.5px}}
+ .qreset{width:auto;height:34px;font-size:14px;margin:6px 12px 2px 0}}
 @media(min-width:760px){.qc .sm{display:none}}
 @media(min-width:760px){
  .qwrap{position:sticky;top:var(--barh);z-index:19;padding-top:0;padding-bottom:8px;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px)}
@@ -203,12 +207,7 @@ main{max-width:none}
  .qchips{display:flex;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent);padding-right:22px}
  .qchips::-webkit-scrollbar{display:none}
  .qc{flex:none}}
-/* telefono: la riga «Luogo» scorre di lato invece di occupare tre righe */
-@media(max-width:759px){
- .qg.qscroll .qchips{display:flex;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -12px;padding:0 12px}
- .qg.qscroll .qchips::-webkit-scrollbar{display:none}
- .qg.qscroll .qc{flex:none;height:40px;flex-direction:row;padding:0 12px;border-radius:999px;gap:5px}
- .qg.qscroll .qc .lg{display:inline}.qg.qscroll .qc .sm{display:none}}
+
 .srow .tday{display:flex;flex-wrap:wrap;align-items:center;gap:5px;grid-column:1/-1}
 .srow .tday b{font-size:12px;font-weight:700;color:var(--mute);min-width:44px;text-transform:capitalize}
 .srow .prev{font-size:13px;color:var(--mute);font-style:italic}
@@ -693,7 +692,7 @@ const D=s=>new Date(s+"T12:00:00");
 const today=iso(new Date());
 const addDays=(s,n)=>{const d=D(s);d.setDate(d.getDate()+n);return iso(d)};
 const in7=addDays(today,6);
-const _DF=new Map();const fmt=(s,o)=>{const k=o?JSON.stringify(o):"";let f=_DF.get(k);if(!f){f=new Intl.DateTimeFormat("it-IT",o);_DF.set(k,f)}return f.format(D(s))};/* formattatori riusati: molto più veloci di toLocaleDateString ripetuto */
+const _DF=new Map(),_DR=new Map(),_DK=new WeakMap();const fmt=(s,o)=>{let k=o?_DK.get(o):"";if(k===undefined){k=JSON.stringify(o);_DK.set(o,k)}const rk=s+"|"+k;let r=_DR.get(rk);if(r!==undefined)return r;let f=_DF.get(k);if(!f){f=new Intl.DateTimeFormat("it-IT",o);_DF.set(k,f)}r=f.format(D(s));_DR.set(rk,r);return r};/* formattatori riusati: molto più veloci di toLocaleDateString ripetuto */
 const fri=(()=>{const d=D(today),w=d.getDay();d.setDate(d.getDate()+(w===0?-2:w===6?-1:5-w));return iso(d)})();
 const sun=addDays(fri,2),wkStart=fri<today?today:fri;
 const wkLabel=`${D(wkStart).getDate()}–${fmt(sun,{day:"numeric",month:"short"})}`;
@@ -883,7 +882,10 @@ function renderRail(){
   const yc=countBy("y",e=>e._lt),LT=MODE==="m"?LT_M:LT_S;
   const LTP=new Set(ALL.map(e=>e._lt));h+=grp("Luogo",3,LT.filter(([k])=>LTP.has(k)||st.y.has(k)).map(([k])=>qc("y",k,k,yc.get(k)||0,st.y.has(k),"--terra",ltIcon(k))).join(""),st.y.size?"y":"","qscroll")}
  if(active())h+=`<button class="qreset" data-reset aria-label="Azzera tutti i filtri"><i>✕</i> Azzera filtri</button>`;
- $("#qbar").innerHTML=h;
+ const qb=$("#qbar"),sl=[...qb.querySelectorAll(".qchips")].map(x=>x.scrollLeft);
+ qb.innerHTML=h;
+ /* righe che scorrono di lato: restano dov'erano dopo un tocco, e il pulsante scelto resta in vista */
+ qb.querySelectorAll(".qchips").forEach((x,i)=>{if(sl[i])x.scrollLeft=sl[i];const on=x.querySelector(".qc.on");if(on&&x.scrollWidth>x.clientWidth){const l=on.offsetLeft-x.offsetLeft,r=l+on.offsetWidth;if(l<x.scrollLeft||r>x.scrollLeft+x.clientWidth-24)x.scrollLeft=Math.max(0,l-40)}});
  const ns=nSel();$("#fbadge").textContent=ns;$("#fbadge").hidden=!ns;$("#fbtn").classList.toggle("active",!!ns);
  $$(".seg button").forEach(b=>b.classList.toggle("on",b.dataset.view===st.view))}
 let PILLS=[];
