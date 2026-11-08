@@ -1,22 +1,22 @@
 {
- "generato": "2026-11-08T09:10:28+00:00",
+ "generato": "2026-11-08T10:00:07+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-08",
- "visite_totali": 165,
- "totale_goatcounter": 432,
- "eventi_totali": 267,
+ "visite_totali": 168,
+ "totale_goatcounter": 451,
+ "eventi_totali": 283,
  "eventi_per_tipo": {
-  "filtri": 95,
-  "cambio scheda": 50,
-  "schede aperte": 31,
-  "cambio vista": 26,
+  "filtri": 97,
+  "cambio scheda": 51,
+  "schede aperte": 39,
+  "cambio vista": 27,
   "luoghi aperti": 22,
   "apri filtri": 15,
   "clic biglietti": 8,
-  "azzera filtri": 5,
-  "clic info spettacoli": 5,
+  "azzera filtri": 6,
+  "clic info spettacoli": 6,
+  "clic mostre (scheda o sito)": 5,
   "mostra altri": 4,
-  "clic mostre (scheda o sito)": 3,
   "condivisioni": 2,
   "clic cinema (programma della sala)": 1
  },
@@ -25,19 +25,19 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-08",
-   "visite": 165,
-   "cambio scheda": 50,
+   "visite": 168,
+   "cambio scheda": 51,
    "apri filtri": 15,
-   "cambio vista": 26,
-   "filtri": 95,
+   "cambio vista": 27,
+   "filtri": 97,
    "luoghi aperti": 22,
    "mostra altri": 4,
-   "azzera filtri": 5,
+   "azzera filtri": 6,
    "condivisioni": 2,
-   "schede aperte": 31,
+   "clic mostre (scheda o sito)": 5,
+   "schede aperte": 39,
+   "clic info spettacoli": 6,
    "clic biglietti": 8,
-   "clic info spettacoli": 5,
-   "clic mostre (scheda o sito)": 3,
    "clic cinema (programma della sala)": 1
   }
  ],
@@ -51,10 +51,10 @@
    "mostra altri": 2,
    "azzera filtri": 1,
    "condivisioni": 0,
-   "schede aperte": 0,
-   "clic biglietti": 4,
-   "clic info spettacoli": 3,
    "clic mostre (scheda o sito)": 0,
+   "schede aperte": 0,
+   "clic info spettacoli": 3,
+   "clic biglietti": 4,
    "clic cinema (programma della sala)": 0
   },
   "2026-11-05": {
@@ -66,10 +66,10 @@
    "mostra altri": 1,
    "azzera filtri": 1,
    "condivisioni": 0,
-   "schede aperte": 3,
-   "clic biglietti": 1,
-   "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
+   "schede aperte": 3,
+   "clic info spettacoli": 0,
+   "clic biglietti": 1,
    "clic cinema (programma della sala)": 0
   },
   "2026-11-06": {
@@ -81,10 +81,10 @@
    "mostra altri": 1,
    "azzera filtri": 0,
    "condivisioni": 1,
-   "schede aperte": 14,
-   "clic biglietti": 2,
-   "clic info spettacoli": 2,
    "clic mostre (scheda o sito)": 3,
+   "schede aperte": 14,
+   "clic info spettacoli": 2,
+   "clic biglietti": 2,
    "clic cinema (programma della sala)": 1
   },
   "2026-11-07": {
@@ -96,25 +96,25 @@
    "mostra altri": 0,
    "azzera filtri": 2,
    "condivisioni": 1,
-   "schede aperte": 11,
-   "clic biglietti": 1,
-   "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
+   "schede aperte": 11,
+   "clic info spettacoli": 0,
+   "clic biglietti": 1,
    "clic cinema (programma della sala)": 0
   },
   "2026-11-08": {
-   "cambio scheda": 3,
+   "cambio scheda": 4,
    "apri filtri": 0,
-   "cambio vista": 2,
-   "filtri": 4,
+   "cambio vista": 3,
+   "filtri": 6,
    "luoghi aperti": 4,
    "mostra altri": 0,
-   "azzera filtri": 1,
+   "azzera filtri": 2,
    "condivisioni": 0,
-   "schede aperte": 3,
+   "clic mostre (scheda o sito)": 2,
+   "schede aperte": 11,
+   "clic info spettacoli": 1,
    "clic biglietti": 0,
-   "clic info spettacoli": 0,
-   "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
   }
  },
@@ -137,13 +137,13 @@
   },
   {
    "giorno": "2026-11-08",
-   "visite": 7
+   "visite": 10
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 355
+   "conteggio": 374
   },
   {
    "origine": "achevents.com",
@@ -166,7 +166,7 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 78
+   "conteggio": 81
   },
   {
    "path": "/eventi-bologna",
@@ -181,7 +181,7 @@
   {
    "path": "milano/scheda/mostre",
    "titolo": "Cambio scheda",
-   "conteggio": 10,
+   "conteggio": 11,
    "tipo": "cambio scheda"
   },
   {
@@ -221,6 +221,12 @@
    "tipo": "cambio scheda"
   },
   {
+   "path": "milano/spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 6,
+   "tipo": "cambio vista"
+  },
+  {
    "path": "milano/spettacoli/filtro/Date/weekend",
    "titolo": "Filtro",
    "conteggio": 6,
@@ -239,10 +245,10 @@
    "tipo": "cambio vista"
   },
   {
-   "path": "milano/spettacoli/vista/luoghi",
-   "titolo": "Cambio vista",
+   "path": "milano/spettacoli/filtro/Date/oggi",
+   "titolo": "Filtro",
    "conteggio": 5,
-   "tipo": "cambio vista"
+   "tipo": "filtri"
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Rock",
@@ -261,12 +267,6 @@
    "titolo": "Apertura filtri",
    "conteggio": 4,
    "tipo": "apri filtri"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Date/oggi",
-   "titolo": "Filtro",
-   "conteggio": 4,
-   "tipo": "filtri"
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
@@ -297,6 +297,12 @@
    "titolo": "Filtro",
    "conteggio": 4,
    "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/azzera-filtri",
+   "titolo": "Azzera filtri",
+   "conteggio": 3,
+   "tipo": "azzera filtri"
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Jazz",
@@ -347,13 +353,13 @@
    "tipo": "filtri"
   },
   {
-   "path": "milano/spettacoli/azzera-filtri",
-   "titolo": "Azzera filtri",
+   "path": "milano/spettacoli/filtro/Tipo di luogo/Teatri",
+   "titolo": "Filtro",
    "conteggio": 2,
-   "tipo": "azzera filtri"
+   "tipo": "filtri"
   },
   {
-   "path": "milano/spettacoli/filtro/Tipo di luogo/Teatri",
+   "path": "milano/spettacoli/filtro/Genere/Serate e club",
    "titolo": "Filtro",
    "conteggio": 2,
    "tipo": "filtri"
@@ -393,6 +399,72 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/mostre/clic-sito/Matisse. Il mondo in una stanza",
+   "titolo": "Clic «Sito»",
+   "conteggio": 1,
+   "tipo": "clic mostre (scheda o sito)"
+  },
+  {
+   "path": "milano/mostre/clic-scheda-della-mostra/Matisse. Il mondo in una stanza",
+   "titolo": "Clic «Scheda della mostra»",
+   "conteggio": 1,
+   "tipo": "clic mostre (scheda o sito)"
+  },
+  {
+   "path": "milano/mostre/dettaglio/Matisse. Il mondo in una stanza",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/mostre/dettaglio/Frida Kahlo e la costruzione del mito",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/clic-info/BARDO",
+   "titolo": "Clic «Info»",
+   "conteggio": 1,
+   "tipo": "clic info spettacoli"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/BARDO",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Chiara Kaufman",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Kaidi Tatham",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/le ORRENDE: ASTRONOMY ISSUE 02",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/PERREO XL",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Evolvere pres. BLUME, Nawaz, Formant Value (live), Hagva",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
   },
   {
    "path": "milano/mostre/vista/luoghi",
@@ -594,12 +666,6 @@
   },
   {
    "path": "milano/spettacoli/filtro/Tipo di luogo/Club e locali",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Genere/Serate e club",
    "titolo": "Filtro",
    "conteggio": 1,
    "tipo": "filtri"
