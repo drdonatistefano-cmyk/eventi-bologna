@@ -623,7 +623,8 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
  </div>
 </div></dialog>
 
-<script>/* dati sempre freschi: il numero cambia ogni 10 minuti, così browser e Cloudflare non tengono copie vecchie */(function(){var v=Math.floor(Date.now()/6e5);["eventi","serate","mostre","cinema"].forEach(function(f){document.write('<script src="'+f+'.js?v='+v+'"><\/script>')})})();</script>
+<script>/* 1) versioni.js, piccolissimo e sempre fresco (numero che cambia ogni 10 minuti): contiene le impronte dei file dei dati */document.write('<script src="versioni.js?v='+Math.floor(Date.now()/6e5)+'"><\/script>');</script>
+<script>/* 2) dati con l'impronta (?h=): finché un file non cambia il telefono usa la copia che ha già. Se manca l'impronta, metodo di prima (?v= ogni 10 minuti) */(function(){var V=window.ACH_VERSIONI||{},v=Math.floor(Date.now()/6e5);["eventi","serate","mostre","cinema"].forEach(function(f){document.write('<script src="'+f+'.js?'+(V[f]?'h='+V[f]:'v='+v)+'"><\/script>')})})();</script>
 <script>
 "use strict";
 /* ---------- città: un solo motore per tutte le città ----------

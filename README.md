@@ -19,3 +19,5 @@ Statistiche esportate: il flusso `.github/workflows/statistiche.yml` ogni mattin
 
 Pagina delle statistiche: https://achevents.com/statistiche.html
 Si aggiorna ogni ora con il workflow "Cruscotto statistiche" (scripts/cruscotto.py), che salva stats.json nel ramo `statistiche` senza ripubblicare il sito. Il riepilogo giornaliero in dati/statistiche.* resta del workflow "Statistiche".
+
+Velocità (8/11/2026): la pagina carica prima `versioni.js` (piccolissimo, sempre fresco) con le impronte dei file dei dati, poi `eventi.js`, `serate.js`, `mostre.js`, `cinema.js` con `?h=<impronta>`: finché un file non cambia il telefono usa la copia che ha già (seconda visita da circa 3 s a 0,7 s su 4G lento). `scripts/versioni.py` ricalcola le impronte; lo lanciano i flussi cinema e serate prima di salvare e il flusso «Versioni dei dati» a ogni push dei dati (più un controllo ogni ora). Dopo aver cambiato a mano i dati si può lanciare `python3 scripts/versioni.py` e includere `versioni.js` nel commit. Senza versioni.js la pagina torna al metodo di prima.
