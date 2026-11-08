@@ -1,10 +1,10 @@
 {
- "generato": "2026-11-08T23:21:17+00:00",
+ "generato": "2026-11-08T23:53:44+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-08",
  "visite_totali": 182,
- "totale_goatcounter": 511,
- "eventi_totali": 329,
+ "totale_goatcounter": 512,
+ "eventi_totali": 330,
  "eventi_per_tipo": {
   "filtri": 107,
   "cambio scheda": 59,
@@ -18,7 +18,7 @@
   "clic mostre (scheda o sito)": 5,
   "mostra altri": 4,
   "condivisioni": 4,
-  "altro": 2,
+  "altro": 3,
   "clic cinema (programma della sala)": 1
  },
  "settimane": [
@@ -34,7 +34,7 @@
    "luoghi aperti": 26,
    "mostra altri": 4,
    "azzera filtri": 7,
-   "altro": 2,
+   "altro": 3,
    "condivisioni": 4,
    "schede aperte": 47,
    "clic info spettacoli": 8,
@@ -132,7 +132,7 @@
    "luoghi aperti": 0,
    "mostra altri": 0,
    "azzera filtri": 0,
-   "altro": 0,
+   "altro": 1,
    "condivisioni": 0,
    "schede aperte": 0,
    "clic info spettacoli": 0,
@@ -170,7 +170,7 @@
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 405
+   "conteggio": 406
   },
   {
    "origine": "achevents.com/milano",
@@ -462,6 +462,12 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "guide/vai-places",
+   "titolo": "Vai a Ach's Places Guide",
+   "conteggio": 1,
+   "tipo": "altro"
   },
   {
    "path": "spettacoli/luogo/Cinema Perla",
