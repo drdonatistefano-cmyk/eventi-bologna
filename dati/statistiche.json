@@ -1,23 +1,24 @@
 {
- "generato": "2026-11-08T17:20:50+00:00",
+ "generato": "2026-11-08T17:33:22+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-08",
- "visite_totali": 177,
- "totale_goatcounter": 484,
- "eventi_totali": 307,
+ "visite_totali": 178,
+ "totale_goatcounter": 487,
+ "eventi_totali": 309,
  "eventi_per_tipo": {
   "filtri": 102,
   "cambio scheda": 54,
   "schede aperte": 45,
   "cambio vista": 29,
   "luoghi aperti": 23,
-  "apri filtri": 16,
+  "apri filtri": 17,
   "clic biglietti": 10,
   "clic info spettacoli": 8,
   "azzera filtri": 6,
   "clic mostre (scheda o sito)": 5,
   "mostra altri": 4,
   "condivisioni": 4,
+  "altro": 1,
   "clic cinema (programma della sala)": 1
  },
  "settimane": [
@@ -25,9 +26,9 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-08",
-   "visite": 177,
+   "visite": 178,
    "cambio scheda": 54,
-   "apri filtri": 16,
+   "apri filtri": 17,
    "cambio vista": 29,
    "filtri": 102,
    "luoghi aperti": 23,
@@ -35,6 +36,7 @@
    "azzera filtri": 6,
    "condivisioni": 4,
    "schede aperte": 45,
+   "altro": 1,
    "clic info spettacoli": 8,
    "clic biglietti": 10,
    "clic mostre (scheda o sito)": 5,
@@ -52,6 +54,7 @@
    "azzera filtri": 1,
    "condivisioni": 0,
    "schede aperte": 0,
+   "altro": 0,
    "clic info spettacoli": 3,
    "clic biglietti": 4,
    "clic mostre (scheda o sito)": 0,
@@ -67,6 +70,7 @@
    "azzera filtri": 1,
    "condivisioni": 0,
    "schede aperte": 3,
+   "altro": 0,
    "clic info spettacoli": 0,
    "clic biglietti": 1,
    "clic mostre (scheda o sito)": 0,
@@ -82,6 +86,7 @@
    "azzera filtri": 0,
    "condivisioni": 1,
    "schede aperte": 14,
+   "altro": 0,
    "clic info spettacoli": 2,
    "clic biglietti": 2,
    "clic mostre (scheda o sito)": 3,
@@ -97,6 +102,7 @@
    "azzera filtri": 2,
    "condivisioni": 1,
    "schede aperte": 11,
+   "altro": 0,
    "clic info spettacoli": 0,
    "clic biglietti": 1,
    "clic mostre (scheda o sito)": 0,
@@ -104,7 +110,7 @@
   },
   "2026-11-08": {
    "cambio scheda": 7,
-   "apri filtri": 1,
+   "apri filtri": 2,
    "cambio vista": 5,
    "filtri": 11,
    "luoghi aperti": 5,
@@ -112,6 +118,7 @@
    "azzera filtri": 2,
    "condivisioni": 2,
    "schede aperte": 17,
+   "altro": 1,
    "clic info spettacoli": 3,
    "clic biglietti": 2,
    "clic mostre (scheda o sito)": 2,
@@ -137,13 +144,13 @@
   },
   {
    "giorno": "2026-11-08",
-   "visite": 19
+   "visite": 20
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 399
+   "conteggio": 402
   },
   {
    "origine": "achevents.com",
@@ -166,7 +173,7 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 84
+   "conteggio": 85
   },
   {
    "path": "/eventi-bologna",
@@ -233,6 +240,12 @@
    "tipo": "cambio scheda"
   },
   {
+   "path": "milano/spettacoli/apri-filtri",
+   "titolo": "Apertura filtri",
+   "conteggio": 6,
+   "tipo": "apri filtri"
+  },
+  {
    "path": "milano/spettacoli/filtro/Date/oggi",
    "titolo": "Filtro",
    "conteggio": 6,
@@ -255,12 +268,6 @@
    "titolo": "Cambio vista",
    "conteggio": 6,
    "tipo": "cambio vista"
-  },
-  {
-   "path": "milano/spettacoli/apri-filtri",
-   "titolo": "Apertura filtri",
-   "conteggio": 5,
-   "tipo": "apri filtri"
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
@@ -417,6 +424,12 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "guide/vai-dinners",
+   "titolo": "Vai a Ach's Dinners Guide",
+   "conteggio": 1,
+   "tipo": "altro"
   },
   {
    "path": "milano/spettacoli/clic-info/Sergio Cammariere",
