@@ -1,20 +1,20 @@
 {
- "generato": "2026-11-08T11:20:01+00:00",
+ "generato": "2026-11-08T11:56:49+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-08",
- "visite_totali": 171,
- "totale_goatcounter": 461,
- "eventi_totali": 290,
+ "visite_totali": 172,
+ "totale_goatcounter": 468,
+ "eventi_totali": 296,
  "eventi_per_tipo": {
   "filtri": 97,
   "cambio scheda": 54,
-  "schede aperte": 40,
+  "schede aperte": 44,
   "cambio vista": 29,
   "luoghi aperti": 23,
   "apri filtri": 15,
-  "clic biglietti": 8,
+  "clic biglietti": 9,
+  "clic info spettacoli": 7,
   "azzera filtri": 6,
-  "clic info spettacoli": 6,
   "clic mostre (scheda o sito)": 5,
   "mostra altri": 4,
   "condivisioni": 2,
@@ -25,7 +25,7 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-08",
-   "visite": 171,
+   "visite": 172,
    "cambio scheda": 54,
    "apri filtri": 15,
    "cambio vista": 29,
@@ -34,10 +34,10 @@
    "mostra altri": 4,
    "azzera filtri": 6,
    "condivisioni": 2,
-   "schede aperte": 40,
+   "schede aperte": 44,
+   "clic info spettacoli": 7,
+   "clic biglietti": 9,
    "clic mostre (scheda o sito)": 5,
-   "clic info spettacoli": 6,
-   "clic biglietti": 8,
    "clic cinema (programma della sala)": 1
   }
  ],
@@ -52,9 +52,9 @@
    "azzera filtri": 1,
    "condivisioni": 0,
    "schede aperte": 0,
-   "clic mostre (scheda o sito)": 0,
    "clic info spettacoli": 3,
    "clic biglietti": 4,
+   "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
   },
   "2026-11-05": {
@@ -67,9 +67,9 @@
    "azzera filtri": 1,
    "condivisioni": 0,
    "schede aperte": 3,
-   "clic mostre (scheda o sito)": 0,
    "clic info spettacoli": 0,
    "clic biglietti": 1,
+   "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
   },
   "2026-11-06": {
@@ -82,9 +82,9 @@
    "azzera filtri": 0,
    "condivisioni": 1,
    "schede aperte": 14,
-   "clic mostre (scheda o sito)": 3,
    "clic info spettacoli": 2,
    "clic biglietti": 2,
+   "clic mostre (scheda o sito)": 3,
    "clic cinema (programma della sala)": 1
   },
   "2026-11-07": {
@@ -97,9 +97,9 @@
    "azzera filtri": 2,
    "condivisioni": 1,
    "schede aperte": 11,
-   "clic mostre (scheda o sito)": 0,
    "clic info spettacoli": 0,
    "clic biglietti": 1,
+   "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
   },
   "2026-11-08": {
@@ -111,10 +111,10 @@
    "mostra altri": 0,
    "azzera filtri": 2,
    "condivisioni": 0,
-   "schede aperte": 12,
+   "schede aperte": 16,
+   "clic info spettacoli": 2,
+   "clic biglietti": 1,
    "clic mostre (scheda o sito)": 2,
-   "clic info spettacoli": 1,
-   "clic biglietti": 0,
    "clic cinema (programma della sala)": 0
   }
  },
@@ -137,13 +137,13 @@
   },
   {
    "giorno": "2026-11-08",
-   "visite": 13
+   "visite": 14
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 384
+   "conteggio": 391
   },
   {
    "origine": "achevents.com",
@@ -166,7 +166,7 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 82
+   "conteggio": 83
   },
   {
    "path": "/eventi-bologna",
@@ -395,6 +395,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "milano/spettacoli/dettaglio/Qualcosa è andato storto",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
    "path": "spettacoli/filtro/Date/weekend",
    "titolo": "Filtro",
    "conteggio": 2,
@@ -411,6 +417,36 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/spettacoli/clic-info/Amen",
+   "titolo": "Clic «Info»",
+   "conteggio": 1,
+   "tipo": "clic info spettacoli"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Il canto di Natale – Carlo Colla & Figli",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Stand-up, Elfo!",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Amen",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/clic-biglietti/Qualcosa è andato storto",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 1,
+   "tipo": "clic biglietti"
   },
   {
    "path": "milano/spettacoli/dettaglio/Giorgia Fumo – Out of Office",
@@ -783,12 +819,6 @@
    "titolo": "Filtro",
    "conteggio": 1,
    "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/dettaglio/Qualcosa è andato storto",
-   "titolo": "Apertura scheda",
-   "conteggio": 1,
-   "tipo": "schede aperte"
   },
   {
    "path": "milano/spettacoli/filtro/zona/Milano città",
