@@ -1,16 +1,16 @@
 {
- "generato": "2026-11-08T10:00:07+00:00",
+ "generato": "2026-11-08T10:41:17+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-08",
- "visite_totali": 168,
- "totale_goatcounter": 451,
- "eventi_totali": 283,
+ "visite_totali": 171,
+ "totale_goatcounter": 461,
+ "eventi_totali": 290,
  "eventi_per_tipo": {
   "filtri": 97,
-  "cambio scheda": 51,
-  "schede aperte": 39,
-  "cambio vista": 27,
-  "luoghi aperti": 22,
+  "cambio scheda": 54,
+  "schede aperte": 40,
+  "cambio vista": 29,
+  "luoghi aperti": 23,
   "apri filtri": 15,
   "clic biglietti": 8,
   "azzera filtri": 6,
@@ -25,17 +25,17 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-08",
-   "visite": 168,
-   "cambio scheda": 51,
+   "visite": 171,
+   "cambio scheda": 54,
    "apri filtri": 15,
-   "cambio vista": 27,
+   "cambio vista": 29,
    "filtri": 97,
-   "luoghi aperti": 22,
+   "luoghi aperti": 23,
    "mostra altri": 4,
    "azzera filtri": 6,
    "condivisioni": 2,
+   "schede aperte": 40,
    "clic mostre (scheda o sito)": 5,
-   "schede aperte": 39,
    "clic info spettacoli": 6,
    "clic biglietti": 8,
    "clic cinema (programma della sala)": 1
@@ -51,8 +51,8 @@
    "mostra altri": 2,
    "azzera filtri": 1,
    "condivisioni": 0,
-   "clic mostre (scheda o sito)": 0,
    "schede aperte": 0,
+   "clic mostre (scheda o sito)": 0,
    "clic info spettacoli": 3,
    "clic biglietti": 4,
    "clic cinema (programma della sala)": 0
@@ -66,8 +66,8 @@
    "mostra altri": 1,
    "azzera filtri": 1,
    "condivisioni": 0,
-   "clic mostre (scheda o sito)": 0,
    "schede aperte": 3,
+   "clic mostre (scheda o sito)": 0,
    "clic info spettacoli": 0,
    "clic biglietti": 1,
    "clic cinema (programma della sala)": 0
@@ -81,8 +81,8 @@
    "mostra altri": 1,
    "azzera filtri": 0,
    "condivisioni": 1,
-   "clic mostre (scheda o sito)": 3,
    "schede aperte": 14,
+   "clic mostre (scheda o sito)": 3,
    "clic info spettacoli": 2,
    "clic biglietti": 2,
    "clic cinema (programma della sala)": 1
@@ -96,23 +96,23 @@
    "mostra altri": 0,
    "azzera filtri": 2,
    "condivisioni": 1,
-   "clic mostre (scheda o sito)": 0,
    "schede aperte": 11,
+   "clic mostre (scheda o sito)": 0,
    "clic info spettacoli": 0,
    "clic biglietti": 1,
    "clic cinema (programma della sala)": 0
   },
   "2026-11-08": {
-   "cambio scheda": 4,
+   "cambio scheda": 7,
    "apri filtri": 0,
-   "cambio vista": 3,
+   "cambio vista": 5,
    "filtri": 6,
-   "luoghi aperti": 4,
+   "luoghi aperti": 5,
    "mostra altri": 0,
    "azzera filtri": 2,
    "condivisioni": 0,
+   "schede aperte": 12,
    "clic mostre (scheda o sito)": 2,
-   "schede aperte": 11,
    "clic info spettacoli": 1,
    "clic biglietti": 0,
    "clic cinema (programma della sala)": 0
@@ -137,13 +137,13 @@
   },
   {
    "giorno": "2026-11-08",
-   "visite": 10
+   "visite": 13
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 374
+   "conteggio": 384
   },
   {
    "origine": "achevents.com",
@@ -166,7 +166,7 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 81
+   "conteggio": 82
   },
   {
    "path": "/eventi-bologna",
@@ -176,7 +176,7 @@
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 39
+   "conteggio": 41
   },
   {
    "path": "milano/scheda/mostre",
@@ -187,11 +187,17 @@
   {
    "path": "scheda/mostre",
    "titolo": "Cambio scheda",
-   "conteggio": 10,
+   "conteggio": 11,
    "tipo": "cambio scheda"
   },
   {
    "path": "milano/scheda/cinema",
+   "titolo": "Cambio scheda",
+   "conteggio": 9,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "scheda/spettacoli",
    "titolo": "Cambio scheda",
    "conteggio": 9,
    "tipo": "cambio scheda"
@@ -209,10 +215,10 @@
    "tipo": "cambio vista"
   },
   {
-   "path": "scheda/spettacoli",
-   "titolo": "Cambio scheda",
-   "conteggio": 8,
-   "tipo": "cambio scheda"
+   "path": "milano/spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 7,
+   "tipo": "cambio vista"
   },
   {
    "path": "milano/scheda/spettacoli",
@@ -221,22 +227,16 @@
    "tipo": "cambio scheda"
   },
   {
-   "path": "milano/spettacoli/vista/luoghi",
-   "titolo": "Cambio vista",
-   "conteggio": 6,
-   "tipo": "cambio vista"
+   "path": "scheda/cinema",
+   "titolo": "Cambio scheda",
+   "conteggio": 7,
+   "tipo": "cambio scheda"
   },
   {
    "path": "milano/spettacoli/filtro/Date/weekend",
    "titolo": "Filtro",
    "conteggio": 6,
    "tipo": "filtri"
-  },
-  {
-   "path": "scheda/cinema",
-   "titolo": "Cambio scheda",
-   "conteggio": 6,
-   "tipo": "cambio scheda"
   },
   {
    "path": "spettacoli/vista/elenco",
@@ -341,6 +341,18 @@
    "tipo": "filtri"
   },
   {
+   "path": "milano/spettacoli/vista/elenco",
+   "titolo": "Cambio vista",
+   "conteggio": 2,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/spettacoli/luogo/Teatro Arcimboldi",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 2,
+   "tipo": "luoghi aperti"
+  },
+  {
    "path": "spettacoli/luogo/Estragon",
    "titolo": "Apertura programma del luogo",
    "conteggio": 2,
@@ -399,6 +411,12 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Giorgia Fumo – Out of Office",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
   },
   {
    "path": "milano/mostre/clic-sito/Matisse. Il mondo in una stanza",
@@ -515,12 +533,6 @@
    "tipo": "luoghi aperti"
   },
   {
-   "path": "milano/spettacoli/vista/elenco",
-   "titolo": "Cambio vista",
-   "conteggio": 1,
-   "tipo": "cambio vista"
-  },
-  {
    "path": "milano/spettacoli/dettaglio/Amon Amarth, Soilwork, Orbit Culture",
    "titolo": "Apertura scheda",
    "conteggio": 1,
@@ -528,12 +540,6 @@
   },
   {
    "path": "milano/spettacoli/luogo/Alcatraz",
-   "titolo": "Apertura programma del luogo",
-   "conteggio": 1,
-   "tipo": "luoghi aperti"
-  },
-  {
-   "path": "milano/spettacoli/luogo/Teatro Arcimboldi",
    "titolo": "Apertura programma del luogo",
    "conteggio": 1,
    "tipo": "luoghi aperti"

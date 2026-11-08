@@ -1,23 +1,23 @@
 # Statistiche del sito – dal 2026-11-04 al 2026-11-08
 
-Aggiornate il 2026-11-08 10:00 UTC da GoatCounter (eventibologna).
+Aggiornate il 2026-11-08 10:41 UTC da GoatCounter (eventibologna).
 
-- Visite totali: **168**
-- Interazioni registrate: **283**
+- Visite totali: **171**
+- Interazioni registrate: **290**
 
 ## Per settimana dal lancio
 
 | Sett. | Dal | Al | Visite | Clic biglietti | Clic mostre | Filtri | Ricerche | Condivisioni |
 |---|---|---|---|---|---|---|---|---|
-| 1 | 2026-11-04 | 2026-11-08 | 168 | 8 | 5 | 97 | 0 | 2 |
+| 1 | 2026-11-04 | 2026-11-08 | 171 | 8 | 5 | 97 | 0 | 2 |
 
 ## Interazioni per tipo
 
 - filtri: 97
-- cambio scheda: 51
-- schede aperte: 39
-- cambio vista: 27
-- luoghi aperti: 22
+- cambio scheda: 54
+- schede aperte: 40
+- cambio vista: 29
+- luoghi aperti: 23
 - apri filtri: 15
 - clic biglietti: 8
 - azzera filtri: 6
@@ -29,7 +29,7 @@ Aggiornate il 2026-11-08 10:00 UTC da GoatCounter (eventibologna).
 
 ## Provenienze principali
 
-- (diretto): 374
+- (diretto): 384
 - achevents.com: 41
 - achevents.com/milano: 32
 - teams.public.onecdn.static.microsoft: 3
