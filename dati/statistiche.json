@@ -1,19 +1,19 @@
 {
- "generato": "2026-11-08T12:44:51+00:00",
+ "generato": "2026-11-08T13:35:33+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-08",
- "visite_totali": 173,
- "totale_goatcounter": 473,
- "eventi_totali": 300,
+ "visite_totali": 174,
+ "totale_goatcounter": 481,
+ "eventi_totali": 307,
  "eventi_per_tipo": {
-  "filtri": 98,
+  "filtri": 102,
   "cambio scheda": 54,
-  "schede aperte": 44,
+  "schede aperte": 45,
   "cambio vista": 29,
   "luoghi aperti": 23,
   "apri filtri": 16,
-  "clic biglietti": 9,
-  "clic info spettacoli": 7,
+  "clic biglietti": 10,
+  "clic info spettacoli": 8,
   "azzera filtri": 6,
   "clic mostre (scheda o sito)": 5,
   "mostra altri": 4,
@@ -25,18 +25,18 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-08",
-   "visite": 173,
+   "visite": 174,
    "cambio scheda": 54,
    "apri filtri": 16,
    "cambio vista": 29,
-   "filtri": 98,
+   "filtri": 102,
    "luoghi aperti": 23,
    "mostra altri": 4,
    "azzera filtri": 6,
    "condivisioni": 4,
-   "schede aperte": 44,
-   "clic info spettacoli": 7,
-   "clic biglietti": 9,
+   "schede aperte": 45,
+   "clic info spettacoli": 8,
+   "clic biglietti": 10,
    "clic mostre (scheda o sito)": 5,
    "clic cinema (programma della sala)": 1
   }
@@ -106,14 +106,14 @@
    "cambio scheda": 7,
    "apri filtri": 1,
    "cambio vista": 5,
-   "filtri": 7,
+   "filtri": 11,
    "luoghi aperti": 5,
    "mostra altri": 0,
    "azzera filtri": 2,
    "condivisioni": 2,
-   "schede aperte": 16,
-   "clic info spettacoli": 2,
-   "clic biglietti": 1,
+   "schede aperte": 17,
+   "clic info spettacoli": 3,
+   "clic biglietti": 2,
    "clic mostre (scheda o sito)": 2,
    "clic cinema (programma della sala)": 0
   }
@@ -137,17 +137,17 @@
   },
   {
    "giorno": "2026-11-08",
-   "visite": 15
+   "visite": 16
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 395
+   "conteggio": 396
   },
   {
    "origine": "achevents.com",
-   "conteggio": 41
+   "conteggio": 48
   },
   {
    "origine": "achevents.com/milano",
@@ -176,7 +176,7 @@
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 42
+   "conteggio": 43
   },
   {
    "path": "milano/scheda/mostre",
@@ -233,6 +233,18 @@
    "tipo": "cambio scheda"
   },
   {
+   "path": "milano/spettacoli/filtro/Date/oggi",
+   "titolo": "Filtro",
+   "conteggio": 6,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Rock",
+   "titolo": "Filtro",
+   "conteggio": 6,
+   "tipo": "filtri"
+  },
+  {
    "path": "milano/spettacoli/filtro/Date/weekend",
    "titolo": "Filtro",
    "conteggio": 6,
@@ -251,13 +263,7 @@
    "tipo": "apri filtri"
   },
   {
-   "path": "milano/spettacoli/filtro/Date/oggi",
-   "titolo": "Filtro",
-   "conteggio": 5,
-   "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Genere/Rock",
+   "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
    "titolo": "Filtro",
    "conteggio": 5,
    "tipo": "filtri"
@@ -269,7 +275,7 @@
    "tipo": "filtri"
   },
   {
-   "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
+   "path": "milano/spettacoli/filtro/Genere/Jazz",
    "titolo": "Filtro",
    "conteggio": 4,
    "tipo": "filtri"
@@ -306,12 +312,6 @@
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Serate e club",
-   "titolo": "Filtro",
-   "conteggio": 3,
-   "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Genere/Jazz",
    "titolo": "Filtro",
    "conteggio": 3,
    "tipo": "filtri"
@@ -417,6 +417,24 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/spettacoli/clic-info/Sergio Cammariere",
+   "titolo": "Clic «Info»",
+   "conteggio": 1,
+   "tipo": "clic info spettacoli"
+  },
+  {
+   "path": "milano/spettacoli/clic-biglietti/Sergio Cammariere",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 1,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Sergio Cammariere",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
   },
   {
    "path": "milano/condividi/whatsapp",
