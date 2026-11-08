@@ -348,6 +348,15 @@ main{min-width:0;padding-bottom:90px}
 .card.mini .act.tkt svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 @media(hover:hover){.card.mini .act.tkt:hover{filter:brightness(1.08);transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.14),0 6px 14px color-mix(in srgb,var(--terra) 34%,transparent)}}
 .card.mini .act.tkt:active{transform:translateY(0);filter:brightness(.96)}
+.card.mini .act.tkt .sm{display:none}
+/* telefono: pulsante piccolo, scritta «Ticket», spinto verso il bordo destro della scheda */
+@media(max-width:759px){
+ .card.mini .act.tkt{position:absolute;right:10px;bottom:10px;margin:0;height:26px;padding:0 9px 0 7px;gap:4px;font-size:12px;box-shadow:0 1px 2px rgba(0,0,0,.12),0 2px 5px color-mix(in srgb,var(--terra) 22%,transparent)}
+ .card.mini .act.tkt svg{width:14px;height:14px}
+ .card.mini .act.tkt .lg{display:none}.card.mini .act.tkt .sm{display:inline}
+ /* niente riga in più: il pulsante sta sulla riga del luogo, che lascia lo spazio a destra */
+ .card.mini:has(.act.tkt) .mloc,.card.mini:has(.act.tkt) .mfoot{padding-right:56px}
+ .card.mini .mfoot:not(:has(.pill)){padding-top:0}}
 /* stesso pulsante, più grande, nella scheda aperta */
 .act.primary.tkt{border:0;border-radius:999px;padding:0 18px 0 14px;gap:7px;font-weight:700;color:#fff;
  background:linear-gradient(180deg,color-mix(in srgb,var(--terra) 88%,#fff),var(--terra));box-shadow:0 1px 2px rgba(0,0,0,.12),0 3px 8px color-mix(in srgb,var(--terra) 28%,transparent);transition:transform .12s,box-shadow .12s,filter .12s}
@@ -971,7 +980,7 @@ function mini(e){
  const multi=e.fino&&e.fino!==e.data?`dal ${fmt(e.data,{day:"numeric",month:"short"})} al ${fmt(e.fino,{day:"numeric",month:"short"})}`:"";
  const inner=`<div class="top">${tm0?`<span class="time">${esc(tm0)}</span>`:""}<span class="gtag">${esc(e.tipo==="Comicità"?"Comici":g.l)}${e.tipo&&e.tipo!=="Comicità"?" · "+esc(e.tipo):""}</span>${multi?`<span class="multi">${multi}</span>`:""}</div><h3 class="title">${esc(e.artista)}</h3>${st.venue?"":`<div class="mloc">${PIN}<span>${esc(e.luogo)}${e._c!==CITY.capo?" · "+esc(e._c):""}</span></div>`}`;
  const dd=(e.disp||"").toLowerCase(),tk=/^https:/.test(e.biglietti||"")&&e.biglietti_tipo!=="Info"&&dd!=="sold out"&&dd!=="non disponibile";
- const foot=(tk&&dd==="disponibile"?"":dispPill(e))+(tk?`<a class="act tkt" href="${esc(e.biglietti)}" target="_blank" rel="noopener" aria-label="Biglietti: ${esc(e.artista)}">${TKT}<span>Biglietti</span></a>`:"");
+ const foot=(tk&&dd==="disponibile"?"":dispPill(e))+(tk?`<a class="act tkt" data-lab="Biglietti" href="${esc(e.biglietti)}" target="_blank" rel="noopener" aria-label="Biglietti: ${esc(e.artista)}">${TKT}<span class="lg">Biglietti</span><span class="sm">Ticket</span></a>`:"");
  return miniA(reg({k:"e",e}),e.artista,g.c,inner).replace("%FOOT%",foot)}
 function miniM(e){
  const g=GLAB[e.genere]||{c:"--mute",l:e.genere||"Mostra",em:"🖼️"},left=Math.round((D(e.fino)-D(today))/864e5),fut=e.data>today;
@@ -1206,7 +1215,7 @@ function track(path,title){if(CITY.k!=="bo")path=CITY.nome.toLowerCase()+"/"+pat
 const tTitle=el=>{const c=el.closest(".card");return c&&c.querySelector(".title")?c.querySelector(".title").textContent.trim():""};
 const tm=()=>MODE==="m"?"mostre":MODE==="c"?"cinema":"spettacoli";
 document.addEventListener("click",e=>{if(!GC||!ON_WEB)return;const t=e.target;
- const a=t.closest(".card a.act");if(a){const lab=a.textContent.trim().replace(/^🎟\s*/,"");track(`${tm()}/clic-${norm(lab).replace(/\s+/g,"-")}/${tTitle(a)}`,`Clic «${lab}»`);return}
+ const a=t.closest(".card a.act");if(a){const lab=(a.dataset.lab||a.textContent).trim().replace(/^🎟\s*/,"");track(`${tm()}/clic-${norm(lab).replace(/\s+/g,"-")}/${tTitle(a)}`,`Clic «${lab}»`);return}
  const w=t.closest(".card .where");if(w){track(`${tm()}/luogo/${(w.querySelector(".wv")||w).textContent.trim()}`,w.tagName==="A"?"Apertura mappa":"Apertura programma del luogo");return}
  const vt=t.closest(".vtile");if(vt){track(`${tm()}/luogo/${vt.dataset.venue}`,"Apertura programma del luogo");return}
  const mo=t.closest("[data-mode]");if(mo){track(`scheda/${{m:"mostre",c:"cinema"}[mo.dataset.mode]||"spettacoli"}`,"Cambio scheda");return}
