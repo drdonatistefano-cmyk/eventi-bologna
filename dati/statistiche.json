@@ -1,9 +1,9 @@
 {
- "generato": "2026-11-08T08:21:55+00:00",
+ "generato": "2026-11-08T09:10:28+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-08",
- "visite_totali": 164,
- "totale_goatcounter": 431,
+ "visite_totali": 165,
+ "totale_goatcounter": 432,
  "eventi_totali": 267,
  "eventi_per_tipo": {
   "filtri": 95,
@@ -25,7 +25,7 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-08",
-   "visite": 164,
+   "visite": 165,
    "cambio scheda": 50,
    "apri filtri": 15,
    "cambio vista": 26,
@@ -137,13 +137,13 @@
   },
   {
    "giorno": "2026-11-08",
-   "visite": 6
+   "visite": 7
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 354
+   "conteggio": 355
   },
   {
    "origine": "achevents.com",
@@ -171,7 +171,7 @@
   {
    "path": "/eventi-bologna",
    "titolo": "Eventi a Bologna – concerti e teatro",
-   "conteggio": 47
+   "conteggio": 48
   },
   {
    "path": "/",
