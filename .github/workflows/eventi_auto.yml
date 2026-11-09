@@ -1,0 +1,48 @@
+name: Eventi e mostre automatici
+on:
+  schedule:
+    - cron: "41 4 * * 1,4"   # lunedì e giovedì alle 5:41 ora italiana (inverno)
+  workflow_dispatch:
+    inputs:
+      prova:
+        description: "Solo prova: legge le fonti ma non salva"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  issues: write
+concurrency: { group: eventi-auto, cancel-in-progress: false }
+jobs:
+  eventi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TICKETMASTER_KEY: ${{ secrets.TICKETMASTER_KEY }}
+      PROVA: ${{ inputs.prova && '--prova' || '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Bologna
+        id: bo
+        run: python3 scripts/eventi_auto.py bo $PROVA
+        continue-on-error: true
+      - name: Milano
+        id: mi
+        run: python3 scripts/eventi_auto.py mi $PROVA
+        continue-on-error: true
+      - name: Salva il risultato
+        if: ${{ !inputs.prova }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          python3 scripts/versioni.py
+          git add eventi.js mostre.js milano/eventi.js milano/mostre.js versioni.js milano/versioni.js dati/auto_bo.json dati/auto_mi.json dati/generi_artisti.json 2>/dev/null || true
+          git commit -m "Eventi e mostre automatici $(date +%F)" || echo "nessuna modifica"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 10; done
+      - name: Segnala se qualcosa non è andato
+        if: ${{ !inputs.prova && (steps.bo.outcome == 'failure' || steps.mi.outcome == 'failure') }}
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh issue list --state open --search "Eventi automatici: errore in:title" --json number --jq '.[0].number' | grep -q . || \
+          gh issue create --title "Eventi automatici: errore" --body "Lo script scripts/eventi_auto.py non ha completato una delle due città (vedi il log del flusso «Eventi e mostre automatici» e dati/auto_bo.json, dati/auto_mi.json). I dati già pubblicati restano invariati."
