@@ -1,12 +1,12 @@
 {
- "generato": "2026-11-09T10:37:28+00:00",
+ "generato": "2026-11-09T11:38:50+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-09",
- "visite_totali": 203,
- "totale_goatcounter": 546,
- "eventi_totali": 343,
+ "visite_totali": 206,
+ "totale_goatcounter": 556,
+ "eventi_totali": 350,
  "eventi_per_tipo": {
-  "filtri": 109,
+  "filtri": 116,
   "cambio scheda": 63,
   "schede aperte": 49,
   "cambio vista": 33,
@@ -26,11 +26,11 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-09",
-   "visite": 203,
+   "visite": 206,
    "cambio scheda": 63,
    "cambio vista": 33,
    "apri filtri": 17,
-   "filtri": 109,
+   "filtri": 116,
    "luoghi aperti": 27,
    "mostra altri": 5,
    "azzera filtri": 7,
@@ -128,7 +128,7 @@
    "cambio scheda": 4,
    "cambio vista": 1,
    "apri filtri": 0,
-   "filtri": 2,
+   "filtri": 9,
    "luoghi aperti": 1,
    "mostra altri": 1,
    "azzera filtri": 0,
@@ -164,13 +164,13 @@
   },
   {
    "giorno": "2026-11-09",
-   "visite": 21
+   "visite": 24
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 431
+   "conteggio": 440
   },
   {
    "origine": "achevents.com/milano",
@@ -181,12 +181,12 @@
    "conteggio": 49
   },
   {
-   "origine": "teams.public.onecdn.static.microsoft",
+   "origine": "ui.awin.com",
    "conteggio": 3
   },
   {
-   "origine": "ui.awin.com",
-   "conteggio": 2
+   "origine": "teams.public.onecdn.static.microsoft",
+   "conteggio": 3
   },
   {
    "origine": "www.facebook.com",
@@ -201,12 +201,12 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 100
+   "conteggio": 102
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 55
+   "conteggio": 56
   },
   {
    "path": "/eventi-bologna",
@@ -442,6 +442,12 @@
    "tipo": "condivisioni"
   },
   {
+   "path": "cinema/filtro/Giorno e orario/g:2026-11-09",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
    "path": "cinema/filtro/Giorno e orario/g:2026-11-08",
    "titolo": "Filtro",
    "conteggio": 2,
@@ -494,6 +500,42 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "cinema/filtro/Giorno e orario/g:2026-11-10",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "cinema/filtro/Genere del film/Altri film",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "cinema/filtro/Genere del film/Documentario",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "cinema/filtro/Genere del film/Fantascienza e fantasy",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "cinema/filtro/Genere del film/Drammatico",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "cinema/filtro/Genere del film/Thriller e giallo",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
   },
   {
    "path": "milano/cinema/dettaglio/Dio ride",
@@ -941,12 +983,6 @@
   },
   {
    "path": "cinema/filtro/Giorno e orario/sett",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "cinema/filtro/Giorno e orario/g:2026-11-09",
    "titolo": "Filtro",
    "conteggio": 1,
    "tipo": "filtri"
