@@ -518,7 +518,7 @@ dialog::backdrop{background:rgba(10,18,28,.45)}
 @media (prefers-color-scheme:dark) and (min-width:1000000px){.big.wa{background:#1d2e23;border-color:#2c4a36;color:#7fd39c}}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:12px;font-size:14px;opacity:0;transition:.25s;z-index:50;pointer-events:none}
 .toast.show{opacity:1;transform:translateX(-50%)}
-footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
+footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}.fupd{display:block;margin-bottom:6px}.fupd:empty{display:none}
 
 /* iPhone */
 @media(max-width:759px){
@@ -633,7 +633,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}
   <div id="list"></div>
   <div id="places" hidden></div>
   <button class="more" id="more" hidden>Mostra altri eventi</button>
-  <footer>Date, orari e disponibilità possono cambiare: verifica sempre sul sito del luogo o della biglietteria prima dell'acquisto.</footer>
+  <footer><span class="fupd" id="fUpd"></span>Date, orari e disponibilità possono cambiare: verifica sempre sul sito del luogo o della biglietteria prima dell'acquisto.</footer>
  </main>
 </div>
 
@@ -1131,7 +1131,7 @@ const TXT={s:{lede:"Concerti, teatro, comici, classica e grandi eventi "+CITY.ar
 function heroStats(){const x=TXT[MODE];
  $("#sTot").textContent=MODE==="c"?new Set(ALL.map(e=>norm(e.artista))).size:ALL.length;$("#lTot").textContent=x.tot;
  $("#sWeek").textContent=MODE==="c"?new Set(ALL.map(e=>e.luogo)).size:MODE==="m"?ALL.filter(e=>overlaps(e,today,today)).length:ALL.filter(e=>overlaps(e,today,in7)).length;$("#lWeek").textContent=x.w;
- $("#sCom").textContent=COMUNI_CON.size;$("#lCom").textContent=COMUNI_CON.size===1?"comune":"comuni";$("#sUpd").textContent=x.upd?fmt(x.upd,{day:"numeric",month:"short"}):"–";
+ $("#sCom").textContent=COMUNI_CON.size;$("#lCom").textContent=COMUNI_CON.size===1?"comune":"comuni";$("#sUpd").textContent=x.upd?fmt(x.upd,{day:"numeric",month:"short"}):"–";$("#fUpd").textContent=x.upd?"Dati aggiornati "+fmt(x.upd,{weekday:"long",day:"numeric",month:"long",year:"numeric"}):"";
  $(".lede").textContent=x.lede;$("#q").placeholder=x.ph;
  $$('.seg [data-view="cal"]').forEach(b=>{b.textContent=MODE==="m"?"Elenco":MODE==="c"?"Film":"Calendario"});
  $$('.seg [data-view="luoghi"]').forEach(b=>{b.textContent=b.closest(".topctl")?x.luoghiS:x.luoghi});
