@@ -1,1 +1,1 @@
-window.ACH_VERSIONI={"eventi":"8d8905e1e8","serate":"38e1c395f6","mostre":"551ece1ee6","cinema":"b85215fe7a"};
+window.ACH_VERSIONI={"eventi":"cc8e1f6c48","serate":"38e1c395f6","mostre":"257dd2a613","cinema":"b85215fe7a"};
