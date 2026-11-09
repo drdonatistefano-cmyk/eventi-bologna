@@ -1,24 +1,24 @@
 {
- "generato": "2026-11-09T07:22:26+00:00",
+ "generato": "2026-11-09T08:47:13+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-09",
- "visite_totali": 183,
- "totale_goatcounter": 513,
- "eventi_totali": 330,
+ "visite_totali": 186,
+ "totale_goatcounter": 523,
+ "eventi_totali": 337,
  "eventi_per_tipo": {
-  "filtri": 107,
+  "filtri": 109,
   "cambio scheda": 59,
-  "schede aperte": 47,
-  "cambio vista": 32,
-  "luoghi aperti": 26,
+  "schede aperte": 48,
+  "cambio vista": 33,
+  "luoghi aperti": 27,
   "apri filtri": 17,
   "clic biglietti": 10,
   "clic info spettacoli": 8,
   "azzera filtri": 7,
+  "mostra altri": 5,
   "clic mostre (scheda o sito)": 5,
-  "mostra altri": 4,
+  "altro": 4,
   "condivisioni": 4,
-  "altro": 3,
   "clic cinema (programma della sala)": 1
  },
  "settimane": [
@@ -26,17 +26,17 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-09",
-   "visite": 183,
+   "visite": 186,
    "cambio scheda": 59,
-   "cambio vista": 32,
+   "cambio vista": 33,
    "apri filtri": 17,
-   "filtri": 107,
-   "luoghi aperti": 26,
-   "mostra altri": 4,
+   "filtri": 109,
+   "luoghi aperti": 27,
+   "mostra altri": 5,
    "azzera filtri": 7,
-   "altro": 3,
+   "altro": 4,
    "condivisioni": 4,
-   "schede aperte": 47,
+   "schede aperte": 48,
    "clic info spettacoli": 8,
    "clic biglietti": 10,
    "clic mostre (scheda o sito)": 5,
@@ -126,15 +126,15 @@
   },
   "2026-11-09": {
    "cambio scheda": 0,
-   "cambio vista": 0,
+   "cambio vista": 1,
    "apri filtri": 0,
-   "filtri": 0,
-   "luoghi aperti": 0,
-   "mostra altri": 0,
+   "filtri": 2,
+   "luoghi aperti": 1,
+   "mostra altri": 1,
    "azzera filtri": 0,
-   "altro": 1,
+   "altro": 2,
    "condivisioni": 0,
-   "schede aperte": 0,
+   "schede aperte": 1,
    "clic info spettacoli": 0,
    "clic biglietti": 0,
    "clic mostre (scheda o sito)": 0,
@@ -164,17 +164,17 @@
   },
   {
    "giorno": "2026-11-09",
-   "visite": 1
+   "visite": 4
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 407
+   "conteggio": 413
   },
   {
    "origine": "achevents.com/milano",
-   "conteggio": 53
+   "conteggio": 57
   },
   {
    "origine": "achevents.com",
@@ -193,12 +193,12 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 87
+   "conteggio": 89
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 48
+   "conteggio": 49
   },
   {
    "path": "/eventi-bologna",
@@ -218,16 +218,16 @@
    "tipo": "cambio scheda"
   },
   {
+   "path": "spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 11,
+   "tipo": "cambio vista"
+  },
+  {
    "path": "scheda/spettacoli",
    "titolo": "Cambio scheda",
    "conteggio": 11,
    "tipo": "cambio scheda"
-  },
-  {
-   "path": "spettacoli/vista/luoghi",
-   "titolo": "Cambio vista",
-   "conteggio": 10,
-   "tipo": "cambio vista"
   },
   {
    "path": "milano/scheda/cinema",
@@ -344,6 +344,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "guide/vai-dinners",
+   "titolo": "Vai a Ach's Dinners Guide",
+   "conteggio": 3,
+   "tipo": "altro"
+  },
+  {
    "path": "milano/spettacoli/azzera-filtri",
    "titolo": "Azzera filtri",
    "conteggio": 3,
@@ -374,10 +380,10 @@
    "tipo": "filtri"
   },
   {
-   "path": "guide/vai-dinners",
-   "titolo": "Vai a Ach's Dinners Guide",
+   "path": "spettacoli/luogo/Teatro Celebrazioni",
+   "titolo": "Apertura programma del luogo",
    "conteggio": 2,
-   "tipo": "altro"
+   "tipo": "luoghi aperti"
   },
   {
    "path": "milano/spettacoli/vista/elenco",
@@ -446,6 +452,18 @@
    "tipo": "filtri"
   },
   {
+   "path": "spettacoli/filtro/Date/7g",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Date/7g",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
    "path": "spettacoli/filtro/Date/weekend",
    "titolo": "Filtro",
    "conteggio": 2,
@@ -462,6 +480,18 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Tomaso Montanari – L'arte della pace",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/mostra-altri",
+   "titolo": "Mostra altri",
+   "conteggio": 1,
+   "tipo": "mostra altri"
   },
   {
    "path": "guide/vai-places",
@@ -663,12 +693,6 @@
   },
   {
    "path": "spettacoli/luogo/Teatro Auditorium Manzoni",
-   "titolo": "Apertura programma del luogo",
-   "conteggio": 1,
-   "tipo": "luoghi aperti"
-  },
-  {
-   "path": "spettacoli/luogo/Teatro Celebrazioni",
    "titolo": "Apertura programma del luogo",
    "conteggio": 1,
    "tipo": "luoghi aperti"
@@ -1038,18 +1062,6 @@
    "titolo": "Apertura scheda",
    "conteggio": 1,
    "tipo": "schede aperte"
-  },
-  {
-   "path": "spettacoli/filtro/Date/7g",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Date/7g",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
   },
   {
    "path": "spettacoli/dettaglio/Joe Jackson + Band",
