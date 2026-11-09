@@ -16,7 +16,7 @@ jobs:
           g zero_bo.html "https://zero.eu/it/bologna/eventi/"
           g yes.html "https://www.yesmilano.it/eventi"
           g t1_city.html "https://www.ticketone.it/city/bologna-218/"
-          g dice_bo.html "https://dice.fm/browse/bologna"
+          g dice_bo.html "https://dice.fm/browse/bologna"; grep -c "application/ld+json" out/dice_bo.html >> out/codici.txt; rm -f out/dice_bo.html
           cd out && git init -q && git checkout -q -b sonda && git add -A
           git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm sonda
           git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" sonda
