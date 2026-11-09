@@ -5,17 +5,17 @@ permissions:
 jobs:
   sonda:
     runs-on: ubuntu-latest
+    env:
+      TK: ${{ secrets.TICKETMASTER_KEY }}
+      AW: ${{ secrets.AWIN_FEED_URL }}
     steps:
       - run: |
-          mkdir out; UA="Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
-          curl -sSL -A "$UA" https://www.songkick.com/robots.txt -o out/sk_robots.txt -w "%{http_code}\n" || true
-          curl -sSL -A "$UA" "https://www.songkick.com/metro-areas/30338-italy-milan?page=1" -o out/sk_mi1.html -w "%{http_code}\n" || true
-          curl -sSL -A "$UA" "https://www.songkick.com/search?query=bologna&type=locations" -o out/sk_bo_search.html -w "%{http_code}\n" || true
-          curl -sSL -A "$UA" "https://public-api.eventim.com/websearch/search/api/exploration/v2/productGroups?webId=web__ticketone-it&language=it&city_ids=218&page=1&sort=DateAsc&in_stock=true&categories=Concerti" -o out/ev_bo.json -w "%{http_code}\n" || true
-          curl -sSL -A "$UA" https://public-api.eventim.com/robots.txt -o out/ev_robots.txt -w "%{http_code}\n" || true
-          curl -sSL -A "$UA" https://www.arte.it/robots.txt -o out/arte_robots.txt -w "%{http_code}\n" || true
-          curl -sSL -A "$UA" https://www.arte.it/calendario-arte/bologna/2026/11/ -o out/arte_bo.html -w "%{http_code}\n" || true
-          ls -la out
+          mkdir out
+          echo "tk=${#TK} aw=${#AW}" > out/lunghezze.txt
+          for c in Bologna Milano; do
+            curl -sS "https://app.ticketmaster.com/discovery/v2/events.json?apikey=$TK&countryCode=IT&city=$c&size=200&sort=date,asc" -o out/tm_$c.json -w "$c %{http_code}\n" >> out/lunghezze.txt || true
+          done
+          if [ -n "$AW" ]; then curl -sS -L "$AW" -o out/aw.bin -w "aw %{http_code} %{size_download}\n" >> out/lunghezze.txt || true; rm -f out/aw.bin; fi
           cd out && git init -q && git checkout -q -b sonda && git add -A
           git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm sonda
           git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" sonda
