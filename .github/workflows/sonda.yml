@@ -8,15 +8,28 @@ jobs:
     steps:
       - run: |
           mkdir out; UA="Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
-          g(){ curl -sSL -m 30 -A "$UA" "$2" -o "out/$1" -w "$1 %{http_code} %{size_download}\n" >> out/codici.txt || echo "$1 fail" >> out/codici.txt; }
-          for s in www.ticketone.it www.bolognawelcome.com www.yesmilano.it zero.eu www.arte.it iltaccodibacco.it www.bolognatoday.it www.milanotoday.it www.livenation.it www.ticketmaster.it www.dice.fm ra.co www.bandsintown.com www.vivaticket.com www.mailticket.it www.boxofficelive.it; do g "rb_$s.txt" "https://$s/robots.txt"; done
-          g arte_bo.html https://www.arte.it/calendario-arte/bologna/2026/11/
-          g arte_mi.html https://www.arte.it/calendario-arte/milano/2026/11/
-          g bw.html "https://www.bolognawelcome.com/it/eventi"
-          g zero_bo.html "https://zero.eu/it/bologna/eventi/"
-          g yes.html "https://www.yesmilano.it/eventi"
-          g t1_city.html "https://www.ticketone.it/city/bologna-218/"
-          g dice_bo.html "https://dice.fm/browse/bologna"; grep -c "application/ld+json" out/dice_bo.html >> out/codici.txt; rm -f out/dice_bo.html
+          g(){ curl -sSL -m 30 -A "$UA" "$2" -o "/tmp/$1" -w "$1 %{http_code} %{size_download}\n" >> out/codici.txt || echo "$1 fail" >> out/codici.txt; }
+          g dice_bo https://dice.fm/browse/bologna
+          g dice_mi https://dice.fm/browse/milan
+          g dice_bo_m "https://dice.fm/browse/bologna/music/gig"
+          g ln_bo "https://www.livenation.it/event/allevents?location=Bologna"
+          g ln_home "https://www.livenation.it/"
+          g viva "https://www.vivaticket.com/it/ricerca?q=bologna"
+          python3 - <<'P'
+          import re,json,glob,os
+          for f in glob.glob('/tmp/dice_*')+glob.glob('/tmp/ln_*')+['/tmp/viva']:
+              if not os.path.exists(f): continue
+              s=open(f,encoding='utf-8',errors='ignore').read()
+              b=re.findall(r'<script[^>]*ld\+json[^>]*>(.*?)</script>',s,re.S)
+              nx=re.findall(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>',s,re.S)
+              n=os.path.basename(f)
+              open(f'out/{n}_ld.json','w').write(json.dumps([json.loads(x) for x in b if x.strip().startswith(('{','['))],ensure_ascii=False)[:400000])
+              if nx: open(f'out/{n}_next.json','w').write(nx[0][:1500000])
+              hrefs=sorted(set(re.findall(r'href="(/[^"]*event[^"]*)"',s)))[:80]
+              open(f'out/{n}_href.txt','w').write('\n'.join(hrefs))
+              open('out/codici.txt','a').write(f'{n} ld={len(b)} next={len(nx)} href={len(hrefs)}\n')
+          P
+          grep -rlE 'pk\.ey|sk\.ey' out && sed -i -E 's/[ps]k\.ey[A-Za-z0-9._-]+/TOKEN/g' out/* || true
           cd out && git init -q && git checkout -q -b sonda && git add -A
           git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm sonda
           git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" sonda
