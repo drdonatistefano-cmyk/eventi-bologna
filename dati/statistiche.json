@@ -1,18 +1,18 @@
 {
- "generato": "2026-11-09T11:38:50+00:00",
+ "generato": "2026-11-09T12:43:15+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-09",
- "visite_totali": 206,
- "totale_goatcounter": 556,
- "eventi_totali": 350,
+ "visite_totali": 208,
+ "totale_goatcounter": 568,
+ "eventi_totali": 360,
  "eventi_per_tipo": {
-  "filtri": 116,
-  "cambio scheda": 63,
-  "schede aperte": 49,
+  "filtri": 120,
+  "cambio scheda": 65,
+  "schede aperte": 51,
   "cambio vista": 33,
   "luoghi aperti": 27,
   "apri filtri": 17,
-  "clic biglietti": 10,
+  "clic biglietti": 12,
   "clic info spettacoli": 8,
   "azzera filtri": 7,
   "mostra altri": 5,
@@ -26,19 +26,19 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-09",
-   "visite": 206,
-   "cambio scheda": 63,
+   "visite": 208,
+   "cambio scheda": 65,
    "cambio vista": 33,
    "apri filtri": 17,
-   "filtri": 116,
+   "filtri": 120,
    "luoghi aperti": 27,
    "mostra altri": 5,
    "azzera filtri": 7,
    "altro": 5,
+   "schede aperte": 51,
    "condivisioni": 4,
-   "schede aperte": 49,
+   "clic biglietti": 12,
    "clic info spettacoli": 8,
-   "clic biglietti": 10,
    "clic mostre (scheda o sito)": 5,
    "clic cinema (programma della sala)": 1
   }
@@ -53,10 +53,10 @@
    "mostra altri": 2,
    "azzera filtri": 1,
    "altro": 0,
-   "condivisioni": 0,
    "schede aperte": 0,
-   "clic info spettacoli": 3,
+   "condivisioni": 0,
    "clic biglietti": 4,
+   "clic info spettacoli": 3,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
   },
@@ -69,10 +69,10 @@
    "mostra altri": 1,
    "azzera filtri": 1,
    "altro": 0,
-   "condivisioni": 0,
    "schede aperte": 3,
-   "clic info spettacoli": 0,
+   "condivisioni": 0,
    "clic biglietti": 1,
+   "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
   },
@@ -85,10 +85,10 @@
    "mostra altri": 1,
    "azzera filtri": 0,
    "altro": 0,
-   "condivisioni": 1,
    "schede aperte": 14,
-   "clic info spettacoli": 2,
+   "condivisioni": 1,
    "clic biglietti": 2,
+   "clic info spettacoli": 2,
    "clic mostre (scheda o sito)": 3,
    "clic cinema (programma della sala)": 1
   },
@@ -101,10 +101,10 @@
    "mostra altri": 0,
    "azzera filtri": 2,
    "altro": 0,
-   "condivisioni": 1,
    "schede aperte": 11,
-   "clic info spettacoli": 0,
+   "condivisioni": 1,
    "clic biglietti": 1,
+   "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
   },
@@ -117,26 +117,26 @@
    "mostra altri": 0,
    "azzera filtri": 3,
    "altro": 2,
-   "condivisioni": 2,
    "schede aperte": 19,
-   "clic info spettacoli": 3,
+   "condivisioni": 2,
    "clic biglietti": 2,
+   "clic info spettacoli": 3,
    "clic mostre (scheda o sito)": 2,
    "clic cinema (programma della sala)": 0
   },
   "2026-11-09": {
-   "cambio scheda": 4,
+   "cambio scheda": 6,
    "cambio vista": 1,
    "apri filtri": 0,
-   "filtri": 9,
+   "filtri": 13,
    "luoghi aperti": 1,
    "mostra altri": 1,
    "azzera filtri": 0,
    "altro": 3,
+   "schede aperte": 4,
    "condivisioni": 0,
-   "schede aperte": 2,
+   "clic biglietti": 2,
    "clic info spettacoli": 0,
-   "clic biglietti": 0,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
   }
@@ -164,17 +164,17 @@
   },
   {
    "giorno": "2026-11-09",
-   "visite": 24
+   "visite": 26
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 440
+   "conteggio": 442
   },
   {
    "origine": "achevents.com/milano",
-   "conteggio": 58
+   "conteggio": 68
   },
   {
    "origine": "achevents.com",
@@ -201,7 +201,7 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 102
+   "conteggio": 104
   },
   {
    "path": "/",
@@ -216,13 +216,13 @@
   {
    "path": "scheda/mostre",
    "titolo": "Cambio scheda",
-   "conteggio": 14,
+   "conteggio": 15,
    "tipo": "cambio scheda"
   },
   {
    "path": "scheda/spettacoli",
    "titolo": "Cambio scheda",
-   "conteggio": 12,
+   "conteggio": 13,
    "tipo": "cambio scheda"
   },
   {
@@ -268,6 +268,12 @@
    "tipo": "cambio scheda"
   },
   {
+   "path": "spettacoli/filtro/Genere/Comici",
+   "titolo": "Filtro",
+   "conteggio": 7,
+   "tipo": "filtri"
+  },
+  {
    "path": "milano/spettacoli/apri-filtri",
    "titolo": "Apertura filtri",
    "conteggio": 6,
@@ -298,12 +304,6 @@
    "tipo": "cambio vista"
   },
   {
-   "path": "spettacoli/filtro/Genere/Comici",
-   "titolo": "Filtro",
-   "conteggio": 6,
-   "tipo": "filtri"
-  },
-  {
    "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
    "titolo": "Filtro",
    "conteggio": 5,
@@ -329,6 +329,12 @@
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Comici",
+   "titolo": "Filtro",
+   "conteggio": 4,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Date/oggi",
    "titolo": "Filtro",
    "conteggio": 4,
    "tipo": "filtri"
@@ -376,12 +382,6 @@
    "tipo": "filtri"
   },
   {
-   "path": "spettacoli/filtro/Date/oggi",
-   "titolo": "Filtro",
-   "conteggio": 3,
-   "tipo": "filtri"
-  },
-  {
    "path": "spettacoli/filtro/Genere/Pop e altra musica",
    "titolo": "Filtro",
    "conteggio": 3,
@@ -412,6 +412,18 @@
    "tipo": "luoghi aperti"
   },
   {
+   "path": "spettacoli/filtro/Genere/Serate e club",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/dettaglio/Accabadora",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
    "path": "spettacoli/luogo/Estragon",
    "titolo": "Apertura programma del luogo",
    "conteggio": 2,
@@ -431,6 +443,12 @@
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Teatro",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Jazz",
    "titolo": "Filtro",
    "conteggio": 2,
    "tipo": "filtri"
@@ -500,6 +518,24 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "spettacoli/clic-biglietti/Accabadora",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 1,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "spettacoli/clic-biglietti/Alessandro Cattelan – Benvenuto nell'AI!",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 1,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "spettacoli/dettaglio/Alessandro Cattelan – Benvenuto nell'AI!",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
   },
   {
    "path": "cinema/filtro/Giorno e orario/g:2026-11-10",
@@ -832,18 +868,6 @@
    "tipo": "schede aperte"
   },
   {
-   "path": "spettacoli/filtro/Genere/Serate e club",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "spettacoli/dettaglio/Accabadora",
-   "titolo": "Apertura scheda",
-   "conteggio": 1,
-   "tipo": "schede aperte"
-  },
-  {
    "path": "spettacoli/dettaglio/Much Much Bass",
    "titolo": "Apertura scheda",
    "conteggio": 1,
@@ -899,12 +923,6 @@
   },
   {
    "path": "milano/spettacoli/filtro/Tipo di luogo/Club e locali",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "spettacoli/filtro/Genere/Jazz",
    "titolo": "Filtro",
    "conteggio": 1,
    "tipo": "filtri"
