@@ -992,7 +992,7 @@ function card(e){
  </div></article>`}
 
 let OPEN=[];const reg=x=>OPEN.push(x)-1;
-const miniA=(i,lab,g,inner)=>`<article class="card mini" data-open="${i}" tabindex="0" role="button" aria-label="Apri la scheda: ${esc(lab)}" style="--g:var(${g})"><span class="mgo" aria-hidden="true"></span>${inner}<div class="mfoot">${"%FOOT%"}</div></article>`;
+const miniA=(i,lab,g,inner)=>`<article class="card mini" data-open="${i}" tabindex="0" role="button" aria-label="Apri la scheda: ${esc(lab)}" style="--g:${/^(#|var\()/.test(g)?g:`var(${g})`}"><span class="mgo" aria-hidden="true"></span>${inner}<div class="mfoot">${"%FOOT%"}</div></article>`;
 /* pulsante Biglietti dell'elenco: icona del biglietto disegnata per il sito */
 const INF='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5"/><path d="M12 7.6v.2"/></svg>';
 const TKT='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 8.5V7a1.5 1.5 0 0 1 1.5-1.5h14A1.5 1.5 0 0 1 20.5 7v1.5a2.5 2.5 0 0 0 0 5V17a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 17v-3.5a2.5 2.5 0 0 0 0-5z"/><path d="M14.5 6v2M14.5 11v2M14.5 16v2"/></svg>';
@@ -1017,7 +1017,7 @@ function miniC(f){
  const byT=new Map();rows.forEach(r=>byT.set(r.genere,(byT.get(r.genere)||0)+1));const g=GLAB[[...byT.entries()].sort((a,b)=>b[1]-a[1])[0][0]]||{c:"--mute"};
  const line=r=>{let s;if(many){const ds=dayKeys().filter(d=>(tOn(r,d)||[]).length);s=ds.length?ds.slice(0,3).map(d=>dLab(d)).join(", ")+(ds.length>3?"…":""):"in cartellone"}else{const x=(tOn(r,d0)||[]).filter(o=>passF(o,d0,fs));s=x.length?x.join(" · "):"orari sul sito"}return `<div class="msr"><b>${esc(r.luogo.replace(/^Cinema /,""))}</b><span>${esc(s)}</span></div>`};
  const inner=`<div class="top"><span class="gtag">🎬 ${rows.length===1?"1 sala":rows.length+" sale"}</span>${vo?'<span class="vob">V.O.</span>':""}</div><h3 class="title">${esc(f.t)}</h3>${fMeta(f.t,false)}${rows.slice(0,2).map(line).join("")}${rows.length>2?`<div class="msr mx">+ altre ${rows.length-2} ${rows.length-2===1?"sala":"sale"}</div>`:""}`;
- return miniA(reg({k:"c",f}),f.t,g.c,inner).replace("%FOOT%","")}
+ return miniA(reg({k:"c",f}),f.t,fcol(f.t),inner).replace("%FOOT%","")}
 function openDetail(i){const x=OPEN[+i];if(!x)return;let h,lab;
  if(x.k==="c"){h=cardC(x.f.t,x.f.r);lab=x.f.t}
  else{const e=x.e;lab=e.artista;h=x.k==="m"?cardM(e):card(e);
@@ -1041,6 +1041,9 @@ function cTimes(r){const dk=dayKeys(),many=dk.length>1,fs=fasSel(),rows=[];
   h+=`<div class="tday"><b>${i===j?esc(dLab(x.d)):esc(dLab(x.d))+"–"+esc(dLab(rows[j].d))}</b><em class="prev">in cartellone · orari sul sito della sala</em></div>`;i=j+1}
  return `<div class="times wk">${h}</div>`}
 const CGEN=[{k:"Commedia",em:"😂",rx:/commedia|comic/i},{k:"Drammatico",s:"Dramma",em:"🎭",rx:/dramm|biograf|storic|guerra/i},{k:"Thriller e giallo",s:"Thriller",em:"🔪",rx:/thriller|giallo|polizi|noir|crime|gangster/i},{k:"Horror",em:"👻",rx:/horror/i},{k:"Animazione",s:"Cartoni",em:"🎨",rx:/animazione|cartoni/i},{k:"Azione e avventura",s:"Azione",em:"💥",rx:/azione|avventura|western/i},{k:"Fantascienza e fantasy",s:"Fantasy",em:"🚀",rx:/fantascienza|fantastic|fantasy/i},{k:"Sentimentale",s:"Amore",em:"❤️",rx:/sentiment|romantic/i},{k:"Documentario",s:"Doc",em:"🎥",rx:/documentar/i},{k:"Famiglia e ragazzi",s:"Famiglia",em:"🧸",rx:/ragazzi|famiglia|family|bambini/i},{k:"Musicale",em:"🎵",rx:/musical/i},{k:"Altri film",s:"Altri",em:"🎞️",rx:null}];
+/* colore delle schede film: per genere (il primo riconosciuto) */
+const FGC={"Commedia":"#c99a2e","Drammatico":"#7a5a8c","Thriller e giallo":"#4c5a6b","Horror":"#9a3b3b","Animazione":"#d9783a","Azione e avventura":"#3d6fa8","Fantascienza e fantasy":"#2a8a8f","Sentimentale":"#c4527c","Documentario":"#6b7d3a","Famiglia e ragazzi":"#4f9e62","Musicale":"#9b5fc0"};
+function fcol(t){for(const p of (fInfo(t).g||"").split(/\s*,\s*/)){const c=CGEN.find(c=>c.rx&&c.rx.test(p));if(c&&FGC[c.k])return FGC[c.k]}return "var(--mute)"}
 function glist(e){if(e._gl)return e._gl;const g=fInfo(e.artista).g||"";const l=CGEN.filter(c=>c.rx&&c.rx.test(g)).map(c=>c.k);return e._gl=l.length?l:["Altri film"]}
 let FI=null;
 function fInfo(t){if(!FI){FI=new Map();for(const e of CINEMA){const k=norm(e.artista),x=FI.get(k)||{};for(const [a,b] of [["g",e._gen],["r",e._reg],["i",e._int],["d",e._dur],["y",e._anno],["p",e._paese]])if(b&&!x[a])x[a]=b;FI.set(k,x)}}return FI.get(norm(t))||{}}
@@ -1052,8 +1055,8 @@ function cardC(title,rows){
  const vo=rows.some(r=>r._vo);
  const byT=new Map();rows.forEach(r=>{if(!byT.has(r.genere))byT.set(r.genere,0);byT.set(r.genere,byT.get(r.genere)+1)});
  const g=GLAB[[...byT.entries()].sort((a,b)=>b[1]-a[1])[0][0]]||{c:"--mute",l:"Cinema",em:"🎬"};
- const srow=r=>{const gg=GLAB[r.genere]||g;return `<div class="srow" style="--g:var(${gg.c})"><button class="sn where" data-venue="${esc(r.luogo)}" title="Tutti i film di ${esc(r.luogo)}"><b class="wv">${esc(r.luogo)}</b><small>${esc(r._c+(r._c!==CITY.capo&&ZLAB[r._z]?" · "+ZLAB[r._z]:""))}${r._ver?" · "+esc(r._ver):""}</small></button><span class="sacts">${/^https:/.test(r.biglietti||"")?`<a class="act primary tkt" href="${esc(r.biglietti)}" target="_blank" rel="noopener" title="${r._bfilm?"Acquista i biglietti di questo film":"Biglietteria online della sala"}">${TKT}<span>Biglietti</span></a>`:""}${/^https:/.test(r.sito_luogo||r.fonte||"")&&(r.sito_luogo||r.fonte)!==r.biglietti?`<a class="act" href="${esc(r.sito_luogo||r.fonte)}" target="_blank" rel="noopener">Programma</a>`:""}</span>${cTimes(r)}</div>`};
- return `<article class="card cine" style="--g:var(${g.c})">
+ const srow=r=>{return `<div class="srow"><button class="sn where" data-venue="${esc(r.luogo)}" title="Tutti i film di ${esc(r.luogo)}"><b class="wv">${esc(r.luogo)}</b><small>${esc(r._c+(r._c!==CITY.capo&&ZLAB[r._z]?" · "+ZLAB[r._z]:""))}${r._ver?" · "+esc(r._ver):""}</small></button><span class="sacts">${/^https:/.test(r.biglietti||"")?`<a class="act primary tkt" href="${esc(r.biglietti)}" target="_blank" rel="noopener" title="${r._bfilm?"Acquista i biglietti di questo film":"Biglietteria online della sala"}">${TKT}<span>Biglietti</span></a>`:""}${/^https:/.test(r.sito_luogo||r.fonte||"")&&(r.sito_luogo||r.fonte)!==r.biglietti?`<a class="act" href="${esc(r.sito_luogo||r.fonte)}" target="_blank" rel="noopener">Programma</a>`:""}</span>${cTimes(r)}</div>`};
+ return `<article class="card cine" style="--g:${fcol(title)}">
  <div class="top"><span class="gtag">🎬 ${rows.length===1?"1 sala":rows.length+" sale"}</span>${vo?'<span class="vob">V.O.</span>':""}</div>
  <h3 class="title">${esc(title)}</h3>${fMeta(title,true)}
  <div class="srows">${rows.map(srow).join("")}</div></article>`}
