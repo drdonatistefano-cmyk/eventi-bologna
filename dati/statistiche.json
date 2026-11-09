@@ -1,18 +1,18 @@
 {
- "generato": "2026-11-09T17:03:04+00:00",
+ "generato": "2026-11-09T17:55:20+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-09",
- "visite_totali": 211,
- "totale_goatcounter": 574,
- "eventi_totali": 363,
+ "visite_totali": 214,
+ "totale_goatcounter": 585,
+ "eventi_totali": 371,
  "eventi_per_tipo": {
-  "filtri": 120,
+  "filtri": 121,
   "cambio scheda": 66,
   "schede aperte": 52,
-  "cambio vista": 33,
-  "luoghi aperti": 27,
+  "cambio vista": 35,
+  "luoghi aperti": 31,
   "apri filtri": 17,
-  "clic biglietti": 12,
+  "clic biglietti": 13,
   "clic info spettacoli": 8,
   "azzera filtri": 7,
   "mostra altri": 5,
@@ -27,19 +27,19 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-09",
-   "visite": 211,
+   "visite": 214,
    "cambio scheda": 66,
-   "cambio vista": 33,
+   "cambio vista": 35,
    "apri filtri": 17,
-   "filtri": 120,
-   "luoghi aperti": 27,
+   "filtri": 121,
+   "luoghi aperti": 31,
    "mostra altri": 5,
    "azzera filtri": 7,
    "altro": 5,
    "schede aperte": 52,
    "condivisioni": 4,
+   "clic biglietti": 13,
    "ricerche": 1,
-   "clic biglietti": 12,
    "clic info spettacoli": 8,
    "clic mostre (scheda o sito)": 5,
    "clic cinema (programma della sala)": 1
@@ -57,8 +57,8 @@
    "altro": 0,
    "schede aperte": 0,
    "condivisioni": 0,
-   "ricerche": 0,
    "clic biglietti": 4,
+   "ricerche": 0,
    "clic info spettacoli": 3,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
@@ -74,8 +74,8 @@
    "altro": 0,
    "schede aperte": 3,
    "condivisioni": 0,
-   "ricerche": 0,
    "clic biglietti": 1,
+   "ricerche": 0,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
@@ -91,8 +91,8 @@
    "altro": 0,
    "schede aperte": 14,
    "condivisioni": 1,
-   "ricerche": 0,
    "clic biglietti": 2,
+   "ricerche": 0,
    "clic info spettacoli": 2,
    "clic mostre (scheda o sito)": 3,
    "clic cinema (programma della sala)": 1
@@ -108,8 +108,8 @@
    "altro": 0,
    "schede aperte": 11,
    "condivisioni": 1,
-   "ricerche": 0,
    "clic biglietti": 1,
+   "ricerche": 0,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
@@ -125,25 +125,25 @@
    "altro": 2,
    "schede aperte": 19,
    "condivisioni": 2,
-   "ricerche": 0,
    "clic biglietti": 2,
+   "ricerche": 0,
    "clic info spettacoli": 3,
    "clic mostre (scheda o sito)": 2,
    "clic cinema (programma della sala)": 0
   },
   "2026-11-09": {
    "cambio scheda": 7,
-   "cambio vista": 1,
+   "cambio vista": 3,
    "apri filtri": 0,
-   "filtri": 13,
-   "luoghi aperti": 1,
+   "filtri": 14,
+   "luoghi aperti": 5,
    "mostra altri": 1,
    "azzera filtri": 0,
    "altro": 3,
    "schede aperte": 5,
    "condivisioni": 0,
+   "clic biglietti": 3,
    "ricerche": 1,
-   "clic biglietti": 2,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
    "clic cinema (programma della sala)": 0
@@ -172,13 +172,13 @@
   },
   {
    "giorno": "2026-11-09",
-   "visite": 29
+   "visite": 32
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 448
+   "conteggio": 458
   },
   {
    "origine": "achevents.com/milano",
@@ -186,7 +186,7 @@
   },
   {
    "origine": "achevents.com",
-   "conteggio": 49
+   "conteggio": 50
   },
   {
    "origine": "ui.awin.com",
@@ -209,12 +209,12 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 107
+   "conteggio": 109
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 56
+   "conteggio": 57
   },
   {
    "path": "/eventi-bologna",
@@ -242,7 +242,7 @@
   {
    "path": "spettacoli/vista/luoghi",
    "titolo": "Cambio vista",
-   "conteggio": 11,
+   "conteggio": 12,
    "tipo": "cambio vista"
   },
   {
@@ -276,6 +276,12 @@
    "tipo": "cambio scheda"
   },
   {
+   "path": "spettacoli/vista/elenco",
+   "titolo": "Cambio vista",
+   "conteggio": 7,
+   "tipo": "cambio vista"
+  },
+  {
    "path": "spettacoli/filtro/Genere/Comici",
    "titolo": "Filtro",
    "conteggio": 7,
@@ -306,25 +312,19 @@
    "tipo": "filtri"
   },
   {
-   "path": "spettacoli/vista/elenco",
-   "titolo": "Cambio vista",
-   "conteggio": 6,
-   "tipo": "cambio vista"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
-   "titolo": "Filtro",
-   "conteggio": 5,
-   "tipo": "filtri"
-  },
-  {
    "path": "spettacoli/luogo/Teatro Duse",
    "titolo": "Apertura programma del luogo",
-   "conteggio": 5,
+   "conteggio": 6,
    "tipo": "luoghi aperti"
   },
   {
    "path": "spettacoli/filtro/Genere/Rock",
+   "titolo": "Filtro",
+   "conteggio": 6,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
    "titolo": "Filtro",
    "conteggio": 5,
    "tipo": "filtri"
@@ -370,6 +370,12 @@
    "titolo": "Vai a Ach's Dinners Guide",
    "conteggio": 3,
    "tipo": "altro"
+  },
+  {
+   "path": "spettacoli/luogo/Estragon",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 3,
+   "tipo": "luoghi aperti"
   },
   {
    "path": "milano/spettacoli/azzera-filtri",
@@ -436,12 +442,6 @@
    "titolo": "Apertura scheda",
    "conteggio": 2,
    "tipo": "schede aperte"
-  },
-  {
-   "path": "spettacoli/luogo/Estragon",
-   "titolo": "Apertura programma del luogo",
-   "conteggio": 2,
-   "tipo": "luoghi aperti"
   },
   {
    "path": "spettacoli/filtro/Tipo di luogo/Club e locali",
@@ -522,6 +522,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "spettacoli/clic-biglietti/Tito & Tarantula",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 2,
+   "tipo": "clic biglietti"
+  },
+  {
    "path": "mostre/apri-filtri",
    "titolo": "Apertura filtri",
    "conteggio": 2,
@@ -532,6 +538,18 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "spettacoli/luogo/Teatro Dehon",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/luogo/Sequoie Music Park - Parco Caserme Rosse",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
   },
   {
    "path": "milano/mostre/ricerca/matisse",
@@ -1294,12 +1312,6 @@
    "titolo": "Clic «Info»",
    "conteggio": 1,
    "tipo": "clic info spettacoli"
-  },
-  {
-   "path": "spettacoli/clic-biglietti/Tito & Tarantula",
-   "titolo": "Clic «Biglietti»",
-   "conteggio": 1,
-   "tipo": "clic biglietti"
   },
   {
    "path": "mostre/luogo/Palazzo Pallavicini",
