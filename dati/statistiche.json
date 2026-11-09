@@ -1,14 +1,14 @@
 {
- "generato": "2026-11-09T14:53:00+00:00",
+ "generato": "2026-11-09T15:58:17+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-09",
- "visite_totali": 210,
- "totale_goatcounter": 570,
- "eventi_totali": 360,
+ "visite_totali": 211,
+ "totale_goatcounter": 574,
+ "eventi_totali": 363,
  "eventi_per_tipo": {
   "filtri": 120,
-  "cambio scheda": 65,
-  "schede aperte": 51,
+  "cambio scheda": 66,
+  "schede aperte": 52,
   "cambio vista": 33,
   "luoghi aperti": 27,
   "apri filtri": 17,
@@ -19,6 +19,7 @@
   "altro": 5,
   "clic mostre (scheda o sito)": 5,
   "condivisioni": 4,
+  "ricerche": 1,
   "clic cinema (programma della sala)": 1
  },
  "settimane": [
@@ -26,8 +27,8 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-09",
-   "visite": 210,
-   "cambio scheda": 65,
+   "visite": 211,
+   "cambio scheda": 66,
    "cambio vista": 33,
    "apri filtri": 17,
    "filtri": 120,
@@ -35,8 +36,9 @@
    "mostra altri": 5,
    "azzera filtri": 7,
    "altro": 5,
-   "schede aperte": 51,
+   "schede aperte": 52,
    "condivisioni": 4,
+   "ricerche": 1,
    "clic biglietti": 12,
    "clic info spettacoli": 8,
    "clic mostre (scheda o sito)": 5,
@@ -55,6 +57,7 @@
    "altro": 0,
    "schede aperte": 0,
    "condivisioni": 0,
+   "ricerche": 0,
    "clic biglietti": 4,
    "clic info spettacoli": 3,
    "clic mostre (scheda o sito)": 0,
@@ -71,6 +74,7 @@
    "altro": 0,
    "schede aperte": 3,
    "condivisioni": 0,
+   "ricerche": 0,
    "clic biglietti": 1,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
@@ -87,6 +91,7 @@
    "altro": 0,
    "schede aperte": 14,
    "condivisioni": 1,
+   "ricerche": 0,
    "clic biglietti": 2,
    "clic info spettacoli": 2,
    "clic mostre (scheda o sito)": 3,
@@ -103,6 +108,7 @@
    "altro": 0,
    "schede aperte": 11,
    "condivisioni": 1,
+   "ricerche": 0,
    "clic biglietti": 1,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
@@ -119,13 +125,14 @@
    "altro": 2,
    "schede aperte": 19,
    "condivisioni": 2,
+   "ricerche": 0,
    "clic biglietti": 2,
    "clic info spettacoli": 3,
    "clic mostre (scheda o sito)": 2,
    "clic cinema (programma della sala)": 0
   },
   "2026-11-09": {
-   "cambio scheda": 6,
+   "cambio scheda": 7,
    "cambio vista": 1,
    "apri filtri": 0,
    "filtri": 13,
@@ -133,8 +140,9 @@
    "mostra altri": 1,
    "azzera filtri": 0,
    "altro": 3,
-   "schede aperte": 4,
+   "schede aperte": 5,
    "condivisioni": 0,
+   "ricerche": 1,
    "clic biglietti": 2,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
@@ -164,13 +172,13 @@
   },
   {
    "giorno": "2026-11-09",
-   "visite": 28
+   "visite": 29
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 444
+   "conteggio": 448
   },
   {
    "origine": "achevents.com/milano",
@@ -201,7 +209,7 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 106
+   "conteggio": 107
   },
   {
    "path": "/",
@@ -228,7 +236,7 @@
   {
    "path": "milano/scheda/mostre",
    "titolo": "Cambio scheda",
-   "conteggio": 11,
+   "conteggio": 12,
    "tipo": "cambio scheda"
   },
   {
@@ -394,6 +402,12 @@
    "tipo": "altro"
   },
   {
+   "path": "milano/mostre/dettaglio/Matisse. Il mondo in una stanza",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
    "path": "spettacoli/luogo/Teatro Celebrazioni",
    "titolo": "Apertura programma del luogo",
    "conteggio": 2,
@@ -518,6 +532,12 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/mostre/ricerca/matisse",
+   "titolo": "Ricerca",
+   "conteggio": 1,
+   "tipo": "ricerche"
   },
   {
    "path": "spettacoli/clic-biglietti/Accabadora",
@@ -698,12 +718,6 @@
    "titolo": "Clic «Scheda della mostra»",
    "conteggio": 1,
    "tipo": "clic mostre (scheda o sito)"
-  },
-  {
-   "path": "milano/mostre/dettaglio/Matisse. Il mondo in una stanza",
-   "titolo": "Apertura scheda",
-   "conteggio": 1,
-   "tipo": "schede aperte"
   },
   {
    "path": "milano/mostre/dettaglio/Frida Kahlo e la costruzione del mito",
