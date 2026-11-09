@@ -1,14 +1,14 @@
 {
- "generato": "2026-11-09T08:47:13+00:00",
+ "generato": "2026-11-09T09:43:42+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-09",
- "visite_totali": 186,
- "totale_goatcounter": 523,
- "eventi_totali": 337,
+ "visite_totali": 192,
+ "totale_goatcounter": 535,
+ "eventi_totali": 343,
  "eventi_per_tipo": {
   "filtri": 109,
-  "cambio scheda": 59,
-  "schede aperte": 48,
+  "cambio scheda": 63,
+  "schede aperte": 49,
   "cambio vista": 33,
   "luoghi aperti": 27,
   "apri filtri": 17,
@@ -16,8 +16,8 @@
   "clic info spettacoli": 8,
   "azzera filtri": 7,
   "mostra altri": 5,
+  "altro": 5,
   "clic mostre (scheda o sito)": 5,
-  "altro": 4,
   "condivisioni": 4,
   "clic cinema (programma della sala)": 1
  },
@@ -26,17 +26,17 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-09",
-   "visite": 186,
-   "cambio scheda": 59,
+   "visite": 192,
+   "cambio scheda": 63,
    "cambio vista": 33,
    "apri filtri": 17,
    "filtri": 109,
    "luoghi aperti": 27,
    "mostra altri": 5,
    "azzera filtri": 7,
-   "altro": 4,
+   "altro": 5,
    "condivisioni": 4,
-   "schede aperte": 48,
+   "schede aperte": 49,
    "clic info spettacoli": 8,
    "clic biglietti": 10,
    "clic mostre (scheda o sito)": 5,
@@ -125,16 +125,16 @@
    "clic cinema (programma della sala)": 0
   },
   "2026-11-09": {
-   "cambio scheda": 0,
+   "cambio scheda": 4,
    "cambio vista": 1,
    "apri filtri": 0,
    "filtri": 2,
    "luoghi aperti": 1,
    "mostra altri": 1,
    "azzera filtri": 0,
-   "altro": 2,
+   "altro": 3,
    "condivisioni": 0,
-   "schede aperte": 1,
+   "schede aperte": 2,
    "clic info spettacoli": 0,
    "clic biglietti": 0,
    "clic mostre (scheda o sito)": 0,
@@ -164,17 +164,17 @@
   },
   {
    "giorno": "2026-11-09",
-   "visite": 4
+   "visite": 10
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 413
+   "conteggio": 424
   },
   {
    "origine": "achevents.com/milano",
-   "conteggio": 57
+   "conteggio": 58
   },
   {
    "origine": "achevents.com",
@@ -193,12 +193,12 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 89
+   "conteggio": 93
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 49
+   "conteggio": 51
   },
   {
    "path": "/eventi-bologna",
@@ -208,7 +208,13 @@
   {
    "path": "scheda/mostre",
    "titolo": "Cambio scheda",
-   "conteggio": 13,
+   "conteggio": 14,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "scheda/spettacoli",
+   "titolo": "Cambio scheda",
+   "conteggio": 12,
    "tipo": "cambio scheda"
   },
   {
@@ -224,21 +230,15 @@
    "tipo": "cambio vista"
   },
   {
-   "path": "scheda/spettacoli",
-   "titolo": "Cambio scheda",
-   "conteggio": 11,
-   "tipo": "cambio scheda"
-  },
-  {
    "path": "milano/scheda/cinema",
    "titolo": "Cambio scheda",
-   "conteggio": 9,
+   "conteggio": 10,
    "tipo": "cambio scheda"
   },
   {
    "path": "scheda/cinema",
    "titolo": "Cambio scheda",
-   "conteggio": 8,
+   "conteggio": 9,
    "tipo": "cambio scheda"
   },
   {
@@ -380,6 +380,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "guide/vai-places",
+   "titolo": "Vai a Ach's Places Guide",
+   "conteggio": 2,
+   "tipo": "altro"
+  },
+  {
    "path": "spettacoli/luogo/Teatro Celebrazioni",
    "titolo": "Apertura programma del luogo",
    "conteggio": 2,
@@ -482,6 +488,12 @@
    "tipo": "cambio vista"
   },
   {
+   "path": "milano/cinema/dettaglio/Dio ride",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
    "path": "milano/spettacoli/dettaglio/Tomaso Montanari – L'arte della pace",
    "titolo": "Apertura scheda",
    "conteggio": 1,
@@ -492,12 +504,6 @@
    "titolo": "Mostra altri",
    "conteggio": 1,
    "tipo": "mostra altri"
-  },
-  {
-   "path": "guide/vai-places",
-   "titolo": "Vai a Ach's Places Guide",
-   "conteggio": 1,
-   "tipo": "altro"
   },
   {
    "path": "spettacoli/luogo/Cinema Perla",
