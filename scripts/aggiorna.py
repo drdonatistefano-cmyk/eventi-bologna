@@ -66,7 +66,7 @@ def pulisci_url(u):
     return u if re.match(r"^https://", u) else ""
 
 CATEGORIE = {"Pittura", "Scultura", "Fotografia", "Arte contemporanea e installazioni", "Disegno, grafica e illustrazione", "Design e moda", "Cinema e spettacolo", "Storia e archeologia", "Scienza e tecnica", "Esperienze immersive"}
-CAMPI_M = ["id","titolo","sede","citta","inizio","fine","categoria","descrizione","ingresso","orari","fonte","sito"]
+CAMPI_M = ["id","titolo","sede","citta","inizio","fine","categoria","descrizione","ingresso","orari","fonte","sito","biglietti","biglietti_tipo"]
 
 def leggi_mostre(path):
     txt = open(path, encoding="utf-8").read().strip()
@@ -92,10 +92,12 @@ def mostre(src, oggi, out):
         if m.get("categoria") not in CATEGORIE: errori.append(f"{rif}: categoria '{m.get('categoria')}' non ammessa {sorted(CATEGORIE)}")
         m["ingresso"] = (m.get("ingresso") or "da verificare").lower()
         if m["ingresso"] not in ("gratuito", "a pagamento", "da verificare"): avvisi.append(f"{rif}: ingresso '{m['ingresso']}' → da verificare"); m["ingresso"] = "da verificare"
-        for k in ("fonte", "sito"):
+        for k in ("fonte", "sito", "biglietti"):
             v = pulisci_url(m.get(k))
             if m.get(k) and not v: avvisi.append(f"{rif}: link {k} scartato (non https)")
             m[k] = v
+        if m.get("biglietti"): m["biglietti_tipo"] = m.get("biglietti_tipo") if m.get("biglietti_tipo") in ("Acquista", "Biglietteria") else "Acquista"
+        else: m["biglietti_tipo"] = ""
         if not m.get("descrizione"): avvisi.append(f"{rif}: senza descrizione")
         for k in CAMPI_M: m.setdefault(k, "")
         ok.append({k: m[k] for k in CAMPI_M})

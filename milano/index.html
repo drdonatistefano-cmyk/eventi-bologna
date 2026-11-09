@@ -699,7 +699,7 @@ const GIA=new Set(EVENTS0.map(e=>e.data+"|"+vkey(e.luogo)));
 const EVENTS=EVENTS0.concat((Array.isArray(SRD.serate)?SRD.serate:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista&&e.luogo&&!GIA.has(e.data+"|"+vkey(e.luogo))));
 const MD=(window.MOSTRE_DATA&&typeof window.MOSTRE_DATA==="object")?window.MOSTRE_DATA:{aggiornato:"",mostre:[]};
 const ING={gratuito:"Ingresso gratuito","a pagamento":"A pagamento"};
-const MOSTRE=(Array.isArray(MD.mostre)?MD.mostre:[]).filter(m=>m&&ISO.test(m.inizio||"")&&ISO.test(m.fine||"")&&m.titolo&&m.sede).map(m=>({id:m.id,_kind:"m",data:m.inizio,fino:m.fine,ora:"",artista:m.titolo,luogo:m.sede,citta:m.citta||CITY.capo,genere:m.categoria||"",tipo:"",rassegna:"",descrizione:m.descrizione||"",fonte:m.fonte||"",biglietti:"",orari:m.orari||"",_ing:ING[(m.ingresso||"").toLowerCase()]||"Da verificare",sito_luogo:m.sito||""}));
+const MOSTRE=(Array.isArray(MD.mostre)?MD.mostre:[]).filter(m=>m&&ISO.test(m.inizio||"")&&ISO.test(m.fine||"")&&m.titolo&&m.sede).map(m=>({id:m.id,_kind:"m",data:m.inizio,fino:m.fine,ora:"",artista:m.titolo,luogo:m.sede,citta:m.citta||CITY.capo,genere:m.categoria||"",tipo:"",rassegna:"",descrizione:m.descrizione||"",fonte:m.fonte||"",biglietti:/^https:/.test(m.biglietti||"")?m.biglietti:"",biglietti_tipo:m.biglietti_tipo||"",orari:m.orari||"",_ing:ING[(m.ingresso||"").toLowerCase()]||"Da verificare",sito_luogo:m.sito||""}));
 const CD=(window.CINEMA_DATA&&typeof window.CINEMA_DATA==="object")?window.CINEMA_DATA:{aggiornato:"",sale:[]};
 const CGIORNO=ISO.test(CD.giorno_orari||"")?CD.giorno_orari:(ISO.test(CD.aggiornato||"")?CD.aggiornato:"");
 const SALE=(Array.isArray(CD.sale)?CD.sale:[]).filter(s=>s&&s.nome);
@@ -970,7 +970,8 @@ function cardM(e){
  ${e.orari?`<p class="orari">🕒 ${esc(e.orari)}</p>`:""}
  <div class="meta"><span class="pill${free?" ok":""}">${esc(e._ing)}</span></div>
  <div class="actions">
-  ${/^https:/.test(e.fonte||"")?`<a class="act primary" href="${esc(e.fonte)}" target="_blank" rel="noopener">Scheda della mostra</a>`:""}
+  ${e.biglietti?`<a class="act primary tkt" href="${esc(e.biglietti)}" target="_blank" rel="noopener">${TKT}<span>Biglietti</span></a>`:""}
+  ${/^https:/.test(e.fonte||"")?`<a class="act${e.biglietti?"":" primary"}" href="${esc(e.fonte)}" target="_blank" rel="noopener">Scheda della mostra</a>`:""}
   ${/^https:/.test(e.sito_luogo||"")&&e.sito_luogo!==e.fonte?`<a class="act" href="${esc(e.sito_luogo)}" target="_blank" rel="noopener">Sito</a>`:""}
  </div></article>`}
 function card(e){
@@ -1011,7 +1012,7 @@ function miniM(e){
  const st0=fut?{c:"soon",l:`Apre il ${fmt(e.data,{day:"numeric",month:"short"})}`}:left<=14?{c:"last",l:left===0?"Ultimo giorno":"Ultimi giorni"}:{c:"open",l:"In corso"};
  const per=fut?`Dal <b>${fY(e.data)}</b> al ${fY(e.fino)}`:`Fino al <b>${fY(e.fino)}</b> <small>· ${left===0?"oggi l'ultimo giorno":"ancora "+dur(left)}</small>`;
  const inner=`<div class="top"><span class="gtag">${g.em||""} ${esc(g.l)}</span><span class="mst ${st0.c}">${st0.l}</span></div><h3 class="title">${esc(e.artista)}</h3><div class="mper">${per}</div>${fut?"":`<div class="mbar"><i style="width:${pct.toFixed(1)}%"></i></div>`}${st.venue?"":`<div class="mloc">${PIN}<span>${esc(e.luogo)}${e._c!==CITY.capo?" · "+esc(e._c):""}</span></div>`}`;
- return miniA(reg({k:"m",e}),e.artista,g.c,inner).replace("%FOOT%",`<span class="pill${e._ing==="Ingresso gratuito"?" ok":""}">${esc(e._ing)}</span>`)}
+ return miniA(reg({k:"m",e}),e.artista,g.c,inner).replace("%FOOT%",`<span class="pill${e._ing==="Ingresso gratuito"?" ok":""}">${esc(e._ing)}</span>`+(e.biglietti?`<a class="act tkt" data-lab="Biglietti" href="${esc(e.biglietti)}" target="_blank" rel="noopener" aria-label="Biglietti: ${esc(e.artista)}">${TKT}<span class="lg">Biglietti</span><span class="sm">Ticket</span></a>`:""))}
 function miniC(f){
  const rows=f.r,vo=rows.some(r=>r._vo),d0=dayKeys()[0],many=dayKeys().length>1,fs=fasSel();
  const byT=new Map();rows.forEach(r=>byT.set(r.genere,(byT.get(r.genere)||0)+1));const g=GLAB[[...byT.entries()].sort((a,b)=>b[1]-a[1])[0][0]]||{c:"--mute"};
