@@ -1,22 +1,22 @@
 {
- "generato": "2026-11-09T18:52:48+00:00",
+ "generato": "2026-11-09T19:54:11+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-09",
  "visite_totali": 214,
- "totale_goatcounter": 585,
- "eventi_totali": 371,
+ "totale_goatcounter": 588,
+ "eventi_totali": 374,
  "eventi_per_tipo": {
-  "filtri": 121,
+  "filtri": 122,
   "cambio scheda": 66,
   "schede aperte": 52,
   "cambio vista": 35,
   "luoghi aperti": 31,
   "apri filtri": 17,
   "clic biglietti": 13,
+  "azzera filtri": 8,
   "clic info spettacoli": 8,
-  "azzera filtri": 7,
+  "altro": 6,
   "mostra altri": 5,
-  "altro": 5,
   "clic mostre (scheda o sito)": 5,
   "condivisioni": 4,
   "ricerche": 1,
@@ -31,11 +31,11 @@
    "cambio scheda": 66,
    "cambio vista": 35,
    "apri filtri": 17,
-   "filtri": 121,
+   "filtri": 122,
    "luoghi aperti": 31,
+   "azzera filtri": 8,
+   "altro": 6,
    "mostra altri": 5,
-   "azzera filtri": 7,
-   "altro": 5,
    "schede aperte": 52,
    "condivisioni": 4,
    "clic biglietti": 13,
@@ -52,9 +52,9 @@
    "apri filtri": 2,
    "filtri": 8,
    "luoghi aperti": 5,
-   "mostra altri": 2,
    "azzera filtri": 1,
    "altro": 0,
+   "mostra altri": 2,
    "schede aperte": 0,
    "condivisioni": 0,
    "clic biglietti": 4,
@@ -69,9 +69,9 @@
    "apri filtri": 4,
    "filtri": 14,
    "luoghi aperti": 4,
-   "mostra altri": 1,
    "azzera filtri": 1,
    "altro": 0,
+   "mostra altri": 1,
    "schede aperte": 3,
    "condivisioni": 0,
    "clic biglietti": 1,
@@ -86,9 +86,9 @@
    "apri filtri": 6,
    "filtri": 48,
    "luoghi aperti": 1,
-   "mostra altri": 1,
    "azzera filtri": 0,
    "altro": 0,
+   "mostra altri": 1,
    "schede aperte": 14,
    "condivisioni": 1,
    "clic biglietti": 2,
@@ -103,9 +103,9 @@
    "apri filtri": 3,
    "filtri": 21,
    "luoghi aperti": 8,
-   "mostra altri": 0,
    "azzera filtri": 2,
    "altro": 0,
+   "mostra altri": 0,
    "schede aperte": 11,
    "condivisioni": 1,
    "clic biglietti": 1,
@@ -120,9 +120,9 @@
    "apri filtri": 2,
    "filtri": 16,
    "luoghi aperti": 8,
-   "mostra altri": 0,
    "azzera filtri": 3,
    "altro": 2,
+   "mostra altri": 0,
    "schede aperte": 19,
    "condivisioni": 2,
    "clic biglietti": 2,
@@ -135,11 +135,11 @@
    "cambio scheda": 7,
    "cambio vista": 3,
    "apri filtri": 0,
-   "filtri": 14,
+   "filtri": 15,
    "luoghi aperti": 5,
+   "azzera filtri": 1,
+   "altro": 4,
    "mostra altri": 1,
-   "azzera filtri": 0,
-   "altro": 3,
    "schede aperte": 5,
    "condivisioni": 0,
    "clic biglietti": 3,
@@ -178,7 +178,7 @@
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 458
+   "conteggio": 461
   },
   {
    "origine": "achevents.com/milano",
@@ -330,6 +330,18 @@
    "tipo": "filtri"
   },
   {
+   "path": "spettacoli/azzera-filtri",
+   "titolo": "Azzera filtri",
+   "conteggio": 5,
+   "tipo": "azzera filtri"
+  },
+  {
+   "path": "guide/vai-dinners",
+   "titolo": "Vai a Ach's Dinners Guide",
+   "conteggio": 4,
+   "tipo": "altro"
+  },
+  {
    "path": "milano/spettacoli/filtro/Genere/Jazz",
    "titolo": "Filtro",
    "conteggio": 4,
@@ -354,22 +366,16 @@
    "tipo": "mostra altri"
   },
   {
-   "path": "spettacoli/azzera-filtri",
-   "titolo": "Azzera filtri",
-   "conteggio": 4,
-   "tipo": "azzera filtri"
-  },
-  {
    "path": "spettacoli/filtro/Genere/Teatro",
    "titolo": "Filtro",
    "conteggio": 4,
    "tipo": "filtri"
   },
   {
-   "path": "guide/vai-dinners",
-   "titolo": "Vai a Ach's Dinners Guide",
+   "path": "spettacoli/filtro/Genere/Serate e club",
+   "titolo": "Filtro",
    "conteggio": 3,
-   "tipo": "altro"
+   "tipo": "filtri"
   },
   {
    "path": "spettacoli/luogo/Estragon",
@@ -430,12 +436,6 @@
    "titolo": "Apertura programma del luogo",
    "conteggio": 2,
    "tipo": "luoghi aperti"
-  },
-  {
-   "path": "spettacoli/filtro/Genere/Serate e club",
-   "titolo": "Filtro",
-   "conteggio": 2,
-   "tipo": "filtri"
   },
   {
    "path": "spettacoli/dettaglio/Accabadora",
