@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-08",
- "giorno_orari": "2026-11-08",
+ "aggiornato": "2026-11-09",
+ "giorno_orari": "2026-11-09",
  "sale": [
   {
    "id": "c001",
@@ -51,30 +51,7 @@
    "tipo": "D'essai",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/bellinzona-d-essai_188/",
-   "film": [
-    {
-     "titolo": "Wild Horse Nine",
-     "orari": [
-      "15:30",
-      "18:15",
-      "21:00"
-     ],
-     "versione": "Versione originale (solo ore 21:00)",
-     "genere": "Commedia, Drammatico",
-     "regia": "Martin McDonagh",
-     "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
-     "durata": 118,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "15:30",
-       "18:15",
-       "21:00"
-      ]
-     },
-     "paese": "Regno Unito"
-    }
-   ]
+   "film": []
   },
   {
    "id": "c006",
@@ -94,28 +71,7 @@
    "tipo": "D'essai",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/chaplin-ex-tiffany_191/",
-   "film": [
-    {
-     "titolo": "Ragione e sentimento",
-     "orari": [
-      "16:00",
-      "18:45"
-     ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Ang Lee",
-     "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
-     "durata": 136,
-     "anno": 1995,
-     "giorni": {
-      "2026-11-08": [
-       "16:00",
-       "18:45"
-      ]
-     },
-     "paese": "USA"
-    }
-   ],
+   "film": [],
    "biglietti": "https://www.webtic.it/app/shopping/loadLocal/BO/5373"
   },
   {
@@ -140,9 +96,8 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "17:10",
-      "19:20",
-      "21:30"
+      "17:15",
+      "19:15"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -151,10 +106,9 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-08": [
-       "17:10",
-       "19:20",
-       "21:30"
+      "2026-11-09": [
+       "17:15",
+       "19:15"
       ]
      },
      "paese": "Italia",
@@ -172,7 +126,7 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
+      "2026-11-09": [
        "15:30"
       ]
      },
@@ -205,7 +159,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
+      "2026-11-09": [
        "16:15",
        "18:45",
        "21:15"
@@ -228,7 +182,7 @@
      "durata": 115,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
+      "2026-11-09": [
        "16:30",
        "19:00",
        "21:30"
@@ -270,75 +224,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/nuovo-nosadella_203/",
-   "film": [
-    {
-     "titolo": "Dio ride",
-     "orari": [
-      "15:30",
-      "19:30",
-      "21:30"
-     ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Giovanni Veronesi",
-     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "durata": 114,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "15:30",
-       "19:30",
-       "21:30"
-      ]
-     },
-     "paese": "Italia",
-     "biglietti": "https://nosadella.18tickets.it/film/94922"
-    },
-    {
-     "titolo": "Il gatto col cappello",
-     "orari": [
-      "15:30",
-      "17:30"
-     ],
-     "versione": "",
-     "genere": "Animazione",
-     "regia": "Alessandro Carloni e Erica Rivinoja",
-     "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
-     "durata": 107,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "15:30",
-       "17:30"
-      ]
-     },
-     "paese": "USA",
-     "biglietti": "https://nosadella.18tickets.it/film/98783"
-    },
-    {
-     "titolo": "Wild Horse Nine",
-     "orari": [
-      "17:30",
-      "19:30",
-      "21:30"
-     ],
-     "versione": "",
-     "genere": "Commedia, Drammatico",
-     "regia": "Martin McDonagh",
-     "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
-     "durata": 118,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "17:30",
-       "19:30",
-       "21:30"
-      ]
-     },
-     "paese": "Regno Unito",
-     "biglietti": "https://nosadella.18tickets.it/film/97166"
-    }
-   ],
+   "film": [],
    "biglietti": "https://nosadella.18tickets.it/"
   },
   {
@@ -350,43 +236,6 @@
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/odeon_205/",
    "film": [
-    {
-     "titolo": "Colazione da Tiffany",
-     "orari": [
-      "10:30"
-     ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Blake Edwards",
-     "interpreti": "Audrey Hepburn, George Peppard e Patricia Neal",
-     "durata": 115,
-     "anno": 1961,
-     "giorni": {
-      "2026-11-08": [
-       "10:30"
-      ]
-     },
-     "paese": "USA",
-     "biglietti": "https://ccb.18tickets.it/film/124953"
-    },
-    {
-     "titolo": "Il regno di Kensuke",
-     "orari": [
-      "10:30"
-     ],
-     "versione": "",
-     "genere": "Animazione, Avventura",
-     "regia": "Neil Boyle e Kirk Hendry",
-     "interpreti": "Cillian Murphy, Sally Hawkins e Ken Watanabe",
-     "durata": 85,
-     "anno": 2023,
-     "giorni": {
-      "2026-11-08": [
-       "10:30"
-      ]
-     },
-     "biglietti": "https://ccb.18tickets.it/film/110104"
-    },
     {
      "titolo": "Je so' pazzo",
      "orari": [
@@ -401,7 +250,7 @@
      "durata": 105,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
+      "2026-11-09": [
        "16:30",
        "18:45",
        "21:00"
@@ -424,7 +273,7 @@
      "durata": 115,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
+      "2026-11-09": [
        "16:15",
        "18:45",
        "21:15"
@@ -437,19 +286,17 @@
      "titolo": "Ragione e sentimento",
      "orari": [
       "15:30",
-      "18:15",
       "21:00"
      ],
-     "versione": "",
+     "versione": "Versione originale (solo ore 21:00)",
      "genere": "Drammatico",
      "regia": "Ang Lee",
      "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
      "durata": 136,
      "anno": 1995,
      "giorni": {
-      "2026-11-08": [
+      "2026-11-09": [
        "15:30",
-       "18:15",
        "21:00"
       ]
      },
@@ -461,7 +308,7 @@
      "orari": [
       "16:15",
       "18:30",
-      "20:45"
+      "21:30"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -470,10 +317,10 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
+      "2026-11-09": [
        "16:15",
        "18:30",
-       "20:45"
+       "21:30"
       ]
      },
      "paese": "Italia",
@@ -492,26 +339,27 @@
    "fonte": "https://movieplayer.it/cinema/orione_207/",
    "film": [
     {
-     "titolo": "La casa delle donne",
+     "titolo": "Calle Malaga",
      "orari": [
-      "18:30"
+      "16:30"
      ],
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "interpreti": "",
-     "durata": null,
+     "genere": "Drammatico",
+     "regia": "Maryam Touzani",
+     "interpreti": "Carmen Maura",
+     "durata": 116,
      "anno": 2025,
      "giorni": {
-      "2026-11-08": [
-       "18:30"
+      "2026-11-09": [
+       "16:30"
       ]
-     }
+     },
+     "paese": "Spagna"
     },
     {
      "titolo": "God Will Not Help",
      "orari": [
-      "21:00"
+      "18:30"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -520,28 +368,28 @@
      "durata": 137,
      "anno": 2025,
      "giorni": {
-      "2026-11-08": [
-       "21:00"
+      "2026-11-09": [
+       "18:30"
       ]
      }
     },
     {
-     "titolo": "Serpenti",
+     "titolo": "Nina Roza",
      "orari": [
-      "16:30"
+      "21:00"
      ],
-     "versione": "",
+     "versione": "Versione originale",
      "genere": "Drammatico",
-     "regia": "Roberto De Paolis Maino",
-     "interpreti": "Leonardo Lidi, Alessandro Borghi, Pietro Castellitto e Valeria Golino",
-     "durata": 88,
+     "regia": "Geneviève Dulude-Decelles",
+     "interpreti": "Galin Stoev, Michelle Tzontchev, Chiara Caselli e Ekaterina Stanina",
+     "durata": 103,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "16:30"
+      "2026-11-09": [
+       "21:00"
       ]
      },
-     "paese": "Italia"
+     "paese": "Canada"
     }
    ]
   },
@@ -563,31 +411,7 @@
    "tipo": "Multisala",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/pop-up-cinema-bristol_2890/",
-   "film": [
-    {
-     "titolo": "Se domani non torno",
-     "orari": [
-      "15:30",
-      "18:00",
-      "20:30"
-     ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Paola Randi",
-     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
-     "durata": 107,
-     "anno": 2027,
-     "giorni": {
-      "2026-11-08": [
-       "15:30",
-       "18:00",
-       "20:30"
-      ]
-     },
-     "paese": "Italia",
-     "biglietti": "https://bristol.popupcinema.18tickets.it/film/126603"
-    }
-   ],
+   "film": [],
    "biglietti": "https://bristol.popupcinema.18tickets.it/"
   },
   {
@@ -613,7 +437,7 @@
      "durata": 135,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
+      "2026-11-09": [
        "15:30",
        "18:15",
        "21:00"
@@ -636,7 +460,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
+      "2026-11-09": [
        "16:15",
        "18:45",
        "21:15"
@@ -672,7 +496,7 @@
      "durata": 82,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
+      "2026-11-09": [
        "16:00",
        "17:45",
        "19:30",
@@ -707,7 +531,7 @@
     {
      "titolo": "Clayface",
      "orari": [
-      "12:35"
+      "19:15"
      ],
      "versione": "",
      "genere": "Horror, Avventura, Azione",
@@ -716,15 +540,15 @@
      "durata": 108,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "12:35"
+      "2026-11-09": [
+       "19:15"
       ]
      }
     },
     {
      "titolo": "Dio ride",
      "orari": [
-      "14:15",
+      "16:40",
       "21:50"
      ],
      "versione": "",
@@ -734,39 +558,18 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "14:15",
+      "2026-11-09": [
+       "16:40",
        "21:50"
       ]
      },
      "paese": "Italia"
     },
     {
-     "titolo": "GOAT: Sogna in Grande",
-     "orari": [
-      "11:00"
-     ],
-     "versione": "",
-     "genere": "Animazione, Avventura, Commedia",
-     "regia": "Tyree Dillihay e Adam Rosette",
-     "interpreti": "Caleb McLaughlin, Gabrielle Union e Nick Kroll",
-     "durata": 100,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "11:00"
-      ]
-     },
-     "paese": "USA"
-    },
-    {
      "titolo": "Hope",
      "orari": [
-      "11:30",
-      "17:00",
-      "18:40",
-      "20:15",
-      "21:15"
+      "17:50",
+      "21:30"
      ],
      "versione": "",
      "genere": "Azione, Fantascienza, Horror",
@@ -775,40 +578,17 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "11:30",
-       "17:00",
-       "18:40",
-       "20:15",
-       "21:15"
+      "2026-11-09": [
+       "17:50",
+       "21:30"
       ]
      },
      "paese": "Corea del sud"
     },
     {
-     "titolo": "Ice Cream Man",
-     "orari": [
-      "13:40"
-     ],
-     "versione": "",
-     "genere": "Horror",
-     "regia": "Eli Roth",
-     "interpreti": "Eli Roth, Dylan Hawco e Ben Davis",
-     "durata": 86,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "13:40"
-      ]
-     },
-     "paese": "USA"
-    },
-    {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "11:10",
       "15:30",
-      "17:15",
       "18:15"
      ],
      "versione": "",
@@ -818,40 +598,21 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "11:10",
+      "2026-11-09": [
        "15:30",
-       "17:15",
        "18:15"
       ]
      },
      "paese": "USA"
     },
     {
-     "titolo": "Le cose non dette",
-     "orari": [
-      "11:45"
-     ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Gabriele Muccino",
-     "interpreti": "Stefano Accorsi, Miriam Leone e Claudio Santamaria",
-     "durata": 90,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "11:45"
-      ]
-     },
-     "paese": "Italia"
-    },
-    {
      "titolo": "Se domani non torno",
      "orari": [
-      "12:00",
-      "16:00",
+      "15:00",
       "18:00",
-      "21:00"
+      "20:00",
+      "21:00",
+      "22:00"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -860,11 +621,12 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-08": [
-       "12:00",
-       "16:00",
+      "2026-11-09": [
+       "15:00",
        "18:00",
-       "21:00"
+       "20:00",
+       "21:00",
+       "22:00"
       ]
      },
      "paese": "Italia"
@@ -872,10 +634,8 @@
     {
      "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
      "orari": [
-      "11:15",
-      "13:25",
-      "15:15",
-      "16:45"
+      "15:45",
+      "17:30"
      ],
      "versione": "",
      "genere": "Animazione",
@@ -884,11 +644,9 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "11:15",
-       "13:25",
-       "15:15",
-       "16:45"
+      "2026-11-09": [
+       "15:45",
+       "17:30"
       ]
      },
      "paese": "Regno Unito"
@@ -905,7 +663,7 @@
      "durata": 87,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
+      "2026-11-09": [
        "22:10"
       ]
      },
@@ -914,8 +672,9 @@
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
-      "19:50",
-      "22:20"
+      "15:20",
+      "20:40",
+      "22:40"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -924,9 +683,10 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "19:50",
-       "22:20"
+      "2026-11-09": [
+       "15:20",
+       "20:40",
+       "22:40"
       ]
      },
      "paese": "Italia"
@@ -934,8 +694,8 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "11:20",
-      "15:10",
+      "16:20",
+      "17:40",
       "19:00",
       "20:50"
      ],
@@ -946,9 +706,9 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "11:20",
-       "15:10",
+      "2026-11-09": [
+       "16:20",
+       "17:40",
        "19:00",
        "20:50"
       ]
@@ -958,7 +718,7 @@
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
-      "14:00"
+      "16:00"
      ],
      "versione": "",
      "genere": "Animazione, Avventura, Drammatico",
@@ -967,8 +727,8 @@
      "durata": 139,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "14:00"
+      "2026-11-09": [
+       "16:00"
       ]
      },
      "paese": "USA"
@@ -986,86 +746,9 @@
    "fonte": "https://europa-cinemas.org/en/portraits/cinema-lumière-Bologna",
    "film": [
     {
-     "titolo": "Hope",
-     "orari": [
-      "10:30",
-      "18:00",
-      "21:00"
-     ],
-     "versione": "Versione originale in coreano con sottotitoli in italiano",
-     "genere": "Azione, Fantascienza, Horror",
-     "regia": "Na Hong-jin",
-     "paese": "Corea del Sud",
-     "anno": 2026,
-     "durata": 157,
-     "giorni": {
-      "2026-11-08": [
-       "10:30",
-       "18:00",
-       "21:00"
-      ],
-      "2026-11-09": [
-       "18:15",
-       "21:15"
-      ],
-      "2026-11-10": [
-       "18:30",
-       "21:30"
-      ],
-      "2026-11-11": [
-       "18:30",
-       "21:30"
-      ]
-     },
-     "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
-     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/101225"
-    },
-    {
-     "titolo": "Wild Horse Nine",
-     "orari": [
-      "11:00",
-      "15:30",
-      "17:45",
-      "20:00",
-      "22:15"
-     ],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "Commedia, Drammatico",
-     "regia": "Martin McDonagh",
-     "paese": "GB-USA",
-     "anno": 2026,
-     "durata": 118,
-     "giorni": {
-      "2026-11-08": [
-       "11:00",
-       "15:30",
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-09": [
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-10": [
-       "16:00",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-11": [
-       "10:00",
-       "17:45",
-       "22:15"
-      ]
-     },
-     "interpreti": "Sam Rockwell, John Malkovich e Steve Buscemi",
-     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/100367"
-    },
-    {
      "titolo": "Fatherland",
      "orari": [
-      "16:00",
+      "16:30",
       "19:45"
      ],
      "versione": "Versione originale in tedesco con sottotitoli in italiano",
@@ -1075,10 +758,6 @@
      "anno": 2026,
      "durata": 82,
      "giorni": {
-      "2026-11-08": [
-       "16:00",
-       "19:45"
-      ],
       "2026-11-09": [
        "16:30",
        "19:45"
@@ -1106,10 +785,6 @@
      "anno": 2026,
      "durata": 135,
      "giorni": {
-      "2026-11-08": [
-       "17:15",
-       "21:30"
-      ],
       "2026-11-09": [
        "17:15",
        "21:30"
@@ -1125,6 +800,68 @@
      },
      "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
      "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/103271"
+    },
+    {
+     "titolo": "Wild Horse Nine",
+     "orari": [
+      "17:45",
+      "20:00",
+      "22:15"
+     ],
+     "versione": "Versione originale in inglese con sottotitoli in italiano",
+     "genere": "Commedia, Drammatico",
+     "regia": "Martin McDonagh",
+     "paese": "GB-USA",
+     "anno": 2026,
+     "durata": 118,
+     "giorni": {
+      "2026-11-09": [
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-10": [
+       "16:00",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-11": [
+       "10:00",
+       "17:45",
+       "22:15"
+      ]
+     },
+     "interpreti": "Sam Rockwell, John Malkovich e Steve Buscemi",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/100367"
+    },
+    {
+     "titolo": "Hope",
+     "orari": [
+      "18:15",
+      "21:15"
+     ],
+     "versione": "Versione originale in coreano con sottotitoli in italiano",
+     "genere": "Azione, Fantascienza, Horror",
+     "regia": "Na Hong-jin",
+     "paese": "Corea del Sud",
+     "anno": 2026,
+     "durata": 157,
+     "giorni": {
+      "2026-11-09": [
+       "18:15",
+       "21:15"
+      ],
+      "2026-11-10": [
+       "18:30",
+       "21:30"
+      ],
+      "2026-11-11": [
+       "18:30",
+       "21:30"
+      ]
+     },
+     "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/101225"
     },
     {
      "titolo": "Look Back",
@@ -1155,90 +892,10 @@
    "fonte": "https://www.bolognawelcome.com/it/luoghi/cinema-e-teatri/cinema-modernissimo",
    "film": [
     {
-     "titolo": "La gioia",
-     "orari": [
-      "10:30"
-     ],
-     "versione": "Film in lingua italiana",
-     "genere": "Drammatico",
-     "regia": "Nicolangelo Gelormini",
-     "paese": "Italia",
-     "anno": 2025,
-     "durata": 108,
-     "giorni": {
-      "2026-11-08": [
-       "10:30"
-      ]
-     },
-     "interpreti": "Jasmine Trinca, Valeria Golino e Saul Nanni",
-     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/71360"
-    },
-    {
-     "titolo": "L’albero di molto lontano",
+     "titolo": "Little Miss Sunshine",
      "orari": [
       "16:00"
      ],
-     "versione": "Versione con doppiaggio italiano",
-     "genere": "Family, Avventura, Fantasy",
-     "regia": "Ben Gregor",
-     "paese": "GB-USA-Francia",
-     "anno": 2026,
-     "durata": 110,
-     "giorni": {
-      "2026-11-08": [
-       "16:00"
-      ]
-     },
-     "interpreti": "Andrew Garfield, Claire Foy, Rebecca Ferguson e Nonso Anozie",
-     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101522"
-    },
-    {
-     "titolo": "Minnie and Moskowitz",
-     "orari": [
-      "18:15"
-     ],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "",
-     "regia": "John Cassavetes",
-     "paese": "USA",
-     "anno": 1971,
-     "durata": 114,
-     "giorni": {
-      "2026-11-08": [
-       "18:15"
-      ],
-      "2026-11-09": [
-       "20:00"
-      ],
-      "2026-11-11": [
-       "22:00"
-      ],
-      "2026-11-13": [
-       "10:30"
-      ]
-     }
-    },
-    {
-     "titolo": "L’esorcista – Director’s cut",
-     "orari": [
-      "21:00"
-     ],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "",
-     "regia": "William Friedkin",
-     "paese": "USA",
-     "anno": 1973,
-     "durata": 132,
-     "giorni": {
-      "2026-11-08": [
-       "21:00"
-      ]
-     },
-     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/19537"
-    },
-    {
-     "titolo": "Little Miss Sunshine",
-     "orari": [],
      "versione": "Versione con doppiaggio italiano con sottotitoli in italiano",
      "genere": "",
      "regia": "Jonathan Dayton e Valerie Faris",
@@ -1253,9 +910,11 @@
     },
     {
      "titolo": "La linea dell’orizzonte",
-     "orari": [],
+     "orari": [
+      "18:00"
+     ],
      "versione": "Film in lingua italiana",
-     "genere": "",
+     "genere": "Documentario",
      "regia": "Federico Frascherelli",
      "paese": "Italia",
      "anno": 2016,
@@ -1268,10 +927,35 @@
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101588"
     },
     {
-     "titolo": "La rabbia giovane",
-     "orari": [],
+     "titolo": "Minnie and Moskowitz",
+     "orari": [
+      "20:00"
+     ],
      "versione": "Versione originale in inglese con sottotitoli in italiano",
      "genere": "",
+     "regia": "John Cassavetes",
+     "paese": "USA",
+     "anno": 1971,
+     "durata": 114,
+     "giorni": {
+      "2026-11-09": [
+       "20:00"
+      ],
+      "2026-11-11": [
+       "22:00"
+      ],
+      "2026-11-13": [
+       "10:30"
+      ]
+     }
+    },
+    {
+     "titolo": "La rabbia giovane",
+     "orari": [
+      "22:15"
+     ],
+     "versione": "Versione originale in inglese con sottotitoli in italiano",
+     "genere": "Drammatico",
      "regia": "Terrence Malick",
      "paese": "USA",
      "anno": 1973,
@@ -1284,6 +968,7 @@
        "10:30"
       ]
      },
+     "interpreti": "Warren Oates, Sissy Spacek, Martin Sheen e Ramon Bieri",
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/23828"
     },
     {
@@ -1558,7 +1243,7 @@
      "titolo": "Non aprite quella porta",
      "orari": [],
      "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "Horror",
+     "genere": "",
      "regia": "Tobe Hooper",
      "paese": "USA",
      "anno": 1974,
@@ -1568,7 +1253,6 @@
        "22:30"
       ]
      },
-     "interpreti": "Allen Danzinger, Marilyn Burns, William Vail e Jim Siedow",
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/15738"
     },
     {
@@ -1634,6 +1318,67 @@
       ]
      },
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/9394"
+    },
+    {
+     "titolo": "Fare cinema a Bologna e in Emilia-Romagna | Scuole di cinema",
+     "orari": [],
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "paese": "",
+     "anno": null,
+     "durata": null,
+     "giorni": {
+      "2026-11-16": [
+       "15:30"
+      ]
+     }
+    },
+    {
+     "titolo": "Fare cinema a Bologna e in Emilia-Romagna / Visioni Ambientali",
+     "orari": [],
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "paese": "",
+     "anno": null,
+     "durata": null,
+     "giorni": {
+      "2026-11-16": [
+       "17:30"
+      ]
+     }
+    },
+    {
+     "titolo": "Visioni Ambientali",
+     "orari": [],
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "paese": "",
+     "anno": null,
+     "durata": null,
+     "giorni": {
+      "2026-11-16": [
+       "19:30"
+      ]
+     }
+    },
+    {
+     "titolo": "Mustang",
+     "orari": [],
+     "versione": "Film in lingua italiana",
+     "genere": "",
+     "regia": "Kasia Smutniak",
+     "paese": "Italia",
+     "anno": 2026,
+     "durata": 105,
+     "giorni": {
+      "2026-11-16": [
+       "21:15"
+      ]
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101952"
     }
    ],
    "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/"
@@ -1648,12 +1393,29 @@
    "fonte": "https://cinetecadibologna.it/programmazione/",
    "film": [
     {
+     "titolo": "Viale del tramonto",
+     "orari": [
+      "15:00"
+     ],
+     "versione": "Versione con doppiaggio italiano",
+     "genere": "Drammatico, Noir",
+     "regia": "Billy Wilder",
+     "paese": "USA",
+     "anno": 1950,
+     "durata": 110,
+     "giorni": {
+      "2026-11-09": [
+       "15:00"
+      ]
+     },
+     "interpreti": "William Holden, Gloria Swanson, Erich von Stroheim e Nancy Olson"
+    },
+    {
      "titolo": "Digger",
      "orari": [
-      "15:00",
-      "17:15",
-      "19:30",
-      "21:45"
+      "17:30",
+      "19:45",
+      "22:00"
      ],
      "versione": "Versione originale in inglese con sottotitoli in italiano",
      "genere": "Drammatico, Commedia",
@@ -1662,12 +1424,6 @@
      "anno": 2026,
      "durata": 128,
      "giorni": {
-      "2026-11-08": [
-       "15:00",
-       "17:15",
-       "19:30",
-       "21:45"
-      ],
       "2026-11-09": [
        "17:30",
        "19:45",
@@ -1686,21 +1442,6 @@
      },
      "interpreti": "Tom Cruise e John Goodman",
      "biglietti": "https://cervi.cinetecabologna.18tickets.it/film/93866"
-    },
-    {
-     "titolo": "Viale del tramonto",
-     "orari": [],
-     "versione": "Versione con doppiaggio italiano",
-     "genere": "",
-     "regia": "Billy Wilder",
-     "paese": "USA",
-     "anno": 1950,
-     "durata": 110,
-     "giorni": {
-      "2026-11-09": [
-       "15:00"
-      ]
-     }
     }
    ],
    "biglietti": "https://cervi.cinetecabologna.18tickets.it/"
@@ -1717,7 +1458,7 @@
     {
      "titolo": "Clayface",
      "orari": [
-      "22:10"
+      "18:50"
      ],
      "versione": "",
      "genere": "Horror, Avventura, Azione",
@@ -1726,15 +1467,15 @@
      "durata": 108,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "22:10"
+      "2026-11-09": [
+       "18:50"
       ]
      }
     },
     {
      "titolo": "Dio ride",
      "orari": [
-      "19:40"
+      "18:20"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -1743,54 +1484,16 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "19:40"
+      "2026-11-09": [
+       "18:20"
       ]
      },
      "paese": "Italia"
     },
     {
-     "titolo": "Fast and Furious",
-     "orari": [
-      "13:10"
-     ],
-     "versione": "",
-     "genere": "Azione",
-     "regia": "Rob Cohen",
-     "interpreti": "Paul Walker, Vin Diesel e Michelle Rodriguez",
-     "durata": 106,
-     "anno": 2001,
-     "giorni": {
-      "2026-11-08": [
-       "13:10"
-      ]
-     }
-    },
-    {
-     "titolo": "Ferine",
-     "orari": [
-      "23:15"
-     ],
-     "versione": "",
-     "genere": "Horror",
-     "regia": "Andrea Corsini",
-     "interpreti": "Carolyn Bracken, Caroline Goodall e Paola Lavini",
-     "durata": 103,
-     "anno": 2025,
-     "giorni": {
-      "2026-11-08": [
-       "23:15"
-      ]
-     }
-    },
-    {
      "titolo": "Hope",
      "orari": [
-      "10:40",
-      "15:00",
-      "18:40",
-      "21:40",
-      "22:15"
+      "21:40"
      ],
      "versione": "",
      "genere": "Azione, Fantascienza, Horror",
@@ -1799,23 +1502,51 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "10:40",
-       "15:00",
-       "18:40",
-       "21:40",
-       "22:15"
+      "2026-11-09": [
+       "21:40"
       ]
      },
      "paese": "Corea del sud"
     },
     {
+     "titolo": "Hunger Games",
+     "orari": [
+      "20:30"
+     ],
+     "versione": "",
+     "genere": "Drammatico, Thriller, Fantascienza",
+     "regia": "Gary Ross",
+     "interpreti": "Jennifer Lawrence, Josh Hutcherson e Liam Hemsworth",
+     "durata": 142,
+     "anno": 2012,
+     "giorni": {
+      "2026-11-09": [
+       "20:30"
+      ]
+     }
+    },
+    {
+     "titolo": "Ice Cream Man",
+     "orari": [
+      "22:10"
+     ],
+     "versione": "",
+     "genere": "Commedia, Horror, Thriller",
+     "regia": "Eli Roth",
+     "interpreti": "Eli Roth, Dylan Hawco e Ben Davis",
+     "durata": 86,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-09": [
+       "22:10"
+      ]
+     }
+    },
+    {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "11:15",
-      "14:30",
-      "17:00",
-      "18:20"
+      "16:00",
+      "17:00"
      ],
      "versione": "",
      "genere": "Animazione",
@@ -1824,11 +1555,9 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "11:15",
-       "14:30",
-       "17:00",
-       "18:20"
+      "2026-11-09": [
+       "16:00",
+       "17:00"
       ]
      },
      "paese": "USA"
@@ -1836,6 +1565,7 @@
     {
      "titolo": "It Ends",
      "orari": [
+      "16:00",
       "20:00"
      ],
      "versione": "",
@@ -1845,39 +1575,35 @@
      "durata": 89,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
+      "2026-11-09": [
+       "16:00",
        "20:00"
       ]
      },
      "paese": "USA"
     },
     {
-     "titolo": "Je so' pazzo",
+     "titolo": "RIDER",
      "orari": [
-      "15:50"
+      "20:10"
      ],
      "versione": "",
-     "genere": "Biografico",
-     "regia": "Nicola Prosatore",
-     "interpreti": "Massimiliano Caiazzo",
-     "durata": 105,
+     "genere": "",
+     "regia": "",
+     "interpreti": "",
+     "durata": null,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "15:50"
+      "2026-11-09": [
+       "20:10"
       ]
-     },
-     "paese": "Italia"
+     }
     },
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "10:15",
-      "10:45",
-      "14:00",
-      "15:30",
       "16:30",
-      "18:00",
+      "17:40",
       "19:00",
       "21:30",
       "22:00"
@@ -1889,13 +1615,9 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-08": [
-       "10:15",
-       "10:45",
-       "14:00",
-       "15:30",
+      "2026-11-09": [
        "16:30",
-       "18:00",
+       "17:40",
        "19:00",
        "21:30",
        "22:00"
@@ -1906,7 +1628,6 @@
     {
      "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
      "orari": [
-      "13:15",
       "17:20"
      ],
      "versione": "",
@@ -1916,8 +1637,7 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "13:15",
+      "2026-11-09": [
        "17:20"
       ]
      },
@@ -1935,7 +1655,7 @@
      "durata": 87,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
+      "2026-11-09": [
        "22:20"
       ]
      },
@@ -1944,9 +1664,7 @@
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
-      "14:50",
-      "17:45",
-      "19:50"
+      "17:45"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -1955,55 +1673,48 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "14:50",
-       "17:45",
-       "19:50"
+      "2026-11-09": [
+       "17:45"
       ]
      },
      "paese": "Italia"
     },
     {
+     "titolo": "Verity",
+     "orari": [
+      "22:30"
+     ],
+     "versione": "",
+     "genere": "Thriller",
+     "regia": "Michael Showalter",
+     "interpreti": "Dakota Johnson, Anne Hathaway e Josh Hartnett",
+     "durata": null,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-09": [
+       "22:30"
+      ]
+     }
+    },
+    {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "10:00",
-      "11:45",
       "18:10",
       "21:10"
      ],
-     "versione": "Versione originale (solo ore 18:10, 10:00)",
+     "versione": "",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "10:00",
-       "11:45",
+      "2026-11-09": [
        "18:10",
        "21:10"
       ]
      },
      "paese": "Regno Unito"
-    },
-    {
-     "titolo": "Wildwood - I segreti del bosco proibito",
-     "orari": [
-      "15:15"
-     ],
-     "versione": "",
-     "genere": "Animazione, Avventura, Drammatico",
-     "regia": "Travis Knight",
-     "interpreti": "Peyton Elizabeth Lee, Jacob Tremblay e Carey Mulligan",
-     "durata": 139,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "15:15"
-      ]
-     },
-     "paese": "USA"
     }
    ],
    "biglietti": "https://www.ucicinemas.it/"
@@ -2020,8 +1731,6 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "16:00",
-      "18:30",
       "21:00"
      ],
      "versione": "",
@@ -2031,9 +1740,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "16:00",
-       "18:30",
+      "2026-11-09": [
        "21:00"
       ]
      },
@@ -2042,8 +1749,6 @@
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
-      "16:00",
-      "18:30",
       "21:00"
      ],
      "versione": "",
@@ -2053,9 +1758,7 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "16:00",
-       "18:30",
+      "2026-11-09": [
        "21:00"
       ]
      },
@@ -2087,7 +1790,6 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "18:30",
       "21:00"
      ],
      "versione": "",
@@ -2097,30 +1799,28 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "18:30",
+      "2026-11-09": [
        "21:00"
       ]
      },
      "paese": "Italia"
     },
     {
-     "titolo": "Il gatto col cappello",
+     "titolo": "Giulio Regeni - Tutto il male del mondo",
      "orari": [
-      "16:00"
+      "18:30"
      ],
      "versione": "",
-     "genere": "Animazione",
-     "regia": "Alessandro Carloni e Erica Rivinoja",
-     "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
-     "durata": 107,
+     "genere": "Documentario",
+     "regia": "Simone Manetti",
+     "interpreti": "",
+     "durata": 96,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "16:00"
+      "2026-11-09": [
+       "18:30"
       ]
-     },
-     "paese": "USA"
+     }
     }
    ],
    "auto": true
@@ -2135,26 +1835,9 @@
    "fonte": "https://movieplayer.it/cinema/don-bosco_216/",
    "film": [
     {
-     "titolo": "Naza",
-     "orari": [
-      "21:00"
-     ],
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "interpreti": "",
-     "durata": null,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "21:00"
-      ]
-     }
-    },
-    {
      "titolo": "The Invite - Il piacere è tutto nostro",
      "orari": [
-      "17:30"
+      "21:00"
      ],
      "versione": "",
      "genere": "Commedia, Drammatico",
@@ -2163,8 +1846,8 @@
      "durata": 108,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "17:30"
+      "2026-11-09": [
+       "21:00"
       ]
      }
     }
@@ -2183,8 +1866,7 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "17:00",
-      "21:15"
+      "18:30"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -2193,9 +1875,8 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "17:00",
-       "21:15"
+      "2026-11-09": [
+       "18:30"
       ]
      },
      "paese": "Italia"
@@ -2203,8 +1884,8 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "15:00",
-      "19:15"
+      "16:30",
+      "20:45"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -2213,9 +1894,9 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-08": [
-       "15:00",
-       "19:15"
+      "2026-11-09": [
+       "16:30",
+       "20:45"
       ]
      },
      "paese": "Italia"
@@ -2242,26 +1923,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/cristallo_2024/",
-   "film": [
-    {
-     "titolo": "Ragione e sentimento",
-     "orari": [
-      "16:00"
-     ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Ang Lee",
-     "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
-     "durata": 136,
-     "anno": 1995,
-     "giorni": {
-      "2026-11-08": [
-       "16:00"
-      ]
-     },
-     "paese": "USA"
-    }
-   ],
+   "film": [],
    "auto": true
   },
   {
@@ -2272,30 +1934,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/don-fiorentini-cinema-teatro_220/",
-   "film": [
-    {
-     "titolo": "Dio ride",
-     "orari": [
-      "16:00",
-      "18:15",
-      "20:30"
-     ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Giovanni Veronesi",
-     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "durata": 114,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "16:00",
-       "18:15",
-       "20:30"
-      ]
-     },
-     "paese": "Italia"
-    }
-   ],
+   "film": [],
    "auto": true
   },
   {
@@ -2306,46 +1945,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/aurora_223/",
-   "film": [
-    {
-     "titolo": "Dio ride",
-     "orari": [
-      "18:30",
-      "21:00"
-     ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Giovanni Veronesi",
-     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "durata": 114,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "18:30",
-       "21:00"
-      ]
-     },
-     "paese": "Italia"
-    },
-    {
-     "titolo": "Il gatto col cappello",
-     "orari": [
-      "16:00"
-     ],
-     "versione": "",
-     "genere": "Animazione",
-     "regia": "Alessandro Carloni e Erica Rivinoja",
-     "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
-     "durata": 107,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "16:00"
-      ]
-     },
-     "paese": "USA"
-    }
-   ],
+   "film": [],
    "auto": true
   },
   {
@@ -2360,7 +1960,6 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "17:00",
       "21:00"
      ],
      "versione": "",
@@ -2370,8 +1969,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "17:00",
+      "2026-11-09": [
        "21:00"
       ]
      },
@@ -2390,29 +1988,9 @@
    "fonte": "https://movieplayer.it/cinema/giada-cinecomfort-bi-space_228/",
    "film": [
     {
-     "titolo": "Dio ride",
-     "orari": [
-      "16:00",
-      "21:00"
-     ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Giovanni Veronesi",
-     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "durata": 114,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "16:00",
-       "21:00"
-      ]
-     },
-     "paese": "Italia"
-    },
-    {
      "titolo": "Minotaur",
      "orari": [
-      "18:30"
+      "21:00"
      ],
      "versione": "",
      "genere": "Drammatico, Thriller",
@@ -2421,8 +1999,8 @@
      "durata": 135,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "18:30"
+      "2026-11-09": [
+       "21:00"
       ]
      },
      "paese": "Francia"
@@ -2449,28 +2027,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/italia_229/",
-   "film": [
-    {
-     "titolo": "Dio ride",
-     "orari": [
-      "17:30",
-      "21:00"
-     ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Giovanni Veronesi",
-     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "durata": 114,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "17:30",
-       "21:00"
-      ]
-     },
-     "paese": "Italia"
-    }
-   ],
+   "film": [],
    "auto": true
   },
   {
@@ -2485,8 +2042,6 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "16:20",
-      "18:20",
       "21:15"
      ],
      "versione": "",
@@ -2496,9 +2051,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "16:20",
-       "18:20",
+      "2026-11-09": [
        "21:15"
       ]
      },
@@ -2507,7 +2060,7 @@
     {
      "titolo": "Hope",
      "orari": [
-      "15:45"
+      "20:30"
      ],
      "versione": "",
      "genere": "Azione, Fantascienza, Horror",
@@ -2516,8 +2069,8 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "15:45"
+      "2026-11-09": [
+       "20:30"
       ]
      },
      "paese": "Corea del sud"
@@ -2525,69 +2078,23 @@
     {
      "titolo": "Ice Cream Man",
      "orari": [
-      "19:30",
       "21:15"
      ],
      "versione": "",
-     "genere": "Horror",
+     "genere": "Commedia, Horror, Thriller",
      "regia": "Eli Roth",
      "interpreti": "Eli Roth, Dylan Hawco e Ben Davis",
      "durata": 86,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "19:30",
+      "2026-11-09": [
        "21:15"
       ]
-     },
-     "paese": "USA"
-    },
-    {
-     "titolo": "Il gatto col cappello",
-     "orari": [
-      "16:00",
-      "18:30",
-      "20:30"
-     ],
-     "versione": "",
-     "genere": "Animazione",
-     "regia": "Alessandro Carloni e Erica Rivinoja",
-     "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
-     "durata": 107,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "16:00",
-       "18:30",
-       "20:30"
-      ]
-     },
-     "paese": "USA"
-    },
-    {
-     "titolo": "Ragione e sentimento",
-     "orari": [
-      "18:30"
-     ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Ang Lee",
-     "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
-     "durata": 136,
-     "anno": 1995,
-     "giorni": {
-      "2026-11-08": [
-       "18:30"
-      ]
-     },
-     "paese": "USA"
+     }
     },
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "15:45",
-      "17:40",
-      "19:30",
       "21:15"
      ],
      "versione": "",
@@ -2597,40 +2104,15 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-08": [
-       "15:45",
-       "17:40",
-       "19:30",
+      "2026-11-09": [
        "21:15"
       ]
      },
      "paese": "Italia"
     },
     {
-     "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
-     "orari": [
-      "15:40",
-      "18:00"
-     ],
-     "versione": "",
-     "genere": "Animazione",
-     "regia": "Steve Cox e Matthew Walker",
-     "interpreti": "Justin Fletcher, John Sparkes e Kate Harbour",
-     "durata": 91,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "15:40",
-       "18:00"
-      ]
-     },
-     "paese": "Regno Unito"
-    },
-    {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
-      "17:00",
-      "18:45",
       "21:15"
      ],
      "versione": "",
@@ -2640,9 +2122,7 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "17:00",
-       "18:45",
+      "2026-11-09": [
        "21:15"
       ]
      },
@@ -2651,8 +2131,6 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "16:15",
-      "18:30",
       "21:15"
      ],
      "versione": "",
@@ -2662,31 +2140,11 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-08": [
-       "16:15",
-       "18:30",
+      "2026-11-09": [
        "21:15"
       ]
      },
      "paese": "Regno Unito"
-    },
-    {
-     "titolo": "Wildwood - I segreti del bosco proibito",
-     "orari": [
-      "16:00"
-     ],
-     "versione": "",
-     "genere": "Animazione, Avventura, Drammatico",
-     "regia": "Travis Knight",
-     "interpreti": "Peyton Elizabeth Lee, Jacob Tremblay e Carey Mulligan",
-     "durata": 139,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-08": [
-       "16:00"
-      ]
-     },
-     "paese": "USA"
     }
    ],
    "auto": true
