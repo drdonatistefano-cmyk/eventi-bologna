@@ -1222,10 +1222,10 @@ const GC="eventibologna";/* nome dell'account goatcounter.com, es. "eventibologn
 if(GC&&ON_WEB){try{const s=document.createElement("script");s.async=true;s.dataset.goatcounter=`https://${GC}.goatcounter.com/count`;s.src="https://gc.zgo.at/count.js";document.body.appendChild(s)}catch(_){}}
 /* Affiliazioni Awin (publisher Achevents, ID 3146807). mid = ID inserzionista per dominio:
    0 = programma non ancora approvato, link invariati. TicketOne IT = 9567 dopo l'approvazione. */
-const AFF={awin:"3146807",mid:{"ticketone.it":0,"vivaticket.com":0,"vivaticket.it":0}};
+const AFF={awin:"3146807",mid:{"ticketone.it":0,"vivaticket.com":0,"vivaticket.it":0,"tiqets.com":12427}};
 function affUrl(u){try{const h=new URL(u).hostname.replace(/^www\./,"");for(const d in AFF.mid){if(AFF.awin&&AFF.mid[d]&&(h===d||h.endsWith("."+d)))return "https://www.awin1.com/cread.php?awinmid="+AFF.mid[d]+"&awinaffid="+AFF.awin+"&ued="+encodeURIComponent(u)}}catch(_){}return u}
 document.addEventListener("click",e=>{const a=e.target.closest("a[href^='https://']");if(a&&!a.dataset.aff){const v=affUrl(a.href);if(v!==a.href){a.dataset.aff=a.href;a.href=v}}},true);
-if(AFF.awin&&Object.values(AFF.mid).some(Boolean)){const f=document.querySelector("footer");if(f)f.insertAdjacentHTML("beforeend"," Alcuni link ai biglietti sono affiliati: se acquisti, il sito riceve una piccola commissione senza costi in più per te.")}
+if(AFF.awin&&Object.values(AFF.mid).some(Boolean)&&(()=>{try{const L=[...(window.EVENTI_DATA||{}).eventi||[],...(window.MOSTRE_DATA||{}).mostre||[]];return L.some(x=>[x.biglietti,x.sito,x.fonte].some(u=>/^https:/.test(u||"")&&affUrl(u)!==u))}catch(_){return false}})()){const f=document.querySelector("footer");if(f)f.insertAdjacentHTML("beforeend"," Alcuni link ai biglietti sono affiliati: se acquisti, il sito riceve una piccola commissione senza costi in più per te.")}
 
 /* ---------- selettore città e testi della città ---------- */
 (function(){const h=document.querySelector(".hero h1");
