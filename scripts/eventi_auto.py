@@ -128,9 +128,24 @@ def genere_mb(nome):
 TIPO_G = {"Rock": "Concerto rock", "Jazz": "Concerto jazz", "Classica": "Concerto di musica classica", "Pop e altra musica": "Concerto"}
 
 
+CITTA_RX = r"(?:Bologna|Milano|Milan)(?:,?\s*(?:Italy|Italia|IT))?"
+def pulisci_titolo(t, luogo):
+    t = re.sub(r"\s+", " ", t).strip()
+    t = re.sub(r"(?i)\s*@\s*%s\b.*$" % re.escape(luogo.split()[0]) if luogo else r"$^", "", t)  # «@Teatro Testoni …»
+    t = re.sub(r"\s*@\s*[^@]{3,40}$", "", t)                                # «… @ luogo»
+    t = re.sub(r"\s*[:\-–|]\s*\?+\s*$", "", t)
+    for _ in range(2):
+        t = re.sub(r"(?i)\s*[-–|•:,]\s*%s\s*$" % CITTA_RX, "", t)       # «… - Bologna», «| Milano»
+        t = re.sub(r"(?i)\s*\(\s*%s\s*\)\s*$" % CITTA_RX, "", t)       # «(Bologna)»
+        t = re.sub(r"(?i)\s+(?:a|in|at)\s+%s\s*$" % CITTA_RX, "", t)     # «… a Bologna»
+        t = re.sub(r"(?i)\s*[-–|•:]\s*$", "", t)
+    return t.strip() or luogo
+
+
 def nuovo(artista, d, fino, ora, luogo, citta, genere, tipo, url, disp, fonte):
     al = "all'" if re.match(r"(?i)[aeiou]", luogo) else "al "
     desc = {"Serate e club": f"Serata nel club {luogo}.", "Teatro": f"{tipo or 'Spettacolo'} {al}{luogo}."}.get(genere, f"{tipo or 'Concerto'} dal vivo {al}{luogo}.")
+    artista = pulisci_titolo(artista, luogo)
     return {"id": "", "data": d, "fino": fino, "ora": ora, "artista": artista, "luogo": luogo, "citta": citta, "genere": genere,
             "tipo": tipo, "rassegna": "", "descrizione": desc, "fonte": fonte, "biglietti": url, "biglietti_tipo": "Acquista" if url else "",
             "disp": disp, "disp_nota": "", "disp_verificata": OGGI if disp != "da verificare" else "", "sito_luogo": ""}
