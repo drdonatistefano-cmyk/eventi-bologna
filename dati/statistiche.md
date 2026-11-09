@@ -1,6 +1,6 @@
 # Statistiche del sito – dal 2026-11-04 al 2026-11-09
 
-Aggiornate il 2026-11-09 23:04 UTC da GoatCounter (eventibologna).
+Aggiornate il 2026-11-09 23:39 UTC da GoatCounter (eventibologna).
 
 - Visite totali: **214**
 - Interazioni registrate: **374**
