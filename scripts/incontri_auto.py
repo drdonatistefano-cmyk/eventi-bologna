@@ -279,7 +279,8 @@ def bookcity():
             url = f(r'<h3>\s*<a href="([^"]+)"')
             tags = [cl(x) for x in re.findall(r'class="tag"[^>]*>(.*?)</a>', b, re.S)]
             if not titolo or not luogo or not url.startswith("https://"): continue
-            if re.search(r"(?i)riservato alle classi|solo su invito|riservato (agli|ai) (iscritti|soci)", titolo): continue
+            if re.search(r"(?i)riservat[oa]|solo su invito|posti esauriti", titolo): continue
+            if re.search(r"(?i)penitenziari|carcere|casa circondariale|policlinico|ospedale|reparti", luogo + " " + titolo): continue
             if re.search(FUORI, luogo) or any(t.startswith("BookCity Milano a ") for t in tags): continue
             citta = "Milano"
             mm = re.match(r"^([^-–]+?)\s+[-–]\s+(.+)$", luogo)
