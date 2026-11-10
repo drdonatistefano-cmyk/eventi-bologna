@@ -1,20 +1,20 @@
 {
- "generato": "2026-11-10T20:46:05+00:00",
+ "generato": "2026-11-10T21:24:47+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-10",
  "visite_totali": 233,
- "totale_goatcounter": 648,
- "eventi_totali": 415,
+ "totale_goatcounter": 660,
+ "eventi_totali": 427,
  "eventi_per_tipo": {
-  "filtri": 129,
-  "cambio scheda": 71,
-  "schede aperte": 60,
-  "cambio vista": 39,
-  "luoghi aperti": 35,
+  "filtri": 132,
+  "cambio scheda": 74,
+  "schede aperte": 61,
+  "cambio vista": 41,
+  "luoghi aperti": 36,
   "apri filtri": 19,
-  "clic biglietti": 14,
+  "clic biglietti": 15,
   "altro": 12,
-  "clic info spettacoli": 9,
+  "clic info spettacoli": 10,
   "azzera filtri": 8,
   "mostra altri": 6,
   "clic mostre (scheda o sito)": 5,
@@ -28,18 +28,18 @@
    "dal": "2026-11-04",
    "al": "2026-11-10",
    "visite": 233,
-   "cambio scheda": 71,
-   "cambio vista": 39,
+   "cambio scheda": 74,
+   "cambio vista": 41,
    "apri filtri": 19,
-   "filtri": 129,
+   "filtri": 132,
    "altro": 12,
-   "luoghi aperti": 35,
+   "luoghi aperti": 36,
    "azzera filtri": 8,
    "mostra altri": 6,
-   "schede aperte": 60,
+   "schede aperte": 61,
+   "clic biglietti": 15,
    "condivisioni": 4,
-   "clic biglietti": 14,
-   "clic info spettacoli": 9,
+   "clic info spettacoli": 10,
    "ricerche": 2,
    "clic cinema (programma della sala)": 2,
    "clic mostre (scheda o sito)": 5
@@ -56,8 +56,8 @@
    "azzera filtri": 1,
    "mostra altri": 2,
    "schede aperte": 0,
-   "condivisioni": 0,
    "clic biglietti": 4,
+   "condivisioni": 0,
    "clic info spettacoli": 3,
    "ricerche": 0,
    "clic cinema (programma della sala)": 0,
@@ -73,8 +73,8 @@
    "azzera filtri": 1,
    "mostra altri": 1,
    "schede aperte": 3,
-   "condivisioni": 0,
    "clic biglietti": 1,
+   "condivisioni": 0,
    "clic info spettacoli": 0,
    "ricerche": 0,
    "clic cinema (programma della sala)": 0,
@@ -90,8 +90,8 @@
    "azzera filtri": 0,
    "mostra altri": 1,
    "schede aperte": 14,
-   "condivisioni": 1,
    "clic biglietti": 2,
+   "condivisioni": 1,
    "clic info spettacoli": 2,
    "ricerche": 0,
    "clic cinema (programma della sala)": 1,
@@ -107,8 +107,8 @@
    "azzera filtri": 2,
    "mostra altri": 0,
    "schede aperte": 11,
-   "condivisioni": 1,
    "clic biglietti": 1,
+   "condivisioni": 1,
    "clic info spettacoli": 0,
    "ricerche": 0,
    "clic cinema (programma della sala)": 0,
@@ -124,8 +124,8 @@
    "azzera filtri": 3,
    "mostra altri": 0,
    "schede aperte": 19,
-   "condivisioni": 2,
    "clic biglietti": 2,
+   "condivisioni": 2,
    "clic info spettacoli": 3,
    "ricerche": 0,
    "clic cinema (programma della sala)": 0,
@@ -141,26 +141,26 @@
    "azzera filtri": 1,
    "mostra altri": 1,
    "schede aperte": 5,
-   "condivisioni": 0,
    "clic biglietti": 3,
+   "condivisioni": 0,
    "clic info spettacoli": 0,
    "ricerche": 1,
    "clic cinema (programma della sala)": 0,
    "clic mostre (scheda o sito)": 0
   },
   "2026-11-10": {
-   "cambio scheda": 5,
-   "cambio vista": 4,
+   "cambio scheda": 8,
+   "cambio vista": 6,
    "apri filtri": 2,
-   "filtri": 7,
+   "filtri": 10,
    "altro": 6,
-   "luoghi aperti": 4,
+   "luoghi aperti": 5,
    "azzera filtri": 0,
    "mostra altri": 1,
-   "schede aperte": 8,
+   "schede aperte": 9,
+   "clic biglietti": 2,
    "condivisioni": 0,
-   "clic biglietti": 1,
-   "clic info spettacoli": 1,
+   "clic info spettacoli": 2,
    "ricerche": 1,
    "clic cinema (programma della sala)": 1,
    "clic mostre (scheda o sito)": 0
@@ -199,11 +199,11 @@
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 483
+   "conteggio": 485
   },
   {
    "origine": "achevents.com/milano",
-   "conteggio": 78
+   "conteggio": 80
   },
   {
    "origine": "achevents.com",
@@ -211,7 +211,7 @@
   },
   {
    "origine": "achplaces.com",
-   "conteggio": 19
+   "conteggio": 27
   },
   {
    "origine": "ui.awin.com",
@@ -283,20 +283,20 @@
   {
    "path": "scheda/cinema",
    "titolo": "Cambio scheda",
-   "conteggio": 10,
+   "conteggio": 11,
    "tipo": "cambio scheda"
+  },
+  {
+   "path": "milano/spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 9,
+   "tipo": "cambio vista"
   },
   {
    "path": "spettacoli/apri-filtri",
    "titolo": "Apertura filtri",
    "conteggio": 9,
    "tipo": "apri filtri"
-  },
-  {
-   "path": "milano/spettacoli/vista/luoghi",
-   "titolo": "Cambio vista",
-   "conteggio": 8,
-   "tipo": "cambio vista"
   },
   {
    "path": "spettacoli/vista/elenco",
@@ -311,7 +311,19 @@
    "tipo": "apri filtri"
   },
   {
+   "path": "milano/spettacoli/filtro/Date/oggi",
+   "titolo": "Filtro",
+   "conteggio": 7,
+   "tipo": "filtri"
+  },
+  {
    "path": "milano/spettacoli/filtro/Genere/Rock",
+   "titolo": "Filtro",
+   "conteggio": 7,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Date/weekend",
    "titolo": "Filtro",
    "conteggio": 7,
    "tipo": "filtri"
@@ -345,18 +357,6 @@
    "titolo": "Vai a Ach's Dinners Guide",
    "conteggio": 6,
    "tipo": "altro"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Date/oggi",
-   "titolo": "Filtro",
-   "conteggio": 6,
-   "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Date/weekend",
-   "titolo": "Filtro",
-   "conteggio": 6,
-   "tipo": "filtri"
   },
   {
    "path": "spettacoli/luogo/Teatro Duse",
@@ -407,6 +407,18 @@
    "tipo": "filtri"
   },
   {
+   "path": "milano/spettacoli/vista/elenco",
+   "titolo": "Cambio vista",
+   "conteggio": 3,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Marco Mengoni – Allo Sbagliato",
+   "titolo": "Apertura scheda",
+   "conteggio": 3,
+   "tipo": "schede aperte"
+  },
+  {
    "path": "spettacoli/filtro/Genere/Serate e club",
    "titolo": "Filtro",
    "conteggio": 3,
@@ -438,6 +450,12 @@
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Classica",
+   "titolo": "Filtro",
+   "conteggio": 3,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Date/7g",
    "titolo": "Filtro",
    "conteggio": 3,
    "tipo": "filtri"
@@ -491,12 +509,6 @@
    "tipo": "luoghi aperti"
   },
   {
-   "path": "milano/spettacoli/vista/elenco",
-   "titolo": "Cambio vista",
-   "conteggio": 2,
-   "tipo": "cambio vista"
-  },
-  {
    "path": "milano/spettacoli/luogo/Teatro Arcimboldi",
    "titolo": "Apertura programma del luogo",
    "conteggio": 2,
@@ -509,10 +521,10 @@
    "tipo": "schede aperte"
   },
   {
-   "path": "milano/spettacoli/dettaglio/Marco Mengoni – Allo Sbagliato",
-   "titolo": "Apertura scheda",
+   "path": "milano/spettacoli/clic-biglietti/Marco Mengoni – Allo Sbagliato",
+   "titolo": "Clic «Biglietti»",
    "conteggio": 2,
-   "tipo": "schede aperte"
+   "tipo": "clic biglietti"
   },
   {
    "path": "spettacoli/dettaglio/Accabadora",
@@ -587,12 +599,6 @@
    "tipo": "filtri"
   },
   {
-   "path": "milano/spettacoli/filtro/Date/7g",
-   "titolo": "Filtro",
-   "conteggio": 2,
-   "tipo": "filtri"
-  },
-  {
    "path": "spettacoli/filtro/Date/2026-12",
    "titolo": "Filtro",
    "conteggio": 2,
@@ -621,6 +627,30 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "scheda/incontri",
+   "titolo": "Cambio scheda",
+   "conteggio": 1,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "milano/spettacoli/luogo/MUDEC - Museo delle Culture - Spazio delle Culture “Khaled al-Asaad”",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "milano/spettacoli/clic-info/Muoversi nelle frange metropolitane: (ir)razionalità della mobilità quotidiana",
+   "titolo": "Clic «Info»",
+   "conteggio": 1,
+   "tipo": "clic info spettacoli"
+  },
+  {
+   "path": "milano/scheda/incontri",
+   "titolo": "Cambio scheda",
+   "conteggio": 1,
+   "tipo": "cambio scheda"
   },
   {
    "path": "spettacoli/clic-info/Sports + Pool Girl",
@@ -1013,12 +1043,6 @@
    "tipo": "schede aperte"
   },
   {
-   "path": "milano/spettacoli/clic-biglietti/Marco Mengoni – Allo Sbagliato",
-   "titolo": "Clic «Biglietti»",
-   "conteggio": 1,
-   "tipo": "clic biglietti"
-  },
-  {
    "path": "spettacoli/dettaglio/Much Much Bass",
    "titolo": "Apertura scheda",
    "conteggio": 1,
@@ -1407,30 +1431,6 @@
    "titolo": "Clic «Biglietti»",
    "conteggio": 1,
    "tipo": "clic biglietti"
-  },
-  {
-   "path": "spettacoli/clic-info/Joe Jackson + Band",
-   "titolo": "Clic «Info»",
-   "conteggio": 1,
-   "tipo": "clic info spettacoli"
-  },
-  {
-   "path": "mostre/luogo/Palazzo Pallavicini",
-   "titolo": "Apertura programma del luogo",
-   "conteggio": 1,
-   "tipo": "luoghi aperti"
-  },
-  {
-   "path": "mostre/luogo/Palazzo Albergati",
-   "titolo": "Apertura programma del luogo",
-   "conteggio": 1,
-   "tipo": "luoghi aperti"
-  },
-  {
-   "path": "mostre/filtro/Categoria/Arte moderna e contemporanea",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
   }
  ]
 }
