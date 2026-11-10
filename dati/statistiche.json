@@ -1,47 +1,47 @@
 {
- "generato": "2026-11-10T19:14:34+00:00",
+ "generato": "2026-11-10T20:05:43+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-10",
- "visite_totali": 230,
- "totale_goatcounter": 633,
- "eventi_totali": 403,
+ "visite_totali": 232,
+ "totale_goatcounter": 646,
+ "eventi_totali": 414,
  "eventi_per_tipo": {
-  "filtri": 127,
-  "cambio scheda": 69,
-  "schede aperte": 58,
-  "cambio vista": 38,
-  "luoghi aperti": 33,
+  "filtri": 129,
+  "cambio scheda": 71,
+  "schede aperte": 59,
+  "cambio vista": 39,
+  "luoghi aperti": 35,
   "apri filtri": 19,
   "clic biglietti": 14,
-  "altro": 11,
+  "altro": 12,
+  "clic info spettacoli": 9,
   "azzera filtri": 8,
-  "clic info spettacoli": 8,
   "mostra altri": 6,
   "clic mostre (scheda o sito)": 5,
   "condivisioni": 4,
-  "clic cinema (programma della sala)": 2,
-  "ricerche": 1
+  "ricerche": 2,
+  "clic cinema (programma della sala)": 2
  },
  "settimane": [
   {
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-10",
-   "visite": 230,
-   "cambio scheda": 69,
-   "cambio vista": 38,
+   "visite": 232,
+   "cambio scheda": 71,
+   "cambio vista": 39,
    "apri filtri": 19,
-   "filtri": 127,
-   "altro": 11,
-   "luoghi aperti": 33,
+   "filtri": 129,
+   "altro": 12,
+   "luoghi aperti": 35,
    "azzera filtri": 8,
    "mostra altri": 6,
-   "schede aperte": 58,
+   "schede aperte": 59,
    "condivisioni": 4,
    "clic biglietti": 14,
+   "clic info spettacoli": 9,
+   "ricerche": 2,
    "clic cinema (programma della sala)": 2,
-   "ricerche": 1,
-   "clic info spettacoli": 8,
    "clic mostre (scheda o sito)": 5
   }
  ],
@@ -58,9 +58,9 @@
    "schede aperte": 0,
    "condivisioni": 0,
    "clic biglietti": 4,
-   "clic cinema (programma della sala)": 0,
-   "ricerche": 0,
    "clic info spettacoli": 3,
+   "ricerche": 0,
+   "clic cinema (programma della sala)": 0,
    "clic mostre (scheda o sito)": 0
   },
   "2026-11-05": {
@@ -75,9 +75,9 @@
    "schede aperte": 3,
    "condivisioni": 0,
    "clic biglietti": 1,
-   "clic cinema (programma della sala)": 0,
-   "ricerche": 0,
    "clic info spettacoli": 0,
+   "ricerche": 0,
+   "clic cinema (programma della sala)": 0,
    "clic mostre (scheda o sito)": 0
   },
   "2026-11-06": {
@@ -92,9 +92,9 @@
    "schede aperte": 14,
    "condivisioni": 1,
    "clic biglietti": 2,
-   "clic cinema (programma della sala)": 1,
-   "ricerche": 0,
    "clic info spettacoli": 2,
+   "ricerche": 0,
+   "clic cinema (programma della sala)": 1,
    "clic mostre (scheda o sito)": 3
   },
   "2026-11-07": {
@@ -109,9 +109,9 @@
    "schede aperte": 11,
    "condivisioni": 1,
    "clic biglietti": 1,
-   "clic cinema (programma della sala)": 0,
-   "ricerche": 0,
    "clic info spettacoli": 0,
+   "ricerche": 0,
+   "clic cinema (programma della sala)": 0,
    "clic mostre (scheda o sito)": 0
   },
   "2026-11-08": {
@@ -126,9 +126,9 @@
    "schede aperte": 19,
    "condivisioni": 2,
    "clic biglietti": 2,
-   "clic cinema (programma della sala)": 0,
-   "ricerche": 0,
    "clic info spettacoli": 3,
+   "ricerche": 0,
+   "clic cinema (programma della sala)": 0,
    "clic mostre (scheda o sito)": 2
   },
   "2026-11-09": {
@@ -143,26 +143,26 @@
    "schede aperte": 5,
    "condivisioni": 0,
    "clic biglietti": 3,
-   "clic cinema (programma della sala)": 0,
-   "ricerche": 1,
    "clic info spettacoli": 0,
+   "ricerche": 1,
+   "clic cinema (programma della sala)": 0,
    "clic mostre (scheda o sito)": 0
   },
   "2026-11-10": {
-   "cambio scheda": 3,
-   "cambio vista": 3,
+   "cambio scheda": 5,
+   "cambio vista": 4,
    "apri filtri": 2,
-   "filtri": 5,
-   "altro": 5,
-   "luoghi aperti": 2,
+   "filtri": 7,
+   "altro": 6,
+   "luoghi aperti": 4,
    "azzera filtri": 0,
    "mostra altri": 1,
-   "schede aperte": 6,
+   "schede aperte": 7,
    "condivisioni": 0,
    "clic biglietti": 1,
+   "clic info spettacoli": 1,
+   "ricerche": 1,
    "clic cinema (programma della sala)": 1,
-   "ricerche": 0,
-   "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0
   }
  },
@@ -193,17 +193,17 @@
   },
   {
    "giorno": "2026-11-10",
-   "visite": 16
+   "visite": 18
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 480
+   "conteggio": 482
   },
   {
    "origine": "achevents.com/milano",
-   "conteggio": 77
+   "conteggio": 78
   },
   {
    "origine": "achevents.com",
@@ -211,7 +211,7 @@
   },
   {
    "origine": "achplaces.com",
-   "conteggio": 9
+   "conteggio": 19
   },
   {
    "origine": "ui.awin.com",
@@ -234,12 +234,12 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 116
+   "conteggio": 117
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 66
+   "conteggio": 67
   },
   {
    "path": "/eventi-bologna",
@@ -249,26 +249,26 @@
   {
    "path": "scheda/mostre",
    "titolo": "Cambio scheda",
-   "conteggio": 15,
+   "conteggio": 16,
    "tipo": "cambio scheda"
   },
   {
    "path": "scheda/spettacoli",
    "titolo": "Cambio scheda",
-   "conteggio": 14,
+   "conteggio": 15,
    "tipo": "cambio scheda"
+  },
+  {
+   "path": "spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 13,
+   "tipo": "cambio vista"
   },
   {
    "path": "milano/scheda/mostre",
    "titolo": "Cambio scheda",
    "conteggio": 12,
    "tipo": "cambio scheda"
-  },
-  {
-   "path": "spettacoli/vista/luoghi",
-   "titolo": "Cambio vista",
-   "conteggio": 12,
-   "tipo": "cambio vista"
   },
   {
    "path": "milano/scheda/cinema",
@@ -319,10 +319,22 @@
    "tipo": "cambio scheda"
   },
   {
+   "path": "spettacoli/filtro/Genere/Rock",
+   "titolo": "Filtro",
+   "conteggio": 7,
+   "tipo": "filtri"
+  },
+  {
    "path": "spettacoli/filtro/Genere/Comici",
    "titolo": "Filtro",
    "conteggio": 7,
    "tipo": "filtri"
+  },
+  {
+   "path": "guide/vai-places",
+   "titolo": "Vai a Ach's Places Guide",
+   "conteggio": 6,
+   "tipo": "altro"
   },
   {
    "path": "guide/vai-dinners",
@@ -347,18 +359,6 @@
    "titolo": "Apertura programma del luogo",
    "conteggio": 6,
    "tipo": "luoghi aperti"
-  },
-  {
-   "path": "spettacoli/filtro/Genere/Rock",
-   "titolo": "Filtro",
-   "conteggio": 6,
-   "tipo": "filtri"
-  },
-  {
-   "path": "guide/vai-places",
-   "titolo": "Vai a Ach's Places Guide",
-   "conteggio": 5,
-   "tipo": "altro"
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
@@ -422,6 +422,12 @@
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Serate e club",
+   "titolo": "Filtro",
+   "conteggio": 3,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Jazz",
    "titolo": "Filtro",
    "conteggio": 3,
    "tipo": "filtri"
@@ -529,12 +535,6 @@
    "tipo": "filtri"
   },
   {
-   "path": "spettacoli/filtro/Genere/Jazz",
-   "titolo": "Filtro",
-   "conteggio": 2,
-   "tipo": "filtri"
-  },
-  {
    "path": "condividi/apri",
    "titolo": "Condivisione",
    "conteggio": 2,
@@ -589,6 +589,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "spettacoli/luogo/Locomotiv Club",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 2,
+   "tipo": "luoghi aperti"
+  },
+  {
    "path": "spettacoli/clic-biglietti/Tito & Tarantula",
    "titolo": "Clic «Biglietti»",
    "conteggio": 2,
@@ -605,6 +611,30 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "spettacoli/clic-info/Sports + Pool Girl",
+   "titolo": "Clic «Info»",
+   "conteggio": 1,
+   "tipo": "clic info spettacoli"
+  },
+  {
+   "path": "spettacoli/dettaglio/Sports + Pool Girl",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/luogo/Covo Club",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/ricerca/vera",
+   "titolo": "Ricerca",
+   "conteggio": 1,
+   "tipo": "ricerche"
   },
   {
    "path": "cinema/luogo/Pop Up Cinema Jolly",
@@ -1345,12 +1375,6 @@
    "tipo": "clic biglietti"
   },
   {
-   "path": "spettacoli/luogo/Locomotiv Club",
-   "titolo": "Apertura programma del luogo",
-   "conteggio": 1,
-   "tipo": "luoghi aperti"
-  },
-  {
    "path": "spettacoli/clic-info/I Solisti dell'Orchestra Mozart – Mozart, Gran Partita",
    "titolo": "Clic «Info»",
    "conteggio": 1,
@@ -1403,24 +1427,6 @@
    "titolo": "Filtro",
    "conteggio": 1,
    "tipo": "filtri"
-  },
-  {
-   "path": "mostre/filtro/Periodo/arrivo",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "mostre/vista/elenco",
-   "titolo": "Cambio vista",
-   "conteggio": 1,
-   "tipo": "cambio vista"
-  },
-  {
-   "path": "mostre/luogo/Biblioteca Salaborsa",
-   "titolo": "Apertura programma del luogo",
-   "conteggio": 1,
-   "tipo": "luoghi aperti"
   }
  ]
 }
