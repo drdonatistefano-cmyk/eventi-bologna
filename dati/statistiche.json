@@ -1,22 +1,22 @@
 {
- "generato": "2026-11-10T08:30:19+00:00",
+ "generato": "2026-11-10T09:23:39+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-10",
- "visite_totali": 221,
- "totale_goatcounter": 603,
- "eventi_totali": 382,
+ "visite_totali": 223,
+ "totale_goatcounter": 616,
+ "eventi_totali": 393,
  "eventi_per_tipo": {
-  "filtri": 123,
+  "filtri": 127,
   "cambio scheda": 67,
-  "schede aperte": 55,
-  "cambio vista": 36,
+  "schede aperte": 57,
+  "cambio vista": 37,
   "luoghi aperti": 31,
-  "apri filtri": 17,
-  "clic biglietti": 13,
+  "apri filtri": 18,
+  "clic biglietti": 14,
+  "altro": 9,
   "azzera filtri": 8,
-  "altro": 8,
   "clic info spettacoli": 8,
-  "mostra altri": 5,
+  "mostra altri": 6,
   "clic mostre (scheda o sito)": 5,
   "condivisioni": 4,
   "ricerche": 1,
@@ -27,18 +27,18 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-10",
-   "visite": 221,
+   "visite": 223,
    "cambio scheda": 67,
-   "cambio vista": 36,
-   "apri filtri": 17,
-   "filtri": 123,
+   "cambio vista": 37,
+   "apri filtri": 18,
+   "filtri": 127,
    "luoghi aperti": 31,
+   "altro": 9,
    "azzera filtri": 8,
-   "altro": 8,
-   "mostra altri": 5,
-   "schede aperte": 55,
+   "mostra altri": 6,
+   "schede aperte": 57,
    "condivisioni": 4,
-   "clic biglietti": 13,
+   "clic biglietti": 14,
    "ricerche": 1,
    "clic info spettacoli": 8,
    "clic mostre (scheda o sito)": 5,
@@ -52,8 +52,8 @@
    "apri filtri": 2,
    "filtri": 8,
    "luoghi aperti": 5,
-   "azzera filtri": 1,
    "altro": 0,
+   "azzera filtri": 1,
    "mostra altri": 2,
    "schede aperte": 0,
    "condivisioni": 0,
@@ -69,8 +69,8 @@
    "apri filtri": 4,
    "filtri": 14,
    "luoghi aperti": 4,
-   "azzera filtri": 1,
    "altro": 0,
+   "azzera filtri": 1,
    "mostra altri": 1,
    "schede aperte": 3,
    "condivisioni": 0,
@@ -86,8 +86,8 @@
    "apri filtri": 6,
    "filtri": 48,
    "luoghi aperti": 1,
-   "azzera filtri": 0,
    "altro": 0,
+   "azzera filtri": 0,
    "mostra altri": 1,
    "schede aperte": 14,
    "condivisioni": 1,
@@ -103,8 +103,8 @@
    "apri filtri": 3,
    "filtri": 21,
    "luoghi aperti": 8,
-   "azzera filtri": 2,
    "altro": 0,
+   "azzera filtri": 2,
    "mostra altri": 0,
    "schede aperte": 11,
    "condivisioni": 1,
@@ -120,8 +120,8 @@
    "apri filtri": 2,
    "filtri": 16,
    "luoghi aperti": 8,
-   "azzera filtri": 3,
    "altro": 2,
+   "azzera filtri": 3,
    "mostra altri": 0,
    "schede aperte": 19,
    "condivisioni": 2,
@@ -137,8 +137,8 @@
    "apri filtri": 0,
    "filtri": 15,
    "luoghi aperti": 5,
-   "azzera filtri": 1,
    "altro": 4,
+   "azzera filtri": 1,
    "mostra altri": 1,
    "schede aperte": 5,
    "condivisioni": 0,
@@ -150,16 +150,16 @@
   },
   "2026-11-10": {
    "cambio scheda": 1,
-   "cambio vista": 1,
-   "apri filtri": 0,
-   "filtri": 1,
+   "cambio vista": 2,
+   "apri filtri": 1,
+   "filtri": 5,
    "luoghi aperti": 0,
+   "altro": 3,
    "azzera filtri": 0,
-   "altro": 2,
-   "mostra altri": 0,
-   "schede aperte": 3,
+   "mostra altri": 1,
+   "schede aperte": 5,
    "condivisioni": 0,
-   "clic biglietti": 0,
+   "clic biglietti": 1,
    "ricerche": 0,
    "clic info spettacoli": 0,
    "clic mostre (scheda o sito)": 0,
@@ -193,21 +193,25 @@
   },
   {
    "giorno": "2026-11-10",
-   "visite": 7
+   "visite": 9
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 467
+   "conteggio": 470
   },
   {
    "origine": "achevents.com/milano",
-   "conteggio": 69
+   "conteggio": 73
   },
   {
    "origine": "achevents.com",
    "conteggio": 55
+  },
+  {
+   "origine": "achplaces.com",
+   "conteggio": 9
   },
   {
    "origine": "ui.awin.com",
@@ -215,10 +219,6 @@
   },
   {
    "origine": "teams.public.onecdn.static.microsoft",
-   "conteggio": 3
-  },
-  {
-   "origine": "achplaces.com",
    "conteggio": 3
   },
   {
@@ -234,12 +234,12 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 112
+   "conteggio": 113
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 61
+   "conteggio": 62
   },
   {
    "path": "/eventi-bologna",
@@ -283,16 +283,22 @@
    "tipo": "cambio scheda"
   },
   {
+   "path": "spettacoli/apri-filtri",
+   "titolo": "Apertura filtri",
+   "conteggio": 9,
+   "tipo": "apri filtri"
+  },
+  {
    "path": "milano/spettacoli/vista/luoghi",
    "titolo": "Cambio vista",
    "conteggio": 8,
    "tipo": "cambio vista"
   },
   {
-   "path": "spettacoli/apri-filtri",
-   "titolo": "Apertura filtri",
+   "path": "spettacoli/vista/elenco",
+   "titolo": "Cambio vista",
    "conteggio": 8,
-   "tipo": "apri filtri"
+   "tipo": "cambio vista"
   },
   {
    "path": "milano/spettacoli/filtro/Genere/Rock",
@@ -305,12 +311,6 @@
    "titolo": "Cambio scheda",
    "conteggio": 7,
    "tipo": "cambio scheda"
-  },
-  {
-   "path": "spettacoli/vista/elenco",
-   "titolo": "Cambio vista",
-   "conteggio": 7,
-   "tipo": "cambio vista"
   },
   {
    "path": "spettacoli/filtro/Genere/Comici",
@@ -349,6 +349,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "guide/vai-dinners",
+   "titolo": "Vai a Ach's Dinners Guide",
+   "conteggio": 5,
+   "tipo": "altro"
+  },
+  {
    "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
    "titolo": "Filtro",
    "conteggio": 5,
@@ -363,12 +369,6 @@
   {
    "path": "guide/vai-places",
    "titolo": "Vai a Ach's Places Guide",
-   "conteggio": 4,
-   "tipo": "altro"
-  },
-  {
-   "path": "guide/vai-dinners",
-   "titolo": "Vai a Ach's Dinners Guide",
    "conteggio": 4,
    "tipo": "altro"
   },
@@ -433,6 +433,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "spettacoli/filtro/Date/weekend",
+   "titolo": "Filtro",
+   "conteggio": 3,
+   "tipo": "filtri"
+  },
+  {
    "path": "spettacoli/filtro/Genere/Pop e altra musica",
    "titolo": "Filtro",
    "conteggio": 3,
@@ -443,6 +449,12 @@
    "titolo": "Apertura scheda",
    "conteggio": 2,
    "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/mostra-altri",
+   "titolo": "Mostra altri",
+   "conteggio": 2,
+   "tipo": "mostra altri"
   },
   {
    "path": "milano/mostre/dettaglio/Matisse. Il mondo in una stanza",
@@ -488,6 +500,12 @@
   },
   {
    "path": "milano/spettacoli/filtro/Tipo di luogo/Teatri",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Tipo di luogo/Club e locali",
    "titolo": "Filtro",
    "conteggio": 2,
    "tipo": "filtri"
@@ -553,7 +571,7 @@
    "tipo": "filtri"
   },
   {
-   "path": "spettacoli/filtro/Date/weekend",
+   "path": "spettacoli/filtro/Date/2026-12",
    "titolo": "Filtro",
    "conteggio": 2,
    "tipo": "filtri"
@@ -575,6 +593,30 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/spettacoli/clic-biglietti/Fontaines D.C. (I-Days)",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 1,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Fontaines D.C. (I-Days)",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Tipo di luogo/Stadi",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Art d'enfer at Altrove Milano",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
   },
   {
    "path": "milano/cinema/dettaglio/Clayface",
@@ -659,12 +701,6 @@
    "titolo": "Apertura scheda",
    "conteggio": 1,
    "tipo": "schede aperte"
-  },
-  {
-   "path": "milano/spettacoli/mostra-altri",
-   "titolo": "Mostra altri",
-   "conteggio": 1,
-   "tipo": "mostra altri"
   },
   {
    "path": "spettacoli/luogo/Cinema Perla",
@@ -985,12 +1021,6 @@
    "tipo": "filtri"
   },
   {
-   "path": "milano/spettacoli/filtro/Tipo di luogo/Club e locali",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
    "path": "spettacoli/dettaglio/Fabrizio Moro",
    "titolo": "Apertura scheda",
    "conteggio": 1,
@@ -1211,12 +1241,6 @@
    "titolo": "Apertura filtri",
    "conteggio": 1,
    "tipo": "apri filtri"
-  },
-  {
-   "path": "spettacoli/filtro/Date/2026-12",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
   },
   {
    "path": "mostre/filtro/Periodo/oggi",
