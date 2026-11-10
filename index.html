@@ -312,6 +312,15 @@ main{min-width:0;padding-bottom:90px}
 .topctl button{height:32px;padding:0 12px;font-size:13.5px;border-radius:9px}
 .status{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;margin:14px 0 2px;min-height:34px}
 .status .pills:empty{display:none}
+/* Azzera i filtri (regola comune alle tre guide, 10/11/2026): riga del conteggio ferma in alto + pillola in fondo */
+.cntrow{position:sticky;top:calc(var(--barh) + var(--qh,0px));z-index:15;background:var(--bg);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px;min-height:48px;padding:7px 0;margin-top:8px}
+.status:not(:has(.pills:not(:empty))):has(.seg.only-phone){margin-top:8px}
+@media(min-width:760px){.status:not(:has(.pills:not(:empty))){display:none}}
+.azzera{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--terra);background:var(--paper);color:var(--terra);border-radius:999px;height:32px;padding:0 13px;font:inherit;font-size:14px;font-weight:650;white-space:nowrap;cursor:pointer}
+.azzera .n,.giu .n{background:var(--terra);color:var(--on);border-radius:999px;min-width:19px;height:19px;padding:0 5px;display:inline-grid;place-items:center;font-size:12px;line-height:1}
+.giu .n{background:var(--on);color:var(--terra)}
+.giu{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom));z-index:40;border:0;background:var(--terra);color:var(--on);border-radius:999px;padding:12px 20px;font:inherit;font-size:15px;font-weight:700;box-shadow:0 6px 24px rgba(0,0,0,.28);display:inline-flex;align-items:center;gap:8px;cursor:pointer;transition:transform .18s ease,opacity .18s ease}
+.giu.via{transform:translateX(-50%) translateY(90px);opacity:0;pointer-events:none}
 @media(max-width:759px){.status{margin-top:12px}.status .pills{display:flex;flex-wrap:wrap;gap:6px;flex-basis:100%}}
 .cnt{font-size:14px;color:var(--mute);margin-right:2px}
 .cnt b{color:var(--ink);font-size:1.05rem}
@@ -326,7 +335,7 @@ main{min-width:0;padding-bottom:90px}
 .month small{font-family:var(--sans);font-size:13px;color:var(--faint);font-weight:400}
 .day{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
 .day:first-of-type{border-top:0}
-.dlabel{text-align:center;padding-top:6px;position:sticky;top:calc(var(--barh) + var(--qh,0px) + 6px);align-self:start}
+.dlabel{text-align:center;padding-top:6px;position:sticky;top:calc(var(--barh) + var(--qh,0px) + var(--sth,0px) + 6px);align-self:start}
 .dlabel .wd{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
 .dlabel .n{font-family:var(--serif);font-size:1.6rem;line-height:1;font-weight:500}
 .dlabel.today .n{color:var(--terra)}
@@ -627,7 +636,8 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}.f
 <div class="wrap qwrap" id="qwrap"><div class="qbar" id="qbar" role="group" aria-label="Filtri rapidi"></div></div>
 <div class="wrap">
  <main>
-  <div class="status"><span class="cnt" id="count" aria-live="polite"></span><div class="seg only-phone topctl" role="group" aria-label="Vista"><button data-view="cal" class="on">Calendario</button><button data-view="luoghi">Luoghi</button></div><span class="pills" id="active"></span></div>
+  <div class="cntrow" id="status"><span class="cnt" id="count" aria-live="polite"></span><button class="azzera" id="azzSu" type="button" data-reset hidden>✕ Azzera i filtri <span class="n">0</span></button></div>
+  <div class="status"><div class="seg only-phone topctl" role="group" aria-label="Vista"><button data-view="cal" class="on">Calendario</button><button data-view="luoghi">Luoghi</button></div><span class="pills" id="active"></span></div>
   <div class="cnote" id="cnote" hidden></div>
   <section class="vhead" id="vhead" hidden></section>
   <div id="list"></div>
@@ -665,6 +675,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}.f
 
 <script>/* 1) versioni.js, piccolissimo e sempre fresco (numero che cambia ogni 10 minuti): contiene le impronte dei file dei dati */document.write('<script src="versioni.js?v='+Math.floor(Date.now()/6e5)+'"><\/script>');</script>
 <script>/* 2) dati con l'impronta (?h=): finché un file non cambia il telefono usa la copia che ha già. Se manca l'impronta, metodo di prima (?v= ogni 10 minuti) */(function(){var V=window.ACH_VERSIONI||{},v=Math.floor(Date.now()/6e5);["eventi","serate","mostre","cinema"].forEach(function(f){document.write('<script src="'+f+'.js?'+(V[f]?'h='+V[f]:'v='+v)+'"><\/script>')})})();</script>
+<button class="giu via" id="azzGiu" type="button" data-reset hidden>✕ Azzera i filtri <span class="n">0</span></button>
 <script>
 "use strict";
 /* ---------- città: un solo motore per tutte le città ----------
@@ -892,7 +903,7 @@ function renderPanels(){const w=$("#fdlg .fwrap");if(!$("#fdlg").open)return;con
 let popK="";
 function renderFbar(){$("#pop").hidden=true;return;
  $("#fbar").innerHTML=`<div class="fbtns">`+SECS.filter(([k])=>k!=="g").map(([k,t])=>{const s=nOf(k),sv=summ(k);
-  return `<button class="fbtn${s?" has":""}${popK===k?" open":""}" data-pop="${k}" aria-expanded="${popK===k}" title="${esc(sv||t)}"><span class="ft">${SHORT[t]?`<span class="lg">${t}</span><span class="sm">${SHORT[t]}</span>`:t}</span>${s?`<span class="fv">${esc(sv)}</span>`:""}<i class="cv"></i></button>`}).join("")+`</div><button class="freset" data-reset ${active()?"":"hidden"}>✕ Azzera filtri</button>`;
+  return `<button class="fbtn${s?" has":""}${popK===k?" open":""}" data-pop="${k}" aria-expanded="${popK===k}" title="${esc(sv||t)}"><span class="ft">${SHORT[t]?`<span class="lg">${t}</span><span class="sm">${SHORT[t]}</span>`:t}</span>${s?`<span class="fv">${esc(sv)}</span>`:""}<i class="cv"></i></button>`}).join("")+`</div>`;
  renderPop()}
 function renderPop(){const pop=$("#pop");if(!popK){pop.hidden=true;return}
  const btn=$(`#fbar [data-pop="${popK}"]`);if(!btn){popK="";pop.hidden=true;return}
@@ -922,7 +933,6 @@ function renderRail(){
   h+=grp(MODE==="m"?"Categoria":"Genere",MODE==="m"?2:3,gens,st.g.size?"g":"");
   const yc=countBy("y",e=>e._lt),LT=MODE==="m"?LT_M:LT_S;
   const LTP=new Set(ALL.map(e=>e._lt));h+=grp("Luogo",3,LT.filter(([k])=>LTP.has(k)||st.y.has(k)).map(([k])=>qc("y",k,k,yc.get(k)||0,st.y.has(k),"--terra",ltIcon(k))).join(""),st.y.size?"y":"","qscroll")}
- if(active())h+=`<button class="qreset" data-reset aria-label="Azzera tutti i filtri"><i>✕</i> Azzera filtri</button>`;
  const qb=$("#qbar"),sl=[...qb.querySelectorAll(".qchips")].map(x=>x.scrollLeft);
  qb.innerHTML=h;
  /* righe che scorrono di lato: restano dov'erano dopo un tocco, e il pulsante scelto resta in vista */
@@ -931,7 +941,7 @@ function renderRail(){
  $$(".seg button").forEach(b=>b.classList.toggle("on",b.dataset.view===st.view))}
 let PILLS=[];
 function renderStatus(n,label){
- $("#count").innerHTML=label;
+ $("#count").innerHTML=label;mostraAzzera();
  PILLS=[];
  for(const k of st.g)PILLS.push({lab:GLAB[k].l,g:GLAB[k].c,act:()=>st.g.delete(k)});
  for(const m of st.m)PILLS.push({lab:mLabel(m),act:()=>st.m.delete(m)});
@@ -1168,7 +1178,7 @@ document.addEventListener("click",e=>{
  const z=t.closest("[data-zone]");if(z&&!z.disabled){const cs=zoneComuni(z.dataset.zone);const all=cs.every(c=>st.c.has(c));cs.forEach(c=>all?st.c.delete(c):st.c.add(c));render(true);return}
  const zx=t.closest("[data-zx]");if(zx){toggle(openZ,zx.dataset.zx);renderPanels();renderPop();return}
  const cl=t.closest("[data-clr]");if(cl){st[cl.dataset.clr].clear();if(cl.dataset.clr==="m")st.pf=st.pt="";render(true);return}
- if(t.closest("[data-reset]")){resetAll();render(true);return}
+ if(t.closest("[data-reset]")){resetAll();render(true);if(t.closest("#azzSu,#azzGiu"))scrollTo({top:0,behavior:"smooth"});return}
  if(t.closest("[data-lall]")){lAll=true;renderPanels();renderPop();return}
  if(t.closest("[data-gall]")){st.g.clear();render(true);return}
  const p=t.closest("[data-pill]");if(p){const x=PILLS[+p.dataset.pill];if(x){x.act();render(true)}return}
@@ -1192,8 +1202,11 @@ $("#fbtn").onclick=()=>{lAll=false;sub="";openDlg($("#fdlg"));renderPanels()};
 $("#fdlg").addEventListener("close",()=>{lFocus=null});
 $("#fdlg").addEventListener("click",e=>{if(e.target.id==="fdlg")closeD($("#fdlg"))});
 const bar=$("#bar"),fab=$("#top");
-const setBarH=()=>{try{document.documentElement.style.setProperty("--barh",bar.offsetHeight+"px");document.documentElement.style.setProperty("--qh",(innerWidth>=760?$("#qwrap").offsetHeight:0)+"px")}catch(_){}};
-function onScroll(){bar.classList.toggle("stuck",bar.getBoundingClientRect().top<=0);fab.classList.toggle("show",scrollY>900)}
+const setBarH=()=>{try{document.documentElement.style.setProperty("--sth",($("#status").offsetHeight||0)+"px");document.documentElement.style.setProperty("--barh",bar.offsetHeight+"px");document.documentElement.style.setProperty("--qh",(innerWidth>=760?$("#qwrap").offsetHeight:0)+"px")}catch(_){}};
+function onScroll(){bar.classList.toggle("stuck",bar.getBoundingClientRect().top<=0);fab.classList.toggle("show",scrollY>900);pillola()}
+function nAttivi(){return nSel()+(st.q?1:0)}
+function pillola(){const g=$("#azzGiu");if(g&&!g.hidden)g.classList.toggle("via",scrollY<260)}
+function mostraAzzera(){if(!$("#azzSu")||!$("#azzGiu"))return;const n=nAttivi();$$("#azzSu .n,#azzGiu .n").forEach(e=>e.textContent=n);$("#azzSu").hidden=$("#azzGiu").hidden=n===0;pillola()}
 addEventListener("scroll",onScroll,{passive:true});addEventListener("keydown",e=>{if(e.key==="Escape"&&popK){popK="";renderFbar()}});
 addEventListener("resize",()=>{setBarH();if(popK){popK="";renderFbar()}});
 fab.onclick=()=>scrollTo({top:0});
@@ -1250,6 +1263,7 @@ document.addEventListener("click",e=>{if(!GC||!ON_WEB)return;const t=e.target;
  const o=t.closest("[data-k][data-v]");if(o&&!o.disabled){track(`${tm()}/filtro/${STITLE[o.dataset.k]||o.dataset.k}/${o.dataset.v}`,"Filtro");return}
  const z=t.closest("[data-zone]");if(z){track(`${tm()}/filtro/zona/${ZLAB[z.dataset.zone]||z.dataset.zone}`,"Filtro");return}
  const sh=t.closest("#share,#wa,#copy,#send");if(sh){track(`condividi/${{share:"apri",wa:"whatsapp",copy:"copia-link",send:"email"}[sh.id]}`,"Condivisione");return}
+ if(t.closest("#azzSu,#azzGiu")){track("filtri/azzera-events","Azzera i filtri");return}
  if(t.closest("[data-reset],#reset,#rzm")){track(`${tm()}/azzera-filtri`,"Azzera filtri");return}
  if(t.closest("#more")){track(`${tm()}/mostra-altri`,"Mostra altri");return}
  if(t.closest("#fbtn")){track(`${tm()}/apri-filtri`,"Apertura filtri");return}},true);
