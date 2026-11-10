@@ -1,16 +1,16 @@
 # Ach's Dinners Guide – visite
 
-Sito: https://achdinners.com/ · dati GoatCounter, aggiornati ogni 15 minuti · ultima lettura: mar 10 nov 2026 alle 07:08 (ora italiana)
+Sito: https://achdinners.com/ · dati GoatCounter, aggiornati ogni 15 minuti · ultima lettura: mar 10 nov 2026 alle 08:29 (ora italiana)
 
 | Oggi | Ultimi 7 giorni | Dal lancio |
 |---:|---:|---:|
-| 2 | 18 | 18 |
+| 3 | 19 | 19 |
 
 ## Visite per giorno
 
 | Giorno | Visite |
 |---|---:|
-| mar 10 nov 2026 | 2 |
+| mar 10 nov 2026 | 3 |
 | lun 9 nov 2026 | 12 |
 | dom 8 nov 2026 | 4 |
 
