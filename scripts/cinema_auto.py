@@ -287,6 +287,29 @@ def scopri(d, log):
             pagine.append((comune, scarica(f"https://movieplayer.it/cinema/{MP_CITTA}/{cslug}/")))
         except Exception as e:
             log.append(f"scoperta {cslug}: {e}")
+    # sale del capoluogo nuove su cinemap.it (pagina elenco della città)
+    try:
+        cm_note = {s.get("cinemap") for s in d["sale"]}
+        hc = scarica(f"https://www.cinemap.it/{MP_CITTA}/cinema")
+        for slug_ in sorted(set(re.findall(rf'href="/{MP_CITTA}/cinema/([a-z0-9-]+)"', hc))):
+            url = f"https://www.cinemap.it/{MP_CITTA}/cinema/{slug_}"
+            if url in cm_note:
+                continue
+            pg = scarica(url)
+            th = next((j for j in (json.loads(b) for b in re.findall(r'<script[^>]*ld\+json[^>]*>(.*?)</script>', pg, re.S) if b.strip().startswith("{"))
+                       if j.get("@type") == "MovieTheater"), None)
+            if not th:
+                continue
+            a = th.get("address") or {}
+            nid = "c%03d" % (1 + max([int(s["id"][1:]) for s in d["sale"]] or [0]))
+            d["sale"].append({"id": nid, "nome": th.get("name", slug_), "citta": UFFICIALI[0] if CITTA == "mi" else "Bologna",
+                              "indirizzo": ", ".join(x for x in (a.get("streetAddress"), a.get("addressLocality")) if x),
+                              "tipo": tipo_da_nome(th.get("name", "")), "sito": th.get("url", "") if str(th.get("url", "")).startswith("https://") else "",
+                              "fonte": url, "cinemap": url, "film": [], "auto": True})
+            nuove += 1
+            log.append(f"sala nuova da cinemap: {th.get('name')}")
+    except Exception as e:
+        log.append(f"scoperta cinemap: {e}")
     for comune, p in pagine:
         sel = p[p.find("Seleziona il cinema"):] if "Seleziona il cinema" in p else ""
         for href, nome in re.findall(r'href="(/cinema/[a-z0-9-]+_\d+/)"[^>]*>([^<]+)</a>', sel[:20000]):

@@ -1678,17 +1678,6 @@
    "cinemap": "https://www.cinemap.it/milano/cinema/arcobaleno-milano"
   },
   {
-   "id": "c016",
-   "nome": "Cinema Ariosto",
-   "citta": "Milano",
-   "indirizzo": "",
-   "tipo": "D'essai",
-   "sito": "",
-   "fonte": "https://movieplayer.it/cinema/ariosto_760/",
-   "film": [],
-   "auto": true
-  },
-  {
    "id": "c017",
    "nome": "Cinema Ariosto Anteo spazioCinema",
    "citta": "Milano",
@@ -3828,17 +3817,6 @@
    ],
    "auto": true,
    "cinemap": "https://www.cinemap.it/milano/cinema/eliseo-milano"
-  },
-  {
-   "id": "c025",
-   "nome": "Cinema Gloria Multisala",
-   "citta": "Milano",
-   "indirizzo": "",
-   "tipo": "Multisala",
-   "sito": "",
-   "fonte": "https://movieplayer.it/cinema/gloria-multisala_775/",
-   "film": [],
-   "auto": true
   },
   {
    "id": "c026",
