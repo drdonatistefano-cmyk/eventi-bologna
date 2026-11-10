@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var m=document.cookie.match(/(?:^|; )citta=(bo|mi)/),q=/[?&]citta=(bo|mi)/.exec(location.search),qui=/^\/milano(\/|$)/.test(location.pathname)?"mi":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||m[1]!=="mi"||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace("/milano/")}catch(_){}})();</script>
-<script>/* anticipo: chiede subito versioni.js (senza bloccare la pagina) e fa partire i file dei dati mentre arriva il resto; più in basso la pagina li usa dalla memoria */(function(){try{var s=document.createElement("script");s.async=true;s.src="versioni.js?v="+Math.floor(Date.now()/6e5);s.onload=function(){var V=window.ACH_VERSIONI||{};["eventi","serate","mostre","cinema"].forEach(function(f){if(V[f]){var l=document.createElement("link");l.rel="preload";l.as="script";l.href=f+".js?h="+V[f];document.head.appendChild(l)}})};document.head.appendChild(s)}catch(e){}})();</script>
+<script>/* anticipo: chiede subito versioni.js (senza bloccare la pagina) e fa partire i file dei dati mentre arriva il resto; più in basso la pagina li usa dalla memoria */(function(){try{var s=document.createElement("script");s.async=true;s.src="versioni.js?v="+Math.floor(Date.now()/6e5);s.onload=function(){var V=window.ACH_VERSIONI||{};["eventi","serate","mostre","cinema","incontri"].forEach(function(f){if(V[f]){var l=document.createElement("link");l.rel="preload";l.as="script";l.href=f+".js?h="+V[f];document.head.appendChild(l)}})};document.head.appendChild(s)}catch(e){}})();</script>
 <title>Ach's Events Guide – concerti, teatro, mostre e cinema a Milano</title>
 <meta name="description" content="Ach&#39;s Events Guide: concerti, teatro, mostre e cinema a Milano e nella Città metropolitana, con date, orari, luoghi e link ai biglietti.">
 <meta property="og:type" content="website">
@@ -21,14 +21,14 @@
 :root{color-scheme:light;
  --bg:#f6efe4;--paper:#fffdf9;--ink:#231d18;--mute:#7a6f63;--faint:#a99d8f;--line:#e8ddcc;
  --terra:#3d5f7d;--terra-soft:#e4ecf3;--terra-ink:#2f4d68;--ochre:#3a8fb7;--on:#fff;
- --rock:#4f5fb0;--jazz:#2a7f7a;--pop:#7d4f9a;--teatro:#3f7a4c;--classica:#8a7356;--club:#a8466e;
+ --rock:#4f5fb0;--jazz:#2a7f7a;--pop:#7d4f9a;--teatro:#3f7a4c;--classica:#8a7356;--club:#a8466e;--libri:#b0602a;--confer:#4a6f96;--visite:#3d8a6e;
  --shadow:0 1px 2px rgba(60,40,20,.06),0 4px 14px rgba(60,40,20,.06);
  --r:16px;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;--barh:64px;--side:clamp(270px,30vw,320px)}
 @media (prefers-color-scheme:dark) and (min-width:1000000px){:root{
  --bg:#161311;--paper:#201c19;--ink:#f1e9df;--mute:#ab9f92;--faint:#7d7268;--line:#332d28;
  --terra:#8fb3d3;--terra-soft:#1f2a35;--terra-ink:#b9d0e4;--ochre:#72bde0;--on:#102131;
- --rock:#93a0f0;--jazz:#5fbdb6;--pop:#b48ad0;--teatro:#6fb07d;--classica:#c4ae90;--club:#e08aac;--shadow:none}}
+ --rock:#93a0f0;--jazz:#5fbdb6;--pop:#b48ad0;--teatro:#6fb07d;--classica:#c4ae90;--club:#e08aac;--libri:#e09a6a;--confer:#8fb0d8;--visite:#7cc4a6;--shadow:none}}
 *{box-sizing:border-box}[hidden]{display:none!important}
 button,a,input,summary{-webkit-tap-highlight-color:transparent}
 ::selection{background:color-mix(in srgb,var(--terra) 22%,transparent)}
@@ -597,6 +597,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}.f
 .ach-guide__btn:hover .ach-guide__arr{opacity:.8;transform:translateX(2px)}
 @media (max-width:420px){.ach-guide{gap:8px}.ach-guide__btn{flex:1 1 0;min-width:0;padding:8px 10px 8px 8px}.ach-guide__arr{display:none}}
 @media (prefers-reduced-motion:reduce){.ach-guide__btn,.ach-guide__arr{transition:none}}
+@media(max-width:759px){.modes{gap:5px}.modes button{flex-direction:column;gap:1px;height:56px;padding:4px 2px 3px;font-size:13.5px;line-height:1.1;letter-spacing:-.01em}.modes button .mi{font-size:19px;line-height:1}}
 </style>
 </head>
 <body>
@@ -617,7 +618,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}.f
  </div>
 </header>
 
-<nav class="modes wrap" role="tablist" aria-label="Sezione"><button data-mode="s" class="on" role="tab" aria-selected="true"><span class="mi">🎭</span>Spettacoli<small id="nS"></small></button><button data-mode="m" role="tab" aria-selected="false"><span class="mi">🖼️</span>Mostre<small id="nM"></small></button><button data-mode="c" role="tab" aria-selected="false"><span class="mi">🎬</span>Cinema<small id="nC"></small></button></nav>
+<nav class="modes wrap" role="tablist" aria-label="Sezione"><button data-mode="s" class="on" role="tab" aria-selected="true"><span class="mi">🎭</span>Spettacoli<small id="nS"></small></button><button data-mode="i" role="tab" aria-selected="false"><span class="mi">📚</span>Incontri<small id="nI"></small></button><button data-mode="m" role="tab" aria-selected="false"><span class="mi">🖼️</span>Mostre<small id="nM"></small></button><button data-mode="c" role="tab" aria-selected="false"><span class="mi">🎬</span>Cinema<small id="nC"></small></button></nav>
 <div class="bar" id="bar"><div class="bar-in wrap">
  <div class="row1">
   <div class="search" id="sw">
@@ -674,7 +675,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}.f
 </div></dialog>
 
 <script>/* 1) versioni.js, piccolissimo e sempre fresco (numero che cambia ogni 10 minuti): contiene le impronte dei file dei dati */document.write('<script src="versioni.js?v='+Math.floor(Date.now()/6e5)+'"><\/script>');</script>
-<script>/* 2) dati con l'impronta (?h=): finché un file non cambia il telefono usa la copia che ha già. Se manca l'impronta, metodo di prima (?v= ogni 10 minuti) */(function(){var V=window.ACH_VERSIONI||{},v=Math.floor(Date.now()/6e5);["eventi","serate","mostre","cinema"].forEach(function(f){document.write('<script src="'+f+'.js?'+(V[f]?'h='+V[f]:'v='+v)+'"><\/script>')})})();</script>
+<script>/* 2) dati con l'impronta (?h=): finché un file non cambia il telefono usa la copia che ha già. Se manca l'impronta, metodo di prima (?v= ogni 10 minuti) */(function(){var V=window.ACH_VERSIONI||{},v=Math.floor(Date.now()/6e5);["eventi","serate","mostre","cinema","incontri"].forEach(function(f){document.write('<script src="'+f+'.js?'+(V[f]?'h='+V[f]:'v='+v)+'"><\/script>')})})();</script>
 <button class="giu via" id="azzGiu" type="button" data-reset hidden>✕ Azzera i filtri <span class="n">0</span></button>
 <script>
 "use strict";
@@ -711,6 +712,8 @@ const EVENTS=EVENTS0.concat((Array.isArray(SRD.serate)?SRD.serate:[]).filter(e=>
 const MD=(window.MOSTRE_DATA&&typeof window.MOSTRE_DATA==="object")?window.MOSTRE_DATA:{aggiornato:"",mostre:[]};
 const ING={gratuito:"Ingresso gratuito","a pagamento":"A pagamento"};
 const MOSTRE=(Array.isArray(MD.mostre)?MD.mostre:[]).filter(m=>m&&ISO.test(m.inizio||"")&&ISO.test(m.fine||"")&&m.titolo&&m.sede).map(m=>({id:m.id,_kind:"m",data:m.inizio,fino:m.fine,ora:"",artista:m.titolo,luogo:m.sede,citta:m.citta||CITY.capo,genere:m.categoria||"",tipo:"",rassegna:"",descrizione:m.descrizione||"",fonte:m.fonte||"",biglietti:/^https:/.test(m.biglietti||"")?m.biglietti:"",biglietti_tipo:m.biglietti_tipo||"",orari:m.orari||"",_ing:ING[(m.ingresso||"").toLowerCase()]||"Da verificare",sito_luogo:m.sito||""}));
+const ID=(window.INCONTRI_DATA&&typeof window.INCONTRI_DATA==="object")?window.INCONTRI_DATA:{aggiornato:"",incontri:[]};
+const INCONTRI=(Array.isArray(ID.incontri)?ID.incontri:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista&&e.luogo).map(e=>Object.assign({},e,{_kind:"i",tipo:"",rassegna:""}));
 const CD=(window.CINEMA_DATA&&typeof window.CINEMA_DATA==="object")?window.CINEMA_DATA:{aggiornato:"",sale:[]};
 const CGIORNO=ISO.test(CD.giorno_orari||"")?CD.giorno_orari:(ISO.test(CD.aggiornato||"")?CD.aggiornato:"");
 const SALE=(Array.isArray(CD.sale)?CD.sale:[]).filter(s=>s&&s.nome);
@@ -726,12 +729,13 @@ const ON_WEB=/(^|\.)(github\.io|achevents\.com)$/.test(location.hostname);
 const SITE_URL=ON_WEB?WEB_URL:ART_URL;
 const ZONE=CITY.zone;;
 const ZONA={},ZLAB={},ZORD=ZONE.map(z=>z[0]),CORD=[];ZONE.forEach(([k,l,cs])=>{ZLAB[k]=l;cs.forEach(c=>{ZONA[c]=k;CORD.push(c)})});ZLAB.Altro="Altri luoghi";
-const G={"Rock":{c:"--rock",l:"Rock"},"Jazz":{c:"--jazz",l:"Jazz"},"Pop e altra musica":{c:"--pop",l:"Pop e altro"},"Classica":{c:"--classica",l:"Classica"},"Teatro":{c:"--teatro",l:"Teatro"},"Serate e club":{c:"--club",l:"Club"}};
+const G={"Rock":{c:"--rock",l:"Rock"},"Jazz":{c:"--jazz",l:"Jazz"},"Pop e altra musica":{c:"--pop",l:"Pop e altro"},"Classica":{c:"--classica",l:"Classica"},"Teatro":{c:"--teatro",l:"Teatro"},"Serate e club":{c:"--club",l:"Club"},"Libri":{c:"--libri",l:"Libri"},"Incontri e conferenze":{c:"--confer",l:"Incontri"},"Visite guidate":{c:"--visite",l:"Visite guidate"}};
 const GOPTS_S=[{k:"Teatro",l:"Teatro",em:"🎭",c:"--teatro"},{k:"Comici",l:"Comici",em:"😂",c:"--ochre"},{k:"Classica",l:"Classica",em:"🎻",c:"--classica"},{k:"Jazz",l:"Jazz",em:"🎷",c:"--jazz"},{k:"Rock",l:"Rock",em:"🎸",c:"--rock"},{k:"Pop e altra musica",l:"Pop e altro",em:"🎤",c:"--pop"},{k:"Serate e club",l:"Club",em:"🪩",c:"--club"}];
 const GOPTS_M=[{k:"Pittura",l:"Pittura",em:"🎨",c:"--classica"},{k:"Scultura",l:"Scultura",em:"🗿",c:"--teatro"},{k:"Fotografia",l:"Fotografia",em:"📷",c:"--jazz"},{k:"Arte contemporanea e installazioni",l:"Contemporanea",em:"🌀",c:"--pop"},{k:"Disegno, grafica e illustrazione",l:"Disegno e grafica",em:"✏️",c:"--rock"},{k:"Design e moda",l:"Design e moda",em:"🪡",c:"--ochre"},{k:"Cinema e spettacolo",l:"Cinema",em:"🎬",c:"--terra"},{k:"Storia e archeologia",l:"Storia",em:"🏛️",c:"--classica"},{k:"Scienza e tecnica",l:"Scienza",em:"🔭",c:"--rock"},{k:"Esperienze immersive",l:"Immersive",em:"✨",c:"--pop"}];
+const GOPTS_I=[{k:"Libri",l:"Libri",em:"📖",c:"--libri"},{k:"Incontri e conferenze",l:"Incontri e conferenze",em:"🎙️",c:"--confer"},{k:"Visite guidate",l:"Visite guidate",em:"🧭",c:"--visite"}];
 const GOPTS_C=[{k:"Multisala",l:"Multisala",em:"🍿",c:"--rock"},{k:"D'essai",l:"D'essai",em:"🎞️",c:"--jazz"},{k:"Cineteca",l:"Cineteca",em:"📽️",c:"--classica"},{k:"Sala di comunità",l:"Sale di comunità",em:"🏘️",c:"--teatro"},{k:"Arena",l:"Arena",em:"🌙",c:"--pop"}];
 let MODE="s",GOPTS=GOPTS_S,GLAB=Object.fromEntries(GOPTS.map(o=>[o.k,o]));
-const NOUN=()=>MODE==="m"?["mostra","mostre"]:MODE==="c"?["proiezione","proiezioni"]:["evento","eventi"];
+const NOUN=()=>MODE==="m"?["mostra","mostre"]:MODE==="i"?["incontro","incontri"]:MODE==="c"?["proiezione","proiezioni"]:["evento","eventi"];
 const nn=n=>n===1?NOUN()[0]:NOUN()[1];
 const PAGE=60;
 
@@ -753,11 +757,21 @@ const overlaps=(e,a,b)=>e.data<=b&&end(e)>=a;
 const norm=s=>String(s||"").toLowerCase().normalize("NFD").replace(/\p{M}/gu,"");
 const PIN='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
 const TIPOV=e=>e._kind==="c"?(e._vo?"In lingua originale":"Versione italiana"):e.tipo||(e.genere==="Teatro"?"Altro spettacolo":"Concerto");
-const DISPV=e=>{if(e._kind==="m")return e._ing;const d=(e.disp||"").toLowerCase();return d==="disponibile"?"Biglietti disponibili":d==="pochi posti"?"Ultimi posti":d==="non ancora in vendita"?"Vendita non ancora aperta":(d==="sold out"||d==="non disponibile")?"Esaurito":"Da verificare"};
+const DISPV=e=>{if(e._kind==="m")return e._ing;if(e._kind==="i")return e.disp==="gratuito"?"Ingresso gratuito":e.disp==="a pagamento"?"A pagamento":"Da verificare";const d=(e.disp||"").toLowerCase();return d==="disponibile"?"Biglietti disponibili":d==="pochi posti"?"Ultimi posti":d==="non ancora in vendita"?"Vendita non ancora aperta":(d==="sold out"||d==="non disponibile")?"Esaurito":"Da verificare"};
 
 /* tipo di luogo (riga «Luogo» dei filtri): dedotto dal nome del luogo, nessun dato in più da mantenere */
 const LT_S=[["Club e locali","🪩"],["Teatri","🎭"],["Auditorium","🎼"],["Palazzetti","🏟️"],["Stadi","⚽"],["All'aperto","🌳"],["Chiese","⛪"],["Palazzi e musei","🏛️"],["Altri luoghi","📍"]];
 const LT_M=[["Musei","🏛️"],["Palazzi storici","🏰"],["Gallerie","🖼️"],["Fondazioni e spazi","🏢"],["Biblioteche e chiese","📚"],["Altri luoghi","📍"]];
+const LT_I=[["Librerie","📚"],["Biblioteche","📖"],["Musei e palazzi","🏛️"],["Università e istituti","🎓"],["Teatri e auditorium","🎭"],["Chiese","⛪"],["Altri luoghi","📍"]];
+const LTX=()=>MODE==="m"?LT_M:MODE==="i"?LT_I:LT_S;
+const ltI=e=>{const v=norm(e.luogo);
+ if(/librer|bookshop|bookstore|feltrinelli libri|igor libr/.test(v))return "Librerie";
+ if(/bibliotec|archiginnasio|salaborsa|archivio/.test(v))return "Biblioteche";
+ if(/universit|aula magna|aula dei poeti|hercolani|accademia|istituto|fondazione|cnr|cubo|opificio|casa della cultura/.test(v))return "Università e istituti";
+ if(/museo|pinacoteca|palazzo|casa carducci|mast|genus bononiae|villa/.test(v))return "Musei e palazzi";
+ if(/teatr|auditorium|arena del sole|cinema|baracca/.test(v))return "Teatri e auditorium";
+ if(/chiesa|basilica|oratorio|santuario|duomo|abbazia/.test(v))return "Chiese";
+ return "Altri luoghi"};
 const ltS=e=>{const v=norm(e.luogo);
  if(e.genere==="Serate e club")return "Club e locali";
  if(/stadio|ippodromo/.test(v))return "Stadi";
@@ -776,8 +790,9 @@ const ltM=e=>{const v=norm(e.luogo);
  if(/fondazione|hangar|silos|superstudio|fabbrica|spazio|cubo|city oval|milanosesto|building|volvo|camera di commercio|\bmast\b|varesina/.test(v))return "Fondazioni e spazi";
  if(/galler|galerie|studio|arte\b|bottegantica|fine art|area|lorenzelli|marconi|immagini|labs|m77|otto/.test(v))return "Gallerie";
  return "Altri luoghi"};
-function prep(list){const A=list.filter(e=>end(e)>=today);for(const e of A){e._c=e.citta||CITY.capo;e._z=ZONA[e._c]||"Altro";e._q=norm([e.artista,e.luogo,e._c,e.descrizione,e.tipo,e.genere,e.rassegna,ZLAB[e._z]].join(" "));if(e._kind!=="c")e._lt=e._kind==="m"?ltM(e):ltS(e)}return A}
+function prep(list){const A=list.filter(e=>end(e)>=today);for(const e of A){e._c=e.citta||CITY.capo;e._z=ZONA[e._c]||"Altro";e._q=norm([e.artista,e.luogo,e._c,e.descrizione,e.tipo,e.genere,e.rassegna,ZLAB[e._z]].join(" "));if(e._kind!=="c")e._lt=e._kind==="m"?ltM(e):e._kind==="i"?ltI(e):ltS(e)}return A}
 const ALL_S=prep(EVENTS).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));
+const ALL_I=prep(INCONTRI).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));
 const ALL_C=prep(CINEMA).sort((a,b)=>a.artista.localeCompare(b.artista,"it")||a.luogo.localeCompare(b.luogo,"it"));
 const ALL_M=prep(MOSTRE).sort((a,b)=>{const ra=a.data<=today,rb=b.data<=today;if(ra!==rb)return ra?-1:1;return ra?a.fino.localeCompare(b.fino):a.data.localeCompare(b.data)});
 const lim=addDays(today,365);
@@ -848,6 +863,7 @@ function optRow(k,v,label,n){const on=st[k].has(v);
  return `<button class="opt${on?" on":""}" data-k="${k}" data-v="${esc(v)}" aria-pressed="${on}" ${n||on?"":"disabled"}><span class="ck"></span><span class="ol">${esc(label)}</span><small>${n||0}</small></button>`}
 const SECS_S=[["g","Genere"],["m","Date"],["c","Dove"],["y","Tipo di luogo"],["l","Teatro o locale"],["t","Tipo"],["r","Rassegna"],["d","Disponibilità"]];
 const SECS_M=[["g","Categoria"],["m","Periodo"],["c","Dove"],["y","Tipo di sede"],["l","Museo o sede"],["d","Ingresso"]];
+const SECS_I=[["g","Tipo"],["m","Date"],["c","Dove"],["y","Tipo di luogo"],["l","Luogo"],["d","Ingresso"]];
 const SECS_C=[["m","Giorno e orario"],["r","Genere del film"],["g","Tipo di sala"],["c","Dove"],["l","Cinema"],["t","Lingua"]];
 const SHORT={"Teatro o locale":"Luogo","Museo o sede":"Sede"};
 let SECS=SECS_S,STITLE=Object.fromEntries(SECS);
@@ -881,7 +897,7 @@ function body(k,ctx){
  if(k==="r"&&MODE==="c"){const c=cntF("r",glist);return `<div class="opts">${CGEN.filter(o=>c.get(o.k)||st.r.has(o.k)).map(o=>optRow("r",o.k,o.em+"  "+o.k,c.get(o.k)||0)).join("")}</div><p class="phint" style="margin-top:12px">«Altri film» raccoglie i titoli di cui non conosciamo il genere (spesso classici e rassegne della Cineteca).</p>`}
  const fn=k==="t"?TIPOV:k==="r"?(e=>e.rassegna||""):k==="y"?(e=>e._lt):DISPV;const c=countBy(k,fn);
  let vs=[...new Set(ALL.map(fn))].filter(v=>v&&(c.get(v)||st[k].has(v)));
- const LO=(MODE==="m"?LT_M:LT_S).map(x=>x[0]);
+ const LO=LTX().map(x=>x[0]);
  vs.sort(k==="d"?((a,b)=>DO.indexOf(a)-DO.indexOf(b)):k==="y"?((a,b)=>LO.indexOf(a)-LO.indexOf(b)):((a,b)=>(c.get(b)||0)-(c.get(a)||0)||a.localeCompare(b,"it")));
  return `<div class="opts">${vs.map(v=>optRow(k,v,v,c.get(v)||0)).join("")}</div>`}
 const nOf=k=>k==="c"?cityPills().length:st[k].size+(k==="m"&&hasR()?1:0);
@@ -931,7 +947,7 @@ function renderRail(){
   const mc=countBy("m",e=>Object.keys(QUICK).filter(q=>qTest(q,e)));
   h+=grp("Quando",MODE==="m"?2:3,QR.map(([q,l,em])=>qc("m",q,l,mc.get(q)||0,st.m.has(q),"--terra",em)).join(""),[...st.m].some(x=>QR.some(r=>r[0]===x))?"m":"");
   h+=grp(MODE==="m"?"Categoria":"Genere",MODE==="m"?2:3,gens,st.g.size?"g":"");
-  const yc=countBy("y",e=>e._lt),LT=MODE==="m"?LT_M:LT_S;
+  const yc=countBy("y",e=>e._lt),LT=LTX();
   const LTP=new Set(ALL.map(e=>e._lt));h+=grp("Luogo",3,LT.filter(([k])=>LTP.has(k)||st.y.has(k)).map(([k])=>qc("y",k,k,yc.get(k)||0,st.y.has(k),"--terra",ltIcon(k))).join(""),st.y.size?"y":"","qscroll")}
  const qb=$("#qbar"),sl=[...qb.querySelectorAll(".qchips")].map(x=>x.scrollLeft);
  qb.innerHTML=h;
@@ -954,6 +970,7 @@ function renderStatus(n,label){
 
 /* ---------- elenco ---------- */
 function dispPill(e){const d=(e.disp||"").toLowerCase();
+ if(e._kind==="i")return d==="gratuito"?'<span class="pill ok">Ingresso gratuito</span>':d==="a pagamento"?'<span class="pill">A pagamento</span>':"";
  return d==="disponibile"?'<span class="pill ok">Biglietti disponibili</span>':d==="pochi posti"?'<span class="pill few">Ultimi posti</span>':(d==="sold out"||d==="non disponibile")?'<span class="pill no">Esaurito</span>':d==="non ancora in vendita"?'<span class="pill">Vendita non ancora aperta</span>':""}
 const maps=(l,c)=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(l+", "+(c||CITY.capo));
 const fdate=s=>fmt(s,{day:"numeric",month:"short"})+(s.slice(0,4)!==today.slice(0,4)?" "+s.slice(0,4):"");
@@ -1107,6 +1124,7 @@ function renderVenue(n){const l=ALL.filter(e=>e.luogo===st.venue),c=(l[0]||{})._
  <div class="vacts"><button class="act dark" data-back>← ${st.view==="luoghi"?(MODE==="m"?"Tutte le sedi":MODE==="c"?"Tutte le sale":"Tutti i luoghi"):"Torna all'elenco"}</button>${sito?`<a class="act" href="${esc(sito)}" target="_blank" rel="noopener">${MODE==="c"?"Programma della sala":"Sito del luogo"}</a>`:""}<a class="act" href="${esc(maps(st.venue,c))}" target="_blank" rel="noopener">${PIN} Mappa</a></div>`}
 /* icone dei tipi di luogo (disegnate per il sito) */
 const LTICO={"Club e locali": "<path d=\"M12 2v3.5\"/><circle cx=\"12\" cy=\"13\" r=\"7\"/><path d=\"M5 13h14M6.3 9.4h11.4M6.3 16.6h11.4\"/><path d=\"M12 6c-2.7 2-2.7 12 0 14M12 6c2.7 2 2.7 12 0 14\"/>", "Teatri": "<path d=\"M3 3.5h18\"/><path d=\"M4 3.5v15M20 3.5v15\"/><path d=\"M4 3.5c0 6.5 1.5 10.5 5.5 14M20 3.5c0 6.5-1.5 10.5-5.5 14\"/><path d=\"M2.5 20.5h19\"/>", "Auditorium": "<path d=\"M9 18V5.2l11-2.2v13\"/><circle cx=\"6.5\" cy=\"18\" r=\"2.5\"/><circle cx=\"17.5\" cy=\"16\" r=\"2.5\"/><path d=\"M9 9.2l11-2.2\"/>", "Palazzetti": "<path d=\"M2.5 19.5h19\"/><path d=\"M4.5 19.5V14a7.5 7.5 0 0 1 15 0v5.5\"/><path d=\"M4.9 11.8h14.2\"/><path d=\"M8.5 19.5v-4M12 19.5V15M15.5 19.5v-4\"/>", "Stadi": "<ellipse cx=\"12\" cy=\"12\" rx=\"9.5\" ry=\"6.5\"/><ellipse cx=\"12\" cy=\"12\" rx=\"5\" ry=\"2.8\"/><path d=\"M12 5.5v3.7M12 14.8v3.7\"/>", "All'aperto": "<path d=\"M12 21v-6.5\"/><path d=\"M12 14.5c-4 0-6.5-2.3-6.5-5.5S8.5 2.8 12 2.8s6.5 3 6.5 6.2-2.5 5.5-6.5 5.5z\"/><path d=\"M12 11.5 9.5 9M12 12.5l3-3\"/><path d=\"M7 21h10\"/>", "Chiese": "<path d=\"M12 2v4.5M10.2 4h3.6\"/><path d=\"M5.5 21v-9L12 6.5l6.5 5.5v9\"/><path d=\"M10 21v-3.5a2 2 0 0 1 4 0V21\"/><path d=\"M3.5 21h17\"/><circle cx=\"12\" cy=\"12.5\" r=\"1.4\"/>", "Palazzi e musei": "<path d=\"M3 9.5 12 4l9 5.5\"/><path d=\"M4 9.5h16\"/><path d=\"M6.5 10v8.5M10 10v8.5M14 10v8.5M17.5 10v8.5\"/><path d=\"M4.5 18.5h15M3 21h18\"/>", "Altri luoghi": "<path d=\"M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z\"/><circle cx=\"12\" cy=\"10\" r=\"2.3\"/>", "Musei": "<path d=\"M3 9.5 12 4l9 5.5\"/><path d=\"M4 9.5h16\"/><path d=\"M6.5 10v8.5M10 10v8.5M14 10v8.5M17.5 10v8.5\"/><path d=\"M4.5 18.5h15M3 21h18\"/>", "Palazzi storici": "<path d=\"M3.5 21V9.5h3V6h3v3.5h5V6h3v3.5h3V21\"/><path d=\"M2.5 21h19\"/><path d=\"M10 21v-4a2 2 0 0 1 4 0v4\"/><path d=\"M6.5 13.5v1.5M17.5 13.5v1.5\"/>", "Gallerie": "<rect x=\"3.5\" y=\"4.5\" width=\"17\" height=\"15\" rx=\"1.5\"/><rect x=\"6.5\" y=\"7.5\" width=\"11\" height=\"9\" rx=\".6\"/><path d=\"M6.8 15.5l3.2-3.2 2.5 2.5 1.8-1.8 3.2 3.2\"/><circle cx=\"14.5\" cy=\"10.2\" r=\"1\"/>", "Fondazioni e spazi": "<path d=\"M4 21V8.5l8-4.5v17\"/><path d=\"M12 9.5h8V21\"/><path d=\"M2.5 21h19\"/><path d=\"M7 10.5h2M7 14h2M7 17.5h2M15 13h2M15 16.5h2\"/>", "Biblioteche e chiese": "<path d=\"M12 6.5C10 5 7 4.5 3.5 5v13.5c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5C17 4.5 14 5 12 6.5z\"/><path d=\"M12 6.5V20\"/>"};
+Object.assign(LTICO,{"Librerie":"<path d=\"M4 20.5h16\"/><path d=\"M5.5 20.5V6.5h3v14M8.5 20.5V4h3v16.5\"/><path d=\"m13 7.2 2.9-.8 3.6 13.4-2.9.8z\"/>","Biblioteche":LTICO["Biblioteche e chiese"],"Musei e palazzi":LTICO["Palazzi e musei"],"Teatri e auditorium":LTICO["Teatri"],"Università e istituti":"<path d=\"M2.5 9 12 4.5 21.5 9 12 13.5z\"/><path d=\"M6.5 11v5c1.5 1.6 3.4 2.4 5.5 2.4s4-.8 5.5-2.4v-5\"/><path d=\"M21.5 9v5.5\"/>"});
 const ltIcon=t=>`<svg viewBox="0 0 24 24" aria-hidden="true">${LTICO[t]||LTICO["Altri luoghi"]}</svg>`;
 function renderPlaces(){
  const base=ALL.filter(e=>pass(e,"l")),V=new Map(),R=new Map();
@@ -1119,7 +1137,7 @@ function renderPlaces(){
   h+=`<h2 class="ptitle">${esc(ZLAB[z])}<small>${list.length} ${MODE==="c"?(list.length===1?"sala":"sale"):(list.length===1?"luogo":"luoghi")}</small></h2><div class="vgrid">`+list.map(([name,v])=>{
    const f=v.first,d=f.data<today?today:f.data,when=d===today?"oggi":d===addDays(today,1)?"domani":fmt(d,{weekday:"short",day:"numeric",month:"short"});
    const bar=GOPTS.filter(o=>v.g[o.k]).map(o=>`<i style="--g:var(${o.c});width:${(100*v.g[o.k]/v.n).toFixed(1)}%"></i>`).join("");
-   const dom=GOPTS.filter(o=>v.g[o.k]).sort((x,y)=>v.g[y.k]-v.g[x.k])[0],lt=f._lt||"",LTE=Object.fromEntries((MODE==="m"?LT_M:LT_S));
+   const dom=GOPTS.filter(o=>v.g[o.k]).sort((x,y)=>v.g[y.k]-v.g[x.k])[0],lt=f._lt||"",LTE=Object.fromEntries(LTX());
    return `<button class="vtile" data-venue="${esc(name)}"><div class="vtop"><span class="vbadge" style="--g:var(${dom?dom.c:"--terra"})" title="${esc(lt)}">${ltIcon(lt)}</span><span class="vtt"><span class="vname">${esc(name)}</span><span class="vn"><b>${v.n}</b> ${MODE==="c"?"film":nn(v.n)}</span></span></div>${v.c!==CITY.capo?`<div class="vcity">${esc(v.c)}</div>`:""}<div class="vnext">${MODE==="c"?`In sala: <b>${esc(f.artista)}</b>${v.n>1?` e altri ${v.n-1}`:""}`:MODE==="m"?(f.data<=today?`In corso: <b>${esc(f.artista)}</b>`:`Dal ${esc(when)}: <b>${esc(f.artista)}</b>`):`Prossimo: <b>${esc(when)}</b> · ${esc(f.artista)}`}</div><div class="vbar">${bar}</div></button>`}).join("")+`</div>`}
  const rs=[...R.entries()].filter(x=>!st.r.has(x[0])).sort((a,b)=>b[1]-a[1]);
  if(rs.length)h+=`<h2 class="ptitle">Rassegne e stagioni<small>${rs.length}</small></h2><div class="rsx">${rs.map(([r,n])=>`<button class="rchip" data-r="${esc(r)}">${esc(r)}<small>${n}</small></button>`).join("")}</div>`;
@@ -1141,6 +1159,7 @@ function render(resetPage){
 /* ---------- modalità: spettacoli / mostre ---------- */
 const TXT={s:{lede:"Concerti, teatro, comici, classica e grandi eventi "+CITY.area+", nei prossimi 12 mesi.",ph:"Cerca artista o teatro…",luoghi:"Teatri e luoghi",luoghiS:"Luoghi",tot:"eventi",w:"nei prossimi 7 giorni",upd:UPDATED},
  m:{lede:"Mostre d'arte, fotografia, storia e cinema "+CITY.area+": in corso e in arrivo.",ph:"Cerca mostra, artista, museo…",luoghi:"Musei e sedi",luoghiS:"Sedi",tot:"mostre",w:"aperte oggi",upd:ISO.test(MD.aggiornato||"")?MD.aggiornato:""},
+ i:{lede:"Presentazioni di libri, incontri, conferenze e visite guidate "+CITY.area+", nelle prossime settimane.",ph:"Cerca libro, autore, luogo…",luoghi:"Librerie e luoghi",luoghiS:"Luoghi",tot:"incontri",w:"nei prossimi 7 giorni",upd:ISO.test(ID.aggiornato||"")?ID.aggiornato:""},
  c:{lede:"Film in sala "+CITY.area+": cosa danno, in quale cinema e a che ora.",ph:"Cerca film o cinema…",luoghi:"Cinema e sale",luoghiS:"Sale",tot:"film in sala",w:"sale con film",upd:ISO.test(CD.aggiornato||"")?CD.aggiornato:""}};
 function heroStats(){const x=TXT[MODE];
  $("#sTot").textContent=MODE==="c"?new Set(ALL.map(e=>norm(e.artista))).size:ALL.length;$("#lTot").textContent=x.tot;
@@ -1150,11 +1169,11 @@ function heroStats(){const x=TXT[MODE];
  $$('.seg [data-view="cal"]').forEach(b=>{b.textContent=MODE==="m"?"Elenco":MODE==="c"?"Film":"Calendario"});
  $$('.seg [data-view="luoghi"]').forEach(b=>{b.textContent=b.closest(".topctl")?x.luoghiS:x.luoghi});
  $$(".modes [data-mode]").forEach(b=>{const on=b.dataset.mode===MODE;b.classList.toggle("on",on);b.setAttribute("aria-selected",on)});
- $("#nS").textContent=ALL_S.length;$("#nM").textContent=ALL_M.length;$("#nC").textContent=new Set(ALL_C.map(e=>norm(e.artista))).size||"";
- document.body.classList.toggle("mode-m",MODE==="m");document.body.classList.toggle("mode-c",MODE==="c")}
-function setMode(m){if(m===MODE)return;MODE=m;ALL=m==="m"?ALL_M:m==="c"?ALL_C:ALL_S;GOPTS=m==="m"?GOPTS_M:m==="c"?GOPTS_C:GOPTS_S;GLAB=Object.fromEntries(GOPTS.map(o=>[o.k,o]));
- SECS=m==="m"?SECS_M:m==="c"?SECS_C:SECS_S;QUICK=m==="m"?QUICK_M:m==="c"?QUICK_C:QUICK_S;STITLE=Object.fromEntries(SECS);MONTHS=monthsOf(ALL);COMUNI_CON=new Set(ALL.map(e=>e._c));
- resetAll();st.view="cal";st.venue="";popK="";openZ.clear();lAll=false;openSec.clear();(m==="m"?["g","m","c","d"]:m==="c"?["g","c","l"]:["g","m","c"]).forEach(k=>openSec.add(k));heroStats();render(true);
+ $("#nS").textContent=ALL_S.length;$("#nI").textContent=ALL_I.length||"";$("#nM").textContent=ALL_M.length;$("#nC").textContent=new Set(ALL_C.map(e=>norm(e.artista))).size||"";
+ document.body.classList.toggle("mode-m",MODE==="m");document.body.classList.toggle("mode-c",MODE==="c");document.body.classList.toggle("mode-i",MODE==="i")}
+function setMode(m){if(m===MODE)return;MODE=m;ALL=m==="m"?ALL_M:m==="c"?ALL_C:m==="i"?ALL_I:ALL_S;GOPTS=m==="m"?GOPTS_M:m==="c"?GOPTS_C:m==="i"?GOPTS_I:GOPTS_S;GLAB=Object.fromEntries(GOPTS.map(o=>[o.k,o]));
+ SECS=m==="m"?SECS_M:m==="c"?SECS_C:m==="i"?SECS_I:SECS_S;QUICK=m==="m"?QUICK_M:m==="c"?QUICK_C:QUICK_S;STITLE=Object.fromEntries(SECS);MONTHS=monthsOf(ALL);COMUNI_CON=new Set(ALL.map(e=>e._c));
+ resetAll();st.view="cal";st.venue="";popK="";openZ.clear();lAll=false;openSec.clear();(m==="m"?["g","m","c","d"]:m==="c"?["g","c","l"]:m==="i"?["g","m","c","d"]:["g","m","c"]).forEach(k=>openSec.add(k));heroStats();render(true);
  const y=$(".modes").getBoundingClientRect().top+scrollY-8;if(scrollY>y)scrollTo({top:y})}
 
 /* ---------- interazioni ---------- */
@@ -1258,7 +1277,7 @@ document.addEventListener("click",e=>{if(!GC||!ON_WEB)return;const t=e.target;
  const a=t.closest(".card a.act");if(a){const lab=(a.dataset.lab||a.textContent).trim().replace(/^🎟\s*/,"");track(`${tm()}/clic-${norm(lab).replace(/\s+/g,"-")}/${tTitle(a)}`,`Clic «${lab}»`);return}
  const w=t.closest(".card .where");if(w){track(`${tm()}/luogo/${(w.querySelector(".wv")||w).textContent.trim()}`,w.tagName==="A"?"Apertura mappa":"Apertura programma del luogo");return}
  const vt=t.closest(".vtile");if(vt){track(`${tm()}/luogo/${vt.dataset.venue}`,"Apertura programma del luogo");return}
- const mo=t.closest("[data-mode]");if(mo){track(`scheda/${{m:"mostre",c:"cinema"}[mo.dataset.mode]||"spettacoli"}`,"Cambio scheda");return}
+ const mo=t.closest("[data-mode]");if(mo){track(`scheda/${{m:"mostre",c:"cinema",i:"incontri"}[mo.dataset.mode]||"spettacoli"}`,"Cambio scheda");return}
  const vw=t.closest("[data-view]");if(vw){track(`${tm()}/vista/${vw.dataset.view==="luoghi"?"luoghi":"elenco"}`,"Cambio vista");return}
  const o=t.closest("[data-k][data-v]");if(o&&!o.disabled){track(`${tm()}/filtro/${STITLE[o.dataset.k]||o.dataset.k}/${o.dataset.v}`,"Filtro");return}
  const z=t.closest("[data-zone]");if(z){track(`${tm()}/filtro/zona/${ZLAB[z.dataset.zone]||z.dataset.zone}`,"Filtro");return}
