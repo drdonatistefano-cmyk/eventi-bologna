@@ -1,21 +1,21 @@
 {
- "generato": "2026-11-10T07:29:05+00:00",
+ "generato": "2026-11-10T08:30:19+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-10",
- "visite_totali": 216,
- "totale_goatcounter": 590,
- "eventi_totali": 374,
+ "visite_totali": 221,
+ "totale_goatcounter": 603,
+ "eventi_totali": 382,
  "eventi_per_tipo": {
-  "filtri": 122,
-  "cambio scheda": 66,
-  "schede aperte": 52,
-  "cambio vista": 35,
+  "filtri": 123,
+  "cambio scheda": 67,
+  "schede aperte": 55,
+  "cambio vista": 36,
   "luoghi aperti": 31,
   "apri filtri": 17,
   "clic biglietti": 13,
   "azzera filtri": 8,
+  "altro": 8,
   "clic info spettacoli": 8,
-  "altro": 6,
   "mostra altri": 5,
   "clic mostre (scheda o sito)": 5,
   "condivisioni": 4,
@@ -27,16 +27,16 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-10",
-   "visite": 216,
-   "cambio scheda": 66,
-   "cambio vista": 35,
+   "visite": 221,
+   "cambio scheda": 67,
+   "cambio vista": 36,
    "apri filtri": 17,
-   "filtri": 122,
+   "filtri": 123,
    "luoghi aperti": 31,
    "azzera filtri": 8,
-   "altro": 6,
+   "altro": 8,
    "mostra altri": 5,
-   "schede aperte": 52,
+   "schede aperte": 55,
    "condivisioni": 4,
    "clic biglietti": 13,
    "ricerche": 1,
@@ -149,15 +149,15 @@
    "clic cinema (programma della sala)": 0
   },
   "2026-11-10": {
-   "cambio scheda": 0,
-   "cambio vista": 0,
+   "cambio scheda": 1,
+   "cambio vista": 1,
    "apri filtri": 0,
-   "filtri": 0,
+   "filtri": 1,
    "luoghi aperti": 0,
    "azzera filtri": 0,
-   "altro": 0,
+   "altro": 2,
    "mostra altri": 0,
-   "schede aperte": 0,
+   "schede aperte": 3,
    "condivisioni": 0,
    "clic biglietti": 0,
    "ricerche": 0,
@@ -193,21 +193,21 @@
   },
   {
    "giorno": "2026-11-10",
-   "visite": 2
+   "visite": 7
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 463
+   "conteggio": 467
   },
   {
    "origine": "achevents.com/milano",
-   "conteggio": 68
+   "conteggio": 69
   },
   {
    "origine": "achevents.com",
-   "conteggio": 50
+   "conteggio": 55
   },
   {
    "origine": "ui.awin.com",
@@ -215,6 +215,10 @@
   },
   {
    "origine": "teams.public.onecdn.static.microsoft",
+   "conteggio": 3
+  },
+  {
+   "origine": "achplaces.com",
    "conteggio": 3
   },
   {
@@ -230,12 +234,12 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 110
+   "conteggio": 112
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 58
+   "conteggio": 61
   },
   {
    "path": "/eventi-bologna",
@@ -269,7 +273,7 @@
   {
    "path": "milano/scheda/cinema",
    "titolo": "Cambio scheda",
-   "conteggio": 10,
+   "conteggio": 11,
    "tipo": "cambio scheda"
   },
   {
@@ -279,16 +283,22 @@
    "tipo": "cambio scheda"
   },
   {
+   "path": "milano/spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 8,
+   "tipo": "cambio vista"
+  },
+  {
    "path": "spettacoli/apri-filtri",
    "titolo": "Apertura filtri",
    "conteggio": 8,
    "tipo": "apri filtri"
   },
   {
-   "path": "milano/spettacoli/vista/luoghi",
-   "titolo": "Cambio vista",
+   "path": "milano/spettacoli/filtro/Genere/Rock",
+   "titolo": "Filtro",
    "conteggio": 7,
-   "tipo": "cambio vista"
+   "tipo": "filtri"
   },
   {
    "path": "milano/scheda/spettacoli",
@@ -316,12 +326,6 @@
   },
   {
    "path": "milano/spettacoli/filtro/Date/oggi",
-   "titolo": "Filtro",
-   "conteggio": 6,
-   "tipo": "filtri"
-  },
-  {
-   "path": "milano/spettacoli/filtro/Genere/Rock",
    "titolo": "Filtro",
    "conteggio": 6,
    "tipo": "filtri"
@@ -355,6 +359,12 @@
    "titolo": "Azzera filtri",
    "conteggio": 5,
    "tipo": "azzera filtri"
+  },
+  {
+   "path": "guide/vai-places",
+   "titolo": "Vai a Ach's Places Guide",
+   "conteggio": 4,
+   "tipo": "altro"
   },
   {
    "path": "guide/vai-dinners",
@@ -429,10 +439,10 @@
    "tipo": "filtri"
   },
   {
-   "path": "guide/vai-places",
-   "titolo": "Vai a Ach's Places Guide",
+   "path": "milano/cinema/dettaglio/Dio ride",
+   "titolo": "Apertura scheda",
    "conteggio": 2,
-   "tipo": "altro"
+   "tipo": "schede aperte"
   },
   {
    "path": "milano/mostre/dettaglio/Matisse. Il mondo in una stanza",
@@ -457,6 +467,12 @@
    "titolo": "Apertura programma del luogo",
    "conteggio": 2,
    "tipo": "luoghi aperti"
+  },
+  {
+   "path": "milano/cinema/dettaglio/Wild Horse Nine",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
   },
   {
    "path": "spettacoli/dettaglio/Accabadora",
@@ -561,6 +577,12 @@
    "tipo": "cambio vista"
   },
   {
+   "path": "milano/cinema/dettaglio/Clayface",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
    "path": "spettacoli/luogo/Teatro Dehon",
    "titolo": "Apertura programma del luogo",
    "conteggio": 1,
@@ -631,12 +653,6 @@
    "titolo": "Filtro",
    "conteggio": 1,
    "tipo": "filtri"
-  },
-  {
-   "path": "milano/cinema/dettaglio/Dio ride",
-   "titolo": "Apertura scheda",
-   "conteggio": 1,
-   "tipo": "schede aperte"
   },
   {
    "path": "milano/spettacoli/dettaglio/Tomaso Montanari – L'arte della pace",
@@ -871,12 +887,6 @@
    "titolo": "Apertura programma del luogo",
    "conteggio": 1,
    "tipo": "luoghi aperti"
-  },
-  {
-   "path": "milano/cinema/dettaglio/Wild Horse Nine",
-   "titolo": "Apertura scheda",
-   "conteggio": 1,
-   "tipo": "schede aperte"
   },
   {
    "path": "milano/cinema/filtro/Giorno e orario/g:2026-11-08",
