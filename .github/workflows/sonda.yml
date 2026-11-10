@@ -6,19 +6,9 @@ jobs:
   sonda:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - run: |
-          mkdir out; UA="Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
-          g(){ curl -sSL -m 30 -A "$UA" "$2" -o "out/$1" -w "$1 %{http_code} %{size_download}\n" >> out/codici.txt || echo "$1 fail" >> out/codici.txt; }
-          g cm_robots.txt https://www.cinemap.it/robots.txt
-          g cm_bo.html https://www.cinemap.it/bologna
-          g cm_bo_cinema.html https://www.cinemap.it/bologna/cinema
-          g cm_jolly.html https://www.cinemap.it/bologna/cinema/popup-jolly-bologna
-          g cm_mi_cinema.html https://www.cinemap.it/milano/cinema
-          g t18_robots.txt https://jolly.popupcinema.18tickets.it/robots.txt
-          g t18_jolly.html https://jolly.popupcinema.18tickets.it/
-          g t18_medica.html https://medica.popupcinema.18tickets.it/
-          g mm_robots.txt https://www.mymovies.it/robots.txt
-          g pop.html https://www.popupcinema.it/
+          mkdir out; python3 scripts/_sonda/cm_probe.py
           cd out && git init -q && git checkout -q -b sonda && git add -A
           git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm sonda
           git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" sonda
