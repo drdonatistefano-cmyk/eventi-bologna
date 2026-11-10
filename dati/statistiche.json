@@ -1,14 +1,14 @@
 {
- "generato": "2026-11-10T20:05:43+00:00",
+ "generato": "2026-11-10T20:46:05+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-10",
- "visite_totali": 232,
- "totale_goatcounter": 646,
- "eventi_totali": 414,
+ "visite_totali": 233,
+ "totale_goatcounter": 648,
+ "eventi_totali": 415,
  "eventi_per_tipo": {
   "filtri": 129,
   "cambio scheda": 71,
-  "schede aperte": 59,
+  "schede aperte": 60,
   "cambio vista": 39,
   "luoghi aperti": 35,
   "apri filtri": 19,
@@ -27,7 +27,7 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-10",
-   "visite": 232,
+   "visite": 233,
    "cambio scheda": 71,
    "cambio vista": 39,
    "apri filtri": 19,
@@ -36,7 +36,7 @@
    "luoghi aperti": 35,
    "azzera filtri": 8,
    "mostra altri": 6,
-   "schede aperte": 59,
+   "schede aperte": 60,
    "condivisioni": 4,
    "clic biglietti": 14,
    "clic info spettacoli": 9,
@@ -157,7 +157,7 @@
    "luoghi aperti": 4,
    "azzera filtri": 0,
    "mostra altri": 1,
-   "schede aperte": 7,
+   "schede aperte": 8,
    "condivisioni": 0,
    "clic biglietti": 1,
    "clic info spettacoli": 1,
@@ -193,13 +193,13 @@
   },
   {
    "giorno": "2026-11-10",
-   "visite": 18
+   "visite": 19
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 482
+   "conteggio": 483
   },
   {
    "origine": "achevents.com/milano",
@@ -228,13 +228,17 @@
   {
    "origine": "web.whatsapp.com",
    "conteggio": 1
+  },
+  {
+   "origine": "achdinners.com",
+   "conteggio": 1
   }
  ],
  "pagine_ed_eventi": [
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 117
+   "conteggio": 118
   },
   {
    "path": "/",
@@ -500,6 +504,12 @@
   },
   {
    "path": "milano/cinema/dettaglio/Wild Horse Nine",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Marco Mengoni – Allo Sbagliato",
    "titolo": "Apertura scheda",
    "conteggio": 2,
    "tipo": "schede aperte"
@@ -1007,12 +1017,6 @@
    "titolo": "Clic «Biglietti»",
    "conteggio": 1,
    "tipo": "clic biglietti"
-  },
-  {
-   "path": "milano/spettacoli/dettaglio/Marco Mengoni – Allo Sbagliato",
-   "titolo": "Apertura scheda",
-   "conteggio": 1,
-   "tipo": "schede aperte"
   },
   {
    "path": "spettacoli/dettaglio/Much Much Bass",
