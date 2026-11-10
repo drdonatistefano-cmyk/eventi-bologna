@@ -4,7 +4,7 @@ Uso: python3 scripts/citta.py
 Copia index.html in milano/index.html cambiando solo i testi statici (titolo, anteprima
 per WhatsApp e motori di ricerca, titolo e sottotitolo). Tutto il resto (grafica, filtri,
 funzioni) è identico: la città la sceglie la pagina stessa leggendo l'indirizzo.
-I dati di ogni città stanno nella sua cartella: milano/eventi.js, milano/mostre.js, milano/cinema.js.
+I dati di ogni città stanno nella sua cartella: milano/eventi.js, milano/mostre.js, milano/cinema.js, milano/incontri.js.
 """
 import os
 
@@ -20,6 +20,7 @@ VUOTI = {
     "eventi.js": 'window.EVENTI_DATA={"aggiornato":"","eventi":[]};\n',
     "mostre.js": 'window.MOSTRE_DATA={"aggiornato":"","mostre":[]};\n',
     "cinema.js": 'window.CINEMA_DATA={"aggiornato":"","giorno_orari":"","sale":[]};\n',
+    "incontri.js": 'window.INCONTRI_DATA={"aggiornato":"","incontri":[]};\n',
 }
 
 

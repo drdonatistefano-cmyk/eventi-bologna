@@ -12,7 +12,7 @@ import hashlib
 import json
 import os
 
-FILE = ["eventi", "serate", "mostre", "cinema"]
+FILE = ["eventi", "serate", "mostre", "cinema", "incontri"]
 CARTELLE = [".", "milano"]
 
 
