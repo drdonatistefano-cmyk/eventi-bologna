@@ -1337,7 +1337,8 @@
      "paese": "USA"
     }
    ],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/notorious-sesto-milano"
   },
   {
    "id": "c014",
@@ -1534,7 +1535,8 @@
      "paese": "Regno Unito"
     }
    ],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/arcobaleno-milano"
   },
   {
    "id": "c016",
@@ -1629,18 +1631,21 @@
      "paese": "Italia"
     }
    ],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/ariosto-milano",
+   "biglietti": "https://ariosto.spaziocinema.18tickets.it/"
   },
   {
    "id": "c018",
-   "nome": "Cinema Arlecchino",
+   "nome": "Cineteca Milano Arlecchino",
    "citta": "Milano",
    "indirizzo": "",
    "tipo": "D'essai",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/arlecchino_761/",
    "film": [],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/cineteca-arlecchino-milano"
   },
   {
    "id": "c019",
@@ -1759,7 +1764,8 @@
      "paese": "Gran Bretagna"
     }
    ],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/centrale-milano"
   },
   {
    "id": "c021",
@@ -2134,7 +2140,9 @@
      "paese": "Italia"
     }
    ],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/anteo-citylife-milano",
+   "biglietti": "https://citylife.spaziocinema.18tickets.it/"
   },
   {
    "id": "c022",
@@ -2313,7 +2321,8 @@
      "paese": "Regno Unito"
     }
    ],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/colosseo-milano"
   },
   {
    "id": "c023",
@@ -2484,7 +2493,8 @@
      "paese": "Regno Unito"
     }
    ],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/ducale-milano"
   },
   {
    "id": "c024",
@@ -2614,7 +2624,8 @@
      "paese": "Regno Unito"
     }
    ],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/eliseo-milano"
   },
   {
    "id": "c025",
@@ -2673,7 +2684,8 @@
      "paese": "Italia"
     }
    ],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/mexico-milano"
   },
   {
    "id": "c027",
@@ -2744,7 +2756,8 @@
      "paese": "Italia"
     }
    ],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/notorious-gloria-milano"
   },
   {
    "id": "c029",
@@ -2857,7 +2870,8 @@
      "paese": "Regno Unito"
     }
    ],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/orfeo-milano"
   },
   {
    "id": "c030",
@@ -2955,7 +2969,8 @@
      "paese": "Regno Unito"
     }
    ],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/palestrina-milano"
   },
   {
    "id": "c032",
@@ -3049,7 +3064,8 @@
      "paese": "Regno Unito"
     }
    ],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/plinius-milano"
   },
   {
    "id": "c033",
@@ -3502,18 +3518,89 @@
      "paese": "USA"
     }
    ],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/uci-bicocca-milano"
   },
   {
    "id": "c035",
-   "nome": "Uci Cinemas Certosa",
+   "nome": "Cinelandia Milano Certosa",
    "citta": "Milano",
    "indirizzo": "",
    "tipo": "Multisala",
    "sito": "",
-   "fonte": "https://movieplayer.it/cinema/uci-cinemas-certosa_1658/",
+   "fonte": "https://www.cinemap.it/milano/cinema/cinelandia-certosa-milano",
    "film": [],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/milano/cinema/cinelandia-certosa-milano"
+  },
+  {
+   "id": "c036",
+   "nome": "Anteo Palazzo del Cinema",
+   "citta": "Milano",
+   "indirizzo": "Via Milazzo 9, Milano",
+   "tipo": "D'essai",
+   "sito": "https://anteo.spaziocinema.18tickets.it/",
+   "fonte": "https://www.cinemap.it/milano/cinema/anteo-palazzo-milano",
+   "cinemap": "https://www.cinemap.it/milano/cinema/anteo-palazzo-milano",
+   "biglietti": "https://anteo.spaziocinema.18tickets.it/",
+   "film": []
+  },
+  {
+   "id": "c037",
+   "nome": "Cinema Beltrade",
+   "citta": "Milano",
+   "indirizzo": "Via Nino Oxilia 10, Milano",
+   "tipo": "D'essai",
+   "sito": "https://bandhi.it/bah/beltrade/",
+   "fonte": "https://www.cinemap.it/milano/cinema/beltrade-milano",
+   "cinemap": "https://www.cinemap.it/milano/cinema/beltrade-milano",
+   "film": []
+  },
+  {
+   "id": "c038",
+   "nome": "Cinema Godard – Fondazione Prada",
+   "citta": "Milano",
+   "indirizzo": "Largo Isarco 2, Milano",
+   "tipo": "D'essai",
+   "sito": "https://www.fondazioneprada.org/",
+   "fonte": "https://www.cinemap.it/milano/cinema/godard-milano",
+   "cinemap": "https://www.cinemap.it/milano/cinema/godard-milano",
+   "film": []
+  },
+  {
+   "id": "c039",
+   "nome": "Il Cinemino",
+   "citta": "Milano",
+   "indirizzo": "Via Seneca 6, Milano",
+   "tipo": "D'essai",
+   "sito": "https://ilcinemino.ilcinemino.18tickets.it/",
+   "fonte": "https://www.cinemap.it/milano/cinema/il-cinemino-milano",
+   "cinemap": "https://www.cinemap.it/milano/cinema/il-cinemino-milano",
+   "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/",
+   "film": []
+  },
+  {
+   "id": "c040",
+   "nome": "NOISE – Il Cinemino",
+   "citta": "Milano",
+   "indirizzo": "Via Seneca 6, Milano",
+   "tipo": "D'essai",
+   "sito": "https://noise.ilcinemino.18tickets.it/",
+   "fonte": "https://www.cinemap.it/milano/cinema/noise-cinemino-milano",
+   "cinemap": "https://www.cinemap.it/milano/cinema/noise-cinemino-milano",
+   "biglietti": "https://noise.ilcinemino.18tickets.it/",
+   "film": []
+  },
+  {
+   "id": "c041",
+   "nome": "Notorious Cinemas Merlata Bloom",
+   "citta": "Milano",
+   "indirizzo": "Via Daimler, Merlata Bloom, Milano",
+   "tipo": "Multisala",
+   "sito": "https://www.notoriouscinemas.it/merlata/",
+   "fonte": "https://www.cinemap.it/milano/cinema/notorious-merlata-milano",
+   "cinemap": "https://www.cinemap.it/milano/cinema/notorious-merlata-milano",
+   "film": []
   }
  ],
  "fonte_aggiornamento": "automatico (GitHub)"

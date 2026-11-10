@@ -30,18 +30,20 @@
    "tipo": "Arena",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/arena-tivoli_1782/",
-   "film": []
+   "film": [],
+   "cinemap": "https://www.cinemap.it/bologna/cinema/tivoli-bologna"
   },
   {
    "id": "c004",
-   "nome": "Cinema Arlecchino",
+   "nome": "Pop Up Cinema Arlecchino",
    "citta": "Bologna",
    "indirizzo": "Via Lame 57, Bologna",
    "tipo": "D'essai",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/arlecchino_187/",
    "film": [],
-   "biglietti": "https://arlecchino.popupcinema.18tickets.it/"
+   "biglietti": "https://arlecchino.popupcinema.18tickets.it/",
+   "cinemap": "https://www.cinemap.it/bologna/cinema/popup-arlecchino-bologna"
   },
   {
    "id": "c005",
@@ -51,7 +53,9 @@
    "tipo": "D'essai",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/bellinzona-d-essai_188/",
-   "film": []
+   "film": [],
+   "cinemap": "https://www.cinemap.it/bologna/cinema/bellinzona-bologna",
+   "biglietti": "https://ticket.cinebot.it/bellinzona/"
   },
   {
    "id": "c006",
@@ -91,7 +95,8 @@
      "paese": "USA"
     }
    ],
-   "biglietti": "https://www.webtic.it/app/shopping/loadLocal/BO/5373"
+   "biglietti": "https://www.webtic.it/app/shopping/loadLocal/BO/5373",
+   "cinemap": "https://www.cinemap.it/bologna/cinema/chaplin-bologna"
   },
   {
    "id": "c008",
@@ -155,7 +160,8 @@
      "biglietti": "https://ccb.18tickets.it/film/123699"
     }
    ],
-   "biglietti": "https://ccb.18tickets.it/"
+   "biglietti": "https://europa.ccb.18tickets.it/",
+   "cinemap": "https://www.cinemap.it/bologna/cinema/europa-bologna"
   },
   {
    "id": "c010",
@@ -213,29 +219,32 @@
      "biglietti": "https://fossolo.ccroma.18tickets.it/film/79652"
     }
    ],
-   "biglietti": "https://fossolo.ccroma.18tickets.it/"
+   "biglietti": "https://fossolo.ccroma.18tickets.it/",
+   "cinemap": "https://www.cinemap.it/bologna/cinema/fossolo-bologna"
   },
   {
    "id": "c011",
-   "nome": "Cinema Jolly",
+   "nome": "Pop Up Cinema Jolly",
    "citta": "Bologna",
    "indirizzo": "Via Marconi 14, 40122 Bologna",
-   "tipo": "Multisala",
+   "tipo": "D'essai",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/jolly_198/",
    "film": [],
-   "biglietti": "https://jolly.popupcinema.18tickets.it/"
+   "biglietti": "https://jolly.popupcinema.18tickets.it/",
+   "cinemap": "https://www.cinemap.it/bologna/cinema/popup-jolly-bologna"
   },
   {
    "id": "c012",
-   "nome": "Medica Palace Cinema Teatro",
+   "nome": "Pop Up Cinema Medica",
    "citta": "Bologna",
    "indirizzo": "Via Montegrappa 9, 40121 Bologna",
-   "tipo": "Multisala",
+   "tipo": "D'essai",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/medica-palace-cinema-teatro_201/",
    "film": [],
-   "biglietti": "https://medica.popupcinema.18tickets.it/"
+   "biglietti": "https://medica.popupcinema.18tickets.it/",
+   "cinemap": "https://www.cinemap.it/bologna/cinema/popup-medica-bologna"
   },
   {
    "id": "c013",
@@ -287,7 +296,8 @@
      "biglietti": "https://nosadella.18tickets.it/film/97166"
     }
    ],
-   "biglietti": "https://nosadella.18tickets.it/"
+   "biglietti": "https://nosadella.18tickets.it/",
+   "cinemap": "https://www.cinemap.it/bologna/cinema/nosadella-bologna"
   },
   {
    "id": "c014",
@@ -385,7 +395,8 @@
      "biglietti": "https://ccb.18tickets.it/film/118652"
     }
    ],
-   "biglietti": "https://ccb.18tickets.it/"
+   "biglietti": "https://odeon.ccb.18tickets.it/",
+   "cinemap": "https://www.cinemap.it/bologna/cinema/odeon-bologna"
   },
   {
    "id": "c015",
@@ -395,7 +406,9 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/orione_207/",
-   "film": []
+   "film": [],
+   "cinemap": "https://www.cinemap.it/bologna/cinema/orione-bologna",
+   "biglietti": "https://www.webtic.it/local/5669"
   },
   {
    "id": "c016",
@@ -416,7 +429,8 @@
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/pop-up-cinema-bristol_2890/",
    "film": [],
-   "biglietti": "https://bristol.popupcinema.18tickets.it/"
+   "biglietti": "https://bristol.popupcinema.18tickets.it/",
+   "cinemap": "https://www.cinemap.it/bologna/cinema/popup-bristol-bologna"
   },
   {
    "id": "c018",
@@ -472,7 +486,8 @@
      "biglietti": "https://ccb.18tickets.it/film/118653"
     }
    ],
-   "biglietti": "https://ccb.18tickets.it/"
+   "biglietti": "https://rialto.ccb.18tickets.it/",
+   "cinemap": "https://www.cinemap.it/bologna/cinema/rialto-bologna"
   },
   {
    "id": "c019",
@@ -509,7 +524,8 @@
      "biglietti": "https://ccb.18tickets.it/film/113603"
     }
    ],
-   "biglietti": "https://ccb.18tickets.it/"
+   "biglietti": "https://roma.ccb.18tickets.it/",
+   "cinemap": "https://www.cinemap.it/bologna/cinema/roma-dessai-bologna"
   },
   {
    "id": "c020",
@@ -735,7 +751,8 @@
      "paese": "USA"
     }
    ],
-   "biglietti": "https://www.thespacecinema.it/cinema/bologna/al-cinema"
+   "biglietti": "https://www.thespacecinema.it/cinema/bologna/al-cinema",
+   "cinemap": "https://www.cinemap.it/bologna/cinema/thespace-bologna"
   },
   {
    "id": "c022",
@@ -2104,6 +2121,29 @@
    "fonte": "https://movieplayer.it/cinema/marconi_231/",
    "film": [],
    "auto": true
+  },
+  {
+   "id": "c042",
+   "nome": "Cinema Teatro Galliera",
+   "citta": "Bologna",
+   "indirizzo": "Via Matteotti 27, Bologna",
+   "tipo": "Sala di comunità",
+   "sito": "https://www.cinemateatrogalliera.it/programma",
+   "fonte": "https://www.cinemap.it/bologna/cinema/galliera-bologna",
+   "cinemap": "https://www.cinemap.it/bologna/cinema/galliera-bologna",
+   "film": []
+  },
+  {
+   "id": "c043",
+   "nome": "Cinema Perla",
+   "citta": "Bologna",
+   "indirizzo": "Via San Donato 38, Bologna",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://www.cinemap.it/bologna/cinema/perla-bologna",
+   "cinemap": "https://www.cinemap.it/bologna/cinema/perla-bologna",
+   "biglietti": "https://www.liveticket.it/cinemaperlabo",
+   "film": []
   }
  ],
  "fonti": [
