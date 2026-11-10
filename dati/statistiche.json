@@ -1,17 +1,17 @@
 {
- "generato": "2026-11-10T14:28:33+00:00",
+ "generato": "2026-11-10T15:16:28+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-10",
- "visite_totali": 226,
- "totale_goatcounter": 628,
- "eventi_totali": 402,
+ "visite_totali": 228,
+ "totale_goatcounter": 631,
+ "eventi_totali": 403,
  "eventi_per_tipo": {
   "filtri": 127,
   "cambio scheda": 69,
   "schede aperte": 58,
   "cambio vista": 38,
   "luoghi aperti": 33,
-  "apri filtri": 18,
+  "apri filtri": 19,
   "clic biglietti": 14,
   "altro": 11,
   "azzera filtri": 8,
@@ -27,10 +27,10 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-10",
-   "visite": 226,
+   "visite": 228,
    "cambio scheda": 69,
    "cambio vista": 38,
-   "apri filtri": 18,
+   "apri filtri": 19,
    "filtri": 127,
    "altro": 11,
    "luoghi aperti": 33,
@@ -151,7 +151,7 @@
   "2026-11-10": {
    "cambio scheda": 3,
    "cambio vista": 3,
-   "apri filtri": 1,
+   "apri filtri": 2,
    "filtri": 5,
    "altro": 5,
    "luoghi aperti": 2,
@@ -193,13 +193,13 @@
   },
   {
    "giorno": "2026-11-10",
-   "visite": 12
+   "visite": 14
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 478
+   "conteggio": 479
   },
   {
    "origine": "achevents.com/milano",
@@ -207,7 +207,7 @@
   },
   {
    "origine": "achevents.com",
-   "conteggio": 55
+   "conteggio": 57
   },
   {
    "origine": "achplaces.com",
@@ -234,12 +234,12 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 113
+   "conteggio": 114
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 65
+   "conteggio": 66
   },
   {
    "path": "/eventi-bologna",
@@ -301,6 +301,12 @@
    "tipo": "cambio vista"
   },
   {
+   "path": "milano/spettacoli/apri-filtri",
+   "titolo": "Apertura filtri",
+   "conteggio": 7,
+   "tipo": "apri filtri"
+  },
+  {
    "path": "milano/spettacoli/filtro/Genere/Rock",
    "titolo": "Filtro",
    "conteggio": 7,
@@ -323,12 +329,6 @@
    "titolo": "Vai a Ach's Dinners Guide",
    "conteggio": 6,
    "tipo": "altro"
-  },
-  {
-   "path": "milano/spettacoli/apri-filtri",
-   "titolo": "Apertura filtri",
-   "conteggio": 6,
-   "tipo": "apri filtri"
   },
   {
    "path": "milano/spettacoli/filtro/Date/oggi",
