@@ -9,23 +9,12 @@ jobs:
       - run: |
           mkdir out; UA="Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
           g(){ curl -sSL -m 30 -A "$UA" "$2" -o "out/$1" -w "$1 %{http_code} %{size_download}\n" >> out/codici.txt || echo "$1 fail" >> out/codici.txt; }
-          g cb_robots.txt https://www.culturabologna.it/robots.txt
-          g cb_agenda.html "https://www.culturabologna.it/agenda"
-          g cb_libri.html "https://www.culturabologna.it/agenda-eventi/libri-e-letteratura"
-          g cb_incontri.html "https://www.culturabologna.it/agenda-eventi/incontri-e-conferenze"
-          g bb_robots.txt https://www.bibliotechebologna.it/robots.txt
-          g lf_robots.txt https://www.lafeltrinelli.it/robots.txt
-          g lf_mi.html "https://www.lafeltrinelli.it/eventi/milano"
-          g zero_robots.txt https://zero.eu/robots.txt
-          g zero_mi.html "https://zero.eu/it/milano/eventi/"
-          g mi_robots.txt https://www.comune.milano.it/robots.txt
-          g mib_robots.txt https://milano.biblioteche.it/robots.txt
-          g eb_robots.txt https://www.eventbrite.it/robots.txt
-          g mt_robots.txt https://www.milanotoday.it/robots.txt
-          g mt_ev.html "https://www.milanotoday.it/eventi/cultura/"
-          g bt_ev.html "https://www.bolognatoday.it/eventi/cultura/"
-          g ftm_robots.txt https://www.fondazionefeltrinelli.it/robots.txt
-          g ftm.html "https://fondazionefeltrinelli.it/eventi/"
+          g cb_inc1.html "https://www.culturabologna.it/agenda?categories%5B%5D=incontri"
+          g cb_inc2.html "https://www.culturabologna.it/agenda?categories%5B%5D=incontri&page=2"
+          g cb_vis.html "https://www.culturabologna.it/agenda?categories%5B%5D=visite-guidate"
+          g cb_obj.html "https://www.culturabologna.it/objects/pennacchi-opere-scelte"
+          g mib_ev.html "https://milano.biblioteche.it/eventi"
+          g tri.html "https://triennale.org/eventi"
           cd out && git init -q && git checkout -q -b sonda && git add -A
           git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm sonda
           git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" sonda
