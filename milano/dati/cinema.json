@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-09",
- "giorno_orari": "2026-11-09",
+ "aggiornato": "2026-11-10",
+ "giorno_orari": "2026-11-10",
  "sale": [
   {
    "id": "c001",
@@ -10,26 +10,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/cinema-arese_717/",
-   "film": [
-    {
-     "titolo": "Dio ride",
-     "orari": [
-      "21:15"
-     ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Giovanni Veronesi",
-     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "durata": 114,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-09": [
-       "21:15"
-      ]
-     },
-     "paese": "Italia"
-    }
-   ],
+   "film": [],
    "auto": true
   },
   {
@@ -42,11 +23,46 @@
    "fonte": "https://movieplayer.it/cinema/uci-cinemas-milanofiori_2401/",
    "film": [
     {
+     "titolo": "Clayface",
+     "orari": [
+      "20:00"
+     ],
+     "versione": "",
+     "genere": "Horror, Avventura, Azione",
+     "regia": "James Watkins",
+     "interpreti": "Eddie Marsan, Naomi Ackie e Max Minghella",
+     "durata": 108,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-10": [
+       "20:00"
+      ]
+     }
+    },
+    {
+     "titolo": "Dio ride",
+     "orari": [
+      "21:20"
+     ],
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Giovanni Veronesi",
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "durata": 114,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-10": [
+       "21:20"
+      ]
+     },
+     "paese": "Italia"
+    },
+    {
      "titolo": "Hope",
      "orari": [
-      "15:20",
-      "18:40",
-      "22:00"
+      "15:10",
+      "18:30",
+      "21:50"
      ],
      "versione": "",
      "genere": "Azione, Fantascienza, Horror",
@@ -55,10 +71,10 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "15:20",
-       "18:40",
-       "22:00"
+      "2026-11-10": [
+       "15:10",
+       "18:30",
+       "21:50"
       ]
      },
      "paese": "Corea del sud"
@@ -75,7 +91,7 @@
      "durata": 142,
      "anno": 2012,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "20:30"
       ]
      },
@@ -84,7 +100,7 @@
     {
      "titolo": "Ice Cream Man",
      "orari": [
-      "20:00"
+      "22:15"
      ],
      "versione": "",
      "genere": "Horror",
@@ -93,8 +109,8 @@
      "durata": 86,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "20:00"
+      "2026-11-10": [
+       "22:15"
       ]
      },
      "paese": "USA"
@@ -114,7 +130,7 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
        "17:00",
        "18:10",
@@ -135,33 +151,16 @@
      "durata": 89,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "22:30"
       ]
      },
      "paese": "USA"
     },
     {
-     "titolo": "RIDER",
-     "orari": [
-      "21:15"
-     ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Roan Johnson e Davide Pavanello",
-     "interpreti": "Lorenzo Aloi, Paola Gioia Kaze Formisano, Margherita Vicario e Claudio Santamaria",
-     "durata": 87,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-09": [
-       "21:15"
-      ]
-     },
-     "paese": "Italia"
-    },
-    {
      "titolo": "Se domani non torno",
      "orari": [
+      "15:00",
       "16:30",
       "17:20",
       "19:00",
@@ -174,7 +173,8 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
+       "15:00",
        "16:30",
        "17:20",
        "19:00",
@@ -196,7 +196,7 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:15",
        "17:30"
       ]
@@ -215,7 +215,7 @@
      "durata": 87,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "22:20"
       ]
      },
@@ -224,6 +224,7 @@
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
+      "15:15",
       "17:40",
       "19:45"
      ],
@@ -234,30 +235,13 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
+       "15:15",
        "17:40",
        "19:45"
       ]
      },
      "paese": "Italia"
-    },
-    {
-     "titolo": "Verity",
-     "orari": [
-      "22:15"
-     ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Michael Showalter",
-     "interpreti": "Dakota Johnson, Anne Hathaway e Josh Hartnett",
-     "durata": 104,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-09": [
-       "22:15"
-      ]
-     },
-     "paese": "USA"
     },
     {
      "titolo": "Wild Horse Nine",
@@ -273,7 +257,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:10",
        "18:30",
        "21:10"
@@ -285,7 +269,7 @@
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
       "15:30",
-      "17:10"
+      "18:00"
      ],
      "versione": "",
      "genere": "Animazione, Avventura, Drammatico",
@@ -294,9 +278,9 @@
      "durata": 139,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:30",
-       "17:10"
+       "18:00"
       ]
      },
      "paese": "USA"
@@ -323,7 +307,25 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/splendor_721/",
-   "film": [],
+   "film": [
+    {
+     "titolo": "The Sea",
+     "orari": [
+      "21:15"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Shai Carmeli-Pollak",
+     "interpreti": "Khalifa Natour, Muhammad Gazawi e Marlene Bajali",
+     "durata": 93,
+     "anno": 2025,
+     "giorni": {
+      "2026-11-10": [
+       "21:15"
+      ]
+     }
+    }
+   ],
    "auto": true
   },
   {
@@ -334,27 +336,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/agora_729/",
-   "film": [
-    {
-     "titolo": "Un anno di scuola",
-     "orari": [
-      "15:30",
-      "21:00"
-     ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Laura Samani",
-     "interpreti": "Stella Wendick, Giacomo Covi e Pietro Giustolisi",
-     "durata": 90,
-     "anno": 2025,
-     "giorni": {
-      "2026-11-09": [
-       "15:30",
-       "21:00"
-      ]
-     }
-    }
-   ],
+   "film": [],
    "auto": true
   },
   {
@@ -389,6 +371,23 @@
    "fonte": "https://movieplayer.it/cinema/uci-cinemas-pioltello_806/",
    "film": [
     {
+     "titolo": "Clayface",
+     "orari": [
+      "22:00"
+     ],
+     "versione": "",
+     "genere": "Horror, Avventura, Azione",
+     "regia": "James Watkins",
+     "interpreti": "Eddie Marsan, Naomi Ackie e Max Minghella",
+     "durata": 108,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-10": [
+       "22:00"
+      ]
+     }
+    },
+    {
      "titolo": "Dio ride",
      "orari": [
       "16:00"
@@ -400,7 +399,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "16:00"
       ]
      },
@@ -419,7 +418,7 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "18:00",
        "21:20"
       ]
@@ -438,7 +437,7 @@
      "durata": 142,
      "anno": 2012,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "20:30"
       ]
      },
@@ -457,7 +456,7 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "17:00",
        "18:10"
       ]
@@ -465,18 +464,18 @@
      "paese": "USA"
     },
     {
-     "titolo": "RIDER",
+     "titolo": "L'estranea",
      "orari": [
       "21:15"
      ],
      "versione": "",
-     "genere": "Drammatico",
-     "regia": "Roan Johnson e Davide Pavanello",
-     "interpreti": "Lorenzo Aloi, Paola Gioia Kaze Formisano, Margherita Vicario e Claudio Santamaria",
-     "durata": 87,
+     "genere": "Thriller",
+     "regia": "Paolo Strippoli",
+     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano, Adriano Giannini e Valeria Bruni Tedeschi",
+     "durata": 115,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "21:15"
       ]
      },
@@ -498,7 +497,7 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "16:30",
        "17:30",
        "19:00",
@@ -520,7 +519,7 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "17:15"
       ]
      },
@@ -538,29 +537,11 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "19:40"
       ]
      },
      "paese": "Italia"
-    },
-    {
-     "titolo": "Verity",
-     "orari": [
-      "22:00"
-     ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Michael Showalter",
-     "interpreti": "Dakota Johnson, Anne Hathaway e Josh Hartnett",
-     "durata": 104,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-09": [
-       "22:00"
-      ]
-     },
-     "paese": "USA"
     },
     {
      "titolo": "Wild Horse Nine",
@@ -575,7 +556,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "18:30",
        "21:10"
       ]
@@ -594,7 +575,7 @@
      "durata": 139,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "17:50"
       ]
      },
@@ -626,9 +607,9 @@
     {
      "titolo": "Clayface",
      "orari": [
-      "14:40",
-      "16:40",
-      "21:00"
+      "15:45",
+      "18:30",
+      "21:25"
      ],
      "versione": "",
      "genere": "Horror, Avventura, Azione",
@@ -637,17 +618,17 @@
      "durata": 108,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "14:40",
-       "16:40",
-       "21:00"
+      "2026-11-10": [
+       "15:45",
+       "18:30",
+       "21:25"
       ]
      }
     },
     {
      "titolo": "Dio ride",
      "orari": [
-      "18:10"
+      "21:50"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -656,8 +637,8 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "18:10"
+      "2026-11-10": [
+       "21:50"
       ]
      },
      "paese": "Italia"
@@ -665,7 +646,7 @@
     {
      "titolo": "Fast and Furious - Solo parti originali",
      "orari": [
-      "20:00"
+      "21:10"
      ],
      "versione": "",
      "genere": "Azione",
@@ -674,15 +655,15 @@
      "durata": 99,
      "anno": 2009,
      "giorni": {
-      "2026-11-09": [
-       "20:00"
+      "2026-11-10": [
+       "21:10"
       ]
      }
     },
     {
      "titolo": "Ferine",
      "orari": [
-      "17:50"
+      "21:20"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -691,8 +672,8 @@
      "durata": 103,
      "anno": 2025,
      "giorni": {
-      "2026-11-09": [
-       "17:50"
+      "2026-11-10": [
+       "21:20"
       ]
      },
      "paese": "Italia"
@@ -700,11 +681,10 @@
     {
      "titolo": "Hope",
      "orari": [
-      "14:20",
-      "16:00",
+      "15:10",
       "17:40",
       "20:40",
-      "21:35"
+      "21:40"
      ],
      "versione": "",
      "genere": "Azione, Fantascienza, Horror",
@@ -713,12 +693,11 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "14:20",
-       "16:00",
+      "2026-11-10": [
+       "15:10",
        "17:40",
        "20:40",
-       "21:35"
+       "21:40"
       ]
      },
      "paese": "Corea del sud"
@@ -726,7 +705,8 @@
     {
      "titolo": "Ice Cream Man",
      "orari": [
-      "22:20"
+      "19:25",
+      "22:30"
      ],
      "versione": "",
      "genere": "Horror",
@@ -735,8 +715,9 @@
      "durata": 86,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "22:20"
+      "2026-11-10": [
+       "19:25",
+       "22:30"
       ]
      },
      "paese": "USA"
@@ -744,10 +725,9 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
+      "14:40",
       "15:30",
-      "18:20",
-      "19:00",
-      "20:30"
+      "18:10"
      ],
      "versione": "",
      "genere": "Animazione",
@@ -756,11 +736,10 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
+       "14:40",
        "15:30",
-       "18:20",
-       "19:00",
-       "20:30"
+       "18:10"
       ]
      },
      "paese": "USA"
@@ -768,7 +747,7 @@
     {
      "titolo": "It Ends",
      "orari": [
-      "22:40"
+      "19:40"
      ],
      "versione": "",
      "genere": "Horror, Drammatico, Fantastico",
@@ -777,39 +756,40 @@
      "durata": 89,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "22:40"
+      "2026-11-10": [
+       "19:40"
       ]
      },
      "paese": "USA"
     },
     {
-     "titolo": "Le cose non dette",
+     "titolo": "Je so' pazzo",
      "orari": [
-      "18:50"
+      "14:50"
      ],
      "versione": "",
-     "genere": "Drammatico",
-     "regia": "Gabriele Muccino",
-     "interpreti": "Stefano Accorsi, Miriam Leone e Claudio Santamaria",
-     "durata": 90,
+     "genere": "Biografico",
+     "regia": "Nicola Prosatore",
+     "interpreti": "Massimiliano Caiazzo",
+     "durata": 105,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "18:50"
+      "2026-11-10": [
+       "14:50"
       ]
-     }
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "Se domani non torno",
      "orari": [
       "14:00",
-      "14:30",
-      "16:20",
+      "16:00",
+      "16:40",
       "18:00",
-      "19:50",
+      "18:45",
       "21:00",
-      "22:25"
+      "22:20"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -818,14 +798,14 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:00",
-       "14:30",
-       "16:20",
+       "16:00",
+       "16:40",
        "18:00",
-       "19:50",
+       "18:45",
        "21:00",
-       "22:25"
+       "22:20"
       ]
      },
      "paese": "Italia"
@@ -833,8 +813,9 @@
     {
      "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
      "orari": [
-      "14:10",
-      "17:45"
+      "14:20",
+      "17:10",
+      "19:10"
      ],
      "versione": "",
      "genere": "Animazione",
@@ -843,9 +824,10 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "14:10",
-       "17:45"
+      "2026-11-10": [
+       "14:20",
+       "17:10",
+       "19:10"
       ]
      },
      "paese": "Regno Unito"
@@ -853,7 +835,7 @@
     {
      "titolo": "The Nameless Ballad",
      "orari": [
-      "15:40",
+      "16:50",
       "22:10"
      ],
      "versione": "",
@@ -863,8 +845,8 @@
      "durata": 87,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "15:40",
+      "2026-11-10": [
+       "16:50",
        "22:10"
       ]
      },
@@ -873,8 +855,9 @@
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
-      "15:10",
-      "21:50"
+      "15:00",
+      "18:20",
+      "20:05"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -883,9 +866,10 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "15:10",
-       "21:50"
+      "2026-11-10": [
+       "15:00",
+       "18:20",
+       "20:05"
       ]
      },
      "paese": "Italia"
@@ -893,10 +877,9 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "15:50",
-      "17:00",
+      "16:20",
+      "18:50",
       "19:00",
-      "19:25",
       "20:50"
      ],
      "versione": "",
@@ -906,11 +889,10 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "15:50",
-       "17:00",
+      "2026-11-10": [
+       "16:20",
+       "18:50",
        "19:00",
-       "19:25",
        "20:50"
       ]
      },
@@ -919,9 +901,8 @@
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
-      "15:00",
-      "17:25",
-      "21:55"
+      "14:45",
+      "21:40"
      ],
      "versione": "",
      "genere": "Animazione, Avventura, Drammatico",
@@ -930,10 +911,9 @@
      "durata": 139,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "15:00",
-       "17:25",
-       "21:55"
+      "2026-11-10": [
+       "14:45",
+       "21:40"
       ]
      },
      "paese": "USA"
@@ -951,22 +931,22 @@
    "fonte": "https://movieplayer.it/cinema/multisala-troisi_811/",
    "film": [
     {
-     "titolo": "Dio ride",
+     "titolo": "Minotaur",
      "orari": [
       "21:00"
      ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Giovanni Veronesi",
-     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "durata": 114,
+     "versione": "Versione originale",
+     "genere": "Drammatico, Thriller",
+     "regia": "Andrey Zvyagintsev",
+     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
+     "durata": 135,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "21:00"
       ]
      },
-     "paese": "Italia"
+     "paese": "Francia"
     },
     {
      "titolo": "Se domani non torno",
@@ -980,7 +960,7 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "21:00"
       ]
      },
@@ -1022,7 +1002,7 @@
      "durata": 108,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "20:00",
        "22:40"
       ]
@@ -1033,6 +1013,7 @@
      "orari": [
       "14:40",
       "17:45",
+      "20:15",
       "22:20"
      ],
      "versione": "",
@@ -1042,9 +1023,10 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:40",
        "17:45",
+       "20:15",
        "22:20"
       ]
      },
@@ -1055,7 +1037,7 @@
      "orari": [
       "15:00",
       "18:15",
-      "21:30"
+      "21:31"
      ],
      "versione": "",
      "genere": "Azione, Fantascienza, Horror",
@@ -1064,20 +1046,37 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
        "18:15",
-       "21:30"
+       "21:31"
       ]
      },
      "paese": "Corea del sud"
     },
     {
+     "titolo": "Ice Cream Man",
+     "orari": [
+      "22:40"
+     ],
+     "versione": "",
+     "genere": "Horror",
+     "regia": "Eli Roth",
+     "interpreti": "Eli Roth, Dylan Hawco e Ben Davis",
+     "durata": 86,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-10": [
+       "22:40"
+      ]
+     },
+     "paese": "USA"
+    },
+    {
      "titolo": "Il gatto col cappello",
      "orari": [
       "15:00",
-      "17:20",
-      "19:40"
+      "17:20"
      ],
      "versione": "",
      "genere": "Animazione",
@@ -1086,13 +1085,30 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
-       "17:20",
-       "19:40"
+       "17:20"
       ]
      },
      "paese": "USA"
+    },
+    {
+     "titolo": "Il rumore delle cose nuove",
+     "orari": [
+      "20:00"
+     ],
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Paolo Genovese",
+     "interpreti": "Stefano Accorsi, Emanuela Fanelli e Lino Musella",
+     "durata": 113,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-10": [
+       "20:00"
+      ]
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "It Ends",
@@ -1106,7 +1122,7 @@
      "durata": 89,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "22:35"
       ]
      },
@@ -1124,7 +1140,7 @@
      "durata": 105,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:20"
       ]
      },
@@ -1134,8 +1150,7 @@
      "titolo": "L'estranea",
      "orari": [
       "17:25",
-      "19:00",
-      "21:00"
+      "19:00"
      ],
      "versione": "",
      "genere": "Thriller",
@@ -1144,10 +1159,9 @@
      "durata": 115,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "17:25",
-       "19:00",
-       "21:00"
+       "19:00"
       ]
      },
      "paese": "Italia"
@@ -1164,7 +1178,7 @@
      "durata": 93,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "20:35"
       ]
      },
@@ -1182,7 +1196,7 @@
      "durata": 136,
      "anno": 1995,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:45"
       ]
      },
@@ -1204,7 +1218,7 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:15",
        "15:00",
        "17:25",
@@ -1228,7 +1242,7 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:25",
        "16:15",
        "18:30"
@@ -1250,7 +1264,7 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "17:40",
        "20:05",
        "22:25"
@@ -1271,7 +1285,7 @@
      "durata": 90,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "16:30",
        "19:20"
       ]
@@ -1285,14 +1299,14 @@
       "20:05",
       "22:00"
      ],
-     "versione": "Versione originale (solo ore 20:05)",
+     "versione": "",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "16:25",
        "20:05",
        "22:00"
@@ -1314,7 +1328,7 @@
      "durata": 139,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:30",
        "17:15",
        "21:40"
@@ -1335,23 +1349,58 @@
    "fonte": "https://movieplayer.it/cinema/rondinella_818/",
    "film": [
     {
-     "titolo": "I figli della scimmia",
+     "titolo": "Minotaur",
      "orari": [
-      "15:30",
-      "21:00"
+      "18:30"
      ],
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "interpreti": "",
-     "durata": null,
+     "genere": "Drammatico, Thriller",
+     "regia": "Andrey Zvyagintsev",
+     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
+     "durata": 135,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "15:30",
-       "21:00"
+      "2026-11-10": [
+       "18:30"
       ]
-     }
+     },
+     "paese": "Francia"
+    },
+    {
+     "titolo": "Se domani non torno",
+     "orari": [
+      "15:30"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Paola Randi",
+     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
+     "durata": 107,
+     "anno": 2027,
+     "giorni": {
+      "2026-11-10": [
+       "15:30"
+      ]
+     },
+     "paese": "Italia"
+    },
+    {
+     "titolo": "Wild Horse Nine",
+     "orari": [
+      "21:15"
+     ],
+     "versione": "Versione originale",
+     "genere": "Commedia, Drammatico",
+     "regia": "Martin McDonagh",
+     "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
+     "durata": 118,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-10": [
+       "21:15"
+      ]
+     },
+     "paese": "Regno Unito"
     }
    ],
    "auto": true
@@ -1380,7 +1429,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
        "17:10",
        "19:20",
@@ -1401,7 +1450,7 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "17:20"
       ]
      },
@@ -1419,7 +1468,7 @@
      "durata": 115,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00"
       ]
      },
@@ -1437,7 +1486,7 @@
      "durata": 105,
      "anno": 1976,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "19:30"
       ]
      }
@@ -1454,7 +1503,7 @@
      "durata": 114,
      "anno": 1971,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "21:30"
       ]
      },
@@ -1475,7 +1524,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
        "17:10",
        "19:10",
@@ -1508,29 +1557,63 @@
    "fonte": "https://movieplayer.it/cinema/ariosto-anteo-spaziocinema_2949/",
    "film": [
     {
-     "titolo": "Rebuilding",
+     "titolo": "Dio ride",
      "orari": [
-      "21:15"
+      "17:00"
+     ],
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Giovanni Veronesi",
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "durata": 114,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-10": [
+       "17:00"
+      ]
+     },
+     "paese": "Italia"
+    },
+    {
+     "titolo": "Fatherland",
+     "orari": [
+      "15:15"
      ],
      "versione": "",
      "genere": "Drammatico",
-     "regia": "Max Walker-Silverman",
-     "interpreti": "Josh O'Connor, Eli Malouff e Meghann Fahy",
-     "durata": 95,
-     "anno": 2025,
+     "regia": "Paweł Pawlikowski",
+     "interpreti": "Sandra Hüller e Hanns Zischler",
+     "durata": 82,
+     "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "21:15"
+      "2026-11-10": [
+       "15:15"
       ]
      },
-     "paese": "USA"
+     "paese": "Italia"
+    },
+    {
+     "titolo": "Se domani non torno",
+     "orari": [
+      "19:20"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Paola Randi",
+     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
+     "durata": 107,
+     "anno": 2027,
+     "giorni": {
+      "2026-11-10": [
+       "19:20"
+      ]
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "Serpenti",
      "orari": [
-      "15:00",
-      "17:00",
-      "19:00"
+      "21:30"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -1539,10 +1622,8 @@
      "durata": 88,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "15:00",
-       "17:00",
-       "19:00"
+      "2026-11-10": [
+       "21:30"
       ]
      },
      "paese": "Italia"
@@ -1582,6 +1663,24 @@
    "fonte": "https://movieplayer.it/cinema/centrale_767/",
    "film": [
     {
+     "titolo": "Ferine",
+     "orari": [
+      "18:45"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Andrea Corsini",
+     "interpreti": "Carolyn Bracken, Caroline Goodall e Paola Lavini",
+     "durata": 103,
+     "anno": 2025,
+     "giorni": {
+      "2026-11-10": [
+       "18:45"
+      ]
+     },
+     "paese": "Italia"
+    },
+    {
      "titolo": "La guerra dei prezzi",
      "orari": [
       "16:45",
@@ -1594,7 +1693,7 @@
      "durata": 96,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "16:45",
        "21:00"
       ]
@@ -1614,7 +1713,7 @@
      "durata": 103,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:30",
        "18:45"
       ]
@@ -1624,8 +1723,7 @@
     {
      "titolo": "Serpenti",
      "orari": [
-      "16:45",
-      "21:00"
+      "14:30"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -1634,9 +1732,8 @@
      "durata": 88,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "16:45",
-       "21:00"
+      "2026-11-10": [
+       "14:30"
       ]
      },
      "paese": "Italia"
@@ -1644,8 +1741,8 @@
     {
      "titolo": "Trainspotting",
      "orari": [
-      "14:30",
-      "18:45"
+      "16:45",
+      "21:00"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -1654,9 +1751,9 @@
      "durata": 94,
      "anno": 1996,
      "giorni": {
-      "2026-11-09": [
-       "14:30",
-       "18:45"
+      "2026-11-10": [
+       "16:45",
+       "21:00"
       ]
      },
      "paese": "Gran Bretagna"
@@ -1685,7 +1782,7 @@
      "durata": null,
      "anno": 2025,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "10:00"
       ]
      }
@@ -1694,8 +1791,8 @@
      "titolo": "Dio ride",
      "orari": [
       "12:30",
-      "14:50",
-      "19:00"
+      "15:00",
+      "19:15"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -1704,10 +1801,10 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "12:30",
-       "14:50",
-       "19:00"
+       "15:00",
+       "19:15"
       ]
      },
      "paese": "Italia"
@@ -1715,7 +1812,7 @@
     {
      "titolo": "Hope",
      "orari": [
-      "21:15"
+      "20:30"
      ],
      "versione": "Versione originale",
      "genere": "Azione, Fantascienza, Horror",
@@ -1724,8 +1821,8 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "21:15"
+      "2026-11-10": [
+       "20:30"
       ]
      },
      "paese": "Corea del sud"
@@ -1743,7 +1840,7 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
        "17:15"
       ]
@@ -1751,10 +1848,28 @@
      "paese": "USA"
     },
     {
+     "titolo": "Il rumore delle cose nuove",
+     "orari": [
+      "19:00"
+     ],
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Paolo Genovese",
+     "interpreti": "Stefano Accorsi, Emanuela Fanelli e Lino Musella",
+     "durata": 113,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-10": [
+       "19:00"
+      ]
+     },
+     "paese": "Italia"
+    },
+    {
      "titolo": "Je so' pazzo",
      "orari": [
-      "10:15",
-      "17:20"
+      "10:30",
+      "21:50"
      ],
      "versione": "",
      "genere": "Biografico",
@@ -1763,9 +1878,9 @@
      "durata": 105,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "10:15",
-       "17:20"
+      "2026-11-10": [
+       "10:30",
+       "21:50"
       ]
      },
      "paese": "Italia"
@@ -1775,7 +1890,7 @@
      "orari": [
       "10:45",
       "14:45",
-      "19:30"
+      "21:40"
      ],
      "versione": "",
      "genere": "Thriller",
@@ -1784,31 +1899,13 @@
      "durata": 115,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "10:45",
        "14:45",
-       "19:30"
+       "21:40"
       ]
      },
      "paese": "Italia"
-    },
-    {
-     "titolo": "Minnie e Moskowitz",
-     "orari": [
-      "19:30"
-     ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "John Cassavetes",
-     "interpreti": "Gena Rowlands, Seymour Cassel e Val Avery",
-     "durata": 114,
-     "anno": 1971,
-     "giorni": {
-      "2026-11-09": [
-       "19:30"
-      ]
-     },
-     "paese": "USA"
     },
     {
      "titolo": "Naza",
@@ -1822,7 +1919,7 @@
      "durata": 80,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "13:00"
       ]
      },
@@ -1840,7 +1937,7 @@
      "durata": 110,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "12:45"
       ]
      },
@@ -1852,20 +1949,20 @@
       "12:20",
       "15:00",
       "19:15",
-      "21:50"
+      "21:30"
      ],
-     "versione": "Versione originale (solo ore 12:20, 21:50)",
+     "versione": "Versione originale (solo ore 12:20, 21:30)",
      "genere": "Drammatico",
      "regia": "Ang Lee",
      "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
      "durata": 136,
      "anno": 1995,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "12:20",
        "15:00",
        "19:15",
-       "21:50"
+       "21:30"
       ]
      },
      "paese": "USA"
@@ -1873,12 +1970,12 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "10:30",
-      "12:50",
-      "15:00",
-      "17:10",
-      "19:20",
-      "21:30"
+      "10:20",
+      "12:30",
+      "14:40",
+      "16:50",
+      "19:30",
+      "21:40"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -1887,13 +1984,13 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-09": [
-       "10:30",
-       "12:50",
-       "15:00",
-       "17:10",
-       "19:20",
-       "21:30"
+      "2026-11-10": [
+       "10:20",
+       "12:30",
+       "14:40",
+       "16:50",
+       "19:30",
+       "21:40"
       ]
      },
      "paese": "Italia"
@@ -1902,7 +1999,7 @@
      "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
      "orari": [
       "10:30",
-      "17:05"
+      "17:15"
      ],
      "versione": "",
      "genere": "Animazione",
@@ -1911,12 +2008,30 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "10:30",
-       "17:05"
+       "17:15"
       ]
      },
      "paese": "Regno Unito"
+    },
+    {
+     "titolo": "The Echo Chamber",
+     "orari": [
+      "15:00"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Andrea Pallaoro",
+     "interpreti": "Luca Marinelli, Alicia Vikander e Susan Sarandon",
+     "durata": 120,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-10": [
+       "15:00"
+      ]
+     },
+     "paese": "Italia"
     },
     {
      "titolo": "The Invite - Il piacere è tutto nostro",
@@ -1930,7 +2045,7 @@
      "durata": 108,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "10:30"
       ]
      },
@@ -1940,9 +2055,7 @@
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
       "15:00",
-      "17:40",
-      "19:50",
-      "21:40"
+      "19:50"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -1951,11 +2064,9 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
-       "17:40",
-       "19:50",
-       "21:40"
+       "19:50"
       ]
      },
      "paese": "Italia"
@@ -1975,7 +2086,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "12:40",
        "17:00",
        "19:30",
@@ -1987,18 +2098,18 @@
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
-      "12:20",
+      "12:30",
       "16:50"
      ],
-     "versione": "Versione originale (solo ore 12:20)",
+     "versione": "Versione originale (solo ore 12:30)",
      "genere": "Animazione, Avventura, Drammatico",
      "regia": "Travis Knight",
      "interpreti": "Peyton Elizabeth Lee, Jacob Tremblay e Carey Mulligan",
      "durata": 139,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "12:20",
+      "2026-11-10": [
+       "12:30",
        "16:50"
       ]
      },
@@ -2016,7 +2127,7 @@
      "durata": 111,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "10:00"
       ]
      },
@@ -2035,10 +2146,29 @@
    "fonte": "https://movieplayer.it/cinema/colosseo_769/",
    "film": [
     {
+     "titolo": "Judy",
+     "orari": [
+      "19:05"
+     ],
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "interpreti": "Tom Cruise e Jesse Plemons",
+     "durata": null,
+     "anno": 2025,
+     "giorni": {
+      "2026-11-10": [
+       "19:05"
+      ]
+     }
+    },
+    {
      "titolo": "Dio ride",
      "orari": [
-      "15:00",
-      "17:10"
+      "14:50",
+      "17:00",
+      "19:15",
+      "21:30"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -2047,38 +2177,41 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "15:00",
-       "17:10"
+      "2026-11-10": [
+       "14:50",
+       "17:00",
+       "19:15",
+       "21:30"
       ]
      },
      "paese": "Italia"
     },
     {
-     "titolo": "Il rumore delle cose nuove",
+     "titolo": "Il gatto col cappello",
      "orari": [
-      "20:00",
-      "20:10"
+      "15:00",
+      "17:00"
      ],
      "versione": "",
-     "genere": "Commedia",
-     "regia": "Paolo Genovese",
-     "interpreti": "Stefano Accorsi, Emanuela Fanelli e Lino Musella",
-     "durata": 113,
+     "genere": "Animazione",
+     "regia": "Alessandro Carloni e Erica Rivinoja",
+     "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
+     "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "20:00",
-       "20:10"
+      "2026-11-10": [
+       "15:00",
+       "17:00"
       ]
      },
-     "paese": "Italia"
+     "paese": "USA"
     },
     {
      "titolo": "L'estranea",
      "orari": [
-      "15:00",
-      "17:10"
+      "14:50",
+      "17:00",
+      "21:30"
      ],
      "versione": "",
      "genere": "Thriller",
@@ -2087,9 +2220,10 @@
      "durata": 115,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "15:00",
-       "17:10"
+      "2026-11-10": [
+       "14:50",
+       "17:00",
+       "21:30"
       ]
      },
      "paese": "Italia"
@@ -2097,7 +2231,7 @@
     {
      "titolo": "Primetime",
      "orari": [
-      "15:00"
+      "17:05"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -2106,8 +2240,8 @@
      "durata": 110,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "15:00"
+      "2026-11-10": [
+       "17:05"
       ]
      },
      "paese": "USA"
@@ -2115,8 +2249,9 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "15:00",
-      "17:10"
+      "14:50",
+      "17:00",
+      "21:30"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -2125,9 +2260,10 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-09": [
-       "15:00",
-       "17:10"
+      "2026-11-10": [
+       "14:50",
+       "17:00",
+       "21:30"
       ]
      },
      "paese": "Italia"
@@ -2135,7 +2271,8 @@
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
-      "15:00"
+      "15:00",
+      "19:10"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -2144,8 +2281,9 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "15:00"
+      "2026-11-10": [
+       "15:00",
+       "19:10"
       ]
      },
      "paese": "Italia"
@@ -2153,19 +2291,23 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "15:00",
-      "17:00"
+      "14:50",
+      "17:00",
+      "19:15",
+      "21:30"
      ],
-     "versione": "",
+     "versione": "Versione originale (solo ore 21:30)",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "15:00",
-       "17:00"
+      "2026-11-10": [
+       "14:50",
+       "17:00",
+       "19:15",
+       "21:30"
       ]
      },
      "paese": "Regno Unito"
@@ -2197,7 +2339,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
        "17:10",
        "19:20",
@@ -2219,7 +2361,7 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
        "17:10"
       ]
@@ -2238,7 +2380,7 @@
      "durata": 115,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "21:30"
       ]
      },
@@ -2256,7 +2398,7 @@
      "durata": 105,
      "anno": 1976,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "19:30"
       ]
      }
@@ -2273,7 +2415,7 @@
      "durata": 114,
      "anno": 1971,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "21:30"
       ]
      },
@@ -2292,7 +2434,7 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
        "19:15"
       ]
@@ -2311,7 +2453,7 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00"
       ]
      },
@@ -2332,7 +2474,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
        "17:10",
        "19:20",
@@ -2368,7 +2510,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:50",
        "17:05",
        "19:20",
@@ -2392,7 +2534,7 @@
      "durata": 82,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
        "17:20",
        "19:25",
@@ -2415,7 +2557,7 @@
      "durata": 135,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:15",
        "18:00",
        "21:00"
@@ -2438,7 +2580,7 @@
      "durata": 136,
      "anno": 1995,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:50",
        "16:50",
        "19:00",
@@ -2462,7 +2604,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:45",
        "17:00",
        "19:15",
@@ -2497,7 +2639,7 @@
     {
      "titolo": "Minotaur",
      "orari": [
-      "18:15"
+      "15:30"
      ],
      "versione": "Versione originale",
      "genere": "Drammatico, Thriller",
@@ -2506,8 +2648,8 @@
      "durata": 135,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "18:15"
+      "2026-11-10": [
+       "15:30"
       ]
      },
      "paese": "Francia"
@@ -2515,7 +2657,7 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "16:00"
+      "18:00"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -2524,8 +2666,8 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-09": [
-       "16:00"
+      "2026-11-10": [
+       "18:00"
       ]
      },
      "paese": "Italia"
@@ -2557,7 +2699,9 @@
      "titolo": "Dio ride",
      "orari": [
       "14:30",
-      "16:50"
+      "16:50",
+      "19:10",
+      "21:30"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -2566,9 +2710,11 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:30",
-       "16:50"
+       "16:50",
+       "19:10",
+       "21:30"
       ]
      },
      "paese": "Italia"
@@ -2577,7 +2723,9 @@
      "titolo": "Se domani non torno",
      "orari": [
       "14:45",
-      "17:00"
+      "17:00",
+      "19:30",
+      "21:50"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -2586,9 +2734,11 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:45",
-       "17:00"
+       "17:00",
+       "19:30",
+       "21:50"
       ]
      },
      "paese": "Italia"
@@ -2617,7 +2767,7 @@
      "durata": 108,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "21:30"
       ]
      }
@@ -2634,7 +2784,7 @@
      "durata": 115,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "19:30"
       ]
      },
@@ -2655,7 +2805,7 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
        "17:05",
        "19:15",
@@ -2677,7 +2827,7 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:15",
        "17:15"
       ]
@@ -2691,14 +2841,14 @@
       "17:15",
       "21:30"
      ],
-     "versione": "",
+     "versione": "Versione originale (solo ore 21:30)",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
        "17:15",
        "21:30"
@@ -2721,7 +2871,8 @@
     {
      "titolo": "Yellow Letters",
      "orari": [
-      "15:00"
+      "15:00",
+      "21:00"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -2730,8 +2881,9 @@
      "durata": 127,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "15:00"
+      "2026-11-10": [
+       "15:00",
+       "21:00"
       ]
      },
      "paese": "Germania"
@@ -2760,7 +2912,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:30"
       ]
      },
@@ -2771,14 +2923,14 @@
      "orari": [
       "18:00"
      ],
-     "versione": "",
+     "versione": "Versione originale",
      "genere": "Drammatico, Thriller",
      "regia": "Andrey Zvyagintsev",
      "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
      "durata": 135,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "18:00"
       ]
      },
@@ -2796,7 +2948,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "21:00"
       ]
      },
@@ -2827,7 +2979,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "16:40",
        "19:00"
       ]
@@ -2847,7 +2999,7 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:30",
        "16:15"
       ]
@@ -2867,7 +3019,7 @@
      "durata": 136,
      "anno": 1995,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "18:30",
        "21:30"
       ]
@@ -2888,7 +3040,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:30",
        "18:30",
        "21:30"
@@ -2922,28 +3074,31 @@
     {
      "titolo": "Clayface",
      "orari": [
-      "18:30",
+      "18:35",
       "20:20",
-      "21:40"
+      "21:40",
+      "22:50"
      ],
-     "versione": "Versione originale (solo ore 18:30)",
+     "versione": "Versione originale (solo ore 21:40, 18:35)",
      "genere": "Horror, Avventura, Azione",
      "regia": "James Watkins",
      "interpreti": "Eddie Marsan, Naomi Ackie e Max Minghella",
      "durata": 108,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "18:30",
+      "2026-11-10": [
+       "18:35",
        "20:20",
-       "21:40"
+       "21:40",
+       "22:50"
       ]
      }
     },
     {
      "titolo": "Dio ride",
      "orari": [
-      "14:00"
+      "14:00",
+      "19:20"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -2952,8 +3107,9 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "14:00"
+      "2026-11-10": [
+       "14:00",
+       "19:20"
       ]
      },
      "paese": "Italia"
@@ -2970,7 +3126,7 @@
      "durata": 103,
      "anno": 2025,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "22:30"
       ]
      },
@@ -2988,7 +3144,7 @@
      "durata": 101,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "18:10"
       ]
      },
@@ -3008,7 +3164,7 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:30",
        "18:00",
        "21:30"
@@ -3029,7 +3185,7 @@
      "durata": 142,
      "anno": 2012,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "17:20",
        "20:30"
       ]
@@ -3050,7 +3206,7 @@
      "durata": 86,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "17:55",
        "19:50",
        "22:40"
@@ -3074,7 +3230,7 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:20",
        "15:30",
        "16:00",
@@ -3090,7 +3246,7 @@
       "14:30",
       "16:45",
       "20:15",
-      "22:45"
+      "22:50"
      ],
      "versione": "Versione originale (solo ore 14:30)",
      "genere": "Horror, Drammatico, Fantastico",
@@ -3099,11 +3255,11 @@
      "durata": 89,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:30",
        "16:45",
        "20:15",
-       "22:45"
+       "22:50"
       ]
      },
      "paese": "USA"
@@ -3121,7 +3277,7 @@
      "durata": 105,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "16:50",
        "22:00"
       ]
@@ -3131,7 +3287,8 @@
     {
      "titolo": "L'estranea",
      "orari": [
-      "15:10"
+      "15:10",
+      "21:00"
      ],
      "versione": "",
      "genere": "Thriller",
@@ -3140,8 +3297,9 @@
      "durata": 115,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "15:10"
+      "2026-11-10": [
+       "15:10",
+       "21:00"
       ]
      },
      "paese": "Italia"
@@ -3150,7 +3308,7 @@
      "titolo": "Amrum",
      "orari": [
       "15:30",
-      "17:30"
+      "17:25"
      ],
      "versione": "",
      "genere": "Drammatico, Storico",
@@ -3159,9 +3317,9 @@
      "durata": null,
      "anno": 2025,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:30",
-       "17:30"
+       "17:25"
       ]
      }
     },
@@ -3178,7 +3336,7 @@
      "durata": 110,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:30",
        "21:35"
       ]
@@ -3188,7 +3346,7 @@
     {
      "titolo": "Ragione e sentimento",
      "orari": [
-      "15:20"
+      "15:25"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -3197,29 +3355,11 @@
      "durata": 136,
      "anno": 1995,
      "giorni": {
-      "2026-11-09": [
-       "15:20"
+      "2026-11-10": [
+       "15:25"
       ]
      },
      "paese": "USA"
-    },
-    {
-     "titolo": "RIDER",
-     "orari": [
-      "21:00"
-     ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Roan Johnson e Davide Pavanello",
-     "interpreti": "Lorenzo Aloi, Paola Gioia Kaze Formisano, Margherita Vicario e Claudio Santamaria",
-     "durata": 87,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-09": [
-       "21:00"
-      ]
-     },
-     "paese": "Italia"
     },
     {
      "titolo": "Se domani non torno",
@@ -3239,7 +3379,7 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:10",
        "16:00",
        "17:40",
@@ -3265,7 +3405,7 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:15",
        "17:30",
        "19:10"
@@ -3276,7 +3416,7 @@
     {
      "titolo": "The Nameless Ballad",
      "orari": [
-      "22:20"
+      "22:25"
      ],
      "versione": "",
      "genere": "Horror",
@@ -3285,8 +3425,8 @@
      "durata": 87,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
-       "22:20"
+      "2026-11-10": [
+       "22:25"
       ]
      },
      "paese": "Italia"
@@ -3305,31 +3445,13 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
        "19:15",
        "21:50"
       ]
      },
      "paese": "Italia"
-    },
-    {
-     "titolo": "Verity",
-     "orari": [
-      "22:50"
-     ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Michael Showalter",
-     "interpreti": "Dakota Johnson, Anne Hathaway e Josh Hartnett",
-     "durata": 104,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-09": [
-       "22:50"
-      ]
-     },
-     "paese": "USA"
     },
     {
      "titolo": "Wild Horse Nine",
@@ -3346,7 +3468,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "15:00",
        "18:20",
        "20:30",
@@ -3370,7 +3492,7 @@
      "durata": 139,
      "anno": 2026,
      "giorni": {
-      "2026-11-09": [
+      "2026-11-10": [
        "14:20",
        "16:10",
        "17:15",
