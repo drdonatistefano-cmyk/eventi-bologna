@@ -6,7 +6,7 @@
   "giorni": 7,
   "al": "2026-11-10",
   "parziale": false,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
  },
  {
   "periodo": "Settimana 1",
@@ -15,7 +15,7 @@
   "giorni": 7,
   "al": "2026-11-10",
   "parziale": false,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
  },
  {
   "periodo": "Settimana 1",
@@ -24,7 +24,7 @@
   "giorni": 7,
   "al": "2026-11-10",
   "parziale": false,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
  },
  {
   "periodo": "Settimana 1",
@@ -33,7 +33,7 @@
   "giorni": 7,
   "al": "2026-11-10",
   "parziale": false,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
  },
  {
   "periodo": "Settimana 1",
@@ -42,7 +42,7 @@
   "giorni": 7,
   "al": "2026-11-10",
   "parziale": false,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
  },
  {
   "periodo": "Settimana 1",
@@ -51,7 +51,7 @@
   "giorni": 7,
   "al": "2026-11-10",
   "parziale": false,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
  },
  {
   "periodo": "Settimana 1",
@@ -60,7 +60,7 @@
   "giorni": 7,
   "al": "2026-11-10",
   "parziale": false,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
  },
  {
   "periodo": "Settimana 1",
@@ -69,78 +69,150 @@
   "giorni": 7,
   "al": "2026-11-10",
   "parziale": false,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Visite",
+  "effettivo": 0,
+  "giorni": 1,
+  "al": "2026-11-11",
+  "parziale": true,
+  "letto": "2026-11-10T23:34:04+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Clic sui biglietti",
+  "effettivo": 0,
+  "giorni": 1,
+  "al": "2026-11-11",
+  "parziale": true,
+  "letto": "2026-11-10T23:34:04+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Clic «Info» sugli spettacoli",
+  "effettivo": 0,
+  "giorni": 1,
+  "al": "2026-11-11",
+  "parziale": true,
+  "letto": "2026-11-10T23:34:04+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Clic sulle mostre",
+  "effettivo": 0,
+  "giorni": 1,
+  "al": "2026-11-11",
+  "parziale": true,
+  "letto": "2026-11-10T23:34:04+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Uso dei filtri",
+  "effettivo": 0,
+  "giorni": 1,
+  "al": "2026-11-11",
+  "parziale": true,
+  "letto": "2026-11-10T23:34:04+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Ricerche",
+  "effettivo": 0,
+  "giorni": 1,
+  "al": "2026-11-11",
+  "parziale": true,
+  "letto": "2026-11-10T23:34:04+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Condivisioni",
+  "effettivo": 0,
+  "giorni": 1,
+  "al": "2026-11-11",
+  "parziale": true,
+  "letto": "2026-11-10T23:34:04+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Ricavo potenziale",
+  "effettivo": 0.0,
+  "giorni": 1,
+  "al": "2026-11-11",
+  "parziale": true,
+  "letto": "2026-11-10T23:34:04+00:00"
  },
  {
   "periodo": "Primo mese",
   "metrica": "Visite",
   "effettivo": 233,
-  "giorni": 7,
-  "al": "2026-11-10",
+  "giorni": 8,
+  "al": "2026-11-11",
   "parziale": true,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
  },
  {
   "periodo": "Primo mese",
   "metrica": "Clic sui biglietti",
   "effettivo": 15,
-  "giorni": 7,
-  "al": "2026-11-10",
+  "giorni": 8,
+  "al": "2026-11-11",
   "parziale": true,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
  },
  {
   "periodo": "Primo mese",
   "metrica": "Clic «Info» sugli spettacoli",
   "effettivo": 10,
-  "giorni": 7,
-  "al": "2026-11-10",
+  "giorni": 8,
+  "al": "2026-11-11",
   "parziale": true,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
  },
  {
   "periodo": "Primo mese",
   "metrica": "Clic sulle mostre",
   "effettivo": 5,
-  "giorni": 7,
-  "al": "2026-11-10",
+  "giorni": 8,
+  "al": "2026-11-11",
   "parziale": true,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
  },
  {
   "periodo": "Primo mese",
   "metrica": "Uso dei filtri",
   "effettivo": 132,
-  "giorni": 7,
-  "al": "2026-11-10",
+  "giorni": 8,
+  "al": "2026-11-11",
   "parziale": true,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
  },
  {
   "periodo": "Primo mese",
   "metrica": "Ricerche",
   "effettivo": 2,
-  "giorni": 7,
-  "al": "2026-11-10",
+  "giorni": 8,
+  "al": "2026-11-11",
   "parziale": true,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
  },
  {
   "periodo": "Primo mese",
   "metrica": "Condivisioni",
   "effettivo": 4,
-  "giorni": 7,
-  "al": "2026-11-10",
+  "giorni": 8,
+  "al": "2026-11-11",
   "parziale": true,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
  },
  {
   "periodo": "Primo mese",
   "metrica": "Ricavo potenziale",
   "effettivo": 1.77,
-  "giorni": 7,
-  "al": "2026-11-10",
+  "giorni": 8,
+  "al": "2026-11-11",
   "parziale": true,
-  "letto": "2026-11-10T22:56:16+00:00"
+  "letto": "2026-11-10T23:34:04+00:00"
  }
 ]
