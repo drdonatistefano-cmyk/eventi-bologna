@@ -9,12 +9,11 @@ jobs:
       - run: |
           mkdir out; UA="Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
           g(){ curl -sSL -m 30 -A "$UA" "$2" -o "out/$1" -w "$1 %{http_code} %{size_download}\n" >> out/codici.txt || echo "$1 fail" >> out/codici.txt; }
-          g cb_inc1.html "https://www.culturabologna.it/agenda?categories%5B%5D=incontri"
-          g cb_inc2.html "https://www.culturabologna.it/agenda?categories%5B%5D=incontri&page=2"
-          g cb_vis.html "https://www.culturabologna.it/agenda?categories%5B%5D=visite-guidate"
-          g cb_obj.html "https://www.culturabologna.it/objects/pennacchi-opere-scelte"
-          g mib_ev.html "https://milano.biblioteche.it/eventi"
-          g tri.html "https://triennale.org/eventi"
+          g ftm.html "https://fondazionefeltrinelli.it/eventi/"
+          g ftm2.html "https://fondazionefeltrinelli.it/eventi/page/2/"
+          g zero.html "https://zero.eu/it/milano/eventi/"
+          g zero_inc.html "https://zero.eu/it/milano/incontri/"
+          g cbm.html "https://www.culturabologna.it/agenda?categories%5B%5D=incontri&page=9"
           cd out && git init -q && git checkout -q -b sonda && git add -A
           git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm sonda
           git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" sonda
