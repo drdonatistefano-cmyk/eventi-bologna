@@ -91,7 +91,7 @@ def genere(cat, titolo, sotto, luogo, extra=""):
     if "visite-guidate" in cat or re.search(r"\bvisit[ae] guidat", t): return "Visite guidate"
     if re.search(r"presentazione (del|di|dell'|della|dei|delle|in anteprima)? ?(nuovo |suo |ultimo )?(libro|volume|romanzo|saggio|raccolta|graphic novel|fumetto|antologia|meridiano)|"
                  r"presenta (il|la) (suo |sua |nuovo |nuova )?(libro|romanzo|saggio|raccolta)|\b(libro|romanzo|saggio) di\b|reading|letture? (ad alta voce|animat)|"
-                 r"gruppo di lettura|\bgdl\b|scrittor[ei]|scrittrice|poesi[ae]|poet[ai]|bookcity|\bedizioni\b|editore|\(\s*[a-z]+ ?editore", t) \
+                 r"gruppo di lettura|\bgdl\b|scrittor[ei]|scrittrice|poesi[ae]|poet[ai]|bookcity|\(\s*[a-z]+ ?editore", t) \
             or re.search(r"librer|libreria|book ?shop|bookstore", luogo.lower()):
         return "Libri"
     return "Incontri e conferenze"
@@ -113,6 +113,12 @@ def comune_da(t):
     return ""
 
 
+def maiuscole(t):
+    """«NAZIONALISMO E INTERNAZIONALISMO. Ragioni…» → «Nazionalismo e internazionalismo. Ragioni…»"""
+    parti = re.split(r"(\.\s+|\s+[-–]\s+)", t)
+    return "".join(x[:1].upper() + x[1:].lower() if x.isupper() and len(x) > 3 else x for x in parti)
+
+
 def voce(fonte, data, fino, ora, titolo, luogo, citta, gen, descr, url, disp):
     return {"data": data.isoformat(), "fino": fino.isoformat(), "ora": ora, "artista": pulito(titolo, 140), "luogo": pulito(luogo, 90),
             "citta": citta or CAPO, "genere": gen, "tipo": "", "rassegna": "", "descrizione": pulito(descr, 230),
@@ -129,7 +135,7 @@ def cb_carte(h):
         g = lambda rx: (re.search(rx, c, re.S) or [None, ""])[1]
         yield {"href": html.unescape(g(r'href="([^"]+)"')), "titolo": html.unescape(g(r'title="([^"]*)"')),
                "data": g(r'date-label"><span>\s*(.*?)\s*</span>'), "cat": g(r'title-category f-4 clamp-3 (.*?) title"'),
-               "luogo": pulito(re.sub(r"<[^>]+>", " ", g(r"location-label\">(.*?)</div>")).lstrip("@ ")),
+               "luogo": pulito(re.sub(r"<[^>]+>", " ", g(r"location-label\">(.*?)</div>"))).lstrip("@ "),
                "sotto": pulito(re.sub(r"<[^>]+>", " ", g(r'class="clamp-5 description">(.*?)</div>')))}
 
 
@@ -163,7 +169,10 @@ def bologna():
                 luogo = re.split(r"\s+\|\s+", c["luogo"])[0]
                 if re.search(r"(?i)^(bologna[,\s-]*)?luoghi vari$", luogo): luogo = "Luoghi vari"
                 if re.search(r"(?i)^punto di ritrovo:\s*", luogo): luogo = re.sub(r"(?i)^punto di ritrovo:\s*", "", luogo)
-                descr = c["sotto"] if len(c["sotto"]) >= 30 or not sc.get("testo") else (c["sotto"] + ". " if c["sotto"] else "") + sc["testo"]
+                st_ = sc.get("testo", "")
+                if not st_ or len(c["sotto"]) >= 30: descr = c["sotto"] or st_
+                elif A.norm(c["sotto"]) and A.norm(c["sotto"]) in A.norm(st_[:len(c["sotto"]) + 60]): descr = st_
+                else: descr = (c["sotto"] + ". " if c["sotto"] else "") + st_
                 g = genere(c["cat"], c["titolo"], c["sotto"], luogo, sc.get("testo", "")[:300])
                 out.append(voce("culturabologna", max(a, OGGI) if b > a else a, b, ora, c["titolo"], luogo, sc.get("comune") or "Bologna", g, descr, url, sc.get("ingresso", "")))
             if oltre and oltre == len(carte): break
@@ -204,8 +213,7 @@ def casa_cultura():
             url = base + f"casa-della-cultura-incontri-testo.php?id={idm.group(1)}" if idm else base
             d = cur["d"]
             if d and OGGI <= d <= FINE and cur["titolo"]:
-                t = cur["titolo"]
-                if t.isupper(): t = t[:1] + t[1:].lower()
+                t = maiuscole(cur["titolo"])
                 out.append(voce("casadellacultura", d, d, cur["ora"], t, "Casa della Cultura", "Milano",
                                 genere("", cur["titolo"], cur["sotto"], "Casa della Cultura"), cur["sotto"], url, ""))
             cur = None
@@ -222,8 +230,10 @@ def feltrinelli():
         for k, (s, ds) in enumerate(pos):
             seg = h[s:pos[k + 1][0] if k + 1 < len(pos) else s + 4000]
             prima = h[max(0, s - 2500):s]
-            t = testo(seg)
-            if not re.search(r"(?i)viale pasubio|in fondazione( giangiacomo)? feltrinelli", t): continue
+            t = testo(seg).replace("\\", " ")
+            testa = "\n".join(t.split("\n")[:6])
+            if not re.search(r"(?i)viale pasubio|in fondazione( giangiacomo)? feltrinelli", testa): continue
+            if re.search(r"\b(Roma|Mantova|Pavia|Varese|Bergamo|Torino|Bologna|Napoli|Firenze|Brescia|Como|Venezia)\b", testa): continue
             g, mm, a = ds.split("/")
             try: d = datetime.date(int(a), int(mm), int(g))
             except Exception: continue
@@ -263,8 +273,11 @@ def main():
     for v in vecchi:
         if v.get("_f") and v["_f"] not in fonti_ok and v.get("fino", v["data"]) >= OGGI.isoformat():
             nuovi.append(v)
-    ok = []
+    ok, doppi = [], set()
     for v in nuovi:
+        k = (v["data"], v["ora"], A.norm(v["artista"]))
+        if k in doppi: continue
+        doppi.add(k)
         if not (re.match(r"^\d{4}-\d{2}-\d{2}$", v["data"]) and v["artista"] and v["luogo"] and v["fonte"].startswith("https://")): continue
         ok.append(v)
     ok.sort(key=lambda v: (v["data"], v["ora"] or "99", v["artista"]))
