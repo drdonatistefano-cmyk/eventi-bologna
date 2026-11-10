@@ -3,6 +3,7 @@
 
 Legge ogni giorno:
   - le pagine delle singole sale su movieplayer.it (campo `fonte` di dati/cinema.json): film e orari di oggi;
+  - cinemap.it (campo `cinemap` delle sale): programma dei prossimi giorni con link d'acquisto;
   - cinetecadibologna.it/programmazione/: proiezioni di oggi di Lumière, Modernissimo e Sala Cervi.
 Il lunedì (o con --scopri) cerca anche sale nuove nelle pagine dei comuni della provincia su movieplayer.
 
@@ -205,6 +206,52 @@ def cerca_link(tk, titolo):
     return next((v for c, v in tk.items() if len(k) > 5 and (c.startswith(k + " ") or k.startswith(c + " "))), None)
 
 
+def leggi_cinemap(h, pagina, oggi):
+    """Proiezioni dei prossimi giorni da una pagina sala di cinemap.it (dati schema.org ScreeningEvent).
+    Restituisce i film con `giorni` {data: [orari]}, `orari` di oggi e il link d'acquisto."""
+    u = h.replace('\\"', '"')
+    film = {}
+    for m in re.finditer(r'"@type":"ScreeningEvent","name":"(.*?)","startDate":"([^"]+)"', u):
+        coda = u[m.end():m.end() + 900]
+        loc = re.search(r'"location":\{"@type":"MovieTheater","@id":"([^"]+)"', coda)
+        if loc and not loc.group(1).rstrip("/").endswith(pagina.rstrip("/").split("/")[-1]):
+            continue  # proiezione di un'altra sala citata nella pagina
+        nome = html.unescape(m.group(1).encode().decode("unicode_escape", "ignore") if "\\u" in m.group(1) else m.group(1)).strip()
+        try:
+            t = datetime.datetime.fromisoformat(m.group(2).replace("Z", "+00:00")).astimezone(ZoneInfo("Europe/Rome"))
+        except ValueError:
+            continue
+        g = t.date()
+        if g < oggi or g > oggi + datetime.timedelta(days=7):
+            continue
+        vo = bool(re.search(r"(?i)\b(original version|versione originale|v\.o\.|sottotitol|subtitled)\b", nome))
+        titolo = re.sub(r"(?i)\s*[-–(]?\s*(original version|versione originale|v\.o\.?s?|sottotitolato|subtitled)\)?\s*$", "", nome).strip() or nome
+        lingua = re.search(r'"inLanguage":"([a-z]{2})"', coda)
+        offerta = re.search(r'"offers":\{"@type":"Offer","url":"([^"]+)"', coda)
+        f = film.setdefault(chiave(titolo), {"titolo": titolo, "orari": [], "giorni": {}, "versione": "", "genere": "", "regia": "", "_vo": set(), "_tutti": set()})
+        hm = t.strftime("%H:%M")
+        f["giorni"].setdefault(g.isoformat(), [])
+        if hm not in f["giorni"][g.isoformat()]:
+            f["giorni"][g.isoformat()].append(hm)
+        f["_tutti"].add(hm)
+        if vo or (lingua and lingua.group(1) != "it"):
+            f["_vo"].add(hm)
+        if offerta and not f.get("biglietti"):
+            f["biglietti"] = re.sub(r"/[0-9a-f-]{36}(#.*)?$", "", offerta.group(1))  # pagina del film, non della singola proiezione
+    out = []
+    for f in film.values():
+        for k in f["giorni"]:
+            f["giorni"][k] = sorted(f["giorni"][k])
+        f["orari"] = f["giorni"].get(oggi.isoformat(), [])
+        vo, tutti = f.pop("_vo"), f.pop("_tutti")
+        if vo:
+            f["versione"] = "Versione originale" + ("" if vo == tutti else " (solo ore " + ", ".join(sorted(vo)) + ")")
+        if not f.get("biglietti", "").startswith("https://"):
+            f.pop("biglietti", None)
+        out.append(f)
+    return out
+
+
 def permesso(url):
     import urllib.robotparser
     from urllib.parse import urlsplit
@@ -278,6 +325,27 @@ def main():
         except Exception as e:
             s["film"] = []          # mai orari vecchi
             fallite.append(f"{s['nome']}: {e}")
+    # cinemap.it (permesso dal suo robots.txt): programma di più giorni con link d'acquisto,
+    # per le sale che hanno il campo `cinemap`; vale più di movieplayer, che spesso è vuoto o ha solo oggi
+    for s in d["sale"]:
+        u = s.get("cinemap", "")
+        if not u.startswith("https://www.cinemap.it/") or s["nome"] in CT_SALE.values():
+            continue
+        try:
+            cm = leggi_cinemap(scarica(u), u, oggi)
+            if cm:
+                vecchi = {chiave(f["titolo"]): f for f in s["film"]}
+                for f in cm:   # tiene genere, regia e interpreti già letti da movieplayer
+                    v = vecchi.get(chiave(f["titolo"]))
+                    if v:
+                        for k in ("genere", "regia", "interpreti", "durata", "anno"):
+                            if v.get(k) and not f.get(k):
+                                f[k] = v[k]
+                s["film"], s["_cm"] = cm, True
+            if s["nome"] not in lette:
+                lette.append(s["nome"])
+        except Exception as e:
+            fallite.append(f"{s['nome']} (cinemap): {e}")
     # Cineteca
     ct_ok = True
     try:
@@ -346,7 +414,7 @@ def main():
     pagine = {}
     for s in d["sale"]:
         b = s.get("biglietti", "")
-        if "18tickets.it" in b and s["film"]:
+        if "18tickets.it" in b and s["film"] and not s.get("_cm"):
             pagine.setdefault(b, []).append(s)
     for b, sale in pagine.items():
         try:
@@ -374,6 +442,8 @@ def main():
              "giorno": oggi.isoformat(), "ok": ok, "film": len(film),
              "sale_con_film": sum(1 for s in d["sale"] if s["film"]), "pagine_lette": len(lette),
              "pagine_fallite": fallite, "note": log}
+    for s in d["sale"]:
+        s.pop("_cm", None)
     if len(film) > 0:
         d["aggiornato"] = d["giorno_orari"] = oggi.isoformat()
         d["fonte_aggiornamento"] = "automatico (GitHub)"
