@@ -1,16 +1,16 @@
 {
- "generato": "2026-11-10T11:21:38+00:00",
+ "generato": "2026-11-10T12:08:24+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-10",
- "visite_totali": 225,
- "totale_goatcounter": 625,
- "eventi_totali": 400,
+ "visite_totali": 226,
+ "totale_goatcounter": 628,
+ "eventi_totali": 402,
  "eventi_per_tipo": {
   "filtri": 127,
   "cambio scheda": 69,
   "schede aperte": 58,
   "cambio vista": 38,
-  "luoghi aperti": 31,
+  "luoghi aperti": 33,
   "apri filtri": 18,
   "clic biglietti": 14,
   "altro": 11,
@@ -27,13 +27,13 @@
    "settimana": 1,
    "dal": "2026-11-04",
    "al": "2026-11-10",
-   "visite": 225,
+   "visite": 226,
    "cambio scheda": 69,
    "cambio vista": 38,
    "apri filtri": 18,
    "filtri": 127,
    "altro": 11,
-   "luoghi aperti": 31,
+   "luoghi aperti": 33,
    "azzera filtri": 8,
    "mostra altri": 6,
    "schede aperte": 58,
@@ -154,7 +154,7 @@
    "apri filtri": 1,
    "filtri": 5,
    "altro": 5,
-   "luoghi aperti": 0,
+   "luoghi aperti": 2,
    "azzera filtri": 0,
    "mostra altri": 1,
    "schede aperte": 6,
@@ -193,13 +193,13 @@
   },
   {
    "giorno": "2026-11-10",
-   "visite": 11
+   "visite": 12
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 475
+   "conteggio": 478
   },
   {
    "origine": "achevents.com/milano",
@@ -239,7 +239,7 @@
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 64
+   "conteggio": 65
   },
   {
    "path": "/eventi-bologna",
@@ -605,6 +605,18 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "cinema/luogo/Pop Up Cinema Jolly",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "cinema/luogo/Cinema Odeon",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
   },
   {
    "path": "cinema/clic-programma/Wild Horse Nine",

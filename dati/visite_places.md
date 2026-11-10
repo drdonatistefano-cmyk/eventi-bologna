@@ -1,6 +1,6 @@
 # Ach's Places Guide – visite
 
-Sito: https://achplaces.com/ · dati GoatCounter, aggiornati ogni 15 minuti · ultima lettura: mar 10 nov 2026 alle 12:21 (ora italiana)
+Sito: https://achplaces.com/ · dati GoatCounter, aggiornati ogni 15 minuti · ultima lettura: mar 10 nov 2026 alle 13:08 (ora italiana)
 
 | Oggi | Ultimi 7 giorni | Dal lancio |
 |---:|---:|---:|
