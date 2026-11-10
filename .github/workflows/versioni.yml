@@ -14,7 +14,7 @@ on:
       - "milano/mostre.js"
       - "milano/cinema.js"
   schedule:
-    - cron: "17 * * * *"   # riserva: ogni ora, salva solo se qualcosa è cambiato
+    - cron: "43 * * * *"   # riserva: ogni ora, salva solo se qualcosa è cambiato
   workflow_dispatch:
 permissions:
   contents: write
