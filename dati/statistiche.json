@@ -1,16 +1,16 @@
 {
- "generato": "2026-11-10T21:24:47+00:00",
+ "generato": "2026-11-10T22:15:44+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-10",
  "visite_totali": 233,
- "totale_goatcounter": 660,
- "eventi_totali": 427,
+ "totale_goatcounter": 671,
+ "eventi_totali": 438,
  "eventi_per_tipo": {
   "filtri": 132,
   "cambio scheda": 74,
-  "schede aperte": 61,
+  "schede aperte": 69,
   "cambio vista": 41,
-  "luoghi aperti": 36,
+  "luoghi aperti": 39,
   "apri filtri": 19,
   "clic biglietti": 15,
   "altro": 12,
@@ -33,10 +33,10 @@
    "apri filtri": 19,
    "filtri": 132,
    "altro": 12,
-   "luoghi aperti": 36,
+   "luoghi aperti": 39,
    "azzera filtri": 8,
    "mostra altri": 6,
-   "schede aperte": 61,
+   "schede aperte": 69,
    "clic biglietti": 15,
    "condivisioni": 4,
    "clic info spettacoli": 10,
@@ -154,10 +154,10 @@
    "apri filtri": 2,
    "filtri": 10,
    "altro": 6,
-   "luoghi aperti": 5,
+   "luoghi aperti": 8,
    "azzera filtri": 0,
    "mostra altri": 1,
-   "schede aperte": 9,
+   "schede aperte": 17,
    "clic biglietti": 2,
    "condivisioni": 0,
    "clic info spettacoli": 2,
@@ -211,7 +211,7 @@
   },
   {
    "origine": "achplaces.com",
-   "conteggio": 27
+   "conteggio": 38
   },
   {
    "origine": "ui.awin.com",
@@ -627,6 +627,72 @@
    "titolo": "Cambio vista",
    "conteggio": 2,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "spettacoli/dettaglio/Il respiro dei viventi",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Coreografie dell'abitare",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/luogo/Libreria Modo Infoshop",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/dettaglio/Introduzione alla storia della Cina",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Argento vivo",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Un caso di coscienza",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/La trapezista e la casa degli specchi",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/luogo/Libreria Coop Ambasciatori",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/dettaglio/Il bandito sono me",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/luogo/Pinacoteca Nazionale di Bologna",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/dettaglio/Pinacoteca di Bologna | Appuntamenti novembre 2026",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
   },
   {
    "path": "scheda/incontri",
@@ -1365,72 +1431,6 @@
    "titolo": "Filtro",
    "conteggio": 1,
    "tipo": "filtri"
-  },
-  {
-   "path": "spettacoli/filtro/Biglietti/Biglietti disponibili",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "spettacoli/filtro/zona/Bologna città",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "spettacoli/filtro/Quando/7g",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "spettacoli/filtro/Quando/weekend",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
-  },
-  {
-   "path": "spettacoli/clic-biglietti/ERJ Orchestra",
-   "titolo": "Clic «Biglietti»",
-   "conteggio": 1,
-   "tipo": "clic biglietti"
-  },
-  {
-   "path": "spettacoli/clic-biglietti/Sfondi una porta aperta",
-   "titolo": "Clic «Biglietti»",
-   "conteggio": 1,
-   "tipo": "clic biglietti"
-  },
-  {
-   "path": "spettacoli/clic-info/I Solisti dell'Orchestra Mozart – Mozart, Gran Partita",
-   "titolo": "Clic «Info»",
-   "conteggio": 1,
-   "tipo": "clic info spettacoli"
-  },
-  {
-   "path": "spettacoli/luogo/Conservatorio G.B. Martini – Sala Bossi",
-   "titolo": "Apertura programma del luogo",
-   "conteggio": 1,
-   "tipo": "luoghi aperti"
-  },
-  {
-   "path": "spettacoli/clic-info/Lazin' on a sunny afternoon",
-   "titolo": "Clic «Info»",
-   "conteggio": 1,
-   "tipo": "clic info spettacoli"
-  },
-  {
-   "path": "spettacoli/clic-biglietti/Gender Bender Festival 2026 (24ª edizione)",
-   "titolo": "Clic «Biglietti»",
-   "conteggio": 1,
-   "tipo": "clic biglietti"
-  },
-  {
-   "path": "spettacoli/clic-biglietti/Joe Jackson + Band",
-   "titolo": "Clic «Biglietti»",
-   "conteggio": 1,
-   "tipo": "clic biglietti"
   }
  ]
 }
