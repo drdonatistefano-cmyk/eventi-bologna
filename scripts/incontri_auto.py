@@ -6,6 +6,7 @@ Fonti (tutte lette nel rispetto dei robots.txt, una pagina al secondo):
             Di ogni appuntamento nuovo legge la scheda una volta sola (comune e ingresso gratuito),
             poi la tiene in dati/incontri_schede.json e non la richiede più.
   Milano  - Casa della Cultura (appuntamenti dei prossimi giorni in prima pagina)
+          - BookCity Milano (novembre): programma giorno per giorno, senza gli eventi fuori provincia e riservati alle classi
           - Fondazione Feltrinelli (calendario eventi: solo quelli in Viale Pasubio / in Fondazione)
 Il file viene riscritto da zero a ogni giro con i prossimi 45 giorni (gli incontri passano in fretta);
 se una fonte non risponde, restano quelli della volta prima per quella fonte.
@@ -256,6 +257,45 @@ def feltrinelli():
     return uniq
 
 
+BC = "https://www.bookcitymilano.it"
+FUORI = r"(?i)^(cremona|lodi|como|monza|pavia|sondrio|varese|bergamo|brescia|lecco|mantova)\b"
+
+
+def bookcity():
+    """BookCity Milano (festival del libro, novembre): una pagina per giorno, /eventi?day=24-novembre."""
+    out = []
+    h = get(BC + "/eventi")
+    giorni = list(dict.fromkeys(re.findall(r'class="event_date[^"]*" data-value="(\d{1,2}-[a-z]+)"', h or "")))
+    anno = OGGI.year if OGGI.month <= 11 or "dicembre" in " ".join(giorni) else OGGI.year + 1
+    cl = lambda x: pulito(re.sub(r"<[^>]+>", " ", x or ""))
+    for gv in giorni:
+        g, m = gv.split("-", 1)
+        d = gma(g, m, anno)
+        if not d or not (OGGI <= d <= FINE): continue
+        hd = get(f"{BC}/eventi?day={gv}") or ""
+        for b in re.split(r'<div class="row align-middle event-box', hd)[1:]:
+            f = lambda rx: (re.search(rx, b, re.S) or [None, ""])[1]
+            titolo, luogo = cl(f(r"<h3>(.*?)</h3>")), cl(f(r"<address>(.*?)</address>"))
+            url = f(r'<h3>\s*<a href="([^"]+)"')
+            tags = [cl(x) for x in re.findall(r'class="tag"[^>]*>(.*?)</a>', b, re.S)]
+            if not titolo or not luogo or not url.startswith("https://"): continue
+            if re.search(r"(?i)riservato alle classi|solo su invito|riservato (agli|ai) (iscritti|soci)", titolo): continue
+            if re.search(FUORI, luogo) or any(t.startswith("BookCity Milano a ") for t in tags): continue
+            citta = "Milano"
+            mm = re.match(r"^([^-–]+?)\s+[-–]\s+(.+)$", luogo)
+            if mm:
+                c = [x for x in COMUNI if A.norm(x) == A.norm(mm.group(1))]
+                if c: citta, luogo = c[0], mm.group(2)
+            om = re.search(r"(\d{1,2})[:.](\d{2})", cl(f(r'date-time-hour">(.*?)<')))
+            sotto = cl(f(r"</h3>\s*<p>(.*?)</p>"))
+            descr = " · ".join(x for x in [sotto, ", ".join(t for t in tags[:2] if t not in ("Biblioteche",))] if x)
+            v = voce("bookcity", d, d, f"{int(om.group(1)):02d}:{om.group(2)}" if om else "", titolo, luogo, citta, "Libri", descr, url, "")
+            v["rassegna"] = "BookCity Milano"
+            out.append(v)
+    R["fonti"]["bookcity"] = len(out)
+    return out
+
+
 # ---------------- scrittura ----------------
 def leggi_vecchio():
     p = os.path.join(RADICE, FILE)
@@ -266,7 +306,7 @@ def leggi_vecchio():
 
 
 def main():
-    nuovi = bologna() if CITTA == "bo" else casa_cultura() + feltrinelli()
+    nuovi = bologna() if CITTA == "bo" else casa_cultura() + feltrinelli() + bookcity()
     vecchi = leggi_vecchio()
     # fonte che stavolta non ha dato nulla: tiene i suoi incontri ancora futuri
     fonti_ok = {v["_f"] for v in nuovi}

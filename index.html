@@ -713,7 +713,7 @@ const MD=(window.MOSTRE_DATA&&typeof window.MOSTRE_DATA==="object")?window.MOSTR
 const ING={gratuito:"Ingresso gratuito","a pagamento":"A pagamento"};
 const MOSTRE=(Array.isArray(MD.mostre)?MD.mostre:[]).filter(m=>m&&ISO.test(m.inizio||"")&&ISO.test(m.fine||"")&&m.titolo&&m.sede).map(m=>({id:m.id,_kind:"m",data:m.inizio,fino:m.fine,ora:"",artista:m.titolo,luogo:m.sede,citta:m.citta||CITY.capo,genere:m.categoria||"",tipo:"",rassegna:"",descrizione:m.descrizione||"",fonte:m.fonte||"",biglietti:/^https:/.test(m.biglietti||"")?m.biglietti:"",biglietti_tipo:m.biglietti_tipo||"",orari:m.orari||"",_ing:ING[(m.ingresso||"").toLowerCase()]||"Da verificare",sito_luogo:m.sito||""}));
 const ID=(window.INCONTRI_DATA&&typeof window.INCONTRI_DATA==="object")?window.INCONTRI_DATA:{aggiornato:"",incontri:[]};
-const INCONTRI=(Array.isArray(ID.incontri)?ID.incontri:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista&&e.luogo).map(e=>Object.assign({},e,{_kind:"i",tipo:"",rassegna:""}));
+const INCONTRI=(Array.isArray(ID.incontri)?ID.incontri:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista&&e.luogo).map(e=>Object.assign({},e,{_kind:"i",tipo:"",rassegna:e.rassegna||""}));
 const CD=(window.CINEMA_DATA&&typeof window.CINEMA_DATA==="object")?window.CINEMA_DATA:{aggiornato:"",sale:[]};
 const CGIORNO=ISO.test(CD.giorno_orari||"")?CD.giorno_orari:(ISO.test(CD.aggiornato||"")?CD.aggiornato:"");
 const SALE=(Array.isArray(CD.sale)?CD.sale:[]).filter(s=>s&&s.nome);
