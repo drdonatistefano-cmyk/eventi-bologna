@@ -6,20 +6,11 @@ jobs:
   sonda:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - run: |
-          mkdir out; UA="Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
-          g(){ curl -sSL -m 30 -A "$UA" "$2" -o "out/$1" -w "$1 %{http_code} %{size_download}\n" >> out/codici.txt || echo "$1 fail" >> out/codici.txt; }
-          g ym_r.txt "https://www.yesmilano.it/robots.txt"
-          g ym.html "https://www.yesmilano.it/eventi"
-          g cdc_r.txt "https://www.casadellacultura.it/robots.txt"
-          g cdc.html "https://www.casadellacultura.it/"
-          g bc_r.txt "https://bookcitymilano.it/robots.txt"
-          g bc.html "https://bookcitymilano.it/"
-          g mm_r.txt "https://www.mondadoristore.it/robots.txt"
-          g ri.html "https://www.rizzolilibri.it/eventi/"
-          g pal_r.txt "https://www.palazzoreale.milano.it/robots.txt"
-          g chi.html "https://www.comune.milano.it/eventi"
-          g chi_r.txt "https://www.comune.milano.it/robots.txt"
+          mkdir out
+          python3 scripts/incontri_auto.py bo --prova > out/bo.txt 2>&1 || true
+          python3 scripts/incontri_auto.py mi --prova > out/mi.txt 2>&1 || true
           cd out && git init -q && git checkout -q -b sonda && git add -A
           git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm sonda
           git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" sonda
