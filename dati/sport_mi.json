@@ -4,6 +4,7 @@
   "uefa": 4,
   "superlega": 8,
   "volleyf": 9,
+  "hockey": 19,
   "extra": 0,
   "lba": 11,
   "euroleague": 14
@@ -14,8 +15,9 @@
  "per_sport": {
   "Volley": 17,
   "Basket": 18,
+  "Hockey": 19,
   "Calcio": 31
  },
- "totale": 66,
+ "totale": 85,
  "giorno": "2026-11-11"
 }
