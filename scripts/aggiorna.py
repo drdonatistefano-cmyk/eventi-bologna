@@ -161,6 +161,13 @@ def main():
             v = pulisci_url(e.get(k))
             if e.get(k) and not v: avvisi.append(f"{rif}: link {k} scartato (non https)")
             e[k] = re.sub(r"[&?]?utm_content=claude", "", v)
+        # link biglietti che non portano alla data (controllo dell'11/11/2026): pagine di elenco o di altri affiliati
+        if re.search(r"developer\.songkick\.com|songkick\.com/metro-areas|dice\.fm/venue/|awin1\.com/|/calendario/?$", e.get("biglietti", "")):
+            avvisi.append(f"{rif}: link biglietti di elenco tolto ({e['biglietti'][:60]})"); e["biglietti"] = ""
+        if e.get("fonte", "").startswith("https://developer.songkick.com/"): e["fonte"] = e["fonte"].replace("https://developer.songkick.com/", "https://www.songkick.com/")
+        # pagina artista/serie di TicketOne (più date): si apre sul mese giusto
+        if re.match(r"https://www\.ticketone\.it/(artist|eventseries)/[^#]+$", e.get("biglietti", "")) and re.match(r"\d{4}-\d{2}", e.get("data", "")):
+            e["biglietti"] += "#calendar-start=" + e["data"][:7]
         if e.get("biglietti_tipo") not in BIG: e["biglietti_tipo"] = "Info" if e.get("biglietti") else ""
         if not e.get("biglietti"): e["biglietti_tipo"] = ""
         if not e.get("descrizione"): avvisi.append(f"{rif}: senza descrizione")

@@ -64,6 +64,8 @@ def leggi_pagina(t, chiave):
         artisti = [p.get("name", "").strip() for p in (e.get("performer") or []) if isinstance(p, dict) and p.get("name")]
         artisti = [a for a in artisti if a.lower() not in titolo.lower()][:4]
         bigl = (e.get("offers") or {}).get("url", "") if isinstance(e.get("offers"), dict) else ""
+        if "awin1.com/" in bigl or re.match(r"^https?://[^/]+/?$", bigl):   # link affiliato di altri o pagina iniziale: non porta alla serata
+            bigl = ""
         loc = ((e.get("location") or {}).get("address") or {}).get("addressLocality", "")
         citta = COMUNE.get(luogo) or (capo if loc in ("", "Bologna", "Milan", "Milano") else loc)
         desc = "Serata di musica elettronica" + (f" con {', '.join(artisti)}" if artisti else "") + "."

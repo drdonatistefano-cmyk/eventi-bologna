@@ -1,0 +1,22 @@
+name: Controllo link biglietti
+# Ogni domenica sera controlla che i link dei biglietti degli Spettacoli portino alla data giusta.
+# Non cambia i dati: scrive solo dati/controllo_biglietti.json, che Claude legge il lunedì (AUTOMATICO.md).
+on:
+  schedule:
+    - cron: "37 20 * * 0"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: controllo-biglietti, cancel-in-progress: false }
+jobs:
+  controllo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Controlla i link
+        run: python3 scripts/controlla_biglietti.py
+      - name: Salva il risultato
+        run: bash scripts/salva.sh "Controllo link biglietti $(date +%F)" dati/controllo_biglietti.json
