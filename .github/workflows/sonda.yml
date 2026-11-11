@@ -9,18 +9,17 @@ jobs:
       - run: |
           mkdir out; UA="Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
           g(){ curl -sSL -m 30 -A "$UA" "$2" -o "out/$1" -w "$1 %{http_code} %{size_download} %{url_effective}\n" >> out/codici.txt || echo "$1 fail" >> out/codici.txt; }
-          g of_dir.json "https://api.github.com/repos/openfootball/football.json/contents/2026-27"
-          g uefa_cl.json "https://match.uefa.com/v5/matches?competitionId=1&seasonYear=2027&limit=200&offset=0&order=ASC"
-          g uefa_el.json "https://match.uefa.com/v5/matches?competitionId=14&seasonYear=2027&limit=200&offset=0&order=ASC"
-          g uefa_r.txt "https://match.uefa.com/robots.txt"
-          g lv_team.html "https://www.legavolley.it/team/6858"
-          g lvf_r.txt "https://www.legavolleyfemminile.it/robots.txt"
-          g lvf.html "https://www.legavolleyfemminile.it/calendario/"
-          g lba_api1.json "https://api-lba.procne.cloud/api/v1/championships_matches?championship_id=602"
+          g lv.html "https://www.legavolley.it/calendario/"
+          g lvf_a2.html "https://www.legavolleyfemminile.it/calendario/?campionato=a2"
           curl -sSL -m 30 -A "$UA" https://www.legabasket.it/calendario -o lba.html
-          for c in $(grep -o '/_next/static/immutable/chunks/[^"]*\.js' lba.html | sort -u); do curl -sSL -m 20 "https://www.legabasket.it$c" >> lba_all.js; done
-          grep -o 'https\?://[a-zA-Z0-9.-]*procne[a-zA-Z0-9./_{}?=&-]*' lba_all.js | sort -u > out/lba_urls.txt
-          grep -o '"/[a-z_/-]*\(match\|game\|calend\|championship\)[a-z_/{}-]*' lba_all.js | sort -u >> out/lba_urls.txt
+          for c in $(grep -o '/_next/static/immutable/chunks/[^"]*\.js' lba.html | sort -u); do curl -sSL -m 20 "https://www.legabasket.it$c" >> out/lba_all.js; echo >> out/lba_all.js; done
+          g bfc_tk.html "https://www.bolognafc.it/biglietteria/"
+          g virtus_tk.html "https://www.virtus.it/biglietteria/"
+          g oli_tk.html "https://www.olimpiamilano.com/biglietteria/"
+          g inter_tk.html "https://www.inter.it/it/biglietteria"
+          g milan_tk.html "https://www.acmilan.com/it/biglietti"
+          g vero_tk.html "https://www.verovolley.com/biglietteria/"
+          g pvm.html "https://www.powervolleymilano.it/"
           cd out && git init -q && git checkout -q -b sonda && git add -A
           git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm sonda
           git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" sonda
