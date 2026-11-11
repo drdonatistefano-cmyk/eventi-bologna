@@ -15,9 +15,9 @@ Aggiornamento: ogni lunedì un'attività programmata di Claude aggiorna eventi.j
 
 Statistiche: GoatCounter (senza cookie), attivo solo sul sito GitHub quando in `index.html` la costante `GC` contiene il nome dell'account (eventibologna). Cruscotto: https://eventibologna.goatcounter.com
 
-Statistiche esportate: il flusso `.github/workflows/statistiche.yml` ogni mattina legge l'API di GoatCounter (`scripts/statistiche.py`) e salva `dati/statistiche.json` e `dati/statistiche.md` (visite per giorno e per settimana dal lancio, clic sui biglietti, filtri, ricerche, condivisioni, provenienze). Serve il segreto `GOATCOUNTER_TOKEN` nelle impostazioni del repository; senza, il flusso non fa nulla.
+Statistiche esportate: il flusso `.github/workflows/statistiche.yml` ogni mezz'ora legge GoatCounter per le tre guide e salva tutto nel ramo `statistiche` (mai su main, così non ripubblica il sito): `stats.json`, `stats_places.json`, `stats_dinners.json` per le pagine statistiche.html, e in `dati/` statistiche.json/.md, effettivi.json, visite_guide.json, visite_dettagli.json, visite_*.md. Servono i segreti `GOATCOUNTER_TOKEN`, `GOATCOUNTER_TOKEN_ACHPLACES`, `GOATCOUNTER_TOKEN_ACHDINNERS`.
 
 Pagina delle statistiche: https://achevents.com/statistiche.html
-Si aggiorna ogni ora con il workflow "Cruscotto statistiche" (scripts/cruscotto.py), che salva stats.json nel ramo `statistiche` senza ripubblicare il sito. Il riepilogo giornaliero in dati/statistiche.* resta del workflow "Statistiche".
+Si aggiorna ogni mezz'ora con il flusso «Statistiche».
 
 Velocità (8/11/2026): la pagina carica prima `versioni.js` (piccolissimo, sempre fresco) con le impronte dei file dei dati, poi `eventi.js`, `serate.js`, `mostre.js`, `cinema.js` con `?h=<impronta>`: finché un file non cambia il telefono usa la copia che ha già (seconda visita da circa 3 s a 0,7 s su 4G lento). `scripts/versioni.py` ricalcola le impronte; lo lanciano i flussi cinema e serate prima di salvare e il flusso «Versioni dei dati» a ogni push dei dati (più un controllo ogni ora). Dopo aver cambiato a mano i dati si può lanciare `python3 scripts/versioni.py` e includere `versioni.js` nel commit. Senza versioni.js la pagina torna al metodo di prima.

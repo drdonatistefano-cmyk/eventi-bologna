@@ -1,8 +1,18 @@
 name: Statistiche
+# Un solo flusso per tutte le statistiche delle tre guide (dall'11/11/2026, prima erano due: «Statistiche» ogni
+# quarto d'ora e «Cruscotto statistiche» ogni ora).
+# Salva tutto nel ramo «statistiche», MAI su main: così una lettura delle visite non ripubblica il sito e non
+# si scontra con i flussi che salvano eventi, cinema e sport.
+# Ramo «statistiche»:
+#   stats.json, stats_places.json, stats_dinners.json   per le pagine statistiche.html di Events, Places, Dinners
+#   dati/statistiche.json e .md, dati/effettivi.json,   per il cruscotto delle visite in Claude e il riepilogo
+#   dati/visite_guide.json, dati/visite_dettagli.json,
+#   dati/visite_events.md, visite_dinners.md, visite_places.md
+# Il ramo tiene un solo commit (si riscrive ogni volta): niente storico inutile.
 on:
   schedule:
-    - cron: "7,22,37,52 * * * *"   # ogni quarto d ora: il cruscotto delle visite legge dati/effettivi.json
-  workflow_dispatch:
+    - cron: "17,47 * * * *"   # ogni mezz'ora
+  workflow_dispatch: {}       # pulsante «Run workflow» per aggiornare subito
   push:
     branches: [main]
     paths:
@@ -11,35 +21,48 @@ on:
       - "scripts/visite_guide.py"
       - "scripts/visite_md.py"
       - "scripts/visite_dettagli.py"
+      - "scripts/cruscotto.py"
       - ".github/workflows/statistiche.yml"
 permissions:
   contents: write
+  actions: read
+concurrency:
+  group: statistiche
+  cancel-in-progress: false
 jobs:
   statistiche:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with: { sparse-checkout: scripts }
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - name: Scarica le statistiche da GoatCounter
-        env:
-          GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
-        run: |
-          python3 scripts/statistiche.py
-          python3 scripts/effettivi.py dati/statistiche.json dati/effettivi.json --con-oggi
-      - name: Visite delle tre guide (Events, Dinners, Places)
-        continue-on-error: true
+      - name: Leggi GoatCounter e lo stato dei siti
         env:
           GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
           GOATCOUNTER_TOKEN_ACHDINNERS: ${{ secrets.GOATCOUNTER_TOKEN_ACHDINNERS }}
           GOATCOUNTER_TOKEN_ACHPLACES: ${{ secrets.GOATCOUNTER_TOKEN_ACHPLACES }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
-          python3 scripts/visite_guide.py dati/visite_guide.json && python3 scripts/visite_md.py dati/visite_guide.json
-          python3 scripts/visite_dettagli.py dati/visite_dettagli.json || true
-      - name: Salva il risultato
+          mkdir -p dati
+          python3 scripts/statistiche.py
+          python3 scripts/effettivi.py dati/statistiche.json dati/effettivi.json --con-oggi
+          python3 scripts/visite_guide.py dati/visite_guide.json && python3 scripts/visite_md.py dati/visite_guide.json || echo "::warning::visite delle tre guide non lette"
+          python3 scripts/visite_dettagli.py dati/visite_dettagli.json || echo "::warning::dettagli delle visite non letti"
+          python3 scripts/cruscotto.py stats.json
+          GUIDA=places python3 scripts/cruscotto.py stats_places.json || echo "::warning::cruscotto Places non letto"
+          GUIDA=dinners python3 scripts/cruscotto.py stats_dinners.json || echo "::warning::cruscotto Dinners non letto"
+      - name: Salva nel ramo statistiche
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dati/statistiche.json dati/statistiche.md dati/effettivi.json dati/visite_guide.json dati/visite_events.md dati/visite_dinners.md dati/visite_places.md dati/visite_dettagli.json 2>/dev/null || true
-          git commit -m "Statistiche $(date '+%F %H:%M')" || { echo "nessuna modifica"; exit 0; }
-          git pull --rebase && git push
+          set -e
+          OUT=/tmp/pub; rm -rf $OUT; mkdir -p $OUT/dati
+          # parte dal ramo com'è (un file non riletto in questo giro resta quello di prima)
+          if git fetch -q --depth=1 origin statistiche; then git archive FETCH_HEAD | tar -x -C $OUT; fi
+          cp stats*.json $OUT/ 2>/dev/null || true
+          cp dati/* $OUT/dati/ 2>/dev/null || true
+          cd $OUT && rm -rf .git && git init -q -b statistiche
+          git -c user.name="statistiche-bot" -c user.email="actions@github.com" add -A
+          git -c user.name="statistiche-bot" -c user.email="actions@github.com" commit -q -m "Statistiche $(date -u +%FT%TZ)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" statistiche
+          echo "salvato: $(git ls-files | wc -l) file"

@@ -1,3 +1,11 @@
 __pycache__/
 eventi.json
 mostre.json
+# statistiche: stanno nel ramo «statistiche», non su main (11/11/2026)
+dati/statistiche.json
+dati/statistiche.md
+dati/effettivi.json
+dati/visite_guide.json
+dati/visite_dettagli.json
+dati/visite_*.md
+stats*.json
