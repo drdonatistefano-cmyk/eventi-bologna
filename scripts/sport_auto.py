@@ -9,6 +9,7 @@ Fonti (dati pubblici, letti una volta per giro):
           - Serie A2: calendario sul sito della Fortitudo (fortitudobologna.it/calendario)
   Volley  - SuperLega maschile: calendario di legavolley.it (andata e ritorno)
           - Serie A1/A2 femminile: calendario di legavolleyfemminile.it
+Hockey  - ICE Hockey League: calendario sul sito del Milano Hockey Club (milanohockeyclub.it/calendario_partite)
 Altro   - dati/sport_extra.json: eventi singoli scritti a mano (tennis: Coppa Davis; finali e tornei), campo "guida" bo|mi.
 Prende solo le partite in casa da oggi a 12 mesi. Se una fonte non risponde, restano le sue partite della volta prima.
 Scrive sport.js (Bologna) o milano/sport.js (window.SPORT_DATA, stesso formato degli eventi) e dati/sport_<città>.json.
@@ -39,11 +40,13 @@ SQUADRE = {
         {"nome": "Inter", "sport": "Calcio", "of": "FC Internazionale Milano", "uefa": "Inter",
          "stadio": "Stadio San Siro", "citta": "Milano", "sito": "https://www.inter.it/", "biglietti": "https://www.inter.it/it/biglietti"},
         {"nome": "Milan", "sport": "Calcio", "of": "AC Milan", "uefa": "Milan",
-         "stadio": "Stadio San Siro", "citta": "Milano", "sito": "https://www.acmilan.com/", "biglietti": "https://www.acmilan.com/it/biglietti"},
+         "stadio": "Stadio San Siro", "citta": "Milano", "sito": "https://www.acmilan.com/", "biglietti": "https://www.acmilan.com/it/biglietteria/biglietti-partite-maschile"},
         {"nome": "Olimpia Milano", "sport": "Basket", "lba": 1751, "el": "MIL", "sito": "https://www.olimpiamilano.com/"},
+        {"nome": "Milano Hockey Club", "sport": "Hockey", "hockey": True, "sito": "https://www.milanohockeyclub.it/",
+         "biglietti": "https://www.milanohockeyclub.it/acquisto_biglietti"},
         {"nome": "Allianz Milano", "sport": "Volley", "lvm": "Allianz Milano", "sito": "https://www.powervolleymilano.it/"},
         {"nome": "Vero Volley Milano", "sport": "Volley", "lvf": "Numia Vero Volley Milano", "sito": "https://www.verovolley.com/",
-         "biglietti": "https://www.verovolley.com/biglietteria/"},
+         "biglietti": "https://verovolley.vivaticket.it/"},
     ],
 }[CITTA]
 
@@ -238,6 +241,33 @@ def fortitudo():
     return out
 
 
+def hockey():
+    """ICE Hockey League: calendario sul sito del Milano Hockey Club (milanohockeyclub.it/calendario_partite)."""
+    out = []
+    sq = next((s for s in SQUADRE if s.get("hockey")), None)
+    if not sq: return out
+    h = get("https://www.milanohockeyclub.it/calendario_partite") or ""
+    visti = set()  # la pagina ripete ogni partita (schede Tutte / Casa / Trasferta)
+    for r in re.split(r'<div class="game-row', h)[1:]:
+        f = lambda rx: (re.search(rx, r, re.S) or [None, ""])[1]
+        dm = re.search(r"(\d{4})\.(\d{2})\.(\d{2})", f(r'data-game">(.*?)</div>'))
+        casa = cl(f(r'col-home-team">.*?team-name[^"]*">(.*?)</div>'))
+        if not dm or casa != "MHC" or re.search(r"\d", cl(f(r'class="result">(.*?)</div>'))): continue
+        if re.search(r"(?i)preseason", r): continue
+        d = datetime.date(int(dm.group(1)), int(dm.group(2)), int(dm.group(3)))
+        if not dentro(d): continue
+        osp = html.unescape(f(r'col-away-team">.*?alt="([^"]+)"')) or cl(f(r'col-away-team">.*?team-name[^"]*">(.*?)</div>'))
+        om = re.search(r"(\d{1,2}):(\d{2})", f(r'hour-game">(.*?)</div>'))
+        arena = cl(f(r'class="arena">(.*?)</div>')) or "Fiera Ice Arena"
+        url = f(r'<a href="(https://www\.milanohockeyclub\.it/game/\d+)"')
+        if url in visti: continue
+        visti.add(url)
+        out.append(partita("hockey", sq, d, f"{int(om.group(1)):02d}:{om.group(2)}" if om else "", "Milano", osp,
+                           arena, "Rho" if "Fiera" in arena else "Milano", "ICE Hockey League", "ICE Hockey League, hockey su ghiaccio.", url))
+    R["fonti"]["hockey"] = len(out)
+    return out
+
+
 def extra():
     """Eventi singoli (tornei di tennis, finali, grandi eventi) scritti a mano in dati/sport_extra.json."""
     p = os.path.join(RADICE, "dati", "sport_extra.json")
@@ -342,7 +372,7 @@ def leggi_vecchio():
 
 def main():
     nuovi = []
-    for f in (serie_a, uefa, superlega, volley_femminile, fortitudo, extra):
+    for f in (serie_a, uefa, superlega, volley_femminile, fortitudo, hockey, extra):
         try: nuovi += f()
         except Exception as ex: R["errori"].append(f"{f.__name__}: {ex}")
     try:
