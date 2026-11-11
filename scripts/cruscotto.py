@@ -7,10 +7,13 @@ compito di scripts/statistiche.py.
 Variabili: GOATCOUNTER_TOKEN (segreto), GITHUB_TOKEN, GITHUB_REPOSITORY."""
 import json, os, sys, time, re, collections, datetime as dt, urllib.request, urllib.error, urllib.parse
 
-GC = "eventibologna"
-SITE = "https://achevents.com/"
+# GUIDA = events (predefinito, stats.json), places (stats_places.json) o dinners (stats_dinners.json): 11/11/2026
+GUIDA = os.environ.get("GUIDA", "events")
+GC, SITE, TOKEN_VAR = {"events": ("eventibologna", "https://achevents.com/", "GOATCOUNTER_TOKEN"),
+                       "places": ("achplaces", "https://achplaces.com/", "GOATCOUNTER_TOKEN_ACHPLACES"),
+                       "dinners": ("achdinners", "https://achdinners.com/", "GOATCOUNTER_TOKEN_ACHDINNERS")}[GUIDA]
 API = f"https://{GC}.goatcounter.com/api/v0"
-TOKEN = os.environ.get("GOATCOUNTER_TOKEN", "").strip()
+TOKEN = (os.environ.get(TOKEN_VAR) or os.environ.get("GOATCOUNTER_TOKEN", "")).strip()
 GH = os.environ.get("GITHUB_TOKEN", "")
 REPO = os.environ.get("GITHUB_REPOSITORY", "drdonatistefano-cmyk/eventi-bologna")
 UA = {"User-Agent": "eventi-bologna-cruscotto"}
@@ -43,8 +46,8 @@ out = {"generato": iso(now), "stato": {}, "errore": ""}
 # ---------- stato del sito ----------
 st = out["stato"]
 code, html = get(SITE + f"?t={int(time.time())}", raw=True)
-st["sito"] = {"http": code, "ok": code == 200 and "eventi.js" in html, "statistiche_attive": f'const GC="{GC}"' in html}
-for f, var in (("eventi.js", "eventi"), ("mostre.js", "mostre")):
+st["sito"] = {"http": code, "ok": code == 200 and ("eventi.js" in html or "manifest.json" in html), "statistiche_attive": f'const GC="{GC}"' in html}
+for f, var in ((("eventi.js", "eventi"), ("mostre.js", "mostre")) if GUIDA == "events" else ()):
     c, t = get(SITE + f + f"?t={int(time.time())}", raw=True)
     info = {"http": c, "ok": False, "n": 0, "aggiornato": ""}
     m = re.search(r"=\s*(\{.*\})\s*;?\s*$", t, re.S)
@@ -59,7 +62,7 @@ if not TOKEN:
 else:
     try:
         today = now.date()
-        lancio = dt.date(2026, 11, 4)  # GoatCounter risponde 404 per periodi prima della nascita del sito
+        lancio = dt.date(2026, 11, 4) if GUIDA == "events" else dt.date(2026, 11, 8)  # GoatCounter risponde 404 per periodi prima della nascita del sito
         days = [d for d in (today - dt.timedelta(days=i) for i in range(29, -1, -1)) if d >= lancio]
         s30 = dt.datetime.combine(days[0], dt.time(), dt.timezone.utc)
         start = {"oggi": today, "7g": max(today - dt.timedelta(days=6), lancio), "30g": days[0]}
