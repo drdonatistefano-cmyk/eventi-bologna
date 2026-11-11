@@ -1,14 +1,14 @@
 {
- "generato": "2026-11-11T17:30:43+00:00",
+ "generato": "2026-11-11T18:21:32+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-11",
- "visite_totali": 248,
- "totale_goatcounter": 714,
- "eventi_totali": 466,
+ "visite_totali": 250,
+ "totale_goatcounter": 719,
+ "eventi_totali": 469,
  "eventi_per_tipo": {
   "filtri": 133,
-  "cambio scheda": 86,
-  "schede aperte": 75,
+  "cambio scheda": 87,
+  "schede aperte": 76,
   "cambio vista": 42,
   "luoghi aperti": 42,
   "apri filtri": 20,
@@ -18,8 +18,8 @@
   "azzera filtri": 8,
   "mostra altri": 6,
   "clic mostre (scheda o sito)": 5,
+  "clic cinema (programma della sala)": 4,
   "condivisioni": 4,
-  "clic cinema (programma della sala)": 3,
   "ricerche": 2
  },
  "settimane": [
@@ -35,11 +35,11 @@
    "filtri": 132,
    "luoghi aperti": 39,
    "azzera filtri": 8,
-   "mostra altri": 6,
    "schede aperte": 69,
+   "mostra altri": 6,
+   "clic cinema (programma della sala)": 2,
    "clic biglietti": 15,
    "condivisioni": 4,
-   "clic cinema (programma della sala)": 2,
    "clic info spettacoli": 10,
    "ricerche": 2,
    "clic mostre (scheda o sito)": 5
@@ -48,19 +48,19 @@
    "settimana": 2,
    "dal": "2026-11-11",
    "al": "2026-11-11",
-   "visite": 15,
-   "cambio scheda": 12,
+   "visite": 17,
+   "cambio scheda": 13,
    "cambio vista": 1,
    "apri filtri": 1,
    "altro": 3,
    "filtri": 1,
    "luoghi aperti": 3,
    "azzera filtri": 0,
+   "schede aperte": 7,
    "mostra altri": 0,
-   "schede aperte": 6,
+   "clic cinema (programma della sala)": 2,
    "clic biglietti": 0,
    "condivisioni": 0,
-   "clic cinema (programma della sala)": 1,
    "clic info spettacoli": 0,
    "ricerche": 0,
    "clic mostre (scheda o sito)": 0
@@ -75,11 +75,11 @@
    "filtri": 8,
    "luoghi aperti": 5,
    "azzera filtri": 1,
-   "mostra altri": 2,
    "schede aperte": 0,
+   "mostra altri": 2,
+   "clic cinema (programma della sala)": 0,
    "clic biglietti": 4,
    "condivisioni": 0,
-   "clic cinema (programma della sala)": 0,
    "clic info spettacoli": 3,
    "ricerche": 0,
    "clic mostre (scheda o sito)": 0
@@ -92,11 +92,11 @@
    "filtri": 14,
    "luoghi aperti": 4,
    "azzera filtri": 1,
-   "mostra altri": 1,
    "schede aperte": 3,
+   "mostra altri": 1,
+   "clic cinema (programma della sala)": 0,
    "clic biglietti": 1,
    "condivisioni": 0,
-   "clic cinema (programma della sala)": 0,
    "clic info spettacoli": 0,
    "ricerche": 0,
    "clic mostre (scheda o sito)": 0
@@ -109,11 +109,11 @@
    "filtri": 48,
    "luoghi aperti": 1,
    "azzera filtri": 0,
-   "mostra altri": 1,
    "schede aperte": 14,
+   "mostra altri": 1,
+   "clic cinema (programma della sala)": 1,
    "clic biglietti": 2,
    "condivisioni": 1,
-   "clic cinema (programma della sala)": 1,
    "clic info spettacoli": 2,
    "ricerche": 0,
    "clic mostre (scheda o sito)": 3
@@ -126,11 +126,11 @@
    "filtri": 21,
    "luoghi aperti": 8,
    "azzera filtri": 2,
-   "mostra altri": 0,
    "schede aperte": 11,
+   "mostra altri": 0,
+   "clic cinema (programma della sala)": 0,
    "clic biglietti": 1,
    "condivisioni": 1,
-   "clic cinema (programma della sala)": 0,
    "clic info spettacoli": 0,
    "ricerche": 0,
    "clic mostre (scheda o sito)": 0
@@ -143,11 +143,11 @@
    "filtri": 16,
    "luoghi aperti": 8,
    "azzera filtri": 3,
-   "mostra altri": 0,
    "schede aperte": 19,
+   "mostra altri": 0,
+   "clic cinema (programma della sala)": 0,
    "clic biglietti": 2,
    "condivisioni": 2,
-   "clic cinema (programma della sala)": 0,
    "clic info spettacoli": 3,
    "ricerche": 0,
    "clic mostre (scheda o sito)": 2
@@ -160,11 +160,11 @@
    "filtri": 15,
    "luoghi aperti": 5,
    "azzera filtri": 1,
-   "mostra altri": 1,
    "schede aperte": 5,
+   "mostra altri": 1,
+   "clic cinema (programma della sala)": 0,
    "clic biglietti": 3,
    "condivisioni": 0,
-   "clic cinema (programma della sala)": 0,
    "clic info spettacoli": 0,
    "ricerche": 1,
    "clic mostre (scheda o sito)": 0
@@ -177,28 +177,28 @@
    "filtri": 10,
    "luoghi aperti": 8,
    "azzera filtri": 0,
-   "mostra altri": 1,
    "schede aperte": 17,
+   "mostra altri": 1,
+   "clic cinema (programma della sala)": 1,
    "clic biglietti": 2,
    "condivisioni": 0,
-   "clic cinema (programma della sala)": 1,
    "clic info spettacoli": 2,
    "ricerche": 1,
    "clic mostre (scheda o sito)": 0
   },
   "2026-11-11": {
-   "cambio scheda": 12,
+   "cambio scheda": 13,
    "cambio vista": 1,
    "apri filtri": 1,
    "altro": 3,
    "filtri": 1,
    "luoghi aperti": 3,
    "azzera filtri": 0,
+   "schede aperte": 7,
    "mostra altri": 0,
-   "schede aperte": 6,
+   "clic cinema (programma della sala)": 2,
    "clic biglietti": 0,
    "condivisioni": 0,
-   "clic cinema (programma della sala)": 1,
    "clic info spettacoli": 0,
    "ricerche": 0,
    "clic mostre (scheda o sito)": 0
@@ -235,13 +235,13 @@
   },
   {
    "giorno": "2026-11-11",
-   "visite": 15
+   "visite": 17
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 512
+   "conteggio": 513
   },
   {
    "origine": "achevents.com/milano",
@@ -253,7 +253,7 @@
   },
   {
    "origine": "achplaces.com",
-   "conteggio": 42
+   "conteggio": 46
   },
   {
    "origine": "ui.awin.com",
@@ -285,7 +285,7 @@
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 74
+   "conteggio": 76
   },
   {
    "path": "/eventi-bologna",
@@ -307,7 +307,7 @@
   {
    "path": "scheda/cinema",
    "titolo": "Cambio scheda",
-   "conteggio": 13,
+   "conteggio": 14,
    "tipo": "cambio scheda"
   },
   {
@@ -425,6 +425,12 @@
    "tipo": "cambio scheda"
   },
   {
+   "path": "cinema/dettaglio/Wild Horse Nine",
+   "titolo": "Apertura scheda",
+   "conteggio": 4,
+   "tipo": "schede aperte"
+  },
+  {
    "path": "milano/spettacoli/filtro/Genere/Jazz",
    "titolo": "Filtro",
    "conteggio": 4,
@@ -453,12 +459,6 @@
    "titolo": "Filtro",
    "conteggio": 4,
    "tipo": "filtri"
-  },
-  {
-   "path": "cinema/dettaglio/Wild Horse Nine",
-   "titolo": "Apertura scheda",
-   "conteggio": 3,
-   "tipo": "schede aperte"
   },
   {
    "path": "milano/spettacoli/vista/elenco",
@@ -531,6 +531,12 @@
    "titolo": "Cambio vista",
    "conteggio": 3,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "cinema/clic-biglietti/Wild Horse Nine",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 2,
+   "tipo": "clic cinema (programma della sala)"
   },
   {
    "path": "spettacoli/dettaglio/Argento vivo",
@@ -693,12 +699,6 @@
    "titolo": "Apertura filtri",
    "conteggio": 2,
    "tipo": "apri filtri"
-  },
-  {
-   "path": "cinema/clic-biglietti/Wild Horse Nine",
-   "titolo": "Clic «Biglietti»",
-   "conteggio": 1,
-   "tipo": "clic cinema (programma della sala)"
   },
   {
    "path": "milano/scheda/sport",
