@@ -1,19 +1,19 @@
 {
- "generato": "2026-11-11T12:43:06+00:00",
+ "generato": "2026-11-11T13:57:17+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-11",
- "visite_totali": 237,
- "totale_goatcounter": 683,
- "eventi_totali": 446,
+ "visite_totali": 240,
+ "totale_goatcounter": 697,
+ "eventi_totali": 457,
  "eventi_per_tipo": {
   "filtri": 132,
-  "cambio scheda": 76,
-  "schede aperte": 71,
-  "cambio vista": 41,
-  "luoghi aperti": 41,
-  "apri filtri": 19,
+  "cambio scheda": 81,
+  "schede aperte": 73,
+  "cambio vista": 42,
+  "luoghi aperti": 42,
+  "apri filtri": 20,
+  "altro": 15,
   "clic biglietti": 15,
-  "altro": 14,
   "clic info spettacoli": 10,
   "azzera filtri": 8,
   "mostra altri": 6,
@@ -48,16 +48,16 @@
    "settimana": 2,
    "dal": "2026-11-11",
    "al": "2026-11-11",
-   "visite": 4,
-   "cambio scheda": 2,
-   "cambio vista": 0,
-   "apri filtri": 0,
-   "altro": 2,
+   "visite": 7,
+   "cambio scheda": 7,
+   "cambio vista": 1,
+   "apri filtri": 1,
+   "altro": 3,
    "filtri": 0,
-   "luoghi aperti": 2,
+   "luoghi aperti": 3,
    "azzera filtri": 0,
    "mostra altri": 0,
-   "schede aperte": 2,
+   "schede aperte": 4,
    "clic biglietti": 0,
    "condivisioni": 0,
    "clic info spettacoli": 0,
@@ -187,15 +187,15 @@
    "clic mostre (scheda o sito)": 0
   },
   "2026-11-11": {
-   "cambio scheda": 2,
-   "cambio vista": 0,
-   "apri filtri": 0,
-   "altro": 2,
+   "cambio scheda": 7,
+   "cambio vista": 1,
+   "apri filtri": 1,
+   "altro": 3,
    "filtri": 0,
-   "luoghi aperti": 2,
+   "luoghi aperti": 3,
    "azzera filtri": 0,
    "mostra altri": 0,
-   "schede aperte": 2,
+   "schede aperte": 4,
    "clic biglietti": 0,
    "condivisioni": 0,
    "clic info spettacoli": 0,
@@ -235,17 +235,17 @@
   },
   {
    "giorno": "2026-11-11",
-   "visite": 4
+   "visite": 7
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 497
+   "conteggio": 506
   },
   {
    "origine": "achevents.com/milano",
-   "conteggio": 80
+   "conteggio": 81
   },
   {
    "origine": "achevents.com",
@@ -253,7 +253,7 @@
   },
   {
    "origine": "achplaces.com",
-   "conteggio": 38
+   "conteggio": 42
   },
   {
    "origine": "ui.awin.com",
@@ -280,12 +280,12 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 121
+   "conteggio": 122
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 68
+   "conteggio": 70
   },
   {
    "path": "/eventi-bologna",
@@ -295,13 +295,13 @@
   {
    "path": "scheda/mostre",
    "titolo": "Cambio scheda",
-   "conteggio": 16,
+   "conteggio": 18,
    "tipo": "cambio scheda"
   },
   {
    "path": "scheda/spettacoli",
    "titolo": "Cambio scheda",
-   "conteggio": 16,
+   "conteggio": 17,
    "tipo": "cambio scheda"
   },
   {
@@ -317,16 +317,22 @@
    "tipo": "cambio scheda"
   },
   {
+   "path": "scheda/cinema",
+   "titolo": "Cambio scheda",
+   "conteggio": 12,
+   "tipo": "cambio scheda"
+  },
+  {
    "path": "milano/scheda/cinema",
    "titolo": "Cambio scheda",
    "conteggio": 11,
    "tipo": "cambio scheda"
   },
   {
-   "path": "scheda/cinema",
-   "titolo": "Cambio scheda",
-   "conteggio": 11,
-   "tipo": "cambio scheda"
+   "path": "spettacoli/apri-filtri",
+   "titolo": "Apertura filtri",
+   "conteggio": 10,
+   "tipo": "apri filtri"
   },
   {
    "path": "milano/spettacoli/vista/luoghi",
@@ -335,22 +341,16 @@
    "tipo": "cambio vista"
   },
   {
-   "path": "spettacoli/apri-filtri",
-   "titolo": "Apertura filtri",
-   "conteggio": 9,
-   "tipo": "apri filtri"
+   "path": "guide/vai-places",
+   "titolo": "Vai a Ach's Places Guide",
+   "conteggio": 8,
+   "tipo": "altro"
   },
   {
    "path": "spettacoli/vista/elenco",
    "titolo": "Cambio vista",
    "conteggio": 8,
    "tipo": "cambio vista"
-  },
-  {
-   "path": "guide/vai-places",
-   "titolo": "Vai a Ach's Places Guide",
-   "conteggio": 7,
-   "tipo": "altro"
   },
   {
    "path": "guide/vai-dinners",
@@ -449,6 +449,12 @@
    "tipo": "filtri"
   },
   {
+   "path": "scheda/incontri",
+   "titolo": "Cambio scheda",
+   "conteggio": 3,
+   "tipo": "cambio scheda"
+  },
+  {
    "path": "milano/spettacoli/vista/elenco",
    "titolo": "Cambio vista",
    "conteggio": 3,
@@ -515,10 +521,10 @@
    "tipo": "filtri"
   },
   {
-   "path": "scheda/incontri",
-   "titolo": "Cambio scheda",
-   "conteggio": 2,
-   "tipo": "cambio scheda"
+   "path": "mostre/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 3,
+   "tipo": "cambio vista"
   },
   {
    "path": "milano/cinema/dettaglio/Dio ride",
@@ -671,10 +677,22 @@
    "tipo": "apri filtri"
   },
   {
-   "path": "mostre/vista/luoghi",
-   "titolo": "Cambio vista",
-   "conteggio": 2,
-   "tipo": "cambio vista"
+   "path": "spettacoli/dettaglio/La seconda vita dei libri",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/luogo/TANK serbatoio culturale",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/dettaglio/Potochkine + Border Live",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
   },
   {
    "path": "spettacoli/luogo/Oratorio San Filippo Neri",
@@ -1455,24 +1473,6 @@
    "titolo": "Filtro",
    "conteggio": 1,
    "tipo": "filtri"
-  },
-  {
-   "path": "mostre/dettaglio/Golgota",
-   "titolo": "Apertura scheda",
-   "conteggio": 1,
-   "tipo": "schede aperte"
-  },
-  {
-   "path": "cinema/luogo/The Space Cinema Bologna",
-   "titolo": "Apertura programma del luogo",
-   "conteggio": 1,
-   "tipo": "luoghi aperti"
-  },
-  {
-   "path": "cinema/luogo/Cinema Century CineCi",
-   "titolo": "Apertura programma del luogo",
-   "conteggio": 1,
-   "tipo": "luoghi aperti"
   }
  ]
 }
