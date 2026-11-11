@@ -1,14 +1,14 @@
 {
- "generato": "2026-11-11T13:57:17+00:00",
+ "generato": "2026-11-11T14:51:35+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-11",
- "visite_totali": 240,
- "totale_goatcounter": 697,
- "eventi_totali": 457,
+ "visite_totali": 243,
+ "totale_goatcounter": 703,
+ "eventi_totali": 460,
  "eventi_per_tipo": {
   "filtri": 132,
-  "cambio scheda": 81,
-  "schede aperte": 73,
+  "cambio scheda": 83,
+  "schede aperte": 74,
   "cambio vista": 42,
   "luoghi aperti": 42,
   "apri filtri": 20,
@@ -48,8 +48,8 @@
    "settimana": 2,
    "dal": "2026-11-11",
    "al": "2026-11-11",
-   "visite": 7,
-   "cambio scheda": 7,
+   "visite": 10,
+   "cambio scheda": 9,
    "cambio vista": 1,
    "apri filtri": 1,
    "altro": 3,
@@ -57,7 +57,7 @@
    "luoghi aperti": 3,
    "azzera filtri": 0,
    "mostra altri": 0,
-   "schede aperte": 4,
+   "schede aperte": 5,
    "clic biglietti": 0,
    "condivisioni": 0,
    "clic info spettacoli": 0,
@@ -187,7 +187,7 @@
    "clic mostre (scheda o sito)": 0
   },
   "2026-11-11": {
-   "cambio scheda": 7,
+   "cambio scheda": 9,
    "cambio vista": 1,
    "apri filtri": 1,
    "altro": 3,
@@ -195,7 +195,7 @@
    "luoghi aperti": 3,
    "azzera filtri": 0,
    "mostra altri": 0,
-   "schede aperte": 4,
+   "schede aperte": 5,
    "clic biglietti": 0,
    "condivisioni": 0,
    "clic info spettacoli": 0,
@@ -235,17 +235,17 @@
   },
   {
    "giorno": "2026-11-11",
-   "visite": 7
+   "visite": 10
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 506
+   "conteggio": 509
   },
   {
    "origine": "achevents.com/milano",
-   "conteggio": 81
+   "conteggio": 84
   },
   {
    "origine": "achevents.com",
@@ -280,12 +280,12 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 122
+   "conteggio": 123
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 70
+   "conteggio": 72
   },
   {
    "path": "/eventi-bologna",
@@ -419,6 +419,12 @@
    "tipo": "azzera filtri"
   },
   {
+   "path": "scheda/incontri",
+   "titolo": "Cambio scheda",
+   "conteggio": 4,
+   "tipo": "cambio scheda"
+  },
+  {
    "path": "milano/spettacoli/filtro/Genere/Jazz",
    "titolo": "Filtro",
    "conteggio": 4,
@@ -447,12 +453,6 @@
    "titolo": "Filtro",
    "conteggio": 4,
    "tipo": "filtri"
-  },
-  {
-   "path": "scheda/incontri",
-   "titolo": "Cambio scheda",
-   "conteggio": 3,
-   "tipo": "cambio scheda"
   },
   {
    "path": "milano/spettacoli/vista/elenco",
@@ -525,6 +525,18 @@
    "titolo": "Cambio vista",
    "conteggio": 3,
    "tipo": "cambio vista"
+  },
+  {
+   "path": "spettacoli/dettaglio/Argento vivo",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/scheda/incontri",
+   "titolo": "Cambio scheda",
+   "conteggio": 2,
+   "tipo": "cambio scheda"
   },
   {
    "path": "milano/cinema/dettaglio/Dio ride",
@@ -743,12 +755,6 @@
    "tipo": "schede aperte"
   },
   {
-   "path": "spettacoli/dettaglio/Argento vivo",
-   "titolo": "Apertura scheda",
-   "conteggio": 1,
-   "tipo": "schede aperte"
-  },
-  {
    "path": "spettacoli/dettaglio/Un caso di coscienza",
    "titolo": "Apertura scheda",
    "conteggio": 1,
@@ -795,12 +801,6 @@
    "titolo": "Clic «Info»",
    "conteggio": 1,
    "tipo": "clic info spettacoli"
-  },
-  {
-   "path": "milano/scheda/incontri",
-   "titolo": "Cambio scheda",
-   "conteggio": 1,
-   "tipo": "cambio scheda"
   },
   {
    "path": "spettacoli/clic-info/Sports + Pool Girl",
