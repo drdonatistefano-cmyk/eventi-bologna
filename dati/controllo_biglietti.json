@@ -2,54 +2,57 @@
  "giorno": "2026-11-11",
  "link": 1569,
  "esiti": {
-  "non letto": 937,
-  "ok": 565,
-  "senza data": 66,
+  "senza data": 68,
+  "non letto": 946,
+  "ok": 554,
   "data diversa": 1
  },
  "per_sito": {
+  "vivaticket.it": {
+   "senza data": 8
+  },
   "ra.co": {
    "non letto": 40
   },
+  "bo.it": {
+   "senza data": 2
+  },
   "dice.fm": {
    "ok": 167
-  },
-  "appenninobolognese.cittametropolitana.bo.it": {
-   "senza data": 1
-  },
-  "bolognafestival.vivaticket.it": {
-   "senza data": 3
   },
   "feverup.com": {
    "ok": 12,
    "senza data": 8
   },
-  "tcbo.vivaticket.it": {
-   "senza data": 5
-  },
-  "bluenotemilano.com": {
-   "senza data": 1
-  },
-  "spazioloft54.s2.yapla.com": {
-   "senza data": 1
-  },
-  "stagioneagora.it": {
-   "non letto": 22
-  },
-  "alcatrazmilano.it": {
-   "senza data": 1
-  },
   "palazzopepoli.it": {
    "senza data": 2
+  },
+  "arcibellezza.it": {
+   "non letto": 1
   },
   "bolognawelcome.com": {
    "ok": 1,
    "non letto": 1
   },
-  "arcibellezza.it": {
-   "non letto": 1
+  "stagioneagora.it": {
+   "non letto": 22
   },
-  "bologna.emiliaromagnateatro.com": {
+  "emiliaromagnateatro.com": {
+   "senza data": 1
+  },
+  "yapla.com": {
+   "senza data": 1
+  },
+  "bluenotemilano.com": {
+   "senza data": 1
+  },
+  "bolognateatro.it": {
+   "senza data": 1
+  },
+  "milano.it": {
+   "senza data": 1
+  },
+  "alcatrazmilano.it": {
    "senza data": 1
   },
   "porrettacinema.com": {
@@ -58,49 +61,50 @@
   "carroponte.org": {
    "senza data": 1
   },
-  "santeria.milano.it": {
-   "senza data": 1
+  "idaysmilano.it": {
+   "non letto": 1
   },
-  "comune.medicina.bo.it": {
-   "senza data": 1
-  },
-  "cittadellamusica.comune.bologna.it": {
+  "bologna.it": {
    "senza data": 5
   },
   "fabriquemilano.it": {
    "senza data": 1
   },
-  "idaysmilano.it": {
-   "non letto": 1
-  },
   "liveticket.it": {
    "non letto": 1
-  },
-  "fondazionedozza.it": {
-   "senza data": 1
-  },
-  "happyticket.com": {
-   "ok": 1
   },
   "culturabologna.it": {
    "senza data": 2
   },
+  "happyticket.com": {
+   "ok": 1
+  },
+  "fondazionedozza.it": {
+   "senza data": 1
+  },
   "elfo.org": {
    "senza data": 1
   },
-  "songkick.com": {
-   "ok": 222
-  },
-  "sinfonicadimilano.org": {
+  "ipomeriggi.it": {
    "senza data": 1
   },
-  "orchestramozart.com": {
+  "circolomagnolia.it": {
+   "senza data": 1
+  },
+  "songkick.com": {
+   "ok": 211,
+   "non letto": 11
+  },
+  "sinfonicadimilano.org": {
    "senza data": 1
   },
   "conoscerelamusica.it": {
    "senza data": 1
   },
-  "ipomeriggi.it": {
+  "orchestramozart.com": {
+   "senza data": 1
+  },
+  "officinacrobatica.com": {
    "senza data": 1
   },
   "teatro.it": {
@@ -117,20 +121,17 @@
   "teatridivita.it": {
    "senza data": 4
   },
-  "circolomagnolia.it": {
+  "piccoloteatro.org": {
    "senza data": 1
+  },
+  "teatrodelnavile.org": {
+   "ok": 1
   },
   "teatroarcimboldi.it": {
    "non letto": 1
   },
-  "piccoloteatro.org": {
-   "senza data": 1
-  },
   "emiliaromagnafestival.it": {
    "data diversa": 1
-  },
-  "teatrodelnavile.org": {
-   "ok": 1
   },
   "technoairlines.com": {
    "ok": 156
@@ -150,23 +151,29 @@
   "unipolforum.it": {
    "senza data": 1
   },
-  "magazzinigenerali.org": {
-   "senza data": 1
-  },
   "vivaticket.com": {
    "non letto": 33
   },
-  "bolognateatro.it": {
-   "non letto": 1
-  },
-  "officinacrobatica.com": {
-   "non letto": 1
+  "magazzinigenerali.org": {
+   "senza data": 1
   },
   "ticketone.it": {
    "non letto": 801
   }
  },
  "casi": [
+  {
+   "esito": "senza data",
+   "link": "https://bolognafestival.vivaticket.it/it/event/la-bella-addormentata-nel-bosco/295886",
+   "finale": "",
+   "date_guida": [
+    "2026-12-13"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e305 2026-12-13 La bella addormentata nel bosco – Baby BoFe' @ Teatro Celebrazioni"
+   ]
+  },
   {
    "esito": "non letto",
    "link": "https://ra.co/events/2510100",
@@ -210,103 +217,6 @@
   },
   {
    "esito": "senza data",
-   "link": "https://bolognafestival.vivaticket.it/it/event/la-bella-addormentata-nel-bosco/295886",
-   "finale": "",
-   "date_guida": [
-    "2026-12-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e305 2026-12-13 La bella addormentata nel bosco – Baby BoFe' @ Teatro Celebrazioni"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://tcbo.vivaticket.it/it/event/12-sinfonica-2026-bolton/289961",
-   "finale": "",
-   "date_guida": [
-    "2026-11-20"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e290 2026-11-20 Ivor Bolton – Haydn, La Creazione @ Auditorium Manzoni"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.bluenotemilano.com/",
-   "finale": "https://bluenotemilano.com/",
-   "date_guida": [
-    "2026-11-26"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi e026 2026-11-26 Luca Barbarossa @ Blue Note Milano"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2510103",
-   "finale": "HTTP Error 403: Forbidden",
-   "date_guida": [
-    "2026-12-07"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo025 2026-12-07 Chlär & Ignez @ Link"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://spazioloft54.s2.yapla.com/it/",
-   "finale": "",
-   "date_guida": [
-    "2026-11-20"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e674 2026-11-20 Scordati – Welcome to Pripyat @ SpazioLoft54"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://stagioneagora.it/concerto-per-uno-sconosciuto/",
-   "finale": "HTTP Error 502: Bad Gateway",
-   "date_guida": [
-    "2027-03-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e464 2027-03-12 Concerto per uno sconosciuto @ Teatro Biagi D'Antona"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.alcatrazmilano.it/",
-   "finale": "https://alcatrazmilano.it/",
-   "date_guida": [
-    "2026-11-26",
-    "2026-12-02",
-    "2027-01-21",
-    "2027-01-29",
-    "2027-02-03",
-    "2027-02-21",
-    "2027-02-24",
-    "2027-03-11",
-    "2027-05-04"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi e027 2026-11-26 Saint Levant @ Alcatraz",
-    "mi e035 2026-12-02 Accept @ Alcatraz",
-    "mi e058 2027-01-21 Imminence e August Burns Red @ Alcatraz",
-    "mi e067 2027-01-29 Rhapsody of Fire @ Alcatraz",
-    "mi e071 2027-02-03 Editors @ Alcatraz",
-    "mi e089 2027-02-21 Sleeping With Sirens @ Alcatraz"
-   ]
-  },
-  {
-   "esito": "senza data",
    "link": "https://palazzopepoli.it/calendario-eventi/orchestra-barocca-di-bologna-concerto-di-natale/",
    "finale": "",
    "date_guida": [
@@ -315,18 +225,6 @@
    "date_pagina": [],
    "eventi": [
     "bo e304 2026-12-13 Orchestra Barocca di Bologna – Concerto di Natale @ Palazzo Pepoli"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://bolognafestival.vivaticket.it/it/event/lang-lang/297259",
-   "finale": "",
-   "date_guida": [
-    "2026-12-09"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e299 2026-12-09 Lang Lang – recital pianistico @ Auditorium Manzoni"
    ]
   },
   {
@@ -346,15 +244,15 @@
    ]
   },
   {
-   "esito": "senza data",
-   "link": "https://tcbo.vivaticket.it/it/event/13-sinfonica-2026-angius/289962",
-   "finale": "",
+   "esito": "non letto",
+   "link": "https://stagioneagora.it/concerto-per-uno-sconosciuto/",
+   "finale": "HTTP Error 502: Bad Gateway",
    "date_guida": [
-    "2026-12-11"
+    "2027-03-12"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e300 2026-12-11 Marco Angius – Corrado, Hindemith @ Auditorium Manzoni"
+    "bo e464 2027-03-12 Concerto per uno sconosciuto @ Teatro Biagi D'Antona"
    ]
   },
   {
@@ -402,87 +300,78 @@
    ]
   },
   {
+   "esito": "senza data",
+   "link": "https://spazioloft54.s2.yapla.com/it/",
+   "finale": "",
+   "date_guida": [
+    "2026-11-20"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e674 2026-11-20 Scordati – Welcome to Pripyat @ SpazioLoft54"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://bolognafestival.vivaticket.it/it/event/lang-lang/297259",
+   "finale": "",
+   "date_guida": [
+    "2026-12-09"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e299 2026-12-09 Lang Lang – recital pianistico @ Auditorium Manzoni"
+   ]
+  },
+  {
    "esito": "non letto",
-   "link": "https://ra.co/events/2515489",
+   "link": "https://ra.co/events/2510103",
    "finale": "HTTP Error 403: Forbidden",
    "date_guida": [
-    "2026-11-13"
+    "2026-12-07"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo sbo002 2026-11-13 POTOCHKINE + Border Live @ TANKclub"
+    "bo sbo025 2026-12-07 Chlär & Ignez @ Link"
    ]
   },
   {
    "esito": "senza data",
-   "link": "https://porrettacinema.com/?p=8396",
-   "finale": "https://porrettacinema.com/en/surroundings/",
+   "link": "https://www.bluenotemilano.com/",
+   "finale": "https://bluenotemilano.com/",
    "date_guida": [
-    "2026-12-05"
+    "2026-11-26"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e536 2026-12-05 Porretta Cinema – Festival del Cinema di Porretta  @ Porretta Terme (sedi varie)"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://stagioneagora.it/dad-or-alive/",
-   "finale": "HTTP Error 502: Bad Gateway",
-   "date_guida": [
-    "2026-12-05"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e453 2026-12-05 Dad or Alive @ Teatro Biagi D'Antona"
+    "mi e026 2026-11-26 Luca Barbarossa @ Blue Note Milano"
    ]
   },
   {
    "esito": "senza data",
-   "link": "https://palazzopepoli.it/calendario-eventi/orchestra-barocca-di-bologna-i-canti-dellaltalena/",
+   "link": "https://www.bolognateatro.it/home/in-evidenza/teatro-spazio-reno-calderara-di-r-bo-stagione-2026-27",
    "finale": "",
    "date_guida": [
-    "2026-11-22"
+    "2026-11-24",
+    "2026-12-13",
+    "2026-12-20",
+    "2027-01-10",
+    "2027-01-17",
+    "2027-01-23",
+    "2027-02-07",
+    "2027-02-27",
+    "2027-03-07",
+    "2027-03-13",
+    "2027-03-21"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e294 2026-11-22 Orchestra Barocca di Bologna – I canti dell'altale @ Palazzo Pepoli"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://bolognafestival.vivaticket.it/it/event/va-pensiero/295881",
-   "finale": "",
-   "date_guida": [
-    "2026-11-28"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e296 2026-11-28 Va' pensiero – Baby BoFe' @ Auditorium Manzoni"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://tcbo.vivaticket.it/it/event/14-sinfonica-2026-stenz/289963",
-   "finale": "",
-   "date_guida": [
-    "2026-12-31"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e307 2026-12-31 Markus Stenz – Beethoven, Nona Sinfonia @ Auditorium Manzoni"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.carroponte.org/",
-   "finale": "https://carroponte.org/",
-   "date_guida": [
-    "2027-06-07"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi e125 2027-06-07 Hayley Williams @ Carroponte"
+    "bo e510 2026-11-24 Ricordatemi come vi pare @ Teatro Spazio Reno",
+    "bo e511 2026-12-13 In Famaja @ Teatro Spazio Reno",
+    "bo e512 2026-12-20 Il Giratempo di Babbo Natale @ Teatro Spazio Reno",
+    "bo e513 2027-01-10 Quando i portici erano di legno @ Teatro Spazio Reno",
+    "bo e514 2027-01-17 Fagioli @ Teatro Spazio Reno",
+    "bo e515 2027-01-23 L'Austriaca @ Teatro Spazio Reno"
    ]
   },
   {
@@ -500,15 +389,28 @@
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://stagioneagora.it/dedicato-2027/",
-   "finale": "HTTP Error 502: Bad Gateway",
+   "esito": "senza data",
+   "link": "https://www.alcatrazmilano.it/",
+   "finale": "https://alcatrazmilano.it/",
    "date_guida": [
-    "2027-02-13"
+    "2026-11-26",
+    "2026-12-02",
+    "2027-01-21",
+    "2027-01-29",
+    "2027-02-03",
+    "2027-02-21",
+    "2027-02-24",
+    "2027-03-11",
+    "2027-05-04"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e461 2027-02-13 Dedicato @ Teatro Alice Zeppilli"
+    "mi e027 2026-11-26 Saint Levant @ Alcatraz",
+    "mi e035 2026-12-02 Accept @ Alcatraz",
+    "mi e058 2027-01-21 Imminence e August Burns Red @ Alcatraz",
+    "mi e067 2027-01-29 Rhapsody of Fire @ Alcatraz",
+    "mi e071 2027-02-03 Editors @ Alcatraz",
+    "mi e089 2027-02-21 Sleeping With Sirens @ Alcatraz"
    ]
   },
   {
@@ -524,39 +426,75 @@
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2525831",
-   "finale": "HTTP Error 403: Forbidden",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi021 2026-11-13 Pentimento // Nicolas Lutz @ Duro"
-   ]
-  },
-  {
    "esito": "senza data",
-   "link": "https://tcbo.vivaticket.it/it/event/beethoven-sinfonia-n-7/289955",
+   "link": "https://palazzopepoli.it/calendario-eventi/orchestra-barocca-di-bologna-i-canti-dellaltalena/",
    "finale": "",
    "date_guida": [
     "2026-11-22"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e293 2026-11-22 Christian Blex – Beethoven, Sinfonia n. 7 @ Auditorium Manzoni"
+    "bo e294 2026-11-22 Orchestra Barocca di Bologna – I canti dell'altale @ Palazzo Pepoli"
    ]
   },
   {
    "esito": "non letto",
-   "link": "https://www.bolognawelcome.com/it/eventi/musica-e-danza/andre-gallo-i-sabati-allaccademia",
-   "finale": "HTTP Error 404: Not Found",
+   "link": "https://stagioneagora.it/dad-or-alive/",
+   "finale": "HTTP Error 502: Bad Gateway",
    "date_guida": [
-    "2026-12-12"
+    "2026-12-05"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e356 2026-12-12 André Gallo @ Palazzo Carrati (Accademia Fil"
+    "bo e453 2026-12-05 Dad or Alive @ Teatro Biagi D'Antona"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://porrettacinema.com/?p=8396",
+   "finale": "https://porrettacinema.com/en/surroundings/",
+   "date_guida": [
+    "2026-12-05"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e536 2026-12-05 Porretta Cinema – Festival del Cinema di Porretta  @ Porretta Terme (sedi varie)"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.carroponte.org/",
+   "finale": "https://carroponte.org/",
+   "date_guida": [
+    "2027-06-07"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e125 2027-06-07 Hayley Williams @ Carroponte"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://bolognafestival.vivaticket.it/it/event/va-pensiero/295881",
+   "finale": "",
+   "date_guida": [
+    "2026-11-28"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e296 2026-11-28 Va' pensiero – Baby BoFe' @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.idaysmilano.it/",
+   "finale": "<urlopen error [Errno -2] Name or service not known>",
+   "date_guida": [
+    "2027-06-13"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e128 2027-06-13 blink-182 e Pierce The Veil (I-Days) @ Ippodromo SNAI San Siro"
    ]
   },
   {
@@ -582,6 +520,18 @@
    ]
   },
   {
+   "esito": "non letto",
+   "link": "https://ra.co/events/2515489",
+   "finale": "HTTP Error 403: Forbidden",
+   "date_guida": [
+    "2026-11-13"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo sbo002 2026-11-13 POTOCHKINE + Border Live @ TANKclub"
+   ]
+  },
+  {
    "esito": "senza data",
    "link": "https://www.fabriquemilano.it/",
    "finale": "https://fabriquemilano.it/",
@@ -595,14 +545,397 @@
   },
   {
    "esito": "non letto",
-   "link": "https://www.idaysmilano.it/",
-   "finale": "<urlopen error [Errno -2] Name or service not known>",
+   "link": "https://www.bolognawelcome.com/it/eventi/musica-e-danza/andre-gallo-i-sabati-allaccademia",
+   "finale": "HTTP Error 404: Not Found",
    "date_guida": [
-    "2027-06-13"
+    "2026-12-12"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e128 2027-06-13 blink-182 e Pierce The Veil (I-Days) @ Ippodromo SNAI San Siro"
+    "bo e356 2026-12-12 André Gallo @ Palazzo Carrati (Accademia Fil"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.liveticket.it/zolauditorium",
+   "finale": "HTTP Error 403: Forbidden",
+   "date_guida": [
+    "2026-11-13",
+    "2026-11-22",
+    "2026-11-27",
+    "2026-12-11",
+    "2026-12-13",
+    "2026-12-18",
+    "2027-01-15",
+    "2027-01-17",
+    "2027-01-29",
+    "2027-02-12",
+    "2027-02-14",
+    "2027-02-26",
+    "2027-03-12",
+    "2027-03-14",
+    "2027-03-19"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e397 2026-11-13 Hotel Zuper – Gianmarco Pozzoli @ ZolAuditorium",
+    "bo e406 2026-11-22 Mo quanti busì – Al Nostar Dialatt @ ZolAuditorium",
+    "bo e409 2026-11-27 Mor. Storia per le mie madri @ ZolAuditorium",
+    "bo e414 2026-12-11 La vacca di ferro – Faustino Stigliani, Chiara Inc @ ZolAuditorium",
+    "bo e415 2026-12-13 Al ragiunîr in vacanza – Compagnia Arrigo Lucchini @ ZolAuditorium",
+    "bo e416 2026-12-18 Lo scemo in televisione – Pippo e Andrea Santonast @ ZolAuditorium"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.culturabologna.it/agenda-eventi",
+   "finale": "",
+   "date_guida": [
+    "2026-12-31"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e386 2026-12-31 Capodanno in Piazza Maggiore – Rogo del Vecchione @ Piazza Maggiore"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.fondazionedozza.it/programma-eventi/eventi-spettacoli-alla-rocca-di-dozza/Eventi/970-les-vents-d-automne.html",
+   "finale": "",
+   "date_guida": [
+    "2026-11-22"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e732 2026-11-22 Les vents d'automne @ Rocca di Dozza"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://stagioneagora.it/dedicato-2027/",
+   "finale": "HTTP Error 502: Bad Gateway",
+   "date_guida": [
+    "2027-02-13"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e461 2027-02-13 Dedicato @ Teatro Alice Zeppilli"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.elfo.org/",
+   "finale": "",
+   "date_guida": [
+    "2026-11-03",
+    "2026-11-23",
+    "2027-01-08",
+    "2027-03-09",
+    "2027-05-07",
+    "2027-05-19"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e606 2026-11-03 Stand-up, Elfo! @ Teatro Elfo Puccini",
+    "mi e611 2026-11-23 Litanie: Furrer e Donatoni – Sound of Wander @ Teatro Elfo Puccini",
+    "mi e607 2027-01-08 In riva al mare @ Teatro Elfo Puccini",
+    "mi e608 2027-03-09 Re Lear è morto a Mosca @ Teatro Elfo Puccini",
+    "mi e609 2027-05-07 Amadeus @ Teatro Elfo Puccini",
+    "mi e610 2027-05-19 Cuore di tenebra @ Teatro Elfo Puccini"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.ipomeriggi.it/",
+   "finale": "",
+   "date_guida": [
+    "2026-11-26"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e034 2026-11-26 Ludovico Einaudi @ Teatro dal Verme"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/12-sinfonica-2026-bolton/289961",
+   "finale": "",
+   "date_guida": [
+    "2026-11-20"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e290 2026-11-20 Ivor Bolton – Haydn, La Creazione @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://cittadellamusica.comune.bologna.it/objects/cantabo-vocal-friends-alpi-pop-amicizie-in-musica",
+   "finale": "https://cittadellamusica.comune.bologna.it/events/cantabo-vocal-friends-alpi-pop-amicizie-in-musica",
+   "date_guida": [
+    "2026-11-21"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e362 2026-11-21 Coro Idica, Coro CAI, Blue Penguin, Vocal Vibes –  @ Chiesa di Santa Cristina della"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://ra.co/events/2525831",
+   "finale": "HTTP Error 403: Forbidden",
+   "date_guida": [
+    "2026-11-13"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi smi021 2026-11-13 Pentimento // Nicolas Lutz @ Duro"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.circolomagnolia.it/",
+   "finale": "",
+   "date_guida": [
+    "2027-02-06"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e078 2027-02-06 Yendry @ Circolo Magnolia"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.sinfonicadimilano.org/",
+   "finale": "",
+   "date_guida": [
+    "2026-11-27",
+    "2026-12-18",
+    "2026-12-29",
+    "2027-01-21"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e567 2026-11-27 Sinfonica di Milano: Beethoven e Musorgskij @ Auditorium di Milano",
+    "mi e568 2026-12-18 Messiah di Händel @ Auditorium di Milano",
+    "mi e569 2026-12-29 Nona di Beethoven di fine anno @ Auditorium di Milano",
+    "mi e570 2027-01-21 Schubert, Incompiuta e Requiem di Mozart @ Auditorium di Milano"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.conoscerelamusica.it",
+   "finale": "https://conoscerelamusica.it/",
+   "date_guida": [
+    "2026-11-11",
+    "2026-11-18",
+    "2026-11-25"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e358 2026-11-11 Gaspard Thoma @ Sala Prof. Marco Biagi (via Sa",
+    "bo e359 2026-11-18 Carlo Balzaretti, Giuseppe Modugno @ Sala Prof. Marco Biagi (via Sa",
+    "bo e360 2026-11-25 Gabriele Scarpa, Elisa Forno @ Sala Prof. Marco Biagi (via Sa"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.orchestramozart.com/en/news/the-2026-concerts-of-the-orchestra-mozart-with-daniele-gatti.html",
+   "finale": "",
+   "date_guida": [
+    "2026-12-04"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e297 2026-12-04 Daniele Gatti – Orchestra Mozart @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.officinacrobatica.com/etn/talea-dalle-radici-alla-cura/",
+   "finale": "",
+   "date_guida": [
+    "2026-11-27"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e733 2026-11-27 Talea – Dalle radici alla cura @ OfficinAcrobatica"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/ale-franz-capitolho",
+   "finale": "HTTP Error 403: Forbidden",
+   "date_guida": [
+    "2027-01-29"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e494 2027-01-29 Capitol'ho @ Teatro Consorziale"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.tcbo.it/",
+   "finale": "",
+   "date_guida": [
+    "2027-01-22",
+    "2027-02-14",
+    "2027-03-02",
+    "2027-03-13",
+    "2027-03-30",
+    "2027-05-07",
+    "2027-06-11",
+    "2027-09-23",
+    "2027-10-07"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e154 2027-01-22 La straniera @ Auditorium Manzoni",
+    "bo e191 2027-02-14 Daniele Gatti – Concerto di riapertura @ Teatro Comunale – Sala Bibiena",
+    "bo e210 2027-03-02 Il ritorno di Ulisse in patria @ Teatro Comunale",
+    "bo e222 2027-03-13 Sergio Bernal Dance Company @ Teatro Comunale",
+    "bo e236 2027-03-30 Madama Butterfly @ Teatro Comunale",
+    "bo e270 2027-05-07 Carmen @ Teatro Comunale"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://stagioneagora.it/divagazioni-sui-generis-itinerari-letterari-per-prospettive-incerte/",
+   "finale": "HTTP Error 502: Bad Gateway",
+   "date_guida": [
+    "2026-11-21"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e451 2026-11-21 Divagazioni sui generis @ Biblioteca Mario Luzi"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.teatroallascala.org/",
+   "finale": "https://www.teatroallascala.org/it/index.html",
+   "date_guida": [
+    "2026-11-22",
+    "2026-12-03",
+    "2026-12-04",
+    "2026-12-07",
+    "2026-12-13",
+    "2026-12-15",
+    "2026-12-20",
+    "2027-01-11",
+    "2027-01-17",
+    "2027-01-22",
+    "2027-02-01",
+    "2027-02-03",
+    "2027-02-14",
+    "2027-02-16",
+    "2027-02-28",
+    "2027-03-01",
+    "2027-03-03",
+    "2027-03-07",
+    "2027-03-14",
+    "2027-03-15",
+    "2027-03-23",
+    "2027-03-30",
+    "2027-04-04",
+    "2027-04-08",
+    "2027-04-09",
+    "2027-04-11",
+    "2027-04-17",
+    "2027-04-23",
+    "2027-05-04",
+    "2027-05-07",
+    "2027-05-09",
+    "2027-05-14",
+    "2027-05-17",
+    "2027-05-23",
+    "2027-05-27",
+    "2027-06-13",
+    "2027-06-15",
+    "2027-06-26",
+    "2027-07-08",
+    "2027-09-11",
+    "2027-09-17",
+    "2027-09-20",
+    "2027-10-02",
+    "2027-10-03",
+    "2027-10-05",
+    "2027-10-17",
+    "2027-10-26",
+    "2027-10-30",
+    "2027-11-05",
+    "2027-11-07"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e024 2026-11-22 Jessica Pratt – recital di canto @ Teatro alla Scala",
+    "mi e041 2026-12-03 Brian Jagde – recital di canto @ Teatro alla Scala",
+    "mi e044 2026-12-04 Otello – anteprima Under30 @ Teatro alla Scala",
+    "mi e049 2026-12-07 Otello – inaugurazione della stagione @ Teatro alla Scala",
+    "mi e557 2026-12-13 Musica da camera nel Ridotto: Ottetti @ Teatro alla Scala",
+    "mi e533 2026-12-15 Lo schiaccianoci @ Teatro alla Scala"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.teatridivita.it/portfolio/lesedie/",
+   "finale": "",
+   "date_guida": [
+    "2026-12-04"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e413 2026-12-04 Le sedie – Stalker Teatro @ Teatri di Vita"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.culturabologna.it/objects/risate-al-cassero-2026-2027",
+   "finale": "https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/risate-al-cassero-2026-2027",
+   "date_guida": [
+    "2026-11-14",
+    "2026-12-05",
+    "2026-12-26",
+    "2026-12-31",
+    "2027-01-23",
+    "2027-02-06",
+    "2027-02-27",
+    "2027-03-20",
+    "2027-04-10"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e501 2026-11-14 Piano B @ Teatro Comunale Cassero",
+    "bo e502 2026-12-05 Pupazzi pazzi @ Teatro Comunale Cassero",
+    "bo e503 2026-12-26 Natale con i tuoi, Santo Stefano con noi @ Teatro Comunale Cassero",
+    "bo e504 2026-12-31 Ride bene chi ride l'ultimo @ Teatro Comunale Cassero",
+    "bo e505 2027-01-23 Noi siamo voi. Votatevi! @ Teatro Comunale Cassero",
+    "bo e506 2027-02-06 Carlo e Giorgio sciò @ Teatro Comunale Cassero"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://cittadellamusica.comune.bologna.it/objects/la-vedova-allegra-29nov2026",
+   "finale": "https://cittadellamusica.comune.bologna.it/events/la-vedova-allegra-29nov2026",
+   "date_guida": [
+    "2026-11-29"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e366 2026-11-29 La vedova allegra (Lehár) @ La Cava delle Arti (via Cavazz"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.piccoloteatro.org/",
+   "finale": "https://www.piccoloteatro.org/it",
+   "date_guida": [
+    "2027-03-17"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e541 2027-03-17 Mont Ventoux – Balletto della Scala @ Piccolo Teatro Strehler"
    ]
   },
   {
@@ -1039,103 +1372,71 @@
   },
   {
    "esito": "non letto",
-   "link": "https://www.liveticket.it/zolauditorium",
-   "finale": "HTTP Error 403: Forbidden",
+   "link": "https://www.teatroarcimboldi.it/",
+   "finale": "Remote end closed connection without response",
    "date_guida": [
-    "2026-11-13",
-    "2026-11-22",
-    "2026-11-27",
-    "2026-12-11",
-    "2026-12-13",
-    "2026-12-18",
-    "2027-01-15",
-    "2027-01-17",
-    "2027-01-29",
-    "2027-02-12",
-    "2027-02-14",
-    "2027-02-26",
-    "2027-03-12",
-    "2027-03-14",
-    "2027-03-19"
+    "2027-10-03"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e397 2026-11-13 Hotel Zuper – Gianmarco Pozzoli @ ZolAuditorium",
-    "bo e406 2026-11-22 Mo quanti busì – Al Nostar Dialatt @ ZolAuditorium",
-    "bo e409 2026-11-27 Mor. Storia per le mie madri @ ZolAuditorium",
-    "bo e414 2026-12-11 La vacca di ferro – Faustino Stigliani, Chiara Inc @ ZolAuditorium",
-    "bo e415 2026-12-13 Al ragiunîr in vacanza – Compagnia Arrigo Lucchini @ ZolAuditorium",
-    "bo e416 2026-12-18 Lo scemo in televisione – Pippo e Andrea Santonast @ ZolAuditorium"
+    "mi e142 2027-10-03 Epica @ Teatro Arcimboldi"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/13-sinfonica-2026-angius/289962",
+   "finale": "",
+   "date_guida": [
+    "2026-12-11"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e300 2026-12-11 Marco Angius – Corrado, Hindemith @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "data diversa",
+   "link": "https://www.emiliaromagnafestival.it/erf-winter/erf-stignani-musica-imola/",
+   "finale": "",
+   "date_guida": [
+    "2026-11-16",
+    "2026-12-19",
+    "2027-01-16"
+   ],
+   "date_pagina": [
+    "2026-10-17",
+    "2026-11-16",
+    "2026-11-17",
+    "2026-12-19"
+   ],
+   "eventi": [
+    "bo e430 2026-11-16 Gran Galà Händel @ Teatro Ebe Stignani",
+    "bo e437 2026-12-19 Orchestra della Toscana @ Teatro Ebe Stignani",
+    "bo e441 2027-01-16 Beaux Arts Solisten Köln @ Teatro Ebe Stignani"
    ]
   },
   {
    "esito": "non letto",
-   "link": "https://stagioneagora.it/divagazioni-sui-generis-itinerari-letterari-per-prospettive-incerte/",
-   "finale": "HTTP Error 502: Bad Gateway",
+   "link": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/cesare-bocci-vittoria-belvedere-indovina-chi-viene-a-cena",
+   "finale": "HTTP Error 403: Forbidden",
    "date_guida": [
-    "2026-11-21"
+    "2027-02-12"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e451 2026-11-21 Divagazioni sui generis @ Biblioteca Mario Luzi"
+    "bo e495 2027-02-12 Indovina chi viene a cena @ Teatro Consorziale"
    ]
   },
   {
-   "esito": "senza data",
-   "link": "https://tcbo.vivaticket.it/it/event/beethoven-sinfonia-n-8/289956",
-   "finale": "",
+   "esito": "non letto",
+   "link": "https://www.tcbo.it/en/eventi/dance-2026-morricone-night/",
+   "finale": "HTTP Error 404: Not Found",
    "date_guida": [
-    "2026-12-13"
+    "2026-11-28"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e303 2026-12-13 Benedikt Sauer – Beethoven, Sinfonia n. 8 @ Auditorium Manzoni"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.fondazionedozza.it/programma-eventi/eventi-spettacoli-alla-rocca-di-dozza/Eventi/970-les-vents-d-automne.html",
-   "finale": "",
-   "date_guida": [
-    "2026-11-22"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e732 2026-11-22 Les vents d'automne @ Rocca di Dozza"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.culturabologna.it/agenda-eventi",
-   "finale": "",
-   "date_guida": [
-    "2026-12-31"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e386 2026-12-31 Capodanno in Piazza Maggiore – Rogo del Vecchione @ Piazza Maggiore"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.elfo.org/",
-   "finale": "",
-   "date_guida": [
-    "2026-11-03",
-    "2026-11-23",
-    "2027-01-08",
-    "2027-03-09",
-    "2027-05-07",
-    "2027-05-19"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi e606 2026-11-03 Stand-up, Elfo! @ Teatro Elfo Puccini",
-    "mi e611 2026-11-23 Litanie: Furrer e Donatoni – Sound of Wander @ Teatro Elfo Puccini",
-    "mi e607 2027-01-08 In riva al mare @ Teatro Elfo Puccini",
-    "mi e608 2027-03-09 Re Lear è morto a Mosca @ Teatro Elfo Puccini",
-    "mi e609 2027-05-07 Amadeus @ Teatro Elfo Puccini",
-    "mi e610 2027-05-19 Cuore di tenebra @ Teatro Elfo Puccini"
+    "bo e084 2026-11-28 Notte Morricone @ Teatro EuropAuditorium"
    ]
   },
   {
@@ -1356,345 +1657,6 @@
   },
   {
    "esito": "senza data",
-   "link": "https://www.sinfonicadimilano.org/",
-   "finale": "",
-   "date_guida": [
-    "2026-11-27",
-    "2026-12-18",
-    "2026-12-29",
-    "2027-01-21"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi e567 2026-11-27 Sinfonica di Milano: Beethoven e Musorgskij @ Auditorium di Milano",
-    "mi e568 2026-12-18 Messiah di Händel @ Auditorium di Milano",
-    "mi e569 2026-12-29 Nona di Beethoven di fine anno @ Auditorium di Milano",
-    "mi e570 2027-01-21 Schubert, Incompiuta e Requiem di Mozart @ Auditorium di Milano"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.orchestramozart.com/en/news/the-2026-concerts-of-the-orchestra-mozart-with-daniele-gatti.html",
-   "finale": "",
-   "date_guida": [
-    "2026-12-04"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e297 2026-12-04 Daniele Gatti – Orchestra Mozart @ Auditorium Manzoni"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.conoscerelamusica.it",
-   "finale": "https://conoscerelamusica.it/",
-   "date_guida": [
-    "2026-11-11",
-    "2026-11-18",
-    "2026-11-25"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e358 2026-11-11 Gaspard Thoma @ Sala Prof. Marco Biagi (via Sa",
-    "bo e359 2026-11-18 Carlo Balzaretti, Giuseppe Modugno @ Sala Prof. Marco Biagi (via Sa",
-    "bo e360 2026-11-25 Gabriele Scarpa, Elisa Forno @ Sala Prof. Marco Biagi (via Sa"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://cittadellamusica.comune.bologna.it/objects/cantabo-vocal-friends-alpi-pop-amicizie-in-musica",
-   "finale": "https://cittadellamusica.comune.bologna.it/events/cantabo-vocal-friends-alpi-pop-amicizie-in-musica",
-   "date_guida": [
-    "2026-11-21"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e362 2026-11-21 Coro Idica, Coro CAI, Blue Penguin, Vocal Vibes –  @ Chiesa di Santa Cristina della"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.ipomeriggi.it/",
-   "finale": "",
-   "date_guida": [
-    "2026-11-26"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi e034 2026-11-26 Ludovico Einaudi @ Teatro dal Verme"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/ale-franz-capitolho",
-   "finale": "HTTP Error 403: Forbidden",
-   "date_guida": [
-    "2027-01-29"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e494 2027-01-29 Capitol'ho @ Teatro Consorziale"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.tcbo.it/",
-   "finale": "",
-   "date_guida": [
-    "2027-01-22",
-    "2027-02-14",
-    "2027-03-02",
-    "2027-03-13",
-    "2027-03-30",
-    "2027-05-07",
-    "2027-06-11",
-    "2027-09-23",
-    "2027-10-07"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e154 2027-01-22 La straniera @ Auditorium Manzoni",
-    "bo e191 2027-02-14 Daniele Gatti – Concerto di riapertura @ Teatro Comunale – Sala Bibiena",
-    "bo e210 2027-03-02 Il ritorno di Ulisse in patria @ Teatro Comunale",
-    "bo e222 2027-03-13 Sergio Bernal Dance Company @ Teatro Comunale",
-    "bo e236 2027-03-30 Madama Butterfly @ Teatro Comunale",
-    "bo e270 2027-05-07 Carmen @ Teatro Comunale"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.teatroallascala.org/",
-   "finale": "https://www.teatroallascala.org/it/index.html",
-   "date_guida": [
-    "2026-11-22",
-    "2026-12-03",
-    "2026-12-04",
-    "2026-12-07",
-    "2026-12-13",
-    "2026-12-15",
-    "2026-12-20",
-    "2027-01-11",
-    "2027-01-17",
-    "2027-01-22",
-    "2027-02-01",
-    "2027-02-03",
-    "2027-02-14",
-    "2027-02-16",
-    "2027-02-28",
-    "2027-03-01",
-    "2027-03-03",
-    "2027-03-07",
-    "2027-03-14",
-    "2027-03-15",
-    "2027-03-23",
-    "2027-03-30",
-    "2027-04-04",
-    "2027-04-08",
-    "2027-04-09",
-    "2027-04-11",
-    "2027-04-17",
-    "2027-04-23",
-    "2027-05-04",
-    "2027-05-07",
-    "2027-05-09",
-    "2027-05-14",
-    "2027-05-17",
-    "2027-05-23",
-    "2027-05-27",
-    "2027-06-13",
-    "2027-06-15",
-    "2027-06-26",
-    "2027-07-08",
-    "2027-09-11",
-    "2027-09-17",
-    "2027-09-20",
-    "2027-10-02",
-    "2027-10-03",
-    "2027-10-05",
-    "2027-10-17",
-    "2027-10-26",
-    "2027-10-30",
-    "2027-11-05",
-    "2027-11-07"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi e024 2026-11-22 Jessica Pratt – recital di canto @ Teatro alla Scala",
-    "mi e041 2026-12-03 Brian Jagde – recital di canto @ Teatro alla Scala",
-    "mi e044 2026-12-04 Otello – anteprima Under30 @ Teatro alla Scala",
-    "mi e049 2026-12-07 Otello – inaugurazione della stagione @ Teatro alla Scala",
-    "mi e557 2026-12-13 Musica da camera nel Ridotto: Ottetti @ Teatro alla Scala",
-    "mi e533 2026-12-15 Lo schiaccianoci @ Teatro alla Scala"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.tcbo.it/en/eventi/dance-2026-morricone-night/",
-   "finale": "HTTP Error 404: Not Found",
-   "date_guida": [
-    "2026-11-28"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e084 2026-11-28 Notte Morricone @ Teatro EuropAuditorium"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.teatridivita.it/portfolio/lesedie/",
-   "finale": "",
-   "date_guida": [
-    "2026-12-04"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e413 2026-12-04 Le sedie – Stalker Teatro @ Teatri di Vita"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.circolomagnolia.it/",
-   "finale": "",
-   "date_guida": [
-    "2027-02-06"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi e078 2027-02-06 Yendry @ Circolo Magnolia"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/cesare-bocci-vittoria-belvedere-indovina-chi-viene-a-cena",
-   "finale": "HTTP Error 403: Forbidden",
-   "date_guida": [
-    "2027-02-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e495 2027-02-12 Indovina chi viene a cena @ Teatro Consorziale"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.culturabologna.it/objects/risate-al-cassero-2026-2027",
-   "finale": "https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/risate-al-cassero-2026-2027",
-   "date_guida": [
-    "2026-11-14",
-    "2026-12-05",
-    "2026-12-26",
-    "2026-12-31",
-    "2027-01-23",
-    "2027-02-06",
-    "2027-02-27",
-    "2027-03-20",
-    "2027-04-10"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e501 2026-11-14 Piano B @ Teatro Comunale Cassero",
-    "bo e502 2026-12-05 Pupazzi pazzi @ Teatro Comunale Cassero",
-    "bo e503 2026-12-26 Natale con i tuoi, Santo Stefano con noi @ Teatro Comunale Cassero",
-    "bo e504 2026-12-31 Ride bene chi ride l'ultimo @ Teatro Comunale Cassero",
-    "bo e505 2027-01-23 Noi siamo voi. Votatevi! @ Teatro Comunale Cassero",
-    "bo e506 2027-02-06 Carlo e Giorgio sciò @ Teatro Comunale Cassero"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.teatroarcimboldi.it/",
-   "finale": "Remote end closed connection without response",
-   "date_guida": [
-    "2027-10-03"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi e142 2027-10-03 Epica @ Teatro Arcimboldi"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.piccoloteatro.org/",
-   "finale": "https://www.piccoloteatro.org/it",
-   "date_guida": [
-    "2027-03-17"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi e541 2027-03-17 Mont Ventoux – Balletto della Scala @ Piccolo Teatro Strehler"
-   ]
-  },
-  {
-   "esito": "data diversa",
-   "link": "https://www.emiliaromagnafestival.it/erf-winter/erf-stignani-musica-imola/",
-   "finale": "",
-   "date_guida": [
-    "2026-11-16",
-    "2026-12-19",
-    "2027-01-16"
-   ],
-   "date_pagina": [
-    "2026-10-17",
-    "2026-11-16",
-    "2026-11-17",
-    "2026-12-19"
-   ],
-   "eventi": [
-    "bo e430 2026-11-16 Gran Galà Händel @ Teatro Ebe Stignani",
-    "bo e437 2026-12-19 Orchestra della Toscana @ Teatro Ebe Stignani",
-    "bo e441 2027-01-16 Beaux Arts Solisten Köln @ Teatro Ebe Stignani"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.tcbo.it/en/eventi/opera-2026-samson-et-dalila/",
-   "finale": "HTTP Error 404: Not Found",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e043 2026-11-13 Samson et Dalila @ Auditorium Manzoni"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://cittadellamusica.comune.bologna.it/objects/la-vedova-allegra-29nov2026",
-   "finale": "https://cittadellamusica.comune.bologna.it/events/la-vedova-allegra-29nov2026",
-   "date_guida": [
-    "2026-11-29"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e366 2026-11-29 La vedova allegra (Lehár) @ La Cava delle Arti (via Cavazz"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.teatridivita.it/portfolio/pedroeilcapitano/",
-   "finale": "",
-   "date_guida": [
-    "2026-11-27"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e408 2026-11-27 Pedro e il Capitano @ Teatri di Vita"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/enzo-iacchetti-carlotta-proietti-buongiorno-ministro",
-   "finale": "HTTP Error 403: Forbidden",
-   "date_guida": [
-    "2026-11-22"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e492 2026-11-22 Buongiorno Ministro! @ Teatro Consorziale"
-   ]
-  },
-  {
-   "esito": "senza data",
    "link": "https://www.teatrocarcano.com/",
    "finale": "",
    "date_guida": [
@@ -1715,38 +1677,26 @@
   },
   {
    "esito": "senza data",
-   "link": "https://www.teatridivita.it/portfolio/subversivebodies/",
+   "link": "https://www.teatridivita.it/portfolio/pedroeilcapitano/",
    "finale": "",
    "date_guida": [
-    "2026-11-17"
+    "2026-11-27"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e400 2026-11-17 PULSE | Subversive Bodies – Andrea Zardi @ Teatri di Vita"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/giovanni-storti-stefano-mancuso-lunga-vita-agli-alberi",
-   "finale": "HTTP Error 403: Forbidden",
-   "date_guida": [
-    "2027-01-09"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e493 2027-01-09 Lunga vita agli alberi @ Teatro Consorziale"
+    "bo e408 2026-11-27 Pedro e il Capitano @ Teatri di Vita"
    ]
   },
   {
    "esito": "senza data",
-   "link": "https://www.teatrooutoff.it/",
-   "finale": "https://teatrooutoff.it/",
+   "link": "https://tcbo.vivaticket.it/it/event/14-sinfonica-2026-stenz/289963",
+   "finale": "",
    "date_guida": [
-    "2026-11-25"
+    "2026-12-31"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e025 2026-11-25 Francesco De Gregori @ Teatro Out Off"
+    "bo e307 2026-12-31 Markus Stenz – Beethoven, Nona Sinfonia @ Auditorium Manzoni"
    ]
   },
   {
@@ -1759,6 +1709,18 @@
    "date_pagina": [],
    "eventi": [
     "bo e375 2026-11-11 Milone meets the Doctors @ Teatro Mazzacorati 1763 (Villa"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.teatrooutoff.it/",
+   "finale": "https://teatrooutoff.it/",
+   "date_guida": [
+    "2026-11-25"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e025 2026-11-25 Francesco De Gregori @ Teatro Out Off"
    ]
   },
   {
@@ -1783,6 +1745,141 @@
    ]
   },
   {
+   "esito": "non letto",
+   "link": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/enzo-iacchetti-carlotta-proietti-buongiorno-ministro",
+   "finale": "HTTP Error 403: Forbidden",
+   "date_guida": [
+    "2026-11-22"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e492 2026-11-22 Buongiorno Ministro! @ Teatro Consorziale"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.teatrostignani.it/spettacoli",
+   "finale": "",
+   "date_guida": [
+    "2026-11-17",
+    "2026-12-05",
+    "2027-01-26"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e431 2026-11-17 L'Opera nel Ridotto: Otello di Verdi @ Teatro Ebe Stignani",
+    "bo e434 2026-12-05 Natale in musica @ Teatro Ebe Stignani",
+    "bo e443 2027-01-26 L'Opera nel Ridotto: Il Flauto Magico di Mozart @ Teatro Ebe Stignani"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.tcbo.it/en/eventi/opera-2026-samson-et-dalila/",
+   "finale": "HTTP Error 404: Not Found",
+   "date_guida": [
+    "2026-11-13"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e043 2026-11-13 Samson et Dalila @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.teatridivita.it/portfolio/subversivebodies/",
+   "finale": "",
+   "date_guida": [
+    "2026-11-17"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e400 2026-11-17 PULSE | Subversive Bodies – Andrea Zardi @ Teatri di Vita"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.unipolforum.it/",
+   "finale": "https://www.unipolforum.it/it/",
+   "date_guida": [
+    "2026-11-11",
+    "2026-12-07",
+    "2027-01-25",
+    "2027-02-22",
+    "2027-02-27",
+    "2027-04-06",
+    "2027-04-19"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e016 2026-11-11 Tokio Hotel @ Unipol Forum",
+    "mi e048 2026-12-07 Il Volo @ Unipol Forum",
+    "mi e063 2027-01-25 Bullet For My Valentine @ Unipol Forum",
+    "mi e091 2027-02-22 Electric Callboy @ Unipol Forum",
+    "mi e095 2027-02-27 James Blunt – Airplane Mode @ Unipol Forum",
+    "mi e108 2027-04-06 Megadeth @ Unipol Forum"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://cittadellamusica.comune.bologna.it/objects/note-di-vita-un-viaggio-nella-musica-senza-confini",
+   "finale": "https://cittadellamusica.comune.bologna.it/events/note-di-vita-un-viaggio-nella-musica-senza-confini",
+   "date_guida": [
+    "2026-11-12"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e376 2026-11-12 Note di Vita – Un viaggio nella musica senza confi @ Teatro Mazzacorati 1763 (Villa"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/beethoven-sinfonia-n-7/289955",
+   "finale": "",
+   "date_guida": [
+    "2026-11-22"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e293 2026-11-22 Christian Blex – Beethoven, Sinfonia n. 7 @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.teatrostignani.it/spettacoli/contemporaneo/il-presidente",
+   "finale": "",
+   "date_guida": [
+    "2027-01-30"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e444 2027-01-30 Il Presidente @ Teatro Ebe Stignani"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/giovanni-storti-stefano-mancuso-lunga-vita-agli-alberi",
+   "finale": "HTTP Error 403: Forbidden",
+   "date_guida": [
+    "2027-01-09"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e493 2027-01-09 Lunga vita agli alberi @ Teatro Consorziale"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/addue/305749",
+   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
+   "date_guida": [
+    "2026-11-19"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e056 2026-11-19 Addue @ Teatro Dehon"
+   ]
+  },
+  {
    "esito": "senza data",
    "link": "https://www.teatridivita.it/portfolio/tape/",
    "finale": "",
@@ -1792,6 +1889,44 @@
    "date_pagina": [],
    "eventi": [
     "bo e404 2026-11-20 Tape – La registrazione @ Teatri di Vita"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/beethoven-sinfonia-n-8/289956",
+   "finale": "",
+   "date_guida": [
+    "2026-12-13"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e303 2026-12-13 Benedikt Sauer – Beethoven, Sinfonia n. 8 @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.magazzinigenerali.org/",
+   "finale": "",
+   "date_guida": [
+    "2027-01-28",
+    "2027-02-01"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e065 2027-01-28 Leon Faun @ Magazzini Generali",
+    "mi e069 2027-02-01 U.D.O. @ Magazzini Generali"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.teatrostignani.it/spettacoli/famiglie/il-tenace-soldatino-di-stagno-e-altre-storie",
+   "finale": "",
+   "date_guida": [
+    "2027-01-03"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e439 2027-01-03 Il tenace soldatino di stagno e altre storie @ Teatro Ebe Stignani"
    ]
   },
   {
@@ -2132,91 +2267,74 @@
   },
   {
    "esito": "senza data",
-   "link": "https://www.teatrostignani.it/spettacoli",
+   "link": "https://www.teatrostignani.it/spettacoli/famiglie/magma-unavventura-claustrocomica",
    "finale": "",
    "date_guida": [
-    "2026-11-17",
-    "2026-12-05",
-    "2027-01-26"
+    "2026-11-22"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e431 2026-11-17 L'Opera nel Ridotto: Otello di Verdi @ Teatro Ebe Stignani",
-    "bo e434 2026-12-05 Natale in musica @ Teatro Ebe Stignani",
-    "bo e443 2027-01-26 L'Opera nel Ridotto: Il Flauto Magico di Mozart @ Teatro Ebe Stignani"
+    "bo e432 2026-11-22 Magma. Un'avventura claustrocomica @ Teatro Ebe Stignani"
    ]
   },
   {
-   "esito": "senza data",
-   "link": "https://www.unipolforum.it/",
-   "finale": "https://www.unipolforum.it/it/",
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/alexandre-tharaud/302725",
+   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
    "date_guida": [
-    "2026-11-11",
-    "2026-12-07",
-    "2027-01-25",
-    "2027-02-22",
-    "2027-02-27",
-    "2027-04-06",
-    "2027-04-19"
+    "2027-05-10"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e016 2026-11-11 Tokio Hotel @ Unipol Forum",
-    "mi e048 2026-12-07 Il Volo @ Unipol Forum",
-    "mi e063 2027-01-25 Bullet For My Valentine @ Unipol Forum",
-    "mi e091 2027-02-22 Electric Callboy @ Unipol Forum",
-    "mi e095 2027-02-27 James Blunt – Airplane Mode @ Unipol Forum",
-    "mi e108 2027-04-06 Megadeth @ Unipol Forum"
+    "bo e347 2027-05-10 Alexandre Tharaud @ Teatro Auditorium Manzoni"
    ]
   },
   {
    "esito": "senza data",
-   "link": "https://www.magazzinigenerali.org/",
+   "link": "https://www.teatrostignani.it/spettacoli/famiglie/notturna",
    "finale": "",
    "date_guida": [
-    "2027-01-28",
-    "2027-02-01"
+    "2027-01-31"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e065 2027-01-28 Leon Faun @ Magazzini Generali",
-    "mi e069 2027-02-01 U.D.O. @ Magazzini Generali"
+    "bo e445 2027-01-31 Notturna @ Teatro Ebe Stignani"
    ]
   },
   {
    "esito": "senza data",
-   "link": "https://cittadellamusica.comune.bologna.it/objects/note-di-vita-un-viaggio-nella-musica-senza-confini",
-   "finale": "https://cittadellamusica.comune.bologna.it/events/note-di-vita-un-viaggio-nella-musica-senza-confini",
-   "date_guida": [
-    "2026-11-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e376 2026-11-12 Note di Vita – Un viaggio nella musica senza confi @ Teatro Mazzacorati 1763 (Villa"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.teatrostignani.it/spettacoli/contemporaneo/il-presidente",
+   "link": "https://www.teatrostignani.it/spettacoli/famiglie/re-tutto-cancella",
    "finale": "",
    "date_guida": [
-    "2027-01-30"
+    "2026-12-13"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e444 2027-01-30 Il Presidente @ Teatro Ebe Stignani"
+    "bo e436 2026-12-13 Re Tutto Cancella @ Teatro Ebe Stignani"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/arcadi-volodos/302726",
+   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
+   "date_guida": [
+    "2027-02-22"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e341 2027-02-22 Arcadi Volodos @ Teatro Auditorium Manzoni"
    ]
   },
   {
    "esito": "senza data",
-   "link": "https://feverup.com/m/631875",
+   "link": "https://www.teatrostignani.it/spettacoli/prosa/7-spose-per-7-fratelli",
    "finale": "",
    "date_guida": [
-    "2026-12-12"
+    "2027-01-05"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e109 2026-12-12 The Jazz Room – Omaggio a Frank Sinatra e Louis Ar @ Teatro Testoni Ragazzi"
+    "bo e440 2027-01-05 Sette spose per sette fratelli @ Teatro Ebe Stignani"
    ]
   },
   {
@@ -2264,182 +2382,14 @@
   },
   {
    "esito": "senza data",
-   "link": "https://feverup.com/m/682445",
+   "link": "https://feverup.com/m/631875",
    "finale": "",
    "date_guida": [
-    "2026-11-08"
+    "2026-12-12"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e031 2026-11-08 Candlelight – Tributo a Michael Jackson @ Oratorio di San Filippo Neri"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.teatrostignani.it/spettacoli/famiglie/il-tenace-soldatino-di-stagno-e-altre-storie",
-   "finale": "",
-   "date_guida": [
-    "2027-01-03"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e439 2027-01-03 Il tenace soldatino di stagno e altre storie @ Teatro Ebe Stignani"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.vivaticket.com/it/ticket/addue/305749",
-   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
-   "date_guida": [
-    "2026-11-19"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e056 2026-11-19 Addue @ Teatro Dehon"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://feverup.com/m/704928",
-   "finale": "",
-   "date_guida": [
-    "2026-11-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e039 2026-11-12 An Idiot's Guide to Wine – vino e risate @ DumBO"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://feverup.com/m/812627",
-   "finale": "",
-   "date_guida": [
-    "2027-01-29"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e161 2027-01-29 Candlelight – Coldplay e Imagine Dragons @ Teatro San Leonardo"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.teatrostignani.it/spettacoli/famiglie/magma-unavventura-claustrocomica",
-   "finale": "",
-   "date_guida": [
-    "2026-11-22"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e432 2026-11-22 Magma. Un'avventura claustrocomica @ Teatro Ebe Stignani"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://feverup.com/m/812712",
-   "finale": "",
-   "date_guida": [
-    "2027-01-17"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e149 2027-01-17 Candlelight – Tributo a Cremonini @ Teatro San Leonardo"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://feverup.com/m/812713",
-   "finale": "",
-   "date_guida": [
-    "2027-01-17"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e150 2027-01-17 Candlelight – Tributo a Michael Jackson @ Teatro San Leonardo"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.teatrostignani.it/spettacoli/famiglie/notturna",
-   "finale": "",
-   "date_guida": [
-    "2027-01-31"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e445 2027-01-31 Notturna @ Teatro Ebe Stignani"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.vivaticket.com/it/ticket/alexandre-tharaud/302725",
-   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
-   "date_guida": [
-    "2027-05-10"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e347 2027-05-10 Alexandre Tharaud @ Teatro Auditorium Manzoni"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://feverup.com/m/812720",
-   "finale": "",
-   "date_guida": [
-    "2027-01-07"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e137 2027-01-07 Candlelight – Lucio Dalla e i cantautori italiani @ Oratorio di San Filippo Neri"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://feverup.com/m/821516",
-   "finale": "",
-   "date_guida": [
-    "2027-02-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e185 2027-02-12 Candlelight – Tributo a Tiziano Ferro @ Teatro San Leonardo"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.teatrostignani.it/spettacoli/famiglie/re-tutto-cancella",
-   "finale": "",
-   "date_guida": [
-    "2026-12-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e436 2026-12-13 Re Tutto Cancella @ Teatro Ebe Stignani"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.teatrostignani.it/spettacoli/prosa/7-spose-per-7-fratelli",
-   "finale": "",
-   "date_guida": [
-    "2027-01-05"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e440 2027-01-05 Sette spose per sette fratelli @ Teatro Ebe Stignani"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.vivaticket.com/it/ticket/arcadi-volodos/302726",
-   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
-   "date_guida": [
-    "2027-02-22"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e341 2027-02-22 Arcadi Volodos @ Teatro Auditorium Manzoni"
+    "bo e109 2026-12-12 The Jazz Room – Omaggio a Frank Sinatra e Louis Ar @ Teatro Testoni Ragazzi"
    ]
   },
   {
@@ -2456,6 +2406,18 @@
   },
   {
    "esito": "senza data",
+   "link": "https://feverup.com/m/682445",
+   "finale": "",
+   "date_guida": [
+    "2026-11-08"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e031 2026-11-08 Candlelight – Tributo a Michael Jackson @ Oratorio di San Filippo Neri"
+   ]
+  },
+  {
+   "esito": "senza data",
    "link": "https://www.teatrostignani.it/spettacoli/prosa/la-cena-dei-cretini-l10",
    "finale": "",
    "date_guida": [
@@ -2464,33 +2426,6 @@
    "date_pagina": [],
    "eventi": [
     "bo e435 2026-12-08 La cena dei cretini @ Teatro Ebe Stignani"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.bolognateatro.it/home/in-evidenza/teatro-spazio-reno-calderara-di-r-bo-stagione-2026-27",
-   "finale": "<urlopen error [Errno 101] Network is unreachable>",
-   "date_guida": [
-    "2026-11-24",
-    "2026-12-13",
-    "2026-12-20",
-    "2027-01-10",
-    "2027-01-17",
-    "2027-01-23",
-    "2027-02-07",
-    "2027-02-27",
-    "2027-03-07",
-    "2027-03-13",
-    "2027-03-21"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e510 2026-11-24 Ricordatemi come vi pare @ Teatro Spazio Reno",
-    "bo e511 2026-12-13 In Famaja @ Teatro Spazio Reno",
-    "bo e512 2026-12-20 Il Giratempo di Babbo Natale @ Teatro Spazio Reno",
-    "bo e513 2027-01-10 Quando i portici erano di legno @ Teatro Spazio Reno",
-    "bo e514 2027-01-17 Fagioli @ Teatro Spazio Reno",
-    "bo e515 2027-01-23 L'Austriaca @ Teatro Spazio Reno"
    ]
   },
   {
@@ -2507,6 +2442,18 @@
   },
   {
    "esito": "senza data",
+   "link": "https://feverup.com/m/704928",
+   "finale": "",
+   "date_guida": [
+    "2026-11-12"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e039 2026-11-12 An Idiot's Guide to Wine – vino e risate @ DumBO"
+   ]
+  },
+  {
+   "esito": "senza data",
    "link": "https://www.teatrostignani.it/spettacoli/prosa/marco-polo-e-le-citt-invisibili",
    "finale": "",
    "date_guida": [
@@ -2515,30 +2462,6 @@
    "date_pagina": [],
    "eventi": [
     "bo e442 2027-01-19 Marco Polo e le città invisibili @ Teatro Ebe Stignani"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.teatrostignani.it/spettacoli/speciali/manera-e-champagne",
-   "finale": "",
-   "date_guida": [
-    "2026-12-31"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e438 2026-12-31 Manera e Champagne @ Teatro Ebe Stignani"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.officinacrobatica.com/etn/talea-dalle-radici-alla-cura/",
-   "finale": "<urlopen error [Errno 101] Network is unreachable>",
-   "date_guida": [
-    "2026-11-27"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e733 2026-11-27 Talea – Dalle radici alla cura @ OfficinAcrobatica"
    ]
   },
   {
@@ -2916,6 +2839,42 @@
    ]
   },
   {
+   "esito": "senza data",
+   "link": "https://www.teatrostignani.it/spettacoli/speciali/manera-e-champagne",
+   "finale": "",
+   "date_guida": [
+    "2026-12-31"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e438 2026-12-31 Manera e Champagne @ Teatro Ebe Stignani"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://feverup.com/m/812627",
+   "finale": "",
+   "date_guida": [
+    "2027-01-29"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e161 2027-01-29 Candlelight – Coldplay e Imagine Dragons @ Teatro San Leonardo"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://feverup.com/m/812712",
+   "finale": "",
+   "date_guida": [
+    "2027-01-17"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e149 2027-01-17 Candlelight – Tributo a Cremonini @ Teatro San Leonardo"
+   ]
+  },
+  {
    "esito": "non letto",
    "link": "https://www.ticketone.it/artist/a-christmas-carol/#calendar-start=2026-12",
    "finale": "The read operation timed out",
@@ -2925,6 +2884,42 @@
    "date_pagina": [],
    "eventi": [
     "mi e696 2026-12-23 A Christmas Carol Musical @ Teatro Carcano"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://feverup.com/m/812713",
+   "finale": "",
+   "date_guida": [
+    "2027-01-17"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e150 2027-01-17 Candlelight – Tributo a Michael Jackson @ Teatro San Leonardo"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://feverup.com/m/812720",
+   "finale": "",
+   "date_guida": [
+    "2027-01-07"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e137 2027-01-07 Candlelight – Lucio Dalla e i cantautori italiani @ Oratorio di San Filippo Neri"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://feverup.com/m/821516",
+   "finale": "",
+   "date_guida": [
+    "2027-02-12"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e185 2027-02-12 Candlelight – Tributo a Tiziano Ferro @ Teatro San Leonardo"
    ]
   },
   {
@@ -12539,14 +12534,146 @@
    "eventi": [
     "mi e658 2026-11-10 ZELIG LAB - il laboratorio artistico di Area Zelig @ Zelig"
    ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.songkick.com/concerts/43502103-sofia-gabanna-at-21-house-of-stories-navigli",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-11-19"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e450 2026-11-19 Sofia Gabanna @ 21 House of Stories Navigli"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.songkick.com/concerts/43502106-eilis-frawley-at-germiluogo-di-contaminazione",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-11-19"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e229 2026-11-19 Eilis Frawley @ Germi-luogo Di Contaminazione"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.songkick.com/festivals/3498553-slam-dunk-italy/id/43481495-slam-dunk-italy-2027",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-06-11"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e442 2027-06-11 Simple Plan @ Carroponte"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.songkick.com/festivals/3754279-special-stage-finale/id/43467613-special-stage--finale-2026",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-11-15"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e459 2026-11-15 Special Stage - Finale 2026 @ Santeria Toscana 31"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.songkick.com/festivals/3755342-musica-dei-cieli/id/43462785-musica-dei-cieli-2026",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-12-05"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e376 2026-12-05 Musica dei cieli 2026 @ Chiesa di San Vincenzo in Prat"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.songkick.com/festivals/3755342-musica-dei-cieli/id/43462787-musica-dei-cieli-2026",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-12-11"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e375 2026-12-11 Musica dei cieli 2026 @ Chiesa dei Santi Gervaso & Pro"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.songkick.com/festivals/3755342-musica-dei-cieli/id/43462794-musica-dei-cieli-2026",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-12-18"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e374 2026-12-18 Musica dei cieli 2026 @ Basilica di San Vittore al Cor"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.songkick.com/festivals/3799090-linecheck-meeting-pass/id/43352127-linecheck--meeting-pass-2026",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-11-19"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e333 2026-11-19 LINECHECK | MEETING PASS 2026 @ BASE Milano"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.songkick.com/festivals/3807536-etta-loste-varlene-milano-music-week/id/43441057-etta--loste--varlene--milano-music-week-2026",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-11-20"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e240 2026-11-20 Etta + Loste + Varlene | Milano Music Week 2026 @ Q-HUB"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.songkick.com/festivals/3807537-shandon-los-fastidios-ska-punk-oi-fest-vol-2/id/43441058-shandon--los-fastidios--ska-punk-oi-fest-vol-2-2026",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-12-19"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e436 2026-12-19 SHANDON + LOS FASTIDIOS | SKA PUNK OI FEST VOL. 2  @ Q-HUB"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.songkick.com/festivals/531394-ultrasuoni/id/43347935-ultrasuoni-festival-2026",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-11-24"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e197 2026-11-24 Caterina @ La Birrofila Brewpub"
+   ]
   }
  ],
  "sport": {
-  "link": 10,
+  "link": 18,
   "esiti": {
    "pagina generica": 8,
-   "senza data": 1,
-   "non letto": 1
+   "senza data": 3,
+   "non letto": 7
   },
   "casi": [
    {
@@ -12612,13 +12739,13 @@
    {
     "esito": "pagina generica",
     "link": "https://www.bolognafc.it/biglietti/",
-    "partite": 14,
+    "partite": 12,
     "date_pagina": [],
     "finale": "",
     "eventi": [
-     "bo 2026-11-22 Bologna – Udinese",
-     "bo 2026-12-04 Bologna – Roma",
-     "bo 2027-01-03 Bologna – Juventus"
+     "bo 2027-01-03 Bologna – Juventus",
+     "bo 2027-01-09 Bologna – Genoa",
+     "bo 2027-01-24 Bologna – Atalanta"
     ]
    },
    {
@@ -12629,6 +12756,26 @@
     "finale": "",
     "eventi": [
      "bo 2026-12-15 Bologna – Palermo"
+    ]
+   },
+   {
+    "esito": "senza data",
+    "link": "https://www.bolognafc.it/match/bologna-roma-10/?info=ticket",
+    "partite": 1,
+    "date_pagina": [],
+    "finale": "",
+    "eventi": [
+     "bo 2026-12-04 Bologna – Roma"
+    ]
+   },
+   {
+    "esito": "senza data",
+    "link": "https://www.bolognafc.it/match/bologna-udinese-9/?info=ticket",
+    "partite": 1,
+    "date_pagina": [],
+    "finale": "",
+    "eventi": [
+     "bo 2026-11-22 Bologna – Udinese"
     ]
    },
    {
@@ -12657,31 +12804,89 @@
    },
    {
     "esito": "non letto",
-    "link": "https://www.ticketone.it/artist/davis-cup-tennis/davis-cup-by-generali-final-8-2026-4084035/",
-    "partite": 7,
+    "link": "https://www.ticketone.it/event/davis-cup-by-generali-final-8-2026-bolognafiere-arena-21357153/",
+    "partite": 1,
     "date_pagina": [],
     "finale": "The read operation timed out",
     "eventi": [
-     "bo 2026-11-24 Coppa Davis – Quarti di finale: Repubblica Ceca – ",
-     "bo 2026-11-25 Coppa Davis – Quarti di finale: Italia – Corea del",
+     "bo 2026-11-24 Coppa Davis – Quarti di finale: Repubblica Ceca – "
+    ]
+   },
+   {
+    "esito": "non letto",
+    "link": "https://www.ticketone.it/event/davis-cup-by-generali-final-8-2026-bolognafiere-arena-21357154/",
+    "partite": 1,
+    "date_pagina": [],
+    "finale": "The read operation timed out",
+    "eventi": [
+     "bo 2026-11-25 Coppa Davis – Quarti di finale: Italia – Corea del"
+    ]
+   },
+   {
+    "esito": "non letto",
+    "link": "https://www.ticketone.it/event/davis-cup-by-generali-final-8-2026-bolognafiere-arena-21357155/",
+    "partite": 1,
+    "date_pagina": [],
+    "finale": "The read operation timed out",
+    "eventi": [
      "bo 2026-11-26 Coppa Davis – Quarti di finale: Gran Bretagna – Ge"
+    ]
+   },
+   {
+    "esito": "non letto",
+    "link": "https://www.ticketone.it/event/davis-cup-by-generali-final-8-2026-bolognafiere-arena-21357156/",
+    "partite": 1,
+    "date_pagina": [],
+    "finale": "The read operation timed out",
+    "eventi": [
+     "bo 2026-11-26 Coppa Davis – Quarti di finale: Austria – Spagna"
+    ]
+   },
+   {
+    "esito": "non letto",
+    "link": "https://www.ticketone.it/event/davis-cup-by-generali-final-8-2026-bolognafiere-arena-21357157/",
+    "partite": 1,
+    "date_pagina": [],
+    "finale": "The read operation timed out",
+    "eventi": [
+     "bo 2026-11-27 Coppa Davis – Semifinale 1"
+    ]
+   },
+   {
+    "esito": "non letto",
+    "link": "https://www.ticketone.it/event/davis-cup-by-generali-final-8-2026-bolognafiere-arena-21357158/",
+    "partite": 1,
+    "date_pagina": [],
+    "finale": "The read operation timed out",
+    "eventi": [
+     "bo 2026-11-28 Coppa Davis – Semifinale 2"
+    ]
+   },
+   {
+    "esito": "non letto",
+    "link": "https://www.ticketone.it/event/davis-cup-by-generali-final-8-2026-bolognafiere-arena-21357159/",
+    "partite": 1,
+    "date_pagina": [],
+    "finale": "The read operation timed out",
+    "eventi": [
+     "bo 2026-11-29 Coppa Davis – Finale"
     ]
    }
   ]
  },
  "cinema": {
-  "link": 202,
+  "link": 201,
   "esiti": {
    "pagina della sala": 17,
-   "non letto": 125,
+   "non letto": 61,
    "vietato": 22,
-   "ok": 37,
-   "titolo assente": 1
+   "ok": 98,
+   "titolo assente": 3
   },
   "casi": [
    {
     "esito": "non letto",
-    "link": "https://www.liveticket.it/evento.aspx?Id=696835\\u0026InstantBuy=1\\u0026CallingPageUrl=http%3a%2f%2fwww.liveticket.it%2fcinemaperlabo",
+    "link": "https://www.liveticket.it/evento.aspx?Id=696835&InstantBuy=1&CallingPageUrl=http%3a%2f%2fwww.liveticket.it%2fcinemaperlabo",
     "film": [
      "Cinema Perla – La donna del ritratto"
     ],
@@ -12689,7 +12894,15 @@
    },
    {
     "esito": "non letto",
-    "link": "https://www.liveticket.it/evento.aspx?Id=709122\\u0026InstantBuy=1\\u0026CallingPageUrl=http%3a%2f%2fwww.liveticket.it%2fcinemaperlabo",
+    "link": "https://www.progettolumiere.it/mexico/",
+    "film": [
+     "Cinema Mexico – Se domani non torno"
+    ],
+    "finale": "HTTP Error 403: Forbidden"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://www.liveticket.it/evento.aspx?Id=709122&InstantBuy=1&CallingPageUrl=http%3a%2f%2fwww.liveticket.it%2fcinemaperlabo",
     "film": [
      "Cinema Perla – Odissea"
     ],
@@ -12697,25 +12910,17 @@
    },
    {
     "esito": "non letto",
-    "link": "https://cervi.cinetecabologna.18tickets.it/film/93866",
+    "link": "https://medica.popupcinema.18tickets.it/film/126636",
     "film": [
-     "Sala Cervi – Digger"
+     "Pop Up Cinema Medica – Wild Horse Nine"
     ],
-    "finale": "Remote end closed connection without response"
-   },
-   {
-    "esito": "titolo assente",
-    "link": "https://arlecchino.cinetecadimilano.18tickets.it/film/120240",
-    "film": [
-     "Cineteca Milano Arlecchino – Barça Zou"
-    ],
-    "finale": ""
+    "finale": "HTTP Error 429: Too Many Requests"
    },
    {
     "esito": "non letto",
-    "link": "https://citylife.spaziocinema.18tickets.it/film/122412",
+    "link": "https://odeon.ccb.18tickets.it/film/124986",
     "film": [
-     "Cinema CityLife Anteo – Calle Málaga"
+     "Cinema Odeon – Custodi della Memoria"
     ],
     "finale": "HTTP Error 429: Too Many Requests"
    },
@@ -12724,46 +12929,6 @@
     "link": "https://odeon.ccb.18tickets.it/film/120864",
     "film": [
      "Cinema Odeon – Il rumore delle cose nuove"
-    ],
-    "finale": "Remote end closed connection without response"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://rialto.ccb.18tickets.it/film/118654",
-    "film": [
-     "Cinema Rialto Studio – Minotaur"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://ariosto.spaziocinema.18tickets.it/film/111952",
-    "film": [
-     "Cinema Ariosto Anteo spazioCinema – Calle Málaga"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://rialto.ccb.18tickets.it/film/118653",
-    "film": [
-     "Cinema Rialto Studio – Wild Horse Nine"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://arlecchino.cinetecadimilano.18tickets.it/film/119343",
-    "film": [
-     "Cineteca Milano Arlecchino – Black Lions – Roman Wolves"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://arlecchino.popupcinema.18tickets.it/film/126669",
-    "film": [
-     "Pop Up Cinema Arlecchino – Il gatto col cappello"
     ],
     "finale": "HTTP Error 429: Too Many Requests"
    },
@@ -12777,129 +12942,9 @@
    },
    {
     "esito": "non letto",
-    "link": "https://europa.ccb.18tickets.it/film/123699",
-    "film": [
-     "Europa Cinema – Shaun, vita da pecora - Operazione Z.U.C.C.A."
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://bristol.popupcinema.18tickets.it/film/126603",
-    "film": [
-     "Pop Up Cinema Bristol – Se domani non torno"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://citylife.spaziocinema.18tickets.it/film/128385",
-    "film": [
-     "Cinema CityLife Anteo – Come rapinare una banca"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://www.progettolumiere.it/mexico/",
-    "film": [
-     "Cinema Mexico – Se domani non torno"
-    ],
-    "finale": "HTTP Error 403: Forbidden"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://ariosto.spaziocinema.18tickets.it/film/123931",
-    "film": [
-     "Cinema Ariosto Anteo spazioCinema – Dio ride"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://arlecchino.popupcinema.18tickets.it/film/122645",
-    "film": [
-     "Pop Up Cinema Arlecchino – It Ends"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://arlecchino.cinetecadimilano.18tickets.it/film/120498",
-    "film": [
-     "Cineteca Milano Arlecchino – El Partido"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
     "link": "https://odeon.ccb.18tickets.it/film/127890",
     "film": [
      "Cinema Odeon – L'essere amato"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://citylife.spaziocinema.18tickets.it/film/123931",
-    "film": [
-     "Cinema CityLife Anteo – Dio ride"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://jolly.popupcinema.18tickets.it/film/126603",
-    "film": [
-     "Pop Up Cinema Jolly – Se domani non torno"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://ariosto.spaziocinema.18tickets.it/film/127233",
-    "film": [
-     "Cinema Ariosto Anteo spazioCinema – Essi vivono"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/127329",
-    "film": [
-     "Anteo Palazzo del Cinema – 45 anni"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://jolly.popupcinema.18tickets.it/film/122643",
-    "film": [
-     "Pop Up Cinema Jolly – Wildwood - I segreti del bosco proibito"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/123006",
-    "film": [
-     "Anteo Palazzo del Cinema – 8 e Mezzo"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://arlecchino.cinetecadimilano.18tickets.it/film/127990",
-    "film": [
-     "Cineteca Milano Arlecchino – Frammenti Terrestri Offerti alla Luce + Normal Planet + the Blessing + Forever.. Forever"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://arlecchino.popupcinema.18tickets.it/film/116538",
-    "film": [
-     "Pop Up Cinema Arlecchino – Primetime"
     ],
     "finale": "HTTP Error 429: Too Many Requests"
    },
@@ -12913,249 +12958,9 @@
    },
    {
     "esito": "non letto",
-    "link": "https://citylife.spaziocinema.18tickets.it/film/127197",
-    "film": [
-     "Cinema CityLife Anteo – George Michael: The Faith Tour"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://ariosto.spaziocinema.18tickets.it/film/128352",
-    "film": [
-     "Cinema Ariosto Anteo spazioCinema – Il canto della foresta"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://jolly.popupcinema.18tickets.it/film/122644",
-    "film": [
-     "Pop Up Cinema Jolly – Wildwood"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/123336",
-    "film": [
-     "Anteo Palazzo del Cinema – Cenere e diamanti"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://modernissimo.cinetecabologna.18tickets.it/film/101687",
-    "film": [
-     "Cinema Modernissimo – Lo svitato"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://arlecchino.cinetecadimilano.18tickets.it/film/58858",
-    "film": [
-     "Cineteca Milano Arlecchino – Ludwig"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://odeon.ccb.18tickets.it/film/964",
-    "film": [
-     "Cinema Odeon – La canzone del mare"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://lumiere.cinetecabologna.18tickets.it/film/105713",
-    "film": [
-     "Cinema Lumière – Look Back"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://citylife.spaziocinema.18tickets.it/film/128254",
-    "film": [
-     "Cinema CityLife Anteo – Godzilla Minus Zero"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://ariosto.spaziocinema.18tickets.it/film/128354",
-    "film": [
-     "Cinema Ariosto Anteo spazioCinema – L'essere amato"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://modernissimo.cinetecabologna.18tickets.it/film/101720",
-    "film": [
-     "Cinema Modernissimo – En el camino"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://arlecchino.cinetecadimilano.18tickets.it/film/118785",
-    "film": [
-     "Cineteca Milano Arlecchino – Play Time - Tempo di divertimento"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/123338",
-    "film": [
-     "Anteo Palazzo del Cinema – Danton"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://odeon.ccb.18tickets.it/film/118650",
-    "film": [
-     "Cinema Odeon – Ragione e sentimento"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://lumiere.cinetecabologna.18tickets.it/film/96935",
-    "film": [
-     "Cinema Lumière – La Gradiva"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://citylife.spaziocinema.18tickets.it/film/125779",
-    "film": [
-     "Cinema CityLife Anteo – Hope"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://ariosto.spaziocinema.18tickets.it/film/117399",
-    "film": [
-     "Cinema Ariosto Anteo spazioCinema – L'estranea"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/115192",
-    "film": [
-     "Anteo Palazzo del Cinema – Digger"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://modernissimo.cinetecabologna.18tickets.it/film/101753",
-    "film": [
-     "Cinema Modernissimo – Fuga in Francia"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://arlecchino.cinetecadimilano.18tickets.it/film/120242",
-    "film": [
-     "Cineteca Milano Arlecchino – Powiedz mi, co czujesz"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://odeon.ccb.18tickets.it/film/118652",
-    "film": [
-     "Cinema Odeon – Un tranquillo funerale di famiglia"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://citylife.spaziocinema.18tickets.it/film/128352",
-    "film": [
-     "Cinema CityLife Anteo – Il canto della foresta"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://ariosto.spaziocinema.18tickets.it/film/125614",
-    "film": [
-     "Cinema Ariosto Anteo spazioCinema – Se domani non torno"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/123931",
-    "film": [
-     "Anteo Palazzo del Cinema – Dio ride"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
     "link": "https://modernissimo.cinetecabologna.18tickets.it/film/4603",
     "film": [
      "Cinema Modernissimo – Apocalypse Now – Final Cut"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://arlecchino.cinetecadimilano.18tickets.it/film/120466",
-    "film": [
-     "Cineteca Milano Arlecchino – Rocce rosse"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://odeon.ccb.18tickets.it/film/110302",
-    "film": [
-     "Cinema Odeon – Your Name."
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://citylife.spaziocinema.18tickets.it/film/124076",
-    "film": [
-     "Cinema CityLife Anteo – Il gatto col cappello"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://ariosto.spaziocinema.18tickets.it/film/124722",
-    "film": [
-     "Cinema Ariosto Anteo spazioCinema – Va' Sentiero"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/125481",
-    "film": [
-     "Anteo Palazzo del Cinema – Elon Musk Uncovered: Das Tesla-Experiment"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://arlecchino.cinetecadimilano.18tickets.it/film/118848",
-    "film": [
-     "Cineteca Milano Arlecchino – Una Giornata Particolare"
     ],
     "finale": "HTTP Error 429: Too Many Requests"
    },
@@ -13169,89 +12974,9 @@
    },
    {
     "esito": "non letto",
-    "link": "https://noise.ilcinemino.18tickets.it/film/157604",
-    "film": [
-     "NOISE – Il Cinemino – Minotaur"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://citylife.spaziocinema.18tickets.it/film/128288",
-    "film": [
-     "Cinema CityLife Anteo – Il rumore delle cose nuove"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://ariosto.spaziocinema.18tickets.it/film/119643",
-    "film": [
-     "Cinema Ariosto Anteo spazioCinema – Zustìssia"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://cinema.nosadella.18tickets.it/film/94922",
-    "film": [
-     "Cinema Nuovo Nosadella – Dio ride"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
     "link": "https://modernissimo.cinetecabologna.18tickets.it/film/101786",
     "film": [
      "Cinema Modernissimo – Rufus – Il draghetto marino che non sapeva nuotare"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://arlecchino.cinetecadimilano.18tickets.it/film/118815",
-    "film": [
-     "Cineteca Milano Arlecchino – Una settimana"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/119838",
-    "film": [
-     "Anteo Palazzo del Cinema – Fatherland"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://noise.ilcinemino.18tickets.it/film/164406",
-    "film": [
-     "NOISE – Il Cinemino – Wildwood - I segreti del bosco proibito"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://citylife.spaziocinema.18tickets.it/film/119673",
-    "film": [
-     "Cinema CityLife Anteo – Je so’ pazzo"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://cinema.nosadella.18tickets.it/film/97166",
-    "film": [
-     "Cinema Nuovo Nosadella – Wild Horse Nine"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/126739",
-    "film": [
-     "Anteo Palazzo del Cinema – Fjord"
     ],
     "finale": "HTTP Error 429: Too Many Requests"
    },
@@ -13265,49 +12990,9 @@
    },
    {
     "esito": "non letto",
-    "link": "https://arlecchino.cinetecadimilano.18tickets.it/film/120533",
-    "film": [
-     "Cineteca Milano Arlecchino – Youth - Ritorno a casa"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://citylife.spaziocinema.18tickets.it/film/117399",
-    "film": [
-     "Cinema CityLife Anteo – L'estranea"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/123303",
-    "film": [
-     "Anteo Palazzo del Cinema – Generazione X"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
     "link": "https://modernissimo.cinetecabologna.18tickets.it/film/15738",
     "film": [
      "Cinema Modernissimo – Non aprite quella porta"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://citylife.spaziocinema.18tickets.it/film/127956",
-    "film": [
-     "Cinema CityLife Anteo – La storia infinita"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/127197",
-    "film": [
-     "Anteo Palazzo del Cinema – George Michael: The Faith Tour"
     ],
     "finale": "HTTP Error 429: Too Many Requests"
    },
@@ -13321,41 +13006,9 @@
    },
    {
     "esito": "non letto",
-    "link": "https://citylife.spaziocinema.18tickets.it/film/125943",
-    "film": [
-     "Cinema CityLife Anteo – Minnie e Moskowitz"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/128352",
-    "film": [
-     "Anteo Palazzo del Cinema – Il canto della foresta"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
     "link": "https://modernissimo.cinetecabologna.18tickets.it/film/16209",
     "film": [
      "Cinema Modernissimo – La quercia e i suoi abitanti"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://citylife.spaziocinema.18tickets.it/film/124029",
-    "film": [
-     "Cinema CityLife Anteo – Nel silenzio delle stanze"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/128288",
-    "film": [
-     "Anteo Palazzo del Cinema – Il rumore delle cose nuove"
     ],
     "finale": "HTTP Error 429: Too Many Requests"
    },
@@ -13369,25 +13022,129 @@
    },
    {
     "esito": "non letto",
+    "link": "https://cervi.cinetecabologna.18tickets.it/film/96935",
+    "film": [
+     "Sala Cervi – La Gradiva"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://cervi.cinetecabologna.18tickets.it/film/103271",
+    "film": [
+     "Sala Cervi – Minotaur"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://cervi.cinetecabologna.18tickets.it/film/92249",
+    "film": [
+     "Sala Cervi – Fatherland"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "titolo assente",
+    "link": "https://ariosto.spaziocinema.18tickets.it/film/119643",
+    "film": [
+     "Cinema Ariosto Anteo spazioCinema – Zustìssia"
+    ],
+    "finale": ""
+   },
+   {
+    "esito": "titolo assente",
+    "link": "https://arlecchino.cinetecadimilano.18tickets.it/film/120240",
+    "film": [
+     "Cineteca Milano Arlecchino – Barça Zou"
+    ],
+    "finale": ""
+   },
+   {
+    "esito": "non letto",
+    "link": "https://arlecchino.cinetecadimilano.18tickets.it/film/127990",
+    "film": [
+     "Cineteca Milano Arlecchino – Frammenti Terrestri Offerti alla Luce + Normal Planet + the Blessing + Forever.. Forever"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://arlecchino.cinetecadimilano.18tickets.it/film/58858",
+    "film": [
+     "Cineteca Milano Arlecchino – Ludwig"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://arlecchino.cinetecadimilano.18tickets.it/film/118785",
+    "film": [
+     "Cineteca Milano Arlecchino – Play Time - Tempo di divertimento"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://citylife.spaziocinema.18tickets.it/film/124076",
+    "film": [
+     "Cinema CityLife Anteo – Il gatto col cappello"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://citylife.spaziocinema.18tickets.it/film/128288",
+    "film": [
+     "Cinema CityLife Anteo – Il rumore delle cose nuove"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://citylife.spaziocinema.18tickets.it/film/119673",
+    "film": [
+     "Cinema CityLife Anteo – Je so’ pazzo"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://citylife.spaziocinema.18tickets.it/film/117399",
+    "film": [
+     "Cinema CityLife Anteo – L'estranea"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://citylife.spaziocinema.18tickets.it/film/127956",
+    "film": [
+     "Cinema CityLife Anteo – La storia infinita"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://citylife.spaziocinema.18tickets.it/film/125943",
+    "film": [
+     "Cinema CityLife Anteo – Minnie e Moskowitz"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://citylife.spaziocinema.18tickets.it/film/124029",
+    "film": [
+     "Cinema CityLife Anteo – Nel silenzio delle stanze"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
     "link": "https://citylife.spaziocinema.18tickets.it/film/125580",
     "film": [
      "Cinema CityLife Anteo – Nessun dolore"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/119707",
-    "film": [
-     "Anteo Palazzo del Cinema – Je so’ pazzo"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://modernissimo.cinetecabologna.18tickets.it/film/9394",
-    "film": [
-     "Cinema Modernissimo – La doppia vita di Veronica"
     ],
     "finale": "HTTP Error 429: Too Many Requests"
    },
@@ -13401,41 +13158,9 @@
    },
    {
     "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/128354",
-    "film": [
-     "Anteo Palazzo del Cinema – L'essere amato"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://modernissimo.cinetecabologna.18tickets.it/film/105812",
-    "film": [
-     "Cinema Modernissimo – Fare cinema a Bologna e in Emilia-Romagna / Visioni Ambientali"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
     "link": "https://citylife.spaziocinema.18tickets.it/film/121884",
     "film": [
      "Cinema CityLife Anteo – Ragione e sentimento"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/117399",
-    "film": [
-     "Anteo Palazzo del Cinema – L'estranea"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://modernissimo.cinetecabologna.18tickets.it/film/106472",
-    "film": [
-     "Cinema Modernissimo – Visioni Ambientali"
     ],
     "finale": "HTTP Error 429: Too Many Requests"
    },
@@ -13449,41 +13174,9 @@
    },
    {
     "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/127692",
-    "film": [
-     "Anteo Palazzo del Cinema – La ballata del re delle api"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://modernissimo.cinetecabologna.18tickets.it/film/101952",
-    "film": [
-     "Cinema Modernissimo – Mustang"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
     "link": "https://citylife.spaziocinema.18tickets.it/film/125614",
     "film": [
      "Cinema CityLife Anteo – Se domani non torno"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/128715",
-    "film": [
-     "Anteo Palazzo del Cinema – La Gradiva"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://modernissimo.cinetecabologna.18tickets.it/film/101159",
-    "film": [
-     "Cinema Modernissimo – Rosemary’s Baby"
     ],
     "finale": "HTTP Error 429: Too Many Requests"
    },
@@ -13497,41 +13190,9 @@
    },
    {
     "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/125152",
-    "film": [
-     "Anteo Palazzo del Cinema – La Linea Dell'Orizzonte - Su Tullio Pericoli"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://modernissimo.cinetecabologna.18tickets.it/film/105912",
-    "film": [
-     "Cinema Modernissimo – Fare cinema a Bologna e in Emilia-Romagna / Visioni Italiane"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
     "link": "https://citylife.spaziocinema.18tickets.it/film/123171",
     "film": [
      "Cinema CityLife Anteo – Trainspotting"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/123337",
-    "film": [
-     "Anteo Palazzo del Cinema – Le signorine di Wilko"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://modernissimo.cinetecabologna.18tickets.it/film/101954",
-    "film": [
-     "Cinema Modernissimo – Le ragazzine stanno perdendo il controllo. La società le teme. La fine è azzurra."
     ],
     "finale": "HTTP Error 429: Too Many Requests"
    },
@@ -13545,41 +13206,9 @@
    },
    {
     "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/128683",
-    "film": [
-     "Anteo Palazzo del Cinema – Look Back"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://modernissimo.cinetecabologna.18tickets.it/film/105977",
-    "film": [
-     "Cinema Modernissimo – Visioni Animate / Visioni Italiane"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
     "link": "https://citylife.spaziocinema.18tickets.it/film/124591",
     "film": [
      "Cinema CityLife Anteo – Un weekend artificiale"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/126670",
-    "film": [
-     "Anteo Palazzo del Cinema – Minnie e Moskowitz"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://modernissimo.cinetecabologna.18tickets.it/film/106010",
-    "film": [
-     "Cinema Modernissimo – Fare cinema a Bologna e in Emilia-Romagna / Visioni Doc"
     ],
     "finale": "HTTP Error 429: Too Many Requests"
    },
@@ -13593,22 +13222,6 @@
    },
    {
     "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/123998",
-    "film": [
-     "Anteo Palazzo del Cinema – Minotaur"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
-    "link": "https://modernissimo.cinetecabologna.18tickets.it/film/101956",
-    "film": [
-     "Cinema Modernissimo – Brianza"
-    ],
-    "finale": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "esito": "non letto",
     "link": "https://citylife.spaziocinema.18tickets.it/film/121655",
     "film": [
      "Cinema CityLife Anteo – Wildwood - I segreti del bosco proibito"
@@ -13617,17 +13230,97 @@
    },
    {
     "esito": "non letto",
-    "link": "https://anteo.spaziocinema.18tickets.it/film/126966",
+    "link": "https://anteo.spaziocinema.18tickets.it/film/128288",
     "film": [
-     "Anteo Palazzo del Cinema – Mustang"
+     "Anteo Palazzo del Cinema – Il rumore delle cose nuove"
     ],
     "finale": "HTTP Error 429: Too Many Requests"
    },
    {
     "esito": "non letto",
-    "link": "https://modernissimo.cinetecabologna.18tickets.it/film/106043",
+    "link": "https://anteo.spaziocinema.18tickets.it/film/119707",
     "film": [
-     "Cinema Modernissimo – Visioni Animate / Visioni Italiane / Visioni Doc"
+     "Anteo Palazzo del Cinema – Je so’ pazzo"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://anteo.spaziocinema.18tickets.it/film/128354",
+    "film": [
+     "Anteo Palazzo del Cinema – L'essere amato"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://anteo.spaziocinema.18tickets.it/film/117399",
+    "film": [
+     "Anteo Palazzo del Cinema – L'estranea"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://anteo.spaziocinema.18tickets.it/film/127692",
+    "film": [
+     "Anteo Palazzo del Cinema – La ballata del re delle api"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://anteo.spaziocinema.18tickets.it/film/128715",
+    "film": [
+     "Anteo Palazzo del Cinema – La Gradiva"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://anteo.spaziocinema.18tickets.it/film/125152",
+    "film": [
+     "Anteo Palazzo del Cinema – La Linea Dell'Orizzonte - Su Tullio Pericoli"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://anteo.spaziocinema.18tickets.it/film/123337",
+    "film": [
+     "Anteo Palazzo del Cinema – Le signorine di Wilko"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://anteo.spaziocinema.18tickets.it/film/128683",
+    "film": [
+     "Anteo Palazzo del Cinema – Look Back"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://anteo.spaziocinema.18tickets.it/film/126670",
+    "film": [
+     "Anteo Palazzo del Cinema – Minnie e Moskowitz"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://anteo.spaziocinema.18tickets.it/film/123998",
+    "film": [
+     "Anteo Palazzo del Cinema – Minotaur"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://anteo.spaziocinema.18tickets.it/film/126966",
+    "film": [
+     "Anteo Palazzo del Cinema – Mustang"
     ],
     "finale": "HTTP Error 429: Too Many Requests"
    },
@@ -13680,10 +13373,26 @@
     "finale": "HTTP Error 429: Too Many Requests"
    },
    {
-    "esito": "non letto",
+    "esito": "titolo assente",
     "link": "https://anteo.spaziocinema.18tickets.it/film/119643",
     "film": [
      "Anteo Palazzo del Cinema – Zustìssia"
+    ],
+    "finale": ""
+   },
+   {
+    "esito": "non letto",
+    "link": "https://noise.ilcinemino.18tickets.it/film/157604",
+    "film": [
+     "NOISE – Il Cinemino – Minotaur"
+    ],
+    "finale": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "esito": "non letto",
+    "link": "https://noise.ilcinemino.18tickets.it/film/164406",
+    "film": [
+     "NOISE – Il Cinemino – Wildwood - I segreti del bosco proibito"
     ],
     "finale": "HTTP Error 429: Too Many Requests"
    }
