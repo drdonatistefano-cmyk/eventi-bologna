@@ -1,13 +1,13 @@
 {
- "generato": "2026-11-11T11:39:20+00:00",
+ "generato": "2026-11-11T12:00:50+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-11",
  "visite_totali": 236,
- "totale_goatcounter": 680,
- "eventi_totali": 444,
+ "totale_goatcounter": 681,
+ "eventi_totali": 445,
  "eventi_per_tipo": {
   "filtri": 132,
-  "cambio scheda": 75,
+  "cambio scheda": 76,
   "schede aperte": 71,
   "cambio vista": 41,
   "luoghi aperti": 41,
@@ -49,7 +49,7 @@
    "dal": "2026-11-11",
    "al": "2026-11-11",
    "visite": 3,
-   "cambio scheda": 1,
+   "cambio scheda": 2,
    "cambio vista": 0,
    "apri filtri": 0,
    "altro": 1,
@@ -187,7 +187,7 @@
    "clic mostre (scheda o sito)": 0
   },
   "2026-11-11": {
-   "cambio scheda": 1,
+   "cambio scheda": 2,
    "cambio vista": 0,
    "apri filtri": 0,
    "altro": 1,
@@ -241,7 +241,7 @@
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 494
+   "conteggio": 495
   },
   {
    "origine": "achevents.com/milano",
@@ -301,7 +301,7 @@
   {
    "path": "scheda/spettacoli",
    "titolo": "Cambio scheda",
-   "conteggio": 15,
+   "conteggio": 16,
    "tipo": "cambio scheda"
   },
   {
