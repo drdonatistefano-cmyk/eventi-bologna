@@ -1,19 +1,19 @@
 {
- "generato": "2026-11-11T07:47:49+00:00",
+ "generato": "2026-11-11T08:40:10+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-11",
- "visite_totali": 234,
- "totale_goatcounter": 672,
- "eventi_totali": 438,
+ "visite_totali": 236,
+ "totale_goatcounter": 680,
+ "eventi_totali": 444,
  "eventi_per_tipo": {
   "filtri": 132,
-  "cambio scheda": 74,
-  "schede aperte": 69,
+  "cambio scheda": 75,
+  "schede aperte": 71,
   "cambio vista": 41,
-  "luoghi aperti": 39,
+  "luoghi aperti": 41,
   "apri filtri": 19,
   "clic biglietti": 15,
-  "altro": 12,
+  "altro": 13,
   "clic info spettacoli": 10,
   "azzera filtri": 8,
   "mostra altri": 6,
@@ -31,8 +31,8 @@
    "cambio scheda": 74,
    "cambio vista": 41,
    "apri filtri": 19,
-   "filtri": 132,
    "altro": 12,
+   "filtri": 132,
    "luoghi aperti": 39,
    "azzera filtri": 8,
    "mostra altri": 6,
@@ -48,16 +48,16 @@
    "settimana": 2,
    "dal": "2026-11-11",
    "al": "2026-11-11",
-   "visite": 1,
-   "cambio scheda": 0,
+   "visite": 3,
+   "cambio scheda": 1,
    "cambio vista": 0,
    "apri filtri": 0,
+   "altro": 1,
    "filtri": 0,
-   "altro": 0,
-   "luoghi aperti": 0,
+   "luoghi aperti": 2,
    "azzera filtri": 0,
    "mostra altri": 0,
-   "schede aperte": 0,
+   "schede aperte": 2,
    "clic biglietti": 0,
    "condivisioni": 0,
    "clic info spettacoli": 0,
@@ -71,8 +71,8 @@
    "cambio scheda": 6,
    "cambio vista": 5,
    "apri filtri": 2,
-   "filtri": 8,
    "altro": 0,
+   "filtri": 8,
    "luoghi aperti": 5,
    "azzera filtri": 1,
    "mostra altri": 2,
@@ -88,8 +88,8 @@
    "cambio scheda": 6,
    "cambio vista": 4,
    "apri filtri": 4,
-   "filtri": 14,
    "altro": 0,
+   "filtri": 14,
    "luoghi aperti": 4,
    "azzera filtri": 1,
    "mostra altri": 1,
@@ -105,8 +105,8 @@
    "cambio scheda": 27,
    "cambio vista": 10,
    "apri filtri": 6,
-   "filtri": 48,
    "altro": 0,
+   "filtri": 48,
    "luoghi aperti": 1,
    "azzera filtri": 0,
    "mostra altri": 1,
@@ -122,8 +122,8 @@
    "cambio scheda": 8,
    "cambio vista": 5,
    "apri filtri": 3,
-   "filtri": 21,
    "altro": 0,
+   "filtri": 21,
    "luoghi aperti": 8,
    "azzera filtri": 2,
    "mostra altri": 0,
@@ -139,8 +139,8 @@
    "cambio scheda": 12,
    "cambio vista": 8,
    "apri filtri": 2,
-   "filtri": 16,
    "altro": 2,
+   "filtri": 16,
    "luoghi aperti": 8,
    "azzera filtri": 3,
    "mostra altri": 0,
@@ -156,8 +156,8 @@
    "cambio scheda": 7,
    "cambio vista": 3,
    "apri filtri": 0,
-   "filtri": 15,
    "altro": 4,
+   "filtri": 15,
    "luoghi aperti": 5,
    "azzera filtri": 1,
    "mostra altri": 1,
@@ -173,8 +173,8 @@
    "cambio scheda": 8,
    "cambio vista": 6,
    "apri filtri": 2,
-   "filtri": 10,
    "altro": 6,
+   "filtri": 10,
    "luoghi aperti": 8,
    "azzera filtri": 0,
    "mostra altri": 1,
@@ -187,15 +187,15 @@
    "clic mostre (scheda o sito)": 0
   },
   "2026-11-11": {
-   "cambio scheda": 0,
+   "cambio scheda": 1,
    "cambio vista": 0,
    "apri filtri": 0,
+   "altro": 1,
    "filtri": 0,
-   "altro": 0,
-   "luoghi aperti": 0,
+   "luoghi aperti": 2,
    "azzera filtri": 0,
    "mostra altri": 0,
-   "schede aperte": 0,
+   "schede aperte": 2,
    "clic biglietti": 0,
    "condivisioni": 0,
    "clic info spettacoli": 0,
@@ -235,13 +235,13 @@
   },
   {
    "giorno": "2026-11-11",
-   "visite": 1
+   "visite": 3
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 486
+   "conteggio": 494
   },
   {
    "origine": "achevents.com/milano",
@@ -280,12 +280,12 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 119
+   "conteggio": 120
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 67
+   "conteggio": 68
   },
   {
    "path": "/eventi-bologna",
@@ -347,6 +347,12 @@
    "tipo": "cambio vista"
   },
   {
+   "path": "guide/vai-places",
+   "titolo": "Vai a Ach's Places Guide",
+   "conteggio": 7,
+   "tipo": "altro"
+  },
+  {
    "path": "milano/spettacoli/apri-filtri",
    "titolo": "Apertura filtri",
    "conteggio": 7,
@@ -387,12 +393,6 @@
    "titolo": "Filtro",
    "conteggio": 7,
    "tipo": "filtri"
-  },
-  {
-   "path": "guide/vai-places",
-   "titolo": "Vai a Ach's Places Guide",
-   "conteggio": 6,
-   "tipo": "altro"
   },
   {
    "path": "guide/vai-dinners",
@@ -513,6 +513,12 @@
    "titolo": "Filtro",
    "conteggio": 3,
    "tipo": "filtri"
+  },
+  {
+   "path": "scheda/incontri",
+   "titolo": "Cambio scheda",
+   "conteggio": 2,
+   "tipo": "cambio scheda"
   },
   {
    "path": "milano/cinema/dettaglio/Dio ride",
@@ -671,6 +677,30 @@
    "tipo": "cambio vista"
   },
   {
+   "path": "spettacoli/luogo/Oratorio San Filippo Neri",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/dettaglio/Scritture della complessità",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/luogo/BACH Art Centre",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/dettaglio/BACH Performing Hub 2026",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
    "path": "spettacoli/dettaglio/Il respiro dei viventi",
    "titolo": "Apertura scheda",
    "conteggio": 1,
@@ -735,12 +765,6 @@
    "titolo": "Apertura scheda",
    "conteggio": 1,
    "tipo": "schede aperte"
-  },
-  {
-   "path": "scheda/incontri",
-   "titolo": "Cambio scheda",
-   "conteggio": 1,
-   "tipo": "cambio scheda"
   },
   {
    "path": "milano/spettacoli/luogo/MUDEC - Museo delle Culture - Spazio delle Culture “Khaled al-Asaad”",
@@ -1449,30 +1473,6 @@
    "titolo": "Apertura programma del luogo",
    "conteggio": 1,
    "tipo": "luoghi aperti"
-  },
-  {
-   "path": "cinema/dettaglio/Un tranquillo funerale di famiglia",
-   "titolo": "Apertura scheda",
-   "conteggio": 1,
-   "tipo": "schede aperte"
-  },
-  {
-   "path": "cinema/luogo/Cinema Nuovo Nosadella",
-   "titolo": "Apertura programma del luogo",
-   "conteggio": 1,
-   "tipo": "luoghi aperti"
-  },
-  {
-   "path": "cinema/dettaglio/Dio ride",
-   "titolo": "Apertura scheda",
-   "conteggio": 1,
-   "tipo": "schede aperte"
-  },
-  {
-   "path": "spettacoli/filtro/Quando/oggi",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
   }
  ]
 }
