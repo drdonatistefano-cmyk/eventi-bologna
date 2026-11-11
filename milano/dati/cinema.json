@@ -2084,34 +2084,13 @@
      "biglietti": "https://citylife.spaziocinema.18tickets.it/film/128385"
     },
     {
-     "titolo": "Digger",
-     "orari": [
-      "10:00"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "10:00"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Drammatico, Commedia",
-     "regia": "Alejandro G. Iñárritu",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/115452",
-     "interpreti": "Tom Cruise, Riz Ahmed, John Goodman e Sandra Hüller",
-     "paese": "USA",
-     "durata": 129,
-     "anno": 2026
-    },
-    {
      "titolo": "Dio ride",
      "orari": [
-      "12:30",
       "14:50",
       "19:00"
      ],
      "giorni": {
       "2026-11-11": [
-       "12:30",
        "14:50",
        "19:00"
       ],
@@ -2317,12 +2296,10 @@
     {
      "titolo": "Je so’ pazzo",
      "orari": [
-      "10:30",
       "21:50"
      ],
      "giorni": {
       "2026-11-11": [
-       "10:30",
        "21:50"
       ]
      },
@@ -2338,13 +2315,11 @@
     {
      "titolo": "L'estranea",
      "orari": [
-      "10:45",
       "14:45",
       "19:30"
      ],
      "giorni": {
       "2026-11-11": [
-       "10:45",
        "14:45",
        "19:30"
       ],
@@ -2403,24 +2378,6 @@
      "anno": 1971
     },
     {
-     "titolo": "NAZA",
-     "orari": [
-      "13:00"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "13:00"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Documentario",
-     "regia": "Yuval Abraham e Rachel Szor",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/111522",
-     "paese": "Gran Bretagna",
-     "durata": 80,
-     "anno": 2026
-    },
-    {
      "titolo": "Nel silenzio delle stanze",
      "orari": [],
      "giorni": {
@@ -2449,7 +2406,6 @@
     {
      "titolo": "Nessun dolore",
      "orari": [
-      "13:00",
       "15:30",
       "17:30",
       "19:30",
@@ -2457,7 +2413,6 @@
      ],
      "giorni": {
       "2026-11-11": [
-       "13:00",
        "15:30",
        "17:30",
        "19:30",
@@ -2475,13 +2430,8 @@
     },
     {
      "titolo": "Primetime",
-     "orari": [
-      "12:45"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-11": [
-       "12:45"
-      ],
       "2026-11-12": [
        "12:45"
       ],
@@ -2577,8 +2527,6 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "10:30",
-      "12:50",
       "15:00",
       "17:10",
       "19:21",
@@ -2586,8 +2534,6 @@
      ],
      "giorni": {
       "2026-11-11": [
-       "10:30",
-       "12:50",
        "15:00",
        "17:10",
        "19:21",
@@ -2625,12 +2571,10 @@
     {
      "titolo": "Shaun, vita da pecora - Operazione Z.U.C.C.A.",
      "orari": [
-      "10:30",
       "17:05"
      ],
      "giorni": {
       "2026-11-11": [
-       "10:30",
        "17:05"
       ],
       "2026-11-14": [
@@ -2648,25 +2592,6 @@
      "anno": 2026,
      "paese": "Regno Unito",
      "durata": 91
-    },
-    {
-     "titolo": "The Invite - Il piacere è tutto nostro",
-     "orari": [
-      "10:30"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "10:30"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Commedia, Drammatico",
-     "regia": "Olivia Wilde",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/105186",
-     "interpreti": "Seth Rogen, Olivia Wilde e Penelope Cruz",
-     "durata": 108,
-     "anno": 2026,
-     "paese": "USA"
     },
     {
      "titolo": "Trainspotting",
@@ -2764,14 +2689,12 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "12:40",
       "17:00",
       "19:30",
       "21:45"
      ],
      "giorni": {
       "2026-11-11": [
-       "12:40",
        "17:00",
        "19:30",
        "21:45"
@@ -2800,10 +2723,10 @@
        "19:00"
       ]
      },
-     "versione": "Versione originale (solo ore 12:30, 12:40, 12:45, 19:00, 19:15, 19:30)",
+     "versione": "Versione originale (solo ore 12:30, 12:45, 19:00, 19:15, 19:30)",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/125679",
+     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/125680",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
      "anno": 2026,
      "paese": "Regno Unito",
@@ -2812,12 +2735,10 @@
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
-      "12:30",
       "16:50"
      ],
      "giorni": {
       "2026-11-11": [
-       "12:30",
        "16:50"
       ],
       "2026-11-12": [
@@ -2833,33 +2754,14 @@
        "12:00"
       ]
      },
-     "versione": "Versione originale (solo ore 12:00, 12:20, 12:30)",
+     "versione": "Versione originale (solo ore 12:00, 12:20)",
      "genere": "Animazione, Avventura, Drammatico",
      "regia": "Travis Knight",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/121691",
+     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/121655",
      "interpreti": "Peyton Elizabeth Lee, Jacob Tremblay e Carey Mulligan",
      "anno": 2026,
      "paese": "USA",
      "durata": 139
-    },
-    {
-     "titolo": "Zustìssia",
-     "orari": [
-      "10:30"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "10:30"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Francesco Piras",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/119643",
-     "anno": 2026,
-     "interpreti": "Michele Riondino, Fabrizio Ferracane, Paola Giannini e Jacopo Cullin",
-     "paese": "Italia",
-     "durata": 111
     }
    ],
    "auto": true,
@@ -3518,19 +3420,19 @@
        "21:00"
       ],
       "2026-11-12": [
-       "15:00",
+       "15:15",
        "21:00"
       ],
       "2026-11-13": [
-       "15:00",
+       "15:15",
        "21:00"
       ],
       "2026-11-14": [
-       "15:00",
+       "15:15",
        "21:00"
       ],
       "2026-11-15": [
-       "15:00",
+       "15:15",
        "21:00"
       ]
      },
@@ -4716,7 +4618,6 @@
      "titolo": "Il gatto col cappello",
      "orari": [
       "14:20",
-      "15:00",
       "15:30",
       "17:00",
       "19:30"
@@ -4724,7 +4625,6 @@
      "giorni": {
       "2026-11-11": [
        "14:20",
-       "15:00",
        "15:30",
        "17:00",
        "19:30"
@@ -6040,25 +5940,6 @@
      "biglietti": "https://anteo.spaziocinema.18tickets.it/film/123006"
     },
     {
-     "titolo": "Caro mondo crudele",
-     "orari": [
-      "10:30"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "10:30"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Niccolò Falsetti",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/120598",
-     "interpreti": "Aurora Malianni, Francesco Turbanti, Petra Valentini e Guglielmo Favilla",
-     "durata": 105,
-     "anno": 2026,
-     "paese": "Italia"
-    },
-    {
      "titolo": "Cenere e diamanti",
      "orari": [],
      "giorni": {
@@ -6087,12 +5968,10 @@
     {
      "titolo": "Digger",
      "orari": [
-      "10:00",
       "21:30"
      ],
      "giorni": {
       "2026-11-11": [
-       "10:00",
        "21:30"
       ]
      },
@@ -6108,7 +5987,6 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "10:00",
       "14:30",
       "16:45",
       "19:15",
@@ -6117,7 +5995,6 @@
      ],
      "giorni": {
       "2026-11-11": [
-       "10:00",
        "14:30",
        "16:45",
        "19:15",
@@ -6173,16 +6050,12 @@
     {
      "titolo": "Fatherland",
      "orari": [
-      "10:30",
-      "12:45",
       "15:15",
       "17:00",
       "19:30"
      ],
      "giorni": {
       "2026-11-11": [
-       "10:30",
-       "12:45",
        "15:15",
        "17:00",
        "19:30"
@@ -6209,7 +6082,7 @@
      "versione": "Versione originale (solo ore 15:15, 19:30, 20:00)",
      "genere": "Drammatico",
      "regia": "Pawel Pawlikowski",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/126538",
+     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/119838",
      "interpreti": "Sandra Hüller, Hanns Zischler, August Diehl e Devid Striesow",
      "durata": 82,
      "anno": 2026,
@@ -6334,13 +6207,11 @@
     {
      "titolo": "Je so’ pazzo",
      "orari": [
-      "12:40",
       "17:15",
       "21:45"
      ],
      "giorni": {
       "2026-11-11": [
-       "12:40",
        "17:15",
        "21:45"
       ],
@@ -6506,9 +6377,9 @@
      "genere": "Documentario",
      "regia": "Federico Frascherelli",
      "biglietti": "https://anteo.spaziocinema.18tickets.it/film/125152",
-     "paese": "Italia",
      "durata": 67,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "Italia"
     },
     {
      "titolo": "Le signorine di Wilko",
@@ -6568,12 +6439,10 @@
     {
      "titolo": "Minnie e Moskowitz",
      "orari": [
-      "12:40",
       "19:10"
      ],
      "giorni": {
       "2026-11-11": [
-       "12:40",
        "19:10"
       ]
      },
@@ -6589,16 +6458,12 @@
     {
      "titolo": "Minotaur",
      "orari": [
-      "10:00",
-      "12:30",
       "14:45",
       "19:00",
       "21:30"
      ],
      "giorni": {
       "2026-11-11": [
-       "10:00",
-       "12:30",
        "14:45",
        "19:00",
        "21:30"
@@ -6682,13 +6547,11 @@
     {
      "titolo": "Nel silenzio delle stanze",
      "orari": [
-      "12:40",
       "15:15",
       "17:00"
      ],
      "giorni": {
       "2026-11-11": [
-       "12:40",
        "15:15",
        "17:00"
       ],
@@ -6702,10 +6565,10 @@
        "12:00"
       ]
      },
-     "versione": "Versione originale (solo ore 12:40, 17:00)",
+     "versione": "Versione originale (solo ore 17:00)",
      "genere": "Drammatico",
      "regia": "Jérôme Bonnell",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/124030",
+     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/124029",
      "interpreti": "Swann Arlaud, Louise Chevillotte, Emmanuelle Devos e Galatéa Bellugi",
      "durata": 103,
      "anno": 2025,
@@ -6714,13 +6577,11 @@
     {
      "titolo": "Primetime",
      "orari": [
-      "13:00",
       "14:30",
       "21:30"
      ],
      "giorni": {
       "2026-11-11": [
-       "13:00",
        "14:30",
        "21:30"
       ],
@@ -6737,10 +6598,10 @@
        "21:45"
       ]
      },
-     "versione": "Versione originale (solo ore 13:00, 21:30, 21:45)",
+     "versione": "Versione originale (solo ore 21:30, 21:45)",
      "genere": "Drammatico",
      "regia": "Drammatico e USA e 2026",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/119642",
+     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/119640",
      "interpreti": "Robert Pattinson, Merritt Wever, Skyler Gisondo e Matthew Maher",
      "durata": 110,
      "anno": 2026,
@@ -6749,8 +6610,6 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "10:30",
-      "12:45",
       "15:00",
       "17:10",
       "19:30",
@@ -6758,8 +6617,6 @@
      ],
      "giorni": {
       "2026-11-11": [
-       "10:30",
-       "12:45",
        "15:00",
        "17:10",
        "19:30",
@@ -6810,8 +6667,6 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "10:00",
-      "12:15",
       "15:00",
       "16:45",
       "19:15",
@@ -6819,8 +6674,6 @@
      ],
      "giorni": {
       "2026-11-11": [
-       "10:00",
-       "12:15",
        "15:00",
        "16:45",
        "19:15",
@@ -6863,7 +6716,7 @@
        "21:45"
       ]
      },
-     "versione": "Versione originale (solo ore 10:00, 12:15, 12:30, 12:45, 15:00, 17:00, 17:15, 17:20, 18:30, 19:15, 20:30, 21:00, 21:30, 21:45)",
+     "versione": "Versione originale (solo ore 12:15, 12:30, 12:45, 15:00, 17:00, 17:15, 17:20, 18:30, 19:15, 20:30, 21:00, 21:30, 21:45)",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "biglietti": "https://anteo.spaziocinema.18tickets.it/film/125679",
@@ -6925,13 +6778,8 @@
     },
     {
      "titolo": "Ferine",
-     "orari": [
-      "13:10"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-11": [
-       "13:10"
-      ],
       "2026-11-12": [
        "21:30"
       ]
@@ -7041,13 +6889,8 @@
     },
     {
      "titolo": "Minotaur",
-     "orari": [
-      "10:40"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-11": [
-       "10:40"
-      ],
       "2026-11-13": [
        "12:30"
       ],
@@ -7341,8 +7184,25 @@
      "regia": "Alejandro G. Iñárritu",
      "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/155228",
      "interpreti": "Tom Cruise, Riz Ahmed, John Goodman e Sandra Hüller",
-     "paese": "USA",
      "durata": 129,
+     "anno": 2026,
+     "paese": "USA"
+    },
+    {
+     "titolo": "Je so’ pazzo",
+     "orari": [],
+     "giorni": {
+      "2026-11-12": [
+       "15:00"
+      ]
+     },
+     "versione": "",
+     "genere": "Biografico",
+     "regia": "Nicola Prosatore",
+     "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/161234",
+     "interpreti": "Massimiliano Caiazzo, Mariasole Pollio, Giovanni Ludeno e Giuseppe Brunetti",
+     "paese": "Italia",
+     "durata": 105,
      "anno": 2026
     },
     {
@@ -7358,8 +7218,59 @@
      "regia": "Andrey Zvyagintsev",
      "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/157604",
      "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
-     "paese": "Francia",
      "durata": 135,
+     "anno": 2026,
+     "paese": "Francia"
+    },
+    {
+     "titolo": "Nel silenzio delle stanze",
+     "orari": [],
+     "giorni": {
+      "2026-11-12": [
+       "17:00"
+      ]
+     },
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Jérôme Bonnell",
+     "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/161465",
+     "interpreti": "Swann Arlaud, Louise Chevillotte, Emmanuelle Devos e Galatéa Bellugi",
+     "paese": "Francia",
+     "durata": 103,
+     "anno": 2025
+    },
+    {
+     "titolo": "Ragione e sentimento",
+     "orari": [],
+     "giorni": {
+      "2026-11-12": [
+       "19:00"
+      ]
+     },
+     "versione": "Versione originale",
+     "genere": "Drammatico",
+     "regia": "Georgia Oakley",
+     "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/164237",
+     "interpreti": "Esme Creed-Miles, Bodhi Rae Breathnach, James Carcaterra e Daisy Edgar-Jones",
+     "paese": "USA",
+     "durata": 132,
+     "anno": 2026
+    },
+    {
+     "titolo": "Wild Horse Nine",
+     "orari": [],
+     "giorni": {
+      "2026-11-12": [
+       "21:30"
+      ]
+     },
+     "versione": "Versione originale",
+     "genere": "Commedia, Drammatico",
+     "regia": "Martin McDonagh",
+     "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/164270",
+     "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
+     "paese": "Regno Unito",
+     "durata": 118,
      "anno": 2026
     }
    ]
@@ -7426,9 +7337,9 @@
      "regia": "Alex Ullom",
      "biglietti": "https://noise.ilcinemino.18tickets.it/film/164369",
      "interpreti": "Phinehas Yoon, Akira Jackson, Noah Toth e Mitchell Cole",
-     "paese": "USA",
      "durata": 89,
-     "anno": 2025
+     "anno": 2025,
+     "paese": "USA"
     },
     {
      "titolo": "Je so’ pazzo",
@@ -7462,9 +7373,9 @@
      "regia": "Paolo Strippoli",
      "biglietti": "https://noise.ilcinemino.18tickets.it/film/164404",
      "interpreti": "Jasmine Trinca, Romana Maggiora Vergano, Adriano Giannini e Valeria Bruni Tedeschi",
-     "paese": "Italia",
      "durata": 115,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "Italia"
     },
     {
      "titolo": "Minotaur",
@@ -7496,9 +7407,9 @@
      "regia": "Travis Knight",
      "biglietti": "https://noise.ilcinemino.18tickets.it/film/164406",
      "interpreti": "Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan e Mahershala Ali",
-     "paese": "USA",
      "durata": 139,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "USA"
     }
    ]
   },
