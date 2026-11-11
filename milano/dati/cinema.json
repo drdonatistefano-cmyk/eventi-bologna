@@ -4265,13 +4265,11 @@
     {
      "titolo": "Clayface",
      "orari": [
-      "18:30",
       "20:20",
       "22:50"
      ],
      "giorni": {
       "2026-11-11": [
-       "18:30",
        "20:20",
        "22:50"
       ],
@@ -4288,7 +4286,7 @@
        "22:40"
       ]
      },
-     "versione": "Versione originale (solo ore 18:30)",
+     "versione": "",
      "genere": "Horror, Avventura, Azione",
      "regia": "James Watkins",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
@@ -4324,13 +4322,8 @@
     },
     {
      "titolo": "Dear You",
-     "orari": [
-      "19:00"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-11": [
-       "19:00"
-      ],
       "2026-11-14": [
        "14:25"
       ],
@@ -4350,12 +4343,10 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "14:00",
       "19:20"
      ],
      "giorni": {
       "2026-11-11": [
-       "14:00",
        "19:20"
       ],
       "2026-11-12": [
@@ -4469,15 +4460,8 @@
     },
     {
      "titolo": "Heart of the Beast - Nel profondo selvaggio",
-     "orari": [
-      "14:30",
-      "18:10"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-11": [
-       "14:30",
-       "18:10"
-      ],
       "2026-11-12": [
        "16:50"
       ],
@@ -4503,14 +4487,10 @@
     {
      "titolo": "Hope",
      "orari": [
-      "14:00",
-      "18:00",
       "21:45"
      ],
      "giorni": {
       "2026-11-11": [
-       "14:00",
-       "18:00",
        "21:45"
       ],
       "2026-11-12": [
@@ -4543,12 +4523,10 @@
     {
      "titolo": "Hunger Games",
      "orari": [
-      "17:20",
       "20:30"
      ],
      "giorni": {
       "2026-11-11": [
-       "17:20",
        "20:30"
       ]
      },
@@ -4564,23 +4542,18 @@
     {
      "titolo": "Ice Cream Man",
      "orari": [
-      "17:20",
       "19:30",
       "19:50",
       "22:40"
      ],
      "giorni": {
       "2026-11-11": [
-       "17:20",
        "19:30",
        "19:50",
        "22:40"
       ],
-      "2026-11-13": [
-       "00:25"
-      ],
       "2026-11-15": [
-       "00:05"
+       "00:15"
       ]
      },
      "versione": "",
@@ -4617,16 +4590,10 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "14:20",
-      "15:30",
-      "17:00",
       "19:30"
      ],
      "giorni": {
       "2026-11-11": [
-       "14:20",
-       "15:30",
-       "17:00",
        "19:30"
       ],
       "2026-11-12": [
@@ -4786,12 +4753,10 @@
     {
      "titolo": "Je so’ pazzo",
      "orari": [
-      "16:50",
       "22:25"
      ],
      "giorni": {
       "2026-11-11": [
-       "16:50",
        "22:25"
       ]
      },
@@ -4820,12 +4785,10 @@
     {
      "titolo": "L'estranea",
      "orari": [
-      "15:10",
       "21:35"
      ],
      "giorni": {
       "2026-11-11": [
-       "15:10",
        "21:35"
       ],
       "2026-11-13": [
@@ -4846,27 +4809,6 @@
      "interpreti": "Jasmine Trinca, Romana Maggiora Vergano, Adriano Giannini e Valeria Bruni Tedeschi",
      "paese": "Italia",
      "durata": 115
-    },
-    {
-     "titolo": "L'isola dei ricordi",
-     "orari": [
-      "15:30",
-      "17:15"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "15:30",
-       "17:15"
-      ]
-     },
-     "versione": "",
-     "genere": "Animazione, Avventura, Commedia",
-     "regia": "Joel Crawford e Januel Mercado",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
-     "interpreti": "Giulia Vecchio, Alessandro Tiberi, Dave Franco e Jenny Slate",
-     "paese": "USA",
-     "durata": 109,
-     "anno": 2026
     },
     {
      "titolo": "League of Legends Worlds 26",
@@ -4912,10 +4854,10 @@
      "orari": [],
      "giorni": {
       "2026-11-13": [
-       "23:45"
+       "23:55"
       ],
       "2026-11-14": [
-       "23:45"
+       "23:55"
       ]
      },
      "versione": "",
@@ -4944,25 +4886,6 @@
      "interpreti": "Lorenzo Acciaresi, Riccardo Andreucci, Chiara Bonafoni e Francesco Pannofino",
      "paese": "Italia",
      "anno": 2026
-    },
-    {
-     "titolo": "Ragione e sentimento",
-     "orari": [
-      "15:20"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "15:20"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Ang Lee",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
-     "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
-     "durata": 136,
-     "anno": 1995,
-     "paese": "USA"
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
@@ -5026,20 +4949,12 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "15:10",
-      "16:30",
-      "17:40",
-      "19:00",
       "20:10",
       "21:30",
       "22:10"
      ],
      "giorni": {
       "2026-11-11": [
-       "15:10",
-       "16:30",
-       "17:40",
-       "19:00",
        "20:10",
        "21:30",
        "22:10"
@@ -5081,15 +4996,8 @@
     },
     {
      "titolo": "Shaun, vita da pecora - Operazione Z.U.C.C.A.",
-     "orari": [
-      "15:15",
-      "17:30"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-11": [
-       "15:15",
-       "17:30"
-      ],
       "2026-11-12": [
        "14:00",
        "17:35"
@@ -5118,25 +5026,6 @@
      "durata": 91
     },
     {
-     "titolo": "Storia di una Mistress",
-     "orari": [
-      "17:50"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "17:50"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Ciro Tomaiuoli",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
-     "interpreti": "Reyson Grumelli, Giulia Ragazzini, Francesca Luce Cardinale e Alice Carollo",
-     "paese": "Italia",
-     "durata": 80,
-     "anno": 2026
-    },
-    {
      "titolo": "Taddeo l’esploratore e la lampada magica",
      "orari": [],
      "giorni": {
@@ -5157,6 +5046,12 @@
      "giorni": {
       "2026-11-11": [
        "22:25"
+      ],
+      "2026-11-14": [
+       "00:10"
+      ],
+      "2026-11-15": [
+       "00:15"
       ]
      },
      "versione": "",
@@ -5171,12 +5066,10 @@
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
-      "14:10",
       "22:00"
      ],
      "giorni": {
       "2026-11-11": [
-       "14:10",
        "22:00"
       ],
       "2026-11-12": [
@@ -5248,15 +5141,11 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "14:10",
-      "16:50",
       "21:20",
       "22:10"
      ],
      "giorni": {
       "2026-11-11": [
-       "14:10",
-       "16:50",
        "21:20",
        "22:10"
       ],
@@ -5275,7 +5164,7 @@
       "2026-11-14": [
        "15:20",
        "18:00",
-       "21:45"
+       "21:40"
       ],
       "2026-11-15": [
        "11:10",
@@ -5296,20 +5185,13 @@
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
-      "14:20",
-      "16:10",
-      "17:15",
       "19:45"
      ],
      "giorni": {
       "2026-11-11": [
-       "14:20",
-       "16:10",
-       "17:15",
        "19:45"
       ],
       "2026-11-12": [
-       "11:10",
        "15:40",
        "20:40"
       ],
@@ -5328,7 +5210,7 @@
        "20:45"
       ]
      },
-     "versione": "Versione originale (solo ore 11:10, 16:10)",
+     "versione": "Versione originale (solo ore 11:10)",
      "genere": "Animazione, Avventura, Drammatico",
      "regia": "Travis Knight",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
@@ -7201,9 +7083,9 @@
      "regia": "Nicola Prosatore",
      "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/161234",
      "interpreti": "Massimiliano Caiazzo, Mariasole Pollio, Giovanni Ludeno e Giuseppe Brunetti",
-     "paese": "Italia",
      "durata": 105,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "Italia"
     },
     {
      "titolo": "Minotaur",
@@ -7235,9 +7117,9 @@
      "regia": "Jérôme Bonnell",
      "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/161465",
      "interpreti": "Swann Arlaud, Louise Chevillotte, Emmanuelle Devos e Galatéa Bellugi",
-     "paese": "Francia",
      "durata": 103,
-     "anno": 2025
+     "anno": 2025,
+     "paese": "Francia"
     },
     {
      "titolo": "Ragione e sentimento",
@@ -7252,9 +7134,9 @@
      "regia": "Georgia Oakley",
      "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/164237",
      "interpreti": "Esme Creed-Miles, Bodhi Rae Breathnach, James Carcaterra e Daisy Edgar-Jones",
-     "paese": "USA",
      "durata": 132,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "USA"
     },
     {
      "titolo": "Wild Horse Nine",
@@ -7269,9 +7151,9 @@
      "regia": "Martin McDonagh",
      "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/164270",
      "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
-     "paese": "Regno Unito",
      "durata": 118,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "Regno Unito"
     }
    ]
   },

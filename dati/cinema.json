@@ -2018,145 +2018,6 @@
    "fonte": "https://europa-cinemas.org/en/portraits/cinema-lumière-Bologna",
    "film": [
     {
-     "titolo": "Fatherland",
-     "orari": [
-      "16:00"
-     ],
-     "versione": "Versione originale in tedesco con sottotitoli in italiano",
-     "genere": "Drammatico",
-     "regia": "Paweł Pawlikowski",
-     "paese": "Germania-Polonia-Italia-Francia",
-     "anno": 2026,
-     "durata": 82,
-     "giorni": {
-      "2026-11-11": [
-       "16:00"
-      ],
-      "2026-11-12": [
-       "18:00"
-      ]
-     },
-     "interpreti": "Sandra Hüller",
-     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/92249"
-    },
-    {
-     "titolo": "Minotaur",
-     "orari": [
-      "16:00",
-      "21:45"
-     ],
-     "versione": "Versione originale in russo con sottotitoli in italiano",
-     "genere": "Drammatico, Thriller",
-     "regia": "Andrey Zvyagintsev",
-     "paese": "Francia-Germania-Lettonia",
-     "anno": 2026,
-     "durata": 135,
-     "giorni": {
-      "2026-11-11": [
-       "16:00",
-       "21:45"
-      ]
-     },
-     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
-     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/103271"
-    },
-    {
-     "titolo": "Wild Horse Nine",
-     "orari": [
-      "17:45",
-      "22:15"
-     ],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "Commedia, Drammatico",
-     "regia": "Martin McDonagh",
-     "paese": "GB-USA",
-     "anno": 2026,
-     "durata": 118,
-     "giorni": {
-      "2026-11-11": [
-       "17:45",
-       "22:15"
-      ],
-      "2026-11-12": [
-       "15:45",
-       "19:45",
-       "22:00"
-      ],
-      "2026-11-13": [
-       "17:30",
-       "19:45",
-       "22:00"
-      ],
-      "2026-11-14": [
-       "15:30",
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-15": [
-       "11:00",
-       "15:30",
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-16": [
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-17": [
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-18": [
-       "17:45",
-       "20:00",
-       "22:15"
-      ]
-     },
-     "interpreti": "Sam Rockwell, John Malkovich e Steve Buscemi",
-     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/100367"
-    },
-    {
-     "titolo": "Hope",
-     "orari": [
-      "18:30",
-      "21:30"
-     ],
-     "versione": "Versione originale in coreano con sottotitoli in italiano",
-     "genere": "Azione, Fantascienza, Horror",
-     "regia": "Na Hong-jin",
-     "paese": "Corea del Sud",
-     "anno": 2026,
-     "durata": 157,
-     "giorni": {
-      "2026-11-11": [
-       "18:30",
-       "21:30"
-      ],
-      "2026-11-12": [
-       "21:45"
-      ],
-      "2026-11-13": [
-       "21:45"
-      ],
-      "2026-11-14": [
-       "21:45"
-      ],
-      "2026-11-15": [
-       "10:30",
-       "21:45"
-      ],
-      "2026-11-18": [
-       "21:45"
-      ]
-     },
-     "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
-     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/101225"
-    },
-    {
      "titolo": "Look Back",
      "orari": [
       "20:00"
@@ -2204,6 +2065,7 @@
        "22:00"
       ],
       "2026-11-18": [
+       "10:00",
        "17:30",
        "19:45",
        "22:00"
@@ -2211,6 +2073,117 @@
      },
      "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
      "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/105713"
+    },
+    {
+     "titolo": "Hope",
+     "orari": [
+      "21:30"
+     ],
+     "versione": "Versione originale in coreano con sottotitoli in italiano",
+     "genere": "Azione, Fantascienza, Horror",
+     "regia": "Na Hong-jin",
+     "paese": "Corea del Sud",
+     "anno": 2026,
+     "durata": 157,
+     "giorni": {
+      "2026-11-11": [
+       "21:30"
+      ],
+      "2026-11-12": [
+       "21:45"
+      ],
+      "2026-11-13": [
+       "21:45"
+      ],
+      "2026-11-14": [
+       "21:45"
+      ],
+      "2026-11-15": [
+       "10:30",
+       "21:45"
+      ],
+      "2026-11-18": [
+       "21:45"
+      ]
+     },
+     "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/101225"
+    },
+    {
+     "titolo": "Minotaur",
+     "orari": [
+      "21:45"
+     ],
+     "versione": "Versione originale in russo con sottotitoli in italiano",
+     "genere": "Drammatico, Thriller",
+     "regia": "Andrey Zvyagintsev",
+     "paese": "Francia-Germania-Lettonia",
+     "anno": 2026,
+     "durata": 135,
+     "giorni": {
+      "2026-11-11": [
+       "21:45"
+      ]
+     },
+     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/103271"
+    },
+    {
+     "titolo": "Wild Horse Nine",
+     "orari": [
+      "22:15"
+     ],
+     "versione": "Versione originale in inglese con sottotitoli in italiano",
+     "genere": "Commedia, Drammatico",
+     "regia": "Martin McDonagh",
+     "paese": "GB-USA",
+     "anno": 2026,
+     "durata": 118,
+     "giorni": {
+      "2026-11-11": [
+       "22:15"
+      ],
+      "2026-11-12": [
+       "15:45",
+       "19:45",
+       "22:00"
+      ],
+      "2026-11-13": [
+       "17:30",
+       "19:45",
+       "22:00"
+      ],
+      "2026-11-14": [
+       "15:30",
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-15": [
+       "11:00",
+       "15:30",
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-16": [
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-17": [
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-18": [
+       "17:45",
+       "20:00",
+       "22:15"
+      ]
+     },
+     "interpreti": "Sam Rockwell, John Malkovich e Steve Buscemi",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/100367"
     },
     {
      "titolo": "La Gradiva",
@@ -2242,6 +2215,23 @@
       ]
      },
      "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/96935"
+    },
+    {
+     "titolo": "Fatherland",
+     "orari": [],
+     "versione": "Versione originale in tedesco con sottotitoli in italiano",
+     "genere": "Drammatico",
+     "regia": "Paweł Pawlikowski",
+     "paese": "Germania-Polonia-Italia-Francia",
+     "anno": 2026,
+     "durata": 82,
+     "giorni": {
+      "2026-11-12": [
+       "18:00"
+      ]
+     },
+     "interpreti": "Sandra Hüller",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/92249"
     }
    ],
    "biglietti": "https://lumiere.cinetecabologna.18tickets.it/"
@@ -2255,43 +2245,6 @@
    "sito": "https://cinetecadibologna.it/programmazione/film-in-programma/",
    "fonte": "https://www.bolognawelcome.com/it/luoghi/cinema-e-teatri/cinema-modernissimo",
    "film": [
-    {
-     "titolo": "Le miserie del signor Travet",
-     "orari": [
-      "15:30"
-     ],
-     "versione": "Film in lingua italiana",
-     "genere": "Commedia",
-     "regia": "Mario Soldati",
-     "paese": "Italia",
-     "anno": 1945,
-     "durata": 101,
-     "giorni": {
-      "2026-11-11": [
-       "15:30"
-      ]
-     },
-     "interpreti": "Alberto Sordi, Gino Cervi, Carlo Campanini e Vera Carmi"
-    },
-    {
-     "titolo": "Nashville",
-     "orari": [
-      "17:30"
-     ],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "Drammatico",
-     "regia": "Robert Altman",
-     "paese": "USA",
-     "anno": 1975,
-     "durata": 159,
-     "giorni": {
-      "2026-11-11": [
-       "17:30"
-      ]
-     },
-     "interpreti": "Geraldine Chaplin, Karen Black, Keith Carradine e Gwen Welles",
-     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/20137"
-    },
     {
      "titolo": "Ombre",
      "orari": [
@@ -2867,7 +2820,6 @@
     {
      "titolo": "Digger",
      "orari": [
-      "17:00",
       "19:30",
       "21:45"
      ],
@@ -2879,7 +2831,6 @@
      "durata": 128,
      "giorni": {
       "2026-11-11": [
-       "17:00",
        "19:30",
        "21:45"
       ]
