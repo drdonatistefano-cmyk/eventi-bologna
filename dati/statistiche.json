@@ -1,10 +1,10 @@
 {
- "generato": "2026-11-11T12:00:50+00:00",
+ "generato": "2026-11-11T12:43:06+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-11",
- "visite_totali": 236,
- "totale_goatcounter": 681,
- "eventi_totali": 445,
+ "visite_totali": 237,
+ "totale_goatcounter": 683,
+ "eventi_totali": 446,
  "eventi_per_tipo": {
   "filtri": 132,
   "cambio scheda": 76,
@@ -13,7 +13,7 @@
   "luoghi aperti": 41,
   "apri filtri": 19,
   "clic biglietti": 15,
-  "altro": 13,
+  "altro": 14,
   "clic info spettacoli": 10,
   "azzera filtri": 8,
   "mostra altri": 6,
@@ -48,11 +48,11 @@
    "settimana": 2,
    "dal": "2026-11-11",
    "al": "2026-11-11",
-   "visite": 3,
+   "visite": 4,
    "cambio scheda": 2,
    "cambio vista": 0,
    "apri filtri": 0,
-   "altro": 1,
+   "altro": 2,
    "filtri": 0,
    "luoghi aperti": 2,
    "azzera filtri": 0,
@@ -190,7 +190,7 @@
    "cambio scheda": 2,
    "cambio vista": 0,
    "apri filtri": 0,
-   "altro": 1,
+   "altro": 2,
    "filtri": 0,
    "luoghi aperti": 2,
    "azzera filtri": 0,
@@ -235,13 +235,13 @@
   },
   {
    "giorno": "2026-11-11",
-   "visite": 3
+   "visite": 4
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 495
+   "conteggio": 497
   },
   {
    "origine": "achevents.com/milano",
@@ -280,7 +280,7 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 120
+   "conteggio": 121
   },
   {
    "path": "/",
@@ -353,6 +353,12 @@
    "tipo": "altro"
   },
   {
+   "path": "guide/vai-dinners",
+   "titolo": "Vai a Ach's Dinners Guide",
+   "conteggio": 7,
+   "tipo": "altro"
+  },
+  {
    "path": "milano/spettacoli/apri-filtri",
    "titolo": "Apertura filtri",
    "conteggio": 7,
@@ -393,12 +399,6 @@
    "titolo": "Filtro",
    "conteggio": 7,
    "tipo": "filtri"
-  },
-  {
-   "path": "guide/vai-dinners",
-   "titolo": "Vai a Ach's Dinners Guide",
-   "conteggio": 6,
-   "tipo": "altro"
   },
   {
    "path": "spettacoli/luogo/Teatro Duse",
