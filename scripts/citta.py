@@ -21,6 +21,7 @@ VUOTI = {
     "mostre.js": 'window.MOSTRE_DATA={"aggiornato":"","mostre":[]};\n',
     "cinema.js": 'window.CINEMA_DATA={"aggiornato":"","giorno_orari":"","sale":[]};\n',
     "incontri.js": 'window.INCONTRI_DATA={"aggiornato":"","incontri":[]};\n',
+    "sport.js": 'window.SPORT_DATA={"aggiornato":"","eventi":[]};\n',
 }
 
 
