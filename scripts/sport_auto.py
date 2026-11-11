@@ -6,8 +6,10 @@ Fonti (dati pubblici, letti una volta per giro):
           - coppe europee: API pubblica UEFA (match.uefa.com) per Champions, Europa e Conference League
   Basket  - Serie A: API del sito legabasket.it (calendario per squadra, con link ai biglietti Vivaticket)
           - EuroLeague: API pubblica api-live.euroleague.net
+          - Serie A2: calendario sul sito della Fortitudo (fortitudobologna.it/calendario)
   Volley  - SuperLega maschile: calendario di legavolley.it (andata e ritorno)
           - Serie A1/A2 femminile: calendario di legavolleyfemminile.it
+Altro   - dati/sport_extra.json: eventi singoli scritti a mano (tennis: Coppa Davis; finali e tornei), campo "guida" bo|mi.
 Prende solo le partite in casa da oggi a 12 mesi. Se una fonte non risponde, restano le sue partite della volta prima.
 Scrive sport.js (Bologna) o milano/sport.js (window.SPORT_DATA, stesso formato degli eventi) e dati/sport_<città>.json.
 Campi: genere = Calcio | Basket | Volley; tipo = competizione; rassegna = squadra di casa."""
@@ -30,6 +32,7 @@ SQUADRE = {
         {"nome": "Bologna FC", "sport": "Calcio", "of": "Bologna FC 1909", "uefa": "Bologna",
          "stadio": "Stadio Renato Dall'Ara", "citta": "Bologna", "sito": "https://www.bolognafc.it/", "biglietti": "https://www.bolognafc.it/biglietti/"},
         {"nome": "Virtus Bologna", "sport": "Basket", "lba": 1750, "el": "VIR", "sito": "https://www.virtus.it/"},
+        {"nome": "Fortitudo Bologna", "sport": "Basket", "fortitudo": True, "sito": "https://fortitudobologna.it/", "biglietti": "https://fortitudobologna.vivaticket.it/"},
         {"nome": "Clai Imola Volley", "sport": "Volley", "lvf": "Clai Imola Volley", "sito": "https://www.imolavolley.it/"},
     ],
     "mi": [
@@ -209,6 +212,50 @@ def euroleague(big):
     return out
 
 
+MESI3 = {m[:3]: i + 1 for i, m in enumerate("gennaio febbraio marzo aprile maggio giugno luglio agosto settembre ottobre novembre dicembre".split())}
+
+
+def fortitudo():
+    """Serie A2: calendario sul sito della Fortitudo (fortitudobologna.it/calendario, robots.txt lo permette)."""
+    out = []
+    sq = next((s for s in SQUADRE if s.get("fortitudo")), None)
+    if not sq: return out
+    h = get("https://fortitudobologna.it/calendario") or ""
+    for li in re.findall(r'(?s)<li class="grid gap-3 p-5.*?</li>', h):
+        testa = re.search(r'(?s)tracking-\[0\.14em\] text-muted-foreground">\s*\w+ (\d{1,2}) (\w{3}) (\d{4})(?:<span[^>]*>(\d{1,2}):(\d{2})</span>)?.*?<div[^>]*>(\d+)ª giornata', li)
+        nomi = [cl(x) for x in re.findall(r'line-clamp-1 font-semibold sm:truncate">(.*?)</span>', li)]
+        imp = re.search(r'(?s)<p class="mt-1[^"]*">(.*?)</p>', li)
+        if not testa or len(nomi) < 2 or not re.search(r"Fortitudo", nomi[0]): continue
+        try: d = datetime.date(int(testa.group(3)), MESI3[testa.group(2).lower()], int(testa.group(1)))
+        except Exception: continue
+        if not dentro(d) or re.search(r">\s*\d+\s*<[^>]*>\s*-\s*<", li): continue
+        luogo, citta = impianto(cl(imp.group(1)) if imp else "PalaDozza", "Bologna")
+        tk = re.search(r'href="(https://[^"]*vivaticket[^"]*)"', li)
+        ora = f"{int(testa.group(4)):02d}:{testa.group(5)}" if testa.group(4) else ""
+        out.append(partita("fortitudo", sq, d, ora, sq["nome"], nomi[1], luogo, citta or "Bologna", "Serie A2 basket",
+                           f"Serie A2 di basket, {GIORNATA(testa.group(6))}.", "https://fortitudobologna.it/calendario", tk.group(1) if tk else ""))
+    R["fonti"]["fortitudo"] = len(out)
+    return out
+
+
+def extra():
+    """Eventi singoli (tornei di tennis, finali, grandi eventi) scritti a mano in dati/sport_extra.json."""
+    p = os.path.join(RADICE, "dati", "sport_extra.json")
+    out = []
+    if not os.path.exists(p): return out
+    for v in json.load(open(p, encoding="utf-8")).get("eventi", []):
+        if v.get("guida") != CITTA: continue
+        try: d = datetime.date.fromisoformat(v["data"])
+        except Exception: continue
+        if not dentro(d): continue
+        e = {k: v.get(k, "") for k in ("data", "fino", "ora", "artista", "luogo", "citta", "genere", "tipo", "rassegna", "descrizione", "fonte", "biglietti", "biglietti_tipo", "disp", "sito_luogo")}
+        e["fino"] = e["fino"] or e["data"]; e["_f"] = "extra"
+        if e["biglietti"] and not e["biglietti_tipo"]: e["biglietti_tipo"] = "Acquista"
+        out.append(e)
+    R["fonti"]["extra"] = len(out)
+    return out
+
+
 # ---------------- volley ----------------
 def cl(x): return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", x or ""))).strip()
 
@@ -295,7 +342,7 @@ def leggi_vecchio():
 
 def main():
     nuovi = []
-    for f in (serie_a, uefa, superlega, volley_femminile):
+    for f in (serie_a, uefa, superlega, volley_femminile, fortitudo, extra):
         try: nuovi += f()
         except Exception as ex: R["errori"].append(f"{f.__name__}: {ex}")
     try:
