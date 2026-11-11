@@ -2,7 +2,9 @@
 uso: python3 scripts/sport_auto.py bo|mi [--prova]
 
 Fonti (dati pubblici, letti una volta per giro):
-  Calcio  - Serie A: openfootball/football.json su GitHub (calendario con orari quando la Lega li fissa)
+  Calcio  - Serie A: fixturedownload.com (giorni e orari ufficiali appena la Lega li fissa); di riserva openfootball
+          - Coppa Italia e Supercoppa: siti dell'Inter (inter.it) e del Bologna (pagine «Match center»)
+          - Serie A femminile: Inter Women (inter.it)
           - coppe europee: API pubblica UEFA (match.uefa.com) per Champions, Europa e Conference League
   Basket  - Serie A: API del sito legabasket.it (calendario per squadra, con link ai biglietti Vivaticket)
           - EuroLeague: API pubblica api-live.euroleague.net
@@ -110,7 +112,35 @@ def breve(n):
     return re.sub(r"^(AC|AS|SS|SSC|US|ACF|FC|UC)\s+|\s+(FC|Calcio|BC|CFC|1909|1913|1907)$", "", n).strip()
 
 
+FXD = {"Bologna FC 1909": "Bologna", "FC Internazionale Milano": "Internazionale", "AC Milan": "Milan"}
+FXD_NOMI = {"Internazionale": "Inter", "Hellas Verona": "Verona"}
+
+
 def serie_a():
+    """Serie A: fixturedownload.com (giorni e orari ufficiali della Lega appena fissati); se non risponde, openfootball."""
+    out = []
+    anno = OGGI.year if OGGI.month >= 7 else OGGI.year - 1
+    d = get(f"https://fixturedownload.com/feed/json/serie-a-{anno}", js=True)
+    if d:
+        for m in d:
+            for sq in SQUADRE:
+                if not sq.get("of") or FXD.get(sq["of"]) != m.get("HomeTeam"): continue
+                try: dt = datetime.datetime.fromisoformat(m["DateUtc"].replace(" ", "T").replace("Z", "+00:00"))
+                except Exception: continue
+                fissato = not (dt.hour == 0 and dt.minute == 0)
+                loc = dt.astimezone(ROMA)
+                g = loc.date() if fissato else dt.date()
+                if not dentro(g) or m.get("HomeTeamScore") is not None: continue
+                osp = FXD_NOMI.get(m["AwayTeam"], m["AwayTeam"])
+                out.append(partita("seriea", sq, g, loc.strftime("%H:%M") if fissato else "", sq["nome"].replace(" FC", ""), osp, sq["stadio"], sq["citta"],
+                                   "Serie A", f"Serie A, {GIORNATA(m.get('RoundNumber'))}." + ("" if fissato else " Giorno e orario indicativi: la Lega li fissa poche settimane prima."), sq["sito"]))
+        if out:
+            R["fonti"]["seriea"] = len(out)
+            return out
+    return serie_a_openfootball()
+
+
+def serie_a_openfootball():
     out = []
     anno = OGGI.year if OGGI.month >= 7 else OGGI.year - 1
     for stag in (f"{anno}-{str(anno + 1)[2:]}", f"{anno + 1}-{str(anno + 2)[2:]}"):
@@ -123,8 +153,8 @@ def serie_a():
                 except Exception: continue
                 if not dentro(g): continue
                 n = re.search(r"\d+", m.get("round", ""))
-                out.append(partita("seriea", sq, g, m.get("time", ""), breve(m["team1"]), breve(m["team2"]), sq["stadio"], sq["citta"],
-                                   "Serie A", f"Serie A, {GIORNATA(n.group(0) if n else '')}." + ("" if m.get("time") else " Orario ancora da fissare."), sq["sito"]))
+                out.append(partita("seriea", sq, g, "", breve(m["team1"]), breve(m["team2"]), sq["stadio"], sq["citta"],
+                                   "Serie A", f"Serie A, {GIORNATA(n.group(0) if n else '')}. Giorno e orario indicativi: la Lega li fissa poche settimane prima.", sq["sito"]))
     R["fonti"]["seriea"] = len(out)
     return out
 
@@ -155,6 +185,79 @@ def uefa():
                     out.append(partita("uefa", sq, dt.date(), ora, sq["uefa"], osp, luogo, sq["citta"], comp, f"{comp}" + (f", {fase}." if fase else "."), url))
             if len(d) < 200: break
     R["fonti"]["uefa"] = len(out)
+    return out
+
+
+# coppe nazionali e calcio femminile dai siti dei club
+NON_LEGA = re.compile(r"(?i)^(serie a|uefa champions league|uefa europa league|uefa conference league)$")
+
+
+def inter_sito():
+    """inter.it: Coppa Italia e Supercoppa della prima squadra (con lo stadio), Serie A femminile dell'Inter Women."""
+    out = []
+    if CITTA != "mi": return out
+    sq_m = next(s for s in SQUADRE if s["nome"] == "Inter")
+    sq_w = {"nome": "Inter Women", "sport": "Calcio", "sito": "https://www.inter.it/it/squadre/women", "biglietti": ""}
+    for squadra, sq in (("men", sq_m), ("women", sq_w)):
+        h = get(f"https://www.inter.it/it/matches?squadra={squadra}&competizione=all&categoria=upcoming") or ""
+        m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', h, re.S)
+        if not m: continue
+        trovati = []
+        def giro(o):
+            if isinstance(o, dict):
+                if "teams" in o and "date" in o and "competition" in o: trovati.append(o)
+                else:
+                    for v in o.values(): giro(v)
+            elif isinstance(o, list):
+                for v in o: giro(v)
+        giro(json.loads(m.group(1)))
+        visti = set()
+        for x in trovati:
+            casa = ((x.get("teams") or {}).get("homeTeam") or {}).get("name", "")
+            comp = (x.get("competition") or {}).get("name", "")
+            if x.get("id") in visti or not casa.startswith("Inter") or x.get("status") != "Scheduled": continue
+            visti.add(x.get("id"))
+            if squadra == "men" and NON_LEGA.match(comp): continue
+            if squadra == "women" and comp != "Serie A Femminile": continue
+            try: dt = datetime.datetime.fromisoformat(x["date"].replace("Z", "+00:00")).astimezone(ROMA)
+            except Exception: continue
+            if not dentro(dt.date()): continue
+            ok_ora = x.get("isDateConfirmed")
+            osp = ((x.get("teams") or {}).get("awayTeam") or {}).get("name", "")
+            if squadra == "men":
+                luogo = "Stadio San Siro" if re.search(r"(?i)meazza|san siro", x.get("location") or "San Siro") else x.get("location")
+                descr = f"{comp}." + ("" if ok_ora else " Giorno e orario da confermare.")
+                out.append(partita("inter", sq, dt.date(), dt.strftime("%H:%M") if ok_ora else "", "Inter", osp, luogo, "Milano", comp, descr, "https://www.inter.it/it/matches"))
+            else:
+                descr = "Serie A femminile. Di solito all'Arena Civica, ingresso libero: la sede va confermata sul sito dell'Inter." + ("" if ok_ora else " Giorno e orario da confermare.")
+                out.append(partita("interw", sq, dt.date(), dt.strftime("%H:%M") if ok_ora else "", "Inter Women", osp, "Arena Civica Gianni Brera", "Milano",
+                                   "Serie A femminile", descr, "https://www.inter.it/it/matches?squadra=women&competizione=all&categoria=upcoming"))
+    R["fonti"]["inter_sito"] = len(out)
+    return out
+
+
+MESI_IT = {m: i + 1 for i, m in enumerate("gennaio febbraio marzo aprile maggio giugno luglio agosto settembre ottobre novembre dicembre".split())}
+
+
+def bologna_sito():
+    """bolognafc.it: le prossime partite in casa che non sono di Serie A (Coppa Italia ecc.), dalle pagine «Match center»."""
+    out = []
+    if CITTA != "bo": return out
+    sq = next(s for s in SQUADRE if s["nome"] == "Bologna FC")
+    h = get("https://www.bolognafc.it/") or ""
+    for u in sorted(set(re.findall(r'href="(https://www\.bolognafc\.it/match/bologna-[a-z0-9-]+/)"', h))):
+        p = cl(get(u) or "")
+        m = re.search(r"MATCH CENTER Bologna (.+?) \w{3} (\d{1,2}) (\w+) - (\d{1,2}):(\d{2}) (Stadio [^\n]+?) ([A-Z][\w' ]+?) Bologna", p)
+        if not m or m.group(1).strip().lower() == "serie a": continue
+        mese = MESI_IT.get(m.group(3).lower())
+        if not mese: continue
+        anno = OGGI.year if mese >= OGGI.month else OGGI.year + 1
+        d = datetime.date(anno, mese, int(m.group(2)))
+        if not dentro(d): continue
+        comp = m.group(1).strip()
+        out.append(partita("bologna_sito", sq, d, f"{int(m.group(4)):02d}:{m.group(5)}", "Bologna", m.group(7).strip(), "Stadio Renato Dall'Ara", "Bologna",
+                           comp, f"{comp}.", u, u + "?info=ticket"))
+    R["fonti"]["bologna_sito"] = len(out)
     return out
 
 
@@ -372,7 +475,7 @@ def leggi_vecchio():
 
 def main():
     nuovi = []
-    for f in (serie_a, uefa, superlega, volley_femminile, fortitudo, hockey, extra):
+    for f in (serie_a, uefa, inter_sito, bologna_sito, superlega, volley_femminile, fortitudo, hockey, extra):
         try: nuovi += f()
         except Exception as ex: R["errori"].append(f"{f.__name__}: {ex}")
     try:
