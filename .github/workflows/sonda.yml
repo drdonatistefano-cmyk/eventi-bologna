@@ -12,11 +12,10 @@ jobs:
           mkdir out || true; UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
           g(){ curl -sSL -m 30 -A "$UA" "$2" -o "out/$1" -w "$1 %{http_code} %{size_download} %{url_effective}\n" >> out/codici.txt || echo "$1 fail" >> out/codici.txt; }
           t(){ curl -sSL -m 30 -A "$UA" "$1" -o /tmp/p.html -w "%{http_code} %{url_effective}" > /tmp/c.txt 2>/dev/null || echo "000 fail" > /tmp/c.txt; echo "$(cat /tmp/c.txt) | $(grep -o '<title>[^<]*' /tmp/p.html | head -1 | cut -c8-120) | $1" >> out/biglietti.txt; } 
-          g ice_home.html "https://www.ice.hockey/" || true
-          grep -o 'href="[^"]*\(schedule\|spielplan\|calendar\|games\|matches\)[^"]*"' out/ice_home.html | sort -u > out/ice_links.txt || true
-          grep -o 'https://[a-zA-Z0-9.-]*api[a-zA-Z0-9./_-]*' out/ice_home.html | sort -u >> out/ice_links.txt || true
-          g mhc.html "https://www.milanohockeyclub.it/" || true
-          grep -o 'href="[^"]*"' out/mhc.html | sort -u > out/mhc_links.txt || true
+          g mhc_cal.html "https://www.milanohockeyclub.it/calendario_partite" || true
+          g ice_sp.html "https://www.ice.hockey/saison/spielplan" || true
+          g mhc_tk.html "https://www.milanohockeyclub.it/acquisto_biglietti" || true
+          g tm_r.txt "https://www.ticketmaster.it/robots.txt" || true
           grep -rl "pk\.ey\|sk\.ey" out | xargs -r rm -f || true
           cd out && git init -q && git checkout -q -b sonda && git add -A || true
           git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm sonda || true
