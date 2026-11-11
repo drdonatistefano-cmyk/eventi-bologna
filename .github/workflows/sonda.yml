@@ -11,19 +11,14 @@ jobs:
       - run: |
           mkdir out || true; UA="Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
           g(){ curl -sSL -m 30 -A "$UA" "$2" -o "out/$1" -w "$1 %{http_code} %{size_download} %{url_effective}\n" >> out/codici.txt || echo "$1 fail" >> out/codici.txt; }
-          g inter_w.html "https://www.inter.it/it/matches?squadra=women&competizione=all&categoria=upcoming" || true
-          g inter_m.html "https://www.inter.it/it/matches?squadra=men&competizione=all&categoria=upcoming" || true
-          g lbf_r.txt "https://www.legabasketfemminile.it/robots.txt" || true
-          g lbf.html "https://www.legabasketfemminile.it/calendario/" || true
-          g lnp.html "https://www.legapallacanestro.com/serie/4/calendario" || true
-          g fsa_r.txt "https://www.figc.it/robots.txt" || true
-          g fsa.html "https://www.figc.it/it/femminile/serie-a-femminile/calendario-e-risultati/" || true
-          g vw.html "https://www.virtus.it/femminile/" || true
-          g euw.json "https://www.fiba.basketball/en/events/euroleague-women-26-27/games" || true
-          g cev.html "https://www.cev.eu/club/champions-league/women/" || true
-          g milm.html "https://www.milanomarathon.it/" || true
-          g bom.html "https://www.bolognamarathon.run/" || true
-          g lsa_ci.html "https://www.legaseriea.it/it/coppa-italia/calendario-e-risultati" || true
+          g lbf_home.html "https://www.legabasketfemminile.it/" || true
+          grep -o 'href="[^"]*"' out/lbf_home.html | grep -i 'calend\|partit\|serie-a1\|a1' | sort -u > out/lbf_links.txt || true
+          g lbf_cal.html "https://www.legabasketfemminile.it/it/calendario/" || true
+          g bfc_cal.html "https://www.bolognafc.it/calendario-risultati/" || true
+          g bfc_home.html "https://www.bolognafc.it/" || true
+          grep -o 'href="[^"]*"' out/bfc_home.html | grep -i 'calend\|match\|partit\|biglietti' | sort -u > out/bfc_links.txt || true
+          g acm_cal.html "https://www.acmilan.com/it/stagione/calendario/prima-squadra-maschile" || true
+          g acm_calw.html "https://www.acmilan.com/it/stagione/calendario/prima-squadra-femminile" || true
           python3 - <<'PY' || true
           import re,glob
           for f in glob.glob("out/*"):
