@@ -1,16 +1,16 @@
 # Ach's Events Guide – visite
 
-Sito: https://achevents.com/ · dati GoatCounter, aggiornati ogni 15 minuti · ultima lettura: mer 11 nov 2026 alle 17:28 (ora italiana)
+Sito: https://achevents.com/ · dati GoatCounter, aggiornati ogni 15 minuti · ultima lettura: mer 11 nov 2026 alle 18:30 (ora italiana)
 
 | Oggi | Ultimi 7 giorni | Dal lancio |
 |---:|---:|---:|
-| 13 | 214 | 246 |
+| 15 | 216 | 248 |
 
 ## Visite per giorno
 
 | Giorno | Visite |
 |---|---:|
-| mer 11 nov 2026 | 13 |
+| mer 11 nov 2026 | 15 |
 | mar 10 nov 2026 | 19 |
 | lun 9 nov 2026 | 32 |
 | dom 8 nov 2026 | 24 |
