@@ -1,0 +1,22 @@
+name: prova-visite
+on: workflow_dispatch
+permissions: {}
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Totali GoatCounter
+        env:
+          T: ${{ secrets.GOATCOUNTER_TOKEN }}
+          TD: ${{ secrets.GOATCOUNTER_TOKEN_ACHDINNERS }}
+          TP: ${{ secrets.GOATCOUNTER_TOKEN_ACHPLACES }}
+        run: |
+          python3 - <<'P'
+          import os,json,urllib.request,urllib.parse,datetime
+          fine=(datetime.datetime.utcnow()+datetime.timedelta(hours=1)).strftime('%Y-%m-%dT%H:00:00Z')
+          for c,t,dal in [('eventibologna',os.environ['T'],'2026-11-04'),('achdinners',os.environ.get('TD') or os.environ['T'],'2026-11-08'),('achplaces',os.environ.get('TP') or os.environ['T'],'2026-11-01')]:
+            u=f'https://{c}.goatcounter.com/api/v0/stats/total?'+urllib.parse.urlencode(dict(start=dal+'T00:00:00Z',end=fine))
+            r=json.load(urllib.request.urlopen(urllib.request.Request(u,headers={'Authorization':'Bearer '+t,'Content-Type':'application/json'}),timeout=60))
+            print(c, 'total', r.get('total'), 'events', r.get('total_events'), 'utc', r.get('total_utc'), [(s['day'][5:10],s['daily']) for s in r.get('stats',[])])
+          P
