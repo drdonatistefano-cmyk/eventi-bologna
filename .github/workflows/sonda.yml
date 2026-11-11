@@ -1,0 +1,19 @@
+name: Sonda fonti
+# Regola 9 (coordinamento/REGOLE.md): una sonda non fallisce mai, ogni comando chiude con || true
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir out || true
+          python3 scripts/controlla_biglietti.py > out/riepilogo.txt 2>&1 || true
+          cp dati/controllo_biglietti.json out/ || true
+          cd out && git init -q && git checkout -q -b sonda && git add -A || true
+          git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm sonda || true
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" sonda || true
