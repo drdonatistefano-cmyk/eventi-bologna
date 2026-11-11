@@ -247,7 +247,7 @@ def bologna_sito():
     h = get("https://www.bolognafc.it/") or ""
     for u in sorted(set(re.findall(r'href="(https://www\.bolognafc\.it/match/bologna-[a-z0-9-]+/)"', h))):
         p = cl(get(u) or "")
-        m = re.search(r"MATCH CENTER Bologna (.+?) \w{3} (\d{1,2}) (\w+) - (\d{1,2}):(\d{2}) (Stadio [^\n]+?) ([A-Z][\w' ]+?) Bologna", p)
+        m = re.search(r"MATCH CENTER Bologna (.+?) \w{3} (\d{1,2}) (\w+) - (\d{1,2}):(\d{2}) (Stadio Renato Dall'Ara) (.+?) Bologna ", p)
         if not m or m.group(1).strip().lower() == "serie a": continue
         mese = MESI_IT.get(m.group(3).lower())
         if not mese: continue
