@@ -37,11 +37,19 @@ def permesso(u):
     return _rp[base].can_fetch(UA, u)
 
 
+def dominio(u):
+    return ".".join(urlparse(u).netloc.split(".")[-2:])   # i sottodomini (es. *.18tickets.it) sono lo stesso server
+
+
+_lock_dom = collections.defaultdict(threading.Lock)
+
+
 def apri(u):
-    host = urlparse(u).netloc
-    att = 1.0 - (time.time() - _ult[host])
-    if att > 0: time.sleep(att)
-    _ult[host] = time.time()
+    host = dominio(u)
+    with _lock_dom[host]:
+        att = 2.0 - (time.time() - _ult[host])
+        if att > 0: time.sleep(att)
+        _ult[host] = time.time()
     r = urllib.request.Request(u, headers={"User-Agent": UA, "Accept-Language": "it-IT,it;q=0.9"})
     with urllib.request.urlopen(r, timeout=15) as x:
         return x.geturl(), x.read().decode("utf-8", "ignore")
@@ -74,7 +82,7 @@ def main():
     per_sito = collections.defaultdict(collections.Counter)
     blocco = threading.Lock()
     gruppi = collections.defaultdict(list)
-    for u, ev in sorted(voci.items())[:MAX]: gruppi[urlparse(u).netloc].append((u, ev))
+    for u, ev in sorted(voci.items())[:MAX]: gruppi[dominio(u)].append((u, ev))
 
     def un_link(u, ev):
         nostre = sorted({x["data"] for x in ev})
@@ -153,12 +161,12 @@ def main():
         except Exception as ex:
             return u, fs, "non letto", str(ex)[:80]
     gruppi_c = collections.defaultdict(list)
-    for item in film.items(): gruppi_c[urlparse(item[0]).netloc].append(item)
+    for item in film.items(): gruppi_c[dominio(item[0])].append(item)
 
     def un_sito_c(elenco):
         t0 = time.time()
         for item in elenco:
-            r = un_film(item) if time.time() - t0 < 300 else (item[0], item[1], "non letto", "saltato: sito lento")
+            r = un_film(item) if time.time() - t0 < 600 else (item[0], item[1], "non letto", "saltato: sito lento")
             with blocco:
                 esiti_c[r[2]] += 1
                 if r[2] in ("titolo assente", "non letto"):

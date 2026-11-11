@@ -26,6 +26,7 @@ for s in d.get("sale", []):
     for f in s.get("film", []):
         if not f.get("titolo"): ERR.append(f"{n}: film senza titolo")
         if f.get("biglietti") and not f["biglietti"].startswith("https://"): ERR.append(f"{n} / {f.get('titolo')}: link biglietti non https")
+        if "\\u00" in f.get("biglietti", "") or "&amp;" in f.get("biglietti", ""): ERR.append(f"{n} / {f.get('titolo')}: link biglietti con caratteri non decodificati (\\u0026)")
         o = f.get("orari", [])
         bad = [x for x in o if not re.match(r"^\d{1,2}:\d{2}$", x)]
         if bad: ERR.append(f"{n} / {f.get('titolo')}: orari non validi {bad}")

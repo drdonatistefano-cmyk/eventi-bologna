@@ -237,7 +237,8 @@ def leggi_cinemap(h, pagina, oggi):
         if vo or (lingua and lingua.group(1) != "it"):
             f["_vo"].add(hm)
         if offerta and not f.get("biglietti"):
-            f["biglietti"] = re.sub(r"/[0-9a-f-]{36}(#.*)?$", "", offerta.group(1))  # pagina del film, non della singola proiezione
+            lk = offerta.group(1).replace("\\u0026", "&").replace("\\/", "/").replace("&amp;", "&")  # nel JSON della pagina «&» è scritto \u0026
+            f["biglietti"] = re.sub(r"/[0-9a-f-]{36}(#.*)?$", "", lk)  # pagina del film, non della singola proiezione
     out = []
     for f in film.values():
         for k in f["giorni"]:

@@ -236,6 +236,7 @@ def inter_sito():
     return out
 
 
+BFC_MATCH = {}  # data → pagina «Match center» del Bologna (per mettere il link biglietti della partita giusta)
 MESI_IT = {m: i + 1 for i, m in enumerate("gennaio febbraio marzo aprile maggio giugno luglio agosto settembre ottobre novembre dicembre".split())}
 
 
@@ -248,12 +249,14 @@ def bologna_sito():
     for u in sorted(set(re.findall(r'href="(https://www\.bolognafc\.it/match/bologna-[a-z0-9-]+/)"', h))):
         p = cl(get(u) or "")
         m = re.search(r"MATCH CENTER Bologna (.+?) \w{3} (\d{1,2}) (\w+) - (\d{1,2}):(\d{2}) (Stadio Renato Dall'Ara) (.+?) Bologna ", p)
-        if not m or m.group(1).strip().lower() == "serie a": continue
+        if not m: continue
         mese = MESI_IT.get(m.group(3).lower())
         if not mese: continue
         anno = OGGI.year if mese >= OGGI.month else OGGI.year + 1
         d = datetime.date(anno, mese, int(m.group(2)))
         if not dentro(d): continue
+        BFC_MATCH[d.isoformat()] = u
+        if m.group(1).strip().lower() == "serie a": continue
         comp = m.group(1).strip()
         out.append(partita("bologna_sito", sq, d, f"{int(m.group(4)):02d}:{m.group(5)}", "Bologna", m.group(7).strip(), "Stadio Renato Dall'Ara", "Bologna",
                            comp, f"{comp}.", u, u + "?info=ticket"))
@@ -482,6 +485,10 @@ def main():
         l, big = lba(); nuovi += l
         nuovi += euroleague(big)
     except Exception as ex: R["errori"].append(f"basket: {ex}")
+    # Bologna FC: link biglietti della partita (pagina «Match center» con ?info=ticket) al posto della biglietteria generica
+    for v in nuovi:
+        if v.get("rassegna") == "Bologna FC" and v["data"] in BFC_MATCH:
+            v["biglietti"] = BFC_MATCH[v["data"]] + "?info=ticket"; v["fonte"] = BFC_MATCH[v["data"]]; v["biglietti_tipo"] = "Acquista"
     fonti_ok = {v["_f"] for v in nuovi}
     for v in leggi_vecchio():
         if v.get("_f") and v["_f"] not in fonti_ok and v["data"] >= OGGI.isoformat(): nuovi.append(v)
