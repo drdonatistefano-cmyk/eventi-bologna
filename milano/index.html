@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var m=document.cookie.match(/(?:^|; )citta=(bo|mi)/),q=/[?&]citta=(bo|mi)/.exec(location.search),qui=/^\/milano(\/|$)/.test(location.pathname)?"mi":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||m[1]!=="mi"||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace("/milano/")}catch(_){}})();</script>
-<script>/* anticipo: chiede subito versioni.js (senza bloccare la pagina) e fa partire i file dei dati mentre arriva il resto; più in basso la pagina li usa dalla memoria */(function(){try{var s=document.createElement("script");s.async=true;s.src="versioni.js?v="+Math.floor(Date.now()/6e5);s.onload=function(){var V=window.ACH_VERSIONI||{};["eventi","serate","mostre","cinema","incontri"].forEach(function(f){if(V[f]){var l=document.createElement("link");l.rel="preload";l.as="script";l.href=f+".js?h="+V[f];document.head.appendChild(l)}})};document.head.appendChild(s)}catch(e){}})();</script>
+<script>/* anticipo: chiede subito versioni.js (senza bloccare la pagina) e fa partire i file dei dati mentre arriva il resto; più in basso la pagina li usa dalla memoria */(function(){try{var s=document.createElement("script");s.async=true;s.src="versioni.js?v="+Math.floor(Date.now()/6e5);s.onload=function(){var V=window.ACH_VERSIONI||{};["eventi","serate","mostre","cinema","incontri","sport"].forEach(function(f){if(V[f]){var l=document.createElement("link");l.rel="preload";l.as="script";l.href=f+".js?h="+V[f];document.head.appendChild(l)}})};document.head.appendChild(s)}catch(e){}})();</script>
 <title>Ach's Events Guide – concerti, teatro, mostre e cinema a Milano</title>
 <meta name="description" content="Ach&#39;s Events Guide: concerti, teatro, mostre e cinema a Milano e nella Città metropolitana, con date, orari, luoghi e link ai biglietti.">
 <meta property="og:type" content="website">
@@ -21,14 +21,14 @@
 :root{color-scheme:light;
  --bg:#f6efe4;--paper:#fffdf9;--ink:#231d18;--mute:#7a6f63;--faint:#a99d8f;--line:#e8ddcc;
  --terra:#3d5f7d;--terra-soft:#e4ecf3;--terra-ink:#2f4d68;--ochre:#3a8fb7;--on:#fff;
- --rock:#4f5fb0;--jazz:#2a7f7a;--pop:#7d4f9a;--teatro:#3f7a4c;--classica:#8a7356;--club:#a8466e;--libri:#b0602a;--confer:#4a6f96;--visite:#3d8a6e;
+ --rock:#4f5fb0;--jazz:#2a7f7a;--pop:#7d4f9a;--teatro:#3f7a4c;--classica:#8a7356;--club:#a8466e;--libri:#b0602a;--calcio:#2f7d4a;--basket:#c8602a;--volley:#3a6fb0;--tennis:#9a8a1e;--hockey:#4a7f9a;--confer:#4a6f96;--visite:#3d8a6e;
  --shadow:0 1px 2px rgba(60,40,20,.06),0 4px 14px rgba(60,40,20,.06);
  --r:16px;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;--barh:64px;--side:clamp(270px,30vw,320px)}
 @media (prefers-color-scheme:dark) and (min-width:1000000px){:root{
  --bg:#161311;--paper:#201c19;--ink:#f1e9df;--mute:#ab9f92;--faint:#7d7268;--line:#332d28;
  --terra:#8fb3d3;--terra-soft:#1f2a35;--terra-ink:#b9d0e4;--ochre:#72bde0;--on:#102131;
- --rock:#93a0f0;--jazz:#5fbdb6;--pop:#b48ad0;--teatro:#6fb07d;--classica:#c4ae90;--club:#e08aac;--libri:#e09a6a;--confer:#8fb0d8;--visite:#7cc4a6;--shadow:none}}
+ --rock:#93a0f0;--jazz:#5fbdb6;--pop:#b48ad0;--teatro:#6fb07d;--classica:#c4ae90;--club:#e08aac;--libri:#e09a6a;--calcio:#6cc08a;--basket:#f0a070;--volley:#8fb4e8;--tennis:#d6c65a;--hockey:#8fc0d8;--confer:#8fb0d8;--visite:#7cc4a6;--shadow:none}}
 *{box-sizing:border-box}[hidden]{display:none!important}
 button,a,input,summary{-webkit-tap-highlight-color:transparent}
 ::selection{background:color-mix(in srgb,var(--terra) 22%,transparent)}
@@ -598,6 +598,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}.f
 @media (max-width:420px){.ach-guide{gap:8px}.ach-guide__btn{flex:1 1 0;min-width:0;padding:8px 10px 8px 8px}.ach-guide__arr{display:none}}
 @media (prefers-reduced-motion:reduce){.ach-guide__btn,.ach-guide__arr{transition:none}}
 @media(max-width:759px){.modes{gap:5px}.modes button{flex-direction:column;gap:1px;height:56px;padding:4px 2px 3px;font-size:13.5px;line-height:1.1;letter-spacing:-.01em}.modes button .mi{font-size:19px;line-height:1}}
+@media(max-width:359px){.modes{gap:3px}.modes button{font-size:12px;letter-spacing:-.03em;padding:4px 1px 3px}}
 </style>
 </head>
 <body>
@@ -618,7 +619,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}.f
  </div>
 </header>
 
-<nav class="modes wrap" role="tablist" aria-label="Sezione"><button data-mode="s" class="on" role="tab" aria-selected="true"><span class="mi">🎭</span>Spettacoli<small id="nS"></small></button><button data-mode="i" role="tab" aria-selected="false"><span class="mi">📚</span>Incontri<small id="nI"></small></button><button data-mode="m" role="tab" aria-selected="false"><span class="mi">🖼️</span>Mostre<small id="nM"></small></button><button data-mode="c" role="tab" aria-selected="false"><span class="mi">🎬</span>Cinema<small id="nC"></small></button></nav>
+<nav class="modes wrap" role="tablist" aria-label="Sezione"><button data-mode="s" class="on" role="tab" aria-selected="true"><span class="mi">🎭</span>Spettacoli<small id="nS"></small></button><button data-mode="i" role="tab" aria-selected="false"><span class="mi">📚</span>Incontri<small id="nI"></small></button><button data-mode="m" role="tab" aria-selected="false"><span class="mi">🖼️</span>Mostre<small id="nM"></small></button><button data-mode="c" role="tab" aria-selected="false"><span class="mi">🎬</span>Cinema<small id="nC"></small></button><button data-mode="p" role="tab" aria-selected="false"><span class="mi">🏟️</span>Sport<small id="nP"></small></button></nav>
 <div class="bar" id="bar"><div class="bar-in wrap">
  <div class="row1">
   <div class="search" id="sw">
@@ -675,7 +676,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}.f
 </div></dialog>
 
 <script>/* 1) versioni.js, piccolissimo e sempre fresco (numero che cambia ogni 10 minuti): contiene le impronte dei file dei dati */document.write('<script src="versioni.js?v='+Math.floor(Date.now()/6e5)+'"><\/script>');</script>
-<script>/* 2) dati con l'impronta (?h=): finché un file non cambia il telefono usa la copia che ha già. Se manca l'impronta, metodo di prima (?v= ogni 10 minuti) */(function(){var V=window.ACH_VERSIONI||{},v=Math.floor(Date.now()/6e5);["eventi","serate","mostre","cinema","incontri"].forEach(function(f){document.write('<script src="'+f+'.js?'+(V[f]?'h='+V[f]:'v='+v)+'"><\/script>')})})();</script>
+<script>/* 2) dati con l'impronta (?h=): finché un file non cambia il telefono usa la copia che ha già. Se manca l'impronta, metodo di prima (?v= ogni 10 minuti) */(function(){var V=window.ACH_VERSIONI||{},v=Math.floor(Date.now()/6e5);["eventi","serate","mostre","cinema","incontri","sport"].forEach(function(f){document.write('<script src="'+f+'.js?'+(V[f]?'h='+V[f]:'v='+v)+'"><\/script>')})})();</script>
 <button class="giu via" id="azzGiu" type="button" data-reset hidden>✕ Azzera i filtri <span class="n">0</span></button>
 <script>
 "use strict";
@@ -714,6 +715,8 @@ const ING={gratuito:"Ingresso gratuito","a pagamento":"A pagamento"};
 const MOSTRE=(Array.isArray(MD.mostre)?MD.mostre:[]).filter(m=>m&&ISO.test(m.inizio||"")&&ISO.test(m.fine||"")&&m.titolo&&m.sede).map(m=>({id:m.id,_kind:"m",data:m.inizio,fino:m.fine,ora:"",artista:m.titolo,luogo:m.sede,citta:m.citta||CITY.capo,genere:m.categoria||"",tipo:"",rassegna:"",descrizione:m.descrizione||"",fonte:m.fonte||"",biglietti:/^https:/.test(m.biglietti||"")?m.biglietti:"",biglietti_tipo:m.biglietti_tipo||"",orari:m.orari||"",_ing:ING[(m.ingresso||"").toLowerCase()]||"Da verificare",sito_luogo:m.sito||""}));
 const ID=(window.INCONTRI_DATA&&typeof window.INCONTRI_DATA==="object")?window.INCONTRI_DATA:{aggiornato:"",incontri:[]};
 const INCONTRI=(Array.isArray(ID.incontri)?ID.incontri:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista&&e.luogo).map(e=>Object.assign({},e,{_kind:"i",tipo:"",rassegna:e.rassegna||""}));
+const PD=(window.SPORT_DATA&&typeof window.SPORT_DATA==="object")?window.SPORT_DATA:{aggiornato:"",eventi:[]};
+const SPORT=(Array.isArray(PD.eventi)?PD.eventi:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista&&e.luogo).map(e=>Object.assign({},e,{_kind:"p"}));
 const CD=(window.CINEMA_DATA&&typeof window.CINEMA_DATA==="object")?window.CINEMA_DATA:{aggiornato:"",sale:[]};
 const CGIORNO=ISO.test(CD.giorno_orari||"")?CD.giorno_orari:(ISO.test(CD.aggiornato||"")?CD.aggiornato:"");
 const SALE=(Array.isArray(CD.sale)?CD.sale:[]).filter(s=>s&&s.nome);
@@ -729,13 +732,14 @@ const ON_WEB=/(^|\.)(github\.io|achevents\.com)$/.test(location.hostname);
 const SITE_URL=ON_WEB?WEB_URL:ART_URL;
 const ZONE=CITY.zone;;
 const ZONA={},ZLAB={},ZORD=ZONE.map(z=>z[0]),CORD=[];ZONE.forEach(([k,l,cs])=>{ZLAB[k]=l;cs.forEach(c=>{ZONA[c]=k;CORD.push(c)})});ZLAB.Altro="Altri luoghi";
-const G={"Rock":{c:"--rock",l:"Rock"},"Jazz":{c:"--jazz",l:"Jazz"},"Pop e altra musica":{c:"--pop",l:"Pop e altro"},"Classica":{c:"--classica",l:"Classica"},"Teatro":{c:"--teatro",l:"Teatro"},"Serate e club":{c:"--club",l:"Club"},"Libri":{c:"--libri",l:"Libri"},"Incontri e conferenze":{c:"--confer",l:"Incontri"},"Visite guidate":{c:"--visite",l:"Visite guidate"}};
+const G={"Rock":{c:"--rock",l:"Rock"},"Jazz":{c:"--jazz",l:"Jazz"},"Pop e altra musica":{c:"--pop",l:"Pop e altro"},"Classica":{c:"--classica",l:"Classica"},"Teatro":{c:"--teatro",l:"Teatro"},"Serate e club":{c:"--club",l:"Club"},"Libri":{c:"--libri",l:"Libri"},"Incontri e conferenze":{c:"--confer",l:"Incontri"},"Visite guidate":{c:"--visite",l:"Visite guidate"},"Calcio":{c:"--calcio",l:"Calcio"},"Basket":{c:"--basket",l:"Basket"},"Volley":{c:"--volley",l:"Volley"},"Tennis":{c:"--tennis",l:"Tennis"},"Hockey":{c:"--hockey",l:"Hockey"}};
 const GOPTS_S=[{k:"Teatro",l:"Teatro",em:"🎭",c:"--teatro"},{k:"Comici",l:"Comici",em:"😂",c:"--ochre"},{k:"Classica",l:"Classica",em:"🎻",c:"--classica"},{k:"Jazz",l:"Jazz",em:"🎷",c:"--jazz"},{k:"Rock",l:"Rock",em:"🎸",c:"--rock"},{k:"Pop e altra musica",l:"Pop e altro",em:"🎤",c:"--pop"},{k:"Serate e club",l:"Club",em:"🪩",c:"--club"}];
 const GOPTS_M=[{k:"Pittura",l:"Pittura",em:"🎨",c:"--classica"},{k:"Scultura",l:"Scultura",em:"🗿",c:"--teatro"},{k:"Fotografia",l:"Fotografia",em:"📷",c:"--jazz"},{k:"Arte contemporanea e installazioni",l:"Contemporanea",em:"🌀",c:"--pop"},{k:"Disegno, grafica e illustrazione",l:"Disegno e grafica",em:"✏️",c:"--rock"},{k:"Design e moda",l:"Design e moda",em:"🪡",c:"--ochre"},{k:"Cinema e spettacolo",l:"Cinema",em:"🎬",c:"--terra"},{k:"Storia e archeologia",l:"Storia",em:"🏛️",c:"--classica"},{k:"Scienza e tecnica",l:"Scienza",em:"🔭",c:"--rock"},{k:"Esperienze immersive",l:"Immersive",em:"✨",c:"--pop"}];
 const GOPTS_I=[{k:"Libri",l:"Libri",em:"📖",c:"--libri"},{k:"Incontri e conferenze",l:"Incontri e conferenze",em:"🎙️",c:"--confer"},{k:"Visite guidate",l:"Visite guidate",em:"🧭",c:"--visite"}];
+const GOPTS_P=[{k:"Calcio",l:"Calcio",em:"⚽",c:"--calcio"},{k:"Basket",l:"Basket",em:"🏀",c:"--basket"},{k:"Volley",l:"Volley",em:"🏐",c:"--volley"},{k:"Tennis",l:"Tennis",em:"🎾",c:"--tennis"},{k:"Hockey",l:"Hockey",em:"🏒",c:"--hockey"}];
 const GOPTS_C=[{k:"Multisala",l:"Multisala",em:"🍿",c:"--rock"},{k:"D'essai",l:"D'essai",em:"🎞️",c:"--jazz"},{k:"Cineteca",l:"Cineteca",em:"📽️",c:"--classica"},{k:"Sala di comunità",l:"Sale di comunità",em:"🏘️",c:"--teatro"},{k:"Arena",l:"Arena",em:"🌙",c:"--pop"}];
 let MODE="s",GOPTS=GOPTS_S,GLAB=Object.fromEntries(GOPTS.map(o=>[o.k,o]));
-const NOUN=()=>MODE==="m"?["mostra","mostre"]:MODE==="i"?["incontro","incontri"]:MODE==="c"?["proiezione","proiezioni"]:["evento","eventi"];
+const NOUN=()=>MODE==="m"?["mostra","mostre"]:MODE==="i"?["incontro","incontri"]:MODE==="p"?["partita","partite"]:MODE==="c"?["proiezione","proiezioni"]:["evento","eventi"];
 const nn=n=>n===1?NOUN()[0]:NOUN()[1];
 const PAGE=60;
 
@@ -757,7 +761,7 @@ const overlaps=(e,a,b)=>e.data<=b&&end(e)>=a;
 const norm=s=>String(s||"").toLowerCase().normalize("NFD").replace(/\p{M}/gu,"");
 const PIN='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
 const TIPOV=e=>e._kind==="c"?(e._vo?"In lingua originale":"Versione italiana"):e.tipo||(e.genere==="Teatro"?"Altro spettacolo":"Concerto");
-const DISPV=e=>{if(e._kind==="m")return e._ing;if(e._kind==="i")return e.disp==="gratuito"?"Ingresso gratuito":e.disp==="a pagamento"?"A pagamento":"Da verificare";const d=(e.disp||"").toLowerCase();return d==="disponibile"?"Biglietti disponibili":d==="pochi posti"?"Ultimi posti":d==="non ancora in vendita"?"Vendita non ancora aperta":(d==="sold out"||d==="non disponibile")?"Esaurito":"Da verificare"};
+const DISPV=e=>{if(e._kind==="m")return e._ing;if(e._kind==="p")return "";if(e._kind==="i")return e.disp==="gratuito"?"Ingresso gratuito":e.disp==="a pagamento"?"A pagamento":"Da verificare";const d=(e.disp||"").toLowerCase();return d==="disponibile"?"Biglietti disponibili":d==="pochi posti"?"Ultimi posti":d==="non ancora in vendita"?"Vendita non ancora aperta":(d==="sold out"||d==="non disponibile")?"Esaurito":"Da verificare"};
 
 /* tipo di luogo (riga «Luogo» dei filtri): dedotto dal nome del luogo, nessun dato in più da mantenere */
 const LT_S=[["Club e locali","🪩"],["Teatri","🎭"],["Auditorium","🎼"],["Palazzetti","🏟️"],["Stadi","⚽"],["All'aperto","🌳"],["Chiese","⛪"],["Palazzi e musei","🏛️"],["Altri luoghi","📍"]];
@@ -775,7 +779,7 @@ const ltI=e=>{const v=norm(e.luogo);
 const ltS=e=>{const v=norm(e.luogo);
  if(e.genere==="Serate e club")return "Club e locali";
  if(/stadio|ippodromo/.test(v))return "Stadi";
- if(/unipol (arena|forum|dome)|palasport|paladozza|palazzetto|fiera milano live|^forum|arena milano|mediolanum/.test(v))return "Palazzetti";
+ if(/unipol (arena|forum|dome)|palasport|paladozza|palazzetto|allianz cloud|virtus arena|palaruggi|supertennis arena|ice arena|fiera milano live|^forum|arena milano|mediolanum/.test(v))return "Palazzetti";
  if(/piazza|parco|carroponte|sequoie|idroscalo|giardin|chapiteau|cortile/.test(v))return "All'aperto";
  if(/\bclub\b|circolo|\barci\b|fabrique|alcatraz|magazzini generali|santeria|biko|\bgate\b|legend|slaughter|\blime\b|locomotiv|estragon|covo|freakout|dumbo|baumhaus|atelier|camera jazz|bravo caff|birreria|brewpub|birrofila|station live|\bduro\b|apollo|detune|department|black hole|gemma|labrutepoque|10 gradi|house of stories|q-hub|base milano|blue note|cava delle arti|germi|alveare|incubazione/.test(v))return "Club e locali";
  if(/chiesa|basilica|oratorio|tempio|santuario|duomo|abbazia/.test(v))return "Chiese";
@@ -793,6 +797,7 @@ const ltM=e=>{const v=norm(e.luogo);
 function prep(list){const A=list.filter(e=>end(e)>=today);for(const e of A){e._c=e.citta||CITY.capo;e._z=ZONA[e._c]||"Altro";e._q=norm([e.artista,e.luogo,e._c,e.descrizione,e.tipo,e.genere,e.rassegna,ZLAB[e._z]].join(" "));if(e._kind!=="c")e._lt=e._kind==="m"?ltM(e):e._kind==="i"?ltI(e):ltS(e)}return A}
 const ALL_S=prep(EVENTS).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));
 const ALL_I=prep(INCONTRI).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));
+const ALL_P=prep(SPORT).sort((a,b)=>(a.data+(a.ora||"99")).localeCompare(b.data+(b.ora||"99")));
 const ALL_C=prep(CINEMA).sort((a,b)=>a.artista.localeCompare(b.artista,"it")||a.luogo.localeCompare(b.luogo,"it"));
 const ALL_M=prep(MOSTRE).sort((a,b)=>{const ra=a.data<=today,rb=b.data<=today;if(ra!==rb)return ra?-1:1;return ra?a.fino.localeCompare(b.fino):a.data.localeCompare(b.data)});
 const lim=addDays(today,365);
@@ -864,6 +869,7 @@ function optRow(k,v,label,n){const on=st[k].has(v);
 const SECS_S=[["g","Genere"],["m","Date"],["c","Dove"],["y","Tipo di luogo"],["l","Teatro o locale"],["t","Tipo"],["r","Rassegna"],["d","Disponibilità"]];
 const SECS_M=[["g","Categoria"],["m","Periodo"],["c","Dove"],["y","Tipo di sede"],["l","Museo o sede"],["d","Ingresso"]];
 const SECS_I=[["g","Tipo"],["m","Date"],["c","Dove"],["y","Tipo di luogo"],["l","Luogo"],["d","Ingresso"]];
+const SECS_P=[["g","Sport"],["r","Squadra"],["t","Competizione"],["m","Date"],["l","Impianto"]];
 const SECS_C=[["m","Giorno e orario"],["r","Genere del film"],["g","Tipo di sala"],["c","Dove"],["l","Cinema"],["t","Lingua"]];
 const SHORT={"Teatro o locale":"Luogo","Museo o sede":"Sede"};
 let SECS=SECS_S,STITLE=Object.fromEntries(SECS);
@@ -946,7 +952,7 @@ function renderRail(){
  else{const QR=MODE==="m"?[["oggi","Aperte oggi"],["weekend","Weekend "+wkLabel],["ultimi","Ultimi giorni","⏳"],["arrivo","In arrivo","✨"]]:[["oggi","Oggi"],["weekend","Weekend "+wkLabel],["7g","Prossimi 7 giorni"]];
   const mc=countBy("m",e=>Object.keys(QUICK).filter(q=>qTest(q,e)));
   h+=grp("Quando",MODE==="m"?2:3,QR.map(([q,l,em])=>qc("m",q,l,mc.get(q)||0,st.m.has(q),"--terra",em)).join(""),[...st.m].some(x=>QR.some(r=>r[0]===x))?"m":"");
-  h+=grp(MODE==="m"?"Categoria":"Genere",MODE==="m"?2:3,gens,st.g.size?"g":"");
+  h+=grp(MODE==="m"?"Categoria":MODE==="p"?"Sport":MODE==="i"?"Tipo":"Genere",MODE==="m"?2:3,gens,st.g.size?"g":"");
   const yc=countBy("y",e=>e._lt),LT=LTX();
   const LTP=new Set(ALL.map(e=>e._lt));h+=grp("Luogo",3,LT.filter(([k])=>LTP.has(k)||st.y.has(k)).map(([k])=>qc("y",k,k,yc.get(k)||0,st.y.has(k),"--terra",ltIcon(k))).join(""),st.y.size?"y":"","qscroll")}
  const qb=$("#qbar"),sl=[...qb.querySelectorAll(".qchips")].map(x=>x.scrollLeft);
@@ -1140,7 +1146,7 @@ function renderPlaces(){
    const dom=GOPTS.filter(o=>v.g[o.k]).sort((x,y)=>v.g[y.k]-v.g[x.k])[0],lt=f._lt||"",LTE=Object.fromEntries(LTX());
    return `<button class="vtile" data-venue="${esc(name)}"><div class="vtop"><span class="vbadge" style="--g:var(${dom?dom.c:"--terra"})" title="${esc(lt)}">${ltIcon(lt)}</span><span class="vtt"><span class="vname">${esc(name)}</span><span class="vn"><b>${v.n}</b> ${MODE==="c"?"film":nn(v.n)}</span></span></div>${v.c!==CITY.capo?`<div class="vcity">${esc(v.c)}</div>`:""}<div class="vnext">${MODE==="c"?`In sala: <b>${esc(f.artista)}</b>${v.n>1?` e altri ${v.n-1}`:""}`:MODE==="m"?(f.data<=today?`In corso: <b>${esc(f.artista)}</b>`:`Dal ${esc(when)}: <b>${esc(f.artista)}</b>`):`Prossimo: <b>${esc(when)}</b> · ${esc(f.artista)}`}</div><div class="vbar">${bar}</div></button>`}).join("")+`</div>`}
  const rs=[...R.entries()].filter(x=>!st.r.has(x[0])).sort((a,b)=>b[1]-a[1]);
- if(rs.length)h+=`<h2 class="ptitle">Rassegne e stagioni<small>${rs.length}</small></h2><div class="rsx">${rs.map(([r,n])=>`<button class="rchip" data-r="${esc(r)}">${esc(r)}<small>${n}</small></button>`).join("")}</div>`;
+ if(rs.length)h+=`<h2 class="ptitle">${MODE==="p"?"Squadre":"Rassegne e stagioni"}<small>${rs.length}</small></h2><div class="rsx">${rs.map(([r,n])=>`<button class="rchip" data-r="${esc(r)}">${esc(r)}<small>${n}</small></button>`).join("")}</div>`;
  $("#places").innerHTML=h;return vis.length}
 
 function render(resetPage){
@@ -1160,6 +1166,7 @@ function render(resetPage){
 const TXT={s:{lede:"Concerti, teatro, comici, classica e grandi eventi "+CITY.area+", nei prossimi 12 mesi.",ph:"Cerca artista o teatro…",luoghi:"Teatri e luoghi",luoghiS:"Luoghi",tot:"eventi",w:"nei prossimi 7 giorni",upd:UPDATED},
  m:{lede:"Mostre d'arte, fotografia, storia e cinema "+CITY.area+": in corso e in arrivo.",ph:"Cerca mostra, artista, museo…",luoghi:"Musei e sedi",luoghiS:"Sedi",tot:"mostre",w:"aperte oggi",upd:ISO.test(MD.aggiornato||"")?MD.aggiornato:""},
  i:{lede:"Presentazioni di libri, incontri, conferenze e visite guidate "+CITY.area+", nelle prossime settimane.",ph:"Cerca libro, autore, luogo…",luoghi:"Librerie e luoghi",luoghiS:"Luoghi",tot:"incontri",w:"nei prossimi 7 giorni",upd:ISO.test(ID.aggiornato||"")?ID.aggiornato:""},
+ p:{lede:"Le partite in casa delle squadre "+CITY.area+": calcio, basket, volley, hockey e tennis, campionato e coppe.",ph:"Cerca squadra, avversario, impianto…",luoghi:"Stadi e palazzetti",luoghiS:"Impianti",tot:"partite",w:"nei prossimi 7 giorni",upd:ISO.test(PD.aggiornato||"")?PD.aggiornato:""},
  c:{lede:"Film in sala "+CITY.area+": cosa danno, in quale cinema e a che ora.",ph:"Cerca film o cinema…",luoghi:"Cinema e sale",luoghiS:"Sale",tot:"film in sala",w:"sale con film",upd:ISO.test(CD.aggiornato||"")?CD.aggiornato:""}};
 function heroStats(){const x=TXT[MODE];
  $("#sTot").textContent=MODE==="c"?new Set(ALL.map(e=>norm(e.artista))).size:ALL.length;$("#lTot").textContent=x.tot;
@@ -1169,11 +1176,11 @@ function heroStats(){const x=TXT[MODE];
  $$('.seg [data-view="cal"]').forEach(b=>{b.textContent=MODE==="m"?"Elenco":MODE==="c"?"Film":"Calendario"});
  $$('.seg [data-view="luoghi"]').forEach(b=>{b.textContent=b.closest(".topctl")?x.luoghiS:x.luoghi});
  $$(".modes [data-mode]").forEach(b=>{const on=b.dataset.mode===MODE;b.classList.toggle("on",on);b.setAttribute("aria-selected",on)});
- $("#nS").textContent=ALL_S.length;$("#nI").textContent=ALL_I.length||"";$("#nM").textContent=ALL_M.length;$("#nC").textContent=new Set(ALL_C.map(e=>norm(e.artista))).size||"";
- document.body.classList.toggle("mode-m",MODE==="m");document.body.classList.toggle("mode-c",MODE==="c");document.body.classList.toggle("mode-i",MODE==="i")}
-function setMode(m){if(m===MODE)return;MODE=m;ALL=m==="m"?ALL_M:m==="c"?ALL_C:m==="i"?ALL_I:ALL_S;GOPTS=m==="m"?GOPTS_M:m==="c"?GOPTS_C:m==="i"?GOPTS_I:GOPTS_S;GLAB=Object.fromEntries(GOPTS.map(o=>[o.k,o]));
- SECS=m==="m"?SECS_M:m==="c"?SECS_C:m==="i"?SECS_I:SECS_S;QUICK=m==="m"?QUICK_M:m==="c"?QUICK_C:QUICK_S;STITLE=Object.fromEntries(SECS);MONTHS=monthsOf(ALL);COMUNI_CON=new Set(ALL.map(e=>e._c));
- resetAll();st.view="cal";st.venue="";popK="";openZ.clear();lAll=false;openSec.clear();(m==="m"?["g","m","c","d"]:m==="c"?["g","c","l"]:m==="i"?["g","m","c","d"]:["g","m","c"]).forEach(k=>openSec.add(k));heroStats();render(true);
+ $("#nS").textContent=ALL_S.length;$("#nI").textContent=ALL_I.length||"";$("#nP").textContent=ALL_P.length||"";$("#nM").textContent=ALL_M.length;$("#nC").textContent=new Set(ALL_C.map(e=>norm(e.artista))).size||"";
+ document.body.classList.toggle("mode-m",MODE==="m");document.body.classList.toggle("mode-c",MODE==="c");document.body.classList.toggle("mode-i",MODE==="i");document.body.classList.toggle("mode-p",MODE==="p")}
+function setMode(m){if(m===MODE)return;MODE=m;ALL=m==="m"?ALL_M:m==="c"?ALL_C:m==="i"?ALL_I:m==="p"?ALL_P:ALL_S;GOPTS=m==="m"?GOPTS_M:m==="c"?GOPTS_C:m==="i"?GOPTS_I:m==="p"?GOPTS_P:GOPTS_S;GLAB=Object.fromEntries(GOPTS.map(o=>[o.k,o]));
+ SECS=m==="m"?SECS_M:m==="c"?SECS_C:m==="i"?SECS_I:m==="p"?SECS_P:SECS_S;QUICK=m==="m"?QUICK_M:m==="c"?QUICK_C:QUICK_S;STITLE=Object.fromEntries(SECS);MONTHS=monthsOf(ALL);COMUNI_CON=new Set(ALL.map(e=>e._c));
+ resetAll();st.view="cal";st.venue="";popK="";openZ.clear();lAll=false;openSec.clear();(m==="m"?["g","m","c","d"]:m==="c"?["g","c","l"]:m==="i"?["g","m","c","d"]:m==="p"?["g","r","m"]:["g","m","c"]).forEach(k=>openSec.add(k));heroStats();render(true);
  const y=$(".modes").getBoundingClientRect().top+scrollY-8;if(scrollY>y)scrollTo({top:y})}
 
 /* ---------- interazioni ---------- */
@@ -1277,7 +1284,7 @@ document.addEventListener("click",e=>{if(!GC||!ON_WEB)return;const t=e.target;
  const a=t.closest(".card a.act");if(a){const lab=(a.dataset.lab||a.textContent).trim().replace(/^🎟\s*/,"");track(`${tm()}/clic-${norm(lab).replace(/\s+/g,"-")}/${tTitle(a)}`,`Clic «${lab}»`);return}
  const w=t.closest(".card .where");if(w){track(`${tm()}/luogo/${(w.querySelector(".wv")||w).textContent.trim()}`,w.tagName==="A"?"Apertura mappa":"Apertura programma del luogo");return}
  const vt=t.closest(".vtile");if(vt){track(`${tm()}/luogo/${vt.dataset.venue}`,"Apertura programma del luogo");return}
- const mo=t.closest("[data-mode]");if(mo){track(`scheda/${{m:"mostre",c:"cinema",i:"incontri"}[mo.dataset.mode]||"spettacoli"}`,"Cambio scheda");return}
+ const mo=t.closest("[data-mode]");if(mo){track(`scheda/${{m:"mostre",c:"cinema",i:"incontri",p:"sport"}[mo.dataset.mode]||"spettacoli"}`,"Cambio scheda");return}
  const vw=t.closest("[data-view]");if(vw){track(`${tm()}/vista/${vw.dataset.view==="luoghi"?"luoghi":"elenco"}`,"Cambio vista");return}
  const o=t.closest("[data-k][data-v]");if(o&&!o.disabled){track(`${tm()}/filtro/${STITLE[o.dataset.k]||o.dataset.k}/${o.dataset.v}`,"Filtro");return}
  const z=t.closest("[data-zone]");if(z){track(`${tm()}/filtro/zona/${ZLAB[z.dataset.zone]||z.dataset.zone}`,"Filtro");return}
