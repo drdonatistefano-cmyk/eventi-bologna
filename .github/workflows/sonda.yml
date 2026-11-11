@@ -1,0 +1,40 @@
+name: Sonda fonti
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          mkdir out; UA="Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
+          g(){ curl -sSL -m 30 -A "$UA" "$2" -o "out/$1" -w "$1 %{http_code} %{size_download} %{url_effective}\n" >> out/codici.txt || echo "$1 fail" >> out/codici.txt; }
+          g of_list.json "https://api.github.com/repos/openfootball/football.json/contents/"
+          g of_2627.json "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/it.1.json"
+          g of_2526.json "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/it.1.json"
+          g tsdb_sa.json "https://www.thesportsdb.com/api/v1/json/123/eventsseason.php?id=4332&s=2026-2027"
+          g tsdb_next.json "https://www.thesportsdb.com/api/v1/json/123/eventsnext.php?id=133600"
+          g el.json "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/games"
+          g el_r.txt "https://www.euroleaguebasketball.net/robots.txt"
+          g lba_r.txt "https://www.legabasket.it/robots.txt"
+          g lba.html "https://www.legabasket.it/lba/calendario"
+          g lsa_r.txt "https://www.legaseriea.it/robots.txt"
+          g lsa.html "https://www.legaseriea.it/it/serie-a/calendario-e-risultati"
+          g bfc.html "https://www.bolognafc.it/calendario/"
+          g bfc_r.txt "https://www.bolognafc.it/robots.txt"
+          g virtus.html "https://www.virtus.it/calendario/"
+          g virtus_r.txt "https://www.virtus.it/robots.txt"
+          g olimpia.html "https://www.olimpiamilano.com/calendario/"
+          g inter.html "https://www.inter.it/it/calendario"
+          g inter_r.txt "https://www.inter.it/robots.txt"
+          g milan_r.txt "https://www.acmilan.com/robots.txt"
+          g fbm_r.txt "https://www.fortitudo.it/robots.txt"
+          g lv_r.txt "https://www.legavolley.it/robots.txt"
+          g lv.html "https://www.legavolley.it/calendario/?IdCampionato=947"
+          g espn.json "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261115-20261231&limit=200"
+          g espn_bb.json "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/teams/107/schedule"
+          g fd_r.txt "https://www.diretta.it/robots.txt"
+          g vt.html "https://www.vivaticket.com/it/ricerca?q=bologna%20fc"
+          cd out && git init -q && git checkout -q -b sonda && git add -A
+          git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm sonda
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" sonda
