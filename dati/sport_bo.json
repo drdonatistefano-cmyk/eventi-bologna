@@ -2,21 +2,20 @@
  "fonti": {
   "seriea": 14,
   "uefa": 0,
+  "bologna_sito": 1,
   "volleyf": 12,
   "fortitudo": 14,
   "extra": 7,
   "lba": 11,
   "euroleague": 14
  },
- "errori": [
-  "https://raw.githubusercontent.com/openfootball/football.json/master/2027-28/it.1.json: HTTP Error 404: Not Found"
- ],
+ "errori": [],
  "per_sport": {
   "Basket": 31,
+  "Calcio": 15,
   "Volley": 12,
-  "Calcio": 14,
   "Tennis": 7
  },
- "totale": 64,
+ "totale": 65,
  "giorno": "2026-11-11"
 }
