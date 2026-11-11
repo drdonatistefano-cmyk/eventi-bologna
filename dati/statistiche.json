@@ -1,13 +1,13 @@
 {
- "generato": "2026-11-11T15:32:42+00:00",
+ "generato": "2026-11-11T16:28:09+00:00",
  "dal": "2026-11-04",
  "al": "2026-11-11",
- "visite_totali": 243,
- "totale_goatcounter": 703,
- "eventi_totali": 460,
+ "visite_totali": 246,
+ "totale_goatcounter": 708,
+ "eventi_totali": 462,
  "eventi_per_tipo": {
   "filtri": 132,
-  "cambio scheda": 83,
+  "cambio scheda": 85,
   "schede aperte": 74,
   "cambio vista": 42,
   "luoghi aperti": 42,
@@ -48,8 +48,8 @@
    "settimana": 2,
    "dal": "2026-11-11",
    "al": "2026-11-11",
-   "visite": 10,
-   "cambio scheda": 9,
+   "visite": 13,
+   "cambio scheda": 11,
    "cambio vista": 1,
    "apri filtri": 1,
    "altro": 3,
@@ -187,7 +187,7 @@
    "clic mostre (scheda o sito)": 0
   },
   "2026-11-11": {
-   "cambio scheda": 9,
+   "cambio scheda": 11,
    "cambio vista": 1,
    "apri filtri": 1,
    "altro": 3,
@@ -235,13 +235,13 @@
   },
   {
    "giorno": "2026-11-11",
-   "visite": 10
+   "visite": 13
   }
  ],
  "provenienze": [
   {
    "origine": "(diretto)",
-   "conteggio": 509
+   "conteggio": 511
   },
   {
    "origine": "achevents.com/milano",
@@ -249,7 +249,7 @@
   },
   {
    "origine": "achevents.com",
-   "conteggio": 58
+   "conteggio": 60
   },
   {
    "origine": "achplaces.com",
@@ -268,11 +268,11 @@
    "conteggio": 2
   },
   {
-   "origine": "web.whatsapp.com",
-   "conteggio": 1
+   "origine": "achdinners.com",
+   "conteggio": 2
   },
   {
-   "origine": "achdinners.com",
+   "origine": "web.whatsapp.com",
    "conteggio": 1
   }
  ],
@@ -280,12 +280,12 @@
   {
    "path": "/milano",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
-   "conteggio": 123
+   "conteggio": 125
   },
   {
    "path": "/",
    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
-   "conteggio": 72
+   "conteggio": 73
   },
   {
    "path": "/eventi-bologna",
@@ -687,6 +687,18 @@
    "titolo": "Apertura filtri",
    "conteggio": 2,
    "tipo": "apri filtri"
+  },
+  {
+   "path": "milano/scheda/sport",
+   "titolo": "Cambio scheda",
+   "conteggio": 1,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "scheda/sport",
+   "titolo": "Cambio scheda",
+   "conteggio": 1,
+   "tipo": "cambio scheda"
   },
   {
    "path": "spettacoli/dettaglio/La seconda vita dei libri",
@@ -1461,18 +1473,6 @@
    "titolo": "Apertura scheda",
    "conteggio": 1,
    "tipo": "schede aperte"
-  },
-  {
-   "path": "cinema/apri-filtri",
-   "titolo": "Apertura filtri",
-   "conteggio": 1,
-   "tipo": "apri filtri"
-  },
-  {
-   "path": "mostre/filtro/Periodo/oggi",
-   "titolo": "Filtro",
-   "conteggio": 1,
-   "tipo": "filtri"
   }
  ]
 }
