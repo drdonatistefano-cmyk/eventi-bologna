@@ -1,16 +1,16 @@
 # Ach's Places Guide – visite
 
-Sito: https://achplaces.com/ · dati GoatCounter, aggiornati ogni 15 minuti · ultima lettura: mer 11 nov 2026 alle 10:41 (ora italiana)
+Sito: https://achplaces.com/ · dati GoatCounter, aggiornati ogni 15 minuti · ultima lettura: mer 11 nov 2026 alle 11:43 (ora italiana)
 
 | Oggi | Ultimi 7 giorni | Dal lancio |
 |---:|---:|---:|
-| 6 | 40 | 40 |
+| 8 | 42 | 42 |
 
 ## Visite per giorno
 
 | Giorno | Visite |
 |---|---:|
-| mer 11 nov 2026 | 6 |
+| mer 11 nov 2026 | 8 |
 | mar 10 nov 2026 | 13 |
 | lun 9 nov 2026 | 11 |
 | dom 8 nov 2026 | 10 |
