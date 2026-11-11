@@ -1,0 +1,20 @@
+{
+ "fonti": {
+  "seriea": 27,
+  "uefa": 4,
+  "superlega": 8,
+  "volleyf": 9,
+  "lba": 11,
+  "euroleague": 14
+ },
+ "errori": [
+  "https://raw.githubusercontent.com/openfootball/football.json/master/2027-28/it.1.json: HTTP Error 404: Not Found"
+ ],
+ "per_sport": {
+  "Volley": 17,
+  "Basket": 18,
+  "Calcio": 31
+ },
+ "totale": 66,
+ "giorno": "2026-11-11"
+}
