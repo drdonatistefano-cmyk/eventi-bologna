@@ -24,6 +24,7 @@
  --good:#6fbf86;--good-soft:#1c2a20;--warn:#e0b25a;--warn-soft:#2d2516;--bad:#e8876f;--bad-soft:#321d18;--shadow:none}
 *{box-sizing:border-box}[hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%}
+html,body{overflow-x:hidden}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 var(--sans);-webkit-font-smoothing:antialiased}
 button,a{-webkit-tap-highlight-color:transparent}
 a{color:var(--terra)}
@@ -62,8 +63,8 @@ h2{font-family:var(--serif);font-weight:600;font-size:1.45rem;margin:0 0 10px}
 .seg button.on{background:var(--ink);color:var(--paper)}
 .headrow{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px}
 /* numeri */
-.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media(min-width:760px){.tiles{grid-template-columns:repeat(4,1fr)}}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media(min-width:760px){.tiles{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .tile{padding:14px 16px}
 .tile b{display:block;font-family:var(--serif);font-size:2.1rem;line-height:1.05;font-variant-numeric:tabular-nums}
 .tile span{display:block;font-size:14px;color:var(--mute);margin-top:4px}
@@ -80,9 +81,10 @@ h2{font-family:var(--serif);font-weight:600;font-size:1.45rem;margin:0 0 10px}
 .tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);font-size:13px;padding:5px 9px;border-radius:8px;white-space:nowrap;transform:translate(-50%,-100%);top:0;z-index:2}
 .peak{position:absolute;right:0;top:-2px;font-size:12.5px;color:var(--mute)}
 /* elenchi */
-.grid{display:grid;gap:10px;grid-template-columns:1fr}
-@media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
-@media(min-width:1100px){.grid.g3{grid-template-columns:1fr 1fr 1fr}}
+.grid{display:grid;gap:10px;grid-template-columns:minmax(0,1fr)}
+.grid>*,.tiles>*{min-width:0}
+@media(min-width:760px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1100px){.grid.g3{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .list{padding:14px 16px 12px}
 .rows{list-style:none;margin:0;padding:0}
 .rows li{padding:6px 0}
