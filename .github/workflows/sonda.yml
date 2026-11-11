@@ -12,21 +12,22 @@ jobs:
           mkdir out || true; UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
           g(){ curl -sSL -m 30 -A "$UA" "$2" -o "out/$1" -w "$1 %{http_code} %{size_download} %{url_effective}\n" >> out/codici.txt || echo "$1 fail" >> out/codici.txt; }
           t(){ curl -sSL -m 30 -A "$UA" "$1" -o /tmp/p.html -w "%{http_code} %{url_effective}" > /tmp/c.txt 2>/dev/null || echo "000 fail" > /tmp/c.txt; echo "$(cat /tmp/c.txt) | $(grep -o '<title>[^<]*' /tmp/p.html | head -1 | cut -c8-120) | $1" >> out/biglietti.txt; } 
-          t "https://fortitudobologna.vivaticket.it/" || true
+          t "https://www.acmilan.com/it/biglietteria/biglietti-partite-maschile" || true
+          grep -o "href=\"[^\"]*\(ticket\|biglietti\|vivaticket\|booking\)[^\"]*\"" /tmp/p.html | sort -u | head -15 >> out/links_0.txt || true
+          t "https://singletickets.acmilan.com/" || true
+          grep -o "href=\"[^\"]*\(ticket\|biglietti\|vivaticket\|booking\)[^\"]*\"" /tmp/p.html | sort -u | head -15 >> out/links_1.txt || true
+          t "https://acmilan.vivaticket.it/" || true
+          grep -o "href=\"[^\"]*\(ticket\|biglietti\|vivaticket\|booking\)[^\"]*\"" /tmp/p.html | sort -u | head -15 >> out/links_2.txt || true
+          t "https://booking.acmilan.com/" || true
+          grep -o "href=\"[^\"]*\(ticket\|biglietti\|vivaticket\|booking\)[^\"]*\"" /tmp/p.html | sort -u | head -15 >> out/links_3.txt || true
+          t "https://www.acmilan.com/it/biglietteria" || true
+          grep -o "href=\"[^\"]*\(ticket\|biglietti\|vivaticket\|booking\)[^\"]*\"" /tmp/p.html | sort -u | head -15 >> out/links_4.txt || true
           t "https://legabasket.vivaticket.it/it/extsearch/armani-olimpia-milano" || true
-          t "https://legabasket.vivaticket.it/it/extsearch/virtus-bologna" || true
-          t "https://www.acmilan.com/it/biglietti" || true
-          t "https://www.bolognafc.it/biglietti/" || true
-          t "https://www.inter.it/it/biglietti" || true
-          t "https://www.ticketone.it/artist/davis-cup-tennis/davis-cup-by-generali-final-8-2026-4084035/" || true
-          g ice_r.txt "https://www.ice.hockey/robots.txt" || true
-          g ice.html "https://www.ice.hockey/en/schedule" || true
-          g ice_it.html "https://www.ice.hockey/it/calendario" || true
-          g mhc.html "https://www.milanohockeyclub.it/" || true
-          g mhc2.html "https://milanohockey.club/" || true
-          g ura.html "https://www.uraniabasket.it/" || true
-          g ura2.html "https://www.uraniamilano.it/" || true
-          g lnp_team.html "https://www.legapallacanestro.com/squadre/serie-a2" || true
+          grep -o "href=\"[^\"]*\(ticket\|biglietti\|vivaticket\|booking\)[^\"]*\"" /tmp/p.html | sort -u | head -15 >> out/links_5.txt || true
+          t "https://www.ticketone.it/artist/milano-hockey-club/" || true
+          grep -o "href=\"[^\"]*\(ticket\|biglietti\|vivaticket\|booking\)[^\"]*\"" /tmp/p.html | sort -u | head -15 >> out/links_6.txt || true
+          g mhc_cal.html "https://www.milanohockeyclub.it/calendario/" || true
+          g ice_api.json "https://www.ice.hockey/api/schedule" || true
           grep -rl "pk\.ey\|sk\.ey" out | xargs -r rm -f || true
           cd out && git init -q && git checkout -q -b sonda && git add -A || true
           git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm sonda || true
