@@ -63,7 +63,7 @@
    {
     "tipo": "json",
     "url": "https://bravocaffe.it/wp-json/tribe/events/v1/events?per_page=5",
-    "cosa": "JSON Events Calendar (45 eventi)"
+    "cosa": "JSON Events Calendar (40 eventi)"
    },
    {
     "tipo": "json",
@@ -127,7 +127,7 @@
    {
     "tipo": "rss",
     "url": "https://cantabo.it/feed/?post_type=tribe_events",
-    "cosa": "RSS (5 voci, con eventi)"
+    "cosa": "RSS (4 voci, con eventi)"
    },
    {
     "tipo": "rss",
@@ -137,7 +137,7 @@
    {
     "tipo": "rss",
     "url": "https://cantabo.it/events/feed/",
-    "cosa": "RSS (5 voci, con eventi)"
+    "cosa": "RSS (4 voci, con eventi)"
    },
    {
     "tipo": "rss",
@@ -152,27 +152,27 @@
    {
     "tipo": "ics",
     "url": "https://cantabo.it/?ical=1",
-    "cosa": "ICS (4 eventi)"
+    "cosa": "ICS (3 eventi)"
    },
    {
     "tipo": "ics",
     "url": "https://cantabo.it/eventi/?ical=1",
-    "cosa": "ICS (4 eventi)"
+    "cosa": "ICS (3 eventi)"
    },
    {
     "tipo": "ics",
     "url": "https://cantabo.it/events/?ical=1",
-    "cosa": "ICS (4 eventi)"
+    "cosa": "ICS (3 eventi)"
    },
    {
     "tipo": "ics",
     "url": "https://cantabo.it/?post_type=tribe_events&ical=1",
-    "cosa": "ICS (4 eventi)"
+    "cosa": "ICS (3 eventi)"
    },
    {
     "tipo": "json",
     "url": "https://cantabo.it/wp-json/tribe/events/v1/events?per_page=5",
-    "cosa": "JSON Events Calendar (5 eventi)"
+    "cosa": "JSON Events Calendar (4 eventi)"
    },
    {
     "tipo": "json",
@@ -213,6 +213,31 @@
   "livello": "A – calendario strutturato (ICS/JSON eventi)"
  },
  {
+  "nome": "Concerti a Bologna",
+  "dominio": "concertiabologna.it",
+  "home": {
+   "raggiungibile": true,
+   "stato": 200,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [
+   {
+    "tipo": "ics",
+    "url": "https://concertiabologna.it/calendario.ics",
+    "cosa": "ICS (294 eventi)"
+   },
+   {
+    "tipo": "sitemap",
+    "url": "https://concertiabologna.it/sitemap.xml",
+    "cosa": "sitemap (4 url)"
+   }
+  ],
+  "livello": "A – calendario strutturato (ICS/JSON eventi)"
+ },
+ {
   "nome": "Teatro Laura Betti",
   "dominio": "teatrocasalecchio.it",
   "home": {
@@ -235,22 +260,22 @@
    {
     "tipo": "ics",
     "url": "https://teatrocasalecchio.it/?ical=1",
-    "cosa": "ICS (24 eventi)"
+    "cosa": "ICS (29 eventi)"
    },
    {
     "tipo": "ics",
     "url": "https://teatrocasalecchio.it/eventi/?ical=1",
-    "cosa": "ICS (24 eventi)"
+    "cosa": "ICS (29 eventi)"
    },
    {
     "tipo": "ics",
     "url": "https://teatrocasalecchio.it/events/?ical=1",
-    "cosa": "ICS (24 eventi)"
+    "cosa": "ICS (29 eventi)"
    },
    {
     "tipo": "ics",
     "url": "https://teatrocasalecchio.it/?post_type=tribe_events&ical=1",
-    "cosa": "ICS (24 eventi)"
+    "cosa": "ICS (29 eventi)"
    },
    {
     "tipo": "rss",
@@ -640,26 +665,6 @@
     "tipo": "sitemap",
     "url": "https://cartellone.emiliaromagnacultura.it/sitemap_index.xml",
     "cosa": "sitemap (61 url)"
-   }
-  ],
-  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
- },
- {
-  "nome": "Concerti a Bologna",
-  "dominio": "concertiabologna.it",
-  "home": {
-   "raggiungibile": true,
-   "stato": 200,
-   "cms": "",
-   "feed_dichiarati": [],
-   "ics_link": [],
-   "jsonld_eventi": 20
-  },
-  "trovati": [
-   {
-    "tipo": "sitemap",
-    "url": "https://concertiabologna.it/sitemap.xml",
-    "cosa": "sitemap (377 url)"
    }
   ],
   "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
@@ -1433,79 +1438,6 @@
   "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
  },
  {
-  "nome": "Teatro Testoni Ragazzi",
-  "dominio": "testoniragazzi.it",
-  "home": {
-   "raggiungibile": true,
-   "stato": 200,
-   "cms": "WordPress",
-   "feed_dichiarati": [
-    "https://www.testoniragazzi.it/feed/",
-    "https://www.testoniragazzi.it/comments/feed/"
-   ],
-   "ics_link": [],
-   "jsonld_eventi": 0
-  },
-  "trovati": [
-   {
-    "tipo": "rss",
-    "url": "https://testoniragazzi.it/feed/",
-    "cosa": "RSS (0 voci)"
-   },
-   {
-    "tipo": "rss",
-    "url": "https://testoniragazzi.it/feed/?post_type=tribe_events",
-    "cosa": "RSS (0 voci, con eventi)"
-   },
-   {
-    "tipo": "rss",
-    "url": "https://testoniragazzi.it/eventi/feed/",
-    "cosa": "RSS (10 voci, con eventi)"
-   },
-   {
-    "tipo": "rss",
-    "url": "https://testoniragazzi.it/rss",
-    "cosa": "RSS (0 voci)"
-   },
-   {
-    "tipo": "rss",
-    "url": "https://testoniragazzi.it/?feed=rss2",
-    "cosa": "RSS (0 voci)"
-   },
-   {
-    "tipo": "json",
-    "url": "https://testoniragazzi.it/wp-json/wp/v2/posts?per_page=1",
-    "cosa": "JSON generico"
-   },
-   {
-    "tipo": "json",
-    "url": "https://testoniragazzi.it/wp-json/wp/v2/types",
-    "cosa": "WP REST (tipi: post, page, attachment, nav_menu_item, wp_block, wp_template)"
-   },
-   {
-    "tipo": "sitemap",
-    "url": "https://testoniragazzi.it/sitemap_index.xml",
-    "cosa": "sitemap (3 url)"
-   },
-   {
-    "tipo": "sitemap",
-    "url": "https://testoniragazzi.it/wp-sitemap.xml",
-    "cosa": "sitemap (3 url)"
-   },
-   {
-    "tipo": "rss",
-    "url": "https://www.testoniragazzi.it/feed/",
-    "cosa": "RSS (0 voci)"
-   },
-   {
-    "tipo": "rss",
-    "url": "https://www.testoniragazzi.it/comments/feed/",
-    "cosa": "RSS (0 voci)"
-   }
-  ],
-  "livello": "B – feed RSS o dati evento in pagina (JSON-LD)"
- },
- {
   "nome": "Teatro Tivoli",
   "dominio": "teatrotivoli.it",
   "home": {
@@ -1523,7 +1455,7 @@
    {
     "tipo": "rss",
     "url": "https://www.cinemativoli.it/feed/",
-    "cosa": "RSS (2 voci)"
+    "cosa": "RSS (2 voci, con eventi)"
    },
    {
     "tipo": "rss",
@@ -1664,7 +1596,7 @@
    {
     "tipo": "sitemap",
     "url": "https://camerajazzclub.com/sitemap.xml",
-    "cosa": "sitemap (40 url)"
+    "cosa": "sitemap (39 url)"
    }
   ],
   "livello": "C – solo pagine HTML (sitemap/CMS): leggibile con parser dedicato"
@@ -1744,7 +1676,7 @@
    {
     "tipo": "sitemap",
     "url": "https://opendata.comune.bologna.it/sitemap.xml",
-    "cosa": "sitemap (706 url)"
+    "cosa": "sitemap (705 url)"
    }
   ],
   "livello": "C – solo pagine HTML (sitemap/CMS): leggibile con parser dedicato"
@@ -2133,6 +2065,20 @@
   "home": {
    "raggiungibile": false,
    "stato": 502,
+   "cms": "",
+   "feed_dichiarati": [],
+   "ics_link": [],
+   "jsonld_eventi": 0
+  },
+  "trovati": [],
+  "livello": "X – non raggiungibile"
+ },
+ {
+  "nome": "Teatro Testoni Ragazzi",
+  "dominio": "testoniragazzi.it",
+  "home": {
+   "raggiungibile": false,
+   "stato": 403,
    "cms": "",
    "feed_dichiarati": [],
    "ics_link": [],
