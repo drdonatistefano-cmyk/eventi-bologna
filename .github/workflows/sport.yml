@@ -32,13 +32,7 @@ jobs:
         continue-on-error: true
       - name: Salva il risultato
         if: ${{ !inputs.prova }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          python3 scripts/versioni.py
-          git add sport.js milano/sport.js versioni.js milano/versioni.js dati/sport_bo.json dati/sport_mi.json 2>/dev/null || true
-          git commit -m "Sport automatico $(date +%F)" || echo "nessuna modifica"
-          for i in 1 2 3; do git pull --rebase && git push && break; sleep 10; done
+        run: bash scripts/salva.sh "Sport automatico $(date +%F)" sport.js milano/sport.js dati/sport_bo.json dati/sport_mi.json
       - name: Segnala se qualcosa non è andato
         if: ${{ !inputs.prova && (steps.bo.outcome == 'failure' || steps.mi.outcome == 'failure') }}
         env: { GH_TOKEN: "${{ github.token }}" }

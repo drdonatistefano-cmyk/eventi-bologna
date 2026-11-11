@@ -33,13 +33,7 @@ jobs:
         continue-on-error: true
       - name: Salva il risultato
         if: ${{ !inputs.prova }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          python3 scripts/versioni.py
-          git add eventi.js mostre.js milano/eventi.js milano/mostre.js versioni.js milano/versioni.js dati/auto_bo.json dati/auto_mi.json dati/generi_artisti.json 2>/dev/null || true
-          git commit -m "Eventi e mostre automatici $(date +%F)" || echo "nessuna modifica"
-          for i in 1 2 3; do git pull --rebase && git push && break; sleep 10; done
+        run: bash scripts/salva.sh "Eventi e mostre automatici $(date +%F)" eventi.js mostre.js milano/eventi.js milano/mostre.js dati/auto_bo.json dati/auto_mi.json dati/generi_artisti.json
       - name: Segnala se qualcosa non è andato
         if: ${{ !inputs.prova && (steps.bo.outcome == 'failure' || steps.mi.outcome == 'failure') }}
         env: { GH_TOKEN: "${{ github.token }}" }

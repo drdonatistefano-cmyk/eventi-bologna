@@ -26,13 +26,7 @@ jobs:
         continue-on-error: true
         run: python3 scripts/cinema_auto.py --citta mi ${{ inputs.scopri && '--scopri' || '' }}
       - name: Salva il risultato
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          python3 scripts/versioni.py
-          git add dati/cinema.json dati/cinema_stato.json dati/film_info.json cinema.js milano/dati milano/cinema.js versioni.js milano/versioni.js
-          git commit -m "Cinema $(TZ=Europe/Rome date +%F)" || echo "nessuna modifica"
-          git pull --rebase && git push
+        run: bash scripts/salva.sh "Cinema $(TZ=Europe/Rome date +%F)" dati/cinema.json dati/cinema_stato.json dati/film_info.json cinema.js milano/dati milano/cinema.js
       - name: Segnala il problema (Claude interviene come riserva)
         if: steps.leggi.outcome == 'failure'
         env:
