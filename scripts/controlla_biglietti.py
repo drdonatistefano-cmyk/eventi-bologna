@@ -9,7 +9,7 @@ Dal 11/11/2026 controlla anche:
 - Cinema (dati/cinema.json): il link del film deve aprirsi e la pagina deve contenere il titolo del film
   (altrimenti «titolo assente»: il link porta a un altro film o alla pagina della sala).
 Scrive dati/controllo_biglietti.json (riepilogo + elenco dei casi da correggere)."""
-import json, re, sys, os, time, datetime, urllib.request, urllib.robotparser, collections, concurrent.futures, threading
+import html, unicodedata, urllib.error, json, re, sys, os, time, datetime, urllib.request, urllib.robotparser, collections, concurrent.futures, threading
 from urllib.parse import urlparse
 
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,13 +24,21 @@ def carica(f):
     return json.loads(s[s.index("=") + 1:].rstrip().rstrip(";"))
 
 
+MAI = ("ticketone.it", "eventim.")          # il loro robots.txt vieta tutti i programmi: mai aprirli da GitHub (si controllano a mano)
+PAUSA = {"18tickets.it": 6.0}               # secondi tra due pagine dello stesso dominio (18tickets risponde 429 se si va più veloci)
+
+
 def permesso(u):
     p = urlparse(u); base = f"{p.scheme}://{p.netloc}"
+    if any(m in p.netloc for m in MAI): return False
     if base not in _rp:
         rp = urllib.robotparser.RobotFileParser()
         try:
             r = urllib.request.Request(base + "/robots.txt", headers={"User-Agent": UA})
             rp.parse(urllib.request.urlopen(r, timeout=10).read().decode("utf-8", "ignore").splitlines())
+        except urllib.error.HTTPError as ex:
+            if ex.code in (401, 403): rp.disallow_all = True   # robots.txt negato: si considera tutto vietato
+            else: rp.parse([])
         except Exception:
             rp.parse([])
         _rp[base] = rp
@@ -44,15 +52,22 @@ def dominio(u):
 _lock_dom = collections.defaultdict(threading.Lock)
 
 
-def apri(u):
+def apri(u, prova=0):
     host = dominio(u)
     with _lock_dom[host]:
-        att = 2.0 - (time.time() - _ult[host])
+        att = PAUSA.get(host, 2.0) - (time.time() - _ult[host])
         if att > 0: time.sleep(att)
         _ult[host] = time.time()
     r = urllib.request.Request(u, headers={"User-Agent": UA, "Accept-Language": "it-IT,it;q=0.9"})
-    with urllib.request.urlopen(r, timeout=15) as x:
-        return x.geturl(), x.read().decode("utf-8", "ignore")
+    try:
+        with urllib.request.urlopen(r, timeout=15) as x:
+            return x.geturl(), x.read().decode("utf-8", "ignore")
+    except urllib.error.HTTPError as ex:
+        if ex.code == 429 and prova < 2:          # troppo veloci: aspetta e riprova
+            with _lock_dom[host]:
+                time.sleep(30); _ult[host] = time.time()
+            return apri(u, prova + 1)
+        raise
 
 
 def date_pagina(h):
@@ -135,8 +150,12 @@ def main():
                            "eventi": [f'{x["citta"]} {x["data"]} {x["titolo"][:50]}' for x in ev][:3]})
 
     # ---- cinema ----
+    def piatto(t):   # minuscole, senza accenti e senza entità HTML («Zustìssia» = «Zustissia», «Barça» = «Barca»)
+        t = html.unescape(t).lower()
+        return "".join(ch for ch in unicodedata.normalize("NFKD", t) if not unicodedata.combining(ch))
+
     def parole(t):
-        return [w for w in re.findall(r"[a-zà-ü0-9]{4,}", t.lower()) if w not in ("film", "della", "delle", "dello", "nella", "parte", "versione", "originale")]
+        return [w for w in re.findall(r"[a-z0-9]{4,}", piatto(t)) if w not in ("film", "della", "delle", "dello", "nella", "parte", "versione", "originale")]
     film = collections.defaultdict(set)
     for c in ("", "milano/"):
         try: sale = json.load(open(os.path.join(RADICE, c + "dati", "cinema.json"), encoding="utf-8"))["sale"]
@@ -154,7 +173,7 @@ def main():
         if not permesso(u): return u, fs, "vietato", ""
         try:
             finale, h = apri(u)
-            testo = re.sub(r"<[^>]+>", " ", h).lower()
+            testo = piatto(re.sub(r"<[^>]+>", " ", h))
             pw = parole(titolo)
             ok = not pw or sum(w in testo for w in pw) >= max(1, (len(pw) + 1) // 2)
             return u, fs, "ok" if ok else "titolo assente", finale
@@ -166,7 +185,7 @@ def main():
     def un_sito_c(elenco):
         t0 = time.time()
         for item in elenco:
-            r = un_film(item) if time.time() - t0 < 600 else (item[0], item[1], "non letto", "saltato: sito lento")
+            r = un_film(item) if time.time() - t0 < 1500 else (item[0], item[1], "non letto", "saltato: sito lento")
             with blocco:
                 esiti_c[r[2]] += 1
                 if r[2] in ("titolo assente", "non letto"):
