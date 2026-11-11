@@ -164,8 +164,11 @@ def ora_roma(s):
 def lba():
     out, big = [], {}
     comp = None
-    info = get("https://www.legabasket.it/api/championships/get-championships?s_id=1", js=True) or {}
-    lista = info.get("competitions") or info.get("championships") or []
+    # il campionato in corso si legge dai dati della pagina calendario (campo focus_on della stagione regolare)
+    h = get("https://www.legabasket.it/calendario") or ""
+    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', h, re.S)
+    try: lista = json.loads(m.group(1))["props"]["pageProps"]["allCompetitionsBySeriesId"]["competitions"]
+    except Exception: lista = []
     att = [c for c in lista if c.get("status") == 1 and c.get("ctype_code") == "RS"] or [c for c in lista if c.get("focus_on")]
     comp = (att or [{"id": 602}])[-1]["id"]
     for sq in SQUADRE:

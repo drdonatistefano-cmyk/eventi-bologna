@@ -44,4 +44,4 @@ jobs:
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           gh issue list --state open --search "Sport automatico: errore in:title" --json number --jq '.[0].number' | grep -q . || \
-          gh issue create --title "Sport automatico: errore" --body "Lo script scripts/sport_auto.py non ha completato una delle due città (vedi il log del flusso «Sport automatico»). Gli incontri già pubblicati restano invariati."
+          gh issue create --title "Sport automatico: errore" --body "Lo script scripts/sport_auto.py non ha completato una delle due città (vedi il log del flusso «Sport automatico»). Le partite già pubblicate restano invariate."
