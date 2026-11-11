@@ -11,14 +11,13 @@ jobs:
       - run: |
           mkdir out || true; UA="Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
           g(){ curl -sSL -m 30 -A "$UA" "$2" -o "out/$1" -w "$1 %{http_code} %{size_download} %{url_effective}\n" >> out/codici.txt || echo "$1 fail" >> out/codici.txt; }
-          g lbf_home.html "https://www.legabasketfemminile.it/" || true
-          grep -o 'href="[^"]*"' out/lbf_home.html | grep -i 'calend\|partit\|serie-a1\|a1' | sort -u > out/lbf_links.txt || true
-          g lbf_cal.html "https://www.legabasketfemminile.it/it/calendario/" || true
-          g bfc_cal.html "https://www.bolognafc.it/calendario-risultati/" || true
-          g bfc_home.html "https://www.bolognafc.it/" || true
-          grep -o 'href="[^"]*"' out/bfc_home.html | grep -i 'calend\|match\|partit\|biglietti' | sort -u > out/bfc_links.txt || true
+          g fxd.json "https://fixturedownload.com/feed/json/serie-a-2026" || true
+          g fxd_r.txt "https://fixturedownload.com/robots.txt" || true
+          g lsa.html "https://www.legaseriea.it/it/serie-a/calendario-e-risultati" || true
+          grep -o 'https://[a-z0-9.-]*legaseriea[a-z0-9./_-]*' out/lsa.html | sort -u > out/lsa_urls.txt || true
           g acm_cal.html "https://www.acmilan.com/it/stagione/calendario/prima-squadra-maschile" || true
-          g acm_calw.html "https://www.acmilan.com/it/stagione/calendario/prima-squadra-femminile" || true
+          python3 -c "import re;t=open('out/acm_cal.html').read();open('out/acm_next.txt','w').write('\n'.join(re.findall(r'self.__next_f.push\((.*?)\)</script>',t,re.S)))" || true
+          g bfc_m.html "https://www.bolognafc.it/match/bologna-palermo/" || true
           python3 - <<'PY' || true
           import re,glob
           for f in glob.glob("out/*"):
