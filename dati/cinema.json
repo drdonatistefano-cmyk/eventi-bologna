@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-11",
- "giorno_orari": "2026-11-11",
+ "aggiornato": "2026-11-12",
+ "giorno_orari": "2026-11-12",
  "sale": [
   {
    "id": "c001",
@@ -57,7 +57,9 @@
     },
     {
      "titolo": "Godzilla Minus Zero",
-     "orari": [],
+     "orari": [
+      "21:30"
+     ],
      "giorni": {
       "2026-11-12": [
        "21:30"
@@ -73,21 +75,20 @@
       ]
      },
      "versione": "Versione originale",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://arlecchino.popupcinema.18tickets.it/film/128980"
+     "genere": "Azione, Avventura, Drammatico",
+     "regia": "Takashi Yamazaki",
+     "biglietti": "https://arlecchino.popupcinema.18tickets.it/film/128980",
+     "interpreti": "Minami Hamabe, Ryûnosuke Kamiki, Masami Nagasawa e Jun Kunimura",
+     "paese": "Giappone",
+     "durata": 135,
+     "anno": 2026
     },
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "14:45",
-      "17:00"
+      "15:10"
      ],
      "giorni": {
-      "2026-11-11": [
-       "14:45",
-       "17:00"
-      ],
       "2026-11-12": [
        "15:10"
       ],
@@ -104,7 +105,7 @@
      "versione": "",
      "genere": "Animazione",
      "regia": "Alessandro Carloni e Erica Rivinoja",
-     "biglietti": "https://arlecchino.popupcinema.18tickets.it/film/126669",
+     "biglietti": "https://arlecchino.popupcinema.18tickets.it/film/123732",
      "interpreti": "Stefano Fresi, Luigi Luciano, Bill Hader e Matt Berry",
      "paese": "USA",
      "durata": 107,
@@ -113,12 +114,9 @@
     {
      "titolo": "It Ends",
      "orari": [
-      "21:30"
+      "19:40"
      ],
      "giorni": {
-      "2026-11-11": [
-       "21:30"
-      ],
       "2026-11-12": [
        "19:40"
       ],
@@ -135,7 +133,7 @@
      "versione": "Versione originale",
      "genere": "Horror, Drammatico, Fantastico",
      "regia": "Alex Ullom",
-     "biglietti": "https://arlecchino.popupcinema.18tickets.it/film/122645",
+     "biglietti": "https://arlecchino.popupcinema.18tickets.it/film/122610",
      "interpreti": "Phinehas Yoon, Akira Jackson, Noah Toth e Mitchell Cole",
      "paese": "USA",
      "durata": 89,
@@ -144,12 +142,9 @@
     {
      "titolo": "Primetime",
      "orari": [
-      "19:15"
+      "17:25"
      ],
      "giorni": {
-      "2026-11-11": [
-       "19:15"
-      ],
       "2026-11-12": [
        "17:25"
       ],
@@ -191,9 +186,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-11": [
-       "21:00"
-      ],
       "2026-11-12": [
        "21:00"
       ],
@@ -245,48 +237,12 @@
    "fonte": "https://movieplayer.it/cinema/chaplin-ex-tiffany_191/",
    "film": [
     {
-     "titolo": "George Michael: The Faith Tour",
+     "titolo": "Un weekend artificiale",
      "orari": [
-      "18:45",
+      "17:00",
+      "19:00",
       "21:00"
      ],
-     "giorni": {
-      "2026-11-11": [
-       "18:45",
-       "21:00"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Documentario",
-     "regia": "David Austin e Andrew Morahan",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/BO/5373",
-     "interpreti": "George Michael",
-     "paese": "Regno Unito",
-     "durata": 113,
-     "anno": 2026
-    },
-    {
-     "titolo": "Ragione e sentimento",
-     "orari": [
-      "16:00"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "16:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Ang Lee",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/BO/5373",
-     "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
-     "durata": 136,
-     "anno": 1995,
-     "paese": "USA"
-    },
-    {
-     "titolo": "Un weekend artificiale",
-     "orari": [],
      "giorni": {
       "2026-11-12": [
        "17:00",
@@ -312,9 +268,13 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/BO/5373"
+     "genere": "Commedia",
+     "regia": "Leonardo Pieraccioni",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/BO/5373",
+     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio e Herbert Ballerina",
+     "anno": 2026,
+     "paese": "Italia",
+     "durata": 91
     }
    ],
    "biglietti": "https://www.webtic.it/app/shopping/loadLocal/BO/5373",
@@ -341,7 +301,9 @@
    "film": [
     {
      "titolo": "Fatherland",
-     "orari": [],
+     "orari": [
+      "15:30"
+     ],
      "giorni": {
       "2026-11-12": [
        "15:30"
@@ -358,12 +320,12 @@
      },
      "versione": "",
      "genere": "Drammatico",
-     "regia": "Pawel Pawlikowski",
+     "regia": "Paweł Pawlikowski",
      "biglietti": "https://europa.ccb.18tickets.it/film/113603",
-     "interpreti": "Sandra Hüller, Hanns Zischler, August Diehl e Devid Striesow",
+     "interpreti": "Sandra Hüller e Hanns Zischler",
+     "anno": 2026,
      "paese": "Italia",
-     "durata": 82,
-     "anno": 2026
+     "durata": 82
     },
     {
      "titolo": "Se domani non torno",
@@ -373,11 +335,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-11": [
-       "17:10",
-       "19:20",
-       "21:30"
-      ],
       "2026-11-12": [
        "17:10",
        "19:20",
@@ -407,25 +364,6 @@
      "anno": 2027,
      "paese": "Italia",
      "durata": 107
-    },
-    {
-     "titolo": "Shaun, vita da pecora - Operazione Z.U.C.C.A.",
-     "orari": [
-      "15:30"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "15:30"
-      ]
-     },
-     "versione": "",
-     "genere": "Animazione",
-     "regia": "Steve Cox e Matthew Walker",
-     "biglietti": "https://europa.ccb.18tickets.it/film/123699",
-     "interpreti": "Justin Fletcher, John Sparkes e Kate Harbour",
-     "anno": 2026,
-     "paese": "Regno Unito",
-     "durata": 91
     }
    ],
    "biglietti": "https://europa.ccb.18tickets.it/",
@@ -443,16 +381,11 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "16:15",
-      "18:45",
-      "21:15"
+      "16:00",
+      "18:30",
+      "21:00"
      ],
      "giorni": {
-      "2026-11-11": [
-       "16:15",
-       "18:45",
-       "21:15"
-      ],
       "2026-11-12": [
        "16:00",
        "18:30",
@@ -485,7 +418,11 @@
     },
     {
      "titolo": "Il rumore delle cose nuove",
-     "orari": [],
+     "orari": [
+      "16:15",
+      "18:45",
+      "21:15"
+     ],
      "giorni": {
       "2026-11-12": [
        "16:15",
@@ -512,33 +449,10 @@
      "genere": "Commedia",
      "regia": "Paolo Genovese",
      "biglietti": "https://fossolo.ccroma.18tickets.it/film/92885",
-     "interpreti": "Emanuela Fanelli, Edoardo Pesce, Claudia Pandolfi e Lino Musella",
-     "paese": "Italia",
-     "durata": 113,
-     "anno": 2026
-    },
-    {
-     "titolo": "L'estranea",
-     "orari": [
-      "16:30",
-      "19:00",
-      "21:30"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "16:30",
-       "19:00",
-       "21:30"
-      ]
-     },
-     "versione": "",
-     "genere": "Thriller",
-     "regia": "Paolo Strippoli",
-     "biglietti": "https://fossolo.ccroma.18tickets.it/film/79652",
+     "interpreti": "Stefano Accorsi, Emanuela Fanelli e Lino Musella",
      "anno": 2026,
-     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano, Adriano Giannini e Valeria Bruni Tedeschi",
      "paese": "Italia",
-     "durata": 115
+     "durata": 113
     }
    ],
    "biglietti": "https://fossolo.ccroma.18tickets.it/",
@@ -557,17 +471,9 @@
      "titolo": "Dio ride",
      "orari": [
       "14:30",
-      "16:45",
-      "19:00",
-      "21:15"
+      "21:30"
      ],
      "giorni": {
-      "2026-11-11": [
-       "14:30",
-       "16:45",
-       "19:00",
-       "21:15"
-      ],
       "2026-11-12": [
        "14:30",
        "21:30"
@@ -596,7 +502,9 @@
     },
     {
      "titolo": "Se domani non torno",
-     "orari": [],
+     "orari": [
+      "19:20"
+     ],
      "giorni": {
       "2026-11-12": [
        "19:20"
@@ -622,7 +530,9 @@
     },
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
-     "orari": [],
+     "orari": [
+      "16:45"
+     ],
      "giorni": {
       "2026-11-12": [
        "16:45"
@@ -681,11 +591,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-11": [
-       "16:15",
-       "19:00",
-       "21:30"
-      ],
       "2026-11-12": [
        "16:15",
        "19:00",
@@ -709,10 +614,10 @@
        "21:30"
       ]
      },
-     "versione": "Versione originale (solo ore 14:30, 16:15, 19:00, 19:30, 21:30)",
+     "versione": "Versione originale (solo ore 14:30, 19:00, 19:30, 21:30)",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
-     "biglietti": "https://medica.popupcinema.18tickets.it/film/126636",
+     "biglietti": "https://medica.popupcinema.18tickets.it/film/124755",
      "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
      "paese": "Regno Unito",
      "durata": 118,
@@ -733,12 +638,9 @@
    "film": [
     {
      "titolo": "Dio ride",
-     "orari": [
-      "19:00",
-      "21:10"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-11": [
+      "2026-11-13": [
        "19:00",
        "21:10"
       ]
@@ -747,19 +649,16 @@
      "genere": "Commedia",
      "regia": "Giovanni Veronesi",
      "biglietti": "https://cinema.nosadella.18tickets.it/film/94922",
-     "anno": 2026,
      "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
      "paese": "Italia",
-     "durata": 114
+     "durata": 114,
+     "anno": 2026
     },
     {
      "titolo": "Wild Horse Nine",
-     "orari": [
-      "19:00",
-      "21:10"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-11": [
+      "2026-11-13": [
        "19:00",
        "21:10"
       ]
@@ -768,10 +667,10 @@
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "biglietti": "https://cinema.nosadella.18tickets.it/film/97166",
-     "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
-     "anno": 2026,
+     "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
      "paese": "Regno Unito",
-     "durata": 118
+     "durata": 118,
+     "anno": 2026
     }
    ],
    "biglietti": "https://nosadella.18tickets.it/",
@@ -802,14 +701,11 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "21:00",
+      "16:15",
+      "18:45",
       "21:15"
      ],
      "giorni": {
-      "2026-11-11": [
-       "21:00",
-       "21:15"
-      ],
       "2026-11-12": [
        "16:15",
        "18:45",
@@ -834,7 +730,7 @@
      "versione": "",
      "genere": "Commedia",
      "regia": "Paolo Genovese",
-     "biglietti": "https://odeon.ccb.18tickets.it/film/120864",
+     "biglietti": "https://odeon.ccb.18tickets.it/film/128947",
      "interpreti": "Stefano Accorsi, Emanuela Fanelli e Lino Musella",
      "anno": 2026,
      "paese": "Italia",
@@ -843,14 +739,10 @@
     {
      "titolo": "Je so’ pazzo",
      "orari": [
-      "16:30",
-      "18:45"
+      "15:15",
+      "21:30"
      ],
      "giorni": {
-      "2026-11-11": [
-       "16:30",
-       "18:45"
-      ],
       "2026-11-12": [
        "15:15",
        "21:30"
@@ -879,7 +771,11 @@
     },
     {
      "titolo": "L'essere amato",
-     "orari": [],
+     "orari": [
+      "15:30",
+      "18:15",
+      "21:00"
+     ],
      "giorni": {
       "2026-11-12": [
        "15:30",
@@ -903,23 +799,22 @@
       ]
      },
      "versione": "Versione originale (solo ore 21:00)",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://odeon.ccb.18tickets.it/film/127890"
+     "genere": "Drammatico",
+     "regia": "Rodrigo Sorogoyen",
+     "biglietti": "https://odeon.ccb.18tickets.it/film/127890",
+     "interpreti": "Javier Bardem, Melina Matthews e Marina Foïs",
+     "anno": 2026,
+     "paese": "Spagna",
+     "durata": 135
     },
     {
      "titolo": "L'estranea",
      "orari": [
-      "16:15",
-      "18:45",
-      "20:45"
+      "17:10",
+      "19:20",
+      "21:30"
      ],
      "giorni": {
-      "2026-11-11": [
-       "16:15",
-       "18:45",
-       "20:45"
-      ],
       "2026-11-12": [
        "17:10",
        "19:20",
@@ -966,14 +861,9 @@
     {
      "titolo": "Ragione e sentimento",
      "orari": [
-      "15:30",
-      "20:45"
+      "17:15"
      ],
      "giorni": {
-      "2026-11-11": [
-       "15:30",
-       "20:45"
-      ],
       "2026-11-12": [
        "17:15"
       ],
@@ -987,7 +877,7 @@
        "17:15"
       ]
      },
-     "versione": "Versione originale (solo ore 20:45)",
+     "versione": "",
      "genere": "Drammatico",
      "regia": "Ang Lee",
      "biglietti": "https://odeon.ccb.18tickets.it/film/118650",
@@ -999,14 +889,10 @@
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
-      "16:15",
-      "18:30"
+      "15:15",
+      "19:45"
      ],
      "giorni": {
-      "2026-11-11": [
-       "16:15",
-       "18:30"
-      ],
       "2026-11-12": [
        "15:15",
        "19:45"
@@ -1074,13 +960,9 @@
       ]
      },
      "versione": "",
-     "genere": "Drammatico, Commedia",
-     "regia": "Alejandro G. Iñárritu",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/BO/5669",
-     "interpreti": "Tom Cruise, Riz Ahmed, John Goodman e Sandra Hüller",
-     "paese": "USA",
-     "durata": 129,
-     "anno": 2026
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/BO/5669"
     },
     {
      "titolo": "Il canto della foresta",
@@ -1091,9 +973,13 @@
       ]
      },
      "versione": "Versione originale",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/BO/5669"
+     "genere": "Documentario",
+     "regia": "Vincent Munier",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/BO/5669",
+     "interpreti": "Vincent Munier, Michel Munier e Simon Munier",
+     "paese": "Francia",
+     "durata": 95,
+     "anno": 2025
     },
     {
      "titolo": "La maison des femmes - La casa delle donne",
@@ -1165,7 +1051,9 @@
    "film": [
     {
      "titolo": "Dio ride",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-12": [
        "21:00"
@@ -1186,22 +1074,17 @@
      "genere": "Commedia",
      "regia": "Giovanni Veronesi",
      "biglietti": "https://bristol.popupcinema.18tickets.it/film/123765",
+     "anno": 2026,
      "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
      "paese": "Italia",
-     "durata": 114,
-     "anno": 2026
+     "durata": 114
     },
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "18:30",
-      "21:00"
+      "18:45"
      ],
      "giorni": {
-      "2026-11-11": [
-       "18:30",
-       "21:00"
-      ],
       "2026-11-12": [
        "18:45"
       ],
@@ -1247,11 +1130,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-11": [
-       "15:30",
-       "18:15",
-       "21:00"
-      ],
       "2026-11-12": [
        "15:30",
        "18:15",
@@ -1290,11 +1168,6 @@
       "21:15"
      ],
      "giorni": {
-      "2026-11-11": [
-       "16:15",
-       "18:45",
-       "21:15"
-      ],
       "2026-11-12": [
        "16:15",
        "18:45",
@@ -1319,7 +1192,7 @@
      "versione": "Versione originale (solo ore 21:15)",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
-     "biglietti": "https://rialto.ccb.18tickets.it/film/118653",
+     "biglietti": "https://rialto.ccb.circuitocinemabologna.it/film/118653",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
      "anno": 2026,
      "paese": "Regno Unito",
@@ -1339,33 +1212,12 @@
    "fonte": "https://movieplayer.it/cinema/roma-d-essai_210/",
    "film": [
     {
-     "titolo": "Fatherland",
-     "orari": [
-      "16:00",
-      "17:45",
-      "19:30",
-      "21:15"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "16:00",
-       "17:45",
-       "19:30",
-       "21:15"
-      ]
-     },
-     "versione": "Versione originale (solo ore 21:15)",
-     "genere": "Drammatico",
-     "regia": "Paweł Pawlikowski",
-     "biglietti": "https://roma.ccb.18tickets.it/film/113603",
-     "interpreti": "Sandra Hüller e Hanns Zischler",
-     "anno": 2026,
-     "paese": "Italia",
-     "durata": 82
-    },
-    {
      "titolo": "Look Back",
-     "orari": [],
+     "orari": [
+      "16:30",
+      "18:45",
+      "21:00"
+     ],
      "giorni": {
       "2026-11-12": [
        "16:30",
@@ -1390,12 +1242,12 @@
      },
      "versione": "Versione originale (solo ore 21:00)",
      "genere": "Drammatico",
-     "regia": "Kore'eda Hirokazu",
+     "regia": "Kore-eda",
      "biglietti": "https://roma.ccb.18tickets.it/film/125085",
+     "anno": 2026,
      "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
      "paese": "Giappone",
-     "durata": 100,
-     "anno": 2026
+     "durata": 100
     }
    ],
    "biglietti": "https://roma.ccb.18tickets.it/",
@@ -1434,28 +1286,10 @@
      "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003231/59957"
     },
     {
-     "titolo": "Clayface",
-     "orari": [
-      "15:45",
-      "21:15"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "15:45",
-       "21:15"
-      ]
-     },
-     "versione": "",
-     "genere": "Horror, Avventura, Azione",
-     "regia": "James Watkins",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003381/60338",
-     "interpreti": "Eddie Marsan, Naomi Ackie e Max Minghella",
-     "anno": 2026,
-     "durata": 108
-    },
-    {
      "titolo": "Come rapinare una banca",
-     "orari": [],
+     "orari": [
+      "22:15"
+     ],
      "giorni": {
       "2026-11-12": [
        "22:15"
@@ -1464,26 +1298,27 @@
        "22:30"
       ],
       "2026-11-14": [
-       "22:40"
+       "17:00"
       ],
       "2026-11-15": [
        "22:30"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003758/60517"
+     "genere": "Azione, Thriller",
+     "regia": "David Leitch",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003758/60517",
+     "interpreti": "Nicholas Hoult, Christian Slater e Zoë Kravitz",
+     "durata": 122,
+     "anno": 2026,
+     "paese": "USA"
     },
     {
      "titolo": "Dio ride",
      "orari": [
-      "19:30"
+      "18:05"
      ],
      "giorni": {
-      "2026-11-11": [
-       "19:30"
-      ],
       "2026-11-12": [
        "18:05"
       ],
@@ -1500,32 +1335,11 @@
      "versione": "",
      "genere": "Commedia",
      "regia": "Giovanni Veronesi",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003797/60301",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003797/60485",
      "anno": 2026,
      "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
      "paese": "Italia",
      "durata": 114
-    },
-    {
-     "titolo": "George Michael: The Faith Tour",
-     "orari": [
-      "18:45",
-      "20:40"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "18:45",
-       "20:40"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Documentario",
-     "regia": "David Austin e Andrew Morahan",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003870/60295",
-     "interpreti": "George Michael",
-     "paese": "Regno Unito",
-     "durata": 113,
-     "anno": 2026
     },
     {
      "titolo": "Goat - Sogna in Grande",
@@ -1542,7 +1356,12 @@
     },
     {
      "titolo": "Godzilla Minus Zero",
-     "orari": [],
+     "orari": [
+      "15:15",
+      "18:25",
+      "19:00",
+      "21:30"
+     ],
      "giorni": {
       "2026-11-12": [
        "15:15",
@@ -1569,21 +1388,20 @@
       ]
      },
      "versione": "Versione originale (solo ore 11:10, 19:00)",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003849/60501"
+     "genere": "Azione, Avventura, Drammatico",
+     "regia": "Takashi Yamazaki",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003849/60501",
+     "interpreti": "Minami Hamabe, Ryunosuke Kamiki e Jun Kunimura",
+     "durata": 135,
+     "anno": 2026,
+     "paese": "Giappone"
     },
     {
      "titolo": "Hope",
      "orari": [
-      "16:30",
-      "21:30"
+      "20:40"
      ],
      "giorni": {
-      "2026-11-11": [
-       "16:30",
-       "21:30"
-      ],
       "2026-11-12": [
        "20:40"
       ],
@@ -1600,7 +1418,7 @@
      "versione": "",
      "genere": "Azione, Fantascienza, Horror",
      "regia": "Na Hong-jin",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003798/60280",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003798/60543",
      "anno": 2026,
      "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
      "paese": "Corea del sud",
@@ -1622,14 +1440,9 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "15:30",
-      "18:15"
+      "17:30"
      ],
      "giorni": {
-      "2026-11-11": [
-       "15:30",
-       "18:15"
-      ],
       "2026-11-12": [
        "17:30"
       ],
@@ -1649,7 +1462,7 @@
      "versione": "",
      "genere": "Animazione",
      "regia": "Alessandro Carloni e Erica Rivinoja",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003165/59684",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003165/60417",
      "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
      "anno": 2026,
      "paese": "USA",
@@ -1657,7 +1470,11 @@
     },
     {
      "titolo": "Il rumore delle cose nuove",
-     "orari": [],
+     "orari": [
+      "16:30",
+      "18:30",
+      "20:50"
+     ],
      "giorni": {
       "2026-11-12": [
        "16:30",
@@ -1687,20 +1504,17 @@
      "genere": "Commedia",
      "regia": "Paolo Genovese",
      "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003861/60474",
-     "interpreti": "Emanuela Fanelli, Edoardo Pesce, Claudia Pandolfi e Lino Musella",
+     "interpreti": "Stefano Accorsi, Emanuela Fanelli e Lino Musella",
+     "anno": 2026,
      "paese": "Italia",
-     "durata": 113,
-     "anno": 2026
+     "durata": 113
     },
     {
      "titolo": "It Ends",
      "orari": [
-      "15:45"
+      "22:45"
      ],
      "giorni": {
-      "2026-11-11": [
-       "15:45"
-      ],
       "2026-11-12": [
        "22:45"
       ]
@@ -1708,7 +1522,7 @@
      "versione": "",
      "genere": "Horror, Drammatico, Fantastico",
      "regia": "Alexander Ullom",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003853/60286",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003853/60415",
      "interpreti": "Phinehas Yoon, Akira Jackson e Noah Toth",
      "durata": 89,
      "anno": 2026,
@@ -1729,7 +1543,9 @@
     },
     {
      "titolo": "Look Back",
-     "orari": [],
+     "orari": [
+      "20:10"
+     ],
      "giorni": {
       "2026-11-12": [
        "20:10"
@@ -1747,16 +1563,19 @@
      },
      "versione": "",
      "genere": "Drammatico",
-     "regia": "Kore'eda Hirokazu",
+     "regia": "Kore-eda",
      "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003903/60416",
+     "anno": 2026,
      "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
      "paese": "Giappone",
-     "durata": 100,
-     "anno": 2026
+     "durata": 100
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
-     "orari": [],
+     "orari": [
+      "17:45",
+      "22:00"
+     ],
      "giorni": {
       "2026-11-12": [
        "17:45",
@@ -1770,33 +1589,27 @@
        "22:00"
       ],
       "2026-11-15": [
-       "00:45",
        "15:50",
        "22:00"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003866/60544"
+     "genere": "Drammatico, Fantasy",
+     "regia": "Ti West",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003866/60544",
+     "interpreti": "Johnny Depp, Sam Claflin e Daisy Ridley",
+     "anno": 2026,
+     "paese": "USA",
+     "durata": 116
     },
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "16:00",
-      "18:00",
-      "19:55",
-      "21:00",
-      "22:35"
+      "15:05",
+      "19:20",
+      "21:00"
      ],
      "giorni": {
-      "2026-11-11": [
-       "16:00",
-       "18:00",
-       "19:55",
-       "21:00",
-       "22:35"
-      ],
       "2026-11-12": [
        "15:05",
        "19:20",
@@ -1821,7 +1634,7 @@
      "versione": "",
      "genere": "Drammatico",
      "regia": "Paola Randi",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003580/60294",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003580/60545",
      "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
      "anno": 2027,
      "paese": "Italia",
@@ -1829,15 +1642,8 @@
     },
     {
      "titolo": "Shaun, vita da pecora - Operazione Z.U.C.C.A.",
-     "orari": [
-      "15:00",
-      "17:15"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-11": [
-       "15:00",
-       "17:15"
-      ],
       "2026-11-14": [
        "14:00"
       ],
@@ -1847,47 +1653,29 @@
       ]
      },
      "versione": "",
-     "genere": "Animazione",
-     "regia": "Steve Cox e Matthew Walker",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003724/60299",
-     "interpreti": "Justin Fletcher, John Sparkes e Kate Harbour",
-     "anno": 2026,
-     "paese": "Regno Unito",
-     "durata": 91
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003724/60470"
     },
     {
      "titolo": "The Nameless Ballad",
-     "orari": [
-      "22:15"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-11": [
-       "22:15"
-      ],
       "2026-11-15": [
        "00:50"
       ]
      },
      "versione": "",
-     "genere": "Horror",
-     "regia": "Federico Zampaglione",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003791/60302",
-     "interpreti": "Alana Boden, Vincenzo De Michele e Fabrizio Ferracane",
-     "anno": 2026,
-     "paese": "Italia",
-     "durata": 87
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003791/60467"
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
-      "15:15",
-      "21:50"
+      "15:35"
      ],
      "giorni": {
-      "2026-11-11": [
-       "15:15",
-       "21:50"
-      ],
       "2026-11-12": [
        "15:35"
       ],
@@ -1901,7 +1689,7 @@
      "versione": "",
      "genere": "Commedia",
      "regia": "Massimiliano Bruno",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003650/60307",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003650/60486",
      "anno": 2026,
      "interpreti": "Claudia Pandolfi, Pietro Sermonti, Diego Abatantuono e Stefania Sandrelli",
      "paese": "Italia",
@@ -1909,7 +1697,11 @@
     },
     {
      "titolo": "Un weekend artificiale",
-     "orari": [],
+     "orari": [
+      "15:05",
+      "16:35",
+      "18:30"
+     ],
      "giorni": {
       "2026-11-12": [
        "15:05",
@@ -1934,25 +1726,21 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003902/60418"
+     "genere": "Commedia",
+     "regia": "Leonardo Pieraccioni",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003902/60418",
+     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio e Herbert Ballerina",
+     "anno": 2026,
+     "paese": "Italia",
+     "durata": 91
     },
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "16:15",
-      "18:25",
-      "19:00",
-      "20:50"
+      "15:40",
+      "21:15"
      ],
      "giorni": {
-      "2026-11-11": [
-       "16:15",
-       "18:25",
-       "19:00",
-       "20:50"
-      ],
       "2026-11-12": [
        "15:40",
        "21:15"
@@ -1970,10 +1758,10 @@
        "21:25"
       ]
      },
-     "versione": "Versione originale (solo ore 19:00)",
+     "versione": "",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003652/60290",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003652/60452",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
      "anno": 2026,
      "paese": "Regno Unito",
@@ -1982,12 +1770,9 @@
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
-      "17:55"
+      "15:25"
      ],
      "giorni": {
-      "2026-11-11": [
-       "17:55"
-      ],
       "2026-11-12": [
        "15:25"
       ],
@@ -1998,7 +1783,7 @@
      "versione": "",
      "genere": "Animazione, Avventura, Drammatico",
      "regia": "Travis Knight",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003740/60287",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1003/HO00003740/60558",
      "interpreti": "Peyton Elizabeth Lee, Jacob Tremblay e Carey Mulligan",
      "anno": 2026,
      "paese": "USA",
@@ -2018,9 +1803,120 @@
    "fonte": "https://europa-cinemas.org/en/portraits/cinema-lumière-Bologna",
    "film": [
     {
+     "titolo": "La Gradiva",
+     "orari": [
+      "15:30"
+     ],
+     "versione": "Versione originale in italiano e francese con sottotitoli in italiano",
+     "genere": "Drammatico",
+     "regia": "Marine Atlan",
+     "paese": "Francia-Italia",
+     "anno": 2026,
+     "durata": 145,
+     "giorni": {
+      "2026-11-12": [
+       "15:30"
+      ],
+      "2026-11-13": [
+       "15:30"
+      ],
+      "2026-11-14": [
+       "16:15",
+       "19:00"
+      ],
+      "2026-11-15": [
+       "16:15",
+       "19:00"
+      ],
+      "2026-11-18": [
+       "16:15",
+       "19:00"
+      ]
+     },
+     "interpreti": "Colas Quignard, Suzanne Gerin, Mitia Capellier e Antonia Buresi",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/96935"
+    },
+    {
+     "titolo": "Wild Horse Nine",
+     "orari": [
+      "15:45",
+      "19:45",
+      "22:00"
+     ],
+     "versione": "Versione originale in inglese con sottotitoli in italiano",
+     "genere": "Commedia, Drammatico",
+     "regia": "Martin McDonagh",
+     "paese": "GB-USA",
+     "anno": 2026,
+     "durata": 118,
+     "giorni": {
+      "2026-11-12": [
+       "15:45",
+       "19:45",
+       "22:00"
+      ],
+      "2026-11-13": [
+       "17:30",
+       "19:45",
+       "22:00"
+      ],
+      "2026-11-14": [
+       "15:30",
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-15": [
+       "11:00",
+       "15:30",
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-16": [
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-17": [
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-18": [
+       "17:45",
+       "20:00",
+       "22:15"
+      ]
+     },
+     "interpreti": "Sam Rockwell, John Malkovich e Steve Buscemi",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/100367"
+    },
+    {
+     "titolo": "Fatherland",
+     "orari": [
+      "18:00"
+     ],
+     "versione": "Versione originale in tedesco con sottotitoli in italiano",
+     "genere": "Drammatico",
+     "regia": "Paweł Pawlikowski",
+     "paese": "Germania-Polonia-Italia-Francia",
+     "anno": 2026,
+     "durata": 82,
+     "giorni": {
+      "2026-11-12": [
+       "18:00"
+      ]
+     },
+     "interpreti": "Sandra Hüller",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/92249"
+    },
+    {
      "titolo": "Look Back",
      "orari": [
-      "20:00"
+      "18:15",
+      "20:15",
+      "22:15"
      ],
      "versione": "Versione originale in giapponese con sottotitoli in italiano",
      "genere": "Drammatico",
@@ -2029,9 +1925,6 @@
      "anno": 2026,
      "durata": 100,
      "giorni": {
-      "2026-11-11": [
-       "20:00"
-      ],
       "2026-11-12": [
        "18:15",
        "20:15",
@@ -2077,7 +1970,7 @@
     {
      "titolo": "Hope",
      "orari": [
-      "21:30"
+      "21:45"
      ],
      "versione": "Versione originale in coreano con sottotitoli in italiano",
      "genere": "Azione, Fantascienza, Horror",
@@ -2086,9 +1979,6 @@
      "anno": 2026,
      "durata": 157,
      "giorni": {
-      "2026-11-11": [
-       "21:30"
-      ],
       "2026-11-12": [
        "21:45"
       ],
@@ -2108,130 +1998,6 @@
      },
      "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
      "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/101225"
-    },
-    {
-     "titolo": "Minotaur",
-     "orari": [
-      "21:45"
-     ],
-     "versione": "Versione originale in russo con sottotitoli in italiano",
-     "genere": "Drammatico, Thriller",
-     "regia": "Andrey Zvyagintsev",
-     "paese": "Francia-Germania-Lettonia",
-     "anno": 2026,
-     "durata": 135,
-     "giorni": {
-      "2026-11-11": [
-       "21:45"
-      ]
-     },
-     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
-     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/103271"
-    },
-    {
-     "titolo": "Wild Horse Nine",
-     "orari": [
-      "22:15"
-     ],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "Commedia, Drammatico",
-     "regia": "Martin McDonagh",
-     "paese": "GB-USA",
-     "anno": 2026,
-     "durata": 118,
-     "giorni": {
-      "2026-11-11": [
-       "22:15"
-      ],
-      "2026-11-12": [
-       "15:45",
-       "19:45",
-       "22:00"
-      ],
-      "2026-11-13": [
-       "17:30",
-       "19:45",
-       "22:00"
-      ],
-      "2026-11-14": [
-       "15:30",
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-15": [
-       "11:00",
-       "15:30",
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-16": [
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-17": [
-       "17:45",
-       "20:00",
-       "22:15"
-      ],
-      "2026-11-18": [
-       "17:45",
-       "20:00",
-       "22:15"
-      ]
-     },
-     "interpreti": "Sam Rockwell, John Malkovich e Steve Buscemi",
-     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/100367"
-    },
-    {
-     "titolo": "La Gradiva",
-     "orari": [],
-     "versione": "Versione originale in italiano e francese con sottotitoli in italiano",
-     "genere": "",
-     "regia": "Marine Atlan",
-     "paese": "Francia-Italia",
-     "anno": 2026,
-     "durata": 145,
-     "giorni": {
-      "2026-11-12": [
-       "15:30"
-      ],
-      "2026-11-13": [
-       "15:30"
-      ],
-      "2026-11-14": [
-       "16:15",
-       "19:00"
-      ],
-      "2026-11-15": [
-       "16:15",
-       "19:00"
-      ],
-      "2026-11-18": [
-       "16:15",
-       "19:00"
-      ]
-     },
-     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/96935"
-    },
-    {
-     "titolo": "Fatherland",
-     "orari": [],
-     "versione": "Versione originale in tedesco con sottotitoli in italiano",
-     "genere": "Drammatico",
-     "regia": "Paweł Pawlikowski",
-     "paese": "Germania-Polonia-Italia-Francia",
-     "anno": 2026,
-     "durata": 82,
-     "giorni": {
-      "2026-11-12": [
-       "18:00"
-      ]
-     },
-     "interpreti": "Sandra Hüller",
-     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/92249"
     }
    ],
    "biglietti": "https://lumiere.cinetecabologna.18tickets.it/"
@@ -2246,47 +2012,10 @@
    "fonte": "https://www.bolognawelcome.com/it/luoghi/cinema-e-teatri/cinema-modernissimo",
    "film": [
     {
-     "titolo": "Ombre",
-     "orari": [
-      "20:15"
-     ],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "Drammatico",
-     "regia": "John Cassavetes",
-     "paese": "USA",
-     "anno": 1959,
-     "durata": 81,
-     "giorni": {
-      "2026-11-11": [
-       "20:15"
-      ]
-     },
-     "interpreti": "Lelia Goldoni, Rupert Crosse, Ben Carruthers e Anthony Ray",
-     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/13237"
-    },
-    {
-     "titolo": "Minnie and Moskowitz",
-     "orari": [
-      "22:00"
-     ],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "",
-     "regia": "John Cassavetes",
-     "paese": "USA",
-     "anno": 1971,
-     "durata": 114,
-     "giorni": {
-      "2026-11-11": [
-       "22:00"
-      ],
-      "2026-11-13": [
-       "10:30"
-      ]
-     }
-    },
-    {
      "titolo": "Cento e una notte",
-     "orari": [],
+     "orari": [
+      "15:00"
+     ],
      "versione": "Versione originale in francese con sottotitoli in italiano",
      "genere": "",
      "regia": "Agnès Varda",
@@ -2302,9 +2031,11 @@
     },
     {
      "titolo": "Fjord",
-     "orari": [],
+     "orari": [
+      "17:00"
+     ],
      "versione": "Versione originale in inglese, rumeno, svedese, norvegese e finlandese con sottotitoli in italiano",
-     "genere": "",
+     "genere": "Drammatico",
      "regia": "Cristian Mungiu",
      "paese": "Norvegia-Romania-Svezia-Finlandia-Danimarca-Francia",
      "anno": 2026,
@@ -2314,13 +2045,16 @@
        "17:00"
       ]
      },
+     "interpreti": "Sebastian Stan, Renate Reinsve, Lisa Carlehed e Lisa Loven Kongsli",
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101656"
     },
     {
      "titolo": "Lo svitato",
-     "orari": [],
+     "orari": [
+      "20:15"
+     ],
      "versione": "Film in lingua italiana",
-     "genere": "",
+     "genere": "Commedia",
      "regia": "Carlo Lizzani",
      "paese": "Italia",
      "anno": 1956,
@@ -2330,13 +2064,16 @@
        "20:15"
       ]
      },
+     "interpreti": "Giorgia Moll, Franca Rame, Dario Fo e Alberto Bonucci",
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101687"
     },
     {
      "titolo": "En el camino",
-     "orari": [],
+     "orari": [
+      "22:00"
+     ],
      "versione": "Versione originale in spagnolo con sottotitoli in italiano",
-     "genere": "",
+     "genere": "Drammatico",
      "regia": "David Pablos",
      "paese": "Messico",
      "anno": 2025,
@@ -2346,7 +2083,23 @@
        "22:00"
       ]
      },
+     "interpreti": "Victor Prieto Simental, Osvaldo Sanchez Valenzuela, Manuel Alvarado e Ulises Guzman",
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101720"
+    },
+    {
+     "titolo": "Minnie and Moskowitz",
+     "orari": [],
+     "versione": "Versione originale in inglese con sottotitoli in italiano",
+     "genere": "",
+     "regia": "John Cassavetes",
+     "paese": "USA",
+     "anno": 1971,
+     "durata": 114,
+     "giorni": {
+      "2026-11-13": [
+       "10:30"
+      ]
+     }
     },
     {
      "titolo": "Paris par Agnès",
@@ -2660,6 +2413,9 @@
      "giorni": {
       "2026-11-17": [
        "15:00"
+      ],
+      "2026-11-19": [
+       "20:00"
       ]
      },
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/105912"
@@ -2754,6 +2510,10 @@
      "giorni": {
       "2026-11-18": [
        "16:00"
+      ],
+      "2026-11-19": [
+       "16:00",
+       "22:15"
       ]
      },
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/106010"
@@ -2804,6 +2564,22 @@
       ]
      },
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/106043"
+    },
+    {
+     "titolo": "Fare cinema a Bologna e in Emilia-Romagna / Visioni Animate / Visioni Italiane",
+     "orari": [],
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "paese": "",
+     "anno": null,
+     "durata": null,
+     "giorni": {
+      "2026-11-19": [
+       "18:00"
+      ]
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/106142"
     }
    ],
    "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/"
@@ -2818,31 +2594,12 @@
    "fonte": "https://cinetecadibologna.it/programmazione/",
    "film": [
     {
-     "titolo": "Digger",
-     "orari": [
-      "19:30",
-      "21:45"
-     ],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "Drammatico, Commedia",
-     "regia": "Alejandro González Iñárritu",
-     "paese": "USA-GB-Messico",
-     "anno": 2026,
-     "durata": 128,
-     "giorni": {
-      "2026-11-11": [
-       "19:30",
-       "21:45"
-      ]
-     },
-     "interpreti": "Tom Cruise e John Goodman",
-     "biglietti": "https://cervi.cinetecabologna.18tickets.it/film/93866"
-    },
-    {
      "titolo": "La Gradiva",
-     "orari": [],
+     "orari": [
+      "18:15"
+     ],
      "versione": "Versione originale in italiano e francese con sottotitoli in italiano",
-     "genere": "",
+     "genere": "Drammatico",
      "regia": "Marine Atlan",
      "paese": "Francia-Italia",
      "anno": 2026,
@@ -2861,11 +2618,14 @@
        "16:00"
       ]
      },
+     "interpreti": "Colas Quignard, Suzanne Gerin, Mitia Capellier e Antonia Buresi",
      "biglietti": "https://cervi.cinetecabologna.18tickets.it/film/96935"
     },
     {
      "titolo": "Minotaur",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "versione": "Versione originale in russo con sottotitoli in italiano",
      "genere": "Drammatico, Thriller",
      "regia": "Andrey Zvyagintsev",
@@ -2961,27 +2721,9 @@
    "fonte": "https://movieplayer.it/cinema/uci-cinemas-meridiana_214/",
    "film": [
     {
-     "titolo": "Clayface",
-     "orari": [
-      "18:50"
-     ],
-     "versione": "",
-     "genere": "Horror, Avventura, Azione",
-     "regia": "James Watkins",
-     "interpreti": "Eddie Marsan, Naomi Ackie e Max Minghella",
-     "durata": 108,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-11": [
-       "18:50"
-      ]
-     }
-    },
-    {
      "titolo": "Dio ride",
      "orari": [
-      "18:20",
-      "19:50"
+      "18:40"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -2990,18 +2732,38 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-11": [
-       "18:20",
-       "19:50"
+      "2026-11-12": [
+       "18:40"
       ]
      },
      "paese": "Italia"
     },
     {
+     "titolo": "Godzilla Minus Zero",
+     "orari": [
+      "16:00",
+      "19:30",
+      "21:50"
+     ],
+     "versione": "",
+     "genere": "Azione, Avventura, Drammatico",
+     "regia": "Takashi Yamazaki",
+     "interpreti": "Minami Hamabe, Ryunosuke Kamiki e Jun Kunimura",
+     "durata": 135,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-12": [
+       "16:00",
+       "19:30",
+       "21:50"
+      ]
+     },
+     "paese": "Giappone"
+    },
+    {
      "titolo": "Hope",
      "orari": [
-      "18:40",
-      "21:40"
+      "21:30"
      ],
      "versione": "",
      "genere": "Azione, Fantascienza, Horror",
@@ -3010,51 +2772,15 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-11": [
-       "18:40",
-       "21:40"
+      "2026-11-12": [
+       "21:30"
       ]
      },
      "paese": "Corea del sud"
     },
     {
-     "titolo": "Hunger Games",
-     "orari": [
-      "20:30"
-     ],
-     "versione": "",
-     "genere": "Drammatico, Thriller, Fantascienza",
-     "regia": "Gary Ross",
-     "interpreti": "Jennifer Lawrence, Josh Hutcherson e Liam Hemsworth",
-     "durata": 142,
-     "anno": 2012,
-     "giorni": {
-      "2026-11-11": [
-       "20:30"
-      ]
-     }
-    },
-    {
-     "titolo": "Ice Cream Man",
-     "orari": [
-      "22:10"
-     ],
-     "versione": "",
-     "genere": "Commedia, Horror, Thriller",
-     "regia": "Eli Roth",
-     "interpreti": "Eli Roth, Dylan Hawco e Ben Davis",
-     "durata": 86,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-11": [
-       "22:10"
-      ]
-     }
-    },
-    {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "16:00",
       "17:00"
      ],
      "versione": "",
@@ -3064,18 +2790,40 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-11": [
-       "16:00",
+      "2026-11-12": [
        "17:00"
       ]
      },
      "paese": "USA"
     },
     {
+     "titolo": "Il rumore delle cose nuove",
+     "orari": [
+      "16:20",
+      "19:00",
+      "20:50",
+      "21:40"
+     ],
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Paolo Genovese",
+     "interpreti": "Stefano Accorsi, Emanuela Fanelli e Lino Musella",
+     "durata": 113,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-12": [
+       "16:20",
+       "19:00",
+       "20:50",
+       "21:40"
+      ]
+     },
+     "paese": "Italia"
+    },
+    {
      "titolo": "It Ends",
      "orari": [
-      "16:00",
-      "20:00"
+      "23:20"
      ],
      "versione": "",
      "genere": "Horror, Drammatico, Fantastico",
@@ -3084,9 +2832,50 @@
      "durata": 89,
      "anno": 2026,
      "giorni": {
-      "2026-11-11": [
-       "16:00",
-       "20:00"
+      "2026-11-12": [
+       "23:20"
+      ]
+     },
+     "paese": "USA"
+    },
+    {
+     "titolo": "Look Back",
+     "orari": [
+      "19:20"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Kore-eda",
+     "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
+     "durata": 100,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-12": [
+       "19:20"
+      ]
+     },
+     "paese": "Giappone"
+    },
+    {
+     "titolo": "Scrooge e gli spiriti del Natale",
+     "orari": [
+      "16:30",
+      "18:30",
+      "19:10",
+      "22:00"
+     ],
+     "versione": "Versione originale (solo ore 18:30)",
+     "genere": "Drammatico, Fantasy",
+     "regia": "Ti West",
+     "interpreti": "Johnny Depp, Sam Claflin e Daisy Ridley",
+     "durata": 116,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-12": [
+       "16:30",
+       "18:30",
+       "19:10",
+       "22:00"
       ]
      },
      "paese": "USA"
@@ -3094,11 +2883,9 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "16:30",
-      "17:40",
+      "16:10",
       "19:00",
-      "21:30",
-      "22:00"
+      "21:15"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -3107,12 +2894,10 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-11": [
-       "16:30",
-       "17:40",
+      "2026-11-12": [
+       "16:10",
        "19:00",
-       "21:30",
-       "22:00"
+       "21:15"
       ]
      },
      "paese": "Italia"
@@ -3120,43 +2905,24 @@
     {
      "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
      "orari": [
-      "17:20"
+      "16:40"
      ],
      "versione": "",
-     "genere": "Animazione",
+     "genere": "Animazione, Commedia, Ragazzi, Horror",
      "regia": "Steve Cox e Matthew Walker",
      "interpreti": "Justin Fletcher, John Sparkes e Kate Harbour",
-     "durata": 91,
+     "durata": null,
      "anno": 2026,
      "giorni": {
-      "2026-11-11": [
-       "17:20"
+      "2026-11-12": [
+       "16:40"
       ]
-     },
-     "paese": "Regno Unito"
-    },
-    {
-     "titolo": "The Nameless Ballad",
-     "orari": [
-      "22:20"
-     ],
-     "versione": "",
-     "genere": "Horror",
-     "regia": "Federico Zampaglione",
-     "interpreti": "Alana Boden, Vincenzo De Michele e Fabrizio Ferracane",
-     "durata": 87,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-11": [
-       "22:20"
-      ]
-     },
-     "paese": "Italia"
+     }
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
-      "17:45"
+      "16:15"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -3165,8 +2931,30 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-11": [
-       "17:45"
+      "2026-11-12": [
+       "16:15"
+      ]
+     },
+     "paese": "Italia"
+    },
+    {
+     "titolo": "Un weekend artificiale",
+     "orari": [
+      "17:10",
+      "19:40",
+      "22:10"
+     ],
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Leonardo Pieraccioni",
+     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio e Herbert Ballerina",
+     "durata": 91,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-12": [
+       "17:10",
+       "19:40",
+       "22:10"
       ]
      },
      "paese": "Italia"
@@ -3174,20 +2962,16 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "18:10",
-      "19:40",
       "21:10"
      ],
-     "versione": "Versione originale (solo ore 19:40)",
+     "versione": "",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-11": [
-       "18:10",
-       "19:40",
+      "2026-11-12": [
        "21:10"
       ]
      },
@@ -3206,36 +2990,36 @@
    "fonte": "https://movieplayer.it/cinema/astrastar-multisala_2884/",
    "film": [
     {
-     "titolo": "Dio ride",
+     "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
       "21:00"
      ],
      "versione": "",
-     "genere": "Commedia",
-     "regia": "Giovanni Veronesi",
-     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "durata": 114,
+     "genere": "Drammatico, Fantasy",
+     "regia": "Ti West",
+     "interpreti": "Johnny Depp, Sam Claflin e Daisy Ridley",
+     "durata": 116,
      "anno": 2026,
      "giorni": {
-      "2026-11-11": [
+      "2026-11-12": [
        "21:00"
       ]
      },
-     "paese": "Italia"
+     "paese": "USA"
     },
     {
-     "titolo": "Un tranquillo funerale di famiglia",
+     "titolo": "Un weekend artificiale",
      "orari": [
       "21:00"
      ],
      "versione": "",
      "genere": "Commedia",
-     "regia": "Massimiliano Bruno",
-     "interpreti": "Claudia Pandolfi, Pietro Sermonti, Diego Abatantuono e Stefania Sandrelli",
-     "durata": 98,
+     "regia": "Leonardo Pieraccioni",
+     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio e Herbert Ballerina",
+     "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-11": [
+      "2026-11-12": [
        "21:00"
       ]
      },
@@ -3263,7 +3047,43 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/jolly_215/",
-   "film": [],
+   "film": [
+    {
+     "titolo": "No Good Men",
+     "orari": [
+      "21:00"
+     ],
+     "versione": "",
+     "genere": "Commedia, Romantico",
+     "regia": "Shahrbanoo Sadat",
+     "interpreti": "Shahrbanoo Sadat, Anwar Hashimi e Torkan Omari",
+     "durata": 103,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-12": [
+       "21:00"
+      ]
+     }
+    },
+    {
+     "titolo": "Se domani non torno",
+     "orari": [
+      "18:30"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Paola Randi",
+     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
+     "durata": 107,
+     "anno": 2027,
+     "giorni": {
+      "2026-11-12": [
+       "18:30"
+      ]
+     },
+     "paese": "Italia"
+    }
+   ],
    "auto": true
   },
   {
@@ -3274,25 +3094,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/don-bosco_216/",
-   "film": [
-    {
-     "titolo": "Silent Friend",
-     "orari": [
-      "21:00"
-     ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Ildikó Enyedi",
-     "interpreti": "Tony Leung Chiu Wai, Luna Wedler e Sylvester Groth",
-     "durata": 147,
-     "anno": 2025,
-     "giorni": {
-      "2026-11-11": [
-       "21:00"
-      ]
-     }
-    }
-   ],
+   "film": [],
    "auto": true
   },
   {
@@ -3325,7 +3127,26 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/cristallo_2024/",
-   "film": [],
+   "film": [
+    {
+     "titolo": "Un weekend artificiale",
+     "orari": [
+      "21:00"
+     ],
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Leonardo Pieraccioni",
+     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio e Herbert Ballerina",
+     "durata": 91,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-12": [
+       "21:00"
+      ]
+     },
+     "paese": "Italia"
+    }
+   ],
    "auto": true
   },
   {
@@ -3336,26 +3157,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/don-fiorentini-cinema-teatro_220/",
-   "film": [
-    {
-     "titolo": "Dio ride",
-     "orari": [
-      "21:00"
-     ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Giovanni Veronesi",
-     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "durata": 114,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-11": [
-       "21:00"
-      ]
-     },
-     "paese": "Italia"
-    }
-   ],
+   "film": [],
    "auto": true
   },
   {
@@ -3377,7 +3179,26 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/kursaal_225/",
-   "film": [],
+   "film": [
+    {
+     "titolo": "Se domani non torno",
+     "orari": [
+      "21:00"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Paola Randi",
+     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
+     "durata": 107,
+     "anno": 2027,
+     "giorni": {
+      "2026-11-12": [
+       "21:00"
+      ]
+     },
+     "paese": "Italia"
+    }
+   ],
    "auto": true
   },
   {
@@ -3388,27 +3209,7 @@
    "tipo": "Multisala",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/giada-cinecomfort-bi-space_228/",
-   "film": [
-    {
-     "titolo": "La città dei vivi",
-     "orari": [
-      "15:00",
-      "21:00"
-     ],
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "interpreti": "Valerio Mastandrea",
-     "durata": null,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-11": [
-       "15:00",
-       "21:00"
-      ]
-     }
-    }
-   ],
+   "film": [],
    "auto": true
   },
   {
@@ -3445,7 +3246,7 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "21:15"
+      "19:00"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -3454,46 +3255,65 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-11": [
+      "2026-11-12": [
+       "19:00"
+      ]
+     },
+     "paese": "Italia"
+    },
+    {
+     "titolo": "Godzilla Minus Zero",
+     "orari": [
+      "21:00"
+     ],
+     "versione": "",
+     "genere": "Azione, Avventura, Drammatico",
+     "regia": "Takashi Yamazaki",
+     "interpreti": "Minami Hamabe, Ryunosuke Kamiki e Jun Kunimura",
+     "durata": 135,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-12": [
+       "21:00"
+      ]
+     },
+     "paese": "Giappone"
+    },
+    {
+     "titolo": "Il rumore delle cose nuove",
+     "orari": [
+      "21:15"
+     ],
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Paolo Genovese",
+     "interpreti": "Stefano Accorsi, Emanuela Fanelli e Lino Musella",
+     "durata": 113,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-12": [
        "21:15"
       ]
      },
      "paese": "Italia"
     },
     {
-     "titolo": "Hope",
-     "orari": [
-      "20:30"
-     ],
-     "versione": "",
-     "genere": "Azione, Fantascienza, Horror",
-     "regia": "Na Hong-jin",
-     "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
-     "durata": 145,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-11": [
-       "20:30"
-      ]
-     },
-     "paese": "Corea del sud"
-    },
-    {
-     "titolo": "Ice Cream Man",
+     "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
       "21:15"
      ],
      "versione": "",
-     "genere": "Commedia, Horror, Thriller",
-     "regia": "Eli Roth",
-     "interpreti": "Eli Roth, Dylan Hawco e Ben Davis",
-     "durata": 86,
+     "genere": "Drammatico, Fantasy",
+     "regia": "Ti West",
+     "interpreti": "Johnny Depp, Sam Claflin e Daisy Ridley",
+     "durata": 116,
      "anno": 2026,
      "giorni": {
-      "2026-11-11": [
+      "2026-11-12": [
        "21:15"
       ]
-     }
+     },
+     "paese": "USA"
     },
     {
      "titolo": "Se domani non torno",
@@ -3507,7 +3327,7 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-11": [
+      "2026-11-12": [
        "21:15"
       ]
      },
@@ -3525,7 +3345,25 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-11": [
+      "2026-11-12": [
+       "21:15"
+      ]
+     },
+     "paese": "Italia"
+    },
+    {
+     "titolo": "Un weekend artificiale",
+     "orari": [
+      "21:15"
+     ],
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Leonardo Pieraccioni",
+     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio e Herbert Ballerina",
+     "durata": 91,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-12": [
        "21:15"
       ]
      },
@@ -3543,7 +3381,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-11": [
+      "2026-11-12": [
        "21:15"
       ]
      },
@@ -3589,12 +3427,9 @@
     {
      "titolo": "Galliera Prenotazioni",
      "orari": [
-      "21:30"
+      "21:00"
      ],
      "giorni": {
-      "2026-11-11": [
-       "21:30"
-      ],
       "2026-11-12": [
        "21:00"
       ]
@@ -3606,7 +3441,9 @@
     },
     {
      "titolo": "Il canto della foresta",
-     "orari": [],
+     "orari": [
+      "18:45"
+     ],
      "giorni": {
       "2026-11-12": [
        "18:45"
@@ -3622,13 +3459,19 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.cinemateatrogalliera.it/programmazione/"
+     "genere": "Documentario",
+     "regia": "Vincent Munier",
+     "biglietti": "https://www.cinemateatrogalliera.it/programmazione/",
+     "interpreti": "Vincent Munier, Michel Munier e Simon Munier",
+     "paese": "Francia",
+     "durata": 95,
+     "anno": 2025
     },
     {
      "titolo": "L'essere amato",
-     "orari": [],
+     "orari": [
+      "16:00"
+     ],
      "giorni": {
       "2026-11-12": [
        "16:00"
@@ -3644,56 +3487,18 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.cinemateatrogalliera.it/programmazione/"
-    },
-    {
-     "titolo": "La guerra dei prezzi",
-     "orari": [
-      "21:30"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "21:30"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Drammatico, Thriller",
-     "regia": "Anthony Dechaux",
+     "genere": "Drammatico",
+     "regia": "Rodrigo Sorogoyen",
      "biglietti": "https://www.cinemateatrogalliera.it/programmazione/",
-     "interpreti": "Ana Girardot, Olivier Gourmet, Julien Frison e Jonas Bloquet",
-     "durata": 96,
-     "anno": 2026,
-     "paese": "Francia"
-    },
-    {
-     "titolo": "NAZA",
-     "orari": [
-      "19:30"
-     ],
-     "giorni": {
-      "2026-11-11": [
-       "19:30"
-      ]
-     },
-     "versione": "",
-     "genere": "Documentario",
-     "regia": "Yuval Abraham e Rachel Szor",
-     "biglietti": "https://www.cinemateatrogalliera.it/programmazione/",
-     "durata": 80,
-     "anno": 2026,
-     "paese": "Gran Bretagna"
+     "interpreti": "Javier Bardem, Vicky Luengo, Melina Matthews e Marina Foïs",
+     "paese": "Spagna",
+     "durata": 135,
+     "anno": 2026
     },
     {
      "titolo": "Nel silenzio delle stanze",
-     "orari": [
-      "17:00"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-11": [
-       "17:00"
-      ],
       "2026-11-13": [
        "21:30"
       ],
@@ -3707,21 +3512,25 @@
      "biglietti": "https://www.cinemateatrogalliera.it/programmazione/",
      "interpreti": "Swann Arlaud, Louise Chevillotte, Emmanuelle Devos e Galatéa Bellugi",
      "durata": 103,
-     "anno": 2025,
-     "paese": "Francia"
+     "anno": 2025
     },
     {
      "titolo": "Taranto Chiama",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-12": [
        "21:00"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.cinemateatrogalliera.it/programmazione/"
+     "genere": "Documentario",
+     "regia": "Rosy Battaglia",
+     "biglietti": "https://www.cinemateatrogalliera.it/programmazione/",
+     "paese": "Italia",
+     "durata": 100,
+     "anno": 2025
     }
    ]
   },
@@ -3738,16 +3547,22 @@
    "film": [
     {
      "titolo": "La donna del ritratto",
-     "orari": [],
+     "orari": [
+      "20:30"
+     ],
      "giorni": {
       "2026-11-12": [
        "20:30"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.liveticket.it/evento.aspx?Id=696835&InstantBuy=1&CallingPageUrl=http%3a%2f%2fwww.liveticket.it%2fcinemaperlabo"
+     "genere": "Giallo",
+     "regia": "Fritz Lang",
+     "biglietti": "https://www.liveticket.it/evento.aspx?Id=696835&InstantBuy=1&CallingPageUrl=http%3a%2f%2fwww.liveticket.it%2fcinemaperlabo",
+     "interpreti": "Edward G. Robinson, Dan Duryea, Joan Bennett e Raymond Massey",
+     "paese": "USA",
+     "durata": 99,
+     "anno": 1944
     },
     {
      "titolo": "Odissea",
