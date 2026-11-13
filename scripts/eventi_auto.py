@@ -5,6 +5,7 @@ Fonti (tutte lette nel rispetto dei robots.txt):
   - DICE (dice.fm/browse/<città>): concerti, club, comicità, teatro, con link ai biglietti
   - Ticketmaster Discovery API, solo se c'è il segreto TICKETMASTER_KEY
   - arte.it (calendario mostre del mese corrente e del prossimo) per le mostre
+  - Galleria Wikiarte (wikiarte.com, solo Bologna): mostre in corso e prossime della prima pagina
 Regole: non toglie mai eventi o mostre (lo fa aggiorna.py solo per quelli finiti),
 aggiunge solo ciò che manca, completa il link biglietti dove manca, e scrive solo
 se aggiorna.py convalida tutto. Riepilogo in dati/auto_<città>.json."""
@@ -290,7 +291,57 @@ def arte():
     R["fonti"]["arte.it"] = {"letti": letti, "aggiunti": n}
 
 
-for f in (dice, ticketmaster, arte):
+# ---------- Galleria Wikiarte (Bologna, Galleria Falcone e Borsellino 2/D): una mostra personale ogni 2 settimane ----------
+MESI_EN = {m: i for i, m in enumerate("january february march april may june july august september october november december".split(), 1)}
+
+
+def wikiarte():
+    if CITTA != "bo": return
+    rob = get("https://www.wikiarte.com/robots.txt", tent=1) or ""
+    if re.search(r"(?im)^user-agent:\s*\*\s*$(?:\n(?!user-agent).*)*?\n\s*disallow:\s*/\s*$", rob):
+        R["fonti"]["wikiarte"] = {"letti": 0, "aggiunti": 0, "nota": "robots.txt vieta"}; return
+    s = get("https://www.wikiarte.com/")
+    if not s: return
+    links = []
+    for u in re.findall(r'href="(https://www\.wikiarte\.com/20\d\d/\d\d/\d\d/[^"#?]+/)"', s):
+        if u not in links and not re.search(r"fiera|baf-|arte-fiera|asta", u): links.append(u)
+    letti = n = 0
+    for u in links[:6]:
+        time.sleep(1.5)
+        h = get(u)
+        if not h: continue
+        letti += 1
+        og = lambda k: html.unescape((re.search(r'<meta property="og:%s" content="([^"]*)"' % k, h) or [None, ""])[1]).strip()
+        tit = re.sub(r"\s*[-–]\s*Galleria Wikiarte\s*$", "", og("title")).strip()
+        testo = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"(?s)<script.*?</script>|<style.*?</style>", " ", h))))
+        mesi = "|".join(list(MESI) + list(MESI_EN))
+        def d(g, m, y): 
+            k = m.lower(); return f"{int(y):04d}-{(MESI.get(k) or MESI_EN.get(k)):02d}-{int(g):02d}"
+        dd = re.search(r"(?i)(?:durata|duration)[^0-9]{0,40}(\d{1,2})\s+(%s)(?:\s+(\d{4}))?\s+(?:al|a|to|-|–)\s+(\d{1,2})\s+(%s)\s+(\d{4})" % (mesi, mesi), testo) \
+            or re.search(r"(?i)\bdal\s+(\d{1,2})\s+(%s)(?:\s+(\d{4}))?\s+al\s+(\d{1,2})\s+(%s)\s+(\d{4})" % (mesi, mesi), testo)
+        if dd:
+            ini, fin = d(dd.group(1), dd.group(2), dd.group(3) or dd.group(6)), d(dd.group(4), dd.group(5), dd.group(6))
+        else:
+            dd = re.search(r"(?i)\bdal\s+(\d{1,2})\s+al\s+(\d{1,2})\s+(%s)\s+(\d{4})" % mesi, testo)
+            if not dd: continue
+            ini, fin = d(dd.group(1), dd.group(3), dd.group(4)), d(dd.group(2), dd.group(3), dd.group(4))
+        if not tit or fin < OGGI or ini > LIMITE or ini > fin: continue
+        tit = tit.title() if tit.isupper() else tit
+        tt = tok(tit)
+        if any(x["sede"] == "Galleria Wikiarte" and x["inizio"] == ini for x in mo) or \
+           any((len(tt & tok(x["titolo"])) / max(1, min(len(tt), len(tok(x["titolo"])))) >= 0.6) for x in mo if tok(x["titolo"])):
+            continue
+        desc = og("description")
+        desc = " ".join(re.split(r"(?<=[.!?])\s", desc)[0].split()[:25]).rstrip(" …[") if desc else ""
+        cat = next((v for rx, v in CAT if re.search(rx, (tit + " " + desc).lower())), "Arte contemporanea e installazioni")
+        mo.append({"id": "", "titolo": f"{tit}. Mostre personali", "sede": "Galleria Wikiarte", "citta": "Bologna", "inizio": ini, "fine": fin,
+                   "categoria": cat, "descrizione": desc or "Mostre personali alla Galleria Wikiarte, Galleria Falcone e Borsellino 2/D.",
+                   "ingresso": "gratuito", "orari": "mar–sab 15–18", "fonte": u, "sito": "https://www.wikiarte.com/", "biglietti": "", "biglietti_tipo": ""})
+        R["aggiunti"].append(f"mostra {ini}→{fin} {tit} – Galleria Wikiarte"); n += 1
+    R["fonti"]["wikiarte"] = {"letti": letti, "aggiunti": n}
+
+
+for f in (dice, ticketmaster, arte, wikiarte):
     try: f()
     except Exception as ex: R["errori"].append(f"{f.__name__}: {type(ex).__name__}: {ex}")
 
