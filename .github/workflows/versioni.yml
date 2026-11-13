@@ -29,7 +29,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add versioni.js milano/versioni.js
+          git add versioni.js milano/versioni.js index.html milano/index.html
           git diff --cached --quiet && { echo "nessuna modifica"; exit 0; }
           git commit -m "Versioni dei dati"
           for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done; exit 1
