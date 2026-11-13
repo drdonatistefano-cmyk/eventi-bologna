@@ -1,0 +1,63 @@
+name: Velocità delle guide
+# Ogni mattina apre achplaces.com, achdinners.com e achevents.com come le apre una
+# persona (telefono 4G e 3G, seconda visita, computer, tocchi) e salva i risultati nel
+# ramo «statistiche»: li mostra velocita.html, dai pulsanti della Dashboard di Controllo.
+on:
+  schedule:
+    - cron: "23 4 * * *"      # ogni giorno alle 5:23 (ora italiana d'inverno)
+  workflow_dispatch:
+    inputs:
+      guide:
+        description: "Quali guide (places,dinners,events)"
+        default: "places,dinners,events"
+  push:
+    branches: [main]
+    paths: ["scripts/velocita.py", ".github/workflows/velocita.yml"]
+permissions:
+  contents: write
+jobs:
+  misura:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with: { sparse-checkout: scripts }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Browser
+        run: pip install -q playwright && python3 -m playwright install --with-deps chromium >/dev/null
+      - name: Risultati precedenti
+        run: |
+          mkdir -p /tmp/vel
+          if git fetch -q --depth=1 origin statistiche; then
+            git show FETCH_HEAD:velocita.json > /tmp/vel/velocita.json 2>/dev/null || true
+            git show FETCH_HEAD:velocita_storico.csv > /tmp/vel/velocita_storico.csv 2>/dev/null || true
+          fi
+      - name: Misura
+        env:
+          VEL_GIRI: "3"
+        run: python3 scripts/velocita.py /tmp/vel/velocita.json "${{ github.event.inputs.guide || 'places,dinners,events' }}"
+      - uses: actions/upload-artifact@v4
+        with: { name: velocita, path: /tmp/vel/, retention-days: 3 }
+  salva:
+    needs: misura
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    concurrency:
+      group: statistiche
+      cancel-in-progress: false
+    steps:
+      - uses: actions/download-artifact@v4
+        with: { name: velocita, path: /tmp/vel }
+      - name: Salva nel ramo statistiche
+        run: |
+          set -e
+          OUT=/tmp/pub; rm -rf $OUT; mkdir -p $OUT; cd $OUT
+          git init -q -b statistiche
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          if git fetch -q --depth=1 origin statistiche; then git archive FETCH_HEAD | tar -x -C $OUT; fi
+          cp /tmp/vel/velocita.json /tmp/vel/velocita_storico.csv $OUT/
+          git -c user.name="statistiche-bot" -c user.email="actions@github.com" add -A
+          git -c user.name="statistiche-bot" -c user.email="actions@github.com" commit -q -m "Velocità $(date -u +%FT%TZ)"
+          git push -q -f origin statistiche
+          echo "salvato: $(git ls-files | wc -l) file"
