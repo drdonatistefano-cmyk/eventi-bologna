@@ -305,7 +305,7 @@ def wikiarte():
     links = []
     for u in re.findall(r'href="(https://www\.wikiarte\.com/20\d\d/\d\d/\d\d/[^"#?]+/)"', s):
         if u not in links and not re.search(r"fiera|baf-|arte-fiera|asta", u): links.append(u)
-    letti = n = 0
+    letti = n = 0; trovate = []
     for u in links[:6]:
         time.sleep(1.5)
         h = get(u)
@@ -325,6 +325,7 @@ def wikiarte():
             dd = re.search(r"(?i)\bdal\s+(\d{1,2})\s+al\s+(\d{1,2})\s+(%s)\s+(\d{4})" % mesi, testo)
             if not dd: continue
             ini, fin = d(dd.group(1), dd.group(3), dd.group(4)), d(dd.group(2), dd.group(3), dd.group(4))
+        trovate.append(f"{ini}→{fin} {tit}")
         if not tit or fin < OGGI or ini > LIMITE or ini > fin: continue
         tit = tit.title() if tit.isupper() else tit
         tt = tok(tit)
@@ -338,7 +339,7 @@ def wikiarte():
                    "categoria": cat, "descrizione": desc or "Mostre personali alla Galleria Wikiarte, Galleria Falcone e Borsellino 2/D.",
                    "ingresso": "gratuito", "orari": "mar–sab 15–18", "fonte": u, "sito": "https://www.wikiarte.com/", "biglietti": "", "biglietti_tipo": ""})
         R["aggiunti"].append(f"mostra {ini}→{fin} {tit} – Galleria Wikiarte"); n += 1
-    R["fonti"]["wikiarte"] = {"letti": letti, "aggiunti": n}
+    R["fonti"]["wikiarte"] = {"letti": letti, "aggiunti": n, "trovate": trovate}
 
 
 for f in (dice, ticketmaster, arte, wikiarte):
