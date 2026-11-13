@@ -51,7 +51,7 @@ GUIDE = {
             "guida": {"url": "index.html", "contenuto": "document.querySelectorAll('#grid > *').length>5",
                       "foto": FOTO3.format(sel="#grid img.cph"), "dati": r"/dati\.[0-9a-f]+\.json"},
             "mappa": {"url": "filtri.html", "contenuto": "!!(window.__mappa&&document.querySelector('canvas'))",
-                      "foto": None, "dati": r"/mappan?\.[0-9a-f]+\.json"},
+                      "foto": None, "visibile": "(()=>{const c=document.getElementById('cv');if(!c||!c.width)return false;const d=c.getContext('2d').getImageData(c.width/2|0,c.height/2|0,1,1).data;return d[3]>0})()", "dati": r"/mappan?\.[0-9a-f]+\.json"},
         },
     },
     "dinners": {
@@ -107,6 +107,10 @@ def apri(pg, s, url, p, timeout=90000):
     s.on("Network.loadingFinished", finito)
     t0 = time.time()
     pg.goto(url, wait_until="commit")
+    visibile = None
+    if p.get("visibile"):
+        pg.wait_for_function(p["visibile"], polling=20, timeout=timeout)
+        visibile = round((time.time() - t0) * 1000)
     pg.wait_for_function(p["contenuto"], timeout=timeout)
     contenuto = round((time.time() - t0) * 1000)
     foto = None
@@ -121,7 +125,7 @@ def apri(pg, s, url, p, timeout=90000):
     lt = [d for _, d in r["lt"]]
     s.remove_listener("Network.requestWillBeSent", chiesto)
     s.remove_listener("Network.loadingFinished", finito)
-    return {"primo_disegno": r["fcp"], "contenuto": contenuto, "foto": foto, "dati": st["dati"],
+    return {"primo_disegno": r["fcp"], "visibile": visibile if visibile is not None else contenuto, "contenuto": contenuto, "foto": foto, "dati": st["dati"],
             "kb": round(st["kb"] / 1024), "tbt": sum(max(0, d - 50) for d in lt), "blocco_max": max(lt, default=0)}
 
 
@@ -262,8 +266,9 @@ def giudizio(v):
     """verde / giallo / rosso, con le soglie di Google per i siti veloci."""
     out = {}
     a = v.get("prima visita 4G", {})
-    if a.get("contenuto") is not None:
-        out["contenuto"] = "verde" if a["contenuto"] <= 1500 else "giallo" if a["contenuto"] <= 3000 else "rosso"
+    vis = a.get("visibile", a.get("contenuto"))
+    if vis is not None:
+        out["contenuto"] = "verde" if vis <= 1500 else "giallo" if vis <= 3000 else "rosso"
     if a.get("tbt") is not None:
         out["blocco"] = "verde" if a["tbt"] <= 200 else "giallo" if a["tbt"] <= 600 else "rosso"
     tocchi = [x.get("risposta", 0) for x in v.get("uso", {}).values() if isinstance(x, dict) and "risposta" in x]
