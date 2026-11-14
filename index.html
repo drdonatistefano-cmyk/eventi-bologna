@@ -1229,6 +1229,8 @@ document.addEventListener("change",e=>{const i=e.target;if(i.dataset&&i.dataset.
 document.addEventListener("focusout",e=>{if(e.target.classList&&e.target.classList.contains("lsearch"))setTimeout(()=>{if(!document.activeElement||!document.activeElement.classList.contains("lsearch"))lFocus=null},0)});
 let qt;$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{st.q=e.target.value.trim();st.qn=norm(st.q);render(true)},140)});
 $("#qx").onclick=()=>{$("#q").value="";st.q=st.qn="";render(true);$("#q").focus()};
+/* 14/11/2026: ?cerca=Nome apre la guida già filtrata su un luogo o un artista (link nelle lettere ai locali) */
+(()=>{const c=new URLSearchParams(location.search).get("cerca");if(c){$("#q").value=c;$("#q").dispatchEvent(new Event("input"))}})();
 $("#more").onclick=()=>{st.n+=PAGE;render()};
 function openDlg(d){try{d.showModal()}catch(_){d.setAttribute("open","")}}
 function closeD(d){try{d.close()}catch(_){d.removeAttribute("open")}}
