@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-13",
- "giorno_orari": "2026-11-13",
+ "aggiornato": "2026-11-14",
+ "giorno_orari": "2026-11-14",
  "sale": [
   {
    "id": "c001",
@@ -11,6 +11,24 @@
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/cinema-arese_717/",
    "film": [
+    {
+     "titolo": "Il gatto col cappello",
+     "orari": [
+      "17:00"
+     ],
+     "versione": "",
+     "genere": "Animazione",
+     "regia": "Alessandro Carloni e Erica Rivinoja",
+     "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
+     "durata": 107,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-14": [
+       "17:00"
+      ]
+     },
+     "paese": "USA"
+    },
     {
      "titolo": "Se domani non torno",
      "orari": [
@@ -23,7 +41,7 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "21:15"
       ]
      },
@@ -53,7 +71,7 @@
      "durata": 108,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "23:40"
       ]
      }
@@ -70,7 +88,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "18:10"
       ]
      },
@@ -90,7 +108,7 @@
      "durata": 135,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "15:00",
        "21:50",
        "22:20"
@@ -110,7 +128,7 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "22:20"
       ]
      },
@@ -119,6 +137,7 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
+      "14:00",
       "16:20",
       "18:00"
      ],
@@ -129,7 +148,8 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
+       "14:00",
        "16:20",
        "18:00"
       ]
@@ -139,6 +159,7 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
+      "14:30",
       "16:40",
       "19:00",
       "20:50",
@@ -151,7 +172,8 @@
      "durata": 113,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
+       "14:30",
        "16:40",
        "19:00",
        "20:50",
@@ -172,7 +194,7 @@
      "durata": 89,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "23:20"
       ]
      },
@@ -190,7 +212,7 @@
      "durata": 93,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "23:30"
       ]
      },
@@ -213,7 +235,7 @@
      "durata": 116,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "16:30",
        "18:30",
        "19:10",
@@ -238,13 +260,31 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "17:20",
        "19:20",
        "21:10"
       ]
      },
      "paese": "Italia"
+    },
+    {
+     "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
+     "orari": [
+      "14:10"
+     ],
+     "versione": "",
+     "genere": "Animazione",
+     "regia": "Steve Cox e Matthew Walker",
+     "interpreti": "Justin Fletcher, John Sparkes e Kate Harbour",
+     "durata": 91,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-14": [
+       "14:10"
+      ]
+     },
+     "paese": "Regno Unito"
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
@@ -259,7 +299,7 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "16:00",
        "19:50"
       ]
@@ -269,9 +309,10 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
+      "14:40",
       "17:10",
       "19:40",
-      "23:40"
+      "23:50"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -280,10 +321,11 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
+       "14:40",
        "17:10",
        "19:40",
-       "23:40"
+       "23:50"
       ]
      },
      "paese": "Italia"
@@ -300,7 +342,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "16:50"
       ]
      },
@@ -318,7 +360,7 @@
      "durata": 139,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "15:20"
       ]
      },
@@ -359,7 +401,7 @@
      "durata": 113,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "21:15"
       ]
      },
@@ -376,7 +418,28 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/agora_729/",
-   "film": [],
+   "film": [
+    {
+     "titolo": "Se domani non torno",
+     "orari": [
+      "15:30",
+      "21:00"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Paola Randi",
+     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
+     "durata": 107,
+     "anno": 2027,
+     "giorni": {
+      "2026-11-14": [
+       "15:30",
+       "21:00"
+      ]
+     },
+     "paese": "Italia"
+    }
+   ],
    "auto": true
   },
   {
@@ -411,11 +474,46 @@
    "fonte": "https://movieplayer.it/cinema/uci-cinemas-pioltello_806/",
    "film": [
     {
+     "titolo": "Clayface",
+     "orari": [
+      "00:15"
+     ],
+     "versione": "",
+     "genere": "Horror, Avventura, Azione",
+     "regia": "James Watkins",
+     "interpreti": "Eddie Marsan, Naomi Ackie e Max Minghella",
+     "durata": 108,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-14": [
+       "00:15"
+      ]
+     }
+    },
+    {
+     "titolo": "Dio ride",
+     "orari": [
+      "14:00"
+     ],
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Giovanni Veronesi",
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "durata": 114,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-14": [
+       "14:00"
+      ]
+     },
+     "paese": "Italia"
+    },
+    {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "17:30",
+      "15:45",
       "19:30",
-      "21:45"
+      "22:15"
      ],
      "versione": "Versione originale (solo ore 19:30)",
      "genere": "Azione, Avventura, Drammatico",
@@ -424,10 +522,10 @@
      "durata": 135,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "17:30",
+      "2026-11-14": [
+       "15:45",
        "19:30",
-       "21:45"
+       "22:15"
       ]
      },
      "paese": "Giappone"
@@ -435,7 +533,7 @@
     {
      "titolo": "Hope",
      "orari": [
-      "21:00"
+      "22:00"
      ],
      "versione": "",
      "genere": "Azione, Fantascienza, Horror",
@@ -444,16 +542,34 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "21:00"
+      "2026-11-14": [
+       "22:00"
       ]
      },
      "paese": "Corea del sud"
     },
     {
+     "titolo": "Ice Cream Man",
+     "orari": [
+      "00:20"
+     ],
+     "versione": "",
+     "genere": "Commedia, Horror, Thriller",
+     "regia": "Eli Roth",
+     "interpreti": "Eli Roth, Dylan Hawco e Ben Davis",
+     "durata": 86,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-14": [
+       "00:20"
+      ]
+     }
+    },
+    {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "16:50"
+      "14:30",
+      "16:00"
      ],
      "versione": "",
      "genere": "Animazione",
@@ -462,8 +578,9 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "16:50"
+      "2026-11-14": [
+       "14:30",
+       "16:00"
       ]
      },
      "paese": "USA"
@@ -482,7 +599,7 @@
      "durata": 113,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "16:20",
        "19:00",
        "21:40"
@@ -491,11 +608,30 @@
      "paese": "Italia"
     },
     {
+     "titolo": "It Ends",
+     "orari": [
+      "23:50"
+     ],
+     "versione": "",
+     "genere": "Horror, Drammatico, Fantastico",
+     "regia": "Alexander Ullom",
+     "interpreti": "Phinehas Yoon, Akira Jackson e Noah Toth",
+     "durata": 89,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-14": [
+       "23:50"
+      ]
+     },
+     "paese": "USA"
+    },
+    {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "16:30",
+      "14:15",
+      "17:00",
       "18:30",
-      "19:10",
+      "19:30",
       "21:15",
       "22:30"
      ],
@@ -506,10 +642,11 @@
      "durata": 116,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "16:30",
+      "2026-11-14": [
+       "14:15",
+       "17:00",
        "18:30",
-       "19:10",
+       "19:30",
        "21:15",
        "22:30"
       ]
@@ -519,6 +656,7 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
+      "14:00",
       "16:40",
       "19:15",
       "21:50"
@@ -530,13 +668,32 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
+       "14:00",
        "16:40",
        "19:15",
        "21:50"
       ]
      },
      "paese": "Italia"
+    },
+    {
+     "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
+     "orari": [
+      "14:10"
+     ],
+     "versione": "",
+     "genere": "Animazione",
+     "regia": "Steve Cox e Matthew Walker",
+     "interpreti": "Justin Fletcher, John Sparkes e Kate Harbour",
+     "durata": 91,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-14": [
+       "14:10"
+      ]
+     },
+     "paese": "Regno Unito"
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
@@ -551,7 +708,7 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "20:10",
        "22:30"
       ]
@@ -561,6 +718,7 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
+      "14:40",
       "17:10",
       "19:40",
       "22:10"
@@ -572,7 +730,8 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
+       "14:40",
        "17:10",
        "19:40",
        "22:10"
@@ -583,7 +742,7 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "16:00"
+      "16:50"
      ],
      "versione": "",
      "genere": "Commedia, Drammatico",
@@ -592,8 +751,8 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "16:00"
+      "2026-11-14": [
+       "16:50"
       ]
      },
      "paese": "Regno Unito"
@@ -610,7 +769,7 @@
      "durata": 139,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "17:20"
       ]
      },
@@ -642,7 +801,7 @@
     {
      "titolo": "Clayface",
      "orari": [
-      "22:55"
+      "00:20"
      ],
      "versione": "",
      "genere": "Horror, Avventura, Azione",
@@ -651,8 +810,8 @@
      "durata": 108,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "22:55"
+      "2026-11-14": [
+       "00:20"
       ]
      }
     },
@@ -660,8 +819,7 @@
      "titolo": "Come rapinare una banca",
      "orari": [
       "15:50",
-      "16:05",
-      "17:50"
+      "19:05"
      ],
      "versione": "",
      "genere": "Azione, Thriller",
@@ -670,10 +828,9 @@
      "durata": 122,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "15:50",
-       "16:05",
-       "17:50"
+       "19:05"
       ]
      },
      "paese": "USA"
@@ -681,8 +838,7 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "15:00",
-      "18:45"
+      "18:40"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -691,9 +847,8 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "15:00",
-       "18:45"
+      "2026-11-14": [
+       "18:40"
       ]
      },
      "paese": "Italia"
@@ -701,13 +856,15 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "15:30",
-      "17:25",
+      "15:15",
+      "16:15",
       "19:00",
-      "19:55",
+      "19:30",
+      "20:10",
       "21:30",
       "22:10",
-      "22:30"
+      "22:40",
+      "23:45"
      ],
      "versione": "",
      "genere": "Azione, Avventura, Drammatico",
@@ -716,14 +873,16 @@
      "durata": 135,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "15:30",
-       "17:25",
+      "2026-11-14": [
+       "15:15",
+       "16:15",
        "19:00",
-       "19:55",
+       "19:30",
+       "20:10",
        "21:30",
        "22:10",
-       "22:30"
+       "22:40",
+       "23:45"
       ]
      },
      "paese": "Giappone"
@@ -731,8 +890,8 @@
     {
      "titolo": "Hope",
      "orari": [
-      "14:00",
-      "21:40"
+      "14:10",
+      "17:45"
      ],
      "versione": "",
      "genere": "Azione, Fantascienza, Horror",
@@ -741,9 +900,9 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "14:00",
-       "21:40"
+      "2026-11-14": [
+       "14:10",
+       "17:45"
       ]
      },
      "paese": "Corea del sud"
@@ -751,8 +910,7 @@
     {
      "titolo": "Ice Cream Man",
      "orari": [
-      "14:20",
-      "23:05"
+      "23:35"
      ],
      "versione": "",
      "genere": "Commedia, Horror, Thriller",
@@ -761,17 +919,16 @@
      "durata": 86,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "14:20",
-       "23:05"
+      "2026-11-14": [
+       "23:35"
       ]
      }
     },
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "16:20",
-      "18:15"
+      "14:10",
+      "16:50"
      ],
      "versione": "",
      "genere": "Animazione",
@@ -780,9 +937,9 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "16:20",
-       "18:15"
+      "2026-11-14": [
+       "14:10",
+       "16:50"
       ]
      },
      "paese": "USA"
@@ -790,10 +947,10 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "17:10",
-      "19:45",
+      "15:55",
+      "18:20",
       "20:50",
-      "22:05"
+      "21:45"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -802,11 +959,11 @@
      "durata": 113,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "17:10",
-       "19:45",
+      "2026-11-14": [
+       "15:55",
+       "18:20",
        "20:50",
-       "22:05"
+       "21:45"
       ]
      },
      "paese": "Italia"
@@ -814,7 +971,8 @@
     {
      "titolo": "It Ends",
      "orari": [
-      "23:10"
+      "00:25",
+      "22:05"
      ],
      "versione": "",
      "genere": "Horror, Drammatico, Fantastico",
@@ -823,8 +981,9 @@
      "durata": 89,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "23:10"
+      "2026-11-14": [
+       "00:25",
+       "22:05"
       ]
      },
      "paese": "USA"
@@ -832,7 +991,7 @@
     {
      "titolo": "Je so' pazzo",
      "orari": [
-      "18:15"
+      "17:25"
      ],
      "versione": "",
      "genere": "Biografico",
@@ -841,8 +1000,8 @@
      "durata": 105,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "18:15"
+      "2026-11-14": [
+       "17:25"
       ]
      },
      "paese": "Italia"
@@ -850,7 +1009,10 @@
     {
      "titolo": "Look Back",
      "orari": [
-      "16:55"
+      "15:00",
+      "17:40",
+      "20:10",
+      "22:30"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -859,57 +1021,25 @@
      "durata": 100,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "16:55"
+      "2026-11-14": [
+       "15:00",
+       "17:40",
+       "20:10",
+       "22:30"
       ]
      },
      "paese": "Giappone"
     },
     {
-     "titolo": "Mammina",
-     "orari": [
-      "14:45"
-     ],
-     "versione": "",
-     "genere": "Horror",
-     "regia": "Rob Savage",
-     "interpreti": "Jessica Chastain, Jay Duplass, Karen Allen e Dichen Lachman",
-     "durata": 93,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-13": [
-       "14:45"
-      ]
-     },
-     "paese": "USA"
-    },
-    {
-     "titolo": "Ragione e sentimento",
-     "orari": [
-      "14:05"
-     ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Ang Lee",
-     "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
-     "durata": 136,
-     "anno": 1995,
-     "giorni": {
-      "2026-11-13": [
-       "14:05"
-      ]
-     },
-     "paese": "USA"
-    },
-    {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "15:25",
-      "18:55",
+      "14:00",
+      "15:30",
+      "17:30",
       "19:00",
-      "20:25",
-      "21:45",
-      "22:00"
+      "19:50",
+      "22:00",
+      "23:15"
      ],
      "versione": "",
      "genere": "Drammatico, Fantasy",
@@ -918,13 +1048,14 @@
      "durata": 116,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "15:25",
-       "18:55",
+      "2026-11-14": [
+       "14:00",
+       "15:30",
+       "17:30",
        "19:00",
-       "20:25",
-       "21:45",
-       "22:00"
+       "19:50",
+       "22:00",
+       "23:15"
       ]
      },
      "paese": "USA"
@@ -932,10 +1063,10 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
+      "00:30",
+      "14:20",
       "17:10",
-      "19:25",
-      "20:35",
-      "23:05"
+      "21:05"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -944,11 +1075,11 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
+       "00:30",
+       "14:20",
        "17:10",
-       "19:25",
-       "20:35",
-       "23:05"
+       "21:05"
       ]
      },
      "paese": "Italia"
@@ -956,7 +1087,7 @@
     {
      "titolo": "Shaun, Vita da pecora: Operazione Z.U.C.C.A.",
      "orari": [
-      "14:10"
+      "14:05"
      ],
      "versione": "",
      "genere": "Animazione",
@@ -965,8 +1096,8 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "14:10"
+      "2026-11-14": [
+       "14:05"
       ]
      },
      "paese": "Regno Unito"
@@ -974,7 +1105,7 @@
     {
      "titolo": "The Nameless Ballad",
      "orari": [
-      "23:10"
+      "16:40"
      ],
      "versione": "",
      "genere": "Horror, Drammatico",
@@ -983,16 +1114,15 @@
      "durata": null,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "23:10"
+      "2026-11-14": [
+       "16:40"
       ]
      }
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
-      "19:00",
-      "20:40"
+      "18:20"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -1001,9 +1131,8 @@
      "durata": 98,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "19:00",
-       "20:40"
+      "2026-11-14": [
+       "18:20"
       ]
      },
      "paese": "Italia"
@@ -1011,9 +1140,10 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
-      "16:35",
-      "18:15",
-      "20:50"
+      "14:40",
+      "16:40",
+      "19:20",
+      "22:20"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -1022,10 +1152,11 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "16:35",
-       "18:15",
-       "20:50"
+      "2026-11-14": [
+       "14:40",
+       "16:40",
+       "19:20",
+       "22:20"
       ]
      },
      "paese": "Italia"
@@ -1033,8 +1164,8 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "14:10",
-      "15:15"
+      "14:35",
+      "21:15"
      ],
      "versione": "",
      "genere": "Commedia, Drammatico",
@@ -1043,9 +1174,9 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "14:10",
-       "15:15"
+      "2026-11-14": [
+       "14:35",
+       "21:15"
       ]
      },
      "paese": "Regno Unito"
@@ -1053,7 +1184,7 @@
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
-      "15:10"
+      "00:00"
      ],
      "versione": "",
      "genere": "Animazione, Avventura, Drammatico",
@@ -1062,8 +1193,8 @@
      "durata": 139,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "15:10"
+      "2026-11-14": [
+       "00:00"
       ]
      },
      "paese": "USA"
@@ -1081,9 +1212,29 @@
    "fonte": "https://movieplayer.it/cinema/multisala-troisi_811/",
    "film": [
     {
+     "titolo": "Dio ride",
+     "orari": [
+      "17:00"
+     ],
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Giovanni Veronesi",
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "durata": 114,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-14": [
+       "17:00"
+      ]
+     },
+     "paese": "Italia"
+    },
+    {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "21:00"
+      "15:00",
+      "17:10",
+      "21:15"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -1092,8 +1243,30 @@
      "durata": 113,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "21:00"
+      "2026-11-14": [
+       "15:00",
+       "17:10",
+       "21:15"
+      ]
+     },
+     "paese": "Italia"
+    },
+    {
+     "titolo": "Se domani non torno",
+     "orari": [
+      "15:00",
+      "19:15"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Paola Randi",
+     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
+     "durata": 107,
+     "anno": 2027,
+     "giorni": {
+      "2026-11-14": [
+       "15:00",
+       "19:15"
       ]
      },
      "paese": "Italia"
@@ -1101,7 +1274,8 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "21:00"
+      "19:10",
+      "21:30"
      ],
      "versione": "",
      "genere": "Commedia, Drammatico",
@@ -1110,8 +1284,9 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "21:00"
+      "2026-11-14": [
+       "19:10",
+       "21:30"
       ]
      },
      "paese": "Regno Unito"
@@ -1145,9 +1320,6 @@
       "22:35"
      ],
      "giorni": {
-      "2026-11-13": [
-       "22:35"
-      ],
       "2026-11-14": [
        "22:35"
       ],
@@ -1169,9 +1341,6 @@
       "22:40"
      ],
      "giorni": {
-      "2026-11-13": [
-       "22:40"
-      ],
       "2026-11-14": [
        "22:40"
       ],
@@ -1194,9 +1363,6 @@
       "19:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "19:00"
-      ],
       "2026-11-14": [
        "19:00"
       ],
@@ -1221,11 +1387,6 @@
       "20:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:40",
-       "17:10",
-       "20:00"
-      ],
       "2026-11-14": [
        "14:40",
        "17:10",
@@ -1233,7 +1394,6 @@
       ],
       "2026-11-15": [
        "14:40",
-       "17:10",
        "20:00"
       ]
      },
@@ -1255,12 +1415,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:10",
-       "18:30",
-       "19:40",
-       "21:30"
-      ],
       "2026-11-14": [
        "15:10",
        "18:30",
@@ -1291,10 +1445,6 @@
       "21:15"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:15",
-       "21:15"
-      ],
       "2026-11-14": [
        "15:15",
        "21:15"
@@ -1320,10 +1470,6 @@
       "17:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:30",
-       "17:00"
-      ],
       "2026-11-14": [
        "14:30",
        "17:00"
@@ -1353,13 +1499,6 @@
       "22:15"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:15",
-       "14:45",
-       "17:15",
-       "19:45",
-       "22:15"
-      ],
       "2026-11-14": [
        "14:15",
        "14:45",
@@ -1392,11 +1531,6 @@
       "21:45"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:20",
-       "19:30",
-       "21:45"
-      ],
       "2026-11-14": [
        "17:20",
        "19:30",
@@ -1421,22 +1555,17 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "14:40",
       "16:50",
       "19:20"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:40",
-       "16:50",
-       "19:20"
-      ],
       "2026-11-14": [
        "16:50",
        "19:20"
       ],
       "2026-11-15": [
        "16:50",
+       "17:05",
        "19:20"
       ]
      },
@@ -1459,13 +1588,6 @@
       "22:10"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:05",
-       "16:50",
-       "17:25",
-       "19:50",
-       "22:10"
-      ],
       "2026-11-14": [
        "15:05",
        "16:50",
@@ -1498,10 +1620,6 @@
       "22:20"
      ],
      "giorni": {
-      "2026-11-13": [
-       "16:45",
-       "22:20"
-      ],
       "2026-11-14": [
        "16:45",
        "22:20"
@@ -1529,12 +1647,6 @@
       "22:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:35",
-       "18:00",
-       "20:15",
-       "22:30"
-      ],
       "2026-11-14": [
        "14:35",
        "18:00",
@@ -1564,10 +1676,6 @@
       "19:35"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:20",
-       "19:35"
-      ],
       "2026-11-14": [
        "14:20",
        "19:35"
@@ -1590,12 +1698,10 @@
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
+      "14:40",
       "21:50"
      ],
      "giorni": {
-      "2026-11-13": [
-       "21:50"
-      ],
       "2026-11-14": [
        "14:40",
        "21:50"
@@ -1629,9 +1735,26 @@
    "fonte": "https://movieplayer.it/cinema/rondinella_818/",
    "film": [
     {
+     "titolo": "Coyote vs. Acme",
+     "orari": [
+      "15:15"
+     ],
+     "versione": "",
+     "genere": "Animazione, Azione, Avventura",
+     "regia": "Dave Green",
+     "interpreti": "John Cena, Lana Condor e Will Forte",
+     "durata": null,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-14": [
+       "15:15"
+      ]
+     }
+    },
+    {
      "titolo": "Dio ride",
      "orari": [
-      "21:15"
+      "19:00"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -1640,8 +1763,8 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
-       "21:15"
+      "2026-11-14": [
+       "19:00"
       ]
      },
      "paese": "Italia"
@@ -1649,7 +1772,7 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "15:15"
+      "17:00"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -1658,11 +1781,29 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-13": [
-       "15:15"
+      "2026-11-14": [
+       "17:00"
       ]
      },
      "paese": "Italia"
+    },
+    {
+     "titolo": "Wild Horse Nine",
+     "orari": [
+      "21:15"
+     ],
+     "versione": "",
+     "genere": "Commedia, Drammatico",
+     "regia": "Martin McDonagh",
+     "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
+     "durata": 118,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-14": [
+       "21:15"
+      ]
+     },
+     "paese": "Regno Unito"
     }
    ],
    "auto": true
@@ -1690,7 +1831,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "15:00",
        "19:15",
        "21:30"
@@ -1703,7 +1844,7 @@
      "orari": [
       "15:00",
       "17:10",
-      "21:30"
+      "19:20"
      ],
      "versione": "",
      "genere": "Commedia",
@@ -1712,10 +1853,10 @@
      "durata": 113,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "15:00",
        "17:10",
-       "21:30"
+       "19:20"
       ]
      },
      "paese": "Italia"
@@ -1724,8 +1865,7 @@
      "titolo": "Look Back",
      "orari": [
       "15:00",
-      "17:10",
-      "19:30"
+      "17:10"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -1734,10 +1874,9 @@
      "durata": 100,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "15:00",
-       "17:10",
-       "19:30"
+       "17:10"
       ]
      },
      "paese": "Giappone"
@@ -1756,7 +1895,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "17:10",
        "19:20",
        "21:30"
@@ -1780,12 +1919,9 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "14:50"
+      "17:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:50"
-      ],
       "2026-11-14": [
        "17:00"
       ],
@@ -1808,7 +1944,7 @@
       "10:30"
      ],
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "10:30"
       ]
      },
@@ -1820,12 +1956,9 @@
     {
      "titolo": "Il canto della foresta",
      "orari": [
-      "17:10"
+      "15:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:10"
-      ],
       "2026-11-14": [
        "15:00"
       ],
@@ -1845,12 +1978,9 @@
     {
      "titolo": "L'essere amato",
      "orari": [
-      "19:00"
+      "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "19:00"
-      ],
       "2026-11-14": [
        "21:30"
       ],
@@ -1870,12 +2000,9 @@
     {
      "titolo": "L'estranea",
      "orari": [
-      "21:35"
+      "19:15"
      ],
      "giorni": {
-      "2026-11-13": [
-       "21:35"
-      ],
       "2026-11-14": [
        "19:15"
       ],
@@ -1887,10 +2014,10 @@
      "genere": "Thriller",
      "regia": "Paolo Strippoli",
      "biglietti": "https://ariosto.spaziocinema.18tickets.it/film/117399",
+     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano e Adriano Giannini",
+     "durata": 115,
      "anno": 2026,
-     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano, Adriano Giannini e Valeria Bruni Tedeschi",
-     "paese": "Italia",
-     "durata": 115
+     "paese": "Italia"
     }
    ],
    "auto": true,
@@ -1908,7 +2035,9 @@
    "film": [
     {
      "titolo": "Black Lions – Roman Wolves",
-     "orari": [],
+     "orari": [
+      "17:00"
+     ],
      "giorni": {
       "2026-11-14": [
        "17:00"
@@ -1921,7 +2050,9 @@
     },
     {
      "titolo": "El Partido",
-     "orari": [],
+     "orari": [
+      "20:30"
+     ],
      "giorni": {
       "2026-11-14": [
        "20:30"
@@ -1947,16 +2078,22 @@
     },
     {
      "titolo": "Il braccio violento della legge",
-     "orari": [],
+     "orari": [
+      "11:00"
+     ],
      "giorni": {
       "2026-11-14": [
        "11:00"
       ]
      },
      "versione": "Versione originale",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://arlecchino.cinetecadimilano.18tickets.it/film/107598"
+     "genere": "Poliziesco",
+     "regia": "William Friedkin",
+     "biglietti": "https://arlecchino.cinetecadimilano.18tickets.it/film/107598",
+     "interpreti": "Gene Hackman, Frederic De Pasquale, Eddie Egan e Fernando Rey",
+     "paese": "USA",
+     "durata": 104,
+     "anno": 1971
     },
     {
      "titolo": "Ludwig",
@@ -1983,21 +2120,6 @@
      "genere": "",
      "regia": "",
      "biglietti": "https://arlecchino.cinetecadimilano.18tickets.it/film/120466"
-    },
-    {
-     "titolo": "Una settimana",
-     "orari": [
-      "15:00"
-     ],
-     "giorni": {
-      "2026-11-13": [
-       "15:00"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://arlecchino.cinetecadimilano.18tickets.it/film/118815"
     }
    ],
    "auto": true,
@@ -2030,10 +2152,6 @@
       "18:45"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:30",
-       "18:45"
-      ],
       "2026-11-14": [
        "14:30",
        "18:45"
@@ -2059,10 +2177,6 @@
       "20:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:30",
-       "20:30"
-      ],
       "2026-11-14": [
        "14:30",
        "20:30"
@@ -2087,9 +2201,6 @@
       "17:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:30"
-      ],
       "2026-11-14": [
        "17:30"
       ],
@@ -2113,10 +2224,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "16:45",
-       "21:00"
-      ],
       "2026-11-14": [
        "16:45",
        "21:00"
@@ -2151,12 +2258,9 @@
     {
      "titolo": "Come rapinare una banca",
      "orari": [
-      "15:00"
+      "21:45"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:00"
-      ],
       "2026-11-14": [
        "21:45"
       ],
@@ -2176,14 +2280,10 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "14:20",
-      "21:30"
+      "15:00",
+      "19:25"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:20",
-       "21:30"
-      ],
       "2026-11-14": [
        "15:00",
        "19:25"
@@ -2205,14 +2305,10 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "17:00",
+      "17:10",
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:00",
-       "21:30"
-      ],
       "2026-11-14": [
        "17:10",
        "21:30"
@@ -2233,7 +2329,9 @@
     },
     {
      "titolo": "Hope",
-     "orari": [],
+     "orari": [
+      "21:40"
+     ],
      "giorni": {
       "2026-11-14": [
        "21:40"
@@ -2246,22 +2344,17 @@
      "genere": "Azione, Fantascienza, Horror",
      "regia": "Na Hong-jin",
      "biglietti": "https://citylife.spaziocinema.18tickets.it/film/125779",
+     "anno": 2026,
      "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
      "paese": "Corea del sud",
-     "durata": 145,
-     "anno": 2026
+     "durata": 145
     },
     {
      "titolo": "Il canto della foresta",
      "orari": [
-      "10:30",
-      "12:50"
+      "13:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:30",
-       "12:50"
-      ],
       "2026-11-14": [
        "13:00"
       ],
@@ -2282,12 +2375,10 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "17:20"
+      "15:00",
+      "17:15"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:20"
-      ],
       "2026-11-14": [
        "15:00",
        "17:15"
@@ -2309,7 +2400,6 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "10:30",
       "12:45",
       "15:00",
       "17:15",
@@ -2317,14 +2407,6 @@
       "21:45"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:30",
-       "12:45",
-       "15:00",
-       "17:15",
-       "19:30",
-       "21:45"
-      ],
       "2026-11-14": [
        "12:45",
        "15:00",
@@ -2352,14 +2434,9 @@
     {
      "titolo": "L'estranea",
      "orari": [
-      "10:30",
-      "12:45"
+      "13:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:30",
-       "12:45"
-      ],
       "2026-11-14": [
        "13:00"
       ],
@@ -2371,10 +2448,10 @@
      "genere": "Thriller",
      "regia": "Paolo Strippoli",
      "biglietti": "https://citylife.spaziocinema.18tickets.it/film/117399",
+     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano e Adriano Giannini",
+     "durata": 115,
      "anno": 2026,
-     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano, Adriano Giannini e Valeria Bruni Tedeschi",
-     "paese": "Italia",
-     "durata": 115
+     "paese": "Italia"
     },
     {
      "titolo": "La storia infinita",
@@ -2395,9 +2472,6 @@
       "10:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:30"
-      ],
       "2026-11-14": [
        "10:30"
       ],
@@ -2420,9 +2494,6 @@
       "12:45"
      ],
      "giorni": {
-      "2026-11-13": [
-       "12:45"
-      ],
       "2026-11-14": [
        "12:45"
       ],
@@ -2442,16 +2513,12 @@
     {
      "titolo": "Ragione e sentimento",
      "orari": [
-      "10:00",
+      "10:15",
       "15:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:00",
-       "15:00"
-      ],
       "2026-11-14": [
-       "10:30",
+       "10:15",
        "15:00"
       ],
       "2026-11-15": [
@@ -2471,17 +2538,11 @@
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
       "10:30",
-      "14:45",
-      "17:00",
-      "19:15"
+      "15:00",
+      "17:15",
+      "19:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:30",
-       "14:45",
-       "17:00",
-       "19:15"
-      ],
       "2026-11-14": [
        "10:30",
        "15:00",
@@ -2495,7 +2556,7 @@
        "19:30"
       ]
      },
-     "versione": "Versione originale (solo ore 10:15, 10:30, 17:00, 17:15)",
+     "versione": "Versione originale (solo ore 10:15, 10:30, 17:15)",
      "genere": "Drammatico, Fantasy",
      "regia": "Ti West",
      "biglietti": "https://citylife.spaziocinema.18tickets.it/film/128485",
@@ -2508,15 +2569,10 @@
      "titolo": "Se domani non torno",
      "orari": [
       "10:00",
-      "14:50",
-      "19:20"
+      "17:15",
+      "19:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:00",
-       "14:50",
-       "19:20"
-      ],
       "2026-11-14": [
        "10:00",
        "17:15",
@@ -2539,7 +2595,9 @@
     },
     {
      "titolo": "Shaun, vita da pecora - Operazione Z.U.C.C.A.",
-     "orari": [],
+     "orari": [
+      "15:00"
+     ],
      "giorni": {
       "2026-11-14": [
        "15:00"
@@ -2550,43 +2608,21 @@
      },
      "versione": "",
      "genere": "Animazione",
-     "regia": "Matthew Walker (IV) e Steve Cox",
+     "regia": "Steve Cox e Matthew Walker",
      "biglietti": "https://citylife.spaziocinema.18tickets.it/film/121693",
-     "interpreti": "Kate Harbour, Justin Fletcher e John Sparkes",
+     "interpreti": "Justin Fletcher, John Sparkes e Kate Harbour",
+     "anno": 2026,
      "paese": "Regno Unito",
-     "durata": 91,
-     "anno": 2026
-    },
-    {
-     "titolo": "Trainspotting",
-     "orari": [
-      "21:30"
-     ],
-     "giorni": {
-      "2026-11-13": [
-       "21:30"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Drammatico",
-     "regia": "Danny Boyle",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/123171",
-     "interpreti": "Ewan McGregor, Ewen Bremner e Jonny Lee Miller",
-     "durata": 94,
-     "anno": 1996,
-     "paese": "Gran Bretagna"
+     "durata": 91
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
-      "15:00",
-      "19:40"
+      "15:15",
+      "19:50",
+      "21:45"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:00",
-       "19:40"
-      ],
       "2026-11-14": [
        "15:15",
        "19:50",
@@ -2610,18 +2646,12 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
-      "12:30",
+      "13:00",
       "17:35",
-      "19:35",
+      "19:30",
       "21:40"
      ],
      "giorni": {
-      "2026-11-13": [
-       "12:30",
-       "17:35",
-       "19:35",
-       "21:40"
-      ],
       "2026-11-14": [
        "13:00",
        "17:35",
@@ -2647,18 +2677,12 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "12:30",
+      "12:45",
       "17:00",
       "19:15",
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "12:30",
-       "17:00",
-       "19:15",
-       "21:30"
-      ],
       "2026-11-14": [
        "12:45",
        "17:00",
@@ -2686,9 +2710,6 @@
       "12:20"
      ],
      "giorni": {
-      "2026-11-13": [
-       "12:20"
-      ],
       "2026-11-14": [
        "12:20"
       ],
@@ -2728,12 +2749,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:50",
-       "17:00",
-       "19:15",
-       "21:30"
-      ],
       "2026-11-14": [
        "14:50",
        "17:00",
@@ -2759,12 +2774,10 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "17:05"
+      "15:00",
+      "17:10"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:05"
-      ],
       "2026-11-14": [
        "15:00",
        "17:10"
@@ -2792,12 +2805,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:50",
-       "17:00",
-       "19:15",
-       "21:30"
-      ],
       "2026-11-14": [
        "14:50",
        "17:00",
@@ -2823,14 +2830,10 @@
     {
      "titolo": "L'estranea",
      "orari": [
-      "17:05",
+      "17:00",
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:05",
-       "21:30"
-      ],
       "2026-11-14": [
        "17:00",
        "21:30"
@@ -2844,10 +2847,10 @@
      "genere": "Thriller",
      "regia": "Paolo Strippoli",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5062",
+     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano e Adriano Giannini",
+     "durata": 115,
      "anno": 2026,
-     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano, Adriano Giannini e Valeria Bruni Tedeschi",
-     "paese": "Italia",
-     "durata": 115
+     "paese": "Italia"
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
@@ -2858,12 +2861,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:50",
-       "17:00",
-       "19:15",
-       "21:30"
-      ],
       "2026-11-14": [
        "14:50",
        "17:00",
@@ -2889,16 +2886,10 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "15:00",
       "19:20",
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:00",
-       "19:20",
-       "21:30"
-      ],
       "2026-11-14": [
        "19:20",
        "21:30"
@@ -2924,10 +2915,6 @@
       "19:20"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:00",
-       "19:20"
-      ],
       "2026-11-14": [
        "15:00",
        "19:20"
@@ -2955,12 +2942,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:50",
-       "17:00",
-       "19:15",
-       "21:30"
-      ],
       "2026-11-14": [
        "14:50",
        "17:00",
@@ -3010,7 +2991,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "17:10",
        "19:20",
        "21:30"
@@ -3030,7 +3011,7 @@
      "durata": 135,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "21:15"
       ]
      },
@@ -3048,7 +3029,7 @@
      "durata": 107,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "15:00"
       ]
      },
@@ -3069,7 +3050,7 @@
      "durata": 113,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "15:00",
        "17:10",
        "19:20",
@@ -3090,7 +3071,7 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "15:00"
       ]
      },
@@ -3109,7 +3090,7 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "17:10",
        "19:20"
       ]
@@ -3131,7 +3112,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-13": [
+      "2026-11-14": [
        "15:00",
        "17:10",
        "19:20",
@@ -3162,12 +3143,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:50",
-       "17:05",
-       "19:20",
-       "21:30"
-      ],
       "2026-11-14": [
        "14:50",
        "17:05",
@@ -3199,12 +3174,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:50",
-       "17:05",
-       "19:20",
-       "21:30"
-      ],
       "2026-11-14": [
        "14:50",
        "17:05",
@@ -3236,12 +3205,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:15",
-       "17:20",
-       "19:25",
-       "21:30"
-      ],
       "2026-11-14": [
        "15:15",
        "17:20",
@@ -3271,10 +3234,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:15",
-       "21:00"
-      ],
       "2026-11-14": [
        "15:15",
        "21:00"
@@ -3299,9 +3258,6 @@
       "18:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "18:00"
-      ],
       "2026-11-14": [
        "18:00"
       ],
@@ -3327,12 +3283,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:45",
-       "17:00",
-       "19:15",
-       "21:30"
-      ],
       "2026-11-14": [
        "14:45",
        "17:00",
@@ -3371,12 +3321,9 @@
     {
      "titolo": "L'essere amato",
      "orari": [
-      "21:00"
+      "15:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "21:00"
-      ],
       "2026-11-14": [
        "15:30"
       ],
@@ -3384,7 +3331,7 @@
        "18:15"
       ]
      },
-     "versione": "Versione originale (solo ore 21:00)",
+     "versione": "",
      "genere": "Drammatico",
      "regia": "Rodrigo Sorogoyen",
      "biglietti": "https://www.progettolumiere.it/mexico/",
@@ -3396,12 +3343,9 @@
     {
      "titolo": "Look Back",
      "orari": [
-      "16:00"
+      "21:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "16:00"
-      ],
       "2026-11-14": [
        "21:00"
       ],
@@ -3446,13 +3390,11 @@
      "titolo": "Dio ride",
      "orari": [
       "14:30",
-      "16:55"
+      "16:55",
+      "19:20",
+      "21:45"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:30",
-       "16:55"
-      ],
       "2026-11-14": [
        "14:30",
        "16:55",
@@ -3478,18 +3420,12 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "14:15",
-      "16:30",
+      "14:45",
+      "17:10",
       "19:30",
       "21:50"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:15",
-       "16:30",
-       "19:30",
-       "21:50"
-      ],
       "2026-11-14": [
        "14:45",
        "17:10",
@@ -3534,12 +3470,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:00",
-       "17:10",
-       "19:20",
-       "21:30"
-      ],
       "2026-11-14": [
        "15:00",
        "17:10",
@@ -3568,9 +3498,6 @@
       "17:05"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:05"
-      ],
       "2026-11-14": [
        "17:05"
       ],
@@ -3582,10 +3509,10 @@
      "genere": "Thriller",
      "regia": "Paolo Strippoli",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5351",
+     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano e Adriano Giannini",
+     "durata": 115,
      "anno": 2026,
-     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano, Adriano Giannini e Valeria Bruni Tedeschi",
-     "paese": "Italia",
-     "durata": 115
+     "paese": "Italia"
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
@@ -3594,10 +3521,6 @@
       "17:10"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:55",
-       "17:10"
-      ],
       "2026-11-14": [
        "14:55",
        "17:10"
@@ -3624,11 +3547,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:00",
-       "19:20",
-       "21:30"
-      ],
       "2026-11-14": [
        "15:00",
        "19:20",
@@ -3656,10 +3574,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "19:15",
-       "21:30"
-      ],
       "2026-11-14": [
        "19:15",
        "21:30"
@@ -3708,9 +3622,6 @@
       "15:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:30"
-      ],
       "2026-11-14": [
        "15:30"
       ],
@@ -3733,9 +3644,6 @@
       "18:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "18:00"
-      ],
       "2026-11-14": [
        "18:00"
       ],
@@ -3758,9 +3666,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "21:00"
-      ],
       "2026-11-14": [
        "21:00"
       ],
@@ -3796,9 +3701,6 @@
       "19:10"
      ],
      "giorni": {
-      "2026-11-13": [
-       "19:10"
-      ],
       "2026-11-14": [
        "19:10"
       ],
@@ -3818,12 +3720,10 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
+      "14:30",
       "16:50"
      ],
      "giorni": {
-      "2026-11-13": [
-       "16:50"
-      ],
       "2026-11-14": [
        "14:30",
        "16:50"
@@ -3851,12 +3751,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:30",
-       "16:50",
-       "19:10",
-       "21:30"
-      ],
       "2026-11-14": [
        "14:30",
        "16:50",
@@ -3882,14 +3776,10 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
-      "14:30",
+      "16:50",
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:30",
-       "21:30"
-      ],
       "2026-11-14": [
        "16:50",
        "21:30"
@@ -3912,17 +3802,10 @@
      "titolo": "Wild Horse Nine",
      "orari": [
       "14:30",
-      "16:50",
       "19:10",
       "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:30",
-       "16:50",
-       "19:10",
-       "21:30"
-      ],
       "2026-11-14": [
        "14:30",
        "19:10",
@@ -3970,12 +3853,9 @@
     {
      "titolo": "Clayface",
      "orari": [
-      "22:50"
+      "22:40"
      ],
      "giorni": {
-      "2026-11-13": [
-       "22:50"
-      ],
       "2026-11-14": [
        "22:40"
       ],
@@ -3998,10 +3878,6 @@
       "22:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "19:45",
-       "22:30"
-      ],
       "2026-11-14": [
        "19:45",
        "22:30"
@@ -4022,7 +3898,9 @@
     },
     {
      "titolo": "Dear You",
-     "orari": [],
+     "orari": [
+      "14:25"
+     ],
      "giorni": {
       "2026-11-14": [
        "14:25"
@@ -4032,9 +3910,13 @@
       ]
      },
      "versione": "Versione originale",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068"
+     "genere": "Drammatico",
+     "regia": "Hongchun Lan",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
+     "interpreti": "Usha Seamkhum",
+     "paese": "Cina",
+     "durata": 118,
+     "anno": 2026
     },
     {
      "titolo": "Dio ride",
@@ -4043,10 +3925,6 @@
       "20:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:45",
-       "20:00"
-      ],
       "2026-11-14": [
        "14:45",
        "20:00"
@@ -4071,9 +3949,6 @@
       "17:25"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:25"
-      ],
       "2026-11-14": [
        "17:25"
       ],
@@ -4100,21 +3975,10 @@
       "19:30",
       "19:50",
       "21:50",
-      "22:50",
-      "23:40"
+      "22:45",
+      "23:15"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:45",
-       "11:15",
-       "14:50",
-       "16:20",
-       "19:30",
-       "19:50",
-       "21:50",
-       "22:50",
-       "23:40"
-      ],
       "2026-11-14": [
        "10:45",
        "11:15",
@@ -4123,8 +3987,8 @@
        "19:30",
        "19:50",
        "21:50",
-       "22:50",
-       "23:20"
+       "22:45",
+       "23:15"
       ],
       "2026-11-15": [
        "10:45",
@@ -4151,9 +4015,6 @@
       "16:50"
      ],
      "giorni": {
-      "2026-11-13": [
-       "16:50"
-      ],
       "2026-11-14": [
        "16:50"
       ],
@@ -4174,13 +4035,9 @@
      "titolo": "Hope",
      "orari": [
       "18:20",
-      "21:50"
+      "22:10"
      ],
      "giorni": {
-      "2026-11-13": [
-       "18:20",
-       "21:50"
-      ],
       "2026-11-14": [
        "18:20",
        "22:10"
@@ -4208,9 +4065,12 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068"
+     "genere": "Commedia, Horror, Thriller",
+     "regia": "Eli Roth",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
+     "interpreti": "Eli Roth, Dylan Hawco e Ben Davis",
+     "durata": 86,
+     "anno": 2026
     },
     {
      "titolo": "Il canto della foresta",
@@ -4218,13 +4078,7 @@
       "18:40"
      ],
      "giorni": {
-      "2026-11-13": [
-       "18:40"
-      ],
       "2026-11-14": [
-       "18:40"
-      ],
-      "2026-11-15": [
        "18:40"
       ]
      },
@@ -4242,22 +4096,12 @@
      "orari": [
       "11:40",
       "13:30",
-      "14:35",
       "15:30",
       "16:10",
-      "17:30",
-      "19:10"
+      "17:25",
+      "19:25"
      ],
      "giorni": {
-      "2026-11-13": [
-       "11:40",
-       "13:30",
-       "14:35",
-       "15:30",
-       "16:10",
-       "17:30",
-       "19:10"
-      ],
       "2026-11-14": [
        "11:40",
        "13:30",
@@ -4286,7 +4130,9 @@
     },
     {
      "titolo": "Il Gruffalo' e la Sua P+bastoncino Aut.",
-     "orari": [],
+     "orari": [
+      "11:00"
+     ],
      "giorni": {
       "2026-11-14": [
        "11:00"
@@ -4302,7 +4148,9 @@
     },
     {
      "titolo": "Il Gruffalo' e la Sua Picc + Bastoncino",
-     "orari": [],
+     "orari": [
+      "10:40"
+     ],
      "giorni": {
       "2026-11-14": [
        "10:40"
@@ -4320,29 +4168,20 @@
      "titolo": "Il rumore delle cose nuove",
      "orari": [
       "10:30",
-      "14:05",
+      "14:10",
       "14:55",
       "16:45",
-      "19:00",
+      "19:05",
       "21:40",
       "22:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:30",
-       "14:05",
-       "14:55",
-       "16:45",
-       "19:00",
-       "21:40",
-       "22:30"
-      ],
       "2026-11-14": [
        "10:30",
        "14:10",
        "14:55",
        "16:45",
-       "19:11",
+       "19:05",
        "21:40",
        "22:30"
       ],
@@ -4352,7 +4191,7 @@
        "15:00",
        "16:45",
        "19:00",
-       "21:40",
+       "21:45",
        "22:30"
       ]
      },
@@ -4368,14 +4207,9 @@
     {
      "titolo": "It Ends",
      "orari": [
-      "22:40",
-      "23:45"
+      "23:50"
      ],
      "giorni": {
-      "2026-11-13": [
-       "22:40",
-       "23:45"
-      ],
       "2026-11-14": [
        "23:50"
       ],
@@ -4411,9 +4245,6 @@
       "16:35"
      ],
      "giorni": {
-      "2026-11-13": [
-       "16:35"
-      ],
       "2026-11-14": [
        "16:35"
       ],
@@ -4425,24 +4256,35 @@
      "genere": "Thriller",
      "regia": "Paolo Strippoli",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
+     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano e Adriano Giannini",
+     "durata": 115,
      "anno": 2026,
-     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano, Adriano Giannini e Valeria Bruni Tedeschi",
-     "paese": "Italia",
-     "durata": 115
+     "paese": "Italia"
+    },
+    {
+     "titolo": "League of Legends Worlds 26",
+     "orari": [
+      "20:00"
+     ],
+     "giorni": {
+      "2026-11-14": [
+       "20:00"
+      ]
+     },
+     "versione": "Versione originale",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068"
     },
     {
      "titolo": "Look Back",
      "orari": [
+      "12:20",
       "14:30",
       "19:20",
-      "21:40"
+      "20:45"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:30",
-       "19:20",
-       "21:40"
-      ],
       "2026-11-14": [
        "12:20",
        "14:30",
@@ -4470,9 +4312,6 @@
       "23:55"
      ],
      "giorni": {
-      "2026-11-13": [
-       "23:55"
-      ],
       "2026-11-14": [
        "23:55"
       ]
@@ -4491,37 +4330,23 @@
      "orari": [
       "11:00",
       "11:30",
-      "13:50",
+      "12:15",
+      "13:45",
       "15:10",
       "16:30",
-      "18:00",
+      "18:10",
       "18:30",
       "19:10",
-      "20:00",
-      "20:50",
+      "20:45",
       "21:10",
       "22:00",
       "23:35"
      ],
      "giorni": {
-      "2026-11-13": [
-       "11:00",
-       "11:30",
-       "13:50",
-       "15:10",
-       "16:30",
-       "18:00",
-       "18:30",
-       "19:10",
-       "20:00",
-       "20:50",
-       "21:10",
-       "22:00",
-       "23:35"
-      ],
       "2026-11-14": [
        "11:00",
        "11:30",
+       "12:15",
        "13:45",
        "15:10",
        "16:30",
@@ -4548,7 +4373,7 @@
        "22:00"
       ]
      },
-     "versione": "Versione originale (solo ore 11:30, 13:45, 13:50, 18:30, 21:10)",
+     "versione": "Versione originale (solo ore 11:30, 13:45, 18:30, 21:10)",
      "genere": "Drammatico, Fantasy",
      "regia": "Ti West",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
@@ -4566,12 +4391,6 @@
       "21:20"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:20",
-       "17:20",
-       "19:15",
-       "21:20"
-      ],
       "2026-11-14": [
        "14:20",
        "17:20",
@@ -4602,10 +4421,6 @@
       "17:40"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:00",
-       "17:40"
-      ],
       "2026-11-14": [
        "14:00",
        "17:40"
@@ -4634,19 +4449,20 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068"
+     "genere": "Animazione",
+     "regia": "Enrique Gato",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
+     "interpreti": "Óscar Barberán, Luis Posada, Michelle Jenner e Ana Esther Alborg",
+     "paese": "Spagna",
+     "durata": 94,
+     "anno": 2026
     },
     {
      "titolo": "The Nameless Ballad",
      "orari": [],
      "giorni": {
-      "2026-11-14": [
-       "00:25"
-      ],
       "2026-11-15": [
-       "00:30"
+       "00:15"
       ]
      },
      "versione": "",
@@ -4659,14 +4475,12 @@
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
-      "14:10"
+      "14:05",
+      "21:50"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:10"
-      ],
       "2026-11-14": [
-       "14:10",
+       "14:05",
        "21:50"
       ],
       "2026-11-15": [
@@ -4693,13 +4507,6 @@
       "22:10"
      ],
      "giorni": {
-      "2026-11-13": [
-       "12:30",
-       "14:40",
-       "17:10",
-       "19:40",
-       "22:10"
-      ],
       "2026-11-14": [
        "12:30",
        "14:40",
@@ -4727,18 +4534,11 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "12:20",
       "15:10",
-      "17:55",
-      "21:45"
+      "18:00",
+      "21:40"
      ],
      "giorni": {
-      "2026-11-13": [
-       "12:20",
-       "15:10",
-       "17:55",
-       "21:45"
-      ],
       "2026-11-14": [
        "15:10",
        "18:00",
@@ -4751,7 +4551,7 @@
        "21:45"
       ]
      },
-     "versione": "Versione originale (solo ore 11:10, 12:20)",
+     "versione": "Versione originale (solo ore 11:10)",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
@@ -4763,16 +4563,9 @@
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
-      "11:10",
-      "15:40",
-      "20:40"
+      "15:40"
      ],
      "giorni": {
-      "2026-11-13": [
-       "11:10",
-       "15:40",
-       "20:40"
-      ],
       "2026-11-14": [
        "15:40"
       ],
@@ -4810,9 +4603,6 @@
       "22:35"
      ],
      "giorni": {
-      "2026-11-13": [
-       "22:35"
-      ],
       "2026-11-14": [
        "22:35"
       ],
@@ -4836,10 +4626,6 @@
       "20:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:20",
-       "20:00"
-      ],
       "2026-11-14": [
        "17:20",
        "20:00"
@@ -4861,12 +4647,9 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "20:30"
+      "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "20:30"
-      ],
       "2026-11-14": [
        "21:30"
       ],
@@ -4885,16 +4668,8 @@
     },
     {
      "titolo": "Hope",
-     "orari": [
-      "20:30"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-13": [
-       "20:30"
-      ],
-      "2026-11-14": [
-       "20:30"
-      ],
       "2026-11-15": [
        "20:30"
       ]
@@ -4911,12 +4686,11 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "17:30"
+      "15:00",
+      "17:30",
+      "19:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:30"
-      ],
       "2026-11-14": [
        "15:00",
        "17:30",
@@ -4939,16 +4713,12 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
+      "14:50",
       "17:20",
       "20:10",
       "22:40"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:20",
-       "20:10",
-       "22:40"
-      ],
       "2026-11-14": [
        "14:50",
        "17:20",
@@ -4974,25 +4744,26 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
+      "14:45",
       "17:20",
+      "17:30",
       "20:00",
+      "20:30",
       "22:35"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:20",
-       "20:00",
-       "22:35"
-      ],
       "2026-11-14": [
        "14:45",
        "17:20",
+       "17:30",
        "20:00",
+       "20:30",
        "22:35"
       ],
       "2026-11-15": [
        "14:45",
        "17:20",
+       "17:30",
        "20:00",
        "22:35"
       ]
@@ -5009,16 +4780,12 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
+      "15:00",
       "17:30",
       "20:00",
       "22:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:30",
-       "20:00",
-       "22:30"
-      ],
       "2026-11-14": [
        "15:00",
        "17:30",
@@ -5044,12 +4811,10 @@
     {
      "titolo": "Shaun, vita da pecora - Operazione Z.U.C.C.A.",
      "orari": [
-      "17:20"
+      "14:30",
+      "16:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:20"
-      ],
       "2026-11-14": [
        "14:30",
        "16:30"
@@ -5070,7 +4835,9 @@
     },
     {
      "titolo": "Taddeo l’esploratore e la lampada magica",
-     "orari": [],
+     "orari": [
+      "15:00"
+     ],
      "giorni": {
       "2026-11-14": [
        "15:00"
@@ -5080,19 +4847,21 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5868"
+     "genere": "Animazione",
+     "regia": "Enrique Gato",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5868",
+     "interpreti": "Óscar Barberán, Luis Posada, Michelle Jenner e Ana Esther Alborg",
+     "paese": "Spagna",
+     "durata": 94,
+     "anno": 2026
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
+      "14:50",
       "22:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "22:30"
-      ],
       "2026-11-14": [
        "14:50",
        "22:30"
@@ -5114,14 +4883,11 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
+      "15:20",
       "17:40",
       "20:20"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:40",
-       "20:20"
-      ],
       "2026-11-14": [
        "15:20",
        "17:40",
@@ -5145,23 +4911,15 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "17:20",
       "20:00",
       "22:40"
      ],
      "giorni": {
-      "2026-11-13": [
-       "17:20",
-       "20:00",
-       "22:40"
-      ],
       "2026-11-14": [
-       "17:20",
        "20:00",
        "22:40"
       ],
       "2026-11-15": [
-       "17:20",
        "20:00",
        "22:40"
       ]
@@ -5205,16 +4963,22 @@
     },
     {
      "titolo": "Cenere e diamanti",
-     "orari": [],
+     "orari": [
+      "12:00"
+     ],
      "giorni": {
       "2026-11-14": [
        "12:00"
       ]
      },
      "versione": "Versione originale",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/123336"
+     "genere": "Drammatico",
+     "regia": "Drammatico e Polonia e 1958",
+     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/123336",
+     "interpreti": "Zbigniew Cybulski, Ewa Kzryseka, Adam Pawlikowski e Ewa Krzyzewska",
+     "paese": "Polonia",
+     "durata": 101,
+     "anno": 1958
     },
     {
      "titolo": "Danton",
@@ -5238,12 +5002,6 @@
       "21:45"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:00",
-       "17:15",
-       "19:30",
-       "21:45"
-      ],
       "2026-11-14": [
        "15:00",
        "17:15",
@@ -5287,11 +5045,6 @@
       "20:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "12:45",
-       "15:00",
-       "20:00"
-      ],
       "2026-11-14": [
        "12:45",
        "15:00",
@@ -5314,7 +5067,9 @@
     },
     {
      "titolo": "Generazione X",
-     "orari": [],
+     "orari": [
+      "10:00"
+     ],
      "giorni": {
       "2026-11-14": [
        "10:00"
@@ -5331,9 +5086,6 @@
       "12:40"
      ],
      "giorni": {
-      "2026-11-13": [
-       "12:40"
-      ],
       "2026-11-14": [
        "12:40"
       ],
@@ -5354,15 +5106,10 @@
      "titolo": "Il canto della foresta",
      "orari": [
       "12:20",
-      "14:45",
-      "16:46"
+      "15:00",
+      "16:45"
      ],
      "giorni": {
-      "2026-11-13": [
-       "12:20",
-       "14:45",
-       "16:46"
-      ],
       "2026-11-14": [
        "12:20",
        "15:00",
@@ -5374,7 +5121,7 @@
        "16:45"
       ]
      },
-     "versione": "Versione originale (solo ore 16:45, 16:46)",
+     "versione": "Versione originale (solo ore 16:45)",
      "genere": "Documentario",
      "regia": "Vincent Munier",
      "biglietti": "https://anteo.spaziocinema.18tickets.it/film/128352",
@@ -5388,14 +5135,10 @@
      "orari": [
       "10:00",
       "17:15",
-      "19:30"
+      "19:30",
+      "21:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:00",
-       "17:15",
-       "19:30"
-      ],
       "2026-11-14": [
        "10:00",
        "17:15",
@@ -5423,9 +5166,6 @@
       "21:45"
      ],
      "giorni": {
-      "2026-11-13": [
-       "21:45"
-      ],
       "2026-11-14": [
        "21:45"
       ],
@@ -5446,23 +5186,13 @@
      "titolo": "L'essere amato",
      "orari": [
       "10:00",
-      "12:15",
+      "12:00",
       "14:15",
       "16:50",
-      "18:30",
       "19:10",
       "21:45"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:00",
-       "12:15",
-       "14:15",
-       "16:50",
-       "18:30",
-       "19:10",
-       "21:45"
-      ],
       "2026-11-14": [
        "10:00",
        "12:00",
@@ -5479,7 +5209,7 @@
        "21:45"
       ]
      },
-     "versione": "Versione originale (solo ore 12:00, 12:15, 12:20, 16:40, 16:50, 21:45)",
+     "versione": "Versione originale (solo ore 12:00, 12:20, 16:40, 16:50, 21:45)",
      "genere": "Drammatico",
      "regia": "Rodrigo Sorogoyen",
      "biglietti": "https://anteo.spaziocinema.18tickets.it/film/128354",
@@ -5491,16 +5221,12 @@
     {
      "titolo": "L'estranea",
      "orari": [
+      "13:00",
       "15:00",
       "17:45",
       "21:45"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:00",
-       "17:45",
-       "21:45"
-      ],
       "2026-11-14": [
        "13:00",
        "15:00",
@@ -5516,7 +5242,7 @@
      "versione": "",
      "genere": "Thriller",
      "regia": "Paolo Strippoli",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/117399",
+     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/117661",
      "interpreti": "Jasmine Trinca, Romana Maggiora Vergano, Adriano Giannini e Valeria Bruni Tedeschi",
      "durata": 115,
      "anno": 2026,
@@ -5527,7 +5253,7 @@
      "orari": [],
      "giorni": {
       "2026-11-15": [
-       "10:30"
+       "10:31"
       ]
      },
      "versione": "Versione originale",
@@ -5544,12 +5270,6 @@
       "21:40"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:00",
-       "15:00",
-       "18:40",
-       "21:40"
-      ],
       "2026-11-14": [
        "10:00",
        "15:00",
@@ -5589,21 +5309,13 @@
      "titolo": "Look Back",
      "orari": [
       "10:00",
-      "12:30",
+      "13:00",
       "14:30",
-      "17:40",
+      "17:10",
       "19:20",
-      "21:45"
+      "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:00",
-       "12:30",
-       "14:30",
-       "17:40",
-       "19:20",
-       "21:45"
-      ],
       "2026-11-14": [
        "10:00",
        "13:00",
@@ -5634,17 +5346,11 @@
      "titolo": "Minotaur",
      "orari": [
       "10:00",
-      "12:20",
+      "14:35",
       "16:30",
       "19:10"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:00",
-       "12:20",
-       "16:30",
-       "19:10"
-      ],
       "2026-11-14": [
        "10:00",
        "14:35",
@@ -5673,9 +5379,6 @@
       "13:15"
      ],
      "giorni": {
-      "2026-11-13": [
-       "13:15"
-      ],
       "2026-11-14": [
        "13:15"
       ],
@@ -5694,12 +5397,9 @@
     {
      "titolo": "Nel silenzio delle stanze",
      "orari": [
-      "10:15"
+      "10:50"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:15"
-      ],
       "2026-11-14": [
        "10:50"
       ],
@@ -5722,14 +5422,11 @@
       "21:45"
      ],
      "giorni": {
-      "2026-11-13": [
-       "21:45"
-      ],
       "2026-11-14": [
        "21:45"
       ],
       "2026-11-15": [
-       "21:45"
+       "21:50"
       ]
      },
      "versione": "Versione originale",
@@ -5744,16 +5441,11 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "16:35",
+      "17:00",
       "19:30",
       "21:40"
      ],
      "giorni": {
-      "2026-11-13": [
-       "16:35",
-       "19:30",
-       "21:40"
-      ],
       "2026-11-14": [
        "17:00",
        "19:30",
@@ -5777,24 +5469,15 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "10:35",
-      "12:45",
-      "15:00",
-      "17:15",
-      "19:30",
-      "21:15",
-      "21:45"
+      "10:15",
+      "12:30",
+      "14:45",
+      "17:00",
+      "18:30",
+      "19:15",
+      "21:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:35",
-       "12:45",
-       "15:00",
-       "17:15",
-       "19:30",
-       "21:15",
-       "21:45"
-      ],
       "2026-11-14": [
        "10:15",
        "12:30",
@@ -5815,10 +5498,10 @@
        "21:45"
       ]
      },
-     "versione": "Versione originale (solo ore 10:35, 12:15, 12:30, 17:00, 17:15, 18:30, 20:30, 21:30, 21:45)",
+     "versione": "Versione originale (solo ore 12:15, 12:30, 17:00, 17:15, 18:30, 20:30, 21:30, 21:45)",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/125679",
+     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/125680",
      "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
      "durata": 118,
      "anno": 2026,
@@ -5855,7 +5538,9 @@
     },
     {
      "titolo": "Hope",
-     "orari": [],
+     "orari": [
+      "12:10"
+     ],
      "giorni": {
       "2026-11-14": [
        "12:10"
@@ -5876,12 +5561,9 @@
     {
      "titolo": "L'essere amato",
      "orari": [
-      "16:50"
+      "19:10"
      ],
      "giorni": {
-      "2026-11-13": [
-       "16:50"
-      ],
       "2026-11-14": [
        "19:10"
       ],
@@ -5901,12 +5583,9 @@
     {
      "titolo": "L'estranea",
      "orari": [
-      "10:40"
+      "23:50"
      ],
      "giorni": {
-      "2026-11-13": [
-       "10:40"
-      ],
       "2026-11-14": [
        "23:50"
       ]
@@ -5923,12 +5602,9 @@
     {
      "titolo": "Look Back",
      "orari": [
-      "15:00"
+      "17:20"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:00"
-      ],
       "2026-11-14": [
        "17:20"
       ],
@@ -5948,12 +5624,9 @@
     {
      "titolo": "Minotaur",
      "orari": [
-      "12:30"
+      "14:50"
      ],
      "giorni": {
-      "2026-11-13": [
-       "12:30"
-      ],
       "2026-11-14": [
        "14:50"
       ]
@@ -5968,26 +5641,10 @@
      "paese": "Francia"
     },
     {
-     "titolo": "Mustang",
-     "orari": [
-      "21:30"
-     ],
-     "giorni": {
-      "2026-11-13": [
-       "21:30"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Documentario",
-     "regia": "Kasia Smutniak",
-     "biglietti": "https://bandhi.it/bah/beltrade/",
-     "durata": 105,
-     "anno": 2026,
-     "paese": "Italia"
-    },
-    {
      "titolo": "Shaun, vita da pecora - Operazione Z.U.C.C.A.",
-     "orari": [],
+     "orari": [
+      "10:40"
+     ],
      "giorni": {
       "2026-11-14": [
        "10:40"
@@ -6006,29 +5663,11 @@
      "paese": "Regno Unito"
     },
     {
-     "titolo": "Twin Peaks – Stag. 03 Ep 13 e 14",
-     "orari": [
-      "23:50"
-     ],
-     "giorni": {
-      "2026-11-13": [
-       "23:50"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://bandhi.it/bah/beltrade/"
-    },
-    {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "19:20"
+      "21:40"
      ],
      "giorni": {
-      "2026-11-13": [
-       "19:20"
-      ],
       "2026-11-14": [
        "21:40"
       ],
@@ -6058,21 +5697,6 @@
    "cinemap": "https://www.cinemap.it/milano/cinema/godard-milano",
    "film": [
     {
-     "titolo": "D.o.a. – a Right of Passage",
-     "orari": [
-      "20:30"
-     ],
-     "giorni": {
-      "2026-11-13": [
-       "20:30"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://ticketing.fondazioneprada.org/ticketing/UIPublic/CinemaHome.aspx"
-    },
-    {
      "titolo": "Ecco l'impero dei sensi",
      "orari": [],
      "giorni": {
@@ -6088,12 +5712,9 @@
     {
      "titolo": "Look Back",
      "orari": [
-      "18:15"
+      "15:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "18:15"
-      ],
       "2026-11-14": [
        "15:00"
       ],
@@ -6124,18 +5745,14 @@
      "biglietti": "https://ticketing.fondazioneprada.org/ticketing/UIPublic/CinemaHome.aspx",
      "interpreti": "Ewan McGregor, Robert Carlyle, Ewen Bremner e Kelly MacDonald",
      "durata": 115,
-     "anno": 1996,
-     "paese": "Gran Bretagna"
+     "anno": 1996
     },
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "16:00"
+      "21:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "16:00"
-      ],
       "2026-11-14": [
        "21:00"
       ]
@@ -6163,27 +5780,10 @@
    "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/",
    "film": [
     {
-     "titolo": "Balcanica",
-     "orari": [
-      "21:00"
-     ],
-     "giorni": {
-      "2026-11-13": [
-       "21:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Nicola Sorcinelli",
-     "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/157443",
-     "interpreti": "Matilda De Angelis, Prince Chughtai, Babak Karimi e Giovanni Toscano",
-     "paese": "Italia",
-     "durata": 86,
-     "anno": 2026
-    },
-    {
      "titolo": "Digger",
-     "orari": [],
+     "orari": [
+      "16:30"
+     ],
      "giorni": {
       "2026-11-14": [
        "16:30"
@@ -6195,15 +5795,14 @@
      "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/155228",
      "interpreti": "Tom Cruise, Riz Ahmed, John Goodman e Sandra Hüller",
      "durata": 129,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "USA"
     },
     {
      "titolo": "Je so’ pazzo",
-     "orari": [
-      "17:00"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-13": [
+      "2026-11-15": [
        "17:00"
       ]
      },
@@ -6235,7 +5834,9 @@
     },
     {
      "titolo": "Nel silenzio delle stanze",
-     "orari": [],
+     "orari": [
+      "14:30"
+     ],
      "giorni": {
       "2026-11-14": [
        "14:30"
@@ -6253,11 +5854,11 @@
     {
      "titolo": "Ragione e sentimento",
      "orari": [
-      "14:30"
+      "19:00"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:30"
+      "2026-11-14": [
+       "19:00"
       ]
      },
      "versione": "Versione originale",
@@ -6268,25 +5869,6 @@
      "durata": 132,
      "anno": 2026,
      "paese": "USA"
-    },
-    {
-     "titolo": "Wild Horse Nine",
-     "orari": [
-      "19:00"
-     ],
-     "giorni": {
-      "2026-11-13": [
-       "19:00"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Commedia, Drammatico",
-     "regia": "Martin McDonagh",
-     "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/164270",
-     "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
-     "durata": 118,
-     "anno": 2026,
-     "paese": "Regno Unito"
     }
    ]
   },
@@ -6315,16 +5897,17 @@
      "biglietti": "https://noise.ilcinemino.18tickets.it/film/155228",
      "interpreti": "Tom Cruise, Riz Ahmed, John Goodman e Sandra Hüller",
      "durata": 129,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "USA"
     },
     {
      "titolo": "It Ends",
      "orari": [
-      "14:30"
+      "19:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:30"
+      "2026-11-14": [
+       "19:30"
       ]
      },
      "versione": "Versione originale",
@@ -6339,11 +5922,11 @@
     {
      "titolo": "L'estranea",
      "orari": [
-      "19:00"
+      "17:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "19:00"
+      "2026-11-14": [
+       "17:30"
       ]
      },
      "versione": "",
@@ -6356,27 +5939,10 @@
      "paese": "Italia"
     },
     {
-     "titolo": "Minotaur",
-     "orari": [
-      "16:30"
-     ],
-     "giorni": {
-      "2026-11-13": [
-       "16:30"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Drammatico, Thriller",
-     "regia": "Andrey Zvyagintsev",
-     "biglietti": "https://noise.ilcinemino.18tickets.it/film/157604",
-     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
-     "durata": 135,
-     "anno": 2026,
-     "paese": "Francia"
-    },
-    {
      "titolo": "Wildwood - I segreti del bosco proibito",
-     "orari": [],
+     "orari": [
+      "15:00"
+     ],
      "giorni": {
       "2026-11-14": [
        "15:00"
@@ -6409,9 +5975,6 @@
       "22:10"
      ],
      "giorni": {
-      "2026-11-13": [
-       "22:10"
-      ],
       "2026-11-14": [
        "22:10"
       ],
@@ -6433,9 +5996,6 @@
       "22:35"
      ],
      "giorni": {
-      "2026-11-13": [
-       "22:35"
-      ],
       "2026-11-14": [
        "22:35"
       ],
@@ -6458,9 +6018,6 @@
       "19:20"
      ],
      "giorni": {
-      "2026-11-13": [
-       "19:20"
-      ],
       "2026-11-14": [
        "19:20"
       ],
@@ -6485,11 +6042,6 @@
       "19:50"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:20",
-       "16:50",
-       "19:50"
-      ],
       "2026-11-14": [
        "14:20",
        "16:50",
@@ -6497,7 +6049,6 @@
       ],
       "2026-11-15": [
        "14:00",
-       "16:50",
        "19:50"
       ]
      },
@@ -6513,18 +6064,13 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
+      "11:10",
       "15:10",
       "16:40",
       "19:40",
       "22:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:10",
-       "16:40",
-       "19:40",
-       "22:30"
-      ],
       "2026-11-14": [
        "11:10",
        "15:10",
@@ -6556,10 +6102,6 @@
       "21:35"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:20",
-       "21:35"
-      ],
       "2026-11-14": [
        "14:20",
        "21:35"
@@ -6581,14 +6123,11 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
+      "11:00",
       "14:20",
       "17:05"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:20",
-       "17:05"
-      ],
       "2026-11-14": [
        "11:00",
        "14:20",
@@ -6612,6 +6151,7 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
+      "11:20",
       "14:15",
       "14:45",
       "17:20",
@@ -6619,13 +6159,6 @@
       "22:25"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:15",
-       "14:45",
-       "17:20",
-       "19:55",
-       "22:25"
-      ],
       "2026-11-14": [
        "11:20",
        "14:15",
@@ -6658,9 +6191,6 @@
       "16:50"
      ],
      "giorni": {
-      "2026-11-13": [
-       "16:50"
-      ],
       "2026-11-14": [
        "16:50"
       ],
@@ -6680,18 +6210,11 @@
     {
      "titolo": "Look Back",
      "orari": [
+      "10:50",
       "14:20",
-      "17:25",
-      "19:20",
-      "21:40"
+      "17:25"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:20",
-       "17:25",
-       "19:20",
-       "21:40"
-      ],
       "2026-11-14": [
        "10:50",
        "14:20",
@@ -6701,7 +6224,6 @@
        "10:50",
        "14:20",
        "17:25",
-       "19:20",
        "22:15"
       ]
      },
@@ -6719,14 +6241,11 @@
      "orari": [
       "14:50",
       "17:35",
-      "20:05"
+      "19:10",
+      "20:05",
+      "21:35"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:50",
-       "17:35",
-       "20:05"
-      ],
       "2026-11-14": [
        "14:50",
        "17:35",
@@ -6736,7 +6255,9 @@
       ],
       "2026-11-15": [
        "14:50",
+       "16:45",
        "17:35",
+       "19:15",
        "20:05"
       ]
      },
@@ -6752,6 +6273,7 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
+      "11:00",
       "15:00",
       "16:35",
       "17:25",
@@ -6759,13 +6281,6 @@
       "22:20"
      ],
      "giorni": {
-      "2026-11-13": [
-       "15:00",
-       "16:35",
-       "17:25",
-       "20:00",
-       "22:20"
-      ],
       "2026-11-14": [
        "11:00",
        "15:00",
@@ -6799,10 +6314,6 @@
       "22:15"
      ],
      "giorni": {
-      "2026-11-13": [
-       "20:00",
-       "22:15"
-      ],
       "2026-11-14": [
        "20:00",
        "22:15"
@@ -6829,11 +6340,6 @@
       "22:35"
      ],
      "giorni": {
-      "2026-11-13": [
-       "18:05",
-       "20:20",
-       "22:35"
-      ],
       "2026-11-14": [
        "18:05",
        "20:20",
@@ -6857,14 +6363,11 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
+      "11:10",
       "14:30",
       "19:30"
      ],
      "giorni": {
-      "2026-11-13": [
-       "14:30",
-       "19:30"
-      ],
       "2026-11-14": [
        "11:10",
        "14:30",
@@ -6891,9 +6394,6 @@
       "22:05"
      ],
      "giorni": {
-      "2026-11-13": [
-       "22:05"
-      ],
       "2026-11-14": [
        "22:05"
       ],
