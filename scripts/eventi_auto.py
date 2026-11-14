@@ -342,7 +342,69 @@ def wikiarte():
     R["fonti"]["wikiarte"] = {"letti": letti, "aggiunti": n, "trovate": trovate}
 
 
-for f in (dice, ticketmaster, arte, wikiarte):
+# ---------- calendari dei locali sul loro sito (dal 14/11/2026, richiesta di Stefano) ----------
+# DICE dà a GitHub solo la prima pagina per città (circa 70 eventi): i locali con molte date restano scoperti.
+# Per questi si legge il calendario sul sito del locale (elenco → pagina di ogni evento: data, ora, link d'acquisto).
+LOCALI_SITO = {"bo": [("Locomotiv Club", "https://www.locomotivclub.it", "/eventtype/calendario/")]}
+MESI_IT = {m: i for i, m in enumerate("gennaio febbraio marzo aprile maggio giugno luglio agosto settembre ottobre novembre dicembre".split(), 1)}
+
+
+def locali_sito():
+    import urllib.robotparser
+    for nome, sito, cal in LOCALI_SITO.get(CITTA, []):
+        rp = urllib.robotparser.RobotFileParser(); rp.parse((get(sito + "/robots.txt", tent=1) or "").splitlines())
+        if not rp.can_fetch("*", sito + cal):
+            R["fonti"][nome] = {"letti": 0, "aggiunti": 0, "nota": "robots.txt vieta"}; continue
+        links = []
+        for p in range(1, 15):
+            h = get(sito + cal + ("" if p == 1 else f"page/{p}/"), tent=1)
+            if not h: break
+            nuovi = [u for u in re.findall(r'href="(%s/event/[^"#?]+/)"' % re.escape(sito), h) if u not in links]
+            if not nuovi: break
+            links += nuovi; time.sleep(1.5)
+        letti = n = 0; ultima = ""
+        for u in links:
+            time.sleep(1.5)
+            h = get(u, tent=1)
+            if not h: continue
+            letti += 1
+            testo = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"(?s)<script.*?</script>|<style.*?</style>", " ", h))))
+            m = re.search(r"(?i)Data:\s*(?:Data:\s*)?(\d{1,2})\s+(%s)\s+(\d{4})" % "|".join(MESI_IT), testo)
+            if not m: continue
+            d = f"{int(m.group(3)):04d}-{MESI_IT[m.group(2).lower()]:02d}-{int(m.group(1)):02d}"
+            ultima = max(ultima, d)
+            if d < OGGI or d > LIMITE: continue
+            ora = "n.d."
+            mo = re.search(r"(?i)Inizio ore:?\s*(\d{1,2})[:.](\d{2})\s*(am|pm)?", testo) or re.search(r"(?i)Ora:\s*(?:Ora:\s*)?(\d{1,2})[:.](\d{2})\s*(am|pm)?", testo)
+            if mo:
+                hh = int(mo.group(1)) % 12 + (12 if (mo.group(3) or "").lower() == "pm" else 0) if mo.group(3) else int(mo.group(1))
+                ora = f"{hh:02d}:{mo.group(2)}"
+            tit = html.unescape((re.search(r"<title>(.*?)</title>", h, re.S) or [None, ""])[1])
+            tit = re.split(r"\s+[–-]\s+%s" % re.escape(nome.split()[0]), tit)[0].strip()
+            tit = tit.split(" | ")[0].strip()
+            if not tit: continue
+            if tit.isupper(): tit = " ".join(w if len(w) <= 2 and w in ("DJ", "MC") else w.capitalize() for w in tit.split())
+            # link d'acquisto: il primo dopo «Acquista biglietto» che non sia la tessera del circolo
+            bl = ""
+            ia = h.find("Acquista biglietto")
+            if ia > 0:
+                for x in re.findall(r'href="(https://[^"]+)"', h[ia:ia + 4000]):
+                    x = html.unescape(x)
+                    if re.search(r"locomotivclub\.it|portal\.|facebook|fb\.me|instagram|awin1\.com", x): continue
+                    bl = re.sub(r"[?&](fbclid|utm_[a-z]+)=[^&]*", "", x).rstrip("?&"); break
+            low = tit.lower()
+            if re.search(r"stand[- ]?up|comedy|comic", low): g, t = "Teatro", "Comicità"
+            elif re.search(r"balera|party|\bdj\b|disco|dance|night", low) or ora >= "23:00": g, t = "Serate e club", "Serata"
+            else: g = genere_mb(tit) or "Pop e altra musica"; t = TIPO_G[g]
+            x = nuovo(tit, d, d, ora, luogo_guida(nome), "Bologna" if CITTA == "bo" else CFG["nome"], g, t, bl, "disponibile" if bl else "da verificare", u)
+            det = testo.split("Dettagli", 1)[1] if "Dettagli" in testo else ""
+            frase = re.split(r"(?<=[.!?])\s", det.strip())[0] if det.strip() else ""
+            if 30 <= len(frase) <= 260: x["descrizione"] = " ".join(frase.split()[:25]).rstrip(",;:") + ("" if frase.rstrip().endswith((".", "!", "?")) else "…")
+            n += aggiungi(x, nome)
+        R["fonti"][nome] = {"letti": letti, "aggiunti": n, "pagine_evento": len(links), "ultima_data": ultima}
+
+
+for f in (dice, ticketmaster, arte, wikiarte, locali_sito):
     try: f()
     except Exception as ex: R["errori"].append(f"{f.__name__}: {type(ex).__name__}: {ex}")
 
