@@ -38,6 +38,13 @@ COMUNE = {c: z for z, cs in ZONE.items() for c in cs}
 ALIAS = {"porretta terme": "Alto Reno Terme", "casalecchio": "Casalecchio di Reno", "san lazzaro": "San Lazzaro di Savena",
          "zola": "Zola Predosa", "persiceto": "San Giovanni in Persiceto", "castel san pietro": "Castel San Pietro Terme",
          "bazzano": "Valsamoggia", "crespellano": "Valsamoggia", "funo": "Argelato", "san marino di bentivoglio": "Bentivoglio"}
+# Stesso locale scritto in due modi → un solo nome (14/11/2026: i nomi doppi dividevano il programma di un locale in due)
+STESSO_LUOGO = {
+    "Teatro Arena del Sole": "Arena del Sole", "Teatro Auditorium Manzoni": "Auditorium Manzoni", "Estragon": "Estragon Club",
+    "Teatro San Leonardo (Centro di Ricerca Musicale)": "Teatro San Leonardo",
+    "Gate": "Gate Milano", "Teatro dal Verme": "Teatro Dal Verme", "EcoTeatro": "Ecoteatro",
+    "Teatro Nazionale": "Teatro Nazionale Italiana Assicurazioni",
+}
 CAMPI = ["id","data","fino","ora","artista","luogo","citta","genere","tipo","rassegna","descrizione","fonte","biglietti",
          "biglietti_tipo","disp","disp_nota","disp_verificata","sito_luogo"]
 DATA_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -155,6 +162,7 @@ def main():
         e["citta"] = c
         if e.get("genere") not in GENERI: errori.append(f"{rif}: genere '{e.get('genere')}' non ammesso {sorted(GENERI)}")
         if not e.get("luogo"): errori.append(f"{rif}: manca il luogo")
+        e["luogo"] = STESSO_LUOGO.get((e.get("luogo") or "").strip(), (e.get("luogo") or "").strip())
         e["disp"] = (e.get("disp") or "da verificare").lower()
         if e["disp"] not in DISP: avvisi.append(f"{rif}: disponibilità '{e['disp']}' → da verificare"); e["disp"] = "da verificare"
         for k in ("fonte", "biglietti", "sito_luogo"):
