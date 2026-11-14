@@ -122,13 +122,16 @@ def date_testo(t):
         if m.group(2).isdigit(): g, mm, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
         else:
             g, mm = int(m.group(1)), mese(m.group(2)); y = int(m.group(3)) if m.group(3) else anno_oggi
-            if not m.group(3) and f"{y:04d}-{mm:02d}-{g:02d}" < OGGI: y += 1
+            if not m.group(3) and f"{y:04d}-{mm:02d}-{g:02d}" < OGGI:
+                try: passati = (datetime.date.fromisoformat(OGGI) - datetime.date(y, mm, g)).days
+                except ValueError: return "", "", ""
+                if passati > 120: y += 1      # gennaio scritto a novembre = anno dopo; un giorno appena passato resta passato
         if not (1 <= mm <= 12 and 1 <= g <= 31): return "", "", ""
         ini = fin = f"{y:04d}-{mm:02d}-{g:02d}"
         resto = t[m.end():m.end() + 160]
     o = re.search(r"(?i)(?:\bore|\bh\.?|\balle|inizio(?: ore)?|apertura porte[^0-9]{0,15}?inizio)\s*(\d{1,2})[:.,](\d{2})", resto) or \
-        re.search(r"\b(\d{1,2})[:.](\d{2})\b", resto[:60])
-    ora = f"{int(o.group(1)):02d}:{o.group(2)}" if o and int(o.group(1)) < 24 else ""
+        re.search(r"\b(\d{1,2})[:.](\d{2})\b", resto[:60]) or re.search(r"(?i)\bore\s*(\d{1,2})()(?![\d:.,])", resto)
+    ora = f"{int(o.group(1)):02d}:{o.group(2) or '00'}" if o and int(o.group(1)) < 24 else ""
     return ini, fin, ora
 
 
@@ -137,7 +140,8 @@ def link_biglietti(h, sito):
         u = html.unescape(u)
         if urllib.parse.urlparse(u).netloc.endswith(sito.replace("www.", "")) and not re.search(r"/(?:biglietti|tickets?|shop)/", u): continue
         if re.search(r"awin1\.com|facebook|instagram|twitter|whatsapp|mailto|tesser|preadesione|newsletter", u): continue
-        if re.search(BIGL, u, re.I) and not re.search(r"ticketone\.it/?$|vivaticket\.\w+/?$", u):
+        if re.search(r"search\?|/b2b\.htm|^https?://(www\.)?(dice\.fm|happyticket\.it|vivaticket\.com|ticketone\.it|webtic\.it)/?(#.*)?$|/biglietti/?$", u, re.I): continue
+        if re.search(BIGL, u, re.I):
             return re.sub(r"[?&](fbclid|utm_[a-z]+|gclid)=[^&]*", "", u).rstrip("?&")
     return ""
 
@@ -246,7 +250,12 @@ def m_elenco(c):
         f, h = get(u)
         if not h: continue
         jl = [e for e in jsonld(h) if data_iso(e["inizio"])[0]]
-        tit, _ = pulisci_titolo((re.search(r'<meta property="og:title" content="([^"]*)"', h) or re.search(r"<h1[^>]*>(.*?)</h1>", h, re.S) or re.search(r"<title>(.*?)</title>", h, re.S) or [None, ""])[1], sito)
+        tit = ""
+        for rx_t in (r'<meta property="og:title" content="([^"]*)"', r"<h1[^>]*>(.*?)</h1>", r"<h2[^>]*>(.*?)</h2>", r"<title>(.*?)</title>"):
+            mt = re.search(rx_t, h, re.S)
+            if not mt: continue
+            cand, _ = pulisci_titolo(mt.group(1), sito)
+            if cand and not GENERICI.match(cand): tit = cand; break
         if jl:
             e = jl[0]; ini, ora = data_iso(e["inizio"]); fin, _ = data_iso(e["fine"])
             out.append({"titolo": e["titolo"] or tit, "data": ini, "fino": fin or ini, "ora": ora, "fonte": f,
@@ -269,6 +278,9 @@ def m_elenco(c):
             if len(p) > 60 and not re.search(r"cookie|privacy|newsletter|©", p, re.I): dett = p; break
         out.append({"titolo": tit, "data": ini, "fino": fin or ini, "ora": ora, "fonte": f, "biglietti": link_biglietti(h, sito), "descrizione": dett[:300]})
     return out
+
+
+GENERICI = re.compile(r"(?i)^\s*(\d{1,2}[/.]\d{1,2}[/.]\d{2,4}|\d{1,2}\s+\w+\s+20\d\d|spettacoli|eventi|evento|programma|calendario|stagione.*|home|homepage|prosa|family|extra|altri eventi|note d'autore|ridere alla grande|teatro \w+|biglietti|news|concerti)\s*$")
 
 
 METODI = {"tribe": m_tribe, "ics": m_ics, "jsonld": m_jsonld, "elenco": m_elenco}
@@ -299,7 +311,18 @@ def leggi(c):
         out.append({"titolo": tit, "data": e["data"], "fino": max(e.get("fino") or e["data"], e["data"]), "ora": e.get("ora") or "",
                     "fonte": e.get("fonte") or "", "biglietti": e.get("biglietti") or "", "esaurito": esaurito,
                     "descrizione": frase, "categorie": e.get("categorie", "")})
-    return out, "ok"
+    out.sort(key=lambda e: (e["titolo"].lower(), e["data"]))
+    unite = []
+    for e in out:
+        u = unite[-1] if unite else None
+        if u and u["titolo"].lower() == e["titolo"].lower() and e["data"] <= (datetime.date.fromisoformat(u["fino"]) + datetime.timedelta(days=3)).isoformat():
+            u["fino"] = max(u["fino"], e["fino"]); u["repliche"] = u.get("repliche", 1) + 1
+            if not u["biglietti"]: u["biglietti"] = e["biglietti"]
+            continue
+        unite.append(dict(e))
+    unite = [e for e in unite if not GENERICI.match(e["titolo"])]
+    unite.sort(key=lambda e: (e["data"], e["ora"]))
+    return unite, "ok"
 
 
 def config(citta):

@@ -15,7 +15,7 @@ concurrency: { group: eventi-auto, cancel-in-progress: false }
 jobs:
   eventi:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 75
     env:
       TICKETMASTER_KEY: ${{ secrets.TICKETMASTER_KEY }}
       PROVA: ${{ inputs.prova && '--prova' || '' }}

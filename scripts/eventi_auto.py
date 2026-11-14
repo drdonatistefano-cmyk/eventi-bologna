@@ -409,7 +409,37 @@ def locali_sito():
         R["fonti"][nome] = {"letti": letti, "aggiunti": n, "pagine_evento": len(links), "ultima_data": ultima}
 
 
-for f in (dice, ticketmaster, arte, wikiarte, locali_sito):
+# ---------- programmi completi dei locali (dal 14/11/2026): dati/locali_sito.json, lettore in scripts/locali_sito.py ----------
+def siti_locali():
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import locali_sito as LS
+    rep = {}
+    for c in LS.config(CITTA):
+        t0 = time.time()
+        evs, esito = LS.leggi(c)
+        luogo = luogo_guida(c["nome"]); com = c.get("comune") or CFG["nome"]
+        n = 0
+        for e in evs:
+            low = (e["titolo"] + " " + e.get("categorie", "")).lower()
+            if re.search(r"stand[- ]?up|comedy|comic|cabaret", low): g, t = "Teatro", "Comicità"
+            elif re.search(r"\bdj\b|dj set|party|clubbing|\bnight\b|serata", low) and c.get("genere") != "Teatro": g, t = "Serate e club", "Serata"
+            elif re.search(r"danza|balletto|dance company", low) and c.get("genere") == "Teatro": g, t = "Teatro", "Danza"
+            elif re.search(r"\bopera\b|lirica", low) and c.get("genere") in ("Teatro", "Classica"): g, t = "Teatro", "Opera"
+            elif c.get("genere"): g = c["genere"]; t = c.get("tipo") or TIPO_G.get(g, "")
+            elif (e["ora"] or "") >= "23:00": g, t = "Serate e club", "Serata"
+            else: g = genere_mb(e["titolo"]) or "Pop e altra musica"; t = TIPO_G[g]
+            bl = e["biglietti"]
+            x = nuovo(e["titolo"], e["data"], e["fino"], e["ora"] or "n.d.", luogo, com, g, t, bl,
+                      "sold out" if e["esaurito"] else ("disponibile" if bl else "da verificare"), e["fonte"] or (c["url"] if isinstance(c["url"], str) else c["url"][0]))
+            if bl and re.search(r"/venue/|/biglietti/?$|shop\.", bl): x["biglietti_tipo"] = "Biglietteria"
+            if e["descrizione"] and len(e["descrizione"]) > 30: x["descrizione"] = e["descrizione"]
+            n += aggiungi(x, c["nome"])
+        nostri = sum(1 for e in ev if e["luogo"] == luogo and (e.get("fino") or e["data"]) >= OGGI)
+        rep[c["nome"]] = {"sul_sito": len(evs), "in_guida": nostri, "aggiunti": n, "esito": esito, "secondi": round(time.time() - t0)}
+    R["fonti"]["siti dei locali"] = rep
+
+
+for f in (dice, ticketmaster, arte, wikiarte, locali_sito, siti_locali):
     try: f()
     except Exception as ex: R["errori"].append(f"{f.__name__}: {type(ex).__name__}: {ex}")
 

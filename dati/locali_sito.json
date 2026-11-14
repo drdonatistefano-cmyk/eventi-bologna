@@ -15,14 +15,6 @@
    "genere": "Jazz"
   },
   {
-   "nome": "Teatro Dehon",
-   "url": "https://www.teatrodehon.it",
-   "metodo": "elenco",
-   "scopri": true,
-   "genere": "Teatro",
-   "tipo": "Prosa"
-  },
-  {
    "nome": "Auditorium Manzoni",
    "url": "https://www.tcbo.it",
    "metodo": "elenco",
@@ -47,37 +39,13 @@
    "tipo": "Prosa"
   },
   {
-   "nome": "Teatro Consorziale",
-   "url": "https://www.teatroconsorzialebudrio.it",
-   "metodo": "elenco",
-   "scopri": true,
-   "comune": "Budrio",
-   "genere": "Teatro",
-   "tipo": "Prosa"
-  },
-  {
    "nome": "Estragon Club",
    "url": "https://www.estragon.it",
    "metodo": "elenco",
    "scopri": true
   },
   {
-   "nome": "Covo Club",
-   "url": "https://www.covoclub.it",
-   "metodo": "elenco",
-   "scopri": true,
-   "genere": "Rock"
-  },
-  {
-   "nome": "Teatro Mazzacorati",
-   "url": "https://www.teatromazzacorati1763.it",
-   "metodo": "elenco",
-   "scopri": true,
-   "genere": "Teatro",
-   "tipo": "Prosa"
-  },
-  {
-   "nome": "Teatro Auditorium Manzoni",
+   "nome": "Auditorium Manzoni",
    "url": "https://www.musicainsiemebologna.it",
    "metodo": "elenco",
    "scopri": true,
@@ -89,13 +57,6 @@
    "metodo": "elenco",
    "scopri": true,
    "genere": "Classica"
-  },
-  {
-   "nome": "ZolAuditorium",
-   "url": "https://www.zolauditorium.it",
-   "metodo": "elenco",
-   "scopri": true,
-   "comune": "Zola Predosa"
   }
  ],
  "mi": [
@@ -115,7 +76,9 @@
    "nome": "Conservatorio di Milano",
    "url": "https://www.consmilano.it",
    "metodo": "tribe",
-   "genere": "Classica"
+   "genere": "Classica",
+   "solo": "concert|recital|orchestra|quartett|trio|ensemble|\\bcoro\\b|sinfoni|serata|jazz|opera",
+   "escludi": "masterclass|seminari|lezion|esam|audizion|open ?day|laborator|convegno|presentazion|workshop"
   },
   {
    "nome": "Gate Milano",
@@ -133,22 +96,9 @@
   {
    "nome": "BASE Milano",
    "url": "https://base.milano.it",
-   "metodo": "tribe"
-  },
-  {
-   "nome": "Teatro alla Scala",
-   "url": "https://www.teatroallascala.org",
-   "metodo": "elenco",
-   "scopri": true,
-   "genere": "Classica"
-  },
-  {
-   "nome": "Teatro Manzoni",
-   "url": "https://www.teatromanzoni.it",
-   "metodo": "elenco",
-   "scopri": true,
-   "genere": "Teatro",
-   "tipo": "Prosa"
+   "metodo": "tribe",
+   "solo": "dj set|\\blive\\b|concert|festival|spettacol|teatro|stand.?up|comedy|danza|performance|\\bclub\\b|party|serata",
+   "escludi": "brunch|mercato|market|workshop|laborator|corso|talk|incontro|presentazion|mostra|yoga|fiera"
   },
   {
    "nome": "Circolo Magnolia",
@@ -156,13 +106,6 @@
    "metodo": "elenco",
    "scopri": true,
    "comune": "Segrate"
-  },
-  {
-   "nome": "Teatro Dal Verme",
-   "url": "https://www.ipomeriggi.it",
-   "metodo": "elenco",
-   "scopri": true,
-   "genere": "Classica"
   },
   {
    "nome": "Santeria Toscana 31",
@@ -201,14 +144,6 @@
    "tipo": "Prosa"
   },
   {
-   "nome": "Teatro Franco Parenti",
-   "url": "https://www.teatrofrancoparenti.it",
-   "metodo": "elenco",
-   "scopri": true,
-   "genere": "Teatro",
-   "tipo": "Prosa"
-  },
-  {
    "nome": "Auditorium di Milano",
    "url": "https://www.sinfonicadimilano.org",
    "metodo": "elenco",
@@ -216,35 +151,13 @@
    "genere": "Classica"
   },
   {
-   "nome": "Blue Note Milano",
-   "url": "https://www.bluenotemilano.com",
-   "metodo": "elenco",
-   "scopri": true,
-   "genere": "Jazz"
-  },
-  {
-   "nome": "Teatro Menotti",
-   "url": "https://www.teatromenotti.org",
-   "metodo": "elenco",
-   "scopri": true,
-   "genere": "Teatro",
-   "tipo": "Prosa"
-  },
-  {
    "nome": "Teatro Filodrammatici",
    "url": "https://www.teatrofilodrammatici.eu",
    "metodo": "elenco",
    "scopri": true,
    "genere": "Teatro",
-   "tipo": "Prosa"
-  },
-  {
-   "nome": "Piccolo Teatro",
-   "url": "https://www.piccoloteatro.org",
-   "metodo": "elenco",
-   "scopri": true,
-   "genere": "Teatro",
-   "tipo": "Prosa"
+   "tipo": "Prosa",
+   "escludi": "visita guidata|caccia al tesoro"
   },
   {
    "nome": "Teatro della Cooperativa",
@@ -255,40 +168,8 @@
    "tipo": "Prosa"
   },
   {
-   "nome": "Teatro Leonardo",
-   "url": "https://www.mtmteatro.it",
-   "metodo": "elenco",
-   "scopri": true,
-   "genere": "Teatro",
-   "tipo": "Prosa"
-  },
-  {
-   "nome": "Teatro San Babila",
-   "url": "https://www.teatrosanbabilamilano.it",
-   "metodo": "elenco",
-   "scopri": true,
-   "genere": "Teatro",
-   "tipo": "Prosa"
-  },
-  {
-   "nome": "Teatro Martinitt",
-   "url": "https://www.teatromartinitt.it",
-   "metodo": "elenco",
-   "scopri": true,
-   "genere": "Teatro",
-   "tipo": "Prosa"
-  },
-  {
    "nome": "Teatro Gerolamo",
    "url": "https://www.teatrogerolamo.it",
-   "metodo": "elenco",
-   "scopri": true,
-   "genere": "Teatro",
-   "tipo": "Prosa"
-  },
-  {
-   "nome": "Teatro Oscar",
-   "url": "https://www.oscar-desidera.it",
    "metodo": "elenco",
    "scopri": true,
    "genere": "Teatro",
