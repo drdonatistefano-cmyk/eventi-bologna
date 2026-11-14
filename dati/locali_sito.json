@@ -1,0 +1,298 @@
+{
+ "bo": [
+  {
+   "nome": "Teatro Comunale Laura Betti",
+   "url": "https://www.teatrocasalecchio.it",
+   "metodo": "tribe",
+   "comune": "Casalecchio di Reno",
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Bravo Caffè",
+   "url": "https://www.bravocaffe.it",
+   "metodo": "tribe",
+   "genere": "Jazz"
+  },
+  {
+   "nome": "Teatro Dehon",
+   "url": "https://www.teatrodehon.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Auditorium Manzoni",
+   "url": "https://www.tcbo.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Classica"
+  },
+  {
+   "nome": "Arena del Sole",
+   "url": "https://bologna.emiliaromagnateatro.com",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Teatro Ebe Stignani",
+   "url": "https://www.teatrostignani.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "comune": "Imola",
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Teatro Consorziale",
+   "url": "https://www.teatroconsorzialebudrio.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "comune": "Budrio",
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Estragon Club",
+   "url": "https://www.estragon.it",
+   "metodo": "elenco",
+   "scopri": true
+  },
+  {
+   "nome": "Covo Club",
+   "url": "https://www.covoclub.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Rock"
+  },
+  {
+   "nome": "Teatro Mazzacorati",
+   "url": "https://www.teatromazzacorati1763.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Teatro Auditorium Manzoni",
+   "url": "https://www.musicainsiemebologna.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Classica"
+  },
+  {
+   "nome": "Accademia Filarmonica",
+   "url": "https://www.accademiafilarmonica.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Classica"
+  },
+  {
+   "nome": "ZolAuditorium",
+   "url": "https://www.zolauditorium.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "comune": "Zola Predosa"
+  }
+ ],
+ "mi": [
+  {
+   "nome": "Magazzini Generali",
+   "url": "https://www.magazzinigenerali.org",
+   "metodo": "tribe"
+  },
+  {
+   "nome": "Teatro Principe",
+   "url": "https://www.teatroprincipe.com",
+   "metodo": "tribe",
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Conservatorio di Milano",
+   "url": "https://www.consmilano.it",
+   "metodo": "tribe",
+   "genere": "Classica"
+  },
+  {
+   "nome": "Gate Milano",
+   "url": "https://www.gatemilano.it",
+   "metodo": "jsonld",
+   "scopri": true
+  },
+  {
+   "nome": "Teatro Out Off",
+   "url": "https://www.teatrooutoff.it",
+   "metodo": "ics",
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "BASE Milano",
+   "url": "https://base.milano.it",
+   "metodo": "tribe"
+  },
+  {
+   "nome": "Teatro alla Scala",
+   "url": "https://www.teatroallascala.org",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Classica"
+  },
+  {
+   "nome": "Teatro Manzoni",
+   "url": "https://www.teatromanzoni.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Circolo Magnolia",
+   "url": "https://www.circolomagnolia.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "comune": "Segrate"
+  },
+  {
+   "nome": "Teatro Dal Verme",
+   "url": "https://www.ipomeriggi.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Classica"
+  },
+  {
+   "nome": "Santeria Toscana 31",
+   "url": "https://www.santeria.milano.it",
+   "metodo": "elenco",
+   "scopri": true
+  },
+  {
+   "nome": "Unipol Dome",
+   "url": "https://www.unipoldome.it",
+   "metodo": "elenco",
+   "scopri": true
+  },
+  {
+   "nome": "Teatro Elfo Puccini",
+   "url": "https://www.elfo.org",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Teatro Carcano",
+   "url": "https://www.teatrocarcano.com",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Ecoteatro",
+   "url": "https://www.ecoteatro.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Teatro Franco Parenti",
+   "url": "https://www.teatrofrancoparenti.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Auditorium di Milano",
+   "url": "https://www.sinfonicadimilano.org",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Classica"
+  },
+  {
+   "nome": "Blue Note Milano",
+   "url": "https://www.bluenotemilano.com",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Jazz"
+  },
+  {
+   "nome": "Teatro Menotti",
+   "url": "https://www.teatromenotti.org",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Teatro Filodrammatici",
+   "url": "https://www.teatrofilodrammatici.eu",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Piccolo Teatro",
+   "url": "https://www.piccoloteatro.org",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Teatro della Cooperativa",
+   "url": "https://www.teatrodellacooperativa.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Teatro Leonardo",
+   "url": "https://www.mtmteatro.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Teatro San Babila",
+   "url": "https://www.teatrosanbabilamilano.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Teatro Martinitt",
+   "url": "https://www.teatromartinitt.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Teatro Gerolamo",
+   "url": "https://www.teatrogerolamo.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Teatro Oscar",
+   "url": "https://www.oscar-desidera.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  }
+ ]
+}

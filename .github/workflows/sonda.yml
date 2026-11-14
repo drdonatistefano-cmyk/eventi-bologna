@@ -9,10 +9,11 @@ jobs:
   sonda:
     runs-on: ubuntu-latest
     continue-on-error: true
-    timeout-minutes: 25
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
-      - run: python3 scripts/sonda_locali.py || true
+      - run: python3 scripts/locali_sito.py --prova bo || true
+      - run: python3 scripts/locali_sito.py --prova mi || true
       - uses: actions/upload-artifact@v4
         with:
           name: sonda-locali
