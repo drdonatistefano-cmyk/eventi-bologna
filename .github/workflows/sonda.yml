@@ -13,9 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 -u scripts/locali_sito.py --prova bo estragon || true
-      - run: python3 -u scripts/locali_sito.py --prova bo auditorium || true
-      - run: python3 -u scripts/locali_sito.py --prova bo betti || true
-      - run: python3 -u scripts/locali_sito.py --prova mi conservatorio || true
+      - run: python3 -u scripts/locali_sito.py --prova mi elfo || true
+      - run: python3 -u scripts/locali_sito.py --prova mi filodramm || true
       - uses: actions/upload-artifact@v4
         with:
           name: sonda-locali

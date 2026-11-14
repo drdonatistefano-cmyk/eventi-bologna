@@ -255,7 +255,11 @@ def m_elenco(c):
         if not h: continue
         jl = [e for e in jsonld(h) if data_iso(e["inizio"])[0]]
         tit = ""
-        for rx_t in (r'<meta property="og:title" content="([^"]*)"', r"<h1[^>]*>(.*?)</h1>", r"<h2[^>]*>(.*?)</h2>", r"<title>(.*?)</title>"):
+        if c.get("titolo_url"):   # sito senza titolo leggibile (es. Estragon): il titolo è nell'indirizzo della pagina
+            slug = [x for x in urllib.parse.urlparse(f).path.split("/") if x][-1]
+            slug = re.sub(r"[-_]+\d{3,}$|^\d{3,}[-_]+|\.\w+$", "", urllib.parse.unquote(slug))
+            tit = " ".join(w.capitalize() if not w.isupper() else w for w in re.split(r"[-_]+", slug) if w)
+        for rx_t in (() if tit else (r'<meta property="og:title" content="([^"]*)"', r"<h1[^>]*>(.*?)</h1>", r"<h2[^>]*>(.*?)</h2>", r"<title>(.*?)</title>")):
             mt = re.search(rx_t, h, re.S)
             if not mt: continue
             cand, _ = pulisci_titolo(mt.group(1), sito)
