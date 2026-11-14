@@ -1,19 +1,70 @@
 {
- "aggiunti": [],
- "link_biglietti": 0,
+ "aggiunti": [
+  "2026-12-12 Only Lizards – Locomotiv Club (DICE)",
+  "2026-11-26 BURGEZ Memberz Club – BURGEZ Bologna San Lazzaro (DICE)",
+  "2026-12-19 Maze pres. Grem, Hugo, Carlo Amadori, Nico – ExDynamo (DICE)",
+  "2026-11-28 Lamante – Locomotiv Club (DICE)",
+  "2026-11-28 JNIGHT - JAPAN MUSIC NIGHT – Alchemica Music Club (DICE)",
+  "2026-11-28 Zadina Teleclub + d!base + Corinna + End/or/Fine – Covo Club (DICE)",
+  "2026-11-28 Tasheeno – Sghetto Club (DICE)",
+  "2026-11-29 De Stradis + Claudio Covato – Baumhaus (DICE)",
+  "2026-11-29 Spartiti – Locomotiv Club (DICE)",
+  "2026-11-14 Monolord + Mars Red Sky – Locomotiv Club (Locomotiv Club)",
+  "2026-11-14 Avanzi di Balera – Locomotiv Club (Locomotiv Club)",
+  "2026-11-25 Roba Nostra by Jameson – Locomotiv Club (Locomotiv Club)",
+  "2026-11-30 Fasma – Locomotiv Club (Locomotiv Club)",
+  "2026-12-04 Nex Cassel – Locomotiv Club (Locomotiv Club)",
+  "2026-12-05 Diss Gacha – Locomotiv Club (Locomotiv Club)",
+  "2026-12-12 Bolo Urban Fest – Volume 2 – Locomotiv Club (Locomotiv Club)",
+  "2026-12-13 Paolo Angeli & Tenore Murales DE Orgosolo – Locomotiv Club (Locomotiv Club)",
+  "2026-12-16 L’Officina Della Camomilla – Locomotiv Club (Locomotiv Club)",
+  "2026-12-19 Discomostro – Locomotiv Club (Locomotiv Club)",
+  "2027-01-09 Pufuleti – Locomotiv Club (Locomotiv Club)",
+  "2027-01-14 Management Del Dolore Post Operatorio – Locomotiv Club (Locomotiv Club)",
+  "2027-01-15 Rareş – Locomotiv Club (Locomotiv Club)",
+  "2027-01-16 Rareş – Locomotiv Club (Locomotiv Club)",
+  "2027-01-27 The Zen Circus – Locomotiv Club (Locomotiv Club)",
+  "2027-01-29 The Zen Circus – Locomotiv Club (Locomotiv Club)",
+  "2027-01-30 The Zen Circus – Locomotiv Club (Locomotiv Club)",
+  "2027-02-01 Leon Faun – Locomotiv Club (Locomotiv Club)",
+  "2027-02-06 Noah Gundersen – Locomotiv Club (Locomotiv Club)",
+  "2027-02-07 Quintorigo & John De Leo – Locomotiv Club (Locomotiv Club)",
+  "2027-02-09 Birthh – Locomotiv Club (Locomotiv Club)",
+  "2027-02-11 Pain of Truth + Big Boy + Headbussa – Locomotiv Club (Locomotiv Club)",
+  "2027-02-18 Pussy Riot – Locomotiv Club (Locomotiv Club)",
+  "2027-02-21 Chat Pile + guests – Locomotiv Club (Locomotiv Club)",
+  "2027-02-23 Hugo Russo chante CCCP – Fedeli alla Linea – Belles Infidèles live – Locomotiv Club (Locomotiv Club)"
+ ],
+ "link_biglietti": 3,
  "fonti": {
   "DICE": {
-   "letti": 71,
-   "aggiunti": 0
+   "letti": 72,
+   "aggiunti": 9
   },
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "arte.it": {
    "letti": 10,
    "aggiunti": 0
+  },
+  "wikiarte": {
+   "letti": 2,
+   "aggiunti": 0,
+   "trovate": [
+    "2026-11-07→2026-11-19 FAHAD ALIYU E MAURO MARTIN",
+    "2026-11-21→2026-12-03 FEDERICA CHIARENTINI E GERMANO PONTEVICHI"
+   ]
+  },
+  "Locomotiv Club": {
+   "letti": 112,
+   "aggiunti": 25,
+   "pagine_evento": 112,
+   "ultima_data": "2027-02-23"
   }
  },
- "errori": [],
- "data": "2026-11-12T05:37",
- "eventi_totali": 669,
- "mostre_totali": 25
+ "errori": [
+  "https://www.locomotivclub.it/robots.txt: HTTP Error 404: Not Found"
+ ],
+ "data": "2026-11-14T09:25",
+ "eventi_totali": 696,
+ "mostre_totali": 27
 }
