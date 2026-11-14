@@ -1,0 +1,3053 @@
+{
+ "generato": "2026-11-14T19:48:06Z",
+ "stato": {
+  "sito": {
+   "http": 200,
+   "ok": true,
+   "statistiche_attive": true
+  },
+  "eventi": {
+   "http": 200,
+   "ok": true,
+   "n": 771,
+   "aggiornato": "2026-11-14"
+  },
+  "mostre": {
+   "http": 200,
+   "ok": true,
+   "n": 27,
+   "aggiornato": "2026-11-14"
+  }
+ },
+ "errore": "",
+ "giorni": [
+  {
+   "giorno": "2026-11-04",
+   "visite": 32
+  },
+  {
+   "giorno": "2026-11-05",
+   "visite": 12
+  },
+  {
+   "giorno": "2026-11-06",
+   "visite": 76
+  },
+  {
+   "giorno": "2026-11-07",
+   "visite": 38
+  },
+  {
+   "giorno": "2026-11-08",
+   "visite": 24
+  },
+  {
+   "giorno": "2026-11-09",
+   "visite": 32
+  },
+  {
+   "giorno": "2026-11-10",
+   "visite": 19
+  },
+  {
+   "giorno": "2026-11-11",
+   "visite": 24
+  },
+  {
+   "giorno": "2026-11-12",
+   "visite": 6
+  },
+  {
+   "giorno": "2026-11-13",
+   "visite": 11
+  },
+  {
+   "giorno": "2026-11-14",
+   "visite": 3
+  }
+ ],
+ "totali": {
+  "oggi": {
+   "visite": 3,
+   "eventi": 14
+  },
+  "7g": {
+   "visite": 119,
+   "eventi": 319
+  },
+  "30g": {
+   "visite": 277,
+   "eventi": 569
+  }
+ },
+ "7g": {
+  "percorsi": [
+   {
+    "path": "/milano",
+    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
+    "n": 60,
+    "evento": false
+   },
+   {
+    "path": "/",
+    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
+    "n": 58,
+    "evento": false
+   },
+   {
+    "path": "scheda/mostre",
+    "titolo": "Cambio scheda",
+    "n": 11,
+    "evento": true
+   },
+   {
+    "path": "scheda/spettacoli",
+    "titolo": "Cambio scheda",
+    "n": 11,
+    "evento": true
+   },
+   {
+    "path": "guide/vai-places",
+    "titolo": "Vai a Ach's Places Guide",
+    "n": 11,
+    "evento": true
+   },
+   {
+    "path": "scheda/cinema",
+    "titolo": "Cambio scheda",
+    "n": 10,
+    "evento": true
+   },
+   {
+    "path": "guide/vai-dinners",
+    "titolo": "Vai a Ach's Dinners Guide",
+    "n": 9,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/vista/luoghi",
+    "titolo": "Cambio vista",
+    "n": 7,
+    "evento": true
+   },
+   {
+    "path": "scheda/incontri",
+    "titolo": "Cambio scheda",
+    "n": 6,
+    "evento": true
+   },
+   {
+    "path": "milano/scheda/mostre",
+    "titolo": "Cambio scheda",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/vista/luoghi",
+    "titolo": "Cambio vista",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Genere/Comici",
+    "titolo": "Filtro",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/apri-filtri",
+    "titolo": "Apertura filtri",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "cinema/dettaglio/Wild Horse Nine",
+    "titolo": "Apertura scheda",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "milano/scheda/cinema",
+    "titolo": "Cambio scheda",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Date/oggi",
+    "titolo": "Filtro",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Date/7g",
+    "titolo": "Filtro",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/vista/elenco",
+    "titolo": "Cambio vista",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/apri-filtri",
+    "titolo": "Apertura filtri",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/vista/elenco",
+    "titolo": "Cambio vista",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Genere/Rock",
+    "titolo": "Filtro",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Genere/Rock",
+    "titolo": "Filtro",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Genere/Teatro",
+    "titolo": "Filtro",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Genere/Serate e club",
+    "titolo": "Filtro",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/azzera-filtri",
+    "titolo": "Azzera filtri",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Genere/Jazz",
+    "titolo": "Filtro",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Date/7g",
+    "titolo": "Filtro",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "milano/scheda/incontri",
+    "titolo": "Cambio scheda",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/dettaglio/Dio ride",
+    "titolo": "Apertura scheda",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Teatro Celebrazioni",
+    "titolo": "Apertura programma del luogo",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Date/weekend",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/scheda/spettacoli",
+    "titolo": "Cambio scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Teatro Duse",
+    "titolo": "Apertura programma del luogo",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Genere/Comici",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Date/oggi",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/azzera-filtri",
+    "titolo": "Azzera filtri",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Date/weekend",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "mostre/vista/luoghi",
+    "titolo": "Cambio vista",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Marco Mengoni – Allo Sbagliato",
+    "titolo": "Apertura scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Genere/Serate e club",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Genere/Classica",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Locomotiv Club",
+    "titolo": "Apertura programma del luogo",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/An Idiot's Guide to Wine – vino e risate",
+    "titolo": "Apertura scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Viaggio a Hong Kong",
+    "titolo": "Apertura scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/filtri/azzera-events",
+    "titolo": "Azzera i filtri",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "cinema/clic-biglietti/Wild Horse Nine",
+    "titolo": "Clic «Biglietti»",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/scheda/sport",
+    "titolo": "Cambio scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "scheda/sport",
+    "titolo": "Cambio scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Argento vivo",
+    "titolo": "Apertura scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/mostra-altri",
+    "titolo": "Mostra altri",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "cinema/vista/luoghi",
+    "titolo": "Cambio vista",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/dettaglio/Matisse. Il mondo in una stanza",
+    "titolo": "Apertura scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/vista/luoghi",
+    "titolo": "Cambio vista",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "/eventi-bologna",
+    "titolo": "Eventi a Bologna – concerti e teatro",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/mostra-altri",
+    "titolo": "Mostra altri",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Genere/Jazz",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Genere/Pop e altra musica",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Estragon",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/filtro/Categoria/Pittura",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Genere/Classica",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/luogo/Teatro Arcimboldi",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/dettaglio/Wild Horse Nine",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-biglietti/Marco Mengoni – Allo Sbagliato",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Accabadora",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Tipo di luogo/Teatri",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Tipo di luogo/Club e locali",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Genere/Teatro",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Giorno e orario/g:2026-11-09",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Giorno e orario/g:2026-11-12",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Giorno e orario/g:2026-11-08",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Qualcosa è andato storto",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/filtro/Genere del film/Commedia",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/filtro/Categoria/Fotografia",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Date/2026-12",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/zona/Bologna città",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/Tito & Tarantula",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/vista/elenco",
+    "titolo": "Cambio vista",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/An Idiot's Guide to Wine – vino e risate",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/Emilio Solfrizzi in Falstaff. L’arte di farla franca",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/Viaggio a Hong Kong",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/The Chameleons",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/ricerca/leo",
+    "titolo": "Ricerca",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/ricerca/quinti",
+    "titolo": "Ricerca",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/dettaglio/Fahad Aliyu e Mauro Martin. Mostre personali",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/dettaglio/Federica Chiarentini e Germano Pontevichi. Mostre personali",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/ricerca/wikiarte",
+    "titolo": "Ricerca",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/luogo/Galleria Wikiarte",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/dettaglio/Picabia. Aprire le porte della notte",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/luogo/Palazzo Reale",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "filtri/azzera-events",
+    "titolo": "Azzera i filtri",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/filtro/Genere del film/Azione e avventura",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/filtro/Genere del film/Horror",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Date/2027-06",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Date/2027-11",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/filtro/Categoria/Arte contemporanea e installazioni",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/filtro/Categoria/Scultura",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Salottino del libro usato",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Figure della liberta' femminile: anna karenina, hester prynne",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Candlelight – Tributo a Michael Jackson",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Gregory Burk 6tet",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Call Back - Stand Up Comedy Night",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Rione Frequenza",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/April",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/ricerca/rapo",
+    "titolo": "Ricerca",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/ricerca/rapo",
+    "titolo": "Ricerca",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-info/Viaggio a Hong Kong",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Disponibilità/Da verificare",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Disponibilità/Biglietti disponibili",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/luogo/Teatro alla Scala",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-biglietti/LE SCEMETTE",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/La seconda vita dei libri",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/TANK serbatoio culturale",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Potochkine + Border Live",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Oratorio San Filippo Neri",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Scritture della complessità",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/BACH Art Centre",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/BACH Performing Hub 2026",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Il respiro dei viventi",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Coreografie dell'abitare",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Libreria Modo Infoshop",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Introduzione alla storia della Cina",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Un caso di coscienza",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/La trapezista e la casa degli specchi",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Libreria Coop Ambasciatori",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Il bandito sono me",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Pinacoteca Nazionale di Bologna",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Pinacoteca di Bologna | Appuntamenti novembre 2026",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/luogo/MUDEC - Museo delle Culture - Spazio delle Culture “Khaled al-Asaad”",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-info/Muoversi nelle frange metropolitane: (ir)razionalità della mobilità quotidiana",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-info/Sports + Pool Girl",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Sports + Pool Girl",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Covo Club",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/ricerca/vera",
+    "titolo": "Ricerca",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/luogo/Pop Up Cinema Jolly",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/luogo/Cinema Odeon",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/clic-programma/Wild Horse Nine",
+    "titolo": "Clic «Programma»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-biglietti/Fontaines D.C. (I-Days)",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Fontaines D.C. (I-Days)",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Tipo di luogo/Stadi",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Art d'enfer at Altrove Milano",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/dettaglio/Clayface",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Teatro Dehon",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Sequoie Music Park - Parco Caserme Rosse",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/ricerca/matisse",
+    "titolo": "Ricerca",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/Accabadora",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/Alessandro Cattelan – Benvenuto nell'AI!",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Alessandro Cattelan – Benvenuto nell'AI!",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Giorno e orario/g:2026-11-10",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Genere del film/Altri film",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Genere del film/Documentario",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Genere del film/Fantascienza e fantasy",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Genere del film/Drammatico",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Genere del film/Thriller e giallo",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Tomaso Montanari – L'arte della pace",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Cinema Perla",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/luogo/Cinema Modernissimo",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Lazin' on a sunny afternoon",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-info/Sergio Cammariere",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-biglietti/Sergio Cammariere",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Sergio Cammariere",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/condividi/whatsapp",
+    "titolo": "Condivisione",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/condividi/apri",
+    "titolo": "Condivisione",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-info/Amen",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Il canto di Natale – Carlo Colla & Figli",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Stand-up, Elfo!",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Amen",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-biglietti/Qualcosa è andato storto",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Giorgia Fumo – Out of Office",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/clic-sito/Matisse. Il mondo in una stanza",
+    "titolo": "Clic «Sito»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/clic-scheda-della-mostra/Matisse. Il mondo in una stanza",
+    "titolo": "Clic «Scheda della mostra»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/dettaglio/Frida Kahlo e la costruzione del mito",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-info/BARDO",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/BARDO",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Chiara Kaufman",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Kaidi Tatham",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/le ORRENDE: ASTRONOMY ISSUE 02",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/PERREO XL",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Evolvere pres. BLUME, Nawaz, Formant Value (live), Hagva",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/luogo/Teatro Dal Verme",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Il ritorno di Ulisse in patria",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/dettaglio/Je so' pazzo",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Bono",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Teatro Auditorium Manzoni",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/luogo/Unipol Dome",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   }
+  ],
+  "toprefs": [
+   {
+    "nome": "(diretto)",
+    "n": 231
+   },
+   {
+    "nome": "achevents.com/milano",
+    "n": 75
+   },
+   {
+    "nome": "achplaces.com",
+    "n": 61
+   },
+   {
+    "nome": "achevents.com",
+    "n": 47
+   },
+   {
+    "nome": "ui.awin.com",
+    "n": 3
+   },
+   {
+    "nome": "www.facebook.com",
+    "n": 2
+   },
+   {
+    "nome": "achdinners.com",
+    "n": 2
+   }
+  ],
+  "locations": [
+   {
+    "nome": "Italy",
+    "n": 406
+   },
+   {
+    "nome": "United States",
+    "n": 6
+   },
+   {
+    "nome": "Germany",
+    "n": 2
+   },
+   {
+    "nome": "Spain",
+    "n": 2
+   },
+   {
+    "nome": "France",
+    "n": 2
+   },
+   {
+    "nome": "United Kingdom",
+    "n": 1
+   },
+   {
+    "nome": "Ireland",
+    "n": 1
+   },
+   {
+    "nome": "Taiwan",
+    "n": 1
+   }
+  ],
+  "systems": [
+   {
+    "nome": "iOS",
+    "n": 142
+   },
+   {
+    "nome": "Windows",
+    "n": 141
+   },
+   {
+    "nome": "macOS",
+    "n": 104
+   },
+   {
+    "nome": "Android",
+    "n": 32
+   },
+   {
+    "nome": "Linux",
+    "n": 2
+   }
+  ],
+  "browsers": [
+   {
+    "nome": "Safari",
+    "n": 238
+   },
+   {
+    "nome": "Chrome",
+    "n": 182
+   },
+   {
+    "nome": "Firefox",
+    "n": 1
+   }
+  ],
+  "sizes": [
+   {
+    "nome": "phone",
+    "n": 174
+   },
+   {
+    "nome": "tablet",
+    "n": 91
+   },
+   {
+    "nome": "desktop",
+    "n": 153
+   },
+   {
+    "nome": "desktophd",
+    "n": 2
+   },
+   {
+    "nome": "unknown",
+    "n": 1
+   }
+  ]
+ },
+ "30g": {
+  "percorsi": [
+   {
+    "path": "/milano",
+    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
+    "n": 134,
+    "evento": false
+   },
+   {
+    "path": "/",
+    "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
+    "n": 95,
+    "evento": false
+   },
+   {
+    "path": "/eventi-bologna",
+    "titolo": "Eventi a Bologna – concerti e teatro",
+    "n": 48,
+    "evento": false
+   },
+   {
+    "path": "scheda/mostre",
+    "titolo": "Cambio scheda",
+    "n": 21,
+    "evento": true
+   },
+   {
+    "path": "scheda/spettacoli",
+    "titolo": "Cambio scheda",
+    "n": 19,
+    "evento": true
+   },
+   {
+    "path": "scheda/cinema",
+    "titolo": "Cambio scheda",
+    "n": 16,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/vista/luoghi",
+    "titolo": "Cambio vista",
+    "n": 15,
+    "evento": true
+   },
+   {
+    "path": "milano/scheda/mostre",
+    "titolo": "Cambio scheda",
+    "n": 14,
+    "evento": true
+   },
+   {
+    "path": "milano/scheda/cinema",
+    "titolo": "Cambio scheda",
+    "n": 12,
+    "evento": true
+   },
+   {
+    "path": "guide/vai-places",
+    "titolo": "Vai a Ach's Places Guide",
+    "n": 11,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/apri-filtri",
+    "titolo": "Apertura filtri",
+    "n": 11,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/vista/luoghi",
+    "titolo": "Cambio vista",
+    "n": 10,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Genere/Comici",
+    "titolo": "Filtro",
+    "n": 10,
+    "evento": true
+   },
+   {
+    "path": "guide/vai-dinners",
+    "titolo": "Vai a Ach's Dinners Guide",
+    "n": 9,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/apri-filtri",
+    "titolo": "Apertura filtri",
+    "n": 9,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/vista/elenco",
+    "titolo": "Cambio vista",
+    "n": 9,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Genere/Rock",
+    "titolo": "Filtro",
+    "n": 8,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Date/weekend",
+    "titolo": "Filtro",
+    "n": 8,
+    "evento": true
+   },
+   {
+    "path": "milano/scheda/spettacoli",
+    "titolo": "Cambio scheda",
+    "n": 8,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Date/oggi",
+    "titolo": "Filtro",
+    "n": 7,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Genere/Rock",
+    "titolo": "Filtro",
+    "n": 7,
+    "evento": true
+   },
+   {
+    "path": "scheda/incontri",
+    "titolo": "Cambio scheda",
+    "n": 6,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Teatro Duse",
+    "titolo": "Apertura programma del luogo",
+    "n": 6,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Genere/Teatro",
+    "titolo": "Filtro",
+    "n": 6,
+    "evento": true
+   },
+   {
+    "path": "cinema/dettaglio/Wild Horse Nine",
+    "titolo": "Apertura scheda",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
+    "titolo": "Filtro",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Genere/Comici",
+    "titolo": "Filtro",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Date/7g",
+    "titolo": "Filtro",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Date/oggi",
+    "titolo": "Filtro",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/mostra-altri",
+    "titolo": "Mostra altri",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/azzera-filtri",
+    "titolo": "Azzera filtri",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/vista/elenco",
+    "titolo": "Cambio vista",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Genere/Serate e club",
+    "titolo": "Filtro",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/azzera-filtri",
+    "titolo": "Azzera filtri",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Genere/Jazz",
+    "titolo": "Filtro",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Genere/Jazz",
+    "titolo": "Filtro",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Date/7g",
+    "titolo": "Filtro",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Date/weekend",
+    "titolo": "Filtro",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Genere/Pop e altra musica",
+    "titolo": "Filtro",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "mostre/vista/luoghi",
+    "titolo": "Cambio vista",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "milano/scheda/incontri",
+    "titolo": "Cambio scheda",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/dettaglio/Dio ride",
+    "titolo": "Apertura scheda",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Teatro Celebrazioni",
+    "titolo": "Apertura programma del luogo",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Marco Mengoni – Allo Sbagliato",
+    "titolo": "Apertura scheda",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Estragon",
+    "titolo": "Apertura programma del luogo",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Genere/Serate e club",
+    "titolo": "Filtro",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/filtro/Categoria/Pittura",
+    "titolo": "Filtro",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Genere/Classica",
+    "titolo": "Filtro",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Genere/Classica",
+    "titolo": "Filtro",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Locomotiv Club",
+    "titolo": "Apertura programma del luogo",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/An Idiot's Guide to Wine – vino e risate",
+    "titolo": "Apertura scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Viaggio a Hong Kong",
+    "titolo": "Apertura scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/filtri/azzera-events",
+    "titolo": "Azzera i filtri",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "cinema/clic-biglietti/Wild Horse Nine",
+    "titolo": "Clic «Biglietti»",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/scheda/sport",
+    "titolo": "Cambio scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "scheda/sport",
+    "titolo": "Cambio scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Argento vivo",
+    "titolo": "Apertura scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/mostra-altri",
+    "titolo": "Mostra altri",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "cinema/vista/luoghi",
+    "titolo": "Cambio vista",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/dettaglio/Matisse. Il mondo in una stanza",
+    "titolo": "Apertura scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/vista/luoghi",
+    "titolo": "Cambio vista",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/luogo/Teatro Arcimboldi",
+    "titolo": "Apertura programma del luogo",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/dettaglio/Wild Horse Nine",
+    "titolo": "Apertura scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-biglietti/Marco Mengoni – Allo Sbagliato",
+    "titolo": "Clic «Biglietti»",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Accabadora",
+    "titolo": "Apertura scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Tipo di luogo/Teatri",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Tipo di luogo/Club e locali",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Tipo di luogo/Teatri",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Tipo di luogo/Club e locali",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Genere/Teatro",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "condividi/apri",
+    "titolo": "Condivisione",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Giorno e orario/g:2026-11-09",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Giorno e orario/g:2026-11-12",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Giorno e orario/g:2026-11-08",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Qualcosa è andato storto",
+    "titolo": "Apertura scheda",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/filtro/Genere del film/Commedia",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/filtro/Categoria/Fotografia",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Date/2026-12",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/zona/Bologna città",
+    "titolo": "Filtro",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/Tito & Tarantula",
+    "titolo": "Clic «Biglietti»",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "mostre/apri-filtri",
+    "titolo": "Apertura filtri",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "mostre/vista/elenco",
+    "titolo": "Cambio vista",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/An Idiot's Guide to Wine – vino e risate",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/Emilio Solfrizzi in Falstaff. L’arte di farla franca",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/Viaggio a Hong Kong",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/The Chameleons",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/ricerca/leo",
+    "titolo": "Ricerca",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/ricerca/quinti",
+    "titolo": "Ricerca",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/dettaglio/Fahad Aliyu e Mauro Martin. Mostre personali",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/dettaglio/Federica Chiarentini e Germano Pontevichi. Mostre personali",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/ricerca/wikiarte",
+    "titolo": "Ricerca",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/luogo/Galleria Wikiarte",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/dettaglio/Picabia. Aprire le porte della notte",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/luogo/Palazzo Reale",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "filtri/azzera-events",
+    "titolo": "Azzera i filtri",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/filtro/Genere del film/Azione e avventura",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/filtro/Genere del film/Horror",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Date/2027-06",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Date/2027-11",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/filtro/Categoria/Arte contemporanea e installazioni",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/filtro/Categoria/Scultura",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Salottino del libro usato",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Figure della liberta' femminile: anna karenina, hester prynne",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Candlelight – Tributo a Michael Jackson",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Gregory Burk 6tet",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Call Back - Stand Up Comedy Night",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Rione Frequenza",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/April",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/ricerca/rapo",
+    "titolo": "Ricerca",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/ricerca/rapo",
+    "titolo": "Ricerca",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-info/Viaggio a Hong Kong",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Disponibilità/Da verificare",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Disponibilità/Biglietti disponibili",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/luogo/Teatro alla Scala",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-biglietti/LE SCEMETTE",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/La seconda vita dei libri",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/TANK serbatoio culturale",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Potochkine + Border Live",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Oratorio San Filippo Neri",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Scritture della complessità",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/BACH Art Centre",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/BACH Performing Hub 2026",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Il respiro dei viventi",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Coreografie dell'abitare",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Libreria Modo Infoshop",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Introduzione alla storia della Cina",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Un caso di coscienza",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/La trapezista e la casa degli specchi",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Libreria Coop Ambasciatori",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Il bandito sono me",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Pinacoteca Nazionale di Bologna",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Pinacoteca di Bologna | Appuntamenti novembre 2026",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/luogo/MUDEC - Museo delle Culture - Spazio delle Culture “Khaled al-Asaad”",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-info/Muoversi nelle frange metropolitane: (ir)razionalità della mobilità quotidiana",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-info/Sports + Pool Girl",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Sports + Pool Girl",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Covo Club",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/ricerca/vera",
+    "titolo": "Ricerca",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/luogo/Pop Up Cinema Jolly",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/luogo/Cinema Odeon",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/clic-programma/Wild Horse Nine",
+    "titolo": "Clic «Programma»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-biglietti/Fontaines D.C. (I-Days)",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Fontaines D.C. (I-Days)",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Tipo di luogo/Stadi",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Art d'enfer at Altrove Milano",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/dettaglio/Clayface",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Teatro Dehon",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Sequoie Music Park - Parco Caserme Rosse",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/ricerca/matisse",
+    "titolo": "Ricerca",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/Accabadora",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/Alessandro Cattelan – Benvenuto nell'AI!",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Alessandro Cattelan – Benvenuto nell'AI!",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Giorno e orario/g:2026-11-10",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Genere del film/Altri film",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Genere del film/Documentario",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Genere del film/Fantascienza e fantasy",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Genere del film/Drammatico",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Genere del film/Thriller e giallo",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Tomaso Montanari – L'arte della pace",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Cinema Perla",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/luogo/Cinema Modernissimo",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Lazin' on a sunny afternoon",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-info/Sergio Cammariere",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-biglietti/Sergio Cammariere",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Sergio Cammariere",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/condividi/whatsapp",
+    "titolo": "Condivisione",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/condividi/apri",
+    "titolo": "Condivisione",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-info/Amen",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Il canto di Natale – Carlo Colla & Figli",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Stand-up, Elfo!",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Amen",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-biglietti/Qualcosa è andato storto",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Giorgia Fumo – Out of Office",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/clic-sito/Matisse. Il mondo in una stanza",
+    "titolo": "Clic «Sito»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/clic-scheda-della-mostra/Matisse. Il mondo in una stanza",
+    "titolo": "Clic «Scheda della mostra»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/dettaglio/Frida Kahlo e la costruzione del mito",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-info/BARDO",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/BARDO",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Chiara Kaufman",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Kaidi Tatham",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/le ORRENDE: ASTRONOMY ISSUE 02",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/PERREO XL",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Evolvere pres. BLUME, Nawaz, Formant Value (live), Hagva",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/luogo/Teatro Dal Verme",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Il ritorno di Ulisse in patria",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/dettaglio/Je so' pazzo",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Bono",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Teatro Auditorium Manzoni",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/luogo/Unipol Dome",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Amon Amarth, Soilwork, Orbit Culture",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/luogo/Alcatraz",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Link",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Teatro Comunale",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/filtro/Giorno e orario/g:2026-11-08",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Tipo di luogo/All'aperto",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Tipo di luogo/Stadi",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Milone meets the Doctors",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Farinelli, una voce regina",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Much Much Bass",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Wasted Generation feat. Alessandro Lanzoni",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Svaneborg Kardyb",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Wish you Were Here",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Tipo di luogo/Altri luoghi",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Eclettica 03: Special 7th anniversary",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Tipo di luogo/All'aperto",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/Tipo di luogo/Auditorium",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Fabrizio Moro",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/Daniele Silvestri – Teatri a sdraio",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Daniele Silvestri – Teatri a sdraio",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-info/Max Pezzali",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Max Pezzali",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Cesare Cremonini",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-biglietti/Blue",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/clic-info/Blue",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Blue",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/clic-scheda-della-mostra/Giuseppe Spagnulo. Oltre la materia, verso il pensiero formante",
+    "titolo": "Clic «Scheda della mostra»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/dettaglio/Giuseppe Spagnulo. Oltre la materia, verso il pensiero formante",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/filtro/Categoria/Scultura",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Giorno e orario/sett",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/filtro/Giorno e orario/g:2026-11-07",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/filtro/zona/Milano città",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/filtro/Giorno e orario/ancora",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Il Piccolo Principe – Paolo Ruffini",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/spettacoli/dettaglio/Placebo",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/filtro/Genere del film/Fantascienza e fantasy",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/clic-scheda-della-mostra/Pittori di Cinema",
+    "titolo": "Clic «Scheda della mostra»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/dettaglio/Pittori di Cinema",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/vista/luoghi",
+    "titolo": "Cambio vista",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/vista/elenco",
+    "titolo": "Cambio vista",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/clic-programma/Hope",
+    "titolo": "Clic «Programma»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/cinema/dettaglio/Hope",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/filtro/Periodo/oggi",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/filtro/Categoria/Arte antica e Ottocento",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/filtro/Categoria/Cinema e design",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/filtro/Categoria/Arte moderna e contemporanea",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/clic-scheda-della-mostra/Giorgio Armani Privé 2005-2025",
+    "titolo": "Clic «Scheda della mostra»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "milano/mostre/dettaglio/Giorgio Armani Privé 2005-2025",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Joe Jackson + Band",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/dettaglio/Zu + Jarboe",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/apri-filtri",
+    "titolo": "Apertura filtri",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/filtro/Periodo/oggi",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/dettaglio/Golgota",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/luogo/The Space Cinema Bologna",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/luogo/Cinema Century CineCi",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/dettaglio/Un tranquillo funerale di famiglia",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/luogo/Cinema Nuovo Nosadella",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "cinema/dettaglio/Dio ride",
+    "titolo": "Apertura scheda",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Quando/oggi",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Biglietti/Biglietti disponibili",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Quando/7g",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/filtro/Quando/weekend",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/ERJ Orchestra",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/Sfondi una porta aperta",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-info/I Solisti dell'Orchestra Mozart – Mozart, Gran Partita",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/luogo/Conservatorio G.B. Martini – Sala Bossi",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-info/Lazin' on a sunny afternoon",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/Gender Bender Festival 2026 (24ª edizione)",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-biglietti/Joe Jackson + Band",
+    "titolo": "Clic «Biglietti»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "spettacoli/clic-info/Joe Jackson + Band",
+    "titolo": "Clic «Info»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/luogo/Palazzo Pallavicini",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/luogo/Palazzo Albergati",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/filtro/Categoria/Arte moderna e contemporanea",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/filtro/Periodo/arrivo",
+    "titolo": "Filtro",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "mostre/luogo/Biblioteca Salaborsa",
+    "titolo": "Apertura programma del luogo",
+    "n": 1,
+    "evento": true
+   }
+  ],
+  "toprefs": [
+   {
+    "nome": "(diretto)",
+    "n": 579
+   },
+   {
+    "nome": "achevents.com/milano",
+    "n": 107
+   },
+   {
+    "nome": "achevents.com",
+    "n": 88
+   },
+   {
+    "nome": "achplaces.com",
+    "n": 61
+   },
+   {
+    "nome": "ui.awin.com",
+    "n": 3
+   },
+   {
+    "nome": "teams.public.onecdn.static.microsoft",
+    "n": 3
+   },
+   {
+    "nome": "www.facebook.com",
+    "n": 2
+   },
+   {
+    "nome": "achdinners.com",
+    "n": 2
+   },
+   {
+    "nome": "web.whatsapp.com",
+    "n": 1
+   }
+  ],
+  "locations": [
+   {
+    "nome": "Italy",
+    "n": 806
+   },
+   {
+    "nome": "United States",
+    "n": 10
+   },
+   {
+    "nome": "Sweden",
+    "n": 8
+   },
+   {
+    "nome": "France",
+    "n": 3
+   },
+   {
+    "nome": "Japan",
+    "n": 3
+   },
+   {
+    "nome": "Germany",
+    "n": 2
+   },
+   {
+    "nome": "Spain",
+    "n": 2
+   },
+   {
+    "nome": "United Kingdom",
+    "n": 2
+   },
+   {
+    "nome": "Netherlands",
+    "n": 2
+   },
+   {
+    "nome": "Belgium",
+    "n": 1
+   },
+   {
+    "nome": "Canada",
+    "n": 1
+   },
+   {
+    "nome": "Switzerland",
+    "n": 1
+   }
+  ],
+  "systems": [
+   {
+    "nome": "iOS",
+    "n": 363
+   },
+   {
+    "nome": "macOS",
+    "n": 189
+   },
+   {
+    "nome": "Windows",
+    "n": 187
+   },
+   {
+    "nome": "Android",
+    "n": 105
+   },
+   {
+    "nome": "Linux",
+    "n": 2
+   }
+  ],
+  "browsers": [
+   {
+    "nome": "Safari",
+    "n": 541
+   },
+   {
+    "nome": "Chrome",
+    "n": 303
+   },
+   {
+    "nome": "Firefox",
+    "n": 2
+   }
+  ],
+  "sizes": [
+   {
+    "nome": "phone",
+    "n": 469
+   },
+   {
+    "nome": "tablet",
+    "n": 171
+   },
+   {
+    "nome": "desktop",
+    "n": 202
+   },
+   {
+    "nome": "desktophd",
+    "n": 3
+   },
+   {
+    "nome": "unknown",
+    "n": 1
+   }
+  ]
+ }
+}

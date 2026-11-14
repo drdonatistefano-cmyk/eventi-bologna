@@ -1,0 +1,467 @@
+{
+ "generato": "2026-11-14T19:48:20Z",
+ "stato": {
+  "sito": {
+   "http": 200,
+   "ok": true,
+   "statistiche_attive": true
+  }
+ },
+ "errore": "",
+ "giorni": [
+  {
+   "giorno": "2026-11-08",
+   "visite": 10
+  },
+  {
+   "giorno": "2026-11-09",
+   "visite": 11
+  },
+  {
+   "giorno": "2026-11-10",
+   "visite": 13
+  },
+  {
+   "giorno": "2026-11-11",
+   "visite": 21
+  },
+  {
+   "giorno": "2026-11-12",
+   "visite": 10
+  },
+  {
+   "giorno": "2026-11-13",
+   "visite": 22
+  },
+  {
+   "giorno": "2026-11-14",
+   "visite": 30
+  }
+ ],
+ "totali": {
+  "oggi": {
+   "visite": 30,
+   "eventi": 5
+  },
+  "7g": {
+   "visite": 117,
+   "eventi": 28
+  },
+  "30g": {
+   "visite": 117,
+   "eventi": 28
+  }
+ },
+ "7g": {
+  "percorsi": [
+   {
+    "path": "/",
+    "titolo": "Ach's Places Guide",
+    "n": 70,
+    "evento": false
+   },
+   {
+    "path": "/filtri.html",
+    "titolo": "Luoghi sulla mappa · Ach's Places Guide",
+    "n": 13,
+    "evento": false
+   },
+   {
+    "path": "/index.html",
+    "titolo": "Ach's Places Guide",
+    "n": 13,
+    "evento": false
+   },
+   {
+    "path": "/?lang=it",
+    "titolo": "Ach's Places Guide",
+    "n": 12,
+    "evento": false
+   },
+   {
+    "path": "guide/vai-events",
+    "titolo": "Vai a Ach's Events Guide",
+    "n": 10,
+    "evento": true
+   },
+   {
+    "path": "guide/vai-dinners",
+    "titolo": "Vai a Ach's Dinners Guide",
+    "n": 10,
+    "evento": true
+   },
+   {
+    "path": "filtri/azzera-places",
+    "titolo": "Azzera i filtri (in fondo)",
+    "n": 8,
+    "evento": true
+   },
+   {
+    "path": "/comune/modena-mo",
+    "titolo": "Cosa vedere a Modena (MO): 36 luoghi da visitare | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/?lang=en",
+    "titolo": "Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/en/comuni",
+    "titolo": "All towns | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/comune/firenze-fi",
+    "titolo": "Cosa vedere a Firenze (FI): 59 luoghi da visitare | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/luogo/firenze-fi--orto-botanico-giardino-dei-semplici",
+    "titolo": "Orto botanico, Giardino dei Semplici, Firenze (FI): cosa sapere prima di andarci | Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   }
+  ],
+  "toprefs": [
+   {
+    "nome": "(diretto)",
+    "n": 111
+   },
+   {
+    "nome": "achplaces.com",
+    "n": 16
+   },
+   {
+    "nome": "achplaces.com/filtri.html",
+    "n": 8
+   },
+   {
+    "nome": "achevents.com",
+    "n": 4
+   },
+   {
+    "nome": "Google",
+    "n": 2
+   },
+   {
+    "nome": "achplaces.com/index.html",
+    "n": 2
+   },
+   {
+    "nome": "achdinners.com",
+    "n": 1
+   },
+   {
+    "nome": "achplaces.com/comune/firenze-fi",
+    "n": 1
+   }
+  ],
+  "locations": [
+   {
+    "nome": "Italy",
+    "n": 107
+   },
+   {
+    "nome": "United States",
+    "n": 25
+   },
+   {
+    "nome": "Canada",
+    "n": 3
+   },
+   {
+    "nome": "France",
+    "n": 3
+   },
+   {
+    "nome": "United Kingdom",
+    "n": 2
+   },
+   {
+    "nome": "Sweden",
+    "n": 2
+   },
+   {
+    "nome": "China",
+    "n": 1
+   },
+   {
+    "nome": "India",
+    "n": 1
+   },
+   {
+    "nome": "Turkey",
+    "n": 1
+   }
+  ],
+  "systems": [
+   {
+    "nome": "Windows",
+    "n": 47
+   },
+   {
+    "nome": "macOS",
+    "n": 44
+   },
+   {
+    "nome": "iOS",
+    "n": 42
+   },
+   {
+    "nome": "Linux",
+    "n": 7
+   },
+   {
+    "nome": "Android",
+    "n": 5
+   }
+  ],
+  "browsers": [
+   {
+    "nome": "Safari",
+    "n": 81
+   },
+   {
+    "nome": "Chrome",
+    "n": 63
+   },
+   {
+    "nome": "Firefox",
+    "n": 1
+   }
+  ],
+  "sizes": [
+   {
+    "nome": "phone",
+    "n": 48
+   },
+   {
+    "nome": "tablet",
+    "n": 50
+   },
+   {
+    "nome": "desktop",
+    "n": 47
+   },
+   {
+    "nome": "desktophd",
+    "n": 0
+   },
+   {
+    "nome": "unknown",
+    "n": 0
+   }
+  ]
+ },
+ "30g": {
+  "percorsi": [
+   {
+    "path": "/",
+    "titolo": "Ach's Places Guide",
+    "n": 70,
+    "evento": false
+   },
+   {
+    "path": "/filtri.html",
+    "titolo": "Luoghi sulla mappa · Ach's Places Guide",
+    "n": 13,
+    "evento": false
+   },
+   {
+    "path": "/index.html",
+    "titolo": "Ach's Places Guide",
+    "n": 13,
+    "evento": false
+   },
+   {
+    "path": "/?lang=it",
+    "titolo": "Ach's Places Guide",
+    "n": 12,
+    "evento": false
+   },
+   {
+    "path": "guide/vai-events",
+    "titolo": "Vai a Ach's Events Guide",
+    "n": 10,
+    "evento": true
+   },
+   {
+    "path": "guide/vai-dinners",
+    "titolo": "Vai a Ach's Dinners Guide",
+    "n": 10,
+    "evento": true
+   },
+   {
+    "path": "filtri/azzera-places",
+    "titolo": "Azzera i filtri (in fondo)",
+    "n": 8,
+    "evento": true
+   },
+   {
+    "path": "/comune/modena-mo",
+    "titolo": "Cosa vedere a Modena (MO): 36 luoghi da visitare | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/?lang=en",
+    "titolo": "Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/en/comuni",
+    "titolo": "All towns | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/comune/firenze-fi",
+    "titolo": "Cosa vedere a Firenze (FI): 59 luoghi da visitare | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/luogo/firenze-fi--orto-botanico-giardino-dei-semplici",
+    "titolo": "Orto botanico, Giardino dei Semplici, Firenze (FI): cosa sapere prima di andarci | Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   }
+  ],
+  "toprefs": [
+   {
+    "nome": "(diretto)",
+    "n": 111
+   },
+   {
+    "nome": "achplaces.com",
+    "n": 16
+   },
+   {
+    "nome": "achplaces.com/filtri.html",
+    "n": 8
+   },
+   {
+    "nome": "achevents.com",
+    "n": 4
+   },
+   {
+    "nome": "Google",
+    "n": 2
+   },
+   {
+    "nome": "achplaces.com/index.html",
+    "n": 2
+   },
+   {
+    "nome": "achdinners.com",
+    "n": 1
+   },
+   {
+    "nome": "achplaces.com/comune/firenze-fi",
+    "n": 1
+   }
+  ],
+  "locations": [
+   {
+    "nome": "Italy",
+    "n": 107
+   },
+   {
+    "nome": "United States",
+    "n": 25
+   },
+   {
+    "nome": "Canada",
+    "n": 3
+   },
+   {
+    "nome": "France",
+    "n": 3
+   },
+   {
+    "nome": "United Kingdom",
+    "n": 2
+   },
+   {
+    "nome": "Sweden",
+    "n": 2
+   },
+   {
+    "nome": "China",
+    "n": 1
+   },
+   {
+    "nome": "India",
+    "n": 1
+   },
+   {
+    "nome": "Turkey",
+    "n": 1
+   }
+  ],
+  "systems": [
+   {
+    "nome": "Windows",
+    "n": 47
+   },
+   {
+    "nome": "macOS",
+    "n": 44
+   },
+   {
+    "nome": "iOS",
+    "n": 42
+   },
+   {
+    "nome": "Linux",
+    "n": 7
+   },
+   {
+    "nome": "Android",
+    "n": 5
+   }
+  ],
+  "browsers": [
+   {
+    "nome": "Safari",
+    "n": 81
+   },
+   {
+    "nome": "Chrome",
+    "n": 63
+   },
+   {
+    "nome": "Firefox",
+    "n": 1
+   }
+  ],
+  "sizes": [
+   {
+    "nome": "phone",
+    "n": 48
+   },
+   {
+    "nome": "tablet",
+    "n": 50
+   },
+   {
+    "nome": "desktop",
+    "n": 47
+   },
+   {
+    "nome": "desktophd",
+    "n": 0
+   },
+   {
+    "nome": "unknown",
+    "n": 0
+   }
+  ]
+ }
+}

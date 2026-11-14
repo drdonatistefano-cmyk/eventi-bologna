@@ -1,0 +1,330 @@
+{
+ "guide": {
+  "places": {
+   "nome": "Places",
+   "sito": "https://achplaces.com/",
+   "pagine": {
+    "guida": {
+     "prima visita 4G": {
+      "primo_disegno": 356,
+      "visibile": 418,
+      "contenuto": 418,
+      "foto": 767,
+      "dati": 1481,
+      "kb": 607,
+      "tbt": 108,
+      "blocco_max": 105,
+      "giri": 3
+     },
+     "prima visita 3G": {
+      "primo_disegno": 524,
+      "visibile": 768,
+      "contenuto": 768,
+      "foto": 1438,
+      "dati": 3501,
+      "kb": 607,
+      "tbt": 97,
+      "blocco_max": 103,
+      "giri": 1
+     },
+     "ritorno": {
+      "primo_disegno": 96,
+      "visibile": 139,
+      "contenuto": 139,
+      "foto": 170,
+      "dati": null,
+      "kb": 0,
+      "tbt": 15,
+      "blocco_max": 65,
+      "giri": 1
+     },
+     "pc": {
+      "primo_disegno": 172,
+      "visibile": 171,
+      "contenuto": 171,
+      "foto": 177,
+      "dati": 180,
+      "kb": 669,
+      "tbt": 0,
+      "blocco_max": 0,
+      "giri": 1
+     },
+     "uso": {
+      "apri filtri": {
+       "risposta": 48,
+       "blocco_max": 0
+      },
+      "scegli categoria": {
+       "risposta": 136,
+       "blocco_max": 87
+      },
+      "togli categoria": {
+       "risposta": 136,
+       "blocco_max": 95
+      },
+      "cerca «torre»": {
+       "risposta": 96,
+       "blocco_max": 120
+      },
+      "scorri": {
+       "risposta": 0,
+       "blocco_max": 61
+      },
+      "apri scheda": {
+       "risposta": 64,
+       "blocco_max": 54
+      }
+     },
+     "giudizio": {
+      "contenuto": "verde",
+      "blocco": "verde",
+      "tocchi": "verde",
+      "insieme": "verde"
+     }
+    },
+    "mappa": {
+     "prima visita 4G": {
+      "primo_disegno": 420,
+      "visibile": 435,
+      "contenuto": 946,
+      "foto": null,
+      "dati": 848,
+      "kb": 254,
+      "tbt": 46,
+      "blocco_max": 85,
+      "giri": 3
+     },
+     "prima visita 3G": {
+      "primo_disegno": 600,
+      "visibile": 621,
+      "contenuto": 1927,
+      "foto": null,
+      "dati": 1829,
+      "kb": 254,
+      "tbt": 38,
+      "blocco_max": 81,
+      "giri": 1
+     },
+     "ritorno": {
+      "primo_disegno": 144,
+      "visibile": 207,
+      "contenuto": 312,
+      "foto": null,
+      "dati": 204,
+      "kb": 0,
+      "tbt": 0,
+      "blocco_max": 0,
+      "giri": 1
+     },
+     "pc": {
+      "primo_disegno": 132,
+      "visibile": 166,
+      "contenuto": 186,
+      "foto": null,
+      "dati": 99,
+      "kb": 609,
+      "tbt": 0,
+      "blocco_max": 0,
+      "giri": 1
+     },
+     "uso": {
+      "zoom +": {
+       "risposta": 32,
+       "blocco_max": 0
+      },
+      "trascina": {
+       "risposta": 16,
+       "blocco_max": 0
+      },
+      "posizione": {
+       "risposta": 48,
+       "blocco_max": 77
+      },
+      "apri luogo": {
+       "risposta": 80,
+       "blocco_max": 50
+      },
+      "torna all'Italia": {
+       "risposta": 56,
+       "blocco_max": 0
+      }
+     },
+     "giudizio": {
+      "contenuto": "verde",
+      "blocco": "verde",
+      "tocchi": "verde",
+      "insieme": "verde"
+     }
+    }
+   },
+   "aggiornato": "2026-11-14T05:11:51Z"
+  },
+  "dinners": {
+   "nome": "Dinners",
+   "sito": "https://achdinners.com/",
+   "pagine": {
+    "guida": {
+     "prima visita 4G": {
+      "primo_disegno": 476,
+      "visibile": 550,
+      "contenuto": 550,
+      "foto": null,
+      "dati": 1963,
+      "kb": 1055,
+      "tbt": 357,
+      "blocco_max": 250,
+      "giri": 3
+     },
+     "prima visita 3G": {
+      "primo_disegno": 760,
+      "visibile": 838,
+      "contenuto": 838,
+      "foto": null,
+      "dati": null,
+      "kb": 113,
+      "tbt": 34,
+      "blocco_max": 84,
+      "giri": 1
+     },
+     "ritorno": {
+      "primo_disegno": 176,
+      "visibile": 442,
+      "contenuto": 442,
+      "foto": null,
+      "dati": null,
+      "kb": 134,
+      "tbt": 209,
+      "blocco_max": 253,
+      "giri": 1
+     },
+     "pc": {
+      "primo_disegno": 200,
+      "visibile": 148,
+      "contenuto": 148,
+      "foto": null,
+      "dati": 319,
+      "kb": 1187,
+      "tbt": 25,
+      "blocco_max": 75,
+      "giri": 1
+     },
+     "uso": {
+      "cerca «osteria»": {
+       "risposta": 32,
+       "blocco_max": 0
+      },
+      "apri filtri": {
+       "risposta": 64,
+       "blocco_max": 0
+      },
+      "scorri": {
+       "risposta": 24,
+       "blocco_max": 0
+      },
+      "apri scheda": {
+       "risposta": 96,
+       "blocco_max": 52
+      }
+     },
+     "giudizio": {
+      "contenuto": "verde",
+      "blocco": "giallo",
+      "tocchi": "verde",
+      "insieme": "giallo"
+     }
+    }
+   },
+   "aggiornato": "2026-11-14T05:12:29Z"
+  },
+  "events": {
+   "nome": "Events",
+   "sito": "https://achevents.com/",
+   "pagine": {
+    "guida": {
+     "prima visita 4G": {
+      "primo_disegno": 360,
+      "visibile": 829,
+      "contenuto": 829,
+      "foto": null,
+      "dati": 599,
+      "kb": 165,
+      "tbt": 163,
+      "blocco_max": 213,
+      "giri": 3
+     },
+     "prima visita 3G": {
+      "primo_disegno": 644,
+      "visibile": 1528,
+      "contenuto": 1528,
+      "foto": null,
+      "dati": 1288,
+      "kb": 165,
+      "tbt": 169,
+      "blocco_max": 219,
+      "giri": 1
+     },
+     "ritorno": {
+      "primo_disegno": 132,
+      "visibile": 271,
+      "contenuto": 271,
+      "foto": null,
+      "dati": 34,
+      "kb": 1,
+      "tbt": 66,
+      "blocco_max": 116,
+      "giri": 1
+     },
+     "pc": {
+      "primo_disegno": 124,
+      "visibile": 172,
+      "contenuto": 172,
+      "foto": null,
+      "dati": 98,
+      "kb": 165,
+      "tbt": 13,
+      "blocco_max": 63,
+      "giri": 1
+     },
+     "uso": {
+      "scheda «Mostre»": {
+       "risposta": 104,
+       "blocco_max": 65
+      },
+      "scheda «Spettacoli»": {
+       "risposta": 120,
+       "blocco_max": 73
+      },
+      "filtro «Oggi»": {
+       "risposta": 80,
+       "blocco_max": 0
+      },
+      "togli «Oggi»": {
+       "risposta": 112,
+       "blocco_max": 64
+      },
+      "cerca «jazz»": {
+       "risposta": 40,
+       "blocco_max": 0
+      },
+      "scorri": {
+       "risposta": 0,
+       "blocco_max": 0
+      },
+      "apri evento": {
+       "risposta": 128,
+       "blocco_max": 63
+      }
+     },
+     "giudizio": {
+      "contenuto": "verde",
+      "blocco": "verde",
+      "tocchi": "verde",
+      "insieme": "verde"
+     }
+    }
+   },
+   "aggiornato": "2026-11-14T05:13:10Z"
+  }
+ },
+ "aggiornato": "2026-11-14T05:13:10Z"
+}

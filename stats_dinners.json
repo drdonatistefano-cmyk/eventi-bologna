@@ -1,0 +1,363 @@
+{
+ "generato": "2026-11-14T19:48:30Z",
+ "stato": {
+  "sito": {
+   "http": 200,
+   "ok": true,
+   "statistiche_attive": true
+  }
+ },
+ "errore": "",
+ "giorni": [
+  {
+   "giorno": "2026-11-08",
+   "visite": 4
+  },
+  {
+   "giorno": "2026-11-09",
+   "visite": 12
+  },
+  {
+   "giorno": "2026-11-10",
+   "visite": 11
+  },
+  {
+   "giorno": "2026-11-11",
+   "visite": 14
+  },
+  {
+   "giorno": "2026-11-12",
+   "visite": 5
+  },
+  {
+   "giorno": "2026-11-13",
+   "visite": 2
+  },
+  {
+   "giorno": "2026-11-14",
+   "visite": 14
+  }
+ ],
+ "totali": {
+  "oggi": {
+   "visite": 14,
+   "eventi": 2
+  },
+  "7g": {
+   "visite": 62,
+   "eventi": 13
+  },
+  "30g": {
+   "visite": 62,
+   "eventi": 13
+  }
+ },
+ "7g": {
+  "percorsi": [
+   {
+    "path": "/",
+    "titolo": "Ach’s Dinners Guide",
+    "n": 58,
+    "evento": false
+   },
+   {
+    "path": "guide/vai-places",
+    "titolo": "Vai a Ach's Places Guide",
+    "n": 7,
+    "evento": true
+   },
+   {
+    "path": "guide/vai-events",
+    "titolo": "Vai a Ach's Events Guide",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "/mappa.html",
+    "titolo": "Mappa · Ach's Dinners Guide",
+    "n": 3,
+    "evento": false
+   },
+   {
+    "path": "/index.html",
+    "titolo": "Ach’s Dinners Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "filtri/azzera-dinners",
+    "titolo": "✕ Azzera i filtri <span class=\"n\">0</span>",
+    "n": 1,
+    "evento": true
+   }
+  ],
+  "toprefs": [
+   {
+    "nome": "(diretto)",
+    "n": 57
+   },
+   {
+    "nome": "achevents.com",
+    "n": 9
+   },
+   {
+    "nome": "achplaces.com",
+    "n": 5
+   },
+   {
+    "nome": "achdinners.com",
+    "n": 3
+   },
+   {
+    "nome": "achdinners.com/mappa.html",
+    "n": 1
+   }
+  ],
+  "locations": [
+   {
+    "nome": "Italy",
+    "n": 42
+   },
+   {
+    "nome": "United States",
+    "n": 21
+   },
+   {
+    "nome": "France",
+    "n": 3
+   },
+   {
+    "nome": "Canada",
+    "n": 2
+   },
+   {
+    "nome": "United Kingdom",
+    "n": 2
+   },
+   {
+    "nome": "Belgium",
+    "n": 1
+   },
+   {
+    "nome": "Switzerland",
+    "n": 1
+   },
+   {
+    "nome": "India",
+    "n": 1
+   },
+   {
+    "nome": "Netherlands",
+    "n": 1
+   },
+   {
+    "nome": "Poland",
+    "n": 1
+   }
+  ],
+  "systems": [
+   {
+    "nome": "Windows",
+    "n": 37
+   },
+   {
+    "nome": "macOS",
+    "n": 16
+   },
+   {
+    "nome": "iOS",
+    "n": 14
+   },
+   {
+    "nome": "Linux",
+    "n": 8
+   }
+  ],
+  "browsers": [
+   {
+    "nome": "Chrome",
+    "n": 47
+   },
+   {
+    "nome": "Safari",
+    "n": 28
+   }
+  ],
+  "sizes": [
+   {
+    "nome": "phone",
+    "n": 15
+   },
+   {
+    "nome": "tablet",
+    "n": 26
+   },
+   {
+    "nome": "desktop",
+    "n": 34
+   },
+   {
+    "nome": "desktophd",
+    "n": 0
+   },
+   {
+    "nome": "unknown",
+    "n": 0
+   }
+  ]
+ },
+ "30g": {
+  "percorsi": [
+   {
+    "path": "/",
+    "titolo": "Ach’s Dinners Guide",
+    "n": 58,
+    "evento": false
+   },
+   {
+    "path": "guide/vai-places",
+    "titolo": "Vai a Ach's Places Guide",
+    "n": 7,
+    "evento": true
+   },
+   {
+    "path": "guide/vai-events",
+    "titolo": "Vai a Ach's Events Guide",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "/mappa.html",
+    "titolo": "Mappa · Ach's Dinners Guide",
+    "n": 3,
+    "evento": false
+   },
+   {
+    "path": "/index.html",
+    "titolo": "Ach’s Dinners Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "filtri/azzera-dinners",
+    "titolo": "✕ Azzera i filtri <span class=\"n\">0</span>",
+    "n": 1,
+    "evento": true
+   }
+  ],
+  "toprefs": [
+   {
+    "nome": "(diretto)",
+    "n": 57
+   },
+   {
+    "nome": "achevents.com",
+    "n": 9
+   },
+   {
+    "nome": "achplaces.com",
+    "n": 5
+   },
+   {
+    "nome": "achdinners.com",
+    "n": 3
+   },
+   {
+    "nome": "achdinners.com/mappa.html",
+    "n": 1
+   }
+  ],
+  "locations": [
+   {
+    "nome": "Italy",
+    "n": 42
+   },
+   {
+    "nome": "United States",
+    "n": 21
+   },
+   {
+    "nome": "France",
+    "n": 3
+   },
+   {
+    "nome": "Canada",
+    "n": 2
+   },
+   {
+    "nome": "United Kingdom",
+    "n": 2
+   },
+   {
+    "nome": "Belgium",
+    "n": 1
+   },
+   {
+    "nome": "Switzerland",
+    "n": 1
+   },
+   {
+    "nome": "India",
+    "n": 1
+   },
+   {
+    "nome": "Netherlands",
+    "n": 1
+   },
+   {
+    "nome": "Poland",
+    "n": 1
+   }
+  ],
+  "systems": [
+   {
+    "nome": "Windows",
+    "n": 37
+   },
+   {
+    "nome": "macOS",
+    "n": 16
+   },
+   {
+    "nome": "iOS",
+    "n": 14
+   },
+   {
+    "nome": "Linux",
+    "n": 8
+   }
+  ],
+  "browsers": [
+   {
+    "nome": "Chrome",
+    "n": 47
+   },
+   {
+    "nome": "Safari",
+    "n": 28
+   }
+  ],
+  "sizes": [
+   {
+    "nome": "phone",
+    "n": 15
+   },
+   {
+    "nome": "tablet",
+    "n": 26
+   },
+   {
+    "nome": "desktop",
+    "n": 34
+   },
+   {
+    "nome": "desktophd",
+    "n": 0
+   },
+   {
+    "nome": "unknown",
+    "n": 0
+   }
+  ]
+ }
+}
