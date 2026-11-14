@@ -387,7 +387,7 @@ def locali_sito():
             tit = re.sub(r"(?i)\s+[–-]\s+(ingresso|free entry|ingresso libero|up to you).*$", "", tit).strip()
             if not tit: continue
             SIGLE = {"DJ", "MC", "CCCP", "AC/DC", "USA", "UK", "EP", "LP"}
-            tit = " ".join(w.capitalize() if w.isupper() and len(re.sub(r"\W", "", w)) > 3 and w not in SIGLE else w for w in tit.split())
+            tit = " ".join(w.capitalize() if w.isupper() and len(re.sub(r"\W", "", w)) > 2 and w not in SIGLE else w for w in tit.split())
             # link d'acquisto: il primo dopo «Acquista biglietto» che non sia la tessera del circolo
             bl = ""
             ia = h.find("Acquista biglietto")
