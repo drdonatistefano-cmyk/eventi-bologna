@@ -258,7 +258,8 @@ def m_elenco(c):
         if c.get("titolo_url"):   # sito senza titolo leggibile (es. Estragon): il titolo è nell'indirizzo della pagina
             slug = [x for x in urllib.parse.urlparse(f).path.split("/") if x][-1]
             slug = re.sub(r"[-_]+\d{3,}$|^\d{3,}[-_]+|\.\w+$", "", urllib.parse.unquote(slug))
-            tit = " ".join(w.capitalize() if not w.isupper() else w for w in re.split(r"[-_]+", slug) if w)
+            parti = [w for w in re.split(r"[-_]+", slug) if w and w.lower() not in ("ndash", "mdash", "quot", "039", "rsquo", "lsquo")]
+            tit = " ".join("&" if w.lower() == "amp" else (w.capitalize() if not w.isupper() else w) for w in parti)
         for rx_t in (() if tit else (r'<meta property="og:title" content="([^"]*)"', r"<h1[^>]*>(.*?)</h1>", r"<h2[^>]*>(.*?)</h2>", r"<title>(.*?)</title>")):
             mt = re.search(rx_t, h, re.S)
             if not mt: continue
