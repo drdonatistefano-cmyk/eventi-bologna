@@ -382,8 +382,12 @@ def locali_sito():
             tit = html.unescape((re.search(r"<title>(.*?)</title>", h, re.S) or [None, ""])[1])
             tit = re.split(r"\s+[–-]\s+%s" % re.escape(nome.split()[0]), tit)[0].strip()
             tit = tit.split(" | ")[0].strip()
+            esaurito = bool(re.match(r"(?i)\s*sold\s*out\s*/+\s*", tit))
+            tit = re.sub(r"(?i)^\s*sold\s*out\s*/+\s*", "", tit)
+            tit = re.sub(r"(?i)\s+[–-]\s+(ingresso|free entry|ingresso libero|up to you).*$", "", tit).strip()
             if not tit: continue
-            if tit.isupper(): tit = " ".join(w if len(w) <= 2 and w in ("DJ", "MC") else w.capitalize() for w in tit.split())
+            SIGLE = {"DJ", "MC", "CCCP", "AC/DC", "USA", "UK", "EP", "LP"}
+            tit = " ".join(w.capitalize() if w.isupper() and len(re.sub(r"\W", "", w)) > 3 and w not in SIGLE else w for w in tit.split())
             # link d'acquisto: il primo dopo «Acquista biglietto» che non sia la tessera del circolo
             bl = ""
             ia = h.find("Acquista biglietto")
@@ -396,7 +400,8 @@ def locali_sito():
             if re.search(r"stand[- ]?up|comedy|comic", low): g, t = "Teatro", "Comicità"
             elif re.search(r"balera|party|\bdj\b|disco|dance|night", low) or ora >= "23:00": g, t = "Serate e club", "Serata"
             else: g = genere_mb(tit) or "Pop e altra musica"; t = TIPO_G[g]
-            x = nuovo(tit, d, d, ora, luogo_guida(nome), "Bologna" if CITTA == "bo" else CFG["nome"], g, t, bl, "disponibile" if bl else "da verificare", u)
+            x = nuovo(tit, d, d, ora, luogo_guida(nome), "Bologna" if CITTA == "bo" else CFG["nome"], g, t, bl,
+                      "sold out" if esaurito else "disponibile" if bl else "da verificare", u)
             det = testo.split("Dettagli", 1)[1] if "Dettagli" in testo else ""
             frase = re.split(r"(?<=[.!?])\s", det.strip())[0] if det.strip() else ""
             if 30 <= len(frase) <= 260: x["descrizione"] = " ".join(frase.split()[:25]).rstrip(",;:") + ("" if frase.rstrip().endswith((".", "!", "?")) else "…")
