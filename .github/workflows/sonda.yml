@@ -1,0 +1,21 @@
+name: Sonda (prove temporanee)
+# Regola 9 (coordinamento/REGOLE.md): ogni comando chiude con «|| true» e il lavoro non fallisce mai, così non arrivano email.
+# Da togliere quando le prove sono finite.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/sonda_locali.py || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sonda-locali
+          path: sonda_locali.json
+          if-no-files-found: ignore
+        continue-on-error: true
