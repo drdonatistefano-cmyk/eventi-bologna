@@ -394,7 +394,7 @@ def locali_sito():
             if ia > 0:
                 for x in re.findall(r'href="(https://[^"]+)"', h[ia:ia + 4000]):
                     x = html.unescape(x)
-                    if re.search(r"locomotivclub\.it|portal\.|facebook|fb\.me|instagram|awin1\.com", x): continue
+                    if re.search(r"locomotivclub\.it|portal\.|preadesione|hydradmin|tesser|facebook|fb\.me|instagram|awin1\.com", x): continue
                     bl = re.sub(r"[?&](fbclid|utm_[a-z]+)=[^&]*", "", x).rstrip("?&"); break
             low = tit.lower()
             if re.search(r"stand[- ]?up|comedy|comic", low): g, t = "Teatro", "Comicità"
