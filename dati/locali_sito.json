@@ -6,7 +6,8 @@
    "metodo": "tribe",
    "comune": "Casalecchio di Reno",
    "genere": "Teatro",
-   "tipo": "Prosa"
+   "tipo": "Prosa",
+   "sede": "betti|teatro comunale|casalecchio"
   },
   {
    "nome": "Bravo Caffè",
@@ -78,7 +79,9 @@
    "metodo": "tribe",
    "genere": "Classica",
    "solo": "concert|recital|orchestra|quartett|trio|ensemble|\\bcoro\\b|sinfoni|serata|jazz|opera",
-   "escludi": "masterclass|seminari|lezion|esam|audizion|open ?day|laborator|convegno|presentazion|workshop"
+   "escludi": "masterclass|seminari|lezion|esam|audizion|open ?day|laborator|convegno|presentazion|workshop",
+   "luogo": "Conservatorio – Sala Verdi",
+   "sede": "conservatorio|sala verdi|sala puccini|verdi"
   },
   {
    "nome": "Gate Milano",

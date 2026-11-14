@@ -417,7 +417,7 @@ def siti_locali():
     for c in LS.config(CITTA):
         t0 = time.time()
         evs, esito = LS.leggi(c)
-        luogo = luogo_guida(c["nome"]); com = c.get("comune") or CFG["nome"]
+        luogo = c.get("luogo") or c["nome"]; com = c.get("comune") or CFG["nome"]      # nome esatto della guida, non quello «più corto» simile
         n = 0
         for e in evs:
             low = (e["titolo"] + " " + e.get("categorie", "")).lower()
@@ -435,7 +435,7 @@ def siti_locali():
             if e["descrizione"] and len(e["descrizione"]) > 30: x["descrizione"] = e["descrizione"]
             n += aggiungi(x, c["nome"])
         nostri = sum(1 for e in ev if e["luogo"] == luogo and (e.get("fino") or e["data"]) >= OGGI)
-        rep[c["nome"]] = {"sul_sito": len(evs), "in_guida": nostri, "aggiunti": n, "esito": esito, "secondi": round(time.time() - t0)}
+        rep[c["nome"] + ("" if c["nome"] not in rep else " (2)")] = {"sul_sito": len(evs), "in_guida": nostri, "aggiunti": n, "esito": esito, "secondi": round(time.time() - t0)}
     R["fonti"]["siti dei locali"] = rep
 
 

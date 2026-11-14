@@ -70,8 +70,11 @@ def pulisci_titolo(t, sito=""):
     esaurito = bool(re.match(r"(?i)\s*sold\s*-?\s*out\s*[/:|-]*\s*", t))
     t = re.sub(r"(?i)^\s*(sold\s*-?\s*out|annullato|rinviato|nuova data)\s*[/:|–-]+\s*", "", t).strip()
     sig = {"DJ", "MC", "CCCP", "AC/DC", "USA", "UK", "EP", "LP", "BJF", "TCBO", "ERT", "OCM"}
-    if sum(1 for w in t.split() if w.isupper() and len(w) > 2) >= max(1, len(t.split()) // 2):
-        t = " ".join(w.capitalize() if w.isupper() and len(re.sub(r"\W", "", w)) > 2 and w not in sig else w for w in t.split())
+    parole = t.split()
+    if sum(1 for w in parole if w.isupper() and len(w) > 2) >= max(1, len(parole) // 2):
+        corte = {"IL", "LA", "LO", "LE", "DI", "DA", "IN", "CON", "PER", "AL", "DEL", "DELLA", "E", "A", "O", "UN", "UNA", "GLI", "I", "DE", "AI", "NEL", "SU", "TRA", "FRA"}
+        t = " ".join((w.lower() if (w in corte and i > 0) else w.capitalize()) if w.isupper() and w not in sig and (len(re.sub(r"\W", "", w)) > 2 or w in corte) else w
+                     for i, w in enumerate(parole))
     return t.strip(" -–|"), esaurito
 
 
@@ -161,7 +164,8 @@ def m_tribe(c):
             out.append({"titolo": e.get("title", ""), "data": ini, "fino": fin or ini, "ora": ora, "fonte": e.get("url", ""),
                         "biglietti": e.get("website") if re.search(BIGL, e.get("website") or "", re.I) else "",
                         "descrizione": testo(e.get("excerpt") or e.get("description") or "")[:300],
-                        "categorie": " ".join(x.get("name", "") for x in e.get("categories", []))})
+                        "categorie": " ".join(x.get("name", "") for x in e.get("categories", [])),
+                        "sede": html.unescape(((e.get("venue") or {}) if isinstance(e.get("venue"), dict) else {}).get("venue", "") or "")})
         if pag >= int(d.get("total_pages") or 1): break
         pag += 1
     return out
@@ -255,7 +259,9 @@ def m_elenco(c):
             mt = re.search(rx_t, h, re.S)
             if not mt: continue
             cand, _ = pulisci_titolo(mt.group(1), sito)
-            if cand and not GENERICI.match(cand): tit = cand; break
+            nucleo = re.sub(r"^www\.|\..*$", "", sito)[:7].lower()
+            if cand and not GENERICI.match(cand) and not (nucleo and nucleo in cand.lower().replace(" ", "") and len(cand.split()) <= 4) and re.search(r"[A-Za-zÀ-ÿ]{2}", cand):
+                tit = cand; break
         if jl:
             e = jl[0]; ini, ora = data_iso(e["inizio"]); fin, _ = data_iso(e["fine"])
             out.append({"titolo": e["titolo"] or tit, "data": ini, "fino": fin or ini, "ora": ora, "fonte": f,
@@ -280,7 +286,7 @@ def m_elenco(c):
     return out
 
 
-GENERICI = re.compile(r"(?i)^\s*(\d{1,2}[/.]\d{1,2}[/.]\d{2,4}|\d{1,2}\s+\w+\s+20\d\d|spettacoli|eventi|evento|programma|calendario|stagione.*|home|homepage|prosa|family|extra|altri eventi|note d'autore|ridere alla grande|teatro \w+|biglietti|news|concerti)\s*$")
+GENERICI = re.compile(r"(?i)^\s*(\d{1,2}[/.]\d{1,2}[/.]\d{2,4}|\d{1,2}\s+\w+\s+20\d\d|spettacoli|eventi|evento|programma|calendario|stagione.*|home|homepage|prosa|family|extra|altri eventi|note d'autore|ridere alla grande|teatro \w+|biglietti|news|concerti|art ?bonus|sostienici|dona(zioni)?|abbonamenti|abbonati|newsletter|contatti|chi siamo)\s*$")
 
 
 METODI = {"tribe": m_tribe, "ics": m_ics, "jsonld": m_jsonld, "elenco": m_elenco}
@@ -297,6 +303,8 @@ def leggi(c):
         if not e.get("data") or e["data"] > LIMITE or (e.get("fino") or e["data"]) < OGGI: continue
         if c.get("escludi") and re.search(c["escludi"], e["titolo"] + " " + e.get("categorie", ""), re.I): continue
         if c.get("solo") and not re.search(c["solo"], e["titolo"] + " " + e.get("categorie", ""), re.I): continue
+        if c.get("sede") and e.get("sede") and not re.search(c["sede"], e["sede"], re.I): continue      # evento del locale ma in un'altra sede
+        if c.get("sede") and re.search(r"(?i)\b(al|a|presso)\s+(planetario|villa|casa|museo|palazzo|chiesa|basilica)\b", e["titolo"]): continue
         tit, esaurito = pulisci_titolo(e["titolo"], sito)
         if not tit or len(tit) < 2: continue
         st = (e.get("stato") or "").lower()
