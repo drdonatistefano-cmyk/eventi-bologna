@@ -342,13 +342,15 @@ def portale():
                 if fino >= OGGI and ini <= FINE: date = [("periodo", max(ini, OGGI), min(fino, FINE))]
         else:
             date = [("periodo", ini, fin or ini)] if fin and fin > ini else [ini]
-        ora = "" if sc["intero"] else (datetime.datetime.fromisoformat(sc["start"].replace("Z", "+00:00")) + datetime.timedelta(hours=1)).strftime("%H:%M")
+        from zoneinfo import ZoneInfo
+        ora = "" if sc["intero"] else datetime.datetime.fromisoformat(sc["start"].replace("Z", "+00:00")).astimezone(ZoneInfo("Europe/Rome")).strftime("%H:%M")
+        if ora == "00:00": ora = ""
         luogo = re.split(r"\s+[-–]\s+|,\s*(?=via|corso|piazza|viale|largo)", sc["via"], 1, flags=re.I)[0].strip() or sc["citta"].title() or CAPO
         c = next((x for x in COMUNI if A.norm(x) == A.norm(sc["citta"])), "") or CAPO
         gen = "Visite guidate" if sc["cat"] == "guided_tours" else genere("", sc["titolo"], sc["descr"], luogo)
         disp = ingresso(sc["prezzi"] + " " + sc["descr"])
         for dt in date:
-            if isinstance(dt, tuple): a, b = dt[1], dt[2]
+            if isinstance(dt, tuple): a, b = max(dt[1], OGGI), dt[2]
             else: a = b = dt
             if b < OGGI or a > FINE: continue
             out.append(voce("ferrarainfo", a, b, ora, sc["titolo"], luogo, c, gen, sc["descr"], u, disp))
