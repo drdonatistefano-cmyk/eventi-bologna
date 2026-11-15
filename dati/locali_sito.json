@@ -254,8 +254,8 @@
   {
    "nome": "Teatro De Micheli",
    "comune": "Copparo",
-   "metodo": "tribe",
-   "url": "https://www.iteatrideldelta.it",
+   "metodo": "ics",
+   "url": "https://www.iteatrideldelta.it/eventi",
    "sede": "micheli",
    "genere": "Teatro",
    "tipo": "Prosa"
@@ -263,8 +263,8 @@
   {
    "nome": "Teatro Barattoni",
    "comune": "Ostellato",
-   "metodo": "tribe",
-   "url": "https://www.iteatrideldelta.it",
+   "metodo": "ics",
+   "url": "https://www.iteatrideldelta.it/eventi",
    "sede": "barattoni",
    "genere": "Teatro",
    "tipo": "Prosa"
@@ -272,8 +272,8 @@
   {
    "nome": "Comacchio a Teatro",
    "comune": "Comacchio",
-   "metodo": "tribe",
-   "url": "https://www.iteatrideldelta.it",
+   "metodo": "ics",
+   "url": "https://www.iteatrideldelta.it/eventi",
    "sede": "comacchio|bellini|san pietro|carmine|lido|porto garibaldi",
    "genere": "Teatro",
    "tipo": "Prosa"

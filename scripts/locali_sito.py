@@ -186,7 +186,7 @@ def m_ics(c):
         if not ora and fin > ini: fin = (datetime.date.fromisoformat(fin) - datetime.timedelta(days=1)).isoformat()
         un = lambda s: s.replace("\\,", ",").replace("\\;", ";").replace("\\n", " ").strip()
         out.append({"titolo": un(f("SUMMARY")), "data": ini, "fino": max(fin, ini), "ora": ora, "fonte": f("URL"), "biglietti": "",
-                    "descrizione": un(f("DESCRIPTION"))[:300], "categorie": un(f("CATEGORIES"))})
+                    "descrizione": un(f("DESCRIPTION"))[:300], "categorie": un(f("CATEGORIES")), "sede": un(f("LOCATION"))})
     return out
 
 

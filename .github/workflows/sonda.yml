@@ -12,7 +12,7 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-      - run: curl -sS -m 20 -A "Mozilla/5.0" "https://www.iteatrideldelta.it/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-11-15" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('total')); [print(e['start_date'], (e.get('venue') or {}).get('venue') if isinstance(e.get('venue'),dict) else '-', (e.get('venue') or {}).get('city') if isinstance(e.get('venue'),dict) else '-', '|', e['title'][:60]) for e in d['events']]" || true
+      - run: curl -sS -m 20 -A "Mozilla/5.0" "https://www.iteatrideldelta.it/eventi/?ical=1" | grep -E "^(DTSTART|SUMMARY|LOCATION)" | head -90 || true
       - run: python3 -u scripts/locali_sito.py --prova fe Micheli || true
       - run: python3 -u scripts/locali_sito.py --prova fe Barattoni || true
       - run: python3 -u scripts/locali_sito.py --prova fe Comacchio || true
