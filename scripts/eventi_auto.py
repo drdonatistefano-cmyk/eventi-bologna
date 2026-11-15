@@ -5,6 +5,7 @@ Fonti (tutte lette nel rispetto dei robots.txt):
   - DICE (dice.fm/browse/<città>): concerti, club, comicità, teatro, con link ai biglietti
   - Ticketmaster Discovery API, solo se c'è il segreto TICKETMASTER_KEY
   - arte.it (calendario mostre del mese corrente e del prossimo) per le mostre
+  - portali turistici ufficiali (Ferrara: ferrarainfo.com, API Plone) per le mostre
   - Galleria Wikiarte (wikiarte.com, solo Bologna): mostre in corso e prossime della prima pagina
 Regole: non toglie mai eventi o mostre (lo fa aggiorna.py solo per quelli finiti),
 aggiunge solo ciò che manca, completa il link biglietti dove manca, e scrive solo
@@ -441,7 +442,61 @@ def siti_locali():
     R["fonti"]["siti dei locali"] = rep
 
 
-for f in (dice, ticketmaster, arte, wikiarte, locali_sito, siti_locali):
+
+# ---------- portali turistici ufficiali (Plone, API pubblica; robots.txt permette tutto) ----------
+# Ferrara: ferrarainfo.com (Ferrara Terra e Acqua). Di ogni mostra si legge la scheda una volta e la si ricorda.
+PORTALI = {"fe": "https://www.ferrarainfo.com"}
+SFILE = os.path.join(RADICE, "dati", f"portale_{CITTA}.json")
+
+
+def portale():
+    base = PORTALI.get(CITTA)
+    if not base: return
+    cache = json.load(open(SFILE)) if os.path.exists(SFILE) else {}
+    q = (f"{base}/++api++/@search?portal_type=Event&b_size=300&end.query={OGGI}&end.range=min&sort_on=start"
+         "&metadata_fields=event_category&metadata_fields=modified&metadata_fields=city")
+    d = get(q, "json")
+    if not d: return
+    letti, n, nuove = 0, 0, {}
+    for it in d.get("items", []):
+        u = it["@id"]
+        if "/it/" not in u or it.get("event_category") != "exhibitions": continue
+        letti += 1
+        sc = cache.get(u)
+        if not sc or sc.get("modified") != it.get("modified"):
+            o = get(base + "/++api++" + urllib.parse.urlparse(u).path, "json")
+            time.sleep(1)
+            if not o: continue
+            pr = re.sub(r"<[^>]+>", " ", (o.get("prices") or {}).get("data") or "")
+            sc = {"modified": it.get("modified"), "titolo": o.get("title", "").strip(), "inizio": (o.get("start") or "")[:10],
+                  "fine": (o.get("end") or "")[:10], "citta": o.get("city") or it.get("city") or "", "via": o.get("street") or "",
+                  "descr": o.get("description") or "", "prezzi": pr,
+                  "sito": next((c["value"] for c in o.get("link_contacts") or [] if str(c.get("value", "")).startswith("http")), "")}
+            m = re.search(r"UNTIL=(\d{8})", o.get("recurrence") or "")
+            if m: sc["fine"] = max(sc["fine"], f"{m.group(1)[:4]}-{m.group(1)[4:6]}-{m.group(1)[6:]}")
+        nuove[u] = sc
+        tit, ini, fin = sc["titolo"], sc["inizio"], sc["fine"]
+        c = comune(sc["citta"].title(), sc["via"])
+        if not (tit and ini and fin and c) or fin < OGGI or ini > LIMITE: continue
+        if (datetime.date.fromisoformat(fin) - datetime.date.fromisoformat(ini)).days > 730: continue  # allestimenti permanenti
+        sede = re.split(r"\s+[-–]\s+|,\s*(?:via|corso|piazza|viale|largo)\b", sc["via"], 1, flags=re.I)[0].strip() or c
+        tt = tok(tit)
+        if any(len(tt & tok(x["titolo"])) / max(1, min(len(tt), len(tok(x["titolo"])))) >= 0.6 for x in mo if tok(x["titolo"])): continue
+        testo = (tit + " " + sc["descr"]).lower()
+        cat = next((v for rx, v in CAT if re.search(rx, testo)), "Pittura")
+        if re.search(r"presep", testo): cat = "Storia e archeologia"
+        de = re.sub(r"\s+", " ", sc["descr"]).strip()
+        parole = de.split()
+        de = " ".join(parole[:28]).rstrip(",;:") + ("…" if len(parole) > 28 else "") if de else f"Mostra a {sede}."
+        pz = sc["prezzi"].lower()
+        ing = "gratuito" if re.search(r"ingresso (libero|gratuito)|gratuit", pz) and not re.search(r"euro|€|\d+,\d\d", pz) else ("a pagamento" if re.search(r"euro|€", pz) else "da verificare")
+        mo.append({"id": "", "titolo": tit, "sede": sede, "citta": c, "inizio": ini, "fine": fin, "categoria": cat, "descrizione": de,
+                   "ingresso": ing, "orari": "", "fonte": u, "sito": sc["sito"], "biglietti": "", "biglietti_tipo": ""})
+        R["aggiunti"].append(f"mostra {ini}→{fin} {tit} – {sede} (portale turistico)"); n += 1
+    if not PROVA: json.dump(nuove, open(SFILE, "w"), ensure_ascii=False, indent=1)
+    R["fonti"]["portale turistico"] = {"letti": letti, "aggiunti": n}
+
+for f in (dice, ticketmaster, portale, arte, wikiarte, locali_sito, siti_locali):
     try: f()
     except Exception as ex: R["errori"].append(f"{f.__name__}: {type(ex).__name__}: {ex}")
 
