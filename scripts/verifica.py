@@ -295,6 +295,23 @@ def vista_velocita():
 # ---------------------------------------------------------------- 5. automazioni
 def vista_automazioni():
     v = Vista("Automazioni", "I programmi automatici su GitHub (parte pubblica) stanno funzionando")
+    # cartelloni letti da GitHub per il giro del lunedì (15/11/2026, REGOLE §8 quater)
+    if not LOCALE and PROPRIETARIO:
+        for c in ("bo", "mi"):
+            r, _ = prendi(f"https://raw.githubusercontent.com/{PROPRIETARIO}/eventi-bologna/cartelloni/{c}/candidati.json")
+            if r is None or r.status_code != 200:
+                v.avviso(f"Cartelloni {c}: letti da GitHub", "il ramo «cartelloni» non c'è ancora")
+                continue
+            try:
+                d = r.json()
+                quando = datetime.datetime.strptime(d["quando"][:16], "%Y-%m-%d %H:%M")
+                eta = (datetime.datetime.utcnow() - quando).days
+                lette = sum(1 for p in d["pagine"] if p.get("esito") == "ok")
+                v.se(eta <= 8, f"Cartelloni {c}: letti da GitHub questa settimana", f"{d['quando']}, {eta} giorni fa", grave=False)
+                v.se(lette >= max(1, len(d["pagine"]) * 0.6), f"Cartelloni {c}: pagine lette", f"{lette} su {len(d['pagine'])}", grave=False)
+                v.se((d.get("ticketone") or {}).get("gruppi", 0) > 0, f"Cartelloni {c}: TicketOne letto", str(d.get("ticketone"))[:200], grave=False)
+            except Exception as e:
+                v.avviso(f"Cartelloni {c}: rapporto leggibile", f"{type(e).__name__}: {e}")
     tok = os.environ.get("GITHUB_TOKEN", "")
     if not (tok and PROPRIETARIO):
         v.avviso("Saltata", "senza accesso a GitHub")

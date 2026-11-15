@@ -2,7 +2,8 @@
 # Gruppi: API pubblica Eventim, es. https://public-api.eventim.com/websearch/search/api/exploration/v2/productGroups?webId=web__ticketone-it&language=it&city_ids=218&page=1&sort=DateAsc&in_stock=true&categories=Concerti
 # city_ids: Milano 215, Bologna 218. Categorie: Concerti, Teatro, Mostre%20e%20Musei (max 8 pagine da 20 per categoria). Salvare la lista unita di productGroups in un file json.
 # uso: python3 abbina.py <cartella-dati> <gruppi.json> <citta-default> [--aggiungi]
-import json, re, sys, unicodedata, collections
+import json, re, sys, unicodedata, collections, datetime
+OGGI = datetime.date.today().isoformat()   # 15/11/2026: prima era scritta a mano la data del 6/11
 cart, gfile, CAPO = sys.argv[1], sys.argv[2], sys.argv[3]
 AGG = "--aggiungi" in sys.argv
 STOP = set("e and the di il la lo i gli le de del della dei in a al live tour concerto teatro milano bologna 2026 2027 show con feat ft x".split())
@@ -74,7 +75,7 @@ if AGG:
         if not k: continue
         gen, tipo = CAT[k]
         P = sorted(g["products"], key=lambda p: p["typeAttributes"]["liveEntertainment"]["startDate"])
-        P = [p for p in P if p["typeAttributes"]["liveEntertainment"]["startDate"][:10] >= "2026-11-06"]
+        P = [p for p in P if p["typeAttributes"]["liveEntertainment"]["startDate"][:10] >= OGGI]
         if not P: continue
         d = (g.get("description") or "").split(". ")[0].strip()
         d = re.sub(r"(?i)\s*(acquista|scopri)[^.]*$", "", d).strip()
@@ -108,7 +109,7 @@ if AGG:
             nuovi.append({"id": "", "data": s, "fino": f, "ora": ora, "artista": g["name"], "luogo": luogo, "citta": citta,
                           "genere": gen, "tipo": tipo, "rassegna": "", "descrizione": d.rstrip(".") + ".", "fonte": url(g),
                           "biglietti": url(pp[0]) if len(pp) == 1 else url(g), "biglietti_tipo": "Acquista",
-                          "disp": "disponibile", "disp_nota": "", "disp_verificata": "2026-11-06", "sito_luogo": ""})
+                          "disp": "disponibile", "disp_nota": "", "disp_verificata": OGGI, "sito_luogo": ""})
     print("eventi con TicketOne dopo i controlli:", fatti)
     print("nuovi da TicketOne:", len(nuovi), collections.Counter(x["genere"] + "/" + x["tipo"] for x in nuovi))
 json.dump(ev + nuovi, open(cart + "/eventi.json", "w"), ensure_ascii=False, indent=1)

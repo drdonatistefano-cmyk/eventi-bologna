@@ -1,0 +1,48 @@
+name: Cartelloni letti da GitHub
+# 15/11/2026: apre i cartelloni dei teatri (browser vero), TicketOne (API Eventim) e Songkick e salva
+# testo e candidati nel ramo «cartelloni». Il giro di Claude del lunedì legge solo quei file:
+# niente Firecrawl, niente pagine aperte da Claude (REGOLE §1). I link TicketOne sugli eventi già in
+# guida li scrive subito, passando da aggiorna.py. Domenica sera, dopo la sentinella.
+on:
+  schedule:
+    - cron: "7 22 * * 0"
+  workflow_dispatch:
+    inputs:
+      citta:
+        description: "Città (bo mi ...)"
+        default: "bo mi"
+permissions:
+  contents: write
+concurrency: { group: cartelloni, cancel-in-progress: false }
+jobs:
+  leggi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Browser
+        run: pip install -q playwright && python3 -m playwright install --with-deps chromium >/dev/null
+      - name: Letture della settimana prima
+        run: |
+          mkdir -p /tmp/car
+          if git fetch -q --depth=1 origin cartelloni; then git archive FETCH_HEAD | tar -x -C /tmp/car; fi
+      - name: Leggi
+        run: |
+          for c in ${{ github.event.inputs.citta || 'bo mi' }}; do
+            python3 scripts/cartelloni.py "$c" /tmp/car || echo "::warning::$c non completata"
+          done
+      - name: Salva i link TicketOne nella guida
+        run: |
+          bash scripts/salva.sh "Cartelloni, link TicketOne $(date +%F)" eventi.js milano/eventi.js
+      - name: Salva testi e candidati nel ramo cartelloni
+        run: |
+          set -e
+          cd /tmp/car
+          rm -rf .git; git init -q -b cartelloni
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          git -c user.name="cartelloni-bot" -c user.email="actions@github.com" add -A
+          git -c user.name="cartelloni-bot" -c user.email="actions@github.com" commit -q -m "Cartelloni $(date -u +%FT%TZ)"
+          for i in 1 2 3; do git push -q -f origin cartelloni && exit 0; sleep 10; done
+          exit 1
