@@ -1,0 +1,93 @@
+name: Verifica delle guide
+# 15/11/2026: controlla le tre guide da più punti di vista (pagine, dati, servizi e posta, velocità,
+# automazioni, funzioni, link, sicurezza, struttura) con scripts/verifica.py. Non modifica nulla.
+# Tre livelli: 1 rapida (1 minuto), 2 completa (browser come un telefono), 3 approfondita.
+# Parte da sola (1 ogni giorno, 2 il lunedì) oppure dai tre bottoni della Dashboard di Controllo:
+# il bottone lascia una richiesta su servizi.achplaces.com, questo flusso la raccoglie entro 10 minuti.
+# Il rapporto va nel ramo «statistiche» (verifica.json): è pubblico, niente dati riservati.
+on:
+  schedule:
+    - cron: "*/10 * * * *"    # c'è una richiesta dai bottoni?
+    - cron: "37 5 * * *"      # rapida, ogni mattina
+    - cron: "52 5 * * 1"      # completa, il lunedì
+  workflow_dispatch:
+    inputs:
+      livello:
+        description: "1 rapida, 2 completa, 3 approfondita"
+        default: "1"
+permissions:
+  contents: write
+  actions: read
+jobs:
+  decide:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      livello: ${{ steps.d.outputs.livello }}
+      id: ${{ steps.d.outputs.id }}
+    steps:
+      - id: d
+        run: |
+          liv=0; id=""
+          case "${{ github.event_name }}:${{ github.event.schedule }}" in
+            workflow_dispatch:*) liv="${{ github.event.inputs.livello }}" ;;
+            "schedule:37 5 * * *") liv=1 ;;
+            "schedule:52 5 * * 1") liv=2 ;;
+            *) r=$(curl -s -m 20 -A "Mozilla/5.0 (compatible; ach-verifica/1.0)" "https://servizi.achplaces.com/verifica/richiesta?prendi=1" || echo '{}')
+               liv=$(echo "$r" | python3 -c "import json,sys; print(int(json.load(sys.stdin).get('livello',0)))" 2>/dev/null || echo 0)
+               id=$(echo "$r" | python3 -c "import json,sys,re; print(re.sub(r'[^0-9a-f-]','',str(json.load(sys.stdin).get('id',''))))" 2>/dev/null || echo "") ;;
+          esac
+          case "$liv" in 1|2|3) ;; *) liv=0 ;; esac
+          echo "livello=$liv" >> "$GITHUB_OUTPUT"; echo "id=$id" >> "$GITHUB_OUTPUT"; echo "livello $liv $id"
+  esegue:
+    needs: decide
+    if: needs.decide.outputs.livello != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    concurrency:
+      group: verifica
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with: { sparse-checkout: scripts }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q requests
+      - name: Browser (dal livello 2)
+        if: needs.decide.outputs.livello != '1'
+        run: pip install -q playwright && python3 -m playwright install --with-deps chromium >/dev/null
+      - name: Codice pubblico (livello 3)
+        if: needs.decide.outputs.livello == '3'
+        run: |
+          mkdir -p /tmp/codice
+          for r in achplaces achdinners.com eventi-bologna; do
+            git clone -q --depth=1 "https://github.com/${{ github.repository_owner }}/$r.git" "/tmp/codice/$r" || true
+          done
+      - name: Verifica
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          VER_CODICE: ${{ needs.decide.outputs.livello == '3' && '/tmp/codice' || '' }}
+        run: |
+          mkdir -p /tmp/ver
+          python3 scripts/verifica.py "${{ needs.decide.outputs.livello }}" /tmp/ver/verifica.json "${{ needs.decide.outputs.id }}"
+      - name: Salva nel ramo statistiche
+        if: always()
+        run: |
+          set -e
+          [ -f /tmp/ver/verifica.json ] || exit 0
+          for prova in 1 2 3; do
+            OUT=/tmp/pub; rm -rf $OUT; mkdir -p $OUT; cd $OUT
+            git init -q -b statistiche
+            git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+            if git fetch -q --depth=1 origin statistiche; then git archive FETCH_HEAD | tar -x -C $OUT; BASE=$(git rev-parse FETCH_HEAD); else BASE=""; fi
+            cp /tmp/ver/verifica.json $OUT/
+            [ -f verifica_storico.csv ] || echo "quando,livello,esito,controlli,errori,avvisi,durata_secondi" > verifica_storico.csv
+            python3 -c "import json; d=json.load(open('/tmp/ver/verifica.json')); print(','.join(str(d[k]) for k in ('quando','livello','esito','controlli','errori','avvisi','durata_secondi')))" >> verifica_storico.csv
+            tail -n 400 verifica_storico.csv > /tmp/s.csv; (head -1 verifica_storico.csv | grep -q '^quando' && grep -q '^quando' /tmp/s.csv) || sed -i '1i quando,livello,esito,controlli,errori,avvisi,durata_secondi' /tmp/s.csv; cp /tmp/s.csv verifica_storico.csv
+            git -c user.name="statistiche-bot" -c user.email="actions@github.com" add -A
+            git -c user.name="statistiche-bot" -c user.email="actions@github.com" commit -q -m "Verifica $(date -u +%FT%TZ)"
+            if [ -n "$BASE" ]; then L="--force-with-lease=statistiche:$BASE"; else L="-f"; fi
+            if git push -q $L origin statistiche; then echo salvato; exit 0; fi
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1
