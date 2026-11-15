@@ -435,7 +435,7 @@ def siti_locali():
             x = nuovo(e["titolo"], e["data"], e["fino"], e["ora"] or "n.d.", luogo, com, g, t, bl,
                       "sold out" if e["esaurito"] else ("disponibile" if bl else "da verificare"), e["fonte"] or (c["url"] if isinstance(c["url"], str) else c["url"][0]))
             if bl and re.search(r"/venue/|/biglietti/?$|shop\.", bl): x["biglietti_tipo"] = "Biglietteria"
-            if e["descrizione"] and len(e["descrizione"]) > 30: x["descrizione"] = e["descrizione"]
+            if e["descrizione"] and len(e["descrizione"]) > 30 and not re.match(r"\s*(https?://|www\.)", e["descrizione"]): x["descrizione"] = e["descrizione"]
             n += aggiungi(x, c["nome"])
         nostri = sum(1 for e in ev if e["luogo"] == luogo and (e.get("fino") or e["data"]) >= OGGI)
         rep[c["nome"] + ("" if c["nome"] not in rep else " (2)")] = {"sul_sito": len(evs), "in_guida": nostri, "aggiunti": n, "esito": esito, "secondi": round(time.time() - t0)}
