@@ -12,6 +12,7 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-      - run: python3 -u scripts/locali_sito.py --prova fe Pandurera || true
       - run: python3 -u scripts/locali_sito.py --prova fe Barattoni || true
-      - run: curl -sS -A "Mozilla/5.0" https://www.sipariostellato.it/rassegna/la-stagione-serale-2027/ | grep -o 'href="[^"]*"' | sort -u | head -80 || true
+      - run: for u in https://www.comacchioateatro.it/ https://www.iteatrideldelta.it/teatro-de-micheli/ https://www.sipariostellato.it/la-stagione-serale-2027/il-programma-completo-6/; do echo "== $u"; curl -sSL -m 20 -A "Mozilla/5.0" "$u" | grep -o 'href="[^"]*"' | grep -v "wp-content\|fonts\|xmlrpc" | sort -u | head -60; done || true
+      - run: curl -sSL -m 30 -A "Mozilla/5.0" -o a2.pdf https://static.legapallacanestro.com/sites/default/files/editor/calendario_a2_2026-27.pdf; file a2.pdf; (pdftotext -layout a2.pdf - | grep -i -n "cento\|ferrara" | head -60) || true
+      - run: curl -sSL -m 20 -A "Mozilla/5.0" "https://www.legapallacanestro.com/serie/4/calendario" | grep -io '[^"]*calendario[^"]*\.pdf' | sort -u | head || true

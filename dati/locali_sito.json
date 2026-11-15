@@ -259,7 +259,7 @@
     "https://www.sipariostellato.it/rassegna/la-stagione-serale-2027/",
     "https://www.sipariostellato.it/rassegna/junior-pomeriggi-a-teatro-2026-27/"
    ],
-   "link": "sipariostellato\\.it/(?:spettacolo|spettacoli|evento|eventi|event)/[a-z0-9][^\"'#?\\s]{2,}",
+   "link": "sipariostellato\\.it/(?:la-stagione-serale|junior-pomeriggi)[a-z0-9-]*/(?!il-programma)[a-z0-9][^\"'#?\\s]{2,}",
    "genere": "Teatro",
    "tipo": "Prosa",
    "max": 30
