@@ -252,17 +252,31 @@
    "max": 40
   },
   {
+   "nome": "Teatro De Micheli",
+   "comune": "Copparo",
+   "metodo": "tribe",
+   "url": "https://www.iteatrideldelta.it",
+   "sede": "micheli",
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
    "nome": "Teatro Barattoni",
    "comune": "Ostellato",
-   "metodo": "elenco",
-   "url": [
-    "https://www.sipariostellato.it/rassegna/la-stagione-serale-2027/",
-    "https://www.sipariostellato.it/rassegna/junior-pomeriggi-a-teatro-2026-27/"
-   ],
-   "link": "sipariostellato\\.it/(?:la-stagione-serale|junior-pomeriggi)[a-z0-9-]*/(?!il-programma)[a-z0-9][^\"'#?\\s]{2,}",
+   "metodo": "tribe",
+   "url": "https://www.iteatrideldelta.it",
+   "sede": "barattoni",
    "genere": "Teatro",
-   "tipo": "Prosa",
-   "max": 30
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Comacchio a Teatro",
+   "comune": "Comacchio",
+   "metodo": "tribe",
+   "url": "https://www.iteatrideldelta.it",
+   "sede": "comacchio|bellini|san pietro|carmine|lido|porto garibaldi",
+   "genere": "Teatro",
+   "tipo": "Prosa"
   }
  ]
 }
