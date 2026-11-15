@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var P={mi:"/milano/",ra:"/ravenna/",fe:"/ferrara/"},m=document.cookie.match(/(?:^|; )citta=(bo|mi|ra|fe)/),q=/[?&]citta=(bo|mi|ra|fe)/.exec(location.search),qui=/^\/(milano|ravenna|ferrara)(\/|$)/.test(location.pathname)?"altra":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||!P[m[1]]||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace(P[m[1]])}catch(_){}})();</script>
-<script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"adea893d95","serate":"47de5e059d","mostre":"49f50ce3bf"}/*V0*/;</script>
+<script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"6512c6405d","serate":"8fbbee18b5","mostre":"5952262afd"}/*V0*/;</script>
 <script>/* anticipo: chiede subito versioni.js (senza bloccare la pagina) e fa partire i file dei dati mentre arriva il resto; più in basso la pagina li usa dalla memoria */(function(){try{var V0=window.ACH_V0||{},fatti={};function pre(f,h){if(!h||fatti[f+h])return;fatti[f+h]=1;var l=document.createElement("link");l.rel="preload";l.as="script";l.href=f+".js?h="+h;document.head.appendChild(l)}["eventi","serate","mostre"].forEach(function(f){pre(f,V0[f])});var s=document.createElement("script");s.async=true;s.src="versioni.js?v="+Math.floor(Date.now()/6e5);s.onload=function(){var V=window.ACH_VERSIONI||{};["eventi","serate","mostre"].forEach(function(f){pre(f,V[f])})};document.head.appendChild(s)}catch(e){}})();</script>
 <title>Ach's Events Guide – concerti, teatro, mostre e cinema a Milano</title>
 <meta name="description" content="Ach&#39;s Events Guide: concerti, teatro, mostre e cinema a Milano e nella Città metropolitana, con date, orari, luoghi e link ai biglietti.">
@@ -609,13 +609,35 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}.f
 @media (min-width:760px){.citta-v{display:none}}
 @media (max-width:759px){.dlabel .cv{display:none}}
 @media print{.citta-v,.dlabel .cv{display:none}}
+/* selettore con più di due città (dal 15/11/2026): su computer una pillola con le sigle; su telefono la città attiva «RA ▾» che apre l'elenco */
+.city.citta-n{grid-template-columns:repeat(var(--n),1fr);width:calc(var(--n) * 44px + 8px);cursor:default;z-index:70}
+.city.citta-n .k{transform:translateX(calc(var(--i) * 44px))}
+.city.citta-n .menu{display:contents}
+.city.citta-n .cur,.city.citta-n .nm{display:none}
+.city.citta-n .cb{position:relative;z-index:1;height:100%;border:0;background:none;padding:0;font:inherit;font-size:14px;font-weight:800;letter-spacing:.04em;color:var(--mute);cursor:pointer;border-radius:999px;-webkit-tap-highlight-color:transparent;transition:color .2s}
+.city.citta-n .cb[aria-current="true"]{color:#fff;cursor:default}
+.city.citta-n button:focus-visible{outline:2px solid var(--terra);outline-offset:2px}
+@media(max-width:759px){
+ .city.citta-n{display:block;width:auto;height:auto;padding:0;border:0;background:none;box-shadow:none}
+ .city.citta-n .k{display:none}
+ .city.citta-n .cur{display:inline-flex;align-items:center;justify-content:center;gap:6px;width:96px;height:38px;border-radius:999px;border:1px solid var(--line);background:var(--paper);box-shadow:var(--shadow);font:inherit;font-size:14px;font-weight:800;letter-spacing:.04em;color:var(--terra);cursor:pointer;-webkit-tap-highlight-color:transparent}
+ .city.citta-n .cur svg{transition:transform .2s}
+ .city.citta-n.open .cur svg{transform:rotate(180deg)}
+ .city.citta-n .menu{display:none;position:absolute;right:0;top:46px;min-width:170px;flex-direction:column;gap:2px;padding:6px;border-radius:16px;border:1px solid var(--line);background:var(--paper);box-shadow:var(--shadow);z-index:60}
+ .city.citta-n.open .menu{display:flex}
+ .city.citta-n .cb{display:flex;align-items:center;gap:10px;height:44px;padding:0 14px;text-align:left;color:var(--ink);font-size:15px;font-weight:600;letter-spacing:0;border-radius:11px}
+ .city.citta-n .cb .sg{width:26px;font-size:12px;font-weight:800;letter-spacing:.04em;color:var(--mute)}
+ .city.citta-n .cb .nm{display:inline}
+ .city.citta-n .cb[aria-current="true"]{background:var(--terra);color:#fff}
+ .city.citta-n .cb[aria-current="true"] .sg{color:#fff}
+}
 </style>
 <link rel="manifest" href="/app.webmanifest"><link rel="apple-touch-icon" href="/icona-180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Events">
 </head>
 <body>
 <header class="hero wrap">
  <button class="city" id="city" data-c="bo" hidden aria-label="Cambia città"><span class="k"></span><b class="bo">BO</b><b class="mi">MI</b></button>
- <div class="kick"><div class="arches" aria-hidden="true"><i></i><i></i><i></i></div><svg class="msym" data-s="mi" hidden width="66" height="22" viewBox="0 0 66 22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g opacity=".85"><path d="M26.5 22V7.5H39.5V22M29.5 7.5V3.5H36.5V7.5M31.5 3.5V1.2H34.5V3.5M30.3 22V18.2A2.7 2.7 0 0 1 35.7 18.2V22"/></g><g opacity=".6"><path d="M4 22V12.5H26.5M39.5 12.5H62V22"/></g><g opacity=".35"><path d="M5.5 12.5V10L7 11L8.5 10V12.5M12.5 12.5V10L14 11L15.5 10V12.5M19.5 12.5V10L21 11L22.5 10V12.5M43.5 12.5V10L45 11L46.5 10V12.5M50.5 12.5V10L52 11L53.5 10V12.5M57.5 12.5V10L59 11L60.5 10V12.5"/></g></svg><span>Ach&#39;s Events Guide</span></div>
+ <div class="kick"><div class="arches" aria-hidden="true"><i></i><i></i><i></i></div><svg class="msym" data-s="mi" hidden width="66" height="22" viewBox="0 0 66 22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g opacity=".85"><path d="M26.5 22V7.5H39.5V22M29.5 7.5V3.5H36.5V7.5M31.5 3.5V1.2H34.5V3.5M30.3 22V18.2A2.7 2.7 0 0 1 35.7 18.2V22"/></g><g opacity=".6"><path d="M4 22V12.5H26.5M39.5 12.5H62V22"/></g><g opacity=".35"><path d="M5.5 12.5V10L7 11L8.5 10V12.5M12.5 12.5V10L14 11L15.5 10V12.5M19.5 12.5V10L21 11L22.5 10V12.5M43.5 12.5V10L45 11L46.5 10V12.5M50.5 12.5V10L52 11L53.5 10V12.5M57.5 12.5V10L59 11L60.5 10V12.5"/></g></svg><svg class="msym" data-s="ra" hidden width="66" height="22" viewBox="0 0 66 22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g opacity=".85"><path d="M20 22V12.5L30 6L40 12.5V22M27 22V17.5A3 3 0 0 1 33 17.5V22"/></g><g opacity=".7"><path d="M45 22V3.5H51V22M45 8.5H51M45 13.5H51"/></g><g opacity=".4"><path d="M6 22V15.5H20M40 15.5H45M51 15.5H60V22"/></g></svg><svg class="msym" data-s="fe" hidden width="66" height="22" viewBox="0 0 66 22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g opacity=".85"><path d="M15 22V7H23V22M43 22V7H51V22M15 7V4.5H17.5V7M20.5 7V4.5H23V7M43 7V4.5H45.5V7M48.5 7V4.5H51V7"/></g><g opacity=".6"><path d="M23 22V11.5H43V22M29.5 22V18A3.5 3.5 0 0 1 36.5 18V22"/></g><g opacity=".35"><path d="M4 22H62"/></g></svg><span>Ach&#39;s Events Guide</span></div>
  <h1>Eventi Milano,<br><em>stasera</em> e oltre.</h1>
  <p class="lede">Concerti, teatro, comici, classica e grandi eventi a Milano e nei grandi luoghi dell’area metropolitana, nei prossimi 12 mesi.</p>
  <nav class="ach-guide" aria-label="Le guide di Ach">
@@ -1301,6 +1323,18 @@ if(AFF.awin&&Object.values(AFF.mid).some(Boolean)&&(()=>{try{const L=[...(window
 (function(){const h=document.querySelector(".hero h1");
  if(CITY.k!=="bo"){h.innerHTML=`Eventi ${CITY.nome},<br><em>stasera</em> e oltre.`;document.querySelector(".arches").hidden=true;const sy=document.querySelector(`.msym[data-s="${CITY.k}"]`);if(sy)sy.removeAttribute("hidden")}
  const b=$("#city");if(!ON_WEB||CITTA_ATTIVE.length<2)return;b.hidden=false;b.dataset.c=CITY.k;
+ if(CITTA_ATTIVE.length>2){   /* tre o più città: una sigla per città, tocchi quella che vuoi */
+  const box=document.createElement("div");box.className="city citta-n";box.id="city";box.setAttribute("role","group");box.setAttribute("aria-label","Città");
+  box.style.setProperty("--n",CITTA_ATTIVE.length);box.style.setProperty("--i",Math.max(0,CITTA_ATTIVE.indexOf(CITY.k)));
+  box.innerHTML='<span class="k"></span><button type="button" class="cur" aria-haspopup="true" aria-expanded="false" aria-label="Città: '+CITY.nome+'. Tocca per cambiare">'+CITY.sigla+'<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></button><div class="menu">'+CITTA_ATTIVE.map(k=>{const c=CITTA_CFG[k];return `<button type="button" class="cb" data-k="${k}" aria-label="${c.nome}"${k===CITY.k?' aria-current="true"':""}><span class="sg">${c.sigla}</span><span class="nm">${c.nome}</span></button>`}).join("")+'</div>';
+  b.replaceWith(box);
+  const cur=box.querySelector(".cur"),chiudi=()=>{box.classList.remove("open");cur.setAttribute("aria-expanded","false")};
+  cur.addEventListener("click",e=>{e.stopPropagation();const o=box.classList.toggle("open");cur.setAttribute("aria-expanded",String(o))});
+  document.addEventListener("click",e=>{if(!box.contains(e.target))chiudi()});document.addEventListener("keydown",e=>{if(e.key==="Escape")chiudi()});
+  box.addEventListener("click",e=>{const t=e.target.closest(".cb");if(!t)return;if(t.dataset.k===CITY.k){chiudi();return}const c=CITTA_CFG[t.dataset.k];
+   box.style.setProperty("--i",CITTA_ATTIVE.indexOf(c.k));box.querySelectorAll(".cb").forEach(x=>x.toggleAttribute("aria-current",x===t));
+   try{localStorage.setItem("citta",c.k)}catch(_){}document.cookie="citta="+c.k+";path=/;max-age=31536000;SameSite=Lax";setTimeout(()=>{location.href=c.path},240)});
+  return}
  const other=CITTA_CFG[CITTA_ATTIVE.find(k=>k!==CITY.k)];b.setAttribute("aria-label",`Città: ${CITY.nome}. Tocca per ${other.nome}`);
  const go=()=>{b.dataset.c=other.k;try{localStorage.setItem("citta",other.k)}catch(_){}document.cookie="citta="+other.k+";path=/;max-age=31536000;SameSite=Lax";setTimeout(()=>{location.href=other.path},240)};
  b.addEventListener("click",go);let x0=null;
