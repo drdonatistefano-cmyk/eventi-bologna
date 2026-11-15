@@ -31,6 +31,8 @@ CITTA = {
            "songkick": "https://www.songkick.com/metro-areas/30338-italy-milan"},
 }
 CATEGORIE = ["Concerti", "Teatro", "Mostre e Musei"]
+BLOCCO = re.compile(r"(?i)502 bad gateway|503 service|504 gateway|verifica di sicurezza|just a moment|checking your browser|attention required")
+NON_SPETTACOLO = re.compile(r"(?i)\babbonament|\bcarnet\b|gift ?card|buono regalo|voucher|\bstagione \d{4}\s*/\s*\d{2,4}\b|^\S+(\s\S+)? \d{4}/\d{2,4}$|\bmembership\b|\btessera\b")
 STOP = set("e and the di il la lo i gli le de del della dei in a al alla live tour concerto teatro milano bologna 2026 2027 2028 show con feat ft x special guest".split())
 REP = {"quando": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "pagine": [], "ticketone": {}, "songkick": {}, "errori": []}
 
@@ -123,40 +125,50 @@ def cartelloni(c, cart, cand, ev):
     impronte = {}
     from playwright.sync_api import sync_playwright
     with sync_playwright() as pw:
-        b = pw.chromium.launch()
+        b = pw.chromium.launch(args=["--disable-http2"])   # Arcimboldi rifiuta HTTP/2 dai programmi
         ctx = b.new_context(user_agent=UA + " Chrome/124", locale="it-IT", viewport={"width": 1280, "height": 1600})
         for p in pagine:
             r = {"nome": p["nome"], "url": p["url"], "file": f"pagine/{slug(p['nome'])}.txt"}
             if not permesso(p["url"]):
                 r["esito"] = "robots.txt vieta"; REP["pagine"].append(r); continue
-            pg = ctx.new_page()
-            try:
-                pg.goto(p["url"], timeout=45000, wait_until="domcontentloaded")
-                try: pg.wait_for_load_state("networkidle", timeout=12000)
-                except Exception: pass
-                for _ in range(3):                      # carica anche gli elenchi che crescono scorrendo
-                    pg.mouse.wheel(0, 4000); pg.wait_for_timeout(800)
-                testo = pg.inner_text("body")
-                h = pg.content()
-                testo = "\n".join(l.strip() for l in testo.splitlines() if l.strip())
-                testo = re.sub(r"\n{2,}", "\n", testo)[:80000]
+            testo, h, errore = "", "", ""
+            for prova in (1, 2):
+                pg = ctx.new_page()
+                try:
+                    pg.goto(p["url"], timeout=60000, wait_until="commit")
+                    try: pg.wait_for_load_state("domcontentloaded", timeout=30000)
+                    except Exception: pass
+                    try: pg.wait_for_load_state("networkidle", timeout=12000)
+                    except Exception: pass
+                    for _ in range(3):                      # carica anche gli elenchi che crescono scorrendo
+                        pg.mouse.wheel(0, 4000); pg.wait_for_timeout(800)
+                    testo = pg.inner_text("body"); h = pg.content(); errore = ""
+                except Exception as e:
+                    errore = f"{type(e).__name__}: {str(e).splitlines()[0][:100]}"
+                finally:
+                    pg.close()
+                testo = re.sub(r"\n{2,}", "\n", "\n".join(l.strip() for l in (testo or "").splitlines() if l.strip()))[:80000]
+                if not errore and not BLOCCO.search(testo[:1500]) and len(testo) > 400: break
+                time.sleep(20)                              # errore del sito o pagina di protezione: si riprova una volta
+            f_testo = os.path.join(cart, c, r["file"])
+            if errore or BLOCCO.search(testo[:1500]) or len(testo) <= 400:
+                motivo = errore or ("pagina di protezione contro i programmi" if re.search(r"(?i)verifica di sicurezza|just a moment|cloudflare", testo[:1500])
+                                    else "errore del sito" if re.search(r"(?i)bad gateway|502|503|504", testo[:300]) else "pagina quasi vuota")
+                r["esito"] = "non letta: " + motivo
+                r["cambiata"] = False
+                r["testo"] = "quello della lettura precedente" if os.path.exists(f_testo) else "nessuno"
+                impronte[p["url"]] = prima.get(p["url"], "")
+            else:
                 imp = hashlib.sha1(re.sub(r"\d+", "", testo).encode()).hexdigest()
                 impronte[p["url"]] = imp
-                r["caratteri"] = len(testo)
-                r["cambiata"] = prima.get(p["url"]) != imp
-                r["esito"] = "ok" if len(testo) > 400 else "pagina quasi vuota"
-                open(os.path.join(cart, c, r["file"]), "w", encoding="utf-8").write(
-                    f"# {p['nome']}\n# {p['url']}\n# letta il {OGGI}\n\n{testo}\n")
-                ej = [e for e in jsonld(h) if OGGI <= e["data"] <= LIMITE]
-                r["eventi_strutturati"] = len(ej)
-                for e in ej:
-                    e["fonte"] = p["nome"]; e["gia_in_guida"] = in_guida(ev, e["titolo"], e["data"], e["luogo"])
-                    if not e["gia_in_guida"]: cand.append(e)
-            except Exception as e:
-                r["esito"] = f"non letta: {type(e).__name__}: {str(e)[:120]}"
-                impronte[p["url"]] = prima.get(p["url"], "")
-            finally:
-                pg.close()
+                r.update(esito="ok", caratteri=len(testo), cambiata=prima.get(p["url"]) != imp)
+                open(f_testo, "w", encoding="utf-8").write(f"# {p['nome']}\n# {p['url']}\n# letta il {OGGI}\n\n{testo}\n")
+                if not re.search(r"songkick\.com", p["url"]):     # Songkick si legge a parte, tutte le pagine
+                    ej = [e for e in jsonld(h) if OGGI <= e["data"] <= LIMITE]
+                    r["eventi_strutturati"] = len(ej)
+                    for e in ej:
+                        e["fonte"] = p["nome"]; e["gia_in_guida"] = in_guida(ev, e["titolo"], e["data"], e["luogo"])
+                        if not e["gia_in_guida"]: cand.append(e)
             REP["pagine"].append(r)
             time.sleep(2)
         b.close()
@@ -249,7 +261,19 @@ def main():
                     ("songkick", lambda: songkick(c, cart, cand, ev))):
         try: f()
         except Exception as e: REP["errori"].append(f"{nome}: {type(e).__name__}: {str(e)[:200]}")
-    cand.sort(key=lambda e: (e["data"], e["titolo"]))
+    # niente abbonamenti e carnet, niente doppioni fra fonti (stesso giorno, stesso titolo e luogo)
+    tolti = [e for e in cand if NON_SPETTACOLO.search(e["titolo"])]
+    cand = [e for e in cand if not NON_SPETTACOLO.search(e["titolo"])]
+    uniti, visti = [], {}
+    for e in sorted(cand, key=lambda e: (e["fonte"] != "TicketOne", e["data"])):   # TicketOne prima: ha il link d'acquisto
+        k = (e["data"], frozenset(tok(e["titolo"])) or e["titolo"])
+        doppio = next((x for kk, x in visti.items() if kk[0] == k[0] and (k[1] == kk[1] or (tok(e["titolo"]) & tok(x["titolo"]) and
+                       len(tok(e["titolo"]) & tok(x["titolo"])) / max(1, min(len(tok(e["titolo"])), len(tok(x["titolo"])))) >= 0.6))), None)
+        if doppio:
+            doppio.setdefault("anche_su", []).append(e["fonte"]); continue
+        visti[k] = e; uniti.append(e)
+    REP["tolti_non_spettacoli"] = len(tolti)
+    cand = sorted(uniti, key=lambda e: (e["data"], e["titolo"]))
     json.dump({"citta": CITTA[c]["nome"], **REP, "candidati": cand}, open(os.path.join(cart, c, "candidati.json"), "w"), ensure_ascii=False, indent=1)
     cambiate = [p for p in REP["pagine"] if p.get("cambiata")]
     righe = [f"# Cartelloni di {CITTA[c]['nome']} letti da GitHub — {REP['quando']}", "",
