@@ -8,7 +8,7 @@ Per ogni sito di dati/locali_candidati.json prova, nel rispetto di robots.txt:
   - elenco di pagine evento (link /event/, /evento/, /spettacolo/…) e se una pagina evento ha JSON-LD
 Scrive sonda_locali.json (non tocca i dati della guida). Si lancia solo dal flusso sonda.yml.
 """
-import datetime, html, json, re, sys, time, urllib.parse, urllib.request, urllib.robotparser
+import datetime, html, json, os, re, sys, time, urllib.parse, urllib.request, urllib.robotparser
 from concurrent.futures import ThreadPoolExecutor
 
 UA = "Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
@@ -102,7 +102,8 @@ def sonda(citta, nome, dom):
 
 def main():
     L = json.load(open("dati/locali_candidati.json"))
-    lavori = [(c, n, d) for c in L for n, d in L[c]]
+    solo = os.environ.get("SOLO_CITTA", "").split(",") if os.environ.get("SOLO_CITTA") else list(L)
+    lavori = [(c, n, d) for c in L if c in solo for n, d in L[c]]
     with ThreadPoolExecutor(12) as ex:
         ris = list(ex.map(lambda a: sonda(*a), lavori))
     json.dump(ris, open("sonda_locali.json", "w"), ensure_ascii=False, indent=1)

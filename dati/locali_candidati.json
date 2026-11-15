@@ -1,40 +1,610 @@
-{"bo": [
- ["Teatro Duse","teatroduse.it"],["Teatro Celebrazioni","teatrocelebrazioni.it"],["Teatro Dehon","teatrodehon.it"],
- ["Teatro EuropAuditorium","teatroeuropa.it"],["Auditorium Manzoni","tcbo.it"],["Arena del Sole","bologna.emiliaromagnateatro.com"],
- ["Unipol Arena","unipolarena.it"],["Teatro Ebe Stignani","teatrostignani.it"],["Teatro Fanin","teatrofanin.it"],
- ["ZolAuditorium","zolauditorium.it"],["Oratorio di San Filippo Neri","oratoriosanfilipponeri.com"],["Teatro Spazio Reno","culturara.it"],
- ["Teatro Comunale Cassero","labottegadelbuonumore.it"],["Teatro Testoni","testoniragazzi.it"],["Teatro Consorziale","teatroconsorzialebudrio.it"],
- ["Teatro Comunale Laura Betti","teatrocasalecchio.it"],["Camera Jazz & Music Club","camerajazzclub.com"],["Sghetto Club","sghettoclub.it"],
- ["Teatri di Vita","teatridivita.it"],["Estragon Club","estragon.it"],["Alchemica Music Club","alchemicamusicclub.it"],
- ["Covo Club","covoclub.it"],["ITC Teatro","teatrodellargine.org"],["DumBO","dumbospace.it"],["Freakout Club","freakoutclub.it"],
- ["Bravo Caffè","bravocaffe.it"],["Cantina Bentivoglio","cantinabentivoglio.it"],["Teatro del Navile","teatrodelnavile.org"],
- ["Teatro Mazzacorati","teatromazzacorati1763.it"],["Teatro Alemanni","teatroalemanni.it"],["Teatro Tivoli","teatrotivoli.it"],
- ["Teatro Antoniano","antoniano.it"],["Musica Insieme","musicainsiemebologna.it"],["Bologna Festival","bolognafestival.it"],
- ["Stagione Agorà","stagioneagora.it"],["Kindergarten","kindergartenclub.it"],["Baumhaus","baumhaus.network"],
- ["Lab 16","lab16.it"],["Teatro San Leonardo","aaa-angelica.com"],["Accademia Filarmonica","accademiafilarmonica.it"],
- ["Teatro Comunale","tcbo.it"],["Cortile Café","cortilecafe.it"],["Binario 69","binario69.it"],["Bonsai Garden","bonsaigarden.it"],
- ["Teatro Il Celebrazioni","celebrazioni.it"],["Teatro delle Moline","bologna.emiliaromagnateatro.com"],["MAST","mast.org"],
- ["Teatro Laura Betti","teatrolaurabetti.it"],["Teatro Arena del Sole","arenadelsole.it"]
-],
-"mi": [
- ["Arci Bellezza","arcibellezza.it"],["Teatro Arcimboldi","teatroarcimboldi.it"],["Teatro Lirico Giorgio Gaber","teatroliricogiorgiogaber.it"],
- ["Teatro alla Scala","teatroallascala.org"],["Teatro Manzoni","teatromanzoni.it"],["Fabrique","fabriquemilano.it"],
- ["Circolo Magnolia","circolomagnolia.it"],["Teatro Dal Verme","ipomeriggi.it"],["Alcatraz","alcatrazmilano.it"],
- ["Unipol Forum","unipolforum.it"],["Legend Club","legendclubmilano.com"],["Santeria Toscana 31","santeria.milano.it"],
- ["Magazzini Generali","magazzinigenerali.org"],["Zelig","zelig.it"],["Unipol Dome","unipoldome.it"],
- ["Teatro Nazionale Italiana Assicurazioni","teatronazionale.it"],["Teatro Repower","teatrorepower.it"],["Teatro Elfo Puccini","elfo.org"],
- ["Biko","biko.it"],["Spazio Teatro 89","spazioteatro89.org"],["Teatro Carcano","teatrocarcano.com"],["Gate Milano","gatemilano.it"],
- ["Teatro Principe","teatroprincipe.com"],["Slaughter Club","slaughterclub.it"],["Ecoteatro","ecoteatro.it"],
- ["Teatro Franco Parenti","teatrofrancoparenti.it"],["BASE Milano","base.milano.it"],["Carroponte","carroponte.org"],
- ["Lime","limemilano.it"],["Auditorium di Milano","sinfonicadimilano.org"],["Auditorium San Fedele","sanfedele.net"],
- ["Blue Note Milano","bluenotemilano.com"],["Teatro Menotti","teatromenotti.org"],["Teatro Filodrammatici","teatrofilodrammatici.eu"],
- ["Piccolo Teatro","piccoloteatro.org"],["Teatro della Cooperativa","teatrodellacooperativa.it"],["Teatro Leonardo","mtmteatro.it"],
- ["Teatro Out Off","teatrooutoff.it"],["Teatro i","teatroi.org"],["Linoleum","linoleummilano.it"],["Ohibò","ohibo.it"],
- ["Arci Ohibò","ohibo.it"],["Cox18","cox18.noblogs.org"],["Rocket","therocket.it"],["Volt Club","voltclub.it"],
- ["Plastic","clubplastic.com"],["Tunnel Club","tunnelclub.it"],["Mare Culturale Urbano","maremilano.org"],
- ["Teatro San Babila","teatrosanbabilamilano.it"],["Teatro Martinitt","teatromartinitt.it"],["Teatro Delfino","teatrodelfino.it"],
- ["Teatro Gerolamo","teatrogerolamo.it"],["Teatro Litta","mtmteatro.it"],["Fondazione Prada","fondazioneprada.org"],
- ["Conservatorio di Milano","consmilano.it"],["Società del Quartetto","quartettomilano.it"],["Serate Musicali","seratemusicali.it"],
- ["Teatro degli Angeli","teatrodegliangeli.it"],["Nidaba Theatre","nidabatheatre.it"],["Ippodromo SNAI San Siro","idaysmilano.it"],
- ["Teatro Oscar","oscar-desidera.it"],["Teatro Guanella","teatroguanella.it"],["Arena Civica","arenacivica.it"]
-]}
+{
+ "bo": [
+  [
+   "Teatro Duse",
+   "teatroduse.it"
+  ],
+  [
+   "Teatro Celebrazioni",
+   "teatrocelebrazioni.it"
+  ],
+  [
+   "Teatro Dehon",
+   "teatrodehon.it"
+  ],
+  [
+   "Teatro EuropAuditorium",
+   "teatroeuropa.it"
+  ],
+  [
+   "Auditorium Manzoni",
+   "tcbo.it"
+  ],
+  [
+   "Arena del Sole",
+   "bologna.emiliaromagnateatro.com"
+  ],
+  [
+   "Unipol Arena",
+   "unipolarena.it"
+  ],
+  [
+   "Teatro Ebe Stignani",
+   "teatrostignani.it"
+  ],
+  [
+   "Teatro Fanin",
+   "teatrofanin.it"
+  ],
+  [
+   "ZolAuditorium",
+   "zolauditorium.it"
+  ],
+  [
+   "Oratorio di San Filippo Neri",
+   "oratoriosanfilipponeri.com"
+  ],
+  [
+   "Teatro Spazio Reno",
+   "culturara.it"
+  ],
+  [
+   "Teatro Comunale Cassero",
+   "labottegadelbuonumore.it"
+  ],
+  [
+   "Teatro Testoni",
+   "testoniragazzi.it"
+  ],
+  [
+   "Teatro Consorziale",
+   "teatroconsorzialebudrio.it"
+  ],
+  [
+   "Teatro Comunale Laura Betti",
+   "teatrocasalecchio.it"
+  ],
+  [
+   "Camera Jazz & Music Club",
+   "camerajazzclub.com"
+  ],
+  [
+   "Sghetto Club",
+   "sghettoclub.it"
+  ],
+  [
+   "Teatri di Vita",
+   "teatridivita.it"
+  ],
+  [
+   "Estragon Club",
+   "estragon.it"
+  ],
+  [
+   "Alchemica Music Club",
+   "alchemicamusicclub.it"
+  ],
+  [
+   "Covo Club",
+   "covoclub.it"
+  ],
+  [
+   "ITC Teatro",
+   "teatrodellargine.org"
+  ],
+  [
+   "DumBO",
+   "dumbospace.it"
+  ],
+  [
+   "Freakout Club",
+   "freakoutclub.it"
+  ],
+  [
+   "Bravo Caffè",
+   "bravocaffe.it"
+  ],
+  [
+   "Cantina Bentivoglio",
+   "cantinabentivoglio.it"
+  ],
+  [
+   "Teatro del Navile",
+   "teatrodelnavile.org"
+  ],
+  [
+   "Teatro Mazzacorati",
+   "teatromazzacorati1763.it"
+  ],
+  [
+   "Teatro Alemanni",
+   "teatroalemanni.it"
+  ],
+  [
+   "Teatro Tivoli",
+   "teatrotivoli.it"
+  ],
+  [
+   "Teatro Antoniano",
+   "antoniano.it"
+  ],
+  [
+   "Musica Insieme",
+   "musicainsiemebologna.it"
+  ],
+  [
+   "Bologna Festival",
+   "bolognafestival.it"
+  ],
+  [
+   "Stagione Agorà",
+   "stagioneagora.it"
+  ],
+  [
+   "Kindergarten",
+   "kindergartenclub.it"
+  ],
+  [
+   "Baumhaus",
+   "baumhaus.network"
+  ],
+  [
+   "Lab 16",
+   "lab16.it"
+  ],
+  [
+   "Teatro San Leonardo",
+   "aaa-angelica.com"
+  ],
+  [
+   "Accademia Filarmonica",
+   "accademiafilarmonica.it"
+  ],
+  [
+   "Teatro Comunale",
+   "tcbo.it"
+  ],
+  [
+   "Cortile Café",
+   "cortilecafe.it"
+  ],
+  [
+   "Binario 69",
+   "binario69.it"
+  ],
+  [
+   "Bonsai Garden",
+   "bonsaigarden.it"
+  ],
+  [
+   "Teatro Il Celebrazioni",
+   "celebrazioni.it"
+  ],
+  [
+   "Teatro delle Moline",
+   "bologna.emiliaromagnateatro.com"
+  ],
+  [
+   "MAST",
+   "mast.org"
+  ],
+  [
+   "Teatro Laura Betti",
+   "teatrolaurabetti.it"
+  ],
+  [
+   "Teatro Arena del Sole",
+   "arenadelsole.it"
+  ]
+ ],
+ "mi": [
+  [
+   "Arci Bellezza",
+   "arcibellezza.it"
+  ],
+  [
+   "Teatro Arcimboldi",
+   "teatroarcimboldi.it"
+  ],
+  [
+   "Teatro Lirico Giorgio Gaber",
+   "teatroliricogiorgiogaber.it"
+  ],
+  [
+   "Teatro alla Scala",
+   "teatroallascala.org"
+  ],
+  [
+   "Teatro Manzoni",
+   "teatromanzoni.it"
+  ],
+  [
+   "Fabrique",
+   "fabriquemilano.it"
+  ],
+  [
+   "Circolo Magnolia",
+   "circolomagnolia.it"
+  ],
+  [
+   "Teatro Dal Verme",
+   "ipomeriggi.it"
+  ],
+  [
+   "Alcatraz",
+   "alcatrazmilano.it"
+  ],
+  [
+   "Unipol Forum",
+   "unipolforum.it"
+  ],
+  [
+   "Legend Club",
+   "legendclubmilano.com"
+  ],
+  [
+   "Santeria Toscana 31",
+   "santeria.milano.it"
+  ],
+  [
+   "Magazzini Generali",
+   "magazzinigenerali.org"
+  ],
+  [
+   "Zelig",
+   "zelig.it"
+  ],
+  [
+   "Unipol Dome",
+   "unipoldome.it"
+  ],
+  [
+   "Teatro Nazionale Italiana Assicurazioni",
+   "teatronazionale.it"
+  ],
+  [
+   "Teatro Repower",
+   "teatrorepower.it"
+  ],
+  [
+   "Teatro Elfo Puccini",
+   "elfo.org"
+  ],
+  [
+   "Biko",
+   "biko.it"
+  ],
+  [
+   "Spazio Teatro 89",
+   "spazioteatro89.org"
+  ],
+  [
+   "Teatro Carcano",
+   "teatrocarcano.com"
+  ],
+  [
+   "Gate Milano",
+   "gatemilano.it"
+  ],
+  [
+   "Teatro Principe",
+   "teatroprincipe.com"
+  ],
+  [
+   "Slaughter Club",
+   "slaughterclub.it"
+  ],
+  [
+   "Ecoteatro",
+   "ecoteatro.it"
+  ],
+  [
+   "Teatro Franco Parenti",
+   "teatrofrancoparenti.it"
+  ],
+  [
+   "BASE Milano",
+   "base.milano.it"
+  ],
+  [
+   "Carroponte",
+   "carroponte.org"
+  ],
+  [
+   "Lime",
+   "limemilano.it"
+  ],
+  [
+   "Auditorium di Milano",
+   "sinfonicadimilano.org"
+  ],
+  [
+   "Auditorium San Fedele",
+   "sanfedele.net"
+  ],
+  [
+   "Blue Note Milano",
+   "bluenotemilano.com"
+  ],
+  [
+   "Teatro Menotti",
+   "teatromenotti.org"
+  ],
+  [
+   "Teatro Filodrammatici",
+   "teatrofilodrammatici.eu"
+  ],
+  [
+   "Piccolo Teatro",
+   "piccoloteatro.org"
+  ],
+  [
+   "Teatro della Cooperativa",
+   "teatrodellacooperativa.it"
+  ],
+  [
+   "Teatro Leonardo",
+   "mtmteatro.it"
+  ],
+  [
+   "Teatro Out Off",
+   "teatrooutoff.it"
+  ],
+  [
+   "Teatro i",
+   "teatroi.org"
+  ],
+  [
+   "Linoleum",
+   "linoleummilano.it"
+  ],
+  [
+   "Ohibò",
+   "ohibo.it"
+  ],
+  [
+   "Arci Ohibò",
+   "ohibo.it"
+  ],
+  [
+   "Cox18",
+   "cox18.noblogs.org"
+  ],
+  [
+   "Rocket",
+   "therocket.it"
+  ],
+  [
+   "Volt Club",
+   "voltclub.it"
+  ],
+  [
+   "Plastic",
+   "clubplastic.com"
+  ],
+  [
+   "Tunnel Club",
+   "tunnelclub.it"
+  ],
+  [
+   "Mare Culturale Urbano",
+   "maremilano.org"
+  ],
+  [
+   "Teatro San Babila",
+   "teatrosanbabilamilano.it"
+  ],
+  [
+   "Teatro Martinitt",
+   "teatromartinitt.it"
+  ],
+  [
+   "Teatro Delfino",
+   "teatrodelfino.it"
+  ],
+  [
+   "Teatro Gerolamo",
+   "teatrogerolamo.it"
+  ],
+  [
+   "Teatro Litta",
+   "mtmteatro.it"
+  ],
+  [
+   "Fondazione Prada",
+   "fondazioneprada.org"
+  ],
+  [
+   "Conservatorio di Milano",
+   "consmilano.it"
+  ],
+  [
+   "Società del Quartetto",
+   "quartettomilano.it"
+  ],
+  [
+   "Serate Musicali",
+   "seratemusicali.it"
+  ],
+  [
+   "Teatro degli Angeli",
+   "teatrodegliangeli.it"
+  ],
+  [
+   "Nidaba Theatre",
+   "nidabatheatre.it"
+  ],
+  [
+   "Ippodromo SNAI San Siro",
+   "idaysmilano.it"
+  ],
+  [
+   "Teatro Oscar",
+   "oscar-desidera.it"
+  ],
+  [
+   "Teatro Guanella",
+   "teatroguanella.it"
+  ],
+  [
+   "Arena Civica",
+   "arenacivica.it"
+  ]
+ ],
+ "ra": [
+  [
+   "Teatro Alighieri",
+   "teatroalighieri.org"
+  ],
+  [
+   "Ravenna Festival",
+   "ravennafestival.org"
+  ],
+  [
+   "Teatro Rasi",
+   "ravennateatro.com"
+  ],
+  [
+   "Bronson",
+   "bronsonproduzioni.com"
+  ],
+  [
+   "Cisim",
+   "cisim.it"
+  ],
+  [
+   "Teatro Masini",
+   "accademiaperduta.it"
+  ],
+  [
+   "Teatro Rossini",
+   "teatrorossini.it"
+  ],
+  [
+   "Teatro Socjale",
+   "teatrosocjale.it"
+  ],
+  [
+   "Mama's Club",
+   "mamasclub.it"
+  ],
+  [
+   "Teatro Comunale di Cervia",
+   "teatrocomunalecervia.it"
+  ],
+  [
+   "Darsena Pop Up",
+   "darsenapopup.it"
+  ],
+  [
+   "Almagià",
+   "almagia.it"
+  ],
+  [
+   "Teatro Binario",
+   "teatrobinario.it"
+  ],
+  [
+   "Teatro Comunale di Russi",
+   "teatrocomunalerussi.it"
+  ],
+  [
+   "Teatro Goldoni",
+   "teatrogoldonibagnacavallo.it"
+  ],
+  [
+   "Ravenna Jazz",
+   "erjn.it"
+  ],
+  [
+   "Teatro Sociale di Piangipane",
+   "teatrosocjale.it"
+  ],
+  [
+   "Mosaico di Notte",
+   "comune.ravenna.it"
+  ],
+  [
+   "Faenza Teatro",
+   "teatromasini.it"
+  ],
+  [
+   "Ravenna Teatro",
+   "ravennateatro.com"
+  ]
+ ],
+ "fe": [
+  [
+   "Teatro Comunale Claudio Abbado",
+   "teatrocomunaleferrara.it"
+  ],
+  [
+   "Ferrara Sotto le Stelle",
+   "ferrarasottolestelle.it"
+  ],
+  [
+   "Jazz Club Ferrara",
+   "jazzclubferrara.com"
+  ],
+  [
+   "Teatro Nuovo",
+   "teatronuovoferrara.com"
+  ],
+  [
+   "Teatro Off",
+   "teatrooff.com"
+  ],
+  [
+   "Wunderkammer",
+   "wunderkammer.ferrara.it"
+  ],
+  [
+   "Ferrara Musica",
+   "ferraramusica.it"
+  ],
+  [
+   "Teatro De Micheli",
+   "teatrodemicheli.it"
+  ],
+  [
+   "Teatro Pandurera",
+   "teatropandurera.it"
+  ],
+  [
+   "Zuni",
+   "zuni.it"
+  ],
+  [
+   "Ferrara Buskers Festival",
+   "ferrarabuskers.com"
+  ],
+  [
+   "Teatro Verdi",
+   "teatroverdiferrara.it"
+  ],
+  [
+   "Sala Estense",
+   "salaestense.it"
+  ],
+  [
+   "Consorzio Factory Grisù",
+   "factorygrisu.it"
+  ],
+  [
+   "Arci Bolognesi",
+   "arcibolognesi.it"
+  ],
+  [
+   "Circolo Arci Ritmo",
+   "arciritmo.it"
+  ],
+  [
+   "Teatro Comunale di Cento",
+   "teatrocomunalecento.it"
+  ],
+  [
+   "Ferrara Feste",
+   "ferrarafeste.it"
+  ]
+ ]
+}
