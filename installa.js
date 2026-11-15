@@ -16,6 +16,8 @@
   var ipad = /iPad/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
   var android = /Android/.test(ua);
   var safari = ios && !/CriOS|FxiOS|EdgiOS|OPiOS|GSA\//.test(ua);
+  // browser dentro un'altra app (Google, Instagram, Facebook, TikTok…): su iPhone lì «Aggiungi alla schermata Home» non c'è
+  var inapp = ios && /GSA\/|FBAN|FBAV|FB_IAB|Instagram|Line\/|LinkedInApp|Twitter|Snapchat|TikTok|musical_ly|BytedanceWebview|Pinterest|WhatsApp|Telegram|MicroMessenger|DuckDuckGo\/|YaBrowser/i.test(ua);
   var richiesta = null, chip, velo, foglio, R;
   function ls(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (_) { return null; } }
   function basta(giorni) { ls("app_no", Date.now() + giorni * 864e5); }
@@ -48,6 +50,9 @@
     + ".appf small{font-size:13px;opacity:.75}"
     + ".appf .n{width:24px;height:24px;border-radius:50%;background:" + COL + ";color:#fff;display:grid;place-items:center;font-size:13px;font-weight:700;flex:none}"
     + ".appf .t{display:inline;border:1px solid #d6cdbb;border-radius:6px;padding:1px 6px;font-weight:600;white-space:nowrap}"
+    + ".appf .safari{display:block;width:100%;margin:6px 0 4px;border:0;border-radius:12px;padding:13px;background:" + COL + ";color:#fff;font:700 16px -apple-system,BlinkMacSystemFont,sans-serif;text-align:center;text-decoration:none;cursor:pointer}"
+    + ".appf .copia{display:block;width:100%;margin-top:8px;border:1px solid #d6cdbb;border-radius:10px;padding:10px;background:none;color:inherit;font:600 14px -apple-system,BlinkMacSystemFont,sans-serif;cursor:pointer}"
+    + ".appf .nota{display:block;margin-top:8px;font-size:13px;opacity:.8}"
     + ".appf .ok{display:block;width:100%;margin-top:12px;border:0;border-radius:10px;padding:11px;background:#efe8da;color:#1f1c18;font:600 15px -apple-system,BlinkMacSystemFont,sans-serif;cursor:pointer}"
     + ".appf .fr{display:block;font-size:26px;line-height:1;color:" + COL + ";animation:apps 1.1s infinite;text-align:center;margin-top:10px}.appf.su .fr{text-align:right;margin:0 4px 4px 0}"
     + ".apptoast{position:fixed;left:50%;top:calc(14px + env(safe-area-inset-top));transform:translateX(-50%);z-index:99993;background:#1f1c18;color:#fff;border-radius:10px;padding:10px 14px;font:600 14px -apple-system,BlinkMacSystemFont,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.3)}"
@@ -72,14 +77,21 @@
     if (!silenzio) conta("mostrato", "Riquadro mostrato");
   }
   function chiudi() { [chip, velo, foglio].forEach(function (x) { if (x && x.parentNode) x.parentNode.removeChild(x); }); }
-  function istruzioni(passi, sopra) {
+  function istruzioni(passi, sopra, extra, senzaFreccia) {
     radice();
     velo = el('<div class="appv"></div>'); velo.onclick = fatto;
-    var fr = '<span class="fr">' + (sopra ? "⬆" : "⬇") + '</span>';
-    foglio = el('<div class="appf ' + (sopra ? "su" : "giu") + '">' + (sopra && ios ? fr : "") + '<h4><img src="' + ICONA + '" alt="">Mettila nella schermata Home</h4><ol>'
+    var fr = senzaFreccia ? "" : '<span class="fr">' + (sopra ? "⬆" : "⬇") + '</span>';
+    foglio = el('<div class="appf ' + (sopra ? "su" : "giu") + '">' + (sopra && ios ? fr : "") + '<h4><img src="' + ICONA + '" alt="">Mettila nella schermata Home</h4>' + (extra && extra.prima || "") + (passi.length ? '<ol>'
       + passi.map(function (p, i) { return '<li><span class="n">' + (i + 1) + '</span><span>' + p + '</span></li>'; }).join("")
-      + '</ol><button class="ok">Ho capito</button>' + (!sopra ? fr : "") + '</div>');
+      + '</ol>' : '') + (extra && extra.dopo || "") + '<button class="ok">' + (passi.length ? 'Ho capito' : 'Chiudi') + '</button>' + (!sopra ? fr : "") + '</div>');
     foglio.querySelector(".ok").onclick = fatto;
+    var cp = foglio.querySelector(".copia");
+    if (cp) cp.onclick = function () {
+      var u = location.origin + location.pathname, ok = function () { cp.textContent = "✓ Copiato: apri Safari e incollalo nella barra in alto"; conta("link-copiato", "Link copiato"); };
+      try { navigator.clipboard.writeText(u).then(ok, function () { prompt("Copia questo link e aprilo in Safari:", u); }); } catch (_) { prompt("Copia questo link e aprilo in Safari:", u); }
+    };
+    var sf = foglio.querySelector(".safari");
+    if (sf) sf.onclick = function () { conta("apri-safari", "Apri in Safari"); };
     R.appendChild(velo); R.appendChild(foglio);
   }
   function fatto() { chiudi(); basta(365); }        // ha visto come si fa: non lo rivede per un anno
@@ -90,10 +102,17 @@
       richiesta.userChoice.then(function (r) { if (r.outcome === "accepted") { chiudi(); basta(3650); } richiesta = null; });
       return;
     }
-    if (ios && safari) {
+    if (inapp) {                                     // dentro un'altra app: un solo pulsante, che porta in Safari e lì riapre questo riquadro
+      var qui = location.origin + location.pathname, vai = qui.replace(/^http:/, "https:") + "?installa=1";
+      istruzioni([], false,
+                 { prima: '<p class="nota" style="margin:0 0 12px;font-size:15px;opacity:1">Da qui non si può. Si fa in Safari, con un tocco:</p>'
+                        + '<a class="safari" href="x-safari-' + vai + '">Apri in Safari</a>',
+                   dopo: '<button class="copia" type="button">Non si apre? Copia il link e incollalo in Safari</button>' }, true);
+    } else if (ios && safari) {
       istruzioni(["Tocca <span class='t'>Condividi ⬆︎</span> " + (ipad ? "in alto" : "qui sotto") + "<br><small>(se non lo vedi, tocca prima <span class='t'>•••</span>)</small>",
                   "Scorri e tocca <span class='t'>Aggiungi alla schermata Home</span>",
-                  "Tocca <span class='t'>Aggiungi</span> in alto a destra"], ipad);
+                  "Tocca <span class='t'>Aggiungi</span> in alto a destra"], ipad,
+                 { dopo: '<p class="nota">Non trovi «Aggiungi alla schermata Home»? Tocca prima <span class="t">Apri in Safari</span>.</p>' });
     } else if (ios) {
       istruzioni(["Tocca <span class='t'>Condividi ⬆︎</span> nella barra dell'indirizzo",
                   "Tocca <span class='t'>Aggiungi alla schermata Home</span>",
