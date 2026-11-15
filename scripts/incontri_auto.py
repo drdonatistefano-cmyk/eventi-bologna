@@ -5,6 +5,7 @@ Fonti (tutte lette nel rispetto dei robots.txt, una pagina al secondo):
   Bologna - culturabologna.it, agenda del Comune: categorie «incontri» e «visite-guidate».
             Di ogni appuntamento nuovo legge la scheda una volta sola (comune e ingresso gratuito),
             poi la tiene in dati/incontri_schede.json e non la richiede più.
+  Ferrara - ferrarainfo.com (portale turistico ufficiale, API pubblica): categorie «incontri e conferenze» e «visite guidate»
   Milano  - Casa della Cultura (appuntamenti dei prossimi giorni in prima pagina)
           - BookCity Milano (novembre): programma giorno per giorno, senza gli eventi fuori provincia e riservati alle classi
           - Fondazione Feltrinelli (calendario eventi: solo quelli in Viale Pasubio / in Fondazione)
@@ -19,12 +20,12 @@ QUI = os.path.dirname(os.path.abspath(__file__))
 RADICE = os.path.dirname(QUI)
 CITTA = sys.argv[1] if len(sys.argv) > 1 else "bo"
 PROVA = "--prova" in sys.argv
-sys.argv = [sys.argv[0]] + (["--citta", "mi"] if CITTA == "mi" else [])
+sys.argv = [sys.argv[0]] + (["--citta", CITTA] if CITTA != "bo" else [])
 sys.path.insert(0, QUI)
 import aggiorna as A  # elenco dei comuni della città
 
-FILE = {"bo": "incontri.js", "mi": "milano/incontri.js"}[CITTA]
-CAPO = {"bo": "Bologna", "mi": "Milano"}[CITTA]
+FILE = {"bo": "incontri.js", "mi": "milano/incontri.js", "ra": "ravenna/incontri.js", "fe": "ferrara/incontri.js"}[CITTA]
+CAPO = {"bo": "Bologna", "mi": "Milano", "ra": "Ravenna", "fe": "Ferrara"}[CITTA]
 UA = "Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
 OGGI = datetime.date.today()
 FINE = OGGI + datetime.timedelta(days=45)
@@ -297,6 +298,65 @@ def bookcity():
     return out
 
 
+# ---------------- Ferrara: portale turistico ufficiale (ferrarainfo.com, Plone; robots.txt permette tutto) ----------------
+PORTALE = {"fe": "https://www.ferrarainfo.com"}
+PSCHEDE = os.path.join(RADICE, "dati", f"incontri_portale_{CITTA}.json")
+
+
+def iso(s): return datetime.date.fromisoformat(s[:10]) if s and re.match(r"\d{4}-\d{2}-\d{2}", s) else None
+
+
+def portale():
+    base = PORTALE.get(CITTA); out = []
+    if not base: return out
+    cache = json.load(open(PSCHEDE)) if os.path.exists(PSCHEDE) else {}
+    q = (f"{base}/++api++/@search?portal_type=Event&b_size=300&end.query={OGGI.isoformat()}&end.range=min&sort_on=start"
+         "&metadata_fields=event_category&metadata_fields=modified&metadata_fields=recurrence&metadata_fields=whole_day")
+    try: d = json.loads(get(q) or "{}")
+    except Exception: d = {}
+    nuove, letti = {}, 0
+    for it in d.get("items", []):
+        u = it["@id"]
+        if "/it/" not in u or it.get("event_category") not in ("meetings_conferences", "guided_tours"): continue
+        letti += 1
+        sc = cache.get(u)
+        if not sc or sc.get("modified") != it.get("modified"):
+            try: o = json.loads(get(base + "/++api++" + u.split(base, 1)[1]) or "{}")
+            except Exception: o = {}
+            if not o: continue
+            pr = re.sub(r"<[^>]+>", " ", (o.get("prices") or {}).get("data") or "")
+            sc = {"modified": it.get("modified"), "titolo": o.get("title", ""), "start": o.get("start") or "", "end": o.get("end") or "",
+                  "rec": o.get("recurrence") or "", "intero": bool(o.get("whole_day")), "citta": o.get("city") or "", "via": o.get("street") or "",
+                  "descr": o.get("description") or "", "prezzi": pr, "cat": it.get("event_category")}
+        nuove[u] = sc
+        ini, fin = iso(sc["start"]), iso(sc["end"])
+        if not ini: continue
+        date = []
+        rec = sc["rec"]
+        if rec:
+            for x in re.findall(r"(\d{8})T", "\n".join(l for l in rec.split("\n") if l.startswith(("RDATE", "DTSTART")))):
+                date.append(datetime.date(int(x[:4]), int(x[4:6]), int(x[6:])))
+            m = re.search(r"UNTIL=(\d{8})", rec)
+            if m and "FREQ=" in rec:   # ricorrenza regolare: un'unica voce «fino al»
+                fino = datetime.date(int(m.group(1)[:4]), int(m.group(1)[4:6]), int(m.group(1)[6:]))
+                if fino >= OGGI and ini <= FINE: date = [("periodo", max(ini, OGGI), min(fino, FINE))]
+        else:
+            date = [("periodo", ini, fin or ini)] if fin and fin > ini else [ini]
+        ora = "" if sc["intero"] else (datetime.datetime.fromisoformat(sc["start"].replace("Z", "+00:00")) + datetime.timedelta(hours=1)).strftime("%H:%M")
+        luogo = re.split(r"\s+[-–]\s+|,\s*(?=via|corso|piazza|viale|largo)", sc["via"], 1, flags=re.I)[0].strip() or sc["citta"].title() or CAPO
+        c = next((x for x in COMUNI if A.norm(x) == A.norm(sc["citta"])), "") or CAPO
+        gen = "Visite guidate" if sc["cat"] == "guided_tours" else genere("", sc["titolo"], sc["descr"], luogo)
+        disp = ingresso(sc["prezzi"] + " " + sc["descr"])
+        for dt in date:
+            if isinstance(dt, tuple): a, b = dt[1], dt[2]
+            else: a = b = dt
+            if b < OGGI or a > FINE: continue
+            out.append(voce("ferrarainfo", a, b, ora, sc["titolo"], luogo, c, gen, sc["descr"], u, disp))
+    if not PROVA: json.dump(nuove, open(PSCHEDE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    R["fonti"]["ferrarainfo"] = {"letti": letti, "voci": len(out)}
+    return out
+
+
 # ---------------- scrittura ----------------
 def leggi_vecchio():
     p = os.path.join(RADICE, FILE)
@@ -307,7 +367,7 @@ def leggi_vecchio():
 
 
 def main():
-    nuovi = bologna() if CITTA == "bo" else casa_cultura() + feltrinelli() + bookcity()
+    nuovi = bologna() if CITTA == "bo" else (casa_cultura() + feltrinelli() + bookcity() if CITTA == "mi" else portale())
     vecchi = leggi_vecchio()
     # fonte che stavolta non ha dato nulla: tiene i suoi incontri ancora futuri
     fonti_ok = {v["_f"] for v in nuovi}
