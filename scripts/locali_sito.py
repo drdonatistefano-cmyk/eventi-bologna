@@ -347,7 +347,7 @@ if __name__ == "__main__":
     if len(sys.argv) >= 3 and sys.argv[1] == "--prova":
         citta = sys.argv[2]; solo = sys.argv[3].lower() if len(sys.argv) > 3 else ""
         rad = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        f = os.path.join(rad, "eventi.js" if citta == "bo" else "milano/eventi.js")
+        f = os.path.join(rad, {"bo": "eventi.js", "mi": "milano/eventi.js", "ra": "ravenna/eventi.js", "fe": "ferrara/eventi.js"}[citta])
         s = open(f).read(); G = json.loads(s[s.index("=") + 1:].rstrip().rstrip(";"))["eventi"]
         for c in config(citta):
             if solo and solo not in c["nome"].lower(): continue

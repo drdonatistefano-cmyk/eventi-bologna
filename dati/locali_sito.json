@@ -179,5 +179,91 @@
    "genere": "Teatro",
    "tipo": "Prosa"
   }
+ ],
+ "ra": [
+  {
+   "nome": "Teatro Socjale",
+   "url": "https://www.teatrosocjale.it",
+   "metodo": "tribe",
+   "comune": "Ravenna"
+  },
+  {
+   "nome": "Mama's Club",
+   "url": "https://www.mamasclub.it",
+   "metodo": "tribe",
+   "comune": "Ravenna"
+  },
+  {
+   "nome": "Teatro Alighieri",
+   "url": "https://www.teatroalighieri.org",
+   "metodo": "elenco",
+   "scopri": true,
+   "comune": "Ravenna",
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Ravenna Festival",
+   "url": "https://www.ravennafestival.org",
+   "metodo": "elenco",
+   "scopri": true,
+   "comune": "Ravenna",
+   "genere": "Classica"
+  },
+  {
+   "nome": "Teatro Masini",
+   "url": "https://www.accademiaperduta.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "comune": "Faenza",
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Teatro Rossini",
+   "url": "https://www.teatrorossini.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "comune": "Lugo",
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  }
+ ],
+ "fe": [
+  {
+   "nome": "Jazz Club Ferrara",
+   "url": "https://www.jazzclubferrara.com",
+   "metodo": "jsonld",
+   "scopri": true,
+   "comune": "Ferrara",
+   "genere": "Jazz"
+  },
+  {
+   "nome": "Teatro Comunale Claudio Abbado",
+   "url": "https://www.teatrocomunaleferrara.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "comune": "Ferrara",
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Teatro Nuovo",
+   "url": "https://www.teatronuovoferrara.com",
+   "metodo": "elenco",
+   "scopri": true,
+   "comune": "Ferrara",
+   "genere": "Teatro",
+   "tipo": "Prosa"
+  },
+  {
+   "nome": "Ferrara Musica",
+   "url": "https://www.ferraramusica.it",
+   "metodo": "elenco",
+   "scopri": true,
+   "comune": "Ferrara",
+   "genere": "Classica",
+   "luogo": "Teatro Comunale Claudio Abbado"
+  }
  ]
 }

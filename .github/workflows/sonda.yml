@@ -10,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     timeout-minutes: 30
-    env:
-      SOLO_CITTA: "ra,fe"
     steps:
       - uses: actions/checkout@v4
-      - run: python3 -u scripts/sonda_locali.py || true
+      - run: python3 -u scripts/locali_sito.py --prova ra || true
+      - run: python3 -u scripts/locali_sito.py --prova fe || true
