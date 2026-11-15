@@ -1,12 +1,14 @@
 {
  "aggiunti": [
+  "2026-11-18 Women in Italian Disco: Peermusic in conversation w/ POPA – NODO bar (DICE)",
+  "2026-11-18 Beyond streaming - Milano Music Week – mare culturale urbano - cascina torrette (DICE)",
   "2027-02-01 U.d.o. – Magazzini Generali (Magazzini Generali)"
  ],
  "link_biglietti": 0,
  "fonti": {
   "DICE": {
-   "letti": 200,
-   "aggiunti": 0
+   "letti": 198,
+   "aggiunti": 2
   },
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "arte.it": {
@@ -19,7 +21,7 @@
     "in_guida": 37,
     "aggiunti": 1,
     "esito": "ok",
-    "secondi": 13
+    "secondi": 8
    },
    "Teatro Principe": {
     "sul_sito": 2,
@@ -33,14 +35,14 @@
     "in_guida": 80,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 8
+    "secondi": 12
    },
    "Gate Milano": {
     "sul_sito": 31,
     "in_guida": 32,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 8
+    "secondi": 6
    },
    "Teatro Out Off": {
     "sul_sito": 12,
@@ -54,7 +56,7 @@
     "in_guida": 7,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 8
+    "secondi": 7
    },
    "Circolo Magnolia": {
     "sul_sito": 20,
@@ -68,7 +70,7 @@
     "in_guida": 35,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 101
+    "secondi": 100
    },
    "Unipol Dome": {
     "sul_sito": 9,
@@ -82,7 +84,7 @@
     "in_guida": 57,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 170
+    "secondi": 166
    },
    "Teatro Carcano": {
     "sul_sito": 6,
@@ -96,7 +98,7 @@
     "in_guida": 32,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 55
+    "secondi": 56
    },
    "Auditorium di Milano": {
     "sul_sito": 8,
@@ -110,7 +112,7 @@
     "in_guida": 26,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 102
+    "secondi": 103
    },
    "Teatro della Cooperativa": {
     "sul_sito": 12,
@@ -124,12 +126,12 @@
     "in_guida": 30,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 121
+    "secondi": 116
    }
   }
  },
  "errori": [],
- "data": "2026-11-15T20:09",
- "eventi_totali": 1187,
+ "data": "2026-11-15T20:47",
+ "eventi_totali": 1189,
  "mostre_totali": 40
 }

@@ -1,30 +1,20 @@
 {
  "aggiunti": [
-  "mostra 2026-05-15→2026-12-31 L’amore è una Delizia. Usi e temi amatori delle maioliche nel Rinascimento – Delizia Estense del Verginese via del Verginese, 56 (portale turistico)",
-  "mostra 2026-09-19→2027-01-10 Da Monet a Van Gogh a Kandinsky – Palazzo dei Diamanti (portale turistico)",
-  "mostra 2026-10-02→2027-01-10 CESURE. Lines of Fracture – Sedi diverse Vedi programma (portale turistico)",
-  "mostra 2026-10-02→2027-01-10 Marcello Provenzale da Cento – Pinacoteca Civica (portale turistico)",
-  "mostra 2026-10-08→2027-01-31 Vanitas. Fiori e simboli, da Hayez a Casorati – Palazzo Barbantini-Koch (portale turistico)",
-  "mostra 2026-10-17→2026-12-05 Alfredo Pini - In itinere – Galleria Lacerba (portale turistico)",
-  "mostra 2026-10-23→2027-02-07 Shabbat Shalom – Via Piangipane 81 (portale turistico)",
-  "mostra 2026-10-23→2026-11-21 Ferrara tra Venezia e Firenze – Via Centoversuri 6/a (portale turistico)",
-  "mostra 2026-10-29→2027-01-17 Il Monte Analogo. Michelangelo Antonioni e Luigi Ghirri – Spazio Antonioni (portale turistico)",
-  "mostra 2026-10-30→2027-01-31 Labirintica – Itinera Mentis – Museo Archeologico Nazionale (portale turistico)",
-  "mostra 2026-11-01→2026-11-30 Frameflow – Art Gallery by Hotel Annunziata (portale turistico)",
-  "mostra 2026-11-08→2026-11-15 COLOR DI FOGLIA. Giardini ferraresi negli acquerelli di Lucia Bonazzi – Studio d’Arte Nedda Bonini (portale turistico)",
-  "mostra 2026-11-08→2026-12-06 Amarcord. Immagini del passato – MAF (portale turistico)",
-  "mostra 2026-11-10→2026-12-12 Florestano Vancini, la coscienza del cinema italiano – Palazzo del Vescovo (portale turistico)",
-  "mostra 2026-11-14→2026-12-08 Sognando Ferrara – Galleria del Carbone (portale turistico)",
-  "mostra 2026-11-15→2027-01-06 Nel segno del fiume – Via A. Gramsci, 3 (portale turistico)",
-  "mostra 2026-12-06→2027-01-06 Presepi sotto i ponti e chiese di Comacchio – Comacchio, centro storico (portale turistico)",
-  "mostra 2027-03-13→2027-07-11 Dalla libertà alla censura. Arte e potere in Germania 1910-1945 – Palazzo dei Diamanti (portale turistico)"
+  "2026-11-26 Chiedi cos’erano i giù box – Auditorium Pandurera (Auditorium Pandurera)",
+  "2026-12-02 Volpone – Auditorium Pandurera (Auditorium Pandurera)",
+  "2026-12-10 Venerdì 13 – Auditorium Pandurera (Auditorium Pandurera)",
+  "2027-01-13 L’attrice – Auditorium Pandurera (Auditorium Pandurera)",
+  "2027-01-30 Io Marte, tu Mercole – Auditorium Pandurera (Auditorium Pandurera)",
+  "2027-02-09 Classescion – Auditorium Pandurera (Auditorium Pandurera)",
+  "2027-02-13 Indovina chi viene a cena – Auditorium Pandurera (Auditorium Pandurera)",
+  "2027-02-24 Il brutto anatroccolo – Auditorium Pandurera (Auditorium Pandurera)"
  ],
  "link_biglietti": 0,
  "fonti": {
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "portale turistico": {
    "letti": 18,
-   "aggiunti": 18
+   "aggiunti": 0
   },
   "arte.it": {
    "letti": 2,
@@ -40,31 +30,45 @@
    },
    "Teatro Comunale Claudio Abbado": {
     "sul_sito": 48,
-    "in_guida": 66,
+    "in_guida": 69,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 96
    },
    "Teatro Nuovo": {
     "sul_sito": 24,
-    "in_guida": 24,
+    "in_guida": 60,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 117
+    "secondi": 114
    },
    "Ferrara Musica": {
     "sul_sito": 24,
-    "in_guida": 66,
+    "in_guida": 69,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 47
+   },
+   "Auditorium Pandurera": {
+    "sul_sito": 8,
+    "in_guida": 8,
+    "aggiunti": 8,
+    "esito": "ok",
+    "secondi": 19
+   },
+   "Teatro De Micheli": {
+    "sul_sito": 13,
+    "in_guida": 13,
+    "aggiunti": 0,
+    "esito": "ok",
+    "secondi": 7
    }
   }
  },
  "errori": [
   "https://dice.fm/browse/ferrara: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-15T20:16",
- "eventi_totali": 98,
+ "data": "2026-11-15T20:54",
+ "eventi_totali": 165,
  "mostre_totali": 18
 }

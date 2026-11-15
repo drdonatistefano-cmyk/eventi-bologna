@@ -1,7 +1,5 @@
 {
- "aggiunti": [
-  "2027-01-29 Faith – Bravo Caffè (Bravo Caffè)"
- ],
+ "aggiunti": [],
  "link_biglietti": 0,
  "fonti": {
   "DICE": {
@@ -38,7 +36,7 @@
    "Bravo Caffè": {
     "sul_sito": 38,
     "in_guida": 38,
-    "aggiunti": 1,
+    "aggiunti": 0,
     "esito": "ok",
     "secondi": 4
    },
@@ -54,21 +52,21 @@
     "in_guida": 32,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 32
+    "secondi": 29
    },
    "Teatro Ebe Stignani": {
     "sul_sito": 10,
     "in_guida": 20,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 35
+    "secondi": 34
    },
    "Estragon Club": {
     "sul_sito": 19,
     "in_guida": 19,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 41
+    "secondi": 39
    },
    "Auditorium Manzoni (2)": {
     "sul_sito": 18,
@@ -89,7 +87,7 @@
  "errori": [
   "https://www.locomotivclub.it/robots.txt: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-15T19:56",
+ "data": "2026-11-15T20:35",
  "eventi_totali": 763,
  "mostre_totali": 27
 }
