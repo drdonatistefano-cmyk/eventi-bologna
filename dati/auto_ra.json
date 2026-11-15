@@ -1,5 +1,39 @@
 {
- "aggiunti": [],
+ "aggiunti": [
+  "2026-11-20 Socjal Special Jazz Event – Teatro Socjale (Teatro Socjale)",
+  "2026-11-22 100 Miles For Miles Davis – Teatro Socjale (Teatro Socjale)",
+  "2026-11-27 Abigail Lapell – Teatro Socjale (Teatro Socjale)",
+  "2026-11-28 Cristian CC Quartet e Phil Palmer – Teatro Socjale (Teatro Socjale)",
+  "2026-12-11 Filippo Graziani – Teatro Socjale (Teatro Socjale)",
+  "2026-12-18 Bandakadabra – Teatro Socjale (Teatro Socjale)",
+  "2027-01-08 Vito Bassi Quartet featuring Simone Zanchini – Teatro Socjale (Teatro Socjale)",
+  "2026-11-20 Lisa Canta Ornella – Mama's Club (Mama's Club)",
+  "2026-11-21 Nabidh Trio – Mama's Club (Mama's Club)",
+  "2026-11-27 bal folk Quatrad Duo – Mama's Club (Mama's Club)",
+  "2026-11-28 Patty Moonlight Jazz – Mama's Club (Mama's Club)",
+  "2026-12-04 Voci Dai Cippi – Mama's Club (Mama's Club)",
+  "2026-12-05 Elisa Ridolfi “L’ora del funambolo” – Mama's Club (Mama's Club)",
+  "2026-12-11 Mio Zio Bukowski – Mama's Club (Mama's Club)",
+  "2026-12-12 Puglisi-petretti Duo – Mama's Club (Mama's Club)",
+  "2026-12-18 Bal Folk – Mama's Club (Mama's Club)",
+  "2026-12-19 Le Scat Noir – Mama's Club (Mama's Club)",
+  "2027-01-08 A canzoni non si fan rivoluzioni – Mama's Club (Mama's Club)",
+  "2027-01-09 Una Ninna Nanna Proibita – Mama's Club (Mama's Club)",
+  "2027-01-15 Ferrobattuto – Mama's Club (Mama's Club)",
+  "2027-01-16 Not TO Mention Trio Feat Riccardo Tramontani – Mama's Club (Mama's Club)",
+  "2026-11-18 Il seme magico – Teatro Masini (Teatro Masini)",
+  "2026-11-22 Re Tutto Cancella – Teatro Masini (Teatro Masini)",
+  "2027-01-06 Enrichetta dal ciuffo – Teatro Masini (Teatro Masini)",
+  "2027-02-02 Franciscus – Teatro Masini (Teatro Masini)",
+  "2027-02-12 Orfeo ed Euridice – Teatro Masini (Teatro Masini)",
+  "2027-02-18 AlgoRitmo – Teatro Masini (Teatro Masini)",
+  "2027-02-24 Le Nid (il nido) – Teatro Masini (Teatro Masini)",
+  "2027-03-12 L'acciarino magico – Teatro Masini (Teatro Masini)",
+  "2027-04-09 L'oca Lucia – Teatro Masini (Teatro Masini)",
+  "2027-04-20 Chi ha paura di Denti di ferro? – Teatro Masini (Teatro Masini)",
+  "2027-04-28 Charlie – Teatro Masini (Teatro Masini)",
+  "2027-06-29 Autoritratto – Teatro Masini (Teatro Masini)"
+ ],
  "link_biglietti": 0,
  "fonti": {
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
@@ -7,14 +41,35 @@
    "letti": 3,
    "aggiunti": 0
   },
-  "siti dei locali": {}
+  "siti dei locali": {
+   "Teatro Socjale": {
+    "sul_sito": 7,
+    "in_guida": 7,
+    "aggiunti": 7,
+    "esito": "ok",
+    "secondi": 15
+   },
+   "Mama's Club": {
+    "sul_sito": 14,
+    "in_guida": 14,
+    "aggiunti": 14,
+    "esito": "ok",
+    "secondi": 25
+   },
+   "Teatro Masini": {
+    "sul_sito": 12,
+    "in_guida": 12,
+    "aggiunti": 12,
+    "esito": "ok",
+    "secondi": 154
+   }
+  }
  },
  "errori": [
   "https://dice.fm/browse/ravenna: HTTP Error 404: Not Found",
-  "convalida: Eventi validi: 0 · tolti perché finiti: 0 · doppioni uniti: 0\nPer zona: \nComuni con eventi: 0/18\n\nERRORE: meno di 5 eventi, probabilmente l'elenco è incompleto – niente è stato scritto.\n",
   "convalida: Mostre valide: 0 · tolte perché chiuse: 0 · doppioni tolti: 0\n\nERRORE: meno di 5 mostre, elenco probabilmente incompleto – niente è stato scritto.\n"
  ],
- "data": "2026-11-15T18:16",
- "eventi_totali": 0,
+ "data": "2026-11-15T18:48",
+ "eventi_totali": 33,
  "mostre_totali": 0
 }

@@ -1,45 +1,12 @@
 {
  "aggiunti": [
-  "2026-11-20 Lobo 14yrs x Isciān – NAMA (indoor) (DICE)",
-  "2026-11-20 Hi-Fi Weekends with ANDREA PASSENGER *Free Entry* – Bluesquare Milano (DICE)",
-  "2026-11-20 Moab | Xiaolin | Biocym b2b Luce | Ness (live) – Duro (DICE)",
-  "2026-11-20 Evolvere with Blume + Formant Value (live) + Hagva + Nawaz – ARCA (DICE)",
-  "2026-11-20 Milanosulset w/ Gemitaiz b2b Frenetik – APOLLO CLUB MILANO (DICE)",
-  "2026-11-20 INNER CIRCLE in the Backroom – APOLLO CLUB MILANO (DICE)",
-  "2026-11-21 MOLTO – Club Giovanile Milano (DICE)",
-  "2026-11-21 Le Cannibale x MMW26 - Emmanuelle, Barbara Boeing – Fabbrica del Vapore (DICE)",
-  "2026-11-21 Shockterapia Underground Fever Vol IV – LUME (DICE)",
-  "2026-11-21 Raus with Surgeon – Studionotte (DICE)",
-  "2026-11-21 CABANNE X DUB MUSIK X SAM – Sam - Sampling Moods (DICE)",
-  "2026-11-21 Hi-Fi Weekends: 3 Years of Gestalt with Lucus *Free Entry* – Bluesquare Milano (DICE)",
-  "2026-11-21 Trance Gate Opening Party x Tunnel Club – Tunnel Club (DICE)",
-  "2026-11-21 SLATE meets HØL with DJ RED – NAMA (indoor) (DICE)",
-  "2026-11-28 I Don't Care | Il Party Anni 2010 – Circolo Magnolia (DICE)",
-  "2026-11-17 Germogli - Milano Music Week – mare culturale urbano - cascina torrette (DICE)",
-  "2026-11-17 ApprofonDISCO / AscoltoCollettivo Nicolaj Serjotti – Alveare Culturale Studio Ets (DICE)",
-  "2026-11-17 DONNE IN MUSICA: UNFILTERED VOICES | Talk & Showcase – SALONE 14 @ Yellowsquare (DICE)",
-  "2026-11-17 MMW26 / Sessione Sotterranea // IASKO – Bachelite cLab (DICE)",
-  "2026-11-17 La Festa di Bellezza Records – Arci Bellezza (DICE)",
-  "2026-11-18 Sopravvivere al mainstream. Tra illusioni, scorciatoie e consapevolezza – APOLLO CLUB MILANO (DICE)",
-  "2026-11-18 Underground: Crescere nel sottosuolo – Detune (DICE)",
-  "2027-02-01 U.d.o. – Magazzini Generali (Magazzini Generali)",
-  "2026-12-09 Bestierare + Dj Drugo – Circolo Magnolia (Circolo Magnolia)",
-  "2026-12-11 Electric Wave w/ Noisia – Circolo Magnolia (Circolo Magnolia)",
-  "2026-11-16 (s)legati – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-16 Anche i Sogni Impossibili – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-16 Di a da in con su per tra fra Shakespeare – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-16 Madri – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-16 Metadietro – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-16 Un Alt(r)o Everest – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-17 Un Marito Ideale – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-28 Stai Zitta! – Teatro Carcano (Teatro Carcano)",
-  "2026-12-12 Harry Potter tra scienza, musica e magia – Auditorium di Milano (Auditorium di Milano)"
+  "2027-02-01 U.d.o. – Magazzini Generali (Magazzini Generali)"
  ],
  "link_biglietti": 0,
  "fonti": {
   "DICE": {
    "letti": 200,
-   "aggiunti": 22
+   "aggiunti": 0
   },
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "arte.it": {
@@ -52,7 +19,7 @@
     "in_guida": 37,
     "aggiunti": 1,
     "esito": "ok",
-    "secondi": 10
+    "secondi": 11
    },
    "Teatro Principe": {
     "sul_sito": 2,
@@ -66,14 +33,14 @@
     "in_guida": 80,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 14
+    "secondi": 10
    },
    "Gate Milano": {
     "sul_sito": 31,
     "in_guida": 32,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 13
+    "secondi": 11
    },
    "Teatro Out Off": {
     "sul_sito": 12,
@@ -87,40 +54,40 @@
     "in_guida": 7,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 7
+    "secondi": 8
    },
    "Circolo Magnolia": {
     "sul_sito": 20,
     "in_guida": 48,
-    "aggiunti": 2,
+    "aggiunti": 0,
     "esito": "ok",
-    "secondi": 48
+    "secondi": 51
    },
    "Santeria Toscana 31": {
     "sul_sito": 13,
     "in_guida": 35,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 108
+    "secondi": 104
    },
    "Unipol Dome": {
     "sul_sito": 9,
     "in_guida": 22,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 37
+    "secondi": 30
    },
    "Teatro Elfo Puccini": {
     "sul_sito": 45,
     "in_guida": 57,
-    "aggiunti": 7,
+    "aggiunti": 0,
     "esito": "ok",
-    "secondi": 167
+    "secondi": 185
    },
    "Teatro Carcano": {
     "sul_sito": 6,
     "in_guida": 18,
-    "aggiunti": 1,
+    "aggiunti": 0,
     "esito": "ok",
     "secondi": 14
    },
@@ -129,40 +96,40 @@
     "in_guida": 32,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 72
+    "secondi": 56
    },
    "Auditorium di Milano": {
     "sul_sito": 8,
     "in_guida": 10,
-    "aggiunti": 1,
+    "aggiunti": 0,
     "esito": "ok",
-    "secondi": 21
+    "secondi": 22
    },
    "Teatro Filodrammatici": {
     "sul_sito": 26,
     "in_guida": 26,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 102
+    "secondi": 116
    },
    "Teatro della Cooperativa": {
     "sul_sito": 12,
     "in_guida": 12,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 39
+    "secondi": 40
    },
    "Teatro Gerolamo": {
     "sul_sito": 31,
     "in_guida": 30,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 111
+    "secondi": 232
    }
   }
  },
  "errori": [],
- "data": "2026-11-15T18:16",
+ "data": "2026-11-15T18:45",
  "eventi_totali": 1187,
  "mostre_totali": 40
 }
