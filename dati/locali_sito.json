@@ -240,6 +240,29 @@
    "genere": "Classica",
    "luogo": "Teatro Comunale Claudio Abbado",
    "escludi": "raccontare la musica|guida all.ascolto|incontr|conferenz|presentazion"
+  },
+  {
+   "nome": "Auditorium Pandurera",
+   "comune": "Cento",
+   "metodo": "elenco",
+   "url": "https://www.fondazioneteatroborgatti.it/spettacoli-teatrali/",
+   "link": "/tc-events/[a-z0-9][^\"'#?\\s]{2,}",
+   "genere": "Teatro",
+   "tipo": "Prosa",
+   "max": 40
+  },
+  {
+   "nome": "Teatro Barattoni",
+   "comune": "Ostellato",
+   "metodo": "elenco",
+   "url": [
+    "https://www.sipariostellato.it/rassegna/la-stagione-serale-2027/",
+    "https://www.sipariostellato.it/rassegna/junior-pomeriggi-a-teatro-2026-27/"
+   ],
+   "link": "sipariostellato\\.it/(?:spettacolo|spettacoli|evento|eventi|event)/[a-z0-9][^\"'#?\\s]{2,}",
+   "genere": "Teatro",
+   "tipo": "Prosa",
+   "max": 30
   }
  ]
 }

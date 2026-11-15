@@ -449,6 +449,25 @@ PORTALI = {"fe": "https://www.ferrarainfo.com"}
 SFILE = os.path.join(RADICE, "dati", f"portale_{CITTA}.json")
 
 
+VIA = r"(?:via|corso|piazza|piazzale|viale|largo|vicolo|p\.zza|v\.le)\b"
+SEDI_NOTE = {r"piangipane,?\s*81": "MEIS – Museo Nazionale dell'Ebraismo Italiano e della Shoah"}
+
+
+def sede_portale(via, descr, c):
+    """Nome della sede dal campo indirizzo del portale («Palazzo X - Corso Y 12»)."""
+    v = re.sub(r"(?i)\s*vedi programma.*$", "", via or "").strip()
+    for rx, n in SEDI_NOTE.items():
+        if re.search(rx, v, re.I): return n
+    s = re.split(r"\s+[-–]\s+|,\s*(?=%s)|\s+(?=%s)" % (VIA, VIA), v, 1, flags=re.I)[0].strip(" ,")
+    if s and not re.match(VIA, s, re.I) and not re.match(r"\d", s) and not re.match(r"(?i)sedi diverse", s): return s
+    m = re.search(r"\b(?:presso|nei|negli|nelle|nel|nella|al|alla|allo)\s+(?:(?:le\s+)?(?:sale|spazi)\s+(?:del|della|dello|dei|degli)\s+)?((?:[A-Z][\w'’.-]*)(?:\s+(?:d[ei]l?l?[aoei']?\s+|di\s+|e\s+)?[A-Z][\w'’.-]*){0,5})", descr or "")
+    if not m: return v or c
+    r = m.group(1).strip()
+    if len(r.split()) == 1:  # «nei Musei nazionali di Ferrara»: prende il nome per intero fino alla punteggiatura
+        r = " ".join(re.split(r"[,.;:(]", descr[m.start(1):])[0].split()[:5])
+    return r
+
+
 def portale():
     base = PORTALI.get(CITTA)
     if not base: return
@@ -479,7 +498,7 @@ def portale():
         c = comune(sc["citta"].title(), sc["via"])
         if not (tit and ini and fin and c) or fin < OGGI or ini > LIMITE: continue
         if (datetime.date.fromisoformat(fin) - datetime.date.fromisoformat(ini)).days > 730: continue  # allestimenti permanenti
-        sede = re.split(r"\s+[-–]\s+|,\s*(?:via|corso|piazza|viale|largo)\b", sc["via"], 1, flags=re.I)[0].strip() or c
+        sede = sede_portale(sc["via"], sc["descr"], c)
         tt = tok(tit)
         if any(len(tt & tok(x["titolo"])) / max(1, min(len(tt), len(tok(x["titolo"])))) >= 0.6 for x in mo if tok(x["titolo"])): continue
         testo = (tit + " " + sc["descr"]).lower()
