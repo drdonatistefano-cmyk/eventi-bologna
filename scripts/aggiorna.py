@@ -10,7 +10,7 @@ lo controlla, toglie gli eventi già finiti, unisce i doppioni,
 assegna gli id mancanti, ordina e scrive eventi.js (più eventi.json di lavoro).
 Se trova errori NON scrive nulla e termina con codice 1: correggi e rilancia.
 """
-import json, re, sys, datetime, unicodedata, collections
+import json, os, re, sys, datetime, unicodedata, collections
 
 GENERI = {"Rock", "Jazz", "Pop e altra musica", "Classica", "Teatro", "Serate e club"}
 DISP = {"disponibile", "pochi posti", "sold out", "non disponibile", "non ancora in vendita", "da verificare"}
@@ -31,13 +31,19 @@ ZONE_MI = {
  "Sud ed Est": ["Assago","Rozzano","San Donato Milanese","San Giuliano Milanese","Segrate","Peschiera Borromeo","Pioltello","Cernusco sul Naviglio","Settala","Corsico","Buccinasco"],
 }
 # --citta mi: perimetro di Milano (stesse zone di index.html, CITTA_CFG.mi)
-if "--citta" in sys.argv and sys.argv[sys.argv.index("--citta") + 1] == "mi":
+_CK = sys.argv[sys.argv.index("--citta") + 1] if "--citta" in sys.argv else "bo"
+if _CK == "mi":
     ZONE = ZONE_MI
 MINIMO = 50 if ZONE is not ZONE_MI else 20
+if _CK in ("ra", "fe"):   # Ravenna e Ferrara (dal 15/11/2026): perimetro in scripts/citta_cfg.py
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import citta_cfg as _CC
+    ZONE = _CC.CITTA[_CK]["zone"]; MINIMO = _CC.CITTA[_CK]["minimo"]
 COMUNE = {c: z for z, cs in ZONE.items() for c in cs}
 ALIAS = {"porretta terme": "Alto Reno Terme", "casalecchio": "Casalecchio di Reno", "san lazzaro": "San Lazzaro di Savena",
          "zola": "Zola Predosa", "persiceto": "San Giovanni in Persiceto", "castel san pietro": "Castel San Pietro Terme",
          "bazzano": "Valsamoggia", "crespellano": "Valsamoggia", "funo": "Argelato", "san marino di bentivoglio": "Bentivoglio"}
+if _CK in ("ra", "fe"): ALIAS = dict(_CC.CITTA[_CK]["alias"])
 # Stesso locale scritto in due modi → un solo nome (14/11/2026: i nomi doppi dividevano il programma di un locale in due)
 STESSO_LUOGO = {
     "Teatro Arena del Sole": "Arena del Sole", "Teatro Auditorium Manzoni": "Auditorium Manzoni", "Estragon": "Estragon Club",

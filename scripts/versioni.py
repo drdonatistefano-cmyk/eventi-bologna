@@ -17,7 +17,7 @@ import re
 
 FILE = ["eventi", "serate", "mostre", "cinema", "incontri", "sport"]
 PRIMA = ["eventi", "serate", "mostre"]   # dal 14/11/2026 le loro impronte stanno anche in index.html (marcatore /*V0*/…/*V0*/)
-CARTELLE = [".", "milano"]
+CARTELLE = [".", "milano", "ravenna", "ferrara"]
 
 
 def impronta(percorso):

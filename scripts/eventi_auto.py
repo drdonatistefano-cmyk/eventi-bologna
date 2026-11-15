@@ -15,18 +15,20 @@ QUI = os.path.dirname(os.path.abspath(__file__))
 RADICE = os.path.dirname(QUI)
 CITTA = sys.argv[1] if len(sys.argv) > 1 else "bo"
 PROVA = "--prova" in sys.argv
-sys.argv = [sys.argv[0]] + (["--citta", "mi"] if CITTA == "mi" else [])
+sys.argv = [sys.argv[0]] + (["--citta", CITTA] if CITTA != "bo" else [])
 sys.path.insert(0, QUI)
 import aggiorna as A  # comuni, generi e regole di convalida
 
 CFG = {"bo": dict(eventi="eventi.js", mostre="mostre.js", dice="bologna", nome="Bologna", arte="bologna", tm="Bologna"),
-       "mi": dict(eventi="milano/eventi.js", mostre="milano/mostre.js", dice="milan", nome="Milano", arte="milano", tm="Milano")}[CITTA]
+       "mi": dict(eventi="milano/eventi.js", mostre="milano/mostre.js", dice="milan", nome="Milano", arte="milano", tm="Milano"),
+       **{k: dict(eventi=f"{v['cartella']}/eventi.js", mostre=f"{v['cartella']}/mostre.js", dice=v["dice"], nome=v["nome"], arte=v["arte"], tm=v["tm"])
+          for k, v in __import__("citta_cfg").CITTA.items()}}[CITTA]
 UA = "Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
 OGGI = datetime.date.today().isoformat()
 LIMITE = (datetime.date.today() + datetime.timedelta(days=365)).isoformat()
 COMUNI = set(A.COMUNE)
 ALIAS_C = {"milan": "Milano", "milano": "Milano", "bologna": "Bologna", **{k: v for k, v in A.ALIAS.items()}}
-STOP = set("e and the di il la lo i gli le de del della dei in a al alla live tour concerto teatro milano bologna milan 2026 2027 show con feat ft x special guest guests ospiti presenta in tickets".split())
+STOP = set("e and the di il la lo i gli le de del della dei in a al alla live tour concerto teatro milano bologna milan ravenna ferrara 2026 2027 show con feat ft x special guest guests ospiti presenta in tickets".split())
 R = {"aggiunti": [], "link_biglietti": 0, "fonti": {}, "errori": []}
 
 
@@ -49,7 +51,7 @@ def tok(s):
     return {w for w in re.findall(r"[a-z0-9]+", s) if w not in STOP and len(w) > 1}
 
 
-VTOGLI = r"(?i)\b(teatro|club|circolo|arci|spazio|sala|auditorium|live|milano|bologna|music|the|di|del|della)\b"
+VTOGLI = r"(?i)\b(teatro|club|circolo|arci|spazio|sala|auditorium|live|milano|bologna|ravenna|ferrara|music|the|di|del|della)\b"
 def vtok(s): return tok(re.sub(VTOGLI, " ", s or "")) or tok(s)
 
 
@@ -448,7 +450,7 @@ os.makedirs(os.path.join(RADICE, "dati"), exist_ok=True)
 tmp_e, tmp_m = f"/tmp/auto_{CITTA}_eventi.json", f"/tmp/auto_{CITTA}_mostre.json"
 json.dump(ev, open(tmp_e, "w"), ensure_ascii=False)
 json.dump(mo, open(tmp_m, "w"), ensure_ascii=False)
-cc = ["--citta", "mi"] if CITTA == "mi" else []
+cc = ["--citta", CITTA] if CITTA != "bo" else []
 ok = True
 if not PROVA:
     os.chdir("/tmp")  # aggiorna.py scrive i suoi .json di servizio nella cartella corrente

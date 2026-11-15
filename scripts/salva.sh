@@ -9,14 +9,16 @@ MSG="$1"; shift
 git config user.name "github-actions[bot]"
 git config user.email "github-actions[bot]@users.noreply.github.com"
 python3 scripts/versioni.py
-git add "$@" versioni.js milano/versioni.js index.html milano/index.html 2>/dev/null || true
+# file delle impronte di tutte le città: solo quelli che esistono (git add si ferma su un file mancante)
+fissi() { for f in versioni.js index.html milano/versioni.js milano/index.html ravenna/versioni.js ravenna/index.html ferrara/versioni.js ferrara/index.html; do [ -e "$f" ] && echo "$f"; done; }
+git add "$@" $(fissi) 2>/dev/null || git add $(fissi)
 if git diff --cached --quiet; then echo "nessuna modifica"; exit 0; fi
 git commit -q -m "$MSG"
 for i in 1 2 3 4 5; do
   git fetch -q --depth=50 origin main
   if ! git rebase -q -X theirs origin/main; then git rebase --abort; sleep 10; continue; fi
   python3 scripts/versioni.py
-  git add versioni.js milano/versioni.js index.html milano/index.html
+  git add $(fissi)
   git diff --cached --quiet || git commit -q --amend --no-edit
   if git push -q origin HEAD:main; then echo "salvato al tentativo $i"; exit 0; fi
   sleep $((5 * i))

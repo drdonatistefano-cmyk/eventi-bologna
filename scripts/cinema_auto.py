@@ -18,7 +18,9 @@ from zoneinfo import ZoneInfo
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # --citta mi: Milano (dati in milano/dati/, pagina in milano/cinema.js); senza opzione: Bologna
 CITTA = sys.argv[sys.argv.index("--citta") + 1] if "--citta" in sys.argv else "bo"
-CART = os.path.join(RADICE, "milano") if CITTA == "mi" else RADICE
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import citta_cfg as CC   # Ravenna e Ferrara (dal 15/11/2026)
+CART = os.path.join(RADICE, "milano") if CITTA == "mi" else os.path.join(RADICE, CC.CITTA[CITTA]["cartella"]) if CITTA in CC.CITTA else RADICE
 DATI = os.path.join(CART, "dati", "cinema.json")
 STATO = os.path.join(CART, "dati", "cinema_stato.json")
 CACHE = os.path.join(RADICE, "dati", "film_info.json")   # schede dei film già lette: ogni film si legge una volta sola
@@ -44,6 +46,10 @@ if CITTA == "mi":
     UFFICIALI = ["Milano", "Rho", "Pero", "Arese", "Bollate", "Sesto San Giovanni", "Cinisello Balsamo", "Cologno Monzese",
         "Legnano", "Assago", "Rozzano", "San Donato Milanese", "San Giuliano Milanese", "Segrate", "Peschiera Borromeo",
         "Pioltello", "Cernusco sul Naviglio"]
+if CITTA in CC.CITTA:
+    MP_CITTA, MM_CITTA = CC.CITTA[CITTA]["movieplayer"], CC.CITTA[CITTA]["mymovies"]
+    COMUNI_MP = {}
+    UFFICIALI = CC.comuni(CITTA)    # il capoluogo per primo
 
 
 def slug(s):
@@ -303,7 +309,7 @@ def scopri(d, log):
                 continue
             a = th.get("address") or {}
             nid = "c%03d" % (1 + max([int(s["id"][1:]) for s in d["sale"]] or [0]))
-            d["sale"].append({"id": nid, "nome": th.get("name", slug_), "citta": UFFICIALI[0] if CITTA == "mi" else "Bologna",
+            d["sale"].append({"id": nid, "nome": th.get("name", slug_), "citta": UFFICIALI[0] if CITTA != "bo" else "Bologna",
                               "indirizzo": ", ".join(x for x in (a.get("streetAddress"), a.get("addressLocality")) if x),
                               "tipo": tipo_da_nome(th.get("name", "")), "sito": th.get("url", "") if str(th.get("url", "")).startswith("https://") else "",
                               "fonte": url, "cinemap": url, "film": [], "auto": True})

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var m=document.cookie.match(/(?:^|; )citta=(bo|mi)/),q=/[?&]citta=(bo|mi)/.exec(location.search),qui=/^\/milano(\/|$)/.test(location.pathname)?"mi":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||m[1]!=="mi"||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace("/milano/")}catch(_){}})();</script>
+<script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var P={mi:"/milano/",ra:"/ravenna/",fe:"/ferrara/"},m=document.cookie.match(/(?:^|; )citta=(bo|mi|ra|fe)/),q=/[?&]citta=(bo|mi|ra|fe)/.exec(location.search),qui=/^\/(milano|ravenna|ferrara)(\/|$)/.test(location.pathname)?"altra":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||!P[m[1]]||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace(P[m[1]])}catch(_){}})();</script>
 <script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"adea893d95","serate":"47de5e059d","mostre":"49f50ce3bf"}/*V0*/;</script>
 <script>/* anticipo: chiede subito versioni.js (senza bloccare la pagina) e fa partire i file dei dati mentre arriva il resto; più in basso la pagina li usa dalla memoria */(function(){try{var V0=window.ACH_V0||{},fatti={};function pre(f,h){if(!h||fatti[f+h])return;fatti[f+h]=1;var l=document.createElement("link");l.rel="preload";l.as="script";l.href=f+".js?h="+h;document.head.appendChild(l)}["eventi","serate","mostre"].forEach(function(f){pre(f,V0[f])});var s=document.createElement("script");s.async=true;s.src="versioni.js?v="+Math.floor(Date.now()/6e5);s.onload=function(){var V=window.ACH_VERSIONI||{};["eventi","serate","mostre"].forEach(function(f){pre(f,V[f])})};document.head.appendChild(s)}catch(e){}})();</script>
 <title>Ach's Events Guide – concerti, teatro, mostre e cinema a Milano</title>
@@ -709,8 +709,17 @@ const CITTA_CFG={
  mi:{k:"mi",sigla:"MI",nome:"Milano",capo:"Milano",area:"a Milano e nei grandi luoghi dell’area metropolitana",path:"/milano/",url:"https://achevents.com/milano/",
   zone:[["Milano","Milano città",["Milano"]],
    ["Nord","Nord e Ovest",["Rho","Pero","Arese","Bollate","Sesto San Giovanni","Cinisello Balsamo","Cologno Monzese","Legnano","Paderno Dugnano","Cusano Milanino","Novate Milanese","Cormano","Bresso"]],
-   ["Sud","Sud ed Est",["Assago","Rozzano","San Donato Milanese","San Giuliano Milanese","Segrate","Peschiera Borromeo","Pioltello","Cernusco sul Naviglio","Settala","Corsico","Buccinasco"]]]}};
-const CITY=/^\/milano(\/|$)/.test(location.pathname)?CITTA_CFG.mi:CITTA_CFG.bo;
+   ["Sud","Sud ed Est",["Assago","Rozzano","San Donato Milanese","San Giuliano Milanese","Segrate","Peschiera Borromeo","Pioltello","Cernusco sul Naviglio","Settala","Corsico","Buccinasco"]]]},
+ ra:{k:"ra",sigla:"RA",nome:"Ravenna",capo:"Ravenna",area:"a Ravenna e in tutta la provincia",path:"/ravenna/",url:"https://achevents.com/ravenna/",
+  zone:[["Ravenna","Ravenna",["Ravenna"]],["Costa","Costa e Russi",["Cervia","Russi"]],
+   ["Bassa","Bassa Romagna",["Lugo","Alfonsine","Bagnacavallo","Bagnara di Romagna","Conselice","Cotignola","Fusignano","Massa Lombarda","Sant'Agata sul Santerno"]],
+   ["Faentino","Faentino",["Faenza","Brisighella","Casola Valsenio","Castel Bolognese","Riolo Terme","Solarolo"]]]},
+ fe:{k:"fe",sigla:"FE",nome:"Ferrara",capo:"Ferrara",area:"a Ferrara e in tutta la provincia",path:"/ferrara/",url:"https://achevents.com/ferrara/",
+  zone:[["Ferrara","Ferrara",["Ferrara"]],["Alto","Alto Ferrarese",["Cento","Bondeno","Terre del Reno","Poggio Renatico","Vigarano Mainarda"]],
+   ["Copparese","Copparese e Po",["Copparo","Riva del Po","Tresignana","Jolanda di Savoia"]],
+   ["Delta","Delta e costa",["Comacchio","Codigoro","Goro","Mesola","Lagosanto","Fiscaglia","Ostellato"]],
+   ["Argentano","Argentano",["Argenta","Portomaggiore","Masi Torello","Voghiera"]]]}};
+const CITY=Object.values(CITTA_CFG).find(c=>c.k!=="bo"&&new RegExp("^"+c.path.replace(/\/$/,"")+"(/|$)").test(location.pathname))||CITTA_CFG.bo;
 /* ---------- dati ---------- */
 const DATA=(window.EVENTI_DATA&&typeof window.EVENTI_DATA==="object")?window.EVENTI_DATA:{aggiornato:"",eventi:[]};
 const ISO=/^\d{4}-\d{2}-\d{2}$/;

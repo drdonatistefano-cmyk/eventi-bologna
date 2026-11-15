@@ -25,8 +25,14 @@ jobs:
       - name: Milano (film e orari di oggi)
         continue-on-error: true
         run: python3 scripts/cinema_auto.py --citta mi ${{ inputs.scopri && '--scopri' || '' }}
+      - name: Ravenna (film e orari di oggi)
+        continue-on-error: true
+        run: python3 scripts/cinema_auto.py --citta ra ${{ inputs.scopri && '--scopri' || '' }}
+      - name: Ferrara (film e orari di oggi)
+        continue-on-error: true
+        run: python3 scripts/cinema_auto.py --citta fe ${{ inputs.scopri && '--scopri' || '' }}
       - name: Salva il risultato
-        run: bash scripts/salva.sh "Cinema $(TZ=Europe/Rome date +%F)" dati/cinema.json dati/cinema_stato.json dati/film_info.json cinema.js milano/dati milano/cinema.js
+        run: bash scripts/salva.sh "Cinema $(TZ=Europe/Rome date +%F)" dati/cinema.json dati/cinema_stato.json dati/film_info.json cinema.js milano/dati milano/cinema.js ravenna/dati ravenna/cinema.js ferrara/dati ferrara/cinema.js
       - name: Segnala il problema (Claude interviene come riserva)
         if: steps.leggi.outcome == 'failure'
         env:

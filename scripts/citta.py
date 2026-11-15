@@ -15,6 +15,18 @@ CITTA = {
         "meta": "Milano e area metropolitana",
         "url": "https://achevents.com/milano/",
     },
+    "ravenna": {
+        "nome": "Ravenna",
+        "area": "a Ravenna e in tutta la provincia",
+        "meta": "Ravenna e provincia",
+        "url": "https://achevents.com/ravenna/",
+    },
+    "ferrara": {
+        "nome": "Ferrara",
+        "area": "a Ferrara e in tutta la provincia",
+        "meta": "Ferrara e provincia",
+        "url": "https://achevents.com/ferrara/",
+    },
 }
 VUOTI = {
     "eventi.js": 'window.EVENTI_DATA={"aggiornato":"","eventi":[]};\n',
@@ -22,6 +34,7 @@ VUOTI = {
     "cinema.js": 'window.CINEMA_DATA={"aggiornato":"","giorno_orari":"","sale":[]};\n',
     "incontri.js": 'window.INCONTRI_DATA={"aggiornato":"","incontri":[]};\n',
     "sport.js": 'window.SPORT_DATA={"aggiornato":"","eventi":[]};\n',
+    "serate.js": 'window.SERATE_DATA={"aggiornato":"","serate":[]};\n',
 }
 
 
