@@ -601,6 +601,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}.f
 @media(max-width:759px){.modes{gap:5px}.modes button{flex-direction:column;gap:1px;height:56px;padding:4px 2px 3px;font-size:13.5px;line-height:1.1;letter-spacing:-.01em}.modes button .mi{font-size:19px;line-height:1}}
 @media(max-width:359px){.modes{gap:3px}.modes button{font-size:12px;letter-spacing:-.03em;padding:4px 1px 3px}}
 </style>
+<link rel="manifest" href="/app.webmanifest"><link rel="apple-touch-icon" href="/icona-180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Events">
 </head>
 <body>
 <header class="hero wrap">
@@ -1321,5 +1322,6 @@ function aggiornaPigri(){const nuovi=Object.values(PIGRI).filter(f=>!INTEGRATI[f
 function avviaPigri(){Object.values(PIGRI).forEach(f=>caricaPigro(f).then(aggiornaPigri))}
 if(document.readyState==="complete")setTimeout(avviaPigri,0);else addEventListener("load",()=>setTimeout(avviaPigri,0));
 </script>
+<script src="/installa.js" data-colore="#3d5f7d" data-icona="/icona-192.png" data-sw="/sw.js" defer></script>
 </body>
 </html>
