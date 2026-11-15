@@ -291,7 +291,7 @@ def m_elenco(c):
     return out
 
 
-GENERICI = re.compile(r"(?i)^\s*(\d{1,2}[/.]\d{1,2}[/.]\d{2,4}|\d{1,2}\s+\w+\s+20\d\d|spettacoli|eventi|evento|programma|calendario|stagione.*|home|homepage|prosa|family|extra|altri eventi|note d'autore|ridere alla grande|teatro \w+|biglietti|news|concerti|art ?bonus|sostienici|dona(zioni)?|abbonamenti|abbonati|newsletter|contatti|chi siamo)\s*$")
+GENERICI = re.compile(r"(?i)^\s*(\d{1,2}[/.]\d{1,2}[/.]\d{2,4}|\d{1,2}\s+\w+\s+20\d\d|spettacoli|eventi|evento|programma|calendario|stagione.*|home|homepage|prosa|family|extra|altri eventi|note d'autore|ridere alla grande|teatro \w+|biglietti|news|concerti|prossimi spettacoli|tutti gli spettacoli|art ?bonus|sostienici|dona(zioni)?|abbonamenti|abbonati|newsletter|contatti|chi siamo)\s*$")
 
 
 METODI = {"tribe": m_tribe, "ics": m_ics, "jsonld": m_jsonld, "elenco": m_elenco}

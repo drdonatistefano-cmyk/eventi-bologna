@@ -194,37 +194,11 @@
    "comune": "Ravenna"
   },
   {
-   "nome": "Teatro Alighieri",
-   "url": "https://www.teatroalighieri.org",
-   "metodo": "elenco",
-   "scopri": true,
-   "comune": "Ravenna",
-   "genere": "Teatro",
-   "tipo": "Prosa"
-  },
-  {
-   "nome": "Ravenna Festival",
-   "url": "https://www.ravennafestival.org",
-   "metodo": "elenco",
-   "scopri": true,
-   "comune": "Ravenna",
-   "genere": "Classica"
-  },
-  {
    "nome": "Teatro Masini",
    "url": "https://www.accademiaperduta.it",
    "metodo": "elenco",
    "scopri": true,
    "comune": "Faenza",
-   "genere": "Teatro",
-   "tipo": "Prosa"
-  },
-  {
-   "nome": "Teatro Rossini",
-   "url": "https://www.teatrorossini.it",
-   "metodo": "elenco",
-   "scopri": true,
-   "comune": "Lugo",
    "genere": "Teatro",
    "tipo": "Prosa"
   }
@@ -245,7 +219,8 @@
    "scopri": true,
    "comune": "Ferrara",
    "genere": "Teatro",
-   "tipo": "Prosa"
+   "tipo": "Prosa",
+   "escludi": "^tutti gli|spettacoli per famiglie|calendario|abbonament|^note per la ricerca"
   },
   {
    "nome": "Teatro Nuovo",
@@ -263,7 +238,8 @@
    "scopri": true,
    "comune": "Ferrara",
    "genere": "Classica",
-   "luogo": "Teatro Comunale Claudio Abbado"
+   "luogo": "Teatro Comunale Claudio Abbado",
+   "escludi": "raccontare la musica|guida all.ascolto|incontr|conferenz|presentazion"
   }
  ]
 }
