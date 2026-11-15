@@ -1,75 +1,78 @@
 {
- "giorno": "2026-11-11",
- "link": 1569,
+ "giorno": "2026-11-15",
+ "link": 1588,
  "esiti": {
-  "non letto": 146,
-  "senza data": 66,
-  "ok": 554,
-  "vietato": 802,
+  "senza data": 124,
+  "non letto": 140,
+  "ok": 529,
+  "vietato": 794,
   "data diversa": 1
  },
  "per_sito": {
-  "ra.co": {
-   "non letto": 40
+  "vivaticket.it": {
+   "senza data": 55
   },
-  "bo.it": {
-   "senza data": 2
+  "ra.co": {
+   "non letto": 8
   },
   "dice.fm": {
-   "ok": 167
-  },
-  "vivaticket.it": {
-   "senza data": 8
+   "ok": 182,
+   "senza data": 2
   },
   "feverup.com": {
    "ok": 12,
    "senza data": 8
   },
+  "arcibellezza.it": {
+   "non letto": 1
+  },
+  "stagioneagora.it": {
+   "non letto": 21
+  },
+  "yapla.com": {
+   "senza data": 1
+  },
+  "palazzopepoli.it": {
+   "senza data": 2
+  },
   "bluenotemilano.com": {
+   "senza data": 1
+  },
+  "boxerticket.it": {
+   "senza data": 1
+  },
+  "emiliaromagnateatro.com": {
    "senza data": 1
   },
   "alcatrazmilano.it": {
    "senza data": 1
   },
-  "yapla.com": {
-   "senza data": 1
-  },
-  "arcibellezza.it": {
-   "non letto": 1
-  },
-  "bolognawelcome.com": {
-   "ok": 1,
-   "non letto": 1
-  },
-  "stagioneagora.it": {
-   "non letto": 22
-  },
-  "palazzopepoli.it": {
-   "senza data": 2
-  },
-  "emiliaromagnateatro.com": {
-   "senza data": 1
-  },
   "porrettacinema.com": {
    "senza data": 1
   },
-  "carroponte.org": {
+  "bolognateatro.it": {
    "senza data": 1
   },
   "milano.it": {
    "senza data": 1
   },
-  "fabriquemilano.it": {
+  "bologna.it": {
+   "senza data": 3
+  },
+  "carroponte.org": {
    "senza data": 1
   },
-  "circolomagnolia.it": {
-   "senza data": 1
+  "bolognawelcome.com": {
+   "non letto": 1
+  },
+  "bo.it": {
+   "senza data": 2
   },
   "idaysmilano.it": {
    "non letto": 1
   },
-  "culturabologna.it": {
-   "senza data": 2
+  "fabriquemilano.it": {
+   "senza data": 1
   },
   "liveticket.it": {
    "vietato": 1
@@ -77,8 +80,11 @@
   "elfo.org": {
    "senza data": 1
   },
-  "bologna.it": {
-   "senza data": 5
+  "culturabologna.it": {
+   "senza data": 2
+  },
+  "circolomagnolia.it": {
+   "senza data": 1
   },
   "fondazionedozza.it": {
    "senza data": 1
@@ -86,56 +92,72 @@
   "happyticket.com": {
    "ok": 1
   },
-  "conoscerelamusica.it": {
+  "ipomeriggi.it": {
    "senza data": 1
   },
-  "songkick.com": {
-   "ok": 211,
-   "non letto": 11
+  "mailticket.it": {
+   "senza data": 5
   },
-  "orchestramozart.com": {
+  "musicglue.com": {
+   "ok": 1
+  },
+  "conoscerelamusica.it": {
    "senza data": 1
   },
   "sinfonicadimilano.org": {
    "senza data": 1
   },
-  "ipomeriggi.it": {
+  "orchestramozart.com": {
    "senza data": 1
   },
   "teatro.it": {
-   "non letto": 32
+   "non letto": 31
+  },
+  "officinacrobatica.com": {
+   "senza data": 1
+  },
+  "songkick.com": {
+   "ok": 196,
+   "non letto": 1
+  },
+  "emiliaromagnafestival.it": {
+   "data diversa": 1
+  },
+  "piccoloteatro.org": {
+   "senza data": 1
   },
   "tcbo.it": {
    "senza data": 2,
    "non letto": 2,
-   "ok": 5
+   "ok": 4
   },
-  "piccoloteatro.org": {
+  "teatrodelnavile.org": {
+   "ok": 1
+  },
+  "teatroallascala.org": {
    "senza data": 1
   },
   "teatridivita.it": {
    "senza data": 4
   },
-  "teatroallascala.org": {
-   "senza data": 1
-  },
   "teatroarcimboldi.it": {
    "non letto": 1
   },
-  "teatrodelnavile.org": {
-   "ok": 1
+  "ticketone.it": {
+   "vietato": 792
   },
-  "emiliaromagnafestival.it": {
-   "data diversa": 1
+  "ticketmaster.it": {
+   "vietato": 1
   },
   "teatrocarcano.com": {
    "senza data": 1
   },
-  "ticketone.it": {
-   "vietato": 801
-  },
   "technoairlines.com": {
-   "ok": 156
+   "ok": 119,
+   "non letto": 2
+  },
+  "ticketsms.it": {
+   "senza data": 3
   },
   "teatrooutoff.it": {
    "senza data": 1
@@ -143,67 +165,23 @@
   "teatrofrancoparenti.it": {
    "senza data": 1
   },
-  "unipolforum.it": {
-   "senza data": 1
+  "xceed.me": {
+   "ok": 13
   },
   "teatrostignani.it": {
    "senza data": 11
+  },
+  "unipolforum.it": {
+   "senza data": 1
   },
   "magazzinigenerali.org": {
    "senza data": 1
   },
   "vivaticket.com": {
-   "non letto": 33
-  },
-  "bolognateatro.it": {
-   "non letto": 1
-  },
-  "officinacrobatica.com": {
-   "non letto": 1
+   "non letto": 71
   }
  },
  "casi": [
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2510100",
-   "finale": "HTTP Error 403: Forbidden",
-   "date_guida": [
-    "2026-11-14"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo010 2026-11-14 Rave 'Til You Drop @ Link"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://appenninobolognese.cittametropolitana.bo.it/it/eventi/cinema-e-teatro/teatro-comunale-castiglione-dei-pepoli-",
-   "finale": "",
-   "date_guida": [
-    "2026-11-21",
-    "2026-11-28",
-    "2026-12-19",
-    "2027-01-09",
-    "2027-01-23",
-    "2027-02-06",
-    "2027-02-20",
-    "2027-03-06",
-    "2027-03-20",
-    "2027-04-03",
-    "2027-04-17",
-    "2027-05-07",
-    "2027-06-05"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e523 2026-11-21 Nuova drammaturgI.A. @ Teatro Comunale di Castiglione",
-    "bo e524 2026-11-28 Battiato in acustico – piano astrale @ Teatro Comunale di Castiglione",
-    "bo e525 2026-12-19 Xmas party 2.0 @ Teatro Comunale di Castiglione",
-    "bo e526 2027-01-09 Togliti le mutande che ti devo parlare @ Teatro Comunale di Castiglione",
-    "bo e527 2027-01-23 Notre Dame de Forlì @ Teatro Comunale di Castiglione",
-    "bo e528 2027-02-06 Progetto G – omaggio a Gaber @ Teatro Comunale di Castiglione"
-   ]
-  },
   {
    "esito": "senza data",
    "link": "https://bolognafestival.vivaticket.it/it/event/la-bella-addormentata-nel-bosco/295886",
@@ -217,52 +195,15 @@
    ]
   },
   {
-   "esito": "senza data",
-   "link": "https://www.bluenotemilano.com/",
-   "finale": "https://bluenotemilano.com/",
+   "esito": "non letto",
+   "link": "https://ra.co/events/2510103",
+   "finale": "HTTP Error 403: Forbidden",
    "date_guida": [
-    "2026-11-26"
+    "2026-12-07"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e026 2026-11-26 Luca Barbarossa @ Blue Note Milano"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.alcatrazmilano.it/",
-   "finale": "https://alcatrazmilano.it/",
-   "date_guida": [
-    "2026-11-26",
-    "2026-12-02",
-    "2027-01-21",
-    "2027-01-29",
-    "2027-02-03",
-    "2027-02-21",
-    "2027-02-24",
-    "2027-03-11",
-    "2027-05-04"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi e027 2026-11-26 Saint Levant @ Alcatraz",
-    "mi e035 2026-12-02 Accept @ Alcatraz",
-    "mi e058 2027-01-21 Imminence e August Burns Red @ Alcatraz",
-    "mi e067 2027-01-29 Rhapsody of Fire @ Alcatraz",
-    "mi e071 2027-02-03 Editors @ Alcatraz",
-    "mi e089 2027-02-21 Sleeping With Sirens @ Alcatraz"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://spazioloft54.s2.yapla.com/it/",
-   "finale": "",
-   "date_guida": [
-    "2026-11-20"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e674 2026-11-20 Scordati – Welcome to Pripyat @ SpazioLoft54"
+    "bo sbo025 2026-12-07 Chlär & Ignez @ Link"
    ]
   },
   {
@@ -295,6 +236,18 @@
   },
   {
    "esito": "senza data",
+   "link": "https://spazioloft54.s2.yapla.com/it/",
+   "finale": "",
+   "date_guida": [
+    "2026-11-20"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e674 2026-11-20 Scordati – Welcome to Pripyat @ SpazioLoft54"
+   ]
+  },
+  {
+   "esito": "senza data",
    "link": "https://palazzopepoli.it/calendario-eventi/orchestra-barocca-di-bologna-concerto-di-natale/",
    "finale": "",
    "date_guida": [
@@ -303,6 +256,54 @@
    "date_pagina": [],
    "eventi": [
     "bo e304 2026-12-13 Orchestra Barocca di Bologna – Concerto di Natale @ Palazzo Pepoli"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.bluenotemilano.com/",
+   "finale": "https://bluenotemilano.com/",
+   "date_guida": [
+    "2026-11-26"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e026 2026-11-26 Luca Barbarossa @ Blue Note Milano"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://bolognafestival.vivaticket.it/it/event/lang-lang/297259",
+   "finale": "",
+   "date_guida": [
+    "2026-12-09"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e299 2026-12-09 Lang Lang – recital pianistico @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://ra.co/events/2564367",
+   "finale": "HTTP Error 403: Forbidden",
+   "date_guida": [
+    "2026-12-31"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo sbo027 2026-12-31 Ellen Allien @ Link"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.boxerticket.it/eventi/leon-faun/",
+   "finale": "",
+   "date_guida": [
+    "2027-02-01"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e766 2027-02-01 Leon Faun @ Locomotiv Club"
    ]
   },
   {
@@ -351,6 +352,31 @@
   },
   {
    "esito": "senza data",
+   "link": "https://www.alcatrazmilano.it/",
+   "finale": "https://alcatrazmilano.it/",
+   "date_guida": [
+    "2026-11-26",
+    "2026-12-02",
+    "2027-01-21",
+    "2027-01-29",
+    "2027-02-03",
+    "2027-02-21",
+    "2027-02-24",
+    "2027-03-11",
+    "2027-05-04"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e027 2026-11-26 Saint Levant @ Alcatraz",
+    "mi e035 2026-12-02 Accept @ Alcatraz",
+    "mi e058 2027-01-21 Imminence e August Burns Red @ Alcatraz",
+    "mi e067 2027-01-29 Rhapsody of Fire @ Alcatraz",
+    "mi e071 2027-02-03 Editors @ Alcatraz",
+    "mi e089 2027-02-21 Sleeping With Sirens @ Alcatraz"
+   ]
+  },
+  {
+   "esito": "senza data",
    "link": "https://porrettacinema.com/?p=8396",
    "finale": "https://porrettacinema.com/en/surroundings/",
    "date_guida": [
@@ -362,39 +388,30 @@
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2510103",
-   "finale": "HTTP Error 403: Forbidden",
-   "date_guida": [
-    "2026-12-07"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo025 2026-12-07 Chlär & Ignez @ Link"
-   ]
-  },
-  {
    "esito": "senza data",
-   "link": "https://bolognafestival.vivaticket.it/it/event/lang-lang/297259",
+   "link": "https://www.bolognateatro.it/home/in-evidenza/teatro-spazio-reno-calderara-di-r-bo-stagione-2026-27",
    "finale": "",
    "date_guida": [
-    "2026-12-09"
+    "2026-11-24",
+    "2026-12-13",
+    "2026-12-20",
+    "2027-01-10",
+    "2027-01-17",
+    "2027-01-23",
+    "2027-02-07",
+    "2027-02-27",
+    "2027-03-07",
+    "2027-03-13",
+    "2027-03-21"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e299 2026-12-09 Lang Lang – recital pianistico @ Auditorium Manzoni"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.carroponte.org/",
-   "finale": "https://carroponte.org/",
-   "date_guida": [
-    "2027-06-07"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi e125 2027-06-07 Hayley Williams @ Carroponte"
+    "bo e510 2026-11-24 Ricordatemi come vi pare @ Teatro Spazio Reno",
+    "bo e511 2026-12-13 In Famaja @ Teatro Spazio Reno",
+    "bo e512 2026-12-20 Il Giratempo di Babbo Natale @ Teatro Spazio Reno",
+    "bo e513 2027-01-10 Quando i portici erano di legno @ Teatro Spazio Reno",
+    "bo e514 2027-01-17 Fagioli @ Teatro Spazio Reno",
+    "bo e515 2027-01-23 L'Austriaca @ Teatro Spazio Reno"
    ]
   },
   {
@@ -412,18 +429,6 @@
    ]
   },
   {
-   "esito": "senza data",
-   "link": "https://palazzopepoli.it/calendario-eventi/orchestra-barocca-di-bologna-i-canti-dellaltalena/",
-   "finale": "",
-   "date_guida": [
-    "2026-11-22"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e294 2026-11-22 Orchestra Barocca di Bologna – I canti dell'altale @ Palazzo Pepoli"
-   ]
-  },
-  {
    "esito": "non letto",
    "link": "https://stagioneagora.it/dad-or-alive/",
    "finale": "HTTP Error 502: Bad Gateway",
@@ -437,62 +442,87 @@
   },
   {
    "esito": "senza data",
-   "link": "https://www.comune.medicina.bo.it/notizia/stagione-teatrale-e-cinematografica-2026-2027-alla-sala-del-suffragio",
-   "finale": "",
+   "link": "https://cittadellamusica.comune.bologna.it/objects/angelica-2026-prima-parte",
+   "finale": "https://cittadellamusica.comune.bologna.it/in-evidenza-in-citta-della-musica/festival-e-rassegne/angelica-2026-prima-parte",
    "date_guida": [
-    "2027-02-14"
+    "2026-11-18",
+    "2026-11-25",
+    "2026-12-03",
+    "2026-12-10",
+    "2026-12-16"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e521 2027-02-14 La Penultima Cena @ Sala del Suffragio"
+    "bo e350 2026-11-18 Supermarket – Italo Barock(Q) LIVE @ Teatro San Leonardo",
+    "bo e351 2026-11-25 Istantanea [8] – Edipo Re @ Teatro San Leonardo",
+    "bo e352 2026-12-03 David Shea – Rituals @ Teatro San Leonardo",
+    "bo e353 2026-12-10 Laura Agnusdei + Daniele Fabris & Rifrazioni Ensem @ Teatro San Leonardo",
+    "bo e354 2026-12-16 Carlo Sampaolesi / Gianni Gebbia @ Teatro San Leonardo"
    ]
   },
   {
    "esito": "senza data",
-   "link": "https://www.fabriquemilano.it/",
-   "finale": "https://fabriquemilano.it/",
+   "link": "https://www.carroponte.org/",
+   "finale": "https://carroponte.org/",
    "date_guida": [
-    "2027-03-27"
+    "2027-06-07"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e106 2027-03-27 Sienna Spiro @ Fabrique"
+    "mi e125 2027-06-07 Hayley Williams @ Carroponte"
    ]
   },
   {
    "esito": "senza data",
-   "link": "https://bolognafestival.vivaticket.it/it/event/va-pensiero/295881",
+   "link": "https://palazzopepoli.it/calendario-eventi/orchestra-barocca-di-bologna-i-canti-dellaltalena/",
    "finale": "",
    "date_guida": [
-    "2026-11-28"
+    "2026-11-22"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e296 2026-11-28 Va' pensiero – Baby BoFe' @ Auditorium Manzoni"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.circolomagnolia.it/",
-   "finale": "",
-   "date_guida": [
-    "2027-02-06"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi e078 2027-02-06 Yendry @ Circolo Magnolia"
+    "bo e294 2026-11-22 Orchestra Barocca di Bologna – I canti dell'altale @ Palazzo Pepoli"
    ]
   },
   {
    "esito": "non letto",
-   "link": "https://ra.co/events/2515489",
-   "finale": "HTTP Error 403: Forbidden",
+   "link": "https://www.bolognawelcome.com/it/eventi/musica-e-danza/andre-gallo-i-sabati-allaccademia",
+   "finale": "HTTP Error 404: Not Found",
    "date_guida": [
-    "2026-11-13"
+    "2026-12-12"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo sbo002 2026-11-13 POTOCHKINE + Border Live @ TANKclub"
+    "bo e356 2026-12-12 André Gallo @ Palazzo Carrati (Accademia Fil"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://appenninobolognese.cittametropolitana.bo.it/it/eventi/cinema-e-teatro/teatro-comunale-castiglione-dei-pepoli-",
+   "finale": "",
+   "date_guida": [
+    "2026-11-21",
+    "2026-11-28",
+    "2026-12-19",
+    "2027-01-09",
+    "2027-01-23",
+    "2027-02-06",
+    "2027-02-20",
+    "2027-03-06",
+    "2027-03-20",
+    "2027-04-03",
+    "2027-04-17",
+    "2027-05-07",
+    "2027-06-05"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e523 2026-11-21 Nuova drammaturgI.A. @ Teatro Comunale di Castiglione",
+    "bo e524 2026-11-28 Battiato in acustico – piano astrale @ Teatro Comunale di Castiglione",
+    "bo e525 2026-12-19 Xmas party 2.0 @ Teatro Comunale di Castiglione",
+    "bo e526 2027-01-09 Togliti le mutande che ti devo parlare @ Teatro Comunale di Castiglione",
+    "bo e527 2027-01-23 Notre Dame de Forlì @ Teatro Comunale di Castiglione",
+    "bo e528 2027-02-06 Progetto G – omaggio a Gaber @ Teatro Comunale di Castiglione"
    ]
   },
   {
@@ -509,26 +539,38 @@
   },
   {
    "esito": "senza data",
-   "link": "https://www.culturabologna.it/agenda-eventi",
+   "link": "https://bolognafestival.vivaticket.it/it/event/va-pensiero/295881",
    "finale": "",
    "date_guida": [
-    "2026-12-31"
+    "2026-11-28"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e386 2026-12-31 Capodanno in Piazza Maggiore – Rogo del Vecchione @ Piazza Maggiore"
+    "bo e296 2026-11-28 Va' pensiero – Baby BoFe' @ Auditorium Manzoni"
    ]
   },
   {
    "esito": "non letto",
-   "link": "https://www.bolognawelcome.com/it/eventi/musica-e-danza/andre-gallo-i-sabati-allaccademia",
-   "finale": "HTTP Error 404: Not Found",
+   "link": "https://ra.co/events/2567379",
+   "finale": "HTTP Error 403: Forbidden",
    "date_guida": [
     "2026-12-12"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e356 2026-12-12 André Gallo @ Palazzo Carrati (Accademia Fil"
+    "bo sbo026 2026-12-12 Raskolnik @ Ritmolento / via San Donato 14"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.fabriquemilano.it/",
+   "finale": "https://fabriquemilano.it/",
+   "date_guida": [
+    "2027-03-27"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e106 2027-03-27 Sienna Spiro @ Fabrique"
    ]
   },
   {
@@ -555,24 +597,50 @@
   },
   {
    "esito": "senza data",
-   "link": "https://cittadellamusica.comune.bologna.it/objects/angelica-2026-prima-parte",
-   "finale": "https://cittadellamusica.comune.bologna.it/in-evidenza-in-citta-della-musica/festival-e-rassegne/angelica-2026-prima-parte",
+   "link": "https://www.culturabologna.it/agenda-eventi",
+   "finale": "",
    "date_guida": [
-    "2026-11-12",
-    "2026-11-18",
-    "2026-11-25",
-    "2026-12-03",
-    "2026-12-10",
-    "2026-12-16"
+    "2026-12-31"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e349 2026-11-12 Luca Cavina – Camera Oscura Deformata @ Teatro San Leonardo (Centro di",
-    "bo e350 2026-11-18 Supermarket – Italo Barock(Q) LIVE @ Teatro San Leonardo (Centro di",
-    "bo e351 2026-11-25 Istantanea [8] – Edipo Re @ Teatro San Leonardo (Centro di",
-    "bo e352 2026-12-03 David Shea – Rituals @ Teatro San Leonardo (Centro di",
-    "bo e353 2026-12-10 Laura Agnusdei + Daniele Fabris & Rifrazioni Ensem @ Teatro San Leonardo (Centro di",
-    "bo e354 2026-12-16 Carlo Sampaolesi / Gianni Gebbia @ Teatro San Leonardo (Centro di"
+    "bo e386 2026-12-31 Capodanno in Piazza Maggiore – Rogo del Vecchione @ Piazza Maggiore"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.circolomagnolia.it/",
+   "finale": "",
+   "date_guida": [
+    "2027-02-06"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e078 2027-02-06 Yendry @ Circolo Magnolia"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://cittadellamusica.comune.bologna.it/objects/cantabo-vocal-friends-alpi-pop-amicizie-in-musica",
+   "finale": "https://cittadellamusica.comune.bologna.it/events/cantabo-vocal-friends-alpi-pop-amicizie-in-musica",
+   "date_guida": [
+    "2026-11-21"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e362 2026-11-21 Coro Idica, Coro CAI, Blue Penguin, Vocal Vibes –  @ Chiesa di Santa Cristina della"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.comune.medicina.bo.it/notizia/stagione-teatrale-e-cinematografica-2026-2027-alla-sala-del-suffragio",
+   "finale": "",
+   "date_guida": [
+    "2027-02-14"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e521 2027-02-14 La Penultima Cena @ Sala del Suffragio"
    ]
   },
   {
@@ -601,42 +669,64 @@
   },
   {
    "esito": "senza data",
-   "link": "https://www.conoscerelamusica.it",
-   "finale": "https://conoscerelamusica.it/",
-   "date_guida": [
-    "2026-11-11",
-    "2026-11-18",
-    "2026-11-25"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e358 2026-11-11 Gaspard Thoma @ Sala Prof. Marco Biagi (via Sa",
-    "bo e359 2026-11-18 Carlo Balzaretti, Giuseppe Modugno @ Sala Prof. Marco Biagi (via Sa",
-    "bo e360 2026-11-25 Gabriele Scarpa, Elisa Forno @ Sala Prof. Marco Biagi (via Sa"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.orchestramozart.com/en/news/the-2026-concerts-of-the-orchestra-mozart-with-daniele-gatti.html",
+   "link": "https://emiliaromagnateatro.vivaticket.it/it/event/alla-meta/306615",
    "finale": "",
    "date_guida": [
     "2026-12-04"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e297 2026-12-04 Daniele Gatti – Orchestra Mozart @ Auditorium Manzoni"
+    "bo e849 2026-12-04 Alla meta @ Arena del Sole"
    ]
   },
   {
-   "esito": "senza data",
-   "link": "https://tcbo.vivaticket.it/it/event/12-sinfonica-2026-bolton/289961",
-   "finale": "",
+   "esito": "non letto",
+   "link": "https://ra.co/events/2569597",
+   "finale": "HTTP Error 403: Forbidden",
    "date_guida": [
     "2026-11-20"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e290 2026-11-20 Ivor Bolton – Haydn, La Creazione @ Auditorium Manzoni"
+    "bo sbo012 2026-11-20 Giardino Dei Visionari · COSMOS @ DumBO"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.ipomeriggi.it/",
+   "finale": "",
+   "date_guida": [
+    "2026-11-26"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e034 2026-11-26 Ludovico Einaudi @ Teatro Dal Verme"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.mailticket.it/evento/55569",
+   "finale": "",
+   "date_guida": [
+    "2026-11-27"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e853 2026-11-27 1d Night & Martini @ Estragon Club"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.conoscerelamusica.it",
+   "finale": "https://conoscerelamusica.it/",
+   "date_guida": [
+    "2026-11-18",
+    "2026-11-25"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e359 2026-11-18 Carlo Balzaretti, Giuseppe Modugno @ Sala Prof. Marco Biagi (via Sa",
+    "bo e360 2026-11-25 Gabriele Scarpa, Elisa Forno @ Sala Prof. Marco Biagi (via Sa"
    ]
   },
   {
@@ -658,27 +748,27 @@
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2525831",
-   "finale": "HTTP Error 403: Forbidden",
+   "esito": "senza data",
+   "link": "https://www.orchestramozart.com/en/news/the-2026-concerts-of-the-orchestra-mozart-with-daniele-gatti.html",
+   "finale": "",
    "date_guida": [
-    "2026-11-13"
+    "2026-12-04"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi smi021 2026-11-13 Pentimento // Nicolas Lutz @ Duro"
+    "bo e297 2026-12-04 Daniele Gatti – Orchestra Mozart @ Auditorium Manzoni"
    ]
   },
   {
-   "esito": "senza data",
-   "link": "https://www.ipomeriggi.it/",
-   "finale": "",
+   "esito": "non letto",
+   "link": "https://stagioneagora.it/divagazioni-sui-generis-itinerari-letterari-per-prospettive-incerte/",
+   "finale": "HTTP Error 502: Bad Gateway",
    "date_guida": [
-    "2026-11-26"
+    "2026-11-21"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e034 2026-11-26 Ludovico Einaudi @ Teatro dal Verme"
+    "bo e451 2026-11-21 Divagazioni sui generis @ Biblioteca Mario Luzi"
    ]
   },
   {
@@ -695,10 +785,21 @@
   },
   {
    "esito": "senza data",
+   "link": "https://cittadellamusica.comune.bologna.it/objects/la-vedova-allegra-29nov2026",
+   "finale": "https://cittadellamusica.comune.bologna.it/events/la-vedova-allegra-29nov2026",
+   "date_guida": [
+    "2026-11-29"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e366 2026-11-29 La vedova allegra (Lehár) @ La Cava delle Arti (via Cavazz"
+   ]
+  },
+  {
+   "esito": "senza data",
    "link": "https://www.culturabologna.it/objects/risate-al-cassero-2026-2027",
    "finale": "https://www.culturabologna.it/agenda-eventi/rassegne-festival-stagioni/risate-al-cassero-2026-2027",
    "date_guida": [
-    "2026-11-14",
     "2026-12-05",
     "2026-12-26",
     "2026-12-31",
@@ -710,24 +811,117 @@
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e501 2026-11-14 Piano B @ Teatro Comunale Cassero",
     "bo e502 2026-12-05 Pupazzi pazzi @ Teatro Comunale Cassero",
     "bo e503 2026-12-26 Natale con i tuoi, Santo Stefano con noi @ Teatro Comunale Cassero",
     "bo e504 2026-12-31 Ride bene chi ride l'ultimo @ Teatro Comunale Cassero",
     "bo e505 2027-01-23 Noi siamo voi. Votatevi! @ Teatro Comunale Cassero",
-    "bo e506 2027-02-06 Carlo e Giorgio sciò @ Teatro Comunale Cassero"
+    "bo e506 2027-02-06 Carlo e Giorgio sciò @ Teatro Comunale Cassero",
+    "bo e507 2027-02-27 Ama, prega, Xanax @ Teatro Comunale Cassero"
    ]
   },
   {
    "esito": "senza data",
-   "link": "https://cittadellamusica.comune.bologna.it/objects/cantabo-vocal-friends-alpi-pop-amicizie-in-musica",
-   "finale": "https://cittadellamusica.comune.bologna.it/events/cantabo-vocal-friends-alpi-pop-amicizie-in-musica",
+   "link": "https://www.officinacrobatica.com/etn/talea-dalle-radici-alla-cura/",
+   "finale": "",
+   "date_guida": [
+    "2026-11-27"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e733 2026-11-27 Talea – Dalle radici alla cura @ OfficinAcrobatica"
+   ]
+  },
+  {
+   "esito": "data diversa",
+   "link": "https://www.emiliaromagnafestival.it/erf-winter/erf-stignani-musica-imola/",
+   "finale": "",
+   "date_guida": [
+    "2026-11-16",
+    "2026-12-19",
+    "2027-01-16"
+   ],
+   "date_pagina": [
+    "2026-10-17",
+    "2026-11-16",
+    "2026-11-17",
+    "2026-12-19"
+   ],
+   "eventi": [
+    "bo e430 2026-11-16 Gran Galà Händel @ Teatro Ebe Stignani",
+    "bo e437 2026-12-19 Orchestra della Toscana @ Teatro Ebe Stignani",
+    "bo e441 2027-01-16 Beaux Arts Solisten Köln @ Teatro Ebe Stignani"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.piccoloteatro.org/",
+   "finale": "https://www.piccoloteatro.org/it",
+   "date_guida": [
+    "2027-03-17"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e541 2027-03-17 Mont Ventoux – Balletto della Scala @ Piccolo Teatro Strehler"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://emiliaromagnateatro.vivaticket.it/it/event/bow-studio/306609",
+   "finale": "",
+   "date_guida": [
+    "2026-11-26"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e846 2026-11-26 Bow (studio) @ Arena del Sole"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://ra.co/events/2579440",
+   "finale": "HTTP Error 403: Forbidden",
+   "date_guida": [
+    "2026-11-15"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo sbo011 2026-11-15 orbite - ascolti periferici @ Granata Studio"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://ra.co/events/2579811",
+   "finale": "saltato: sito lento o che rifiuta",
    "date_guida": [
     "2026-11-21"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e362 2026-11-21 Coro Idica, Coro CAI, Blue Penguin, Vocal Vibes –  @ Chiesa di Santa Cristina della"
+    "bo sbo014 2026-11-21 ODDITIES @ Muga"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://ra.co/events/2580547",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-11-20"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo sbo013 2026-11-20 Hertz @ Kindergarten Club"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://ra.co/events/2582388",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-12-05"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo sbo024 2026-12-05 Insane Frequency HB Day Teknology @ TANKclub"
    ]
   },
   {
@@ -753,42 +947,6 @@
     "bo e222 2027-03-13 Sergio Bernal Dance Company @ Teatro Comunale",
     "bo e236 2027-03-30 Madama Butterfly @ Teatro Comunale",
     "bo e270 2027-05-07 Carmen @ Teatro Comunale"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.piccoloteatro.org/",
-   "finale": "https://www.piccoloteatro.org/it",
-   "date_guida": [
-    "2027-03-17"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi e541 2027-03-17 Mont Ventoux – Balletto della Scala @ Piccolo Teatro Strehler"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://stagioneagora.it/divagazioni-sui-generis-itinerari-letterari-per-prospettive-incerte/",
-   "finale": "HTTP Error 502: Bad Gateway",
-   "date_guida": [
-    "2026-11-21"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e451 2026-11-21 Divagazioni sui generis @ Biblioteca Mario Luzi"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.teatridivita.it/portfolio/lesedie/",
-   "finale": "",
-   "date_guida": [
-    "2026-12-04"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e413 2026-12-04 Le sedie – Stalker Teatro @ Teatri di Vita"
    ]
   },
   {
@@ -859,446 +1017,26 @@
   },
   {
    "esito": "senza data",
-   "link": "https://tcbo.vivaticket.it/it/event/13-sinfonica-2026-angius/289962",
+   "link": "https://www.teatridivita.it/portfolio/lesedie/",
    "finale": "",
    "date_guida": [
-    "2026-12-11"
+    "2026-12-04"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e300 2026-12-11 Marco Angius – Corrado, Hindemith @ Auditorium Manzoni"
+    "bo e413 2026-12-04 Le sedie – Stalker Teatro @ Teatri di Vita"
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2553479",
-   "finale": "HTTP Error 403: Forbidden",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi019 2026-11-13 CRIPTA presents: The Resistance, Blood of Aza & VY @ Circolo Magnolia"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2560105",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi006 2026-11-12 Thylacine live a Magnolia - Roads Vol. 3 @ Circolo Magnolia"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2560244",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi020 2026-11-13 CRIPTA presents: The Resistance, Vyle & Blood of A @ Circolo Magnolia"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2564367",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-12-31"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo027 2026-12-31 Ellen Allien @ Link"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2567379",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-12-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo026 2026-12-12 Raskolnik @ Ritmolento / via San Donato 14"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2569597",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-20"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo012 2026-11-20 Giardino Dei Visionari · COSMOS @ DumBO"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2570119",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-14"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo006 2026-11-14 Tombarella @GRANATA @ Granata Studio"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2570370",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi017 2026-11-13 Hi-Fi Weekends w DJ Emmaculate (USA) *Free Entry* @ Bluesquare"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2570461",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi025 2026-11-13 Oriental Techno Club - 東極玄音寺: Hao, Nyb, ZHAZHA WAN @ Tempio del Futuro Perduto"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2570790",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi013 2026-11-13 Art d'enfer at Altrove Milano @ Altrove"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2571410",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi008 2026-11-12 Tempio Radio Notturna x Sintonia: Humbert, ADAJO,  @ Tempio del Futuro Perduto"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2572117",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi010 2026-11-12 Bradley Zero + Eternal Love @ VOLT"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2573287",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-14"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo005 2026-11-14 The Yard @ Baumhaus"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2573435",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi026 2026-11-13 UNDERPASS 8TH ANNIVERSARY @ Tunnel Club"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2574725",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi003 2026-11-12 NIGHT MARKET'S w/ Leandro Taibbi @ Night Market"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2574755",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi005 2026-11-12 GM presenta: South Freequency @ CGM - Club Giovanile Milano"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2574889",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-14"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo008 2026-11-14 Overkast @ Kindergarten Club"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2575590",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi012 2026-11-12 CASA FRUTTUOSO at Twiga @ Twiga Milano"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2575762",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo004 2026-11-13 Friday at Kinder @ Kindergarten Club"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2576054",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi024 2026-11-13 ALZAYA x MEGA BASIC at NAMA @ NAMA - Nuovo Anfiteatro Martes"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2579236",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-14"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo007 2026-11-14 STREET SOUND #002 with Dagz, Dante Bi, Giorgio (BE @ Filla - Parco Della Montagnola"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2579241",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-14"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo009 2026-11-14 Cemento Armato with Squaric, Bootstap b2b SL/03, R @ TANKclub"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2579440",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-15"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo011 2026-11-15 orbite - ascolti periferici @ Granata Studio"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2579643",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi016 2026-11-13 Novocaine+ Fashion Exhibition - Carla Francione -  @ via Giuseppe Mazzini 3"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2579811",
-   "finale": "saltato: sito lento o che rifiuta",
+   "esito": "senza data",
+   "link": "https://www.mailticket.it/evento/55642",
+   "finale": "",
    "date_guida": [
     "2026-11-21"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo sbo014 2026-11-21 ODDITIES @ Muga"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2579950",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi004 2026-11-12 BARDO @ BARDO"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2579963",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi014 2026-11-13 BARDO @ BARDO"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2579994",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi011 2026-11-12 PARALLEL RUST EDITION Φ HARD + BOUNCY MUSIC @ Superlove"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2580366",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi007 2026-11-12 Vena & Nyege Nyege present: E'DU & Judgitzu live i @ Tropical Milano"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2580547",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-20"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo013 2026-11-20 Hertz @ Kindergarten Club"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2580655",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo001 2026-11-13 Rione Frequenza @ Lento Social Club"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2580703",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi015 2026-11-13 Runa  // Phase 04 Milan @ Malaga Sin City"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2580910",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi009 2026-11-12 BURAKA X GLOBAL VIBES @ Republic Milano"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2581128",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo003 2026-11-13 TECH IS BACK MEETS VERTIGO W/ Laidlaw @ DumBO"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2581625",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-13"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi smi018 2026-11-13 WOT & Friends pres. Dr. Dwarf @ Wolf Milano"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://ra.co/events/2582388",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-12-05"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo sbo024 2026-12-05 Insane Frequency HB Day Teknology @ TANKclub"
+    "bo e851 2026-11-21 Febbre A 90 @ Estragon Club"
    ]
   },
   {
@@ -1311,63 +1049,6 @@
    "date_pagina": [],
    "eventi": [
     "mi e142 2027-10-03 Epica @ Teatro Arcimboldi"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.tcbo.it/en/eventi/dance-2026-morricone-night/",
-   "finale": "HTTP Error 404: Not Found",
-   "date_guida": [
-    "2026-11-28"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e084 2026-11-28 Notte Morricone @ Teatro EuropAuditorium"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/cesare-bocci-vittoria-belvedere-indovina-chi-viene-a-cena",
-   "finale": "HTTP Error 403: Forbidden",
-   "date_guida": [
-    "2027-02-12"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e495 2027-02-12 Indovina chi viene a cena @ Teatro Consorziale"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://cittadellamusica.comune.bologna.it/objects/la-vedova-allegra-29nov2026",
-   "finale": "https://cittadellamusica.comune.bologna.it/events/la-vedova-allegra-29nov2026",
-   "date_guida": [
-    "2026-11-29"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e366 2026-11-29 La vedova allegra (Lehár) @ La Cava delle Arti (via Cavazz"
-   ]
-  },
-  {
-   "esito": "data diversa",
-   "link": "https://www.emiliaromagnafestival.it/erf-winter/erf-stignani-musica-imola/",
-   "finale": "",
-   "date_guida": [
-    "2026-11-16",
-    "2026-12-19",
-    "2027-01-16"
-   ],
-   "date_pagina": [
-    "2026-10-17",
-    "2026-11-16",
-    "2026-11-17",
-    "2026-12-19"
-   ],
-   "eventi": [
-    "bo e430 2026-11-16 Gran Galà Händel @ Teatro Ebe Stignani",
-    "bo e437 2026-12-19 Orchestra della Toscana @ Teatro Ebe Stignani",
-    "bo e441 2027-01-16 Beaux Arts Solisten Köln @ Teatro Ebe Stignani"
    ]
   },
   {
@@ -1480,18 +1161,6 @@
   },
   {
    "esito": "non letto",
-   "link": "https://stagioneagora.it/la-guerra-non-e-ancora-cominciata/",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-14"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e450 2026-11-14 La guerra non è ancora cominciata @ Teatro La Casa del Popolo"
-   ]
-  },
-  {
-   "esito": "non letto",
    "link": "https://stagioneagora.it/la-luce-danza-irrequieta/",
    "finale": "saltato: sito lento o che rifiuta",
    "date_guida": [
@@ -1587,15 +1256,15 @@
    ]
   },
   {
-   "esito": "senza data",
-   "link": "https://www.teatridivita.it/portfolio/pedroeilcapitano/",
-   "finale": "",
+   "esito": "non letto",
+   "link": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/cesare-bocci-vittoria-belvedere-indovina-chi-viene-a-cena",
+   "finale": "HTTP Error 403: Forbidden",
    "date_guida": [
-    "2026-11-27"
+    "2027-02-12"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e408 2026-11-27 Pedro e il Capitano @ Teatri di Vita"
+    "bo e495 2027-02-12 Indovina chi viene a cena @ Teatro Consorziale"
    ]
   },
   {
@@ -1603,7 +1272,6 @@
    "link": "https://www.teatrocarcano.com/",
    "finale": "",
    "date_guida": [
-    "2026-11-10",
     "2026-11-16",
     "2026-11-23",
     "2026-12-31",
@@ -1611,7 +1279,6 @@
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e593 2026-11-10 Stefano Rapone – Comico dai ruoli mai principali @ Teatro Carcano",
     "mi e594 2026-11-16 Federico Rampini – Argento vivo @ Teatro Carcano",
     "mi e596 2026-11-23 Alessandro Bergonzoni – Voto di vastità @ Teatro Carcano",
     "mi e597 2026-12-31 Gioele Dix – Chi ride a Capodanno… @ Teatro Carcano",
@@ -1620,38 +1287,38 @@
   },
   {
    "esito": "senza data",
-   "link": "https://tcbo.vivaticket.it/it/event/14-sinfonica-2026-stenz/289963",
+   "link": "https://www.ticketsms.it/event/Adrin-Mills-All-Night-Long-Milano-Alcatraz-27-02-2027",
    "finale": "",
    "date_guida": [
-    "2026-12-31"
+    "2027-02-27"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e307 2026-12-31 Markus Stenz – Beethoven, Nona Sinfonia @ Auditorium Manzoni"
+    "mi e1173 2027-02-27 Adrián Mills @ Gate Milano"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://emiliaromagnateatro.vivaticket.it/it/event/le-palestriti/306866",
+   "finale": "",
+   "date_guida": [
+    "2026-11-28"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e847 2026-11-28 Le Palestriti @ Arena del Sole"
    ]
   },
   {
    "esito": "non letto",
-   "link": "https://www.tcbo.it/en/eventi/opera-2026-samson-et-dalila/",
+   "link": "https://www.tcbo.it/en/eventi/dance-2026-morricone-night/",
    "finale": "HTTP Error 404: Not Found",
    "date_guida": [
-    "2026-11-13"
+    "2026-11-28"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e043 2026-11-13 Samson et Dalila @ Auditorium Manzoni"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/enzo-iacchetti-carlotta-proietti-buongiorno-ministro",
-   "finale": "HTTP Error 403: Forbidden",
-   "date_guida": [
-    "2026-11-22"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e492 2026-11-22 Buongiorno Ministro! @ Teatro Consorziale"
+    "bo e084 2026-11-28 Notte Morricone @ Teatro EuropAuditorium"
    ]
   },
   {
@@ -1689,61 +1356,26 @@
   },
   {
    "esito": "senza data",
-   "link": "https://cittadellamusica.comune.bologna.it/objects/milone-meets-the-doctors-11nov2026",
-   "finale": "https://cittadellamusica.comune.bologna.it/events/milone-meets-the-doctors-11nov2026",
-   "date_guida": [
-    "2026-11-11"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e375 2026-11-11 Milone meets the Doctors @ Teatro Mazzacorati 1763 (Villa"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://www.teatridivita.it/portfolio/subversivebodies/",
+   "link": "https://www.teatridivita.it/portfolio/pedroeilcapitano/",
    "finale": "",
    "date_guida": [
-    "2026-11-17"
+    "2026-11-27"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e400 2026-11-17 PULSE | Subversive Bodies – Andrea Zardi @ Teatri di Vita"
+    "bo e408 2026-11-27 Pedro e il Capitano @ Teatri di Vita"
    ]
   },
   {
    "esito": "senza data",
-   "link": "https://www.unipolforum.it/",
-   "finale": "https://www.unipolforum.it/it/",
-   "date_guida": [
-    "2026-11-11",
-    "2026-12-07",
-    "2027-01-25",
-    "2027-02-22",
-    "2027-02-27",
-    "2027-04-06",
-    "2027-04-19"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "mi e016 2026-11-11 Tokio Hotel @ Unipol Forum",
-    "mi e048 2026-12-07 Il Volo @ Unipol Forum",
-    "mi e063 2027-01-25 Bullet For My Valentine @ Unipol Forum",
-    "mi e091 2027-02-22 Electric Callboy @ Unipol Forum",
-    "mi e095 2027-02-27 James Blunt – Airplane Mode @ Unipol Forum",
-    "mi e108 2027-04-06 Megadeth @ Unipol Forum"
-   ]
-  },
-  {
-   "esito": "senza data",
-   "link": "https://tcbo.vivaticket.it/it/event/beethoven-sinfonia-n-7/289955",
+   "link": "https://www.mailticket.it/evento/55749/spain",
    "finale": "",
    "date_guida": [
-    "2026-11-22"
+    "2027-02-19"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e293 2026-11-22 Christian Blex – Beethoven, Sinfonia n. 7 @ Auditorium Manzoni"
+    "bo e859 2027-02-19 Spain @ Estragon Club"
    ]
   },
   {
@@ -1764,14 +1396,108 @@
   },
   {
    "esito": "non letto",
-   "link": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/giovanni-storti-stefano-mancuso-lunga-vita-agli-alberi",
+   "link": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/enzo-iacchetti-carlotta-proietti-buongiorno-ministro",
    "finale": "HTTP Error 403: Forbidden",
    "date_guida": [
-    "2027-01-09"
+    "2026-11-22"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e493 2027-01-09 Lunga vita agli alberi @ Teatro Consorziale"
+    "bo e492 2026-11-22 Buongiorno Ministro! @ Teatro Consorziale"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.unipolforum.it/",
+   "finale": "https://www.unipolforum.it/it/",
+   "date_guida": [
+    "2026-12-07",
+    "2027-01-25",
+    "2027-02-22",
+    "2027-02-27",
+    "2027-04-06",
+    "2027-04-19"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e048 2026-12-07 Il Volo @ Unipol Forum",
+    "mi e063 2027-01-25 Bullet For My Valentine @ Unipol Forum",
+    "mi e091 2027-02-22 Electric Callboy @ Unipol Forum",
+    "mi e095 2027-02-27 James Blunt – Airplane Mode @ Unipol Forum",
+    "mi e108 2027-04-06 Megadeth @ Unipol Forum",
+    "mi e111 2027-04-19 Sabaton @ Unipol Forum"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.ticketsms.it/event/Praci-Live-Milano-Magazzini-Generali-17-01-2027",
+   "finale": "",
+   "date_guida": [
+    "2027-01-17"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1070 2027-01-17 Praci @ Magazzini Generali"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://emiliaromagnateatro.vivaticket.it/it/event/you-elsewhere/306612",
+   "finale": "",
+   "date_guida": [
+    "2026-11-29"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e848 2026-11-29 you, elsewhere @ Arena del Sole"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.teatridivita.it/portfolio/subversivebodies/",
+   "finale": "",
+   "date_guida": [
+    "2026-11-17"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e400 2026-11-17 PULSE | Subversive Bodies – Andrea Zardi @ Teatri di Vita"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.tcbo.it/en/eventi/opera-2026-samson-et-dalila/",
+   "finale": "HTTP Error 404: Not Found",
+   "date_guida": [
+    "2026-11-13"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e043 2026-11-13 Samson et Dalila @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.mailticket.it/evento/55794",
+   "finale": "",
+   "date_guida": [
+    "2026-11-28"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e854 2026-11-28 Random Una Festa A Caso @ Estragon Club"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.teatrostignani.it/spettacoli/contemporaneo/il-presidente",
+   "finale": "",
+   "date_guida": [
+    "2027-01-30"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e444 2027-01-30 Il Presidente @ Teatro Ebe Stignani"
    ]
   },
   {
@@ -1789,15 +1515,51 @@
    ]
   },
   {
-   "esito": "senza data",
-   "link": "https://cittadellamusica.comune.bologna.it/objects/note-di-vita-un-viaggio-nella-musica-senza-confini",
-   "finale": "https://cittadellamusica.comune.bologna.it/events/note-di-vita-un-viaggio-nella-musica-senza-confini",
+   "esito": "non letto",
+   "link": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/giovanni-storti-stefano-mancuso-lunga-vita-agli-alberi",
+   "finale": "HTTP Error 403: Forbidden",
    "date_guida": [
-    "2026-11-12"
+    "2027-01-09"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e376 2026-11-12 Note di Vita – Un viaggio nella musica senza confi @ Teatro Mazzacorati 1763 (Villa"
+    "bo e493 2027-01-09 Lunga vita agli alberi @ Teatro Consorziale"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://www.ticketsms.it/it/event/-Diss-Gacha--Non-Solo-Swag-Tour-2026-Bologna-Locomotiv-05-12-2026",
+   "finale": "",
+   "date_guida": [
+    "2026-12-05"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e754 2026-12-05 Diss Gacha @ Locomotiv Club"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/artist/tiffany-day/101757",
+   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
+   "date_guida": [
+    "2026-11-23"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1157 2026-11-23 TIffany Day @ Gate Milano"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://mc2live.vivaticket.it/it/event/pussy-riot/321542?qubsq=f5acc8f0-b7f1-4e0c-9ed3-a88e395f649d&qubsp=b4d9dcb9-9692-4962-9901-4392d29cf9b3&qubsts=1793648687&qubsc=bestunion&qubse=vivaticketserver&qubsrt=Safetynet&qubsh=cb14452c06417efc05fe7362cb204127",
+   "finale": "",
+   "date_guida": [
+    "2027-02-18"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e771 2027-02-18 Pussy Riot @ Locomotiv Club"
    ]
   },
   {
@@ -1814,26 +1576,26 @@
   },
   {
    "esito": "senza data",
-   "link": "https://www.teatrostignani.it/spettacoli/contemporaneo/il-presidente",
+   "link": "https://www.mailticket.it/evento/55842",
    "finale": "",
    "date_guida": [
-    "2027-01-30"
+    "2027-04-10"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e444 2027-01-30 Il Presidente @ Teatro Ebe Stignani"
+    "bo e860 2027-04-10 Partiro Per Bologna @ Estragon Club"
    ]
   },
   {
    "esito": "senza data",
-   "link": "https://tcbo.vivaticket.it/it/event/beethoven-sinfonia-n-8/289956",
+   "link": "https://www.teatrostignani.it/spettacoli/famiglie/il-tenace-soldatino-di-stagno-e-altre-storie",
    "finale": "",
    "date_guida": [
-    "2026-12-13"
+    "2027-01-03"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e303 2026-12-13 Benedikt Sauer – Beethoven, Sinfonia n. 8 @ Auditorium Manzoni"
+    "bo e439 2027-01-03 Il tenace soldatino di stagno e altre storie @ Teatro Ebe Stignani"
    ]
   },
   {
@@ -1870,18 +1632,6 @@
    "date_pagina": [],
    "eventi": [
     "bo e497 2027-03-04 Uno scherzo del genere @ Teatro Consorziale"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/virginia-raffaele-bancal",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-11"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e491 2026-11-11 Bancàl @ Teatro Consorziale"
    ]
   },
   {
@@ -2173,27 +1923,15 @@
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://www.vivaticket.com/it/ticket/addue/305749",
-   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
-   "date_guida": [
-    "2026-11-19"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e056 2026-11-19 Addue @ Teatro Dehon"
-   ]
-  },
-  {
    "esito": "senza data",
-   "link": "https://www.teatrostignani.it/spettacoli/famiglie/il-tenace-soldatino-di-stagno-e-altre-storie",
+   "link": "https://sinfonicadimilano.vivaticket.it/it/event/cajkovskij-britten-sibelius-debussy-van-steen/302866",
    "finale": "",
    "date_guida": [
-    "2027-01-03"
+    "2026-11-15"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e439 2027-01-03 Il tenace soldatino di stagno e altre storie @ Teatro Ebe Stignani"
+    "mi e1260 2026-11-15 Čajkovskij / Britten / Sibelius / Debussy @ Auditorium di Milano"
    ]
   },
   {
@@ -2209,15 +1947,27 @@
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://www.vivaticket.com/it/ticket/alexandre-tharaud/302725",
-   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
+   "esito": "senza data",
+   "link": "https://sinfonicadimilano.vivaticket.it/it/event/cameretta-1-buon-compleanno-gus/324399",
+   "finale": "",
    "date_guida": [
-    "2027-05-10"
+    "2026-11-29"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e347 2027-05-10 Alexandre Tharaud @ Teatro Auditorium Manzoni"
+    "mi e1263 2026-11-29 Buon Compleanno Gus! @ Auditorium di Milano"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/addue/305749",
+   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
+   "date_guida": [
+    "2026-11-19"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e056 2026-11-19 Addue @ Teatro Dehon"
    ]
   },
   {
@@ -2230,6 +1980,18 @@
    "date_pagina": [],
    "eventi": [
     "bo e445 2027-01-31 Notturna @ Teatro Ebe Stignani"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://sinfonicadimilano.vivaticket.it/it/event/concerto-da-camera-2-teatro-gerolamo/313396",
+   "finale": "",
+   "date_guida": [
+    "2026-11-29"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1262 2026-11-29 Bartók / Hermann / Schubert @ Auditorium di Milano"
    ]
   },
   {
@@ -2288,15 +2050,27 @@
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://www.vivaticket.com/it/ticket/arcadi-volodos/302726",
-   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
+   "esito": "senza data",
+   "link": "https://sinfonicadimilano.vivaticket.it/it/event/harry-potter-tra-scienza-musica-e-magia/316596",
+   "finale": "",
    "date_guida": [
-    "2027-02-22"
+    "2026-12-12"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e341 2027-02-22 Arcadi Volodos @ Teatro Auditorium Manzoni"
+    "mi e1366 2026-12-12 Harry Potter tra scienza, musica e magia @ Auditorium di Milano"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/alexandre-tharaud/302725",
+   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
+   "date_guida": [
+    "2027-05-10"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e347 2027-05-10 Alexandre Tharaud @ Auditorium Manzoni"
    ]
   },
   {
@@ -2313,6 +2087,18 @@
   },
   {
    "esito": "senza data",
+   "link": "https://sinfonicadimilano.vivaticket.it/it/event/ravel-bach-beethoven-foron/302881",
+   "finale": "",
+   "date_guida": [
+    "2026-11-20"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1261 2026-11-20 Ravel / Bach / Beethoven @ Auditorium di Milano"
+   ]
+  },
+  {
+   "esito": "senza data",
    "link": "https://feverup.com/m/631875",
    "finale": "",
    "date_guida": [
@@ -2321,33 +2107,6 @@
    "date_pagina": [],
    "eventi": [
     "bo e109 2026-12-12 The Jazz Room – Omaggio a Frank Sinatra e Louis Ar @ Teatro Testoni Ragazzi"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.bolognateatro.it/home/in-evidenza/teatro-spazio-reno-calderara-di-r-bo-stagione-2026-27",
-   "finale": "<urlopen error [Errno 101] Network is unreachable>",
-   "date_guida": [
-    "2026-11-24",
-    "2026-12-13",
-    "2026-12-20",
-    "2027-01-10",
-    "2027-01-17",
-    "2027-01-23",
-    "2027-02-07",
-    "2027-02-27",
-    "2027-03-07",
-    "2027-03-13",
-    "2027-03-21"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e510 2026-11-24 Ricordatemi come vi pare @ Teatro Spazio Reno",
-    "bo e511 2026-12-13 In Famaja @ Teatro Spazio Reno",
-    "bo e512 2026-12-20 Il Giratempo di Babbo Natale @ Teatro Spazio Reno",
-    "bo e513 2027-01-10 Quando i portici erano di legno @ Teatro Spazio Reno",
-    "bo e514 2027-01-17 Fagioli @ Teatro Spazio Reno",
-    "bo e515 2027-01-23 L'Austriaca @ Teatro Spazio Reno"
    ]
   },
   {
@@ -2363,15 +2122,15 @@
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://www.vivaticket.com/it/ticket/beatrice-rana/302727",
-   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
+   "esito": "senza data",
+   "link": "https://sinfonicadimilano.vivaticket.it/it/event/vacchi-rachmaninov-cajkovskij-tjeknavorian/302885",
+   "finale": "",
    "date_guida": [
-    "2027-01-08"
+    "2026-12-04"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e338 2027-01-08 Beatrice Rana @ Teatro Auditorium Manzoni"
+    "mi e1264 2026-12-04 Vacchi / Rachmaninov / Čajkovskij @ Auditorium di Milano"
    ]
   },
   {
@@ -2387,6 +2146,18 @@
    ]
   },
   {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/andre-gallo/293498",
+   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
+   "date_guida": [
+    "2026-12-12"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e865 2026-12-12 Giulio Giurato e Roberto Noferini @ Accademia Filarmonica"
+   ]
+  },
+  {
    "esito": "senza data",
    "link": "https://www.teatrostignani.it/spettacoli/prosa/la-cena-dei-cretini-l10",
    "finale": "",
@@ -2396,6 +2167,29 @@
    "date_pagina": [],
    "eventi": [
     "bo e435 2026-12-08 La cena dei cretini @ Teatro Ebe Stignani"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/",
+   "finale": "",
+   "date_guida": [
+    "2027-02-20",
+    "2027-03-20",
+    "2027-04-17",
+    "2027-05-22",
+    "2027-10-16",
+    "2027-11-13",
+    "2027-11-14"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e829 2027-02-20 Musica vocale da camera 1 @ Auditorium Manzoni",
+    "bo e832 2027-03-20 Musica vocale da camera 2 @ Auditorium Manzoni",
+    "bo e835 2027-04-17 Musica vocale da camera 3 @ Auditorium Manzoni",
+    "bo e837 2027-05-22 Musica vocale da camera 4 @ Auditorium Manzoni",
+    "bo e841 2027-10-16 Musica vocale da camera 5 @ Auditorium Manzoni",
+    "bo e844 2027-11-13 Musica vocale da camera 6 @ Auditorium Manzoni"
    ]
   },
   {
@@ -2423,51 +2217,123 @@
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://www.officinacrobatica.com/etn/talea-dalle-radici-alla-cura/",
-   "finale": "<urlopen error [Errno 101] Network is unreachable>",
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/12-sinfonica-2026-bolton/289961",
+   "finale": "",
    "date_guida": [
-    "2026-11-27"
+    "2026-11-20"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e733 2026-11-27 Talea – Dalle radici alla cura @ OfficinAcrobatica"
+    "bo e290 2026-11-20 Ivor Bolton – Haydn, La Creazione @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://feverup.com/m/812627",
+   "finale": "",
+   "date_guida": [
+    "2027-01-29"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e161 2027-01-29 Candlelight – Coldplay e Imagine Dragons @ Teatro San Leonardo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/arcadi-volodos/302726",
+   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
+   "date_guida": [
+    "2027-02-22"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e341 2027-02-22 Arcadi Volodos @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/attilio/318097",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-01-23"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1312 2027-01-23 Attilio @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/beatrice-rana/302727",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-01-08"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e338 2027-01-08 Beatrice Rana @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/bertolt-il-profugo/318110",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-05-04"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1324 2027-05-04 Bertolt, Il Profugo @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/brothers/318089",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-12-05"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1306 2026-12-05 Brothers @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/canto-di-natale/318094",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-12-21"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1310 2026-12-21 Canto di Natale @ Teatro Gerolamo"
    ]
   },
   {
    "esito": "non letto",
    "link": "https://www.vivaticket.com/it/ticket/cappella-neapolitana-ian-bostridge-antonio-florio/302728",
-   "finale": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an ",
+   "finale": "saltato: sito lento o che rifiuta",
    "date_guida": [
     "2026-12-14"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e337 2026-12-14 Cappella Neapolitana, Ian Bostridge, Antonio Flori @ Teatro Auditorium Manzoni"
+    "bo e337 2026-12-14 Cappella Neapolitana, Ian Bostridge, Antonio Flori @ Auditorium Manzoni"
    ]
   },
   {
    "esito": "non letto",
-   "link": "https://www.vivaticket.com/it/ticket/carta-straccia/305754",
+   "link": "https://www.vivaticket.com/it/ticket/catch-your-breath/303185",
    "finale": "saltato: sito lento o che rifiuta",
    "date_guida": [
-    "2026-11-13"
+    "2027-01-27"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e042 2026-11-13 Carta straccia @ Teatro Dehon"
-   ]
-  },
-  {
-   "esito": "non letto",
-   "link": "https://www.vivaticket.com/it/ticket/controtempo-paolo-fresu-e-john-helliwell-supertramp-con-la-martini-big-band/316268",
-   "finale": "saltato: sito lento o che rifiuta",
-   "date_guida": [
-    "2026-11-11"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e037 2026-11-11 Paolo Fresu e John Helliwell con Martini Big Band @ Teatro Celebrazioni"
+    "mi e1196 2027-01-27 Ocean Sleeper ed Elijah @ Santeria Toscana 31"
    ]
   },
   {
@@ -2480,6 +2346,30 @@
    "date_pagina": [],
    "eventi": [
     "bo e073 2026-11-25 Pesche dure @ Teatro Celebrazioni"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/dead-poet-society/321522",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-02-14"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1071 2027-02-14 Dead Poet Society @ Magazzini Generali"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/diario-di-eva/318111",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-05-08"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1325 2027-05-08 Diario di Eva @ Teatro Gerolamo"
    ]
   },
   {
@@ -2503,7 +2393,7 @@
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e342 2027-03-01 Ensemble Colloredo, Arsenii Moon @ Teatro Auditorium Manzoni"
+    "bo e342 2027-03-01 Ensemble Colloredo, Arsenii Moon @ Auditorium Manzoni"
    ]
   },
   {
@@ -2515,7 +2405,7 @@
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e346 2027-04-19 Ettore Pagano, Naoko Sonoda @ Teatro Auditorium Manzoni"
+    "bo e346 2027-04-19 Ettore Pagano, Naoko Sonoda @ Auditorium Manzoni"
    ]
   },
   {
@@ -2527,7 +2417,19 @@
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e336 2026-11-23 Francesca Dego, Francesca Leonardi @ Teatro Auditorium Manzoni"
+    "bo e336 2026-11-23 Francesca Dego, Francesca Leonardi @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/gaber-jannacci-la-musica-delle-parole/318114",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-05-16"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1328 2027-05-16 Gaber Jannacci @ Teatro Gerolamo"
    ]
   },
   {
@@ -2539,7 +2441,31 @@
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e335 2026-11-16 Grigory Sokolov @ Teatro Auditorium Manzoni"
+    "bo e335 2026-11-16 Grigory Sokolov @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/i-danni-dei-sondaggi/318104",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-02-27"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1319 2027-02-27 I Dannni Dei Sondaggi @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/i-nomi-l-ultima-notte-di-giancarlo-siani/318092",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-12-13"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1309 2026-12-13 I Nomi. L'ultima Notte di Giancarlo Siani @ Teatro Gerolamo"
    ]
   },
   {
@@ -2556,6 +2482,54 @@
   },
   {
    "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/il-circo-dopo-il-circo-dal-circo-di-ieri-al-circo-di-domani/318101",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-02-14"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1316 2027-02-14 Il Circo Dopo Il Circo. Dal Circo Di Ieri al Circo @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/immaginare-l-invisibile-ujig-live/318109",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-04-30"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1323 2027-04-30 Immaginare L'Invisibile @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/in-questo-tempo-in-questa-tempesta/318106",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-03-20"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1321 2027-03-20 In Questo Tempo, In Questa Tempesta @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/jesper-bodilsen-trio-feat-fabrizio-bosso/318112",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-05-14"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1326 2027-05-14 Jesper Bodilsen Trio Feat. Fabrizio Bosso @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
    "link": "https://www.vivaticket.com/it/ticket/julian-kainrath-lilya-zilberstein/302734",
    "finale": "saltato: sito lento o che rifiuta",
    "date_guida": [
@@ -2563,7 +2537,7 @@
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e340 2027-02-08 Julian Kainrath, Lilya Zilberstein @ Teatro Auditorium Manzoni"
+    "bo e340 2027-02-08 Julian Kainrath, Lilya Zilberstein @ Auditorium Manzoni"
    ]
   },
   {
@@ -2575,7 +2549,7 @@
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e345 2027-04-12 Katia e Marielle Labèque @ Teatro Auditorium Manzoni"
+    "bo e345 2027-04-12 Katia e Marielle Labèque @ Auditorium Manzoni"
    ]
   },
   {
@@ -2587,7 +2561,31 @@
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e348 2027-05-17 L'Orchestra del Mare, Mario Brunello, Danilo Rossi @ Teatro Auditorium Manzoni"
+    "bo e348 2027-05-17 L'Orchestra del Mare, Mario Brunello, Danilo Rossi @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/la-scatola-dei-giocattoli/318108",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-04-03"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1322 2027-04-03 La Scatola Dei Giocattoli @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/la-sparanoia-atto-unico-senza-feriti-gravi-purtroppo/318096",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-01-16"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1311 2027-01-16 La Sparanoia. Atto Unico Senza Feriti Gravi Purtro @ Teatro Gerolamo"
    ]
   },
   {
@@ -2608,6 +2606,54 @@
   },
   {
    "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/la-tripla-vita-di-michele-sparacino/318103",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-02-21"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1318 2027-02-21 La Tripla Vita di Michele Sparacino @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/la-voce-del-sacro-concerto-barocca/318099",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-01-30"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1314 2027-01-30 La Voce del Sacro @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/le-impertinenze-dell-eta/318120",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-06-24"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1333 2027-06-24 Le Impertinenze dell'Età @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/le-nostre-prigioni-storie-di-pena-e-speranza/318091",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-12-12"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1308 2026-12-12 Le Nostre Prigioni. Storie di pena e speranza @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
    "link": "https://www.vivaticket.com/it/ticket/maccio-capatonda-spettacolo-teatrale/300557",
    "finale": "saltato: sito lento o che rifiuta",
    "date_guida": [
@@ -2620,6 +2666,78 @@
   },
   {
    "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/malandrini-a-milano/318090",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-12-06"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1307 2026-12-06 Malandrini @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/marlene-kuntz-suona-il-vile/314231",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-11-20"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1189 2026-11-20 Marlene Kuntz @ Circolo Magnolia"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/marlene-kuntz-suona-il-vile/316581",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-11-19"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e058 2026-11-19 Marlene Kuntz suona \"Il Vile\" @ Locomotiv Club"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/milano-roma-porta-belli/318087",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-11-15"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1304 2026-11-15 Milano/Roma @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/miracolo/318116",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-05-22"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1329 2027-05-22 Miracolo! @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/nei-letti-degli-altri/318119",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-06-17"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1332 2027-06-17 Nei Letti Degli Altri @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
    "link": "https://www.vivaticket.com/it/ticket/orchestra-tcbo-gautier-capu%C3%A7on-lera-auerbach/302738",
    "finale": "saltato: sito lento o che rifiuta",
    "date_guida": [
@@ -2627,7 +2745,19 @@
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e343 2027-03-18 Orchestra del Teatro Comunale di Bologna, Gautier  @ Teatro Auditorium Manzoni"
+    "bo e343 2027-03-18 Orchestra del Teatro Comunale di Bologna, Gautier  @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/ornella-un-omaggio-senza-fine-prima-nazionale/318117",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-05-29"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1330 2027-05-29 Ornella. Un Omaggio Senza Fine @ Teatro Gerolamo"
    ]
   },
   {
@@ -2639,7 +2769,67 @@
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e339 2027-01-25 Pablo Barragán, Edgar Moreau, Martina Consonni @ Teatro Auditorium Manzoni"
+    "bo e339 2027-01-25 Pablo Barragán, Edgar Moreau, Martina Consonni @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/parlami-d-amore-quando-la-radio-cantava-la-vita/318102",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-02-20"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1317 2027-02-20 Parlami d'Amore. Quando la Radio Cantava la Vita @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/pierpaolo-amico-mio-morante-e-pasolini-frammenti-da-un-amicizia/318105",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-03-06"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1320 2027-03-06 Pierpaolo, amico mio @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/plectrum/318118",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-06-12"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1331 2027-06-12 Plectrum @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/qui-citta-di-m/318200",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-02-04"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1315 2027-02-04 Qui Città di M. @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/quintorigo-john-de-leo-rospo-grigio-in-cattivita-tour-2027/322898",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-02-07"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e768 2027-02-07 Quintorigo & John De Leo @ Locomotiv Club"
    ]
   },
   {
@@ -2651,7 +2841,19 @@
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e344 2027-03-22 Sergey e Lusine Khachatryan @ Teatro Auditorium Manzoni"
+    "bo e344 2027-03-22 Sergey e Lusine Khachatryan @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/sonora-imago-polittico-da-concerto-per-voce-femminile-pianoforte-esteso-live-video-omaggio-a-bill-viola/318088",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-11-29"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1305 2026-11-29 Sonora Imago @ Teatro Gerolamo"
    ]
   },
   {
@@ -2680,6 +2882,18 @@
   },
   {
    "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/suicide-silence/323901",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-05-19"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1074 2027-05-19 Suicide Silence @ Magazzini Generali"
+   ]
+  },
+  {
+   "esito": "non letto",
    "link": "https://www.vivaticket.com/it/ticket/the-full-monty/301917",
    "finale": "saltato: sito lento o che rifiuta",
    "date_guida": [
@@ -2704,14 +2918,38 @@
   },
   {
    "esito": "non letto",
-   "link": "https://www.vivaticket.com/it/ticket/uriah-heep/299793",
+   "link": "https://www.vivaticket.com/it/ticket/tutte-le-bambine-e-i-bambini-voglion-fare-jazz/318098",
    "finale": "saltato: sito lento o che rifiuta",
    "date_guida": [
-    "2026-11-13"
+    "2027-01-24"
    ],
    "date_pagina": [],
    "eventi": [
-    "bo e045 2026-11-13 Uriah Heep @ Teatro Celebrazioni"
+    "mi e1313 2027-01-24 Tutte le Bambine e i Bambini Voglion Fare Jazz @ Teatro Gerolamo"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/ugly-kid-joe/325538",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-02-08"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1172 2027-02-08 Ugly Kid Joe @ Gate Milano"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/ticket/un-ora-di-niente/318113",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2027-05-15"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1327 2027-05-15 Un'Ora Di Niente @ Teatro Gerolamo"
    ]
   },
   {
@@ -2724,6 +2962,46 @@
    "date_pagina": [],
    "eventi": [
     "bo e110 2026-12-12 Venerdì 13 @ Teatro Dehon"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/venue/ecoteatro/516385054",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-11-22",
+    "2026-11-24",
+    "2026-11-25",
+    "2026-11-28",
+    "2026-11-29",
+    "2026-12-04",
+    "2026-12-13",
+    "2026-12-18",
+    "2026-12-19",
+    "2026-12-20",
+    "2026-12-23",
+    "2026-12-31",
+    "2027-01-16",
+    "2027-01-17",
+    "2027-01-19",
+    "2027-01-23",
+    "2027-01-24",
+    "2027-01-31",
+    "2027-02-07",
+    "2027-02-12",
+    "2027-03-07",
+    "2027-03-17",
+    "2027-04-02",
+    "2027-04-11"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1235 2026-11-22 Niente Progetti per il Futuro @ Ecoteatro",
+    "mi e1236 2026-11-24 Donne @ Ecoteatro",
+    "mi e1237 2026-11-25 Cupido @ Ecoteatro",
+    "mi e1238 2026-11-28 L'adolescenza È una Nostalgia @ Ecoteatro",
+    "mi e1239 2026-11-29 Carmen @ Ecoteatro",
+    "mi e1240 2026-12-04 L'elisir D'amore @ Ecoteatro"
    ]
   },
   {
@@ -2784,6 +3062,34 @@
   },
   {
    "esito": "non letto",
+   "link": "https://www.vivaticket.com/it/venue/teatro-della-cooperativa/15969050",
+   "finale": "saltato: sito lento o che rifiuta",
+   "date_guida": [
+    "2026-11-29",
+    "2026-12-20",
+    "2027-01-24",
+    "2027-01-31",
+    "2027-02-07",
+    "2027-02-23",
+    "2027-03-21",
+    "2027-04-18",
+    "2027-04-24",
+    "2027-05-09",
+    "2027-05-23",
+    "2027-06-02"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1291 2026-11-29 Bravissime @ Teatro della Cooperativa",
+    "mi e1292 2026-12-20 Don Chisciotte senza Mancia @ Teatro della Cooperativa",
+    "mi e1293 2027-01-24 Noi due dobbiamo parlare. Generazioni a confronto @ Teatro della Cooperativa",
+    "mi e1294 2027-01-31 Le pietre della Libertà @ Teatro della Cooperativa",
+    "mi e1295 2027-02-07 La vendetta dei boomers @ Teatro della Cooperativa",
+    "mi e1296 2027-02-23 L’apparenza inganna @ Teatro della Cooperativa"
+   ]
+  },
+  {
+   "esito": "non letto",
    "link": "https://www.vivaticket.com/it/venue/teatro-europauditorium/5619050",
    "finale": "saltato: sito lento o che rifiuta",
    "date_guida": [
@@ -2810,18 +3116,6 @@
   },
   {
    "esito": "senza data",
-   "link": "https://feverup.com/m/812627",
-   "finale": "",
-   "date_guida": [
-    "2027-01-29"
-   ],
-   "date_pagina": [],
-   "eventi": [
-    "bo e161 2027-01-29 Candlelight – Coldplay e Imagine Dragons @ Teatro San Leonardo"
-   ]
-  },
-  {
-   "esito": "senza data",
    "link": "https://www.teatrostignani.it/spettacoli/speciali/manera-e-champagne",
    "finale": "",
    "date_guida": [
@@ -2830,6 +3124,18 @@
    "date_pagina": [],
    "eventi": [
     "bo e438 2026-12-31 Manera e Champagne @ Teatro Ebe Stignani"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/12-sinfonica-2027-ceretta/319589",
+   "finale": "",
+   "date_guida": [
+    "2027-11-12"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e843 2027-11-12 Ceretta, Ferrández @ Auditorium Manzoni"
    ]
   },
   {
@@ -2846,6 +3152,18 @@
   },
   {
    "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/13-sinfonica-2026-angius/289962",
+   "finale": "",
+   "date_guida": [
+    "2026-12-11"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e300 2026-12-11 Marco Angius – Corrado, Hindemith @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
    "link": "https://feverup.com/m/812713",
    "finale": "",
    "date_guida": [
@@ -2854,6 +3172,18 @@
    "date_pagina": [],
    "eventi": [
     "bo e150 2027-01-17 Candlelight – Tributo a Michael Jackson @ Teatro San Leonardo"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/14-sinfonica-2026-stenz/289963",
+   "finale": "",
+   "date_guida": [
+    "2026-12-31"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e307 2026-12-31 Markus Stenz – Beethoven, Nona Sinfonia @ Auditorium Manzoni"
    ]
   },
   {
@@ -2870,6 +3200,18 @@
   },
   {
    "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/beethoven-sinfonia-n-7/289955",
+   "finale": "",
+   "date_guida": [
+    "2026-11-22"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e293 2026-11-22 Christian Blex – Beethoven, Sinfonia n. 7 @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
    "link": "https://feverup.com/m/821516",
    "finale": "",
    "date_guida": [
@@ -2881,135 +3223,483 @@
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://www.songkick.com/concerts/43502103-sofia-gabanna-at-21-house-of-stories-navigli",
-   "finale": "saltato: sito lento o che rifiuta",
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/beethoven-sinfonia-n-8/289956",
+   "finale": "",
    "date_guida": [
-    "2026-11-19"
+    "2026-12-13"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e450 2026-11-19 Sofia Gabanna @ 21 House of Stories Navigli"
+    "bo e303 2026-12-13 Benedikt Sauer – Beethoven, Sinfonia n. 8 @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/carmen/316606",
+   "finale": "",
+   "date_guida": [
+    "2027-05-14"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e836 2027-05-14 Carmen @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/il-ritorno-di-ulisse-in-patria/316600",
+   "finale": "",
+   "date_guida": [
+    "2027-03-07"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e830 2027-03-07 Il ritorno di Ulisse in patria @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/madama-butterfly/316604",
+   "finale": "",
+   "date_guida": [
+    "2027-04-04"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e833 2027-04-04 Madama Butterfly @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/morelenbaum-o-violoncelo-latinoamericano/296684",
+   "finale": "",
+   "date_guida": [
+    "2027-01-14"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e828 2027-01-14 Jaques Morelenbaum @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/nabucco/316610",
+   "finale": "",
+   "date_guida": [
+    "2027-11-09"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e842 2027-11-09 Nabucco @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/querencia/322054",
+   "finale": "",
+   "date_guida": [
+    "2027-04-11"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e834 2027-04-11 Querencia @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/sergio-bernal-dance-company/322055",
+   "finale": "",
+   "date_guida": [
+    "2027-03-14"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e831 2027-03-14 Sergio Bernal Dance Company @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/tao-dance-theater/321921",
+   "finale": "",
+   "date_guida": [
+    "2027-09-18"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e839 2027-09-18 Tao Dance Theatre @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/tristan-und-isolde/316609",
+   "finale": "",
+   "date_guida": [
+    "2027-10-13"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e840 2027-10-13 Tristan und Isolde @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://tcbo.vivaticket.it/it/event/vanessa/316608",
+   "finale": "",
+   "date_guida": [
+    "2027-06-16"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e838 2027-06-16 Vanessa @ Auditorium Manzoni"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/a-s-ragionar-di-guerra/306325",
+   "finale": "",
+   "date_guida": [
+    "2027-01-31"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1274 2027-01-31 A (s)ragionar di Guerra @ Teatro Filodrammatici"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/a-walk-in-the-woods/306788",
+   "finale": "",
+   "date_guida": [
+    "2027-02-25"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1278 2027-02-25 A Walk in The Woods @ Teatro Filodrammatici"
    ]
   },
   {
    "esito": "non letto",
-   "link": "https://www.songkick.com/concerts/43502106-eilis-frawley-at-germiluogo-di-contaminazione",
-   "finale": "saltato: sito lento o che rifiuta",
+   "link": "https://www.technoairlines.com/event/disco-pastrami-pickle-wedding-ragoo-2026-12-10",
+   "finale": "HTTP Error 404: Not Found",
    "date_guida": [
-    "2026-11-19"
+    "2026-12-10"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e229 2026-11-19 Eilis Frawley @ Germi-luogo Di Contaminazione"
+    "mi smi146 2026-12-10 Disco Pastrami: Pickle Wedding @ Ragoo"
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://www.songkick.com/festivals/3498553-slam-dunk-italy/id/43481495-slam-dunk-italy-2027",
-   "finale": "saltato: sito lento o che rifiuta",
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/argo/306442",
+   "finale": "",
    "date_guida": [
-    "2027-06-11"
+    "2027-04-11"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e442 2027-06-11 Simple Plan @ Carroponte"
+    "mi e1283 2027-04-11 Argo @ Teatro Filodrammatici"
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://www.songkick.com/festivals/3754279-special-stage-finale/id/43467613-special-stage--finale-2026",
-   "finale": "saltato: sito lento o che rifiuta",
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/bianco/306438",
+   "finale": "",
    "date_guida": [
-    "2026-11-15"
+    "2027-03-21"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e459 2026-11-15 Special Stage - Finale 2026 @ Santeria Toscana 31"
+    "mi e1280 2027-03-21 Bianco @ Teatro Filodrammatici"
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://www.songkick.com/festivals/3755342-musica-dei-cieli/id/43462785-musica-dei-cieli-2026",
-   "finale": "saltato: sito lento o che rifiuta",
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/colpevoli-o-innocenti-primo-incontro/315429",
+   "finale": "",
    "date_guida": [
-    "2026-12-05"
+    "2026-12-01"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e376 2026-12-05 Musica dei cieli 2026 @ Chiesa di San Vincenzo in Prat"
+    "mi e1266 2026-12-01 L'occidente di Oriana Fallaci @ Teatro Filodrammatici"
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://www.songkick.com/festivals/3755342-musica-dei-cieli/id/43462787-musica-dei-cieli-2026",
-   "finale": "saltato: sito lento o che rifiuta",
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/colpevoli-o-innocenti-quarto-incontro/315428",
+   "finale": "",
    "date_guida": [
-    "2026-12-11"
+    "2027-03-22"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e375 2026-12-11 Musica dei cieli 2026 @ Chiesa dei Santi Gervaso & Pro"
+    "mi e1281 2027-03-22 Quarto Appuntamento @ Teatro Filodrammatici"
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://www.songkick.com/festivals/3755342-musica-dei-cieli/id/43462794-musica-dei-cieli-2026",
-   "finale": "saltato: sito lento o che rifiuta",
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/colpevoli-o-innocenti-secondo-incontro/324777",
+   "finale": "",
    "date_guida": [
-    "2026-12-18"
+    "2027-01-18"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e374 2026-12-18 Musica dei cieli 2026 @ Basilica di San Vittore al Cor"
+    "mi e1271 2027-01-18 Secondo Appuntamento @ Teatro Filodrammatici"
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://www.songkick.com/festivals/3799090-linecheck-meeting-pass/id/43352127-linecheck--meeting-pass-2026",
-   "finale": "saltato: sito lento o che rifiuta",
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/colpevoli-o-innocenti-terzo-incontro/315430",
+   "finale": "",
    "date_guida": [
-    "2026-11-19"
+    "2027-02-01"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e333 2026-11-19 LINECHECK | MEETING PASS 2026 @ BASE Milano"
+    "mi e1275 2027-02-01 Terzo Appuntamento @ Teatro Filodrammatici"
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://www.songkick.com/festivals/3807536-etta-loste-varlene-milano-music-week/id/43441057-etta--loste--varlene--milano-music-week-2026",
-   "finale": "saltato: sito lento o che rifiuta",
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/con-gli-occhi-di-caravaggio-milano-7-luglio-1592/316189",
+   "finale": "",
    "date_guida": [
-    "2026-11-20"
+    "2027-07-07"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e240 2026-11-20 Etta + Loste + Varlene | Milano Music Week 2026 @ Q-HUB"
+    "mi e1290 2027-07-07 Con gli Occhi di Caravaggio: Milano, 7 Luglio 1592 @ Teatro Filodrammatici"
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://www.songkick.com/festivals/3807537-shandon-los-fastidios-ska-punk-oi-fest-vol-2/id/43441058-shandon--los-fastidios--ska-punk-oi-fest-vol-2-2026",
-   "finale": "saltato: sito lento o che rifiuta",
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/eliogabalo-una-storia-romana/307437",
+   "finale": "",
    "date_guida": [
-    "2026-12-19"
+    "2027-05-16"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e436 2026-12-19 SHANDON + LOS FASTIDIOS | SKA PUNK OI FEST VOL. 2  @ Q-HUB"
+    "mi e1287 2027-05-16 Eliogabalo! @ Teatro Filodrammatici"
    ]
   },
   {
-   "esito": "non letto",
-   "link": "https://www.songkick.com/festivals/531394-ultrasuoni/id/43347935-ultrasuoni-festival-2026",
-   "finale": "saltato: sito lento o che rifiuta",
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/elisabeth-la-donna-del-secolo/316190",
+   "finale": "",
+   "date_guida": [
+    "2027-05-10"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1286 2027-05-10 Elisabeth. la Donna del Secolo @ Teatro Filodrammatici"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/gli-internati-militari-italiani-i-soldati-che-dissero-no-al-nazifascismo/316191",
+   "finale": "",
+   "date_guida": [
+    "2027-03-15"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1279 2027-03-15 Gli Internati Militari Italiani: i Soldati Che Dis @ Teatro Filodrammatici"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/iliade-la-ballata-di-tersite/322856",
+   "finale": "",
    "date_guida": [
     "2026-11-24"
    ],
    "date_pagina": [],
    "eventi": [
-    "mi e197 2026-11-24 Caterina @ La Birrofila Brewpub"
+    "mi e1265 2026-11-24 Iliade, la Ballata di Tersite @ Teatro Filodrammatici"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/la-lettera/306448",
+   "finale": "",
+   "date_guida": [
+    "2026-12-20"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1268 2026-12-20 La Lettera 2026 @ Teatro Filodrammatici"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/la-seconda-morte-tra-depistaggi-e-silenzi-storie-di-giornalisti-che-non-dovevano-parlare/316192",
+   "finale": "",
+   "date_guida": [
+    "2027-05-24"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1289 2027-05-24 La Seconda Morte. tra Depistaggi e Silenzi: Storie @ Teatro Filodrammatici"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/le-serve/306725",
+   "finale": "",
+   "date_guida": [
+    "2027-02-14"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1277 2027-02-14 Le Serve @ Teatro Filodrammatici"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/my-english-persian-kitchen/306444",
+   "finale": "",
+   "date_guida": [
+    "2027-04-25"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1284 2027-04-25 MY English Persian Kitchen @ Teatro Filodrammatici"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/pedro-e-il-capitano/306316",
+   "finale": "",
+   "date_guida": [
+    "2026-12-13"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1267 2026-12-13 Pedro e il Capitano @ Teatro Filodrammatici"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/ridere-sganasciarsi-scompisciarsi/306324",
+   "finale": "",
+   "date_guida": [
+    "2027-01-24"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1272 2027-01-24 Lezioni di Umorismo @ Teatro Filodrammatici"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/schiavo-d-amore/306439",
+   "finale": "",
+   "date_guida": [
+    "2027-04-04"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1282 2027-04-04 Schiavo D'amore @ Teatro Filodrammatici"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/tape/306320",
+   "finale": "",
+   "date_guida": [
+    "2026-12-30"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1269 2026-12-30 Tape. la Registrazione @ Teatro Filodrammatici"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/trash-test/306446",
+   "finale": "",
+   "date_guida": [
+    "2027-05-23"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1288 2027-05-23 Trash Test @ Teatro Filodrammatici"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/ulisse-amico-mio/316193",
+   "finale": "",
+   "date_guida": [
+    "2027-01-25"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1273 2027-01-25 Ulisse, Amico Mio @ Teatro Filodrammatici"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://teatrofilodrammatici.vivaticket.it/it/event/una-cena-d-addio/306323",
+   "finale": "",
+   "date_guida": [
+    "2027-01-17"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e1270 2027-01-17 Una Cena D'addio @ Teatro Filodrammatici"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.songkick.com/concerts/43443649-dead-poet-society-at-unipol-dome",
+   "finale": "HTTP Error 404: Not Found",
+   "date_guida": [
+    "2026-11-20"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi e219 2026-11-20 Dead Poet Society @ Unipol Dome"
+   ]
+  },
+  {
+   "esito": "non letto",
+   "link": "https://www.technoairlines.com/event/the-duel-a-night-in-the-arena-super-club-2026-11-28",
+   "finale": "HTTP Error 404: Not Found",
+   "date_guida": [
+    "2026-11-28"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "mi smi130 2026-11-28 THE DUEL: A NIGHT IN THE ARENA @ Super Club"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://link.dice.fm/s7b9ebbbe07c?dice_id=s7b9ebbbe07c",
+   "finale": "https://agzl.app.link/K7VbqURa63b?dice_id=s7b9ebbbe07c&_p=c21429c39e077af1e21a90ffeab1",
+   "date_guida": [
+    "2026-11-30"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e752 2026-11-30 Fasma @ Locomotiv Club"
+   ]
+  },
+  {
+   "esito": "senza data",
+   "link": "https://link.dice.fm/vffc26934345?dice_id=vffc26934345",
+   "finale": "https://agzl.app.link/7R5alKcms6b?dice_id=vffc26934345&_p=c21429c39e077af1e21a90ffeab1",
+   "date_guida": [
+    "2026-12-16"
+   ],
+   "date_pagina": [],
+   "eventi": [
+    "bo e757 2026-12-16 L’Officina Della Camomilla @ Locomotiv Club"
    ]
   }
  ],
@@ -3036,13 +3726,13 @@
    {
     "esito": "pagina generica",
     "link": "https://legabasket.vivaticket.it/it/extsearch/armani-olimpia-milano",
-    "partite": 18,
+    "partite": 17,
     "date_pagina": [],
     "finale": "",
     "eventi": [
-     "mi 2026-11-12 Olimpia Milano – Zalgiris Kaunas",
      "mi 2026-11-17 Olimpia Milano – Crvena Zvezda Meridianbet Belgrad",
-     "mi 2026-11-19 Olimpia Milano – Fenerbahce Tarfin Istanbul"
+     "mi 2026-11-19 Olimpia Milano – Fenerbahce Tarfin Istanbul",
+     "mi 2026-12-06 Olimpia Milano – Longobardi Scafati Basket"
     ]
    },
    {
@@ -3060,13 +3750,13 @@
    {
     "esito": "pagina generica",
     "link": "https://verovolley.vivaticket.it/",
-    "partite": 9,
+    "partite": 8,
     "date_pagina": [],
     "finale": "",
     "eventi": [
-     "mi 2026-11-11 Vero Volley Milano – Banca Valsabbina Millenium Br",
      "mi 2026-11-22 Vero Volley Milano – Prosecco Doc A.Carraro Imoco ",
-     "mi 2026-12-06 Vero Volley Milano – Reale Mutua Fenera Chieri '76"
+     "mi 2026-12-06 Vero Volley Milano – Reale Mutua Fenera Chieri '76",
+     "mi 2026-12-20 Vero Volley Milano – Cbf Balducci Hr Macerata"
     ]
    },
    {
@@ -3150,21 +3840,29 @@
   ]
  },
  "cinema": {
-  "link": 201,
+  "link": 142,
   "esiti": {
-   "pagina della sala": 17,
-   "vietato": 24,
-   "ok": 159,
-   "non letto": 1
+   "vietato": 16,
+   "pagina della sala": 23,
+   "ok": 101,
+   "titolo assente": 2
   },
   "casi": [
    {
-    "esito": "non letto",
-    "link": "https://www.progettolumiere.it/mexico/",
+    "esito": "titolo assente",
+    "link": "https://www.webtic.it/app/shopping/loadLocal/BO/5373",
     "film": [
-     "Cinema Mexico – Se domani non torno"
+     "Cinema Chaplin (Ex Tiffany) – Un weekend artificiale"
     ],
-    "finale": "HTTP Error 403: Forbidden"
+    "finale": ""
+   },
+   {
+    "esito": "titolo assente",
+    "link": "https://ticket.cinebot.it/cineteatrostella/evento/2100_santiago-un-cammino",
+    "film": [
+     "Cineteatro Stella – Compostelle"
+    ],
+    "finale": ""
    }
   ]
  }
