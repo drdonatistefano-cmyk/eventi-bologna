@@ -1,0 +1,20 @@
+{
+ "aggiunti": [],
+ "link_biglietti": 0,
+ "fonti": {
+  "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
+  "arte.it": {
+   "letti": 3,
+   "aggiunti": 0
+  },
+  "siti dei locali": {}
+ },
+ "errori": [
+  "https://dice.fm/browse/ravenna: HTTP Error 404: Not Found",
+  "convalida: Eventi validi: 0 · tolti perché finiti: 0 · doppioni uniti: 0\nPer zona: \nComuni con eventi: 0/18\n\nERRORE: meno di 5 eventi, probabilmente l'elenco è incompleto – niente è stato scritto.\n",
+  "convalida: Mostre valide: 0 · tolte perché chiuse: 0 · doppioni tolti: 0\n\nERRORE: meno di 5 mostre, elenco probabilmente incompleto – niente è stato scritto.\n"
+ ],
+ "data": "2026-11-15T18:16",
+ "eventi_totali": 0,
+ "mostre_totali": 0
+}
