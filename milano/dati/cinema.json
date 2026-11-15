@@ -1385,7 +1385,6 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "11:10",
       "15:10",
       "18:30",
       "19:40",
@@ -1393,14 +1392,13 @@
      ],
      "giorni": {
       "2026-11-15": [
-       "11:10",
        "15:10",
        "18:30",
        "19:40",
        "21:30"
       ]
      },
-     "versione": "Versione originale (solo ore 11:10)",
+     "versione": "",
      "genere": "Azione, Avventura, Drammatico",
      "regia": "Takashi Yamazaki",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5446",
@@ -1433,13 +1431,11 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "10:50",
       "14:30",
       "17:00"
      ],
      "giorni": {
       "2026-11-15": [
-       "10:50",
        "14:30",
        "17:00"
       ]
@@ -1483,14 +1479,12 @@
     {
      "titolo": "Look Back",
      "orari": [
-      "10:40",
       "17:20",
       "19:30",
       "21:45"
      ],
      "giorni": {
       "2026-11-15": [
-       "10:40",
        "17:20",
        "19:30",
        "21:45"
@@ -1531,7 +1525,6 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "11:00",
       "15:05",
       "16:50",
       "17:25",
@@ -1540,7 +1533,6 @@
      ],
      "giorni": {
       "2026-11-15": [
-       "11:00",
        "15:05",
        "16:50",
        "17:25",
@@ -1606,13 +1598,11 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "11:20",
       "14:20",
       "19:35"
      ],
      "giorni": {
       "2026-11-15": [
-       "11:20",
        "14:20",
        "19:35"
       ]
@@ -1629,13 +1619,11 @@
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
-      "11:30",
       "14:40",
       "21:50"
      ],
      "giorni": {
       "2026-11-15": [
-       "11:30",
        "14:40",
        "21:50"
       ]
@@ -2183,12 +2171,10 @@
     {
      "titolo": "Il canto della foresta",
      "orari": [
-      "10:45",
       "13:15"
      ],
      "giorni": {
       "2026-11-15": [
-       "10:45",
        "13:15"
       ]
      },
@@ -2225,7 +2211,6 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "13:10",
       "15:10",
       "17:15",
       "19:30",
@@ -2233,7 +2218,6 @@
      ],
      "giorni": {
       "2026-11-15": [
-       "13:10",
        "15:10",
        "17:15",
        "19:30",
@@ -2248,25 +2232,6 @@
      "anno": 2026,
      "paese": "Italia",
      "durata": 113
-    },
-    {
-     "titolo": "L'estranea",
-     "orari": [
-      "12:45"
-     ],
-     "giorni": {
-      "2026-11-15": [
-       "12:45"
-      ]
-     },
-     "versione": "",
-     "genere": "Thriller",
-     "regia": "Paolo Strippoli",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/117399",
-     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano e Adriano Giannini",
-     "durata": 115,
-     "anno": 2026,
-     "paese": "Italia"
     },
     {
      "titolo": "La storia infinita",
@@ -2286,44 +2251,6 @@
      "durata": 94,
      "anno": 1984,
      "paese": "Germania"
-    },
-    {
-     "titolo": "Nel silenzio delle stanze",
-     "orari": [
-      "10:00"
-     ],
-     "giorni": {
-      "2026-11-15": [
-       "10:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Jérôme Bonnell",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/124029",
-     "anno": 2026,
-     "interpreti": "Swann Arlaud, Louise Chevillotte, Emmanuelle Devos e Galatéa Bellugi",
-     "paese": "Francia",
-     "durata": 103
-    },
-    {
-     "titolo": "Primetime",
-     "orari": [
-      "12:45"
-     ],
-     "giorni": {
-      "2026-11-15": [
-       "12:45"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Drammatico e USA e 2026",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/119640",
-     "anno": 2026,
-     "interpreti": "Robert Pattinson, Merritt Wever, Skyler Gisondo e Matthew Maher",
-     "paese": "USA",
-     "durata": 110
     },
     {
      "titolo": "Ragione e sentimento",
@@ -2347,23 +2274,21 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "10:15",
       "15:00",
       "17:15",
       "19:30"
      ],
      "giorni": {
       "2026-11-15": [
-       "10:15",
        "15:00",
        "17:15",
        "19:30"
       ]
      },
-     "versione": "Versione originale (solo ore 10:15, 17:15)",
+     "versione": "Versione originale (solo ore 17:15)",
      "genere": "Drammatico, Fantasy",
      "regia": "Ti West",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/128485",
+     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/128451",
      "interpreti": "Johnny Depp, Sam Claflin e Daisy Ridley",
      "anno": 2026,
      "paese": "USA",
@@ -2372,13 +2297,11 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "10:30",
       "17:15",
       "19:10"
      ],
      "giorni": {
       "2026-11-15": [
-       "10:30",
        "17:15",
        "19:10"
       ]
@@ -2437,14 +2360,12 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
-      "13:00",
       "17:15",
       "19:30",
       "21:40"
      ],
      "giorni": {
       "2026-11-15": [
-       "13:00",
        "17:15",
        "19:30",
        "21:40"
@@ -2462,44 +2383,23 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "12:30",
       "16:45",
       "19:00"
      ],
      "giorni": {
       "2026-11-15": [
-       "12:30",
        "16:45",
        "19:00"
       ]
      },
-     "versione": "Versione originale (solo ore 12:30, 19:00)",
+     "versione": "Versione originale (solo ore 19:00)",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/125679",
+     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/125680",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
      "anno": 2026,
      "paese": "Regno Unito",
      "durata": 118
-    },
-    {
-     "titolo": "Wildwood - I segreti del bosco proibito",
-     "orari": [
-      "12:00"
-     ],
-     "giorni": {
-      "2026-11-15": [
-       "12:00"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Animazione, Avventura, Drammatico",
-     "regia": "Travis Knight",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/121691",
-     "interpreti": "Peyton Elizabeth Lee, Jacob Tremblay e Carey Mulligan",
-     "anno": 2026,
-     "paese": "USA",
-     "durata": 139
     }
    ],
    "auto": true,
@@ -3584,8 +3484,6 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "10:45",
-      "11:10",
       "14:50",
       "16:20",
       "19:30",
@@ -3595,8 +3493,6 @@
      ],
      "giorni": {
       "2026-11-15": [
-       "10:45",
-       "11:10",
        "14:50",
        "16:20",
        "19:30",
@@ -3605,7 +3501,7 @@
        "22:35"
       ]
      },
-     "versione": "Versione originale (solo ore 11:10, 14:50, 19:30)",
+     "versione": "Versione originale (solo ore 14:50, 19:30)",
      "genere": "Azione, Avventura, Drammatico",
      "regia": "Takashi Yamazaki",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
@@ -3676,7 +3572,6 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "11:40",
       "13:30",
       "15:30",
       "16:10",
@@ -3685,7 +3580,6 @@
      ],
      "giorni": {
       "2026-11-15": [
-       "11:40",
        "13:30",
        "15:30",
        "16:10",
@@ -3703,39 +3597,8 @@
      "durata": 107
     },
     {
-     "titolo": "Il Gruffalo' e la Sua P+bastoncino Aut.",
-     "orari": [
-      "11:00"
-     ],
-     "giorni": {
-      "2026-11-15": [
-       "11:00"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068"
-    },
-    {
-     "titolo": "Il Gruffalo' e la Sua Picc + Bastoncino",
-     "orari": [
-      "10:40"
-     ],
-     "giorni": {
-      "2026-11-15": [
-       "10:40"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068"
-    },
-    {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "10:30",
       "14:05",
       "15:00",
       "16:45",
@@ -3745,7 +3608,6 @@
      ],
      "giorni": {
       "2026-11-15": [
-       "10:30",
        "14:05",
        "15:00",
        "16:45",
@@ -3783,25 +3645,6 @@
      "paese": "USA"
     },
     {
-     "titolo": "Jumbo - La voce di Don",
-     "orari": [
-      "12:45"
-     ],
-     "giorni": {
-      "2026-11-15": [
-       "12:45"
-      ]
-     },
-     "versione": "",
-     "genere": "Animazione",
-     "regia": "Ryan Adriandhy",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
-     "anno": 2025,
-     "interpreti": "Yusuf Ozkan, Bunga Citra Lestari, Angga Yunanda e Ratna Riantiarno",
-     "paese": "Indonesia",
-     "durata": 102
-    },
-    {
      "titolo": "L'estranea",
      "orari": [
       "16:35"
@@ -3823,13 +3666,11 @@
     {
      "titolo": "Look Back",
      "orari": [
-      "12:30",
       "14:30",
       "19:20"
      ],
      "giorni": {
       "2026-11-15": [
-       "12:30",
        "14:30",
        "19:20"
       ]
@@ -3846,8 +3687,6 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "11:00",
-      "11:30",
       "13:50",
       "15:10",
       "16:30",
@@ -3861,8 +3700,6 @@
      ],
      "giorni": {
       "2026-11-15": [
-       "11:00",
-       "11:30",
        "13:50",
        "15:10",
        "16:30",
@@ -3875,7 +3712,7 @@
        "22:00"
       ]
      },
-     "versione": "Versione originale (solo ore 11:30, 18:30, 21:10)",
+     "versione": "Versione originale (solo ore 18:30, 21:10)",
      "genere": "Drammatico, Fantasy",
      "regia": "Ti West",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
@@ -3887,7 +3724,6 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "11:25",
       "14:20",
       "17:20",
       "19:15",
@@ -3895,7 +3731,6 @@
      ],
      "giorni": {
       "2026-11-15": [
-       "11:25",
        "14:20",
        "17:20",
        "19:15",
@@ -3914,13 +3749,11 @@
     {
      "titolo": "Shaun, vita da pecora - Operazione Z.U.C.C.A.",
      "orari": [
-      "10:50",
       "14:00",
       "17:35"
      ],
      "giorni": {
       "2026-11-15": [
-       "10:50",
        "14:00",
        "17:35"
       ]
@@ -3933,25 +3766,6 @@
      "anno": 2026,
      "paese": "Regno Unito",
      "durata": 91
-    },
-    {
-     "titolo": "Taddeo l’esploratore e la lampada magica",
-     "orari": [
-      "10:40"
-     ],
-     "giorni": {
-      "2026-11-15": [
-       "10:40"
-      ]
-     },
-     "versione": "",
-     "genere": "Animazione",
-     "regia": "Enrique Gato",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
-     "interpreti": "Óscar Barberán, Luis Posada, Michelle Jenner e Ana Esther Alborg",
-     "paese": "Spagna",
-     "durata": 94,
-     "anno": 2026
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
@@ -3977,7 +3791,6 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
-      "12:00",
       "14:40",
       "17:10",
       "19:40",
@@ -3985,7 +3798,6 @@
      ],
      "giorni": {
       "2026-11-15": [
-       "12:00",
        "14:40",
        "17:10",
        "19:40",
@@ -4004,20 +3816,18 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "11:10",
       "15:10",
       "18:00",
       "21:45"
      ],
      "giorni": {
       "2026-11-15": [
-       "11:10",
        "15:10",
        "18:00",
        "21:45"
       ]
      },
-     "versione": "Versione originale (solo ore 11:10)",
+     "versione": "",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
@@ -4029,18 +3839,16 @@
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
-      "11:10",
       "15:40",
       "20:45"
      ],
      "giorni": {
       "2026-11-15": [
-       "11:10",
        "15:40",
        "20:45"
       ]
      },
-     "versione": "Versione originale (solo ore 11:10)",
+     "versione": "",
      "genere": "Animazione, Avventura, Drammatico",
      "regia": "Travis Knight",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
@@ -4359,40 +4167,6 @@
    "biglietti": "https://anteo.spaziocinema.18tickets.it/",
    "film": [
     {
-     "titolo": "8 e Mezzo",
-     "orari": [
-      "10:30"
-     ],
-     "giorni": {
-      "2026-11-15": [
-       "10:30"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/123006"
-    },
-    {
-     "titolo": "Danton",
-     "orari": [
-      "12:30"
-     ],
-     "giorni": {
-      "2026-11-15": [
-       "12:30"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Storico",
-     "regia": "Andrzej Wajda",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/123338",
-     "interpreti": "Gérard Depardieu, Angela Winkler, Wojciech Pszoniak e Jacques Villeret",
-     "paese": "Francia",
-     "durata": 136,
-     "anno": 1982
-    },
-    {
      "titolo": "Dio ride",
      "orari": [
       "15:00",
@@ -4435,13 +4209,11 @@
     {
      "titolo": "Fatherland",
      "orari": [
-      "10:30",
       "15:00",
       "20:00"
      ],
      "giorni": {
       "2026-11-15": [
-       "10:30",
        "15:00",
        "20:00"
       ]
@@ -4449,41 +4221,20 @@
      "versione": "Versione originale (solo ore 20:00)",
      "genere": "Drammatico",
      "regia": "Pawel Pawlikowski",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/126538",
+     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/119607",
      "interpreti": "Sandra Hüller, Hanns Zischler, August Diehl e Devid Striesow",
      "durata": 82,
      "anno": 2026,
      "paese": "Italia"
     },
     {
-     "titolo": "George Michael: The Faith Tour",
-     "orari": [
-      "12:40"
-     ],
-     "giorni": {
-      "2026-11-15": [
-       "12:40"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Documentario",
-     "regia": "David Austin e Andrew Morahan",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/127197",
-     "interpreti": "George Michael",
-     "durata": 113,
-     "anno": 2026,
-     "paese": "Regno Unito"
-    },
-    {
      "titolo": "Il canto della foresta",
      "orari": [
-      "13:00",
       "15:00",
       "16:45"
      ],
      "giorni": {
       "2026-11-15": [
-       "13:00",
        "15:00",
        "16:45"
       ]
@@ -4491,7 +4242,7 @@
      "versione": "Versione originale (solo ore 16:45)",
      "genere": "Documentario",
      "regia": "Vincent Munier",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/128521",
+     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/128352",
      "interpreti": "Vincent Munier, Michel Munier e Simon Munier",
      "durata": 95,
      "anno": 2025,
@@ -4500,13 +4251,11 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "10:00",
       "17:20",
       "19:35"
      ],
      "giorni": {
       "2026-11-15": [
-       "10:00",
        "17:20",
        "19:35"
       ]
@@ -4542,7 +4291,6 @@
     {
      "titolo": "L'essere amato",
      "orari": [
-      "12:20",
       "14:00",
       "16:40",
       "19:20",
@@ -4550,17 +4298,16 @@
      ],
      "giorni": {
       "2026-11-15": [
-       "12:20",
        "14:00",
        "16:40",
        "19:20",
        "21:45"
       ]
      },
-     "versione": "Versione originale (solo ore 12:20, 16:40, 21:45)",
+     "versione": "Versione originale (solo ore 16:40, 21:45)",
      "genere": "Drammatico",
      "regia": "Rodrigo Sorogoyen",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/128649",
+     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/128354",
      "interpreti": "Javier Bardem, Vicky Luengo, Melina Matthews e Marina Foïs",
      "durata": 135,
      "anno": 2026,
@@ -4590,35 +4337,14 @@
      "paese": "Italia"
     },
     {
-     "titolo": "La ballata del re delle api",
-     "orari": [
-      "10:31"
-     ],
-     "giorni": {
-      "2026-11-15": [
-       "10:31"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Drammatico, Thriller",
-     "regia": "Andrew Patterson (II)",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/127692",
-     "interpreti": "Matthew McConaughey, Angelina LookingGlass, Jake Horowitz e Owen Teague",
-     "paese": "USA",
-     "durata": 130,
-     "anno": 2025
-    },
-    {
      "titolo": "La Gradiva",
      "orari": [
-      "10:00",
       "15:00",
       "18:40",
       "21:40"
      ],
      "giorni": {
       "2026-11-15": [
-       "10:00",
        "15:00",
        "18:40",
        "21:40"
@@ -4634,25 +4360,8 @@
      "paese": "Francia"
     },
     {
-     "titolo": "Le signorine di Wilko",
-     "orari": [
-      "10:00"
-     ],
-     "giorni": {
-      "2026-11-15": [
-       "10:00"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/123337"
-    },
-    {
      "titolo": "Look Back",
      "orari": [
-      "10:00",
-      "13:00",
       "15:20",
       "17:10",
       "19:20",
@@ -4660,15 +4369,13 @@
      ],
      "giorni": {
       "2026-11-15": [
-       "10:00",
-       "13:00",
        "15:20",
        "17:10",
        "19:20",
        "21:30"
       ]
      },
-     "versione": "Versione originale (solo ore 10:00, 15:20, 19:20)",
+     "versione": "Versione originale (solo ore 15:20, 19:20)",
      "genere": "Drammatico",
      "regia": "Kore'eda Hirokazu",
      "biglietti": "https://anteo.spaziocinema.18tickets.it/film/128683",
@@ -4680,14 +4387,12 @@
     {
      "titolo": "Minotaur",
      "orari": [
-      "10:10",
       "14:30",
       "16:40",
       "19:10"
      ],
      "giorni": {
       "2026-11-15": [
-       "10:10",
        "14:30",
        "16:40",
        "19:10"
@@ -4696,7 +4401,7 @@
      "versione": "Versione originale (solo ore 14:30)",
      "genere": "Drammatico, Thriller",
      "regia": "Andrey Zvyagintsev",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/122973",
+     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/123998",
      "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
      "durata": 135,
      "anno": 2026,
@@ -4719,25 +4424,6 @@
      "durata": 80,
      "anno": 2026,
      "paese": "Gran Bretagna"
-    },
-    {
-     "titolo": "Nel silenzio delle stanze",
-     "orari": [
-      "12:00"
-     ],
-     "giorni": {
-      "2026-11-15": [
-       "12:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Jérôme Bonnell",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/124029",
-     "interpreti": "Swann Arlaud, Louise Chevillotte, Emmanuelle Devos e Galatéa Bellugi",
-     "durata": 103,
-     "anno": 2025,
-     "paese": "Francia"
     },
     {
      "titolo": "Primetime",
@@ -4784,8 +4470,6 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "10:30",
-      "12:15",
       "15:00",
       "17:15",
       "18:00",
@@ -4795,8 +4479,6 @@
      ],
      "giorni": {
       "2026-11-15": [
-       "10:30",
-       "12:15",
        "15:00",
        "17:15",
        "18:00",
@@ -4805,7 +4487,7 @@
        "21:45"
       ]
      },
-     "versione": "Versione originale (solo ore 12:15, 17:15, 20:30, 21:45)",
+     "versione": "Versione originale (solo ore 17:15, 20:30, 21:45)",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "biglietti": "https://anteo.spaziocinema.18tickets.it/film/125680",
@@ -4844,25 +4526,6 @@
      "durata": 82,
      "anno": 2026,
      "paese": "Italia"
-    },
-    {
-     "titolo": "Hope",
-     "orari": [
-      "10:40"
-     ],
-     "giorni": {
-      "2026-11-15": [
-       "10:40"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Azione, Fantascienza, Horror",
-     "regia": "Na Hong-jin",
-     "biglietti": "https://bandhi.it/bah/beltrade/",
-     "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
-     "durata": 145,
-     "anno": 2026,
-     "paese": "Corea del sud"
     },
     {
      "titolo": "L'essere amato",
@@ -5057,6 +4720,25 @@
      "paese": "Francia"
     },
     {
+     "titolo": "Ragione e sentimento",
+     "orari": [
+      "21:30"
+     ],
+     "giorni": {
+      "2026-11-15": [
+       "21:30"
+      ]
+     },
+     "versione": "Versione originale",
+     "genere": "Drammatico",
+     "regia": "Georgia Oakley",
+     "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/164237",
+     "interpreti": "Esme Creed-Miles, Bodhi Rae Breathnach, James Carcaterra e Daisy Edgar-Jones",
+     "paese": "USA",
+     "durata": 132,
+     "anno": 2026
+    },
+    {
      "titolo": "Wild Horse Nine",
      "orari": [
       "19:00"
@@ -5071,9 +4753,9 @@
      "regia": "Martin McDonagh",
      "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/164270",
      "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
-     "paese": "Regno Unito",
      "durata": 118,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "Regno Unito"
     }
    ]
   },
@@ -5237,7 +4919,6 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "11:10",
       "15:10",
       "16:40",
       "19:40",
@@ -5245,14 +4926,13 @@
      ],
      "giorni": {
       "2026-11-15": [
-       "11:10",
        "15:10",
        "16:40",
        "19:40",
        "22:30"
       ]
      },
-     "versione": "Versione originale (solo ore 11:10)",
+     "versione": "",
      "genere": "Azione, Avventura, Drammatico",
      "regia": "Takashi Yamazaki",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5779",
@@ -5285,13 +4965,11 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "11:00",
       "14:20",
       "17:05"
      ],
      "giorni": {
       "2026-11-15": [
-       "11:00",
        "14:20",
        "17:05"
       ]
@@ -5308,7 +4986,6 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "11:20",
       "14:15",
       "14:45",
       "17:20",
@@ -5317,7 +4994,6 @@
      ],
      "giorni": {
       "2026-11-15": [
-       "11:20",
        "14:15",
        "14:45",
        "17:20",
@@ -5356,14 +5032,12 @@
     {
      "titolo": "Look Back",
      "orari": [
-      "10:50",
       "14:20",
       "17:25",
       "22:15"
      ],
      "giorni": {
       "2026-11-15": [
-       "10:50",
        "14:20",
        "17:25",
        "22:15"
@@ -5408,7 +5082,6 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "11:00",
       "15:00",
       "16:35",
       "17:25",
@@ -5417,7 +5090,6 @@
      ],
      "giorni": {
       "2026-11-15": [
-       "11:00",
        "15:00",
        "16:35",
        "17:25",
@@ -5481,13 +5153,11 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "11:10",
       "14:30",
       "19:30"
      ],
      "giorni": {
       "2026-11-15": [
-       "11:10",
        "14:30",
        "19:30"
       ]
@@ -5521,6 +5191,269 @@
      "paese": "USA"
     }
    ]
+  },
+  {
+   "id": "c042",
+   "nome": "Centro Asteria",
+   "citta": "Milano",
+   "indirizzo": "Piazza Francesco Carrara 17, Milano",
+   "tipo": "Sala di comunità",
+   "sito": "https://www.centroasteria.it/",
+   "fonte": "https://www.cinemap.it/milano/cinema/centro-asteria-milano",
+   "cinemap": "https://www.cinemap.it/milano/cinema/centro-asteria-milano",
+   "film": [],
+   "auto": true
+  },
+  {
+   "id": "c043",
+   "nome": "Cineteca Milano MIC",
+   "citta": "Milano",
+   "indirizzo": "Viale Fulvio Testi 121, Milano",
+   "tipo": "Sala di comunità",
+   "sito": "https://mic.cinetecadimilano.18tickets.it/",
+   "fonte": "https://www.cinemap.it/milano/cinema/cineteca-mic-milano",
+   "cinemap": "https://www.cinemap.it/milano/cinema/cineteca-mic-milano",
+   "film": [
+    {
+     "titolo": "Domenica Capitale",
+     "orari": [
+      "19:00"
+     ],
+     "giorni": {
+      "2026-11-15": [
+       "19:00"
+      ]
+     },
+     "versione": "Versione originale",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://mic.cinetecadimilano.18tickets.it/film/128881"
+    },
+    {
+     "titolo": "Messalina",
+     "orari": [
+      "17:00"
+     ],
+     "giorni": {
+      "2026-11-15": [
+       "17:00"
+      ]
+     },
+     "versione": "",
+     "genere": "Storico",
+     "regia": "Enrico Guazzoni",
+     "biglietti": "https://mic.cinetecadimilano.18tickets.it/film/120432",
+     "interpreti": "Rina De Liguoro, Augusto Mastripietri e Giovanna Terribili-Gonzales",
+     "paese": "Italia",
+     "durata": 85,
+     "anno": 1923
+    },
+    {
+     "titolo": "Papaya",
+     "orari": [
+      "15:00"
+     ],
+     "giorni": {
+      "2026-11-15": [
+       "15:00"
+      ]
+     },
+     "versione": "Versione originale",
+     "genere": "Animazione",
+     "regia": "Priscilla Kellen",
+     "biglietti": "https://mic.cinetecadimilano.18tickets.it/film/120201",
+     "interpreti": "Aretha Garcia Rollo e Tulipa Ruiz",
+     "paese": "Brasile",
+     "anno": 2026
+    }
+   ],
+   "auto": true
+  },
+  {
+   "id": "c044",
+   "nome": "Cinema Martinitt",
+   "citta": "Milano",
+   "indirizzo": "Via Riccardo Pitteri 58, Milano",
+   "tipo": "Sala di comunità",
+   "sito": "https://www.teatromartinitt.it/",
+   "fonte": "https://www.cinemap.it/milano/cinema/martinitt-milano",
+   "cinemap": "https://www.cinemap.it/milano/cinema/martinitt-milano",
+   "film": [
+    {
+     "titolo": "Digger",
+     "orari": [
+      "21:00"
+     ],
+     "giorni": {
+      "2026-11-15": [
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "Drammatico, Commedia",
+     "regia": "Alejandro G. Iñárritu",
+     "biglietti": "https://www.teatromartinitt.it/cinema/cinema-2025-26/digger",
+     "interpreti": "Tom Cruise, Riz Ahmed, John Goodman e Sandra Hüller",
+     "paese": "USA",
+     "durata": 129,
+     "anno": 2026
+    },
+    {
+     "titolo": "L'albero di molto lontano",
+     "orari": [
+      "15:00"
+     ],
+     "giorni": {
+      "2026-11-15": [
+       "15:00"
+      ]
+     },
+     "versione": "",
+     "genere": "Family, Avventura, Fantasy",
+     "regia": "Ben Gregor",
+     "biglietti": "https://www.teatromartinitt.it/cinema/cinema-2025-26/l-albero-di-molto-lontano",
+     "interpreti": "Andrew Garfield, Claire Foy, Rebecca Ferguson e Nonso Anozie",
+     "paese": "Regno Unito",
+     "durata": 110,
+     "anno": 2026
+    }
+   ],
+   "auto": true
+  },
+  {
+   "id": "c045",
+   "nome": "Cinema Orizzonte",
+   "citta": "Milano",
+   "indirizzo": "Piazzale Damiano Chiesa, Milano",
+   "tipo": "Sala di comunità",
+   "sito": "https://www.cinemaorizzonte.it/",
+   "fonte": "https://www.cinemap.it/milano/cinema/orizzonte-milano",
+   "cinemap": "https://www.cinemap.it/milano/cinema/orizzonte-milano",
+   "film": [],
+   "auto": true
+  },
+  {
+   "id": "c046",
+   "nome": "Auditorium San Fedele",
+   "citta": "Milano",
+   "indirizzo": "Via Hoepli 3/b, Milano",
+   "tipo": "Sala di comunità",
+   "sito": "https://www.centrosanfedele.net/",
+   "fonte": "https://www.cinemap.it/milano/cinema/san-fedele-milano",
+   "cinemap": "https://www.cinemap.it/milano/cinema/san-fedele-milano",
+   "film": [],
+   "auto": true
+  },
+  {
+   "id": "c047",
+   "nome": "Cineteatro Stella",
+   "citta": "Milano",
+   "indirizzo": "Via Giovanni Pezzotti 53, Milano",
+   "tipo": "Sala di comunità",
+   "sito": "https://ticket.cinebot.it/cineteatrostella/",
+   "fonte": "https://www.cinemap.it/milano/cinema/stella-milano",
+   "cinemap": "https://www.cinemap.it/milano/cinema/stella-milano",
+   "film": [
+    {
+     "titolo": "Compostelle",
+     "orari": [
+      "21:00"
+     ],
+     "giorni": {
+      "2026-11-15": [
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://ticket.cinebot.it/cineteatrostella/evento/2100_santiago-un-cammino"
+    },
+    {
+     "titolo": "Heart of the Beast - Nel profondo selvaggio",
+     "orari": [
+      "15:30"
+     ],
+     "giorni": {
+      "2026-11-15": [
+       "15:30"
+      ]
+     },
+     "versione": "",
+     "genere": "Azione, Avventura, Drammatico",
+     "regia": "David Ayer",
+     "biglietti": "https://ticket.cinebot.it/cineteatrostella/evento/2096_heart-of-the-beast-n",
+     "interpreti": "Brad Pitt, J.K. Simmons e Anna Lambe",
+     "paese": "USA",
+     "durata": 101,
+     "anno": 2026
+    }
+   ],
+   "auto": true
+  },
+  {
+   "id": "c048",
+   "nome": "Cinema Teatro Wagner",
+   "citta": "Milano",
+   "indirizzo": "Piazza Riccardo Wagner 2, Milano",
+   "tipo": "Sala di comunità",
+   "sito": "https://www.oratoriosanpietroinsala.com/cinemateatrowagner/programmazione",
+   "fonte": "https://www.cinemap.it/milano/cinema/wagner-milano",
+   "cinemap": "https://www.cinemap.it/milano/cinema/wagner-milano",
+   "film": [
+    {
+     "titolo": "NAZA",
+     "orari": [
+      "20:30"
+     ],
+     "giorni": {
+      "2026-11-15": [
+       "20:30"
+      ]
+     },
+     "versione": "",
+     "genere": "Documentario",
+     "regia": "Yuval Abraham e Rachel Szor",
+     "biglietti": "https://www.oratoriosanpietroinsala.com/cinemateatrowagner/programmazione",
+     "paese": "Gran Bretagna",
+     "durata": 80,
+     "anno": 2026
+    }
+   ],
+   "auto": true
+  },
+  {
+   "id": "c049",
+   "nome": "Cinema Ariosto",
+   "citta": "Milano",
+   "indirizzo": "",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/ariosto_760/",
+   "film": [],
+   "auto": true
+  },
+  {
+   "id": "c050",
+   "nome": "Cinema Gloria Multisala",
+   "citta": "Milano",
+   "indirizzo": "",
+   "tipo": "Multisala",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/gloria-multisala_775/",
+   "film": [],
+   "auto": true
+  },
+  {
+   "id": "c051",
+   "nome": "Uci Cinemas Certosa",
+   "citta": "Milano",
+   "indirizzo": "",
+   "tipo": "Multisala",
+   "sito": "",
+   "fonte": "https://movieplayer.it/cinema/uci-cinemas-certosa_1658/",
+   "film": [],
+   "auto": true
   }
  ],
  "fonte_aggiornamento": "automatico (GitHub)"
