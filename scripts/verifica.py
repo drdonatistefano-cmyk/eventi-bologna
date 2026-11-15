@@ -90,6 +90,10 @@ def vista_pagine():
     pagine = [("Places", B["places"], "Ach"), ("Places, mappa", B["places"] + "filtri.html", "canvas"),
               ("Places, Chi siamo", B["places"] + "chi-siamo/", "Chi siamo"), ("Places, Privacy", B["places"] + "privacy/", "privacy"),
               ("Places, mappa del sito", B["places"] + "sitemap.xml", "<sitemap"), ("Places, robots", B["places"] + "robots.txt", "Sitemap"),
+              # 15/11/2026: la guida come un'app (icona sulla schermata Home)
+              ("Places, app: manifesto", B["places"] + "app.webmanifest", "standalone"), ("Places, app: pagina per gli ospiti", B["places"] + "app/", "achInstalla"),
+              ("Dinners, app: manifesto", B["dinners"] + "app.webmanifest", "standalone"), ("Dinners, app: pagina per gli ospiti", B["dinners"] + "app/", "achInstalla"),
+              ("Events, app: manifesto", B["events"] + "app.webmanifest", "standalone"), ("Events, app: pagina per gli ospiti", B["events"] + "app/", "achInstalla"),
               ("Dinners", B["dinners"], "Dinners"), ("Dinners, Chi siamo", B["dinners"] + "chi-siamo/", "Chi siamo"),
               ("Dinners, Privacy", B["dinners"] + "privacy/", "privacy"),
               ("Events Bologna", B["events"], "Events"), ("Events Milano", B["events"] + "milano/", "Events"),
