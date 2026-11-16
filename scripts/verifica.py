@@ -98,7 +98,7 @@ def vista_pagine():
               ("Dinners, tasto WhatsApp", B["dinners"], "function waDin("), ("Events, tasto WhatsApp", B["events"], "function waEv("),
               ("Events Milano, tasto WhatsApp", B["events"] + "milano/", "function waEv("),
               # 16/11/2026: filtri nuovi (chip in alto e foglio a gruppi)
-              ("Events, filtri nuovi", B["events"], 'F.id="nAf"'), ("Events Milano, filtri nuovi", B["events"] + "milano/", 'F.id="nAf"'),
+              ("Events, filtri nuovi", B["events"], 'F.id="nAf"'), ("Places, riquadro dei filtri che segue", B["places"], 'getElementById("nAm")'), ("Events Milano, filtri nuovi", B["events"] + "milano/", 'F.id="nAf"'),
               ("Dinners", B["dinners"], "Dinners"), ("Dinners, Chi siamo", B["dinners"] + "chi-siamo/", "Chi siamo"),
               ("Dinners, Privacy", B["dinners"] + "privacy/", "privacy"),
               ("Events Bologna", B["events"], "Events"), ("Events Milano", B["events"] + "milano/", "Events"),
