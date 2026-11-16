@@ -1,0 +1,48 @@
+name: Posta della redazione
+# Legge e scrive nella casella redazione@achevents.com (Infomaniak). Solo a mano (Claude o Stefano).
+# La password sta nel segreto REDAZIONE_PASSWORD. Il contenuto delle mail lette non va mai nei log
+# né in chiaro nel repository: viene cifrato con dati/chiave_posta.pub e salvato sul ramo «posta».
+on:
+  workflow_dispatch:
+    inputs:
+      azione:
+        description: "leggi | bozze | manda"
+        default: leggi
+      lettere:
+        description: "Per bozze/manda: le lettere (JSON in base64)"
+        default: ""
+      giorni:
+        description: "Per leggi: quanti giorni indietro"
+        default: "14"
+permissions:
+  contents: write
+concurrency:
+  group: posta
+jobs:
+  posta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      REDAZIONE_PASSWORD: ${{ secrets.REDAZIONE_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Leggi
+        if: inputs.azione == 'leggi'
+        run: |
+          python3 scripts/posta.py leggi "${{ inputs.giorni }}"
+          openssl rand -out k.bin 32
+          openssl enc -aes-256-cbc -pbkdf2 -salt -in posta.json -out posta.bin -pass file:k.bin
+          openssl pkeyutl -encrypt -pubin -inkey dati/chiave_posta.pub -pkeyopt rsa_padding_mode:oaep -in k.bin -out chiave.bin
+          shred -u posta.json k.bin
+          mkdir -p /tmp/out && mv posta.bin chiave.bin /tmp/out/
+          git config user.name "posta-bot"; git config user.email "actions@github.com"
+          git checkout --orphan posta-tmp && git rm -rfq . && cp /tmp/out/* . && git add posta.bin chiave.bin
+          git commit -qm "Posta cifrata $(date -u +%FT%TZ)" && git push -fq origin HEAD:posta
+      - name: Bozze o invio
+        if: inputs.azione == 'bozze' || inputs.azione == 'manda'
+        env:
+          LETTERE: ${{ inputs.lettere }}
+        run: |
+          echo "$LETTERE" | base64 -d > lettere.json
+          python3 scripts/posta.py "${{ inputs.azione }}" lettere.json
+          shred -u lettere.json
