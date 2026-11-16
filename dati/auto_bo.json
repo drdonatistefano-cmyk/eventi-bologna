@@ -1,5 +1,9 @@
 {
- "aggiunti": [],
+ "aggiunti": [
+  "2027-03-01 Basht. – Locomotiv Club (Locomotiv Club)",
+  "2026-11-21 Spiritual Boyfriends – Arena del Sole (Arena del Sole)",
+  "2027-01-14 Qui – Arena del Sole (Arena del Sole)"
+ ],
  "link_biglietti": 0,
  "fonti": {
   "DICE": {
@@ -21,9 +25,9 @@
   },
   "Locomotiv Club": {
    "letti": 112,
-   "aggiunti": 0,
+   "aggiunti": 1,
    "pagine_evento": 112,
-   "ultima_data": "2027-02-27"
+   "ultima_data": "2027-03-01"
   },
   "siti dei locali": {
    "Teatro Comunale Laura Betti": {
@@ -34,32 +38,32 @@
     "secondi": 3
    },
    "Bravo Caffè": {
-    "sul_sito": 38,
-    "in_guida": 38,
+    "sul_sito": 36,
+    "in_guida": 36,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 4
    },
    "Auditorium Manzoni": {
     "sul_sito": 40,
-    "in_guida": 69,
+    "in_guida": 68,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 83
    },
    "Arena del Sole": {
-    "sul_sito": 14,
-    "in_guida": 32,
-    "aggiunti": 0,
+    "sul_sito": 17,
+    "in_guida": 33,
+    "aggiunti": 2,
     "esito": "ok",
-    "secondi": 29
+    "secondi": 35
    },
    "Teatro Ebe Stignani": {
     "sul_sito": 10,
     "in_guida": 20,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 34
+    "secondi": 37
    },
    "Estragon Club": {
     "sul_sito": 19,
@@ -70,7 +74,7 @@
    },
    "Auditorium Manzoni (2)": {
     "sul_sito": 18,
-    "in_guida": 69,
+    "in_guida": 68,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 38
@@ -80,14 +84,14 @@
     "in_guida": 1,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 25
+    "secondi": 29
    }
   }
  },
  "errori": [
   "https://www.locomotivclub.it/robots.txt: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-15T20:35",
- "eventi_totali": 763,
- "mostre_totali": 27
+ "data": "2026-11-16T06:04",
+ "eventi_totali": 766,
+ "mostre_totali": 26
 }

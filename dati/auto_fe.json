@@ -1,19 +1,10 @@
 {
- "aggiunti": [
-  "2026-11-26 Chiedi cos’erano i giù box – Auditorium Pandurera (Auditorium Pandurera)",
-  "2026-12-02 Volpone – Auditorium Pandurera (Auditorium Pandurera)",
-  "2026-12-10 Venerdì 13 – Auditorium Pandurera (Auditorium Pandurera)",
-  "2027-01-13 L’attrice – Auditorium Pandurera (Auditorium Pandurera)",
-  "2027-01-30 Io Marte, tu Mercole – Auditorium Pandurera (Auditorium Pandurera)",
-  "2027-02-09 Classescion – Auditorium Pandurera (Auditorium Pandurera)",
-  "2027-02-13 Indovina chi viene a cena – Auditorium Pandurera (Auditorium Pandurera)",
-  "2027-02-24 Il brutto anatroccolo – Auditorium Pandurera (Auditorium Pandurera)"
- ],
- "link_biglietti": 0,
+ "aggiunti": [],
+ "link_biglietti": 2,
  "fonti": {
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "portale turistico": {
-   "letti": 18,
+   "letti": 17,
    "aggiunti": 0
   },
   "arte.it": {
@@ -22,29 +13,29 @@
   },
   "siti dei locali": {
    "Jazz Club Ferrara": {
-    "sul_sito": 8,
-    "in_guida": 8,
+    "sul_sito": 7,
+    "in_guida": 7,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 2
    },
    "Teatro Comunale Claudio Abbado": {
     "sul_sito": 48,
-    "in_guida": 69,
+    "in_guida": 68,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 96
    },
    "Teatro Nuovo": {
     "sul_sito": 24,
-    "in_guida": 60,
+    "in_guida": 59,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 114
+    "secondi": 119
    },
    "Ferrara Musica": {
-    "sul_sito": 24,
-    "in_guida": 69,
+    "sul_sito": 23,
+    "in_guida": 68,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 47
@@ -52,7 +43,7 @@
    "Auditorium Pandurera": {
     "sul_sito": 8,
     "in_guida": 8,
-    "aggiunti": 8,
+    "aggiunti": 0,
     "esito": "ok",
     "secondi": 19
    },
@@ -61,14 +52,14 @@
     "in_guida": 13,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 7
+    "secondi": 6
    }
   }
  },
  "errori": [
   "https://dice.fm/browse/ferrara: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-15T20:54",
- "eventi_totali": 165,
- "mostre_totali": 18
+ "data": "2026-11-16T06:25",
+ "eventi_totali": 164,
+ "mostre_totali": 17
 }

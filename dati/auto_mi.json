@@ -1,18 +1,20 @@
 {
  "aggiunti": [
-  "2026-11-18 Women in Italian Disco: Peermusic in conversation w/ POPA – NODO bar (DICE)",
-  "2026-11-18 Beyond streaming - Milano Music Week – mare culturale urbano - cascina torrette (DICE)",
-  "2027-02-01 U.d.o. – Magazzini Generali (Magazzini Generali)"
+  "2026-11-21 OXYGÈNE | Objekt – Duro (DICE)",
+  "2026-11-18 MONKSTA RECORDS — THE LAUNCH NIGHT – Detune (DICE)",
+  "2026-11-18 𝐁𝐋𝐀𝐙𝐄 𝐁𝐀𝐘𝐋𝐄𝐘 – Legend Club (DICE)",
+  "2027-02-01 U.d.o. – Magazzini Generali (Magazzini Generali)",
+  "2026-12-19 Il canto di Natale – Auditorium di Milano (Auditorium di Milano)"
  ],
  "link_biglietti": 0,
  "fonti": {
   "DICE": {
-   "letti": 198,
-   "aggiunti": 2
+   "letti": 197,
+   "aggiunti": 3
   },
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "arte.it": {
-   "letti": 46,
+   "letti": 44,
    "aggiunti": 0
   },
   "siti dei locali": {
@@ -21,98 +23,98 @@
     "in_guida": 37,
     "aggiunti": 1,
     "esito": "ok",
-    "secondi": 8
+    "secondi": 9
    },
    "Teatro Principe": {
     "sul_sito": 2,
-    "in_guida": 7,
+    "in_guida": 6,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 3
    },
    "Conservatorio di Milano": {
-    "sul_sito": 79,
-    "in_guida": 80,
+    "sul_sito": 78,
+    "in_guida": 79,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 12
+    "secondi": 9
    },
    "Gate Milano": {
-    "sul_sito": 31,
-    "in_guida": 32,
+    "sul_sito": 30,
+    "in_guida": 31,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 6
+    "secondi": 7
    },
    "Teatro Out Off": {
-    "sul_sito": 12,
-    "in_guida": 13,
+    "sul_sito": 11,
+    "in_guida": 12,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 2
+    "secondi": 3
    },
    "BASE Milano": {
     "sul_sito": 5,
     "in_guida": 7,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 7
+    "secondi": 9
    },
    "Circolo Magnolia": {
     "sul_sito": 20,
-    "in_guida": 48,
+    "in_guida": 47,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 46
+    "secondi": 52
    },
    "Santeria Toscana 31": {
-    "sul_sito": 13,
-    "in_guida": 35,
+    "sul_sito": 12,
+    "in_guida": 34,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 100
+    "secondi": 99
    },
    "Unipol Dome": {
     "sul_sito": 9,
-    "in_guida": 22,
+    "in_guida": 21,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 24
+    "secondi": 25
    },
    "Teatro Elfo Puccini": {
     "sul_sito": 45,
     "in_guida": 57,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 166
+    "secondi": 185
    },
    "Teatro Carcano": {
     "sul_sito": 6,
-    "in_guida": 18,
+    "in_guida": 17,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 14
+    "secondi": 15
    },
    "Ecoteatro": {
     "sul_sito": 24,
     "in_guida": 32,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 56
+    "secondi": 78
    },
    "Auditorium di Milano": {
     "sul_sito": 8,
     "in_guida": 10,
-    "aggiunti": 0,
+    "aggiunti": 1,
     "esito": "ok",
-    "secondi": 21
+    "secondi": 22
    },
    "Teatro Filodrammatici": {
     "sul_sito": 26,
     "in_guida": 26,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 103
+    "secondi": 112
    },
    "Teatro della Cooperativa": {
     "sul_sito": 12,
@@ -122,16 +124,16 @@
     "secondi": 39
    },
    "Teatro Gerolamo": {
-    "sul_sito": 31,
-    "in_guida": 30,
+    "sul_sito": 30,
+    "in_guida": 29,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 116
+    "secondi": 129
    }
   }
  },
  "errori": [],
- "data": "2026-11-15T20:47",
- "eventi_totali": 1189,
+ "data": "2026-11-16T06:18",
+ "eventi_totali": 1193,
  "mostre_totali": 40
 }
