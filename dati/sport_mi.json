@@ -2,21 +2,23 @@
  "fonti": {
   "seriea": 27,
   "uefa": 4,
-  "inter_sito": 10,
+  "inter_sito": 9,
   "superlega": 8,
   "volleyf": 8,
   "hockey": 19,
   "extra": 0,
-  "lba": 11,
-  "euroleague": 14
+  "lba": 0,
+  "euroleague": 13
  },
- "errori": [],
+ "errori": [
+  "https://www.legabasket.it/api/championships/get-championships-calendar-by-id?id=602&t_id=1: HTTP Error 500: Internal Server Error"
+ ],
  "per_sport": {
-  "Basket": 18,
-  "Calcio": 41,
+  "Basket": 17,
   "Hockey": 19,
-  "Volley": 16
+  "Volley": 16,
+  "Calcio": 40
  },
- "totale": 94,
- "giorno": "2026-11-12"
+ "totale": 92,
+ "giorno": "2026-11-16"
 }

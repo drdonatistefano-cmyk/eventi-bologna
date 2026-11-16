@@ -4,18 +4,20 @@
   "uefa": 0,
   "bologna_sito": 1,
   "volleyf": 12,
-  "fortitudo": 14,
+  "fortitudo": 13,
   "extra": 7,
-  "lba": 11,
+  "lba": 0,
   "euroleague": 14
  },
- "errori": [],
+ "errori": [
+  "https://www.legabasket.it/api/championships/get-championships-calendar-by-id?id=602&t_id=1: HTTP Error 500: Internal Server Error"
+ ],
  "per_sport": {
-  "Basket": 31,
+  "Basket": 30,
   "Calcio": 15,
   "Volley": 12,
   "Tennis": 7
  },
- "totale": 65,
- "giorno": "2026-11-12"
+ "totale": 64,
+ "giorno": "2026-11-16"
 }
