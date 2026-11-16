@@ -168,7 +168,7 @@ def leggi_mymovies(h):
     out = {}
     for b in h.split('class="schedine-titolo"')[1:]:
         b = b[:6000]
-        tt = re.search(r'<a href="https://www\.mymovies\.it/film/\d{4}/[^"]+" title="([^"]+)"', b)
+        tt = re.search(r'<a href="(https://www\.mymovies\.it/film/\d{4}/[^"]+)" title="([^"]+)"', b)
         if not tt:
             continue
         lancio = re.search(r'schedine-lancio">(.*?)</div>', b, re.S)
@@ -184,8 +184,9 @@ def leggi_mymovies(h):
         c_ = nomi(con.group(1))[:4] if con else []
         info = {"genere": ", ".join(gen), "paese": html.unescape(pa.group(1)).strip() if pa else "",
                 "durata": int(du.group(1)) if du else None, "anno": int(an.group(1)) if an else None,
-                "regia": " e ".join(r_), "interpreti": (", ".join(c_[:-1]) + " e " + c_[-1]) if len(c_) > 1 else "".join(c_)}
-        titolo = html.unescape(tt.group(1))
+                "regia": " e ".join(r_), "interpreti": (", ".join(c_[:-1]) + " e " + c_[-1]) if len(c_) > 1 else "".join(c_),
+                "scheda": tt.group(1)}
+        titolo = html.unescape(tt.group(2))
         for k in {chiave(titolo), chiave(titolo.split(" - ")[0])}:
             out.setdefault(k, info)
     return out
@@ -434,7 +435,7 @@ def main():
                 trovati += 1
                 if info["genere"]:
                     f["genere"] = info["genere"]
-                for k in ("regia", "interpreti", "paese", "durata", "anno"):
+                for k in ("regia", "interpreti", "paese", "durata", "anno", "scheda"):
                     if info.get(k) and not f.get(k):
                         f[k] = info[k]
         log.append(f"mymovies: {len(mm)} schede, {trovati} film abbinati")

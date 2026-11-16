@@ -632,6 +632,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}.f
  .city.citta-n .cb[aria-current="true"]{background:var(--terra);color:#fff}
  .city.citta-n .cb[aria-current="true"] .sg{color:#fff}
 }
+.act.fsc{display:inline-flex;align-items:center;gap:5px}
 </style>
 <link rel="manifest" href="/app.webmanifest"><link rel="apple-touch-icon" href="/icona-180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Events">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
@@ -773,7 +774,7 @@ CINEMA=CGIORNO?SALE.flatMap(s=>(Array.isArray(s.film)?s.film:[]).filter(f=>f&&f.
  const g={};if(f.giorni&&typeof f.giorni==="object")for(const [k,v] of Object.entries(f.giorni))if(ISO.test(k)&&Array.isArray(v))g[k]=srtT(v.filter(x=>HM.test(x)));
  if(!Object.keys(g).length&&Array.isArray(f.orari))g[CGIORNO]=srtT(f.orari.filter(x=>HM.test(x)));
  const ks=Object.keys(g).sort(),wk=/^(Multisala|D'essai)$/.test(s.tipo||"")&&g[CGIORNO]!==undefined;
- return {_kind:"c",id:s.id,data:ks[0]||CGIORNO,fino:[ks[ks.length-1]||CGIORNO,wk?wkEnd(CGIORNO):CGIORNO].sort().pop(),ora:"",artista:f.titolo,luogo:s.nome,citta:s.citta||CITY.capo,genere:s.tipo||"Sala di comunità",tipo:"",rassegna:"",descrizione:[f.genere,f.regia?"di "+f.regia:"",f.interpreti?"con "+f.interpreti:""].filter(Boolean).join(" · "),fonte:s.fonte||"",_gen:f.genere||"",_reg:f.regia||"",_int:f.interpreti||"",_dur:f.durata||null,_anno:f.anno||null,_paese:f.paese||"",biglietti:f.biglietti||s.biglietti||"",_bfilm:!!f.biglietti,sito_luogo:s.sito||"",_g:g,_wk:wk,_orari:g[CGIORNO]||[],_vo:/v\.?o\b|originale|sottotitol/i.test(f.versione||""),_ver:f.versione||"",_ind:s.indirizzo||""}})):[];
+ return {_kind:"c",id:s.id,data:ks[0]||CGIORNO,fino:[ks[ks.length-1]||CGIORNO,wk?wkEnd(CGIORNO):CGIORNO].sort().pop(),ora:"",artista:f.titolo,luogo:s.nome,citta:s.citta||CITY.capo,genere:s.tipo||"Sala di comunità",tipo:"",rassegna:"",descrizione:[f.genere,f.regia?"di "+f.regia:"",f.interpreti?"con "+f.interpreti:""].filter(Boolean).join(" · "),fonte:s.fonte||"",_gen:f.genere||"",_reg:f.regia||"",_int:f.interpreti||"",_dur:f.durata||null,_anno:f.anno||null,_paese:f.paese||"",_url:/^https:\/\/www\.mymovies\.it\/film\//.test(f.scheda||"")?f.scheda:"",biglietti:f.biglietti||s.biglietti||"",_bfilm:!!f.biglietti,sito_luogo:s.sito||"",_g:g,_wk:wk,_orari:g[CGIORNO]||[],_vo:/v\.?o\b|originale|sottotitol/i.test(f.versione||""),_ver:f.versione||"",_ind:s.indirizzo||""}})):[];
 }
 costruisciPigri();
 const ART_URL="https://claude.ai/artifact/VkNm64jekYZkPj73i3mQAa",WEB_URL=CITY.url;
@@ -1112,7 +1113,7 @@ function miniC(f){
  const byT=new Map();rows.forEach(r=>byT.set(r.genere,(byT.get(r.genere)||0)+1));const g=GLAB[[...byT.entries()].sort((a,b)=>b[1]-a[1])[0][0]]||{c:"--mute"};
  const line=r=>{let s;if(many){const ds=dayKeys().filter(d=>(tOn(r,d)||[]).length);s=ds.length?ds.slice(0,3).map(d=>dLab(d)).join(", ")+(ds.length>3?"…":""):"in cartellone"}else{const x=(tOn(r,d0)||[]).filter(o=>passF(o,d0,fs));s=x.length?x.join(" · "):"orari sul sito"}return `<div class="msr"><b>${esc(r.luogo.replace(/^Cinema /,""))}</b><span>${esc(s)}</span></div>`};
  const inner=`<div class="top"><span class="gtag">🎬 ${rows.length===1?"1 sala":rows.length+" sale"}</span>${vo?'<span class="vob">V.O.</span>':""}</div><h3 class="title">${esc(f.t)}</h3>${fMeta(f.t,false)}${rows.slice(0,2).map(line).join("")}${rows.length>2?`<div class="msr mx">+ altre ${rows.length-2} ${rows.length-2===1?"sala":"sale"}</div>`:""}`;
- return miniA(reg({k:"c",f}),f.t,fcol(f.t),inner).replace("%FOOT%","")}
+ return miniA(reg({k:"c",f}),f.t,fcol(f.t),inner).replace("%FOOT%",fScheda(f.t))}
 function openDetail(i){const x=OPEN[+i];if(!x)return;let h,lab;
  if(x.k==="c"){h=cardC(x.f.t,x.f.r);lab=x.f.t}
  else{const e=x.e;lab=e.artista;h=x.k==="m"?cardM(e):card(e);
@@ -1141,11 +1142,13 @@ const FGC={"Commedia":"#c99a2e","Drammatico":"#7a5a8c","Thriller e giallo":"#4c5
 function fcol(t){for(const p of (fInfo(t).g||"").split(/\s*,\s*/)){const c=CGEN.find(c=>c.rx&&c.rx.test(p));if(c&&FGC[c.k])return FGC[c.k]}return "var(--mute)"}
 function glist(e){if(e._gl)return e._gl;const g=fInfo(e.artista).g||"";const l=CGEN.filter(c=>c.rx&&c.rx.test(g)).map(c=>c.k);return e._gl=l.length?l:["Altri film"]}
 let FI=null;
-function fInfo(t){if(!FI){FI=new Map();for(const e of CINEMA){const k=norm(e.artista),x=FI.get(k)||{};for(const [a,b] of [["g",e._gen],["r",e._reg],["i",e._int],["d",e._dur],["y",e._anno],["p",e._paese]])if(b&&!x[a])x[a]=b;FI.set(k,x)}}return FI.get(norm(t))||{}}
+function fInfo(t){if(!FI){FI=new Map();for(const e of CINEMA){const k=norm(e.artista),x=FI.get(k)||{};for(const [a,b] of [["g",e._gen],["r",e._reg],["i",e._int],["d",e._dur],["y",e._anno],["p",e._paese],["u",e._url]])if(b&&!x[a])x[a]=b;FI.set(k,x)}}return FI.get(norm(t))||{}}
 function fMeta(t,full){const x=fInfo(t),g=x.g?x.g.split(/\s*,\s*/).slice(0,full?6:2).join(", "):"";
  const a=[g?`<span class="fg">${esc(g)}</span>`:(x.p?esc(x.p):""),x.r?`di <b>${esc(x.r)}</b>`:""].filter(Boolean);
  if(full){if(x.y)a.push(String(x.y));if(x.d)a.push(x.d+" min")}else if(!g&&x.y)a.splice(1,0,String(x.y));
  return (a.length?`<div class="fmeta">${a.join(" · ")}</div>`:"")+(x.i?`<div class="fcast">con <b>${esc(x.i)}</b></div>`:"")}
+function fScheda(t){const x=fInfo(t),u=x.u||"https://www.google.com/search?q="+encodeURIComponent(t+" film"+(x.y?" "+x.y:""));
+ return `<a class="act fsc" href="${esc(u)}" target="_blank" rel="noopener" aria-label="Scheda del film: ${esc(t)}" title="${x.u?"Trama, cast e recensioni su MYmovies":"Cerca trama e cast del film"}"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span>Scheda</span></a>`}
 function cardC(title,rows){
  const vo=rows.some(r=>r._vo);
  const byT=new Map();rows.forEach(r=>{if(!byT.has(r.genere))byT.set(r.genere,0);byT.set(r.genere,byT.get(r.genere)+1)});
@@ -1251,7 +1254,7 @@ document.addEventListener("click",e=>{
  const t=e.target;
  const mo=t.closest("[data-mode]");if(mo){setMode(mo.dataset.mode);return}
  if(t.closest("[data-ddclose]")){closeD($("#ddlg"));return}
- if(t.closest("a.tkt"))return;/* anche «Info» *//* il pulsante Biglietti apre la biglietteria, non la scheda */
+ if(t.closest("a.tkt,a.fsc"))return;/* anche «Info» *//* il pulsante Biglietti apre la biglietteria, non la scheda */
  const op=t.closest("[data-open]");if(op){openDetail(op.dataset.open);return}
  const qx=t.closest("[data-qclr]");if(qx){const w=qx.dataset.qclr;if(w==="day")[...st.m].filter(isDay).forEach(x=>st.m.delete(x));else if(w==="fas")fasSel().forEach(x=>st.m.delete(x));else if(w==="sala"){st.g.clear();st.t.delete("In lingua originale")}else st[w].clear();render(true);return}
  const sb=t.closest("[data-sub]");if(sb){sub=sb.dataset.sub;subAnim=true;lAll=false;lq="";renderPanels();return}
