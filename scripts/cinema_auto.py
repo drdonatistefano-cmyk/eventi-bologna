@@ -209,6 +209,9 @@ def wiki_cerca(titolo, anno):
         if par and "film" not in par: continue
         if not par and "film" not in sn: continue
         if anno and par and re.search(r"\d{4}", par) and str(anno) not in par: continue
+        if anno and not re.search(r"\d{4}", par):   # «Mustang» del 2026 non è il «Mustang» del 2015
+            anni = {int(a) for a in re.findall(r"\bfilm (?:\w+ )?del (\d{4})", sn)}
+            if anni and not any(abs(a - int(anno)) <= 1 for a in anni): continue
         return "https://it.wikipedia.org/wiki/" + urllib.parse.quote(t.replace(" ", "_"))
     return ""
 
