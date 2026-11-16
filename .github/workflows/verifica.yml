@@ -53,6 +53,9 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install -q requests
+      - name: Prove del guardiano (16/11/2026, REGOLE §8 quater.2)
+        # un guardiano che non prende più gli errori è peggio di nessun guardiano: se le prove falliscono non fa il giro
+        run: python3 scripts/prova_verifica.py
       - name: Browser (dal livello 2)
         if: needs.decide.outputs.livello != '1'
         run: pip install -q playwright && python3 -m playwright install --with-deps chromium >/dev/null

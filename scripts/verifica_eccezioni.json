@@ -1,0 +1,12 @@
+{
+ "nota": "Avvisi di scripts/verifica.py guardati e accettati (REGOLE §8 quater.6). Una voce perdona solo un AVVISO che contiene TUTTE le parole di «contiene», mai un errore, e solo fino a «scade»: dopo, la verifica la segnala come scaduta. Si aggiunge, si allarga o si rinnova solo con il sì di Stefano. Il file è pubblico: niente dati riservati.",
+ "accettati": [
+  {
+   "contiene": ["HSTS", "connessione sicura"],
+   "motivo": "GitHub Pages non permette di aggiungere l'intestazione HSTS ai domini propri; chi arriva senza https viene già portato al sito sicuro (controllo «l'indirizzo senza https porta al sito»). Si risolverebbe solo mettendo Cloudflare davanti ai siti, scelta rimandata",
+   "dal": "2026-11-16",
+   "scade": "2027-02-16",
+   "deciso": "Stefano, 16/11/2026"
+  }
+ ]
+}

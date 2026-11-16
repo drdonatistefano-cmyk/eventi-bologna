@@ -2,27 +2,23 @@
 """Casella redazione@achevents.com (Infomaniak) via IMAP, da GitHub Actions.
 
   python3 scripts/posta.py leggi [giorni]   -> scrive posta.json (messaggi recenti, testo e allegati piccoli)
-  python3 scripts/posta.py bozze FILE.json  -> mette le lettere come BOZZE nella cartella Bozze della casella
-  python3 scripts/posta.py manda FILE.json  -> invia le bozze indicate (solo quando Stefano dice «manda»)
+
+16/11/2026: tolte «bozze» e «manda». Questo repository è pubblico e i registri dei giri li vede chiunque:
+le lettere passate al flusso ci sarebbero finite in chiaro (REGOLE §8 quater.4). Bozze e invii si fanno
+solo da ristoranti-archivio (posta/risposte/*.md approvati da Stefano, posta.yml con cosa = rispondi).
 
 La password sta solo nel segreto GitHub REDAZIONE_PASSWORD. Il contenuto della posta non finisce mai
 in chiaro nel repository (pubblico) né nei log: il flusso lo cifra con dati/chiave_posta.pub.
 
 COORDINAMENTO (16/11/2026): la stessa casella la legge e la gestisce anche ristoranti-archivio (posta.yml:
-leggi / rispondi). Le risposte ai destinatari delle presentazioni (teatri, locali, B&B...) si mandano SOLO da lì,
-con i file posta/risposte/*.md approvati da Stefano e la regola 8 quinquies di coordinamento/REGOLE.md
-(prima si caricano gli eventi, poi una sola lettera: conferma + link, grazie, richiesta delicata del link,
-presentazione). Questo script serve per la posta di redazione che non nasce dalle presentazioni: prima di
-mandare, controllare in ristoranti-archivio contatti/risposte-amichevoli.csv che non abbia già risposto l'altro.
+leggi / rispondi). Tutte le lettere, comprese le risposte ai destinatari delle presentazioni, partono SOLO da lì,
+con la regola 8 quinquies di coordinamento/REGOLE.md.
 """
-import base64, datetime, email, email.policy, imaplib, json, os, re, smtplib, sys, time
-from email.message import EmailMessage
-from email.utils import make_msgid, formatdate, parseaddr
+import base64, datetime, email, email.policy, imaplib, json, os, re, sys
 
 HOST = "mail.infomaniak.com"
 UTENTE = os.environ.get("REDAZIONE_UTENTE", "redazione@achevents.com")
 PWD = os.environ.get("REDAZIONE_PASSWORD", "")
-FIRMA_NOME = "Bianca Donati – Ach's Events Guide"   # 16/11: tutte le lettere le firma Bianca (REGOLE)
 
 
 def connetti():
@@ -92,56 +88,7 @@ def leggi(giorni=14):
     print(f"letti {len(out)} messaggi")          # nel log solo il numero, mai il contenuto
 
 
-def componi(b):
-    msg = EmailMessage()
-    msg["From"] = f"{FIRMA_NOME} <{UTENTE}>"
-    msg["To"] = b["a"]
-    if b.get("cc"): msg["Cc"] = b["cc"]
-    msg["Subject"] = b["oggetto"]
-    msg["Date"] = formatdate(localtime=True)
-    msg["Message-ID"] = b.get("message_id") or make_msgid(domain="achevents.com")
-    if b.get("in_reply_to"):
-        msg["In-Reply-To"] = b["in_reply_to"]
-        msg["References"] = (b.get("references", "") + " " + b["in_reply_to"]).strip()
-    msg.set_content(b["testo"])
-    if b.get("html"): msg.add_alternative(b["html"], subtype="html")
-    return msg
-
-
-def bozze(file):
-    lettere = json.load(open(file))
-    m = connetti()
-    cart = cartella_bozze(m)
-    for b in lettere:
-        msg = componi(b)
-        m.append(cart, "(\\Draft \\Seen)", imaplib.Time2Internaldate(time.time()), msg.as_bytes())
-    m.logout()
-    print(f"{len(lettere)} bozze salvate nella cartella {cart}")
-
-
-def manda(file):
-    lettere = json.load(open(file))
-    s = smtplib.SMTP_SSL(HOST, 465)
-    s.login(UTENTE, PWD)
-    m = connetti()
-    cart = cartella_bozze(m)
-    inviate = next((n for t, n in cartelle(m) if "\\Sent" in t), "Sent")
-    for b in lettere:
-        msg = componi(b)
-        s.send_message(msg)
-        m.append(inviate, "(\\Seen)", imaplib.Time2Internaldate(time.time()), msg.as_bytes())
-        # toglie la bozza con lo stesso oggetto e destinatario
-        m.select(cart)
-        typ, ids = m.search(None, "SUBJECT", '"%s"' % b["oggetto"].replace('"', ""), "TO", '"%s"' % parseaddr(b["a"])[1])
-        for i in (ids[0].split() if ids and ids[0] else []):
-            m.store(i, "+FLAGS", "\\Deleted")
-        m.expunge()
-    m.logout(); s.quit()
-    print(f"{len(lettere)} lettere inviate")
-
-
 if __name__ == "__main__":
     az = sys.argv[1] if len(sys.argv) > 1 else "leggi"
     if az == "leggi": leggi(int(sys.argv[2]) if len(sys.argv) > 2 else 14)
-    elif az == "bozze": bozze(sys.argv[2])
-    elif az == "manda": manda(sys.argv[2])
+    else: sys.exit(f"azione sconosciuta: {az} (bozze e invii si fanno da ristoranti-archivio)")

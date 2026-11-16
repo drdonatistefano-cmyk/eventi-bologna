@@ -6,7 +6,8 @@ Uso: python3 scripts/verifica.py LIVELLO USCITA.json [ID_RICHIESTA]
   3 = approfondita (circa 30 minuti): tre larghezze di schermo, campioni grandi, codice pubblico passato al setaccio
 Non modifica nulla: legge soltanto. Il rapporto è pubblico (ramo «statistiche»): niente dati riservati qui dentro.
 Regola (REGOLE.md §8 quater): ogni funzione nuova delle guide aggiunge qui il suo controllo.
-15/11/2026.
+Le prove di questo guardiano sono in scripts/prova_verifica.py; gli avvisi accettati in scripts/verifica_eccezioni.json.
+15/11/2026 (eccezioni e link senza risposta: 16/11/2026).
 """
 import concurrent.futures as cf
 import datetime
@@ -82,6 +83,61 @@ def protetto(v, nome, fn):
 
 def js_dati(testo):
     return json.loads(testo[testo.index("=") + 1:].rstrip().rstrip(";"))
+
+
+def classifica_link(esiti):
+    """Divide (indirizzo, codice) in rotti (404, 410), dubbi (altri 4xx/5xx: il sito rifiuta i controlli)
+    e senza risposta (0: non siamo riusciti a guardare, non vuol dire che il link è rotto)."""
+    rotti = [(u, s) for u, s in esiti if s in (404, 410)]
+    dubbi = [(u, s) for u, s in esiti if s >= 400 and s not in (404, 410)]
+    zitti = [(u, s) for u, s in esiti if s == 0]
+    return {"rotti": rotti, "dubbi": dubbi, "senza_risposta": zitti, "provati": len(esiti), "guardati": len(esiti) - len(zitti)}
+
+
+def giudizio_link(r):
+    """ok fino al 3% di rotti fra i link guardati davvero, avviso fino al 10%, poi errore.
+    Se meno di metà dei link ha risposto il controllo non ha visto abbastanza: avviso, mai «tutto bene»."""
+    if r["guardati"] < r["provati"] / 2:
+        return "avviso"
+    q = len(r["rotti"]) / max(1, r["guardati"])
+    return "ok" if q <= 0.03 else "avviso" if q <= 0.10 else "errore"
+
+
+# ---------------------------------------------------------------- eccezioni accettate (REGOLE §8 quater.6)
+ECCEZIONI = os.path.join(os.path.dirname(os.path.abspath(__file__)), "verifica_eccezioni.json")
+
+
+def leggi_eccezioni(percorso=ECCEZIONI):
+    try:
+        return json.load(open(percorso, encoding="utf-8")).get("accettati", [])
+    except FileNotFoundError:
+        return []
+
+
+def applica_eccezioni(viste, voci, oggi):
+    """Un avviso coperto da una voce valida diventa «ok» con dettaglio «noto, ...».
+    Una voce copre solo se il controllo contiene TUTTE le sue parole; senza parole o senza scadenza non copre nulla.
+    Gli errori non si perdonano mai. Restituisce le voci scadute, che vanno segnalate."""
+    scadute, valide = [], []
+    for e in voci:
+        try:
+            scade = datetime.date.fromisoformat(e.get("scade", ""))
+        except ValueError:
+            continue
+        if not e.get("contiene"):
+            continue
+        (valide if scade >= oggi else scadute).append(e)
+    for vi in viste:
+        for c in vi["controlli"]:
+            if c["esito"] != "avviso":
+                continue
+            testo = (c["nome"] + " " + c["dettaglio"]).lower()
+            for e in valide:
+                if all(p.lower() in testo for p in e["contiene"]):
+                    c["esito"] = "ok"
+                    c["dettaglio"] = (f"noto, accettato fino al {e['scade']}: {e.get('motivo', '')}" + (" · " + c["dettaglio"] if c["dettaglio"] else ""))[:400]
+                    break
+    return scadute
 
 
 # ---------------------------------------------------------------- 1. pagine
@@ -479,13 +535,17 @@ def vista_link():
                     camp.append(per_dom[d].pop(random.randrange(len(per_dom[d]))))
         with cf.ThreadPoolExecutor(6) as ex:
             st = list(ex.map(stato, camp))
-        rotti = [(u, s) for u, s in zip(camp, st) if s in (404, 410) or s == 0]
-        dubbi = [(u, s) for u, s in zip(camp, st) if s >= 400 and s not in (404, 410)]
-        q = len(rotti) / max(1, len(camp))
-        det = f"{len(camp)} provati, {len(rotti)} rotti, {len(dubbi)} che rifiutano i controlli automatici"
-        if rotti:
-            det += " · " + "; ".join(f"{u} ({s})" for u, s in rotti[:4])
-        (v.ok if q <= 0.03 else v.avviso if q <= 0.10 else v.errore)("Events: link alle biglietterie", det)
+        # chi non ha risposto si riprova una volta, con calma (lezione 6 del §8 bis)
+        zitti = [i for i, s in enumerate(st) if s == 0]
+        for i in zitti:
+            time.sleep(3)
+            st[i] = stato(camp[i])
+        r = classifica_link(list(zip(camp, st)))
+        det = (f"{len(camp)} provati, {len(r['rotti'])} rotti, {len(r['dubbi'])} che rifiutano i controlli automatici, "
+               f"{len(r['senza_risposta'])} senza risposta (non verificati)")
+        if r["rotti"]:
+            det += " · " + "; ".join(f"{u} ({s})" for u, s in r["rotti"][:4])
+        getattr(v, giudizio_link(r))("Events: link alle biglietterie", det)
 
     def places():
         rs, _ = prendi(B["places"] + "sitemap-1.xml", timeout=60)
@@ -606,13 +666,19 @@ def main():
             fn()
         except Exception as e:
             Vista(fn.__name__, "").errore("La verifica si è interrotta", f"{type(e).__name__}: {e}")
+    scadute = applica_eccezioni(VISTE, leggi_eccezioni(), datetime.date.today())
+    if scadute:
+        v = Vista("Eccezioni accettate", "Le voci di scripts/verifica_eccezioni.json: ognuna ha una scadenza")
+        for e in scadute:
+            v.avviso("Eccezione scaduta: va chiusa o rinnovata con il sì di Stefano", f"{', '.join(e['contiene'])} (scaduta il {e['scade']})")
     tutti = [c for vi in VISTE for c in vi["controlli"]]
+    noti = sum(c["esito"] == "ok" and c["dettaglio"].startswith("noto,") for c in tutti)
     err = sum(c["esito"] == "errore" for c in tutti)
     avv = sum(c["esito"] == "avviso" for c in tutti)
     rapporto = {"quando": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "livello": LIV,
                 "richiesta": RICHIESTA, "durata_secondi": round(time.time() - t0),
                 "esito": "rosso" if err else "giallo" if avv else "verde",
-                "controlli": len(tutti), "errori": err, "avvisi": avv, "viste": VISTE}
+                "controlli": len(tutti), "errori": err, "avvisi": avv, "noti": noti, "viste": VISTE}
     json.dump(rapporto, open(OUT, "w"), ensure_ascii=False, indent=1)
     print(f"livello {LIV}: {len(tutti)} controlli, {err} errori, {avv} avvisi, {rapporto['durata_secondi']} s")
     for vi in VISTE:
