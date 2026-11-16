@@ -33,9 +33,10 @@
      "regia": "Stanley Kubrick",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
      "interpreti": "Keir Dullea, Gary Lockwood, William Sylvester e Daniel Richter",
-     "paese": "USA",
      "durata": 140,
-     "anno": 1968
+     "anno": 1968,
+     "paese": "USA",
+     "scheda": "https://www.mymovies.it/film/1968/2001odisseanellospazio/"
     },
     {
      "titolo": "Come rapinare una banca",
@@ -64,7 +65,27 @@
      "interpreti": "Nicholas Hoult, Christian Slater, Zoë Kravitz e Tati Gabrielle",
      "durata": 122,
      "anno": 2026,
-     "paese": "USA"
+     "paese": "USA",
+     "scheda": "https://www.mymovies.it/film/2026/come-rapinare-una-banca/"
+    },
+    {
+     "titolo": "Dio ride",
+     "orari": [],
+     "giorni": {
+      "2026-11-20": [
+       "18:00"
+      ],
+      "2026-11-21": [
+       "18:00"
+      ],
+      "2026-11-22": [
+       "15:20"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172"
     },
     {
      "titolo": "Godzilla Minus Zero",
@@ -80,6 +101,21 @@
       ],
       "2026-11-18": [
        "21:25"
+      ],
+      "2026-11-19": [
+       "21:30"
+      ],
+      "2026-11-20": [
+       "18:30",
+       "21:30"
+      ],
+      "2026-11-21": [
+       "18:30",
+       "21:30"
+      ],
+      "2026-11-22": [
+       "15:05",
+       "21:30"
       ]
      },
      "versione": "",
@@ -89,7 +125,8 @@
      "interpreti": "Minami Hamabe, Ryûnosuke Kamiki, Masami Nagasawa e Jun Kunimura",
      "durata": 135,
      "anno": 2026,
-     "paese": "Giappone"
+     "paese": "Giappone",
+     "scheda": "https://www.mymovies.it/film/2026/godzilla-minus-zero/"
     },
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
@@ -97,6 +134,69 @@
      "giorni": {
       "2026-11-19": [
        "21:10"
+      ],
+      "2026-11-20": [
+       "18:05",
+       "20:25",
+       "21:25"
+      ],
+      "2026-11-21": [
+       "18:05",
+       "20:25",
+       "21:25"
+      ],
+      "2026-11-22": [
+       "15:25",
+       "16:35",
+       "18:05",
+       "20:25",
+       "21:25"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172"
+    },
+    {
+     "titolo": "Il fuoco che ti porti dentro",
+     "orari": [],
+     "giorni": {
+      "2026-11-19": [
+       "20:35"
+      ],
+      "2026-11-20": [
+       "18:05",
+       "20:35"
+      ],
+      "2026-11-21": [
+       "18:05",
+       "20:35"
+      ],
+      "2026-11-22": [
+       "15:45",
+       "18:05",
+       "20:35"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172"
+    },
+    {
+     "titolo": "Il gatto col cappello",
+     "orari": [],
+     "giorni": {
+      "2026-11-20": [
+       "17:50"
+      ],
+      "2026-11-21": [
+       "17:50"
+      ],
+      "2026-11-22": [
+       "15:30",
+       "17:50"
       ]
      },
      "versione": "",
@@ -118,6 +218,22 @@
       ],
       "2026-11-18": [
        "21:15"
+      ],
+      "2026-11-19": [
+       "20:45"
+      ],
+      "2026-11-20": [
+       "18:10",
+       "20:45"
+      ],
+      "2026-11-21": [
+       "18:10",
+       "20:45"
+      ],
+      "2026-11-22": [
+       "15:35",
+       "18:10",
+       "20:45"
       ]
      },
      "versione": "",
@@ -127,7 +243,8 @@
      "interpreti": "Emanuela Fanelli, Edoardo Pesce, Claudia Pandolfi e Lino Musella",
      "durata": 113,
      "anno": 2026,
-     "paese": "Italia"
+     "paese": "Italia",
+     "scheda": "https://www.mymovies.it/film/2026/il-rumore-delle-cose-nuove/"
     },
     {
      "titolo": "In un battito",
@@ -150,9 +267,36 @@
      "regia": "Giovanni Troilo",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
      "interpreti": "Edoardo Bove",
-     "paese": "Italia",
      "durata": 97,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "Italia",
+     "scheda": "https://www.mymovies.it/film/2026/in-un-battito/"
+    },
+    {
+     "titolo": "La ballata del re delle api",
+     "orari": [],
+     "giorni": {
+      "2026-11-19": [
+       "21:10"
+      ],
+      "2026-11-20": [
+       "18:10",
+       "21:10"
+      ],
+      "2026-11-21": [
+       "18:10",
+       "21:10"
+      ],
+      "2026-11-22": [
+       "15:15",
+       "18:10",
+       "21:10"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172"
     },
     {
      "titolo": "La storia infinita",
@@ -175,9 +319,36 @@
      "regia": "Wolfgang Petersen",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
      "interpreti": "Barret Oliver, Noah Hathaway, Tami Stronach e Gerald McRaney",
-     "paese": "Germania",
      "durata": 92,
-     "anno": 1984
+     "anno": 1984,
+     "paese": "Germania",
+     "scheda": "https://www.mymovies.it/film/1984/lastoriainfinita/"
+    },
+    {
+     "titolo": "Ramayana - La nascita di una leggenda",
+     "orari": [],
+     "giorni": {
+      "2026-11-19": [
+       "21:05"
+      ],
+      "2026-11-20": [
+       "17:35",
+       "21:05"
+      ],
+      "2026-11-21": [
+       "17:35",
+       "21:05"
+      ],
+      "2026-11-22": [
+       "15:10",
+       "18:00",
+       "21:05"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172"
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
@@ -197,6 +368,22 @@
       "2026-11-18": [
        "21:00",
        "21:05"
+      ],
+      "2026-11-19": [
+       "21:15"
+      ],
+      "2026-11-20": [
+       "18:20",
+       "21:15"
+      ],
+      "2026-11-21": [
+       "18:20",
+       "21:15"
+      ],
+      "2026-11-22": [
+       "15:40",
+       "18:20",
+       "21:15"
       ]
      },
      "versione": "Versione originale (solo ore 21:00)",
@@ -206,7 +393,8 @@
      "interpreti": "Johnny Depp, Ian McKellen, Sam Claflin e Arthur Conti",
      "durata": 116,
      "anno": 2026,
-     "paese": "USA"
+     "paese": "USA",
+     "scheda": "https://www.mymovies.it/film/2026/scrooge-e-gli-spiriti-del-natale/"
     },
     {
      "titolo": "Se domani non torno",
@@ -222,6 +410,22 @@
       ],
       "2026-11-18": [
        "20:30"
+      ],
+      "2026-11-19": [
+       "21:00"
+      ],
+      "2026-11-20": [
+       "18:35",
+       "21:00"
+      ],
+      "2026-11-21": [
+       "18:35",
+       "21:00"
+      ],
+      "2026-11-22": [
+       "15:20",
+       "18:35",
+       "21:00"
       ]
      },
      "versione": "",
@@ -231,7 +435,24 @@
      "interpreti": "Tommaso Allione, Tecla Bossi, Sabrina Martina e Filippo Timi",
      "durata": 107,
      "anno": 2026,
-     "paese": "Italia"
+     "paese": "Italia",
+     "scheda": "https://www.mymovies.it/film/2026/se-domani-non-torno/"
+    },
+    {
+     "titolo": "Ti presento i Fotter",
+     "orari": [],
+     "giorni": {
+      "2026-11-21": [
+       "20:55"
+      ],
+      "2026-11-22": [
+       "19:55"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172"
     },
     {
      "titolo": "Un weekend artificiale",
@@ -247,6 +468,22 @@
       ],
       "2026-11-18": [
        "20:50"
+      ],
+      "2026-11-19": [
+       "20:20"
+      ],
+      "2026-11-20": [
+       "17:55",
+       "20:20"
+      ],
+      "2026-11-21": [
+       "17:55",
+       "20:20"
+      ],
+      "2026-11-22": [
+       "15:40",
+       "17:55",
+       "20:20"
       ]
      },
      "versione": "",
@@ -256,7 +493,8 @@
      "interpreti": "Leonardo Pieraccioni, Giulia Vecchio, Luigi Luciano e Massimo Ceccherini",
      "durata": 91,
      "anno": 2026,
-     "paese": "Italia"
+     "paese": "Italia",
+     "scheda": "https://www.mymovies.it/film/2026/un-weekend-artificiale/"
     },
     {
      "titolo": "Wild Horse Nine",
@@ -272,6 +510,21 @@
       ],
       "2026-11-18": [
        "20:35"
+      ],
+      "2026-11-19": [
+       "20:40"
+      ],
+      "2026-11-20": [
+       "17:55",
+       "20:40"
+      ],
+      "2026-11-21": [
+       "17:55",
+       "20:40"
+      ],
+      "2026-11-22": [
+       "17:55",
+       "20:40"
       ]
      },
      "versione": "",
@@ -281,7 +534,8 @@
      "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
      "durata": 118,
      "anno": 2026,
-     "paese": "Regno Unito"
+     "paese": "Regno Unito",
+     "scheda": "https://www.mymovies.it/film/2026/wild-horse-nine/"
     }
    ],
    "auto": true
@@ -317,9 +571,10 @@
      "regia": "Alejandro G. Iñárritu",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/7546",
      "interpreti": "Tom Cruise, Riz Ahmed, John Goodman e Sandra Hüller",
-     "paese": "USA",
      "durata": 129,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "USA",
+     "scheda": "https://www.mymovies.it/film/2026/digger-1/"
     },
     {
      "titolo": "L'Odio",
@@ -412,7 +667,8 @@
        "20:45"
       ]
      },
-     "paese": "USA"
+     "paese": "USA",
+     "scheda": "https://www.mymovies.it/film/1968/2001odisseanellospazio/"
     },
     {
      "titolo": "Come rapinare una banca",
@@ -432,7 +688,8 @@
        "21:30"
       ]
      },
-     "paese": "USA"
+     "paese": "USA",
+     "scheda": "https://www.mymovies.it/film/2026/come-rapinare-una-banca/"
     },
     {
      "titolo": "Godzilla Minus Zero",
@@ -450,7 +707,8 @@
        "21:25"
       ]
      },
-     "paese": "Giappone"
+     "paese": "Giappone",
+     "scheda": "https://www.mymovies.it/film/2026/godzilla-minus-zero/"
     },
     {
      "titolo": "Il rumore delle cose nuove",
@@ -468,7 +726,8 @@
        "21:15"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "scheda": "https://www.mymovies.it/film/2026/il-rumore-delle-cose-nuove/"
     },
     {
      "titolo": "In un battito",
@@ -486,7 +745,8 @@
        "20:40"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "scheda": "https://www.mymovies.it/film/2026/in-un-battito/"
     },
     {
      "titolo": "La storia infinita",
@@ -504,7 +764,8 @@
        "20:50"
       ]
      },
-     "paese": "Germania"
+     "paese": "Germania",
+     "scheda": "https://www.mymovies.it/film/1984/lastoriainfinita/"
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
@@ -524,7 +785,8 @@
        "21:05"
       ]
      },
-     "paese": "USA"
+     "paese": "USA",
+     "scheda": "https://www.mymovies.it/film/2026/scrooge-e-gli-spiriti-del-natale/"
     },
     {
      "titolo": "Se domani non torno",
@@ -542,7 +804,8 @@
        "20:30"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "scheda": "https://www.mymovies.it/film/2026/se-domani-non-torno/"
     },
     {
      "titolo": "Un weekend artificiale",
@@ -560,7 +823,8 @@
        "20:50"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "scheda": "https://www.mymovies.it/film/2026/un-weekend-artificiale/"
     },
     {
      "titolo": "Wild Horse Nine",
@@ -578,7 +842,8 @@
        "20:35"
       ]
      },
-     "paese": "Regno Unito"
+     "paese": "Regno Unito",
+     "scheda": "https://www.mymovies.it/film/2026/wild-horse-nine/"
     }
    ],
    "auto": true
@@ -719,7 +984,8 @@
        "21:00"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "scheda": "https://www.mymovies.it/film/2026/se-domani-non-torno/"
     }
    ],
    "auto": true
@@ -749,7 +1015,8 @@
        "20:40"
       ]
      },
-     "paese": "USA"
+     "paese": "USA",
+     "scheda": "https://www.mymovies.it/film/1968/2001odisseanellospazio/"
     },
     {
      "titolo": "Godzilla Minus Zero",
@@ -767,7 +1034,8 @@
        "21:10"
       ]
      },
-     "paese": "Giappone"
+     "paese": "Giappone",
+     "scheda": "https://www.mymovies.it/film/2026/godzilla-minus-zero/"
     },
     {
      "titolo": "Hope",
@@ -802,7 +1070,8 @@
        "20:45"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "scheda": "https://www.mymovies.it/film/2026/il-rumore-delle-cose-nuove/"
     },
     {
      "titolo": "In un battito",
@@ -820,7 +1089,8 @@
        "20:50"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "scheda": "https://www.mymovies.it/film/2026/in-un-battito/"
     },
     {
      "titolo": "La storia infinita",
@@ -838,7 +1108,8 @@
        "21:00"
       ]
      },
-     "paese": "Germania"
+     "paese": "Germania",
+     "scheda": "https://www.mymovies.it/film/1984/lastoriainfinita/"
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
@@ -856,7 +1127,8 @@
        "21:00"
       ]
      },
-     "paese": "USA"
+     "paese": "USA",
+     "scheda": "https://www.mymovies.it/film/2026/scrooge-e-gli-spiriti-del-natale/"
     },
     {
      "titolo": "Se domani non torno",
@@ -874,7 +1146,8 @@
        "21:00"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "scheda": "https://www.mymovies.it/film/2026/se-domani-non-torno/"
     },
     {
      "titolo": "Un weekend artificiale",
@@ -892,7 +1165,8 @@
        "20:50"
       ]
      },
-     "paese": "Italia"
+     "paese": "Italia",
+     "scheda": "https://www.mymovies.it/film/2026/un-weekend-artificiale/"
     }
    ],
    "auto": true
