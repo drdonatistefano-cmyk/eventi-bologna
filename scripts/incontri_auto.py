@@ -158,7 +158,7 @@ def bologna():
                 if b < OGGI or (b - a).days > 10 or c["href"] in visti: continue
                 if re.search(r"\bmostre\b", c["cat"]) and "visite-guidate" not in c["cat"]: continue
                 visti.add(c["href"]); n += 1
-                url = CB + c["href"]
+                url = CB + c["href"].replace("/objects/", "/events/", 1)   # /objects/ rimanda a /events/: link diretto
                 sc = schede.get(c["href"])
                 if sc is None:
                     t = testo(get(url) or "")
