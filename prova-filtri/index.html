@@ -3,6 +3,8 @@
 <head>
 <base href="/">
 <meta name="robots" content="noindex">
+<script>(function(){const B="/prova-filtri/";const fx=u=>{if(typeof u!=="string")return u;if(u.startsWith("#"))return B+location.search+u;if(u.startsWith("?"))return B+u;if(u==="/"||u.startsWith("/#")||u.startsWith("/?"))return B+u.slice(1);return u};["pushState","replaceState"].forEach(m=>{const o=history[m].bind(history);history[m]=(st,t,u)=>o(st,t,fx(u))})})();</script>
+<script>document.addEventListener("click",ev=>{const a=ev.target.closest('a[href^="#"]');if(a){ev.preventDefault();location.hash=a.getAttribute("href").slice(1)}},true);</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var P={mi:"/milano/",ra:"/ravenna/",fe:"/ferrara/"},m=document.cookie.match(/(?:^|; )citta=(bo|mi|ra|fe)/),q=/[?&]citta=(bo|mi|ra|fe)/.exec(location.search),qui=/^\/(milano|ravenna|ferrara)(\/|$)/.test(location.pathname)?"altra":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||!P[m[1]]||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace(P[m[1]])}catch(_){}})();</script>
