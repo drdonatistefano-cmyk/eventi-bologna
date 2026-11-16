@@ -46,6 +46,8 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           mkdir -p dati
+          # 16/11/2026: i file del giro precedente, perché uno script che non riesce a leggere tenga i dati vecchi invece di svuotarli
+          if git fetch -q --depth=1 origin statistiche; then git show FETCH_HEAD:dati/visite_guide.json > dati/visite_guide.json 2>/dev/null || rm -f dati/visite_guide.json; fi
           python3 scripts/statistiche.py
           python3 scripts/effettivi.py dati/statistiche.json dati/effettivi.json --con-oggi
           python3 scripts/visite_guide.py dati/visite_guide.json && python3 scripts/visite_md.py dati/visite_guide.json || echo "::warning::visite delle tre guide non lette"

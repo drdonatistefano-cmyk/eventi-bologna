@@ -15,6 +15,7 @@ Il giorno è quello di GoatCounter (UTC). Non si ferma mai per un solo contatore
 """
 import datetime
 import json
+import time
 import os
 import sys
 import urllib.error
@@ -32,8 +33,16 @@ def chiedi(contatore, token, percorso, **param):
     url = f"https://{contatore}.goatcounter.com/api/v0{percorso}?" + urllib.parse.urlencode(param)
     req = urllib.request.Request(url, headers={"Authorization": "Bearer " + token, "Content-Type": "application/json",
                                                "User-Agent": "ach-guide-visite"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.load(r)
+    for tentativo in range(4):  # 16/11/2026: un errore di rete passeggero non deve svuotare i dati di una guida
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.load(r)
+        except urllib.error.HTTPError:
+            raise
+        except Exception:
+            if tentativo == 3:
+                raise
+            time.sleep(5 * (tentativo + 1))
 
 
 def visite_per_giorno(contatore, token, dal):
@@ -68,6 +77,18 @@ def main():
     dest = sys.argv[1] if len(sys.argv) > 1 else "dati/visite_guide.json"
     letto = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
     righe = []
+    # le righe del giro precedente: se una guida non si legge, si tengono le sue (meglio vecchie che vuote)
+    try:
+        prima = json.load(open(dest, encoding="utf-8"))
+    except Exception:
+        prima = []
+    def tieni(guida, motivo):
+        vecchie = [dict(r, stato="ok", vecchio=motivo) for r in prima if r.get("guida") == guida and r.get("giorno")]
+        if vecchie:
+            righe.extend(vecchie)
+            print(f"{guida}: tengo le {len(vecchie)} righe del giro precedente")
+            return True
+        return False
     for guida, sito, contatore, dal in GUIDE:
         token = os.environ.get("GOATCOUNTER_TOKEN_" + contatore.upper()) or os.environ.get("GOATCOUNTER_TOKEN")
         if not token:
@@ -84,8 +105,9 @@ def main():
             righe.append({"guida": guida, "sito": sito, "giorno": None, "visite": None, "stato": motivo, "letto": letto})
             print(f"{guida}: {motivo}")
         except Exception as e:  # rete, risposta strana: si riprova al giro dopo
-            righe.append({"guida": guida, "sito": sito, "giorno": None, "visite": None, "stato": "lettura non riuscita", "letto": letto})
             print(f"{guida}: lettura non riuscita ({e})")
+            if not tieni(guida, "lettura non riuscita"):
+                righe.append({"guida": guida, "sito": sito, "giorno": None, "visite": None, "stato": "lettura non riuscita", "letto": letto})
     os.makedirs(os.path.dirname(dest) or ".", exist_ok=True)
     with open(dest, "w", encoding="utf-8") as f:
         json.dump(righe, f, ensure_ascii=False, indent=0)
