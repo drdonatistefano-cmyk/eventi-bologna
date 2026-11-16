@@ -76,5 +76,22 @@ prova("un'eccezione senza scadenza non perdona nulla", vi[0]["controlli"][0]["es
 prova("il file delle eccezioni si legge e ogni voce ha parole e scadenza",
       all(v.get("contiene") and v.get("scade") and v.get("motivo") for v in V.leggi_eccezioni()))
 
+# ---------------------------------------------------------------- automazioni
+# 16/11: un flusso tolto dal repository non deve tenere rosso il rapporto con il suo ultimo giro fallito
+giri = [  # dal più recente, come li dà GitHub
+    {"name": "Posta della redazione", "path": ".github/workflows/posta.yml", "status": "completed", "conclusion": "failure"},
+    {"name": "Cinema", "path": ".github/workflows/cinema.yml", "status": "completed", "conclusion": "success"},
+    {"name": "Cinema", "path": ".github/workflows/cinema.yml", "status": "completed", "conclusion": "failure"},
+    {"name": "Sport", "path": ".github/workflows/sport.yml", "status": "completed", "conclusion": "failure"},
+    {"name": "Sport", "path": ".github/workflows/sport.yml", "status": "in_progress", "conclusion": None},
+]
+g = V.riassumi_giri(giri, {"cinema.yml", "sport.yml"})
+prova("un flusso tolto dal repository non conta", "Posta della redazione" not in g["rotti"] and "Posta della redazione" not in g["falliti"])
+prova("un flusso il cui ultimo giro è fallito resta un errore", g["rotti"] == ["Sport"])
+prova("un flusso fallito e poi ripartito è solo un avviso", g["falliti"] == {"Cinema": 1, "Sport": 1} and "Cinema" not in g["rotti"])
+g = V.riassumi_giri(giri, None)
+prova("se l'elenco dei flussi non si legge non si scarta nulla", "Posta della redazione" in g["rotti"])
+
+
 print(f"\n{len(FALLITE)} prove fallite" if FALLITE else "\nTutte le prove passano")
 sys.exit(1 if FALLITE else 0)

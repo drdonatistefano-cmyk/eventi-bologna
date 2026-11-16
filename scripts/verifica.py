@@ -103,6 +103,24 @@ def giudizio_link(r):
     return "ok" if q <= 0.03 else "avviso" if q <= 0.10 else "errore"
 
 
+def riassumi_giri(giri, presenti):
+    """Dai giri di GitHub (dal più recente): l'esito dell'ultimo giro di ogni programma, quante volte è fallito,
+    e quali programmi hanno l'ultimo giro fallito. «presenti» sono i file dei flussi che esistono ancora:
+    i giri di un flusso tolto non contano. Se l'elenco non si è potuto leggere (None) non si scarta nulla."""
+    ultimo, falliti, tot = {}, {}, 0
+    for r in giri:
+        if r.get("status") != "completed":
+            continue
+        if presenti is not None and os.path.basename(r.get("path") or "") not in presenti:
+            continue
+        tot += 1
+        ultimo.setdefault(r["name"], r["conclusion"])
+        if r["conclusion"] in ("failure", "timed_out", "startup_failure"):
+            falliti[r["name"]] = falliti.get(r["name"], 0) + 1
+    rotti = [n for n, c in ultimo.items() if c in ("failure", "timed_out", "startup_failure")]
+    return {"ultimo": ultimo, "falliti": falliti, "tot": tot, "rotti": rotti}
+
+
 # ---------------------------------------------------------------- eccezioni accettate (REGOLE §8 quater.6)
 ECCEZIONI = os.path.join(os.path.dirname(os.path.abspath(__file__)), "verifica_eccezioni.json")
 
@@ -384,7 +402,7 @@ def vista_automazioni():
     h = {"Authorization": "Bearer " + tok, "Accept": "application/vnd.github+json"}
     da = (datetime.datetime.utcnow() - datetime.timedelta(days=3)).strftime("%Y-%m-%dT%H:%M:%SZ")
     for repo in ("achplaces", "achdinners.com", "eventi-bologna"):
-        ultimo, falliti, tot = {}, {}, 0
+        giri = []
         for pag in (1, 2, 3):
             try:
                 rs = requests.get(f"https://api.github.com/repos/{PROPRIETARIO}/{repo}/actions/runs",
@@ -393,14 +411,14 @@ def vista_automazioni():
                 rs = []
             if not rs:
                 break
-            for r in rs:
-                if r.get("status") != "completed":
-                    continue
-                tot += 1
-                ultimo.setdefault(r["name"], r["conclusion"])
-                if r["conclusion"] in ("failure", "timed_out", "startup_failure"):
-                    falliti[r["name"]] = falliti.get(r["name"], 0) + 1
-        rotti = [n for n, c in ultimo.items() if c in ("failure", "timed_out", "startup_failure")]
+            giri += rs
+        try:   # i flussi che esistono ancora: i giri di un flusso tolto non contano (16/11/2026)
+            el = requests.get(f"https://api.github.com/repos/{PROPRIETARIO}/{repo}/contents/.github/workflows", headers=h, timeout=30)
+            presenti = {f["name"] for f in el.json()} if el.status_code == 200 else None
+        except Exception:
+            presenti = None
+        g = riassumi_giri(giri, presenti)
+        ultimo, falliti, tot, rotti = g["ultimo"], g["falliti"], g["tot"], g["rotti"]
         if rotti:
             v.errore(f"{repo}: programmi il cui ultimo giro è fallito", ", ".join(rotti)[:300])
         elif falliti:
