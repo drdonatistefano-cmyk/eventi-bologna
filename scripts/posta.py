@@ -7,6 +7,13 @@
 
 La password sta solo nel segreto GitHub REDAZIONE_PASSWORD. Il contenuto della posta non finisce mai
 in chiaro nel repository (pubblico) né nei log: il flusso lo cifra con dati/chiave_posta.pub.
+
+COORDINAMENTO (16/11/2026): la stessa casella la legge e la gestisce anche ristoranti-archivio (posta.yml:
+leggi / rispondi). Le risposte ai destinatari delle presentazioni (teatri, locali, B&B...) si mandano SOLO da lì,
+con i file posta/risposte/*.md approvati da Stefano e la regola 8 quinquies di coordinamento/REGOLE.md
+(prima si caricano gli eventi, poi una sola lettera: conferma + link, grazie, richiesta delicata del link,
+presentazione). Questo script serve per la posta di redazione che non nasce dalle presentazioni: prima di
+mandare, controllare in ristoranti-archivio contatti/risposte-amichevoli.csv che non abbia già risposto l'altro.
 """
 import base64, datetime, email, email.policy, imaplib, json, os, re, smtplib, sys, time
 from email.message import EmailMessage
@@ -15,7 +22,7 @@ from email.utils import make_msgid, formatdate, parseaddr
 HOST = "mail.infomaniak.com"
 UTENTE = os.environ.get("REDAZIONE_UTENTE", "redazione@achevents.com")
 PWD = os.environ.get("REDAZIONE_PASSWORD", "")
-FIRMA_NOME = "Stefano Donati – Ach's Events Guide"
+FIRMA_NOME = "Bianca Donati – Ach's Events Guide"   # 16/11: tutte le lettere le firma Bianca (REGOLE)
 
 
 def connetti():
