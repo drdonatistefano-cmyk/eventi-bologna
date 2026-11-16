@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var P={mi:"/milano/",ra:"/ravenna/",fe:"/ferrara/"},m=document.cookie.match(/(?:^|; )citta=(bo|mi|ra|fe)/),q=/[?&]citta=(bo|mi|ra|fe)/.exec(location.search),qui=/^\/(milano|ravenna|ferrara)(\/|$)/.test(location.pathname)?"altra":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||!P[m[1]]||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace(P[m[1]])}catch(_){}})();</script>
-<script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"56f4798bad","serate":"ab4ab58d39","mostre":"4dde92b332"}/*V0*/;</script>
+<script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"d1ff4e3ddf","serate":"afff1b1b08","mostre":"bf50b5c7d7"}/*V0*/;</script>
 <script>/* anticipo: chiede subito versioni.js (senza bloccare la pagina) e fa partire i file dei dati mentre arriva il resto; più in basso la pagina li usa dalla memoria */(function(){try{var V0=window.ACH_V0||{},fatti={};function pre(f,h){if(!h||fatti[f+h])return;fatti[f+h]=1;var l=document.createElement("link");l.rel="preload";l.as="script";l.href=f+".js?h="+h;document.head.appendChild(l)}["eventi","serate","mostre"].forEach(function(f){pre(f,V0[f])});var s=document.createElement("script");s.async=true;s.src="versioni.js?v="+Math.floor(Date.now()/6e5);s.onload=function(){var V=window.ACH_VERSIONI||{};["eventi","serate","mostre"].forEach(function(f){pre(f,V[f])})};document.head.appendChild(s)}catch(e){}})();</script>
 <title>Ach's Events Guide – concerti, teatro, mostre e cinema a Milano</title>
 <meta name="description" content="Ach&#39;s Events Guide: concerti, teatro, mostre e cinema a Milano e nella Città metropolitana, con date, orari, luoghi e link ai biglietti.">
@@ -634,6 +634,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}.f
 }
 </style>
 <link rel="manifest" href="/app.webmanifest"><link rel="apple-touch-icon" href="/icona-180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Events">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
 </head>
 <body>
 <header class="hero wrap">
@@ -1387,5 +1388,114 @@ function avviaPigri(){Object.values(PIGRI).forEach(f=>caricaPigro(f).then(aggior
 if(document.readyState==="complete")setTimeout(avviaPigri,0);else addEventListener("load",()=>setTimeout(avviaPigri,0));
 </script>
 <script src="/installa.js" data-colore="#3d5f7d" data-icona="/icona-192.png" data-sw="/sw.js" defer></script>
+<!-- 16/11/2026 (Stefano): filtri nuovi, chip in alto e foglio a gruppi (prototipo /prova-filtri/ approvato) -->
+<style>
+#nA,#nA *{box-sizing:border-box}
+#nA{font-family:Inter,system-ui,sans-serif;--a:var(--terra,#2F5578);--as:color-mix(in srgb,var(--a) 13%,#fff);--ink2:#1F1D1A;--mu:#5E584F;--li:#DDD6C9}
+body.nA #qwrap{display:none!important}
+#nA .rowc{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:10px 0 4px;margin:0 -16px;padding-left:16px;padding-right:16px}
+#nA .rowc::-webkit-scrollbar{display:none}
+#nA .ch{flex:none;min-height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--li);background:#fff;color:var(--ink2);font:500 14px Inter,system-ui,sans-serif;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;cursor:pointer}
+#nA .ch[aria-pressed=true]{background:var(--a);border-color:var(--a);color:#fff}
+#nA .ch:disabled{color:#A39C90;border-style:dashed;background:transparent;cursor:default}
+#nA .ch small{font-size:12px;opacity:.72}
+#nA .ch.fb{background:var(--a);border-color:var(--a);color:#fff;font-weight:650}
+#nA .ch .bd{min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:#fff;color:var(--ink2);font-size:12px;display:inline-grid;place-items:center}
+#nA .sep{flex:none;width:1px;background:var(--li);margin:8px 2px}
+#nA .att{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:4px 0 2px}
+#nA .att::-webkit-scrollbar{display:none}
+#nA .ap{flex:none;display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:0 10px 0 12px;border:0;border-radius:999px;background:var(--as);color:var(--a);font:600 13px Inter,system-ui,sans-serif;cursor:pointer}
+#nA .lk{flex:none;border:0;background:transparent;font:600 13px Inter,system-ui,sans-serif;color:var(--mu);text-decoration:underline;min-height:34px;padding:0 6px;cursor:pointer}
+#nAf{--a:var(--terra,#2F5578);position:fixed;inset:0;z-index:9990;pointer-events:none;font-family:Inter,system-ui,sans-serif}
+#nAf .scr{position:absolute;inset:0;background:rgba(31,29,26,.4);opacity:0;transition:opacity .2s}
+#nAf .sh{position:absolute;left:0;right:0;bottom:0;height:88vh;height:88dvh;background:#FAF8F4;color:#1F1D1A;border-radius:22px 22px 0 0;box-shadow:0 -8px 30px rgba(0,0,0,.2);display:flex;flex-direction:column;transform:translateY(105%);transition:transform .28s cubic-bezier(.2,.8,.2,1);visibility:hidden}
+#nAf.op{pointer-events:auto}#nAf.op .scr{opacity:1}#nAf.op .sh{transform:none;visibility:visible}
+#nAf .gr{width:40px;height:5px;border-radius:3px;background:#CFC8BB;margin:8px auto 0}
+#nAf .hd{display:flex;align-items:center;justify-content:space-between;padding:6px 12px 8px 20px}
+#nAf .hd h2{margin:0;font:600 22px Fraunces,Georgia,serif}
+#nAf .x{width:44px;height:44px;border-radius:999px;border:0;background:#EEEAE2;display:grid;place-items:center;cursor:pointer;color:#1F1D1A}
+#nAf .bd2{flex:1;overflow-y:auto;padding:0 20px 16px;overscroll-behavior:contain}
+#nAf details{border-bottom:1px solid #E7E2D8;padding:4px 0}
+#nAf summary{list-style:none;display:flex;align-items:center;gap:8px;min-height:52px;cursor:pointer;font:700 15.5px Inter,system-ui,sans-serif}
+#nAf summary::-webkit-details-marker{display:none}
+#nAf summary .sv{flex:1;min-width:0;font-weight:500;color:var(--a,#2F5578);font-size:13.5px;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#nAf summary .cv{width:10px;height:10px;border-right:2px solid #8C857A;border-bottom:2px solid #8C857A;transform:rotate(45deg);margin:-4px 4px 0 6px;transition:transform .2s;flex:none}
+#nAf details[open] summary .cv{transform:rotate(225deg);margin-top:4px}
+#nAf .ops{display:flex;flex-wrap:wrap;gap:8px;padding:2px 0 14px}
+#nAf .sub{font:800 11px Inter,system-ui,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#7A7268;margin:6px 0 8px}
+#nAf .o{min-height:42px;padding:0 13px;border-radius:12px;border:1px solid #DDD6C9;background:#fff;color:#1F1D1A;font:500 14.5px Inter,system-ui,sans-serif;display:inline-flex;align-items:center;gap:7px;cursor:pointer}
+#nAf .o[aria-pressed=true]{background:var(--a,#2F5578);border-color:var(--a,#2F5578);color:#fff}
+#nAf .o:disabled{opacity:.42;border-style:dashed;cursor:default}
+#nAf .o small{font-size:12px;opacity:.72}
+#nAf .more{border:0;background:transparent;color:var(--a,#2F5578);font:600 14px Inter,system-ui,sans-serif;min-height:40px;padding:0;cursor:pointer}
+#nAf .az{border:0;background:transparent;color:var(--a,#2F5578);font:600 13px Inter,system-ui,sans-serif;min-height:32px;cursor:pointer;flex:none}
+#nAf .ft{display:flex;gap:10px;padding:12px 16px calc(14px + env(safe-area-inset-bottom));border-top:1px solid #E7E2D8;background:#FAF8F4}
+#nAf .ft .a1{min-height:52px;padding:0 16px;border:1px solid #D6D0C4;background:#fff;border-radius:14px;font:600 15px Inter,system-ui,sans-serif;cursor:pointer;color:#1F1D1A}
+#nAf .ft .a2{flex:1;min-height:52px;border:0;border-radius:14px;background:var(--a,#2F5578);color:#fff;font:700 16px Inter,system-ui,sans-serif;cursor:pointer}
+#nAf .cerca{width:100%;height:42px;border:1px solid #DDD6C9;border-radius:12px;padding:0 12px;font:15px Inter,system-ui,sans-serif;margin:0 0 10px;background:#fff}
+@media(min-width:900px){#nAf .sh{left:auto;right:20px;top:20px;bottom:20px;height:auto;width:440px;border-radius:22px;transform:translateX(110%)}#nA .rowc{margin:0;padding-left:0;padding-right:0;flex-wrap:wrap}}
+
+</style>
+<script>
+(function(){
+ let NUOVO=true,APERTO=false,OPEN=new Set(),TUTTI=new Set();
+ const E=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+ const box=document.createElement("div");box.id="nA";box.className="wrap";
+ const qw=document.getElementById("qwrap");qw.parentNode.insertBefore(box,qw);
+ const F=document.createElement("div");F.id="nAf";F.innerHTML='<div class="scr" data-chiudi="1"></div><section class="sh" role="dialog" aria-modal="true" aria-label="Filtri"><div class="gr" aria-hidden="true"></div><div class="hd"><h2>Filtri</h2><button type="button" class="x" data-chiudi="1" aria-label="Chiudi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div><div class="bd2" id="nAb"></div><div class="ft"><button type="button" class="a1" data-reset>Azzera tutto</button><button type="button" class="a2" data-chiudi="1" id="nAgo">Mostra</button></div></section>';
+ document.body.appendChild(F);
+ const byN=m=>[...m].sort((a,b)=>b[1]-a[1]);
+ function opts(k){
+  const on=v=>st[k].has(v);
+  if(k==="g"){const gc=(MODE==="c"?cntF:countBy)("g",e=>e.tipo==="Comicità"?[e.genere,"Comici"]:e.genere);return {it:GOPTS.map(o=>({v:o.k,l:(o.em?o.em+" ":"")+o.l,n:gc.get(o.k)||0,on:on(o.k)})).filter(o=>o.n||o.on)}}
+  if(k==="m"){
+   if(MODE==="c"){const mc=cntF("m",cQuickKeys);return {gr:[{t:"Giorno",it:CDAYS.map(d=>({v:"g:"+d,l:dLab(d,true),n:mc.get("g:"+d)||0,on:on("g:"+d)})).concat([{v:"sett",l:"Tutta la settimana",n:mc.get("sett")||0,on:on("sett")}])},{t:"Orario",it:Object.keys(FAS).map(q=>({v:q,l:FAS[q],n:mc.get(q)||0,on:on(q)}))}]}}
+   const mc=countBy("m",e=>{const a=[];for(const m of MONTHS)if(e.data.slice(0,7)<=m&&end(e).slice(0,7)>=m)a.push(m);for(const q of Object.keys(QUICK))if(qTest(q,e))a.push(q);return a});
+   return {gr:[{t:"Quando",it:Object.keys(QUICK).map(q=>({v:q,l:QUICK[q],n:mc.get(q)||0,on:on(q)}))},{t:"Per mese",it:MONTHS.map(m=>({v:m,l:mLabel(m),n:mc.get(m)||0,on:on(m)})).filter(o=>o.n||o.on)}]}}
+  if(k==="c"){const cc=countBy("c",e=>e._c);const gr=[];for(const z of ZORD.concat(["Altro"])){const cs=zoneComuni(z).filter(c=>cc.get(c)||st.c.has(c));if(cs.length)gr.push({t:ZLAB[z]||z,it:cs.map(c=>({v:c,l:c,n:cc.get(c)||0,on:on(c)}))})}return {gr:gr}}
+  if(k==="y"){const yc=countBy("y",e=>e._lt);return {it:LTX().map(([v])=>({v:v,l:v,n:yc.get(v)||0,on:on(v)})).filter(o=>o.n||o.on)}}
+  if(k==="l"){const lc=(MODE==="c"?cntF:countBy)("l",e=>e.luogo);return {it:byN(lc).map(([v,n])=>({v:v,l:v,n:n,on:on(v)})),lungo:1}}
+  if(k==="t"){const tc=(MODE==="c"?cntF:countBy)("t",TIPOV);return {it:byN(tc).map(([v,n])=>({v:v,l:v,n:n,on:on(v)}))}}
+  if(k==="r"){const rc=MODE==="c"?cntF("r",glist):countBy("r",e=>e.rassegna||null);return {it:byN(rc).filter(([v])=>v).map(([v,n])=>({v:v,l:v,n:n,on:on(v)})),lungo:1}}
+  if(k==="d"){const dc=countBy("d",DISPV);return {it:DO.concat([...dc.keys()].filter(x=>x&&DO.indexOf(x)<0)).filter(v=>dc.get(v)||on(v)).map(v=>({v:v,l:v,n:dc.get(v)||0,on:on(v)}))}}
+  return {it:[]}}
+ const btn=(k,o,cls)=>'<button type="button" class="'+cls+'" data-k="'+k+'" data-v="'+E(o.v)+'" aria-pressed="'+o.on+'" '+(o.n||o.on?"":"disabled")+'>'+E(o.l)+'<small>'+o.n+'</small></button>';
+ function disegna(){
+  document.body.classList.toggle("nA",NUOVO);box.hidden=!NUOVO;
+  if(!NUOVO){F.classList.remove("op");return}
+  const ns=nSel();
+  // riga dei chip: Filtri, quando, generi più frequenti
+  const m=opts("m"),mq=m.gr?m.gr[0].it:[];const g=opts("g").it.slice().sort((a,b)=>(b.on-a.on)||(b.n-a.n)).slice(0,8);
+  let h='<div class="rowc">'+mq.slice(0,MODE==="c"?3:4).map(o=>btn("m",o,"ch")).join("")+'<span class="sep"></span>'+g.map(o=>btn("g",o,"ch")).join("")+'</div>';
+  // filtri attivi
+  const at=[];for(const [k] of SECS){if(!st[k]||!st[k].size)continue;const O=opts(k),all=(O.gr?O.gr.flatMap(x=>x.it):O.it);for(const v of st[k]){const o=all.find(x=>x.v===v);at.push('<button type="button" class="ap" data-k="'+k+'" data-v="'+E(v)+'">'+E(o?o.l:v)+' ✕</button>')}}
+  if(at.length)h+='<div class="att">'+at.join("")+'<button type="button" class="lk" data-reset>Azzera tutto</button></div>';
+  box.innerHTML=h;
+  // foglio
+  if(!OPEN.size)SECS.slice(0,2).forEach(([k])=>OPEN.add(k));
+  document.getElementById("nAb").innerHTML=SECS.map(([k,t])=>{const O=opts(k);const all=O.gr?O.gr.flatMap(x=>x.it):O.it;if(!all.length)return "";
+   const sel=all.filter(o=>o.on).map(o=>o.l.replace(/^\S+\s(?=\S)/,(x)=>/\p{Extended_Pictographic}/u.test(x)?"":x));
+   let body="";
+   if(O.gr)body=O.gr.map(gp=>'<div class="sub">'+E(gp.t)+'</div><div class="ops">'+gp.it.map(o=>btn(k,o,"o")).join("")+'</div>').join("");
+   else{const lim=O.lungo&&!TUTTI.has(k)?12:1e9;body='<div class="ops">'+O.it.slice(0,lim).map(o=>btn(k,o,"o")).join("")+'</div>'+(O.it.length>lim?'<button type="button" class="more" data-tutti="'+k+'">Mostra tutti ('+O.it.length+')</button>':"")}
+   return '<details data-sec="'+k+'"'+(OPEN.has(k)?" open":"")+'><summary>'+E(t)+'<span class="sv">'+E(sel.join(", "))+'</span><i class="cv"></i></summary>'+(sel.length?'<div style="display:flex;justify-content:flex-end;margin-top:-6px"><button type="button" class="az" data-clr="'+k+'">Azzera '+E(t.toLowerCase())+'</button></div>':'')+body+'</details>'}).join("");
+  const n=visible().length,N=NOUN();document.getElementById("nAgo").textContent=n?"Mostra "+n+" "+(n===1?N[0]:N[1]):"Nessun risultato";
+  F.classList.toggle("op",APERTO);
+ }
+ const _r=render;render=function(){const x=_r.apply(this,arguments);try{disegna()}catch(e){console.error(e)}return x};
+ document.addEventListener("toggle",e=>{const d=e.target;if(d.matches&&d.matches("#nAf details")){d.open?OPEN.add(d.dataset.sec):OPEN.delete(d.dataset.sec)}},true);
+ document.addEventListener("click",ev=>{const b=ev.target.closest("button,[data-chiudi]");if(!b)return;
+  if(b.id==="fbtn"&&NUOVO){ev.preventDefault();ev.stopImmediatePropagation();APERTO=true;disegna();return}
+  if(b.dataset.apri){APERTO=true;disegna();return}
+  if(b.dataset.chiudi){APERTO=false;disegna();return}
+  if(b.dataset.tutti){TUTTI.add(b.dataset.tutti);disegna();return}
+  if(b.dataset.clr&&b.closest("#nAf")){ev.stopImmediatePropagation();st[b.dataset.clr].clear();if(b.dataset.clr==="m"){st.pf=st.pt=""}render(true);return}
+  if(b.closest("[data-mode]"))OPEN.clear();
+ },true);
+ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&APERTO){APERTO=false;disegna()}});
+ disegna();
+})();
+
+</script>
 </body>
 </html>
