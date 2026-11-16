@@ -93,5 +93,11 @@ g = V.riassumi_giri(giri, None)
 prova("se l'elenco dei flussi non si legge non si scarta nulla", "Posta della redazione" in g["rotti"])
 
 
+# ---------------------------------------------------------------- parti comuni delle guide (REGOLE §8 sexies.3)
+prova("tre copie uguali di installa.js: nessuna differenza", V.copie_diverse({"places": b"x", "dinners": b"x", "events": b"x"}) == [])
+prova("una copia diversa si vede e si sa quale", V.copie_diverse({"places": b"x", "dinners": b"y", "events": b"x"}) == ["dinners"])
+prova("una copia che non si è potuta scaricare non conta come diversa", V.copie_diverse({"places": b"x", "dinners": None, "events": b"x"}) == [])
+
+
 print(f"\n{len(FALLITE)} prove fallite" if FALLITE else "\nTutte le prove passano")
 sys.exit(1 if FALLITE else 0)

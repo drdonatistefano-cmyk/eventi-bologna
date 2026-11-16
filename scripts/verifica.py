@@ -85,6 +85,17 @@ def js_dati(testo):
     return json.loads(testo[testo.index("=") + 1:].rstrip().rstrip(";"))
 
 
+def copie_diverse(copie):
+    """Dato {guida: contenuto o None}, le guide la cui copia è diversa da quella più comune.
+    Una copia che non si è potuta scaricare (None) non conta: «non sono riuscito a guardare» non è «diversa»."""
+    import collections
+    lette = {g: c for g, c in copie.items() if c is not None}
+    if not lette:
+        return []
+    comune = collections.Counter(lette.values()).most_common(1)[0][0]
+    return [g for g, c in lette.items() if c != comune]
+
+
 def classifica_link(esiti):
     """Divide (indirizzo, codice) in rotti (404, 410), dubbi (altri 4xx/5xx: il sito rifiuta i controlli)
     e senza risposta (0: non siamo riusciti a guardare, non vuol dire che il link è rotto)."""
@@ -196,6 +207,17 @@ def vista_pagine():
         for g, u in B.items():
             s = stato(u.replace("https://", "http://"))
             v.se(s == 200, f"{g}: l'indirizzo senza https porta al sito", f"risposta {s}", grave=False)
+    # le parti comuni delle guide restano uguali (REGOLE §8 sexies.3, 16/11/2026): oggi installa.js
+    copie = {}
+    for g, u in B.items():
+        r, _ = prendi(u + "installa.js")
+        copie[g] = r.content if r is not None and r.status_code == 200 else None
+    diverse = copie_diverse(copie)
+    lette = [g for g, c in copie.items() if c is not None]
+    if len(lette) < 2:
+        v.avviso("installa.js uguale nelle tre guide", f"lette solo {len(lette)} copie su {len(copie)}")
+    else:
+        v.se(not diverse, "installa.js uguale nelle tre guide", (f"diversa in: {', '.join(diverse)}" if diverse else f"{len(lette)} copie identiche"), grave=False)
 
 
 # ---------------------------------------------------------------- 2. dati
