@@ -556,12 +556,10 @@
     {
      "titolo": "Digger",
      "orari": [
-      "18:00",
       "20:30"
      ],
      "giorni": {
       "2026-11-16": [
-       "18:00",
        "20:30"
       ],
       "2026-11-17": [
@@ -578,6 +576,44 @@
      "anno": 2026,
      "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Digger_%28film_2026%29"
+    },
+    {
+     "titolo": "Fjord",
+     "orari": [],
+     "giorni": {
+      "2026-11-20": [
+       "18:15",
+       "21:00"
+      ],
+      "2026-11-21": [
+       "18:15",
+       "21:00"
+      ],
+      "2026-11-22": [
+       "15:30",
+       "18:15",
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/7546",
+     "scheda": "https://it.wikipedia.org/wiki/Fjord_%28film%29"
+    },
+    {
+     "titolo": "Il Nido",
+     "orari": [],
+     "giorni": {
+      "2026-11-19": [
+       "18:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/7546",
+     "scheda": "https://it.wikipedia.org/wiki/Il_nido_%28film%29"
     },
     {
      "titolo": "L'Odio",

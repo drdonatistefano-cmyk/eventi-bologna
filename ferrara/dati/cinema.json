@@ -40,13 +40,8 @@
     },
     {
      "titolo": "Dio ride",
-     "orari": [
-      "19:00"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-16": [
-       "19:00"
-      ],
       "2026-11-17": [
        "19:00"
       ],
@@ -66,13 +61,8 @@
     },
     {
      "titolo": "Il canto della foresta",
-     "orari": [
-      "19:00"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-16": [
-       "19:00"
-      ],
       "2026-11-17": [
        "19:00"
       ],
@@ -117,13 +107,8 @@
     },
     {
      "titolo": "La storia infinita",
-     "orari": [
-      "19:00"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-16": [
-       "19:00"
-      ],
       "2026-11-17": [
        "19:00"
       ],
@@ -143,13 +128,8 @@
     },
     {
      "titolo": "Se domani non torno",
-     "orari": [
-      "19:00"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-16": [
-       "19:00"
-      ],
       "2026-11-17": [
        "21:20"
       ],
@@ -396,26 +376,6 @@
      "paese": "USA"
     },
     {
-     "titolo": "Dal nulla",
-     "orari": [
-      "18:00"
-     ],
-     "giorni": {
-      "2026-11-16": [
-       "18:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Thriller",
-     "regia": "Joe Juanne Piras",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
-     "interpreti": "Anna Baches, Ryan Bommarito, Giuseppe Boy e Teresa Campus",
-     "durata": 100,
-     "anno": 2026,
-     "paese": "Italia",
-     "scheda": "https://it.wikipedia.org/wiki/Dal_nulla_%28film_2026%29"
-    },
-    {
      "titolo": "Dio ride",
      "orari": [
       "20:00"
@@ -444,12 +404,10 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "18:25",
       "21:30"
      ],
      "giorni": {
       "2026-11-16": [
-       "18:25",
        "21:30"
       ],
       "2026-11-17": [
@@ -528,13 +486,8 @@
     },
     {
      "titolo": "Il gatto col cappello",
-     "orari": [
-      "18:00"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-16": [
-       "18:00"
-      ],
       "2026-11-17": [
        "18:00"
       ],
@@ -584,13 +537,8 @@
     },
     {
      "titolo": "La storia infinita",
-     "orari": [
-      "19:10"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-16": [
-       "19:10"
-      ],
       "2026-11-17": [
        "19:10"
       ],
@@ -611,12 +559,10 @@
     {
      "titolo": "Look Back",
      "orari": [
-      "18:40",
       "21:25"
      ],
      "giorni": {
       "2026-11-16": [
-       "18:40",
        "21:25"
       ],
       "2026-11-17": [
@@ -656,13 +602,8 @@
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
-     "orari": [
-      "18:50"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-16": [
-       "18:50"
-      ],
       "2026-11-17": [
        "18:50"
       ],
@@ -785,8 +726,13 @@
     },
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
-     "orari": [],
+     "orari": [
+      "21:20"
+     ],
      "giorni": {
+      "2026-11-16": [
+       "21:20"
+      ],
       "2026-11-18": [
        "21:20"
       ]
@@ -814,25 +760,24 @@
    "cinemap": "https://www.cinemap.it/ferrara/cinema/san-benedetto-ferrara",
    "film": [
     {
-     "titolo": "L'essere amato",
-     "orari": [
-      "17:30",
-      "21:15"
-     ],
+     "titolo": "Fjord",
+     "orari": [],
      "giorni": {
-      "2026-11-15": [
+      "2026-11-20": [
+       "21:15"
+      ],
+      "2026-11-21": [
+       "21:15"
+      ],
+      "2026-11-22": [
        "17:30",
        "21:15"
       ]
      },
      "versione": "Versione originale",
-     "genere": "Drammatico",
-     "regia": "Rodrigo Sorogoyen",
-     "interpreti": "Javier Bardem, Vicky Luengo, Melina Matthews e Marina Foïs",
-     "paese": "Spagna",
-     "durata": 135,
-     "anno": 2026,
-     "scheda": "https://it.wikipedia.org/wiki/L%27essere_amato"
+     "genere": "",
+     "regia": "",
+     "scheda": "https://it.wikipedia.org/wiki/Fjord_%28film%29"
     }
    ],
    "auto": true
