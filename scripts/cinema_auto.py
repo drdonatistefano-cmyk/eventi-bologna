@@ -12,7 +12,7 @@ Esce con codice 1 se la lettura non è riuscita abbastanza: il flusso GitHub lo 
 Claude interviene come riserva (vedi PROCEDURA.md, sezione Cinema).
 Rispetta robots.txt: niente pagine di ricerca né filtri con parametri; una pagina al secondo.
 """
-import datetime, html, json, os, re, subprocess, sys, time, unicodedata, urllib.request
+import datetime, html, json, os, re, subprocess, sys, time, unicodedata, urllib.parse, urllib.request
 from zoneinfo import ZoneInfo
 
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -190,6 +190,51 @@ def leggi_mymovies(h):
         for k in {chiave(titolo), chiave(titolo.split(" - ")[0])}:
             out.setdefault(k, info)
     return out
+
+
+WFILE = os.path.join(RADICE, "dati", "film_wiki.json")
+
+
+def wiki_cerca(titolo, anno):
+    """URL della voce di it.wikipedia sul film, o "" se non c'è (API di ricerca, una richiesta)."""
+    q = urllib.parse.urlencode({"action": "query", "list": "search", "format": "json", "srlimit": 5,
+                                "srsearch": f"{titolo} film {anno or ''}".strip()})
+    d = json.loads(scarica("https://it.wikipedia.org/w/api.php?" + q))
+    k = chiave(titolo)
+    for r in d.get("query", {}).get("search", []):
+        t = r["title"]; base = re.sub(r"\s*\(.*?\)\s*$", "", t)
+        par = (re.search(r"\((.*?)\)\s*$", t) or [None, ""])[1].lower()
+        sn = re.sub(r"<[^>]+>", "", r.get("snippet", "")).lower()
+        if chiave(base) != k: continue
+        if par and "film" not in par: continue
+        if not par and "film" not in sn: continue
+        if anno and par and re.search(r"\d{4}", par) and str(anno) not in par: continue
+        return "https://it.wikipedia.org/wiki/" + urllib.parse.quote(t.replace(" ", "_"))
+    return ""
+
+
+def wiki_schede(d, log):
+    cache = json.load(open(WFILE)) if os.path.exists(WFILE) else {}
+    oggi = datetime.date.today().isoformat()
+    nuovi = trovati = 0
+    for s in d["sale"]:
+        for f in s["film"]:
+            k = chiave(f["titolo"])
+            c = cache.get(k)
+            # chi non ha ancora la pagina si ricerca dopo 7 giorni (le voci dei film nuovi arrivano dopo l'uscita)
+            if c is None or (not c.get("url") and (datetime.date.fromisoformat(c["visto"]) + datetime.timedelta(days=7)).isoformat() <= oggi):
+                if nuovi >= 80: continue
+                nuovi += 1
+                try: c = {"url": wiki_cerca(f["titolo"], f.get("anno")), "visto": oggi}
+                except Exception: continue
+                cache[k] = c
+                time.sleep(1)
+            if c and c.get("url"):
+                f["scheda"] = c["url"]; trovati += 1
+            else:
+                f.pop("scheda", None)
+    json.dump(cache, open(WFILE, "w"), ensure_ascii=False, indent=1, sort_keys=True)
+    log.append(f"wikipedia: {trovati} film con la voce, {nuovi} ricerche nuove")
 
 
 def leggi_18tickets(h):
@@ -435,12 +480,17 @@ def main():
                 trovati += 1
                 if info["genere"]:
                     f["genere"] = info["genere"]
-                for k in ("regia", "interpreti", "paese", "durata", "anno", "scheda"):
+                for k in ("regia", "interpreti", "paese", "durata", "anno"):
                     if info.get(k) and not f.get(k):
                         f[k] = info[k]
         log.append(f"mymovies: {len(mm)} schede, {trovati} film abbinati")
     except Exception as e:
         log.append(f"mymovies non letto: {e}")
+    # pulsante «Scheda» dei film: pagina di Wikipedia in italiano (senza pubblicità), cercata una volta e ricordata
+    try:
+        wiki_schede(d, log)
+    except Exception as e:
+        log.append(f"wikipedia non letta: {e}")
     # link d'acquisto dei singoli film dalle biglietterie 18tickets (una pagina per biglietteria)
     pagine = {}
     for s in d["sale"]:

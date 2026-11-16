@@ -774,7 +774,7 @@ CINEMA=CGIORNO?SALE.flatMap(s=>(Array.isArray(s.film)?s.film:[]).filter(f=>f&&f.
  const g={};if(f.giorni&&typeof f.giorni==="object")for(const [k,v] of Object.entries(f.giorni))if(ISO.test(k)&&Array.isArray(v))g[k]=srtT(v.filter(x=>HM.test(x)));
  if(!Object.keys(g).length&&Array.isArray(f.orari))g[CGIORNO]=srtT(f.orari.filter(x=>HM.test(x)));
  const ks=Object.keys(g).sort(),wk=/^(Multisala|D'essai)$/.test(s.tipo||"")&&g[CGIORNO]!==undefined;
- return {_kind:"c",id:s.id,data:ks[0]||CGIORNO,fino:[ks[ks.length-1]||CGIORNO,wk?wkEnd(CGIORNO):CGIORNO].sort().pop(),ora:"",artista:f.titolo,luogo:s.nome,citta:s.citta||CITY.capo,genere:s.tipo||"Sala di comunità",tipo:"",rassegna:"",descrizione:[f.genere,f.regia?"di "+f.regia:"",f.interpreti?"con "+f.interpreti:""].filter(Boolean).join(" · "),fonte:s.fonte||"",_gen:f.genere||"",_reg:f.regia||"",_int:f.interpreti||"",_dur:f.durata||null,_anno:f.anno||null,_paese:f.paese||"",_url:/^https:\/\/www\.mymovies\.it\/film\//.test(f.scheda||"")?f.scheda:"",biglietti:f.biglietti||s.biglietti||"",_bfilm:!!f.biglietti,sito_luogo:s.sito||"",_g:g,_wk:wk,_orari:g[CGIORNO]||[],_vo:/v\.?o\b|originale|sottotitol/i.test(f.versione||""),_ver:f.versione||"",_ind:s.indirizzo||""}})):[];
+ return {_kind:"c",id:s.id,data:ks[0]||CGIORNO,fino:[ks[ks.length-1]||CGIORNO,wk?wkEnd(CGIORNO):CGIORNO].sort().pop(),ora:"",artista:f.titolo,luogo:s.nome,citta:s.citta||CITY.capo,genere:s.tipo||"Sala di comunità",tipo:"",rassegna:"",descrizione:[f.genere,f.regia?"di "+f.regia:"",f.interpreti?"con "+f.interpreti:""].filter(Boolean).join(" · "),fonte:s.fonte||"",_gen:f.genere||"",_reg:f.regia||"",_int:f.interpreti||"",_dur:f.durata||null,_anno:f.anno||null,_paese:f.paese||"",_url:/^https:\/\/it\.wikipedia\.org\/wiki\//.test(f.scheda||"")?f.scheda:"",biglietti:f.biglietti||s.biglietti||"",_bfilm:!!f.biglietti,sito_luogo:s.sito||"",_g:g,_wk:wk,_orari:g[CGIORNO]||[],_vo:/v\.?o\b|originale|sottotitol/i.test(f.versione||""),_ver:f.versione||"",_ind:s.indirizzo||""}})):[];
 }
 costruisciPigri();
 const ART_URL="https://claude.ai/artifact/VkNm64jekYZkPj73i3mQAa",WEB_URL=CITY.url;
@@ -1147,8 +1147,8 @@ function fMeta(t,full){const x=fInfo(t),g=x.g?x.g.split(/\s*,\s*/).slice(0,full?
  const a=[g?`<span class="fg">${esc(g)}</span>`:(x.p?esc(x.p):""),x.r?`di <b>${esc(x.r)}</b>`:""].filter(Boolean);
  if(full){if(x.y)a.push(String(x.y));if(x.d)a.push(x.d+" min")}else if(!g&&x.y)a.splice(1,0,String(x.y));
  return (a.length?`<div class="fmeta">${a.join(" · ")}</div>`:"")+(x.i?`<div class="fcast">con <b>${esc(x.i)}</b></div>`:"")}
-function fScheda(t){const x=fInfo(t),u=x.u||"https://www.google.com/search?q="+encodeURIComponent(t+" film"+(x.y?" "+x.y:""));
- return `<a class="act fsc" href="${esc(u)}" target="_blank" rel="noopener" aria-label="Scheda del film: ${esc(t)}" title="${x.u?"Trama, cast e recensioni su MYmovies":"Cerca trama e cast del film"}"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span>Scheda</span></a>`}
+function fScheda(t){const x=fInfo(t),u=x.u||"https://www.themoviedb.org/search/movie?language=it-IT&query="+encodeURIComponent(t);
+ return `<a class="act fsc" href="${esc(u)}" target="_blank" rel="noopener" aria-label="Scheda del film: ${esc(t)}" title="${x.u?"Trama e cast su Wikipedia":"Trama e cast su The Movie Database"}"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span>Scheda</span></a>`}
 function cardC(title,rows){
  const vo=rows.some(r=>r._vo);
  const byT=new Map();rows.forEach(r=>{if(!byT.has(r.genere))byT.set(r.genere,0);byT.set(r.genere,byT.get(r.genere)+1)});
