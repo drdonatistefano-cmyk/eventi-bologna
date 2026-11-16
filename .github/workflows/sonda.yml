@@ -1,0 +1,15 @@
+name: Sonda (prove temporanee)
+# Regola 9: ogni comando chiude con «|| true» e il lavoro non fallisce mai. Da togliere a prove finite.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    timeout-minutes: 10
+    steps:
+      - run: |
+          for u in https://www.bolognawelcome.com/it/eventi/mostre-esposizioni/il-cielo-in-terra https://www.culturabologna.it/objects/pinacoteca-di-bologna-appuntamenti-novembre-2026 https://www.culturabologna.it/objects/il-direttore-racconta-la-pinacoteca-nazionale-di-bologna https://www.culturabologna.it/objects/il-cielo-in-terra-san-francesco-e-bologna-tra-cinque-e-seicento-attivita-didattiche https://www.culturabologna.it/objects/portami-al-museo-attivita-per-famiglie-in-pinacoteca_settembre-2026-giugno-2027 https://www.culturabologna.it/objects/il-cielo-in-terra-san-francesco-e-bologna-tra-cinque-e-seicento-visite-guidate-con-elena-rossoni https://pinacotecabologna.cultura.gov.it/ https://pinacotecabologna.cultura.gov.it/mostre/ ; do echo "$(curl -sS -o /tmp/p -w '%{http_code} %{url_effective}' -L -m 20 -A 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X)' "$u") $(grep -o '<title>[^<]*' /tmp/p | head -1)"; done || true
+          curl -sSL -m 20 https://pinacotecabologna.cultura.gov.it/ | grep -o 'href="[^"]*cielo[^"]*"' | sort -u | head || true
