@@ -94,6 +94,9 @@ def vista_pagine():
               ("Places, app: manifesto", B["places"] + "app.webmanifest", "standalone"), ("Places, app: pagina per gli ospiti", B["places"] + "app/", "achInstalla"),
               ("Dinners, app: manifesto", B["dinners"] + "app.webmanifest", "standalone"), ("Dinners, app: pagina per gli ospiti", B["dinners"] + "app/", "achInstalla"),
               ("Events, app: manifesto", B["events"] + "app.webmanifest", "standalone"), ("Events, app: pagina per gli ospiti", B["events"] + "app/", "achInstalla"),
+              # 16/11/2026: tasto WhatsApp nella scheda (REGOLE 8 sexies); Places quando la chat Places lo pubblica
+              ("Dinners, tasto WhatsApp", B["dinners"], "function waDin("), ("Events, tasto WhatsApp", B["events"], "function waEv("),
+              ("Events Milano, tasto WhatsApp", B["events"] + "milano/", "function waEv("),
               ("Dinners", B["dinners"], "Dinners"), ("Dinners, Chi siamo", B["dinners"] + "chi-siamo/", "Chi siamo"),
               ("Dinners, Privacy", B["dinners"] + "privacy/", "privacy"),
               ("Events Bologna", B["events"], "Events"), ("Events Milano", B["events"] + "milano/", "Events"),
