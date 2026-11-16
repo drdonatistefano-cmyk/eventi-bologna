@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Prova filtri · Ach's Events</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root{--ac:#2F5578;--acs:#E3ECF4;--ink:#1F1D1A;--mute:#5E584F;--line:#E2DCD0;--bg:#FAF8F4;--card:#fff}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;-webkit-text-size-adjust:100%}
+button{font-family:inherit;cursor:pointer;color:inherit}
+.wrap{max-width:1280px;margin:0 auto;padding:12px 16px 120px}
+.top{position:sticky;top:0;z-index:5;background:rgba(250,248,244,.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .in{max-width:1280px;margin:0 auto;padding:10px 16px 10px;display:flex;flex-direction:column;gap:10px}
+.r1{display:flex;align-items:center;justify-content:space-between;gap:10px}
+h1{margin:0;font-family:Fraunces,Georgia,serif;font-size:24px;font-weight:600;letter-spacing:-.01em}
+.stile{display:flex;background:#EEEAE2;border-radius:999px;padding:3px;gap:2px}
+.stile button{border:0;background:transparent;border-radius:999px;min-height:32px;padding:0 12px;font-size:12.5px;font-weight:600;color:var(--mute)}
+.stile button[aria-pressed=true]{background:var(--ink);color:#fff}
+.cerca{display:flex;align-items:center;gap:10px;height:46px;padding:0 14px;background:#fff;border:1px solid #D6D0C4;border-radius:14px;color:var(--mute)}
+.cerca input{flex:1;min-width:0;border:0;outline:0;font-size:16px;background:transparent;color:var(--ink)}
+.cerca:focus-within{border-color:var(--ac);box-shadow:0 0 0 3px var(--acs)}
+.scorri{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px}
+.scorri::-webkit-scrollbar{display:none}
+.chip{flex:none;min-height:40px;padding:0 14px;border-radius:999px;border:1px solid #D6D0C4;background:#fff;font-size:14px;font-weight:500;display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+.chip[aria-pressed=true]{background:var(--ac);border-color:var(--ac);color:#fff}
+.chip:disabled{color:#A39C90;border-style:dashed;background:transparent}
+.chip .n{font-size:12px;opacity:.7}
+.btnf{background:var(--ac);color:#fff;border-color:var(--ac);font-weight:600}
+.badge{min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:#fff;color:var(--ink);font-size:12px;display:inline-grid;place-items:center}
+.attivi{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.attivi::-webkit-scrollbar{display:none}
+.att{flex:none;display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:0 10px 0 12px;border:0;border-radius:999px;background:var(--acs);color:var(--ac);font-size:13px;font-weight:600}
+.link{border:0;background:transparent;font-size:13px;font-weight:600;color:var(--mute);text-decoration:underline;min-height:34px;padding:0 6px;flex:none}
+.cont{font-size:13px;color:var(--mute)}
+/* frase */
+.frase{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;font-family:Fraunces,Georgia,serif;font-size:24px;line-height:1.32;font-weight:500}
+.tok{font:inherit;padding:0 4px;border:0;border-bottom:2px dashed #A79F92;border-radius:6px 6px 0 0;background:transparent;display:inline-flex;align-items:center;gap:2px;color:var(--ink)}
+.tok.on{color:var(--ac);border-bottom:2px solid var(--ac);background:var(--acs)}
+.tok[aria-expanded=true]{outline:2px solid var(--ac);outline-offset:2px}
+.picker{display:flex;flex-direction:column;gap:10px;padding:14px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 6px 20px rgba(31,29,26,.08)}
+.picker .h{display:flex;justify-content:space-between;align-items:center}
+.picker .ops{display:flex;flex-wrap:wrap;gap:8px}
+.fatto{border:0;border-radius:10px;min-height:38px;padding:0 16px;background:var(--ac);color:#fff;font-weight:700;font-size:14px}
+/* layout */
+.corpo{display:flex;gap:32px;align-items:flex-start}
+.side{display:none}
+.lista{flex:1;min-width:0;display:flex;flex-direction:column;gap:10px}
+.giorno{margin:14px 0 2px;font-family:Fraunces,Georgia,serif;font-size:19px;font-weight:600;display:flex;align-items:baseline;gap:8px}
+.giorno small{font-family:Inter,sans-serif;font-size:12.5px;color:var(--mute);font-weight:500}
+.card{display:flex;flex-direction:column;gap:6px;padding:14px 14px 12px;background:var(--card);border:1px solid #E7E2D8;border-radius:16px}
+.card .m{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:13px;color:var(--mute)}
+.card .ora{font-weight:700;color:var(--ink)}
+.card .g{font-size:12px;font-weight:600;padding:3px 8px;border-radius:999px;background:#F2EFE8;color:#4A453E}
+.card h3{margin:0;font-family:Fraunces,Georgia,serif;font-size:18px;font-weight:600;line-height:1.22}
+.card .dove{font-size:14px;color:#3B3731}
+.card .az{display:flex;gap:8px;align-items:center;margin-top:4px}
+.tk{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:0 14px;border-radius:999px;background:var(--ac);color:#fff;text-decoration:none;font-weight:700;font-size:14px}
+.sold{font-size:12.5px;font-weight:700;color:#9C3B22}
+.wa{margin-left:auto;width:38px;height:38px;border-radius:50%;background:#25d366;color:#fff;display:inline-grid;place-items:center}
+.vuoto{padding:28px 18px;text-align:center;background:#fff;border:1px dashed #D6D0C4;border-radius:16px;color:var(--mute);line-height:1.5}
+.altri{min-height:48px;border:1px solid #D6D0C4;background:#fff;border-radius:14px;font-weight:600;font-size:15px}
+/* foglio */
+.scrim{position:fixed;inset:0;background:rgba(31,29,26,.38);z-index:20;opacity:0;pointer-events:none;transition:opacity .2s}
+.foglio{position:fixed;left:0;right:0;bottom:0;height:86vh;height:86dvh;z-index:21;background:var(--bg);border-radius:22px 22px 0 0;box-shadow:0 -8px 30px rgba(0,0,0,.18);display:flex;flex-direction:column;transform:translateY(105%);transition:transform .28s cubic-bezier(.2,.8,.2,1)}
+.foglio{visibility:hidden}.aperto .scrim{opacity:1;pointer-events:auto}.aperto .foglio{transform:none;visibility:visible}
+.grab{width:40px;height:5px;border-radius:3px;background:#CFC8BB;margin:8px auto 0}
+.fh{display:flex;align-items:center;justify-content:space-between;padding:6px 12px 6px 20px}
+.fh h2{margin:0;font-family:Fraunces,Georgia,serif;font-size:22px;font-weight:600}
+.x{width:44px;height:44px;border-radius:999px;border:0;background:#EEEAE2;display:grid;place-items:center}
+.fc{flex:1;overflow-y:auto;padding:0 20px 12px;display:flex;flex-direction:column;gap:22px}
+.grp{border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.grp .gh{display:flex;justify-content:space-between;align-items:baseline}
+.grp legend{padding:0;font-size:15px;font-weight:700}
+.grp .ops{display:flex;flex-wrap:wrap;gap:8px}
+.grp .ops .chip{border-radius:12px;min-height:44px}
+.az2{border:0;background:transparent;color:var(--ac);font-weight:600;font-size:13px;min-height:32px}
+.ff{display:flex;gap:10px;padding:12px 16px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:var(--bg)}
+.ff .az3{min-height:52px;padding:0 16px;border:1px solid #D6D0C4;background:#fff;border-radius:14px;font-size:15px;font-weight:600}
+.ff .vai{flex:1;min-height:52px;border:0;border-radius:14px;background:var(--ac);color:#fff;font-size:16px;font-weight:700}
+/* computer */
+@media (min-width:900px){
+ h1{font-size:28px}
+ body.A .side{display:flex;flex-direction:column;gap:20px;flex:0 0 270px;position:sticky;top:150px;max-height:calc(100vh - 170px);overflow-y:auto;padding-bottom:20px}
+ body.A .solo-tel{display:none!important}
+ body.A #zonaA{display:none!important}
+ .side .riga{display:flex;align-items:center;gap:10px;min-height:36px;width:100%;padding:0 6px;margin:0 -6px;border:0;border-radius:8px;background:transparent;font-size:14.5px;text-align:left}
+ .side .riga:hover{background:#F2EFE8}
+ .side .riga:disabled{opacity:.45}
+ .side .box{width:18px;height:18px;flex:none;border-radius:5px;border:1.5px solid #BDB6A9;background:#fff;display:grid;place-items:center}
+ .side .riga[aria-checked=true] .box{background:var(--ac);border-color:var(--ac)}
+ .side .riga .n{margin-left:auto;font-size:12.5px;color:var(--mute)}
+ .side fieldset{border:0;margin:0;padding:0 0 16px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:2px}
+ .side legend{padding:0;font-size:15px;font-weight:700;margin-bottom:6px}
+ .lista{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;align-content:start}
+ .lista .giorno,.lista .vuoto,.lista .altri{grid-column:1/-1}
+ .frase{font-size:34px}
+ .foglio{left:auto;right:24px;bottom:24px;width:440px;height:auto;max-height:80vh;border-radius:22px}
+}
+.nascosto{display:none!important}
+</style>
+</head>
+<body class="A">
+<div class="top"><div class="in">
+ <div class="r1"><h1>Ach's Events</h1>
+  <div class="stile" role="group" aria-label="Stile dei filtri"><button type="button" data-s="A" aria-pressed="true">A · Chip</button><button type="button" data-s="B" aria-pressed="false">B · Frase</button></div></div>
+ <label class="cerca"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Cerca artista, teatro, locale" aria-label="Cerca"></label>
+ <div id="zonaA">
+  <div class="scorri" id="chipsA"></div>
+ </div>
+ <div id="zonaB" class="nascosto">
+  <div class="frase" id="frase"></div>
+  <div id="picker" class="picker nascosto" style="margin-top:12px"></div>
+ </div>
+ <div class="r1"><span class="cont" id="cont"></span><div class="attivi" id="attivi"></div></div>
+</div></div>
+<div class="wrap"><div class="corpo"><aside class="side" id="side" aria-label="Filtri"></aside><main class="lista" id="lista" aria-live="polite"></main></div></div>
+<div id="fg"><div class="scrim" id="scrim"></div><section class="foglio" role="dialog" aria-modal="true" aria-label="Filtri"><div class="grab" aria-hidden="true"></div><div class="fh"><h2>Filtri</h2><button type="button" class="x" id="chiudi" aria-label="Chiudi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div><div class="fc" id="fc"></div><div class="ff"><button type="button" class="az3" id="azz">Azzera tutto</button><button type="button" class="vai" id="vai">Mostra</button></div></section></div>
+<script>
+(function(){
+const CITTA={bo:{l:"Bologna",s:"a Bologna",f:"../eventi.js"},mi:{l:"Milano",s:"a Milano",f:"../milano/eventi.js"},ra:{l:"Ravenna",s:"a Ravenna",f:"../ravenna/eventi.js"},fe:{l:"Ferrara",s:"a Ferrara",f:"../ferrara/eventi.js"}};
+const CACHE={};
+const pad=n=>String(n).padStart(2,"0"),iso=d=>d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());
+const OGGI=new Date();OGGI.setHours(12,0,0,0);const T=iso(OGGI);
+const add=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x};
+const DOM=iso(add(OGGI,1));const wd=OGGI.getDay();const ven=wd===0?add(OGGI,-2):wd===6?add(OGGI,-1):add(OGGI,5-wd);
+const WE=[iso(ven),iso(add(ven,2))];const W7=iso(add(OGGI,6));
+const GEN=[["te","Teatro","teatro",e=>e.genere==="Teatro"&&e.tipo!=="Comicità"],["co","Comici","comici",e=>e.tipo==="Comicità"],["pop","Pop e altro","pop",e=>e.genere==="Pop e altra musica"],["ro","Rock","rock",e=>e.genere==="Rock"],["ja","Jazz","jazz",e=>e.genere==="Jazz"],["cl","Classica","classica",e=>e.genere==="Classica"],["se","Club","serate nei club",e=>e.genere==="Serate e club"]];
+const ov=(e,a,b)=>e.data<=b&&(e.fino||e.data)>=a;
+const FAC=[
+ {id:"ci",l:"Città",any:"a Bologna",single:1,keep:1,o:Object.keys(CITTA).map(k=>[k,CITTA[k].l,CITTA[k].s,null])},
+ {id:"qu",l:"Quando",any:"in qualsiasi giorno",single:1,o:[["og","Oggi","oggi",e=>ov(e,T,T)],["do","Domani","domani",e=>ov(e,DOM,DOM)],["we","Questo weekend","questo weekend",e=>ov(e,WE[0],WE[1])],["7","Prossimi 7 giorni","nei prossimi 7 giorni",e=>ov(e,T,W7)]]},
+ {id:"ge",l:"Genere",any:"di ogni genere",o:GEN},
+ {id:"bi",l:"Biglietti",any:"anche esauriti o da verificare",o:[["d","Biglietti disponibili","con biglietti disponibili",e=>/^(disponibile|pochi posti)$/.test(e.disp||"")]]}];
+const P=new URLSearchParams(location.search);
+let S={stile:P.get("stile")==="b"?"B":"A",sel:{ci:["bo"]},q:"",tok:null,max:40,aperto:false};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function carica(k){if(CACHE[k])return Promise.resolve(CACHE[k]);return new Promise(ok=>{const s=document.createElement("script");s.src=CITTA[k].f;s.onload=()=>{CACHE[k]=((window.EVENTI_DATA||{}).eventi||[]).filter(e=>(e.fino||e.data)>=T);ok(CACHE[k])};s.onerror=()=>{CACHE[k]=[];ok([])};document.head.appendChild(s)})}
+function dati(){return CACHE[(S.sel.ci||["bo"])[0]]||[]}
+function passa(e,skip){
+ const q=S.q.trim().toLowerCase();if(q&&(e.artista+" "+e.luogo).toLowerCase().indexOf(q)<0)return false;
+ for(const f of FAC){if(f.id==="ci"||f.id===skip)continue;const cur=S.sel[f.id]||[];if(!cur.length)continue;if(!cur.some(v=>f.o.find(o=>o[0]===v)[3](e)))return false}
+ return true}
+function conta(f,o){if(f.id==="ci")return null;const E=dati();let n=0;for(const e of E)if(passa(e,f.id)&&o[3](e))n++;return n}
+function tocca(f,v){let cur=(S.sel[f.id]||[]).slice();const i=cur.indexOf(v);if(i>=0){if(f.keep)return;cur.splice(i,1)}else{if(f.single)cur=[];cur.push(v)}S.sel[f.id]=cur;S.max=40;
+ if(f.id==="ci"){carica(v).then(disegna);return}disegna()}
+function azzera(id){if(id){delete S.sel[id]}else{S.sel={ci:S.sel.ci};S.q="";$("q").value=""}S.max=40;disegna()}
+function opzioni(f,cls){return f.o.map(o=>{const n=conta(f,o);const on=(S.sel[f.id]||[]).indexOf(o[0])>=0;const dis=n===0&&!on;
+ return `<button type="button" class="${cls}" data-f="${f.id}" data-v="${o[0]}" aria-pressed="${on}" ${dis?"disabled":""}>${esc(o[1])}${n===null?"":`<span class="n">${n}</span>`}</button>`}).join("")}
+function righe(f){return f.o.map(o=>{const n=conta(f,o);const on=(S.sel[f.id]||[]).indexOf(o[0])>=0;const dis=n===0&&!on;
+ return `<button type="button" class="riga" role="${f.single?"radio":"checkbox"}" data-f="${f.id}" data-v="${o[0]}" aria-checked="${on}" ${dis?"disabled":""}><span class="box" aria-hidden="true">${on?'<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg>':""}</span>${esc(o[1])}${n===null?"":`<span class="n">${n}</span>`}</button>`}).join("")}
+function attivi(){const a=[];FAC.forEach(f=>{if(f.id==="ci")return;(S.sel[f.id]||[]).forEach(v=>{const o=f.o.find(x=>x[0]===v);a.push(`<button type="button" class="att" data-f="${f.id}" data-v="${v}" aria-label="Togli ${esc(o[1])}">${esc(o[1])} <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>`)})});
+ return a}
+const fmtG=d=>new Date(d+"T12:00").toLocaleDateString("it-IT",{weekday:"long",day:"numeric",month:"long"});
+const fmtB=d=>new Date(d+"T12:00").toLocaleDateString("it-IT",{day:"numeric",month:"short"});
+function wa(e){const c=CITTA[(S.sel.ci||["bo"])[0]];const L=["*"+e.artista+"*","📅 "+(e.fino&&e.fino!==e.data?"dal "+fmtB(e.data)+" al "+fmtB(e.fino):fmtG(e.data))+(/\d/.test(e.ora||"")?" · ore "+e.ora:""),"📍 "+e.luogo+", "+(e.citta||c.l)];if(/^https:/.test(e.biglietti||""))L.push("🎟 "+e.biglietti);L.push("","Da Ach's Events – https://achevents.com/");return "https://wa.me/?text="+encodeURIComponent(L.join("\n"))}
+function carta(e){const g=GEN.find(x=>x[3](e));const sold=/sold out|non disponibile/i.test(e.disp||"");const tk=/^https:/.test(e.biglietti||"")&&!sold;
+ return `<article class="card"><div class="m">${/\d/.test(e.ora||"")?`<span class="ora">${esc(e.ora)}</span>`:""}${g?`<span class="g">${esc(g[1])}</span>`:""}${e.fino&&e.fino!==e.data?`<span>dal ${fmtB(e.data)} al ${fmtB(e.fino)}</span>`:""}</div><h3>${esc(e.artista)}</h3><div class="dove">${esc(e.luogo)}${e.citta&&e.citta!==CITTA[(S.sel.ci||["bo"])[0]].l?" · "+esc(e.citta):""}</div><div class="az">${tk?`<a class="tk" href="${esc(e.biglietti)}" target="_blank" rel="noopener">Biglietti</a>`:""}${sold?'<span class="sold">Sold out</span>':""}<a class="wa" href="${wa(e)}" target="_blank" rel="noopener" aria-label="Condividi su WhatsApp"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a></div></article>`}
+function disegna(){
+ document.body.className=S.stile;
+ document.querySelectorAll(".stile button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.s===S.stile));
+ $("zonaA").classList.toggle("nascosto",S.stile!=="A");$("zonaB").classList.toggle("nascosto",S.stile!=="B");
+ const E=dati().filter(e=>passa(e)).sort((a,b)=>{const da=a.data<T?T:a.data,db=b.data<T?T:b.data;return da.localeCompare(db)||(a.ora||"").localeCompare(b.ora||"")});
+ const n=E.length,par=n===1?"evento":"eventi";const nf=attivi();
+ // A: chip
+ const fq=FAC[1],fc=FAC[0];
+ $("chipsA").innerHTML=`<button type="button" class="chip btnf solo-tel" id="apri">Filtri${nf.length?`<span class="badge">${nf.length}</span>`:""}</button>`+opzioni(fq,"chip")+`<span style="width:1px;flex:none;background:var(--line);margin:6px 2px"></span>`+opzioni(fc,"chip");
+ // B: frase
+ $("frase").innerHTML="<span>Cosa si fa</span>"+["qu","ci","ge","bi"].map(id=>FAC.find(f=>f.id===id)).map(f=>{const cur=S.sel[f.id]||[];const lab=cur.length?f.o.filter(o=>cur.indexOf(o[0])>=0).map(o=>o[2]).join(" o "):f.any;
+  return (f.id==="ge"?"<span>:</span>":"")+`<button type="button" class="tok${cur.length&&f.id!=="ci"?" on":""}" data-tok="${f.id}" aria-expanded="${S.tok===f.id}">${esc(lab)}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>`}).join("");
+ const tf=FAC.find(f=>f.id===S.tok);$("picker").classList.toggle("nascosto",!tf);
+ if(tf)$("picker").innerHTML=`<div class="h"><strong>${tf.l}</strong><div>${(S.sel[tf.id]||[]).length&&!tf.keep?`<button type="button" class="az2" data-az="${tf.id}">Azzera</button>`:""} <button type="button" class="fatto" id="fatto">Fatto</button></div></div><div class="ops">${opzioni(tf,"chip")}</div>`;
+ // conteggio, attivi
+ $("cont").textContent=n+" "+par+" "+CITTA[(S.sel.ci||["bo"])[0]].s;
+ $("attivi").innerHTML=nf.join("")+(nf.length||S.q?`<button type="button" class="link" data-az="">Azzera tutto</button>`:"");
+ // colonna computer
+ $("side").innerHTML=FAC.map(f=>`<fieldset><legend>${f.l}</legend>${righe(f)}${(S.sel[f.id]||[]).length&&!f.keep?`<button type="button" class="az2" data-az="${f.id}" style="align-self:flex-start">Azzera</button>`:""}</fieldset>`).join("");
+ // foglio
+ $("fc").innerHTML=FAC.map(f=>`<fieldset class="grp"><div class="gh"><legend>${f.l}</legend>${(S.sel[f.id]||[]).length&&!f.keep?`<button type="button" class="az2" data-az="${f.id}">Azzera</button>`:""}</div><div class="ops">${opzioni(f,"chip")}</div></fieldset>`).join("");
+ $("vai").textContent=n?"Mostra "+n+" "+par:"Nessun risultato";
+ document.body.classList.toggle("aperto",S.aperto);$("fg").className=S.aperto?"aperto":"";
+ // lista
+ if(!CACHE[(S.sel.ci||["bo"])[0]]){$("lista").innerHTML='<div class="vuoto">Carico gli eventi…</div>';return}
+ if(!n){$("lista").innerHTML=`<div class="vuoto">Nessun evento con questi filtri.<br><button type="button" class="altri" data-az="" style="margin-top:12px;padding:0 18px">Azzera i filtri</button></div>`;return}
+ let h="",last="";E.slice(0,S.max).forEach(e=>{const d=e.data<T?T:e.data;if(d!==last){last=d;h+=`<h2 class="giorno">${d===T?"Oggi":d===DOM?"Domani":fmtG(d).replace(/^./,c=>c.toUpperCase())}${d===T||d===DOM?`<small>${fmtG(d)}</small>`:""}</h2>`}h+=carta(e)});
+ if(n>S.max)h+=`<button type="button" class="altri" id="altri">Mostra altri ${Math.min(40,n-S.max)} di ${n-S.max}</button>`;
+ $("lista").innerHTML=h}
+document.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;
+ if(b.dataset.s){S.stile=b.dataset.s;S.tok=null;history.replaceState(null,"",S.stile==="B"?"?stile=b":"?");disegna();return}
+ if(b.dataset.f){tocca(FAC.find(f=>f.id===b.dataset.f),b.dataset.v);return}
+ if(b.dataset.tok!==undefined){S.tok=S.tok===b.dataset.tok?null:b.dataset.tok;disegna();return}
+ if(b.dataset.az!==undefined){azzera(b.dataset.az||null);return}
+ if(b.id==="apri"){S.aperto=true;disegna();return}
+ if(b.id==="chiudi"||b.id==="vai"){S.aperto=false;disegna();return}
+ if(b.id==="azz"){azzera(null);return}
+ if(b.id==="fatto"){S.tok=null;disegna();return}
+ if(b.id==="altri"){S.max+=40;disegna();return}});
+$("scrim").addEventListener("click",()=>{S.aperto=false;disegna()});
+let tq;$("q").addEventListener("input",e=>{clearTimeout(tq);tq=setTimeout(()=>{S.q=e.target.value;S.max=40;disegna()},120)});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&S.aperto){S.aperto=false;disegna()}});
+disegna();carica("bo").then(disegna);
+})();
+</script>
+</body>
+</html>
