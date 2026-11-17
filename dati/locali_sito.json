@@ -201,27 +201,6 @@
    "comune": "Faenza",
    "genere": "Teatro",
    "tipo": "Prosa"
-  },
-  {
-   "nome": "Teatro Alighieri",
-   "comune": "Ravenna",
-   "metodo": "elenco",
-   "url": "https://www.teatroalighieri.org/",
-   "link": "^/events/[a-z0-9][^\"'#?\\s]{2,}",
-   "genere": "Teatro",
-   "tipo": "Prosa",
-   "max": 90,
-   "escludi": "visite guidate|prima dell|melo_logic|imaginaction",
-   "misto": true
-  },
-  {
-   "nome": "Bronson",
-   "comune": "Ravenna",
-   "metodo": "elenco",
-   "url": "https://www.bronsonproduzioni.com/eventi/",
-   "link": "^/eventi/[a-z0-9][^\"'#?\\s]{2,}",
-   "genere": "Rock",
-   "max": 40
   }
  ],
  "fe": [
