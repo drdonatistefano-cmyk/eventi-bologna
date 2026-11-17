@@ -322,7 +322,7 @@ def permesso(url):
 
 def tipo_da_nome(n):
     n = n.lower()
-    if re.search(r"uci|space|multisala|giometti|starplex|medusa|cineci|century|cinecomfort|notorious|filmcenter|colosseo|odeon|plinius|orfeo|ducale", n): return "Multisala"
+    if re.search(r"uci|space|multisala|multiplex|cinemacity|cinedream|giometti|starplex|medusa|cineci|century|cinecomfort|notorious|filmcenter|colosseo|odeon|plinius|orfeo|ducale", n): return "Multisala"
     if "arena" in n: return "Arena"
     if re.search(r"essai|anteo|arlecchino|mexico|beltrade|centrale", n): return "D'essai"
     return "Sala di comunità"
@@ -343,29 +343,47 @@ def scopri(d, log):
             pagine.append((comune, scarica(f"https://movieplayer.it/cinema/{MP_CITTA}/{cslug}/")))
         except Exception as e:
             log.append(f"scoperta {cslug}: {e}")
-    # sale del capoluogo nuove su cinemap.it (pagina elenco della città)
-    try:
-        cm_note = {s.get("cinemap") for s in d["sale"]}
-        hc = scarica(f"https://www.cinemap.it/{MP_CITTA}/cinema")
-        for slug_ in sorted(set(re.findall(rf'href="/{MP_CITTA}/cinema/([a-z0-9-]+)"', hc))):
-            url = f"https://www.cinemap.it/{MP_CITTA}/cinema/{slug_}"
-            if url in cm_note:
-                continue
-            pg = scarica(url)
-            th = next((j for j in (json.loads(b) for b in re.findall(r'<script[^>]*ld\+json[^>]*>(.*?)</script>', pg, re.S) if b.strip().startswith("{"))
-                       if j.get("@type") == "MovieTheater"), None)
-            if not th:
-                continue
-            a = th.get("address") or {}
-            nid = "c%03d" % (1 + max([int(s["id"][1:]) for s in d["sale"]] or [0]))
-            d["sale"].append({"id": nid, "nome": th.get("name", slug_), "citta": UFFICIALI[0] if CITTA != "bo" else "Bologna",
-                              "indirizzo": ", ".join(x for x in (a.get("streetAddress"), a.get("addressLocality")) if x),
-                              "tipo": tipo_da_nome(th.get("name", "")), "sito": th.get("url", "") if str(th.get("url", "")).startswith("https://") else "",
-                              "fonte": url, "cinemap": url, "film": [], "auto": True})
-            nuove += 1
-            log.append(f"sala nuova da cinemap: {th.get('name')}")
-    except Exception as e:
-        log.append(f"scoperta cinemap: {e}")
+    # sale nuove su cinemap.it: pagina elenco del capoluogo e (Ravenna, Ferrara, Milano) di ogni comune della provincia.
+    # Se la sala c'è già (stesso nome o stesso comune e nome simile) si aggiunge solo il campo `cinemap` (17/11/2026: a Ravenna
+    # CinemaCity, Mariani e Rocca Brancaleone erano finite due volte).
+    def simile(a, b):
+        a, b = chiave(re.sub(r"(?i)\b(cinema|multisala|multiplex|teatro|arena|ravenna|faenza|lugo|cervia)\b", " ", a)), \
+               chiave(re.sub(r"(?i)\b(cinema|multisala|multiplex|teatro|arena|ravenna|faenza|lugo|cervia)\b", " ", b))
+        return bool(a and b) and (a in b or b in a)
+    comuni_cm = [(UFFICIALI[0], MP_CITTA)] + ([] if CITTA == "bo" else [(c, slug(c)) for c in UFFICIALI[1:]])
+    cm_note = {s.get("cinemap") for s in d["sale"]}
+    for comune, cs in comuni_cm:
+        try:
+            hc = scarica(f"https://www.cinemap.it/{cs}/cinema")
+        except Exception:
+            continue      # comune senza pagina su cinemap
+        try:
+            for slug_ in sorted(set(re.findall(rf'href="/{cs}/cinema/([a-z0-9-]+)"', hc))):
+                url = f"https://www.cinemap.it/{cs}/cinema/{slug_}"
+                if url in cm_note:
+                    continue
+                pg = scarica(url)
+                th = next((j for j in (json.loads(b) for b in re.findall(r'<script[^>]*ld\+json[^>]*>(.*?)</script>', pg, re.S) if b.strip().startswith("{"))
+                           if j.get("@type") == "MovieTheater"), None)
+                if not th:
+                    continue
+                nome = th.get("name", slug_)
+                gia = next((x for x in d["sale"] if x["citta"] == comune and not x.get("cinemap") and simile(x["nome"], nome)), None)
+                cm_note.add(url)
+                if gia:
+                    gia["cinemap"] = url
+                    log.append(f"cinemap abbinato a {gia['nome']}")
+                    continue
+                a = th.get("address") or {}
+                nid = "c%03d" % (1 + max([int(x["id"][1:]) for x in d["sale"]] or [0]))
+                d["sale"].append({"id": nid, "nome": nome, "citta": comune,
+                                  "indirizzo": ", ".join(x for x in (a.get("streetAddress"), a.get("addressLocality")) if x),
+                                  "tipo": tipo_da_nome(nome), "sito": th.get("url", "") if str(th.get("url", "")).startswith("https://") else "",
+                                  "fonte": url, "cinemap": url, "film": [], "auto": True})
+                nuove += 1
+                log.append(f"sala nuova da cinemap: {nome} ({comune})")
+        except Exception as e:
+            log.append(f"scoperta cinemap {cs}: {e}")
     for comune, p in pagine:
         sel = p[p.find("Seleziona il cinema"):] if "Seleziona il cinema" in p else ""
         for href, nome in re.findall(r'href="(/cinema/[a-z0-9-]+_\d+/)"[^>]*>([^<]+)</a>', sel[:20000]):
