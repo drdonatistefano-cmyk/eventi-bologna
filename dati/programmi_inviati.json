@@ -1,0 +1,21 @@
+{
+  "_nota": "Programmi che i locali ci mandano per posta (regola 8 quinquies). serate.py li aggiunge alle serate a ogni aggiornamento. Le serate fisse si ripetono ogni settimana per i prossimi 3 mesi; le date speciali sostituiscono la serata fissa di quel giorno.",
+  "locali": [
+    {
+      "luogo": "Republic Milano", "citta": "Milano", "chiave": "mi",
+      "sito": "https://www.republicmilano.com/",
+      "inviato": "2026-11-16 (Siro Saccani, info@republicmilano.com)",
+      "ora": "23:30",
+      "settimana": {
+        "1": ["Home", "House e tech house: groove e atmosfere da club per chi ama la musica elettronica."],
+        "3": ["Buraka", "Reggaeton, hip hop e baile funk in una notte dall'anima internazionale, ritrovo della comunità Erasmus e di chi ama i ritmi urban."],
+        "4": ["House of Republic", "Serata dedicata alla pista che apre il fine settimana, tra DJ set ed energia fino a tarda notte."],
+        "5": ["Saturday at Republic", "L'appuntamento del sabato sera: musica, socialità e l'atmosfera del club nel pieno del fine settimana."],
+        "6": ["Demon Time", "Hip hop e reggaeton per chiudere la settimana: bassi profondi e successi urban in pista."]
+      },
+      "speciali": [
+        {"data": "2026-12-31", "ora": "23:00", "artista": "New Year's Eve at Repvblic", "descrizione": "Capodanno in Piazza della Repubblica: attesa della mezzanotte, brindisi e poi in pista fino al mattino, tra successi internazionali, hip hop e house."}
+      ]
+    }
+  ]
+}

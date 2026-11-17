@@ -101,11 +101,46 @@ def scrivi(chiave, righe):
     return out
 
 
+def programmi(ch):
+    """Programmi mandati dai locali per posta (dati/programmi_inviati.json), per i prossimi 3 mesi."""
+    try:
+        d = json.load(open("dati/programmi_inviati.json", encoding="utf-8"))
+    except Exception:
+        return []
+    oggi = datetime.date.today()
+    fine = (oggi.replace(day=1) + datetime.timedelta(days=95)).replace(day=1)
+    out = []
+    for L in d.get("locali", []):
+        if L.get("chiave") != ch: continue
+        spec = {x["data"]: x for x in L.get("speciali", [])}
+        g = oggi
+        while g < fine:
+            ds = g.isoformat()
+            x = spec.get(ds)
+            if not x and str(g.weekday()) in L.get("settimana", {}):
+                t, dsc = L["settimana"][str(g.weekday())]
+                x = {"artista": t, "descrizione": dsc, "ora": L.get("ora", "n.d.")}
+            if x:
+                out.append({"id": "", "data": ds, "fino": ds, "ora": x.get("ora") or L.get("ora", "n.d."), "artista": x["artista"],
+                            "luogo": L["luogo"], "citta": L["citta"], "genere": "Serate e club", "tipo": "", "rassegna": "",
+                            "descrizione": x["descrizione"], "fonte": L["sito"] + "#" + ds, "biglietti": L["sito"],
+                            "biglietti_tipo": "Info", "disp": "da verificare", "disp_nota": "Programma inviato dal locale",
+                            "disp_verificata": "", "sito_luogo": L["sito"], "inviato": True})
+            g += datetime.timedelta(days=1)
+    return out
+
+
 def main():
     if "--file" in sys.argv:
         i = sys.argv.index("--file"); t = open(sys.argv[i + 1], encoding="utf-8").read(); ch = sys.argv[i + 2]
         for r in leggi_pagina(t, ch)[:5]: print(r)
         print(len(leggi_pagina(t, ch)), "serate"); return
+    if "--solo-programmi" in sys.argv:   # rimette i programmi inviati senza riscaricare le serate
+        for ch, (slug, capo, file) in CITTA.items():
+            t = open(file, encoding="utf-8").read()
+            vecchie = [r for r in json.loads(t[t.index("=") + 1:].rstrip().rstrip(";"))["serate"] if not r.get("inviato")]
+            scrivi(ch, vecchie + programmi(ch))
+        return
     errori = 0
     for ch, (slug, capo, file) in CITTA.items():
         righe, lette = [], 0
@@ -120,7 +155,7 @@ def main():
             print(f"{capo}: nessuna pagina letta, lascio il file com'è"); continue
         if not righe:
             print(f"{capo}: zero serate (pagina cambiata?), lascio il file com'è"); errori += 1; continue
-        scrivi(ch, righe)
+        scrivi(ch, righe + programmi(ch))
     sys.exit(1 if errori else 0)
 
 
