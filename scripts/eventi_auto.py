@@ -468,7 +468,35 @@ def sede_portale(via, descr, c):
     return r
 
 
+def portale_ra():
+    """Ravenna: mostre dal sito turistico del Comune (turismo.ra.it), categoria «Mostre e Arte»."""
+    import turismo_ra as T
+    cache = json.load(open(SFILE)) if os.path.exists(SFILE) else {}
+    voci = T.leggi(lambda u: get(u))
+    letti = n = 0
+    for v in voci:
+        if v["categoria"] != "Mostre e Arte": continue
+        letti += 1
+        tit, ini, fin = v["titolo"], v["inizio"], v["fine"]
+        if fin < OGGI or ini > LIMITE: continue
+        if (datetime.date.fromisoformat(fin) - datetime.date.fromisoformat(ini)).days > 730: continue
+        tt = tok(tit)
+        if any(len(tt & tok(x["titolo"])) / max(1, min(len(tt), len(tok(x["titolo"])))) >= 0.6 for x in mo if tok(x["titolo"])): continue
+        de = T.descrizione(lambda u: get(u), v["url"], cache)
+        time.sleep(1)
+        parole = de.split()
+        de = " ".join(parole[:28]).rstrip(",;:") + ("…" if len(parole) > 28 else "") if de else f"Mostra a {v['luogo'] or 'Ravenna'}."
+        testo = (tit + " " + de).lower()
+        cat = next((c for rx, c in CAT if re.search(rx, testo)), "Pittura")
+        mo.append({"id": "", "titolo": tit, "sede": v["luogo"] or "Ravenna", "citta": "Ravenna", "inizio": ini, "fine": fin, "categoria": cat,
+                   "descrizione": de, "ingresso": "da verificare", "orari": "", "fonte": v["url"], "sito": "", "biglietti": "", "biglietti_tipo": ""})
+        R["aggiunti"].append(f"mostra {ini}→{fin} {tit} – {v['luogo']} (turismo.ra.it)"); n += 1
+    if not PROVA: json.dump(cache, open(SFILE, "w"), ensure_ascii=False, indent=1)
+    R["fonti"]["portale turistico"] = {"letti": letti, "aggiunti": n}
+
+
 def portale():
+    if CITTA == "ra": return portale_ra()
     base = PORTALI.get(CITTA)
     if not base: return
     cache = json.load(open(SFILE)) if os.path.exists(SFILE) else {}

@@ -306,7 +306,29 @@ PSCHEDE = os.path.join(RADICE, "dati", f"incontri_portale_{CITTA}.json")
 def iso(s): return datetime.date.fromisoformat(s[:10]) if s and re.match(r"\d{4}-\d{2}-\d{2}", s) else None
 
 
+def portale_ra():
+    """Ravenna: «Conferenze e Convegni» e «Visite Guidate» dal sito turistico del Comune (turismo.ra.it)."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import turismo_ra as T
+    cache = json.load(open(PSCHEDE)) if os.path.exists(PSCHEDE) else {}
+    out, letti = [], 0
+    for v in T.leggi(get):
+        if v["categoria"] not in ("Conferenze e Convegni", "Visite Guidate"): continue
+        letti += 1
+        a, b = max(datetime.date.fromisoformat(v["inizio"]), OGGI), datetime.date.fromisoformat(v["fine"])
+        if b < OGGI or a > FINE: continue
+        de = T.descrizione(get, v["url"], cache)
+        gen = "Visite guidate" if v["categoria"] == "Visite Guidate" else genere("", v["titolo"], de, v["luogo"])
+        luogo = (v["luogo"] or "Ravenna") + (" e altri luoghi" if v.get("altri_luoghi") else "")
+        if v.get("diverse"): de = ("Più date: vedi il programma. " + de).strip()
+        out.append(voce("turismo.ra.it", a, b, "", v["titolo"], luogo, "Ravenna", gen, de, v["url"], ingresso(de)))
+    if not PROVA: json.dump(cache, open(PSCHEDE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    R["fonti"]["turismo.ra.it"] = {"letti": letti, "voci": len(out)}
+    return out
+
+
 def portale():
+    if CITTA == "ra": return portale_ra()
     base = PORTALE.get(CITTA); out = []
     if not base: return out
     cache = json.load(open(PSCHEDE)) if os.path.exists(PSCHEDE) else {}

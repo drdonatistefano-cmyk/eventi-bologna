@@ -34,9 +34,13 @@ jobs:
         id: fe
         run: python3 scripts/incontri_auto.py fe $PROVA
         continue-on-error: true
+      - name: Ravenna
+        id: ra
+        run: python3 scripts/incontri_auto.py ra $PROVA
+        continue-on-error: true
       - name: Salva il risultato
         if: ${{ !inputs.prova }}
-        run: bash scripts/salva.sh "Incontri automatici $(date +%F)" incontri.js milano/incontri.js dati/incontri_bo.json dati/incontri_mi.json dati/incontri_schede.json ferrara/incontri.js dati/incontri_fe.json dati/incontri_portale_fe.json
+        run: bash scripts/salva.sh "Incontri automatici $(date +%F)" incontri.js milano/incontri.js dati/incontri_bo.json dati/incontri_mi.json dati/incontri_schede.json ferrara/incontri.js dati/incontri_fe.json dati/incontri_portale_fe.json ravenna/incontri.js dati/incontri_ra.json dati/incontri_portale_ra.json
       - name: Segnala se qualcosa non è andato
         if: ${{ !inputs.prova && (steps.bo.outcome == 'failure' || steps.mi.outcome == 'failure') }}
         env: { GH_TOKEN: "${{ github.token }}" }
