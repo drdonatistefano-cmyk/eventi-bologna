@@ -7,13 +7,12 @@
 .pc .pa{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}.pc .pa a{display:inline-flex;align-items:center;min-height:40px;padding:0 14px;border-radius:999px;border:1px solid #2F5578;color:#2F5578;text-decoration:none;font-weight:600;font-size:.92rem}.pc .pa a.pr{background:#2F5578;color:#fff}
 .som{margin:14px 0 4px;font-size:.95rem;opacity:.75}
 h2.ct{font-size:1rem;text-transform:uppercase;letter-spacing:.06em;color:#2F5578;margin:22px 0 4px}
-ul.el{list-style:none;padding:0;margin:0 0 8px;border-top:1px solid rgba(0,0,0,.1)}
-ul.el li{display:grid;grid-template-columns:1fr auto auto;align-items:baseline;gap:4px 14px;padding:10px 2px;border-bottom:1px solid rgba(0,0,0,.1)}
-ul.el .n{font-weight:600;color:inherit;text-decoration:none;grid-column:1}
-ul.el .n:hover{text-decoration:underline}
-ul.el .ti{grid-column:1;grid-row:2;font-size:.85rem;opacity:.65}
-ul.el .nu{grid-column:2;grid-row:1/3;align-self:center;font-size:.85rem;opacity:.75;white-space:nowrap}
-ul.el .si{grid-column:3;grid-row:1/3;align-self:center;font-size:.85rem;color:#2F5578;text-decoration:none;white-space:nowrap}
+.sost{list-style:none;padding:0;margin:10px 0 8px}
+.sost li{border:1px solid rgba(0,0,0,.12);border-radius:14px;padding:14px 16px;margin:0 0 12px;background:#fff}
+.sost .nome{font-size:19px;font-weight:700;margin:0}
+.sost .dove{font-size:14px;opacity:.7;margin:2px 0 10px}
+.sost .link{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:15px;margin:0}
+.sost .link a{color:#2F5578}
 </style><style>
 .coll{display:grid;gap:14px;margin:18px 0 26px}
 .cc{border:1px solid rgba(0,0,0,.12);border-radius:16px;padding:16px 18px;background:#fff}
@@ -32,11 +31,27 @@ ol.passi li{margin:6px 0}
 <p class="lede">Teatri, locali e organizzatori che ci mandano i loro programmi. Grazie a loro date, orari e biglietti sono giusti e aggiornati. Li ringraziamo, e vi invitiamo ad andarli a trovare.</p>
 <p class="som">4 teatri e locali · 118 appuntamenti dal loro programma</p>
 <h2 class="ct">Milano</h2>
-<ul class="el">
-<li><a class="n" href="/milano/?cerca=Teatro%20Dal%20Verme">Teatro Dal Verme</a><span class="ti">teatro e concerti</span><span class="nu">48 appuntamenti</span><a class="si" href="https://www.ipomeriggi.it/" target="_blank" rel="noopener" aria-label="Sito ufficiale di Teatro Dal Verme">sito ↗</a></li>
-<li><a class="n" href="/milano/?cerca=Teatro%20Out%20Off">Teatro Out Off</a><span class="ti">teatro</span><span class="nu">12 appuntamenti</span><a class="si" href="https://teatrooutoff.it/" target="_blank" rel="noopener" aria-label="Sito ufficiale di Teatro Out Off">sito ↗</a></li>
-<li><a class="n" href="/milano/?cerca=Republic%20Milano">Republic Milano</a><span class="ti">club</span><span class="nu">55 appuntamenti</span><a class="si" href="https://www.republicmilano.com/" target="_blank" rel="noopener" aria-label="Sito ufficiale di Republic Milano">sito ↗</a></li>
-<li><a class="n" href="/milano/?cerca=PimOff">PimOff</a><span class="ti">teatro e danza</span><span class="nu">3 appuntamenti</span><a class="si" href="https://www.pimoff.it/" target="_blank" rel="noopener" aria-label="Sito ufficiale di PimOff">sito ↗</a></li>
+<ul class="sost">
+<li>
+<p class="nome">Teatro Dal Verme</p>
+<p class="dove">Teatro e concerti · Milano · 48 appuntamenti in guida</p>
+<p class="link"><a href="/milano/?cerca=Teatro%20Dal%20Verme">I loro appuntamenti</a><a href="https://www.ipomeriggi.it/" target="_blank" rel="noopener">Sito ufficiale ↗</a></p>
+</li>
+<li>
+<p class="nome">Teatro Out Off</p>
+<p class="dove">Teatro · Milano · 12 appuntamenti in guida</p>
+<p class="link"><a href="/milano/?cerca=Teatro%20Out%20Off">I loro appuntamenti</a><a href="https://teatrooutoff.it/" target="_blank" rel="noopener">Sito ufficiale ↗</a></p>
+</li>
+<li>
+<p class="nome">Republic Milano</p>
+<p class="dove">Club · Milano · 55 appuntamenti in guida</p>
+<p class="link"><a href="/milano/?cerca=Republic%20Milano">I loro appuntamenti</a><a href="https://www.republicmilano.com/" target="_blank" rel="noopener">Sito ufficiale ↗</a></p>
+</li>
+<li>
+<p class="nome">PimOff</p>
+<p class="dove">Teatro e danza · Milano · 3 appuntamenti in guida</p>
+<p class="link"><a href="/milano/?cerca=PimOff">I loro appuntamenti</a><a href="https://www.pimoff.it/" target="_blank" rel="noopener">Sito ufficiale ↗</a></p>
+</li>
 </ul>
 <h2>Volete comparire anche voi?</h2>
 <ol class="passi">
