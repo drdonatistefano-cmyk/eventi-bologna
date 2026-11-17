@@ -207,7 +207,7 @@
    "comune": "Ravenna",
    "metodo": "elenco",
    "url": "https://www.teatroalighieri.org/",
-   "link": "teatroalighieri\\.org/events/[a-z0-9][^\"'#?\\s]{2,}",
+   "link": "^/events/[a-z0-9][^\"'#?\\s]{2,}",
    "genere": "Teatro",
    "tipo": "Prosa",
    "max": 90,
@@ -219,7 +219,7 @@
    "comune": "Ravenna",
    "metodo": "elenco",
    "url": "https://www.bronsonproduzioni.com/eventi/",
-   "link": "bronsonproduzioni\\.com/eventi/[a-z0-9][^\"'#?\\s]{2,}",
+   "link": "^/eventi/[a-z0-9][^\"'#?\\s]{2,}",
    "genere": "Rock",
    "max": 40
   }
