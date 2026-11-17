@@ -415,6 +415,10 @@ def main():
         return
     if not ok:
         print("nessun incontro: file lasciato com'era"); sys.exit(1)
+    import protagonisti
+    for v in ok:
+        c = protagonisti.chi(v)
+        if c: v["chi"] = c
     dati = {"aggiornato": OGGI.isoformat(), "incontri": [{k: v[k] for k in ["id"] + [x for x in v if x != "id"]} for v in ok]}
     open(os.path.join(RADICE, FILE), "w", encoding="utf-8").write("window.INCONTRI_DATA=" + json.dumps(dati, ensure_ascii=False, separators=(",", ":")) + ";\n")
     json.dump(R, open(os.path.join(RADICE, "dati", f"incontri_{CITTA}.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)

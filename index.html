@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var P={mi:"/milano/",ra:"/ravenna/",fe:"/ferrara/"},m=document.cookie.match(/(?:^|; )citta=(bo|mi|ra|fe)/),q=/[?&]citta=(bo|mi|ra|fe)/.exec(location.search),qui=/^\/(milano|ravenna|ferrara)(\/|$)/.test(location.pathname)?"altra":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||!P[m[1]]||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace(P[m[1]])}catch(_){}})();</script>
-<script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"992614cc70","serate":"cef126465d","mostre":"6fdbda0970"}/*V0*/;</script>
+<script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"23252073d1","serate":"cef126465d","mostre":"6fdbda0970"}/*V0*/;</script>
 <script>/* anticipo: chiede subito versioni.js (senza bloccare la pagina) e fa partire i file dei dati mentre arriva il resto; più in basso la pagina li usa dalla memoria */(function(){try{var V0=window.ACH_V0||{},fatti={};function pre(f,h){if(!h||fatti[f+h])return;fatti[f+h]=1;var l=document.createElement("link");l.rel="preload";l.as="script";l.href=f+".js?h="+h;document.head.appendChild(l)}["eventi","serate","mostre"].forEach(function(f){pre(f,V0[f])});var s=document.createElement("script");s.async=true;s.src="versioni.js?v="+Math.floor(Date.now()/6e5);s.onload=function(){var V=window.ACH_VERSIONI||{};["eventi","serate","mostre"].forEach(function(f){pre(f,V[f])})};document.head.appendChild(s)}catch(e){}})();</script>
 <title>Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna</title>
 <meta name="description" content="Ach&#39;s Events Guide: concerti, teatro, mostre e cinema a Bologna e nella Città metropolitana, con date, orari, luoghi e link ai biglietti.">
@@ -1111,14 +1111,8 @@ function finestra(n,q){const w=n.split(" "),W=w.map(norm),qq=q.split(" ").filter
   let i=j>0?j-1:0,k=j>0?j:Math.min(1,w.length-1);if(/^(de|van|von)$/i.test(w[i])&&i>0)i--;if(i===k||/^(de|van|von)$/i.test(w[i]))return"";return w.slice(i,k+1).join(" ")}return""}
 /* protagonisti nella scheda piccola (17/11/2026, Stefano: «Bosso deve comparire sul box dell'evento»):
    campo «chi» dei dati, altrimenti i nomi dopo «con», «special guest», «regia di», «a cura di»… nella descrizione */
-const CHI_STOP=new Set("teatro sala stagione concerto orchestra quartetto quartet trio ensemble coro fondazione associazione compagnia comune biblioteca museo festival rassegna banda accademia conservatorio scuola gruppo band teatri istituto universita centro casa circolo produzioni cooperativa sociale notte una il la".split(" "));
-const CHI_N="\\p{Lu}[\\p{Ll}'’]+(?:-\\p{Lu}[\\p{Ll}'’]+)?",CHI_NM=`${CHI_N}(?:\\s+(?:de|De|Di|Da|Del|Dalla|La|Lo|van|von)?\\s*${CHI_N})(?:\\s+${CHI_N}(?!\\s+\\p{Lu}))?`;
-const CHI_RE=new RegExp(`(special guest|guest|feat\\.?|featuring|di e con|con la partecipazione di|con|regia di|interpretato da|ospite|ospiti|dialoga con|in dialogo con|intervengono|interviene|a cura di|guidata da|guidato da|introduce|modera|incontro con)\\s*[:,]?\\s+(${CHI_NM}(?:\\s*(?:,|e|ed)\\s+${CHI_NM})*)`,"gu");
-function chiAuto(e){const d=e.descrizione||"",out=[];let m,pre="con";CHI_RE.lastIndex=0;
- while((m=CHI_RE.exec(d))){if(/film|pellicola|omonimo/i.test(d.slice(Math.max(0,m.index-25),m.index)))continue;const k=m[1].toLowerCase(),p0=/^regia/.test(k)?"regia di":/^a cura/.test(k)?"a cura di":/dialog|modera|introduce/.test(k)?"con":"con";
-  for(let n of m[2].split(/\s*,\s*|\s+ed?\s+/u)){n=n.trim();const w=n.split(/\s+/);if(w.length<2||w.some(x=>CHI_STOP.has(norm(x))))continue;if(norm(e.artista).includes(norm(w[w.length-1])))continue;if(!out.length)pre=p0;if(!out.includes(n))out.push(n)}}
- return out.length?(pre==="con"?"":pre+" ")+out.slice(0,2).join(" e "):""}
-function chiTesto(e){if(e._chi===undefined){let t=(e.chi||"").trim();if(t&&norm(e.artista).includes(norm(t)))t="";e._chi=t||(e._kind==="m"?"":chiAuto(e))}return e._chi}
+/* il campo «chi» lo scrivono aggiorna.py e incontri_auto.py con scripts/protagonisti.py (nomi dopo «con», «regia di», «dirige»…), o a mano */
+function chiTesto(e){if(e._chi===undefined){let t=(e.chi||"").trim();if(t&&norm(e.artista).includes(norm(t)))t="";e._chi=t}return e._chi}
 function chiLine(e){const t=chiTesto(e);if(!t)return"";const raw=/^(con|di|regia|dirige|a cura)\b/i.test(t)||/\scon\s/.test(t);
  const h=esc(raw?t:"con "+t).replace(/(\p{Lu}[\p{Ll}'’.]+(?:\s+(?:de|De|Di|Da|Del|Dalla|van|von)?\s*\p{Lu}[\p{Ll}'’]+)+)/gu,"<b>$1</b>");
  return `<div class="mhit">${h}</div>`}

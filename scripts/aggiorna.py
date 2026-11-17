@@ -11,6 +11,8 @@ assegna gli id mancanti, ordina e scrive eventi.js (più eventi.json di lavoro).
 Se trova errori NON scrive nulla e termina con codice 1: correggi e rilancia.
 """
 import json, os, re, sys, datetime, unicodedata, collections
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import protagonisti as _P
 
 GENERI = {"Rock", "Jazz", "Pop e altra musica", "Classica", "Teatro", "Serate e club"}
 DISP = {"disponibile", "pochi posti", "sold out", "non disponibile", "non ancora in vendita", "da verificare"}
@@ -185,6 +187,7 @@ def main():
         if e.get("biglietti_tipo") not in BIG: e["biglietti_tipo"] = "Info" if e.get("biglietti") else ""
         if not e.get("biglietti"): e["biglietti_tipo"] = ""
         if not e.get("descrizione"): avvisi.append(f"{rif}: senza descrizione")
+        e["chi"] = _P.chi(e)   # protagonisti (17/11/2026): scritti a mano o ricavati dalla descrizione
         for k in CAMPI: e.setdefault(k, "")
         puliti.append({k: e[k] for k in CAMPI if k != "chi" or e[k]})   # «chi» (protagonisti, 17/11/2026): solo se c'è
     # doppioni: stesso inizio + stesso titolo + stesso luogo
