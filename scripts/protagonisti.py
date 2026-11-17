@@ -21,7 +21,10 @@ universita centro casa circolo produzioni produzione cooperativa sociale notte u
 premio cinema film libro libri edizioni editore editrice ensemble filarmonica sinfonica orchestra symphony orchestra quartet big
 choir chorus opera balletto ballet dance company teatrale project records music live tour show special guest guests dj
 natale capodanno ottobre novembre dicembre gennaio febbraio marzo aprile maggio giugno luglio agosto settembre
-bologna milano ravenna ferrara italia italiana italiano europa roma napoli torino firenze venezia emilia romagna""".split())
+bologna milano ravenna ferrara italia italiana italiano europa roma napoli torino firenze venezia emilia romagna
+ideato ideazione biglietti biglietto coreografie coreografia scene scenografia costumi luci musiche drammaturgia produzione coproduzione
+testo testi traduzione adattamento durata info prenota prenotazioni acquista regia con assistente aiuto disegno suono video foto
+librerie libreria coop kollettivo collettivo invisibile""".split())
 RUOLI = [  # (espressione prima dei nomi, prefisso mostrato)
     (r"special guest|guest star|ospite speciale|feat\.?|featuring|ft\.", "con"),
     (r"di e con|scritto e interpretato da|ideato e interpretato da|con la partecipazione di|con la voce di|voce di", "con"),
@@ -43,6 +46,7 @@ def buono(n, titolo):
     if len(w) < 2 or len(w) > 4: return False
     if any(norm(x) in STOP for x in w if not re.fullmatch(PART, x)): return False
     if w[-1].isupper() or any(len(x) == 1 for x in w): return False
+    if len({norm(x) for x in w}) < len(w): return False
     if norm(w[-1]) and norm(w[-1]) in norm(titolo): return False
     return True
 
@@ -75,6 +79,16 @@ def chi(e):
     for n in altri[:1]: parti.append(f"{ruolo[n]} {n}")
     t = ", ".join(parti)
     return t if len(t) <= 80 else t[:80].rsplit(",", 1)[0]
+
+def pulisci(t, titolo=""):
+    """ricontrolla un «chi» già fatto (es. ricavato da una pagina): toglie i nomi non buoni"""
+    out = []
+    for parte in re.split(r",\s*", t or ""):
+        m = re.match(r"^(regia di |dirige |con )?(.*)$", parte.strip()); pre, resto = m.group(1) or "", m.group(2)
+        nomi = [n.strip() for n in re.split(r"\s+(?:e|ed)\s+", resto) if buono(n.strip(), titolo)]
+        if nomi: out.append(pre + " e ".join(nomi))
+    return ", ".join(out)
+
 
 def _leggi(p):
     s = open(p, encoding="utf-8").read(); i, j = s.index("{"), s.rindex("}") + 1

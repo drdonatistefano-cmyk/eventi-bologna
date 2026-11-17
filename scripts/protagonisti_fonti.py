@@ -80,9 +80,15 @@ def main():
     for c in citta:
         p = os.path.join(RADICE, FILE[c]); s = open(p, encoding="utf-8").read()
         i, j = s.index("{"), s.rindex("}") + 1; d = json.loads(s[i:j]); cambiati = 0
+        # una pagina che vale per più spettacoli (pagina iniziale, cartellone) non dice chi va in scena in ciascuno
+        uso = {}
+        for e in d["eventi"]:
+            for x in {e.get("fonte"), e.get("biglietti")}:
+                if x: uso[x] = uso.get(x, 0) + 1
         for e in d["eventi"]:
             if e.get("chi") or e.get("genere") not in GENERI: continue
-            u = next((x for x in (e.get("fonte"), e.get("biglietti"), ) if (x or "").startswith("https://") and not any(m in x for m in MAI)), "")
+            u = next((x for x in (e.get("fonte"), e.get("biglietti"), ) if (x or "").startswith("https://") and not any(m in x for m in MAI)
+                      and uso.get(x, 0) == 1 and len(urlsplit(x).path.strip("/")) > 3), "")
             if not u: continue
             if u not in cache:
                 if letti >= MAX: continue
@@ -92,8 +98,9 @@ def main():
                     cache[u] = dalla_pagina(get(u), e)
                 except Exception as x:
                     cache[u] = ""; print("  non letto", u[:80], x)
-            if cache[u]:
-                e["chi"] = cache[u]; cambiati += 1
+            v = P.pulisci(cache[u], e.get("artista", ""))
+            if v:
+                e["chi"] = v; cambiati += 1
         if cambiati:
             open(p, "w", encoding="utf-8").write(s[:i] + json.dumps(d, ensure_ascii=False, separators=(",", ":")) + s[j:])
         trovati += cambiati
