@@ -249,9 +249,9 @@
      "regia": "Florestano Vancini",
      "biglietti": "https://cinemaboldini.it/programmazione/",
      "interpreti": "Ivo Garrani, Mariano Rigillo, Ilija Dzuvalekovski e Rudolf Kukié",
-     "paese": "Italia",
      "durata": 109,
      "anno": 1972,
+     "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/Bronte%3A_cronaca_di_un_massacro_che_i_libri_di_storia_non_hanno_raccontato"
     },
     {
@@ -425,25 +425,39 @@
      "orari": [],
      "giorni": {
       "2026-11-19": [
+       "18:10",
        "18:15",
+       "20:30",
+       "21:25",
        "21:30"
       ],
       "2026-11-20": [
+       "18:10",
        "18:15",
+       "20:30",
+       "21:25",
        "21:30"
       ],
       "2026-11-21": [
        "15:00",
+       "17:00",
+       "18:05",
        "18:15",
+       "20:30",
+       "21:20",
        "21:30"
       ],
       "2026-11-22": [
        "15:00",
+       "17:00",
+       "18:05",
        "18:15",
+       "20:30",
+       "21:20",
        "21:30"
       ]
      },
-     "versione": "",
+     "versione": "Versione originale (solo ore 18:05, 18:10, 21:20, 21:25)",
      "genere": "",
      "regia": "",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
@@ -934,8 +948,44 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/cinema-teatro-dei-fluttuanti_2743/",
-   "film": [],
-   "auto": true
+   "film": [
+    {
+     "titolo": "Se domani non torno",
+     "orari": [],
+     "giorni": {
+      "2026-11-21": [
+       "21:00"
+      ],
+      "2026-11-22": [
+       "18:00",
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Paola Randi",
+     "biglietti": "https://www.teatrodeifluttuanti.com/film-in-prima-visione-e-per-bambini/",
+     "interpreti": "Tommaso Allione, Tecla Bossi, Sabrina Martina e Filippo Timi",
+     "paese": "Italia",
+     "durata": 107,
+     "anno": 2026
+    },
+    {
+     "titolo": "Taddeo l’esploratore e la lampada magica",
+     "orari": [],
+     "giorni": {
+      "2026-11-22": [
+       "15:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.teatrodeifluttuanti.com/film-in-prima-visione-e-per-bambini/"
+    }
+   ],
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/argenta/cinema/fluttuanti-argenta"
   },
   {
    "id": "c010",
@@ -947,21 +997,25 @@
    "fonte": "https://movieplayer.it/cinema/cinepark-cento_2901/",
    "film": [
     {
-     "titolo": "2001: Odissea nello spazio",
+     "titolo": "2001: Odissea nello Spazio",
      "orari": [
       "18:45"
      ],
-     "versione": "",
-     "genere": "Fantascienza",
-     "regia": "Stanley Kubrick",
-     "interpreti": "Keir Dullea, Gary Lockwood e William Sylvester",
-     "durata": 139,
-     "anno": 1968,
      "giorni": {
       "2026-11-17": [
        "18:45"
+      ],
+      "2026-11-18": [
+       "21:00"
       ]
      },
+     "versione": "",
+     "genere": "Fantascienza",
+     "regia": "Stanley Kubrick",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
+     "interpreti": "Keir Dullea, Gary Lockwood e William Sylvester",
+     "durata": 139,
+     "anno": 1968,
      "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/2001%3A_Odissea_nello_spazio"
     },
@@ -970,35 +1024,38 @@
      "orari": [
       "21:30"
      ],
-     "versione": "",
-     "genere": "Azione, Thriller",
-     "regia": "David Leitch",
-     "interpreti": "Nicholas Hoult, Christian Slater e Zoë Kravitz",
-     "durata": 122,
-     "anno": 2026,
      "giorni": {
       "2026-11-17": [
        "21:30"
+      ],
+      "2026-11-18": [
+       "21:30"
       ]
      },
+     "versione": "",
+     "genere": "Azione, Thriller",
+     "regia": "David Leitch",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
+     "interpreti": "Nicholas Hoult, Christian Slater e Zoë Kravitz",
+     "durata": 122,
+     "anno": 2026,
      "paese": "USA"
     },
     {
      "titolo": "Godzilla Minus Zero",
-     "orari": [
-      "21:15"
-     ],
-     "versione": "",
-     "genere": "Azione, Avventura, Drammatico",
-     "regia": "Takashi Yamazaki",
-     "interpreti": "Minami Hamabe, Ryunosuke Kamiki e Jun Kunimura",
-     "durata": 135,
-     "anno": 2026,
+     "orari": [],
      "giorni": {
-      "2026-11-17": [
+      "2026-11-18": [
        "21:15"
       ]
      },
+     "versione": "",
+     "genere": "Azione, Avventura, Drammatico",
+     "regia": "Takashi Yamazaki",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
+     "interpreti": "Minami Hamabe, Ryunosuke Kamiki e Jun Kunimura",
+     "durata": 135,
+     "anno": 2026,
      "paese": "Giappone",
      "scheda": "https://it.wikipedia.org/wiki/Godzilla_Minus_Zero"
     },
@@ -1007,18 +1064,22 @@
      "orari": [
       "18:45"
      ],
-     "versione": "",
-     "genere": "Animazione",
-     "regia": "Alessandro Carloni e Erica Rivinoja",
-     "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
-     "durata": 107,
-     "anno": 2026,
      "giorni": {
       "2026-11-17": [
        "18:45"
+      ],
+      "2026-11-18": [
+       "18:45"
       ]
      },
+     "versione": "",
+     "genere": "Animazione",
+     "regia": "Alessandro Carloni e Erica Rivinoja",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
+     "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
+     "anno": 2026,
      "paese": "USA",
+     "durata": 107,
      "scheda": "https://it.wikipedia.org/wiki/Il_gatto_col_cappello_%28film%29"
     },
     {
@@ -1027,19 +1088,23 @@
       "19:00",
       "21:15"
      ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Paolo Genovese",
-     "interpreti": "Stefano Accorsi, Emanuela Fanelli e Lino Musella",
-     "durata": 113,
-     "anno": 2026,
      "giorni": {
       "2026-11-17": [
        "19:00",
        "21:15"
+      ],
+      "2026-11-18": [
+       "21:15"
       ]
      },
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Paolo Genovese",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
+     "interpreti": "Stefano Accorsi, Emanuela Fanelli e Lino Musella",
+     "anno": 2026,
      "paese": "Italia",
+     "durata": 113,
      "scheda": "https://it.wikipedia.org/wiki/Il_rumore_delle_cose_nuove"
     },
     {
@@ -1047,37 +1112,48 @@
      "orari": [
       "19:00"
      ],
-     "versione": "",
-     "genere": "Fantastico",
-     "regia": "Wolfgang Petersen",
-     "interpreti": "Barret Oliver, Gerald McRaney e Thomas Hill",
-     "durata": 94,
-     "anno": 1984,
      "giorni": {
       "2026-11-17": [
        "19:00"
+      ],
+      "2026-11-18": [
+       "19:00"
       ]
      },
+     "versione": "",
+     "genere": "Fantastico",
+     "regia": "Wolfgang Petersen",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
+     "interpreti": "Barret Oliver, Gerald McRaney e Thomas Hill",
+     "durata": 94,
+     "anno": 1984,
      "paese": "Germania",
      "scheda": "https://it.wikipedia.org/wiki/La_storia_infinita_%28film%29"
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "19:00"
+      "19:00",
+      "21:00"
      ],
+     "giorni": {
+      "2026-11-17": [
+       "19:00",
+       "21:00"
+      ],
+      "2026-11-18": [
+       "19:00",
+       "21:00"
+      ]
+     },
      "versione": "",
      "genere": "Drammatico, Fantasy",
      "regia": "Ti West",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
      "interpreti": "Johnny Depp, Sam Claflin e Daisy Ridley",
-     "durata": 116,
      "anno": 2026,
-     "giorni": {
-      "2026-11-17": [
-       "19:00"
-      ]
-     },
      "paese": "USA",
+     "durata": 116,
      "scheda": "https://it.wikipedia.org/wiki/Scrooge_e_gli_spiriti_del_Natale"
     },
     {
@@ -1085,36 +1161,41 @@
      "orari": [
       "21:00"
      ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Paola Randi",
-     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
-     "durata": 107,
-     "anno": 2027,
      "giorni": {
       "2026-11-17": [
        "21:00"
+      ],
+      "2026-11-18": [
+       "18:45"
       ]
      },
-     "paese": "Italia"
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Paola Randi",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
+     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
+     "anno": 2027,
+     "paese": "Italia",
+     "durata": 107
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
       "19:00"
      ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Massimiliano Bruno",
-     "interpreti": "Claudia Pandolfi, Pietro Sermonti, Diego Abatantuono e Stefania Sandrelli",
-     "durata": 98,
-     "anno": 2026,
      "giorni": {
       "2026-11-17": [
        "19:00"
       ]
      },
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Massimiliano Bruno",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
+     "anno": 2026,
+     "interpreti": "Claudia Pandolfi, Pietro Sermonti, Diego Abatantuono e Stefania Sandrelli",
      "paese": "Italia",
+     "durata": 98,
      "scheda": "https://it.wikipedia.org/wiki/Un_tranquillo_funerale_di_famiglia"
     },
     {
@@ -1122,18 +1203,23 @@
      "orari": [
       "21:30"
      ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Leonardo Pieraccioni",
-     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio e Herbert Ballerina",
-     "durata": 91,
-     "anno": 2026,
      "giorni": {
       "2026-11-17": [
        "21:30"
+      ],
+      "2026-11-18": [
+       "19:30",
+       "21:30"
       ]
      },
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Leonardo Pieraccioni",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
+     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio e Herbert Ballerina",
+     "anno": 2026,
      "paese": "Italia",
+     "durata": 91,
      "scheda": "https://it.wikipedia.org/wiki/Un_weekend_artificiale"
     },
     {
@@ -1141,22 +1227,27 @@
      "orari": [
       "21:30"
      ],
-     "versione": "",
-     "genere": "Commedia, Drammatico",
-     "regia": "Martin McDonagh",
-     "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
-     "durata": 118,
-     "anno": 2026,
      "giorni": {
       "2026-11-17": [
        "21:30"
+      ],
+      "2026-11-18": [
+       "18:45"
       ]
      },
+     "versione": "",
+     "genere": "Commedia, Drammatico",
+     "regia": "Martin McDonagh",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
+     "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
+     "anno": 2026,
      "paese": "Regno Unito",
+     "durata": 118,
      "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
     }
    ],
-   "auto": true
+   "auto": true,
+   "cinemap": "https://www.cinemap.it/cento/cinema/cinepark-cento"
   },
   {
    "id": "c011",
@@ -1178,6 +1269,357 @@
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/cineplus_420/",
    "film": [],
+   "auto": true
+  },
+  {
+   "id": "c013",
+   "nome": "Cinema Teatro Don Zucchini",
+   "citta": "Cento",
+   "indirizzo": "Via Guercino 19, Cento",
+   "tipo": "Sala di comunità",
+   "sito": "https://www.cinemadonzucchini.it/programmazione/",
+   "fonte": "https://www.cinemap.it/cento/cinema/donzucchini-cento",
+   "cinemap": "https://www.cinemap.it/cento/cinema/donzucchini-cento",
+   "film": [
+    {
+     "titolo": "#SainteJulie",
+     "orari": [],
+     "giorni": {
+      "2026-11-20": [
+       "21:00"
+      ]
+     },
+     "versione": "Versione originale",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.cinemadonzucchini.it/programmazione/"
+    },
+    {
+     "titolo": "Fatherland",
+     "orari": [],
+     "giorni": {
+      "2026-11-21": [
+       "21:00"
+      ],
+      "2026-11-22": [
+       "16:00",
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.cinemadonzucchini.it/programmazione/",
+     "scheda": "https://it.wikipedia.org/wiki/Fatherland_%28film_2026%29"
+    },
+    {
+     "titolo": "Il tempo di Anne",
+     "orari": [],
+     "giorni": {
+      "2026-11-18": [
+       "15:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.cinemadonzucchini.it/programmazione/"
+    },
+    {
+     "titolo": "Odissea",
+     "orari": [
+      "21:00"
+     ],
+     "giorni": {
+      "2026-11-17": [
+       "21:00"
+      ],
+      "2026-11-18": [
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.cinemadonzucchini.it/programmazione/",
+     "scheda": "https://it.wikipedia.org/wiki/Odissea_%28film%29"
+    }
+   ],
+   "auto": true
+  },
+  {
+   "id": "c014",
+   "nome": "Cinepark Comacchio",
+   "citta": "Comacchio",
+   "indirizzo": "Via Valle Isola 1, Comacchio",
+   "tipo": "Sala di comunità",
+   "sito": "https://www.cinepark.it/comacchio/",
+   "fonte": "https://www.cinemap.it/comacchio/cinema/cinepark-comacchio",
+   "cinemap": "https://www.cinemap.it/comacchio/cinema/cinepark-comacchio",
+   "film": [
+    {
+     "titolo": "2001: Odissea nello Spazio",
+     "orari": [
+      "18:45"
+     ],
+     "giorni": {
+      "2026-11-17": [
+       "18:45"
+      ]
+     },
+     "versione": "",
+     "genere": "Fantascienza",
+     "regia": "Stanley Kubrick",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
+     "interpreti": "Keir Dullea, Gary Lockwood, William Sylvester e Daniel Richter",
+     "paese": "USA",
+     "durata": 140,
+     "anno": 1968,
+     "scheda": "https://it.wikipedia.org/wiki/2001%3A_Odissea_nello_spazio"
+    },
+    {
+     "titolo": "Come rapinare una banca",
+     "orari": [
+      "21:30"
+     ],
+     "giorni": {
+      "2026-11-17": [
+       "21:30"
+      ],
+      "2026-11-18": [
+       "21:30"
+      ]
+     },
+     "versione": "",
+     "genere": "Azione, Thriller",
+     "regia": "David Leitch",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
+     "interpreti": "Nicholas Hoult, Christian Slater, Zoë Kravitz e Tati Gabrielle",
+     "paese": "USA",
+     "durata": 122,
+     "anno": 2026
+    },
+    {
+     "titolo": "Godzilla Minus Zero",
+     "orari": [
+      "21:15"
+     ],
+     "giorni": {
+      "2026-11-17": [
+       "21:15"
+      ],
+      "2026-11-18": [
+       "21:15"
+      ]
+     },
+     "versione": "",
+     "genere": "Azione, Avventura, Drammatico",
+     "regia": "Takashi Yamazaki",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
+     "interpreti": "Minami Hamabe, Ryûnosuke Kamiki, Masami Nagasawa e Jun Kunimura",
+     "paese": "Giappone",
+     "durata": 135,
+     "anno": 2026,
+     "scheda": "https://it.wikipedia.org/wiki/Godzilla_Minus_Zero"
+    },
+    {
+     "titolo": "Il gatto col cappello",
+     "orari": [
+      "18:45"
+     ],
+     "giorni": {
+      "2026-11-17": [
+       "18:45"
+      ],
+      "2026-11-18": [
+       "18:45"
+      ]
+     },
+     "versione": "",
+     "genere": "Animazione",
+     "regia": "Alessandro Carloni e Erica Rivinoja",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
+     "interpreti": "Stefano Fresi, Luigi Luciano, Bill Hader e Matt Berry",
+     "paese": "USA",
+     "durata": 107,
+     "anno": 2026,
+     "scheda": "https://it.wikipedia.org/wiki/Il_gatto_col_cappello_%28film%29"
+    },
+    {
+     "titolo": "Il rumore delle cose nuove",
+     "orari": [
+      "21:15"
+     ],
+     "giorni": {
+      "2026-11-17": [
+       "21:15"
+      ],
+      "2026-11-18": [
+       "19:00"
+      ]
+     },
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Paolo Genovese",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
+     "interpreti": "Emanuela Fanelli, Edoardo Pesce, Claudia Pandolfi e Lino Musella",
+     "paese": "Italia",
+     "durata": 113,
+     "anno": 2026,
+     "scheda": "https://it.wikipedia.org/wiki/Il_rumore_delle_cose_nuove"
+    },
+    {
+     "titolo": "La maison des femmes - La casa delle donne",
+     "orari": [],
+     "giorni": {
+      "2026-11-18": [
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106"
+    },
+    {
+     "titolo": "La storia infinita",
+     "orari": [
+      "19:00"
+     ],
+     "giorni": {
+      "2026-11-17": [
+       "19:00"
+      ],
+      "2026-11-18": [
+       "19:00"
+      ]
+     },
+     "versione": "",
+     "genere": "Fantastico",
+     "regia": "Wolfgang Petersen",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
+     "interpreti": "Barret Oliver, Noah Hathaway, Tami Stronach e Gerald McRaney",
+     "paese": "Germania",
+     "durata": 92,
+     "anno": 1984,
+     "scheda": "https://it.wikipedia.org/wiki/La_storia_infinita_%28film%29"
+    },
+    {
+     "titolo": "Scrooge e gli spiriti del Natale",
+     "orari": [
+      "19:00",
+      "21:15"
+     ],
+     "giorni": {
+      "2026-11-17": [
+       "19:00",
+       "21:15"
+      ],
+      "2026-11-18": [
+       "19:00",
+       "21:15"
+      ]
+     },
+     "versione": "",
+     "genere": "Drammatico, Fantasy",
+     "regia": "Ti West",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
+     "interpreti": "Johnny Depp, Ian McKellen, Sam Claflin e Arthur Conti",
+     "paese": "USA",
+     "durata": 116,
+     "anno": 2026,
+     "scheda": "https://it.wikipedia.org/wiki/Scrooge_e_gli_spiriti_del_Natale"
+    },
+    {
+     "titolo": "Se domani non torno",
+     "orari": [
+      "21:00"
+     ],
+     "giorni": {
+      "2026-11-17": [
+       "21:00"
+      ],
+      "2026-11-18": [
+       "18:45"
+      ]
+     },
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Paola Randi",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
+     "interpreti": "Tommaso Allione, Tecla Bossi, Sabrina Martina e Filippo Timi",
+     "paese": "Italia",
+     "durata": 107,
+     "anno": 2026
+    },
+    {
+     "titolo": "Un tranquillo funerale di famiglia",
+     "orari": [
+      "19:00"
+     ],
+     "giorni": {
+      "2026-11-17": [
+       "19:00"
+      ]
+     },
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Massimiliano Bruno",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
+     "interpreti": "Claudia Pandolfi, Pietro Sermonti, Diego Abatantuono e Stefania Sandrelli",
+     "paese": "Italia",
+     "durata": 98,
+     "anno": 2026,
+     "scheda": "https://it.wikipedia.org/wiki/Un_tranquillo_funerale_di_famiglia"
+    },
+    {
+     "titolo": "Un weekend artificiale",
+     "orari": [
+      "21:30"
+     ],
+     "giorni": {
+      "2026-11-17": [
+       "21:30"
+      ],
+      "2026-11-18": [
+       "19:30",
+       "21:30"
+      ]
+     },
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Leonardo Pieraccioni",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
+     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio, Luigi Luciano e Massimo Ceccherini",
+     "paese": "Italia",
+     "durata": 91,
+     "anno": 2026,
+     "scheda": "https://it.wikipedia.org/wiki/Un_weekend_artificiale"
+    },
+    {
+     "titolo": "Wild Horse Nine",
+     "orari": [
+      "19:00"
+     ],
+     "giorni": {
+      "2026-11-17": [
+       "19:00"
+      ],
+      "2026-11-18": [
+       "21:30"
+      ]
+     },
+     "versione": "",
+     "genere": "Commedia, Drammatico",
+     "regia": "Martin McDonagh",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
+     "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
+     "paese": "Regno Unito",
+     "durata": 118,
+     "anno": 2026,
+     "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
+    }
+   ],
    "auto": true
   }
  ],

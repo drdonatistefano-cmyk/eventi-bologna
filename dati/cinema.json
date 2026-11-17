@@ -70,9 +70,21 @@
       ],
       "2026-11-18": [
        "19:05"
+      ],
+      "2026-11-19": [
+       "21:30"
+      ],
+      "2026-11-20": [
+       "19:00"
+      ],
+      "2026-11-21": [
+       "16:45"
+      ],
+      "2026-11-22": [
+       "21:30"
       ]
      },
-     "versione": "Versione originale (solo ore 19:05)",
+     "versione": "Versione originale (solo ore 19:00, 19:05, 21:30)",
      "genere": "Azione, Avventura, Drammatico",
      "regia": "Takashi Yamazaki",
      "biglietti": "https://arlecchino.popupcinema.18tickets.it/film/129012",
@@ -111,6 +123,9 @@
      "giorni": {
       "2026-11-18": [
        "17:30"
+      ],
+      "2026-11-19": [
+       "17:10"
       ]
      },
      "versione": "",
@@ -118,6 +133,31 @@
      "regia": "",
      "biglietti": "https://arlecchino.popupcinema.18tickets.it/film/122645",
      "scheda": "https://it.wikipedia.org/wiki/It_Ends"
+    },
+    {
+     "titolo": "La ballata del re delle api",
+     "orari": [],
+     "giorni": {
+      "2026-11-20": [
+       "16:30",
+       "21:30"
+      ],
+      "2026-11-21": [
+       "14:10",
+       "19:10",
+       "21:45"
+      ],
+      "2026-11-22": [
+       "14:00",
+       "16:30",
+       "19:00"
+      ]
+     },
+     "versione": "Versione originale (solo ore 14:00, 19:10, 21:30)",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://arlecchino.popupcinema.18tickets.it/film/130962",
+     "scheda": "https://it.wikipedia.org/wiki/La_ballata_del_re_delle_api"
     },
     {
      "titolo": "Primetime",
@@ -130,9 +170,13 @@
       ],
       "2026-11-18": [
        "21:30"
+      ],
+      "2026-11-19": [
+       "15:00",
+       "19:15"
       ]
      },
-     "versione": "",
+     "versione": "Versione originale (solo ore 19:15)",
      "genere": "Drammatico",
      "regia": "Drammatico e USA e 2026",
      "biglietti": "https://arlecchino.popupcinema.18tickets.it/film/116538",
@@ -202,12 +246,29 @@
      "giorni": {
       "2026-11-18": [
        "21:00"
+      ],
+      "2026-11-19": [
+       "21:00"
+      ],
+      "2026-11-20": [
+       "18:15",
+       "21:00"
+      ],
+      "2026-11-21": [
+       "15:30",
+       "18:15",
+       "21:00"
+      ],
+      "2026-11-22": [
+       "15:30",
+       "18:15",
+       "21:00"
       ]
      },
-     "versione": "",
+     "versione": "Versione originale (solo ore 21:00)",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
-     "biglietti": "https://ticket.cinebot.it/bellinzona/evento/2214_wild-horse-nine",
+     "biglietti": "https://ticket.cinebot.it/bellinzona/titolo/285_wild-horse-nine",
      "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
      "paese": "Regno Unito",
      "durata": 118,
@@ -471,6 +532,18 @@
       ],
       "2026-11-18": [
        "15:30"
+      ],
+      "2026-11-20": [
+       "14:30",
+       "19:00"
+      ],
+      "2026-11-21": [
+       "14:30",
+       "21:30"
+      ],
+      "2026-11-22": [
+       "14:45",
+       "19:15"
       ]
      },
      "versione": "",
@@ -491,6 +564,7 @@
        "20:30"
       ],
       "2026-11-19": [
+       "15:30",
        "19:00",
        "21:30"
       ]
@@ -512,6 +586,16 @@
       ],
       "2026-11-18": [
        "17:45"
+      ],
+      "2026-11-20": [
+       "16:45",
+       "21:15"
+      ],
+      "2026-11-21": [
+       "19:20"
+      ],
+      "2026-11-22": [
+       "17:00"
       ]
      },
      "versione": "",
@@ -522,6 +606,34 @@
      "paese": "Italia",
      "durata": 107,
      "anno": 2026
+    },
+    {
+     "titolo": "Wildwood - I segreti del bosco proibito",
+     "orari": [],
+     "giorni": {
+      "2026-11-21": [
+       "16:45"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://jolly.popupcinema.18tickets.it/film/122643",
+     "scheda": "https://it.wikipedia.org/wiki/Wildwood_-_I_segreti_del_bosco_proibito"
+    },
+    {
+     "titolo": "Wildwood",
+     "orari": [],
+     "giorni": {
+      "2026-11-22": [
+       "21:30"
+      ]
+     },
+     "versione": "Versione originale",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://jolly.popupcinema.18tickets.it/film/122644",
+     "scheda": "https://it.wikipedia.org/wiki/Wildwood"
     }
    ],
    "biglietti": "https://jolly.popupcinema.18tickets.it/",
@@ -536,6 +648,33 @@
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/medica-palace-cinema-teatro_201/",
    "film": [
+    {
+     "titolo": "Hunger Games - L'alba sulla mietitura",
+     "orari": [],
+     "giorni": {
+      "2026-11-19": [
+       "15:30",
+       "21:00"
+      ],
+      "2026-11-20": [
+       "15:30",
+       "21:00"
+      ],
+      "2026-11-21": [
+       "16:30",
+       "22:00"
+      ],
+      "2026-11-22": [
+       "15:30",
+       "21:00"
+      ]
+     },
+     "versione": "Versione originale (solo ore 15:30, 21:00, 22:00)",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://medica.popupcinema.18tickets.it/film/131058",
+     "scheda": "https://it.wikipedia.org/wiki/Hunger_Games_-_L%27alba_sulla_mietitura"
+    },
     {
      "titolo": "Wild Horse Nine",
      "orari": [
@@ -553,9 +692,23 @@
        "16:15",
        "19:00",
        "21:30"
+      ],
+      "2026-11-19": [
+       "18:30"
+      ],
+      "2026-11-20": [
+       "18:30"
+      ],
+      "2026-11-21": [
+       "14:00",
+       "19:30"
+      ],
+      "2026-11-22": [
+       "10:30",
+       "18:30"
       ]
      },
-     "versione": "Versione originale (solo ore 19:00, 21:30)",
+     "versione": "Versione originale (solo ore 19:00, 19:30, 21:30)",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "biglietti": "https://medica.popupcinema.18tickets.it/film/124755",
@@ -651,7 +804,7 @@
      "versione": "",
      "genere": "Commedia",
      "regia": "Paolo Genovese",
-     "biglietti": "https://odeon.ccb.18tickets.it/film/128947",
+     "biglietti": "https://odeon.ccb.circuitocinemabologna.it/film/128947",
      "interpreti": "Stefano Accorsi, Emanuela Fanelli e Lino Musella",
      "anno": 2026,
      "paese": "Italia",
@@ -821,7 +974,7 @@
      "versione": "",
      "genere": "Drammatico",
      "regia": "Ang Lee",
-     "biglietti": "https://odeon.ccb.18tickets.it/film/118650",
+     "biglietti": "https://odeon.ccb.circuitocinemabologna.it/film/118650",
      "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
      "durata": 136,
      "anno": 1995,
@@ -844,7 +997,7 @@
      "versione": "",
      "genere": "Commedia",
      "regia": "Massimiliano Bruno",
-     "biglietti": "https://odeon.ccb.18tickets.it/film/118652",
+     "biglietti": "https://odeon.ccb.circuitocinemabologna.it/film/118652",
      "anno": 2026,
      "interpreti": "Claudia Pandolfi, Pietro Sermonti, Diego Abatantuono e Stefania Sandrelli",
      "paese": "Italia",
@@ -973,6 +1126,20 @@
      "giorni": {
       "2026-11-18": [
        "21:00"
+      ],
+      "2026-11-19": [
+       "21:00"
+      ],
+      "2026-11-20": [
+       "18:45"
+      ],
+      "2026-11-21": [
+       "14:30",
+       "19:00"
+      ],
+      "2026-11-22": [
+       "14:30",
+       "19:00"
       ]
      },
      "versione": "",
@@ -991,6 +1158,20 @@
      "giorni": {
       "2026-11-18": [
        "18:45"
+      ],
+      "2026-11-19": [
+       "18:45"
+      ],
+      "2026-11-20": [
+       "21:00"
+      ],
+      "2026-11-21": [
+       "16:45",
+       "21:15"
+      ],
+      "2026-11-22": [
+       "16:45",
+       "21:15"
       ]
      },
      "versione": "",
@@ -1037,7 +1218,7 @@
      "versione": "Versione originale (solo ore 21:00)",
      "genere": "Drammatico, Thriller",
      "regia": "Andrey Zvyagintsev",
-     "biglietti": "https://rialto.ccb.18tickets.it/film/118654",
+     "biglietti": "https://rialto.ccb.circuitocinemabologna.it/film/118654",
      "anno": 2026,
      "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
      "paese": "Francia",
@@ -1066,7 +1247,7 @@
      "versione": "Versione originale (solo ore 21:15)",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
-     "biglietti": "https://rialto.ccb.18tickets.it/film/118653",
+     "biglietti": "https://rialto.ccb.circuitocinemabologna.it/film/118653",
      "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
      "anno": 2026,
      "paese": "Regno Unito",
@@ -1108,7 +1289,7 @@
      "versione": "Versione originale (solo ore 21:00)",
      "genere": "Drammatico",
      "regia": "Kore-eda",
-     "biglietti": "https://roma.ccb.circuitocinemabologna.it/film/125085",
+     "biglietti": "https://roma.ccb.18tickets.it/film/125085",
      "anno": 2026,
      "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
      "paese": "Giappone",
@@ -1609,36 +1790,6 @@
    "fonte": "https://europa-cinemas.org/en/portraits/cinema-lumière-Bologna",
    "film": [
     {
-     "titolo": "Look Back",
-     "orari": [
-      "17:30",
-      "19:45",
-      "22:00"
-     ],
-     "versione": "Versione originale in giapponese con sottotitoli in italiano",
-     "genere": "Drammatico",
-     "regia": "Hirokazu Koreeda",
-     "paese": "Giappone",
-     "anno": 2026,
-     "durata": 100,
-     "giorni": {
-      "2026-11-17": [
-       "17:30",
-       "19:45",
-       "22:00"
-      ],
-      "2026-11-18": [
-       "10:00",
-       "17:30",
-       "19:45",
-       "22:00"
-      ]
-     },
-     "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
-     "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29",
-     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/105713"
-    },
-    {
      "titolo": "Wild Horse Nine",
      "orari": [
       "17:45",
@@ -1661,11 +1812,92 @@
        "17:45",
        "20:00",
        "22:15"
+      ],
+      "2026-11-19": [
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-20": [
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-21": [
+       "15:30",
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-22": [
+       "11:00",
+       "15:30",
+       "17:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-23": [
+       "15:45",
+       "20:00",
+       "22:15"
+      ],
+      "2026-11-24": [
+       "17:45",
+       "20:00",
+       "22:15"
       ]
      },
      "interpreti": "Sam Rockwell, John Malkovich e Steve Buscemi",
      "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine",
      "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/100367"
+    },
+    {
+     "titolo": "Look Back",
+     "orari": [
+      "19:45",
+      "22:00"
+     ],
+     "versione": "Versione originale in giapponese con sottotitoli in italiano",
+     "genere": "Drammatico",
+     "regia": "Hirokazu Koreeda",
+     "paese": "Giappone",
+     "anno": 2026,
+     "durata": 100,
+     "giorni": {
+      "2026-11-17": [
+       "19:45",
+       "22:00"
+      ],
+      "2026-11-18": [
+       "10:00",
+       "17:30",
+       "19:45",
+       "22:00"
+      ],
+      "2026-11-19": [
+       "15:45"
+      ],
+      "2026-11-20": [
+       "15:30",
+       "20:00"
+      ],
+      "2026-11-21": [
+       "17:15",
+       "21:30"
+      ],
+      "2026-11-22": [
+       "17:15",
+       "21:30"
+      ],
+      "2026-11-23": [
+       "18:00"
+      ],
+      "2026-11-24": [
+       "15:45"
+      ]
+     },
+     "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
+     "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/105713"
     },
     {
      "titolo": "La Gradiva",
@@ -1703,6 +1935,80 @@
      "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
      "scheda": "https://it.wikipedia.org/wiki/Hope_%28film_2026%29",
      "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/101225"
+    },
+    {
+     "titolo": "Fjord",
+     "orari": [],
+     "versione": "Versione originale in inglese, rumeno, svedese, norvegese e finlandese con sottotitoli in italiano",
+     "genere": "",
+     "regia": "Cristian Mungiu",
+     "paese": "Norvegia-Romania-Svezia-Finlandia-Danimarca-Francia",
+     "anno": 2026,
+     "durata": 146,
+     "giorni": {
+      "2026-11-19": [
+       "16:00",
+       "21:30"
+      ],
+      "2026-11-20": [
+       "17:15",
+       "22:00"
+      ],
+      "2026-11-21": [
+       "16:15",
+       "19:15",
+       "22:00"
+      ],
+      "2026-11-22": [
+       "10:30",
+       "16:15",
+       "19:15",
+       "22:00"
+      ],
+      "2026-11-23": [
+       "18:45",
+       "21:30"
+      ],
+      "2026-11-24": [
+       "16:00",
+       "21:30"
+      ]
+     },
+     "scheda": "https://it.wikipedia.org/wiki/Fjord_%28film%29",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/101656"
+    },
+    {
+     "titolo": "Minotaur",
+     "orari": [],
+     "versione": "Versione originale in russo con sottotitoli in italiano",
+     "genere": "Drammatico, Thriller",
+     "regia": "Andrey Zvyagintsev",
+     "paese": "Francia-Germania-Lettonia",
+     "anno": 2026,
+     "durata": 135,
+     "giorni": {
+      "2026-11-19": [
+       "18:45"
+      ],
+      "2026-11-20": [
+       "17:30"
+      ],
+      "2026-11-21": [
+       "19:00"
+      ],
+      "2026-11-22": [
+       "19:00"
+      ],
+      "2026-11-23": [
+       "16:15"
+      ],
+      "2026-11-24": [
+       "18:45"
+      ]
+     },
+     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
+     "scheda": "https://it.wikipedia.org/wiki/Minotaur",
+     "biglietti": "https://lumiere.cinetecabologna.18tickets.it/film/103271"
     },
     {
      "titolo": "Controcampo | Rassegna di cortometraggi animati",
@@ -1761,82 +2067,6 @@
    "sito": "https://cinetecadibologna.it/programmazione/film-in-programma/",
    "fonte": "https://www.bolognawelcome.com/it/luoghi/cinema-e-teatri/cinema-modernissimo",
    "film": [
-    {
-     "titolo": "Rosemary’s Baby",
-     "orari": [
-      "10:30"
-     ],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "Fantastico",
-     "regia": "Roman Polanski",
-     "paese": "USA",
-     "anno": 1968,
-     "durata": 136,
-     "giorni": {
-      "2026-11-17": [
-       "10:30"
-      ]
-     },
-     "interpreti": "Mia Farrow, John Cassavetes, Ruth Gordon e Sidney Blackmer",
-     "scheda": "https://it.wikipedia.org/wiki/Rosemary%27s_Baby",
-     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101159"
-    },
-    {
-     "titolo": "Chi legge? Viaggio lungo il Tirreno",
-     "orari": [
-      "13:00"
-     ],
-     "versione": "Film in lingua italiana",
-     "genere": "",
-     "regia": "Mario Soldati",
-     "paese": "Italia",
-     "anno": 1960,
-     "durata": 25,
-     "giorni": {
-      "2026-11-17": [
-       "13:00"
-      ]
-     }
-    },
-    {
-     "titolo": "Fare cinema a Bologna e in Emilia-Romagna / Visioni Italiane",
-     "orari": [
-      "15:00"
-     ],
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "paese": "",
-     "anno": null,
-     "durata": null,
-     "giorni": {
-      "2026-11-17": [
-       "15:00"
-      ],
-      "2026-11-19": [
-       "20:00"
-      ]
-     },
-     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/105912"
-    },
-    {
-     "titolo": "Fare cinema a Bologna e in Emilia-Romagna",
-     "orari": [
-      "17:00"
-     ],
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "paese": "",
-     "anno": null,
-     "durata": null,
-     "giorni": {
-      "2026-11-17": [
-       "17:00"
-      ]
-     },
-     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/105912"
-    },
     {
      "titolo": "Premio Gianandrea Mutti – Il cinema migrante",
      "orari": [
@@ -1988,6 +2218,22 @@
       ]
      },
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/106142"
+    },
+    {
+     "titolo": "Fare cinema a Bologna e in Emilia-Romagna / Visioni Italiane",
+     "orari": [],
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "paese": "",
+     "anno": null,
+     "durata": null,
+     "giorni": {
+      "2026-11-19": [
+       "20:00"
+      ]
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/106175"
     },
     {
      "titolo": "Talk con Davide Monteleone – Fotografia, ricerca e narrazione",
@@ -2314,7 +2560,7 @@
     {
      "titolo": "I Swear",
      "orari": [],
-     "versione": "Film in lingua italiana",
+     "versione": "Versione originale in inglese",
      "genere": "",
      "regia": "Kirk Jones",
      "paese": "GB",
@@ -2341,26 +2587,6 @@
    "fonte": "https://cinetecadibologna.it/programmazione/",
    "film": [
     {
-     "titolo": "La Gradiva",
-     "orari": [
-      "16:00"
-     ],
-     "versione": "Versione originale in italiano e francese con sottotitoli in italiano",
-     "genere": "Drammatico",
-     "regia": "Marine Atlan",
-     "paese": "Francia-Italia",
-     "anno": 2026,
-     "durata": 145,
-     "giorni": {
-      "2026-11-17": [
-       "16:00"
-      ]
-     },
-     "interpreti": "Colas Quignard, Suzanne Gerin, Mitia Capellier e Antonia Buresi",
-     "scheda": "https://it.wikipedia.org/wiki/La_Gradiva",
-     "biglietti": "https://cervi.cinetecabologna.18tickets.it/film/96935"
-    },
-    {
      "titolo": "Hope",
      "orari": [
       "18:45"
@@ -2377,8 +2603,7 @@
       ]
      },
      "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
-     "scheda": "https://it.wikipedia.org/wiki/Hope_%28film_2026%29",
-     "biglietti": "https://cervi.cinetecabologna.18tickets.it/film/101225"
+     "scheda": "https://it.wikipedia.org/wiki/Hope_%28film_2026%29"
     },
     {
      "titolo": "Minotaur",
@@ -2416,11 +2641,71 @@
      "giorni": {
       "2026-11-18": [
        "19:45"
+      ],
+      "2026-11-19": [
+       "20:15"
+      ],
+      "2026-11-20": [
+       "18:15",
+       "20:00"
+      ],
+      "2026-11-21": [
+       "20:15"
+      ],
+      "2026-11-22": [
+       "18:15",
+       "20:00"
+      ],
+      "2026-11-23": [
+       "18:15",
+       "20:00"
+      ],
+      "2026-11-24": [
+       "18:15",
+       "20:00"
       ]
      },
      "interpreti": "Sandra Hüller",
      "scheda": "https://it.wikipedia.org/wiki/Fatherland_%28film_2026%29",
      "biglietti": "https://cervi.cinetecabologna.18tickets.it/film/92249"
+    },
+    {
+     "titolo": "La Gradiva",
+     "orari": [],
+     "versione": "Versione originale in italiano e francese con sottotitoli in italiano",
+     "genere": "Drammatico",
+     "regia": "Marine Atlan",
+     "paese": "Francia-Italia",
+     "anno": 2026,
+     "durata": 145,
+     "giorni": {
+      "2026-11-19": [
+       "17:30"
+      ],
+      "2026-11-20": [
+       "15:30",
+       "21:30"
+      ],
+      "2026-11-21": [
+       "17:30",
+       "21:45"
+      ],
+      "2026-11-22": [
+       "15:30",
+       "21:30"
+      ],
+      "2026-11-23": [
+       "15:30",
+       "21:30"
+      ],
+      "2026-11-24": [
+       "15:30",
+       "21:30"
+      ]
+     },
+     "interpreti": "Colas Quignard, Suzanne Gerin, Mitia Capellier e Antonia Buresi",
+     "scheda": "https://it.wikipedia.org/wiki/La_Gradiva",
+     "biglietti": "https://cervi.cinetecabologna.18tickets.it/film/96935"
     },
     {
      "titolo": "Produrre cinema indipendente, malgrado tutto",
@@ -3381,9 +3666,9 @@
      "genere": "Documentario",
      "regia": "Rosy Battaglia",
      "biglietti": "https://www.cinemateatrogalliera.it/programmazione/",
-     "paese": "Italia",
      "durata": 100,
-     "anno": 2025
+     "anno": 2025,
+     "paese": "Italia"
     },
     {
      "titolo": "Un giorno senza donne",
@@ -3403,9 +3688,9 @@
      "regia": "Pamela Hogan",
      "biglietti": "https://www.cinemateatrogalliera.it/programmazione/",
      "interpreti": "Vigdís Finnbogadóttir",
-     "paese": "Islanda",
      "durata": 70,
-     "anno": 2024
+     "anno": 2024,
+     "paese": "Islanda"
     },
     {
      "titolo": "Wax & Gold",
@@ -3492,26 +3777,6 @@
    "cinemap": "https://www.cinemap.it/bologna/cinema/cervi-bologna",
    "film": [
     {
-     "titolo": "La Gradiva",
-     "orari": [
-      "16:00"
-     ],
-     "versione": "Versione originale in italiano e francese con sottotitoli in italiano",
-     "genere": "Drammatico",
-     "regia": "Marine Atlan",
-     "paese": "Francia-Italia",
-     "anno": 2026,
-     "durata": 145,
-     "giorni": {
-      "2026-11-17": [
-       "16:00"
-      ]
-     },
-     "interpreti": "Colas Quignard, Suzanne Gerin, Mitia Capellier e Antonia Buresi",
-     "scheda": "https://it.wikipedia.org/wiki/La_Gradiva",
-     "biglietti": "https://cervi.cinetecabologna.18tickets.it/film/96935"
-    },
-    {
      "titolo": "Hope",
      "orari": [
       "18:45"
@@ -3528,8 +3793,7 @@
       ]
      },
      "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
-     "scheda": "https://it.wikipedia.org/wiki/Hope_%28film_2026%29",
-     "biglietti": "https://cervi.cinetecabologna.18tickets.it/film/101225"
+     "scheda": "https://it.wikipedia.org/wiki/Hope_%28film_2026%29"
     },
     {
      "titolo": "Minotaur",
@@ -3567,11 +3831,71 @@
      "giorni": {
       "2026-11-18": [
        "19:45"
+      ],
+      "2026-11-19": [
+       "20:15"
+      ],
+      "2026-11-20": [
+       "18:15",
+       "20:00"
+      ],
+      "2026-11-21": [
+       "20:15"
+      ],
+      "2026-11-22": [
+       "18:15",
+       "20:00"
+      ],
+      "2026-11-23": [
+       "18:15",
+       "20:00"
+      ],
+      "2026-11-24": [
+       "18:15",
+       "20:00"
       ]
      },
      "interpreti": "Sandra Hüller",
      "scheda": "https://it.wikipedia.org/wiki/Fatherland_%28film_2026%29",
      "biglietti": "https://cervi.cinetecabologna.18tickets.it/film/92249"
+    },
+    {
+     "titolo": "La Gradiva",
+     "orari": [],
+     "versione": "Versione originale in italiano e francese con sottotitoli in italiano",
+     "genere": "Drammatico",
+     "regia": "Marine Atlan",
+     "paese": "Francia-Italia",
+     "anno": 2026,
+     "durata": 145,
+     "giorni": {
+      "2026-11-19": [
+       "17:30"
+      ],
+      "2026-11-20": [
+       "15:30",
+       "21:30"
+      ],
+      "2026-11-21": [
+       "17:30",
+       "21:45"
+      ],
+      "2026-11-22": [
+       "15:30",
+       "21:30"
+      ],
+      "2026-11-23": [
+       "15:30",
+       "21:30"
+      ],
+      "2026-11-24": [
+       "15:30",
+       "21:30"
+      ]
+     },
+     "interpreti": "Colas Quignard, Suzanne Gerin, Mitia Capellier e Antonia Buresi",
+     "scheda": "https://it.wikipedia.org/wiki/La_Gradiva",
+     "biglietti": "https://cervi.cinetecabologna.18tickets.it/film/96935"
     },
     {
      "titolo": "Produrre cinema indipendente, malgrado tutto",
@@ -3724,82 +4048,6 @@
    "cinemap": "https://www.cinemap.it/bologna/cinema/modernissimo-bologna",
    "film": [
     {
-     "titolo": "Rosemary’s Baby",
-     "orari": [
-      "10:30"
-     ],
-     "versione": "Versione originale in inglese con sottotitoli in italiano",
-     "genere": "Fantastico",
-     "regia": "Roman Polanski",
-     "paese": "USA",
-     "anno": 1968,
-     "durata": 136,
-     "giorni": {
-      "2026-11-17": [
-       "10:30"
-      ]
-     },
-     "interpreti": "Mia Farrow, John Cassavetes, Ruth Gordon e Sidney Blackmer",
-     "scheda": "https://it.wikipedia.org/wiki/Rosemary%27s_Baby",
-     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/101159"
-    },
-    {
-     "titolo": "Chi legge? Viaggio lungo il Tirreno",
-     "orari": [
-      "13:00"
-     ],
-     "versione": "Film in lingua italiana",
-     "genere": "",
-     "regia": "Mario Soldati",
-     "paese": "Italia",
-     "anno": 1960,
-     "durata": 25,
-     "giorni": {
-      "2026-11-17": [
-       "13:00"
-      ]
-     }
-    },
-    {
-     "titolo": "Fare cinema a Bologna e in Emilia-Romagna / Visioni Italiane",
-     "orari": [
-      "15:00"
-     ],
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "paese": "",
-     "anno": null,
-     "durata": null,
-     "giorni": {
-      "2026-11-17": [
-       "15:00"
-      ],
-      "2026-11-19": [
-       "20:00"
-      ]
-     },
-     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/105912"
-    },
-    {
-     "titolo": "Fare cinema a Bologna e in Emilia-Romagna",
-     "orari": [
-      "17:00"
-     ],
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "paese": "",
-     "anno": null,
-     "durata": null,
-     "giorni": {
-      "2026-11-17": [
-       "17:00"
-      ]
-     },
-     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/105912"
-    },
-    {
      "titolo": "Premio Gianandrea Mutti – Il cinema migrante",
      "orari": [
       "18:30"
@@ -3950,6 +4198,22 @@
       ]
      },
      "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/106142"
+    },
+    {
+     "titolo": "Fare cinema a Bologna e in Emilia-Romagna / Visioni Italiane",
+     "orari": [],
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "paese": "",
+     "anno": null,
+     "durata": null,
+     "giorni": {
+      "2026-11-19": [
+       "20:00"
+      ]
+     },
+     "biglietti": "https://modernissimo.cinetecabologna.18tickets.it/film/106175"
     },
     {
      "titolo": "Talk con Davide Monteleone – Fotografia, ricerca e narrazione",
@@ -4276,7 +4540,7 @@
     {
      "titolo": "I Swear",
      "orari": [],
-     "versione": "Film in lingua italiana",
+     "versione": "Versione originale in inglese",
      "genere": "",
      "regia": "Kirk Jones",
      "paese": "GB",

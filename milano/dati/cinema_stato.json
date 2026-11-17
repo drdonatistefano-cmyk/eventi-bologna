@@ -1,13 +1,28 @@
 {
- "quando": "2026-11-17T10:42+01:00",
+ "quando": "2026-11-17T19:10+01:00",
  "giorno": "2026-11-17",
  "ok": true,
- "film": 117,
- "sale_con_film": 35,
- "pagine_lette": 49,
+ "film": 125,
+ "sale_con_film": 44,
+ "pagine_lette": 53,
  "pagine_fallite": [],
  "note": [
-  "mymovies: 51 schede, 248 film abbinati",
-  "wikipedia: 242 film con la voce, 7 ricerche nuove"
+  "scoperta pioltello: <urlopen error [Errno 104] Connection reset by peer>",
+  "cinemap abbinato a Cinema auditorium comunale - cin&città",
+  "cinemap abbinato a Cinema Arese",
+  "cinemap abbinato a Cinema Rondinella",
+  "sala nuova da cinemap: CineTeatro Pax (Cinisello Balsamo)",
+  "sala nuova da cinemap: Cineteatro Via Volta - Peppino Impastato (Cologno Monzese)",
+  "cinemap abbinato a Cinema Sala Ratti",
+  "sala nuova da cinemap: UCI Cinemas Milano Fiori (Assago)",
+  "cinemap abbinato a Cinema The Space Cinema Multisala Rozzano",
+  "cinemap abbinato a Cinema Multisala Troisi",
+  "cinemap abbinato a Cinema Multisala Movie Planet",
+  "sala nuova da cinemap: SanFeliCinema (Segrate)",
+  "cinemap abbinato a UCI Cinemas Pioltello",
+  "cinemap abbinato a Cinema Agora'",
+  "sale nuove trovate: 4",
+  "mymovies: 51 schede, 295 film abbinati",
+  "wikipedia: 296 film con la voce, 10 ricerche nuove"
  ]
 }
