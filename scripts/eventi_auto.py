@@ -428,6 +428,9 @@ def siti_locali():
             elif re.search(r"\bdj\b|dj set|party|clubbing|\bnight\b|serata", low) and c.get("genere") != "Teatro": g, t = "Serate e club", "Serata"
             elif re.search(r"danza|balletto|dance company", low) and c.get("genere") == "Teatro": g, t = "Teatro", "Danza"
             elif re.search(r"\bopera\b|lirica", low) and c.get("genere") in ("Teatro", "Classica"): g, t = "Teatro", "Opera"
+            elif c.get("misto") and re.search(r"musical", low): g, t = "Teatro", "Musical"
+            elif c.get("misto") and re.search(r"pianofort|violin|violoncell|orchestra|filarmonic|quartett|\btrio\b|ensemble|sinfoni|concerto|musicisti|academy|conservatorio", low): g, t = "Classica", TIPO_G.get("Classica", "")
+            elif c.get("misto") and re.search(r"pink floyd|tribute|queen|beatles|rock", low): g, t = "Rock", TIPO_G.get("Rock", "")
             elif c.get("genere"): g = c["genere"]; t = c.get("tipo") or TIPO_G.get(g, "")
             elif (e["ora"] or "") >= "23:00": g, t = "Serate e club", "Serata"
             else: g = genere_mb(e["titolo"]) or "Pop e altra musica"; t = TIPO_G[g]

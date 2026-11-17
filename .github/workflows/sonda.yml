@@ -1,0 +1,15 @@
+name: Sonda (prove temporanee)
+# Regola 9: ogni comando chiude con «|| true» e il lavoro non fallisce mai. Da togliere a prove finite.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -u scripts/locali_sito.py --prova ra Alighieri 2>&1 | tail -40 || true
+      - run: python3 -u scripts/locali_sito.py --prova ra Bronson 2>&1 | tail -25 || true
