@@ -345,6 +345,14 @@ main{min-width:0;padding-bottom:90px}
 @media(min-width:760px){.cards{grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}}
 /* schede compatte: un tocco apre la scheda completa */
 .card.mini{cursor:pointer;padding:12px 14px 11px 17px;gap:0}
+.mhit{margin-top:3px;font-size:14px;line-height:1.3;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mhit b{color:var(--ink);font-weight:600}
+.qsug{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:60;background:var(--paper);border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 28px rgba(0,0,0,.14);padding:6px;max-height:320px;overflow:auto}
+.qsug[hidden]{display:none}
+.qsug button{display:flex;width:100%;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border:0;background:none;border-radius:9px;font:inherit;font-size:15px;color:var(--ink);text-align:left;cursor:pointer}
+.qsug button:hover,.qsug button:focus{background:var(--chip,#f1ece2);outline:none}
+.qsug button small{color:var(--mute);font-size:12.5px;white-space:nowrap}
+.qsug .qsh{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);padding:6px 12px 2px}
 .card.mini .title{font-size:1.18rem;line-height:1.2;margin-top:1px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .card.mini:focus-visible{outline:2px solid var(--terra);outline-offset:2px}
 @media(hover:hover){.card.mini:hover{border-color:color-mix(in srgb,var(--g) 45%,var(--line));transform:translateY(-1px)}}
@@ -665,6 +673,7 @@ footer{padding:0 0 40px;color:var(--faint);font-size:12.5px;text-align:center}.f
    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
    <input type="search" id="q" placeholder="Cerca artista o teatro…" autocomplete="off" enterkeyhint="search" aria-label="Cerca">
    <button class="x" id="qx" aria-label="Cancella ricerca">✕</button>
+   <div class="qsug" id="qsug" role="listbox" aria-label="Persone e titoli" hidden></div>
   </div>
   <div class="seg only-wide" role="group" aria-label="Vista"><button data-view="cal" class="on">Calendario</button><button data-view="luoghi">Teatri e luoghi</button></div>
   <button class="iconbtn ghost" id="fbtn" aria-label="Filtri"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span class="lbl">Filtri</span><b class="badge" id="fbadge" hidden>0</b></button>
@@ -1095,11 +1104,33 @@ const miniA=(i,lab,g,inner)=>`<article class="card mini" data-open="${i}" tabind
 /* pulsante Biglietti dell'elenco: icona del biglietto disegnata per il sito */
 const INF='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5"/><path d="M12 7.6v.2"/></svg>';
 const TKT='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 8.5V7a1.5 1.5 0 0 1 1.5-1.5h14A1.5 1.5 0 0 1 20.5 7v1.5a2.5 2.5 0 0 0 0 5V17a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 17v-3.5a2.5 2.5 0 0 0 0-5z"/><path d="M14.5 6v2M14.5 11v2M14.5 16v2"/></svg>';
+/* ricerca (17/11/2026, Stefano): se la parola cercata non è nel titolo ma nella descrizione (es. «Bosso» a Ravenna),
+   la scheda piccola mostra il pezzo di descrizione con la parola evidenziata */
+function finestra(n,q){const w=n.split(" "),W=w.map(norm),qq=q.split(" ").filter(Boolean);
+ for(let j=0;j<W.length;j++){if(!W[j].startsWith(qq[0]))continue;if(qq.length>1){if(qq.every((x,t)=>W[j+t]&&W[j+t].startsWith(x)))return w.slice(j,j+qq.length).join(" ");continue}
+  let i=j>0?j-1:0,k=j>0?j:Math.min(1,w.length-1);if(/^(de|van|von)$/i.test(w[i])&&i>0)i--;if(i===k||/^(de|van|von)$/i.test(w[i]))return"";return w.slice(i,k+1).join(" ")}return""}
+function hitLine(e){const q=st.qn;if(!q||q.length<3||norm(e.artista).includes(q))return"";if(!e._nm)e._nm=nomiDi([e]).map(o=>o.n);
+ const u=[...new Set(e._nm.map(x=>finestra(x,q)).filter(Boolean))].slice(0,2);if(!u.length)return"";
+ return `<div class="mhit">con <b>${u.map(esc).join("</b> e <b>")}</b></div>`}
+/* suggerimenti sotto la casella di ricerca: nomi di persone (due-quattro parole con l'iniziale maiuscola) presi da titoli e descrizioni */
+const QSTOP=new Set("il lo la i gli le un una al allo alla ai agli alle dal dalla dei del della di da in con per tra fra su teatro sala stagione concerto concerti rassegna festival orchestra quartetto trio ensemble coro musiche musica prosa danza opera biglietti ingresso domenica sabato venerdi giovedi mercoledi martedi lunedi gennaio febbraio marzo aprile maggio giugno luglio agosto settembre ottobre novembre dicembre ravenna bologna milano ferrara faenza cervia lugo italia italiano italiana premio regia".split(" "));
+const QPREP=new Set("il lo la i gli le un una al allo alla ai agli alle dal dalla dei del della di da in con per tra fra su".split(" "));let QN={};
+function nomiDi(list){const m=new Map(),re=/(?:^|[^\p{L}])(\p{Lu}[\p{Ll}'’]+(?:\s+(?:de|van|von)?\s*\p{Lu}[\p{Ll}'’]+){1,3})/gu;
+ for(const e of list){const seen=new Set();for(const t of [e.artista,e.descrizione]){if(!t)continue;let x;re.lastIndex=0;while((x=re.exec(t))){let w=x[1].replace(/\s+/g," ").trim().split(" ");while(w.length&&QSTOP.has(norm(w[0])))w.shift();while(w.length&&QSTOP.has(norm(w[w.length-1])))w.pop();if(w.length<2||w.slice(1).some(p=>QSTOP.has(norm(p))&&!QPREP.has(norm(p))))continue;const nm=w.join(" "),k=norm(nm);if(seen.has(k))continue;seen.add(k);const o=m.get(k)||{n:nm,ev:new Set()};o.ev.add(e);m.set(k,o)}}}
+ return [...m.values()]}
+function qSug(){const box=$("#qsug");if(!box)return;const q=norm(($("#q").value||"").trim());if(q.length<3||MODE==="c"){box.hidden=true;box.innerHTML="";return}
+ if(!QN[MODE])QN[MODE]=nomiDi(ALL);
+ const agg=new Map();
+ for(const o of QN[MODE]){const nm=finestra(o.n,q);if(!nm)continue;const key=norm(nm);if(key===q)continue;const x=agg.get(key)||{n:nm,ev:new Set()};o.ev.forEach(v=>x.ev.add(v));agg.set(key,x)}
+ for(const e of ALL){const t=e.artista||"",k=norm(t);if(!t||t.split(" ").length>6||!k.split(/[^a-z0-9]+/).some(p=>p.startsWith(q)))continue;const x=agg.get(k)||{n:t,ev:new Set()};x.ev.add(e);agg.set(k,x)}
+ const hit=[...agg.values()].map(x=>({n:x.n,c:x.ev.size})).sort((a,b)=>b.c-a.c||a.n.localeCompare(b.n)).slice(0,6);
+ if(!hit.length){box.hidden=true;box.innerHTML="";return}
+ box.innerHTML=`<div class="qsh">Artisti, persone e titoli</div>`+hit.map(o=>`<button type="button" role="option" data-qs="${esc(o.n)}"><span>${esc(o.n)}</span><small>${o.c} ${o.c===1?"scheda":"schede"}</small></button>`).join("");box.hidden=false}
 function mini(e){
  if(e._kind==="m")return miniM(e);
  const g=G[e.genere]||{c:"--mute",l:e.genere},tm0=/\d/.test(e.ora||"")?e.ora:"";
  const multi=e.fino&&e.fino!==e.data?`dal ${fmt(e.data,{day:"numeric",month:"short"})} al ${fmt(e.fino,{day:"numeric",month:"short"})}`:"";
- const inner=`<div class="top">${tm0?`<span class="time">${esc(tm0)}</span>`:""}<span class="gtag">${esc(e.tipo==="Comicità"?"Comici":g.l)}${e.tipo&&e.tipo!=="Comicità"?" · "+esc(e.tipo):""}</span>${multi?`<span class="multi">${multi}</span>`:""}</div><h3 class="title">${esc(e.artista)}</h3>${st.venue?"":`<div class="mloc">${PIN}<span>${esc(e.luogo)}${e._c!==CITY.capo?" · "+esc(e._c):""}</span></div>`}`;
+ const inner=`<div class="top">${tm0?`<span class="time">${esc(tm0)}</span>`:""}<span class="gtag">${esc(e.tipo==="Comicità"?"Comici":g.l)}${e.tipo&&e.tipo!=="Comicità"?" · "+esc(e.tipo):""}</span>${multi?`<span class="multi">${multi}</span>`:""}</div><h3 class="title">${esc(e.artista)}</h3>${hitLine(e)}${st.venue?"":`<div class="mloc">${PIN}<span>${esc(e.luogo)}${e._c!==CITY.capo?" · "+esc(e._c):""}</span></div>`}`;
  const dd=(e.disp||"").toLowerCase(),tk=/^https:/.test(e.biglietti||"")&&e.biglietti_tipo!=="Info"&&dd!=="sold out"&&dd!=="non disponibile";
  const iu=!tk?[e.biglietti,e.fonte,e.sito_luogo].find(u=>/^https:/.test(u||"")):"";
  const foot=(tk&&dd==="disponibile"?"":dispPill(e))+(iu?`<a class="act tkt info" data-lab="Info" href="${esc(iu)}" target="_blank" rel="noopener" aria-label="Informazioni: ${esc(e.artista)}">${INF}<span>Info</span></a>`:"")+(tk?`<a class="act tkt" data-lab="Biglietti" href="${esc(e.biglietti)}" target="_blank" rel="noopener" aria-label="Biglietti: ${esc(e.artista)}">${TKT}<span class="lg">Biglietti</span><span class="sm">Ticket</span></a>`:"");
@@ -1286,8 +1317,11 @@ document.addEventListener("toggle",e=>{const d=e.target;if(d.matches&&d.matches(
 document.addEventListener("input",e=>{const i=e.target;if(i.classList&&i.classList.contains("lsearch")){lq=i.value;lFocus=i.dataset.ls;renderPanels();renderPop()}});
 document.addEventListener("change",e=>{const i=e.target;if(i.dataset&&i.dataset.pr){st[i.dataset.pr]=i.value||"";if(st.pf&&st.pt&&st.pf>st.pt){const x=st.pf;st.pf=st.pt;st.pt=x}render(true)}});
 document.addEventListener("focusout",e=>{if(e.target.classList&&e.target.classList.contains("lsearch"))setTimeout(()=>{if(!document.activeElement||!document.activeElement.classList.contains("lsearch"))lFocus=null},0)});
-let qt;$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{st.q=e.target.value.trim();st.qn=norm(st.q);render(true)},140)});
-$("#qx").onclick=()=>{$("#q").value="";st.q=st.qn="";render(true);$("#q").focus()};
+let qt;$("#qsug").addEventListener("mousedown",e=>e.preventDefault());$("#qsug").addEventListener("click",e=>{const b=e.target.closest("[data-qs]");if(!b)return;$("#q").value=b.dataset.qs;$("#qsug").hidden=true;st.q=b.dataset.qs;st.qn=norm(st.q);render(true);$("#q").blur()});
+$("#q").addEventListener("blur",()=>setTimeout(()=>{$("#qsug").hidden=true},150));$("#q").addEventListener("focus",qSug);$("#q").addEventListener("keydown",e=>{if(e.key==="Enter"||e.key==="Escape")$("#qsug").hidden=true});
+$("#q").addEventListener("input",()=>qSug());
+$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{st.q=e.target.value.trim();st.qn=norm(st.q);render(true)},140)});
+$("#qx").onclick=()=>{$("#qsug").hidden=true;$("#q").value="";st.q=st.qn="";render(true);$("#q").focus()};
 /* 14/11/2026: ?cerca=Nome apre la guida già filtrata su un luogo o un artista (link nelle lettere ai locali) */
 (()=>{const c=new URLSearchParams(location.search).get("cerca");if(c){$("#q").value=c;$("#q").dispatchEvent(new Event("input"))}})();
 $("#more").onclick=()=>{st.n+=PAGE;render()};
@@ -1386,7 +1420,7 @@ setBarH();render(true);onScroll();
    siano arrivati, la scheda si apre appena arrivano. */
 const PIGRI={i:"incontri",c:"cinema",p:"sport"},INTEGRATI={},ATTESA={};
 function caricaPigro(f){if(ATTESA[f])return ATTESA[f];return ATTESA[f]=new Promise(ok=>{try{const V=window.ACH_VERSIONI||{},sc=document.createElement("script");sc.src=f+".js?"+(V[f]?"h="+V[f]:"v="+Math.floor(Date.now()/6e5));sc.onload=sc.onerror=()=>ok();document.head.appendChild(sc)}catch(_){ok()}})}
-function aggiornaPigri(){const nuovi=Object.values(PIGRI).filter(f=>!INTEGRATI[f]&&window[f.toUpperCase()+"_DATA"]);if(!nuovi.length)return;nuovi.forEach(f=>INTEGRATI[f]=1);
+function aggiornaPigri(){QN={};const nuovi=Object.values(PIGRI).filter(f=>!INTEGRATI[f]&&window[f.toUpperCase()+"_DATA"]);if(!nuovi.length)return;nuovi.forEach(f=>INTEGRATI[f]=1);
  try{costruisciPigri();prepPigri();FI=null;TXT.i.upd=ISO.test(ID.aggiornato||"")?ID.aggiornato:"";TXT.p.upd=ISO.test(PD.aggiornato||"")?PD.aggiornato:"";TXT.c.upd=ISO.test(CD.aggiornato||"")?CD.aggiornato:"";
   if(PIGRI[MODE]){ALL=MODE==="c"?ALL_C:MODE==="i"?ALL_I:ALL_P;MONTHS=monthsOf(ALL);COMUNI_CON=new Set(ALL.map(e=>e._c))}
   const n=(id,v)=>{const el=document.getElementById(id);if(el)el.textContent=v};n("nI",ALL_I.length||"");n("nP",ALL_P.length||"");n("nC",new Set(ALL_C.map(e=>norm(e.artista))).size||"")}catch(err){console.error(err)}}
