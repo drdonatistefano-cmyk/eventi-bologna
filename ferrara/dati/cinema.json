@@ -3,206 +3,11 @@
  "giorno_orari": "2026-11-17",
  "sale": [
   {
-   "id": "c001",
-   "nome": "Apollo Cinepark",
-   "citta": "Ferrara",
-   "indirizzo": "Via del Carbone 35, Ferrara",
-   "tipo": "Sala di comunità",
-   "sito": "https://www.apollocinepark.it/",
-   "fonte": "https://www.cinemap.it/ferrara/cinema/apollo-ferrara",
-   "cinemap": "https://www.cinemap.it/ferrara/cinema/apollo-ferrara",
-   "film": [
-    {
-     "titolo": "2001: Odissea nello Spazio",
-     "orari": [
-      "18:45"
-     ],
-     "giorni": {
-      "2026-11-17": [
-       "18:45"
-      ],
-      "2026-11-18": [
-       "21:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Fantascienza",
-     "regia": "Stanley Kubrick",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
-     "interpreti": "Keir Dullea, Gary Lockwood, William Sylvester e Daniel Richter",
-     "durata": 140,
-     "anno": 1968,
-     "paese": "USA",
-     "scheda": "https://it.wikipedia.org/wiki/2001%3A_Odissea_nello_spazio"
-    },
-    {
-     "titolo": "Dio ride",
-     "orari": [
-      "19:00"
-     ],
-     "giorni": {
-      "2026-11-17": [
-       "19:00"
-      ],
-      "2026-11-18": [
-       "19:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Giovanni Veronesi",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
-     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "durata": 114,
-     "anno": 2026,
-     "paese": "Italia",
-     "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
-    },
-    {
-     "titolo": "Il canto della foresta",
-     "orari": [
-      "19:00"
-     ],
-     "giorni": {
-      "2026-11-17": [
-       "19:00"
-      ],
-      "2026-11-18": [
-       "19:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Documentario",
-     "regia": "Vincent Munier",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
-     "interpreti": "Vincent Munier, Michel Munier e Simon Munier",
-     "durata": 95,
-     "anno": 2025,
-     "paese": "Francia"
-    },
-    {
-     "titolo": "Il rumore delle cose nuove",
-     "orari": [
-      "21:10"
-     ],
-     "giorni": {
-      "2026-11-17": [
-       "21:10"
-      ],
-      "2026-11-18": [
-       "21:10"
-      ]
-     },
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Paolo Genovese",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
-     "interpreti": "Emanuela Fanelli, Edoardo Pesce, Claudia Pandolfi e Lino Musella",
-     "durata": 113,
-     "anno": 2026,
-     "paese": "Italia",
-     "scheda": "https://it.wikipedia.org/wiki/Il_rumore_delle_cose_nuove"
-    },
-    {
-     "titolo": "La storia infinita",
-     "orari": [
-      "19:00"
-     ],
-     "giorni": {
-      "2026-11-17": [
-       "19:00"
-      ],
-      "2026-11-18": [
-       "19:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Fantastico",
-     "regia": "Wolfgang Petersen",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
-     "interpreti": "Barret Oliver, Noah Hathaway, Tami Stronach e Gerald McRaney",
-     "durata": 92,
-     "anno": 1984,
-     "paese": "Germania",
-     "scheda": "https://it.wikipedia.org/wiki/La_storia_infinita_%28film%29"
-    },
-    {
-     "titolo": "Se domani non torno",
-     "orari": [
-      "21:20"
-     ],
-     "giorni": {
-      "2026-11-17": [
-       "21:20"
-      ],
-      "2026-11-18": [
-       "19:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Paola Randi",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
-     "interpreti": "Tommaso Allione, Tecla Bossi, Sabrina Martina e Filippo Timi",
-     "durata": 107,
-     "anno": 2026,
-     "paese": "Italia"
-    },
-    {
-     "titolo": "Un weekend artificiale",
-     "orari": [
-      "21:00"
-     ],
-     "giorni": {
-      "2026-11-17": [
-       "21:00"
-      ],
-      "2026-11-18": [
-       "21:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Leonardo Pieraccioni",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
-     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio, Luigi Luciano e Massimo Ceccherini",
-     "durata": 91,
-     "anno": 2026,
-     "paese": "Italia",
-     "scheda": "https://it.wikipedia.org/wiki/Un_weekend_artificiale"
-    },
-    {
-     "titolo": "Wild Horse Nine",
-     "orari": [
-      "21:30"
-     ],
-     "giorni": {
-      "2026-11-17": [
-       "21:30"
-      ],
-      "2026-11-18": [
-       "21:30"
-      ]
-     },
-     "versione": "",
-     "genere": "Commedia, Drammatico",
-     "regia": "Martin McDonagh",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
-     "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
-     "durata": 118,
-     "anno": 2026,
-     "paese": "Regno Unito",
-     "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
-    }
-   ],
-   "auto": true
-  },
-  {
    "id": "c002",
    "nome": "Cinema Boldini",
    "citta": "Ferrara",
    "indirizzo": "Parco Pareschi, Corso della Giovecca 148, Ferrara",
-   "tipo": "Sala di comunità",
+   "tipo": "D'essai",
    "sito": "https://cinemaboldini.it/programmazione/",
    "fonte": "https://www.cinemap.it/ferrara/cinema/boldini-ferrara",
    "cinemap": "https://www.cinemap.it/ferrara/cinema/boldini-ferrara",
@@ -268,8 +73,7 @@
      "biglietti": "https://cinemaboldini.it/programmazione/",
      "scheda": "https://it.wikipedia.org/wiki/Le_stagioni_del_nostro_amore_%28film%29"
     }
-   ],
-   "auto": true
+   ]
   },
   {
    "id": "c003",
@@ -709,8 +513,7 @@
      "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Wildwood_-_I_segreti_del_bosco_proibito"
     }
-   ],
-   "auto": true
+   ]
   },
   {
    "id": "c004",
@@ -742,16 +545,15 @@
      "regia": "",
      "scheda": "https://it.wikipedia.org/wiki/Fjord_%28film%29"
     }
-   ],
-   "auto": true
+   ]
   },
   {
    "id": "c005",
-   "nome": "Cinema Apollo Multisala",
+   "nome": "Apollo Cinepark",
    "citta": "Ferrara",
-   "indirizzo": "",
+   "indirizzo": "Via del Carbone 35, Ferrara",
    "tipo": "Multisala",
-   "sito": "",
+   "sito": "https://www.apollocinepark.it/",
    "fonte": "https://movieplayer.it/cinema/apollo-multisala_410/",
    "film": [
     {
@@ -905,18 +707,7 @@
      "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
     }
    ],
-   "auto": true
-  },
-  {
-   "id": "c006",
-   "nome": "Cinema S. Benedetto",
-   "citta": "Ferrara",
-   "indirizzo": "",
-   "tipo": "Sala di comunità",
-   "sito": "",
-   "fonte": "https://movieplayer.it/cinema/s-benedetto_414/",
-   "film": [],
-   "auto": true
+   "cinemap": "https://www.cinemap.it/ferrara/cinema/apollo-ferrara"
   },
   {
    "id": "c007",
@@ -926,8 +717,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/s-spirito_415/",
-   "film": [],
-   "auto": true
+   "film": []
   },
   {
    "id": "c008",
@@ -937,8 +727,7 @@
    "tipo": "Multisala",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/uci-cinestar_411/",
-   "film": [],
-   "auto": true
+   "film": []
   },
   {
    "id": "c009",
@@ -984,7 +773,6 @@
      "biglietti": "https://www.teatrodeifluttuanti.com/film-in-prima-visione-e-per-bambini/"
     }
    ],
-   "auto": true,
    "cinemap": "https://www.cinemap.it/argenta/cinema/fluttuanti-argenta"
   },
   {
@@ -992,7 +780,7 @@
    "nome": "Cinema Cinepark Cento",
    "citta": "Cento",
    "indirizzo": "",
-   "tipo": "Sala di comunità",
+   "tipo": "Multisala",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/cinepark-cento_2901/",
    "film": [
@@ -1246,7 +1034,6 @@
      "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
     }
    ],
-   "auto": true,
    "cinemap": "https://www.cinemap.it/cento/cinema/cinepark-cento"
   },
   {
@@ -1257,19 +1044,7 @@
    "tipo": "Arena",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/cinema-teatro-arena_408/",
-   "film": [],
-   "auto": true
-  },
-  {
-   "id": "c012",
-   "nome": "Cinema Cineplus",
-   "citta": "Comacchio",
-   "indirizzo": "",
-   "tipo": "Sala di comunità",
-   "sito": "",
-   "fonte": "https://movieplayer.it/cinema/cineplus_420/",
-   "film": [],
-   "auto": true
+   "film": []
   },
   {
    "id": "c013",
@@ -1344,15 +1119,14 @@
      "biglietti": "https://www.cinemadonzucchini.it/programmazione/",
      "scheda": "https://it.wikipedia.org/wiki/Odissea_%28film%29"
     }
-   ],
-   "auto": true
+   ]
   },
   {
    "id": "c014",
    "nome": "Cinepark Comacchio",
    "citta": "Comacchio",
    "indirizzo": "Via Valle Isola 1, Comacchio",
-   "tipo": "Sala di comunità",
+   "tipo": "Multisala",
    "sito": "https://www.cinepark.it/comacchio/",
    "fonte": "https://www.cinemap.it/comacchio/cinema/cinepark-comacchio",
    "cinemap": "https://www.cinemap.it/comacchio/cinema/cinepark-comacchio",
@@ -1619,8 +1393,7 @@
      "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
     }
-   ],
-   "auto": true
+   ]
   }
  ],
  "fonte_aggiornamento": "automatico (GitHub)"

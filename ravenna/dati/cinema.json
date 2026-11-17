@@ -21,8 +21,7 @@
    "tipo": "Multisala",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/astoria-multisala_1124/",
-   "film": [],
-   "auto": true
+   "film": []
   },
   {
    "id": "c006",
@@ -560,8 +559,7 @@
      "paese": "Giappone",
      "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29"
     }
-   ],
-   "auto": true
+   ]
   },
   {
    "id": "c008",
@@ -710,7 +708,6 @@
      "anno": 2026
     }
    ],
-   "auto": true,
    "cinemap": "https://www.cinemap.it/alfonsine/cinema/gulliver-alfonsine"
   },
   {
@@ -722,7 +719,6 @@
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/arena-cappuccine_1750/",
    "film": [],
-   "auto": true,
    "cinemap": "https://www.cinemap.it/bagnacavallo/cinema/arena-cappuccine-bagnacavallo"
   },
   {
@@ -733,8 +729,7 @@
    "tipo": "Arena",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/arena-pinarella_1771/",
-   "film": [],
-   "auto": true
+   "film": []
   },
   {
    "id": "c012",
@@ -805,7 +800,6 @@
      "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=2"
     }
    ],
-   "auto": true,
    "cinemap": "https://www.cinemap.it/faenza/cinema/cinema-sarti-faenza"
   },
   {
@@ -1242,8 +1236,7 @@
      "paese": "Giappone",
      "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29"
     }
-   ],
-   "auto": true
+   ]
   },
   {
    "id": "c015",
@@ -1274,8 +1267,7 @@
      "durata": 107,
      "anno": 2026
     }
-   ],
-   "auto": true
+   ]
   },
   {
    "id": "c016",
@@ -1305,8 +1297,7 @@
      "biglietti": "https://www.cinemateatrofusignano.it/ita/Odissea",
      "scheda": "https://it.wikipedia.org/wiki/Odissea_%28film%29"
     }
-   ],
-   "auto": true
+   ]
   },
   {
    "id": "c017",
@@ -1317,8 +1308,7 @@
    "sito": "https://www.arenaborghesi.it/",
    "fonte": "https://www.cinemap.it/faenza/cinema/arena-borghesi-faenza",
    "cinemap": "https://www.cinemap.it/faenza/cinema/arena-borghesi-faenza",
-   "film": [],
-   "auto": true
+   "film": []
   },
   {
    "id": "c018",
@@ -1414,8 +1404,7 @@
      "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
     }
-   ],
-   "auto": true
+   ]
   },
   {
    "id": "c019",
@@ -1441,8 +1430,7 @@
      "biglietti": "https://www.cinemagiardino.it/cinema/",
      "scheda": "https://it.wikipedia.org/wiki/Harold_e_Maude"
     }
-   ],
-   "auto": true
+   ]
   }
  ],
  "fonte_aggiornamento": "automatico (GitHub)"

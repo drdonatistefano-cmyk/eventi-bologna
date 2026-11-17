@@ -346,10 +346,14 @@ def scopri(d, log):
     # sale nuove su cinemap.it: pagina elenco del capoluogo e (Ravenna, Ferrara, Milano) di ogni comune della provincia.
     # Se la sala c'è già (stesso nome o stesso comune e nome simile) si aggiunge solo il campo `cinemap` (17/11/2026: a Ravenna
     # CinemaCity, Mariani e Rocca Brancaleone erano finite due volte).
-    def simile(a, b):
-        a, b = chiave(re.sub(r"(?i)\b(cinema|multisala|multiplex|teatro|arena|ravenna|faenza|lugo|cervia)\b", " ", a)), \
-               chiave(re.sub(r"(?i)\b(cinema|multisala|multiplex|teatro|arena|ravenna|faenza|lugo|cervia)\b", " ", b))
-        return bool(a and b) and (a in b or b in a)
+    STOP = {"cinema", "cinemas", "multisala", "multiplex", "teatro", "cineteatro", "arena", "sala", "nuovo", "comunale"}
+    def parole(x):
+        return {w for w in chiave(x).split() if len(w) >= 4 and w not in STOP and w not in {chiave(c) for c in UFFICIALI}}
+    def simile(a, b):     # «Uci Cinemas Milanofiori» = «UCI Cinemas Milano Fiori»; «…Peppino Impastato di via Volta» = «Via Volta - Peppino Impastato»
+        pa, pb = parole(a), parole(b)
+        ja, jb = "".join(sorted(pa)), "".join(sorted(pb))
+        return bool(pa and pb) and (bool(pa & pb) or ja.replace(" ", "") == jb.replace(" ", "")
+                                    or "".join(chiave(a).split()).find("".join(sorted(pb))) >= 0)
     comuni_cm = [(UFFICIALI[0], MP_CITTA)] + ([] if CITTA == "bo" else [(c, slug(c)) for c in UFFICIALI[1:]])
     cm_note = {s.get("cinemap") for s in d["sale"]}
     for comune, cs in comuni_cm:
