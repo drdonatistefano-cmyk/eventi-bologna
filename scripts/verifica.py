@@ -182,6 +182,7 @@ def vista_pagine():
               # 16/11/2026: tasto WhatsApp nella scheda (REGOLE 8 sexies); Places quando la chat Places lo pubblica
               ("Dinners, tasto WhatsApp", B["dinners"], "function waDin("), ("Events, tasto WhatsApp", B["events"], "function waEv("),
               ("Events Milano, tasto WhatsApp", B["events"] + "milano/", "function waEv("),
+              ("Events, pagina Collaborano con noi", B["events"] + "collaborano/", "Teatro Dal Verme"),
               # 16/11/2026: filtri nuovi (chip in alto e foglio a gruppi)
               ("Events, filtri nuovi", B["events"], 'F.id="nAf"'), ("Places, riquadro dei filtri che segue", B["places"], 'getElementById("nAm")'), ("Places, tasto WhatsApp", B["places"], "function waPl("), ("Events Milano, filtri nuovi", B["events"] + "milano/", 'F.id="nAf"'),
               ("Dinners", B["dinners"], "Dinners"), ("Dinners, Chi siamo", B["dinners"] + "chi-siamo/", "Chi siamo"),
