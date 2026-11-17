@@ -1,14 +1,19 @@
 {
  "aggiunti": [
-  "2027-03-01 Basht. – Locomotiv Club (Locomotiv Club)",
-  "2026-11-21 Spiritual Boyfriends – Arena del Sole (Arena del Sole)",
-  "2027-01-14 Qui – Arena del Sole (Arena del Sole)"
+  "2026-11-23 DisuMana - Stand Up Comedy Open Mic – Mana Brew Pub (DICE)",
+  "2026-11-27 Friday at Kinder: Dark Berlin – Kindergarten (DICE)",
+  "2026-12-05 Much Much Bass pres Tantron – Kindergarten (DICE)",
+  "2027-03-06 Voina – Locomotiv Club (Locomotiv Club)",
+  "2027-03-07 Martina Catuzzi – Locomotiv Club (Locomotiv Club)",
+  "2026-12-09 Serata Privata – Bravo Caffè (Bravo Caffè)",
+  "2026-12-17 Serata Privata – Bravo Caffè (Bravo Caffè)",
+  "2027-02-14 Cosmo – Estragon Club (Estragon Club)"
  ],
  "link_biglietti": 0,
  "fonti": {
   "DICE": {
-   "letti": 69,
-   "aggiunti": 0
+   "letti": 71,
+   "aggiunti": 3
   },
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "arte.it": {
@@ -25,9 +30,9 @@
   },
   "Locomotiv Club": {
    "letti": 112,
-   "aggiunti": 1,
+   "aggiunti": 2,
    "pagine_evento": 112,
-   "ultima_data": "2027-03-01"
+   "ultima_data": "2027-03-07"
   },
   "siti dei locali": {
    "Teatro Comunale Laura Betti": {
@@ -35,46 +40,46 @@
     "in_guida": 23,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 3
+    "secondi": 4
    },
    "Bravo Caffè": {
-    "sul_sito": 36,
-    "in_guida": 36,
-    "aggiunti": 0,
+    "sul_sito": 38,
+    "in_guida": 38,
+    "aggiunti": 2,
     "esito": "ok",
-    "secondi": 4
+    "secondi": 5
    },
    "Auditorium Manzoni": {
     "sul_sito": 40,
-    "in_guida": 68,
+    "in_guida": 67,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 83
    },
    "Arena del Sole": {
     "sul_sito": 17,
-    "in_guida": 33,
-    "aggiunti": 2,
+    "in_guida": 34,
+    "aggiunti": 0,
     "esito": "ok",
     "secondi": 35
    },
    "Teatro Ebe Stignani": {
     "sul_sito": 10,
-    "in_guida": 20,
+    "in_guida": 19,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 37
+    "secondi": 44
    },
    "Estragon Club": {
     "sul_sito": 19,
     "in_guida": 19,
-    "aggiunti": 0,
+    "aggiunti": 1,
     "esito": "ok",
-    "secondi": 39
+    "secondi": 40
    },
    "Auditorium Manzoni (2)": {
-    "sul_sito": 18,
-    "in_guida": 68,
+    "sul_sito": 17,
+    "in_guida": 67,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 38
@@ -84,14 +89,14 @@
     "in_guida": 1,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 29
+    "secondi": 28
    }
   }
  },
  "errori": [
   "https://www.locomotivclub.it/robots.txt: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-16T06:04",
- "eventi_totali": 766,
+ "data": "2026-11-17T17:20",
+ "eventi_totali": 771,
  "mostre_totali": 26
 }

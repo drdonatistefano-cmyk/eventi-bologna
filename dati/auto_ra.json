@@ -1,8 +1,28 @@
 {
- "aggiunti": [],
+ "aggiunti": [
+  "mostra 2026-10-28→2026-11-22 Via Zirardini – Non sono (in)differente – Via Zirardini Open-Air Gallery (turismo.ra.it)",
+  "mostra 2026-10-29→2026-12-08 Francesca Pasquali – Rifugio Plastico. Oltre il confine – Oranjeri (turismo.ra.it)",
+  "mostra 2026-11-15→2026-12-13 Svelamenti, la memoria del corpo – Galleria FaroArte (turismo.ra.it)",
+  "mostra 2026-12-05→2026-12-20 Il mare d’inverno – Biblioteca Oriani (turismo.ra.it)",
+  "mostra 2026-04-24→2026-12-31 Sant’Alberto: il paese dei poeti – Casa Museo Olindo Guerrini (turismo.ra.it)",
+  "mostra 2026-12-23→2027-01-03 Color field di Marco Campana – Torrione della Polveriera (turismo.ra.it)",
+  "mostra 2026-11-07→2027-01-09 Maria Ponti Pasolini – Biblioteca Classense (turismo.ra.it)",
+  "mostra 2026-10-02→2027-01-09 Nel segno del fuoco – niArt Gallery (turismo.ra.it)",
+  "mostra 2026-09-03→2027-01-09 Legato con amore in un volume – Biblioteca Classense (turismo.ra.it)",
+  "mostra 2026-10-11→2027-01-10 Marcantonio. Cosa vuoi fare da piccolo? – Palazzo Rasponi dalle Teste (turismo.ra.it)",
+  "mostra 2026-05-16→2027-01-10 Fu tutto serafico in ardore – Basilica di San Francesco (turismo.ra.it)",
+  "mostra 2026-10-10→2027-01-16 La rotonda del re – Biblioteca Classense (turismo.ra.it)",
+  "mostra 2026-10-17→2027-01-17 Supremalia – Nicola Samorì – MAR - Museo d'Arte della città di Ravenna (turismo.ra.it)",
+  "mostra 2026-12-19→2027-01-17 La memoria del fuoco – Galleria FaroArte (turismo.ra.it)",
+  "mostra 2026-10-25→2027-02-06 Ugo Nespolo. L’ora incerta – Musei Byron e del Risorgimento (turismo.ra.it)"
+ ],
  "link_biglietti": 0,
  "fonti": {
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
+  "portale turistico": {
+   "letti": 16,
+   "aggiunti": 15
+  },
   "arte.it": {
    "letti": 3,
    "aggiunti": 0
@@ -13,7 +33,7 @@
     "in_guida": 7,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 8
+    "secondi": 10
    },
    "Mama's Club": {
     "sul_sito": 14,
@@ -27,15 +47,14 @@
     "in_guida": 12,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 84
+    "secondi": 102
    }
   }
  },
  "errori": [
-  "https://dice.fm/browse/ravenna: HTTP Error 404: Not Found",
-  "convalida: Mostre valide: 0 · tolte perché chiuse: 0 · doppioni tolti: 0\n\nERRORE: meno di 5 mostre, elenco probabilmente incompleto – niente è stato scritto.\n"
+  "https://dice.fm/browse/ravenna: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-16T06:19",
+ "data": "2026-11-17T17:39",
  "eventi_totali": 33,
- "mostre_totali": 0
+ "mostre_totali": 15
 }

@@ -1,11 +1,16 @@
 {
- "aggiunti": [],
- "link_biglietti": 2,
+ "aggiunti": [
+  "mostra 2026-11-17→2026-12-18 Vancini 100 anni - Mostra fotografica – Piazza del Municipio (portale turistico)",
+  "2027-04-03 LA REGINETTA DI LEENANE: incontro con i protagonisti – Teatro Comunale Claudio Abbado (Teatro Comunale Claudio Abbado)",
+  "2027-04-07 IL VESTITO NUOVO DELL'IMPERATRICE: L'Imperatrice Caterina e il Vestito Magico – Teatro Comunale Claudio Abbado (Teatro Comunale Claudio Abbado)",
+  "2027-04-09 SIMON BOCCANEGRA: presentazione dell'opera di Giuseppe Verdi – Teatro Comunale Claudio Abbado (Teatro Comunale Claudio Abbado)"
+ ],
+ "link_biglietti": 0,
  "fonti": {
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "portale turistico": {
-   "letti": 17,
-   "aggiunti": 0
+   "letti": 18,
+   "aggiunti": 1
   },
   "arte.it": {
    "letti": 2,
@@ -20,25 +25,25 @@
     "secondi": 2
    },
    "Teatro Comunale Claudio Abbado": {
-    "sul_sito": 48,
-    "in_guida": 68,
-    "aggiunti": 0,
+    "sul_sito": 51,
+    "in_guida": 71,
+    "aggiunti": 3,
     "esito": "ok",
-    "secondi": 96
+    "secondi": 99
    },
    "Teatro Nuovo": {
     "sul_sito": 24,
     "in_guida": 59,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 119
+    "secondi": 121
    },
    "Ferrara Musica": {
     "sul_sito": 23,
-    "in_guida": 68,
+    "in_guida": 71,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 47
+    "secondi": 50
    },
    "Auditorium Pandurera": {
     "sul_sito": 8,
@@ -59,7 +64,7 @@
  "errori": [
   "https://dice.fm/browse/ferrara: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-16T06:25",
+ "data": "2026-11-17T17:45",
  "eventi_totali": 164,
- "mostre_totali": 17
+ "mostre_totali": 18
 }

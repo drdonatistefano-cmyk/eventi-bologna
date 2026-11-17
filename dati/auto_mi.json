@@ -1,50 +1,73 @@
 {
  "aggiunti": [
-  "2026-11-21 OXYGÈNE | Objekt – Duro (DICE)",
-  "2026-11-18 MONKSTA RECORDS — THE LAUNCH NIGHT – Detune (DICE)",
+  "2026-11-19 Music for Staying - dischi & tempo – Lento (DICE)",
+  "2026-11-20 Tunnel Club Milano – Tunnel Club (DICE)",
+  "2026-11-20 Brasi b2b Luc + Aldave – Studionotte (DICE)",
+  "2026-11-21 DISCO EXOTICA – mosso (DICE)",
+  "2026-11-22 LELIO MORRA & DAVIDE BRIENZA • LIVEMUSIC! – Ostello Bello Milano Duomo (DICE)",
+  "2026-11-23 Comedy Night! | Open Mic – Ostello Bello Milano Duomo (DICE)",
+  "2026-11-24 PRESENTAZIONE \"DOVE SALE IL MARE\" DI ANTONIO ROMA – Ostello Bello Milano Duomo (DICE)",
+  "2026-12-02 LORENZO MARANGONI | Il tuo amichevole poeta di quartiere – SALONE 14 @ Yellowsquare (DICE)",
+  "2026-11-21 FESTA TOTALE - Burracomilano – Altrove (DICE)",
+  "2026-11-21 BallaOke | Karaoke Night – SALONE 14 @ Yellowsquare (DICE)",
+  "2026-11-18 PINOCCHIO E NOI – \"ALLA SCUOLA CI ANDEREMO DOMANI…\" – NAMA (indoor) (DICE)",
   "2026-11-18 𝐁𝐋𝐀𝐙𝐄 𝐁𝐀𝐘𝐋𝐄𝐘 – Legend Club (DICE)",
+  "2026-11-18 Believe is 20: Apollo Takeover – APOLLO CLUB MILANO (DICE)",
+  "2026-11-18 LAREC | IL FESTIVAL – Magazzini Generali (DICE)",
+  "2026-12-11 Sama’abdalhadi – Magazzini Generali (Magazzini Generali)",
   "2027-02-01 U.d.o. – Magazzini Generali (Magazzini Generali)",
-  "2026-12-19 Il canto di Natale – Auditorium di Milano (Auditorium di Milano)"
+  "2027-02-20 Steve Angello – Magazzini Generali (Magazzini Generali)",
+  "2027-04-01 Santi Francesi – Magazzini Generali (Magazzini Generali)",
+  "2027-01-15 Verbind: Fjaak – Gate Milano (Gate Milano)",
+  "2027-05-06 Bdrmm – Santeria Toscana 31 (Santeria Toscana 31)",
+  "2026-11-22 (s)legati – Teatro Elfo Puccini (Teatro Elfo Puccini)",
+  "2026-11-22 Anche i Sogni Impossibili – Teatro Elfo Puccini (Teatro Elfo Puccini)",
+  "2026-11-22 Di a da in con su per tra fra Shakespeare – Teatro Elfo Puccini (Teatro Elfo Puccini)",
+  "2026-11-22 Madri – Teatro Elfo Puccini (Teatro Elfo Puccini)",
+  "2026-11-22 Metadietro – Teatro Elfo Puccini (Teatro Elfo Puccini)",
+  "2026-11-22 Un Alt(r)o Everest – Teatro Elfo Puccini (Teatro Elfo Puccini)",
+  "2026-11-29 Gli Elfi di Babbo Natale – Teatro Carcano (Teatro Carcano)",
+  "2026-11-22 Le Due Americhe – Auditorium di Milano (Auditorium di Milano)"
  ],
  "link_biglietti": 0,
  "fonti": {
   "DICE": {
-   "letti": 197,
-   "aggiunti": 3
+   "letti": 193,
+   "aggiunti": 14
   },
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "arte.it": {
-   "letti": 44,
+   "letti": 45,
    "aggiunti": 0
   },
   "siti dei locali": {
    "Magazzini Generali": {
-    "sul_sito": 27,
-    "in_guida": 37,
-    "aggiunti": 1,
+    "sul_sito": 30,
+    "in_guida": 41,
+    "aggiunti": 4,
     "esito": "ok",
-    "secondi": 9
+    "secondi": 10
    },
    "Teatro Principe": {
     "sul_sito": 2,
-    "in_guida": 6,
+    "in_guida": 7,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 3
    },
    "Conservatorio di Milano": {
-    "sul_sito": 78,
+    "sul_sito": 79,
     "in_guida": 79,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 9
+    "secondi": 10
    },
    "Gate Milano": {
-    "sul_sito": 30,
+    "sul_sito": 31,
     "in_guida": 31,
-    "aggiunti": 0,
+    "aggiunti": 1,
     "esito": "ok",
-    "secondi": 7
+    "secondi": 8
    },
    "Teatro Out Off": {
     "sul_sito": 11,
@@ -62,78 +85,78 @@
    },
    "Circolo Magnolia": {
     "sul_sito": 20,
-    "in_guida": 47,
+    "in_guida": 51,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 52
+    "secondi": 54
    },
    "Santeria Toscana 31": {
-    "sul_sito": 12,
-    "in_guida": 34,
-    "aggiunti": 0,
+    "sul_sito": 15,
+    "in_guida": 36,
+    "aggiunti": 1,
     "esito": "ok",
-    "secondi": 99
+    "secondi": 111
    },
    "Unipol Dome": {
     "sul_sito": 9,
-    "in_guida": 21,
+    "in_guida": 22,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 25
+    "secondi": 24
    },
    "Teatro Elfo Puccini": {
     "sul_sito": 45,
-    "in_guida": 57,
-    "aggiunti": 0,
+    "in_guida": 56,
+    "aggiunti": 6,
     "esito": "ok",
-    "secondi": 185
+    "secondi": 188
    },
    "Teatro Carcano": {
     "sul_sito": 6,
     "in_guida": 17,
-    "aggiunti": 0,
+    "aggiunti": 1,
     "esito": "ok",
-    "secondi": 15
+    "secondi": 14
    },
    "Ecoteatro": {
     "sul_sito": 24,
     "in_guida": 32,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 78
+    "secondi": 83
    },
    "Auditorium di Milano": {
     "sul_sito": 8,
-    "in_guida": 10,
+    "in_guida": 11,
     "aggiunti": 1,
     "esito": "ok",
-    "secondi": 22
+    "secondi": 21
    },
    "Teatro Filodrammatici": {
     "sul_sito": 26,
     "in_guida": 26,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 112
+    "secondi": 195
    },
    "Teatro della Cooperativa": {
     "sul_sito": 12,
     "in_guida": 12,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 39
+    "secondi": 40
    },
    "Teatro Gerolamo": {
     "sul_sito": 30,
     "in_guida": 29,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 129
+    "secondi": 141
    }
   }
  },
  "errori": [],
- "data": "2026-11-16T06:18",
- "eventi_totali": 1193,
- "mostre_totali": 40
+ "data": "2026-11-17T17:36",
+ "eventi_totali": 1254,
+ "mostre_totali": 46
 }
