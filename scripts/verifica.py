@@ -346,6 +346,14 @@ def vista_servizi():
         s = 0
     v.se(s in (401, 403), "I numeri della Dashboard non si possono cambiare da fuori", f"risposta {s}")
 
+    # 17/11/2026: i link delle lettere portano ?ref=<codice>; devono aprire la guida e il conteggio visite deve esserci
+    for g, coda in (("places", "?lang=it&ref=P3-10#bologna-bo"), ("dinners", "?ref=P2#cerca=Bologna"), ("events", "?cerca=Teatro&ref=P1-E")):
+        r, _ = prendi(B[g] + coda)
+        aperta = r is not None and r.status_code == 200
+        v.se(aperta, f"{g}: si apre dal link tracciato di una lettera", f"risposta {getattr(r, 'status_code', r)}")
+        if aperta:
+            v.se("goatcounter" in r.text, f"{g}: conteggio visite presente (vede da quale lettera arrivano)", grave=False)
+
     def dns(nome, tipo):
         try:
             j = requests.get("https://cloudflare-dns.com/dns-query", params={"name": nome, "type": tipo},
