@@ -11,5 +11,5 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-      - run: python3 -u scripts/locali_sito.py --prova ra Alighieri 2>&1 | tail -40 || true
-      - run: python3 -u scripts/locali_sito.py --prova ra Bronson 2>&1 | tail -25 || true
+      - run: for u in https://www.teatroalighieri.org/ https://www.teatroalighieri.org/robots.txt https://www.bronsonproduzioni.com/eventi/ https://www.bronsonproduzioni.com/robots.txt; do echo "== $u $(curl -sS -o /tmp/p -w '%{http_code}' -L -m 20 -A 'Mozilla/5.0 (compatible; AchEventsBot/1.0; +https://achevents.com)' "$u") $(wc -c </tmp/p)"; grep -o 'href="[^"]*/event[^"]*"' /tmp/p | head -3; head -c 400 /tmp/p | tr '\n' ' '; echo; done || true
+      - run: python3 -c "import sys;sys.path.insert(0,'scripts');import locali_sito as L;c=[x for x in L.config('ra') if 'Alighieri' in x['nome']][0];print(L.UA if hasattr(L,'UA') else '');print([ (f,len(h or '')) for f,h in L.pagine_calendario(c)])" || true
