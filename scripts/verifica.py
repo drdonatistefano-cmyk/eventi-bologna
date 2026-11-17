@@ -288,6 +288,8 @@ def vista_dati():
         with cf.ThreadPoolExecutor(8) as ex:
             st = list(ex.map(lambda n: stato(B["places"] + n), camp))
         rotti = [n for n, s in zip(camp, st) if s != 200]
+        if rotti:   # 17/11/2026: una risposta mancata (0) si riprova una volta prima di dare errore
+            rotti = [n for n in rotti if stato(B["places"] + n) != 200]
         v.se(not rotti, "Places: i file dei dati citati dalla pagina esistono", f"{len(camp)} controllati" + (f", mancano: {rotti[:5]}" if rotti else ""))
         m = re.search(r"dati\.[0-9a-f]+\.json", r.text)
         if m:
