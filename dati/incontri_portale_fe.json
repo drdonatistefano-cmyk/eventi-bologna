@@ -194,19 +194,6 @@
   "prezzi": " 25,00 € ",
   "cat": "guided_tours"
  },
- "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/incontri-alla-libreria-libraccio": {
-  "modified": "2026-11-10T11:36:23+00:00",
-  "titolo": "Incontri alla Libreria Libraccio",
-  "start": "2026-11-05T16:30:00+00:00",
-  "end": "2026-11-21T18:00:00+00:00",
-  "rec": "DTSTART:20261105T163000Z\nRRULE:UNTIL=20261121T180000Z;FREQ=WEEKLY;INTERVAL=1;BYDAY=TH,SA\nRDATE:20261113T000000Z,20261118T000000Z\nEXDATE:20261114T163000Z,20261119T163000Z",
-  "intero": false,
-  "citta": "Ferrara",
-  "via": "Palazzo San Crispino - Piazza Trento Trieste",
-  "descr": "Al 3° piano del Palazzo di San Crispino il pubblico ha la possibilità di assistere alla presentazione delle ultime uscite in libreria. Esponenti della cultura locale e non, dialogano con gli autori.",
-  "prezzi": " Ingresso gratuito ",
-  "cat": "meetings_conferences"
- },
  "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/appuntamenti-alla-biblioteca-di-ostellato": {
   "modified": "2026-11-03T11:41:15+00:00",
   "titolo": "Appuntamenti alla Biblioteca di Ostellato",
@@ -221,7 +208,7 @@
   "cat": "meetings_conferences"
  },
  "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/biblioteca-popolare-giardino": {
-  "modified": "2026-11-10T09:33:47+00:00",
+  "modified": "2026-11-16T10:28:52+00:00",
   "titolo": "Biblioteca Popolare Giardino",
   "start": "2026-11-07T16:30:00+00:00",
   "end": "2026-11-30T18:00:00+00:00",
@@ -247,7 +234,7 @@
   "cat": "meetings_conferences"
  },
  "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/cure-poetiche-a-ferrara-off": {
-  "modified": "2026-11-10T10:53:17+00:00",
+  "modified": "2026-11-17T09:41:35+00:00",
   "titolo": "Cure poetiche a Ferrara Off",
   "start": "2026-11-15T10:00:00+00:00",
   "end": "2026-11-22T11:00:00+00:00",
@@ -257,19 +244,6 @@
   "via": "Ferrara Off - Viale Alfonso I d’Este 13",
   "descr": "Ferrara Off propone tre appuntamenti dedicati alla poesia tra\npresentazioni letterarie e letture sceniche",
   "prezzi": " L’ingresso è a offerta libera ",
-  "cat": "meetings_conferences"
- },
- "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/caravaggio-una-vita-in-dieci-quadri": {
-  "modified": "2026-11-07T11:10:24+00:00",
-  "titolo": "Caravaggio. Una vita in dieci quadri",
-  "start": "2026-11-16T16:00:00+00:00",
-  "end": "2026-11-16T17:30:00+00:00",
-  "rec": "",
-  "intero": false,
-  "citta": "Ferrara",
-  "via": "Palazzo dei Diamanti - Corso Ercole I d'Este, 21",
-  "descr": "Francesca Cappelletti presenta  il suo ultimo libro dedicato a Caravaggio",
-  "prezzi": " Ingresso libero fino ad esaurimento posti ",
   "cat": "meetings_conferences"
  },
  "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/incontri-al-centro-documentazione-donna": {
@@ -285,8 +259,34 @@
   "prezzi": " Ingresso gratuito ",
   "cat": "meetings_conferences"
  },
+ "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/incontri-alla-libreria-libraccio": {
+  "modified": "2026-11-17T11:19:39+00:00",
+  "titolo": "Incontri alla Libreria Libraccio",
+  "start": "2026-11-18T16:30:00+00:00",
+  "end": "2026-11-28T18:00:00+00:00",
+  "rec": "DTSTART:20261118T163000Z\nRRULE:UNTIL=20261128T180000Z;FREQ=WEEKLY;INTERVAL=1;WKST=MO;BYDAY=WE,TH,FR,SA\nRDATE:20261124T000000Z\nEXDATE:20261119T163000Z,20261120T163000Z,20261127T163000Z",
+  "intero": false,
+  "citta": "Ferrara",
+  "via": "Palazzo San Crispino - Piazza Trento Trieste",
+  "descr": "Al 3° piano del Palazzo di San Crispino il pubblico ha la possibilità di assistere alla presentazione delle ultime uscite in libreria. Esponenti della cultura locale e non, dialogano con gli autori.",
+  "prezzi": " Ingresso gratuito ",
+  "cat": "meetings_conferences"
+ },
+ "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/echo-la-forma-del-sogno": {
+  "modified": "2026-11-16T16:32:52+00:00",
+  "titolo": "Echo. La forma del sogno",
+  "start": "2026-11-19T17:30:00+00:00",
+  "end": "2026-11-19T19:00:00+00:00",
+  "rec": "",
+  "intero": false,
+  "citta": "Ferrara",
+  "via": "Galleria BPER – Palazzo Barbantini-Koch, Corso della Giovecca 108",
+  "descr": "ppuntamento del ciclo ARTalk Fuori Padiglione",
+  "prezzi": " Ingresso gratuito previa prenotazione ",
+  "cat": "meetings_conferences"
+ },
  "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/incontri-allaccademia-delle-scienze": {
-  "modified": "2026-11-12T13:59:35+00:00",
+  "modified": "2026-11-17T11:22:31+00:00",
   "titolo": "Incontri all'Accademia delle Scienze",
   "start": "2026-11-20T08:30:00+00:00",
   "end": "2026-11-20T16:30:00+00:00",
@@ -296,6 +296,45 @@
   "via": "Biblioteca \"Lionello Poletti\" - Via del Gregorio 13 (Piazza Ariostea)",
   "descr": "Incontri organizzati dall'Accademia delle Scienze\n",
   "prezzi": " Ingresso gratuito ",
+  "cat": "meetings_conferences"
+ },
+ "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/guida-allascolto": {
+  "modified": "2026-11-16T14:18:40+00:00",
+  "titolo": "Guida all'ascolto",
+  "start": "2026-11-21T14:30:00+00:00",
+  "end": "2027-04-03T16:00:00+00:00",
+  "rec": "DTSTART:20261121T143000Z\nRRULE:UNTIL=20270403T160000Z;FREQ=WEEKLY;INTERVAL=1;BYDAY=SA\nEXDATE:20261128T143000Z,20261212T143000Z,20261226T143000Z,20270102T143000Z,20270116T143000Z,20270123T143000Z,20270130T143000Z,20270213T143000Z,20270227T143000Z,20270313T143000Z,20270320T143000Z,20270327T143000Z",
+  "intero": false,
+  "citta": "Ferrara",
+  "via": "Scuola di Musica Moderna - Via Darsena 57",
+  "descr": "Incontri dedicati alla guida all'ascolto dei più importanti generi musicali moderni",
+  "prezzi": " Ingresso gratuito ",
+  "cat": "meetings_conferences"
+ },
+ "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/incontri-al-maf": {
+  "modified": "2026-11-16T10:48:07+00:00",
+  "titolo": "Incontri al MAF",
+  "start": "2026-11-22T14:00:00+00:00",
+  "end": "2026-11-22T17:00:00+00:00",
+  "rec": "",
+  "intero": false,
+  "citta": "Ferrara",
+  "via": "Mondo Agricolo Ferrarese - Via Imperiale, 263 - Loc. San Bartolomeo in Bosco",
+  "descr": "Fotografia, letteratura e canto corale: una nuova iniziativa del MAF",
+  "prezzi": " Ingresso gratuito ",
+  "cat": "meetings_conferences"
+ },
+ "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/man-ray-il-maestro-del-surrealismo": {
+  "modified": "2026-11-16T09:34:37+00:00",
+  "titolo": "Nicola Samorì. Supremalia",
+  "start": "2026-11-26T16:00:00+00:00",
+  "end": "2026-11-26T18:00:00+00:00",
+  "rec": "",
+  "intero": false,
+  "citta": "Ferrara",
+  "via": "Palazzo dei Diamanti - Corso Ercole I d'Este, 21",
+  "descr": "A Palazzo dei Diamanti presentazione della mostra allestita a Ravenna",
+  "prezzi": " Sala Rossetti Ingresso gratuito fino ad esaurimento posti ",
   "cat": "meetings_conferences"
  },
  "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/inventare-una-laguna-immaginari-umani-e-non-umani-nella-crisi-climatica": {
@@ -311,8 +350,47 @@
   "prezzi": "",
   "cat": "meetings_conferences"
  },
+ "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/italia-ebraica-nel-mondo": {
+  "modified": "2026-11-17T08:57:08+00:00",
+  "titolo": "Italia ebraica nel mondo - Max Ascoli",
+  "start": "2026-11-26T17:30:00+00:00",
+  "end": "2026-11-26T19:00:00+00:00",
+  "rec": "",
+  "intero": false,
+  "citta": "Ferrara",
+  "via": "Museo Nazionale dell'Ebraismo Italiano e della Shoah - MEIS  Via Piangipane, 79/83",
+  "descr": "L'appuntamento online del MEIS vede come protagonista Max Ascoli, un intellettuale in esilio",
+  "prezzi": " Evento online ",
+  "cat": "meetings_conferences"
+ },
+ "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/intelligenza-artificiale-ma-che-roba-e": {
+  "modified": "2026-11-16T14:33:38+00:00",
+  "titolo": "Intelligenza artificiale. Ma che roba è?",
+  "start": "2026-11-27T16:00:00+00:00",
+  "end": "2026-11-27T18:00:00+00:00",
+  "rec": "",
+  "intero": false,
+  "citta": "Ferrara",
+  "via": "Centro di Promozione Sociale Il Barco, Via dell'Indipendenza 40",
+  "descr": "Un incontro semplice e gratuito senza tecnicismi",
+  "prezzi": "",
+  "cat": "meetings_conferences"
+ },
+ "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/classica-dascolto": {
+  "modified": "2026-11-16T14:18:09+00:00",
+  "titolo": "Classica d'ascolto",
+  "start": "2026-11-28T14:30:00+00:00",
+  "end": "2027-04-11T15:00:00+00:00",
+  "rec": "DTSTART:20261128T143000Z\nRRULE:UNTIL=20270411T150000Z;FREQ=WEEKLY;INTERVAL=1;BYDAY=SU\nEXDATE:20261206T143000Z,20261213T143000Z,20261220T143000Z,20261227T143000Z,20270103T143000Z,20270110T143000Z,20270124T143000Z,20270131T143000Z,20270207T143000Z,20270221T143000Z,20270228T143000Z,20270307T143000Z,20270328T143000Z,20270404T143000Z",
+  "intero": false,
+  "citta": "Ferrara",
+  "via": "Scuola di Musica Moderna - Via Darsena 57",
+  "descr": "Incontri dinamici, con esecuzioni dal vivo e temi ricercati, pensati per incuriosire e coinvolgere un pubblico di tutte le età",
+  "prezzi": " Ingresso gratuito ",
+  "cat": "meetings_conferences"
+ },
  "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/psyche-archeologia-dellinconscio": {
-  "modified": "2026-11-13T16:41:25+00:00",
+  "modified": "2026-11-16T08:33:13+00:00",
   "titolo": "Psyché - Archeologia dell'inconscio",
   "start": "2026-11-28T20:00:00+00:00",
   "end": "2026-11-28T21:30:00+00:00",
@@ -325,7 +403,7 @@
   "cat": "meetings_conferences"
  },
  "https://www.ferrarainfo.com/it/pianifica-il-viaggio/visite-guidate/escursioni-comacchio/tra-natura-e-presepi-il-fascino-delle-valli-dinverno": {
-  "modified": "2026-11-08T11:16:29+00:00",
+  "modified": "2026-11-16T10:35:20+00:00",
   "titolo": "Tra natura e presepi: il fascino delle Valli d’inverno",
   "start": "2026-12-05T10:00:00+00:00",
   "end": "2026-12-05T14:00:00+00:00",
@@ -362,5 +440,18 @@
   "descr": "Immergetevi nell’atmosfera più suggestiva delle festività con un’esperienza che unisce creatività, storia e profumi d’altri tempi.",
   "prezzi": "  Tariffe: intero €15,00     Per i partecipanti all’attività sarà previsto il biglietto ridotto per l’ingresso al Museo.   ",
   "cat": "guided_tours"
+ },
+ "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/amf-showcase": {
+  "modified": "2026-11-16T14:40:45+00:00",
+  "titolo": "AMF Showcase",
+  "start": "2026-12-13T14:30:00+00:00",
+  "end": "2027-04-18T15:00:00+00:00",
+  "rec": "DTSTART:20261213T143000Z\nRRULE:UNTIL=20270418T150000Z;FREQ=WEEKLY;INTERVAL=1;BYDAY=SU\nRDATE:20270320T000000Z,20270410T000000Z\nEXDATE:20261220T143000Z,20261227T143000Z,20270103T143000Z,20270110T143000Z,20270117T143000Z,20270124T143000Z,20270207T143000Z,20270214T143000Z,20270221T143000Z,20270307T143000Z,20270314T143000Z,20270328T143000Z,20270404T143000Z,20270411T143000Z",
+  "intero": false,
+  "citta": "Ferrara",
+  "via": "Scuola di Musica Moderna - Via Darsena 57",
+  "descr": "Momenti di divulgazione dedicati alle produzioni indipendenti, sia discografiche che letterarie.\nIncontri informali in cui gli artisti presenteranno le loro opere, facendo ascoltare e commentare i brani, con qualche intervento live per entrare davvero nel cuore del CD o del libro",
+  "prezzi": " Ingresso gratuito ",
+  "cat": "meetings_conferences"
  }
 }
