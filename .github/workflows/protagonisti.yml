@@ -1,0 +1,26 @@
+name: Protagonisti degli spettacoli
+# 17/11/2026 (Stefano): i nomi di chi va in scena sotto il titolo di ogni scheda.
+# Legge una volta la pagina di ogni spettacolo senza «chi» (robots.txt rispettato) e salva i nomi.
+on:
+  schedule:
+    - cron: "23 6 * * 1,4"   # lunedì e giovedì alle 7:23 ora italiana, dopo «Eventi e mostre automatici»
+  workflow_dispatch:
+    inputs:
+      max:
+        description: "Pagine al massimo per giro"
+        default: "200"
+permissions:
+  contents: write
+concurrency: { group: eventi-auto, cancel-in-progress: false }
+jobs:
+  chi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Pagine degli spettacoli
+        run: python3 scripts/protagonisti_fonti.py --max ${{ inputs.max || '200' }}
+      - name: Salva
+        run: bash scripts/salva.sh "Protagonisti $(date +%F)" eventi.js milano/eventi.js ravenna/eventi.js ferrara/eventi.js dati/chi_pagine.json
