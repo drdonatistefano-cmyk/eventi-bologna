@@ -856,7 +856,7 @@ const ltM=e=>{const v=norm(e.luogo);
  if(/fondazione|hangar|silos|superstudio|fabbrica|spazio|cubo|city oval|milanosesto|building|volvo|camera di commercio|\bmast\b|varesina/.test(v))return "Fondazioni e spazi";
  if(/galler|galerie|studio|arte\b|bottegantica|fine art|area|lorenzelli|marconi|immagini|labs|m77|otto/.test(v))return "Gallerie";
  return "Altri luoghi"};
-function prep(list){const A=list.filter(e=>end(e)>=today);for(const e of A){e._c=e.citta||CITY.capo;e._z=ZONA[e._c]||"Altro";e._q=norm([e.artista,e.luogo,e._c,e.descrizione,e.tipo,e.genere,e.rassegna,ZLAB[e._z]].join(" "));if(e._kind!=="c")e._lt=e._kind==="m"?ltM(e):e._kind==="i"?ltI(e):ltS(e)}return A}
+function prep(list){const A=list.filter(e=>end(e)>=today);for(const e of A){e._c=e.citta||CITY.capo;e._z=ZONA[e._c]||"Altro";e._q=norm([e.artista,e.chi,e.luogo,e._c,e.descrizione,e.tipo,e.genere,e.rassegna,ZLAB[e._z]].join(" "));if(e._kind!=="c")e._lt=e._kind==="m"?ltM(e):e._kind==="i"?ltI(e):ltS(e)}return A}
 const ALL_S=prep(EVENTS).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));
 let ALL_I=[],ALL_P=[],ALL_C=[];
 function prepPigri(){ALL_I=prep(INCONTRI).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));
@@ -1109,14 +1109,30 @@ const TKT='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 8.5V7a1.5 1
 function finestra(n,q){const w=n.split(" "),W=w.map(norm),qq=q.split(" ").filter(Boolean);
  for(let j=0;j<W.length;j++){if(!W[j].startsWith(qq[0]))continue;if(qq.length>1){if(qq.every((x,t)=>W[j+t]&&W[j+t].startsWith(x)))return w.slice(j,j+qq.length).join(" ");continue}
   let i=j>0?j-1:0,k=j>0?j:Math.min(1,w.length-1);if(/^(de|van|von)$/i.test(w[i])&&i>0)i--;if(i===k||/^(de|van|von)$/i.test(w[i]))return"";return w.slice(i,k+1).join(" ")}return""}
-function hitLine(e){const q=st.qn;if(!q||q.length<3||norm(e.artista).includes(q))return"";if(!e._nm)e._nm=nomiDi([e]).map(o=>o.n);
- const u=[...new Set(e._nm.map(x=>finestra(x,q)).filter(Boolean))].slice(0,2);if(!u.length)return"";
+/* protagonisti nella scheda piccola (17/11/2026, Stefano: «Bosso deve comparire sul box dell'evento»):
+   campo «chi» dei dati, altrimenti i nomi dopo «con», «special guest», «regia di», «a cura di»… nella descrizione */
+const CHI_STOP=new Set("teatro sala stagione concerto orchestra quartetto quartet trio ensemble coro fondazione associazione compagnia comune biblioteca museo festival rassegna banda accademia conservatorio scuola gruppo band teatri istituto universita centro casa circolo produzioni cooperativa sociale notte una il la".split(" "));
+const CHI_N="\\p{Lu}[\\p{Ll}'’]+(?:-\\p{Lu}[\\p{Ll}'’]+)?",CHI_NM=`${CHI_N}(?:\\s+(?:de|De|Di|Da|Del|Dalla|La|Lo|van|von)?\\s*${CHI_N})(?:\\s+${CHI_N}(?!\\s+\\p{Lu}))?`;
+const CHI_RE=new RegExp(`(special guest|guest|feat\\.?|featuring|di e con|con la partecipazione di|con|regia di|interpretato da|ospite|ospiti|dialoga con|in dialogo con|intervengono|interviene|a cura di|guidata da|guidato da|introduce|modera|incontro con)\\s*[:,]?\\s+(${CHI_NM}(?:\\s*(?:,|e|ed)\\s+${CHI_NM})*)`,"gu");
+function chiAuto(e){const d=e.descrizione||"",out=[];let m,pre="con";CHI_RE.lastIndex=0;
+ while((m=CHI_RE.exec(d))){if(/film|pellicola|omonimo/i.test(d.slice(Math.max(0,m.index-25),m.index)))continue;const k=m[1].toLowerCase(),p0=/^regia/.test(k)?"regia di":/^a cura/.test(k)?"a cura di":/dialog|modera|introduce/.test(k)?"con":"con";
+  for(let n of m[2].split(/\s*,\s*|\s+ed?\s+/u)){n=n.trim();const w=n.split(/\s+/);if(w.length<2||w.some(x=>CHI_STOP.has(norm(x))))continue;if(norm(e.artista).includes(norm(w[w.length-1])))continue;if(!out.length)pre=p0;if(!out.includes(n))out.push(n)}}
+ return out.length?(pre==="con"?"":pre+" ")+out.slice(0,2).join(" e "):""}
+function chiTesto(e){if(e._chi===undefined){let t=(e.chi||"").trim();if(t&&norm(e.artista).includes(norm(t)))t="";e._chi=t||(e._kind==="m"?"":chiAuto(e))}return e._chi}
+function chiLine(e){const t=chiTesto(e);if(!t)return"";const raw=/^(con|di|regia|dirige|a cura)\b/i.test(t)||/\scon\s/.test(t);
+ const h=esc(raw?t:"con "+t).replace(/(\p{Lu}[\p{Ll}'’.]+(?:\s+(?:de|De|Di|Da|Del|Dalla|van|von)?\s*\p{Lu}[\p{Ll}'’]+)+)/gu,"<b>$1</b>");
+ return `<div class="mhit">${h}</div>`}
+function finestra(n,q){const w=n.split(" "),W=w.map(norm),qq=q.split(" ").filter(Boolean);
+ for(let j=0;j<W.length;j++){if(!W[j].startsWith(qq[0]))continue;if(qq.length>1){if(qq.every((x,t)=>W[j+t]&&W[j+t].startsWith(x)))return w.slice(j,j+qq.length).join(" ");continue}
+  let i=j>0?j-1:0,k=j>0?j:Math.min(1,w.length-1);if(/^(de|van|von)$/i.test(w[i])&&i>0)i--;if(i===k||/^(de|van|von)$/i.test(w[i]))return"";return w.slice(i,k+1).join(" ")}return""}
+function hitLine(e){const q=st.qn;if(!q||q.length<3||norm(e.artista).includes(q)||norm(chiTesto(e)).includes(q))return chiLine(e);if(!e._nm)e._nm=nomiDi([e]).map(o=>o.n);
+ const u=[...new Set(e._nm.map(x=>finestra(x,q)).filter(Boolean))].slice(0,2);if(!u.length)return chiLine(e);
  return `<div class="mhit">con <b>${u.map(esc).join("</b> e <b>")}</b></div>`}
 /* suggerimenti sotto la casella di ricerca: nomi di persone (due-quattro parole con l'iniziale maiuscola) presi da titoli e descrizioni */
 const QSTOP=new Set("il lo la i gli le un una al allo alla ai agli alle dal dalla dei del della di da in con per tra fra su teatro sala stagione concerto concerti rassegna festival orchestra quartetto trio ensemble coro musiche musica prosa danza opera biglietti ingresso domenica sabato venerdi giovedi mercoledi martedi lunedi gennaio febbraio marzo aprile maggio giugno luglio agosto settembre ottobre novembre dicembre ravenna bologna milano ferrara faenza cervia lugo italia italiano italiana premio regia".split(" "));
 const QPREP=new Set("il lo la i gli le un una al allo alla ai agli alle dal dalla dei del della di da in con per tra fra su".split(" "));let QN={};
 function nomiDi(list){const m=new Map(),re=/(?:^|[^\p{L}])(\p{Lu}[\p{Ll}'’]+(?:\s+(?:de|van|von)?\s*\p{Lu}[\p{Ll}'’]+){1,3})/gu;
- for(const e of list){const seen=new Set();for(const t of [e.artista,e.descrizione]){if(!t)continue;let x;re.lastIndex=0;while((x=re.exec(t))){let w=x[1].replace(/\s+/g," ").trim().split(" ");while(w.length&&QSTOP.has(norm(w[0])))w.shift();while(w.length&&QSTOP.has(norm(w[w.length-1])))w.pop();if(w.length<2||w.slice(1).some(p=>QSTOP.has(norm(p))&&!QPREP.has(norm(p))))continue;const nm=w.join(" "),k=norm(nm);if(seen.has(k))continue;seen.add(k);const o=m.get(k)||{n:nm,ev:new Set()};o.ev.add(e);m.set(k,o)}}}
+ for(const e of list){const seen=new Set();for(const t of [e.artista,e.chi,e.descrizione]){if(!t)continue;let x;re.lastIndex=0;while((x=re.exec(t))){let w=x[1].replace(/\s+/g," ").trim().split(" ");while(w.length&&QSTOP.has(norm(w[0])))w.shift();while(w.length&&QSTOP.has(norm(w[w.length-1])))w.pop();if(w.length<2||w.slice(1).some(p=>QSTOP.has(norm(p))&&!QPREP.has(norm(p))))continue;const nm=w.join(" "),k=norm(nm);if(seen.has(k))continue;seen.add(k);const o=m.get(k)||{n:nm,ev:new Set()};o.ev.add(e);m.set(k,o)}}}
  return [...m.values()]}
 function qSug(){const box=$("#qsug");if(!box)return;const q=norm(($("#q").value||"").trim());if(q.length<3||MODE==="c"){box.hidden=true;box.innerHTML="";return}
  if(!QN[MODE])QN[MODE]=nomiDi(ALL);

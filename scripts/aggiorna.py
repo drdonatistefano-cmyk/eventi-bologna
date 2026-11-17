@@ -51,7 +51,7 @@ STESSO_LUOGO = {
     "Gate": "Gate Milano", "Teatro dal Verme": "Teatro Dal Verme", "EcoTeatro": "Ecoteatro",
     "Teatro Nazionale": "Teatro Nazionale Italiana Assicurazioni",
 }
-CAMPI = ["id","data","fino","ora","artista","luogo","citta","genere","tipo","rassegna","descrizione","fonte","biglietti",
+CAMPI = ["id","data","fino","ora","artista","chi","luogo","citta","genere","tipo","rassegna","descrizione","fonte","biglietti",
          "biglietti_tipo","disp","disp_nota","disp_verificata","sito_luogo"]
 DATA_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -186,7 +186,7 @@ def main():
         if not e.get("biglietti"): e["biglietti_tipo"] = ""
         if not e.get("descrizione"): avvisi.append(f"{rif}: senza descrizione")
         for k in CAMPI: e.setdefault(k, "")
-        puliti.append({k: e[k] for k in CAMPI})
+        puliti.append({k: e[k] for k in CAMPI if k != "chi" or e[k]})   # «chi» (protagonisti, 17/11/2026): solo se c'è
     # doppioni: stesso inizio + stesso titolo + stesso luogo
     visti, unici, doppi = {}, [], 0
     for e in puliti:
@@ -195,7 +195,7 @@ def main():
             doppi += 1
             t = visti[k]
             for f in CAMPI:
-                if not t[f] and e[f]: t[f] = e[f]
+                if not t.get(f) and e.get(f): t[f] = e[f]
             continue
         visti[k] = e; unici.append(e)
     # id unici
