@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-16",
- "giorno_orari": "2026-11-16",
+ "aggiornato": "2026-11-17",
+ "giorno_orari": "2026-11-17",
  "sale": [
   {
    "id": "c001",
@@ -18,9 +18,6 @@
       "20:45"
      ],
      "giorni": {
-      "2026-11-16": [
-       "20:45"
-      ],
       "2026-11-17": [
        "20:45"
       ],
@@ -45,10 +42,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-16": [
-       "21:00",
-       "21:30"
-      ],
       "2026-11-17": [
        "21:00",
        "21:30"
@@ -93,9 +86,6 @@
       "21:25"
      ],
      "giorni": {
-      "2026-11-16": [
-       "21:25"
-      ],
       "2026-11-17": [
        "21:25"
       ],
@@ -213,9 +203,6 @@
       "21:15"
      ],
      "giorni": {
-      "2026-11-16": [
-       "21:15"
-      ],
       "2026-11-17": [
        "21:15"
       ],
@@ -255,9 +242,6 @@
       "20:40"
      ],
      "giorni": {
-      "2026-11-16": [
-       "20:40"
-      ],
       "2026-11-17": [
        "20:40"
       ],
@@ -307,9 +291,6 @@
       "20:50"
      ],
      "giorni": {
-      "2026-11-16": [
-       "20:50"
-      ],
       "2026-11-17": [
        "20:50"
       ],
@@ -360,10 +341,6 @@
       "21:05"
      ],
      "giorni": {
-      "2026-11-16": [
-       "21:00",
-       "21:05"
-      ],
       "2026-11-17": [
        "21:00",
        "21:05"
@@ -405,9 +382,6 @@
       "20:30"
      ],
      "giorni": {
-      "2026-11-16": [
-       "20:30"
-      ],
       "2026-11-17": [
        "20:30"
       ],
@@ -463,9 +437,6 @@
       "20:50"
      ],
      "giorni": {
-      "2026-11-16": [
-       "20:50"
-      ],
       "2026-11-17": [
        "20:50"
       ],
@@ -505,9 +476,6 @@
       "20:35"
      ],
      "giorni": {
-      "2026-11-16": [
-       "20:35"
-      ],
       "2026-11-17": [
        "20:35"
       ],
@@ -556,12 +524,10 @@
     {
      "titolo": "Digger",
      "orari": [
-      "20:30"
+      "18:30",
+      "21:00"
      ],
      "giorni": {
-      "2026-11-16": [
-       "20:30"
-      ],
       "2026-11-17": [
        "18:30",
        "21:00"
@@ -704,7 +670,7 @@
      "durata": 139,
      "anno": 1968,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "20:45"
       ]
      },
@@ -724,7 +690,7 @@
      "durata": 122,
      "anno": 2026,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "21:00",
        "21:30"
       ]
@@ -743,7 +709,7 @@
      "durata": 135,
      "anno": 2026,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "21:25"
       ]
      },
@@ -762,7 +728,7 @@
      "durata": 113,
      "anno": 2026,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "21:15"
       ]
      },
@@ -781,7 +747,7 @@
      "durata": 97,
      "anno": 2026,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "20:40"
       ]
      },
@@ -799,7 +765,7 @@
      "durata": 94,
      "anno": 1984,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "20:50"
       ]
      },
@@ -819,7 +785,7 @@
      "durata": 116,
      "anno": 2026,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "21:00",
        "21:05"
       ]
@@ -839,7 +805,7 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "20:30"
       ]
      },
@@ -857,7 +823,7 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "20:50"
       ]
      },
@@ -876,7 +842,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "20:35"
       ]
      },
@@ -896,21 +862,23 @@
    "fonte": "https://movieplayer.it/cinema/jolly-doc_1126/",
    "film": [
     {
-     "titolo": "La casa delle donne",
+     "titolo": "Look Back",
      "orari": [
       "21:00"
      ],
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "interpreti": "",
-     "durata": null,
-     "anno": 2025,
+     "versione": "Versione originale",
+     "genere": "Drammatico",
+     "regia": "Kore-eda",
+     "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
+     "durata": 100,
+     "anno": 2026,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "21:00"
       ]
-     }
+     },
+     "paese": "Giappone",
+     "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29"
     }
    ],
    "auto": true
@@ -927,8 +895,8 @@
     {
      "titolo": "Judy",
      "orari": [
-      "18:00",
-      "20:30"
+      "18:30",
+      "21:00"
      ],
      "versione": "",
      "genere": "",
@@ -937,9 +905,9 @@
      "durata": null,
      "anno": 2025,
      "giorni": {
-      "2026-11-16": [
-       "18:00",
-       "20:30"
+      "2026-11-17": [
+       "18:30",
+       "21:00"
       ]
      }
     }
@@ -954,26 +922,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/gulliver_1109/",
-   "film": [
-    {
-     "titolo": "Dio ride",
-     "orari": [
-      "21:00"
-     ],
-     "versione": "",
-     "genere": "",
-     "regia": "Giovanni Veronesi",
-     "interpreti": "",
-     "durata": null,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-16": [
-       "21:00"
-      ]
-     },
-     "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
-    }
-   ],
+   "film": [],
    "auto": true
   },
   {
@@ -1019,7 +968,7 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "21:00"
       ]
      },
@@ -1049,12 +998,30 @@
      "durata": 139,
      "anno": 1968,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "20:40"
       ]
      },
      "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/2001%3A_Odissea_nello_spazio"
+    },
+    {
+     "titolo": "Come rapinare una banca",
+     "orari": [
+      "21:10"
+     ],
+     "versione": "",
+     "genere": "Azione, Thriller",
+     "regia": "David Leitch",
+     "interpreti": "Nicholas Hoult, Christian Slater e Zoë Kravitz",
+     "durata": 122,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-17": [
+       "21:10"
+      ]
+     },
+     "paese": "USA"
     },
     {
      "titolo": "Godzilla Minus Zero",
@@ -1068,7 +1035,7 @@
      "durata": 135,
      "anno": 2026,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "21:10"
       ]
      },
@@ -1087,7 +1054,7 @@
      "durata": null,
      "anno": 2026,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "21:00"
       ]
      },
@@ -1105,30 +1072,12 @@
      "durata": 113,
      "anno": 2026,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "20:45"
       ]
      },
      "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/Il_rumore_delle_cose_nuove"
-    },
-    {
-     "titolo": "In un battito",
-     "orari": [
-      "20:50"
-     ],
-     "versione": "",
-     "genere": "Documentario",
-     "regia": "Giovanni Troilo",
-     "interpreti": "Edoardo Bove",
-     "durata": 97,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-16": [
-       "20:50"
-      ]
-     },
-     "paese": "Italia"
     },
     {
      "titolo": "La storia infinita",
@@ -1142,7 +1091,7 @@
      "durata": 94,
      "anno": 1984,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "21:00"
       ]
      },
@@ -1154,14 +1103,14 @@
      "orari": [
       "21:00"
      ],
-     "versione": "",
+     "versione": "Versione originale",
      "genere": "Drammatico, Fantasy",
      "regia": "Ti West",
      "interpreti": "Johnny Depp, Sam Claflin e Daisy Ridley",
      "durata": 116,
      "anno": 2026,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "21:00"
       ]
      },
@@ -1180,7 +1129,7 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "21:00"
       ]
      },
@@ -1198,7 +1147,7 @@
      "durata": 91,
      "anno": 2026,
      "giorni": {
-      "2026-11-16": [
+      "2026-11-17": [
        "20:50"
       ]
      },
@@ -1216,7 +1165,27 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/europa_1118/",
-   "film": [],
+   "film": [
+    {
+     "titolo": "Look Back",
+     "orari": [
+      "20:45"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Kore-eda",
+     "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
+     "durata": 100,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-17": [
+       "20:45"
+      ]
+     },
+     "paese": "Giappone",
+     "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29"
+    }
+   ],
    "auto": true
   }
  ],
