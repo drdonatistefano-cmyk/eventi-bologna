@@ -18,7 +18,7 @@ import re
 import sys
 
 # file di dati che la pagina di ogni città carica: se mancano la pagina resta bianca
-DATI_PAGINA = ["index.html", "eventi.js", "mostre.js", "cinema.js", "incontri.js", "sport.js", "serate.js", "versioni.js"]
+DATI_PAGINA = ["index.html", "eventi.js", "eventi-presto.js", "eventi-resto.js", "mostre.js", "cinema.js", "incontri.js", "sport.js", "serate.js", "versioni.js"]
 # flussi che salvano i dati della città: se la città non c'è, i suoi dati non si aggiornano più
 FLUSSI_DATI = {"eventi_auto.yml": "eventi e mostre automatici", "incontri.yml": "incontri", "cinema.yml": "cinema",
                "protagonisti.yml": "protagonisti"}

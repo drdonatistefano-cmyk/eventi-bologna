@@ -65,7 +65,7 @@ GUIDE = {
         "nome": "Events", "base": "https://achevents.com/",
         "pagine": {
             "guida": {"url": "index.html", "contenuto": "document.querySelectorAll('#list article.card').length>3",
-                      "foto": None, "dati": r"/eventi\.js"},
+                      "foto": None, "dati": r"/eventi(-presto)?\.js"},
         },
     },
 }

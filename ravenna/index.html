@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var P={mi:"/milano/",ra:"/ravenna/",fe:"/ferrara/"},m=document.cookie.match(/(?:^|; )citta=(bo|mi|ra|fe)/),q=/[?&]citta=(bo|mi|ra|fe)/.exec(location.search),qui=/^\/(milano|ravenna|ferrara)(\/|$)/.test(location.pathname)?"altra":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||!P[m[1]]||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace(P[m[1]])}catch(_){}})();</script>
-<script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"250abe102f","serate":"9f1b016ebe","mostre":"e4830e9a88"}/*V0*/;</script>
-<script>/* anticipo: chiede subito versioni.js (senza bloccare la pagina) e fa partire i file dei dati mentre arriva il resto; più in basso la pagina li usa dalla memoria */(function(){try{var V0=window.ACH_V0||{},fatti={};function pre(f,h){if(!h||fatti[f+h])return;fatti[f+h]=1;var l=document.createElement("link");l.rel="preload";l.as="script";l.href=f+".js?h="+h;document.head.appendChild(l)}["eventi","serate","mostre"].forEach(function(f){pre(f,V0[f])});var s=document.createElement("script");s.async=true;s.src="versioni.js?v="+Math.floor(Date.now()/6e5);s.onload=function(){var V=window.ACH_VERSIONI||{};["eventi","serate","mostre"].forEach(function(f){pre(f,V[f])})};document.head.appendChild(s)}catch(e){}})();</script>
+<script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"250abe102f","eventi-presto":"056174f06e","serate":"9f1b016ebe","mostre":"e4830e9a88"}/*V0*/;</script>
+<script>/* anticipo: chiede subito versioni.js (senza bloccare la pagina) e fa partire i file dei dati mentre arriva il resto; più in basso la pagina li usa dalla memoria */(function(){try{var V0=window.ACH_V0||{},fatti={};function pre(f,h){if(!h||fatti[f+h])return;fatti[f+h]=1;var l=document.createElement("link");l.rel="preload";l.as="script";l.href=f+".js?h="+h;document.head.appendChild(l)}["eventi-presto","serate","mostre"].forEach(function(f){pre(f,V0[f])});var s=document.createElement("script");s.async=true;s.src="versioni.js?v="+Math.floor(Date.now()/6e5);s.onload=function(){var V=window.ACH_VERSIONI||{};["eventi-presto","serate","mostre"].forEach(function(f){pre(f,V[f])})};document.head.appendChild(s)}catch(e){}})();</script>
 <title>Ach's Events Guide – concerti, teatro, mostre e cinema a Ravenna</title>
 <meta name="description" content="Ach&#39;s Events Guide: concerti, teatro, mostre e cinema a Ravenna e nella Città metropolitana, con date, orari, luoghi e link ai biglietti.">
 <meta property="og:type" content="website">
@@ -736,7 +736,7 @@ footer{padding:0 0 40px;color:var(--mute);font-size:12.5px;text-align:center}.fu
 </div></dialog>
 
 <script>/* 1) versioni.js, piccolissimo e sempre fresco (numero che cambia ogni 10 minuti): contiene le impronte dei file dei dati */document.write('<script src="versioni.js?v='+Math.floor(Date.now()/6e5)+'"><\/script>');</script>
-<script>/* 2) dati con l'impronta (?h=): finché un file non cambia il telefono usa la copia che ha già. Se manca l'impronta, metodo di prima (?v= ogni 10 minuti). Subito solo i dati della prima scheda (Spettacoli, serate) e le mostre (piccole): incontri, cinema e sport arrivano dopo, a pagina già visibile (vedi «dati che arrivano dopo» in fondo) */(function(){var V=window.ACH_VERSIONI||{},V0=window.ACH_V0||{},v=Math.floor(Date.now()/6e5);["eventi","serate","mostre"].forEach(function(f){var h=V[f]||V0[f];document.write('<script src="'+f+'.js?'+(h?'h='+h:'v='+v)+'"><\/script>')})})();</script>
+<script>/* 2) dati con l'impronta (?h=): finché un file non cambia il telefono usa la copia che ha già. Se manca l'impronta, metodo di prima (?v= ogni 10 minuti). Subito solo i dati della prima scheda (Spettacoli, serate) e le mostre (piccole): incontri, cinema e sport arrivano dopo, a pagina già visibile (vedi «dati che arrivano dopo» in fondo) */(function(){var V=window.ACH_VERSIONI||{},V0=window.ACH_V0||{},v=Math.floor(Date.now()/6e5);["eventi-presto","serate","mostre"].forEach(function(f){var h=V[f]||V0[f];document.write('<script src="'+f+'.js?'+(h?'h='+h:'v='+v)+'"'+(f==="eventi-presto"?' onerror="window.__PRESTO_KO=1"':'')+'><\/script>')})})();</script>
 <button class="giu via" id="azzGiu" type="button" data-reset hidden>✕ Azzera i filtri <span class="n">0</span></button>
 <script>
 "use strict";
@@ -773,12 +773,12 @@ const CITY=Object.values(CITTA_CFG).find(c=>c.k!=="bo"&&new RegExp("^"+c.path.re
 const DATA=(window.EVENTI_DATA&&typeof window.EVENTI_DATA==="object")?window.EVENTI_DATA:{aggiornato:"",eventi:[]};
 const ISO=/^\d{4}-\d{2}-\d{2}$/;
 const UPDATED=ISO.test(DATA.aggiornato||"")?DATA.aggiornato:"";
-const EVENTS0=(Array.isArray(DATA.eventi)?DATA.eventi:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista);
+let EVENTS0=(Array.isArray(DATA.eventi)?DATA.eventi:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista);
 /* serate nei club (serate.js, aggiornato da solo due volte a settimana): saltate se nello stesso giorno e locale c'è già uno spettacolo */
 const SRD=(window.SERATE_DATA&&typeof window.SERATE_DATA==="object")?window.SERATE_DATA:{serate:[]};
 const vkey=s=>String(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\b(club|circolo|teatro|milano|bologna)\b/g,"").replace(/[^a-z0-9]/g,"");
-const GIA=new Set(EVENTS0.map(e=>e.data+"|"+vkey(e.luogo)));
-const EVENTS=EVENTS0.concat((Array.isArray(SRD.serate)?SRD.serate:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista&&e.luogo&&!GIA.has(e.data+"|"+vkey(e.luogo))));
+let GIA=new Set(EVENTS0.map(e=>e.data+"|"+vkey(e.luogo)));
+let EVENTS=EVENTS0.concat((Array.isArray(SRD.serate)?SRD.serate:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista&&e.luogo&&!GIA.has(e.data+"|"+vkey(e.luogo))));
 const MD=(window.MOSTRE_DATA&&typeof window.MOSTRE_DATA==="object")?window.MOSTRE_DATA:{aggiornato:"",mostre:[]};
 const ING={gratuito:"Ingresso gratuito","a pagamento":"A pagamento"};
 const MOSTRE=(Array.isArray(MD.mostre)?MD.mostre:[]).filter(m=>m&&ISO.test(m.inizio||"")&&ISO.test(m.fine||"")&&m.titolo&&m.sede).map(m=>({id:m.id,_kind:"m",data:m.inizio,fino:m.fine,ora:"",artista:m.titolo,luogo:m.sede,citta:m.citta||CITY.capo,genere:m.categoria||"",tipo:"",rassegna:"",descrizione:m.descrizione||"",fonte:m.fonte||"",biglietti:/^https:/.test(m.biglietti||"")?m.biglietti:"",biglietti_tipo:m.biglietti_tipo||"",orari:m.orari||"",_ing:ING[(m.ingresso||"").toLowerCase()]||"Da verificare",sito_luogo:m.sito||""}));
@@ -872,7 +872,7 @@ const ltM=e=>{const v=norm(e.luogo);
 /* il comune va prima del luogo, così non viene tagliato dai puntini quando il nome del luogo è lungo */
 function conComune(e){return !!e._c&&!norm(e.luogo||"").includes(norm(e._c))}
 function prep(list){const A=list.filter(e=>end(e)>=today);for(const e of A){e._c=e.citta||CITY.capo;e._z=ZONA[e._c]||"Altro";e._q=norm([e.artista,e.chi,e.luogo,e._c,e.descrizione,e.tipo,e.genere,e.rassegna,ZLAB[e._z]].join(" "));if(e._kind!=="c")e._lt=e._kind==="m"?ltM(e):e._kind==="i"?ltI(e):ltS(e)}return A}
-const ALL_S=prep(EVENTS).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));
+let ALL_S=prep(EVENTS).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));
 let ALL_I=[],ALL_P=[],ALL_C=[];
 function prepPigri(){ALL_I=prep(INCONTRI).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));
  ALL_P=prep(SPORT).sort((a,b)=>(a.data+(a.ora||"99")).localeCompare(b.data+(b.ora||"99")));
@@ -1294,12 +1294,12 @@ const TXT={s:{lede:"Concerti, teatro, comici, classica e grandi eventi "+CITY.ar
 function heroStats(){const x=TXT[MODE];
  $("#sTot").textContent=MODE==="c"?new Set(ALL.map(e=>norm(e.artista))).size:ALL.length;$("#lTot").textContent=x.tot;
  $("#sWeek").textContent=MODE==="c"?new Set(ALL.map(e=>e.luogo)).size:MODE==="m"?ALL.filter(e=>overlaps(e,today,today)).length:ALL.filter(e=>overlaps(e,today,in7)).length;$("#lWeek").textContent=x.w;
- $("#sCom").textContent=COMUNI_CON.size;$("#lCom").textContent=COMUNI_CON.size===1?"comune":"comuni";$("#sUpd").textContent=x.upd?fmt(x.upd,{day:"numeric",month:"short"}):"–";$("#fUpd").textContent=x.upd?"Dati aggiornati "+fmt(x.upd,{weekday:"long",day:"numeric",month:"long",year:"numeric"}):"";
+ $("#sCom").textContent=COMUNI_CON.size;$("#lCom").textContent=COMUNI_CON.size===1?"comune":"comuni";if(MODE==="s"&&(window.EVENTI_DATA||{}).parziale){$("#sTot").textContent="…";$("#sCom").textContent="…"}/* 18/11: totali scritti quando arriva il resto dell'anno */$("#sUpd").textContent=x.upd?fmt(x.upd,{day:"numeric",month:"short"}):"–";$("#fUpd").textContent=x.upd?"Dati aggiornati "+fmt(x.upd,{weekday:"long",day:"numeric",month:"long",year:"numeric"}):"";
  $(".lede").textContent=x.lede;$("#q").placeholder=x.ph;
  $$('.seg [data-view="cal"]').forEach(b=>{b.textContent=MODE==="m"?"Elenco":MODE==="c"?"Film":"Calendario"});
  $$('.seg [data-view="luoghi"]').forEach(b=>{b.textContent=b.closest(".topctl")?x.luoghiS:x.luoghi});
  $$(".modes [data-mode]").forEach(b=>{const on=b.dataset.mode===MODE;b.classList.toggle("on",on);b.setAttribute("aria-selected",on)});
- $("#nS").textContent=ALL_S.length;$("#nI").textContent=ALL_I.length||"";$("#nP").textContent=ALL_P.length||"";$("#nM").textContent=ALL_M.length;$("#nC").textContent=new Set(ALL_C.map(e=>norm(e.artista))).size||"";
+ $("#nS").textContent=(window.EVENTI_DATA||{}).parziale?"…":ALL_S.length;$("#nI").textContent=ALL_I.length||"";$("#nP").textContent=ALL_P.length||"";$("#nM").textContent=ALL_M.length;$("#nC").textContent=new Set(ALL_C.map(e=>norm(e.artista))).size||"";
  document.body.classList.toggle("mode-m",MODE==="m");document.body.classList.toggle("mode-c",MODE==="c");document.body.classList.toggle("mode-i",MODE==="i");document.body.classList.toggle("mode-p",MODE==="p")}
 function setMode(m){if(m===MODE)return;if(PIGRI[m]&&!INTEGRATI[PIGRI[m]]){const b=document.querySelector(`.modes [data-mode="${m}"]`);if(b)b.setAttribute("aria-busy","true");caricaPigro(PIGRI[m]).then(()=>{if(b)b.removeAttribute("aria-busy");aggiornaPigri();if(!INTEGRATI[PIGRI[m]])INTEGRATI[PIGRI[m]]=1;setMode(m)});return}MODE=m;ALL=m==="m"?ALL_M:m==="c"?ALL_C:m==="i"?ALL_I:m==="p"?ALL_P:ALL_S;GOPTS=m==="m"?GOPTS_M:m==="c"?GOPTS_C:m==="i"?GOPTS_I:m==="p"?GOPTS_P:GOPTS_S;GLAB=Object.fromEntries(GOPTS.map(o=>[o.k,o]));
  SECS=m==="m"?SECS_M:m==="c"?SECS_C:m==="i"?SECS_I:m==="p"?SECS_P:SECS_S;QUICK=m==="m"?QUICK_M:m==="c"?QUICK_C:QUICK_S;STITLE=Object.fromEntries(SECS);MONTHS=monthsOf(ALL);COMUNI_CON=new Set(ALL.map(e=>e._c));
@@ -1394,7 +1394,8 @@ if(GC&&ON_WEB){try{const s=document.createElement("script");s.async=true;s.datas
 const AFF={awin:"3146807",mid:{"ticketone.it":9567,"vivaticket.com":0,"vivaticket.it":0,"tiqets.com":12427}};
 function affUrl(u){try{const h=new URL(u).hostname.replace(/^www\./,"");for(const d in AFF.mid){if(AFF.awin&&AFF.mid[d]&&(h===d||h.endsWith("."+d)))return "https://www.awin1.com/cread.php?awinmid="+AFF.mid[d]+"&awinaffid="+AFF.awin+"&ued="+encodeURIComponent(u)}}catch(_){}return u}
 document.addEventListener("click",e=>{const a=e.target.closest("a[href^='https://']");if(a&&!a.dataset.aff){const v=affUrl(a.href);if(v!==a.href){a.dataset.aff=a.href;a.href=v}}},true);
-if(AFF.awin&&Object.values(AFF.mid).some(Boolean)&&(()=>{try{const L=[...(window.EVENTI_DATA||{}).eventi||[],...(window.MOSTRE_DATA||{}).mostre||[]];return L.some(x=>[x.biglietti,x.sito,x.fonte].some(u=>/^https:/.test(u||"")&&affUrl(u)!==u))}catch(_){return false}})()){const f=document.querySelector("footer");if(f)f.insertAdjacentHTML("beforeend"," Alcuni link ai biglietti sono affiliati: se acquisti, il sito riceve una piccola commissione senza costi in più per te.")}
+function notaAff(){if(window.__NOTA_AFF)return;if(AFF.awin&&Object.values(AFF.mid).some(Boolean)&&(()=>{try{const L=[...(window.EVENTI_DATA||{}).eventi||[],...(window.MOSTRE_DATA||{}).mostre||[]];return L.some(x=>[x.biglietti,x.sito,x.fonte].some(u=>/^https:/.test(u||"")&&affUrl(u)!==u))}catch(_){return false}})()){const f=document.querySelector("footer");if(f){f.insertAdjacentHTML("beforeend"," Alcuni link ai biglietti sono affiliati: se acquisti, il sito riceve una piccola commissione senza costi in più per te.");window.__NOTA_AFF=1}}}
+notaAff();
 
 /* ---------- selettore città e testi della città ---------- */
 (function(){const h=document.querySelector(".hero h1");
@@ -1449,7 +1450,21 @@ function aggiornaPigri(){QN={};const nuovi=Object.values(PIGRI).filter(f=>!INTEG
  try{costruisciPigri();prepPigri();FI=null;TXT.i.upd=ISO.test(ID.aggiornato||"")?ID.aggiornato:"";TXT.p.upd=ISO.test(PD.aggiornato||"")?PD.aggiornato:"";TXT.c.upd=ISO.test(CD.aggiornato||"")?CD.aggiornato:"";
   if(PIGRI[MODE]){ALL=MODE==="c"?ALL_C:MODE==="i"?ALL_I:ALL_P;MONTHS=monthsOf(ALL);COMUNI_CON=new Set(ALL.map(e=>e._c))}
   const n=(id,v)=>{const el=document.getElementById(id);if(el)el.textContent=v};n("nI",ALL_I.length||"");n("nP",ALL_P.length||"");n("nC",new Set(ALL_C.map(e=>norm(e.artista))).size||"")}catch(err){console.error(err)}}
-function avviaPigri(){Object.values(PIGRI).forEach(f=>caricaPigro(f).then(aggiornaPigri))}
+/* 18/11/2026: gli spettacoli arrivano in due file. eventi-presto.js (i prossimi 14 giorni) all'apertura, eventi-resto.js
+   (il resto dell'anno) qui, a pagina visibile: i due insieme sono esattamente eventi.js. Se il primo mancasse, arriva qui eventi.js intero. */
+function integraResto(){if(INTEGRATI._resto)return;let R=window.EVENTI_RESTO;
+ if(window.__PRESTO_KO&&window.EVENTI_DATA&&!window.EVENTI_DATA.parziale)R={eventi:window.EVENTI_DATA.eventi||[]};
+ const nuovi=R&&Array.isArray(R.eventi)?R.eventi:null;if(!nuovi)return;INTEGRATI._resto=1;
+ try{const D0=(window.EVENTI_DATA&&window.EVENTI_DATA.parziale)?window.EVENTI_DATA:(window.EVENTI_DATA={aggiornato:(R&&R.aggiornato)||"",eventi:[]});
+  const visti=new Set((D0.eventi||[]).map(e=>e&&e.id));D0.eventi=(D0.eventi||[]).concat(nuovi.filter(e=>e&&!visti.has(e.id)));D0.parziale=false;
+  EVENTS0=D0.eventi.filter(e=>e&&ISO.test(e.data||"")&&e.artista);GIA=new Set(EVENTS0.map(e=>e.data+"|"+vkey(e.luogo)));
+  EVENTS=EVENTS0.concat((Array.isArray(SRD.serate)?SRD.serate:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista&&e.luogo&&!GIA.has(e.data+"|"+vkey(e.luogo))));
+  ALL_S=prep(EVENTS).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));QN={};
+  const n=document.getElementById("nS");if(n)n.textContent=ALL_S.length;
+  if(MODE==="s"){ALL=ALL_S;MONTHS=monthsOf(ALL);COMUNI_CON=new Set(ALL.map(e=>e._c));heroStats();render()}
+  notaAff()}catch(err){console.error(err)}}
+function avviaResto(){(window.__PRESTO_KO?caricaPigro("eventi"):caricaPigro("eventi-resto")).then(integraResto)}
+function avviaPigri(){avviaResto();Object.values(PIGRI).forEach(f=>caricaPigro(f).then(aggiornaPigri))}
 if(document.readyState==="complete")setTimeout(avviaPigri,0);else addEventListener("load",()=>setTimeout(avviaPigri,0));
 </script>
 <script src="/installa.js" data-colore="#3d5f7d" data-icona="/icona-192.png" data-sw="/sw.js" defer></script>

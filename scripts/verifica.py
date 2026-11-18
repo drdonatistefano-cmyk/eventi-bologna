@@ -373,7 +373,32 @@ def vista_citta():
         else:
             v.ok("Nuove province: soglia del business plan", det)
 
+    def due_parti():
+        """18/11/2026: eventi-presto.js (prossimi 14 giorni, all'apertura) + eventi-resto.js (dopo) = eventi.js, in ogni città.
+        Se non tornano, chi apre la pagina vede spettacoli in meno o doppi."""
+        for cart, nome in (("", "Bologna"), ("milano/", "Milano"), ("ravenna/", "Ravenna"), ("ferrara/", "Ferrara")):
+            pezzi = {}
+            for f in ("eventi", "eventi-presto", "eventi-resto"):
+                r, _ = prendi(B["events"] + cart + f + ".js")
+                pezzi[f] = js_dati(r.text) if r is not None and r.status_code == 200 else None
+            if pezzi["eventi"] is None:
+                continue
+            if pezzi["eventi-presto"] is None or pezzi["eventi-resto"] is None:
+                v.errore(f"Events {nome}: spettacoli in due parti", "manca eventi-presto.js o eventi-resto.js (la pagina carica eventi.js intero, più lenta)")
+                continue
+            tutti = [e.get("id") for e in pezzi["eventi"].get("eventi", [])]
+            p1 = [e.get("id") for e in pezzi["eventi-presto"].get("eventi", [])]
+            p2 = [e.get("id") for e in pezzi["eventi-resto"].get("eventi", [])]
+            uguali = sorted(map(str, p1 + p2)) == sorted(map(str, tutti))
+            v.se(uguali, f"Events {nome}: spettacoli in due parti",
+                 f"{len(p1)} subito + {len(p2)} dopo = {len(tutti)}" if uguali else
+                 f"non tornano: {len(p1)} + {len(p2)} contro {len(tutti)} in eventi.js (lanciare «Versioni dei dati»)")
+            fino = pezzi["eventi-presto"].get("fino_a", "")
+            v.se(fino >= datetime.date.today().isoformat(), f"Events {nome}: prossimi giorni aggiornati",
+                 f"eventi-presto.js arriva fino al {fino}", grave=False)
+
     protetto(v, "Città collegate dappertutto", collegamenti)
+    protetto(v, "Spettacoli in due parti", due_parti)
     protetto(v, "Nuove province: soglia del business plan", soglia)
 
 
