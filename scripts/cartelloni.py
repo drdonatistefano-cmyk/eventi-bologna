@@ -31,11 +31,14 @@ CITTA = {
     "bo": {"nome": "Bologna", "eventi": "eventi.js", "eventim": 218, "songkick": None},
     "mi": {"nome": "Milano", "eventi": "milano/eventi.js", "eventim": 215,
            "songkick": "https://www.songkick.com/metro-areas/30338-italy-milan"},
-    "ra": {"nome": "Ravenna", "eventi": "ravenna/eventi.js", "eventim": 1137, "songkick": None},
+    # Ravenna: 1137 è un id «cityd» del sito e l'API non lo accetta (0 risultati il 18/11). Si cerca per nome e si tengono
+    # solo gli spettacoli in provincia di Ravenna (location.state = RA): copre anche Faenza, Lugo, Cervia.
+    "ra": {"nome": "Ravenna", "eventi": "ravenna/eventi.js", "eventim": 1137, "cerca": "Ravenna", "provincia": "RA", "songkick": None},
     "fe": {"nome": "Ferrara", "eventi": "ferrara/eventi.js", "eventim": 2136, "songkick": None},
 }
 CATEGORIE = ["Concerti", "Teatro", "Mostre e Musei"]
-BLOCCO = re.compile(r"(?i)502 bad gateway|503 service|504 gateway|verifica di sicurezza|just a moment|checking your browser|attention required")
+BLOCCO = re.compile(r"(?i)502 bad gateway|503 service|504 gateway|verifica di sicurezza|just a moment|checking your browser|attention required"
+                    r"|403 error|request blocked|access denied|403 forbidden")   # 18/11: CloudFront (Alighieri, Ravenna Festival) rifiuta GitHub
 NON_SPETTACOLO = re.compile(r"(?i)\babbonament|\bcarnet\b|gift ?card|buono regalo|voucher|\bstagione \d{4}\s*/\s*\d{2,4}\b|^\S+(\s\S+)? \d{4}/\d{2,4}$|\bmembership\b|\btessera\b")
 STOP = set("e and the di il la lo i gli le de del della dei in a al alla live tour concerto teatro milano bologna 2026 2027 2028 show con feat ft x special guest".split())
 REP = {"quando": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "pagine": [], "ticketone": {}, "songkick": {}, "errori": []}
@@ -195,9 +198,26 @@ def ticketone(c, cart, cand):
             for g in d.get("productGroups", []): gruppi[g["productGroupId"]] = g
             if pag >= int(d.get("totalPages") or 1): break
             time.sleep(1.5)
+    if not gruppi and CITTA[c].get("cerca"):   # l'id non ha dato nulla: ricerca per nome, filtrata per provincia
+        pr = CITTA[c].get("provincia")
+        for cat in CATEGORIE:
+            for pag in range(1, 9):
+                u = ("https://public-api.eventim.com/websearch/search/api/exploration/v2/productGroups?webId=web__ticketone-it&language=it"
+                     f"&search_term={urllib.parse.quote(CITTA[c]['cerca'])}&page={pag}&sort=DateAsc&in_stock=true&categories={urllib.parse.quote(cat)}")
+                try: d = json.loads(get(u))
+                except Exception as e:
+                    REP["errori"].append(f"TicketOne ricerca {cat} p.{pag}: {e}"); break
+                for g in d.get("productGroups", []):
+                    g["products"] = [x for x in g.get("products", [])
+                                     if not pr or x.get("typeAttributes", {}).get("liveEntertainment", {}).get("location", {}).get("state") == pr]
+                    g["productCount"] = len(g["products"])   # dopo il filtro: le date rimaste sono tutte quelle in provincia
+                    if g["products"]: gruppi[g["productGroupId"]] = g
+                if pag >= int(d.get("totalPages") or 1): break
+                time.sleep(1.5)
+        REP["ticketone_ricerca"] = f"per nome «{CITTA[c]['cerca']}», provincia {pr}: {len(gruppi)} gruppi"
     G = list(gruppi.values())
     json.dump(G, open(os.path.join(cart, c, "ticketone.json"), "w"), ensure_ascii=False)
-    REP["ticketone"] = {"gruppi": len(G)}
+    REP["ticketone"] = {"gruppi": len(G), **({"ricerca": REP.pop("ticketone_ricerca")} if "ticketone_ricerca" in REP else {})}
     if not G: return
     # abbinamento: lo stesso programma che Claude lanciava a mano, su una copia
     tmp = f"/tmp/t1_{c}"; os.makedirs(tmp, exist_ok=True)
