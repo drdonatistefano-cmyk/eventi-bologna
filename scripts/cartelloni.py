@@ -257,6 +257,73 @@ def ticketone(c, cart, cand):
                            capture_output=True, text=True, cwd=tmp)
         REP["ticketone"]["link_scritti"] = q.returncode == 0
         if q.returncode: REP["errori"].append("convalida dei link TicketOne: " + q.stdout[-300:])
+    controllo_ticketone(c, G, cand)
+
+
+# 18/11/2026 (Stefano: «verificate se ci sono tutti i link?»): ogni domenica si confronta ogni data in vendita su TicketOne
+# nei prossimi 3 mesi con la guida, e si dice che cosa manca. Prima un gruppo TicketOne già usato da un evento contava
+# come «coperto» anche se la guida aveva solo la prima data (Cremonini 27/11 sì, 28/11 no; Giacobazzi 17/11 sì, 15/12 no).
+def controllo_ticketone(c, G, cand):
+    def url(x): return x["url"]["domain"] + x["url"]["path"]
+    def somiglia(a, b):   # stessa regola di ticketone_abbina.py: almeno metà delle parole del titolo più corto, e almeno 2 se ne ha 2
+        i = a & b
+        return bool(i) and len(i) / max(1, min(len(a), len(b))) >= 0.5 and len(i) >= min(2, len(a), len(b))
+    oggi, fine = OGGI, (datetime.date.fromisoformat(OGGI) + datetime.timedelta(days=92)).isoformat()
+    ev = carica_guida(c)   # dopo i link appena scritti
+    try:
+        t = open(os.path.join(RADICE, CITTA[c]["eventi"].replace("eventi.js", "mostre.js")), encoding="utf-8").read()
+        mo = json.loads(t[t.index("{"):].rstrip().rstrip(";")).get("mostre", [])
+    except Exception:
+        mo = []
+    u2g = {}
+    for g in G:
+        u2g[url(g)] = g["productGroupId"]
+        for x in g["products"]: u2g[url(x)] = g["productGroupId"]
+    per_gruppo = {}
+    for e in ev:
+        b = (e.get("biglietti") or "").split("?")[0]
+        if b in u2g: per_gruppo.setdefault(u2g[b], []).append(e)
+    gia_cand = {x.get("url") for x in cand}
+    R = {"date_in_vendita": 0, "coperte": 0, "date_mancanti": 0, "senza_link_ticketone": 0, "non_in_guida": 0, "mostre_senza_link": 0, "mostre_non_in_guida": 0}
+    da_controllare = []
+    for g in G:
+        sub = [x["name"] for x in g.get("categories", []) if "parentCategory" in x]
+        mostra = any(x.startswith(("Mostre", "Musei")) for x in sub)
+        tg = tok(g["name"]) | tok(g.get("mainAttraction", {}).get("name", ""))
+        for x in g["products"]:
+            le = x["typeAttributes"]["liveEntertainment"]; d = le["startDate"][:10]
+            if not (oggi <= d <= fine): continue
+            if mostra:
+                m = next((m for m in mo if (m.get("inizio") or "") <= d <= (m.get("fine") or "9999") and somiglia(tg, tok(m.get("titolo") or ""))), None)
+                if not m:
+                    R["mostre_non_in_guida"] += 1; da_controllare.append({"cosa": "mostra in vendita su TicketOne, non in guida", "titolo": g["name"], "luogo": le["location"]["name"], "url": url(g)})
+                elif not re.search(r"ticketone|tiqets", m.get("biglietti") or ""):
+                    R["mostre_senza_link"] += 1; da_controllare.append({"cosa": "mostra in guida senza link d'acquisto", "titolo": m.get("titolo"), "id": m.get("id"), "url": url(g)})
+                break   # una mostra conta una volta, non per ogni giorno
+            R["date_in_vendita"] += 1
+            if url(g) in gia_cand or url(x) in gia_cand: continue
+            E = per_gruppo.get(g["productGroupId"], [])
+            if any(e["data"] <= d <= (e.get("fino") or e["data"]) for e in E):
+                R["coperte"] += 1; continue
+            if E:   # lo spettacolo c'è, questa data no: candidato pronto, copiato dalla scheda già in guida
+                base = min(E, key=lambda e: abs((datetime.date.fromisoformat(e["data"]) - datetime.date.fromisoformat(d)).days))
+                nuovo = {**base, "id": "", "data": d, "fino": d, "ora": le["startDate"][11:16] if le["startDate"][11:16] not in ("", "00:00") else "n.d.",
+                         "biglietti": url(x), "biglietti_tipo": "Acquista", "disp_verificata": OGGI}
+                R["date_mancanti"] += 1
+                cand.append({"data": d, "fino": d, "ora": nuovo["ora"], "titolo": base["artista"], "luogo": base["luogo"], "comune": base.get("citta", ""),
+                             "url": url(x), "genere": f"{base.get('genere','')}/{base.get('tipo','')}".strip("/"), "descrizione": base.get("descrizione", ""),
+                             "fonte": "TicketOne (data in più di uno spettacolo già in guida)", "gia_in_guida": False, "evento_pronto": nuovo})
+                gia_cand.add(url(x)); continue
+            simile = next((e for e in ev if e["data"] <= d <= (e.get("fino") or e["data"]) and somiglia(tg, tok(e["artista"] + " " + e.get("titolo", "")))), None)
+            if simile and "ticketone" not in (simile.get("biglietti") or ""):
+                R["senza_link_ticketone"] += 1
+                da_controllare.append({"cosa": "forse lo stesso spettacolo, in guida senza TicketOne: controllare e, se è lui, mettere il link",
+                                       "id": simile["id"], "in_guida": simile["artista"], "su_ticketone": g["name"], "data": d, "url": url(x)})
+            elif not simile:
+                R["non_in_guida"] += 1
+                da_controllare.append({"cosa": "in vendita su TicketOne, non in guida e non fra i candidati (spesso pacchetti, prove TV, laboratori)",
+                                       "titolo": g["name"], "data": d, "luogo": le["location"]["name"], "categorie": sub, "url": url(x)})
+    REP["controllo_ticketone"] = {**R, "da_controllare": da_controllare[:80]}
 
 
 # ---------------------------------------------------------------- 3. Songkick
@@ -314,6 +381,7 @@ def main():
              "Il giro del lunedì legge questi file e non apre pagine web.", "",
              f"- Candidati da giudicare (non ancora in guida): **{len(cand)}** in `candidati.json`",
              f"- TicketOne: {REP['ticketone']}", f"- Songkick: {REP['songkick'] or 'non previsto per questa città'}", "",
+             *controllo_righe(REP.get("controllo_ticketone")),
              "## Pagine dei cartelloni", "", "| Pagina | Esito | Cambiata | Eventi strutturati | Testo |", "|---|---|---|---|---|"]
     for p in REP["pagine"]:
         righe.append(f"| {p['nome']} | {p.get('esito')} | {'**sì**' if p.get('cambiata') else 'no'} | {p.get('eventi_strutturati', '')} | `{p['file']}` |")
@@ -322,6 +390,18 @@ def main():
     open(os.path.join(cart, c, "LEGGIMI.md"), "w", encoding="utf-8").write("\n".join(righe) + "\n")
     print(f"{c}: {len(REP['pagine'])} pagine ({len(cambiate)} cambiate), candidati {len(cand)}, TicketOne {REP['ticketone']}, Songkick {REP['songkick']}, errori {len(REP['errori'])}")
     for e in REP["errori"]: print("  !", e)
+
+
+def controllo_righe(R):
+    if not R: return []
+    r = ["## Controllo TicketOne (date in vendita nei prossimi 3 mesi)", "",
+         f"- Date in vendita: {R['date_in_vendita']}, già in guida con il link: {R['coperte']}",
+         f"- Date in più di spettacoli già in guida, messe fra i candidati pronti: **{R['date_mancanti']}**",
+         f"- Forse in guida ma senza link TicketOne, da controllare: **{R['senza_link_ticketone']}**",
+         f"- In vendita e non in guida (spesso pacchetti, prove TV, laboratori): {R['non_in_guida']}",
+         f"- Mostre in vendita su TicketOne: senza link in guida {R['mostre_senza_link']}, non in guida {R['mostre_non_in_guida']}",
+         "", "Il dettaglio è in `candidati.json`, voce `controllo_ticketone.da_controllare`.", ""]
+    return r
 
 
 if __name__ == "__main__":
