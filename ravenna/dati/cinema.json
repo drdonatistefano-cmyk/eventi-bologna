@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-17",
- "giorno_orari": "2026-11-17",
+ "aggiornato": "2026-11-18",
+ "giorno_orari": "2026-11-18",
  "sale": [
   {
    "id": "c004",
@@ -38,9 +38,6 @@
       "20:45"
      ],
      "giorni": {
-      "2026-11-17": [
-       "20:45"
-      ],
       "2026-11-18": [
        "20:45"
       ]
@@ -62,10 +59,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:00",
-       "21:30"
-      ],
       "2026-11-18": [
        "21:00",
        "21:30"
@@ -106,9 +99,6 @@
       "21:25"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:25"
-      ],
       "2026-11-18": [
        "21:25"
       ],
@@ -143,7 +133,8 @@
      "orari": [],
      "giorni": {
       "2026-11-19": [
-       "21:10"
+       "21:10",
+       "21:25"
       ],
       "2026-11-20": [
        "18:05",
@@ -223,9 +214,6 @@
       "21:15"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:15"
-      ],
       "2026-11-18": [
        "21:15"
       ],
@@ -262,9 +250,6 @@
       "20:40"
      ],
      "giorni": {
-      "2026-11-17": [
-       "20:40"
-      ],
       "2026-11-18": [
        "20:40"
       ]
@@ -311,9 +296,6 @@
       "20:50"
      ],
      "giorni": {
-      "2026-11-17": [
-       "20:50"
-      ],
       "2026-11-18": [
        "20:50"
       ]
@@ -361,10 +343,6 @@
       "21:05"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:00",
-       "21:05"
-      ],
       "2026-11-18": [
        "21:00",
        "21:05"
@@ -402,9 +380,6 @@
       "20:30"
      ],
      "giorni": {
-      "2026-11-17": [
-       "20:30"
-      ],
       "2026-11-18": [
        "20:30"
       ],
@@ -457,9 +432,6 @@
       "20:50"
      ],
      "giorni": {
-      "2026-11-17": [
-       "20:50"
-      ],
       "2026-11-18": [
        "20:50"
       ],
@@ -496,9 +468,6 @@
       "20:35"
      ],
      "giorni": {
-      "2026-11-17": [
-       "20:35"
-      ],
       "2026-11-18": [
        "20:35"
       ],
@@ -541,23 +510,23 @@
    "fonte": "https://movieplayer.it/cinema/jolly-doc_1126/",
    "film": [
     {
-     "titolo": "Look Back",
+     "titolo": "Mr. Nobody Against Putin",
      "orari": [
       "21:00"
      ],
-     "versione": "Versione originale",
-     "genere": "Drammatico",
-     "regia": "Kore-eda",
-     "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
-     "durata": 100,
+     "versione": "",
+     "genere": "Documentario",
+     "regia": "David Borenstein e Pavel Talankin",
+     "interpreti": "Pavel Talankin, Viktor Abakumov e Lavrenti Beria",
+     "durata": 90,
      "anno": 2026,
      "giorni": {
-      "2026-11-17": [
+      "2026-11-18": [
        "21:00"
       ]
      },
-     "paese": "Giappone",
-     "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29"
+     "paese": "Danimarca",
+     "scheda": "https://it.wikipedia.org/wiki/Mr_Nobody_Against_Putin"
     }
    ]
   },
@@ -570,28 +539,6 @@
    "sito": "https://www.cinemaincentro.com/programmazione-sala.php?id=4",
    "fonte": "https://movieplayer.it/cinema/mariani-multisala_1127/",
    "film": [
-    {
-     "titolo": "Digger",
-     "orari": [
-      "18:30",
-      "21:00"
-     ],
-     "giorni": {
-      "2026-11-17": [
-       "18:30",
-       "21:00"
-      ]
-     },
-     "versione": "Versione originale (solo ore 18:30)",
-     "genere": "Drammatico, Commedia",
-     "regia": "Alejandro G. Iñárritu",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/7546",
-     "interpreti": "Tom Cruise, Riz Ahmed, John Goodman e Sandra Hüller",
-     "paese": "USA",
-     "durata": 129,
-     "anno": 2026,
-     "scheda": "https://it.wikipedia.org/wiki/Digger_%28film_2026%29"
-    },
     {
      "titolo": "Fjord",
      "orari": [],
@@ -646,16 +593,22 @@
     },
     {
      "titolo": "Minotaur",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-18": [
        "21:00"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Drammatico, Thriller",
+     "regia": "Andrey Zvyagintsev",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/7546",
+     "anno": 2026,
+     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
+     "paese": "Francia",
+     "durata": 135,
      "scheda": "https://it.wikipedia.org/wiki/Minotaur"
     }
    ],
@@ -768,7 +721,9 @@
     },
     {
      "titolo": "La storia infinita",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-18": [
        "21:00"
@@ -783,21 +738,6 @@
      "durata": 92,
      "anno": 1984,
      "scheda": "https://it.wikipedia.org/wiki/La_storia_infinita_%28film%29"
-    },
-    {
-     "titolo": "Minnie e Moskowitz",
-     "orari": [
-      "21:00"
-     ],
-     "giorni": {
-      "2026-11-17": [
-       "21:00"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=2"
     }
    ],
    "cinemap": "https://www.cinemap.it/faenza/cinema/cinema-sarti-faenza"
@@ -817,9 +757,6 @@
       "20:40"
      ],
      "giorni": {
-      "2026-11-17": [
-       "20:40"
-      ],
       "2026-11-18": [
        "20:40"
       ]
@@ -840,9 +777,6 @@
       "21:10"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:10"
-      ],
       "2026-11-18": [
        "21:10"
       ],
@@ -891,9 +825,6 @@
       "21:10"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:10"
-      ],
       "2026-11-18": [
        "21:10"
       ],
@@ -1009,9 +940,6 @@
       "20:45"
      ],
      "giorni": {
-      "2026-11-17": [
-       "20:45"
-      ],
       "2026-11-18": [
        "20:45"
       ],
@@ -1050,9 +978,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:00"
-      ],
       "2026-11-18": [
        "21:00"
       ]
@@ -1073,9 +998,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:00"
-      ],
       "2026-11-18": [
        "21:00"
       ],
@@ -1098,7 +1020,7 @@
        "21:10"
       ]
      },
-     "versione": "Versione originale (solo ore 21:00)",
+     "versione": "",
      "genere": "Drammatico, Fantasy",
      "regia": "Ti West",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
@@ -1114,9 +1036,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:00"
-      ],
       "2026-11-18": [
        "21:00"
       ],
@@ -1170,9 +1089,6 @@
       "20:50"
      ],
      "giorni": {
-      "2026-11-17": [
-       "20:50"
-      ],
       "2026-11-18": [
        "20:50"
       ],
@@ -1220,20 +1136,19 @@
     {
      "titolo": "Look Back",
      "orari": [
-      "20:45"
+      "21:00"
      ],
      "versione": "",
-     "genere": "Drammatico",
+     "genere": "",
      "regia": "Kore-eda",
-     "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
-     "durata": 100,
+     "interpreti": "",
+     "durata": null,
      "anno": 2026,
      "giorni": {
-      "2026-11-17": [
-       "20:45"
+      "2026-11-18": [
+       "21:00"
       ]
      },
-     "paese": "Giappone",
      "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29"
     }
    ]
@@ -1347,22 +1262,6 @@
      "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=1"
     },
     {
-     "titolo": "Hope",
-     "orari": [
-      "21:00"
-     ],
-     "giorni": {
-      "2026-11-17": [
-       "21:00"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=1",
-     "scheda": "https://it.wikipedia.org/wiki/Hope_%28film_2026%29"
-    },
-    {
      "titolo": "L'essere amato",
      "orari": [],
      "giorni": {
@@ -1378,7 +1277,9 @@
     },
     {
      "titolo": "Wild Horse Nine",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-18": [
        "21:00"
@@ -1399,9 +1300,9 @@
      "regia": "Martin McDonagh",
      "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=1",
      "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
-     "paese": "Regno Unito",
      "durata": 118,
      "anno": 2026,
+     "paese": "Regno Unito",
      "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
     }
    ]

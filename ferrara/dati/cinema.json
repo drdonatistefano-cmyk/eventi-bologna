@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-17",
- "giorno_orari": "2026-11-17",
+ "aggiornato": "2026-11-18",
+ "giorno_orari": "2026-11-18",
  "sale": [
   {
    "id": "c002",
@@ -27,37 +27,23 @@
     },
     {
      "titolo": "Amore amaro",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-18": [
        "21:00"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://cinemaboldini.it/programmazione/",
-     "scheda": "https://it.wikipedia.org/wiki/Amore_amaro"
-    },
-    {
-     "titolo": "Bronte: cronaca di un massacro che i libri di storia non hanno raccontato",
-     "orari": [
-      "21:00"
-     ],
-     "giorni": {
-      "2026-11-17": [
-       "21:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Storico",
+     "genere": "Drammatico",
      "regia": "Florestano Vancini",
      "biglietti": "https://cinemaboldini.it/programmazione/",
-     "interpreti": "Ivo Garrani, Mariano Rigillo, Ilija Dzuvalekovski e Rudolf Kukié",
-     "durata": 109,
-     "anno": 1972,
+     "interpreti": "Lisa Gastoni, Leonard Mann, Nino Dal Fabbro e Rita Livesi",
      "paese": "Italia",
-     "scheda": "https://it.wikipedia.org/wiki/Bronte%3A_cronaca_di_un_massacro_che_i_libri_di_storia_non_hanno_raccontato"
+     "durata": 99,
+     "anno": 1974,
+     "scheda": "https://it.wikipedia.org/wiki/Amore_amaro"
     },
     {
      "titolo": "Le stagioni del nostro amore",
@@ -91,9 +77,6 @@
       "21:25"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:25"
-      ],
       "2026-11-18": [
        "21:25"
       ]
@@ -114,9 +97,6 @@
       "22:10"
      ],
      "giorni": {
-      "2026-11-17": [
-       "22:10"
-      ],
       "2026-11-18": [
        "22:10"
       ]
@@ -136,9 +116,6 @@
       "22:00"
      ],
      "giorni": {
-      "2026-11-17": [
-       "22:00"
-      ],
       "2026-11-18": [
        "22:00"
       ]
@@ -158,9 +135,6 @@
       "19:35"
      ],
      "giorni": {
-      "2026-11-17": [
-       "19:35"
-      ],
       "2026-11-18": [
        "19:35"
       ]
@@ -182,10 +156,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-17": [
-       "18:30",
-       "21:30"
-      ],
       "2026-11-18": [
        "18:30",
        "21:30"
@@ -207,9 +177,6 @@
       "21:10"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:10"
-      ],
       "2026-11-18": [
        "21:10"
       ]
@@ -273,9 +240,6 @@
       "18:00"
      ],
      "giorni": {
-      "2026-11-17": [
-       "18:00"
-      ],
       "2026-11-18": [
        "18:00"
       ]
@@ -297,10 +261,6 @@
       "22:15"
      ],
      "giorni": {
-      "2026-11-17": [
-       "19:45",
-       "22:15"
-      ],
       "2026-11-18": [
        "19:45",
        "22:15"
@@ -322,9 +282,6 @@
       "19:10"
      ],
      "giorni": {
-      "2026-11-17": [
-       "19:10"
-      ],
       "2026-11-18": [
        "19:10"
       ]
@@ -346,10 +303,6 @@
       "21:25"
      ],
      "giorni": {
-      "2026-11-17": [
-       "18:40",
-       "21:25"
-      ],
       "2026-11-18": [
        "18:40",
        "21:25"
@@ -387,9 +340,6 @@
       "18:50"
      ],
      "giorni": {
-      "2026-11-17": [
-       "18:50"
-      ],
       "2026-11-18": [
        "18:50"
       ]
@@ -410,9 +360,6 @@
       "19:40"
      ],
      "giorni": {
-      "2026-11-17": [
-       "19:40"
-      ],
       "2026-11-18": [
        "19:40"
       ]
@@ -433,10 +380,6 @@
       "22:05"
      ],
      "giorni": {
-      "2026-11-17": [
-       "19:55",
-       "22:05"
-      ],
       "2026-11-18": [
        "19:55",
        "22:05"
@@ -459,10 +402,6 @@
       "22:30"
      ],
      "giorni": {
-      "2026-11-17": [
-       "20:15",
-       "22:30"
-      ],
       "2026-11-18": [
        "20:15",
        "22:30"
@@ -480,7 +419,9 @@
     },
     {
      "titolo": "Wild Horse Nine",
-     "orari": [],
+     "orari": [
+      "18:40"
+     ],
      "giorni": {
       "2026-11-18": [
        "18:40"
@@ -498,7 +439,9 @@
     },
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
-     "orari": [],
+     "orari": [
+      "21:20"
+     ],
      "giorni": {
       "2026-11-18": [
        "21:20"
@@ -511,6 +454,7 @@
      "interpreti": "Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan e Mahershala Ali",
      "durata": 139,
      "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Wildwood_-_I_segreti_del_bosco_proibito"
     }
    ]
@@ -557,21 +501,22 @@
    "fonte": "https://movieplayer.it/cinema/apollo-multisala_410/",
    "film": [
     {
-     "titolo": "2001: Odissea nello spazio",
+     "titolo": "2001: Odissea nello Spazio",
      "orari": [
-      "18:45"
+      "21:00"
      ],
+     "giorni": {
+      "2026-11-18": [
+       "21:00"
+      ]
+     },
      "versione": "",
      "genere": "Fantascienza",
      "regia": "Stanley Kubrick",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
      "interpreti": "Keir Dullea, Gary Lockwood e William Sylvester",
      "durata": 139,
      "anno": 1968,
-     "giorni": {
-      "2026-11-17": [
-       "18:45"
-      ]
-     },
      "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/2001%3A_Odissea_nello_spazio"
     },
@@ -580,18 +525,25 @@
      "orari": [
       "19:00"
      ],
+     "giorni": {
+      "2026-11-18": [
+       "19:00"
+      ],
+      "2026-11-21": [
+       "19:15"
+      ],
+      "2026-11-22": [
+       "19:15"
+      ]
+     },
      "versione": "",
      "genere": "Commedia",
      "regia": "Giovanni Veronesi",
-     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "durata": 114,
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
      "anno": 2026,
-     "giorni": {
-      "2026-11-17": [
-       "19:00"
-      ]
-     },
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
      "paese": "Italia",
+     "durata": 114,
      "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
     },
     {
@@ -599,36 +551,87 @@
      "orari": [
       "19:00"
      ],
-     "versione": "",
-     "genere": "Documentario",
-     "regia": "Vincent Munier",
-     "interpreti": "Vincent Munier, Simon Munier e Michel Munier",
-     "durata": 95,
-     "anno": 2025,
      "giorni": {
-      "2026-11-17": [
+      "2026-11-18": [
+       "19:00"
+      ],
+      "2026-11-21": [
+       "19:00"
+      ],
+      "2026-11-22": [
        "19:00"
       ]
      },
+     "versione": "",
+     "genere": "Documentario",
+     "regia": "Vincent Munier",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
+     "interpreti": "Vincent Munier, Simon Munier e Michel Munier",
+     "durata": 95,
+     "anno": 2025,
      "paese": "Francia"
+    },
+    {
+     "titolo": "Il fuoco che ti porti dentro",
+     "orari": [],
+     "giorni": {
+      "2026-11-19": [
+       "21:00"
+      ],
+      "2026-11-20": [
+       "18:45",
+       "21:00"
+      ],
+      "2026-11-21": [
+       "17:00",
+       "21:00"
+      ],
+      "2026-11-22": [
+       "17:00",
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
+     "scheda": "https://it.wikipedia.org/wiki/Il_fuoco_che_ti_porti_dentro_%28film%29"
     },
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
       "21:10"
      ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Paolo Genovese",
-     "interpreti": "Stefano Accorsi, Emanuela Fanelli e Lino Musella",
-     "durata": 113,
-     "anno": 2026,
      "giorni": {
-      "2026-11-17": [
+      "2026-11-18": [
+       "21:10"
+      ],
+      "2026-11-19": [
+       "21:10"
+      ],
+      "2026-11-20": [
+       "18:45",
+       "21:10"
+      ],
+      "2026-11-21": [
+       "16:30",
+       "18:45",
+       "21:10"
+      ],
+      "2026-11-22": [
+       "16:30",
+       "18:45",
        "21:10"
       ]
      },
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Paolo Genovese",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
+     "interpreti": "Stefano Accorsi, Emanuela Fanelli e Lino Musella",
+     "anno": 2026,
      "paese": "Italia",
+     "durata": 113,
      "scheda": "https://it.wikipedia.org/wiki/Il_rumore_delle_cose_nuove"
     },
     {
@@ -636,55 +639,79 @@
      "orari": [
       "19:00"
      ],
-     "versione": "",
-     "genere": "Fantastico",
-     "regia": "Wolfgang Petersen",
-     "interpreti": "Barret Oliver, Gerald McRaney e Thomas Hill",
-     "durata": 94,
-     "anno": 1984,
      "giorni": {
-      "2026-11-17": [
+      "2026-11-18": [
        "19:00"
       ]
      },
+     "versione": "",
+     "genere": "Fantastico",
+     "regia": "Wolfgang Petersen",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
+     "interpreti": "Barret Oliver, Gerald McRaney e Thomas Hill",
+     "durata": 94,
+     "anno": 1984,
      "paese": "Germania",
      "scheda": "https://it.wikipedia.org/wiki/La_storia_infinita_%28film%29"
     },
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "21:20"
+      "19:00"
      ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Paola Randi",
-     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
-     "durata": 107,
-     "anno": 2027,
      "giorni": {
-      "2026-11-17": [
+      "2026-11-18": [
+       "19:00"
+      ],
+      "2026-11-19": [
+       "21:20"
+      ],
+      "2026-11-20": [
+       "19:15",
+       "21:20"
+      ],
+      "2026-11-21": [
+       "16:45",
+       "21:20"
+      ],
+      "2026-11-22": [
+       "16:45",
        "21:20"
       ]
      },
-     "paese": "Italia"
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Paola Randi",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
+     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
+     "anno": 2027,
+     "paese": "Italia",
+     "durata": 107
     },
     {
      "titolo": "Un weekend artificiale",
      "orari": [
       "21:00"
      ],
+     "giorni": {
+      "2026-11-18": [
+       "21:00"
+      ],
+      "2026-11-21": [
+       "18:45"
+      ],
+      "2026-11-22": [
+       "18:45"
+      ]
+     },
      "versione": "",
      "genere": "Commedia",
      "regia": "Leonardo Pieraccioni",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
      "interpreti": "Leonardo Pieraccioni, Giulia Vecchio e Herbert Ballerina",
-     "durata": 91,
      "anno": 2026,
-     "giorni": {
-      "2026-11-17": [
-       "21:00"
-      ]
-     },
      "paese": "Italia",
+     "durata": 91,
      "scheda": "https://it.wikipedia.org/wiki/Un_weekend_artificiale"
     },
     {
@@ -692,18 +719,34 @@
      "orari": [
       "21:30"
      ],
-     "versione": "",
-     "genere": "Commedia, Drammatico",
-     "regia": "Martin McDonagh",
-     "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
-     "durata": 118,
-     "anno": 2026,
      "giorni": {
-      "2026-11-17": [
+      "2026-11-18": [
+       "21:30"
+      ],
+      "2026-11-19": [
+       "21:30"
+      ],
+      "2026-11-20": [
+       "19:00",
+       "21:30"
+      ],
+      "2026-11-21": [
+       "16:45",
+       "21:30"
+      ],
+      "2026-11-22": [
+       "16:45",
        "21:30"
       ]
      },
+     "versione": "",
+     "genere": "Commedia, Drammatico",
+     "regia": "Martin McDonagh",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
+     "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
+     "anno": 2026,
      "paese": "Regno Unito",
+     "durata": 118,
      "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
     }
    ],
@@ -787,12 +830,9 @@
     {
      "titolo": "2001: Odissea nello Spazio",
      "orari": [
-      "18:45"
+      "21:00"
      ],
      "giorni": {
-      "2026-11-17": [
-       "18:45"
-      ],
       "2026-11-18": [
        "21:00"
       ]
@@ -813,9 +853,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:30"
-      ],
       "2026-11-18": [
        "21:30"
       ]
@@ -831,10 +868,21 @@
     },
     {
      "titolo": "Godzilla Minus Zero",
-     "orari": [],
+     "orari": [
+      "21:15"
+     ],
      "giorni": {
       "2026-11-18": [
        "21:15"
+      ],
+      "2026-11-20": [
+       "22:30"
+      ],
+      "2026-11-21": [
+       "22:30"
+      ],
+      "2026-11-22": [
+       "20:30"
       ]
      },
      "versione": "",
@@ -848,16 +896,50 @@
      "scheda": "https://it.wikipedia.org/wiki/Godzilla_Minus_Zero"
     },
     {
+     "titolo": "Hunger Games - L'alba sulla mietitura",
+     "orari": [],
+     "giorni": {
+      "2026-11-19": [
+       "21:00"
+      ],
+      "2026-11-20": [
+       "20:30",
+       "22:30"
+      ],
+      "2026-11-21": [
+       "17:30",
+       "20:30",
+       "22:30"
+      ],
+      "2026-11-22": [
+       "15:45",
+       "17:30",
+       "20:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
+     "scheda": "https://it.wikipedia.org/wiki/Hunger_Games_-_L%27alba_sulla_mietitura"
+    },
+    {
      "titolo": "Il gatto col cappello",
      "orari": [
       "18:45"
      ],
      "giorni": {
-      "2026-11-17": [
-       "18:45"
-      ],
       "2026-11-18": [
        "18:45"
+      ],
+      "2026-11-20": [
+       "20:15"
+      ],
+      "2026-11-21": [
+       "18:00"
+      ],
+      "2026-11-22": [
+       "16:00"
       ]
      },
      "versione": "",
@@ -873,15 +955,24 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "19:00",
       "21:15"
      ],
      "giorni": {
-      "2026-11-17": [
-       "19:00",
+      "2026-11-18": [
        "21:15"
       ],
-      "2026-11-18": [
+      "2026-11-19": [
+       "21:15"
+      ],
+      "2026-11-20": [
+       "20:15"
+      ],
+      "2026-11-21": [
+       "18:00",
+       "20:15"
+      ],
+      "2026-11-22": [
+       "18:45",
        "21:15"
       ]
      },
@@ -901,9 +992,6 @@
       "19:00"
      ],
      "giorni": {
-      "2026-11-17": [
-       "19:00"
-      ],
       "2026-11-18": [
        "19:00"
       ]
@@ -925,12 +1013,25 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-17": [
+      "2026-11-18": [
        "19:00",
        "21:00"
       ],
-      "2026-11-18": [
-       "19:00",
+      "2026-11-19": [
+       "21:00"
+      ],
+      "2026-11-20": [
+       "20:15",
+       "22:30"
+      ],
+      "2026-11-21": [
+       "17:45",
+       "20:15",
+       "22:30"
+      ],
+      "2026-11-22": [
+       "16:00",
+       "18:15",
        "21:00"
       ]
      },
@@ -947,14 +1048,28 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "21:00"
+      "18:45"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:00"
-      ],
       "2026-11-18": [
        "18:45"
+      ],
+      "2026-11-19": [
+       "21:15"
+      ],
+      "2026-11-20": [
+       "20:15",
+       "22:30"
+      ],
+      "2026-11-21": [
+       "18:00",
+       "20:15",
+       "22:30"
+      ],
+      "2026-11-22": [
+       "16:45",
+       "19:00",
+       "21:15"
       ]
      },
      "versione": "",
@@ -967,37 +1082,63 @@
      "durata": 107
     },
     {
-     "titolo": "Un tranquillo funerale di famiglia",
-     "orari": [
-      "19:00"
-     ],
+     "titolo": "Shaun, vita da pecora - Operazione Z.U.C.C.A.",
+     "orari": [],
      "giorni": {
-      "2026-11-17": [
-       "19:00"
+      "2026-11-22": [
+       "15:45"
       ]
      },
      "versione": "",
-     "genere": "Commedia",
-     "regia": "Massimiliano Bruno",
+     "genere": "",
+     "regia": "",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
-     "anno": 2026,
-     "interpreti": "Claudia Pandolfi, Pietro Sermonti, Diego Abatantuono e Stefania Sandrelli",
-     "paese": "Italia",
-     "durata": 98,
-     "scheda": "https://it.wikipedia.org/wiki/Un_tranquillo_funerale_di_famiglia"
+     "scheda": "https://it.wikipedia.org/wiki/Shaun%2C_vita_da_pecora%3A_Operazione_Z.U.C.C.A."
+    },
+    {
+     "titolo": "Ti presento i Fotter",
+     "orari": [],
+     "giorni": {
+      "2026-11-21": [
+       "20:15"
+      ],
+      "2026-11-22": [
+       "18:15"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
+     "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
      "titolo": "Un weekend artificiale",
      "orari": [
+      "19:30",
       "21:30"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:30"
-      ],
       "2026-11-18": [
        "19:30",
        "21:30"
+      ],
+      "2026-11-19": [
+       "21:30"
+      ],
+      "2026-11-20": [
+       "20:30",
+       "22:30"
+      ],
+      "2026-11-21": [
+       "18:30",
+       "20:30",
+       "22:30"
+      ],
+      "2026-11-22": [
+       "16:30",
+       "18:30",
+       "20:30"
       ]
      },
      "versione": "",
@@ -1013,12 +1154,9 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "21:30"
+      "18:45"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:30"
-      ],
       "2026-11-18": [
        "18:45"
       ]
@@ -1089,7 +1227,9 @@
     },
     {
      "titolo": "Il tempo di Anne",
-     "orari": [],
+     "orari": [
+      "15:00"
+     ],
      "giorni": {
       "2026-11-18": [
        "15:00"
@@ -1106,11 +1246,11 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:00"
-      ],
       "2026-11-18": [
        "21:00"
+      ],
+      "2026-11-21": [
+       "16:00"
       ]
      },
      "versione": "",
@@ -1132,34 +1272,11 @@
    "cinemap": "https://www.cinemap.it/comacchio/cinema/cinepark-comacchio",
    "film": [
     {
-     "titolo": "2001: Odissea nello Spazio",
-     "orari": [
-      "18:45"
-     ],
-     "giorni": {
-      "2026-11-17": [
-       "18:45"
-      ]
-     },
-     "versione": "",
-     "genere": "Fantascienza",
-     "regia": "Stanley Kubrick",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
-     "interpreti": "Keir Dullea, Gary Lockwood, William Sylvester e Daniel Richter",
-     "paese": "USA",
-     "durata": 140,
-     "anno": 1968,
-     "scheda": "https://it.wikipedia.org/wiki/2001%3A_Odissea_nello_spazio"
-    },
-    {
      "titolo": "Come rapinare una banca",
      "orari": [
       "21:30"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:30"
-      ],
       "2026-11-18": [
        "21:30"
       ]
@@ -1169,9 +1286,9 @@
      "regia": "David Leitch",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
      "interpreti": "Nicholas Hoult, Christian Slater, Zoë Kravitz e Tati Gabrielle",
-     "paese": "USA",
      "durata": 122,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "USA"
     },
     {
      "titolo": "Godzilla Minus Zero",
@@ -1179,11 +1296,20 @@
       "21:15"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:15"
-      ],
       "2026-11-18": [
        "21:15"
+      ],
+      "2026-11-19": [
+       "21:15"
+      ],
+      "2026-11-20": [
+       "22:30"
+      ],
+      "2026-11-21": [
+       "22:30"
+      ],
+      "2026-11-22": [
+       "20:30"
       ]
      },
      "versione": "",
@@ -1191,10 +1317,38 @@
      "regia": "Takashi Yamazaki",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
      "interpreti": "Minami Hamabe, Ryûnosuke Kamiki, Masami Nagasawa e Jun Kunimura",
-     "paese": "Giappone",
      "durata": 135,
      "anno": 2026,
+     "paese": "Giappone",
      "scheda": "https://it.wikipedia.org/wiki/Godzilla_Minus_Zero"
+    },
+    {
+     "titolo": "Hunger Games - L'alba sulla mietitura",
+     "orari": [],
+     "giorni": {
+      "2026-11-19": [
+       "21:00"
+      ],
+      "2026-11-20": [
+       "20:30",
+       "22:30"
+      ],
+      "2026-11-21": [
+       "17:30",
+       "20:30",
+       "22:30"
+      ],
+      "2026-11-22": [
+       "15:45",
+       "17:30",
+       "20:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
+     "scheda": "https://it.wikipedia.org/wiki/Hunger_Games_-_L%27alba_sulla_mietitura"
     },
     {
      "titolo": "Il gatto col cappello",
@@ -1202,11 +1356,17 @@
       "18:45"
      ],
      "giorni": {
-      "2026-11-17": [
-       "18:45"
-      ],
       "2026-11-18": [
        "18:45"
+      ],
+      "2026-11-20": [
+       "20:15"
+      ],
+      "2026-11-21": [
+       "18:00"
+      ],
+      "2026-11-22": [
+       "16:00"
       ]
      },
      "versione": "",
@@ -1214,22 +1374,33 @@
      "regia": "Alessandro Carloni e Erica Rivinoja",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
      "interpreti": "Stefano Fresi, Luigi Luciano, Bill Hader e Matt Berry",
-     "paese": "USA",
      "durata": 107,
      "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Il_gatto_col_cappello_%28film%29"
     },
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "21:15"
+      "19:00"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:15"
-      ],
       "2026-11-18": [
        "19:00"
+      ],
+      "2026-11-19": [
+       "21:15"
+      ],
+      "2026-11-20": [
+       "20:15"
+      ],
+      "2026-11-21": [
+       "18:00",
+       "20:15"
+      ],
+      "2026-11-22": [
+       "18:45",
+       "21:15"
       ]
      },
      "versione": "",
@@ -1237,14 +1408,16 @@
      "regia": "Paolo Genovese",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
      "interpreti": "Emanuela Fanelli, Edoardo Pesce, Claudia Pandolfi e Lino Musella",
-     "paese": "Italia",
      "durata": 113,
      "anno": 2026,
+     "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/Il_rumore_delle_cose_nuove"
     },
     {
      "titolo": "La maison des femmes - La casa delle donne",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-18": [
        "21:00"
@@ -1261,9 +1434,6 @@
       "19:00"
      ],
      "giorni": {
-      "2026-11-17": [
-       "19:00"
-      ],
       "2026-11-18": [
        "19:00"
       ]
@@ -1273,9 +1443,9 @@
      "regia": "Wolfgang Petersen",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
      "interpreti": "Barret Oliver, Noah Hathaway, Tami Stronach e Gerald McRaney",
-     "paese": "Germania",
      "durata": 92,
      "anno": 1984,
+     "paese": "Germania",
      "scheda": "https://it.wikipedia.org/wiki/La_storia_infinita_%28film%29"
     },
     {
@@ -1285,13 +1455,26 @@
       "21:15"
      ],
      "giorni": {
-      "2026-11-17": [
-       "19:00",
-       "21:15"
-      ],
       "2026-11-18": [
        "19:00",
        "21:15"
+      ],
+      "2026-11-19": [
+       "21:00"
+      ],
+      "2026-11-20": [
+       "20:15",
+       "22:30"
+      ],
+      "2026-11-21": [
+       "18:00",
+       "20:15",
+       "22:30"
+      ],
+      "2026-11-22": [
+       "16:00",
+       "18:15",
+       "21:00"
       ]
      },
      "versione": "",
@@ -1299,22 +1482,36 @@
      "regia": "Ti West",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
      "interpreti": "Johnny Depp, Ian McKellen, Sam Claflin e Arthur Conti",
-     "paese": "USA",
      "durata": 116,
      "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Scrooge_e_gli_spiriti_del_Natale"
     },
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "21:00"
+      "18:45"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:00"
-      ],
       "2026-11-18": [
        "18:45"
+      ],
+      "2026-11-19": [
+       "21:15"
+      ],
+      "2026-11-20": [
+       "20:15",
+       "22:30"
+      ],
+      "2026-11-21": [
+       "18:00",
+       "20:15",
+       "22:30"
+      ],
+      "2026-11-22": [
+       "16:45",
+       "19:00",
+       "21:15"
       ]
      },
      "versione": "",
@@ -1322,42 +1519,68 @@
      "regia": "Paola Randi",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
      "interpreti": "Tommaso Allione, Tecla Bossi, Sabrina Martina e Filippo Timi",
-     "paese": "Italia",
      "durata": 107,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "Italia"
     },
     {
-     "titolo": "Un tranquillo funerale di famiglia",
-     "orari": [
-      "19:00"
-     ],
+     "titolo": "Shaun, vita da pecora - Operazione Z.U.C.C.A.",
+     "orari": [],
      "giorni": {
-      "2026-11-17": [
-       "19:00"
+      "2026-11-22": [
+       "15:45"
       ]
      },
      "versione": "",
-     "genere": "Commedia",
-     "regia": "Massimiliano Bruno",
+     "genere": "",
+     "regia": "",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
-     "interpreti": "Claudia Pandolfi, Pietro Sermonti, Diego Abatantuono e Stefania Sandrelli",
-     "paese": "Italia",
-     "durata": 98,
-     "anno": 2026,
-     "scheda": "https://it.wikipedia.org/wiki/Un_tranquillo_funerale_di_famiglia"
+     "scheda": "https://it.wikipedia.org/wiki/Shaun%2C_vita_da_pecora%3A_Operazione_Z.U.C.C.A."
+    },
+    {
+     "titolo": "Ti presento i Fotter",
+     "orari": [],
+     "giorni": {
+      "2026-11-21": [
+       "20:15"
+      ],
+      "2026-11-22": [
+       "18:15"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
+     "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
      "titolo": "Un weekend artificiale",
      "orari": [
+      "19:30",
       "21:30"
      ],
      "giorni": {
-      "2026-11-17": [
-       "21:30"
-      ],
       "2026-11-18": [
        "19:30",
        "21:30"
+      ],
+      "2026-11-19": [
+       "21:30"
+      ],
+      "2026-11-20": [
+       "20:30",
+       "22:30"
+      ],
+      "2026-11-21": [
+       "18:30",
+       "20:30",
+       "22:30"
+      ],
+      "2026-11-22": [
+       "16:30",
+       "18:30",
+       "20:30"
       ]
      },
      "versione": "",
@@ -1365,20 +1588,17 @@
      "regia": "Leonardo Pieraccioni",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
      "interpreti": "Leonardo Pieraccioni, Giulia Vecchio, Luigi Luciano e Massimo Ceccherini",
-     "paese": "Italia",
      "durata": 91,
      "anno": 2026,
+     "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/Un_weekend_artificiale"
     },
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "19:00"
+      "21:30"
      ],
      "giorni": {
-      "2026-11-17": [
-       "19:00"
-      ],
       "2026-11-18": [
        "21:30"
       ]
@@ -1388,9 +1608,9 @@
      "regia": "Martin McDonagh",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
      "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
-     "paese": "Regno Unito",
      "durata": 118,
      "anno": 2026,
+     "paese": "Regno Unito",
      "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
     }
    ]

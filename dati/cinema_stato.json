@@ -1,20 +1,16 @@
 {
- "quando": "2026-11-17T19:05+01:00",
- "giorno": "2026-11-17",
+ "quando": "2026-11-18T10:38+01:00",
+ "giorno": "2026-11-18",
  "ok": true,
- "film": 96,
- "sale_con_film": 28,
- "pagine_lette": 40,
- "pagine_fallite": [
-  "Cinema Bristol: IncompleteRead(64488 bytes read)"
- ],
+ "film": 100,
+ "sale_con_film": 30,
+ "pagine_lette": 41,
+ "pagine_fallite": [],
  "note": [
-  "scoperta minerbio: IncompleteRead(64483 bytes read)",
-  "sale nuove trovate: 0",
-  "mymovies: 31 schede, 89 film abbinati",
-  "wikipedia: 121 film con la voce, 1 ricerche nuove",
+  "mymovies non letto: IncompleteRead(671060 bytes read)",
+  "wikipedia: 134 film con la voce, 9 ricerche nuove",
   "biglietteria https://lumiere.cinetecabologna.18tickets.it/: 8 film in vendita, 6 abbinati",
-  "biglietteria https://modernissimo.cinetecabologna.18tickets.it/: 52 film in vendita, 21 abbinati",
+  "biglietteria https://modernissimo.cinetecabologna.18tickets.it/: 50 film in vendita, 22 abbinati",
   "biglietteria https://cervi.cinetecabologna.18tickets.it/: 5 film in vendita, 3 abbinati"
  ]
 }
