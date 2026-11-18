@@ -170,6 +170,16 @@ def cartelloni(c, cart, cand, ev):
                 impronte[p["url"]] = imp
                 r.update(esito="ok", caratteri=len(testo), cambiata=prima.get(p["url"]) != imp)
                 open(f_testo, "w", encoding="utf-8").write(f"# {p['nome']}\n# {p['url']}\n# letta il {OGGI}\n\n{testo}\n")
+                # 18/11/2026: anche i link interni della pagina (testo → indirizzo), per trovare la pagina del calendario
+                # quando la sentinella legge una home con poco testo, senza che Claude apra il sito
+                base = urllib.parse.urlsplit(p["url"]).netloc
+                visti_l, righe_l = set(), []
+                for hr, tx in re.findall(r'<a\b[^>]*href="([^"#]+)"[^>]*>(.*?)</a>', h, re.S | re.I):
+                    u = urllib.parse.urljoin(p["url"], html.unescape(hr))
+                    t_ = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", tx))).strip()[:80]
+                    if urllib.parse.urlsplit(u).netloc == base and u not in visti_l:
+                        visti_l.add(u); righe_l.append(f"{t_}\t{u}")
+                open(f_testo[:-4] + ".link.tsv", "w", encoding="utf-8").write("\n".join(righe_l[:400]) + "\n")
                 if not re.search(r"songkick\.com", p["url"]):     # Songkick si legge a parte, tutte le pagine
                     ej = [e for e in jsonld(h) if OGGI <= e["data"] <= LIMITE]
                     r["eventi_strutturati"] = len(ej)
