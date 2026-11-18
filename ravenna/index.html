@@ -620,6 +620,8 @@ footer{padding:0 0 40px;color:var(--mute);font-size:12.5px;text-align:center}.fu
 .ach-guide__arr{opacity:.45;font-size:14px;transition:transform .2s,opacity .2s}
 .ach-guide__btn:hover .ach-guide__arr{opacity:.8;transform:translateX(2px)}
 @media (max-width:420px){.ach-guide{gap:8px}.ach-guide__btn{flex:1 1 0;min-width:0;padding:8px 10px 8px 8px}.ach-guide__arr{display:none}}
+/* 18/11/2026 (Stefano, iPhone): sui telefoni «Collaborano con noi» va su una riga sua, larga quanto le altre due insieme; prima la regola qui sopra lo stringeva in un terzo di riga e il testo usciva dal bordo */
+@media (max-width:420px){.ach-guide__btn.ach-guide__coll{flex:1 1 100%;justify-content:center}}
 @media (prefers-reduced-motion:reduce){.ach-guide__btn,.ach-guide__arr{transition:none}}
 @media(max-width:759px){.modes{gap:5px}.modes button{flex-direction:column;gap:1px;height:56px;padding:4px 2px 3px;font-size:13.5px;line-height:1.1;letter-spacing:-.01em}.modes button .mi{font-size:19px;line-height:1}}
 @media(max-width:359px){.modes{gap:3px}.modes button{font-size:12px;letter-spacing:-.03em;padding:4px 1px 3px}}
