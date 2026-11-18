@@ -1,0 +1,2860 @@
+[
+ {
+  "luogo": "Teatro Duse",
+  "citta": "Bologna",
+  "eventi": 86,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.783,
+    "nome": "Teatro Dehon",
+    "indirizzo": "Via Libia 59, ",
+    "osm": "node/3190973936"
+   },
+   {
+    "punteggio": 0.65,
+    "nome": "Roadhouse",
+    "indirizzo": "Via Stalingrado 40, Bologna",
+    "osm": "node/10801669482"
+   },
+   {
+    "punteggio": 0.638,
+    "nome": "Star's",
+    "indirizzo": "Via Saragozza 157c, Bologna",
+    "osm": "node/4793726104"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Celebrazioni",
+  "citta": "Bologna",
+  "eventi": 66,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.65,
+    "nome": "Teatro Auditorium Manzoni",
+    "indirizzo": "Via de' Monari 2, Bologna",
+    "osm": "node/1195161496"
+   },
+   {
+    "punteggio": 0.645,
+    "nome": "Teatro Dehon",
+    "indirizzo": "Via Libia 59, ",
+    "osm": "node/3190973936"
+   },
+   {
+    "punteggio": 0.595,
+    "nome": "l'altro spazio",
+    "indirizzo": "Via Nazario Sauro 24/f, Bologna",
+    "osm": "node/3809743963"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro EuropAuditorium",
+  "citta": "Bologna",
+  "eventi": 39,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.773,
+    "nome": "Teatro Auditorium Manzoni",
+    "indirizzo": "Via de' Monari 2, Bologna",
+    "osm": "node/1195161496"
+   },
+   {
+    "punteggio": 0.564,
+    "nome": "Cinema Europa",
+    "indirizzo": "Via Pietralata 55/A, Bologna",
+    "osm": "way/148745336"
+   },
+   {
+    "punteggio": 0.55,
+    "nome": "l'altro spazio",
+    "indirizzo": "Via Nazario Sauro 24/f, Bologna",
+    "osm": "node/3809743963"
+   }
+  ]
+ },
+ {
+  "luogo": "Arena del Sole",
+  "citta": "Bologna",
+  "eventi": 34,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.783,
+    "nome": "Osteria del Sole",
+    "indirizzo": "Vicolo Ranocchi 1d, Bologna",
+    "osm": "node/3646417565"
+   },
+   {
+    "punteggio": 0.72,
+    "nome": "Bar Il Sole",
+    "indirizzo": "Via Pasubio 92e, ",
+    "osm": "node/13009048900"
+   },
+   {
+    "punteggio": 0.717,
+    "nome": "Bar Del Corso",
+    "indirizzo": "Via Emilia Ponente 451/2, Bologna",
+    "osm": "node/9502705477"
+   }
+  ]
+ },
+ {
+  "luogo": "Unipol Arena",
+  "citta": "Casalecchio di Reno",
+  "eventi": 22,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.636,
+    "nome": "AnticArenA",
+    "indirizzo": "Via dell'Indipendenza 40b, ",
+    "osm": "node/4050271333"
+   },
+   {
+    "punteggio": 0.556,
+    "nome": "Volare",
+    "indirizzo": "Via Belvedere 10d, ",
+    "osm": "node/12638326302"
+   },
+   {
+    "punteggio": 0.522,
+    "nome": "Onda Marina",
+    "indirizzo": "Via dei Mille 1a, ",
+    "osm": "node/3636735219"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Fanin",
+  "citta": "San Giovanni in Persiceto",
+  "eventi": 18,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.667,
+    "nome": "Teatro Dehon",
+    "indirizzo": "Via Libia 59, ",
+    "osm": "node/3190973936"
+   },
+   {
+    "punteggio": 0.571,
+    "nome": "Trattoria Gianni",
+    "indirizzo": "Via Clavature 18, ",
+    "osm": "node/1088164251"
+   },
+   {
+    "punteggio": 0.567,
+    "nome": "Teatro Lolli",
+    "indirizzo": "Viale Caterina Sforza 3, Imola",
+    "osm": "node/3454567205"
+   }
+  ]
+ },
+ {
+  "luogo": "ZolAuditorium",
+  "citta": "Zola Predosa",
+  "eventi": 14,
+  "citta_guida": "bo",
+  "candidati": []
+ },
+ {
+  "luogo": "Teatro Comunale di Castiglione dei Pepoli",
+  "citta": "Castiglione dei Pepoli",
+  "eventi": 13,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.727,
+    "nome": "Teatro Comunale di Castello d'Argile",
+    "indirizzo": "Via Giacomo Matteotti 150, ",
+    "osm": "way/231411478"
+   },
+   {
+    "punteggio": 0.538,
+    "nome": "Teatro comunale Ebe Stignani",
+    "indirizzo": "Via Giuseppe Verdi 1, Imola",
+    "osm": "node/721933814"
+   }
+  ]
+ },
+ {
+  "luogo": "Oratorio di San Filippo Neri",
+  "citta": "Bologna",
+  "eventi": 12,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.744,
+    "nome": "Oratorio di San Rocco",
+    "indirizzo": "Via Monaldo Calari 4/2, Bologna",
+    "osm": "node/1704728968"
+   },
+   {
+    "punteggio": 0.641,
+    "nome": "Oratorio di Sant’Apollonia",
+    "indirizzo": "Via Porrettana 495, Sasso Marconi",
+    "osm": "way/156860317"
+   },
+   {
+    "punteggio": 0.633,
+    "nome": "Trattoria da Valerio",
+    "indirizzo": "Via Avesella 10a, Bologna",
+    "osm": "node/2953798653"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro San Leonardo",
+  "citta": "Bologna",
+  "eventi": 10,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.645,
+    "nome": "Teatro Dehon",
+    "indirizzo": "Via Libia 59, ",
+    "osm": "node/3190973936"
+   },
+   {
+    "punteggio": 0.611,
+    "nome": "Trattoria Leonida",
+    "indirizzo": "Vicolo Alemagna 2, ",
+    "osm": "node/6932237085"
+   },
+   {
+    "punteggio": 0.6,
+    "nome": "Teatro Auditorium Manzoni",
+    "indirizzo": "Via de' Monari 2, Bologna",
+    "osm": "node/1195161496"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Testoni",
+  "citta": "Bologna",
+  "eventi": 8,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.972,
+    "nome": "Testoni Ragazzi",
+    "indirizzo": "Via Giacomo Matteotti 16, Bologna",
+    "osm": "node/1623615533"
+   },
+   {
+    "punteggio": 0.942,
+    "nome": "Biblioteca Universitaria Giuseppe Testoni del Dipartimento di Scienze Aziendali",
+    "indirizzo": "Piazza Antonino Scaravilli 1, Bologna",
+    "osm": "node/9781360643"
+   },
+   {
+    "punteggio": 0.769,
+    "nome": "Teatro Dehon",
+    "indirizzo": "Via Libia 59, ",
+    "osm": "node/3190973936"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Comunale Cassero",
+  "citta": "Castel San Pietro Terme",
+  "eventi": 8,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.712,
+    "nome": "Teatro Comunale di Castello d'Argile",
+    "indirizzo": "Via Giacomo Matteotti 150, ",
+    "osm": "way/231411478"
+   },
+   {
+    "punteggio": 0.614,
+    "nome": "Centro Congressi",
+    "indirizzo": "Via Ca' Masino 611, Castel San Pietro Terme",
+    "osm": "node/4781387313"
+   },
+   {
+    "punteggio": 0.608,
+    "nome": "Teatro comunale Politeama",
+    "indirizzo": "Corso Italia 72, San Giovanni in Persiceto",
+    "osm": "way/295968603"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Comunale",
+  "citta": "Bologna",
+  "eventi": 8,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.968,
+    "nome": "Biblioteca Comunale dell'Archiginnasio",
+    "indirizzo": "Piazza Galvani 1, Bologna",
+    "osm": "node/4556891292"
+   },
+   {
+    "punteggio": 0.938,
+    "nome": "Teatro Comunale di Castello d'Argile",
+    "indirizzo": "Via Giacomo Matteotti 150, ",
+    "osm": "way/231411478"
+   },
+   {
+    "punteggio": 0.925,
+    "nome": "Biblioteca comunale Sasso Morelli",
+    "indirizzo": "Via Correcchio 142, ",
+    "osm": "node/5346828361"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Consorziale",
+  "citta": "Budrio",
+  "eventi": 7,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.6,
+    "nome": "Teatro Dehon",
+    "indirizzo": "Via Libia 59, ",
+    "osm": "node/3190973936"
+   },
+   {
+    "punteggio": 0.542,
+    "nome": "Centro Ippico Sportivo Imolese",
+    "indirizzo": "Via Antonio Ascari 9, ",
+    "osm": "way/1023660207"
+   },
+   {
+    "punteggio": 0.541,
+    "nome": "Bottega Sacro Cuore",
+    "indirizzo": "Via Giacomo Matteotti 29, ",
+    "osm": "node/13871589543"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Biagi D'Antona",
+  "citta": "Castel Maggiore",
+  "eventi": 7,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.818,
+    "nome": "Sala Biagi",
+    "indirizzo": "Via Santo Stefano 119, Bologna",
+    "osm": "node/10858695667"
+   },
+   {
+    "punteggio": 0.808,
+    "nome": "Biagi",
+    "indirizzo": "Via Saragozza 65, Bologna",
+    "osm": "node/4721341489"
+   },
+   {
+    "punteggio": 0.606,
+    "nome": "Teatro Dehon",
+    "indirizzo": "Via Libia 59, ",
+    "osm": "node/3190973936"
+   }
+  ]
+ },
+ {
+  "luogo": "Baumhaus",
+  "citta": "Bologna",
+  "eventi": 5,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.717,
+    "nome": "Amadeus",
+    "indirizzo": "Via Giuseppe Dagnini 1a, Bologna",
+    "osm": "node/626591647"
+   },
+   {
+    "punteggio": 0.621,
+    "nome": "Baclas",
+    "indirizzo": "Via Guelfa 74/4C, Bologna",
+    "osm": "node/14158941888"
+   },
+   {
+    "punteggio": 0.576,
+    "nome": "Bar Austria",
+    "indirizzo": "Via Irnerio 35a, Bologna",
+    "osm": "node/3636954956"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Comunale – Foyer Rossini",
+  "citta": "Bologna",
+  "eventi": 5,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.672,
+    "nome": "Teatro comunale Ebe Stignani",
+    "indirizzo": "Via Giuseppe Verdi 1, Imola",
+    "osm": "node/721933814"
+   },
+   {
+    "punteggio": 0.567,
+    "nome": "Teatro comunale Politeama",
+    "indirizzo": "Corso Italia 72, San Giovanni in Persiceto",
+    "osm": "way/295968603"
+   },
+   {
+    "punteggio": 0.561,
+    "nome": "Cinema Teatro Don Fiorentini",
+    "indirizzo": "Viale Guglielmo Marconi 31a, ",
+    "osm": "way/1252019079"
+   }
+  ]
+ },
+ {
+  "luogo": "Stadio Renato Dall'Ara",
+  "citta": "Bologna",
+  "eventi": 5,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.614,
+    "nome": "Trattoria da Maro",
+    "indirizzo": "Via Broccaindosso 71b, Bologna",
+    "osm": "node/3129142503"
+   },
+   {
+    "punteggio": 0.614,
+    "nome": "Eltsi Natural Bar",
+    "indirizzo": "Strada Maggiore 25, Bologna",
+    "osm": "node/3646448115"
+   },
+   {
+    "punteggio": 0.595,
+    "nome": "Associazione Portico delle Parole",
+    "indirizzo": "Via Nosadella 15a, Bologna",
+    "osm": "node/3368077939"
+   }
+  ]
+ },
+ {
+  "luogo": "Sequoie Music Park - Parco Caserme Rosse",
+  "citta": "Bologna",
+  "eventi": 5,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.527,
+    "nome": "Alchemica Music Club",
+    "indirizzo": "Via dei Lapidari 8, Bologna",
+    "osm": "node/10774514507"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatri di Vita",
+  "citta": "Bologna",
+  "eventi": 4,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.76,
+    "nome": "Trattoria da Vito",
+    "indirizzo": "Via Mario Musolesi 9, Bologna",
+    "osm": "node/283047377"
+   },
+   {
+    "punteggio": 0.717,
+    "nome": "Trattoria di Via Serra",
+    "indirizzo": "Via Luigi Serra 9, Bologna",
+    "osm": "node/1704157708"
+   },
+   {
+    "punteggio": 0.693,
+    "nome": "Trattoria Zita",
+    "indirizzo": "Via Emilia Ponente 68, Bologna",
+    "osm": "node/5653997004"
+   }
+  ]
+ },
+ {
+  "luogo": "Camera Jazz & Music Club",
+  "citta": "Bologna",
+  "eventi": 4,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.669,
+    "nome": "Alchemica Music Club",
+    "indirizzo": "Via dei Lapidari 8, Bologna",
+    "osm": "node/10774514507"
+   },
+   {
+    "punteggio": 0.588,
+    "nome": "Camera a Sud",
+    "indirizzo": "Vicolo Luretta 1a, ",
+    "osm": "node/4394858390"
+   },
+   {
+    "punteggio": 0.526,
+    "nome": "Caffetteria San Luca",
+    "indirizzo": "Via Porrettana 55d, Bologna",
+    "osm": "node/4289006914"
+   }
+  ]
+ },
+ {
+  "luogo": "Sghetto Club",
+  "citta": "Bologna",
+  "eventi": 4,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.621,
+    "nome": "Covo Club",
+    "indirizzo": "Viale Zagabria 1, Bologna",
+    "osm": "node/7141484594"
+   },
+   {
+    "punteggio": 0.61,
+    "nome": "Freakout Club",
+    "indirizzo": "Via Emilio Zago 7, Bologna",
+    "osm": "node/5600606821"
+   },
+   {
+    "punteggio": 0.571,
+    "nome": "Qubò Club",
+    "indirizzo": "Via Sampieri 3b, ",
+    "osm": "node/13370133436"
+   }
+  ]
+ },
+ {
+  "luogo": "Accademia del Teatro Comunale",
+  "citta": "Bologna",
+  "eventi": 3,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.621,
+    "nome": "Cinema Teatro Tivoli",
+    "indirizzo": "Via Giuseppe Massarenti 418, Bologna",
+    "osm": "node/11908118907"
+   },
+   {
+    "punteggio": 0.61,
+    "nome": "Teatro Auditorium Manzoni",
+    "indirizzo": "Via de' Monari 2, Bologna",
+    "osm": "node/1195161496"
+   },
+   {
+    "punteggio": 0.572,
+    "nome": "Caffè della Corte",
+    "indirizzo": "Corte Isolani 5, Bologna",
+    "osm": "node/3646448106"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Alice Zeppilli",
+  "citta": "Pieve di Cento",
+  "eventi": 3,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.567,
+    "nome": "Teatro Lolli",
+    "indirizzo": "Viale Caterina Sforza 3, Imola",
+    "osm": "node/3454567205"
+   },
+   {
+    "punteggio": 0.524,
+    "nome": "Bottega Al Pappagallo",
+    "indirizzo": "Via Guglielmo Marconi 22f, ",
+    "osm": "node/11733963269"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Comunale di Argelato",
+  "citta": "Argelato",
+  "eventi": 3,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.73,
+    "nome": "Teatro Comunale di Castello d'Argile",
+    "indirizzo": "Via Giacomo Matteotti 150, ",
+    "osm": "way/231411478"
+   },
+   {
+    "punteggio": 0.631,
+    "nome": "Teatro comunale Politeama",
+    "indirizzo": "Corso Italia 72, San Giovanni in Persiceto",
+    "osm": "way/295968603"
+   },
+   {
+    "punteggio": 0.567,
+    "nome": "Biblioteca comunale Sasso Morelli",
+    "indirizzo": "Via Correcchio 142, ",
+    "osm": "node/5346828361"
+   }
+  ]
+ },
+ {
+  "luogo": "ITC Teatro",
+  "citta": "San Lazzaro di Savena",
+  "eventi": 3,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.632,
+    "nome": "Il Gelato",
+    "indirizzo": "Via Arturo Gazzoni 1, ",
+    "osm": "node/4524778589"
+   },
+   {
+    "punteggio": 0.545,
+    "nome": "Teatro Dehon",
+    "indirizzo": "Via Libia 59, ",
+    "osm": "node/3190973936"
+   },
+   {
+    "punteggio": 0.533,
+    "nome": "Cardo",
+    "indirizzo": "Via Santo Stefano 70b, ",
+    "osm": "node/7484364208"
+   }
+  ]
+ },
+ {
+  "luogo": "DumBO",
+  "citta": "Bologna",
+  "eventi": 2,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.667,
+    "nome": "Qubò Club",
+    "indirizzo": "Via Sampieri 3b, ",
+    "osm": "node/13370133436"
+   },
+   {
+    "punteggio": 0.595,
+    "nome": "Bamboo",
+    "indirizzo": "Strada Maggiore 23c, Bologna",
+    "osm": "node/3197035181"
+   },
+   {
+    "punteggio": 0.595,
+    "nome": "Bidibo",
+    "indirizzo": "Piazza Maggiore 2d, Bologna",
+    "osm": "node/3247425709"
+   }
+  ]
+ },
+ {
+  "luogo": "Sala Prof. Marco Biagi (via Santo Stefano 119)",
+  "citta": "Bologna",
+  "eventi": 2,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.957,
+    "nome": "Sala Biagi",
+    "indirizzo": "Via Santo Stefano 119, Bologna",
+    "osm": "node/10858695667"
+   },
+   {
+    "punteggio": 0.931,
+    "nome": "Biagi",
+    "indirizzo": "Via Saragozza 65, Bologna",
+    "osm": "node/4721341489"
+   },
+   {
+    "punteggio": 0.696,
+    "nome": "Pasticceria Santo Stefano",
+    "indirizzo": "Via Santo Stefano 3, Bologna",
+    "osm": "node/3646448103"
+   }
+  ]
+ },
+ {
+  "luogo": "ATELIERsì",
+  "citta": "Bologna",
+  "eventi": 2,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.675,
+    "nome": "Alleria",
+    "indirizzo": "Via Emilia Levante 15/d, Bologna",
+    "osm": "node/7937171971"
+   },
+   {
+    "punteggio": 0.638,
+    "nome": "Tenerife",
+    "indirizzo": "Via Tommaso Salvini 12b, Bologna",
+    "osm": "node/3614799608"
+   },
+   {
+    "punteggio": 0.633,
+    "nome": "Café Università",
+    "indirizzo": "Via Zamboni 92, Bologna",
+    "osm": "node/3182766152"
+   }
+  ]
+ },
+ {
+  "luogo": "Palazzo Pepoli",
+  "citta": "Bologna",
+  "eventi": 2,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.595,
+    "nome": "Sala Studio Petroni",
+    "indirizzo": "Via Giuseppe Petroni 13b, Bologna",
+    "osm": "node/2952615496"
+   },
+   {
+    "punteggio": 0.595,
+    "nome": "La Perla",
+    "indirizzo": "Piazza Adam Mickiewicz 1, Bologna",
+    "osm": "node/3614811907"
+   },
+   {
+    "punteggio": 0.588,
+    "nome": "Pizza Casa",
+    "indirizzo": "Via San Vitale 45a, Bologna",
+    "osm": "node/2942639813"
+   }
+  ]
+ },
+ {
+  "luogo": "ExDynamo",
+  "citta": "Bologna",
+  "eventi": 2,
+  "citta_guida": "bo",
+  "candidati": []
+ },
+ {
+  "luogo": "DAMSLab",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.65,
+    "nome": "Dispositivo Arti Sperimentali",
+    "indirizzo": "Via del Porto 11/2, Bologna",
+    "osm": "node/1704612402"
+   },
+   {
+    "punteggio": 0.621,
+    "nome": "Cambusa",
+    "indirizzo": "Via Mascarella 8a, Bologna",
+    "osm": "node/3190933293"
+   },
+   {
+    "punteggio": 0.583,
+    "nome": "Da Lucia",
+    "indirizzo": "Via Broccaindosso 63/b, Bologna",
+    "osm": "node/8401420217"
+   }
+  ]
+ },
+ {
+  "luogo": "SpazioLoft54",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.522,
+    "nome": "Spazio Hera",
+    "indirizzo": "Viale Carlo Berti Pichat 2/A, ",
+    "osm": "node/14306014101"
+   }
+  ]
+ },
+ {
+  "luogo": "serra madre",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.75,
+    "nome": "Terra Mia",
+    "indirizzo": "Via Enrico Mattei 22l, Bologna",
+    "osm": "node/7815557159"
+   },
+   {
+    "punteggio": 0.643,
+    "nome": "Osteria La Tigre",
+    "indirizzo": "Via Orfeo 5b, Bologna",
+    "osm": "node/12065202632"
+   },
+   {
+    "punteggio": 0.606,
+    "nome": "Amadeus",
+    "indirizzo": "Via Giuseppe Dagnini 1a, Bologna",
+    "osm": "node/626591647"
+   }
+  ]
+ },
+ {
+  "luogo": "Chiesa di Santa Cristina della Fondazza",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.723,
+    "nome": "Chiesa di Santa Maria Assunta della Pasquala",
+    "indirizzo": "Via Pasquala 20, ",
+    "osm": "way/256768703"
+   },
+   {
+    "punteggio": 0.645,
+    "nome": "Chiesa di Sant'Agostino",
+    "indirizzo": "Via Marsala 1, ",
+    "osm": "way/149921400"
+   },
+   {
+    "punteggio": 0.632,
+    "nome": "Chiesa di Sant'Apollinare di Bergullo",
+    "indirizzo": "Via Bergullo 39, ",
+    "osm": "way/76846131"
+   }
+  ]
+ },
+ {
+  "luogo": "Sala Giulietta Masina",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.574,
+    "nome": "Bar Latteria Giulia G.",
+    "indirizzo": "Via Marco Emilio Lepido 61, Bologna",
+    "osm": "node/11607841990"
+   },
+   {
+    "punteggio": 0.55,
+    "nome": "La Gazzetta",
+    "indirizzo": "Via Zamboni 26, Bologna",
+    "osm": "node/3100479744"
+   },
+   {
+    "punteggio": 0.55,
+    "nome": "La Gatta da Gerardo",
+    "indirizzo": "Via Bellaria 18e, Bologna",
+    "osm": "node/4792159113"
+   }
+  ]
+ },
+ {
+  "luogo": "Museo della musica (Strada Maggiore 34)",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": []
+ },
+ {
+  "luogo": "Chiesa dei Santi Bartolomeo e Gaetano",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.702,
+    "nome": "Chiesa di Sant'Agata",
+    "indirizzo": "Via Cavour 61, ",
+    "osm": "way/149921398"
+   },
+   {
+    "punteggio": 0.601,
+    "nome": "Chiesa di San Michele di Gaibola",
+    "indirizzo": "Via di Gaibola 19, Bologna",
+    "osm": "node/1704549156"
+   },
+   {
+    "punteggio": 0.585,
+    "nome": "Chiesa di San Michele",
+    "indirizzo": "Via Livia Venturini 2, ",
+    "osm": "way/1458102919"
+   }
+  ]
+ },
+ {
+  "luogo": "Rocca di Dozza",
+  "citta": "Dozza",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.538,
+    "nome": "Franco Pizza",
+    "indirizzo": "Via Alceste De Ambris 23, ",
+    "osm": "node/13520302101"
+   }
+  ]
+ },
+ {
+  "luogo": "BURGEZ Bologna San Lazzaro",
+  "citta": "San Lazzaro di Savena",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": []
+ },
+ {
+  "luogo": "OfficinAcrobatica",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.552,
+    "nome": "La Romantica",
+    "indirizzo": "Via Ermanno Galeotti 2, ",
+    "osm": "node/5141834826"
+   },
+   {
+    "punteggio": 0.55,
+    "nome": "Toffee Art Cafè",
+    "indirizzo": "Via Antonio Zanolini 3, Bologna",
+    "osm": "node/2942598054"
+   },
+   {
+    "punteggio": 0.53,
+    "nome": "Ciao Bar",
+    "indirizzo": "Via Ferrarese 55c, Bologna",
+    "osm": "node/5629477608"
+   }
+  ]
+ },
+ {
+  "luogo": "TANK serbatoio culturale",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.55,
+    "nome": "Trattoria Trebbi",
+    "indirizzo": "Via Solferino 40, Bologna",
+    "osm": "node/1704574509"
+   },
+   {
+    "punteggio": 0.55,
+    "nome": "Bloom Culture Teatri",
+    "indirizzo": "Via del Pratello 23, Bologna",
+    "osm": "node/3645563600"
+   },
+   {
+    "punteggio": 0.536,
+    "nome": "Tarcaban Cafè",
+    "indirizzo": "Via del Pratello 96, Bologna",
+    "osm": "node/3645563611"
+   }
+  ]
+ },
+ {
+  "luogo": "MAST.Auditorium",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.7,
+    "nome": "Teatro Auditorium Manzoni",
+    "indirizzo": "Via de' Monari 2, Bologna",
+    "osm": "node/1195161496"
+   },
+   {
+    "punteggio": 0.588,
+    "nome": "Bar Austria",
+    "indirizzo": "Via Irnerio 35a, Bologna",
+    "osm": "node/3636954956"
+   },
+   {
+    "punteggio": 0.588,
+    "nome": "Sala Studio",
+    "indirizzo": "Via del Pratello 90a, Bologna",
+    "osm": "node/4793747375"
+   }
+  ]
+ },
+ {
+  "luogo": "Chiesa di Santa Maria della Pietà",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.779,
+    "nome": "Chiesa di Santa Maria Assunta della Pasquala",
+    "indirizzo": "Via Pasquala 20, ",
+    "osm": "way/256768703"
+   },
+   {
+    "punteggio": 0.737,
+    "nome": "Santa Maria Madre della Chiesa",
+    "indirizzo": "Via Porrettana 121, ",
+    "osm": "way/373754877"
+   },
+   {
+    "punteggio": 0.706,
+    "nome": "Chiesa di Santa Maria Assunta",
+    "indirizzo": "Piazza Alvar Aalto 1, Grizzana Morandi",
+    "osm": "way/156072917"
+   }
+  ]
+ },
+ {
+  "luogo": "La Cava delle Arti (via Cavazzoni 2/G)",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.613,
+    "nome": "Casa di Quartiere Villa Mazzacorati",
+    "indirizzo": "Via Toscana 19, Bologna",
+    "osm": "node/12522656711"
+   },
+   {
+    "punteggio": 0.558,
+    "nome": "La Pizzeria del Barazzo",
+    "indirizzo": "Via del Pratello 66/b, Bologna",
+    "osm": "node/1704749630"
+   },
+   {
+    "punteggio": 0.535,
+    "nome": "Casa di Quartiere Fondo Comini",
+    "indirizzo": "Via Aristotile Fioravanti 68, Bologna",
+    "osm": "node/12013419921"
+   }
+  ]
+ },
+ {
+  "luogo": "Porretta Terme (sedi varie)",
+  "citta": "Alto Reno Terme",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": []
+ },
+ {
+  "luogo": "Palazzo Carrati (Accademia Filarmonica)",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.523,
+    "nome": "Pasticceria Charme",
+    "indirizzo": "Via Andrea Costa 230, Bologna",
+    "osm": "node/1704680839"
+   }
+  ]
+ },
+ {
+  "luogo": "Accademia Filarmonica",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.579,
+    "nome": "Café Amazonia",
+    "indirizzo": "Via Giuseppe Mazzini 11, Bologna",
+    "osm": "node/4280334092"
+   },
+   {
+    "punteggio": 0.574,
+    "nome": "Teatro Auditorium Manzoni",
+    "indirizzo": "Via de' Monari 2, Bologna",
+    "osm": "node/1195161496"
+   },
+   {
+    "punteggio": 0.574,
+    "nome": "Sartoria Gastronomica",
+    "indirizzo": "Piazza Aldrovandi 21b, Bologna",
+    "osm": "node/3606710675"
+   }
+  ]
+ },
+ {
+  "luogo": "Circolo lirico bolognese (via Calari 4/2)",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.595,
+    "nome": "Circolo anarchico Camillo Berneri",
+    "indirizzo": "Piazza di Porta Santo Stefano 1, Bologna",
+    "osm": "node/10274208581"
+   },
+   {
+    "punteggio": 0.547,
+    "nome": "Trattoria Bolognese",
+    "indirizzo": "Via dei Mille 5, Bologna",
+    "osm": "node/4053203974"
+   },
+   {
+    "punteggio": 0.54,
+    "nome": "Caffetteria Bolognese",
+    "indirizzo": "Via Toscana 10, Bologna",
+    "osm": "node/3939481756"
+   }
+  ]
+ },
+ {
+  "luogo": "da definire",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.621,
+    "nome": "Black Fire",
+    "indirizzo": "Via Marcantonio Raimondi 21/2a, Bologna",
+    "osm": "node/483374338"
+   },
+   {
+    "punteggio": 0.576,
+    "nome": "La Linea",
+    "indirizzo": "Piazza Re Enzo 1/4, Bologna",
+    "osm": "node/2576142789"
+   },
+   {
+    "punteggio": 0.576,
+    "nome": "Dai Kiri",
+    "indirizzo": "Viale Abramo Lincoln 78a, Bologna",
+    "osm": "node/3704430877"
+   }
+  ]
+ },
+ {
+  "luogo": "Villa Smeraldi",
+  "citta": "Bentivoglio",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.56,
+    "nome": "La Ghislera",
+    "indirizzo": "Via Francesco Zanardi 388b, ",
+    "osm": "node/11327589969"
+   },
+   {
+    "punteggio": 0.538,
+    "nome": "Il Desiderio",
+    "indirizzo": "Via Marco Emilio Lepido 193, ",
+    "osm": "node/1576823598"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Comunale – Sala Bibiena",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.625,
+    "nome": "Teatro Comunale di Castello d'Argile",
+    "indirizzo": "Via Giacomo Matteotti 150, ",
+    "osm": "way/231411478"
+   },
+   {
+    "punteggio": 0.614,
+    "nome": "Teatro comunale Ebe Stignani",
+    "indirizzo": "Via Giuseppe Verdi 1, Imola",
+    "osm": "node/721933814"
+   },
+   {
+    "punteggio": 0.603,
+    "nome": "Trattoria Casa Buia",
+    "indirizzo": "Via dell'Arcoveggio 138/2, Bologna",
+    "osm": "node/1704111509"
+   }
+  ]
+ },
+ {
+  "luogo": "Biblioteca Giovanna Zangrandi",
+  "citta": "Galliera",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.627,
+    "nome": "Biblioteca Renato Zangheri",
+    "indirizzo": "Piazza dell'Unità 4a, Bologna",
+    "osm": "node/12507470006"
+   },
+   {
+    "punteggio": 0.581,
+    "nome": "Biblioteca comunale Sasso Morelli",
+    "indirizzo": "Via Correcchio 142, ",
+    "osm": "node/5346828361"
+   },
+   {
+    "punteggio": 0.579,
+    "nome": "Biblioteca di Casa Carducci",
+    "indirizzo": "Piazza Giosuè Carducci 5, Bologna",
+    "osm": "node/11073703457"
+   }
+  ]
+ },
+ {
+  "luogo": "Sala Giulietta Masina",
+  "citta": "San Giorgio di Piano",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": []
+ },
+ {
+  "luogo": "Unipol Arena",
+  "citta": "Bologna",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.659,
+    "nome": "Il Marinaio",
+    "indirizzo": "Via Toscana 163, Bologna",
+    "osm": "node/1704341788"
+   },
+   {
+    "punteggio": 0.636,
+    "nome": "AnticArenA",
+    "indirizzo": "Via dell'Indipendenza 40b, ",
+    "osm": "node/4050271333"
+   },
+   {
+    "punteggio": 0.621,
+    "nome": "CostArena",
+    "indirizzo": "Via Azzo Gardino 48, Bologna",
+    "osm": "node/12843090672"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Arcimboldi",
+  "citta": "Milano",
+  "eventi": 58,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.76,
+    "nome": "Teatro Carcano",
+    "indirizzo": "Corso di Porta Romana 63, Milano",
+    "osm": "node/442572432"
+   },
+   {
+    "punteggio": 0.74,
+    "nome": "Teatro Verdi",
+    "indirizzo": "Via Pastrengo 16, Milano",
+    "osm": "node/2479386540"
+   },
+   {
+    "punteggio": 0.695,
+    "nome": "Teatro PIM OFF",
+    "indirizzo": "Via Selvanesco 75, Milano",
+    "osm": "node/4073762539"
+   }
+  ]
+ },
+ {
+  "luogo": "Circolo Magnolia",
+  "citta": "Segrate",
+  "eventi": 51,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.65,
+    "nome": "Circolo A. Grandi",
+    "indirizzo": "Via Isonzo 7, Cusano Milanino",
+    "osm": "node/332510971"
+   },
+   {
+    "punteggio": 0.643,
+    "nome": "Brolo Milano",
+    "indirizzo": "Via Melzo 19, ",
+    "osm": "node/11826369069"
+   },
+   {
+    "punteggio": 0.633,
+    "nome": "Circolo Svolta",
+    "indirizzo": "Via Franchi Maggi 118, Rozzano",
+    "osm": "node/6035343969"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro alla Scala",
+  "citta": "Milano",
+  "eventi": 50,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 1.019,
+    "nome": "Il Foyer",
+    "indirizzo": "Via Filodrammatici 2, Milano",
+    "osm": "node/1829745656"
+   },
+   {
+    "punteggio": 1.005,
+    "nome": "Trussardi alla Scala",
+    "indirizzo": "Piazza della Scala 5, Milano",
+    "osm": "node/4381970257"
+   },
+   {
+    "punteggio": 1.003,
+    "nome": "Locanda Alla Scala",
+    "indirizzo": "Via dell'Orso 1, Milano",
+    "osm": "node/1726715775"
+   }
+  ]
+ },
+ {
+  "luogo": "Ecoteatro",
+  "citta": "Milano",
+  "eventi": 32,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.789,
+    "nome": "Comteatro",
+    "indirizzo": "Piazza Giovanni XXII 5, Corsico",
+    "osm": "way/398833390"
+   },
+   {
+    "punteggio": 0.777,
+    "nome": "Dedalo teatro",
+    "indirizzo": "Via Ariberto 25, Milano",
+    "osm": "node/9993744771"
+   },
+   {
+    "punteggio": 0.665,
+    "nome": "oTTo",
+    "indirizzo": "Via Paolo Sarpi 10, Milano",
+    "osm": "node/3605721838"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Nazionale Italiana Assicurazioni",
+  "citta": "Milano",
+  "eventi": 28,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.572,
+    "nome": "Biblioteca Nazionale Braidense",
+    "indirizzo": "Via Brera 28, Milano",
+    "osm": "node/1029667847"
+   },
+   {
+    "punteggio": 0.558,
+    "nome": "Teatro Leonardo da Vinci",
+    "indirizzo": "Via Andrea Maria Ampère 1, Milano",
+    "osm": "node/1427961587"
+   },
+   {
+    "punteggio": 0.556,
+    "nome": "Tiro a Segno Nazionale - Sezione di Milano",
+    "indirizzo": "Viale Achille Papa 22B, Milano",
+    "osm": "way/1531247309"
+   }
+  ]
+ },
+ {
+  "luogo": "Zelig",
+  "citta": "Milano",
+  "eventi": 19,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.717,
+    "nome": "Meli",
+    "indirizzo": "Via Ascanio Sforza 63, Milano",
+    "osm": "node/2226705953"
+   },
+   {
+    "punteggio": 0.65,
+    "nome": "Elite",
+    "indirizzo": "Viale Giovanni da Cermenate 64, Milano",
+    "osm": "node/6031903493"
+   },
+   {
+    "punteggio": 0.6,
+    "nome": "Felix",
+    "indirizzo": "Via Filippo Argelati 1, ",
+    "osm": "node/11986138141"
+   }
+  ]
+ },
+ {
+  "luogo": "Spazio Teatro 89",
+  "citta": "Milano",
+  "eventi": 19,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.738,
+    "nome": "Spazio Caroli 12",
+    "indirizzo": "Via Luigi Caroli 12, Milano",
+    "osm": "node/11668832773"
+   },
+   {
+    "punteggio": 0.697,
+    "nome": "Spazio Tertulliano",
+    "indirizzo": "Via Tertulliano 68, Milano",
+    "osm": "node/439208909"
+   },
+   {
+    "punteggio": 0.671,
+    "nome": "Dedalo teatro",
+    "indirizzo": "Via Ariberto 25, Milano",
+    "osm": "node/9993744771"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Repower",
+  "citta": "Milano",
+  "eventi": 13,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.742,
+    "nome": "Teatro Verdi",
+    "indirizzo": "Via Pastrengo 16, Milano",
+    "osm": "node/2479386540"
+   },
+   {
+    "punteggio": 0.717,
+    "nome": "Teatro Ringhiera",
+    "indirizzo": "Via Pietro Boifava 17, Milano",
+    "osm": "node/7643286220"
+   },
+   {
+    "punteggio": 0.693,
+    "nome": "Teatro Menotti",
+    "indirizzo": "Via Ciro Menotti 11, Milano",
+    "osm": "node/435189356"
+   }
+  ]
+ },
+ {
+  "luogo": "Stadio San Siro",
+  "citta": "Milano",
+  "eventi": 13,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.675,
+    "nome": "Bistrot San Marco",
+    "indirizzo": "Via San Marco 33, Milano",
+    "osm": "node/12178473451"
+   },
+   {
+    "punteggio": 0.661,
+    "nome": "Trattoria San Basilio",
+    "indirizzo": "Via San Basilio 7, Milano",
+    "osm": "node/4142386594"
+   },
+   {
+    "punteggio": 0.656,
+    "nome": "Teatro San Domingo",
+    "indirizzo": "Via Rovigno 11a, Milano",
+    "osm": "node/3719659369"
+   }
+  ]
+ },
+ {
+  "luogo": "Auditorium di Milano",
+  "citta": "Milano",
+  "eventi": 11,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.998,
+    "nome": "Il salotto di Milano",
+    "indirizzo": "Galleria Vittorio Emanuele Secondo 4n19, Milano",
+    "osm": "node/13001760962"
+   },
+   {
+    "punteggio": 0.997,
+    "nome": "Il faro di Milano",
+    "indirizzo": "Via Marco d'Oggiono 6, Milano",
+    "osm": "node/9831697595"
+   },
+   {
+    "punteggio": 0.995,
+    "nome": "Due Forni a Milano",
+    "indirizzo": "Viale Monte Nero 23, Milano",
+    "osm": "node/13945494666"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Principe",
+  "citta": "Milano",
+  "eventi": 7,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 1.004,
+    "nome": "Il Principe",
+    "indirizzo": "Alzaia Naviglio Pavese 34, Milano",
+    "osm": "node/9346505545"
+   },
+   {
+    "punteggio": 0.991,
+    "nome": "Caffè del Principe",
+    "indirizzo": "Piazza Luigi Einaudi 24, Milano",
+    "osm": "node/2476881430"
+   },
+   {
+    "punteggio": 0.971,
+    "nome": "II Principe dei Navigli",
+    "indirizzo": "Via Giovanni Enrico Pestalozzi 2, Milano",
+    "osm": "node/986733758"
+   }
+  ]
+ },
+ {
+  "luogo": "SALONE 14 @ Yellowsquare",
+  "citta": "Milano",
+  "eventi": 7,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.587,
+    "nome": "Sapore della Grecia",
+    "indirizzo": "Piazza Emilia 9, Milano",
+    "osm": "node/6849534731"
+   },
+   {
+    "punteggio": 0.562,
+    "nome": "Salumeria dello Sport",
+    "indirizzo": "Piazza Napoli 30/2, Milano",
+    "osm": "node/6035317638"
+   },
+   {
+    "punteggio": 0.55,
+    "nome": "Sale Rosaq",
+    "indirizzo": "Via Ambrogio Binda 10, Milano",
+    "osm": "node/9724998204"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Repower",
+  "citta": "Assago",
+  "eventi": 6,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.592,
+    "nome": "Teatro Verdi",
+    "indirizzo": "Via Pastrengo 16, Milano",
+    "osm": "node/2479386540"
+   },
+   {
+    "punteggio": 0.567,
+    "nome": "Teatro Ringhiera",
+    "indirizzo": "Via Pietro Boifava 17, Milano",
+    "osm": "node/7643286220"
+   },
+   {
+    "punteggio": 0.56,
+    "nome": "Centro Ceco",
+    "indirizzo": "Via Giovanni Battista Morgagni 20, ",
+    "osm": "node/3427522699"
+   }
+  ]
+ },
+ {
+  "luogo": "Ippodromo SNAI San Siro",
+  "citta": "Milano",
+  "eventi": 5,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.606,
+    "nome": "Bomaki Sanzio",
+    "indirizzo": "Via Raffaello Sanzio 24, Milano",
+    "osm": "node/6731939435"
+   },
+   {
+    "punteggio": 0.561,
+    "nome": "Circolo ARCI La Scighera",
+    "indirizzo": "Via Giuseppe Candiani 131, Milano",
+    "osm": "node/11486224530"
+   },
+   {
+    "punteggio": 0.55,
+    "nome": "Centro Sportivo San Carlo",
+    "indirizzo": "Via Bernardino Zenale 6, Milano",
+    "osm": "node/2510419011"
+   }
+  ]
+ },
+ {
+  "luogo": "Cinema Teatro Wagner",
+  "citta": "Milano",
+  "eventi": 4,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.75,
+    "nome": "Cineteatro San Carlo",
+    "indirizzo": "Via Morozzo della Rocca 12, Milano",
+    "osm": "node/5300438341"
+   },
+   {
+    "punteggio": 0.736,
+    "nome": "Cinema Centrale",
+    "indirizzo": "Via Torino 30;32, Milano",
+    "osm": "node/442587403"
+   },
+   {
+    "punteggio": 0.736,
+    "nome": "Cinema Beltrade",
+    "indirizzo": "Via Nino Oxilia 10, Milano",
+    "osm": "node/9545441783"
+   }
+  ]
+ },
+ {
+  "luogo": "Alveare Culturale Studio Ets",
+  "citta": "Milano",
+  "eventi": 4,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.703,
+    "nome": "Cascina Torrette di Trenno",
+    "indirizzo": "Via Giuseppe Gabetti 15, Milano",
+    "osm": "node/4432264665"
+   },
+   {
+    "punteggio": 0.595,
+    "nome": "Spazio Culturale SC3 Milano",
+    "indirizzo": "Via Scutari 3, Milano",
+    "osm": "node/9170386213"
+   },
+   {
+    "punteggio": 0.576,
+    "nome": "Associazione Culturale Al Nur",
+    "indirizzo": "Via Giacomo Carissimi 19, Milano",
+    "osm": "way/129909305"
+   }
+  ]
+ },
+ {
+  "luogo": "Piccolo Teatro Strehler",
+  "citta": "Milano",
+  "eventi": 4,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.777,
+    "nome": "Piccolo Teatro Grassi",
+    "indirizzo": "Via Rovello 2b, Milano",
+    "osm": "node/281885884"
+   },
+   {
+    "punteggio": 0.679,
+    "nome": "Piccolo mare",
+    "indirizzo": "Viale Nazario Sauro 11, Milano",
+    "osm": "node/5015912583"
+   },
+   {
+    "punteggio": 0.629,
+    "nome": "Piccolo mare 1",
+    "indirizzo": "Via degli Artaria 3, ",
+    "osm": "node/8243512396"
+   }
+  ]
+ },
+ {
+  "luogo": "NAMA (indoor)",
+  "citta": "Milano",
+  "eventi": 4,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.75,
+    "nome": "Tamarindo",
+    "indirizzo": "Via Giuseppe Taccioli 20, Milano",
+    "osm": "node/9111882464"
+   },
+   {
+    "punteggio": 0.65,
+    "nome": "Camparino in Galleria",
+    "indirizzo": "Galleria Vittorio Emanuele Secondo 1n02, Milano",
+    "osm": "node/13001337602"
+   },
+   {
+    "punteggio": 0.621,
+    "nome": "Da Martino",
+    "indirizzo": "Via Carlo Farini 8, Milano",
+    "osm": "node/3049154290"
+   }
+  ]
+ },
+ {
+  "luogo": "Fiera Milano Live",
+  "citta": "Rho",
+  "eventi": 4,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.796,
+    "nome": "Live Club",
+    "indirizzo": "Via Giuseppe Mazzini 58, Trezzo sull'Adda",
+    "osm": "node/10775065752"
+   },
+   {
+    "punteggio": 0.595,
+    "nome": "Denis Milano Navigli",
+    "indirizzo": "Ripa di Porta Ticinese 67, ",
+    "osm": "node/13341282603"
+   },
+   {
+    "punteggio": 0.593,
+    "nome": "Dry Milano",
+    "indirizzo": "Via Solferino 33, ",
+    "osm": "node/12459684263"
+   }
+  ]
+ },
+ {
+  "luogo": "Ostello Bello Milano Centrale",
+  "citta": "Milano",
+  "eventi": 3,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.739,
+    "nome": "Sauna Metro club Milano Centrale",
+    "indirizzo": "Via Giovanni Schiaparelli 1, Milano",
+    "osm": "node/4041811953"
+   },
+   {
+    "punteggio": 0.638,
+    "nome": "Osteria della Lanterna",
+    "indirizzo": "Via Giuseppe Mercalli 3, Milano",
+    "osm": "node/4608531373"
+   },
+   {
+    "punteggio": 0.617,
+    "nome": "Giogol'Ostello Spazio Culturale",
+    "indirizzo": "Viale Bligny 41, Milano",
+    "osm": "node/10169106868"
+   }
+  ]
+ },
+ {
+  "luogo": "Piccolo Teatro Studio Melato",
+  "citta": "Milano",
+  "eventi": 3,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.744,
+    "nome": "Piccolo Teatro Grassi",
+    "indirizzo": "Via Rovello 2b, Milano",
+    "osm": "node/281885884"
+   },
+   {
+    "punteggio": 0.672,
+    "nome": "Il faro di Milano",
+    "indirizzo": "Via Marco d'Oggiono 6, Milano",
+    "osm": "node/9831697595"
+   },
+   {
+    "punteggio": 0.65,
+    "nome": "Teatro Studio Frigia 5",
+    "indirizzo": "Via Frigia 5, Milano",
+    "osm": "node/4662948414"
+   }
+  ]
+ },
+ {
+  "luogo": "Ostello Bello Milano Duomo",
+  "citta": "Milano",
+  "eventi": 3,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.621,
+    "nome": "The Beach Milano",
+    "indirizzo": "Via Arcangelo Corelli 62, Milano",
+    "osm": "node/12797459059"
+   },
+   {
+    "punteggio": 0.603,
+    "nome": "Chiosco Urbano Milano",
+    "indirizzo": "Via Odoardo Tabacchi 32, Milano",
+    "osm": "node/14056314776"
+   },
+   {
+    "punteggio": 0.598,
+    "nome": "Gino Sorbillo Lievito Madre al Duomo",
+    "indirizzo": "Largo Corsia dei Servi 11, Milano",
+    "osm": "node/9651779612"
+   }
+  ]
+ },
+ {
+  "luogo": "PimOff",
+  "citta": "Milano",
+  "eventi": 3,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.65,
+    "nome": "Pino",
+    "indirizzo": "Via Palermo 21, Milano",
+    "osm": "node/3686987626"
+   },
+   {
+    "punteggio": 0.65,
+    "nome": "Teatro PIM OFF",
+    "indirizzo": "Via Selvanesco 75, Milano",
+    "osm": "node/4073762539"
+   },
+   {
+    "punteggio": 0.595,
+    "nome": "Biffi",
+    "indirizzo": "Via Ceresio 4, Milano",
+    "osm": "node/3049189423"
+   }
+  ]
+ },
+ {
+  "luogo": "Blue Note Milano",
+  "citta": "Milano",
+  "eventi": 3,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 1.008,
+    "nome": "Blue Note",
+    "indirizzo": "Via Pietro Borsieri 37, Milano",
+    "osm": "node/2719628296"
+   },
+   {
+    "punteggio": 0.982,
+    "nome": "Blue M",
+    "indirizzo": "Via Lanzone 27, Milano",
+    "osm": "node/11942442752"
+   },
+   {
+    "punteggio": 0.822,
+    "nome": "Blue Club",
+    "indirizzo": "Via Alessandro Volta 20, Gaggiano",
+    "osm": "node/4530729268"
+   }
+  ]
+ },
+ {
+  "luogo": "Chiesa di San Vincenzo in Prato",
+  "citta": "Milano",
+  "eventi": 3,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.713,
+    "nome": "Chiesa di San Paolo",
+    "indirizzo": "Via Asmara 2, Milano",
+    "osm": "way/39207585"
+   },
+   {
+    "punteggio": 0.689,
+    "nome": "Chiesa di San Vincenzo Diacono e Martire",
+    "indirizzo": "Via Alessandro Manzoni 22, Cormano",
+    "osm": "way/136718528"
+   },
+   {
+    "punteggio": 0.667,
+    "nome": "Chiesa di Sant'Elena",
+    "indirizzo": "Via Sant’Elena 5, ",
+    "osm": "way/244814574"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Oscar",
+  "citta": "Milano",
+  "eventi": 3,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 1.014,
+    "nome": "Bar Oscar",
+    "indirizzo": "Via Rombon 40, Milano",
+    "osm": "node/7774141692"
+   },
+   {
+    "punteggio": 1.009,
+    "nome": "Teatro Oscar DeSidera",
+    "indirizzo": "Via Lattanzio 58/A, Milano",
+    "osm": "node/13137998052"
+   },
+   {
+    "punteggio": 0.992,
+    "nome": "Pizzeria Oscar",
+    "indirizzo": "Via Giuseppe Ripamonti 244n03, Milano",
+    "osm": "node/14021828707"
+   }
+  ]
+ },
+ {
+  "luogo": "Club House",
+  "citta": "Milano",
+  "eventi": 2,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 1.005,
+    "nome": "Beda House",
+    "indirizzo": "Via Gioacchino Murat 2, Milano",
+    "osm": "node/4985229451"
+   },
+   {
+    "punteggio": 0.995,
+    "nome": "Golden House",
+    "indirizzo": "Corso di Porta Ticinese 106, Milano",
+    "osm": "node/2529853660"
+   },
+   {
+    "punteggio": 0.995,
+    "nome": "Noodle House",
+    "indirizzo": "Via Nicola Antonio Porpora 167, Milano",
+    "osm": "node/3899392302"
+   }
+  ]
+ },
+ {
+  "luogo": "Tempio del Futuro Perduto",
+  "citta": "Milano",
+  "eventi": 2,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.6,
+    "nome": "Al tempio d'oro",
+    "indirizzo": "Via delle Leghe 23, Milano",
+    "osm": "node/3225290992"
+   },
+   {
+    "punteggio": 0.581,
+    "nome": "Osteria del Borgo Antico",
+    "indirizzo": "Via Piero della Francesca 35, Milano",
+    "osm": "node/5122196433"
+   },
+   {
+    "punteggio": 0.574,
+    "nome": "Osteria del Treno",
+    "indirizzo": "Via San Gregorio 46, Milano",
+    "osm": "node/3848624522"
+   }
+  ]
+ },
+ {
+  "luogo": "Detune",
+  "citta": "Milano",
+  "eventi": 2,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.727,
+    "nome": "Turnè",
+    "indirizzo": "Via Paolo Frisi 3, ",
+    "osm": "node/5132911528"
+   },
+   {
+    "punteggio": 0.665,
+    "nome": "Testone",
+    "indirizzo": "Via Vigevano 6, Milano",
+    "osm": "node/10865653520"
+   },
+   {
+    "punteggio": 0.621,
+    "nome": "Al Dente",
+    "indirizzo": "Via dei Bossi 7, Milano",
+    "osm": "node/4550648256"
+   }
+  ]
+ },
+ {
+  "luogo": "Bluesquare Milano",
+  "citta": "Milano",
+  "eventi": 2,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.783,
+    "nome": "Basara Milano",
+    "indirizzo": "Corso Italia 6, Milano",
+    "osm": "node/4971706417"
+   },
+   {
+    "punteggio": 0.764,
+    "nome": "BASE Milano",
+    "indirizzo": "Via Bergognone Da Fossano 26, Milano",
+    "osm": "node/5610989309"
+   },
+   {
+    "punteggio": 0.717,
+    "nome": "Barzac Milano",
+    "indirizzo": "Via Gustavo Fara 29, Milano",
+    "osm": "node/9769464817"
+   }
+  ]
+ },
+ {
+  "luogo": "ARCA",
+  "citta": "Milano",
+  "eventi": 2,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 1.02,
+    "nome": "l'Arca",
+    "indirizzo": "Via Carlo Osma 5, Milano",
+    "osm": "node/651860101"
+   },
+   {
+    "punteggio": 1.0,
+    "nome": "Lab Arca",
+    "indirizzo": "Via Marco d'Oggiono 1an07, Milano",
+    "osm": "node/9790406283"
+   },
+   {
+    "punteggio": 1.0,
+    "nome": "Bar Arca",
+    "indirizzo": "Via Rimini 38, Milano",
+    "osm": "node/12875290990"
+   }
+  ]
+ },
+ {
+  "luogo": "Studionotte",
+  "citta": "Milano",
+  "eventi": 2,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.667,
+    "nome": "Dinette",
+    "indirizzo": "Via Fratelli Bronzetti 11, ",
+    "osm": "node/4171162796"
+   },
+   {
+    "punteggio": 0.606,
+    "nome": "Cruditè",
+    "indirizzo": "Via Eugenio Villoresi 10, Milano",
+    "osm": "node/6910530490"
+   },
+   {
+    "punteggio": 0.606,
+    "nome": "Testone",
+    "indirizzo": "Via Vigevano 6, Milano",
+    "osm": "node/10865653520"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro della Quattordicesima",
+  "citta": "Milano",
+  "eventi": 2,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.758,
+    "nome": "Teatro della Memoria",
+    "indirizzo": "Via Domenico Cucchiari 4, Milano",
+    "osm": "node/252635404"
+   },
+   {
+    "punteggio": 0.717,
+    "nome": "Teatro Lirico Giorgio Gaber",
+    "indirizzo": "Via Larga 14, Milano",
+    "osm": "node/2937821817"
+   },
+   {
+    "punteggio": 0.654,
+    "nome": "Teatro dei Filodrammatici",
+    "indirizzo": "Via Filodrammatici 1, Milano",
+    "osm": "node/11950676583"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Martinitt",
+  "citta": "Milano",
+  "eventi": 2,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.783,
+    "nome": "Teatro Manzoni",
+    "indirizzo": "Via Alessandro Manzoni 42, Milano",
+    "osm": "node/251291809"
+   },
+   {
+    "punteggio": 0.738,
+    "nome": "Teatro Ringhiera",
+    "indirizzo": "Via Pietro Boifava 17, Milano",
+    "osm": "node/7643286220"
+   },
+   {
+    "punteggio": 0.727,
+    "nome": "Centro Sammartini",
+    "indirizzo": "Via Giovanni Battista Sammartini 120, ",
+    "osm": "node/12969485801"
+   }
+  ]
+ },
+ {
+  "luogo": "Parco della Musica di Milano",
+  "citta": "Segrate",
+  "eventi": 2,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.578,
+    "nome": "EuroPark Idroscalo Milano",
+    "indirizzo": "Via Rivoltana 64, Segrate",
+    "osm": "node/12857088378"
+   },
+   {
+    "punteggio": 0.566,
+    "nome": "La gelateria della Musica",
+    "indirizzo": "Via privata Giuseppe Abamonti 2, ",
+    "osm": "node/4171185989"
+   },
+   {
+    "punteggio": 0.555,
+    "nome": "La Parrilla Mexicana Milano",
+    "indirizzo": "Corso Sempione 76, Milano",
+    "osm": "node/540813358"
+   }
+  ]
+ },
+ {
+  "luogo": "Atelier Carlo Colla & Figli",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.646,
+    "nome": "Winelivery Bar Navigli",
+    "indirizzo": "Via Casale 3a, Milano",
+    "osm": "node/8669591011"
+   },
+   {
+    "punteggio": 0.583,
+    "nome": "Osteria Scalo Farini",
+    "indirizzo": "Via Carlo Farini 27, Milano",
+    "osm": "node/2104112893"
+   },
+   {
+    "punteggio": 0.562,
+    "nome": "Elite Cafe Tolstoi",
+    "indirizzo": "Via Leone Tolstoi 56, Milano",
+    "osm": "node/6887222286"
+   }
+  ]
+ },
+ {
+  "luogo": "Bachelite cLab",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.717,
+    "nome": "Dahlia Lab",
+    "indirizzo": "Via Ferdinando Bocconi 6n03, Milano",
+    "osm": "node/506114455"
+   },
+   {
+    "punteggio": 0.69,
+    "nome": "Little Lamb",
+    "indirizzo": "Via Paolo Sarpi 8, Milano",
+    "osm": "node/3605721565"
+   },
+   {
+    "punteggio": 0.659,
+    "nome": "Beef Club",
+    "indirizzo": "Via Giovanni Boccaccio 15, Milano",
+    "osm": "node/10949546705"
+   }
+  ]
+ },
+ {
+  "luogo": "Il Sistina Chapiteau",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.635,
+    "nome": "The Social Chupiteria",
+    "indirizzo": "Viale Bligny 50, Milano",
+    "osm": "node/5708689223"
+   },
+   {
+    "punteggio": 0.603,
+    "nome": "Il ristorantino della carne",
+    "indirizzo": "Via Andrea Solari 12, Milano",
+    "osm": "node/10699261029"
+   },
+   {
+    "punteggio": 0.583,
+    "nome": "La Chiatta",
+    "indirizzo": "Via Casale 8, Milano",
+    "osm": "node/5808971124"
+   }
+  ]
+ },
+ {
+  "luogo": "Club Dept 184",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.633,
+    "nome": "Bar del 104",
+    "indirizzo": "Via Giuseppe Candiani 104, Milano",
+    "osm": "node/11193008896"
+   },
+   {
+    "punteggio": 0.566,
+    "nome": "Club Grande Milano",
+    "indirizzo": "Via Santa Maria Valle 1, Milano",
+    "osm": "node/4971708365"
+   },
+   {
+    "punteggio": 0.55,
+    "nome": "Club 23",
+    "indirizzo": "Via Giovanni Battista Sammartini 23, Milano",
+    "osm": "node/4041811942"
+   }
+  ]
+ },
+ {
+  "luogo": "Lento",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.777,
+    "nome": "Levino",
+    "indirizzo": "Via Pietro Custodi 4, Milano",
+    "osm": "node/9272791975"
+   },
+   {
+    "punteggio": 0.777,
+    "nome": "4cento",
+    "indirizzo": "Via Campazzino 14, Milano",
+    "osm": "way/495180312"
+   },
+   {
+    "punteggio": 0.675,
+    "nome": "Desinolento",
+    "indirizzo": "Via Filippo Turati 6, Milano",
+    "osm": "node/4184996231"
+   }
+  ]
+ },
+ {
+  "luogo": "21 House of Stories Navigli",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.704,
+    "nome": "House of Ronin",
+    "indirizzo": "Via Vittorio Alfieri 17, Milano",
+    "osm": "node/9463753737"
+   },
+   {
+    "punteggio": 0.61,
+    "nome": "Lo Scoglio sul Naviglio",
+    "indirizzo": "Via Lodovico il Moro 55, Milano",
+    "osm": "node/318431243"
+   },
+   {
+    "punteggio": 0.572,
+    "nome": "Ramen Shifu Navigli",
+    "indirizzo": "Corso Luigi Manusardi 3, Milano",
+    "osm": "node/2666669313"
+   }
+  ]
+ },
+ {
+  "luogo": "Germi-luogo Di Contaminazione",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.638,
+    "nome": "Posto di Conversazione",
+    "indirizzo": "Alzaia Naviglio Grande 6, Milano",
+    "osm": "node/2774913926"
+   },
+   {
+    "punteggio": 0.636,
+    "nome": "Il Salumaio di Montenapoleone",
+    "indirizzo": "Via Santo Spirito 10, Milano",
+    "osm": "node/3292516226"
+   },
+   {
+    "punteggio": 0.627,
+    "nome": "Il Luogo di AimoE Nadia",
+    "indirizzo": "Via Raimondo Montecuccoli 6, Milano",
+    "osm": "node/12471679284"
+   }
+  ]
+ },
+ {
+  "luogo": "Centro de Incubazione Artistica & Culturale",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.615,
+    "nome": "Biblioteca Europea di Informazione e Cultura",
+    "indirizzo": "Via Silvio Pellico 1, Milano",
+    "osm": "node/3207374438"
+   },
+   {
+    "punteggio": 0.593,
+    "nome": "C.I.Q. – Centro Internazionale di Quartiere",
+    "indirizzo": "Via Fabio Massimo 19, Milano",
+    "osm": "node/9516560849"
+   },
+   {
+    "punteggio": 0.593,
+    "nome": "Centro Aggregazione Multifunzionale Olmi",
+    "indirizzo": "Via delle Betulle 39, Milano",
+    "osm": "node/13983811202"
+   }
+  ]
+ },
+ {
+  "luogo": "PIANO ZERO",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 1.05,
+    "nome": "Piano Zero",
+    "indirizzo": "Viale Giovanni Suzzani 96/98, Milano",
+    "osm": "node/12887349839"
+   },
+   {
+    "punteggio": 1.006,
+    "nome": "Da Zero",
+    "indirizzo": "Via Bernardino Luini 9, Milano",
+    "osm": "node/5033959648"
+   },
+   {
+    "punteggio": 1.006,
+    "nome": "Da Zero",
+    "indirizzo": "Via dell'Orso 4, Milano",
+    "osm": "node/12790163999"
+   }
+  ]
+ },
+ {
+  "luogo": "AiMi Club Milano",
+  "citta": "Segrate",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.706,
+    "nome": "Thai Lounge Milano",
+    "indirizzo": "Via Conte Rosso 27, ",
+    "osm": "node/12323338601"
+   },
+   {
+    "punteggio": 0.614,
+    "nome": "Zaini Milano",
+    "indirizzo": "Viale Piave 17, Milano",
+    "osm": "node/9538218352"
+   },
+   {
+    "punteggio": 0.6,
+    "nome": "Pitbeef Milano",
+    "indirizzo": "Via Gaetano De Castillia 7, ",
+    "osm": "node/13643667901"
+   }
+  ]
+ },
+ {
+  "luogo": "Sam - Sampling Moods",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.564,
+    "nome": "Shah Jalal Mosque",
+    "indirizzo": "Via privata Giovanni Zambelli 15, Milano",
+    "osm": "node/12793357589"
+   },
+   {
+    "punteggio": 0.55,
+    "nome": "Teatro San Domingo",
+    "indirizzo": "Via Rovigno 11a, Milano",
+    "osm": "node/3719659369"
+   },
+   {
+    "punteggio": 0.55,
+    "nome": "Shilling's",
+    "indirizzo": "Via Paolo da Cannobio 2, Milano",
+    "osm": "node/4170005832"
+   }
+  ]
+ },
+ {
+  "luogo": "Armani / Silos",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.717,
+    "nome": "Armani Privè",
+    "indirizzo": "Via Alessandro Manzoni 31, Milano",
+    "osm": "node/2993628023"
+   },
+   {
+    "punteggio": 0.671,
+    "nome": "Trancio Siciliano",
+    "indirizzo": "Via Spartaco 33, Milano",
+    "osm": "node/13945507272"
+   },
+   {
+    "punteggio": 0.65,
+    "nome": "Maramais",
+    "indirizzo": "Via Antonio Grossich 17, Milano",
+    "osm": "node/2622398767"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro del Borgo Milano TdB",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.717,
+    "nome": "Taverna del Borgo Antico",
+    "indirizzo": "Via Madonnina 27, Milano",
+    "osm": "node/2417414845"
+   },
+   {
+    "punteggio": 0.717,
+    "nome": "Osteria del Borgo Antico",
+    "indirizzo": "Via Piero della Francesca 35, Milano",
+    "osm": "node/5122196433"
+   },
+   {
+    "punteggio": 0.688,
+    "nome": "Teatro della Memoria",
+    "indirizzo": "Via Domenico Cucchiari 4, Milano",
+    "osm": "node/252635404"
+   }
+  ]
+ },
+ {
+  "luogo": "Milano",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 1.02,
+    "nome": "55 Milano",
+    "indirizzo": "Via Piero della Francesca 55, Milano",
+    "osm": "node/540813357"
+   },
+   {
+    "punteggio": 1.012,
+    "nome": "Hug Milano",
+    "indirizzo": "Via Giulio e Corrado Venini 83, Milano",
+    "osm": "node/5695173923"
+   },
+   {
+    "punteggio": 1.012,
+    "nome": "Pan Milano",
+    "indirizzo": "Via Leopoldo Cicognara 19, Milano",
+    "osm": "node/8930864270"
+   }
+  ]
+ },
+ {
+  "luogo": "Q Club",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": []
+ },
+ {
+  "luogo": "Spazio Pontano",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.741,
+    "nome": "Spazio Tadini",
+    "indirizzo": "Via Niccolò Jommelli 24, ",
+    "osm": "node/2345613403"
+   },
+   {
+    "punteggio": 0.738,
+    "nome": "Spazio Tertulliano",
+    "indirizzo": "Via Tertulliano 68, Milano",
+    "osm": "node/439208909"
+   },
+   {
+    "punteggio": 0.65,
+    "nome": "Osteria Zio Nino",
+    "indirizzo": "Via Pietro Marocco 17, Milano",
+    "osm": "node/3946189557"
+   }
+  ]
+ },
+ {
+  "luogo": "DEPARTMENT 184",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.588,
+    "nome": "Bagutto",
+    "indirizzo": "Via Elio Vittorini 4, Milano",
+    "osm": "node/8071498092"
+   },
+   {
+    "punteggio": 0.572,
+    "nome": "Da Orient",
+    "indirizzo": "Viale Montello 8, Milano",
+    "osm": "node/2416276989"
+   },
+   {
+    "punteggio": 0.572,
+    "nome": "Veramente",
+    "indirizzo": "Via Palermo 11, Milano",
+    "osm": "node/4535559324"
+   }
+  ]
+ },
+ {
+  "luogo": "Labrutepoque",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.65,
+    "nome": "Fabrique",
+    "indirizzo": "Via Gaudenzio Fantoli 9, Milano",
+    "osm": "node/5438626021"
+   },
+   {
+    "punteggio": 0.609,
+    "nome": "L' Arabesque",
+    "indirizzo": "Largo Augusto 10, ",
+    "osm": "node/4544196898"
+   },
+   {
+    "punteggio": 0.606,
+    "nome": "La Rue",
+    "indirizzo": "Corso Giuseppe Garibaldi 79, Milano",
+    "osm": "node/13369587250"
+   }
+  ]
+ },
+ {
+  "luogo": "Tempio Civico di San Sebastiano",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.586,
+    "nome": "Panini De Santis - Battisti",
+    "indirizzo": "Via Cesare Battisti 19, Milano",
+    "osm": "node/4741096467"
+   },
+   {
+    "punteggio": 0.569,
+    "nome": "Biblioteca del Museo civico di storia naturale",
+    "indirizzo": "Corso Venezia 55, Milano",
+    "osm": "node/4530910415"
+   },
+   {
+    "punteggio": 0.559,
+    "nome": "Biblioteca di Via Senato",
+    "indirizzo": "Via Senato 14, Milano",
+    "osm": "node/2562152294"
+   }
+  ]
+ },
+ {
+  "luogo": "Gemma Club",
+  "citta": "Sesto San Giovanni",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.588,
+    "nome": "ONEWAY discoclub",
+    "indirizzo": "Via Felice Cavallotti 204, Sesto San Giovanni",
+    "osm": "node/11523251451"
+   },
+   {
+    "punteggio": 0.567,
+    "nome": "Legend Club",
+    "indirizzo": "Viale Enrico Fermi 98, Milano",
+    "osm": "node/6475087590"
+   },
+   {
+    "punteggio": 0.556,
+    "nome": "Zoo Club",
+    "indirizzo": "Via Panfilo Castaldi 8, ",
+    "osm": "way/587819020"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Guanella",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.783,
+    "nome": "Teatro Gerolamo",
+    "indirizzo": "Piazza Cesare Beccaria 8, Milano",
+    "osm": "node/9530344803"
+   },
+   {
+    "punteggio": 0.74,
+    "nome": "Teatro Fontana",
+    "indirizzo": "Via Gian Antonio Boltraffio 21, Milano",
+    "osm": "node/2491568216"
+   },
+   {
+    "punteggio": 0.738,
+    "nome": "Teatro San Babila",
+    "indirizzo": "Corso Venezia 2a, Milano",
+    "osm": "node/439207301"
+   }
+  ]
+ },
+ {
+  "luogo": "CineTeatro Stella",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.753,
+    "nome": "Cineteatro San Carlo",
+    "indirizzo": "Via Morozzo della Rocca 12, Milano",
+    "osm": "node/5300438341"
+   },
+   {
+    "punteggio": 0.717,
+    "nome": "Bar Stella",
+    "indirizzo": "Piazza Firenze 4, Milano",
+    "osm": "node/3092964432"
+   },
+   {
+    "punteggio": 0.675,
+    "nome": "Teatro Gerolamo",
+    "indirizzo": "Piazza Cesare Beccaria 8, Milano",
+    "osm": "node/9530344803"
+   }
+  ]
+ },
+ {
+  "luogo": "Auditorium",
+  "citta": "Settala",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": []
+ },
+ {
+  "luogo": "Auditorium",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": []
+ },
+ {
+  "luogo": "Linecheck",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 0.621,
+    "nome": "Pinch",
+    "indirizzo": "Ripa di Porta Ticinese 63, Milano",
+    "osm": "node/3351978678"
+   },
+   {
+    "punteggio": 0.606,
+    "nome": "Le Chalet",
+    "indirizzo": "Via Tonale 6, Milano",
+    "osm": "node/3314056205"
+   },
+   {
+    "punteggio": 0.583,
+    "nome": "Chunck",
+    "indirizzo": "Ripa di Porta Ticinese 55, Milano",
+    "osm": "node/9468227880"
+   }
+  ]
+ },
+ {
+  "luogo": "Bronson",
+  "citta": "Ravenna",
+  "eventi": 16,
+  "citta_guida": "ra",
+  "candidati": []
+ },
+ {
+  "luogo": "Mama's Club",
+  "citta": "Ravenna",
+  "eventi": 14,
+  "citta_guida": "ra",
+  "candidati": [
+   {
+    "punteggio": 0.552,
+    "nome": "Palestra Comunale Milano Marittima",
+    "indirizzo": "Via Jelenia Gora 4, ",
+    "osm": "way/162973372"
+   },
+   {
+    "punteggio": 0.55,
+    "nome": "Games Bar",
+    "indirizzo": "Viale Sergio Cavina 7, Ravenna",
+    "osm": "node/536808462"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Masini",
+  "citta": "Faenza",
+  "eventi": 12,
+  "citta_guida": "ra",
+  "candidati": [
+   {
+    "punteggio": 0.741,
+    "nome": "Teatro Binario",
+    "indirizzo": "Viale Giannetto Vassura 20, ",
+    "osm": "node/12791703401"
+   },
+   {
+    "punteggio": 0.629,
+    "nome": "Teatro Cinema Giardino",
+    "indirizzo": "Via della Fossa 16, ",
+    "osm": "node/4748571676"
+   },
+   {
+    "punteggio": 0.609,
+    "nome": "Gelato Mio",
+    "indirizzo": "Viale Romagna 180, ",
+    "osm": "node/4753053893"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Socjale",
+  "citta": "Ravenna",
+  "eventi": 7,
+  "citta_guida": "ra",
+  "candidati": [
+   {
+    "punteggio": 0.611,
+    "nome": "Cinema Teatro Comunale",
+    "indirizzo": "Corso Giacomo Matteotti 26, ",
+    "osm": "node/12097757054"
+   },
+   {
+    "punteggio": 0.606,
+    "nome": "Teatro Dante Alighieri",
+    "indirizzo": "Via Angelo Mariani 2, Ravenna",
+    "osm": "way/158269489"
+   },
+   {
+    "punteggio": 0.571,
+    "nome": "Teatro Binario",
+    "indirizzo": "Viale Giannetto Vassura 20, ",
+    "osm": "node/12791703401"
+   }
+  ]
+ },
+ {
+  "luogo": "Pala De André",
+  "citta": "Ravenna",
+  "eventi": 2,
+  "citta_guida": "ra",
+  "candidati": [
+   {
+    "punteggio": 0.609,
+    "nome": "Pala Sabin",
+    "indirizzo": "Via Albert Bruce Sabin 50, ",
+    "osm": "way/151422506"
+   },
+   {
+    "punteggio": 0.595,
+    "nome": "Ca' de Vèn",
+    "indirizzo": "Via Corrado Ricci 24, Ravenna",
+    "osm": "node/529586011"
+   },
+   {
+    "punteggio": 0.583,
+    "nome": "La Casa del Caffè",
+    "indirizzo": "Via Gioacchino Rasponi 14, Ravenna",
+    "osm": "node/4752839968"
+   }
+  ]
+ }
+]
