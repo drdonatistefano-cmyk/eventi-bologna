@@ -14,34 +14,6 @@
   ]
  },
  {
-  "luogo": "Teatro Celebrazioni",
-  "citta": "Bologna",
-  "eventi": 66,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 0.974,
-    "nome": "Le Celebrazioni",
-    "indirizzo": "senza via e numero",
-    "osm": "way/151141178"
-   }
-  ]
- },
- {
-  "luogo": "Teatro EuropAuditorium",
-  "citta": "Bologna",
-  "eventi": 39,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Europa Auditorium (TEA)",
-    "indirizzo": "senza via e numero",
-    "osm": "way/149135806"
-   }
-  ]
- },
- {
   "luogo": "Arena del Sole",
   "citta": "Bologna",
   "eventi": 34,
@@ -61,34 +33,6 @@
   "eventi": 23,
   "citta_guida": "bo",
   "candidati": []
- },
- {
-  "luogo": "Unipol Arena",
-  "citta": "Casalecchio di Reno",
-  "eventi": 22,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Unipol Arena",
-    "indirizzo": "senza via e numero",
-    "osm": "way/872343226"
-   }
-  ]
- },
- {
-  "luogo": "Teatro Fanin",
-  "citta": "San Giovanni in Persiceto",
-  "eventi": 18,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Fanin",
-    "indirizzo": "senza via e numero",
-    "osm": "way/296146477"
-   }
-  ]
  },
  {
   "luogo": "ZolAuditorium",
@@ -193,20 +137,6 @@
   ]
  },
  {
-  "luogo": "Teatro Consorziale",
-  "citta": "Budrio",
-  "eventi": 7,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Consorziale",
-    "indirizzo": "senza via e numero",
-    "osm": "way/190765868"
-   }
-  ]
- },
- {
   "luogo": "Teatro Biagi D'Antona",
   "citta": "Castel Maggiore",
   "eventi": 7,
@@ -288,20 +218,6 @@
   "eventi": 4,
   "citta_guida": "bo",
   "candidati": []
- },
- {
-  "luogo": "Sghetto Club",
-  "citta": "Bologna",
-  "eventi": 4,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 0.961,
-    "nome": "Sghetto",
-    "indirizzo": "senza via e numero",
-    "osm": "way/149223706"
-   }
-  ]
  },
  {
   "luogo": "Teatro La Casa del Popolo",
@@ -479,34 +395,6 @@
   "candidati": []
  },
  {
-  "luogo": "TANK serbatoio culturale",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Tank serbatoio culturale",
-    "indirizzo": "senza via e numero",
-    "osm": "way/149223995"
-   }
-  ]
- },
- {
-  "luogo": "MAST.Auditorium",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 0.94,
-    "nome": "Fondazione Mast",
-    "indirizzo": "senza via e numero",
-    "osm": "way/445092457"
-   }
-  ]
- },
- {
   "luogo": "Chiesa di Santa Maria della Pietà",
   "citta": "Bologna",
   "eventi": 1,
@@ -624,20 +512,6 @@
   "candidati": []
  },
  {
-  "luogo": "Unipol Arena",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Unipol Arena",
-    "indirizzo": "senza via e numero",
-    "osm": "way/872343226"
-   }
-  ]
- },
- {
   "luogo": "Conservatorio – Sala Verdi",
   "citta": "Milano",
   "eventi": 79,
@@ -645,67 +519,11 @@
   "candidati": []
  },
  {
-  "luogo": "Teatro Arcimboldi",
-  "citta": "Milano",
-  "eventi": 58,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 0.978,
-    "nome": "Teatro degli Arcimboldi",
-    "indirizzo": "senza via e numero",
-    "osm": "way/23313966"
-   }
-  ]
- },
- {
   "luogo": "Circolo Magnolia",
   "citta": "Segrate",
   "eventi": 51,
   "citta_guida": "mi",
   "candidati": []
- },
- {
-  "luogo": "Teatro alla Scala",
-  "citta": "Milano",
-  "eventi": 50,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro alla Scala",
-    "indirizzo": "senza via e numero",
-    "osm": "relation/6552704"
-   }
-  ]
- },
- {
-  "luogo": "Teatro Dal Verme",
-  "citta": "Milano",
-  "eventi": 48,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Dal Verme",
-    "indirizzo": "senza via e numero",
-    "osm": "way/26612583"
-   }
-  ]
- },
- {
-  "luogo": "Ecoteatro",
-  "citta": "Milano",
-  "eventi": 32,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "EcoTeatro",
-    "indirizzo": "senza via e numero",
-    "osm": "way/135449392"
-   }
-  ]
  },
  {
   "luogo": "Gate Milano",
@@ -976,20 +794,6 @@
   "eventi": 3,
   "citta_guida": "mi",
   "candidati": []
- },
- {
-  "luogo": "Piccolo Teatro Studio Melato",
-  "citta": "Milano",
-  "eventi": 3,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Piccolo Teatro Studio Melato",
-    "indirizzo": "senza via e numero",
-    "osm": "way/375554564"
-   }
-  ]
  },
  {
   "luogo": "Duro",
@@ -1496,20 +1300,6 @@
   "candidati": []
  },
  {
-  "luogo": "Black Hole",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 0.961,
-    "nome": "Black Hole Milano",
-    "indirizzo": "senza via e numero",
-    "osm": "way/205040446"
-   }
-  ]
- },
- {
   "luogo": "Gemma Club",
   "citta": "Sesto San Giovanni",
   "eventi": 1,
@@ -1686,6 +1476,68 @@
   "citta": "Ravenna",
   "eventi": 2,
   "citta_guida": "ra",
+  "candidati": []
+ },
+ {
+  "luogo": "Teatro Comunale Claudio Abbado",
+  "citta": "Ferrara",
+  "eventi": 71,
+  "citta_guida": "fe",
+  "candidati": []
+ },
+ {
+  "luogo": "Teatro Nuovo",
+  "citta": "Ferrara",
+  "eventi": 59,
+  "citta_guida": "fe",
+  "candidati": [
+   {
+    "punteggio": 1.0,
+    "nome": "Teatro Nuovo",
+    "indirizzo": " , ",
+    "osm": "node/2315023091"
+   },
+   {
+    "punteggio": 1.0,
+    "nome": "Teatro Nuovo",
+    "indirizzo": " , ",
+    "osm": "way/1454250631"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro De Micheli",
+  "citta": "Copparo",
+  "eventi": 13,
+  "citta_guida": "fe",
+  "candidati": [
+   {
+    "punteggio": 0.969,
+    "nome": "Teatro Comunale De Micheli",
+    "indirizzo": "senza via e numero",
+    "osm": "node/11917831212"
+   }
+  ]
+ },
+ {
+  "luogo": "Auditorium Pandurera",
+  "citta": "Cento",
+  "eventi": 8,
+  "citta_guida": "fe",
+  "candidati": [
+   {
+    "punteggio": 0.915,
+    "nome": "Centro Polifunzionale Pandurera",
+    "indirizzo": "senza via e numero",
+    "osm": "way/72311793"
+   }
+  ]
+ },
+ {
+  "luogo": "Ferrara Fiere e Congressi",
+  "citta": "Ferrara",
+  "eventi": 1,
+  "citta_guida": "fe",
   "candidati": []
  }
 ]

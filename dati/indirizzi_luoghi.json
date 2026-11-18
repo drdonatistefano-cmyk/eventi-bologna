@@ -95,6 +95,18 @@
   "punteggio": 0.957,
   "fonte": "OpenStreetMap"
  },
+ "Black Hole|Milano": {
+  "via": "Viale Umbria",
+  "civico": "118",
+  "cap": "20135",
+  "comune": "Milano",
+  "lat": 45.4607403,
+  "lon": 9.2179208,
+  "osm": "way/205040446",
+  "nome": "Black Hole Milano",
+  "punteggio": 0.961,
+  "fonte": "OpenStreetMap"
+ },
  "Bravo Caffè|Bologna": {
   "via": "Via Mascarella",
   "civico": "1",
@@ -143,6 +155,18 @@
   "punteggio": 1.05,
   "fonte": "OpenStreetMap"
  },
+ "Ecoteatro|Milano": {
+  "via": "Via Fezzan",
+  "civico": "11",
+  "cap": "20146",
+  "comune": "Milano",
+  "lat": 45.4591408,
+  "lon": 9.145955,
+  "osm": "way/135449392",
+  "nome": "EcoTeatro",
+  "punteggio": 1.0,
+  "fonte": "OpenStreetMap"
+ },
  "Estragon Club|Bologna": {
   "via": "Via Stalingrado",
   "civico": "83",
@@ -176,6 +200,18 @@
   "lon": 11.35312,
   "osm": "node/5600606821",
   "nome": "Freakout Club",
+  "punteggio": 1.05,
+  "fonte": "OpenStreetMap"
+ },
+ "Jazz Club Ferrara|Ferrara": {
+  "via": "Rampari di Belfiore",
+  "civico": "167",
+  "cap": "44121",
+  "comune": "Ferrara",
+  "lat": 44.8409052,
+  "lon": 11.63451,
+  "osm": "node/13276452965",
+  "nome": "Jazz Club Ferrara",
   "punteggio": 1.05,
   "fonte": "OpenStreetMap"
  },
@@ -239,6 +275,18 @@
   "punteggio": 1.0,
   "fonte": "OpenStreetMap"
  },
+ "MAST.Auditorium|Bologna": {
+  "via": "Via Speranza",
+  "civico": "42",
+  "cap": "40133",
+  "comune": "Bologna",
+  "lat": 44.5049803,
+  "lon": 11.2963545,
+  "osm": "way/445092457",
+  "nome": "Fondazione Mast",
+  "punteggio": 0.94,
+  "fonte": "OpenStreetMap"
+ },
  "MAST|Rho": {
   "via": "Via San Martino",
   "civico": "22",
@@ -299,6 +347,30 @@
   "punteggio": 1.05,
   "fonte": "OpenStreetMap"
  },
+ "Piccolo Teatro Studio Melato|Milano": {
+  "via": "Via Giorgio Strehler",
+  "civico": "3",
+  "cap": "20121",
+  "comune": "Milano",
+  "lat": 45.4727001,
+  "lon": 9.1831181,
+  "osm": "way/375554564",
+  "nome": "Piccolo Teatro Studio Melato",
+  "punteggio": 1.0,
+  "fonte": "OpenStreetMap"
+ },
+ "Sala Estense|Ferrara": {
+  "via": "Piazza del Municipio",
+  "civico": "14",
+  "cap": "44121",
+  "comune": "Ferrara",
+  "lat": 44.8362562,
+  "lon": 11.6189913,
+  "osm": "node/12177521883",
+  "nome": "Sala Estense",
+  "punteggio": 1.05,
+  "fonte": "OpenStreetMap"
+ },
  "Santeria Toscana 31|Milano": {
   "via": "Viale Toscana",
   "civico": "31",
@@ -309,6 +381,18 @@
   "osm": "node/11545591134",
   "nome": "Santeria Toscana 31",
   "punteggio": 1.05,
+  "fonte": "OpenStreetMap"
+ },
+ "Sghetto Club|Bologna": {
+  "via": "Via Emilio Zago",
+  "civico": "16",
+  "cap": "40128",
+  "comune": "Bologna",
+  "lat": 44.5049963,
+  "lon": 11.3545176,
+  "osm": "way/149223706",
+  "nome": "Sghetto",
+  "punteggio": 0.961,
   "fonte": "OpenStreetMap"
  },
  "Slaughter Club|Paderno Dugnano": {
@@ -335,6 +419,18 @@
   "punteggio": 1.05,
   "fonte": "OpenStreetMap"
  },
+ "TANK serbatoio culturale|Bologna": {
+  "via": "Via Emilio Zago",
+  "civico": "14",
+  "cap": "40128",
+  "comune": "Bologna",
+  "lat": 44.5051997,
+  "lon": 11.3546192,
+  "osm": "way/149223995",
+  "nome": "Tank serbatoio culturale",
+  "punteggio": 1.0,
+  "fonte": "OpenStreetMap"
+ },
  "Teatro Alighieri|Ravenna": {
   "via": "Via Angelo Mariani",
   "civico": "2",
@@ -347,6 +443,18 @@
   "punteggio": 1.026,
   "fonte": "OpenStreetMap"
  },
+ "Teatro Arcimboldi|Milano": {
+  "via": "Viale dell'Innovazione",
+  "civico": "20",
+  "cap": "20125",
+  "comune": "Milano",
+  "lat": 45.5144602,
+  "lon": 9.2136591,
+  "osm": "way/23313966",
+  "nome": "Teatro degli Arcimboldi",
+  "punteggio": 0.978,
+  "fonte": "OpenStreetMap"
+ },
  "Teatro Carcano|Milano": {
   "via": "Corso di Porta Romana",
   "civico": "63",
@@ -357,6 +465,42 @@
   "osm": "node/442572432",
   "nome": "Teatro Carcano",
   "punteggio": 1.05,
+  "fonte": "OpenStreetMap"
+ },
+ "Teatro Celebrazioni|Bologna": {
+  "via": "Via Saragozza",
+  "civico": "234",
+  "cap": "40135",
+  "comune": "Bologna",
+  "lat": 44.4895391,
+  "lon": 11.3125636,
+  "osm": "way/151141178",
+  "nome": "Le Celebrazioni",
+  "punteggio": 0.974,
+  "fonte": "OpenStreetMap"
+ },
+ "Teatro Consorziale|Budrio": {
+  "via": "Via Giuseppe Garibaldi",
+  "civico": "35",
+  "cap": "40054",
+  "comune": "Budrio",
+  "lat": 44.5378496,
+  "lon": 11.5371149,
+  "osm": "way/190765868",
+  "nome": "Teatro Consorziale",
+  "punteggio": 1.0,
+  "fonte": "OpenStreetMap"
+ },
+ "Teatro Dal Verme|Milano": {
+  "via": "Via Giacomo Puccini",
+  "civico": "2an01",
+  "cap": "20121",
+  "comune": "Milano",
+  "lat": 45.4672465,
+  "lon": 9.1809956,
+  "osm": "way/26612583",
+  "nome": "Teatro Dal Verme",
+  "punteggio": 1.0,
   "fonte": "OpenStreetMap"
  },
  "Teatro Dehon|Bologna": {
@@ -393,6 +537,30 @@
   "osm": "node/1714332504",
   "nome": "Teatro Elfo Puccini",
   "punteggio": 1.05,
+  "fonte": "OpenStreetMap"
+ },
+ "Teatro EuropAuditorium|Bologna": {
+  "via": "Piazza della Costituzione",
+  "civico": "4",
+  "cap": "40128",
+  "comune": "Bologna",
+  "lat": 44.5119828,
+  "lon": 11.3629634,
+  "osm": "way/149135806",
+  "nome": "Teatro Europa Auditorium (TEA)",
+  "punteggio": 1.0,
+  "fonte": "OpenStreetMap"
+ },
+ "Teatro Fanin|San Giovanni in Persiceto": {
+  "via": "Via Giulio Cesare Croce",
+  "civico": "47c",
+  "cap": "40017",
+  "comune": "San Giovanni in Persiceto",
+  "lat": 44.6380248,
+  "lon": 11.188432,
+  "osm": "way/296146477",
+  "nome": "Teatro Fanin",
+  "punteggio": 1.0,
   "fonte": "OpenStreetMap"
  },
  "Teatro Filodrammatici|Milano": {
@@ -513,6 +681,42 @@
   "osm": "node/11908118907",
   "nome": "Cinema Teatro Tivoli",
   "punteggio": 1.018,
+  "fonte": "OpenStreetMap"
+ },
+ "Teatro alla Scala|Milano": {
+  "via": "Largo Antonio Ghiringhelli",
+  "civico": "1",
+  "cap": "20121",
+  "comune": "Milano",
+  "lat": 45.4675932,
+  "lon": 9.1891337,
+  "osm": "relation/6552704",
+  "nome": "Teatro alla Scala",
+  "punteggio": 1.0,
+  "fonte": "OpenStreetMap"
+ },
+ "Unipol Arena|Bologna": {
+  "via": "Via Gino Cervi",
+  "civico": "2",
+  "cap": "40033",
+  "comune": "Casalecchio di Reno",
+  "lat": 44.4859522,
+  "lon": 11.2481497,
+  "osm": "way/872343226",
+  "nome": "Unipol Arena",
+  "punteggio": 1.0,
+  "fonte": "OpenStreetMap"
+ },
+ "Unipol Arena|Casalecchio di Reno": {
+  "via": "Via Gino Cervi",
+  "civico": "2",
+  "cap": "40033",
+  "comune": "Casalecchio di Reno",
+  "lat": 44.4859522,
+  "lon": 11.2481497,
+  "osm": "way/872343226",
+  "nome": "Unipol Arena",
+  "punteggio": 1.0,
   "fonte": "OpenStreetMap"
  },
  "Unipol Dome|Milano": {
