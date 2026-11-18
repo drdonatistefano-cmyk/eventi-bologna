@@ -5,6 +5,7 @@ La mappa elenca la pagina di Bologna, le pagine delle città accese (CITTA_ATTIV
 Non ci vanno le pagine di servizio (statistiche, velocità: hanno noindex) né la pagina per l'app.
 Riscrive i file solo se il contenuto cambia, così una pubblicazione normale non li tocca.
 """
+import json
 import os
 import re
 
@@ -26,6 +27,10 @@ def main():
     attive = re.findall(r'"([a-z]+)"', m.group(1)) if m else ["bo"]
     indirizzi = [SITO + CARTELLE[k] for k in attive if k in CARTELLE and os.path.exists(os.path.join(CARTELLE[k] or ".", "index.html"))]
     indirizzi += [SITO + p for p in FISSE if os.path.exists(os.path.join(p, "index.html"))]
+    # 18/11/2026: le pagine dei singoli spettacoli (scripts/pagine_eventi.py), dall'elenco che il generatore lascia
+    if os.path.exists(os.path.join("evento", "elenco.json")):
+        indirizzi += [f"{SITO}evento/{v['nome']}/" for v in json.load(open(os.path.join("evento", "elenco.json"), encoding="utf-8"))
+                      if os.path.exists(os.path.join("evento", v["nome"], "index.html"))]
     mappa = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
              + "".join(f"<url><loc>{u}</loc></url>\n" for u in indirizzi) + "</urlset>\n")
     robots = f"User-agent: *\nAllow: /\n\nSitemap: {SITO}sitemap.xml\n"

@@ -1,0 +1,272 @@
+{
+"way/151141178": {
+"via": "Via Saragozza",
+"civico": "234",
+"cap": "40135",
+"comune": "Bologna"
+},
+"way/149135806": {
+"via": "Piazza della Costituzione",
+"civico": "4",
+"cap": "40128",
+"comune": "Bologna"
+},
+"node/1477942362": {
+"via": "Piazzetta Dino Sarti",
+"civico": "",
+"cap": "40121",
+"comune": "Bologna"
+},
+"way/872343226": {
+"via": "Via Gino Cervi",
+"civico": "2",
+"cap": "40033",
+"comune": "Casalecchio di Reno"
+},
+"way/296146477": {
+"via": "Via Giulio Cesare Croce",
+"civico": "47c",
+"cap": "40017",
+"comune": "San Giovanni in Persiceto"
+},
+"way/156374232": {
+"via": "Via Mingolino",
+"civico": "",
+"cap": "40034",
+"comune": "Villa d'Aiano"
+},
+"node/2661914449": {
+"via": "Via Roma",
+"civico": "",
+"cap": "40012",
+"comune": "Calderara di Reno"
+},
+"way/190765868": {
+"via": "Via Giuseppe Garibaldi",
+"civico": "35",
+"cap": "40054",
+"comune": "Budrio"
+},
+"node/13570998867": {
+"via": "Via Attilio Muggia",
+"civico": "",
+"cap": "40126",
+"comune": "Bologna"
+},
+"way/823094953": {
+"via": "Via dello Sport",
+"civico": "",
+"cap": "40135",
+"comune": "Bologna"
+},
+"node/13430135465": {
+"via": "Via Emilia Ponente",
+"civico": "",
+"cap": "40132",
+"comune": "Bologna"
+},
+"way/149223706": {
+"via": "Via Emilio Zago",
+"civico": "16",
+"cap": "40128",
+"comune": "Bologna"
+},
+"node/441130619": {
+"via": "Piazza Andrea Costa",
+"civico": "",
+"cap": "40066",
+"comune": "Pieve di Cento"
+},
+"way/150829773": {
+"via": "Via Rimembranze",
+"civico": "",
+"cap": "40068",
+"comune": "San Lazzaro di Savena"
+},
+"node/4708352692": {
+"via": "Via delle Moline",
+"civico": "",
+"cap": "40126",
+"comune": "Bologna"
+},
+"way/148889161": {
+"via": "Piazza di Porta Ravegnana",
+"civico": "",
+"cap": "40100",
+"comune": "Bologna"
+},
+"way/149223995": {
+"via": "Via Emilio Zago",
+"civico": "14",
+"cap": "40128",
+"comune": "Bologna"
+},
+"way/445092457": {
+"via": "Via Speranza",
+"civico": "42",
+"cap": "40133",
+"comune": "Bologna"
+},
+"node/1655794720": {
+"via": "Via Dante Alighieri",
+"civico": "",
+"cap": "40015",
+"comune": "San Vincenzo"
+},
+"way/23313966": {
+"via": "Viale dell'Innovazione",
+"civico": "20",
+"cap": "20125",
+"comune": "Milano"
+},
+"relation/6552704": {
+"via": "Largo Antonio Ghiringhelli",
+"civico": "1",
+"cap": "20121",
+"comune": "Milano"
+},
+"way/26612583": {
+"via": "Via Giacomo Puccini",
+"civico": "2an01",
+"cap": "20121",
+"comune": "Milano"
+},
+"way/135449392": {
+"via": "Via Fezzan",
+"civico": "11",
+"cap": "20146",
+"comune": "Milano"
+},
+"way/52528180": {
+"via": "Via Luigi Bertelli",
+"civico": "",
+"cap": "20127",
+"comune": "Milano"
+},
+"node/9386578405": {
+"via": "Via Fratelli Zoia",
+"civico": "",
+"cap": "20153",
+"comune": "Milano"
+},
+"way/61071939": {
+"via": "Autostrada dei Giovi - Serravalle",
+"civico": "",
+"cap": "20057",
+"comune": "Assago"
+},
+"way/1389243680": {
+"via": "Piazzale Angelo Moratti",
+"civico": "",
+"cap": "20151",
+"comune": "Milano"
+},
+"node/7707210113": {
+"via": "Via privata Hermada",
+"civico": "",
+"cap": "20162",
+"comune": "Milano"
+},
+"node/2065222330": {
+"via": "Via Pier Lombardo",
+"civico": "",
+"cap": "20135",
+"comune": "Milano"
+},
+"way/357794273": {
+"via": "Via Luigi Nono",
+"civico": "",
+"cap": "20154",
+"comune": "Milano"
+},
+"way/4998830": {
+"via": "Largo Antonio Greppi",
+"civico": "",
+"cap": "20121",
+"comune": "Milano"
+},
+"way/375554564": {
+"via": "Via Giorgio Strehler",
+"civico": "3",
+"cap": "20121",
+"comune": "Milano"
+},
+"way/45420079": {
+"via": "Via San Vittore",
+"civico": "",
+"cap": "20123",
+"comune": "Milano"
+},
+"node/5728779222": {
+"via": "Via Giovanni Battista Sammartini",
+"civico": "",
+"cap": "20125",
+"comune": "Milano"
+},
+"node/4056006505": {
+"via": "Via Riccardo Pitteri",
+"civico": "",
+"cap": "21771",
+"comune": "Milano"
+},
+"node/13296917816": {
+"via": "Via Lodovico Montegani",
+"civico": "",
+"cap": "20141",
+"comune": "Milano"
+},
+"way/45672228": {
+"via": "Via Torino",
+"civico": "",
+"cap": "20123",
+"comune": "Milano"
+},
+"way/205040446": {
+"via": "Viale Umbria",
+"civico": "118",
+"cap": "20135",
+"comune": "Milano"
+},
+"node/544451639": {
+"via": "Via Giacomo Matteotti",
+"civico": "",
+"cap": "20064",
+"comune": "Gorgonzola"
+},
+"node/4752831462": {
+"via": "Via Cella",
+"civico": "",
+"cap": "48124",
+"comune": "Ravenna"
+},
+"node/674948467": {
+"via": "Piazza Pietro Nenni",
+"civico": "",
+"cap": "48018",
+"comune": "Faenza"
+},
+"node/12574122722": {
+"via": "Via Piangipane",
+"civico": "",
+"cap": "48120",
+"comune": "Ravenna"
+},
+"way/72311793": {
+"via": "Via venticinque Aprile",
+"civico": "",
+"cap": "44042",
+"comune": "Cento"
+},
+"node/411366235": {
+"via": "Via Cartoleria",
+"civico": "",
+"cap": "40124",
+"comune": "Bologna"
+},
+"node/11917831212": {
+"via": "Piazza del Popolo",
+"civico": "",
+"cap": "44034",
+"comune": "Copparo"
+}
+}

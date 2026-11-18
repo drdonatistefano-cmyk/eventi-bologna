@@ -397,8 +397,46 @@ def vista_citta():
             v.se(fino >= datetime.date.today().isoformat(), f"Events {nome}: prossimi giorni aggiornati",
                  f"eventi-presto.js arriva fino al {fino}", grave=False)
 
+    def pagine_evento():
+        """18/11/2026: le pagine dei singoli spettacoli (scripts/pagine_eventi.py) esistono, dichiarano il proprio
+        indirizzo e, dove c'è l'indirizzo del luogo, hanno i dati «Event» che chiede Google (nome, inizio, luogo con via)."""
+        r, t0 = prendi(B["events"] + "evento/elenco.json")
+        if r is None or r.status_code != 200:
+            v.errore("Events: pagine dei singoli spettacoli", f"elenco non raggiungibile: {t0 if r is None else r.status_code}")
+            return
+        voci = r.json()
+        if not voci:
+            v.avviso("Events: pagine dei singoli spettacoli", "elenco vuoto")
+            return
+        con = [x for x in voci if x.get("dati_event")]
+        camp = random.sample(con, min(3, len(con))) + random.sample(voci, min(2, len(voci)))
+        rotte = []
+        for x in camp:
+            u = B["events"] + "evento/" + x["nome"] + "/"
+            rr, _ = prendi(u)
+            if rr is None or rr.status_code != 200:
+                rotte.append(f"{x['nome']}: non risponde"); continue
+            if f'<link rel="canonical" href="https://achevents.com/evento/{x["nome"]}/">' not in rr.text:
+                rotte.append(f"{x['nome']}: canonico sbagliato")
+            if x.get("dati_event"):
+                import re as _re
+                m = _re.search(r'<script type="application/ld\+json">(.*?)</script>', rr.text, _re.S)
+                try:
+                    ld = json.loads(m.group(1)) if m else {}
+                except ValueError:
+                    ld = {}
+                if not (ld.get("@type") == "Event" and ld.get("name") and ld.get("startDate")
+                        and ((ld.get("location") or {}).get("address") or {}).get("streetAddress")):
+                    rotte.append(f"{x['nome']}: dati «Event» incompleti")
+        v.se(not rotte, "Events: pagine dei singoli spettacoli",
+             f"{len(voci)} pagine, {len(con)} con i dati «Event»; {len(camp)} aperte a campione" + (f"; {'; '.join(rotte[:3])}" if rotte else ""))
+        quota = len(con) / max(1, len(voci))
+        v.se(quota >= 0.5, "Events: spettacoli con indirizzo del luogo", f"{quota:.0%} delle pagine (sotto il 50% Google ne vede pochi: "
+             "guardare dati/indirizzi_da_vedere.json)" if quota < 0.5 else f"{quota:.0%} delle pagine", grave=False)
+
     protetto(v, "Città collegate dappertutto", collegamenti)
     protetto(v, "Spettacoli in due parti", due_parti)
+    protetto(v, "Pagine dei singoli spettacoli", pagine_evento)
     protetto(v, "Nuove province: soglia del business plan", soglia)
 
 

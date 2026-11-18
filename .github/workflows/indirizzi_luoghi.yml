@@ -1,0 +1,26 @@
+name: Indirizzi dei luoghi
+# 18/11/2026: indirizzi dei luoghi di Events da OpenStreetMap (scripts/indirizzi_luoghi.py), per le pagine dei singoli
+# eventi: Google mostra un evento nei suoi risultati solo con via e numero del luogo. Mai dati Google. Il 2 del mese.
+on:
+  schedule:
+    - cron: '17 3 2 * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: indirizzi, cancel-in-progress: false }
+jobs:
+  indirizzi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/indirizzi_luoghi.py
+      - name: Salva
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dati/osm_luoghi_*.json dati/indirizzi_luoghi.json dati/indirizzi_da_vedere.json dati/osm_indirizzi_dal_punto.json 2>/dev/null || git add dati/osm_luoghi_*.json dati/indirizzi_luoghi.json dati/indirizzi_da_vedere.json
+          git diff --cached --quiet && { echo "nessuna modifica"; exit 0; }
+          git commit -q -m "Indirizzi dei luoghi da OpenStreetMap: $(date +%d/%m/%Y)"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && exit 0; sleep 7; done
+          echo "non salvato"; exit 1
