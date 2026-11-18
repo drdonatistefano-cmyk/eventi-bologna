@@ -18,6 +18,7 @@ on:
 permissions:
   contents: write
   actions: read
+  issues: write   # 18/11/2026: la domanda «aprire nuove province?» arriva a Stefano come segnalazione (email)
 jobs:
   decide:
     runs-on: ubuntu-latest
@@ -49,7 +50,15 @@ jobs:
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
-        with: { sparse-checkout: scripts }
+        with:
+          # 18/11/2026: anche .github, dati e i file in cima (index.html, città) per il controllo delle città
+          sparse-checkout: |
+            scripts
+            .github
+            dati
+            milano
+            ravenna
+            ferrara
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install -q requests
@@ -73,6 +82,17 @@ jobs:
         run: |
           mkdir -p /tmp/ver
           python3 scripts/verifica.py "${{ needs.decide.outputs.livello }}" /tmp/ver/verifica.json "${{ needs.decide.outputs.id }}"
+      - name: Domanda a Stefano sulle nuove province (18/11/2026)
+        # quando le visite delle tre guide superano la soglia del business plan si apre una segnalazione, una sola volta
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ -f /tmp/ver/verifica.json ] || exit 0
+          python3 -c "import json,sys; d=json.load(open('/tmp/ver/verifica.json')); sys.exit(0 if any(c['nome']=='Nuove province: decisione per Stefano' for v in d['viste'] for c in v['controlli']) else 1)" || exit 0
+          T="Decidere: aprire Events in nuove province?"
+          gh issue list -R "${{ github.repository }}" --state all --search "$T in:title" --json title -q '.[].title' | grep -qxF "$T" && exit 0
+          gh issue create -R "${{ github.repository }}" -t "$T" -b "Le visite delle tre guide negli ultimi 30 giorni hanno superato 10.000 (soglia del business plan per la prima ondata di province: Ravenna, Rimini, Modena). Ravenna e Ferrara sono già aperte. La decisione è di Stefano: se sì, la chat di Events segue «Aprire una provincia nuova» in coordinamento/eventi/PROCEDURA.md; se no, chiudere questa segnalazione con il motivo. Dettaglio: verifica.json nel ramo statistiche, vista «Città di Events»." || true
       - name: Salva nel ramo statistiche
         if: always()
         run: |

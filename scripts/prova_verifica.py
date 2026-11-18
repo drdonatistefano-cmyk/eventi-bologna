@@ -99,5 +99,69 @@ prova("una copia diversa si vede e si sa quale", V.copie_diverse({"places": b"x"
 prova("una copia che non si è potuta scaricare non conta come diversa", V.copie_diverse({"places": b"x", "dinners": None, "events": b"x"}) == [])
 
 
+# ---------------------------------------------------------------- città di Events (18/11/2026)
+# Una città accesa a metà compare nel selettore e resta vuota o ferma. Si prende una copia dei file veri
+# e ci si mette un guasto alla volta: il controllo deve accorgersene (lezione 5 del §8 bis).
+import re as _re
+import shutil as _sh
+import tempfile as _tf
+import controlla_citta as CC  # noqa: E402
+
+RAD = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if os.path.exists(os.path.join(RAD, "index.html")) and os.path.isdir(os.path.join(RAD, ".github")):
+    def copia():
+        d = _tf.mkdtemp()
+        _sh.copy(os.path.join(RAD, "index.html"), d)
+        for sub in ("scripts", os.path.join(".github", "workflows")):
+            _sh.copytree(os.path.join(RAD, sub), os.path.join(d, sub))
+        os.makedirs(os.path.join(d, "dati"))
+        _sh.copy(os.path.join(RAD, "dati", "sentinella.json"), os.path.join(d, "dati"))
+        for c in ("milano", "ravenna", "ferrara"):
+            os.makedirs(os.path.join(d, c))
+            for f in CC.DATI_PAGINA:
+                if os.path.exists(os.path.join(RAD, c, f)):
+                    _sh.copy(os.path.join(RAD, c, f), os.path.join(d, c))
+        return d
+
+    def cambia(d, f, a, b):
+        p = os.path.join(d, f)
+        s = open(p, encoding="utf-8").read()
+        open(p, "w", encoding="utf-8").write(s.replace(a, b, 1))
+
+    def errori(d):
+        return [cosa for liv, _, cosa in CC.controlla(d) if liv == "errore"]
+
+    d = copia()
+    prova("città: le città di oggi sono collegate (nessun errore)", errori(d) == [])
+    cambia(d, "scripts/versioni.py", '"ferrara"', '"x"')
+    prova("città: una città tolta da versioni.py si vede", any("versioni.py" in e for e in errori(d)))
+    d = copia()
+    open(os.path.join(d, "ravenna", "eventi.js"), "w").write('window.EVENTI_DATA={"aggiornato":"","eventi":[]};')
+    prova("città: una città accesa ma vuota è un errore", any("vuota" in e for e in errori(d)))
+    d = copia()
+    os.remove(os.path.join(d, "ferrara", "mostre.js"))
+    prova("città: un file dei dati che manca si vede", any("ferrara/mostre.js" in e for e in errori(d)))
+    d = copia()
+    s = open(os.path.join(d, "index.html"), encoding="utf-8").read()
+    s = _re.sub(r"const CITTA_ATTIVE=\[[^\]]*\]", 'const CITTA_ATTIVE=["bo","mi","ra","fe","rn"]', s)
+    s = s.replace("const CITTA_CFG={", 'const CITTA_CFG={\n rn:{k:"rn",sigla:"RN",nome:"Rimini",path:"/rimini/"},', 1)
+    open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(s)
+    e = errori(d)
+    prova("città: Rimini accesa solo in index.html dà molti errori (citta.py, versioni, flussi, file, verifica)",
+          len([x for x in e if "citta.py" in x or "versioni" in x or "eventi_auto" in x or "rimini/index.html" in x or "verifica.py" in x]) >= 5)
+    d = copia()
+    cambia(d, ".github/workflows/eventi_auto.yml", "ravenna/", "x/")
+    cambia(d, ".github/workflows/eventi_auto.yml", "ravenna/", "x/")
+    prova("città: un flusso che non salva più la città si vede", any("eventi_auto.yml" in x for x in errori(d)))
+else:
+    print("(prove delle città saltate: file del repository non presenti)")
+
+oggi = datetime.date(2026, 12, 20)
+righe = [{"giorno": "2026-12-%02d" % g, "sito": s, "visite": 200} for g in range(1, 21) for s in ("a", "b", "c")]
+prova("soglia province: si contano le tre guide, oggi escluso", V.visite_ultimi_30(righe, oggi) == (19 * 600, 19))
+prova("soglia province: i giorni più vecchi di 30 non contano",
+      V.visite_ultimi_30([{"giorno": "2026-11-01", "sito": "a", "visite": 99999}], oggi) == (0, 0))
+
+
 print(f"\n{len(FALLITE)} prove fallite" if FALLITE else "\nTutte le prove passano")
 sys.exit(1 if FALLITE else 0)

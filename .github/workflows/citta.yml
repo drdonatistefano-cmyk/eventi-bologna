@@ -2,7 +2,7 @@ name: Pagine delle città
 on:
   push:
     branches: [main]
-    paths: [index.html, scripts/citta.py]
+    paths: [index.html, scripts/citta.py, scripts/citta_cfg.py, scripts/controlla_citta.py]
   workflow_dispatch:
 permissions:
   contents: write
@@ -18,3 +18,6 @@ jobs:
           git config user.email "github-actions@users.noreply.github.com"
           git add milano ravenna ferrara index.html
           git diff --cached --quiet || (git commit -m "Pagine delle città da index.html" && git push)
+      - name: Le città accese sono collegate dappertutto? (18/11/2026)
+        # se una città è accesa in CITTA_ATTIVE ma manca in un file, il flusso diventa rosso e GitHub manda un'email a Stefano
+        run: python3 scripts/controlla_citta.py

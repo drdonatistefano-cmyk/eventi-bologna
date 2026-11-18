@@ -185,6 +185,9 @@ def vista_pagine():
               ("Events, pagina Collaborano con noi", B["events"] + "collaborano/", "Teatro Dal Verme"),
               ("Events, pulsante Collaborano con noi", B["events"], "ach-guide__coll"),
               # 16/11/2026: filtri nuovi (chip in alto e foglio a gruppi)
+              # 18/11/2026: la scheda piccola non è un pulsante con dentro altri link (WebAbility); Ravenna e Ferrara
+              ("Events, schede piccole accessibili", B["events"], 'class="mopen"'), ("Events Ravenna", B["events"] + "ravenna/", "Events"),
+              ("Events Ferrara", B["events"] + "ferrara/", "Events"),
               ("Events, filtri nuovi", B["events"], 'F.id="nAf"'), ("Places, riquadro dei filtri che segue", B["places"], 'getElementById("nAm")'), ("Places, tasto WhatsApp", B["places"], "function waPl("), ("Events Milano, filtri nuovi", B["events"] + "milano/", 'F.id="nAf"'),
               ("Dinners", B["dinners"], "Dinners"), ("Dinners, Chi siamo", B["dinners"] + "chi-siamo/", "Chi siamo"),
               ("Dinners, Privacy", B["dinners"] + "privacy/", "privacy"),
@@ -228,7 +231,8 @@ def vista_dati():
     oggi = datetime.date.today()
 
     def events():
-        for citta, base, minimo in (("Bologna", B["events"], 150), ("Milano", B["events"] + "milano/", 200)):
+        for citta, base, minimo in (("Bologna", B["events"], 150), ("Milano", B["events"] + "milano/", 200),
+                                    ("Ravenna", B["events"] + "ravenna/", 40), ("Ferrara", B["events"] + "ferrara/", 40)):   # RA e FE dal 18/11/2026
             r, _ = prendi(base + "eventi.js")
             if not v.se(r is not None and r.status_code == 200, f"Events {citta}: file degli eventi"):
                 continue
@@ -318,6 +322,54 @@ def vista_dati():
 
 
 # ---------------------------------------------------------------- 3. servizi e posta
+RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SOGLIA_PROVINCE = 10000   # business plan (bp_dinamico.py, SOGLIA_APERTURA): visite medie mensili delle tre guide
+STAT_VISITE = "https://raw.githubusercontent.com/drdonatistefano-cmyk/eventi-bologna/statistiche/dati/visite_guide.json"
+
+
+def visite_ultimi_30(righe, oggi):
+    """Visite delle tre guide negli ultimi 30 giorni completi (oggi escluso) e quanti di quei giorni hanno dati."""
+    da = (oggi - datetime.timedelta(days=30)).isoformat()
+    giorni = {}
+    for r in righe:
+        g = r.get("giorno", "")
+        if da <= g < oggi.isoformat():
+            giorni[g] = giorni.get(g, 0) + int(r.get("visite") or 0)
+    return sum(giorni.values()), len(giorni)
+
+
+def vista_citta():
+    """18/11/2026 (Stefano): le città accese sono collegate dappertutto, e quando le visite superano la soglia
+    del business plan la decisione di aprire nuove province arriva a Stefano (il flusso apre una segnalazione)."""
+    v = Vista("Città di Events", "Ogni città accesa è collegata in tutti i file; soglia per aprire nuove province")
+
+    def collegamenti():
+        import controlla_citta as CC
+        if not os.path.exists(os.path.join(RADICE, "index.html")):
+            v.avviso("Città collegate dappertutto", "file del repository non presenti: controllo saltato")
+            return
+        r = CC.controlla(RADICE)
+        for liv, c, cosa in r:
+            (v.errore if liv == "errore" else v.avviso)(f"Città {c}", cosa)
+        if not any(liv == "errore" for liv, _, _ in r):
+            v.ok("Città collegate dappertutto", ", ".join(CC.citta_attive(open(os.path.join(RADICE, "index.html"), encoding="utf-8").read())))
+
+    def soglia():
+        r, t = prendi(STAT_VISITE)
+        if r is None or r.status_code != 200:
+            v.avviso("Nuove province: soglia del business plan", f"visite non lette: {t}")
+            return
+        tot, giorni = visite_ultimi_30(r.json(), datetime.date.today())
+        det = f"{tot} visite delle tre guide negli ultimi 30 giorni ({giorni} giorni con dati), soglia {SOGLIA_PROVINCE}"
+        if tot >= SOGLIA_PROVINCE:
+            v.avviso("Nuove province: decisione per Stefano", det + ". Il business plan prevede di aprire la prima ondata (Rimini, Modena…): la decide Stefano")
+        else:
+            v.ok("Nuove province: soglia del business plan", det)
+
+    protetto(v, "Città collegate dappertutto", collegamenti)
+    protetto(v, "Nuove province: soglia del business plan", soglia)
+
+
 def vista_servizi():
     v = Vista("Servizi e posta", "Disiscrizione, modulo delle correzioni e impostazioni dei domini per la posta")
     if LOCALE:
@@ -708,7 +760,7 @@ def vista_struttura():
 
 def main():
     t0 = time.time()
-    passi = [vista_pagine, vista_dati, vista_servizi, vista_velocita, vista_automazioni]
+    passi = [vista_pagine, vista_dati, vista_citta, vista_servizi, vista_velocita, vista_automazioni]
     if LIV >= 2:
         passi += [vista_funzioni, vista_link, vista_sicurezza]
     if LIV >= 3:
