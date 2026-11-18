@@ -66,6 +66,15 @@ def dalla_pagina(h, e):
     testo = html.unescape(" ".join(testi))
     testo = re.sub(r"\s+", " ", testo)[:4000]
     c = P.chi({"artista": e.get("artista", ""), "descrizione": testo})
+    # 18/11/2026: i nomi presi dal testo devono stare vicino al titolo dello spettacolo. Un articolo su tutta la stagione
+    # (mentelocale, «Teatro Carcano, la stagione 2026-2027») aveva dato a Gioele Dix i protagonisti di un altro spettacolo.
+    if c:
+        t_ = P.norm(testo); k_ = P.norm(e.get("artista", ""))[:25]
+        pos = [m.start() for m in re.finditer(re.escape(k_), t_)] if k_ else []
+        def vicino(n):
+            q = P.norm(n.split(" di ")[-1].replace("dirige ", "").split(" e ")[0])
+            return any(abs(m.start() - x) < 400 for x in pos for m in re.finditer(re.escape(q), t_)) if q else False
+        if not pos or not all(vicino(n) for n in re.split(r",\s*", c)): c = ""
     if nomi and not c:
         sem = [n for n in nomi if not n.startswith(("regia", "dirige"))][:2]
         alt = [n for n in nomi if n.startswith(("regia", "dirige"))][:1]
@@ -88,7 +97,8 @@ def main():
         for e in d["eventi"]:
             if e.get("chi") or e.get("genere") not in GENERI: continue
             u = next((x for x in (e.get("fonte"), e.get("biglietti"), ) if (x or "").startswith("https://") and not any(m in x for m in MAI)
-                      and uso.get(x, 0) == 1 and len(urlsplit(x).path.strip("/")) > 3), "")
+                      and uso.get(x, 0) == 1 and len(urlsplit(x).path.strip("/")) > 3
+                      and not re.search(r"(?i)stagion|cartellon|calendari|programm|rassegna|season", urlsplit(x).path)), "")
             if not u: continue
             if u not in cache:
                 if letti >= MAX: continue

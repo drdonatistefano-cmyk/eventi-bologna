@@ -24,7 +24,8 @@ natale capodanno ottobre novembre dicembre gennaio febbraio marzo aprile maggio 
 bologna milano ravenna ferrara italia italiana italiano europa roma napoli torino firenze venezia emilia romagna
 ideato ideazione biglietti biglietto coreografie coreografia scene scenografia costumi luci musiche drammaturgia produzione coproduzione
 testo testi traduzione adattamento durata info prenota prenotazioni acquista regia con assistente aiuto disegno suono video foto
-librerie libreria coop kollettivo collettivo invisibile""".split())
+librerie libreria coop kollettivo collettivo invisibile
+palazzo palazzi villa chiesa basilica oratorio auditorium rocca castello piazza parco arena""".split())
 RUOLI = [  # (espressione prima dei nomi, prefisso mostrato)
     (r"special guest|guest star|ospite speciale|feat\.?|featuring|ft\.", "con"),
     (r"di e con|scritto e interpretato da|ideato e interpretato da|con la partecipazione di|con la voce di|voce di", "con"),
@@ -37,6 +38,9 @@ RUOLI = [  # (espressione prima dei nomi, prefisso mostrato)
 RX = [(re.compile(rf"(?<![{L}{U}])(?i:{k})\s*[:,]?\s+({LISTA})"), p) for k, p in RUOLI]
 # «Emanuela Canepa presenta il suo libro», «Marco Paolini racconta»
 VERBO = re.compile(rf"(?:^|[.;:|·]\s*|\b(?:e|con)\s+)({NOME})\s+(?:presenta|presentano|racconta|raccontano|dialoga|dialogano|legge|leggono|porta|portano|interpreta|dirige|guida|accompagna|canta|suona)\b")
+# 18/11/2026 (Stefano: «perché a Milano non è uscito il nome di Ambra Angiolini?»): la descrizione comincia con il nome,
+# «Ambra Angiolini dal testo di Stefano Benni», «Lella Costa in …», «Toni Servillo torna con …». Solo all'inizio della descrizione.
+INIZIO = re.compile(rf"^\s*({NOME})\s+(?:dal testo|da un testo|dai testi|in scena|in |nel |nella |nei |negli |tra |torna|torneranno|è |sono |e la sua|e il suo|e i suoi|alle prese|al pianoforte|alla chitarra)")
 # «Nome Cognome, pianoforte»
 STRUM = re.compile(rf"({NOME})\s*[,(–-]\s*(?:pianoforte|piano|violino|violoncello|viola|chitarra|sax|soprano|tenore|baritono|mezzosoprano|direttore|voce|clarinetto|flauto|arpa)\b")
 FILM = re.compile(r"\b(film|pellicola|omonimo|omonima|romanzo|libro di|canzoni di|musiche di|brani di|repertorio di|omaggio a|tributo a|tribute|dedicat[oa] a|ispirat[oa] a|tratto da|da un'idea di|ricordo di|in memoria di|vita di|storia di)\W*$", re.I)
@@ -68,6 +72,9 @@ def chi(e):
     for m in VERBO.finditer(d):
         n = m.group(1).strip()
         if buono(n, tit) and n not in nomi: nomi.append(n); ruolo[n] = "con"
+    m = INIZIO.match(d)
+    if m and buono(m.group(1).strip(), tit) and m.group(1).strip() not in nomi:
+        nomi.insert(0, m.group(1).strip()); ruolo[m.group(1).strip()] = "con"
     for m in STRUM.finditer(d):
         n = m.group(1).strip()
         if buono(n, tit) and n not in nomi: nomi.append(n); ruolo[n] = "con"
