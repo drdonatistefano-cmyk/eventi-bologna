@@ -5,9 +5,6 @@ on:
   schedule:
     - cron: '17 3 2 * *'
   workflow_dispatch:
-  push:
-    branches: [claude/events-pagine-evento]   # solo per il prototipo: si toglie prima di unire
-    paths: [scripts/indirizzi_luoghi.py, .github/workflows/indirizzi_luoghi.yml]
 permissions:
   contents: write
 concurrency: { group: indirizzi, cancel-in-progress: false }
