@@ -16,7 +16,7 @@ on:
       - "ravenna/*.js"
       - "ferrara/*.js"
   schedule:
-    - cron: "43 * * * *"   # riserva: ogni ora, salva solo se qualcosa è cambiato
+    - cron: "43 * * * *"   # riserva: ogni ora, salva solo se qualcosa è cambiato (e a mezzanotte sposta i 14 giorni di eventi-presto.js)
   workflow_dispatch:
 permissions:
   contents: write
@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add versioni.js milano/versioni.js ravenna/versioni.js ferrara/versioni.js index.html milano/index.html ravenna/index.html ferrara/index.html
+          for f in versioni.js index.html eventi-presto.js eventi-resto.js milano/versioni.js milano/index.html milano/eventi-presto.js milano/eventi-resto.js ravenna/versioni.js ravenna/index.html ravenna/eventi-presto.js ravenna/eventi-resto.js ferrara/versioni.js ferrara/index.html ferrara/eventi-presto.js ferrara/eventi-resto.js; do [ -e "$f" ] && git add "$f"; done   # 18/11: anche i due pezzi di eventi.js
           git diff --cached --quiet && { echo "nessuna modifica"; exit 0; }
           git commit -m "Versioni dei dati"
           for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done; exit 1

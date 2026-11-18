@@ -15,8 +15,9 @@ import json
 import os
 import re
 
-FILE = ["eventi", "serate", "mostre", "cinema", "incontri", "sport"]
-PRIMA = ["eventi", "serate", "mostre"]   # dal 14/11/2026 le loro impronte stanno anche in index.html (marcatore /*V0*/…/*V0*/)
+FILE = ["eventi", "eventi-presto", "eventi-resto", "serate", "mostre", "cinema", "incontri", "sport"]
+PRIMA = ["eventi", "eventi-presto", "serate", "mostre"]
+GIORNI_PRESTO = 14   # 18/11/2026: all'apertura arrivano solo i prossimi 14 giorni (eventi-presto.js), il resto dopo   # dal 14/11/2026 le loro impronte stanno anche in index.html (marcatore /*V0*/…/*V0*/)
 CARTELLE = [".", "milano", "ravenna", "ferrara"]
 
 
@@ -25,12 +26,50 @@ def impronta(percorso):
         return hashlib.sha256(f.read()).hexdigest()[:10]
 
 
+def dividi_eventi(d):
+    """18/11/2026: eventi.js resta il file vero (lo scrivono i flussi e il giro del lunedì). Da lì si ricavano
+    eventi-presto.js (quello che si vede nei prossimi 14 giorni, arriva all'apertura) ed eventi-resto.js (tutto il
+    resto, arriva a pagina già visibile). I due file insieme sono sempre esattamente eventi.js, qualunque giorno li si
+    apra: la divisione cambia solo che cosa arriva prima. Riscritti solo se cambiano."""
+    import datetime
+    from zoneinfo import ZoneInfo
+    src = os.path.join(d, "eventi.js")
+    if not os.path.exists(src):
+        return
+    t = open(src, encoding="utf-8").read()
+    try:
+        dati = json.loads(t[t.index("{"):t.rindex("}") + 1])
+    except Exception as e:
+        print("eventi.js non leggibile, non divido:", d, e)
+        return
+    oggi = datetime.datetime.now(ZoneInfo("Europe/Rome")).date()
+    a, b = oggi.isoformat(), (oggi + datetime.timedelta(days=GIORNI_PRESTO - 1)).isoformat()
+    tutti = dati.get("eventi") or []
+    presto = [e for e in tutti if isinstance(e, dict) and (e.get("data") or "") <= b and (e.get("fino") or e.get("data") or "") >= a]
+    ids = {id(e) for e in presto}
+    resto = [e for e in tutti if id(e) not in ids]
+    testa = {k: v for k, v in dati.items() if k != "eventi"}
+    uscite = {
+        "eventi-presto.js": "window.EVENTI_DATA=" + json.dumps({**testa, "parziale": True, "fino_a": b, "eventi": presto},
+                                                               ensure_ascii=False, separators=(",", ":")) + ";\n",
+        "eventi-resto.js": "window.EVENTI_RESTO=" + json.dumps({**testa, "dal": a, "eventi": resto},
+                                                               ensure_ascii=False, separators=(",", ":")) + ";\n",
+    }
+    for nome, testo in uscite.items():
+        dest = os.path.join(d, nome)
+        if not os.path.exists(dest) or open(dest, encoding="utf-8").read() != testo:
+            with open(dest, "w", encoding="utf-8") as f:
+                f.write(testo)
+            print("diviso", os.path.relpath(dest, os.path.dirname(d)) if d != "." else nome, len(presto) if "presto" in nome else len(resto), "eventi")
+
+
 def main():
     base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     for c in CARTELLE:
         d = os.path.join(base, c)
         if not os.path.isdir(d):
             continue
+        dividi_eventi(d)
         v = {f: impronta(os.path.join(d, f + ".js")) for f in FILE if os.path.exists(os.path.join(d, f + ".js"))}
         testo = "window.ACH_VERSIONI=" + json.dumps(v, separators=(",", ":")) + ";\n"
         dest = os.path.join(d, "versioni.js")
