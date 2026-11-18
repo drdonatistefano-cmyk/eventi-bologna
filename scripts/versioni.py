@@ -44,7 +44,9 @@ def dividi_eventi(d):
         return
     oggi = datetime.datetime.now(ZoneInfo("Europe/Rome")).date()
     a, b = oggi.isoformat(), (oggi + datetime.timedelta(days=GIORNI_PRESTO - 1)).isoformat()
-    tutti = dati.get("eventi") or []
+    # «_n»: il posto dell'evento in eventi.js. Serve alla pagina per rimettere nello stesso ordine di prima gli spettacoli
+    # che hanno la stessa data e la stessa ora, quando arriva il resto dell'anno.
+    tutti = [{**e, "_n": i} if isinstance(e, dict) else e for i, e in enumerate(dati.get("eventi") or [])]
     presto = [e for e in tutti if isinstance(e, dict) and (e.get("data") or "") <= b and (e.get("fino") or e.get("data") or "") >= a]
     ids = {id(e) for e in presto}
     resto = [e for e in tutti if id(e) not in ids]

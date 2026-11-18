@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var P={mi:"/milano/",ra:"/ravenna/",fe:"/ferrara/"},m=document.cookie.match(/(?:^|; )citta=(bo|mi|ra|fe)/),q=/[?&]citta=(bo|mi|ra|fe)/.exec(location.search),qui=/^\/(milano|ravenna|ferrara)(\/|$)/.test(location.pathname)?"altra":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||!P[m[1]]||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace(P[m[1]])}catch(_){}})();</script>
-<script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"5c9adb8d75","eventi-presto":"f9eb66dda3","serate":"9f1b016ebe","mostre":"db5db4e0f2"}/*V0*/;</script>
+<script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"5c9adb8d75","eventi-presto":"b9017ba000","serate":"9f1b016ebe","mostre":"db5db4e0f2"}/*V0*/;</script>
 <script>/* anticipo: chiede subito versioni.js (senza bloccare la pagina) e fa partire i file dei dati mentre arriva il resto; più in basso la pagina li usa dalla memoria */(function(){try{var V0=window.ACH_V0||{},fatti={};function pre(f,h){if(!h||fatti[f+h])return;fatti[f+h]=1;var l=document.createElement("link");l.rel="preload";l.as="script";l.href=f+".js?h="+h;document.head.appendChild(l)}["eventi-presto","serate","mostre"].forEach(function(f){pre(f,V0[f])});var s=document.createElement("script");s.async=true;s.src="versioni.js?v="+Math.floor(Date.now()/6e5);s.onload=function(){var V=window.ACH_VERSIONI||{};["eventi-presto","serate","mostre"].forEach(function(f){pre(f,V[f])})};document.head.appendChild(s)}catch(e){}})();</script>
 <title>Ach's Events Guide – concerti, teatro, mostre e cinema a Ferrara</title>
 <meta name="description" content="Ach&#39;s Events Guide: concerti, teatro, mostre e cinema a Ferrara e nella Città metropolitana, con date, orari, luoghi e link ai biglietti.">
@@ -1455,16 +1455,20 @@ function aggiornaPigri(){QN={};const nuovi=Object.values(PIGRI).filter(f=>!INTEG
 /* 18/11/2026: gli spettacoli arrivano in due file. eventi-presto.js (i prossimi 14 giorni) all'apertura, eventi-resto.js
    (il resto dell'anno) qui, a pagina visibile: i due insieme sono esattamente eventi.js. Se il primo mancasse, arriva qui eventi.js intero. */
 function integraResto(){if(INTEGRATI._resto)return;let R=window.EVENTI_RESTO;
- if(window.__PRESTO_KO&&window.EVENTI_DATA&&!window.EVENTI_DATA.parziale)R={eventi:window.EVENTI_DATA.eventi||[]};
+ if(window.__PRESTO_KO&&window.EVENTI_DATA&&!window.EVENTI_DATA.parziale)R={aggiornato:window.EVENTI_DATA.aggiornato||"",eventi:window.EVENTI_DATA.eventi||[]};
  const nuovi=R&&Array.isArray(R.eventi)?R.eventi:null;if(!nuovi)return;INTEGRATI._resto=1;
  try{const D0=(window.EVENTI_DATA&&window.EVENTI_DATA.parziale)?window.EVENTI_DATA:(window.EVENTI_DATA={aggiornato:(R&&R.aggiornato)||"",eventi:[]});
   const visti=new Set((D0.eventi||[]).map(e=>e&&e.id));D0.eventi=(D0.eventi||[]).concat(nuovi.filter(e=>e&&!visti.has(e.id)));D0.parziale=false;
-  EVENTS0=D0.eventi.filter(e=>e&&ISO.test(e.data||"")&&e.artista);GIA=new Set(EVENTS0.map(e=>e.data+"|"+vkey(e.luogo)));
-  EVENTS=EVENTS0.concat((Array.isArray(SRD.serate)?SRD.serate:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista&&e.luogo&&!GIA.has(e.data+"|"+vkey(e.luogo))));
-  ALL_S=prep(EVENTS).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));QN={};
+  /* 18/11/2026: si preparano solo gli spettacoli nuovi (non di nuovo quelli già in pagina) e si tolgono le serate che
+     coincidono con uno di loro: stesso risultato di prima, metà del lavoro mentre la pagina è già in uso */
+  nuovi.forEach((e,i)=>{if(e&&e._n==null)e._n=i});if(R&&ISO.test(R.aggiornato||"")&&!TXT.s.upd)TXT.s.upd=R.aggiornato;
+  const SI=new Map((Array.isArray(SRD.serate)?SRD.serate:[]).map((e,i)=>[e,i])),cmpS=(a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||""))||((SI.has(a)?1:0)-(SI.has(b)?1:0))||(SI.has(a)?SI.get(a)-SI.get(b):(a._n??0)-(b._n??0));
+  const N0=nuovi.filter(e=>e&&!visti.has(e.id)&&ISO.test(e.data||"")&&e.artista),G2=new Set(N0.map(e=>e.data+"|"+vkey(e.luogo))),SER=new Set(Array.isArray(SRD.serate)?SRD.serate:[]);
+  EVENTS0=EVENTS0.concat(N0);N0.forEach(e=>GIA.add(e.data+"|"+vkey(e.luogo)));EVENTS=EVENTS.filter(e=>!(SER.has(e)&&G2.has(e.data+"|"+vkey(e.luogo)))).concat(N0);
+  ALL_S=ALL_S.filter(e=>!(SER.has(e)&&G2.has(e.data+"|"+vkey(e.luogo)))).concat(prep(N0)).sort(cmpS);QN={};
   const n=document.getElementById("nS");if(n)n.textContent=ALL_S.length;
-  if(MODE==="s"){ALL=ALL_S;MONTHS=monthsOf(ALL);COMUNI_CON=new Set(ALL.map(e=>e._c));heroStats();render()}
-  notaAff()}catch(err){console.error(err)}}
+  /* il ridisegno in un passo a parte: due lavori brevi invece di uno lungo, così un tocco non aspetta */
+  setTimeout(()=>{try{if(MODE==="s"){ALL=ALL_S;MONTHS=monthsOf(ALL);COMUNI_CON=new Set(ALL.map(e=>e._c));heroStats();render()}notaAff()}catch(err){console.error(err)}},0)}catch(err){console.error(err)}}
 function avviaResto(){(window.__PRESTO_KO?caricaPigro("eventi"):caricaPigro("eventi-resto")).then(integraResto)}
 function avviaPigri(){avviaResto();Object.values(PIGRI).forEach(f=>caricaPigro(f).then(aggiornaPigri))}
 if(document.readyState==="complete")setTimeout(avviaPigri,0);else addEventListener("load",()=>setTimeout(avviaPigri,0));
