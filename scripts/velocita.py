@@ -177,6 +177,10 @@ def tocchi_places_guida(pg):
     cat = pg.locator("#g-cat button, #g-cat .chip").nth(1)
     misura(pg, "scegli categoria", lambda: cat.tap(), r)
     misura(pg, "togli categoria", lambda: cat.tap(), r)
+    # 18/11/2026: sul telefono i filtri sono un foglio che copre ricerca e schede: si chiude come farebbe una
+    # persona («Mostra i luoghi»). Prima ricerca e apertura della scheda scadevano ogni giorno senza misura.
+    if pg.is_visible("#fshow"):
+        misura(pg, "chiudi filtri", lambda: pg.tap("#fshow"), r)
     q = pg.locator("#q")
     if q.is_visible():
         misura(pg, "cerca «torre»", lambda: (q.tap(), pg.keyboard.type("torre", delay=80)), r)
@@ -275,8 +279,14 @@ def giudizio(v):
     if tocchi:
         m = max(tocchi)
         out["tocchi"] = "verde" if m <= 200 else "giallo" if m <= 500 else "rosso"
+    # 18/11/2026: un tocco che non si è potuto provare non è un tocco veloce (REGOLE 8 bis, lezione 6):
+    # almeno giallo, e il nome dice quali mancano. Prima ricerca e scheda di Places scadevano e il giudizio era verde.
+    mancati = [k for k, x in v.get("uso", {}).items() if isinstance(x, dict) and "errore" in x]
+    if mancati:
+        out["tocchi"] = "rosso" if out.get("tocchi") == "rosso" else "giallo"
+        out["tocchi_non_misurati"] = ", ".join(mancati)
     ordine = {"verde": 0, "giallo": 1, "rosso": 2}
-    out["insieme"] = max(out.values(), key=lambda x: ordine[x]) if out else "grigio"
+    out["insieme"] = max((x for x in out.values() if x in ordine), key=lambda x: ordine[x]) if out else "grigio"
     return out
 
 
