@@ -193,6 +193,13 @@ def vista_pagine():
               ("Dinners, Privacy", B["dinners"] + "privacy/", "privacy"),
               ("Events Bologna", B["events"], "Events"), ("Events Milano", B["events"] + "milano/", "Events"),
               ("Events, Chi siamo", B["events"] + "chi-siamo/", "Chi siamo"), ("Events, Privacy", B["events"] + "privacy/", "privacy"),
+              # 18/11/2026 (lavoro SEO approvato da Stefano): mappe del sito, robots e indirizzo canonico delle città
+              ("Events, robots", B["events"] + "robots.txt", "Sitemap"), ("Events, mappa del sito", B["events"] + "sitemap.xml", "<urlset"),
+              ("Dinners, robots", B["dinners"] + "robots.txt", "Sitemap"), ("Dinners, mappa del sito", B["dinners"] + "sitemap.xml", "<sitemap"),
+              ("Events Bologna, indirizzo canonico", B["events"], '<link rel="canonical" href="https://achevents.com/">'),
+              ("Events Milano, indirizzo canonico", B["events"] + "milano/", '<link rel="canonical" href="https://achevents.com/milano/">'),
+              ("Events Ravenna, indirizzo canonico", B["events"] + "ravenna/", '<link rel="canonical" href="https://achevents.com/ravenna/">'),
+              ("Events Ferrara, indirizzo canonico", B["events"] + "ferrara/", '<link rel="canonical" href="https://achevents.com/ferrara/">'),
               ("Statistiche Places", B["places"] + "statistiche.html", "<html"), ("Statistiche Dinners", B["dinners"] + "statistiche.html", "<html"),
               ("Statistiche Events", B["events"] + "statistiche.html", "<html"), ("Velocità", B["events"] + "velocita.html", "<html")]
     with cf.ThreadPoolExecutor(8) as ex:
