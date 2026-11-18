@@ -363,6 +363,12 @@ main{min-width:0;padding-bottom:90px}
 @media(hover:hover){.card.mini:hover{border-color:color-mix(in srgb,var(--g) 45%,var(--line));transform:translateY(-1px)}}
 .card.mini{transition:border-color .15s,transform .15s}
 .mloc{display:flex;align-items:center;gap:5px;margin-top:5px;font-size:13.5px;color:var(--mute);min-width:0}
+/* 18/11/2026: comune sempre intero (fino a metà riga), il nome del luogo si accorcia con i puntini */
+.mloc .mcom{flex:none;max-width:calc(100% - 5em)}
+.mloc .msep{flex:none;overflow:visible}
+.mloc .mlg{flex:0 1 auto;min-width:2.5em}
+/* telefoni stretti (≤360 px): il luogo va a capo sotto il comune, così si leggono interi tutti e due */
+@media (max-width:360px){.mloc:has(.mcom){flex-wrap:wrap;row-gap:1px}.mloc:has(.mcom) .msep{display:none}.mloc .mcom{max-width:calc(100% - 18px)}.mloc:has(.mcom) .mlg{flex-basis:calc(100% - 18px);margin-left:18px}}
 .mloc svg{flex:none;width:13px;height:13px}
 .mloc span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:var(--ink)}
 .mfoot{display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:8px}
@@ -861,6 +867,9 @@ const ltM=e=>{const v=norm(e.luogo);
  if(/fondazione|hangar|silos|superstudio|fabbrica|spazio|cubo|city oval|milanosesto|building|volvo|camera di commercio|\bmast\b|varesina/.test(v))return "Fondazioni e spazi";
  if(/galler|galerie|studio|arte\b|bottegantica|fine art|area|lorenzelli|marconi|immagini|labs|m77|otto/.test(v))return "Gallerie";
  return "Altri luoghi"};
+/* 18/11/2026 (Stefano, prototipo): il comune si vede sempre, anche nel capoluogo, tranne quando è già nel nome del luogo */
+/* il comune va prima del luogo, così non viene tagliato dai puntini quando il nome del luogo è lungo */
+function conComune(e){return !!e._c&&!norm(e.luogo||"").includes(norm(e._c))}
 function prep(list){const A=list.filter(e=>end(e)>=today);for(const e of A){e._c=e.citta||CITY.capo;e._z=ZONA[e._c]||"Altro";e._q=norm([e.artista,e.chi,e.luogo,e._c,e.descrizione,e.tipo,e.genere,e.rassegna,ZLAB[e._z]].join(" "));if(e._kind!=="c")e._lt=e._kind==="m"?ltM(e):e._kind==="i"?ltI(e):ltS(e)}return A}
 const ALL_S=prep(EVENTS).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));
 let ALL_I=[],ALL_P=[],ALL_C=[];
@@ -1145,7 +1154,7 @@ function mini(e){
  if(e._kind==="m")return miniM(e);
  const g=G[e.genere]||{c:"--mute",l:e.genere},tm0=/\d/.test(e.ora||"")?e.ora:"";
  const multi=e.fino&&e.fino!==e.data?`dal ${fmt(e.data,{day:"numeric",month:"short"})} al ${fmt(e.fino,{day:"numeric",month:"short"})}`:"";
- const inner=`<div class="top">${tm0?`<span class="time">${esc(tm0)}</span>`:""}<span class="gtag">${esc(e.tipo==="Comicità"?"Comici":g.l)}${e.tipo&&e.tipo!=="Comicità"?" · "+esc(e.tipo):""}</span>${multi?`<span class="multi">${multi}</span>`:""}</div><h3 class="title">${esc(e.artista)}</h3>${hitLine(e)}${st.venue?"":`<div class="mloc">${PIN}<span>${esc(e.luogo)}${e._c!==CITY.capo?" · "+esc(e._c):""}</span></div>`}`;
+ const inner=`<div class="top">${tm0?`<span class="time">${esc(tm0)}</span>`:""}<span class="gtag">${esc(e.tipo==="Comicità"?"Comici":g.l)}${e.tipo&&e.tipo!=="Comicità"?" · "+esc(e.tipo):""}</span>${multi?`<span class="multi">${multi}</span>`:""}</div><h3 class="title">${esc(e.artista)}</h3>${hitLine(e)}${st.venue?"":`<div class="mloc">${PIN}${conComune(e)?`<span class="mcom">${esc(e._c)}</span><span class="msep" aria-hidden="true">·</span>`:""}<span class="mlg">${esc(e.luogo)}</span></div>`}`;
  const dd=(e.disp||"").toLowerCase(),tk=/^https:/.test(e.biglietti||"")&&e.biglietti_tipo!=="Info"&&dd!=="sold out"&&dd!=="non disponibile";
  const iu=!tk?[e.biglietti,e.fonte,e.sito_luogo].find(u=>/^https:/.test(u||"")):"";
  const foot=(tk&&dd==="disponibile"?"":dispPill(e))+(iu?`<a class="act tkt info" data-lab="Info" href="${esc(iu)}" target="_blank" rel="noopener" aria-label="Informazioni: ${esc(e.artista)}">${INF}<span>Info</span></a>`:"")+(tk?`<a class="act tkt" data-lab="Biglietti" href="${esc(e.biglietti)}" target="_blank" rel="noopener" aria-label="Biglietti: ${esc(e.artista)}">${TKT}<span class="lg">Biglietti</span><span class="sm">Ticket</span></a>`:"");

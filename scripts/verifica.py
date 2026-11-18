@@ -186,7 +186,7 @@ def vista_pagine():
               ("Events, pulsante Collaborano con noi", B["events"], "ach-guide__coll"),
               # 16/11/2026: filtri nuovi (chip in alto e foglio a gruppi)
               # 18/11/2026: la scheda piccola non è un pulsante con dentro altri link (WebAbility); Ravenna e Ferrara
-              ("Events, schede piccole accessibili", B["events"], 'class="mopen"'), ("Events Ravenna", B["events"] + "ravenna/", "Events"),
+              ("Events, schede piccole accessibili", B["events"], 'class="mopen"'), ("Events, comune nelle schede", B["events"], 'class="mcom"'), ("Events Ravenna", B["events"] + "ravenna/", "Events"),
               ("Events Ferrara", B["events"] + "ferrara/", "Events"),
               ("Events, filtri nuovi", B["events"], 'F.id="nAf"'), ("Places, riquadro dei filtri che segue", B["places"], 'getElementById("nAm")'), ("Places, tasto WhatsApp", B["places"], "function waPl("), ("Events Milano, filtri nuovi", B["events"] + "milano/", 'F.id="nAf"'),
               ("Dinners", B["dinners"], "Dinners"), ("Dinners, Chi siamo", B["dinners"] + "chi-siamo/", "Chi siamo"),
