@@ -230,7 +230,10 @@ def tocchi_events(pg):
         bt = pg.locator("button", has_text=nome)
         if bt.count():
             misura(pg, f"scheda «{nome}»", lambda bt=bt: bt.first.tap(), r)
-    oggi = pg.locator("button.qc").first
+    # 18/11/2026: con i filtri nuovi (16/11) «Oggi» visibile è la chip in alto (button.ch); button.qc sta nel foglio chiuso
+    oggi = pg.locator('button.ch[data-v="oggi"]').first
+    if not oggi.count() or not oggi.is_visible():
+        oggi = pg.locator("button.qc").first
     if oggi.count():
         misura(pg, "filtro «Oggi»", lambda: oggi.tap(), r)
         misura(pg, "togli «Oggi»", lambda: oggi.tap(), r)
