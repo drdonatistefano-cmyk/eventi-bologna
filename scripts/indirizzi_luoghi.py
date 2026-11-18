@@ -54,9 +54,11 @@ def somiglianza(a, b):
     pa, pb = parole(a), parole(b)
     if not pa or not pb:
         return 0.0
-    comuni = len(pa & pb) / min(len(pa), len(pb))
+    comuni = len(pa & pb) / len(pa)      # a = nome del luogo in Events: tutte le sue parole importanti devono esserci
     testo = difflib.SequenceMatcher(None, norma(a), norma(b)).ratio()
-    return round(max(comuni * 0.85 + testo * 0.15, testo), 3)
+    # 18/11/2026: contano le parole che distinguono il luogo; la sola somiglianza delle lettere abbinava
+    # «Auditorium San Fedele» con «Auditorium caffe». Ogni parola importante del nome più corto deve esserci.
+    return round(comuni * 0.85 + testo * 0.15, 3) if comuni >= 0.99 else round(comuni * 0.6, 3)
 
 
 def leggi_overpass(provincia):
@@ -102,23 +104,62 @@ def luoghi_di_events(cart):
     return out
 
 
+CACHE = os.path.join(DATI, "osm_indirizzi_dal_punto.json")
+_cache = None
+RETE = "--abbina" not in sys.argv
+
+
+def indirizzo_dal_punto(o):
+    """Luoghi segnati in OpenStreetMap senza via e numero (succede ai teatri disegnati come edificio): l'indirizzo
+    del punto lo dice Nominatim, il servizio di ricerca di OpenStreetMap (una domanda al secondo, come chiede la sua
+    regola d'uso). Le risposte restano in dati/osm_indirizzi_dal_punto.json e non si richiedono più."""
+    global _cache
+    if _cache is None:
+        _cache = json.load(open(CACHE, encoding="utf-8")) if os.path.exists(CACHE) else {}
+    if o["osm"] not in _cache and RETE and o.get("lat"):
+        try:
+            u = ("https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&addressdetails=1&"
+                 + urllib.parse.urlencode({"lat": o["lat"], "lon": o["lon"]}))
+            req = urllib.request.Request(u, headers={"User-Agent": "achevents-indirizzi/1.0 (redazione@achplaces.com)"})
+            a = json.load(urllib.request.urlopen(req, timeout=30)).get("address", {})
+            _cache[o["osm"]] = {"via": a.get("road", ""), "civico": a.get("house_number", ""), "cap": a.get("postcode", ""),
+                                "comune": a.get("city") or a.get("town") or a.get("village") or ""}
+            json.dump(_cache, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+        except Exception as e:  # noqa: BLE001
+            print("Nominatim non letto per", o["nome"], e)
+        time.sleep(1.1)
+    r = _cache.get(o["osm"]) or {}
+    return {k: r.get(k) or o.get(k, "") for k in ("via", "civico", "cap", "comune")}
+
+
 def abbina(k, osm, venues):
     risultati, da_vedere = {}, []
     for (luogo, citta), n in sorted(venues.items(), key=lambda x: -x[1]):
         migliori = []
         for o in osm:
-            if not o["via"] or not o["civico"]:
+            # un teatro, un auditorium o un cinema non è un bar o un ristorante con un nome simile
+            if re.search(r"\b(teatro|auditorium|cinema|conservatorio|basilica|chiesa)\b", norma(luogo)) and o["tipo"] in TIPI_COMUNE.split("|"):
                 continue
             s = max([somiglianza(luogo, o["nome"])] + [somiglianza(luogo, x) for x in o["altri_nomi"]])
             # stesso comune: piccolo aiuto; comune diverso dichiarato: penalità
+            # comune diverso dichiarato da OpenStreetMap: non è lo stesso luogo (San Vittore di Milano non è quello di Villa Cortese)
             if o["comune"] and citta:
-                s = s + 0.05 if norma(o["comune"]) == norma(citta) else s - 0.10
+                if norma(o["comune"]) != norma(citta):
+                    continue
+                s += 0.05
             migliori.append((round(s, 3), o))
         migliori.sort(key=lambda x: -x[0])
         chiave = f"{luogo}|{citta}"
         if migliori and migliori[0][0] >= SOGLIA and (len(migliori) == 1 or migliori[0][0] - migliori[1][0] >= 0.05
-                                                       or migliori[0][1]["via"] == migliori[1][1]["via"]):
+                                                       or (migliori[0][1]["via"] and migliori[0][1]["via"] == migliori[1][1]["via"])
+                                                       or migliori[0][1]["osm"] == migliori[1][1]["osm"]):
             s, o = migliori[0]
+            if not (o["via"] and o["civico"]):
+                o = {**o, **indirizzo_dal_punto(o)}
+            if not (o["via"] and o["civico"]):
+                da_vedere.append({"luogo": luogo, "citta": citta, "eventi": n, "citta_guida": k,
+                                  "candidati": [{"punteggio": s, "nome": o["nome"], "indirizzo": "senza via e numero", "osm": o["osm"]}]})
+                continue
             risultati[chiave] = {**{x: o[x] for x in ("via", "civico", "cap", "comune", "lat", "lon", "osm", "nome")},
                                  "comune": o["comune"] or citta, "punteggio": s, "fonte": "OpenStreetMap"}
         else:
@@ -152,6 +193,8 @@ def main():
         print(f"{provincia}: {len(r)} luoghi abbinati, {len(v)} da vedere")
     manuali_p = os.path.join(DATI, "indirizzi_manuali.json")
     manuali = json.load(open(manuali_p, encoding="utf-8")) if os.path.exists(manuali_p) else {}
+    for chiave in manuali.get("_esclusi", []):     # abbinamenti sbagliati o incerti, tolti da chi li ha guardati
+        tutti.pop(chiave, None)
     for chiave, ind in manuali.items():
         if chiave.startswith("_"):
             continue

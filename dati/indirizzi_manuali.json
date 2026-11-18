@@ -1,0 +1,12 @@
+{
+ "_nota": "Indirizzi scritti a mano (valgono sopra OpenStreetMap) ed esclusi: abbinamenti di OpenStreetMap sbagliati o incerti. Formato di un indirizzo: \"Luogo|Città\": {\"via\": \"...\", \"civico\": \"...\", \"cap\": \"...\", \"comune\": \"...\", \"fonte\": \"sito ufficiale del luogo, letto il ...\"}",
+ "_esclusi_perche": "18/11/2026, Claude: nome simile ma luogo diverso o non certo (Q-HUB→Cake l'HUB, Teatro del Navile→Biblioteca del Navile, Lime→Ligh Lime) o luogo troppo generico (Aula Magna, Idroscalo, Altrove)",
+ "_esclusi": [
+  "Q-HUB|Milano",
+  "Teatro del Navile|Bologna",
+  "Lime|Milano",
+  "Aula Magna|Milano",
+  "Idroscalo|Segrate",
+  "Altrove|Milano"
+ ]
+}
