@@ -29,8 +29,10 @@ DATI = os.path.join(RADICE, "dati")
 OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]
 # provincia (nome dell'area amministrativa di livello 6 in OpenStreetMap) e cartella dei dati di ogni città
 CITTA = {"bo": ("Bologna", "."), "mi": ("Milano", "milano"), "ra": ("Ravenna", "ravenna"), "fe": ("Ferrara", "ferrara")}
+# luoghi di spettacolo in tutta la provincia; bar, pub e ristoranti (tantissimi) solo nel comune capoluogo
 TIPI = ("theatre|arts_centre|cinema|nightclub|music_venue|concert_hall|events_venue|community_centre|social_centre|"
-        "conference_centre|library|place_of_worship|bar|pub|restaurant|cafe|stadium|exhibition_centre")
+        "conference_centre|library|place_of_worship|exhibition_centre")
+TIPI_COMUNE = "bar|pub|restaurant|cafe|biergarten"
 SOGLIA = 0.80      # sopra: abbinato; fra DUBBIO e SOGLIA: da vedere
 DUBBIO = 0.62
 PAROLE_VUOTE = {"teatro", "il", "lo", "la", "i", "gli", "le", "di", "del", "della", "dei", "degli", "delle", "e", "ed",
@@ -58,20 +60,22 @@ def somiglianza(a, b):
 
 
 def leggi_overpass(provincia):
-    q = (f'[out:json][timeout:120];area["name"="{provincia}"]["admin_level"="6"]->.a;'
-         f'(nwr["amenity"~"^({TIPI})$"]["name"](area.a);nwr["leisure"~"^(stadium|sports_centre)$"]["name"](area.a););'
+    q = (f'[out:json][timeout:90];area["name"="{provincia}"]["admin_level"="6"]->.a;'
+         f'area["name"="{provincia}"]["admin_level"="8"]->.c;'
+         f'(nwr["amenity"~"^({TIPI})$"]["name"](area.a);nwr["leisure"~"^(stadium|sports_centre)$"]["name"](area.a);'
+         f'nwr["amenity"~"^({TIPI_COMUNE})$"]["name"]["addr:street"](area.c););'
          'out center tags;')
     dati = urllib.parse.urlencode({"data": q}).encode()
     ultimo = None
     for url in OVERPASS:
-        for tentativo in range(3):
+        for tentativo in range(2):
             try:
                 req = urllib.request.Request(url, data=dati, headers={"User-Agent": "achevents-indirizzi/1.0 (+https://achevents.com)"})
-                with urllib.request.urlopen(req, timeout=180) as r:
+                with urllib.request.urlopen(req, timeout=100) as r:
                     return json.load(r).get("elements", [])
             except Exception as e:  # noqa: BLE001
                 ultimo = e
-                time.sleep(20 * (tentativo + 1))
+                time.sleep(15)
     raise RuntimeError(f"Overpass non risponde per {provincia}: {ultimo}")
 
 
