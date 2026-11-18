@@ -2,7 +2,7 @@ name: Pagine delle città
 on:
   push:
     branches: [main]
-    paths: [index.html, scripts/citta.py, scripts/citta_cfg.py, scripts/controlla_citta.py]
+    paths: [index.html, scripts/citta.py, scripts/citta_cfg.py, scripts/controlla_citta.py, scripts/mappa_sito.py]
   workflow_dispatch:
 permissions:
   contents: write
@@ -13,10 +13,11 @@ jobs:
       - uses: actions/checkout@v4
       - run: python3 scripts/citta.py
       - run: python3 scripts/versioni.py   # impronte della prima scheda dentro milano/index.html
+      - run: python3 scripts/mappa_sito.py   # 18/11: robots.txt e sitemap.xml con le città accese
       - run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add milano ravenna ferrara index.html
+          git add milano ravenna ferrara index.html robots.txt sitemap.xml
           git diff --cached --quiet || (git commit -m "Pagine delle città da index.html" && git push)
       - name: Le città accese sono collegate dappertutto? (18/11/2026)
         # se una città è accesa in CITTA_ATTIVE ma manca in un file, il flusso diventa rosso e GitHub manda un'email a Stefano

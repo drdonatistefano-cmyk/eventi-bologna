@@ -46,6 +46,8 @@ def main():
             ("concerti, teatro, mostre e cinema a Bologna", f"concerti, teatro, mostre e cinema a {c['nome']}"),
             ("a Bologna e nella Città metropolitana", f"a {c['meta']}"),
             ('<meta property="og:url" content="https://achevents.com/">', f'<meta property="og:url" content="{c["url"]}">'),
+            # 18/11/2026: ogni città dice a Google qual è il suo indirizzo (i link delle lettere aggiungono ?ref=...)
+            ('<link rel="canonical" href="https://achevents.com/">', f'<link rel="canonical" href="{c["url"]}">'),
             ("<h1>Eventi Bologna,", f"<h1>Eventi {c['nome']},"),
             ("a Bologna e nei comuni della Città metropolitana, nei prossimi 12 mesi.</p>", f"{c['area']}, nei prossimi 12 mesi.</p>"),
         ]:
