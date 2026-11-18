@@ -47,6 +47,13 @@
   "punteggio": 1.015,
   "fonte": "OpenStreetMap"
  },
+ "Arena del Sole|Bologna": {
+  "via": "Via dell'Indipendenza",
+  "civico": "44",
+  "cap": "40121",
+  "comune": "Bologna",
+  "fonte": "Bologna Welcome; cercato con WebSearch dalla chat di coordinamento il 18/11/2026"
+ },
  "Auditorium Manzoni|Bologna": {
   "via": "Via de' Monari",
   "civico": "2",
@@ -142,6 +149,20 @@
   "nome": "Cinema Bristol",
   "punteggio": 1.02,
   "fonte": "OpenStreetMap"
+ },
+ "Circolo Magnolia|Segrate": {
+  "via": "Via Circonvallazione Idroscalo",
+  "civico": "41",
+  "cap": "",
+  "comune": "Segrate",
+  "fonte": "MITO SettembreMusica e TicketOne; cercato con WebSearch dalla chat di coordinamento il 18/11/2026"
+ },
+ "Conservatorio – Sala Verdi|Milano": {
+  "via": "Via Conservatorio",
+  "civico": "12",
+  "cap": "20122",
+  "comune": "Milano",
+  "fonte": "sito del Conservatorio; cercato con WebSearch dalla chat di coordinamento il 18/11/2026"
  },
  "Covo Club|Bologna": {
   "via": "Viale Zagabria",
@@ -492,16 +513,11 @@
   "fonte": "OpenStreetMap"
  },
  "Teatro Dal Verme|Milano": {
-  "via": "Via Giacomo Puccini",
-  "civico": "2an01",
+  "via": "Via San Giovanni sul Muro",
+  "civico": "2",
   "cap": "20121",
   "comune": "Milano",
-  "lat": 45.4672465,
-  "lon": 9.1809956,
-  "osm": "way/26612583",
-  "nome": "Teatro Dal Verme",
-  "punteggio": 1.0,
-  "fonte": "OpenStreetMap"
+  "fonte": "YesMilano (Comune di Milano); cercato con WebSearch dalla chat di coordinamento il 18/11/2026"
  },
  "Teatro Dehon|Bologna": {
   "via": "Via Libia",
@@ -514,6 +530,13 @@
   "nome": "Teatro Dehon",
   "punteggio": 1.0,
   "fonte": "OpenStreetMap"
+ },
+ "Teatro Duse|Bologna": {
+  "via": "Via Cartoleria",
+  "civico": "42",
+  "cap": "40124",
+  "comune": "Bologna",
+  "fonte": "Bologna Welcome e newsletter del teatro; cercato con WebSearch dalla chat di coordinamento il 18/11/2026"
  },
  "Teatro Ebe Stignani|Imola": {
   "via": "Via Giuseppe Verdi",
@@ -742,6 +765,13 @@
   "nome": "Unipol Forum",
   "punteggio": 1.05,
   "fonte": "OpenStreetMap"
+ },
+ "Zelig|Milano": {
+  "via": "Viale Monza",
+  "civico": "140",
+  "cap": "20127",
+  "comune": "Milano",
+  "fonte": "Università di Milano (convenzione Zelig Cabaret); cercato con WebSearch dalla chat di coordinamento il 18/11/2026"
  },
  "mosso|Milano": {
   "via": "Via Angelo Mosso",

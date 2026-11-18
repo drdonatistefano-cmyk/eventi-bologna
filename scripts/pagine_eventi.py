@@ -111,7 +111,7 @@ def pagina(k, ev, ind, altri, url):
     indirizzo = f"{ind['via']} {ind['civico']}, {ind.get('cap', '')} {ind['comune']}".replace("  ", " ") if ind else ""
     corpo = [f'<p class="briciole"><a href="/">Ach\'s Events Guide</a> › <a href="/{CARTELLE[k] + "/" if CARTELLE[k] else ""}">{e(NOMI[k])}</a> › {e(ev.get("genere") or "Spettacoli")}</p>',
              f"<h1>{e(ev['artista'])}</h1>",
-             f'<p class="quando">{e(quando)}{" · ore " + e(ev["ora"]) if ev.get("ora") else ""}</p>',
+             f'<p class="quando">{e(quando)}{" · ore " + e(ev["ora"]) if re.search(r"\\d", ev.get("ora") or "") else ""}</p>',
              f'<p class="dove"><b>{e(ev.get("luogo"))}</b>, {e(citta)}' + (f"<br>{e(indirizzo)}" if indirizzo else "") + "</p>"]
     corpo.append("<p>" + "".join(f'<span class="tag">{e(x)}</span>' for x in (ev.get("genere"), ev.get("tipo"), ev.get("rassegna")) if x) + "</p>")
     if ev.get("descrizione"):
@@ -130,7 +130,7 @@ def pagina(k, ev, ind, altri, url):
     if ind and ind.get("lat"):
         corpo.append(f'<p><a href="https://www.openstreetmap.org/?mlat={ind["lat"]}&amp;mlon={ind["lon"]}#map=17/{ind["lat"]}/{ind["lon"]}" rel="noopener" target="_blank">Come arrivare (mappa)</a></p>')
     if altri:
-        corpo.append(f"<h2>Poi a {e(ev.get('luogo'))}</h2><ul class=\"altri\">" + "".join(
+        corpo.append(f"<h2>Dopo, nello stesso luogo</h2><ul class=\"altri\">" + "".join(
             f'<li><a href="/evento/{e(a_url)}/">{e(a["artista"])}</a> · {e(data_it(a["data"]))}</li>' for a, a_url in altri[:8]) + "</ul>")
     ld = None
     if ind:
@@ -155,7 +155,7 @@ def pagina(k, ev, ind, altri, url):
         ld["location"]["address"] = {a: b for a, b in ld["location"]["address"].items() if b}
     piede = ('<footer><div class="w"><p>Le informazioni vengono dai programmi ufficiali dei luoghi e degli organizzatori: '
              'prima di andare conviene controllare sul sito del luogo.'
-             + (" Indirizzo © <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap contributors</a>." if ind else "")
+             + (" Indirizzo © <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap contributors</a>." if ind and str(ind.get("fonte", "")).startswith("OpenStreetMap") else "")
              + '</p><p><a href="/">Tutti gli spettacoli nella guida</a> · <a href="/chi-siamo/">Chi siamo</a> · <a href="/privacy/">Privacy</a></p></div></footer>')
     script_ld = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False, separators=(",", ":"))}</script>' if ld else ""
     return ("<!doctype html><html lang=\"it\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"

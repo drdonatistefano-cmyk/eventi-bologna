@@ -156,6 +156,8 @@ def abbina(k, osm, venues):
             s, o = migliori[0]
             if not (o["via"] and o["civico"]):
                 o = {**o, **indirizzo_dal_punto(o)}
+            if o["civico"] and not re.match(r"^\d{1,4}[A-Za-z]?(/\w{1,3})?$", o["civico"].strip()):
+                o = {**o, "civico": ""}      # numeri strani dal servizio («2an01»): meglio nessun indirizzo che uno sbagliato
             if not (o["via"] and o["civico"]):
                 da_vedere.append({"luogo": luogo, "citta": citta, "eventi": n, "citta_guida": k,
                                   "candidati": [{"punteggio": s, "nome": o["nome"], "indirizzo": "senza via e numero", "osm": o["osm"]}]})

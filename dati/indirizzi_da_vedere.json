@@ -1,33 +1,5 @@
 [
  {
-  "luogo": "Teatro Duse",
-  "citta": "Bologna",
-  "eventi": 86,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 0.956,
-    "nome": "Teatro Eleonora Duse",
-    "indirizzo": "senza via e numero",
-    "osm": "node/411366235"
-   }
-  ]
- },
- {
-  "luogo": "Arena del Sole",
-  "citta": "Bologna",
-  "eventi": 34,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 0.97,
-    "nome": "Teatro Arena del Sole",
-    "indirizzo": "senza via e numero",
-    "osm": "node/1477942362"
-   }
-  ]
- },
- {
   "luogo": "Teatro Comunale Laura Betti",
   "citta": "Casalecchio di Reno",
   "eventi": 23,
@@ -512,20 +484,6 @@
   "candidati": []
  },
  {
-  "luogo": "Conservatorio – Sala Verdi",
-  "citta": "Milano",
-  "eventi": 79,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Circolo Magnolia",
-  "citta": "Segrate",
-  "eventi": 51,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
   "luogo": "Gate Milano",
   "citta": "Milano",
   "eventi": 31,
@@ -538,20 +496,6 @@
   "eventi": 28,
   "citta_guida": "mi",
   "candidati": []
- },
- {
-  "luogo": "Zelig",
-  "citta": "Milano",
-  "eventi": 19,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Zelig",
-    "indirizzo": "senza via e numero",
-    "osm": "way/52528180"
-   }
-  ]
  },
  {
   "luogo": "Spazio Teatro 89",

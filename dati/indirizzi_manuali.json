@@ -8,5 +8,47 @@
   "Aula Magna|Milano",
   "Idroscalo|Segrate",
   "Altrove|Milano"
- ]
+ ],
+ "Teatro Duse|Bologna": {
+  "via": "Via Cartoleria",
+  "civico": "42",
+  "cap": "40124",
+  "comune": "Bologna",
+  "fonte": "Bologna Welcome e newsletter del teatro; cercato con WebSearch dalla chat di coordinamento il 18/11/2026"
+ },
+ "Teatro Dal Verme|Milano": {
+  "via": "Via San Giovanni sul Muro",
+  "civico": "2",
+  "cap": "20121",
+  "comune": "Milano",
+  "fonte": "YesMilano (Comune di Milano); cercato con WebSearch dalla chat di coordinamento il 18/11/2026"
+ },
+ "Arena del Sole|Bologna": {
+  "via": "Via dell'Indipendenza",
+  "civico": "44",
+  "cap": "40121",
+  "comune": "Bologna",
+  "fonte": "Bologna Welcome; cercato con WebSearch dalla chat di coordinamento il 18/11/2026"
+ },
+ "Conservatorio – Sala Verdi|Milano": {
+  "via": "Via Conservatorio",
+  "civico": "12",
+  "cap": "20122",
+  "comune": "Milano",
+  "fonte": "sito del Conservatorio; cercato con WebSearch dalla chat di coordinamento il 18/11/2026"
+ },
+ "Circolo Magnolia|Segrate": {
+  "via": "Via Circonvallazione Idroscalo",
+  "civico": "41",
+  "cap": "",
+  "comune": "Segrate",
+  "fonte": "MITO SettembreMusica e TicketOne; cercato con WebSearch dalla chat di coordinamento il 18/11/2026"
+ },
+ "Zelig|Milano": {
+  "via": "Viale Monza",
+  "civico": "140",
+  "cap": "20127",
+  "comune": "Milano",
+  "fonte": "Università di Milano (convenzione Zelig Cabaret); cercato con WebSearch dalla chat di coordinamento il 18/11/2026"
+ }
 }
