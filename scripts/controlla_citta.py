@@ -109,6 +109,9 @@ def controlla(rad="."):
         # fonti: senza, la città va avanti solo con i flussi automatici (DICE, arte.it, Ticketmaster, portali)
         if f'"{k}"' not in cartelloni:
             avv("scripts/cartelloni.py: manca in CITTA (niente TicketOne né cartelloni dei teatri la domenica)")
+        car = _leggi(rad, ".github", "workflows", "cartelloni.yml")
+        if not re.search(r"inputs\.citta \|\| '[^']*\b" + k + r"\b", car) or f"{c}/eventi.js" not in car:
+            avv("cartelloni.yml: la città non è nel giro della domenica (o i suoi link TicketOne non vengono salvati)")
         if not any(p.get("citta") == k for p in sent):
             avv("dati/sentinella.json: nessuna pagina di teatri o locali da sorvegliare")
 

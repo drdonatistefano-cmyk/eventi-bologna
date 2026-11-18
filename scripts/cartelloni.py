@@ -24,11 +24,15 @@ RADICE = os.path.dirname(QUI)
 UA = "Mozilla/5.0 (compatible; AchEventsBot/1.0; +https://achevents.com/)"
 OGGI = datetime.date.today().isoformat()
 LIMITE = (datetime.date.today() + datetime.timedelta(days=366)).isoformat()
-# eventim: id città dell'API Eventim/TicketOne (None = da trovare); songkick: pagina metro-area
+# eventim: id città dell'API Eventim/TicketOne, uno o più (None = da trovare); songkick: pagina metro-area
+# Ravenna 1137 e Ferrara 2136 dal 18/11/2026 (pagine ticketone.it/city/ravenna-1137 e /city/ferrara-2136). L'id copre il comune
+# capoluogo: i teatri della provincia (Faenza, Lugo, Cento, Copparo) arrivano dalla sentinella e dai flussi automatici.
 CITTA = {
     "bo": {"nome": "Bologna", "eventi": "eventi.js", "eventim": 218, "songkick": None},
     "mi": {"nome": "Milano", "eventi": "milano/eventi.js", "eventim": 215,
            "songkick": "https://www.songkick.com/metro-areas/30338-italy-milan"},
+    "ra": {"nome": "Ravenna", "eventi": "ravenna/eventi.js", "eventim": 1137, "songkick": None},
+    "fe": {"nome": "Ferrara", "eventi": "ferrara/eventi.js", "eventim": 2136, "songkick": None},
 }
 CATEGORIE = ["Concerti", "Teatro", "Mostre e Musei"]
 BLOCCO = re.compile(r"(?i)502 bad gateway|503 service|504 gateway|verifica di sicurezza|just a moment|checking your browser|attention required")
@@ -181,7 +185,7 @@ def ticketone(c, cart, cand):
     if not cid:
         REP["ticketone"] = {"esito": "manca l'id città Eventim"}; return
     gruppi = {}
-    for cat in CATEGORIE:
+    for cid, cat in [(i, k) for i in (cid if isinstance(cid, list) else [cid]) for k in CATEGORIE]:
         for pag in range(1, 9):
             u = ("https://public-api.eventim.com/websearch/search/api/exploration/v2/productGroups?webId=web__ticketone-it&language=it"
                  f"&city_ids={cid}&page={pag}&sort=DateAsc&in_stock=true&categories={urllib.parse.quote(cat)}")

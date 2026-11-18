@@ -10,7 +10,7 @@ on:
     inputs:
       citta:
         description: "Città (bo mi ...)"
-        default: "bo mi"
+        default: "bo mi ra fe"
 permissions:
   contents: write
 concurrency: { group: cartelloni, cancel-in-progress: false }
@@ -30,12 +30,12 @@ jobs:
           if git fetch -q --depth=1 origin cartelloni; then git archive FETCH_HEAD | tar -x -C /tmp/car; fi
       - name: Leggi
         run: |
-          for c in ${{ github.event.inputs.citta || 'bo mi' }}; do
+          for c in ${{ github.event.inputs.citta || 'bo mi ra fe' }}; do
             python3 scripts/cartelloni.py "$c" /tmp/car || echo "::warning::$c non completata"
           done
       - name: Salva i link TicketOne nella guida
         run: |
-          bash scripts/salva.sh "Cartelloni, link TicketOne $(date +%F)" eventi.js milano/eventi.js
+          bash scripts/salva.sh "Cartelloni, link TicketOne $(date +%F)" eventi.js milano/eventi.js ravenna/eventi.js ferrara/eventi.js
       - name: Salva testi e candidati nel ramo cartelloni
         run: |
           set -e
