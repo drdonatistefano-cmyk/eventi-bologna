@@ -1,19 +1,17 @@
 {
  "aggiunti": [
-  "2026-11-23 DisuMana - Stand Up Comedy Open Mic – Mana Brew Pub (DICE)",
-  "2026-11-27 Friday at Kinder: Dark Berlin – Kindergarten (DICE)",
-  "2026-12-05 Much Much Bass pres Tantron – Kindergarten (DICE)",
-  "2027-03-06 Voina – Locomotiv Club (Locomotiv Club)",
-  "2027-03-07 Martina Catuzzi – Locomotiv Club (Locomotiv Club)",
-  "2026-12-09 Serata Privata – Bravo Caffè (Bravo Caffè)",
-  "2026-12-17 Serata Privata – Bravo Caffè (Bravo Caffè)",
-  "2027-02-14 Cosmo – Estragon Club (Estragon Club)"
+  "2027-02-06 Francesco Bentini in \"Se sarebbe bravo\" – APS Efesto House (DICE)",
+  "2026-12-10 Giorgio Canali & Rossofuoco – Locomotiv Club (Locomotiv Club)",
+  "2026-12-11 Trevize – Locomotiv Club (Locomotiv Club)",
+  "2027-01-10 Nuova data // Rareş – Locomotiv Club (Locomotiv Club)",
+  "2027-02-12 Ghinzu – Locomotiv Club (Locomotiv Club)",
+  "2027-02-25 Davide Shorty + Koralle + Johnny Marsiglia – Locomotiv Club (Locomotiv Club)"
  ],
  "link_biglietti": 0,
  "fonti": {
   "DICE": {
    "letti": 71,
-   "aggiunti": 3
+   "aggiunti": 1
   },
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "arte.it": {
@@ -30,9 +28,9 @@
   },
   "Locomotiv Club": {
    "letti": 112,
-   "aggiunti": 2,
+   "aggiunti": 5,
    "pagine_evento": 112,
-   "ultima_data": "2027-03-07"
+   "ultima_data": "2027-02-27"
   },
   "siti dei locali": {
    "Teatro Comunale Laura Betti": {
@@ -43,11 +41,11 @@
     "secondi": 4
    },
    "Bravo Caffè": {
-    "sul_sito": 38,
-    "in_guida": 38,
-    "aggiunti": 2,
+    "sul_sito": 36,
+    "in_guida": 36,
+    "aggiunti": 0,
     "esito": "ok",
-    "secondi": 5
+    "secondi": 6
    },
    "Auditorium Manzoni": {
     "sul_sito": 40,
@@ -61,42 +59,42 @@
     "in_guida": 34,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 35
+    "secondi": 31
    },
    "Teatro Ebe Stignani": {
     "sul_sito": 10,
-    "in_guida": 19,
+    "in_guida": 18,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 44
+    "secondi": 35
    },
    "Estragon Club": {
     "sul_sito": 19,
     "in_guida": 19,
-    "aggiunti": 1,
+    "aggiunti": 0,
     "esito": "ok",
-    "secondi": 40
+    "secondi": 39
    },
    "Auditorium Manzoni (2)": {
     "sul_sito": 17,
     "in_guida": 67,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 38
+    "secondi": 37
    },
    "Accademia Filarmonica": {
     "sul_sito": 2,
     "in_guida": 1,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 28
+    "secondi": 23
    }
   }
  },
  "errori": [
   "https://www.locomotivclub.it/robots.txt: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-17T17:20",
- "eventi_totali": 771,
+ "data": "2026-11-19T05:47",
+ "eventi_totali": 770,
  "mostre_totali": 26
 }
