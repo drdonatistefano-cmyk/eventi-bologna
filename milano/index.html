@@ -828,7 +828,17 @@ const D=s=>new Date(s+"T12:00:00");
 const today=iso(new Date());
 const addDays=(s,n)=>{const d=D(s);d.setDate(d.getDate()+n);return iso(d)};
 const in7=addDays(today,6);
-const _DF=new Map(),_DR=new Map(),_DK=new WeakMap();const fmt=(s,o)=>{let k=o?_DK.get(o):"";if(k===undefined){k=JSON.stringify(o);_DK.set(o,k)}const rk=s+"|"+k;let r=_DR.get(rk);if(r!==undefined)return r;let f=_DF.get(k);if(!f){f=new Intl.DateTimeFormat("it-IT",o);_DF.set(k,f)}r=f.format(D(s));_DR.set(rk,r);return r};/* formattatori riusati: molto più veloci di toLocaleDateString ripetuto */
+const _DF=new Map(),_DR=new Map(),_DK=new WeakMap();const fmt=(s,o)=>{const k=o?(o.weekday||"")+"."+(o.day||"")+"."+(o.month||"")+"."+(o.year||""):"";/* 19/11: chiave senza JSON.stringify (velocità) */const rk=s+"|"+k;let r=_DR.get(rk);if(r!==undefined)return r;r=_itFmt(s,k);if(r===null){let f=_DF.get(k);if(!f){f=new Intl.DateTimeFormat("it-IT",o);_DF.set(k,f)}r=f.format(D(s))}_DR.set(rk,r);return r};
+/* 19/11/2026 (velocità): le forme di data usate dalla guida scritte a mano, identiche a Intl it-IT (provate una per una):
+   evita di caricare il motore delle date all'apertura, che sul telefono costava circa 50 ms */
+const _GS=["dom","lun","mar","mer","gio","ven","sab"],_GL=["domenica","lunedì","martedì","mercoledì","giovedì","venerdì","sabato"],
+ _MS=["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic"],_ML=["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre"];
+function _itFmt(s,k){if(!/^\d{4}-\d{2}-\d{2}$/.test(s||""))return null;const d=D(s),g=d.getDay(),n=d.getDate(),m=d.getMonth(),y=d.getFullYear();
+ switch(k){case "..short.":return _MS[m];case "..long.":return _ML[m];case "..long.numeric":return _ML[m]+" "+y;
+  case ".numeric.short.":return n+" "+_MS[m];case ".numeric.long.":return n+" "+_ML[m];case ".numeric.short.numeric":return n+" "+_MS[m]+" "+y;
+  case ".numeric.long.numeric":return n+" "+_ML[m]+" "+y;case "short...":return _GS[g];case "long...":return _GL[g];
+  case "short.numeric..":return _GS[g]+" "+n;case "short.numeric.short.":return _GS[g]+" "+n+" "+_MS[m];
+  case "long.numeric.long.":return _GL[g]+" "+n+" "+_ML[m];case "long.numeric.long.numeric":return _GL[g]+" "+n+" "+_ML[m]+" "+y;default:return null}}/* formattatori riusati: molto più veloci di toLocaleDateString ripetuto */
 const fri=(()=>{const d=D(today),w=d.getDay();d.setDate(d.getDate()+(w===0?-2:w===6?-1:5-w));return iso(d)})();
 const sun=addDays(fri,2),wkStart=fri<today?today:fri;
 const wkLabel=`${D(wkStart).getDate()}–${fmt(sun,{day:"numeric",month:"short"})}`;
@@ -1274,7 +1284,8 @@ function renderPlaces(){
  if(rs.length)h+=`<h2 class="ptitle">${MODE==="p"?"Squadre":"Rassegne e stagioni"}<small>${rs.length}</small></h2><div class="rsx">${rs.map(([r,n])=>`<button class="rchip" data-r="${esc(r)}">${esc(r)}<small>${n}</small></button>`).join("")}</div>`;
  $("#places").innerHTML=h;return vis.length}
 
-function render(resetPage){
+let _listaK="";/* 19/11/2026 (velocità): chiave delle schede disegnate; se all'arrivo del resto dell'anno la prima pagina non cambia, non si ridisegna */
+function render(resetPage,soloSeCambia){
  if(resetPage)st.n=PAGE;
  try{
   $("#sw").classList.toggle("has",!!st.q);
@@ -1283,7 +1294,9 @@ function render(resetPage){
   $("#places").hidden=!places;$("#list").hidden=places;$("#vhead").hidden=!st.venue;
   if(st.venue)renderVenue(ev.length);
   if(places){const nv=renderPlaces();renderStatus(ev.length,MODE==="c"?`<b>${nv}</b> ${nv===1?"sala":"sale"} · ${new Set(ev.map(e=>norm(e.artista))).size} film`:`<b>${nv}</b> ${nv===1?"luogo":"luoghi"} · ${ev.length} ${nn(ev.length)}`);$("#more").hidden=true;$("#cnote").hidden=true}
-  else{renderList(ev);if(MODE==="c"){const nf=new Set(ev.map(e=>norm(e.artista))).size,ns=new Set(ev.map(e=>e.luogo)).size;renderStatus(ev.length,`<b>${nf}</b> film in <b>${ns}</b> ${ns===1?"sala":"sale"}`)}else renderStatus(ev.length,`<b>${ev.length}</b> ${nn(ev.length)}`)}
+  else{const k=MODE+"|"+st.n+"|"+ev.slice(0,st.n).map(e=>e.id+(e.biglietti||"")+(e.chi||"")+(e.disp||"")).join(",");
+   if(soloSeCambia&&MODE==="s"&&k===_listaK&&!$("#list").hidden){const rest=ev.length-Math.min(st.n,ev.length);$("#more").hidden=rest<=0;$("#more").textContent=`Mostra altri ${Math.min(rest,PAGE)} (${rest} rimanenti)`}
+   else renderList(ev);_listaK=k;if(MODE==="c"){const nf=new Set(ev.map(e=>norm(e.artista))).size,ns=new Set(ev.map(e=>e.luogo)).size;renderStatus(ev.length,`<b>${nf}</b> film in <b>${ns}</b> ${ns===1?"sala":"sale"}`)}else renderStatus(ev.length,`<b>${ev.length}</b> ${nn(ev.length)}`)}
   const cn=$("#cnote");cn.hidden=MODE!=="c"||!CINEMA.length;if(!cn.hidden){const dk=dayKeys();cn.innerHTML=dk.length>1?`<span>🗓️</span><span><b>Tutta la settimana.</b> Orari esatti per le sale della Cineteca; per le altre sale gli orari di oggi e, negli altri giorni, i film in cartellone: gli orari sono sul sito della sala (<b>Programma</b>).</span>`:dk[0]===today?`<span>🕒</span><span>Orari di <b>oggi, ${esc(fmt(today,{weekday:"long",day:"numeric",month:"long"}))}</b>. Prima di uscire controlla su <b>Programma</b>, il sito della sala.</span>`:`<span>🗓️</span><span><b>${esc(dLab(dk[0],true))}</b>: orari esatti per le sale della Cineteca; per le altre sale il film è in cartellone questa settimana e gli orari di quel giorno sono su <b>Programma</b>.</span>`}
  }catch(err){console.error(err);$("#list").hidden=false;$("#list").innerHTML=`<div class="empty"><b>Qualcosa non ha funzionato</b>Ricarica la pagina.</div>`}}
 
@@ -1358,14 +1371,23 @@ $("#fbtn").onclick=()=>{lAll=false;sub="";openDlg($("#fdlg"));renderPanels()};
 $("#fdlg").addEventListener("close",()=>{lFocus=null});
 $("#fdlg").addEventListener("click",e=>{if(e.target.id==="fdlg")closeD($("#fdlg"))});
 const bar=$("#bar"),fab=$("#top");
-const setBarH=()=>{try{document.documentElement.style.setProperty("--sth",($("#status").offsetHeight||0)+"px");document.documentElement.style.setProperty("--barh",bar.offsetHeight+"px");document.documentElement.style.setProperty("--qh",(innerWidth>=760?$("#qwrap").offsetHeight:0)+"px")}catch(_){}};
+/* 19/11/2026 (velocità): le altezze si leggono quando cambiano (ResizeObserver), non a ogni disegno: niente ricalcolo forzato */
+const _bh={};const scriviBarH=()=>{try{const v={"--sth":($("#status").offsetHeight||0)+"px","--barh":bar.offsetHeight+"px","--qh":(innerWidth>=760?$("#qwrap").offsetHeight:0)+"px"};/* prima tutte le letture, poi le scritture (solo se cambiano) */
+ for(const k in v)if(_bh[k]!==v[k]){_bh[k]=v[k];document.documentElement.style.setProperty(k,v[k])}}catch(_){}};
+let _roBar=null;const setBarH=()=>{if(_roBar)return;if(window.ResizeObserver){try{_roBar=new ResizeObserver(scriviBarH);[$("#status"),bar,$("#qwrap")].forEach(x=>x&&_roBar.observe(x));return}catch(_){}}scriviBarH()};
 const cittaV=(()=>{try{const d=document.createElement("div");d.className="citta-v";d.setAttribute("aria-hidden","true");d.textContent=CITY.nome;document.body.appendChild(d);return d}catch(_){return null}})();
-function onScroll(){const su=bar.getBoundingClientRect().top<=0;bar.classList.toggle("stuck",su);if(cittaV)cittaV.classList.toggle("show",su);fab.classList.toggle("show",scrollY>900);pillola()}
+/* 19/11/2026 (velocità): la barra «incollata» la dice un IntersectionObserver su un segnaposto alto 0 subito sopra la barra,
+   così lo scorrimento non legge più le misure della pagina; il resto si fa una volta per fotogramma */
+const incolla=su=>{bar.classList.toggle("stuck",su);if(cittaV)cittaV.classList.toggle("show",su)};
+let _ioBar=null;try{if(window.IntersectionObserver){const sp=document.createElement("div");sp.setAttribute("aria-hidden","true");sp.style.cssText="height:0;margin:0;padding:0";bar.parentNode.insertBefore(sp,bar);
+ _ioBar=new IntersectionObserver(es=>{for(const x of es)incolla(x.boundingClientRect.top<=0&&!x.isIntersecting||x.boundingClientRect.top<0)},{threshold:[0,1]});_ioBar.observe(sp)}}catch(_){_ioBar=null}
+let _rafS=0;
+function onScroll(){if(_rafS)return;_rafS=requestAnimationFrame(()=>{_rafS=0;if(!_ioBar)incolla(bar.getBoundingClientRect().top<=0);fab.classList.toggle("show",scrollY>900);pillola()})}
 function nAttivi(){return nSel()+(st.q?1:0)}
 function pillola(){const g=$("#azzGiu");if(g&&!g.hidden)g.classList.toggle("via",scrollY<260)}
 function mostraAzzera(){if(!$("#azzSu")||!$("#azzGiu"))return;const n=nAttivi();$$("#azzSu .n,#azzGiu .n").forEach(e=>e.textContent=n);$("#azzSu").hidden=$("#azzGiu").hidden=n===0;pillola()}
 addEventListener("scroll",onScroll,{passive:true});addEventListener("keydown",e=>{if(e.key==="Escape"&&popK){popK="";renderFbar()}});
-addEventListener("resize",()=>{setBarH();if(popK){popK="";renderFbar()}});
+addEventListener("resize",()=>{scriviBarH();if(popK){popK="";renderFbar()}});
 fab.onclick=()=>scrollTo({top:0});
 let tt;function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("show"),2600)}
 
@@ -1441,7 +1463,9 @@ document.addEventListener("change",e=>{if(GC&&ON_WEB&&e.target.dataset&&e.target
 let tq;$("#q").addEventListener("input",e=>{if(!GC||!ON_WEB)return;clearTimeout(tq);const v=e.target.value.trim().toLowerCase();if(v.length>=3)tq=setTimeout(()=>track(`${tm()}/ricerca/${v}`,"Ricerca"),1500)});
 /* ---------- avvio ---------- */
 heroStats();
-setBarH();render(true);onScroll();
+/* 19/11/2026 (velocità): all'apertura si disegnano subito le prime 16 schede (quelle che si vedono) e le altre 44 della prima
+   pagina un attimo dopo, in un secondo passaggio: alla fine l'elenco è identico, ma il telefono non resta bloccato in un colpo solo */
+const PRIMO=16;setBarH();st.n=PRIMO;render(false);(window.requestIdleCallback||(f=>setTimeout(f,200)))(()=>{if(st.n===PRIMO){st.n=PAGE;render(false)}},{timeout:600});onScroll();
 /* ---------- dati che arrivano dopo (incontri, cinema, sport) ----------
    All'apertura la pagina scarica solo Spettacoli, serate e mostre; gli altri file partono appena la pagina è visibile
    (stesso indirizzo con ?h= di versioni.js, quindi la cache funziona come prima). Se si tocca una scheda prima che i suoi dati
@@ -1463,7 +1487,7 @@ function integraResto(){if(INTEGRATI._resto)return;let R=window.EVENTI_RESTO;
   EVENTS=EVENTS0.concat((Array.isArray(SRD.serate)?SRD.serate:[]).filter(e=>e&&ISO.test(e.data||"")&&e.artista&&e.luogo&&!GIA.has(e.data+"|"+vkey(e.luogo))));
   ALL_S=prep(EVENTS).sort((a,b)=>(a.data+(a.ora||"")).localeCompare(b.data+(b.ora||"")));QN={};
   const n=document.getElementById("nS");if(n)n.textContent=ALL_S.length;
-  if(MODE==="s"){ALL=ALL_S;MONTHS=monthsOf(ALL);COMUNI_CON=new Set(ALL.map(e=>e._c));heroStats();render()}
+  if(MODE==="s"){ALL=ALL_S;MONTHS=monthsOf(ALL);COMUNI_CON=new Set(ALL.map(e=>e._c));heroStats();render(false,true)}
   notaAff()}catch(err){console.error(err)}}
 function avviaResto(){(window.__PRESTO_KO?caricaPigro("eventi"):caricaPigro("eventi-resto")).then(integraResto)}
 function avviaPigri(){avviaResto();Object.values(PIGRI).forEach(f=>caricaPigro(f).then(aggiornaPigri))}
