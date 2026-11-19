@@ -23,7 +23,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - name: Browser
-        run: pip install -q playwright && python3 -m playwright install --with-deps chromium >/dev/null
+        run: pip install -q playwright pypdf && python3 -m playwright install --with-deps chromium >/dev/null
       - name: Letture della settimana prima
         run: |
           mkdir -p /tmp/car

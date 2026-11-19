@@ -67,6 +67,29 @@ def permesso(u):
     return True if _RP[base] is None else _RP[base].can_fetch(UA, u)
 
 
+def pdf_collegato(p, h):
+    """19/11/2026 (Stefano: la Cantina Bentivoglio era «scappata»): alcuni locali mettono il programma del mese solo in un PDF,
+    con un nome nuovo ogni mese, linkato dalla home. Con «pdf» nella voce della sentinella (un'espressione per riconoscere il link)
+    si scarica il PDF più recente e se ne aggiunge il testo a quello della pagina."""
+    import io
+    links = []
+    for hr, tx in re.findall(r'<a\b[^>]*href="([^"#]+\.pdf)"[^>]*>(.*?)</a>', h, re.S | re.I):
+        u = urllib.parse.urljoin(p["url"], html.unescape(hr))
+        if re.search(p["pdf"], u + " " + re.sub(r"<[^>]+>", " ", tx), re.I): links.append(u)
+    if not links: return "\n\n[PDF del programma: nessun link trovato]"
+    u = sorted(set(links))[-1]
+    if not permesso(u): return f"\n\n[PDF del programma: robots.txt vieta {u}]"
+    try:
+        req = urllib.request.Request(u, headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=60) as f: dati = f.read(15_000_000)
+        from pypdf import PdfReader
+        t = "\n".join((pg.extract_text() or "") for pg in PdfReader(io.BytesIO(dati)).pages)
+        t = re.sub(r"\n{2,}", "\n", t).strip()[:40000]
+        return f"\n\n--- PDF del programma: {u} ---\n{t}"
+    except Exception as e:
+        REP["errori"].append(f"PDF {u}: {type(e).__name__}"); return f"\n\n[PDF del programma non letto: {u}]"
+
+
 def tok(s):
     s = unicodedata.normalize("NFD", (s or "").lower())
     s = "".join(c for c in s if not unicodedata.combining(c))
@@ -166,6 +189,7 @@ def cartelloni(c, cart, cand, ev):
                 r["testo"] = "quello della lettura precedente" if os.path.exists(f_testo) else "nessuno"
                 impronte[p["url"]] = prima.get(p["url"], "")
             else:
+                if p.get("pdf"): testo += pdf_collegato(p, h)
                 imp = hashlib.sha1(re.sub(r"\d+", "", testo).encode()).hexdigest()
                 impronte[p["url"]] = imp
                 r.update(esito="ok", caratteri=len(testo), cambiata=prima.get(p["url"]) != imp)
