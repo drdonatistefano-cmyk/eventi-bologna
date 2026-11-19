@@ -51,29 +51,9 @@
  {
   "luogo": "Teatro San Leonardo",
   "citta": "Bologna",
-  "eventi": 10,
+  "eventi": 9,
   "citta_guida": "bo",
   "candidati": []
- },
- {
-  "luogo": "Teatro Testoni",
-  "citta": "Bologna",
-  "eventi": 8,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 0.972,
-    "nome": "Testoni Ragazzi",
-    "indirizzo": "Via Giacomo Matteotti 16, Bologna",
-    "osm": "node/1623615533"
-   },
-   {
-    "punteggio": 0.942,
-    "nome": "Biblioteca Universitaria Giuseppe Testoni del Dipartimento di Scienze Aziendali",
-    "indirizzo": "Piazza Antonino Scaravilli 1, Bologna",
-    "osm": "node/9781360643"
-   }
-  ]
  },
  {
   "luogo": "Teatro Comunale Cassero",
@@ -105,6 +85,26 @@
     "nome": "Teatro Comunale",
     "indirizzo": " , ",
     "osm": "way/148753535"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Testoni",
+  "citta": "Bologna",
+  "eventi": 7,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 0.972,
+    "nome": "Testoni Ragazzi",
+    "indirizzo": "Via Giacomo Matteotti 16, Bologna",
+    "osm": "node/1623615533"
+   },
+   {
+    "punteggio": 0.942,
+    "nome": "Biblioteca Universitaria Giuseppe Testoni del Dipartimento di Scienze Aziendali",
+    "indirizzo": "Piazza Antonino Scaravilli 1, Bologna",
+    "osm": "node/9781360643"
    }
   ]
  },
@@ -171,20 +171,6 @@
   "candidati": []
  },
  {
-  "luogo": "Teatri di Vita",
-  "citta": "Bologna",
-  "eventi": 4,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatri di Vita",
-    "indirizzo": "senza via e numero",
-    "osm": "node/13430135465"
-   }
-  ]
- },
- {
   "luogo": "Camera Jazz & Music Club",
   "citta": "Bologna",
   "eventi": 4,
@@ -197,6 +183,20 @@
   "eventi": 4,
   "citta_guida": "bo",
   "candidati": []
+ },
+ {
+  "luogo": "Teatri di Vita",
+  "citta": "Bologna",
+  "eventi": 3,
+  "citta_guida": "bo",
+  "candidati": [
+   {
+    "punteggio": 1.0,
+    "nome": "Teatri di Vita",
+    "indirizzo": "senza via e numero",
+    "osm": "node/13430135465"
+   }
+  ]
  },
  {
   "luogo": "Accademia del Teatro Comunale",
@@ -242,13 +242,6 @@
  },
  {
   "luogo": "DumBO",
-  "citta": "Bologna",
-  "eventi": 2,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Sala Prof. Marco Biagi (via Santo Stefano 119)",
   "citta": "Bologna",
   "eventi": 2,
   "citta_guida": "bo",
@@ -348,6 +341,13 @@
  {
   "luogo": "Rocca di Dozza",
   "citta": "Dozza",
+  "eventi": 1,
+  "citta_guida": "bo",
+  "candidati": []
+ },
+ {
+  "luogo": "Sala Prof. Marco Biagi (via Santo Stefano 119)",
+  "citta": "Bologna",
   "eventi": 1,
   "citta_guida": "bo",
   "candidati": []
@@ -486,21 +486,21 @@
  {
   "luogo": "Gate Milano",
   "citta": "Milano",
-  "eventi": 31,
+  "eventi": 32,
   "citta_guida": "mi",
   "candidati": []
  },
  {
   "luogo": "Teatro Nazionale Italiana Assicurazioni",
   "citta": "Milano",
-  "eventi": 28,
+  "eventi": 27,
   "citta_guida": "mi",
   "candidati": []
  },
  {
   "luogo": "Spazio Teatro 89",
   "citta": "Milano",
-  "eventi": 19,
+  "eventi": 18,
   "citta_guida": "mi",
   "candidati": [
    {
@@ -538,13 +538,6 @@
     "osm": "way/1389243680"
    }
   ]
- },
- {
-  "luogo": "Teatro Out Off",
-  "citta": "Milano",
-  "eventi": 12,
-  "citta_guida": "mi",
-  "candidati": []
  },
  {
   "luogo": "Teatro della Cooperativa",
@@ -587,6 +580,13 @@
   ]
  },
  {
+  "luogo": "Teatro Out Off",
+  "citta": "Milano",
+  "eventi": 11,
+  "citta_guida": "mi",
+  "candidati": []
+ },
+ {
   "luogo": "Teatro Principe",
   "citta": "Milano",
   "eventi": 7,
@@ -594,11 +594,18 @@
   "candidati": []
  },
  {
-  "luogo": "SALONE 14 @ Yellowsquare",
+  "luogo": "Fabbrica del Vapore",
   "citta": "Milano",
-  "eventi": 7,
+  "eventi": 6,
   "citta_guida": "mi",
-  "candidati": []
+  "candidati": [
+   {
+    "punteggio": 0.989,
+    "nome": "La Fabbrica del Vapore",
+    "indirizzo": "senza via e numero",
+    "osm": "way/357794273"
+   }
+  ]
  },
  {
   "luogo": "Teatro Repower",
@@ -629,37 +636,16 @@
   ]
  },
  {
-  "luogo": "Fabbrica del Vapore",
+  "luogo": "SALONE 14 @ Yellowsquare",
   "citta": "Milano",
   "eventi": 5,
   "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 0.989,
-    "nome": "La Fabbrica del Vapore",
-    "indirizzo": "senza via e numero",
-    "osm": "way/357794273"
-   }
-  ]
+  "candidati": []
  },
  {
   "luogo": "Ippodromo SNAI San Siro",
   "citta": "Milano",
   "eventi": 5,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Cinema Teatro Wagner",
-  "citta": "Milano",
-  "eventi": 4,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Alveare Culturale Studio Ets",
-  "citta": "Milano",
-  "eventi": 4,
   "citta_guida": "mi",
   "candidati": []
  },
@@ -676,20 +662,6 @@
     "osm": "way/4998830"
    }
   ]
- },
- {
-  "luogo": "APOLLO CLUB MILANO",
-  "citta": "Milano",
-  "eventi": 4,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "NAMA (indoor)",
-  "citta": "Milano",
-  "eventi": 4,
-  "citta_guida": "mi",
-  "candidati": []
  },
  {
   "luogo": "Q-HUB",
@@ -726,14 +698,35 @@
   "candidati": []
  },
  {
-  "luogo": "mare culturale urbano - cascina torrette",
+  "luogo": "Alveare Culturale Studio Ets",
   "citta": "Milano",
   "eventi": 3,
   "citta_guida": "mi",
   "candidati": []
  },
  {
-  "luogo": "Ostello Bello Milano Centrale",
+  "luogo": "Cinema Teatro Wagner",
+  "citta": "Milano",
+  "eventi": 3,
+  "citta_guida": "mi",
+  "candidati": []
+ },
+ {
+  "luogo": "Bluesquare Milano",
+  "citta": "Milano",
+  "eventi": 3,
+  "citta_guida": "mi",
+  "candidati": []
+ },
+ {
+  "luogo": "APOLLO CLUB MILANO",
+  "citta": "Milano",
+  "eventi": 3,
+  "citta_guida": "mi",
+  "candidati": []
+ },
+ {
+  "luogo": "NAMA (indoor)",
   "citta": "Milano",
   "eventi": 3,
   "citta_guida": "mi",
@@ -789,40 +782,21 @@
   ]
  },
  {
-  "luogo": "Club House",
-  "citta": "Milano",
-  "eventi": 2,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.011,
-    "nome": "Muu House",
-    "indirizzo": "Via Alfredo Cappellini , Milano",
-    "osm": "node/9074527200"
-   },
-   {
-    "punteggio": 1.005,
-    "nome": "Beda House",
-    "indirizzo": "Via Gioacchino Murat 2, Milano",
-    "osm": "node/4985229451"
-   },
-   {
-    "punteggio": 0.995,
-    "nome": "Golden House",
-    "indirizzo": "Corso di Porta Ticinese 106, Milano",
-    "osm": "node/2529853660"
-   }
-  ]
- },
- {
-  "luogo": "Tempio del Futuro Perduto",
+  "luogo": "NODO bar",
   "citta": "Milano",
   "eventi": 2,
   "citta_guida": "mi",
   "candidati": []
  },
  {
-  "luogo": "Detune",
+  "luogo": "Ostello Bello Milano Centrale",
+  "citta": "Milano",
+  "eventi": 2,
+  "citta_guida": "mi",
+  "candidati": []
+ },
+ {
+  "luogo": "mare culturale urbano - cascina torrette",
   "citta": "Milano",
   "eventi": 2,
   "citta_guida": "mi",
@@ -830,13 +804,6 @@
  },
  {
   "luogo": "Club Giovanile Milano",
-  "citta": "Milano",
-  "eventi": 2,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Bluesquare Milano",
   "citta": "Milano",
   "eventi": 2,
   "citta_guida": "mi",
@@ -1004,28 +971,7 @@
   ]
  },
  {
-  "luogo": "Bachelite cLab",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "NODO bar",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
   "luogo": "Il Sistina Chapiteau",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Club Dept 184",
   "citta": "Milano",
   "eventi": 1,
   "citta_guida": "mi",
@@ -1046,7 +992,54 @@
   "candidati": []
  },
  {
+  "luogo": "Club House",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 1.011,
+    "nome": "Muu House",
+    "indirizzo": "Via Alfredo Cappellini , Milano",
+    "osm": "node/9074527200"
+   },
+   {
+    "punteggio": 1.005,
+    "nome": "Beda House",
+    "indirizzo": "Via Gioacchino Murat 2, Milano",
+    "osm": "node/4985229451"
+   },
+   {
+    "punteggio": 0.995,
+    "nome": "Golden House",
+    "indirizzo": "Corso di Porta Ticinese 106, Milano",
+    "osm": "node/2529853660"
+   }
+  ]
+ },
+ {
+  "luogo": "Homis - Record Store Bar",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": []
+ },
+ {
   "luogo": "21 House of Stories Navigli",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": []
+ },
+ {
+  "luogo": "GIPSY",
+  "citta": "Milano",
+  "eventi": 1,
+  "citta_guida": "mi",
+  "candidati": []
+ },
+ {
+  "luogo": "Bachelite cLab",
   "citta": "Milano",
   "eventi": 1,
   "citta_guida": "mi",
@@ -1369,7 +1362,7 @@
  {
   "luogo": "Bronson",
   "citta": "Ravenna",
-  "eventi": 16,
+  "eventi": 15,
   "citta_guida": "ra",
   "candidati": [
    {
@@ -1388,66 +1381,11 @@
   "candidati": []
  },
  {
-  "luogo": "Teatro Masini",
-  "citta": "Faenza",
-  "eventi": 12,
-  "citta_guida": "ra",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatri Comunale Angelo Masini",
-    "indirizzo": "senza via e numero",
-    "osm": "node/674948467"
-   }
-  ]
- },
- {
-  "luogo": "Teatro Socjale",
-  "citta": "Ravenna",
-  "eventi": 7,
-  "citta_guida": "ra",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Socjale",
-    "indirizzo": "senza via e numero",
-    "osm": "node/12574122722"
-   }
-  ]
- },
- {
   "luogo": "Pala De André",
   "citta": "Ravenna",
   "eventi": 2,
   "citta_guida": "ra",
   "candidati": []
- },
- {
-  "luogo": "Teatro Comunale Claudio Abbado",
-  "citta": "Ferrara",
-  "eventi": 71,
-  "citta_guida": "fe",
-  "candidati": []
- },
- {
-  "luogo": "Teatro Nuovo",
-  "citta": "Ferrara",
-  "eventi": 59,
-  "citta_guida": "fe",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Nuovo",
-    "indirizzo": " , ",
-    "osm": "node/2315023091"
-   },
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Nuovo",
-    "indirizzo": " , ",
-    "osm": "way/1454250631"
-   }
-  ]
  },
  {
   "luogo": "Teatro De Micheli",
