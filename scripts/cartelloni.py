@@ -421,7 +421,7 @@ def main():
 # scheda povera (nessun nome, descrizione di poche parole, ora «n.d.») GitHub apre una volta la pagina dell'evento e ne salva
 # il testo in <città>/povere/<id>.txt. Il giro del lunedì li legge e completa la scheda con parole sue (mai copiando).
 CONDIVISA = re.compile(r"(?i)stagion|cartellon|calendari|programm|rassegna|season|/eventi/?$|/events/?$")
-NON_APRIRE = re.compile(r"(?i)dice\.fm|feverup|ticketmaster|vivaticket|eventbrite|facebook|instagram|google\.")
+NON_APRIRE = re.compile(r"(?i)teatroalighieri\.org|bronsonproduzioni|ravennafestival|dice\.fm|feverup|ticketmaster|vivaticket|eventbrite|facebook|instagram|google\.")
 
 
 def schede_povere(c, cart, quante=40):
