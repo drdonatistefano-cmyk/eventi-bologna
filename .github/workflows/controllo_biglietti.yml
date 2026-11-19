@@ -17,7 +17,8 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - name: Browser per la seconda lettura dei link non letti (19/11/2026)
-        run: pip install -q playwright && python3 -m playwright install --with-deps chromium >/dev/null || echo "browser non installato: resta la prima lettura"
+        run: |
+          pip install -q playwright && python3 -m playwright install --with-deps chromium >/dev/null || echo "browser non installato: resta la prima lettura"
       - name: Controlla i link
         run: python3 scripts/controlla_biglietti.py
       - name: Salva il risultato
