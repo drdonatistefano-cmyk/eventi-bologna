@@ -179,5 +179,19 @@ prova("biglietti: date diverse sono «data diversa»", CB.esito_date(ev, ["2026-
 prova("biglietti: il controllo legge anche Ferrara e Ravenna", {"fe", "ra"} <= set(CB.CARTELLE.values()))
 
 
+# ---------------------------------------------------------------- protagonisti (19/11/2026)
+# Esempi veri segnalati da Stefano: il nome deve uscire; e casi che non devono diventare un nome.
+import protagonisti as PR  # noqa: E402
+for desc, atteso in [
+    ("Gli Appiccicaticci: Tiziano Storti e Maria Pia Timo.", "Tiziano Storti e Maria Pia Timo"),
+    ("Maria Pia Timo.", "Maria Pia Timo"),
+    ("Ambra Angiolini dal testo di Stefano Benni.", "Ambra Angiolini"),
+    ("Debora Caprioglio, Tiziana Foschi, Giancarlo Ratti.", "Debora Caprioglio, Tiziana Foschi e Giancarlo Ratti"),
+    ("Di Leonardo Manzan.", ""), ("Da Joseph Conrad, Sala Fassbinder.", ""), ("Into The Beginning.", ""),
+    ("Teatro Comico al Teatro Alighieri.", ""), ("Palazzo Pepoli in festa.", ""),
+]:
+    prova(f"protagonisti: «{desc[:40]}» → «{atteso}»", PR.chi({"artista": "Titolo qualsiasi", "descrizione": desc}) == atteso)
+
+
 print(f"\n{len(FALLITE)} prove fallite" if FALLITE else "\nTutte le prove passano")
 sys.exit(1 if FALLITE else 0)

@@ -25,7 +25,8 @@ bologna milano ravenna ferrara italia italiana italiano europa roma napoli torin
 ideato ideazione biglietti biglietto coreografie coreografia scene scenografia costumi luci musiche drammaturgia produzione coproduzione
 testo testi traduzione adattamento durata info prenota prenotazioni acquista regia con assistente aiuto disegno suono video foto
 librerie libreria coop kollettivo collettivo invisibile
-palazzo palazzi villa chiesa basilica oratorio auditorium rocca castello piazza parco arena""".split())
+palazzo palazzi villa chiesa basilica oratorio auditorium rocca castello piazza parco arena
+into the tour apicoltura acetaia azienda agricola cantina""".split())
 RUOLI = [  # (espressione prima dei nomi, prefisso mostrato)
     (r"special guest|guest star|ospite speciale|feat\.?|featuring|ft\.", "con"),
     (r"di e con|scritto e interpretato da|ideato e interpretato da|con la partecipazione di|con la voce di|voce di", "con"),
@@ -41,6 +42,9 @@ VERBO = re.compile(rf"(?:^|[.;:|·]\s*|\b(?:e|con)\s+)({NOME})\s+(?:presenta|pre
 # 18/11/2026 (Stefano: «perché a Milano non è uscito il nome di Ambra Angiolini?»): la descrizione comincia con il nome,
 # «Ambra Angiolini dal testo di Stefano Benni», «Lella Costa in …», «Toni Servillo torna con …». Solo all'inizio della descrizione.
 INIZIO = re.compile(rf"^\s*({NOME})\s+(?:dal testo|da un testo|dai testi|in scena|in |nel |nella |nei |negli |tra |torna|torneranno|è |sono |e la sua|e il suo|e i suoi|alle prese|al pianoforte|alla chitarra)")
+# 19/11/2026 (Stefano: «non compare Maria Pia Timo»): la descrizione è solo un elenco di nomi, «Maria Pia Timo.»,
+# oppure un nome di compagnia seguito dai due punti, «Gli Appiccicaticci: Tiziano Storti e Maria Pia Timo.»
+SOLO_NOMI = re.compile(rf"^\s*(?:[^:.\n]{{2,50}}:\s*)?((?:{NOME})(?:\s*,\s*(?:{NOME}))*(?:\s+e\s+(?:{NOME}))?)\s*\.?\s*$")
 # «Nome Cognome, pianoforte»
 STRUM = re.compile(rf"({NOME})\s*[,(–-]\s*(?:pianoforte|piano|violino|violoncello|viola|chitarra|sax|soprano|tenore|baritono|mezzosoprano|direttore|voce|clarinetto|flauto|arpa)\b")
 FILM = re.compile(r"\b(film|pellicola|omonimo|omonima|romanzo|libro di|canzoni di|musiche di|brani di|repertorio di|omaggio a|tributo a|tribute|dedicat[oa] a|ispirat[oa] a|tratto da|da un'idea di|ricordo di|in memoria di|vita di|storia di)\W*$", re.I)
@@ -48,6 +52,7 @@ FILM = re.compile(r"\b(film|pellicola|omonimo|omonima|romanzo|libro di|canzoni d
 def buono(n, titolo):
     w = n.split()
     if len(w) < 2 or len(w) > 4: return False
+    if re.fullmatch(r"(?i)di|da|dal|dalla|de|del|della|d'", w[0]): return False   # «Di Leonardo Manzan», «Da Joseph Conrad»
     if any(norm(x) in STOP for x in w if not re.fullmatch(PART, x)): return False
     if w[-1].isupper() or any(len(x) == 1 for x in w): return False
     if len({norm(x) for x in w}) < len(w): return False
@@ -72,6 +77,11 @@ def chi(e):
     for m in VERBO.finditer(d):
         n = m.group(1).strip()
         if buono(n, tit) and n not in nomi: nomi.append(n); ruolo[n] = "con"
+    m = SOLO_NOMI.match(d)
+    if m:
+        for n in re.split(r"\s*,\s*|\s+e\s+", m.group(1)):
+            n = n.strip()
+            if n and buono(n, tit) and n not in nomi: nomi.append(n); ruolo[n] = "con"
     m = INIZIO.match(d)
     if m and buono(m.group(1).strip(), tit) and m.group(1).strip() not in nomi:
         nomi.insert(0, m.group(1).strip()); ruolo[m.group(1).strip()] = "con"
