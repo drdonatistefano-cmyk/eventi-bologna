@@ -383,7 +383,7 @@ def main():
     ev = carica_guida(c)
     cand = []
     for nome, f in (("cartelloni", lambda: cartelloni(c, cart, cand, ev)), ("ticketone", lambda: ticketone(c, cart, cand)),
-                    ("songkick", lambda: songkick(c, cart, cand, ev))):
+                    ("songkick", lambda: songkick(c, cart, cand, ev)), ("schede povere", lambda: schede_povere(c, cart))):
         try: f()
         except Exception as e: REP["errori"].append(f"{nome}: {type(e).__name__}: {str(e)[:200]}")
     # niente abbonamenti e carnet, niente doppioni fra fonti (stesso giorno, stesso titolo e luogo)
@@ -406,6 +406,7 @@ def main():
              f"- Candidati da giudicare (non ancora in guida): **{len(cand)}** in `candidati.json`",
              f"- TicketOne: {REP['ticketone']}", f"- Songkick: {REP['songkick'] or 'non previsto per questa città'}", "",
              *controllo_righe(REP.get("controllo_ticketone")),
+             *povere_righe(REP.get("schede_povere")),
              "## Pagine dei cartelloni", "", "| Pagina | Esito | Cambiata | Eventi strutturati | Testo |", "|---|---|---|---|---|"]
     for p in REP["pagine"]:
         righe.append(f"| {p['nome']} | {p.get('esito')} | {'**sì**' if p.get('cambiata') else 'no'} | {p.get('eventi_strutturati', '')} | `{p['file']}` |")
@@ -414,6 +415,72 @@ def main():
     open(os.path.join(cart, c, "LEGGIMI.md"), "w", encoding="utf-8").write("\n".join(righe) + "\n")
     print(f"{c}: {len(REP['pagine'])} pagine ({len(cambiate)} cambiate), candidati {len(cand)}, TicketOne {REP['ticketone']}, Songkick {REP['songkick']}, errori {len(REP['errori'])}")
     for e in REP["errori"]: print("  !", e)
+
+
+# 19/11/2026 (Stefano: «raccogli qualche info in più laddove c'è poco»): per gli eventi delle prossime 3 settimane con la
+# scheda povera (nessun nome, descrizione di poche parole, ora «n.d.») GitHub apre una volta la pagina dell'evento e ne salva
+# il testo in <città>/povere/<id>.txt. Il giro del lunedì li legge e completa la scheda con parole sue (mai copiando).
+CONDIVISA = re.compile(r"(?i)stagion|cartellon|calendari|programm|rassegna|season|/eventi/?$|/events/?$")
+NON_APRIRE = re.compile(r"(?i)dice\.fm|feverup|ticketmaster|vivaticket|eventbrite|facebook|instagram|google\.")
+
+
+def schede_povere(c, cart, quante=40):
+    from protagonisti import NOME, buono
+    fine = (datetime.date.fromisoformat(OGGI) + datetime.timedelta(days=21)).isoformat()
+    ev = carica_guida(c)
+    uso = {}
+    for e in ev:
+        for k in ("fonte", "biglietti"):
+            if e.get(k): uso[e[k]] = uso.get(e[k], 0) + 1
+    def nome_nel_titolo(e): return any(buono(m.group(0), "") for m in re.finditer(NOME, e.get("artista", "")))
+    def manca(e):
+        m = []
+        if not e.get("chi") and not nome_nel_titolo(e) and e.get("genere") in ("Teatro", "Jazz", "Classica"): m.append("protagonisti")
+        if len((e.get("descrizione") or "").strip()) < 70: m.append("descrizione")
+        if (e.get("ora") or "n.d.") == "n.d.": m.append("ora")
+        return m
+    scelti = sorted((e for e in ev if OGGI <= e["data"] <= fine and manca(e)), key=lambda e: (e["data"], -len(manca(e))))[:quante]
+    dove = os.path.join(cart, c, "povere"); os.makedirs(dove, exist_ok=True); cache = {}
+    for f in os.listdir(dove): os.remove(os.path.join(dove, f))
+    out = []
+    for e in scelti:
+        u = next((x for x in (e.get("fonte"), e.get("biglietti"), e.get("sito_luogo")) if x and uso.get(x, 0) == 1
+                  and len(urllib.parse.urlsplit(x).path.strip("/")) > 3 and not CONDIVISA.search(urllib.parse.urlsplit(x).path)
+                  and not NON_APRIRE.search(x) and not x.lower().endswith(".pdf")), "")
+        condivisa = False
+        if not u:   # nessuna pagina sua: si usa la pagina comune (stagione, programma), ma solo il pezzo vicino al titolo
+            u = next((x for x in (e.get("fonte"), e.get("sito_luogo")) if x and not NON_APRIRE.search(x) and "songkick" not in x
+                      and not x.lower().endswith(".pdf")), ""); condivisa = bool(u)
+        r = {"id": e["id"], "data": e["data"], "artista": e["artista"], "luogo": e["luogo"], "mancano": manca(e), "url": u}
+        if condivisa: r["pagina"] = "comune a più eventi: testo solo intorno al titolo"
+        if not u: r["esito"] = "nessuna pagina dell'evento"; out.append(r); continue
+        if not permesso(u): r["esito"] = "robots.txt vieta"; out.append(r); continue
+        try:
+            if u not in cache: cache[u] = get(u, tent=1, n=3_000_000); time.sleep(1.5)
+            h = cache[u]
+            t = re.sub(r"(?is)<(script|style|noscript|svg|nav|header|footer)\b.*?</\1>", " ", h)
+            t = html.unescape(re.sub(r"<[^>]+>", "\n", t))
+            t = re.sub(r"\n\s*\n+", "\n", re.sub(r"[ \t]+", " ", t)).strip()
+            k = next(iter(sorted(tok(e["artista"]), key=len, reverse=True)), "")
+            i = t.lower().find(k) if k else -1
+            if condivisa and i < 0: r["esito"] = "titolo non trovato nella pagina comune"; out.append(r); continue
+            t = t[max(0, i - 300): i + 1500] if condivisa else (t[max(0, i - 500): i + 6000] if i >= 0 else t[:6000])
+            if len(t) < (150 if condivisa else 300) or BLOCCO.search(t[:1500]): r["esito"] = "pagina vuota o bloccata"
+            else:
+                open(os.path.join(dove, e["id"] + ".txt"), "w", encoding="utf-8").write(f"# {e['artista']} — {e['data']} — {e['luogo']}\n# {u}\n\n{t}\n")
+                r.update(esito="letta", file=f"povere/{e['id']}.txt")
+        except Exception as x:
+            r["esito"] = f"errore: {type(x).__name__}"
+        out.append(r)
+    json.dump(out, open(os.path.join(cart, c, "povere.json"), "w"), ensure_ascii=False, indent=1)
+    REP["schede_povere"] = {"scelte": len(out), "lette": sum(1 for r in out if r.get("esito") == "letta")}
+
+
+def povere_righe(R):
+    if not R: return []
+    return ["## Schede povere (prossime 3 settimane)", "",
+            f"- Eventi con la scheda povera: {R['scelte']}, pagina dell'evento letta: **{R['lette']}** (testo in `povere/<id>.txt`, elenco in `povere.json`)",
+            "- Da completare con parole tue: protagonisti in `chi`, ora, durata e prezzi se scritti, una descrizione di 1-2 frasi. Mai copiare il testo.", ""]
 
 
 def controllo_righe(R):
