@@ -18,24 +18,6 @@
 "dati_event": false
 },
 {
-"nome": "bo-e053-osteria-giacobazzi",
-"citta": "bo",
-"fino": "2026-11-17",
-"dati_event": true
-},
-{
-"nome": "bo-e054-the-veils",
-"citta": "bo",
-"fino": "2026-11-17",
-"dati_event": true
-},
-{
-"nome": "bo-e055-girls-in-hawaii",
-"citta": "bo",
-"fino": "2026-11-18",
-"dati_event": true
-},
-{
 "nome": "bo-e056-addue",
 "citta": "bo",
 "fino": "2026-11-19",
@@ -1752,12 +1734,6 @@
 "dati_event": true
 },
 {
-"nome": "bo-e350-supermarket-italo-barock-q-live",
-"citta": "bo",
-"fino": "2026-11-18",
-"dati_event": false
-},
-{
 "nome": "bo-e351-istantanea-8-edipo-re",
 "citta": "bo",
 "fino": "2026-11-25",
@@ -1785,12 +1761,6 @@
 "nome": "bo-e356-andre-gallo",
 "citta": "bo",
 "fino": "2026-12-12",
-"dati_event": false
-},
-{
-"nome": "bo-e359-carlo-balzaretti-giuseppe-modugno",
-"citta": "bo",
-"fino": "2026-11-18",
 "dati_event": false
 },
 {
@@ -1851,12 +1821,6 @@
 "nome": "bo-e389-ultimo",
 "citta": "bo",
 "fino": "2027-06-14",
-"dati_event": false
-},
-{
-"nome": "bo-e400-pulse-subversive-bodies-andrea-zardi",
-"citta": "bo",
-"fino": "2026-11-17",
 "dati_event": false
 },
 {
@@ -2025,12 +1989,6 @@
 "nome": "bo-e428-michele-corcella-gil-evans-da-miles-davis-a-sting",
 "citta": "bo",
 "fino": "2026-11-24",
-"dati_event": true
-},
-{
-"nome": "bo-e431-l-opera-nel-ridotto-otello-di-verdi",
-"citta": "bo",
-"fino": "2026-11-17",
 "dati_event": true
 },
 {
@@ -3144,18 +3102,6 @@
 "dati_event": true
 },
 {
-"nome": "bo-e626-wish-you-were-here",
-"citta": "bo",
-"fino": "2026-11-17",
-"dati_event": true
-},
-{
-"nome": "bo-e627-la-sera-dei-miracoli-omaggio-a-lucio-dalla",
-"citta": "bo",
-"fino": "2026-11-18",
-"dati_event": true
-},
-{
 "nome": "bo-e628-the-scratch",
 "citta": "bo",
 "fino": "2026-11-20",
@@ -3435,12 +3381,6 @@
 "nome": "bo-e674-scordati-welcome-to-pripyat",
 "citta": "bo",
 "fino": "2026-11-21",
-"dati_event": false
-},
-{
-"nome": "bo-e677-matteo-fallica-troppo-noi",
-"citta": "bo",
-"fino": "2026-11-18",
 "dati_event": false
 },
 {
@@ -4032,18 +3972,6 @@
 "dati_event": false
 },
 {
-"nome": "bo-e794-federico-straga",
-"citta": "bo",
-"fino": "2026-11-17",
-"dati_event": true
-},
-{
-"nome": "bo-e795-phil-palmer-cc-quartet",
-"citta": "bo",
-"fino": "2026-11-18",
-"dati_event": true
-},
-{
 "nome": "bo-e796-katie-kadan-the-good-gheddo-trio-ft-alberto-marsico",
 "citta": "bo",
 "fino": "2026-11-19",
@@ -4581,6 +4509,42 @@
 "nome": "bo-e886-cosmo",
 "citta": "bo",
 "fino": "2027-02-14",
+"dati_event": true
+},
+{
+"nome": "bo-e887-francesco-bentini-in-se-sarebbe-bravo",
+"citta": "bo",
+"fino": "2027-02-06",
+"dati_event": true
+},
+{
+"nome": "bo-e888-giorgio-canali-rossofuoco",
+"citta": "bo",
+"fino": "2026-12-10",
+"dati_event": true
+},
+{
+"nome": "bo-e889-trevize",
+"citta": "bo",
+"fino": "2026-12-11",
+"dati_event": true
+},
+{
+"nome": "bo-e890-nuova-data-rares",
+"citta": "bo",
+"fino": "2027-01-10",
+"dati_event": true
+},
+{
+"nome": "bo-e891-ghinzu",
+"citta": "bo",
+"fino": "2027-02-12",
+"dati_event": true
+},
+{
+"nome": "bo-e892-davide-shorty-koralle-johnny-marsiglia",
+"citta": "bo",
+"fino": "2027-02-25",
 "dati_event": true
 },
 {
@@ -5574,18 +5538,6 @@
 "dati_event": false
 },
 {
-"nome": "mi-e020-coez",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": true
-},
-{
-"nome": "mi-e021-veils",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": true
-},
-{
 "nome": "mi-e022-aiello",
 "citta": "mi",
 "fino": "2026-11-19",
@@ -6240,12 +6192,6 @@
 "dati_event": false
 },
 {
-"nome": "mi-e1052-suona-bene-canta-male-band-live-il-poli",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": false
-},
-{
 "nome": "mi-e1053-fuck-pop-show",
 "citta": "mi",
 "fino": "2026-11-26",
@@ -6255,12 +6201,6 @@
 "nome": "mi-e1054-italo-notte",
 "citta": "mi",
 "fino": "2026-11-28",
-"dati_event": true
-},
-{
-"nome": "mi-e1055-mosso-comedy",
-"citta": "mi",
-"fino": "2026-11-17",
 "dati_event": true
 },
 {
@@ -6286,24 +6226,6 @@
 "citta": "mi",
 "fino": "2027-03-27",
 "dati_event": true
-},
-{
-"nome": "mi-e1063-spotlight-talks",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": false
-},
-{
-"nome": "mi-e1064-pmi-indie-sounds-live",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": false
-},
-{
-"nome": "mi-e1065-tot-ally-open-sessions-find-your-ally",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": false
 },
 {
 "nome": "mi-e1066-parisi",
@@ -7002,12 +6924,6 @@
 "dati_event": false
 },
 {
-"nome": "mi-e1175-fuoco-di-scena-30-anni-di-vita-di-lorenzo-loris",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": false
-},
-{
 "nome": "mi-e1176-civica-scuola-di-musica-claudio-abbado-due-concerti-per-i-50",
 "citta": "mi",
 "fino": "2026-11-21",
@@ -7122,12 +7038,6 @@
 "dati_event": true
 },
 {
-"nome": "mi-e1194-arteismo",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": true
-},
-{
 "nome": "mi-e1195-daniela-losini",
 "citta": "mi",
 "fino": "2026-11-24",
@@ -7155,12 +7065,6 @@
 "nome": "mi-e120-eros-ramazzotti",
 "citta": "mi",
 "fino": "2027-05-07",
-"dati_event": true
-},
-{
-"nome": "mi-e1201-parla-clitemnestra",
-"citta": "mi",
-"fino": "2026-11-17",
 "dati_event": true
 },
 {
@@ -8106,52 +8010,10 @@
 "dati_event": true
 },
 {
-"nome": "mi-e1349-germogli-milano-music-week",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": false
-},
-{
 "nome": "mi-e135-nickelback",
 "citta": "mi",
 "fino": "2027-06-23",
 "dati_event": true
-},
-{
-"nome": "mi-e1350-approfondisco-ascoltocollettivo-nicolaj-serjotti",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": false
-},
-{
-"nome": "mi-e1351-donne-in-musica-unfiltered-voices-talk-showcase",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": false
-},
-{
-"nome": "mi-e1352-mmw26-sessione-sotterranea-iasko",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": false
-},
-{
-"nome": "mi-e1353-la-festa-di-bellezza-records",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": true
-},
-{
-"nome": "mi-e1354-sopravvivere-al-mainstream-tra-illusioni-scorciatoie-e-consa",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": false
-},
-{
-"nome": "mi-e1355-underground-crescere-nel-sottosuolo",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": false
 },
 {
 "nome": "mi-e1356-bestierare-dj-drugo",
@@ -8172,12 +8034,6 @@
 "dati_event": false
 },
 {
-"nome": "mi-e1364-un-marito-ideale",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": true
-},
-{
 "nome": "mi-e1365-stai-zitta",
 "citta": "mi",
 "fino": "2026-11-28",
@@ -8187,18 +8043,6 @@
 "nome": "mi-e1366-harry-potter-tra-scienza-musica-e-magia",
 "citta": "mi",
 "fino": "2026-12-12",
-"dati_event": false
-},
-{
-"nome": "mi-e1367-women-in-italian-disco-peermusic-in-conversation-w-popa",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": false
-},
-{
-"nome": "mi-e1368-beyond-streaming-milano-music-week",
-"citta": "mi",
-"fino": "2026-11-18",
 "dati_event": false
 },
 {
@@ -8214,27 +8058,9 @@
 "dati_event": false
 },
 {
-"nome": "mi-e1370-monksta-records-the-launch-night",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": false
-},
-{
-"nome": "mi-e1371-evento",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": true
-},
-{
 "nome": "mi-e1372-il-canto-di-natale",
 "citta": "mi",
 "fino": "2026-12-19",
-"dati_event": false
-},
-{
-"nome": "mi-e1373-sister-act-il-musical",
-"citta": "mi",
-"fino": "2026-11-18",
 "dati_event": false
 },
 {
@@ -8242,12 +8068,6 @@
 "citta": "mi",
 "fino": "2026-11-19",
 "dati_event": true
-},
-{
-"nome": "mi-e1375-albe",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": false
 },
 {
 "nome": "mi-e1376-moulin-rouge-il-musical",
@@ -8694,24 +8514,6 @@
 "dati_event": false
 },
 {
-"nome": "mi-e1443-pinocchio-e-noi-alla-scuola-ci-anderemo-domani",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": false
-},
-{
-"nome": "mi-e1444-believe-is-20-apollo-takeover",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": false
-},
-{
-"nome": "mi-e1445-larec-il-festival",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": true
-},
-{
 "nome": "mi-e1446-sama-abdalhadi",
 "citta": "mi",
 "fino": "2026-12-11",
@@ -8796,15 +8598,135 @@
 "dati_event": false
 },
 {
+"nome": "mi-e1459-annodati-open-mic",
+"citta": "mi",
+"fino": "2026-11-23",
+"dati_event": false
+},
+{
 "nome": "mi-e146-indovina-chi-viene-a-cena",
 "citta": "mi",
 "fino": "2026-12-06",
 "dati_event": true
 },
 {
+"nome": "mi-e1460-magnolia-secret-comedy-ep-2",
+"citta": "mi",
+"fino": "2026-12-14",
+"dati_event": true
+},
+{
+"nome": "mi-e1461-pitching-pills-come-presentare-il-tuo-progetto-musicale-agli",
+"citta": "mi",
+"fino": "2026-11-19",
+"dati_event": false
+},
+{
+"nome": "mi-e1462-monksta-underground-the-takeover",
+"citta": "mi",
+"fino": "2026-11-19",
+"dati_event": false
+},
+{
+"nome": "mi-e1463-casa-metatron-rob-il-suo-team-ci-raccontano-chaos-perfetto",
+"citta": "mi",
+"fino": "2026-11-19",
+"dati_event": false
+},
+{
+"nome": "mi-e1464-bello-unplugged-village-h",
+"citta": "mi",
+"fino": "2026-11-19",
+"dati_event": false
+},
+{
+"nome": "mi-e1465-first-club",
+"citta": "mi",
+"fino": "2026-11-19",
+"dati_event": false
+},
+{
+"nome": "mi-e1466-hardkoro",
+"citta": "mi",
+"fino": "2026-11-19",
+"dati_event": true
+},
+{
+"nome": "mi-e1467-margherita-piumatti-jam-session",
+"citta": "mi",
+"fino": "2026-11-19",
+"dati_event": false
+},
+{
+"nome": "mi-e1468-moontell-milano-music-week",
+"citta": "mi",
+"fino": "2026-11-19",
+"dati_event": false
+},
+{
+"nome": "mi-e1469-mmw26-reception-ep-ix",
+"citta": "mi",
+"fino": "2026-11-19",
+"dati_event": false
+},
+{
 "nome": "mi-e147-il-padrone",
 "citta": "mi",
 "fino": "2027-04-18",
+"dati_event": true
+},
+{
+"nome": "mi-e1470-rotten-music-week",
+"citta": "mi",
+"fino": "2026-11-19",
+"dati_event": false
+},
+{
+"nome": "mi-e1471-blue-nights-pres-lyra-quintet-live",
+"citta": "mi",
+"fino": "2026-11-19",
+"dati_event": false
+},
+{
+"nome": "mi-e1472-linecheck-meeting-day-2",
+"citta": "mi",
+"fino": "2026-11-20",
+"dati_event": true
+},
+{
+"nome": "mi-e1473-social-killed-the-video-star-live-music-talk",
+"citta": "mi",
+"fino": "2026-11-20",
+"dati_event": false
+},
+{
+"nome": "mi-e1474-novocaine-lobster",
+"citta": "mi",
+"fino": "2027-01-17",
+"dati_event": false
+},
+{
+"nome": "mi-e1475-gente-guasta",
+"citta": "mi",
+"fino": "2027-01-08",
+"dati_event": true
+},
+{
+"nome": "mi-e1476-parla-clitemnestra",
+"citta": "mi",
+"fino": "2026-11-19",
+"dati_event": true
+},
+{
+"nome": "mi-e1477-un-marito-ideale",
+"citta": "mi",
+"fino": "2026-11-20",
+"dati_event": true
+},
+{
+"nome": "mi-e1478-diva",
+"citta": "mi",
+"fino": "2026-11-22",
 "dati_event": true
 },
 {
@@ -8817,12 +8739,6 @@
 "nome": "mi-e149-evento",
 "citta": "mi",
 "fino": "2027-02-18",
-"dati_event": true
-},
-{
-"nome": "mi-e150-22simba",
-"citta": "mi",
-"fino": "2026-11-17",
 "dati_event": true
 },
 {
@@ -8940,12 +8856,6 @@
 "dati_event": false
 },
 {
-"nome": "mi-e177-beast-in-black",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": true
-},
-{
 "nome": "mi-e178-beirut",
 "citta": "mi",
 "fino": "2027-07-03",
@@ -8985,12 +8895,6 @@
 "nome": "mi-e185-birthh",
 "citta": "mi",
 "fino": "2027-01-28",
-"dati_event": true
-},
-{
-"nome": "mi-e186-blaze-bayley",
-"citta": "mi",
-"fino": "2026-11-18",
 "dati_event": true
 },
 {
@@ -9117,12 +9021,6 @@
 "nome": "mi-e210-chuck-ragan",
 "citta": "mi",
 "fino": "2026-12-15",
-"dati_event": true
-},
-{
-"nome": "mi-e211-cico-messina",
-"citta": "mi",
-"fino": "2026-11-18",
 "dati_event": true
 },
 {
@@ -9432,12 +9330,6 @@
 "dati_event": true
 },
 {
-"nome": "mi-e275-gurriers",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": true
-},
-{
 "nome": "mi-e276-haevn",
 "citta": "mi",
 "fino": "2027-04-12",
@@ -9510,12 +9402,6 @@
 "dati_event": true
 },
 {
-"nome": "mi-e290-irossa",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": true
-},
-{
 "nome": "mi-e292-jack-kays",
 "citta": "mi",
 "fino": "2027-04-26",
@@ -9579,12 +9465,6 @@
 "nome": "mi-e303-jordan-rakei",
 "citta": "mi",
 "fino": "2027-04-07",
-"dati_event": true
-},
-{
-"nome": "mi-e304-jose-gonzalez",
-"citta": "mi",
-"fino": "2026-11-17",
 "dati_event": true
 },
 {
@@ -9660,12 +9540,6 @@
 "dati_event": true
 },
 {
-"nome": "mi-e321-l-a-guns",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": true
-},
-{
 "nome": "mi-e323-la-municipal",
 "citta": "mi",
 "fino": "2026-11-24",
@@ -9688,18 +9562,6 @@
 "citta": "mi",
 "fino": "2027-05-28",
 "dati_event": false
-},
-{
-"nome": "mi-e328-leap",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": true
-},
-{
-"nome": "mi-e329-levante",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": true
 },
 {
 "nome": "mi-e330-levante",
@@ -9730,18 +9592,6 @@
 "citta": "mi",
 "fino": "2027-03-13",
 "dati_event": true
-},
-{
-"nome": "mi-e336-lowtopic",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": false
-},
-{
-"nome": "mi-e337-luciano-macchia-crooner",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": false
 },
 {
 "nome": "mi-e338-lucio-corsi",
@@ -10092,12 +9942,6 @@
 "dati_event": true
 },
 {
-"nome": "mi-e406-portugal-the-man",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": true
-},
-{
 "nome": "mi-e407-praying-mantis",
 "citta": "mi",
 "fino": "2026-11-22",
@@ -10113,12 +9957,6 @@
 "nome": "mi-e410-quercia",
 "citta": "mi",
 "fino": "2026-11-28",
-"dati_event": false
-},
-{
-"nome": "mi-e411-radwan-ghazi-moumneh-frederic-d-oberland",
-"citta": "mi",
-"fino": "2026-11-17",
 "dati_event": false
 },
 {
@@ -10425,12 +10263,6 @@
 "nome": "mi-e470-tauro-boys",
 "citta": "mi",
 "fino": "2027-03-03",
-"dati_event": true
-},
-{
-"nome": "mi-e472-ters",
-"citta": "mi",
-"fino": "2026-11-17",
 "dati_event": true
 },
 {
@@ -11196,12 +11028,6 @@
 "dati_event": true
 },
 {
-"nome": "mi-e633-francesco-migliazza-in-non-lo-so-ancora",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": true
-},
-{
 "nome": "mi-e634-giovanni-sollima-orchestra-del-friuli-venezia-giulia",
 "citta": "mi",
 "fino": "2026-11-19",
@@ -11260,12 +11086,6 @@
 "citta": "mi",
 "fino": "2026-12-03",
 "dati_event": false
-},
-{
-"nome": "mi-e658-zelig-lab-il-laboratorio-artistico-di-area-zelig",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": true
 },
 {
 "nome": "mi-e662-tits-up",
@@ -12804,24 +12624,6 @@
 "dati_event": true
 },
 {
-"nome": "mi-e957-english-stand-up-comedy-by-delia",
-"citta": "mi",
-"fino": "2026-11-17",
-"dati_event": false
-},
-{
-"nome": "mi-e958-bestie-comedy-show",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": false
-},
-{
-"nome": "mi-e959-comedy-night-ft-accademia-del-comico",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": false
-},
-{
 "nome": "mi-e960-maschi-etero-bianchi-accesso-riservato-ai-tesserati-arca",
 "citta": "mi",
 "fino": "2026-11-23",
@@ -12844,12 +12646,6 @@
 "citta": "mi",
 "fino": "2026-11-25",
 "dati_event": false
-},
-{
-"nome": "mi-e973-the-sound-of-emi-2026-emi-records-italy-x-milano-music-week",
-"citta": "mi",
-"fino": "2026-11-18",
-"dati_event": true
 },
 {
 "nome": "mi-e974-back-to-daft-punk-one-more-time",
@@ -13110,12 +12906,6 @@
 "dati_event": false
 },
 {
-"nome": "ra-e022-il-seme-magico",
-"citta": "ra",
-"fino": "2026-11-18",
-"dati_event": false
-},
-{
 "nome": "ra-e023-re-tutto-cancella",
 "citta": "ra",
 "fino": "2026-11-22",
@@ -13180,12 +12970,6 @@
 "citta": "ra",
 "fino": "2027-06-29",
 "dati_event": false
-},
-{
-"nome": "ra-e034-l-ultimo-incanto",
-"citta": "ra",
-"fino": "2026-11-17",
-"dati_event": true
 },
 {
 "nome": "ra-e035-yifan-wu-pianoforte",
@@ -13515,12 +13299,6 @@
 "nome": "ra-e089-paolo-ruffini-din-don-down",
 "citta": "ra",
 "fino": "2027-04-20",
-"dati_event": false
-},
-{
-"nome": "ra-e090-jeff-buckley-a-celebration-of-grace-con-gli-slow-pilot",
-"citta": "ra",
-"fino": "2026-11-18",
 "dati_event": false
 },
 {
