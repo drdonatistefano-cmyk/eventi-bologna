@@ -22,20 +22,34 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+# 19/11/2026: un aggiornamento dei dati portava a tre salvataggi e tre pubblicazioni di fila (i dati, «Versioni dei
+# dati», poi «Pagine delle città da index.html»), e GitHub annullava le pubblicazioni superate (24 in una settimana).
+# Ora: se arrivano più salvataggi ravvicinati vale l'ultimo (si aspetta un minuto), e le pagine delle città si rifanno
+# qui, nello stesso salvataggio; «Pagine delle città» poi non trova più niente da cambiare.
+concurrency:
+  group: versioni-dati
+  cancel-in-progress: true
 jobs:
   versioni:
     runs-on: ubuntu-latest
     steps:
+      - name: Aspetta un minuto se sono arrivati più salvataggi insieme
+        if: github.event_name == 'push'
+        run: sleep 60
       - uses: actions/checkout@v4
+      - name: Pagine delle città da index.html (prima le faceva un salvataggio a parte)
+        run: python3 scripts/citta.py
       - name: Calcola le impronte
         run: python3 scripts/versioni.py
       - name: Pagine dei singoli spettacoli e mappa del sito (18/11/2026)
         run: python3 scripts/pagine_eventi.py && python3 scripts/mappa_sito.py
+      - name: Le città accese sono collegate dappertutto?
+        run: python3 scripts/controlla_citta.py
       - name: Salva
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          for f in versioni.js index.html eventi-presto.js eventi-resto.js milano/versioni.js milano/index.html milano/eventi-presto.js milano/eventi-resto.js ravenna/versioni.js ravenna/index.html ravenna/eventi-presto.js ravenna/eventi-resto.js ferrara/versioni.js ferrara/index.html ferrara/eventi-presto.js ferrara/eventi-resto.js; do [ -e "$f" ] && git add "$f"; done; git add -A evento sitemap.xml   # 18/11: anche i due pezzi di eventi.js e le pagine dei singoli spettacoli
+          for f in versioni.js index.html eventi-presto.js eventi-resto.js milano/versioni.js milano/index.html milano/eventi-presto.js milano/eventi-resto.js ravenna/versioni.js ravenna/index.html ravenna/eventi-presto.js ravenna/eventi-resto.js ferrara/versioni.js ferrara/index.html ferrara/eventi-presto.js ferrara/eventi-resto.js; do [ -e "$f" ] && git add "$f"; done; git add -A evento sitemap.xml milano ravenna ferrara robots.txt   # 18/11: anche i due pezzi di eventi.js e le pagine dei singoli spettacoli
           git diff --cached --quiet && { echo "nessuna modifica"; exit 0; }
           git commit -m "Versioni dei dati"
           for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done; exit 1
