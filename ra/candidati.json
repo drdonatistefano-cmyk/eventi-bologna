@@ -1,0 +1,85 @@
+{
+ "citta": "Ravenna",
+ "quando": "2026-11-19 20:22 UTC",
+ "pagine": [
+  {
+   "nome": "Ravenna – eventi del sito turistico del Comune (Alighieri, Ravenna Festival e altri)",
+   "url": "https://www.turismo.ra.it/eventi/",
+   "file": "pagine/ravenna-eventi-del-sito-turistico-del-comune-alighieri-raven.txt",
+   "esito": "ok",
+   "caratteri": 2890,
+   "cambiata": true,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "Mama's Club – eventi",
+   "url": "https://www.mamasclub.it/eventi/",
+   "file": "pagine/mama-s-club-eventi.txt",
+   "esito": "ok",
+   "caratteri": 2601,
+   "cambiata": true,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "Teatro Socjale (Piangipane) – programma",
+   "url": "https://www.teatrosocjale.it/programma-eventi/",
+   "file": "pagine/teatro-socjale-piangipane-programma.txt",
+   "esito": "ok",
+   "caratteri": 1940,
+   "cambiata": true,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "Teatro Masini (Faenza) – Accademia Perduta",
+   "url": "https://accademiaperduta.it/teatro-masini-faenza/",
+   "file": "pagine/teatro-masini-faenza-accademia-perduta.txt",
+   "esito": "ok",
+   "caratteri": 6000,
+   "cambiata": true,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "Ravenna Teatro – Teatro Rasi",
+   "url": "https://www.ravennateatro.com/",
+   "file": "pagine/ravenna-teatro-teatro-rasi.txt",
+   "esito": "ok",
+   "caratteri": 5968,
+   "cambiata": true,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "Teatro Rossini (Lugo) – spettacoli",
+   "url": "https://www.teatrorossini.it/spettacoli/",
+   "file": "pagine/teatro-rossini-lugo-spettacoli.txt",
+   "esito": "ok",
+   "caratteri": 2221,
+   "cambiata": true,
+   "eventi_strutturati": 0
+  }
+ ],
+ "ticketone": {
+  "gruppi": 9,
+  "ricerca": "per nome «Ravenna», provincia RA: 9 gruppi",
+  "abbinamento": "eventi con TicketOne: 10 su 102\neventi con TicketOne dopo i controlli: 10\nnuovi da TicketOne: 0 Counter()",
+  "link_nuovi": 0,
+  "spettacoli_mancanti": 0
+ },
+ "songkick": {},
+ "errori": [],
+ "controllo_ticketone": {
+  "date_in_vendita": 5,
+  "coperte": 5,
+  "date_mancanti": 0,
+  "senza_link_ticketone": 0,
+  "non_in_guida": 0,
+  "mostre_senza_link": 0,
+  "mostre_non_in_guida": 0,
+  "da_controllare": []
+ },
+ "schede_povere": {
+  "scelte": 12,
+  "lette": 5
+ },
+ "tolti_non_spettacoli": 0,
+ "candidati": []
+}

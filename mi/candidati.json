@@ -1,0 +1,2677 @@
+{
+ "citta": "Milano",
+ "quando": "2026-11-15 11:27 UTC",
+ "pagine": [
+  {
+   "nome": "Songkick – concerti Milano",
+   "url": "https://www.songkick.com/metro-areas/30338-italy-milan",
+   "file": "pagine/songkick-concerti-milano.txt",
+   "esito": "ok",
+   "caratteri": 7060,
+   "cambiata": false
+  },
+  {
+   "nome": "Teatro alla Scala – stagione",
+   "url": "https://www.teatroallascala.org/it/stagione/2026-2027",
+   "file": "pagine/teatro-alla-scala-stagione.txt",
+   "esito": "ok",
+   "caratteri": 8345,
+   "cambiata": false,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "Piccolo Teatro",
+   "url": "https://www.piccoloteatro.org/it",
+   "file": "pagine/piccolo-teatro.txt",
+   "esito": "ok",
+   "caratteri": 7129,
+   "cambiata": true,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "Teatro Manzoni",
+   "url": "https://www.teatromanzoni.it/",
+   "file": "pagine/teatro-manzoni.txt",
+   "esito": "ok",
+   "caratteri": 5050,
+   "cambiata": false,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "Teatro Arcimboldi",
+   "url": "https://www.teatroarcimboldi.it/",
+   "file": "pagine/teatro-arcimboldi.txt",
+   "esito": "non letta: Error: Page.goto: net::ERR_EMPTY_RESPONSE at https://www.teatroarcimboldi.it/",
+   "cambiata": false,
+   "testo": "nessuno"
+  },
+  {
+   "nome": "Teatro dal Verme – I Pomeriggi Musicali",
+   "url": "https://www.ipomeriggi.it/",
+   "file": "pagine/teatro-dal-verme-i-pomeriggi-musicali.txt",
+   "esito": "ok",
+   "caratteri": 5509,
+   "cambiata": false,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "Teatro Franco Parenti",
+   "url": "https://www.teatrofrancoparenti.it/",
+   "file": "pagine/teatro-franco-parenti.txt",
+   "esito": "ok",
+   "caratteri": 5244,
+   "cambiata": false,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "Teatro Elfo Puccini",
+   "url": "https://www.elfo.org/",
+   "file": "pagine/teatro-elfo-puccini.txt",
+   "esito": "ok",
+   "caratteri": 1717,
+   "cambiata": false,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "Blue Note Milano",
+   "url": "https://www.bluenotemilano.com/",
+   "file": "pagine/blue-note-milano.txt",
+   "esito": "ok",
+   "caratteri": 2382,
+   "cambiata": false,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "arte.it – mostre a Milano",
+   "url": "https://www.arte.it/calendario-arte/milano",
+   "file": "pagine/arte-it-mostre-a-milano.txt",
+   "esito": "ok",
+   "caratteri": 6538,
+   "cambiata": true,
+   "eventi_strutturati": 0
+  }
+ ],
+ "ticketone": {
+  "gruppi": 520,
+  "abbinamento": "eventi con TicketOne: 513 su 1153\neventi con TicketOne dopo i controlli: 513\nnuovi da TicketOne: 39 Counter({'Pop e altra musica/': 25, 'Teatro/Musical': 6, 'Jazz/': 2, 'Teatro/Prosa': 2, 'Rock/': 1, 'Teatro/Danza': 1, 'Teatro/Comicità': 1, 'Classica/': 1})",
+  "link_nuovi": 5,
+  "spettacoli_mancanti": 39,
+  "link_scritti": true
+ },
+ "songkick": {
+  "pagine": 12,
+  "concerti": 595,
+  "mancanti": 100
+ },
+ "errori": [],
+ "tolti_non_spettacoli": 2,
+ "candidati": [
+  {
+   "data": "2026-11-15",
+   "ora": "16:00",
+   "fino": "2026-11-15",
+   "titolo": "Dog Andrea Milano @ Centro esposizioni Leonardo Da VInci - Art Expo",
+   "artisti": [
+    "Dog Andrea Milano"
+   ],
+   "luogo": "Centro esposizioni Leonardo Da VInci - Art Expo",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43509691-dog-andrea-milano-at-centro-esposizioni-leonardo-da-vinci-art-expo?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-11-15",
+   "fino": "2026-11-18",
+   "ora": "n.d.",
+   "titolo": "Sister Act il Musical - Compagnia della Rancia",
+   "luogo": "Teatro Nazionale Italiana Assicurazioni",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/artist/sister-act-musical-compagnia-rancia/",
+   "genere": "Teatro/Musical",
+   "descrizione": "In scena il musical tratto dall'iconico film con Whoopi Goldberg.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2026-11-15",
+    "fino": "2026-11-18",
+    "ora": "n.d.",
+    "artista": "Sister Act il Musical - Compagnia della Rancia",
+    "luogo": "Teatro Nazionale Italiana Assicurazioni",
+    "citta": "Milano",
+    "genere": "Teatro",
+    "tipo": "Musical",
+    "rassegna": "",
+    "descrizione": "In scena il musical tratto dall'iconico film con Whoopi Goldberg.",
+    "fonte": "https://www.ticketone.it/artist/sister-act-musical-compagnia-rancia/",
+    "biglietti": "https://www.ticketone.it/artist/sister-act-musical-compagnia-rancia/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2026-11-15",
+   "fino": "2026-11-19",
+   "ora": "n.d.",
+   "titolo": "Tick tick... BOOM! STM Studio",
+   "luogo": "Teatro Arcimboldi",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/artist/tick-tick-boom/",
+   "genere": "Teatro/Musical",
+   "descrizione": "Opera in cui è possibile riconoscere la nascita delle intuizioni che avrebbero dato vita a Rent e rivoluzionato il teatro musicale.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2026-11-15",
+    "fino": "2026-11-19",
+    "ora": "n.d.",
+    "artista": "Tick tick... BOOM! STM Studio",
+    "luogo": "Teatro Arcimboldi",
+    "citta": "Milano",
+    "genere": "Teatro",
+    "tipo": "Musical",
+    "rassegna": "",
+    "descrizione": "Opera in cui è possibile riconoscere la nascita delle intuizioni che avrebbero dato vita a Rent e rivoluzionato il teatro musicale.",
+    "fonte": "https://www.ticketone.it/artist/tick-tick-boom/",
+    "biglietti": "https://www.ticketone.it/artist/tick-tick-boom/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2026-11-17",
+   "ora": "17:30",
+   "fino": "2026-11-17",
+   "titolo": "Albe @ Tempio del Futuro Perduto",
+   "artisti": [
+    "Albe",
+    "Anna Carol",
+    "bhadmari",
+    "Cali",
+    "S.O.A.P."
+   ],
+   "luogo": "Tempio del Futuro Perduto",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43509635-albe-at-tempio-del-futuro-perduto?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-11-17",
+   "ora": "21:00",
+   "fino": "2026-11-17",
+   "titolo": "coez @ Teatro Arcimboldi (Teatro degli Arcimboldi)",
+   "artisti": [
+    "coez"
+   ],
+   "luogo": "Teatro Arcimboldi (Teatro degli Arcimboldi)",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43235344-coez-at-teatro-arcimboldi?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-11-18",
+   "ora": "19:00",
+   "fino": "2026-11-18",
+   "titolo": "MILANOSPORT @ Detune",
+   "artisti": [
+    "MILANOSPORT"
+   ],
+   "luogo": "Detune",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43506665-milanosport-at-detune?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-11-18",
+   "fino": "2026-11-19",
+   "ora": "n.d.",
+   "titolo": "Moulin Rouge! Il Musical",
+   "luogo": "Il Sistina Chapiteau",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/artist/moulin-rouge-musical/",
+   "genere": "Teatro/Musical",
+   "descrizione": "Lo spettacolo che ha emozionato il mondo finalmente anche a Milano-Sesto San Giovanni.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2026-11-18",
+    "fino": "2026-11-19",
+    "ora": "n.d.",
+    "artista": "Moulin Rouge! Il Musical",
+    "luogo": "Il Sistina Chapiteau",
+    "citta": "Milano",
+    "genere": "Teatro",
+    "tipo": "Musical",
+    "rassegna": "",
+    "descrizione": "Lo spettacolo che ha emozionato il mondo finalmente anche a Milano-Sesto San Giovanni.",
+    "fonte": "https://www.ticketone.it/artist/moulin-rouge-musical/",
+    "biglietti": "https://www.ticketone.it/artist/moulin-rouge-musical/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2026-11-18",
+   "ora": "21:00",
+   "fino": "2026-11-18",
+   "titolo": "coez @ Teatro Arcimboldi (Teatro degli Arcimboldi)",
+   "artisti": [
+    "coez"
+   ],
+   "luogo": "Teatro Arcimboldi (Teatro degli Arcimboldi)",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43235345-coez-at-teatro-arcimboldi?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-11-19",
+   "fino": "2026-12-31",
+   "ora": "n.d.",
+   "titolo": "Angelo Pintus - Loro non sanno niente",
+   "luogo": "Teatro Arcimboldi",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/artist/angelo-pintus/angelo-pintus-loro-non-sanno-niente-3978842/",
+   "genere": "Teatro/Comicità",
+   "descrizione": "Dopo il grande successo di NABANA, in tour nei Palasport con oltre 150.000 biglietti venduti,\nAngelo Pintus torna a Teatro con uno spettacolo tutto nuovo.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2026-11-19",
+    "fino": "2026-12-31",
+    "ora": "n.d.",
+    "artista": "Angelo Pintus - Loro non sanno niente",
+    "luogo": "Teatro Arcimboldi",
+    "citta": "Milano",
+    "genere": "Teatro",
+    "tipo": "Comicità",
+    "rassegna": "",
+    "descrizione": "Dopo il grande successo di NABANA, in tour nei Palasport con oltre 150.000 biglietti venduti,\nAngelo Pintus torna a Teatro con uno spettacolo tutto nuovo.",
+    "fonte": "https://www.ticketone.it/artist/angelo-pintus/angelo-pintus-loro-non-sanno-niente-3978842/",
+    "biglietti": "https://www.ticketone.it/artist/angelo-pintus/angelo-pintus-loro-non-sanno-niente-3978842/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2026-11-19",
+   "ora": "19:00",
+   "fino": "2026-11-19",
+   "titolo": "Plástica @ Homis Record Store Bar",
+   "artisti": [
+    "Plástica",
+    "Camilla PNK"
+   ],
+   "luogo": "Homis Record Store Bar",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43506668-plastica-at-homis-record-store-bar?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-11-19",
+   "ora": "20:30",
+   "fino": "2026-11-19",
+   "titolo": "Rareș @ Fabbrica Del Vapore - Cattedrale",
+   "artisti": [
+    "Rareș",
+    "Mille",
+    "Eva Bloo"
+   ],
+   "luogo": "Fabbrica Del Vapore - Cattedrale",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43509317-rares-at-fabbrica-del-vapore-cattedrale?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-11-19",
+   "ora": "21:30",
+   "fino": "2026-11-19",
+   "titolo": "Samuel @ Cinema Teatro Wagner",
+   "artisti": [
+    "Samuel",
+    "Daiana Lou"
+   ],
+   "luogo": "Cinema Teatro Wagner",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43505335-samuel-at-cinema-teatro-wagner?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-11-20",
+   "ora": "22:30",
+   "fino": "2026-11-20",
+   "titolo": "Le Vibrazioni @ Cinema Teatro Wagner",
+   "artisti": [
+    "Le Vibrazioni"
+   ],
+   "luogo": "Cinema Teatro Wagner",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43512081-le-vibrazioni-at-cinema-teatro-wagner?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false,
+   "anche_su": [
+    "Songkick"
+   ]
+  },
+  {
+   "data": "2026-11-20",
+   "ora": "20:30",
+   "fino": "2026-11-20",
+   "titolo": "Margherita Vicario @ Fabbrica Del Vapore - Cattedrale",
+   "artisti": [
+    "Margherita Vicario",
+    "BIRTHH",
+    "Syria"
+   ],
+   "luogo": "Fabbrica Del Vapore - Cattedrale",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43509319-margherita-vicario-at-fabbrica-del-vapore-cattedrale?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-11-26",
+   "ora": "",
+   "fino": "2026-11-26",
+   "titolo": "Cocon Javel @ Exalge",
+   "artisti": [
+    "Cocon Javel"
+   ],
+   "luogo": "Exalge",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43516381-cocon-javel-at-exalge?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-02",
+   "ora": "20:30",
+   "fino": "2026-12-02",
+   "titolo": "Davide Van De Sfroos @ Teatro Condominio Vittorio Gasmann",
+   "artisti": [
+    "Davide Van De Sfroos"
+   ],
+   "luogo": "Teatro Condominio Vittorio Gasmann",
+   "comune": "Gallarate",
+   "url": "https://www.songkick.com/concerts/43321144-davide-van-de-sfroos-at-teatro-condominio-vittorio-gasmann?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-03",
+   "ora": "20:30",
+   "fino": "2026-12-03",
+   "titolo": "Davide Van De Sfroos @ Teatro Condominio Vittorio Gasmann",
+   "artisti": [
+    "Davide Van De Sfroos"
+   ],
+   "luogo": "Teatro Condominio Vittorio Gasmann",
+   "comune": "Gallarate",
+   "url": "https://www.songkick.com/concerts/43475685-davide-van-de-sfroos-at-teatro-condominio-vittorio-gasmann?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-04",
+   "ora": "22:00",
+   "fino": "2026-12-04",
+   "titolo": "Devon Rexi @ Biko",
+   "artisti": [
+    "Devon Rexi",
+    "Venerus",
+    "Physical Therapy"
+   ],
+   "luogo": "Biko",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43514251-devon-rexi-at-biko?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-05",
+   "fino": "2026-12-05",
+   "ora": "23:30",
+   "titolo": "2000 Mania",
+   "luogo": "Fabrique",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/2000-mania-fabrique-22404138/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Concerto.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2026-12-05",
+    "fino": "2026-12-05",
+    "ora": "23:30",
+    "artista": "2000 Mania",
+    "luogo": "Fabrique",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Concerto.",
+    "fonte": "https://www.ticketone.it/eventseries/2000-mania-4288361/",
+    "biglietti": "https://www.ticketone.it/event/2000-mania-fabrique-22404138/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2026-12-05",
+   "ora": "21:00",
+   "fino": "2026-12-05",
+   "titolo": "A NICE NOISE @ Biko",
+   "artisti": [
+    "A NICE NOISE"
+   ],
+   "luogo": "Biko",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43509356-a-nice-noise-at-biko?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-05",
+   "ora": "",
+   "fino": "2026-12-05",
+   "titolo": "da captain trips @ Spazio Pontano",
+   "artisti": [
+    "da captain trips",
+    "Ghostwound"
+   ],
+   "luogo": "Spazio Pontano",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43509498-da-captain-trips-at-spazio-pontano?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-07",
+   "ora": "19:00",
+   "fino": "2026-12-07",
+   "titolo": "Intrepid @ La Cripta Club",
+   "artisti": [
+    "Intrepid",
+    "Nile"
+   ],
+   "luogo": "La Cripta Club",
+   "comune": "Cusano Milanino",
+   "url": "https://www.songkick.com/concerts/43505233-intrepid-at-la-cripta-club?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-08",
+   "ora": "19:30",
+   "fino": "2026-12-08",
+   "titolo": "Dan Byrne @ Station Live Club",
+   "artisti": [
+    "Dan Byrne"
+   ],
+   "luogo": "Station Live Club",
+   "comune": "Paderno Dugnano",
+   "url": "https://www.songkick.com/concerts/43507051-dan-byrne-at-station-live-club?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-10",
+   "ora": "20:00",
+   "fino": "2026-12-10",
+   "titolo": "Ludovico Einaudi @ Teatro dal Verme",
+   "artisti": [
+    "Ludovico Einaudi"
+   ],
+   "luogo": "Teatro dal Verme",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43130382-ludovico-einaudi-at-teatro-dal-verme?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-11",
+   "ora": "21:00",
+   "fino": "2026-12-11",
+   "titolo": "Francesco De Gregori @ Teatro Out Off",
+   "artisti": [
+    "Francesco De Gregori"
+   ],
+   "luogo": "Teatro Out Off",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43189795-francesco-de-gregori-at-teatro-out-off?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-11",
+   "ora": "19:00",
+   "fino": "2026-12-11",
+   "titolo": "Geoff Tate @ La Cripta Club",
+   "artisti": [
+    "Geoff Tate",
+    "Inner Vitriol"
+   ],
+   "luogo": "La Cripta Club",
+   "comune": "Cusano Milanino",
+   "url": "https://www.songkick.com/concerts/43505235-geoff-tate-at-la-cripta-club?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-11",
+   "ora": "20:00",
+   "fino": "2026-12-11",
+   "titolo": "Ludovico Einaudi @ Teatro dal Verme",
+   "artisti": [
+    "Ludovico Einaudi"
+   ],
+   "luogo": "Teatro dal Verme",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43041080-ludovico-einaudi-at-teatro-dal-verme?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-11",
+   "fino": "2026-12-11",
+   "ora": "23:30",
+   "titolo": "SAMA’ ABDULHADI",
+   "luogo": "Magazzini Generali",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/sama-abdulhadi-magazzini-generali-22398829/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Concerto.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2026-12-11",
+    "fino": "2026-12-11",
+    "ora": "23:30",
+    "artista": "SAMA’ ABDULHADI",
+    "luogo": "Magazzini Generali",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Concerto.",
+    "fonte": "https://www.ticketone.it/eventseries/sama-abdulhadi-4287346/",
+    "biglietti": "https://www.ticketone.it/event/sama-abdulhadi-magazzini-generali-22398829/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2026-12-12",
+   "ora": "21:00",
+   "fino": "2026-12-12",
+   "titolo": "Bee Bee Sea @ Biko",
+   "artisti": [
+    "Bee Bee Sea",
+    "Siouxie & the Skunks"
+   ],
+   "luogo": "Biko",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43512117-bee-bee-sea-at-biko?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-12",
+   "ora": "21:00",
+   "fino": "2026-12-12",
+   "titolo": "Francesco De Gregori @ Teatro Out Off",
+   "artisti": [
+    "Francesco De Gregori"
+   ],
+   "luogo": "Teatro Out Off",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43189796-francesco-de-gregori-at-teatro-out-off?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-12",
+   "ora": "20:00",
+   "fino": "2026-12-12",
+   "titolo": "Ludovico Einaudi @ Teatro dal Verme",
+   "artisti": [
+    "Ludovico Einaudi"
+   ],
+   "luogo": "Teatro dal Verme",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43041083-ludovico-einaudi-at-teatro-dal-verme?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-13",
+   "ora": "17:45",
+   "fino": "2026-12-13",
+   "titolo": "Ensemble Symphony Orchestra @ Teatro Giuditta Pasta",
+   "artisti": [
+    "Ensemble Symphony Orchestra"
+   ],
+   "luogo": "Teatro Giuditta Pasta",
+   "comune": "Saronno",
+   "url": "https://www.songkick.com/concerts/43478344-ensemble-symphony-orchestra-at-teatro-giuditta-pasta?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-13",
+   "ora": "21:00",
+   "fino": "2026-12-13",
+   "titolo": "Francesco De Gregori @ Teatro Out Off",
+   "artisti": [
+    "Francesco De Gregori"
+   ],
+   "luogo": "Teatro Out Off",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43189797-francesco-de-gregori-at-teatro-out-off?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-13",
+   "ora": "20:00",
+   "fino": "2026-12-13",
+   "titolo": "Ludovico Einaudi @ Teatro dal Verme",
+   "artisti": [
+    "Ludovico Einaudi"
+   ],
+   "luogo": "Teatro dal Verme",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43041090-ludovico-einaudi-at-teatro-dal-verme?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-15",
+   "ora": "21:00",
+   "fino": "2026-12-15",
+   "titolo": "Francesco De Gregori @ Teatro Out Off",
+   "artisti": [
+    "Francesco De Gregori"
+   ],
+   "luogo": "Teatro Out Off",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43189798-francesco-de-gregori-at-teatro-out-off?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-15",
+   "ora": "20:00",
+   "fino": "2026-12-15",
+   "titolo": "Ludovico Einaudi @ Teatro dal Verme",
+   "artisti": [
+    "Ludovico Einaudi"
+   ],
+   "luogo": "Teatro dal Verme",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43417848-ludovico-einaudi-at-teatro-dal-verme?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-16",
+   "ora": "21:00",
+   "fino": "2026-12-16",
+   "titolo": "Francesco De Gregori @ Teatro Out Off",
+   "artisti": [
+    "Francesco De Gregori"
+   ],
+   "luogo": "Teatro Out Off",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43238375-francesco-de-gregori-at-teatro-out-off?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-16",
+   "ora": "20:00",
+   "fino": "2026-12-16",
+   "titolo": "Ludovico Einaudi @ Teatro dal Verme",
+   "artisti": [
+    "Ludovico Einaudi"
+   ],
+   "luogo": "Teatro dal Verme",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43343837-ludovico-einaudi-at-teatro-dal-verme?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-18",
+   "ora": "20:30",
+   "fino": "2026-12-18",
+   "titolo": "Davide Van De Sfroos @ Teatro Manzoni",
+   "artisti": [
+    "Davide Van De Sfroos"
+   ],
+   "luogo": "Teatro Manzoni",
+   "comune": "Monza",
+   "url": "https://www.songkick.com/concerts/43343907-davide-van-de-sfroos-at-teatro-manzoni?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-18",
+   "ora": "21:00",
+   "fino": "2026-12-18",
+   "titolo": "Francesco De Gregori @ Teatro Out Off",
+   "artisti": [
+    "Francesco De Gregori"
+   ],
+   "luogo": "Teatro Out Off",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43238376-francesco-de-gregori-at-teatro-out-off?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-18",
+   "ora": "20:30",
+   "fino": "2026-12-18",
+   "titolo": "Il Mago Del Gelato @ Allo Sbagliato - Teatro Principe",
+   "artisti": [
+    "Il Mago Del Gelato",
+    "Adi Oasis"
+   ],
+   "luogo": "Allo Sbagliato - Teatro Principe",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43516971-il-mago-del-gelato-at-allo-sbagliato-teatro-principe?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-19",
+   "ora": "21:00",
+   "fino": "2026-12-19",
+   "titolo": "Francesco De Gregori @ Teatro Out Off",
+   "artisti": [
+    "Francesco De Gregori"
+   ],
+   "luogo": "Teatro Out Off",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43238377-francesco-de-gregori-at-teatro-out-off?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-19",
+   "ora": "",
+   "fino": "2026-12-19",
+   "titolo": "KOKADAME @ Circolo Anarchico Ponte Della Ghisolfa",
+   "artisti": [
+    "KOKADAME"
+   ],
+   "luogo": "Circolo Anarchico Ponte Della Ghisolfa",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43506068-kokadame-at-circolo-anarchico-ponte-della-ghisolfa?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-20",
+   "ora": "21:00",
+   "fino": "2026-12-20",
+   "titolo": "Francesco De Gregori @ Teatro Out Off",
+   "artisti": [
+    "Francesco De Gregori"
+   ],
+   "luogo": "Teatro Out Off",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43238378-francesco-de-gregori-at-teatro-out-off?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-22",
+   "ora": "21:00",
+   "fino": "2026-12-22",
+   "titolo": "Francesco De Gregori @ Teatro Out Off",
+   "artisti": [
+    "Francesco De Gregori"
+   ],
+   "luogo": "Teatro Out Off",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43238379-francesco-de-gregori-at-teatro-out-off?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-01-08",
+   "ora": "22:00",
+   "fino": "2027-01-08",
+   "titolo": "Bassolino @ Arci Bellezza",
+   "artisti": [
+    "Bassolino"
+   ],
+   "luogo": "Arci Bellezza",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43509924-bassolino-at-arci-bellezza?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-01-14",
+   "ora": "20:00",
+   "fino": "2027-01-14",
+   "titolo": "Rareș @ Magazzini Generali",
+   "artisti": [
+    "Rareș"
+   ],
+   "luogo": "Magazzini Generali",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43514278-rares-at-magazzini-generali?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-01-15",
+   "ora": "20:00",
+   "fino": "2027-01-15",
+   "titolo": "JazzMi 2027 @ Teatro dal Verme",
+   "artisti": [
+    "Erykah Badu"
+   ],
+   "luogo": "Teatro dal Verme",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/festivals/1685889-jazzmi/id/43509149-jazzmi-2027?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-01-20",
+   "ora": "20:00",
+   "fino": "2027-01-20",
+   "titolo": "Rareș @ Magazzini Generali",
+   "artisti": [
+    "Rareș"
+   ],
+   "luogo": "Magazzini Generali",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43516250-rares-at-magazzini-generali?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-01-21",
+   "ora": "20:30",
+   "fino": "2027-01-21",
+   "titolo": "Satantango @ Arci Bellezza",
+   "artisti": [
+    "Satantango"
+   ],
+   "luogo": "Arci Bellezza",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43509373-satantango-at-arci-bellezza?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-01-21",
+   "fino": "2027-01-24",
+   "ora": "n.d.",
+   "titolo": "The Zen Circus",
+   "luogo": "Santeria Toscana 31",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/artist/the-zen-circus/",
+   "genere": "Pop e altra musica",
+   "descrizione": "La band torna in tour nei primi mesi del 2027 nei club italiani.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-01-21",
+    "fino": "2027-01-24",
+    "ora": "n.d.",
+    "artista": "The Zen Circus",
+    "luogo": "Santeria Toscana 31",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "La band torna in tour nei primi mesi del 2027 nei club italiani.",
+    "fonte": "https://www.ticketone.it/artist/the-zen-circus/",
+    "biglietti": "https://www.ticketone.it/artist/the-zen-circus/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   },
+   "anche_su": [
+    "Songkick"
+   ]
+  },
+  {
+   "data": "2027-01-23",
+   "ora": "",
+   "fino": "2027-01-23",
+   "titolo": "Pauli Pocket @ Masada",
+   "artisti": [
+    "Pauli Pocket"
+   ],
+   "luogo": "Masada",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43505444-pauli-pocket-at-masada?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-01-24",
+   "fino": "2027-01-24",
+   "ora": "21:00",
+   "titolo": "Flora Canto - Me la Canto e me la Sogno... ancora!",
+   "luogo": "Teatro Lirico Giorgio Gaber",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/flora-canto-me-la-canto-e-me-la-sogno-ancora-teatro-lirico-giorgio-gaber-22390708/",
+   "genere": "Teatro/Musical",
+   "descrizione": "Annunciate nuove date a Milano e Roma.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-01-24",
+    "fino": "2027-01-24",
+    "ora": "21:00",
+    "artista": "Flora Canto - Me la Canto e me la Sogno... ancora!",
+    "luogo": "Teatro Lirico Giorgio Gaber",
+    "citta": "Milano",
+    "genere": "Teatro",
+    "tipo": "Musical",
+    "rassegna": "",
+    "descrizione": "Annunciate nuove date a Milano e Roma.",
+    "fonte": "https://www.ticketone.it/artist/flora-canto/",
+    "biglietti": "https://www.ticketone.it/event/flora-canto-me-la-canto-e-me-la-sogno-ancora-teatro-lirico-giorgio-gaber-22390708/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-01-24",
+   "ora": "20:30",
+   "fino": "2027-01-24",
+   "titolo": "Rebecca Ferguson @ Teatro Condominio Vittorio Gasmann",
+   "artisti": [
+    "Rebecca Ferguson"
+   ],
+   "luogo": "Teatro Condominio Vittorio Gasmann",
+   "comune": "Gallarate",
+   "url": "https://www.songkick.com/concerts/43475726-rebecca-ferguson-at-teatro-condominio-vittorio-gasmann?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-01-29",
+   "ora": "20:30",
+   "fino": "2027-01-29",
+   "titolo": "apple sauce @ Station Live Club",
+   "artisti": [
+    "apple sauce"
+   ],
+   "luogo": "Station Live Club",
+   "comune": "Paderno Dugnano",
+   "url": "https://www.songkick.com/concerts/43509381-apple-sauce-at-station-live-club?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-01-31",
+   "ora": "20:00",
+   "fino": "2027-01-31",
+   "titolo": "Adri @ Circolo Magnolia (Indoor)",
+   "artisti": [
+    "Adri"
+   ],
+   "luogo": "Circolo Magnolia (Indoor)",
+   "comune": "Segrate",
+   "url": "https://www.songkick.com/concerts/43514292-adri-at-circolo-magnolia?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-02-01",
+   "ora": "20:00",
+   "fino": "2027-02-01",
+   "titolo": "U.D.O. @ Magazzini Generali",
+   "artisti": [
+    "U.D.O."
+   ],
+   "luogo": "Magazzini Generali",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43189761-udo-at-magazzini-generali?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-02-03",
+   "ora": "21:00",
+   "fino": "2027-02-03",
+   "titolo": "Franco Ricciardi @ Teatro Manzoni",
+   "artisti": [
+    "Franco Ricciardi"
+   ],
+   "luogo": "Teatro Manzoni",
+   "comune": "Monza",
+   "url": "https://www.songkick.com/concerts/43457142-franco-ricciardi-at-teatro-manzoni?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-02-06",
+   "ora": "20:30",
+   "fino": "2027-02-06",
+   "titolo": "QUEENMANIA @ Teatro Condominio Vittorio Gasmann",
+   "artisti": [
+    "QUEENMANIA"
+   ],
+   "luogo": "Teatro Condominio Vittorio Gasmann",
+   "comune": "Gallarate",
+   "url": "https://www.songkick.com/concerts/43240870-queenmania-at-teatro-condominio-vittorio-gasmann?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-02-08",
+   "ora": "21:00",
+   "fino": "2027-02-08",
+   "titolo": "Cosmo @ Alcatraz Milano",
+   "artisti": [
+    "Cosmo"
+   ],
+   "luogo": "Alcatraz Milano",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43506744-cosmo-at-alcatraz-milano?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-02-13",
+   "ora": "20:30",
+   "fino": "2027-02-13",
+   "titolo": "Abba Dream @ Teatro Condominio Vittorio Gasmann",
+   "artisti": [
+    "Abba Dream"
+   ],
+   "luogo": "Teatro Condominio Vittorio Gasmann",
+   "comune": "Gallarate",
+   "url": "https://www.songkick.com/concerts/43254773-abba-dream-at-teatro-condominio-vittorio-gasmann?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-02-16",
+   "fino": "2027-02-16",
+   "ora": "21:00",
+   "titolo": "Marta e Gianluca - Io e Gianlu",
+   "luogo": "Teatro Arcimboldi",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/marta-e-gianluca-io-e-gianlu-tam-teatro-arcimboldi-milano-22328604/",
+   "genere": "Teatro/Prosa",
+   "descrizione": "Un racconto di due attori comici che cercano amore e trovano solo amicizia.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-02-16",
+    "fino": "2027-02-16",
+    "ora": "21:00",
+    "artista": "Marta e Gianluca - Io e Gianlu",
+    "luogo": "Teatro Arcimboldi",
+    "citta": "Milano",
+    "genere": "Teatro",
+    "tipo": "Prosa",
+    "rassegna": "",
+    "descrizione": "Un racconto di due attori comici che cercano amore e trovano solo amicizia.",
+    "fonte": "https://www.ticketone.it/artist/marta-gianluca/",
+    "biglietti": "https://www.ticketone.it/event/marta-e-gianluca-io-e-gianlu-tam-teatro-arcimboldi-milano-22328604/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-02-18",
+   "ora": "20:30",
+   "fino": "2027-02-18",
+   "titolo": "СОЮЗ @ Arci Bellezza",
+   "artisti": [
+    "СОЮЗ"
+   ],
+   "luogo": "Arci Bellezza",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43413690-soiuz-at-arci-bellezza?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-02-20",
+   "ora": "21:00",
+   "fino": "2027-02-20",
+   "titolo": "LIVEPLAY - COLDPLAY EXPERIENCE @ Teatro PIME",
+   "artisti": [
+    "LIVEPLAY - COLDPLAY EXPERIENCE"
+   ],
+   "luogo": "Teatro PIME",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43509151-liveplay-coldplay-experience-at-teatro-pime?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-02-21",
+   "ora": "21:00",
+   "fino": "2027-02-21",
+   "titolo": "Drupi @ Teatro Manzoni",
+   "artisti": [
+    "Drupi"
+   ],
+   "luogo": "Teatro Manzoni",
+   "comune": "Monza",
+   "url": "https://www.songkick.com/concerts/43423979-drupi-at-teatro-manzoni?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-02-23",
+   "ora": "20:45",
+   "fino": "2027-02-23",
+   "titolo": "Fabio Concato @ Teatro Manzoni",
+   "artisti": [
+    "Fabio Concato"
+   ],
+   "luogo": "Teatro Manzoni",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43341859-fabio-concato-at-teatro-manzoni?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-02-24",
+   "ora": "",
+   "fino": "2027-02-24",
+   "titolo": "Hugo Russo @ Arci Bellezza",
+   "artisti": [
+    "Hugo Russo"
+   ],
+   "luogo": "Arci Bellezza",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43514869-hugo-russo-at-arci-bellezza?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-02-26",
+   "fino": "2027-02-27",
+   "ora": "n.d.",
+   "titolo": "Alessandro Siani - Viva Voce \"Nuovo Spettacolo\"",
+   "luogo": "Teatro Arcimboldi",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/artist/alessandrosiani/",
+   "genere": "Teatro/Prosa",
+   "descrizione": "Alessandro Siani torna in scena con uno spettacolo in cui dice tutto quello che pensa su social, relazioni e politica.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-02-26",
+    "fino": "2027-02-27",
+    "ora": "n.d.",
+    "artista": "Alessandro Siani - Viva Voce \"Nuovo Spettacolo\"",
+    "luogo": "Teatro Arcimboldi",
+    "citta": "Milano",
+    "genere": "Teatro",
+    "tipo": "Prosa",
+    "rassegna": "",
+    "descrizione": "Alessandro Siani torna in scena con uno spettacolo in cui dice tutto quello che pensa su social, relazioni e politica.",
+    "fonte": "https://www.ticketone.it/artist/alessandrosiani/",
+    "biglietti": "https://www.ticketone.it/artist/alessandrosiani/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-02-26",
+   "ora": "21:00",
+   "fino": "2027-02-26",
+   "titolo": "Eugenio Finardi @ Teatro Manzoni",
+   "artisti": [
+    "Eugenio Finardi"
+   ],
+   "luogo": "Teatro Manzoni",
+   "comune": "Monza",
+   "url": "https://www.songkick.com/concerts/43490348-eugenio-finardi-at-teatro-manzoni?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-02-26",
+   "ora": "",
+   "fino": "2027-02-26",
+   "titolo": "Meganoidi @ Tambourine",
+   "artisti": [
+    "Meganoidi"
+   ],
+   "luogo": "Tambourine",
+   "comune": "Seregno",
+   "url": "https://www.songkick.com/concerts/43444221-meganoidi-at-tambourine?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-02-27",
+   "ora": "23:00",
+   "fino": "2027-02-27",
+   "titolo": "Adrian Mills @ Alcatraz Milano",
+   "artisti": [
+    "Adrian Mills"
+   ],
+   "luogo": "Alcatraz Milano",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43508658-adrian-mills-at-alcatraz-milano?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-03-02",
+   "fino": "2027-03-02",
+   "ora": "21:00",
+   "titolo": "Basht",
+   "luogo": "Circolo Magnolia",
+   "comune": "Segrate",
+   "url": "https://www.ticketone.it/event/basht-basht-circolo-magnolia-22068691/",
+   "genere": "Pop e altra musica",
+   "descrizione": "La band più acclamata della nuova scena alternative rock arriva in Italia.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-03-02",
+    "fino": "2027-03-02",
+    "ora": "21:00",
+    "artista": "Basht",
+    "luogo": "Circolo Magnolia",
+    "citta": "Segrate",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "La band più acclamata della nuova scena alternative rock arriva in Italia.",
+    "fonte": "https://www.ticketone.it/artist/basht/",
+    "biglietti": "https://www.ticketone.it/event/basht-basht-circolo-magnolia-22068691/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   },
+   "anche_su": [
+    "Songkick"
+   ]
+  },
+  {
+   "data": "2027-03-05",
+   "ora": "21:00",
+   "fino": "2027-03-05",
+   "titolo": "Fabio Concato @ Teatro La Fabbrica",
+   "artisti": [
+    "Fabio Concato"
+   ],
+   "luogo": "Teatro La Fabbrica",
+   "comune": "Villadossola",
+   "url": "https://www.songkick.com/concerts/43383958-fabio-concato-at-teatro-la-fabbrica?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-03-06",
+   "fino": "2027-03-06",
+   "ora": "21:00",
+   "titolo": "Eiffel 65 & Friends",
+   "luogo": "Fabrique",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/eiffel-65-friends-fabrique-22395262/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Concerto.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-03-06",
+    "fino": "2027-03-06",
+    "ora": "21:00",
+    "artista": "Eiffel 65 & Friends",
+    "luogo": "Fabrique",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Concerto.",
+    "fonte": "https://www.ticketone.it/eventseries/eiffel-65-friends-4287016/",
+    "biglietti": "https://www.ticketone.it/event/eiffel-65-friends-fabrique-22395262/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   },
+   "anche_su": [
+    "Songkick"
+   ]
+  },
+  {
+   "data": "2027-03-06",
+   "fino": "2027-03-06",
+   "ora": "n.d.",
+   "titolo": "Masters of Dirt - Freestyle 100",
+   "luogo": "Unipol Dome",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/artist/master-of-dirt/",
+   "genere": "Teatro/Musical",
+   "descrizione": "Nel 2027 Masters of Dirt porta tutto a un livello superiore.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-03-06",
+    "fino": "2027-03-06",
+    "ora": "n.d.",
+    "artista": "Masters of Dirt - Freestyle 100",
+    "luogo": "Unipol Dome",
+    "citta": "Milano",
+    "genere": "Teatro",
+    "tipo": "Musical",
+    "rassegna": "",
+    "descrizione": "Nel 2027 Masters of Dirt porta tutto a un livello superiore.",
+    "fonte": "https://www.ticketone.it/artist/master-of-dirt/",
+    "biglietti": "https://www.ticketone.it/artist/master-of-dirt/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-03-11",
+   "ora": "21:00",
+   "fino": "2027-03-11",
+   "titolo": "Corrado Rustici @ Spazio Teatro 89",
+   "artisti": [
+    "Corrado Rustici"
+   ],
+   "luogo": "Spazio Teatro 89",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43506760-corrado-rustici-at-spazio-teatro-89?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-03-14",
+   "ora": "18:30",
+   "fino": "2027-03-14",
+   "titolo": "Tara Clerkin Trio @ Spazio Teatro 89",
+   "artisti": [
+    "Tara Clerkin Trio"
+   ],
+   "luogo": "Spazio Teatro 89",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43516292-tara-clerkin-trio-at-spazio-teatro-89?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-03-18",
+   "ora": "19:30",
+   "fino": "2027-03-18",
+   "titolo": "The Wild Wild @ Fabrique",
+   "artisti": [
+    "The Wild Wild"
+   ],
+   "luogo": "Fabrique",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43507439-wild-wild-at-fabrique?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-03-19",
+   "fino": "2027-03-20",
+   "ora": "n.d.",
+   "titolo": "INCANTI",
+   "luogo": "Teatro Lirico Giorgio Gaber",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/artist/incanti/",
+   "genere": "Teatro/Musical",
+   "descrizione": "INCANTI porta sul palco l’illusionismo del XXI secolo.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-03-19",
+    "fino": "2027-03-20",
+    "ora": "n.d.",
+    "artista": "INCANTI",
+    "luogo": "Teatro Lirico Giorgio Gaber",
+    "citta": "Milano",
+    "genere": "Teatro",
+    "tipo": "Musical",
+    "rassegna": "",
+    "descrizione": "INCANTI porta sul palco l’illusionismo del XXI secolo.",
+    "fonte": "https://www.ticketone.it/artist/incanti/",
+    "biglietti": "https://www.ticketone.it/artist/incanti/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-03-21",
+   "ora": "22:00",
+   "fino": "2027-03-21",
+   "titolo": "Funky Times @ Blue Note Milano",
+   "artisti": [
+    "Funky Times"
+   ],
+   "luogo": "Blue Note Milano",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43510128-funky-times-at-blue-note-milano?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-03-23",
+   "ora": "20:45",
+   "fino": "2027-03-23",
+   "titolo": "Elio @ Teatro Manzoni",
+   "artisti": [
+    "Elio"
+   ],
+   "luogo": "Teatro Manzoni",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43341863-elio-at-teatro-manzoni?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-03-23",
+   "fino": "2027-03-23",
+   "ora": "21:00",
+   "titolo": "Jazzbois",
+   "luogo": "Circolo Magnolia",
+   "comune": "Segrate",
+   "url": "https://www.ticketone.it/event/jazzbois-circolo-magnolia-22327105/",
+   "genere": "Pop e altra musica",
+   "descrizione": "L'elettrizzante trio ungherese Jazzbois torna in Italia.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-03-23",
+    "fino": "2027-03-23",
+    "ora": "21:00",
+    "artista": "Jazzbois",
+    "luogo": "Circolo Magnolia",
+    "citta": "Segrate",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "L'elettrizzante trio ungherese Jazzbois torna in Italia.",
+    "fonte": "https://www.ticketone.it/artist/jazzbois/",
+    "biglietti": "https://www.ticketone.it/event/jazzbois-circolo-magnolia-22327105/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   },
+   "anche_su": [
+    "Songkick"
+   ]
+  },
+  {
+   "data": "2027-03-25",
+   "ora": "20:30",
+   "fino": "2027-03-25",
+   "titolo": "P.F.M. @ Teatro Lirico Giorgio Gaber",
+   "artisti": [
+    "P.F.M."
+   ],
+   "luogo": "Teatro Lirico Giorgio Gaber",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43349147-pfm-at-teatro-lirico-giorgio-gaber?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-03-26",
+   "fino": "2027-03-26",
+   "ora": "21:00",
+   "titolo": "Chase Matthew",
+   "luogo": "Santeria Toscana 31",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/chase-matthew-santeria-toscana-31-22394240/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Chase Matthew, la nuova voce della country music americana, arriva live in Italia.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-03-26",
+    "fino": "2027-03-26",
+    "ora": "21:00",
+    "artista": "Chase Matthew",
+    "luogo": "Santeria Toscana 31",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Chase Matthew, la nuova voce della country music americana, arriva live in Italia.",
+    "fonte": "https://www.ticketone.it/artist/chase-matthew/",
+    "biglietti": "https://www.ticketone.it/event/chase-matthew-santeria-toscana-31-22394240/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   },
+   "anche_su": [
+    "Songkick"
+   ]
+  },
+  {
+   "data": "2027-03-26",
+   "ora": "20:00",
+   "fino": "2027-03-26",
+   "titolo": "No Face No Case @ Legend Club",
+   "artisti": [
+    "No Face No Case"
+   ],
+   "luogo": "Legend Club",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43514330-no-face-no-case-at-legend-club?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-03-30",
+   "fino": "2027-03-30",
+   "ora": "21:00",
+   "titolo": "Subsonica a Teatro",
+   "luogo": "Teatro Arcimboldi",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/subsonica-a-teatro-tam-teatro-arcimboldi-milano-22395163/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Annunciato il tour nei teatri.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-03-30",
+    "fino": "2027-03-30",
+    "ora": "21:00",
+    "artista": "Subsonica a Teatro",
+    "luogo": "Teatro Arcimboldi",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Annunciato il tour nei teatri.",
+    "fonte": "https://www.ticketone.it/artist/subsonica/",
+    "biglietti": "https://www.ticketone.it/event/subsonica-a-teatro-tam-teatro-arcimboldi-milano-22395163/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   },
+   "anche_su": [
+    "Songkick"
+   ]
+  },
+  {
+   "data": "2027-04-10",
+   "ora": "19:30",
+   "fino": "2027-04-10",
+   "titolo": "Marty Friedman @ Legend Club",
+   "artisti": [
+    "Marty Friedman"
+   ],
+   "luogo": "Legend Club",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43503846-marty-friedman-at-legend-club?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-04-14",
+   "ora": "21:00",
+   "fino": "2027-04-14",
+   "titolo": "Mille @ Alcatraz Milano",
+   "artisti": [
+    "Mille"
+   ],
+   "luogo": "Alcatraz Milano",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43506965-mille-at-alcatraz-milano?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-04-14",
+   "fino": "2027-04-14",
+   "ora": "21:00",
+   "titolo": "Mille al Superclub",
+   "luogo": "Alcatraz",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/mille-al-superclub-alcatraz-22332360/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Annunciato il primo concerto all'Alcatraz di Milano.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-04-14",
+    "fino": "2027-04-14",
+    "ora": "21:00",
+    "artista": "Mille al Superclub",
+    "luogo": "Alcatraz",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Annunciato il primo concerto all'Alcatraz di Milano.",
+    "fonte": "https://www.ticketone.it/artist/mille/",
+    "biglietti": "https://www.ticketone.it/event/mille-al-superclub-alcatraz-22332360/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-04-22",
+   "ora": "20:30",
+   "fino": "2027-04-22",
+   "titolo": "Cowboy Hunters @ Arci Bellezza",
+   "artisti": [
+    "Cowboy Hunters"
+   ],
+   "luogo": "Arci Bellezza",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43509066-cowboy-hunters-at-arci-bellezza?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-04-24",
+   "ora": "18:30",
+   "fino": "2027-04-24",
+   "titolo": "Revocation @ Legend Club",
+   "artisti": [
+    "Revocation",
+    "Defeated Sanity",
+    "Gorod",
+    "Carnosus"
+   ],
+   "luogo": "Legend Club",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43512157-revocation-at-legend-club?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-05-07",
+   "ora": "20:30",
+   "fino": "2027-05-07",
+   "titolo": "Fabio Concato @ Teatro Condominio Vittorio Gasmann",
+   "artisti": [
+    "Fabio Concato"
+   ],
+   "luogo": "Teatro Condominio Vittorio Gasmann",
+   "comune": "Gallarate",
+   "url": "https://www.songkick.com/concerts/43187389-fabio-concato-at-teatro-condominio-vittorio-gasmann?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-05-14",
+   "fino": "2027-05-14",
+   "ora": "n.d.",
+   "titolo": "Elodie - Palasport 2027",
+   "luogo": "Unipol Forum",
+   "comune": "Assago",
+   "url": "https://www.ticketone.it/artist/elodie/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Concerto.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-05-14",
+    "fino": "2027-05-14",
+    "ora": "n.d.",
+    "artista": "Elodie - Palasport 2027",
+    "luogo": "Unipol Forum",
+    "citta": "Assago",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Concerto.",
+    "fonte": "https://www.ticketone.it/artist/elodie/",
+    "biglietti": "https://www.ticketone.it/artist/elodie/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-05-14",
+   "ora": "19:00",
+   "fino": "2027-05-14",
+   "titolo": "Elodie @ Unipol Forum",
+   "artisti": [
+    "Elodie"
+   ],
+   "luogo": "Unipol Forum",
+   "comune": "Assago",
+   "url": "https://www.songkick.com/concerts/43495432-elodie-at-unipol-forum?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-05-17",
+   "ora": "21:30",
+   "fino": "2027-05-17",
+   "titolo": "Naima Bock @ Arci Bellezza",
+   "artisti": [
+    "Naima Bock"
+   ],
+   "luogo": "Arci Bellezza",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43509228-naima-bock-at-arci-bellezza?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-05-21",
+   "fino": "2027-05-21",
+   "ora": "20:30",
+   "titolo": "Fall Out Boy",
+   "luogo": "Unipol Forum",
+   "comune": "Assago",
+   "url": "https://www.ticketone.it/event/fall-out-boy-unipol-forum-22374605/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Annunciato il tour \"Twilight of the Punks\" e una data in Italia.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-05-21",
+    "fino": "2027-05-21",
+    "ora": "20:30",
+    "artista": "Fall Out Boy",
+    "luogo": "Unipol Forum",
+    "citta": "Assago",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Annunciato il tour \"Twilight of the Punks\" e una data in Italia.",
+    "fonte": "https://www.ticketone.it/artist/fall-out-boy/",
+    "biglietti": "https://www.ticketone.it/event/fall-out-boy-unipol-forum-22374605/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   },
+   "anche_su": [
+    "Songkick"
+   ]
+  },
+  {
+   "data": "2027-05-30",
+   "fino": "2027-05-30",
+   "ora": "21:00",
+   "titolo": "Noga Erez",
+   "luogo": "Alcatraz",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/noga-erez-alcatraz-22400049/",
+   "genere": "Jazz",
+   "descrizione": "Concerto.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-05-30",
+    "fino": "2027-05-30",
+    "ora": "21:00",
+    "artista": "Noga Erez",
+    "luogo": "Alcatraz",
+    "citta": "Milano",
+    "genere": "Jazz",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Concerto.",
+    "fonte": "https://www.ticketone.it/eventseries/noga-erez-4287461/",
+    "biglietti": "https://www.ticketone.it/event/noga-erez-alcatraz-22400049/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   },
+   "anche_su": [
+    "Songkick"
+   ]
+  },
+  {
+   "data": "2027-06-14",
+   "ora": "",
+   "fino": "2027-06-14",
+   "titolo": "Angine de Poitrine @ Circolo Magnolia (Indoor)",
+   "artisti": [
+    "Angine de Poitrine"
+   ],
+   "luogo": "Circolo Magnolia (Indoor)",
+   "comune": "Segrate",
+   "url": "https://www.songkick.com/concerts/43505424-angine-de-poitrine-at-circolo-magnolia?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-06-16",
+   "ora": "19:00",
+   "fino": "2027-06-16",
+   "titolo": "Motionless In White @ Kozel Carroponte",
+   "artisti": [
+    "Motionless In White",
+    "Wage War",
+    "Silverstein",
+    "Currents",
+    "Holding Absence"
+   ],
+   "luogo": "Kozel Carroponte",
+   "comune": "Sesto San Giovanni",
+   "url": "https://www.songkick.com/concerts/43503610-motionless-in-white-at-kozel-carroponte?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-06-25",
+   "fino": "2027-06-25",
+   "ora": "n.d.",
+   "titolo": "Olly - Stadi 2027",
+   "luogo": "Stadio San Siro",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/artist/olly/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Raddoppia a grande richiesta la data di Milano.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-06-25",
+    "fino": "2027-06-25",
+    "ora": "n.d.",
+    "artista": "Olly - Stadi 2027",
+    "luogo": "Stadio San Siro",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Raddoppia a grande richiesta la data di Milano.",
+    "fonte": "https://www.ticketone.it/artist/olly/",
+    "biglietti": "https://www.ticketone.it/artist/olly/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-06-25",
+   "ora": "20:30",
+   "fino": "2027-06-25",
+   "titolo": "Olly @ Stadio San Siro",
+   "artisti": [
+    "Olly"
+   ],
+   "luogo": "Stadio San Siro",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43496817-olly-at-stadio-san-siro?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-07-04",
+   "fino": "2027-07-04",
+   "ora": "16:00",
+   "titolo": "Noah Kahan",
+   "luogo": "Ippodromo SNAI San Siro",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/noah-kahan-ippodromo-snai-san-siro-22395656/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Annunciata una data nell'ambito di I-Days Milano.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-07-04",
+    "fino": "2027-07-04",
+    "ora": "16:00",
+    "artista": "Noah Kahan",
+    "luogo": "Ippodromo SNAI San Siro",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Annunciata una data nell'ambito di I-Days Milano.",
+    "fonte": "https://www.ticketone.it/artist/noah-kahan/",
+    "biglietti": "https://www.ticketone.it/event/noah-kahan-ippodromo-snai-san-siro-22395656/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   },
+   "anche_su": [
+    "Songkick"
+   ]
+  },
+  {
+   "data": "2027-07-09",
+   "fino": "2027-07-09",
+   "ora": "19:30",
+   "titolo": "U2",
+   "luogo": "Stadio San Siro",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/u2-stadio-san-siro-22374097/",
+   "genere": "Pop e altra musica",
+   "descrizione": "A grande richiesta, aggiunta una terza data allo Stadio San Siro di Milano il 9 luglio 2027.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-07-09",
+    "fino": "2027-07-09",
+    "ora": "19:30",
+    "artista": "U2",
+    "luogo": "Stadio San Siro",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "A grande richiesta, aggiunta una terza data allo Stadio San Siro di Milano il 9 luglio 2027.",
+    "fonte": "https://www.ticketone.it/artist/u2/",
+    "biglietti": "https://www.ticketone.it/event/u2-stadio-san-siro-22374097/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-07-09",
+   "ora": "19:30",
+   "fino": "2027-07-09",
+   "titolo": "Wolf Alice @ San Siro",
+   "artisti": [
+    "Wolf Alice"
+   ],
+   "luogo": "San Siro",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43504243-wolf-alice-at-san-siro?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-07-13",
+   "fino": "2027-07-13",
+   "ora": "21:00",
+   "titolo": "Limp Bizkit",
+   "luogo": "Fiera Milano Live",
+   "comune": "Rho",
+   "url": "https://www.ticketone.it/event/limp-bizkit-fiera-milano-live-22404996/",
+   "genere": "Pop e altra musica",
+   "descrizione": "I Limp Bizkit tornano in Italia.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-07-13",
+    "fino": "2027-07-13",
+    "ora": "21:00",
+    "artista": "Limp Bizkit",
+    "luogo": "Fiera Milano Live",
+    "citta": "Rho",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "I Limp Bizkit tornano in Italia.",
+    "fonte": "https://www.ticketone.it/artist/limp-bizkit/",
+    "biglietti": "https://www.ticketone.it/event/limp-bizkit-fiera-milano-live-22404996/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   },
+   "anche_su": [
+    "Songkick"
+   ]
+  },
+  {
+   "data": "2027-07-31",
+   "ora": "19:30",
+   "fino": "2027-07-31",
+   "titolo": "Stray Kids @ San Siro",
+   "artisti": [
+    "Stray Kids"
+   ],
+   "luogo": "San Siro",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43508102-stray-kids-at-san-siro?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-09-09",
+   "fino": "2027-09-09",
+   "ora": "21:00",
+   "titolo": "Midnight Generation",
+   "luogo": "Circolo Magnolia",
+   "comune": "Segrate",
+   "url": "https://www.ticketone.it/event/midnight-generation-circolo-magnolia-22382561/",
+   "genere": "Pop e altra musica",
+   "descrizione": "I Midnight Generation, una delle band più interessanti della nuova scena internazionale, arrivano live in Italia.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-09-09",
+    "fino": "2027-09-09",
+    "ora": "21:00",
+    "artista": "Midnight Generation",
+    "luogo": "Circolo Magnolia",
+    "citta": "Segrate",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "I Midnight Generation, una delle band più interessanti della nuova scena internazionale, arrivano live in Italia.",
+    "fonte": "https://www.ticketone.it/artist/midnight-generation/",
+    "biglietti": "https://www.ticketone.it/event/midnight-generation-circolo-magnolia-22382561/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   },
+   "anche_su": [
+    "Songkick"
+   ]
+  },
+  {
+   "data": "2027-09-27",
+   "fino": "2027-09-27",
+   "ora": "20:00",
+   "titolo": "Any Given Day",
+   "luogo": "Legend Club",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/any-given-day-legend-club-22391676/",
+   "genere": "Rock",
+   "descrizione": "La band metalvore tedesca arriva in Italia.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-09-27",
+    "fino": "2027-09-27",
+    "ora": "20:00",
+    "artista": "Any Given Day",
+    "luogo": "Legend Club",
+    "citta": "Milano",
+    "genere": "Rock",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "La band metalvore tedesca arriva in Italia.",
+    "fonte": "https://www.ticketone.it/artist/any-given-day/",
+    "biglietti": "https://www.ticketone.it/event/any-given-day-legend-club-22391676/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   },
+   "anche_su": [
+    "Songkick"
+   ]
+  },
+  {
+   "data": "2027-10-11",
+   "fino": "2027-10-11",
+   "ora": "n.d.",
+   "titolo": "ARTIE 5IVE - Vittoria Tour Palasport 2027",
+   "luogo": "Unipol Forum",
+   "comune": "Assago",
+   "url": "https://www.ticketone.it/artist/artie-5ive/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Annunciato il nuovo tour nei principali palazzetti italiani.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-10-11",
+    "fino": "2027-10-11",
+    "ora": "n.d.",
+    "artista": "ARTIE 5IVE - Vittoria Tour Palasport 2027",
+    "luogo": "Unipol Forum",
+    "citta": "Assago",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Annunciato il nuovo tour nei principali palazzetti italiani.",
+    "fonte": "https://www.ticketone.it/artist/artie-5ive/",
+    "biglietti": "https://www.ticketone.it/artist/artie-5ive/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-10-11",
+   "ora": "21:00",
+   "fino": "2027-10-11",
+   "titolo": "Artie 5ive @ Unipol Forum",
+   "artisti": [
+    "Artie 5ive"
+   ],
+   "luogo": "Unipol Forum",
+   "comune": "Assago",
+   "url": "https://www.songkick.com/concerts/43513654-artie-5ive-at-unipol-forum?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-10-14",
+   "ora": "21:00",
+   "fino": "2027-10-14",
+   "titolo": "Camel Power Club @ Santeria Toscana 31",
+   "artisti": [
+    "Camel Power Club"
+   ],
+   "luogo": "Santeria Toscana 31",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43509427-camel-power-club-at-santeria-toscana-31?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-10-28",
+   "fino": "2027-10-28",
+   "ora": "n.d.",
+   "titolo": "Tananai - Palasport 2027",
+   "luogo": "Unipol Dome",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/artist/tananai/tananai-palasport-2027-4286615/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Annunciato il nuovo tour nei palasport.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-10-28",
+    "fino": "2027-10-28",
+    "ora": "n.d.",
+    "artista": "Tananai - Palasport 2027",
+    "luogo": "Unipol Dome",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Annunciato il nuovo tour nei palasport.",
+    "fonte": "https://www.ticketone.it/artist/tananai/tananai-palasport-2027-4286615/",
+    "biglietti": "https://www.ticketone.it/artist/tananai/tananai-palasport-2027-4286615/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-10-28",
+   "fino": "2027-10-28",
+   "ora": "21:00",
+   "titolo": "Tananai - Unipol Dome Premium Packages",
+   "luogo": "Unipol Dome",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/tananai-unipol-dome-premium-packages-unipol-dome-arena-milano-22401090/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Scopri i dettagli sugli esclusivi Pacchetti Unipol Dome.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-10-28",
+    "fino": "2027-10-28",
+    "ora": "21:00",
+    "artista": "Tananai - Unipol Dome Premium Packages",
+    "luogo": "Unipol Dome",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Scopri i dettagli sugli esclusivi Pacchetti Unipol Dome.",
+    "fonte": "https://www.ticketone.it/artist/tananai/tananai-unipol-dome-premium-packages-4287594/",
+    "biglietti": "https://www.ticketone.it/event/tananai-unipol-dome-premium-packages-unipol-dome-arena-milano-22401090/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   },
+   "anche_su": [
+    "Songkick"
+   ]
+  },
+  {
+   "data": "2027-11-01",
+   "fino": "2027-11-01",
+   "ora": "21:00",
+   "titolo": "Robert Jon and The Wreck",
+   "luogo": "Legend Club",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/robert-jon-the-wreck-robert-jon-and-the-wreck-legend-club-22326988/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Una serata a tutto Southern Rock.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-11-01",
+    "fino": "2027-11-01",
+    "ora": "21:00",
+    "artista": "Robert Jon and The Wreck",
+    "luogo": "Legend Club",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Una serata a tutto Southern Rock.",
+    "fonte": "https://www.ticketone.it/artist/robert-jon-the-wreck/",
+    "biglietti": "https://www.ticketone.it/event/robert-jon-the-wreck-robert-jon-and-the-wreck-legend-club-22326988/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   },
+   "anche_su": [
+    "Songkick"
+   ]
+  },
+  {
+   "data": "2027-11-02",
+   "ora": "19:00",
+   "fino": "2027-11-02",
+   "titolo": "Till Lindemann @ Alcatraz Milano",
+   "artisti": [
+    "Till Lindemann"
+   ],
+   "luogo": "Alcatraz Milano",
+   "comune": "Milan",
+   "url": "https://www.songkick.com/concerts/43512447-till-lindemann-at-alcatraz-milano?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-11-15",
+   "ora": "",
+   "fino": "2027-11-15",
+   "titolo": "Powerwolf @ Unipol Forum",
+   "artisti": [
+    "Powerwolf",
+    "Apocalyptica",
+    "Majestica"
+   ],
+   "luogo": "Unipol Forum",
+   "comune": "Assago",
+   "url": "https://www.songkick.com/concerts/43509209-powerwolf-at-unipol-forum?utm_medium=organic&utm_source=microformat",
+   "genere": "",
+   "fonte": "Songkick",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2027-12-02",
+   "fino": "2027-12-02",
+   "ora": "n.d.",
+   "titolo": "Laura Pausini - Io Canto World Tour",
+   "luogo": "Unipol Dome",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/artist/laura-pausini/laura-pausini-io-canto-world-tour-3969187/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Annunciato un appuntamento a Milano nel 2027.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-12-02",
+    "fino": "2027-12-02",
+    "ora": "n.d.",
+    "artista": "Laura Pausini - Io Canto World Tour",
+    "luogo": "Unipol Dome",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Annunciato un appuntamento a Milano nel 2027.",
+    "fonte": "https://www.ticketone.it/artist/laura-pausini/laura-pausini-io-canto-world-tour-3969187/",
+    "biglietti": "https://www.ticketone.it/artist/laura-pausini/laura-pausini-io-canto-world-tour-3969187/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-12-02",
+   "fino": "2027-12-02",
+   "ora": "21:00",
+   "titolo": "Laura Pausini - Unipol Dome Premium Packages",
+   "luogo": "Unipol Dome",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/laura-pausini-unipol-dome-premium-packages-unipol-dome-arena-milano-22258626/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Scopri i dettagli e acquista il tuo esclusivo Premium Package per vivere al meglio il concerto all'Unipol Dome di Milano.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-12-02",
+    "fino": "2027-12-02",
+    "ora": "21:00",
+    "artista": "Laura Pausini - Unipol Dome Premium Packages",
+    "luogo": "Unipol Dome",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Scopri i dettagli e acquista il tuo esclusivo Premium Package per vivere al meglio il concerto all'Unipol Dome di Milano.",
+    "fonte": "https://www.ticketone.it/artist/laura-pausini/laura-pausini-unipol-dome-premium-packages-4287963/",
+    "biglietti": "https://www.ticketone.it/event/laura-pausini-unipol-dome-premium-packages-unipol-dome-arena-milano-22258626/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-12-04",
+   "fino": "2027-12-04",
+   "ora": "20:30",
+   "titolo": "I Musici di Francesco Guccini - Ma a noi piace pensarlo ancora dietro al motore...",
+   "luogo": "Teatro Lirico Giorgio Gaber",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/i-musici-di-francesco-guccini-ma-a-noi-piace-pensarlo-ancora-dietro-al-motore-teatro-lirico-giorgio-gaber-22231121/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Un viaggio emozionante ed emozionato attraverso le canzoni che hanno segnato la storia della musica d’autore italiana.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-12-04",
+    "fino": "2027-12-04",
+    "ora": "20:30",
+    "artista": "I Musici di Francesco Guccini - Ma a noi piace pensarlo ancora dietro al motore...",
+    "luogo": "Teatro Lirico Giorgio Gaber",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Un viaggio emozionante ed emozionato attraverso le canzoni che hanno segnato la storia della musica d’autore italiana.",
+    "fonte": "https://www.ticketone.it/artist/musici-guccini/i-musici-di-francesco-guccini-ma-a-noi-piace-pensarlo-ancora-dietro-al-motore--4183239/",
+    "biglietti": "https://www.ticketone.it/event/i-musici-di-francesco-guccini-ma-a-noi-piace-pensarlo-ancora-dietro-al-motore-teatro-lirico-giorgio-gaber-22231121/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-12-05",
+   "fino": "2027-12-05",
+   "ora": "17:00",
+   "titolo": "Disney Musical World",
+   "luogo": "Teatro Lirico Giorgio Gaber",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/disney-musical-world-teatro-lirico-giorgio-gaber-21483307/",
+   "genere": "Pop e altra musica",
+   "descrizione": "The European Musical Orchestra interpreta le più belle canzoni e musiche dei film Disney.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-12-05",
+    "fino": "2027-12-05",
+    "ora": "17:00",
+    "artista": "Disney Musical World",
+    "luogo": "Teatro Lirico Giorgio Gaber",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "The European Musical Orchestra interpreta le più belle canzoni e musiche dei film Disney.",
+    "fonte": "https://www.ticketone.it/eventseries/disney-musical-world-4118249/",
+    "biglietti": "https://www.ticketone.it/event/disney-musical-world-teatro-lirico-giorgio-gaber-21483307/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-12-05",
+   "fino": "2027-12-05",
+   "ora": "20:30",
+   "titolo": "The European Orchestra",
+   "luogo": "Teatro Lirico Giorgio Gaber",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/event/the-european-orchestra-teatro-lirico-giorgio-gaber-21359912/",
+   "genere": "Classica",
+   "descrizione": "Un progetto di grande musica nato dalla visione artistica del Maestro Piero Loreti.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-12-05",
+    "fino": "2027-12-05",
+    "ora": "20:30",
+    "artista": "The European Orchestra",
+    "luogo": "Teatro Lirico Giorgio Gaber",
+    "citta": "Milano",
+    "genere": "Classica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Un progetto di grande musica nato dalla visione artistica del Maestro Piero Loreti.",
+    "fonte": "https://www.ticketone.it/eventseries/the-european-orchestra-4100005/",
+    "biglietti": "https://www.ticketone.it/event/the-european-orchestra-teatro-lirico-giorgio-gaber-21359912/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2028-03-12",
+   "fino": "2028-03-12",
+   "ora": "n.d.",
+   "titolo": "Eros Ramazzotti - Una Storia Importante - World Tour",
+   "luogo": "Unipol Dome",
+   "comune": "Milano",
+   "url": "https://www.ticketone.it/artist/eros-ramazzotti/",
+   "genere": "Pop e altra musica",
+   "descrizione": "Il tour viene posticipato al 2028.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2028-03-12",
+    "fino": "2028-03-12",
+    "ora": "n.d.",
+    "artista": "Eros Ramazzotti - Una Storia Importante - World Tour",
+    "luogo": "Unipol Dome",
+    "citta": "Milano",
+    "genere": "Pop e altra musica",
+    "tipo": "",
+    "rassegna": "",
+    "descrizione": "Il tour viene posticipato al 2028.",
+    "fonte": "https://www.ticketone.it/artist/eros-ramazzotti/",
+    "biglietti": "https://www.ticketone.it/artist/eros-ramazzotti/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-15",
+    "sito_luogo": ""
+   }
+  }
+ ]
+}

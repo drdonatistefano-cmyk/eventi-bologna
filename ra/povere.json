@@ -1,0 +1,143 @@
+[
+ {
+  "id": "e001",
+  "data": "2026-11-20",
+  "artista": "Socjal Special Jazz Event",
+  "luogo": "Teatro Socjale",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.teatrosocjale.it/evento/socjal-special-jazz-event/",
+  "esito": "letta",
+  "file": "povere/e001.txt"
+ },
+ {
+  "id": "e002",
+  "data": "2026-11-22",
+  "artista": "100 Miles For Miles Davis",
+  "luogo": "Teatro Socjale",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.teatrosocjale.it/evento/100-miles-for-miles-davis/",
+  "esito": "letta",
+  "file": "povere/e002.txt"
+ },
+ {
+  "id": "e023",
+  "data": "2026-11-22",
+  "artista": "Re Tutto Cancella",
+  "luogo": "Teatro Masini",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://accademiaperduta.it/produzioni/re-tutto-cancella/",
+  "esito": "letta",
+  "file": "povere/e023.txt"
+ },
+ {
+  "id": "e038",
+  "data": "2026-11-24",
+  "artista": "PanPers",
+  "luogo": "Teatro Alighieri",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://www.teatroalighieri.org/events/panpers-terapia-di-coppia/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e091",
+  "data": "2026-11-25",
+  "artista": "Matteo Fallica – Troppo Noi",
+  "luogo": "Bronson",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.bronsonproduzioni.com/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e003",
+  "data": "2026-11-27",
+  "artista": "Abigail Lapell",
+  "luogo": "Teatro Socjale",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.teatrosocjale.it/evento/abigail-lapell/",
+  "esito": "letta",
+  "file": "povere/e003.txt"
+ },
+ {
+  "id": "e004",
+  "data": "2026-11-28",
+  "artista": "Cristian CC Quartet e Phil Palmer",
+  "luogo": "Teatro Socjale",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.teatrosocjale.it/evento/cristian-cc-quartet-e-phil-palmer/",
+  "esito": "letta",
+  "file": "povere/e004.txt"
+ },
+ {
+  "id": "e092",
+  "data": "2026-11-28",
+  "artista": "Hard Attacks!",
+  "luogo": "Bronson",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.bronsonproduzioni.com/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e043",
+  "data": "2026-12-04",
+  "artista": "Balletto dell'Opera di Tbilisi – Il lago dei cigni",
+  "luogo": "Teatro Alighieri",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://www.teatroalighieri.org/events/balletto-dellopera-di-tbilisi-il-lago-dei-cigni/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e093",
+  "data": "2026-12-04",
+  "artista": "Desire con Johnny Jewel + Mothermary",
+  "luogo": "Bronson",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.bronsonproduzioni.com/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e094",
+  "data": "2026-12-05",
+  "artista": "Indie Power a Ravenna",
+  "luogo": "Bronson",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.bronsonproduzioni.com/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e044",
+  "data": "2026-12-06",
+  "artista": "Trio Hermes",
+  "luogo": "Teatro Alighieri",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://www.teatroalighieri.org/events/trio-hermes/",
+  "esito": "errore: RuntimeError"
+ }
+]
