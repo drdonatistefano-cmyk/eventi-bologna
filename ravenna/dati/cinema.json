@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-18",
- "giorno_orari": "2026-11-18",
+ "aggiornato": "2026-11-19",
+ "giorno_orari": "2026-11-19",
  "sale": [
   {
    "id": "c004",
@@ -33,47 +33,6 @@
    "fonte": "https://movieplayer.it/cinema/cinemacity-multiplex_1125/",
    "film": [
     {
-     "titolo": "2001: Odissea nello Spazio",
-     "orari": [
-      "20:45"
-     ],
-     "giorni": {
-      "2026-11-18": [
-       "20:45"
-      ]
-     },
-     "versione": "",
-     "genere": "Fantascienza",
-     "regia": "Stanley Kubrick",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
-     "interpreti": "Keir Dullea, Gary Lockwood e William Sylvester",
-     "durata": 139,
-     "anno": 1968,
-     "paese": "USA",
-     "scheda": "https://it.wikipedia.org/wiki/2001%3A_Odissea_nello_spazio"
-    },
-    {
-     "titolo": "Come rapinare una banca",
-     "orari": [
-      "21:00",
-      "21:30"
-     ],
-     "giorni": {
-      "2026-11-18": [
-       "21:00",
-       "21:30"
-      ]
-     },
-     "versione": "Versione originale (solo ore 21:00)",
-     "genere": "Azione, Thriller",
-     "regia": "David Leitch",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
-     "interpreti": "Nicholas Hoult, Christian Slater e Zoë Kravitz",
-     "durata": 122,
-     "anno": 2026,
-     "paese": "USA"
-    },
-    {
      "titolo": "Dio ride",
      "orari": [],
      "giorni": {
@@ -96,12 +55,9 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "21:25"
+      "21:30"
      ],
      "giorni": {
-      "2026-11-18": [
-       "21:25"
-      ],
       "2026-11-19": [
        "21:30"
       ],
@@ -130,7 +86,10 @@
     },
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
-     "orari": [],
+     "orari": [
+      "21:10",
+      "21:25"
+     ],
      "giorni": {
       "2026-11-19": [
        "21:10",
@@ -155,14 +114,20 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Azione, Avventura, Fantasy",
+     "regia": "Francis Lawrence",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "interpreti": "Joseph Zada, Mckenna Grace e Ralph Fiennes",
+     "durata": 158,
+     "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Hunger_Games_-_L%27alba_sulla_mietitura"
     },
     {
      "titolo": "Il fuoco che ti porti dentro",
-     "orari": [],
+     "orari": [
+      "20:35"
+     ],
      "giorni": {
       "2026-11-19": [
        "20:35"
@@ -182,9 +147,13 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Drammatico",
+     "regia": "Edoardo De Angelis",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "interpreti": "Vanessa Scalera, Lino Musella e Elena Radonicich",
+     "durata": 93,
+     "anno": 2026,
+     "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/Il_fuoco_che_ti_porti_dentro_%28film%29"
     },
     {
@@ -211,12 +180,9 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "21:15"
+      "20:45"
      ],
      "giorni": {
-      "2026-11-18": [
-       "21:15"
-      ],
       "2026-11-19": [
        "20:45"
       ],
@@ -245,27 +211,10 @@
      "scheda": "https://it.wikipedia.org/wiki/Il_rumore_delle_cose_nuove"
     },
     {
-     "titolo": "In un battito",
-     "orari": [
-      "20:40"
-     ],
-     "giorni": {
-      "2026-11-18": [
-       "20:40"
-      ]
-     },
-     "versione": "",
-     "genere": "Documentario",
-     "regia": "Giovanni Troilo",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
-     "anno": 2026,
-     "interpreti": "Edoardo Bove",
-     "paese": "Italia",
-     "durata": 97
-    },
-    {
      "titolo": "La ballata del re delle api",
-     "orari": [],
+     "orari": [
+      "21:10"
+     ],
      "giorni": {
       "2026-11-19": [
        "21:10"
@@ -285,34 +234,20 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Drammatico, Thriller",
+     "regia": "Andrew Patterson",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "interpreti": "Matthew McConaughey, Angelina LookingGlass e Jake Horowitz",
+     "durata": 130,
+     "anno": 2025,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/La_ballata_del_re_delle_api"
     },
     {
-     "titolo": "La storia infinita",
-     "orari": [
-      "20:50"
-     ],
-     "giorni": {
-      "2026-11-18": [
-       "20:50"
-      ]
-     },
-     "versione": "",
-     "genere": "Fantastico",
-     "regia": "Wolfgang Petersen",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
-     "interpreti": "Barret Oliver, Gerald McRaney e Thomas Hill",
-     "durata": 94,
-     "anno": 1984,
-     "paese": "Germania",
-     "scheda": "https://it.wikipedia.org/wiki/La_storia_infinita_%28film%29"
-    },
-    {
      "titolo": "Ramayana - La nascita di una leggenda",
-     "orari": [],
+     "orari": [
+      "21:05"
+     ],
      "giorni": {
       "2026-11-19": [
        "21:05"
@@ -332,21 +267,20 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172"
+     "genere": "Azione, Avventura, Drammatico",
+     "regia": "Nitesh Tiwari",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "interpreti": "Ranbir Kapoor, Sai Pallavi, Sunny Deol e Kajal Aggarwal",
+     "paese": "India",
+     "durata": 195,
+     "anno": 2026
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "21:00",
-      "21:05"
+      "21:15"
      ],
      "giorni": {
-      "2026-11-18": [
-       "21:00",
-       "21:05"
-      ],
       "2026-11-19": [
        "21:15"
       ],
@@ -364,7 +298,7 @@
        "21:15"
       ]
      },
-     "versione": "Versione originale (solo ore 21:00)",
+     "versione": "",
      "genere": "Drammatico, Fantasy",
      "regia": "Ti West",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
@@ -377,12 +311,9 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "20:30"
+      "21:00"
      ],
      "giorni": {
-      "2026-11-18": [
-       "20:30"
-      ],
       "2026-11-19": [
        "21:00"
       ],
@@ -429,12 +360,9 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
-      "20:50"
+      "20:20"
      ],
      "giorni": {
-      "2026-11-18": [
-       "20:50"
-      ],
       "2026-11-19": [
        "20:20"
       ],
@@ -465,12 +393,9 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "20:35"
+      "20:40"
      ],
      "giorni": {
-      "2026-11-18": [
-       "20:35"
-      ],
       "2026-11-19": [
        "20:40"
       ],
@@ -510,23 +435,23 @@
    "fonte": "https://movieplayer.it/cinema/jolly-doc_1126/",
    "film": [
     {
-     "titolo": "Mr. Nobody Against Putin",
+     "titolo": "La Gradiva",
      "orari": [
       "21:00"
      ],
-     "versione": "",
-     "genere": "Documentario",
-     "regia": "David Borenstein e Pavel Talankin",
-     "interpreti": "Pavel Talankin, Viktor Abakumov e Lavrenti Beria",
-     "durata": 90,
+     "versione": "Versione originale",
+     "genere": "Drammatico",
+     "regia": "Marine Atlan",
+     "interpreti": "Colas Quignard, Suzanne Gerin, Mitia Capellier e Antonia Buresi",
+     "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-18": [
+      "2026-11-19": [
        "21:00"
       ]
      },
-     "paese": "Danimarca",
-     "scheda": "https://it.wikipedia.org/wiki/Mr_Nobody_Against_Putin"
+     "paese": "Francia",
+     "scheda": "https://it.wikipedia.org/wiki/La_Gradiva"
     }
    ]
   },
@@ -564,52 +489,24 @@
      "scheda": "https://it.wikipedia.org/wiki/Fjord_%28film%29"
     },
     {
-     "titolo": "Il Nido",
-     "orari": [],
-     "giorni": {
-      "2026-11-19": [
-       "18:30"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/7546",
-     "scheda": "https://it.wikipedia.org/wiki/Il_nido_%28film%29"
-    },
-    {
      "titolo": "L'Odio",
-     "orari": [],
-     "giorni": {
-      "2026-11-19": [
-       "21:00"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/7546",
-     "scheda": "https://it.wikipedia.org/wiki/L%27odio"
-    },
-    {
-     "titolo": "Minotaur",
      "orari": [
       "21:00"
      ],
      "giorni": {
-      "2026-11-18": [
+      "2026-11-19": [
        "21:00"
       ]
      },
      "versione": "",
-     "genere": "Drammatico, Thriller",
-     "regia": "Andrey Zvyagintsev",
+     "genere": "Drammatico",
+     "regia": "Mathieu Kassovitz",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/7546",
-     "anno": 2026,
-     "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
+     "interpreti": "Vincent Cassel, Hubert Koundé e Saïd Taghmaoui",
+     "durata": 96,
+     "anno": 1995,
      "paese": "Francia",
-     "durata": 135,
-     "scheda": "https://it.wikipedia.org/wiki/Minotaur"
+     "scheda": "https://it.wikipedia.org/wiki/L%27odio"
     }
    ],
    "cinemap": "https://www.cinemap.it/ravenna/cinema/mariani-ravenna"
@@ -625,7 +522,9 @@
    "film": [
     {
      "titolo": "La maison des femmes - La casa delle donne",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-19": [
        "21:00"
@@ -695,7 +594,9 @@
    "film": [
     {
      "titolo": "Fjord",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-19": [
        "21:00"
@@ -718,26 +619,6 @@
      "regia": "",
      "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=2",
      "scheda": "https://it.wikipedia.org/wiki/Fjord_%28film%29"
-    },
-    {
-     "titolo": "La storia infinita",
-     "orari": [
-      "21:00"
-     ],
-     "giorni": {
-      "2026-11-18": [
-       "21:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Fantastico",
-     "regia": "Wolfgang Petersen",
-     "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=2",
-     "interpreti": "Barret Oliver, Noah Hathaway, Tami Stronach e Gerald McRaney",
-     "paese": "Germania",
-     "durata": 92,
-     "anno": 1984,
-     "scheda": "https://it.wikipedia.org/wiki/La_storia_infinita_%28film%29"
     }
    ],
    "cinemap": "https://www.cinemap.it/faenza/cinema/cinema-sarti-faenza"
@@ -752,34 +633,9 @@
    "fonte": "https://movieplayer.it/cinema/cinedream-multiplex_1117/",
    "film": [
     {
-     "titolo": "2001: Odissea nello Spazio",
-     "orari": [
-      "20:40"
-     ],
-     "giorni": {
-      "2026-11-18": [
-       "20:40"
-      ]
-     },
-     "versione": "",
-     "genere": "Fantascienza",
-     "regia": "Stanley Kubrick",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
-     "interpreti": "Keir Dullea, Gary Lockwood e William Sylvester",
-     "durata": 139,
-     "anno": 1968,
-     "paese": "USA",
-     "scheda": "https://it.wikipedia.org/wiki/2001%3A_Odissea_nello_spazio"
-    },
-    {
      "titolo": "Come rapinare una banca",
-     "orari": [
-      "21:10"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-18": [
-       "21:10"
-      ],
       "2026-11-20": [
        "21:15"
       ],
@@ -791,13 +647,9 @@
       ]
      },
      "versione": "",
-     "genere": "Azione, Thriller",
-     "regia": "David Leitch",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
-     "interpreti": "Nicholas Hoult, Christian Slater e Zoë Kravitz",
-     "durata": 122,
-     "anno": 2026,
-     "paese": "USA"
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104"
     },
     {
      "titolo": "Dio ride",
@@ -822,12 +674,9 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "21:10"
+      "20:50"
      ],
      "giorni": {
-      "2026-11-18": [
-       "21:10"
-      ],
       "2026-11-19": [
        "20:50"
       ],
@@ -854,7 +703,10 @@
     },
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
-     "orari": [],
+     "orari": [
+      "20:40",
+      "21:10"
+     ],
      "giorni": {
       "2026-11-19": [
        "20:40",
@@ -882,14 +734,20 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Azione, Avventura, Fantasy",
+     "regia": "Francis Lawrence",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
+     "interpreti": "Joseph Zada, Mckenna Grace e Ralph Fiennes",
+     "durata": 158,
+     "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Hunger_Games_-_L%27alba_sulla_mietitura"
     },
     {
      "titolo": "Il fuoco che ti porti dentro",
-     "orari": [],
+     "orari": [
+      "20:40"
+     ],
      "giorni": {
       "2026-11-19": [
        "20:40"
@@ -907,9 +765,13 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Drammatico",
+     "regia": "Edoardo De Angelis",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
+     "interpreti": "Vanessa Scalera, Lino Musella e Elena Radonicich",
+     "durata": 93,
+     "anno": 2026,
+     "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/Il_fuoco_che_ti_porti_dentro_%28film%29"
     },
     {
@@ -940,9 +802,6 @@
       "20:45"
      ],
      "giorni": {
-      "2026-11-18": [
-       "20:45"
-      ],
       "2026-11-19": [
        "20:45"
       ],
@@ -973,34 +832,11 @@
      "scheda": "https://it.wikipedia.org/wiki/Il_rumore_delle_cose_nuove"
     },
     {
-     "titolo": "La storia infinita",
-     "orari": [
-      "21:00"
-     ],
-     "giorni": {
-      "2026-11-18": [
-       "21:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Fantastico",
-     "regia": "Wolfgang Petersen",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
-     "interpreti": "Barret Oliver, Gerald McRaney e Thomas Hill",
-     "durata": 94,
-     "anno": 1984,
-     "paese": "Germania",
-     "scheda": "https://it.wikipedia.org/wiki/La_storia_infinita_%28film%29"
-    },
-    {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "21:00"
+      "21:10"
      ],
      "giorni": {
-      "2026-11-18": [
-       "21:00"
-      ],
       "2026-11-19": [
        "21:10"
       ],
@@ -1033,12 +869,9 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "21:00"
+      "20:50"
      ],
      "giorni": {
-      "2026-11-18": [
-       "21:00"
-      ],
       "2026-11-19": [
        "20:50"
       ],
@@ -1086,12 +919,9 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
-      "20:50"
+      "20:45"
      ],
      "giorni": {
-      "2026-11-18": [
-       "20:50"
-      ],
       "2026-11-19": [
        "20:45"
       ],
@@ -1138,14 +968,14 @@
      "orari": [
       "21:00"
      ],
-     "versione": "",
+     "versione": "Versione originale",
      "genere": "",
      "regia": "Kore-eda",
      "interpreti": "",
      "durata": null,
      "anno": 2026,
      "giorni": {
-      "2026-11-18": [
+      "2026-11-19": [
        "21:00"
       ]
      },
@@ -1164,23 +994,21 @@
    "cinemap": "https://www.cinemap.it/cervia/cinema/cinema-sarti-cervia",
    "film": [
     {
-     "titolo": "Se domani non torno",
-     "orari": [
-      "21:00"
-     ],
+     "titolo": "Dio ride",
+     "orari": [],
      "giorni": {
-      "2026-11-17": [
+      "2026-11-20": [
        "21:00"
+      ],
+      "2026-11-22": [
+       "17:00"
       ]
      },
      "versione": "",
-     "genere": "Drammatico",
-     "regia": "Paola Randi",
-     "biglietti": "https://www.liveticket.it/evento.aspx?Id=711775&InstantBuy=1&CallingPageUrl=http%3a%2f%2fwww.liveticket.it%2fcinemasarticervia",
-     "interpreti": "Tommaso Allione, Tecla Bossi, Sabrina Martina e Filippo Timi",
-     "paese": "Italia",
-     "durata": 107,
-     "anno": 2026
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.liveticket.it/evento.aspx?Id=715185",
+     "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
     }
    ]
   },
@@ -1277,13 +1105,8 @@
     },
     {
      "titolo": "Wild Horse Nine",
-     "orari": [
-      "21:00"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-18": [
-       "21:00"
-      ],
       "2026-11-20": [
        "21:00"
       ],
