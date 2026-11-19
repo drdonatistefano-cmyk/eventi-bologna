@@ -8,6 +8,14 @@ Dal 11/11/2026 controlla anche:
   i link generici del club (biglietteria di tutte le partite) sono segnati «pagina generica».
 - Cinema (dati/cinema.json): il link del film deve aprirsi e la pagina deve contenere il titolo del film
   (altrimenti «titolo assente»: il link porta a un altro film o alla pagina della sala).
+Dal 19/11/2026:
+- legge anche Ferrara e Ravenna (prima solo Bologna e Milano);
+- «rotto» è un esito suo: pagina che non esiste più (404, 410), dominio che non esiste, o biglietteria che dice
+  «evento non disponibile». Solo questi sono link da cambiare;
+- seconda lettura con un browser vero (Playwright, se c'è) dei link «non letti»: molti siti (Vivaticket, teatro.it...)
+  chiudono la porta ai programmi semplici ma si aprono a un browser. Il 19/11, riletti dall'officina, 60 link
+  Vivaticket su 71 segnati «non letti» portavano allo spettacolo giusto. Stesse regole: robots.txt, una pagina al
+  secondo per sito, solo pagine pubbliche. Se il browser non c'è, gli esiti restano quelli della prima lettura.
 Scrive dati/controllo_biglietti.json (riepilogo + elenco dei casi da correggere)."""
 import html, unicodedata, urllib.error, json, re, sys, os, time, datetime, urllib.request, urllib.robotparser, collections, concurrent.futures, threading
 from urllib.parse import urlparse
@@ -24,6 +32,7 @@ def carica(f):
     return json.loads(s[s.index("=") + 1:].rstrip().rstrip(";"))
 
 
+CARTELLE = {"": "bo", "milano/": "mi", "ferrara/": "fe", "ravenna/": "ra"}   # 19/11: anche Ferrara e Ravenna
 MAI = ("ticketone.it", "eventim.")          # il loro robots.txt vieta tutti i programmi: mai aprirli da GitHub (si controllano a mano)
 PAUSA = {"18tickets.it": 6.0}               # secondi tra due pagine dello stesso dominio (18tickets risponde 429 se si va più veloci)
 
@@ -70,6 +79,66 @@ def apri(u, prova=0):
         raise
 
 
+NON_DISPONIBILE = re.compile(r"(?i)evento non disponibile|evento non (?:più )?trovato|event not (?:available|found)|"
+                             r"pagina non trovata|page not found|non (?:è|e') più disponibile")
+
+
+def rotto_da(errore="", stato=0, testo=""):
+    """Il link è rotto davvero? Sì solo se la pagina non c'è più (404, 410), se il dominio non esiste, o se la
+    biglietteria dice che l'evento non è disponibile. 403, 429, 5xx, tempi scaduti: «non letto», non rotto
+    (REGOLE 8 bis.6: «non sono riuscito a guardare» non è «non c'è»)."""
+    if stato in (404, 410): return True
+    e = errore or ""
+    if re.search(r"HTTP Error 4(?:04|10)\b|HTTP 4(?:04|10)\b", e): return True
+    if re.search(r"Name or service not known|nodename nor servname|ERR_NAME_NOT_RESOLVED|getaddrinfo failed", e): return True
+    return bool(testo) and bool(NON_DISPONIBILE.search(testo[:6000]))
+
+
+def esito_date(ev, trovate):
+    if not trovate: return "senza data"
+    ok_tutte = all(any(x["data"] <= d <= x["fino"] for d in trovate) for x in ev)
+    return "ok" if ok_tutte and len(trovate) == 1 else "piu date" if ok_tutte else "data diversa"
+
+
+def seconda_lettura(casi, voci, limite=900):
+    """Riapre con Chromium i link «non letti» (robots.txt permettendo) e ne ricalcola l'esito. Restituisce
+    {link: (esito, date trovate, finale)} solo per i link riletti."""
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception:
+        print("seconda lettura: Playwright non c'è, restano gli esiti della prima lettura")
+        return {}
+    da_rileggere = [c["link"] for c in casi if c["esito"] == "non letto" and permesso(c["link"])]
+    nuovi, t0, ult = {}, time.time(), collections.defaultdict(float)
+    if not da_rileggere: return nuovi
+    with sync_playwright() as p:
+        b = p.chromium.launch(args=["--disable-http2"])
+        pag = b.new_page(locale="it-IT", user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
+                         "Chrome/124.0 Safari/537.36 AchEventsGuide/1.0 (+https://achevents.com)")
+        for u in da_rileggere:
+            if time.time() - t0 > limite: break
+            h = dominio(u); att = PAUSA.get(h, 1.0) - (time.time() - ult[h])
+            if att > 0: time.sleep(att)
+            ult[h] = time.time()
+            try:
+                r = pag.goto(u, timeout=30000, wait_until="domcontentloaded")
+                pag.wait_for_timeout(2500)
+                stato, sorgente = (r.status if r else 0), pag.content()
+                testo = pag.inner_text("body") if sorgente else ""
+                if rotto_da("", stato, testo): nuovi[u] = ("rotto", [], "browser: " + (f"HTTP {stato}" if stato in (404, 410) else "evento non disponibile"))
+                elif stato >= 400: nuovi[u] = ("non letto", [], f"browser: HTTP {stato}")
+                else:
+                    trovate = sorted(date_pagina(sorgente))
+                    nuovi[u] = (esito_date(voci[u], trovate), trovate, pag.url if pag.url != u else "")
+            except Exception as ex:
+                m = str(ex)[:80]
+                nuovi[u] = ("rotto" if rotto_da(m) else "non letto", [], "browser: " + m)
+        b.close()
+    print(f"seconda lettura con il browser: {len(nuovi)} link riletti su {len(da_rileggere)}, "
+          f"{collections.Counter(v[0] for v in nuovi.values())}")
+    return nuovi
+
+
 def date_pagina(h):
     date = set()
     for m in re.findall(r'(?is)<script[^>]*application/ld\+json[^>]*>(.*?)</script>', h):
@@ -84,14 +153,14 @@ def date_pagina(h):
 def main():
     oggi = datetime.date.today().isoformat()
     voci = collections.defaultdict(list)
-    for c in ("", "milano/"):
+    for c in CARTELLE:
         for f, k in (("eventi.js", "eventi"), ("serate.js", "serate")):
             try: lst = carica(c + f)[k]
             except Exception: continue
             for e in lst:
                 u = e.get("biglietti", "")
                 if u.startswith("https://") and (not SOLO or SOLO in u) and (e.get("fino") or e["data"]) >= oggi:
-                    voci[u].append({"citta": "mi" if c else "bo", "id": e.get("id"), "data": e["data"], "fino": e.get("fino") or e["data"],
+                    voci[u].append({"citta": CARTELLE[c], "id": e.get("id"), "data": e["data"], "fino": e.get("fino") or e["data"],
                                     "titolo": e.get("artista", ""), "luogo": e.get("luogo", "")})
     esiti, casi = collections.Counter(), []
     per_sito = collections.defaultdict(collections.Counter)
@@ -107,12 +176,9 @@ def main():
             try:
                 finale, h = apri(u)
                 trovate = sorted(date_pagina(h))
-                if not trovate: esito = "senza data"
-                else:
-                    ok_tutte = all(any(x["data"] <= d <= x["fino"] for d in trovate) for x in ev)
-                    esito = "ok" if ok_tutte and len(trovate) == 1 else "piu date" if ok_tutte else "data diversa"
+                esito = esito_date(ev, trovate)
             except Exception as ex:
-                esito, finale = "non letto", str(ex)[:80]
+                esito, finale = ("rotto" if rotto_da(str(ex), getattr(ex, "code", 0) or 0) else "non letto"), str(ex)[:80]
         return esito, nostre, trovate, finale
 
     def un_sito(host, elenco):
@@ -125,20 +191,31 @@ def main():
                 errori = errori + 1 if esito == "non letto" else 0
             with blocco:
                 esiti[esito] += 1; per_sito[host.replace("www.", "")][esito] += 1
-                if esito in ("data diversa", "piu date", "senza data", "non letto"):
+                if esito in ("data diversa", "piu date", "senza data", "non letto", "rotto"):
                     casi.append({"esito": esito, "link": u, "finale": finale if finale != u else "", "date_guida": nostre, "date_pagina": trovate[:12],
                                  "eventi": [f'{x["citta"]} {x["id"]} {x["data"]} {x["titolo"][:50]} @ {x["luogo"][:30]}' for x in ev][:6]})
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=16) as pool:
         list(pool.map(lambda kv: un_sito(*kv), gruppi.items()))
+    riletti = seconda_lettura(casi, voci)
+    for c in casi:
+        if c["link"] in riletti:
+            es, trovate, fin = riletti[c["link"]]
+            h = dominio(c["link"]).replace("www.", "")
+            esiti[c["esito"]] -= 1; per_sito[h][c["esito"]] -= 1
+            esiti[es] += 1; per_sito[h][es] += 1
+            c.update({"esito": es, "date_pagina": trovate[:12], "finale": fin, "riletto": "browser"})
+    casi[:] = [c for c in casi if c["esito"] not in ("ok",)]
+    esiti = +esiti
+    for h in list(per_sito): per_sito[h] = +per_sito[h]
     # ---- sport ----
     sport = collections.defaultdict(list)
-    for c in ("", "milano/"):
+    for c in CARTELLE:
         try: lst = carica(c + "sport.js")["eventi"]
         except Exception: lst = []
         for e in lst:
             if e.get("biglietti", "").startswith("https://") and e["data"] >= oggi:
-                sport[e["biglietti"]].append({"citta": "mi" if c else "bo", "id": e.get("id"), "data": e["data"], "fino": e.get("fino") or e["data"],
+                sport[e["biglietti"]].append({"citta": CARTELLE[c], "id": e.get("id"), "data": e["data"], "fino": e.get("fino") or e["data"],
                                               "titolo": e.get("artista", ""), "luogo": e.get("luogo", "")})
     esiti_s, casi_s = collections.Counter(), []
     for u, ev in sorted(sport.items()):

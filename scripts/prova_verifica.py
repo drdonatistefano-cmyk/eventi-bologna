@@ -162,6 +162,22 @@ prova("soglia province: si contano le tre guide, oggi escluso", V.visite_ultimi_
 prova("soglia province: i giorni più vecchi di 30 non contano",
       V.visite_ultimi_30([{"giorno": "2026-11-01", "sito": "a", "visite": 99999}], oggi) == (0, 0))
 
+# ---------------------------------------------------------------- controllo dei link dei biglietti (19/11/2026)
+# Il 15/11 il controllo aveva 140 link «non letti»: riletti con un browser, 60 Vivaticket su 71 portavano allo
+# spettacolo giusto; i rotti veri erano pochi (404, dominio che non esiste, «evento non disponibile»).
+import controlla_biglietti as CB  # noqa: E402
+prova("biglietti: 404 e 410 sono rotti", CB.rotto_da("HTTP Error 404: Not Found") and CB.rotto_da(stato=410))
+prova("biglietti: un dominio che non esiste è rotto", CB.rotto_da("<urlopen error [Errno -2] Name or service not known>"))
+prova("biglietti: «evento non disponibile» sulla pagina è rotto", CB.rotto_da(stato=200, testo="EVENTO NON DISPONIBILE"))
+prova("biglietti: 403, 302 in giro, 502 e tempi scaduti non sono rotti",
+      not any(CB.rotto_da(e) for e in ("HTTP Error 403: Forbidden", "HTTP Error 302: The HTTP server returned a redirect",
+                                        "HTTP Error 502: Bad Gateway", "TimeoutError", "saltato: sito lento o che rifiuta")))
+prova("biglietti: una pagina normale non è rotta", not CB.rotto_da(stato=200, testo="ADDUE Teatro Dehon giovedì 19 novembre"))
+ev = [{"data": "2026-11-19", "fino": "2026-11-19"}]
+prova("biglietti: la data giusta è ok, una sola", CB.esito_date(ev, ["2026-11-19"]) == "ok")
+prova("biglietti: date diverse sono «data diversa»", CB.esito_date(ev, ["2026-12-01"]) == "data diversa")
+prova("biglietti: il controllo legge anche Ferrara e Ravenna", {"fe", "ra"} <= set(CB.CARTELLE.values()))
+
 
 print(f"\n{len(FALLITE)} prove fallite" if FALLITE else "\nTutte le prove passano")
 sys.exit(1 if FALLITE else 0)
