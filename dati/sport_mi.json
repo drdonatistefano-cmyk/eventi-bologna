@@ -7,18 +7,16 @@
   "volleyf": 8,
   "hockey": 19,
   "extra": 0,
-  "lba": 0,
-  "euroleague": 13
+  "lba": 11,
+  "euroleague": 12
  },
- "errori": [
-  "https://www.legabasket.it/api/championships/get-championships-calendar-by-id?id=602&t_id=1: HTTP Error 500: Internal Server Error"
- ],
+ "errori": [],
  "per_sport": {
-  "Basket": 17,
+  "Basket": 16,
   "Hockey": 19,
   "Volley": 16,
   "Calcio": 40
  },
- "totale": 92,
- "giorno": "2026-11-16"
+ "totale": 91,
+ "giorno": "2026-11-19"
 }
