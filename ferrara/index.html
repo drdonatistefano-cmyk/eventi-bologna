@@ -63,7 +63,7 @@ h1 em{color:var(--terra);font-style:italic}
 .modes{display:flex;gap:8px;padding-bottom:4px}
 .modes button{flex:1;max-width:260px;height:52px;border-radius:14px 14px 14px 14px;border:1px solid var(--line);background:var(--paper);box-shadow:var(--shadow);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;font-size:16.5px;font-weight:750;color:var(--mute)}
 .modes button .mi{font-size:20px}
-.modes button small{font-size:12.5px;font-weight:600;color:var(--faint);font-variant-numeric:tabular-nums}
+.modes button small{font-size:12.5px;font-weight:600;color:var(--mute);font-variant-numeric:tabular-nums} /* 20/11/2026 (WebAbility): era --faint, contrasto 2,6:1; con --mute 4,8:1 */
 .modes button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .modes button.on small{color:inherit;opacity:.7}
 /* Barra fissa */
@@ -1177,7 +1177,7 @@ function miniM(e){
  const tot=Math.max(1,Math.round((D(e.fino)-D(e.data))/864e5)+1),pct=fut?0:Math.min(100,Math.max(0,100*(tot-left-1)/tot));
  const st0=fut?{c:"soon",l:`Apre il ${fmt(e.data,{day:"numeric",month:"short"})}`}:left<=14?{c:"last",l:left===0?"Ultimo giorno":"Ultimi giorni"}:{c:"open",l:"In corso"};
  const per=fut?`Dal <b>${fY(e.data)}</b> al ${fY(e.fino)}`:`Fino al <b>${fY(e.fino)}</b> <small>· ${left===0?"oggi l'ultimo giorno":"ancora "+dur(left)}</small>`;
- const inner=`<div class="top"><span class="gtag">${g.em||""} ${esc(g.l)}</span><span class="mst ${st0.c}">${st0.l}</span></div><h3 class="title">${esc(e.artista)}</h3><div class="mper">${per}</div>${fut?"":`<div class="mbar"><i style="width:${pct.toFixed(1)}%"></i></div>`}${st.venue?"":`<div class="mloc">${PIN}<span>${esc(e.luogo)}${e._c!==CITY.capo?" · "+esc(e._c):""}</span></div>`}`;
+ const inner=`<div class="top"><span class="gtag">${g.em||""} ${esc(g.l)}</span><span class="mst ${st0.c}">${st0.l}</span></div><h3 class="title">${esc(e.artista)}</h3><div class="mper">${per}</div>${fut?"":`<div class="mbar"><i style="width:${pct.toFixed(1)}%"></i></div>`}${st.venue?"":`<div class="mloc">${PIN}${conComune(e)?`<span class="mcom">${esc(e._c)}</span><span class="msep" aria-hidden="true">·</span>`:""}<span class="mlg">${esc(e.luogo)}</span></div>`}`; /* 20/11/2026: comune anche nelle mostre, come negli spettacoli */
  return miniA(reg({k:"m",e}),e.artista,g.c,inner).replace("%FOOT%",`<span class="pill${e._ing==="Ingresso gratuito"?" ok":""}">${esc(e._ing)}</span>`+(e.biglietti?`<a class="act tkt" data-lab="Biglietti" href="${esc(e.biglietti)}" target="_blank" rel="noopener" aria-label="Biglietti: ${esc(e.artista)}">${TKT}<span class="lg">Biglietti</span><span class="sm">Ticket</span></a>`:""))}
 function miniC(f){
  const rows=f.r,vo=rows.some(r=>r._vo),d0=dayKeys()[0],many=dayKeys().length>1,fs=fasSel();
