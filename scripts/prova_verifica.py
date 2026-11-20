@@ -210,5 +210,21 @@ for desc, atteso in [
     prova(f"protagonisti: «{desc[:40]}» → «{atteso}»", PR.chi({"artista": "Titolo qualsiasi", "descrizione": desc}) == atteso)
 
 
+# ---------------------------------------------------------------- clic «Biglietti» con il sito di arrivo (20/11/2026)
+# I clic portano anche il dominio del partner: le statistiche devono continuare a contarli come «clic biglietti».
+import statistiche as ST  # noqa: E402
+prova("clic Biglietti col dominio contato come clic biglietti",
+      ST.tipo_evento("spettacoli/clic-biglietti/ticketone.it/Vasco") == "clic biglietti")
+prova("clic Biglietti di Milano col dominio contato come clic biglietti",
+      ST.tipo_evento("milano/spettacoli/clic-biglietti/vivaticket.com/Carmen") == "clic biglietti")
+prova("clic Biglietti di Ferrara e Ravenna contati (prima finivano in «altro»)",
+      ST.tipo_evento("ferrara/spettacoli/clic-biglietti/ticketone.it/X") == "clic biglietti"
+      and ST.tipo_evento("ravenna/spettacoli/clic-biglietti/vivaticket.com/Y") == "clic biglietti")
+prova("clic Info resta clic info", ST.tipo_evento("spettacoli/clic-info/Carmen") == "clic info spettacoli")
+_ix = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "index.html")
+if os.path.exists(_ix):
+    _t = open(_ix, encoding="utf-8").read()
+    prova("index.html registra il sito di arrivo nei clic Biglietti", "clic-biglietti/${domBigl(a)}" in _t and "function domBigl" in _t)
+
 print(f"\n{len(FALLITE)} prove fallite" if FALLITE else "\nTutte le prove passano")
 sys.exit(1 if FALLITE else 0)
