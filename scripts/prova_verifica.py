@@ -91,6 +91,14 @@ prova("un flusso il cui ultimo giro è fallito resta un errore", g["rotti"] == [
 prova("un flusso fallito e poi ripartito è solo un avviso", g["falliti"] == {"Cinema": 1, "Sport": 1} and "Cinema" not in g["rotti"])
 g = V.riassumi_giri(giri, None)
 prova("se l'elenco dei flussi non si legge non si scarta nulla", "Posta della redazione" in g["rotti"])
+# 20/11: un flusso col file illeggibile fallisce con il nome uguale al percorso; corretto, i giri buoni hanno il nome vero
+giri = [
+    {"name": "Controllo link biglietti", "path": ".github/workflows/controllo_biglietti.yml", "status": "completed", "conclusion": "success"},
+    {"name": ".github/workflows/controllo_biglietti.yml", "path": ".github/workflows/controllo_biglietti.yml", "status": "completed", "conclusion": "failure"},
+    {"name": ".github/workflows/controllo_biglietti.yml", "path": ".github/workflows/controllo_biglietti.yml", "status": "completed", "conclusion": "failure"},
+]
+g = V.riassumi_giri(giri, {"controllo_biglietti.yml"})
+prova("un flusso corretto dopo giri falliti col nome del file non resta rosso", g["rotti"] == [] and g["falliti"] == {"Controllo link biglietti": 2})
 
 
 # ---------------------------------------------------------------- parti comuni delle guide (REGOLE §8 sexies.3)

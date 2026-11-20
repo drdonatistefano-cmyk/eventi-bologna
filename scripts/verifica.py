@@ -118,16 +118,24 @@ def riassumi_giri(giri, presenti):
     """Dai giri di GitHub (dal più recente): l'esito dell'ultimo giro di ogni programma, quante volte è fallito,
     e quali programmi hanno l'ultimo giro fallito. «presenti» sono i file dei flussi che esistono ancora:
     i giri di un flusso tolto non contano. Se l'elenco non si è potuto leggere (None) non si scarta nulla."""
-    ultimo, falliti, tot = {}, {}, 0
+    # 20/11/2026: i giri si raggruppano per FILE del flusso, non per nome. Un flusso con il file illeggibile fallisce con il
+    # nome uguale al percorso (".github/workflows/x.yml"); i giri buoni dopo la correzione hanno il nome vero, e il rapporto
+    # restava rosso per tre giorni per un flusso già sistemato (controllo_biglietti.yml, 19-20/11).
+    ultimo, falliti, tot, nome = {}, {}, 0, {}
     for r in giri:
         if r.get("status") != "completed":
             continue
         if presenti is not None and os.path.basename(r.get("path") or "") not in presenti:
             continue
         tot += 1
-        ultimo.setdefault(r["name"], r["conclusion"])
+        f = os.path.basename(r.get("path") or "") or r["name"]
+        if f not in nome or nome[f].startswith(".github/"):
+            nome[f] = r["name"]
+        ultimo.setdefault(f, r["conclusion"])
         if r["conclusion"] in ("failure", "timed_out", "startup_failure"):
-            falliti[r["name"]] = falliti.get(r["name"], 0) + 1
+            falliti[f] = falliti.get(f, 0) + 1
+    ultimo = {nome[f]: c for f, c in ultimo.items()}
+    falliti = {nome[f]: n for f, n in falliti.items()}
     rotti = [n for n, c in ultimo.items() if c in ("failure", "timed_out", "startup_failure")]
     return {"ultimo": ultimo, "falliti": falliti, "tot": tot, "rotti": rotti}
 
