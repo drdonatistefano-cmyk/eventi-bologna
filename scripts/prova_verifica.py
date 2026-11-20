@@ -189,6 +189,15 @@ for desc, atteso in [
     ("Debora Caprioglio, Tiziana Foschi, Giancarlo Ratti.", "Debora Caprioglio, Tiziana Foschi e Giancarlo Ratti"),
     ("Di Leonardo Manzan.", ""), ("Da Joseph Conrad, Sala Fassbinder.", ""), ("Into The Beginning.", ""),
     ("Teatro Comico al Teatro Alighieri.", ""), ("Palazzo Pepoli in festa.", ""),
+    # 20/11/2026 (Stefano: «manca Marta Ciappina; tutto deve funzionare con i nomi»): regola generale sui nomi di persona
+    ("Marta Ciappina diretta da Marco D'Agostin.", "Marta Ciappina, regia di Marco D'Agostin"),
+    ("Marco Paolini, teatro civile sull'acqua.", "Marco Paolini"),
+    ("Il comico Francesco Baruto porta in scena il suo personaggio Nonna Marisa.", "Francesco Baruto"),
+    ("Con Vorticerosa, Fabiano Ambu, Francesco Matteuzzi e Juan Carlos Acuña Gaso.", "Fabiano Ambu, Francesco Matteuzzi e Juan Carlos Acuña Gaso"),
+    ("Conferenza-spettacolo della criminologa Roberta Bruzzone.", "Roberta Bruzzone"),
+    ("Omaggio gospel a Whitney Houston e Tina Turner.", ""), ("Al Teatro Gian Carlo Menotti.", ""),
+    ("Michael Jordan, un giocatore iconico.", ""), ("Testo di Luigi Pirandello.", ""),
+    ("Cosa vede il giovane Michelangelo Merisi, detto il Caravaggio?", ""),
 ]:
     prova(f"protagonisti: «{desc[:40]}» → «{atteso}»", PR.chi({"artista": "Titolo qualsiasi", "descrizione": desc}) == atteso)
 
