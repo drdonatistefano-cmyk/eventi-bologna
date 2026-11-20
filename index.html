@@ -427,7 +427,6 @@ main{min-width:0;padding-bottom:90px}
 @media(min-width:760px){#ddlg .dsheet{bottom:auto;top:50%;transform:translate(-50%,-50%);width:min(640px,92vw);border-radius:22px;animation:pop .18s ease-out}#ddlg .grab{display:none}#ddlg .dbody{padding:22px 24px 18px}}
 @keyframes pop{from{opacity:0;transform:translate(-50%,-48%)}}
 .card{background:color-mix(in srgb,var(--g,transparent) 10%,var(--paper));border-radius:var(--r);box-shadow:var(--shadow);border:1px solid var(--line);padding:14px 16px 12px 18px;position:relative;overflow:hidden;display:flex;flex-direction:column;transition:border-color .15s}
-#list .card{content-visibility:auto;contain-intrinsic-size:auto 124px}/* 19/11 velocità: le schede sotto lo schermo non si impaginano finché non servono */
 @media(hover:hover){.card:hover{border-color:color-mix(in srgb,var(--g) 35%,var(--line))}}
 .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--g)}
 .top{display:flex;gap:6px 8px;align-items:center;flex-wrap:wrap;font-size:12.5px;color:var(--mute);margin-bottom:3px}
@@ -829,7 +828,7 @@ const D=s=>new Date(s+"T12:00:00");
 const today=iso(new Date());
 const addDays=(s,n)=>{const d=D(s);d.setDate(d.getDate()+n);return iso(d)};
 const in7=addDays(today,6);
-const _DF=new Map(),_DR=new Map(),_DQ=new Set(["weekday","day","month","year"]);const _dk=o=>{if(!o)return"";for(const p in o)if(!_DQ.has(p))return JSON.stringify(o);return(o.weekday||"")+"."+(o.day||"")+"."+(o.month||"")+"."+(o.year||"")};const fmt=(s,o)=>{const k=_dk(o);const rk=s+"|"+k;let r=_DR.get(rk);if(r!==undefined)return r;let f=_DF.get(k);if(!f){f=new Intl.DateTimeFormat("it-IT",o);_DF.set(k,f)}r=f.format(D(s));_DR.set(rk,r);return r};/* formattatori riusati: molto più veloci di toLocaleDateString ripetuto */
+const _DF=new Map(),_DR=new Map(),_DK=new WeakMap();const fmt=(s,o)=>{let k=o?_DK.get(o):"";if(k===undefined){k=JSON.stringify(o);_DK.set(o,k)}const rk=s+"|"+k;let r=_DR.get(rk);if(r!==undefined)return r;let f=_DF.get(k);if(!f){f=new Intl.DateTimeFormat("it-IT",o);_DF.set(k,f)}r=f.format(D(s));_DR.set(rk,r);return r};/* formattatori riusati: molto più veloci di toLocaleDateString ripetuto */
 const fri=(()=>{const d=D(today),w=d.getDay();d.setDate(d.getDate()+(w===0?-2:w===6?-1:5-w));return iso(d)})();
 const sun=addDays(fri,2),wkStart=fri<today?today:fri;
 const wkLabel=`${D(wkStart).getDate()}–${fmt(sun,{day:"numeric",month:"short"})}`;
@@ -1359,18 +1358,14 @@ $("#fbtn").onclick=()=>{lAll=false;sub="";openDlg($("#fdlg"));renderPanels()};
 $("#fdlg").addEventListener("close",()=>{lFocus=null});
 $("#fdlg").addEventListener("click",e=>{if(e.target.id==="fdlg")closeD($("#fdlg"))});
 const bar=$("#bar"),fab=$("#top");
-let _wide=innerWidth>=760;const _H={};const _setH=(v,h)=>{if(_H[v]!==h){_H[v]=h;document.documentElement.style.setProperty(v,h+"px")}};/* 19/11 velocità: le altezze arrivano dal ResizeObserver, senza rileggere la pagina a ogni disegno */
-const _RO=(()=>{try{if(!window.ResizeObserver)return null;const qw=$("#qwrap"),m={status:"--sth",bar:"--barh",qwrap:"--qh"};const ro=new ResizeObserver(es=>{for(const e of es){const v=m[e.target.id];if(!v)continue;const b=e.borderBoxSize&&e.borderBoxSize[0];const h=Math.round(b?b.blockSize:e.target.offsetHeight);_setH(v,v==="--qh"&&!_wide?0:h)}});[$("#status"),bar,qw].forEach(x=>x&&ro.observe(x));return ro}catch(_){return null}})();
-const setBarH=rz=>{if(_RO){if(rz===true){_wide=innerWidth>=760;const q=$("#qwrap");if(q)_setH("--qh",_wide?q.offsetHeight:0)}return}try{document.documentElement.style.setProperty("--sth",($("#status").offsetHeight||0)+"px");document.documentElement.style.setProperty("--barh",bar.offsetHeight+"px");document.documentElement.style.setProperty("--qh",(innerWidth>=760?$("#qwrap").offsetHeight:0)+"px")}catch(_){}};
+const setBarH=()=>{try{document.documentElement.style.setProperty("--sth",($("#status").offsetHeight||0)+"px");document.documentElement.style.setProperty("--barh",bar.offsetHeight+"px");document.documentElement.style.setProperty("--qh",(innerWidth>=760?$("#qwrap").offsetHeight:0)+"px")}catch(_){}};
 const cittaV=(()=>{try{const d=document.createElement("div");d.className="citta-v";d.setAttribute("aria-hidden","true");d.textContent=CITY.nome;document.body.appendChild(d);return d}catch(_){return null}})();
-const _stuck=su=>{bar.classList.toggle("stuck",su);if(cittaV)cittaV.classList.toggle("show",su)};
-const _IO=(()=>{try{if(!window.IntersectionObserver)return null;const io=new IntersectionObserver(es=>{for(const e of es)_stuck(e.boundingClientRect.top<=0)},{rootMargin:"-1px 0px 0px 0px",threshold:[1]});io.observe(bar);return io}catch(_){return null}})();/* 19/11 velocità: la barra «incollata» la segnala l'IntersectionObserver, senza misurare la pagina a ogni scorrimento */
-function onScroll(){if(!_IO)_stuck(bar.getBoundingClientRect().top<=0);fab.classList.toggle("show",scrollY>900);pillola()}
+function onScroll(){const su=bar.getBoundingClientRect().top<=0;bar.classList.toggle("stuck",su);if(cittaV)cittaV.classList.toggle("show",su);fab.classList.toggle("show",scrollY>900);pillola()}
 function nAttivi(){return nSel()+(st.q?1:0)}
 function pillola(){const g=$("#azzGiu");if(g&&!g.hidden)g.classList.toggle("via",scrollY<260)}
 function mostraAzzera(){if(!$("#azzSu")||!$("#azzGiu"))return;const n=nAttivi();$$("#azzSu .n,#azzGiu .n").forEach(e=>e.textContent=n);$("#azzSu").hidden=$("#azzGiu").hidden=n===0;pillola()}
-let _sc=0;addEventListener("scroll",()=>{if(!_sc)_sc=requestAnimationFrame(()=>{_sc=0;onScroll()})},{passive:true});addEventListener("keydown",e=>{if(e.key==="Escape"&&popK){popK="";renderFbar()}});
-addEventListener("resize",()=>{setBarH(true);if(popK){popK="";renderFbar()}});
+addEventListener("scroll",onScroll,{passive:true});addEventListener("keydown",e=>{if(e.key==="Escape"&&popK){popK="";renderFbar()}});
+addEventListener("resize",()=>{setBarH();if(popK){popK="";renderFbar()}});
 fab.onclick=()=>scrollTo({top:0});
 let tt;function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("show"),2600)}
 
@@ -1446,7 +1441,7 @@ document.addEventListener("change",e=>{if(GC&&ON_WEB&&e.target.dataset&&e.target
 let tq;$("#q").addEventListener("input",e=>{if(!GC||!ON_WEB)return;clearTimeout(tq);const v=e.target.value.trim().toLowerCase();if(v.length>=3)tq=setTimeout(()=>track(`${tm()}/ricerca/${v}`,"Ricerca"),1500)});
 /* ---------- avvio ---------- */
 heroStats();
-setBarH();render(true);requestAnimationFrame(onScroll);
+setBarH();render(true);onScroll();
 /* ---------- dati che arrivano dopo (incontri, cinema, sport) ----------
    All'apertura la pagina scarica solo Spettacoli, serate e mostre; gli altri file partono appena la pagina è visibile
    (stesso indirizzo con ?h= di versioni.js, quindi la cache funziona come prima). Se si tocca una scheda prima che i suoi dati
