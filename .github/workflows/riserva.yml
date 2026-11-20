@@ -1,0 +1,93 @@
+name: Riserva eventi e cinema
+# 20/11/2026, richiesta di Stefano: «verifica bene che eventi e cinema siano sempre aggiornati».
+# I giri programmati di GitHub a volte partono tardi o saltano. Questo flusso controlla due volte al giorno:
+#  - cinema: se le pagine di una città non hanno gli orari di oggi, rilancia cinema.yml;
+#  - eventi, incontri, serate, sport (lunedì e giovedì): se il giro dell'ultimo lunedì/giovedì
+#    non è riuscito, lo rilancia (anche il martedì e il venerdì, per recuperare).
+# Non legge siti e non modifica i dati: lancia solo i flussi che li aggiornano.
+on:
+  schedule:
+    - cron: "7 10 * * *"    # 11:07 ora italiana (inverno)
+    - cron: "7 15 * * *"    # 16:07 ora italiana (inverno)
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: write
+jobs:
+  controlla:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            dati
+            milano/dati
+            ferrara/dati
+            ravenna/dati
+      - name: Controlla e rilancia
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess, datetime, zoneinfo
+          rome = zoneinfo.ZoneInfo("Europe/Rome")
+          ora = datetime.datetime.now(rome)
+          oggi = ora.date().isoformat()
+          repo = os.environ["REPO"]
+
+          def gh(*a):
+              return subprocess.run(["gh", *a, "-R", repo], capture_output=True, text=True)
+
+          def runs(wf, n=10):
+              r = gh("run", "list", "--workflow", wf, "--limit", str(n), "--json", "status,conclusion,createdAt,event")
+              try:
+                  return json.loads(r.stdout or "[]")
+              except Exception:
+                  return []
+
+          def in_corso(wf):
+              return any(x["status"] in ("queued", "in_progress", "waiting", "requested", "pending") for x in runs(wf))
+
+          def lancia(wf, motivo):
+              if in_corso(wf):
+                  print(f"{wf}: {motivo}, ma un giro è già in corso: aspetto")
+                  return
+              r = gh("workflow", "run", wf, "--ref", "main")
+              print(f"{wf}: {motivo} -> rilanciato ({'ok' if r.returncode == 0 else r.stderr.strip()})")
+
+          # Cinema: ogni città deve avere gli orari di oggi
+          vecchie = []
+          for c in ["dati", "milano/dati", "ferrara/dati", "ravenna/dati"]:
+              p = f"{c}/cinema_stato.json"
+              if not os.path.exists(p):
+                  continue
+              try:
+                  s = json.load(open(p))
+              except Exception:
+                  vecchie.append(c); continue
+              if s.get("giorno") != oggi or not s.get("ok"):
+                  vecchie.append(f"{c} ({s.get('giorno')}, ok={s.get('ok')})")
+          if vecchie and ora.hour >= 10:
+              lancia("cinema.yml", "orari non di oggi: " + ", ".join(vecchie))
+          else:
+              print("cinema: aggiornato a oggi" if not vecchie else "cinema: troppo presto per rilanciare")
+
+          # Flussi del lunedì e giovedì: dall'ultimo lunedì/giovedì ci dev'essere un giro riuscito
+          d = ora.date()
+          while d.isoweekday() not in (1, 4):
+              d -= datetime.timedelta(days=1)
+          giorni = (ora.date() - d).days
+          inizio = datetime.datetime.combine(d, datetime.time(0, 0), rome)
+          if giorni <= 1 and not (giorni == 0 and ora.hour < 9):
+              for wf in ["eventi_auto.yml", "incontri.yml", "serate.yml", "sport.yml"]:
+                  ok = [x for x in runs(wf, 15) if x["conclusion"] == "success"
+                        and datetime.datetime.fromisoformat(x["createdAt"].replace("Z", "+00:00")) >= inizio]
+                  if ok:
+                      print(f"{wf}: giro riuscito dal {d}")
+                  else:
+                      lancia(wf, f"nessun giro riuscito dal {d}")
+          else:
+              print(f"flussi del lunedì/giovedì: niente da controllare oggi (ultimo giorno previsto {d})")
+          PY
