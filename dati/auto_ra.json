@@ -1,5 +1,7 @@
 {
- "aggiunti": [],
+ "aggiunti": [
+  "2027-02-05 Bandakadabra – Teatro Socjale (Teatro Socjale)"
+ ],
  "link_biglietti": 0,
  "fonti": {
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
@@ -8,37 +10,37 @@
    "aggiunti": 0
   },
   "arte.it": {
-   "letti": 3,
+   "letti": 4,
    "aggiunti": 0
   },
   "siti dei locali": {
    "Teatro Socjale": {
     "sul_sito": 7,
-    "in_guida": 7,
-    "aggiunti": 0,
+    "in_guida": 8,
+    "aggiunti": 1,
     "esito": "ok",
-    "secondi": 6
+    "secondi": 7
    },
    "Mama's Club": {
     "sul_sito": 14,
     "in_guida": 14,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 3
+    "secondi": 5
    },
    "Teatro Masini": {
     "sul_sito": 11,
     "in_guida": 11,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 83
+    "secondi": 126
    }
   }
  },
  "errori": [
   "https://dice.fm/browse/ravenna: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-19T06:02",
- "eventi_totali": 105,
+ "data": "2026-11-20T09:45",
+ "eventi_totali": 103,
  "mostre_totali": 15
 }

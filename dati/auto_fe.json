@@ -1,11 +1,20 @@
 {
- "aggiunti": [],
+ "aggiunti": [
+  "mostra 2026-11-16→2026-11-30 Votati a rinascere. Esempi di rinascita a partire dalle parole delle madri costituenti – Laboratorio Aperto Ex Teatro Verdi (portale turistico)",
+  "2026-12-13 Fanfara in Four Chapters – Teatro Comunale Claudio Abbado (Teatro Comunale Claudio Abbado)",
+  "2027-04-03 Cappio al collo – Auditorium Pandurera (Auditorium Pandurera)",
+  "2027-04-10 Un assegno tira l’altro – Auditorium Pandurera (Auditorium Pandurera)",
+  "2027-04-17 Quel certo non so che – Auditorium Pandurera (Auditorium Pandurera)",
+  "2027-04-24 Al pitour e al so ispirazioni – Auditorium Pandurera (Auditorium Pandurera)",
+  "2027-05-15 Mò che giurnadàza! – Auditorium Pandurera (Auditorium Pandurera)",
+  "2027-05-22 Non capisco ma mi adeguo – Auditorium Pandurera (Auditorium Pandurera)"
+ ],
  "link_biglietti": 0,
  "fonti": {
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "portale turistico": {
-   "letti": 18,
-   "aggiunti": 0
+   "letti": 19,
+   "aggiunti": 1
   },
   "arte.it": {
    "letti": 2,
@@ -22,7 +31,7 @@
    "Teatro Comunale Claudio Abbado": {
     "sul_sito": 51,
     "in_guida": 71,
-    "aggiunti": 0,
+    "aggiunti": 1,
     "esito": "ok",
     "secondi": 97
    },
@@ -31,21 +40,21 @@
     "in_guida": 59,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 114
+    "secondi": 118
    },
    "Ferrara Musica": {
-    "sul_sito": 23,
+    "sul_sito": 22,
     "in_guida": 71,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 46
+    "secondi": 47
    },
    "Auditorium Pandurera": {
-    "sul_sito": 8,
-    "in_guida": 8,
-    "aggiunti": 0,
+    "sul_sito": 14,
+    "in_guida": 14,
+    "aggiunti": 6,
     "esito": "ok",
-    "secondi": 19
+    "secondi": 31
    },
    "Teatro De Micheli": {
     "sul_sito": 13,
@@ -59,7 +68,7 @@
  "errori": [
   "https://dice.fm/browse/ferrara: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-19T06:07",
- "eventi_totali": 164,
- "mostre_totali": 18
+ "data": "2026-11-20T09:50",
+ "eventi_totali": 171,
+ "mostre_totali": 19
 }

@@ -1,36 +1,33 @@
 {
  "aggiunti": [
-  "2026-11-23 Annodati Open Mic – NODO bar (DICE)",
-  "2026-12-14 Magnolia Secret Comedy | Ep 2 – Circolo Magnolia (DICE)",
-  "2026-11-19 Pitching Pills: come presentare il tuo progetto musicale agli addetti ai lavori – NODO bar (DICE)",
-  "2026-11-19 MONKSTA UNDERGROUND — THE TAKEOVER – Homis - Record Store Bar (DICE)",
-  "2026-11-19 CASA METATRON: ROB & IL SUO TEAM CI RACCONTANO \"CHAOS PERFETTO\" – Club House (DICE)",
-  "2026-11-19 Bello unplugged | Village H – Ostello Bello Milano Centrale (DICE)",
-  "2026-11-19 First Club – Fabbrica del Vapore (DICE)",
-  "2026-11-19 HARDKORO – BASE Milano (DICE)",
-  "2026-11-19 MARGHERITA PIUMATTI + JAM SESSION – GIPSY (DICE)",
-  "2026-11-19 Moontell - Milano Music Week – mare culturale urbano - cascina torrette (DICE)",
-  "2026-11-19 MMW26 / RECEPTION // ep. IX – Bachelite cLab (DICE)",
-  "2026-11-19 Rotten Music Week – APOLLO CLUB MILANO (DICE)",
-  "2026-11-19 Blue Nights pres. LYRA QUINTET *live* – Bluesquare Milano (DICE)",
-  "2026-11-20 LINECHECK | MEETING DAY 2 – BASE Milano (DICE)",
-  "2026-11-20 Social Killed The Video Star | Live Music & Talk – Cinema Teatro Wagner (DICE)",
+  "2026-11-20 BIS! • Ostello Bello Milano Centrale – Ostello Bello Milano Centrale (DICE)",
+  "2026-11-20 Alternative Rock Night – Station Live Club (DICE)",
+  "2026-11-20 FREQUENZA FUTURA LIVE SHOW – Fabbrica del Vapore (DICE)",
+  "2026-11-20 Lavina – Slaughter Club (DICE)",
+  "2026-11-20 Sugarfree Unplugged – Cinema Teatro Wagner (DICE)",
+  "2026-11-20 ONE, TWO, THREE, FOUR – A NIGHT WITH THE RAMONES - Circolo Agorà – Circolo Agorà (DICE)",
+  "2026-11-20 Voci di Periferia Sistas - Milano Music Week – mare culturale urbano - cascina torrette (DICE)",
+  "2026-11-20 MMW26 / The Blues Ensemble // La Jam Blues – Bachelite cLab (DICE)",
+  "2026-11-20 Jazz Night + Jam Session – Cascina Nascosta (DICE)",
+  "2026-11-20 COMETE | LIVE MUSIC & DJ SET – SALONE 14 @ Yellowsquare (DICE)",
+  "2026-11-20 THE BAD PLUG + MANDURIA live & aftershow – Black Hole (DICE)",
+  "2026-11-20 SOUL SISTERS – Biko (DICE)",
+  "2026-11-21 Le Faremo Sapere - Guida semplice per lavorare nell'industria musicale – BASE Milano (DICE)",
+  "2026-11-21 Just Apparel Showcase – Cinema Teatro Wagner (DICE)",
   "2027-02-01 U.d.o. – Magazzini Generali (Magazzini Generali)",
-  "2027-01-16 Novocaine+: Lobster – Gate Milano (Gate Milano)",
-  "2027-01-08 Gente Guasta – Circolo Magnolia (Circolo Magnolia)",
-  "2026-11-19 Parla, Clitemnestra! – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-20 Un Marito Ideale – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-22 Diva – Teatro Elfo Puccini (Teatro Elfo Puccini)"
+  "2027-01-22 Plasma: Blk. – Gate Milano (Gate Milano)",
+  "2026-11-20 Parla, Clitemnestra! – Teatro Elfo Puccini (Teatro Elfo Puccini)",
+  "2026-11-22 Ma come ho fatto a sopravvivere? – Teatro della Cooperativa (Teatro della Cooperativa)"
  ],
  "link_biglietti": 0,
  "fonti": {
   "DICE": {
-   "letti": 191,
-   "aggiunti": 15
+   "letti": 186,
+   "aggiunti": 14
   },
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "arte.it": {
-   "letti": 49,
+   "letti": 50,
    "aggiunti": 0
   },
   "siti dei locali": {
@@ -39,11 +36,11 @@
     "in_guida": 39,
     "aggiunti": 1,
     "esito": "ok",
-    "secondi": 7
+    "secondi": 10
    },
    "Teatro Principe": {
     "sul_sito": 2,
-    "in_guida": 7,
+    "in_guida": 6,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 3
@@ -56,53 +53,53 @@
     "secondi": 8
    },
    "Gate Milano": {
-    "sul_sito": 32,
-    "in_guida": 32,
+    "sul_sito": 33,
+    "in_guida": 33,
     "aggiunti": 1,
     "esito": "ok",
-    "secondi": 5
+    "secondi": 6
    },
    "Teatro Out Off": {
     "sul_sito": 10,
     "in_guida": 11,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 2
+    "secondi": 3
    },
    "BASE Milano": {
     "sul_sito": 5,
-    "in_guida": 9,
+    "in_guida": 8,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 8
+    "secondi": 11
    },
    "Circolo Magnolia": {
     "sul_sito": 21,
     "in_guida": 51,
-    "aggiunti": 1,
+    "aggiunti": 0,
     "esito": "ok",
-    "secondi": 47
+    "secondi": 55
    },
    "Santeria Toscana 31": {
     "sul_sito": 14,
     "in_guida": 33,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 100
+    "secondi": 95
    },
    "Unipol Dome": {
     "sul_sito": 9,
     "in_guida": 22,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 23
+    "secondi": 24
    },
    "Teatro Elfo Puccini": {
-    "sul_sito": 46,
+    "sul_sito": 44,
     "in_guida": 57,
-    "aggiunti": 3,
+    "aggiunti": 1,
     "esito": "ok",
-    "secondi": 176
+    "secondi": 194
    },
    "Teatro Carcano": {
     "sul_sito": 5,
@@ -116,40 +113,40 @@
     "in_guida": 32,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 69
+    "secondi": 86
    },
    "Auditorium di Milano": {
     "sul_sito": 8,
     "in_guida": 11,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 21
+    "secondi": 22
    },
    "Teatro Filodrammatici": {
     "sul_sito": 26,
     "in_guida": 26,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 105
+    "secondi": 108
    },
    "Teatro della Cooperativa": {
-    "sul_sito": 12,
-    "in_guida": 12,
-    "aggiunti": 0,
+    "sul_sito": 13,
+    "in_guida": 13,
+    "aggiunti": 1,
     "esito": "ok",
-    "secondi": 38
+    "secondi": 39
    },
    "Teatro Gerolamo": {
     "sul_sito": 30,
     "in_guida": 29,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 114
+    "secondi": 150
    }
   }
  },
  "errori": [],
- "data": "2026-11-19T06:00",
- "eventi_totali": 1257,
+ "data": "2026-11-20T09:42",
+ "eventi_totali": 1226,
  "mostre_totali": 46
 }
