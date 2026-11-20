@@ -40,7 +40,7 @@ def ora_iso(giorno, fine=False):
 def tipo_evento(path):
     """Raggruppa i percorsi degli eventi registrati da index.html."""
     p = path.strip("/").lower()
-    p = re.sub(r"^milano/", "", p)  # gli eventi della pagina di Milano hanno il prefisso della città
+    p = re.sub(r"^(milano|ferrara|ravenna)/", "", p)  # gli eventi delle città diverse da Bologna hanno il prefisso della città (Ferrara e Ravenna dal 20/11/2026: prima finivano in «altro»)
     if p.startswith("condividi/"): return "condivisioni"
     if p.startswith("scheda/"): return "cambio scheda"
     m = re.match(r"^(spettacoli|mostre|cinema)/(.+)$", p)
