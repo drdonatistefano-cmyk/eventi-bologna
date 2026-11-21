@@ -1,0 +1,774 @@
+{
+ "quando": "2026-11-21T06:30:40Z",
+ "livello": 1,
+ "richiesta": "",
+ "durata_secondi": 19,
+ "esito": "giallo",
+ "controlli": 145,
+ "errori": 0,
+ "avvisi": 3,
+ "noti": 0,
+ "viste": [
+  {
+   "nome": "Pagine e disponibilità",
+   "cosa": "Le pagine principali rispondono, in fretta e con il contenuto giusto",
+   "controlli": [
+    {
+     "esito": "ok",
+     "nome": "Places",
+     "dettaglio": "0.13 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Places, mappa",
+     "dettaglio": "0.39 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Places, Chi siamo",
+     "dettaglio": "0.36 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Places, Privacy",
+     "dettaglio": "0.23 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Places, mappa del sito",
+     "dettaglio": "0.19 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Places, robots",
+     "dettaglio": "0.19 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Places, app: manifesto",
+     "dettaglio": "0.14 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Places, app: pagina per gli ospiti",
+     "dettaglio": "0.38 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Dinners, app: manifesto",
+     "dettaglio": "0.10 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Dinners, app: pagina per gli ospiti",
+     "dettaglio": "0.08 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events, app: manifesto",
+     "dettaglio": "0.12 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events, app: pagina per gli ospiti",
+     "dettaglio": "0.13 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Dinners, tasto WhatsApp",
+     "dettaglio": "0.07 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events, tasto WhatsApp",
+     "dettaglio": "0.15 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Milano, tasto WhatsApp",
+     "dettaglio": "0.10 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events, pagina Collaborano con noi",
+     "dettaglio": "0.09 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events, pulsante Collaborano con noi",
+     "dettaglio": "0.07 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events, schede piccole accessibili",
+     "dettaglio": "0.07 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events, comune nelle schede",
+     "dettaglio": "0.09 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events, clic Biglietti con il sito di arrivo",
+     "dettaglio": "0.06 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ravenna",
+     "dettaglio": "0.09 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ferrara",
+     "dettaglio": "0.11 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events, filtri nuovi",
+     "dettaglio": "0.07 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Places, riquadro dei filtri che segue",
+     "dettaglio": "0.03 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Places, tasto WhatsApp",
+     "dettaglio": "0.03 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Milano, filtri nuovi",
+     "dettaglio": "0.06 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Dinners",
+     "dettaglio": "0.02 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Dinners, Chi siamo",
+     "dettaglio": "0.06 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Dinners, Privacy",
+     "dettaglio": "0.04 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Bologna",
+     "dettaglio": "0.08 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Milano",
+     "dettaglio": "0.06 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events, Chi siamo",
+     "dettaglio": "0.09 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events, Privacy",
+     "dettaglio": "0.10 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events, robots",
+     "dettaglio": "0.09 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events, mappa del sito",
+     "dettaglio": "0.10 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Dinners, robots",
+     "dettaglio": "0.05 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Dinners, mappa del sito",
+     "dettaglio": "0.05 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Bologna, indirizzo canonico",
+     "dettaglio": "0.06 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Milano, indirizzo canonico",
+     "dettaglio": "0.06 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ravenna, indirizzo canonico",
+     "dettaglio": "0.04 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ferrara, indirizzo canonico",
+     "dettaglio": "0.05 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Statistiche Places",
+     "dettaglio": "0.10 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Statistiche Dinners",
+     "dettaglio": "0.06 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Statistiche Events",
+     "dettaglio": "0.10 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "Velocità",
+     "dettaglio": "0.08 s"
+    },
+    {
+     "esito": "ok",
+     "nome": "places: l'indirizzo senza https porta al sito",
+     "dettaglio": "risposta 200"
+    },
+    {
+     "esito": "ok",
+     "nome": "dinners: l'indirizzo senza https porta al sito",
+     "dettaglio": "risposta 200"
+    },
+    {
+     "esito": "ok",
+     "nome": "events: l'indirizzo senza https porta al sito",
+     "dettaglio": "risposta 200"
+    },
+    {
+     "esito": "ok",
+     "nome": "installa.js uguale nelle tre guide",
+     "dettaglio": "3 copie identiche"
+    }
+   ]
+  },
+  {
+   "nome": "Dati",
+   "cosa": "I file dei dati esistono, si leggono, sono completi e aggiornati",
+   "controlli": [
+    {
+     "esito": "ok",
+     "nome": "Events Bologna: file degli eventi",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Bologna: numero di eventi",
+     "dettaglio": "762 (attesi almeno 150)"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Bologna: aggiornato di recente",
+     "dettaglio": "ultimo aggiornamento 2026-11-20 (1 giorni fa)"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Bologna: eventi con titolo, luogo e data",
+     "dettaglio": "0 incompleti"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Bologna: niente eventi già passati",
+     "dettaglio": "12 con data passata"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Bologna: niente doppioni",
+     "dettaglio": "0 doppioni"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Milano: file degli eventi",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Milano: numero di eventi",
+     "dettaglio": "1195 (attesi almeno 200)"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Milano: aggiornato di recente",
+     "dettaglio": "ultimo aggiornamento 2026-11-20 (1 giorni fa)"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Milano: eventi con titolo, luogo e data",
+     "dettaglio": "0 incompleti"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Milano: niente eventi già passati",
+     "dettaglio": "48 con data passata"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Milano: niente doppioni",
+     "dettaglio": "0 doppioni"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ravenna: file degli eventi",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ravenna: numero di eventi",
+     "dettaglio": "103 (attesi almeno 40)"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ravenna: aggiornato di recente",
+     "dettaglio": "ultimo aggiornamento 2026-11-20 (1 giorni fa)"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ravenna: eventi con titolo, luogo e data",
+     "dettaglio": "0 incompleti"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ravenna: niente eventi già passati",
+     "dettaglio": "2 con data passata"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ravenna: niente doppioni",
+     "dettaglio": "0 doppioni"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ferrara: file degli eventi",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ferrara: numero di eventi",
+     "dettaglio": "170 (attesi almeno 40)"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ferrara: aggiornato di recente",
+     "dettaglio": "ultimo aggiornamento 2026-11-20 (1 giorni fa)"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ferrara: eventi con titolo, luogo e data",
+     "dettaglio": "0 incompleti"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ferrara: niente eventi già passati",
+     "dettaglio": "1 con data passata"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ferrara: niente doppioni",
+     "dettaglio": "0 doppioni"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events: mostre.js",
+     "dettaglio": "24 voci, aggiornato 1 giorni fa"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events: serate.js",
+     "dettaglio": "23 voci, aggiornato 2 giorni fa"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events: incontri.js",
+     "dettaglio": "160 voci, aggiornato 2 giorni fa"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events: sport.js",
+     "dettaglio": "63 voci, aggiornato 2 giorni fa"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events: cinema.js",
+     "dettaglio": "45 voci, aggiornato 1 giorni fa"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events: impronte dei file (versioni.js)",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "Dinners: la pagina indica il file dell'indice",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "Dinners: indice dei locali",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "Dinners: numero di locali nell'indice",
+     "dettaglio": "49.192"
+    },
+    {
+     "esito": "ok",
+     "nome": "Dinners: colonne dell'indice tutte della stessa lunghezza",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "Dinners: locali in classifica",
+     "dettaglio": "3159"
+    },
+    {
+     "esito": "ok",
+     "nome": "Dinners: dettagli di una provincia (Bologna)",
+     "dettaglio": "risposta 200"
+    },
+    {
+     "esito": "ok",
+     "nome": "Places: la pagina indica i file dei dati",
+     "dettaglio": "111 file"
+    },
+    {
+     "esito": "ok",
+     "nome": "Places: i file dei dati citati dalla pagina esistono",
+     "dettaglio": "6 controllati"
+    },
+    {
+     "esito": "ok",
+     "nome": "Places: file principale dei luoghi leggibile",
+     "dettaglio": "2096 KB"
+    },
+    {
+     "esito": "ok",
+     "nome": "Places: mappa del sito (elenco delle pagine)",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "Places: pagine per Google",
+     "dettaglio": "2806 comuni, 8980 luoghi"
+    },
+    {
+     "esito": "ok",
+     "nome": "Places: pagine a campione dalla mappa del sito",
+     "dettaglio": "6 aperte"
+    }
+   ]
+  },
+  {
+   "nome": "Città di Events",
+   "cosa": "Ogni città accesa è collegata in tutti i file; soglia per aprire nuove province",
+   "controlli": [
+    {
+     "esito": "ok",
+     "nome": "Città collegate dappertutto",
+     "dettaglio": "bo, mi, ra, fe"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Bologna: spettacoli in due parti",
+     "dettaglio": "161 subito + 601 dopo = 762"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Bologna: prossimi giorni aggiornati",
+     "dettaglio": "eventi-presto.js arriva fino al 2026-12-04"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Milano: spettacoli in due parti",
+     "dettaglio": "244 subito + 951 dopo = 1195"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Milano: prossimi giorni aggiornati",
+     "dettaglio": "eventi-presto.js arriva fino al 2026-12-04"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ravenna: spettacoli in due parti",
+     "dettaglio": "21 subito + 82 dopo = 103"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ravenna: prossimi giorni aggiornati",
+     "dettaglio": "eventi-presto.js arriva fino al 2026-12-04"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ferrara: spettacoli in due parti",
+     "dettaglio": "29 subito + 141 dopo = 170"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events Ferrara: prossimi giorni aggiornati",
+     "dettaglio": "eventi-presto.js arriva fino al 2026-12-04"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events: pagine dei singoli spettacoli",
+     "dettaglio": "2230 pagine, 1699 con i dati «Event»; 5 aperte a campione"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events: spettacoli con indirizzo del luogo",
+     "dettaglio": "76% delle pagine"
+    },
+    {
+     "esito": "ok",
+     "nome": "Nuove province: soglia del business plan",
+     "dettaglio": "1002 visite delle tre guide negli ultimi 30 giorni (17 giorni con dati), soglia 10000"
+    }
+   ]
+  },
+  {
+   "nome": "Servizi e posta",
+   "cosa": "Disiscrizione, modulo delle correzioni e impostazioni dei domini per la posta",
+   "controlli": [
+    {
+     "esito": "ok",
+     "nome": "Pagina di disiscrizione raggiungibile",
+     "dettaglio": "risposta 400"
+    },
+    {
+     "esito": "ok",
+     "nome": "Modulo «Segnala una correzione»",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "Il modulo rimanda all'informativa privacy",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "Modulo aperto su un comune",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "La pagina riservata dei numeri non si apre senza chiave",
+     "dettaglio": "risposta 404"
+    },
+    {
+     "esito": "ok",
+     "nome": "La pagina delle verifiche non si apre senza chiave",
+     "dettaglio": "risposta 404"
+    },
+    {
+     "esito": "ok",
+     "nome": "Le correzioni raccolte non si leggono senza autorizzazione",
+     "dettaglio": "risposta 401"
+    },
+    {
+     "esito": "ok",
+     "nome": "Il modulo rifiuta una correzione vuota",
+     "dettaglio": "risposta 400"
+    },
+    {
+     "esito": "ok",
+     "nome": "I numeri della Dashboard non si possono cambiare da fuori",
+     "dettaglio": "risposta 401"
+    },
+    {
+     "esito": "ok",
+     "nome": "places: si apre dal link tracciato di una lettera",
+     "dettaglio": "risposta 200"
+    },
+    {
+     "esito": "ok",
+     "nome": "places: conteggio visite presente (vede da quale lettera arrivano)",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "dinners: si apre dal link tracciato di una lettera",
+     "dettaglio": "risposta 200"
+    },
+    {
+     "esito": "ok",
+     "nome": "dinners: conteggio visite presente (vede da quale lettera arrivano)",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "events: si apre dal link tracciato di una lettera",
+     "dettaglio": "risposta 200"
+    },
+    {
+     "esito": "ok",
+     "nome": "events: conteggio visite presente (vede da quale lettera arrivano)",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "achplaces.com: la posta arriva alla casella giusta (MX)",
+     "dettaglio": "5 mta-gw.infomaniak.ch."
+    },
+    {
+     "esito": "ok",
+     "nome": "achplaces.com: autorizzazione all'invio (SPF)",
+     "dettaglio": "v=spf1 include:spf.infomaniak.ch -all"
+    },
+    {
+     "esito": "ok",
+     "nome": "achplaces.com: regola antifalsificazione (DMARC)",
+     "dettaglio": "v=DMARC1; p=none"
+    },
+    {
+     "esito": "ok",
+     "nome": "achplaces.com: firma delle email (DKIM)",
+     "dettaglio": "presente"
+    },
+    {
+     "esito": "ok",
+     "nome": "achdinners.com: la posta arriva alla casella giusta (MX)",
+     "dettaglio": "5 mta-gw.infomaniak.ch."
+    },
+    {
+     "esito": "ok",
+     "nome": "achdinners.com: autorizzazione all'invio (SPF)",
+     "dettaglio": "v=spf1 include:spf.infomaniak.ch -all"
+    },
+    {
+     "esito": "ok",
+     "nome": "achdinners.com: regola antifalsificazione (DMARC)",
+     "dettaglio": "v=DMARC1; p=none"
+    },
+    {
+     "esito": "ok",
+     "nome": "achdinners.com: firma delle email (DKIM)",
+     "dettaglio": "presente"
+    },
+    {
+     "esito": "ok",
+     "nome": "achevents.com: la posta arriva alla casella giusta (MX)",
+     "dettaglio": "5 mta-gw.infomaniak.ch."
+    },
+    {
+     "esito": "ok",
+     "nome": "achevents.com: autorizzazione all'invio (SPF)",
+     "dettaglio": "v=spf1 include:spf.infomaniak.ch -all"
+    },
+    {
+     "esito": "ok",
+     "nome": "achevents.com: regola antifalsificazione (DMARC)",
+     "dettaglio": "v=DMARC1; p=none"
+    },
+    {
+     "esito": "ok",
+     "nome": "achevents.com: firma delle email (DKIM)",
+     "dettaglio": "presente"
+    }
+   ]
+  },
+  {
+   "nome": "Velocità",
+   "cosa": "L'ultima misura fatta come da telefono (4G, 3G, ritorno, tocchi)",
+   "controlli": [
+    {
+     "esito": "ok",
+     "nome": "Misure della velocità disponibili",
+     "dettaglio": ""
+    },
+    {
+     "esito": "ok",
+     "nome": "Places, guida",
+     "dettaglio": "verde ()"
+    },
+    {
+     "esito": "ok",
+     "nome": "Places, mappa",
+     "dettaglio": "verde ()"
+    },
+    {
+     "esito": "ok",
+     "nome": "Dinners, guida",
+     "dettaglio": "verde ()"
+    },
+    {
+     "esito": "ok",
+     "nome": "Events, guida",
+     "dettaglio": "verde ()"
+    },
+    {
+     "esito": "ok",
+     "nome": "La misura è recente",
+     "dettaglio": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "nome": "Automazioni",
+   "cosa": "I programmi automatici su GitHub (parte pubblica) stanno funzionando",
+   "controlli": [
+    {
+     "esito": "ok",
+     "nome": "Cartelloni bo: letti da GitHub questa settimana",
+     "dettaglio": "2026-11-15 11:17 UTC, 5 giorni fa"
+    },
+    {
+     "esito": "ok",
+     "nome": "Cartelloni bo: pagine lette",
+     "dettaglio": "14 su 19"
+    },
+    {
+     "esito": "ok",
+     "nome": "Cartelloni bo: TicketOne letto",
+     "dettaglio": "{'gruppi': 277, 'abbinamento': \"eventi con TicketOne: 283 su 771\\neventi con TicketOne dopo i controlli: 283\\nnuovi da TicketOne: 8 Counter({'Pop e altra musica/': 6, 'Teatro/Prosa': 1, 'Teatro/Musica"
+    },
+    {
+     "esito": "ok",
+     "nome": "Cartelloni mi: letti da GitHub questa settimana",
+     "dettaglio": "2026-11-15 11:27 UTC, 5 giorni fa"
+    },
+    {
+     "esito": "ok",
+     "nome": "Cartelloni mi: pagine lette",
+     "dettaglio": "9 su 10"
+    },
+    {
+     "esito": "ok",
+     "nome": "Cartelloni mi: TicketOne letto",
+     "dettaglio": "{'gruppi': 520, 'abbinamento': \"eventi con TicketOne: 513 su 1153\\neventi con TicketOne dopo i controlli: 513\\nnuovi da TicketOne: 39 Counter({'Pop e altra musica/': 25, 'Teatro/Musical': 6, 'Jazz/': "
+    },
+    {
+     "esito": "avviso",
+     "nome": "achplaces: qualche giro fallito negli ultimi 3 giorni, poi ripartito",
+     "dettaglio": "Miniature e velocità (rimette a posto dopo ogni costruzione) (3), Catalogo TicketOne da Awin (1)"
+    },
+    {
+     "esito": "avviso",
+     "nome": "achdinners.com: qualche giro fallito negli ultimi 3 giorni, poi ripartito",
+     "dettaglio": "Pagine per Google (ristoranti, città, province) (1)"
+    },
+    {
+     "esito": "avviso",
+     "nome": "eventi-bologna: qualche giro fallito negli ultimi 3 giorni, poi ripartito",
+     "dettaglio": "Controllo link biglietti (6)"
+    }
+   ]
+  }
+ ]
+}

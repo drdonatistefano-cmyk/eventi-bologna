@@ -1,0 +1,1720 @@
+{
+ "generato": "2026-11-21T18:54:05+00:00",
+ "dal": "2026-11-04",
+ "al": "2026-11-21",
+ "visite_totali": 426,
+ "totale_goatcounter": 1329,
+ "eventi_totali": 903,
+ "eventi_per_tipo": {
+  "schede aperte": 207,
+  "filtri": 194,
+  "cambio scheda": 152,
+  "altro": 93,
+  "cambio vista": 65,
+  "luoghi aperti": 57,
+  "apri filtri": 31,
+  "clic biglietti": 30,
+  "clic info spettacoli": 20,
+  "clic cinema (programma della sala)": 14,
+  "ricerche": 13,
+  "azzera filtri": 10,
+  "mostra altri": 8,
+  "clic mostre (scheda o sito)": 5,
+  "condivisioni": 4
+ },
+ "settimane": [
+  {
+   "settimana": 1,
+   "dal": "2026-11-04",
+   "al": "2026-11-10",
+   "visite": 233,
+   "cambio scheda": 74,
+   "altro": 12,
+   "cambio vista": 41,
+   "apri filtri": 19,
+   "filtri": 132,
+   "luoghi aperti": 39,
+   "mostra altri": 6,
+   "azzera filtri": 8,
+   "schede aperte": 69,
+   "clic biglietti": 15,
+   "clic info spettacoli": 10,
+   "clic cinema (programma della sala)": 2,
+   "condivisioni": 4,
+   "ricerche": 2,
+   "clic mostre (scheda o sito)": 5
+  },
+  {
+   "settimana": 2,
+   "dal": "2026-11-11",
+   "al": "2026-11-17",
+   "visite": 136,
+   "cambio scheda": 62,
+   "altro": 51,
+   "cambio vista": 22,
+   "apri filtri": 11,
+   "filtri": 57,
+   "luoghi aperti": 18,
+   "mostra altri": 2,
+   "azzera filtri": 2,
+   "schede aperte": 116,
+   "clic biglietti": 15,
+   "clic info spettacoli": 10,
+   "clic cinema (programma della sala)": 12,
+   "condivisioni": 0,
+   "ricerche": 10,
+   "clic mostre (scheda o sito)": 0
+  },
+  {
+   "settimana": 3,
+   "dal": "2026-11-18",
+   "al": "2026-11-21",
+   "visite": 57,
+   "cambio scheda": 16,
+   "altro": 30,
+   "cambio vista": 2,
+   "apri filtri": 1,
+   "filtri": 5,
+   "luoghi aperti": 0,
+   "mostra altri": 0,
+   "azzera filtri": 0,
+   "schede aperte": 22,
+   "clic biglietti": 0,
+   "clic info spettacoli": 0,
+   "clic cinema (programma della sala)": 0,
+   "condivisioni": 0,
+   "ricerche": 1,
+   "clic mostre (scheda o sito)": 0
+  }
+ ],
+ "eventi_per_giorno": {
+  "2026-11-04": {
+   "cambio scheda": 6,
+   "altro": 0,
+   "cambio vista": 5,
+   "apri filtri": 2,
+   "filtri": 8,
+   "luoghi aperti": 5,
+   "mostra altri": 2,
+   "azzera filtri": 1,
+   "schede aperte": 0,
+   "clic biglietti": 4,
+   "clic info spettacoli": 3,
+   "clic cinema (programma della sala)": 0,
+   "condivisioni": 0,
+   "ricerche": 0,
+   "clic mostre (scheda o sito)": 0
+  },
+  "2026-11-05": {
+   "cambio scheda": 6,
+   "altro": 0,
+   "cambio vista": 4,
+   "apri filtri": 4,
+   "filtri": 14,
+   "luoghi aperti": 4,
+   "mostra altri": 1,
+   "azzera filtri": 1,
+   "schede aperte": 3,
+   "clic biglietti": 1,
+   "clic info spettacoli": 0,
+   "clic cinema (programma della sala)": 0,
+   "condivisioni": 0,
+   "ricerche": 0,
+   "clic mostre (scheda o sito)": 0
+  },
+  "2026-11-06": {
+   "cambio scheda": 27,
+   "altro": 0,
+   "cambio vista": 10,
+   "apri filtri": 6,
+   "filtri": 48,
+   "luoghi aperti": 1,
+   "mostra altri": 1,
+   "azzera filtri": 0,
+   "schede aperte": 14,
+   "clic biglietti": 2,
+   "clic info spettacoli": 2,
+   "clic cinema (programma della sala)": 1,
+   "condivisioni": 1,
+   "ricerche": 0,
+   "clic mostre (scheda o sito)": 3
+  },
+  "2026-11-07": {
+   "cambio scheda": 8,
+   "altro": 0,
+   "cambio vista": 5,
+   "apri filtri": 3,
+   "filtri": 21,
+   "luoghi aperti": 8,
+   "mostra altri": 0,
+   "azzera filtri": 2,
+   "schede aperte": 11,
+   "clic biglietti": 1,
+   "clic info spettacoli": 0,
+   "clic cinema (programma della sala)": 0,
+   "condivisioni": 1,
+   "ricerche": 0,
+   "clic mostre (scheda o sito)": 0
+  },
+  "2026-11-08": {
+   "cambio scheda": 12,
+   "altro": 2,
+   "cambio vista": 8,
+   "apri filtri": 2,
+   "filtri": 16,
+   "luoghi aperti": 8,
+   "mostra altri": 0,
+   "azzera filtri": 3,
+   "schede aperte": 19,
+   "clic biglietti": 2,
+   "clic info spettacoli": 3,
+   "clic cinema (programma della sala)": 0,
+   "condivisioni": 2,
+   "ricerche": 0,
+   "clic mostre (scheda o sito)": 2
+  },
+  "2026-11-09": {
+   "cambio scheda": 7,
+   "altro": 4,
+   "cambio vista": 3,
+   "apri filtri": 0,
+   "filtri": 15,
+   "luoghi aperti": 5,
+   "mostra altri": 1,
+   "azzera filtri": 1,
+   "schede aperte": 5,
+   "clic biglietti": 3,
+   "clic info spettacoli": 0,
+   "clic cinema (programma della sala)": 0,
+   "condivisioni": 0,
+   "ricerche": 1,
+   "clic mostre (scheda o sito)": 0
+  },
+  "2026-11-10": {
+   "cambio scheda": 8,
+   "altro": 6,
+   "cambio vista": 6,
+   "apri filtri": 2,
+   "filtri": 10,
+   "luoghi aperti": 8,
+   "mostra altri": 1,
+   "azzera filtri": 0,
+   "schede aperte": 17,
+   "clic biglietti": 2,
+   "clic info spettacoli": 2,
+   "clic cinema (programma della sala)": 1,
+   "condivisioni": 0,
+   "ricerche": 1,
+   "clic mostre (scheda o sito)": 0
+  },
+  "2026-11-11": {
+   "cambio scheda": 17,
+   "altro": 5,
+   "cambio vista": 3,
+   "apri filtri": 2,
+   "filtri": 2,
+   "luoghi aperti": 4,
+   "mostra altri": 0,
+   "azzera filtri": 0,
+   "schede aperte": 7,
+   "clic biglietti": 1,
+   "clic info spettacoli": 0,
+   "clic cinema (programma della sala)": 2,
+   "condivisioni": 0,
+   "ricerche": 0,
+   "clic mostre (scheda o sito)": 0
+  },
+  "2026-11-12": {
+   "cambio scheda": 1,
+   "altro": 0,
+   "cambio vista": 0,
+   "apri filtri": 1,
+   "filtri": 11,
+   "luoghi aperti": 0,
+   "mostra altri": 0,
+   "azzera filtri": 1,
+   "schede aperte": 4,
+   "clic biglietti": 0,
+   "clic info spettacoli": 1,
+   "clic cinema (programma della sala)": 0,
+   "condivisioni": 0,
+   "ricerche": 2,
+   "clic mostre (scheda o sito)": 0
+  },
+  "2026-11-13": {
+   "cambio scheda": 10,
+   "altro": 5,
+   "cambio vista": 4,
+   "apri filtri": 1,
+   "filtri": 16,
+   "luoghi aperti": 3,
+   "mostra altri": 1,
+   "azzera filtri": 0,
+   "schede aperte": 12,
+   "clic biglietti": 0,
+   "clic info spettacoli": 0,
+   "clic cinema (programma della sala)": 0,
+   "condivisioni": 0,
+   "ricerche": 1,
+   "clic mostre (scheda o sito)": 0
+  },
+  "2026-11-14": {
+   "cambio scheda": 1,
+   "altro": 1,
+   "cambio vista": 2,
+   "apri filtri": 0,
+   "filtri": 3,
+   "luoghi aperti": 1,
+   "mostra altri": 0,
+   "azzera filtri": 0,
+   "schede aperte": 1,
+   "clic biglietti": 3,
+   "clic info spettacoli": 0,
+   "clic cinema (programma della sala)": 0,
+   "condivisioni": 0,
+   "ricerche": 2,
+   "clic mostre (scheda o sito)": 0
+  },
+  "2026-11-15": {
+   "cambio scheda": 7,
+   "altro": 14,
+   "cambio vista": 2,
+   "apri filtri": 4,
+   "filtri": 9,
+   "luoghi aperti": 2,
+   "mostra altri": 1,
+   "azzera filtri": 0,
+   "schede aperte": 13,
+   "clic biglietti": 4,
+   "clic info spettacoli": 2,
+   "clic cinema (programma della sala)": 0,
+   "condivisioni": 0,
+   "ricerche": 3,
+   "clic mostre (scheda o sito)": 0
+  },
+  "2026-11-16": {
+   "cambio scheda": 14,
+   "altro": 12,
+   "cambio vista": 6,
+   "apri filtri": 2,
+   "filtri": 14,
+   "luoghi aperti": 3,
+   "mostra altri": 0,
+   "azzera filtri": 1,
+   "schede aperte": 28,
+   "clic biglietti": 3,
+   "clic info spettacoli": 2,
+   "clic cinema (programma della sala)": 10,
+   "condivisioni": 0,
+   "ricerche": 2,
+   "clic mostre (scheda o sito)": 0
+  },
+  "2026-11-17": {
+   "cambio scheda": 12,
+   "altro": 14,
+   "cambio vista": 5,
+   "apri filtri": 1,
+   "filtri": 2,
+   "luoghi aperti": 5,
+   "mostra altri": 0,
+   "azzera filtri": 0,
+   "schede aperte": 51,
+   "clic biglietti": 4,
+   "clic info spettacoli": 5,
+   "clic cinema (programma della sala)": 0,
+   "condivisioni": 0,
+   "ricerche": 0,
+   "clic mostre (scheda o sito)": 0
+  },
+  "2026-11-18": {
+   "cambio scheda": 0,
+   "altro": 6,
+   "cambio vista": 0,
+   "apri filtri": 0,
+   "filtri": 0,
+   "luoghi aperti": 0,
+   "mostra altri": 0,
+   "azzera filtri": 0,
+   "schede aperte": 5,
+   "clic biglietti": 0,
+   "clic info spettacoli": 0,
+   "clic cinema (programma della sala)": 0,
+   "condivisioni": 0,
+   "ricerche": 0,
+   "clic mostre (scheda o sito)": 0
+  },
+  "2026-11-19": {
+   "cambio scheda": 15,
+   "altro": 15,
+   "cambio vista": 2,
+   "apri filtri": 1,
+   "filtri": 5,
+   "luoghi aperti": 0,
+   "mostra altri": 0,
+   "azzera filtri": 0,
+   "schede aperte": 7,
+   "clic biglietti": 0,
+   "clic info spettacoli": 0,
+   "clic cinema (programma della sala)": 0,
+   "condivisioni": 0,
+   "ricerche": 1,
+   "clic mostre (scheda o sito)": 0
+  },
+  "2026-11-20": {
+   "cambio scheda": 0,
+   "altro": 4,
+   "cambio vista": 0,
+   "apri filtri": 0,
+   "filtri": 0,
+   "luoghi aperti": 0,
+   "mostra altri": 0,
+   "azzera filtri": 0,
+   "schede aperte": 9,
+   "clic biglietti": 0,
+   "clic info spettacoli": 0,
+   "clic cinema (programma della sala)": 0,
+   "condivisioni": 0,
+   "ricerche": 0,
+   "clic mostre (scheda o sito)": 0
+  },
+  "2026-11-21": {
+   "cambio scheda": 1,
+   "altro": 5,
+   "cambio vista": 0,
+   "apri filtri": 0,
+   "filtri": 0,
+   "luoghi aperti": 0,
+   "mostra altri": 0,
+   "azzera filtri": 0,
+   "schede aperte": 1,
+   "clic biglietti": 0,
+   "clic info spettacoli": 0,
+   "clic cinema (programma della sala)": 0,
+   "condivisioni": 0,
+   "ricerche": 0,
+   "clic mostre (scheda o sito)": 0
+  }
+ },
+ "giorni": [
+  {
+   "giorno": "2026-11-04",
+   "visite": 32
+  },
+  {
+   "giorno": "2026-11-05",
+   "visite": 12
+  },
+  {
+   "giorno": "2026-11-06",
+   "visite": 76
+  },
+  {
+   "giorno": "2026-11-07",
+   "visite": 38
+  },
+  {
+   "giorno": "2026-11-08",
+   "visite": 24
+  },
+  {
+   "giorno": "2026-11-09",
+   "visite": 32
+  },
+  {
+   "giorno": "2026-11-10",
+   "visite": 19
+  },
+  {
+   "giorno": "2026-11-11",
+   "visite": 24
+  },
+  {
+   "giorno": "2026-11-12",
+   "visite": 6
+  },
+  {
+   "giorno": "2026-11-13",
+   "visite": 11
+  },
+  {
+   "giorno": "2026-11-14",
+   "visite": 5
+  },
+  {
+   "giorno": "2026-11-15",
+   "visite": 34
+  },
+  {
+   "giorno": "2026-11-16",
+   "visite": 33
+  },
+  {
+   "giorno": "2026-11-17",
+   "visite": 23
+  },
+  {
+   "giorno": "2026-11-18",
+   "visite": 18
+  },
+  {
+   "giorno": "2026-11-19",
+   "visite": 21
+  },
+  {
+   "giorno": "2026-11-20",
+   "visite": 12
+  },
+  {
+   "giorno": "2026-11-21",
+   "visite": 6
+  }
+ ],
+ "provenienze": [
+  {
+   "origine": "(diretto)",
+   "conteggio": 891
+  },
+  {
+   "origine": "achevents.com/milano",
+   "conteggio": 168
+  },
+  {
+   "origine": "achevents.com",
+   "conteggio": 147
+  },
+  {
+   "origine": "achplaces.com",
+   "conteggio": 79
+  },
+  {
+   "origine": "achevents.com/ravenna",
+   "conteggio": 11
+  },
+  {
+   "origine": "achevents.com/ferrara",
+   "conteggio": 7
+  },
+  {
+   "origine": "ui.awin.com",
+   "conteggio": 6
+  },
+  {
+   "origine": "achdinners.com",
+   "conteggio": 4
+  },
+  {
+   "origine": "P1-E",
+   "conteggio": 4
+  },
+  {
+   "origine": "www.facebook.com",
+   "conteggio": 3
+  },
+  {
+   "origine": "teams.public.onecdn.static.microsoft",
+   "conteggio": 3
+  },
+  {
+   "origine": "P2-E",
+   "conteggio": 3
+  },
+  {
+   "origine": "web.whatsapp.com",
+   "conteggio": 1
+  },
+  {
+   "origine": "achevents.com/prova-collaborano",
+   "conteggio": 1
+  },
+  {
+   "origine": "achevents.com/collaborano",
+   "conteggio": 1
+  }
+ ],
+ "pagine_ed_eventi": [
+  {
+   "path": "/milano",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
+   "conteggio": 182
+  },
+  {
+   "path": "/",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
+   "conteggio": 136
+  },
+  {
+   "path": "/eventi-bologna",
+   "titolo": "Eventi a Bologna – concerti e teatro",
+   "conteggio": 48
+  },
+  {
+   "path": "scheda/mostre",
+   "titolo": "Cambio scheda",
+   "conteggio": 24,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "scheda/spettacoli",
+   "titolo": "Cambio scheda",
+   "conteggio": 23,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "guide/vai-dinners",
+   "titolo": "Vai a Ach's Dinners Guide",
+   "conteggio": 20,
+   "tipo": "altro"
+  },
+  {
+   "path": "scheda/cinema",
+   "titolo": "Cambio scheda",
+   "conteggio": 19,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "guide/vai-places",
+   "titolo": "Vai a Ach's Places Guide",
+   "conteggio": 18,
+   "tipo": "altro"
+  },
+  {
+   "path": "spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 18,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/scheda/cinema",
+   "titolo": "Cambio scheda",
+   "conteggio": 17,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "milano/scheda/mostre",
+   "titolo": "Cambio scheda",
+   "conteggio": 17,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "app/mostrato",
+   "titolo": "Riquadro mostrato",
+   "conteggio": 16,
+   "tipo": "altro"
+  },
+  {
+   "path": "spettacoli/apri-filtri",
+   "titolo": "Apertura filtri",
+   "conteggio": 16,
+   "tipo": "apri filtri"
+  },
+  {
+   "path": "milano/spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 14,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "guide/collaborano",
+   "titolo": "Collaborano con noi",
+   "conteggio": 11,
+   "tipo": "altro"
+  },
+  {
+   "path": "app/aperta-dall-icona",
+   "titolo": "Aperta dall'icona",
+   "conteggio": 11,
+   "tipo": "altro"
+  },
+  {
+   "path": "scheda/incontri",
+   "titolo": "Cambio scheda",
+   "conteggio": 11,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "milano/spettacoli/apri-filtri",
+   "titolo": "Apertura filtri",
+   "conteggio": 11,
+   "tipo": "apri filtri"
+  },
+  {
+   "path": "milano/scheda/spettacoli",
+   "titolo": "Cambio scheda",
+   "conteggio": 11,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "spettacoli/vista/elenco",
+   "titolo": "Cambio vista",
+   "conteggio": 11,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Comici",
+   "titolo": "Filtro",
+   "conteggio": 10,
+   "tipo": "filtri"
+  },
+  {
+   "path": "/ferrara",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Ferrara",
+   "conteggio": 9
+  },
+  {
+   "path": "milano/scheda/incontri",
+   "titolo": "Cambio scheda",
+   "conteggio": 9,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Date/weekend",
+   "titolo": "Filtro",
+   "conteggio": 9,
+   "tipo": "filtri"
+  },
+  {
+   "path": "/ravenna",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Ravenna",
+   "conteggio": 8
+  },
+  {
+   "path": "/?app=1",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
+   "conteggio": 8
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Rock",
+   "titolo": "Filtro",
+   "conteggio": 8,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Rock",
+   "titolo": "Filtro",
+   "conteggio": 8,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/filtri/azzera-events",
+   "titolo": "Azzera i filtri",
+   "conteggio": 7,
+   "tipo": "altro"
+  },
+  {
+   "path": "milano/spettacoli/vista/elenco",
+   "titolo": "Cambio vista",
+   "conteggio": 7,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Date/oggi",
+   "titolo": "Filtro",
+   "conteggio": 7,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Date/oggi",
+   "titolo": "Filtro",
+   "conteggio": 7,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Tipo di luogo/Club e locali",
+   "titolo": "Filtro",
+   "conteggio": 6,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Comici",
+   "titolo": "Filtro",
+   "conteggio": 6,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Date/7g",
+   "titolo": "Filtro",
+   "conteggio": 6,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/luogo/Teatro Duse",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 6,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/filtro/Date/weekend",
+   "titolo": "Filtro",
+   "conteggio": 6,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/mostra-altri",
+   "titolo": "Mostra altri",
+   "conteggio": 6,
+   "tipo": "mostra altri"
+  },
+  {
+   "path": "spettacoli/azzera-filtri",
+   "titolo": "Azzera filtri",
+   "conteggio": 6,
+   "tipo": "azzera filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Teatro",
+   "titolo": "Filtro",
+   "conteggio": 6,
+   "tipo": "filtri"
+  },
+  {
+   "path": "app/tocco",
+   "titolo": "Riquadro toccato",
+   "conteggio": 5,
+   "tipo": "altro"
+  },
+  {
+   "path": "spettacoli/dettaglio/An Idiot's Guide to Wine – vino e risate",
+   "titolo": "Apertura scheda",
+   "conteggio": 5,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/scheda/sport",
+   "titolo": "Cambio scheda",
+   "conteggio": 5,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "cinema/dettaglio/Wild Horse Nine",
+   "titolo": "Apertura scheda",
+   "conteggio": 5,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Serate e club",
+   "titolo": "Filtro",
+   "conteggio": 5,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Teatro",
+   "titolo": "Filtro",
+   "conteggio": 5,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Pop e altra musica",
+   "titolo": "Filtro",
+   "conteggio": 5,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Date/7g",
+   "titolo": "Filtro",
+   "conteggio": 5,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Pop e altra musica",
+   "titolo": "Filtro",
+   "conteggio": 5,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/azzera-filtri",
+   "titolo": "Azzera filtri",
+   "conteggio": 4,
+   "tipo": "azzera filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Jazz",
+   "titolo": "Filtro",
+   "conteggio": 4,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Jazz",
+   "titolo": "Filtro",
+   "conteggio": 4,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/luogo/Locomotiv Club",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 4,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "mostre/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 4,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Il seme magico",
+   "titolo": "Apertura scheda",
+   "conteggio": 3,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "/milano/?cerca=Teatro+Dal+Verme",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
+   "conteggio": 3
+  },
+  {
+   "path": "filtri/azzera-events",
+   "titolo": "Azzera i filtri",
+   "conteggio": 3,
+   "tipo": "altro"
+  },
+  {
+   "path": "spettacoli/dettaglio/Candlelight – Tributo a Michael Jackson",
+   "titolo": "Apertura scheda",
+   "conteggio": 3,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "scheda/sport",
+   "titolo": "Cambio scheda",
+   "conteggio": 3,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "milano/cinema/dettaglio/Dio ride",
+   "titolo": "Apertura scheda",
+   "conteggio": 3,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/luogo/Teatro Celebrazioni",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 3,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Marco Mengoni – Allo Sbagliato",
+   "titolo": "Apertura scheda",
+   "conteggio": 3,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Wish you Were Here",
+   "titolo": "Apertura scheda",
+   "conteggio": 3,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/luogo/Estragon",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 3,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Serate e club",
+   "titolo": "Filtro",
+   "conteggio": 3,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/mostre/filtro/Categoria/Pittura",
+   "titolo": "Filtro",
+   "conteggio": 3,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Genere/Classica",
+   "titolo": "Filtro",
+   "conteggio": 3,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Genere/Classica",
+   "titolo": "Filtro",
+   "conteggio": 3,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/zona/Bologna città",
+   "titolo": "Filtro",
+   "conteggio": 3,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/clic-biglietti/Tito & Tarantula",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 3,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "/ravenna/?cerca=Teatro+Masini",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Ravenna",
+   "conteggio": 2
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Una certa idea di democrazia.",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Jeff Buckley – A Celebration of Grace, con gli Slow Pilot",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Arriva Lucilla",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Bonetti",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "/prova-filtri/?v=4",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
+   "conteggio": 2
+  },
+  {
+   "path": "spettacoli/dettaglio/Candlelight – Le Quattro Stagioni di Vivaldi",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "/milano/?cerca=Teatro+Out+Off",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
+   "conteggio": 2
+  },
+  {
+   "path": "spettacoli/dettaglio/Urban Hub",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Iconica!",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/POV",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/clic-info/Delirium – Compagnia Laia Santanach",
+   "titolo": "Clic «Info»",
+   "conteggio": 2,
+   "tipo": "clic info spettacoli"
+  },
+  {
+   "path": "/milano/?cerca=PimOff",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
+   "conteggio": 2
+  },
+  {
+   "path": "/milano/?cerca=Teatro+Carcano",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
+   "conteggio": 2
+  },
+  {
+   "path": "/milano/?cerca=Auditorium+San+Fedele",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Milano",
+   "conteggio": 2
+  },
+  {
+   "path": "ferrara/scheda/cinema",
+   "titolo": "Cambio scheda",
+   "conteggio": 2,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "ferrara/scheda/mostre",
+   "titolo": "Cambio scheda",
+   "conteggio": 2,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "ferrara/scheda/incontri",
+   "titolo": "Cambio scheda",
+   "conteggio": 2,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "/?cerca=Auditorium+Manzoni",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
+   "conteggio": 2
+  },
+  {
+   "path": "spettacoli/dettaglio/The Chameleons",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "mostre/dettaglio/Federica Chiarentini e Germano Pontevichi. Mostre personali",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Figure della liberta' femminile: anna karenina, hester prynne",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Viaggio a Hong Kong",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "cinema/clic-biglietti/Wild Horse Nine",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 2,
+   "tipo": "clic cinema (programma della sala)"
+  },
+  {
+   "path": "spettacoli/dettaglio/Argento vivo",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Pinacoteca di Bologna | Appuntamenti novembre 2026",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/clic-info/Muoversi nelle frange metropolitane: (ir)razionalità della mobilità quotidiana",
+   "titolo": "Clic «Info»",
+   "conteggio": 2,
+   "tipo": "clic info spettacoli"
+  },
+  {
+   "path": "cinema/luogo/Cinema Odeon",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 2,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "milano/spettacoli/mostra-altri",
+   "titolo": "Mostra altri",
+   "conteggio": 2,
+   "tipo": "mostra altri"
+  },
+  {
+   "path": "cinema/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 2,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Stand-up, Elfo!",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/mostre/dettaglio/Matisse. Il mondo in una stanza",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/mostre/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 2,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "milano/spettacoli/luogo/Teatro Dal Verme",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 2,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "milano/spettacoli/luogo/Teatro Arcimboldi",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 2,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "milano/cinema/dettaglio/Wild Horse Nine",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/filtro/Tipo di luogo/All'aperto",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/clic-biglietti/Marco Mengoni – Allo Sbagliato",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 2,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "spettacoli/dettaglio/Accabadora",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/filtro/Tipo di luogo/Teatri",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Tipo di luogo/Altri luoghi",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Tipo di luogo/Teatri",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Tipo di luogo/Club e locali",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "condividi/apri",
+   "titolo": "Condivisione",
+   "conteggio": 2,
+   "tipo": "condivisioni"
+  },
+  {
+   "path": "cinema/filtro/Giorno e orario/g:2026-11-09",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "cinema/filtro/Giorno e orario/g:2026-11-12",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "cinema/filtro/Giorno e orario/g:2026-11-08",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Qualcosa è andato storto",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/filtro/zona/Milano città",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/cinema/filtro/Genere del film/Commedia",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Il Piccolo Principe – Paolo Ruffini",
+   "titolo": "Apertura scheda",
+   "conteggio": 2,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/mostre/filtro/Categoria/Fotografia",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/filtro/Date/2026-12",
+   "titolo": "Filtro",
+   "conteggio": 2,
+   "tipo": "filtri"
+  },
+  {
+   "path": "mostre/apri-filtri",
+   "titolo": "Apertura filtri",
+   "conteggio": 2,
+   "tipo": "apri filtri"
+  },
+  {
+   "path": "mostre/vista/elenco",
+   "titolo": "Cambio vista",
+   "conteggio": 2,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "app/chiuso",
+   "titolo": "Riquadro chiuso",
+   "conteggio": 1,
+   "tipo": "altro"
+  },
+  {
+   "path": "spettacoli/dettaglio/Bestiario idrico",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Hertz",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Leni Marseglia - Vengo anch'io - Perché domani sia un sesso migliore",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Giardino Dei Visionari - Cosmos",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Catalogo",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/cinema/filtro/Giorno e orario/g:2026-11-20",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/mostre/filtro/Periodo/weekend",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "milano/spettacoli/filtro/Date/2026-11",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "spettacoli/dettaglio/Marco Goldin - Monet. Una vita a colori",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "cinema/dettaglio/Fjord",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "cinema/dettaglio/Un weekend artificiale",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/cinema/dettaglio/Un weekend artificiale",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/cinema/dettaglio/Se domani non torno",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/dettaglio/Addue",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/ricerca/cantina",
+   "titolo": "Ricerca",
+   "conteggio": 1,
+   "tipo": "ricerche"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/La misteriosa scomparsa di W",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "spettacoli/luogo/Teatro San Leonardo",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "spettacoli/dettaglio/Supermarket – Italo Barock(Q) LIVE",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/La questione sociale va in piazza",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/I classici non hanno mai terminato di dirci ciò che ci vogliono dire",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/PanPers",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/filtri/azzera-events",
+   "titolo": "Azzera i filtri",
+   "conteggio": 1,
+   "tipo": "altro"
+  },
+  {
+   "path": "ravenna/spettacoli/filtro/Genere/Rock",
+   "titolo": "Filtro",
+   "conteggio": 1,
+   "tipo": "filtri"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Rareș",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Passatelli in Bronson – Lamante, Lostatobrado",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Indie Power a Ravenna",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Desire con Johnny Jewel + Mothermary",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Hard Attacks!",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/luogo/Bronson",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Autoritratto",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Charlie",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Chi ha paura di Denti di ferro?",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/L'oca Lucia",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/L'acciarino magico",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Le Nid (il nido)",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/AlgoRitmo",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/apri-filtri",
+   "titolo": "Apertura filtri",
+   "conteggio": 1,
+   "tipo": "apri filtri"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Orfeo ed Euridice",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Franciscus",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Enrichetta dal ciuffo",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Re Tutto Cancella",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/luogo/Teatro Masini",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Nabidh Trio",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Socjal Special Jazz Event",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Lisa Canta Ornella",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/scheda/spettacoli",
+   "titolo": "Cambio scheda",
+   "conteggio": 1,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "ravenna/mostre/luogo/Galleria FaroArte",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "ravenna/mostre/vista/elenco",
+   "titolo": "Cambio vista",
+   "conteggio": 1,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "ravenna/mostre/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 1,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "ravenna/scheda/sport",
+   "titolo": "Cambio scheda",
+   "conteggio": 1,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "ravenna/scheda/cinema",
+   "titolo": "Cambio scheda",
+   "conteggio": 1,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "ravenna/scheda/mostre",
+   "titolo": "Cambio scheda",
+   "conteggio": 1,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "ravenna/scheda/incontri",
+   "titolo": "Cambio scheda",
+   "conteggio": 1,
+   "tipo": "cambio scheda"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Sigfrido Ranucci",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/Teodora e le altre",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "ravenna/spettacoli/luogo/Teatro Alighieri",
+   "titolo": "Apertura programma del luogo",
+   "conteggio": 1,
+   "tipo": "luoghi aperti"
+  },
+  {
+   "path": "ravenna/spettacoli/vista/luoghi",
+   "titolo": "Cambio vista",
+   "conteggio": 1,
+   "tipo": "cambio vista"
+  },
+  {
+   "path": "ravenna/spettacoli/dettaglio/L'ultimo incanto",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Gioele Dix – Chi ride a Capodanno…",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/A Christmas Carol Musical",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "/prova-testata/?v=2",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
+   "conteggio": 1
+  },
+  {
+   "path": "/prova-testata",
+   "titolo": "Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna",
+   "conteggio": 1
+  },
+  {
+   "path": "milano/spettacoli/clic-info/Diario di un brutto anatroccolo – Factory Compagnia Transadriatica",
+   "titolo": "Clic «Info»",
+   "conteggio": 1,
+   "tipo": "clic info spettacoli"
+  },
+  {
+   "path": "milano/spettacoli/clic-info/Delirium – Laia Santanach",
+   "titolo": "Clic «Info»",
+   "conteggio": 1,
+   "tipo": "clic info spettacoli"
+  },
+  {
+   "path": "milano/spettacoli/clic-info/Physical Tools – masterclass di movimento con Laia Santanach",
+   "titolo": "Clic «Info»",
+   "conteggio": 1,
+   "tipo": "clic info spettacoli"
+  },
+  {
+   "path": "milano/spettacoli/clic-biglietti/ZELIG LAB - il laboratorio artistico di Area Zelig",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 1,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/ZELIG LAB - il laboratorio artistico di Area Zelig",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/clic-biglietti/Bonetti",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 1,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/West Side Story / Un americano a Parigi",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Amedeo Minghi",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Bianca Del Rio - It Gets Bitter",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/clic-biglietti/Orchestra i Pomeriggi Musicali - Abbonamenti 2026/2027",
+   "titolo": "Clic «Biglietti»",
+   "conteggio": 1,
+   "tipo": "clic biglietti"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Orchestra i Pomeriggi Musicali - Abbonamenti 2026/2027",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  },
+  {
+   "path": "milano/spettacoli/dettaglio/Morgan Jay - La Dolce Vita Tour",
+   "titolo": "Apertura scheda",
+   "conteggio": 1,
+   "tipo": "schede aperte"
+  }
+ ]
+}

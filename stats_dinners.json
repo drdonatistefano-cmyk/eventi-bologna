@@ -1,0 +1,2415 @@
+{
+ "generato": "2026-11-21T18:54:50Z",
+ "stato": {
+  "sito": {
+   "http": 200,
+   "ok": true,
+   "statistiche_attive": true
+  }
+ },
+ "errore": "",
+ "giorni": [
+  {
+   "giorno": "2026-11-08",
+   "visite": 4
+  },
+  {
+   "giorno": "2026-11-09",
+   "visite": 12
+  },
+  {
+   "giorno": "2026-11-10",
+   "visite": 11
+  },
+  {
+   "giorno": "2026-11-11",
+   "visite": 14
+  },
+  {
+   "giorno": "2026-11-12",
+   "visite": 5
+  },
+  {
+   "giorno": "2026-11-13",
+   "visite": 2
+  },
+  {
+   "giorno": "2026-11-14",
+   "visite": 15
+  },
+  {
+   "giorno": "2026-11-15",
+   "visite": 14
+  },
+  {
+   "giorno": "2026-11-16",
+   "visite": 16
+  },
+  {
+   "giorno": "2026-11-17",
+   "visite": 10
+  },
+  {
+   "giorno": "2026-11-18",
+   "visite": 10
+  },
+  {
+   "giorno": "2026-11-19",
+   "visite": 60
+  },
+  {
+   "giorno": "2026-11-20",
+   "visite": 60
+  },
+  {
+   "giorno": "2026-11-21",
+   "visite": 83
+  }
+ ],
+ "totali": {
+  "oggi": {
+   "visite": 83,
+   "eventi": 56
+  },
+  "7g": {
+   "visite": 253,
+   "eventi": 88
+  },
+  "30g": {
+   "visite": 316,
+   "eventi": 101
+  }
+ },
+ "7g": {
+  "percorsi": [
+   {
+    "path": "/",
+    "titolo": "Ach’s Dinners Guide",
+    "n": 96,
+    "evento": false
+   },
+   {
+    "path": "app/aperta-dall-icona",
+    "titolo": "Aperta dall'icona",
+    "n": 16,
+    "evento": true
+   },
+   {
+    "path": "/mappa.html",
+    "titolo": "Mappa · Ach's Dinners Guide",
+    "n": 13,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-del-biliardo-milano",
+    "titolo": "Osteria del Biliardo a Milano | Ach’s Dinners",
+    "n": 8,
+    "evento": false
+   },
+   {
+    "path": "guide/collaborano",
+    "titolo": "Collaborano con noi",
+    "n": 7,
+    "evento": true
+   },
+   {
+    "path": "app/mostrato",
+    "titolo": "Riquadro mostrato",
+    "n": 7,
+    "evento": true
+   },
+   {
+    "path": "guide/vai-places",
+    "titolo": "Vai a Ach's Places Guide",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "/locale/joia-milano",
+    "titolo": "Joia a Milano: Michelin ★ | Ach’s Dinners",
+    "n": 4,
+    "evento": false
+   },
+   {
+    "path": "/?app=1",
+    "titolo": "Ach’s Dinners Guide",
+    "n": 4,
+    "evento": false
+   },
+   {
+    "path": "guide/vai-events",
+    "titolo": "Vai a Ach's Events Guide",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "/locale/osteria-della-brughiera-villa-d-alme",
+    "titolo": "Osteria della Brughiera a Villa d'Almè: Michelin ★ | Ach’s Dinners",
+    "n": 3,
+    "evento": false
+   },
+   {
+    "path": "/locale/gina-casa-con-cucina-aosta",
+    "titolo": "Gina casa con cucina a Aosta: Michelin selezionato | Ach’s Dinners",
+    "n": 3,
+    "evento": false
+   },
+   {
+    "path": "/locale/l-oste-e-il-sacrestano-licata",
+    "titolo": "L'Oste E Il Sacrestano a Licata: Michelin selezionato | Ach’s Dinners",
+    "n": 3,
+    "evento": false
+   },
+   {
+    "path": "filtri/azzera-dinners",
+    "titolo": "✕ Azzera i filtri <span class=\"n\">0</span>",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "/locale/materia-spazio-cucina-catania",
+    "titolo": "Materia Spazio Cucina a Catania: Michelin selezionato | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/al-metro-san-salvo",
+    "titolo": "Al Metro a San Salvo: Michelin ★ | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/provincia/bz",
+    "titolo": "Ristoranti in provincia di Bolzano/Bozen: i 87 migliori | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/pentole-e-provette-fasano",
+    "titolo": "Pentole e Provette a Fasano: Michelin selezionato | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/trattoria-da-amerigo-valsamoggia",
+    "titolo": "Trattoria da Amerigo a Valsamoggia | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/cucina-cereda-ponte-san-pietro",
+    "titolo": "Cucina Cereda a Ponte San Pietro: Michelin ★ | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/il-cavallo-scosso-asti",
+    "titolo": "Il Cavallo Scosso a Asti: Michelin selezionato | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/sushi-matsu-omakase-milano",
+    "titolo": "Sushi Matsu Omakase a Milano: Michelin selezionato | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/citta/milano-mi",
+    "titolo": "Ristoranti a Milano: i 130 migliori | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/valentino-ravenna",
+    "titolo": "Valentino a Ravenna: Gambero Rosso Due Forchette | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/horto-milano",
+    "titolo": "Horto a Milano: Michelin ★ | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/makore-ferrara",
+    "titolo": "Makorè a Ferrara: Emilia-Romagna a Tavola | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/darcy-osteria-contemporanea-bologna",
+    "titolo": "Darcy Osteria Contemporanea a Bologna | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/index.html",
+    "titolo": "Ach’s Dinners Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/pizzeria-da-ezio-alano-di-piave",
+    "titolo": "Pizzeria Da Ezio a Alano di Piave | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/menu/materia-spazio-cucina-catania",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/materia-spazio-cucina-catania",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/prenota/materia-spazio-cucina-catania",
+    "titolo": "Clic «Prenota»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/san-martino-treviglio",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/san-martino-treviglio",
+    "titolo": "San Martino a Treviglio: Michelin ★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-duanima-cagliari",
+    "titolo": "Ristorante Duanima a Cagliari: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/marotta-ristorante-castel-campagnano",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/marotta-ristorante-castel-campagnano",
+    "titolo": "Marotta Ristorante a Castel Campagnano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/cucina-cereda-ponte-san-pietro",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/sito/ristorante-castello-santa-vittoria-d-alba",
+    "titolo": "Clic «Sito»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/ristorante-castello-santa-vittoria-d-alba",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/ristorante-castello-santa-vittoria-d-alba",
+    "titolo": "Ristorante Castello a Santa Vittoria d'Alba | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/ventuno-1-ristorante-e-bottega-alba",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/menu/ventuno-1-ristorante-e-bottega-alba",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/ventuno-1-ristorante-e-bottega-alba",
+    "titolo": "Ventuno.1 Ristorante e Bottega a Alba | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/contrasto-cercemaggiore",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/cutilisci-catania",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/sito/in-cucina-dai-pennisi-linguaglossa",
+    "titolo": "Clic «Sito»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/prenota/in-cucina-dai-pennisi-linguaglossa",
+    "titolo": "Clic «Prenota»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/menu/in-cucina-dai-pennisi-linguaglossa",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/in-cucina-dai-pennisi-linguaglossa",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/in-cucina-dai-pennisi-linguaglossa",
+    "titolo": "In Cucina dai Pennisi a Linguaglossa | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/fermenta-chieti",
+    "titolo": "Fermenta a Chieti: Gambero Rosso Tre Spicchi | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/menu/sori-cuneo",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/sori-cuneo",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/pizzeria-masanielli-caserta",
+    "titolo": "Pizzeria Masanielli a Caserta | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/lerchner-s-san-lorenzo-di-sebato",
+    "titolo": "Lerchner's a San Lorenzo di Sebato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/marotta-ristorante-caiazzo",
+    "titolo": "Marotta Ristorante a Caiazzo | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/menu/ristorante-la-piemontese-mariano-comense",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/prenota/ristorante-la-piemontese-mariano-comense",
+    "titolo": "Clic «Prenota»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/ristorante-la-piemontese-mariano-comense",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/amano-cagliari",
+    "titolo": "Amanõ a Cagliari: Michelin ★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-la-piemontese-mariano-comense",
+    "titolo": "Ristorante la Piemontese a Mariano Comense | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/sito/visione-restaurant-and-living-treiso",
+    "titolo": "Clic «Sito»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/visione-restaurant-and-living-treiso",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/visione-restaurant-and-living-treiso",
+    "titolo": "Visione Restaurant and Living a Treiso: Michelin ★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/sito/gabbiano1983-corte-de-cortesi-con-cignone",
+    "titolo": "Clic «Sito»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/gabbiano1983-corte-de-cortesi-con-cignone",
+    "titolo": "Gabbiano1983 a Corte de' Cortesi con Cignone | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-la-tana-bergamo",
+    "titolo": "Ristorante la Tana a Bergamo | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/vincenzo-degasperi-enotheque-restaurant-hotel-zur-post-egna",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/prenota/rifugio-col-alto-2000-mt-corvara-in-badia",
+    "titolo": "Clic «Prenota»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/menu/rifugio-col-alto-2000-mt-corvara-in-badia",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/mappa/rifugio-col-alto-2000-mt-corvara-in-badia",
+    "titolo": "Clic «Mappa»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/rifugio-col-alto-2000-mt-corvara-in-badia",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/rifugio-col-alto-2000-mt-corvara-in-badia",
+    "titolo": "Rifugio \"Col Alto\" (2000 mt) a Corvara in Badia | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-regallo-biella",
+    "titolo": "Ristorante Regallo a Biella: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/gia-sotto-l-arco-carovigno",
+    "titolo": "Già Sotto l'Arco a Carovigno: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/citta/bologna-bo",
+    "titolo": "Ristoranti a Bologna: i 62 migliori | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/prenota/corbezzoli-bologna",
+    "titolo": "Clic «Prenota»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/sito/corbezzoli-bologna",
+    "titolo": "Clic «Sito»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/menu/corbezzoli-bologna",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/corbezzoli-bologna",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/corbezzoli-bologna",
+    "titolo": "Corbezzoli a Bologna: Gambero Rosso Una Forchetta | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/imbufalita-brescia",
+    "titolo": "Imbufalita a Brescia | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/vincenzo-degasperi-enotheque-restaurant-hotel-zur-post-egna",
+    "titolo": "Vincenzo Degasperi Enotheque- Restaurant- Hotel Zur Post a Egna | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/gusto-madre-alba",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/gusto-madre-alba",
+    "titolo": "Gusto madre a Alba: Gambero Rosso Tre Spicchi | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/kurbishof-anterivo",
+    "titolo": "Kürbishof a Anterivo | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/pizzeria-i-masanielli-francesco-martucci-caserta",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/pizzeria-i-masanielli-francesco-martucci-caserta",
+    "titolo": "Pizzeria \"i Masanielli\" - Francesco Martucci a Caserta | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/prenota/trattoria-trebbi-bologna",
+    "titolo": "Clic «Prenota»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/trattoria-trebbi-bologna",
+    "titolo": "Trattoria Trebbi a Bologna | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-del-tempo-perso-ravenna",
+    "titolo": "Osteria Del Tempo Perso a Ravenna | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/oasis-sapori-antichi-vallesaccarda",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/oasis-sapori-antichi-vallesaccarda",
+    "titolo": "Oasis Sapori Antichi a Vallesaccarda: Michelin ★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-biancofiore-bari",
+    "titolo": "Ristorante Biancofiore a Bari | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/menu/lympha-ristorante-soiano-del-lago",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/lympha-ristorante-soiano-del-lago",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/mappa/lympha-ristorante-soiano-del-lago",
+    "titolo": "Clic «Mappa»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/lympha-ristorante-soiano-del-lago",
+    "titolo": "Lympha Ristorante a Soiano del Lago | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/ristorante-corteinfiore-trani",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/ristorante-corteinfiore-trani",
+    "titolo": "Ristorante Corteinfiore a Trani | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/inedito-pizzeria-brescia",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/inedito-pizzeria-brescia",
+    "titolo": "Inedito Pizzeria a Brescia: Gambero Rosso Tre Spicchi | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/sito/osteria-amarotto-casale-monferrato",
+    "titolo": "Clic «Sito»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/prenota/osteria-amarotto-casale-monferrato",
+    "titolo": "Clic «Prenota»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/mappa/trattoria-da-amerigo-valsamoggia",
+    "titolo": "Clic «Mappa»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/osteria-amarotto-casale-monferrato",
+    "titolo": "Osteria Amarotto a Casale Monferrato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/trattoria-da-amerigo-valsamoggia",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/ristorante-da-sapi-esine",
+    "titolo": "Ristorante da Sapi a Esine | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/carne-e-spirito-brescia",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/antica-trattoria-la-grotta-sasso-marconi",
+    "titolo": "Antica Trattoria La Grotta a Sasso Marconi | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/consorzio-stoppani-milano",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/consorzio-stoppani-milano",
+    "titolo": "Consorzio Stoppani a Milano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/trattoria-della-santa-bologna",
+    "titolo": "Trattoria Della Santa a Bologna | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-il-saraceno-cavernago",
+    "titolo": "Ristorante Il Saraceno a Cavernago: Michelin ★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/da-vittorio-brusaporto",
+    "titolo": "Da Vittorio a Brusaporto: Michelin ★★★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-buriani-pieve-di-cento",
+    "titolo": "Ristorante Buriani a Pieve di Cento | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-ensama-pesce-sala-bolognese",
+    "titolo": "Ristorante Ensama Pesce a Sala Bolognese | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/casa-serafini-borgo-tossignano",
+    "titolo": "Casa Serafini a Borgo Tossignano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/provincia/bg",
+    "titolo": "Ristoranti in provincia di Bergamo: i 50 migliori | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/terracotta-belluno",
+    "titolo": "Terracotta a Belluno: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/enoteca-baita-fraina-cortina-d-ampezzo",
+    "titolo": "Enoteca Baita Fraina a Cortina d'Ampezzo | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/citta/cortina-d-ampezzo-bl",
+    "titolo": "Ristoranti a Cortina d'Ampezzo: i 8 migliori | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/al-camin-cortina-d-ampezzo",
+    "titolo": "Al Camin a Cortina d'Ampezzo: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/piccolo-brite-cortina-d-ampezzo",
+    "titolo": "Piccolo Brite a Cortina d'Ampezzo | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/contrada-bricconi-oltressenda-alta",
+    "titolo": "Contrada Bricconi a Oltressenda Alta | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-al-gigianca-bergamo",
+    "titolo": "Osteria Al Gigianca a Bergamo: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-ophis-offida",
+    "titolo": "Osteria Ophis a Offida: Michelin Bib Gourmand | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-del-teatro-cortona",
+    "titolo": "Osteria del Teatro a Cortona | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/citta/asti-at",
+    "titolo": "Ristoranti a Asti: i 4 migliori | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/angolo-del-beato-asti",
+    "titolo": "Angolo del Beato a Asti | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/madonna-della-neve-cessole",
+    "titolo": "Madonna della Neve a Cessole | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-del-diavolo-asti",
+    "titolo": "Osteria del Diavolo a Asti | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/la-bucaccia-cortona",
+    "titolo": "La Bucaccia a Cortona: Michelin Bib Gourmand | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/gabbo-arezzo",
+    "titolo": "Gabbo a Arezzo: Gambero Rosso Una Bottiglia | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-grande-arezzo",
+    "titolo": "Osteria Grande a Arezzo: Gambero Rosso Due Forchette | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-mammarossa-avezzano",
+    "titolo": "Osteria Mammarossa a Avezzano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/coeur-de-bois-cogne",
+    "titolo": "Coeur De Bois a Cogne: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-il-tiglio-montemonaco",
+    "titolo": "Ristorante Il Tiglio a Montemonaco: Michelin ★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/le-chiavi-d-oro-arezzo",
+    "titolo": "Le Chiavi D'Oro a Arezzo: Gambero Rosso Una Forchetta | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/trattoria-le-nuvole-ferrara",
+    "titolo": "Trattoria Le Nuvole a Ferrara | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/il-moro-capriata-d-orba",
+    "titolo": "Il Moro a Capriata d'Orba | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/bottega-lucia-milano",
+    "titolo": "Bottega Lucia a Milano: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/trattoria-mibabbo-milano",
+    "titolo": "Trattoria Mibabbo a Milano: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/aquanova-hosteria-canicatti",
+    "titolo": "Aquanova Hosteria a Canicattì: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/trattoria-del-nuovo-macello-milano",
+    "titolo": "Trattoria del Nuovo Macello a Milano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/sadler-restaurant-milano",
+    "titolo": "Sadler Restaurant a Milano: Michelin ★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/bar-a-fromage-cogne",
+    "titolo": "Bar à Fromage a Cogne: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/dry-milano",
+    "titolo": "Dry a Milano: Gambero Rosso Tre Spicchi | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/l-acciuga-osteria-ravenna",
+    "titolo": "L'Acciuga Osteria a Ravenna: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/me-pizzeria-cocktailroom-ferrara",
+    "titolo": "Me Pizzeria&CocktailRoom a Ferrara | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/bites-milano",
+    "titolo": "Bites a Milano: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/duomo-alessandria",
+    "titolo": "Duomo a Alessandria: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/frades-porto-cervo-milano",
+    "titolo": "Frades Porto Cervo a Milano: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/la-risacca-blu-milano",
+    "titolo": "La Risacca Blu a Milano: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/galeria-antica-trattoria-milano",
+    "titolo": "Galeria Antica Trattoria a Milano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/la-cucina-dei-frigoriferi-milanesi-milano",
+    "titolo": "La Cucina dei Frigoriferi Milanesi a Milano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/yuzuya-bologna",
+    "titolo": "Yuzuya a Bologna: Gambero Rosso Due Gamberi | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-dell-acquabella-milano",
+    "titolo": "Osteria dell'Acquabella a Milano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/citta/ravenna-ra",
+    "titolo": "Ristoranti a Ravenna: i 15 migliori | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/casa-rizzieri-ferrara",
+    "titolo": "Casa Rizzieri a Ferrara: Gambero Rosso Due Gamberi | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/finger-s-restaurants-milano",
+    "titolo": "Finger's Restaurants a Milano: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/acquacheta-milano",
+    "titolo": "Acquacheta a Milano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/antica-trattoria-della-gigina-bologna",
+    "titolo": "Antica Trattoria Della Gigina a Bologna | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/provincia/fe",
+    "titolo": "Ristoranti in provincia di Ferrara: i 33 migliori | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/le-due-comari-ferrara",
+    "titolo": "Le Due Comari a Ferrara | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/citta/agrigento-ag",
+    "titolo": "Ristoranti a Agrigento: i 5 migliori | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/il-re-di-girgenti-agrigento",
+    "titolo": "Il Re di Girgenti a Agrigento | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "app/tocco",
+    "titolo": "Riquadro toccato",
+    "n": 1,
+    "evento": true
+   }
+  ],
+  "toprefs": [
+   {
+    "nome": "(diretto)",
+    "n": 142
+   },
+   {
+    "nome": "P2",
+    "n": 65
+   },
+   {
+    "nome": "P2-E",
+    "n": 39
+   },
+   {
+    "nome": "P2-2",
+    "n": 15
+   },
+   {
+    "nome": "achplaces.com",
+    "n": 14
+   },
+   {
+    "nome": "Google",
+    "n": 13
+   },
+   {
+    "nome": "achdinners.com",
+    "n": 12
+   },
+   {
+    "nome": "achevents.com",
+    "n": 8
+   },
+   {
+    "nome": "P2-E2",
+    "n": 5
+   },
+   {
+    "nome": "achdinners.com/locale/osteria-della-brughiera-villa-d-alme",
+    "n": 3
+   },
+   {
+    "nome": "achdinners.com/mappa.html",
+    "n": 2
+   },
+   {
+    "nome": "achdinners.com/locale/le-due-comari-ferrara",
+    "n": 2
+   }
+  ],
+  "locations": [
+   {
+    "nome": "Italy",
+    "n": 315
+   },
+   {
+    "nome": "United States",
+    "n": 20
+   },
+   {
+    "nome": "France",
+    "n": 2
+   },
+   {
+    "nome": "Brazil",
+    "n": 1
+   },
+   {
+    "nome": "United Kingdom",
+    "n": 1
+   },
+   {
+    "nome": "Netherlands",
+    "n": 1
+   },
+   {
+    "nome": "Taiwan",
+    "n": 1
+   }
+  ],
+  "systems": [
+   {
+    "nome": "iOS",
+    "n": 138
+   },
+   {
+    "nome": "Windows",
+    "n": 90
+   },
+   {
+    "nome": "macOS",
+    "n": 72
+   },
+   {
+    "nome": "Android",
+    "n": 35
+   },
+   {
+    "nome": "Linux",
+    "n": 6
+   }
+  ],
+  "browsers": [
+   {
+    "nome": "Safari",
+    "n": 188
+   },
+   {
+    "nome": "Chrome",
+    "n": 149
+   },
+   {
+    "nome": "Firefox",
+    "n": 4
+   }
+  ],
+  "sizes": [
+   {
+    "nome": "phone",
+    "n": 170
+   },
+   {
+    "nome": "tablet",
+    "n": 32
+   },
+   {
+    "nome": "desktop",
+    "n": 124
+   },
+   {
+    "nome": "desktophd",
+    "n": 15
+   },
+   {
+    "nome": "unknown",
+    "n": 0
+   }
+  ]
+ },
+ "30g": {
+  "percorsi": [
+   {
+    "path": "/",
+    "titolo": "Ach’s Dinners Guide",
+    "n": 155,
+    "evento": false
+   },
+   {
+    "path": "app/aperta-dall-icona",
+    "titolo": "Aperta dall'icona",
+    "n": 16,
+    "evento": true
+   },
+   {
+    "path": "/mappa.html",
+    "titolo": "Mappa · Ach's Dinners Guide",
+    "n": 16,
+    "evento": false
+   },
+   {
+    "path": "guide/vai-places",
+    "titolo": "Vai a Ach's Places Guide",
+    "n": 11,
+    "evento": true
+   },
+   {
+    "path": "/locale/osteria-del-biliardo-milano",
+    "titolo": "Osteria del Biliardo a Milano | Ach’s Dinners",
+    "n": 8,
+    "evento": false
+   },
+   {
+    "path": "guide/vai-events",
+    "titolo": "Vai a Ach's Events Guide",
+    "n": 8,
+    "evento": true
+   },
+   {
+    "path": "guide/collaborano",
+    "titolo": "Collaborano con noi",
+    "n": 7,
+    "evento": true
+   },
+   {
+    "path": "app/mostrato",
+    "titolo": "Riquadro mostrato",
+    "n": 7,
+    "evento": true
+   },
+   {
+    "path": "/locale/joia-milano",
+    "titolo": "Joia a Milano: Michelin ★ | Ach’s Dinners",
+    "n": 4,
+    "evento": false
+   },
+   {
+    "path": "/?app=1",
+    "titolo": "Ach’s Dinners Guide",
+    "n": 4,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-della-brughiera-villa-d-alme",
+    "titolo": "Osteria della Brughiera a Villa d'Almè: Michelin ★ | Ach’s Dinners",
+    "n": 3,
+    "evento": false
+   },
+   {
+    "path": "/locale/gina-casa-con-cucina-aosta",
+    "titolo": "Gina casa con cucina a Aosta: Michelin selezionato | Ach’s Dinners",
+    "n": 3,
+    "evento": false
+   },
+   {
+    "path": "/locale/l-oste-e-il-sacrestano-licata",
+    "titolo": "L'Oste E Il Sacrestano a Licata: Michelin selezionato | Ach’s Dinners",
+    "n": 3,
+    "evento": false
+   },
+   {
+    "path": "filtri/azzera-dinners",
+    "titolo": "✕ Azzera i filtri <span class=\"n\">0</span>",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "/locale/materia-spazio-cucina-catania",
+    "titolo": "Materia Spazio Cucina a Catania: Michelin selezionato | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/al-metro-san-salvo",
+    "titolo": "Al Metro a San Salvo: Michelin ★ | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/provincia/bz",
+    "titolo": "Ristoranti in provincia di Bolzano/Bozen: i 87 migliori | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/pentole-e-provette-fasano",
+    "titolo": "Pentole e Provette a Fasano: Michelin selezionato | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/trattoria-da-amerigo-valsamoggia",
+    "titolo": "Trattoria da Amerigo a Valsamoggia | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/cucina-cereda-ponte-san-pietro",
+    "titolo": "Cucina Cereda a Ponte San Pietro: Michelin ★ | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/il-cavallo-scosso-asti",
+    "titolo": "Il Cavallo Scosso a Asti: Michelin selezionato | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/sushi-matsu-omakase-milano",
+    "titolo": "Sushi Matsu Omakase a Milano: Michelin selezionato | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/citta/milano-mi",
+    "titolo": "Ristoranti a Milano: i 130 migliori | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/valentino-ravenna",
+    "titolo": "Valentino a Ravenna: Gambero Rosso Due Forchette | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/horto-milano",
+    "titolo": "Horto a Milano: Michelin ★ | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/makore-ferrara",
+    "titolo": "Makorè a Ferrara: Emilia-Romagna a Tavola | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/darcy-osteria-contemporanea-bologna",
+    "titolo": "Darcy Osteria Contemporanea a Bologna | Ach’s Dinners",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/index.html",
+    "titolo": "Ach’s Dinners Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/locale/pizzeria-da-ezio-alano-di-piave",
+    "titolo": "Pizzeria Da Ezio a Alano di Piave | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/menu/materia-spazio-cucina-catania",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/materia-spazio-cucina-catania",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/prenota/materia-spazio-cucina-catania",
+    "titolo": "Clic «Prenota»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/san-martino-treviglio",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/san-martino-treviglio",
+    "titolo": "San Martino a Treviglio: Michelin ★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-duanima-cagliari",
+    "titolo": "Ristorante Duanima a Cagliari: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/marotta-ristorante-castel-campagnano",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/marotta-ristorante-castel-campagnano",
+    "titolo": "Marotta Ristorante a Castel Campagnano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/cucina-cereda-ponte-san-pietro",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/sito/ristorante-castello-santa-vittoria-d-alba",
+    "titolo": "Clic «Sito»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/ristorante-castello-santa-vittoria-d-alba",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/ristorante-castello-santa-vittoria-d-alba",
+    "titolo": "Ristorante Castello a Santa Vittoria d'Alba | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/ventuno-1-ristorante-e-bottega-alba",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/menu/ventuno-1-ristorante-e-bottega-alba",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/ventuno-1-ristorante-e-bottega-alba",
+    "titolo": "Ventuno.1 Ristorante e Bottega a Alba | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/contrasto-cercemaggiore",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/cutilisci-catania",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/sito/in-cucina-dai-pennisi-linguaglossa",
+    "titolo": "Clic «Sito»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/prenota/in-cucina-dai-pennisi-linguaglossa",
+    "titolo": "Clic «Prenota»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/menu/in-cucina-dai-pennisi-linguaglossa",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/in-cucina-dai-pennisi-linguaglossa",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/in-cucina-dai-pennisi-linguaglossa",
+    "titolo": "In Cucina dai Pennisi a Linguaglossa | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/fermenta-chieti",
+    "titolo": "Fermenta a Chieti: Gambero Rosso Tre Spicchi | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/menu/sori-cuneo",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/sori-cuneo",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/pizzeria-masanielli-caserta",
+    "titolo": "Pizzeria Masanielli a Caserta | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/lerchner-s-san-lorenzo-di-sebato",
+    "titolo": "Lerchner's a San Lorenzo di Sebato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/marotta-ristorante-caiazzo",
+    "titolo": "Marotta Ristorante a Caiazzo | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/menu/ristorante-la-piemontese-mariano-comense",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/prenota/ristorante-la-piemontese-mariano-comense",
+    "titolo": "Clic «Prenota»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/ristorante-la-piemontese-mariano-comense",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/amano-cagliari",
+    "titolo": "Amanõ a Cagliari: Michelin ★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-la-piemontese-mariano-comense",
+    "titolo": "Ristorante la Piemontese a Mariano Comense | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/sito/visione-restaurant-and-living-treiso",
+    "titolo": "Clic «Sito»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/visione-restaurant-and-living-treiso",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/visione-restaurant-and-living-treiso",
+    "titolo": "Visione Restaurant and Living a Treiso: Michelin ★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/sito/gabbiano1983-corte-de-cortesi-con-cignone",
+    "titolo": "Clic «Sito»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/gabbiano1983-corte-de-cortesi-con-cignone",
+    "titolo": "Gabbiano1983 a Corte de' Cortesi con Cignone | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-la-tana-bergamo",
+    "titolo": "Ristorante la Tana a Bergamo | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/vincenzo-degasperi-enotheque-restaurant-hotel-zur-post-egna",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/prenota/rifugio-col-alto-2000-mt-corvara-in-badia",
+    "titolo": "Clic «Prenota»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/menu/rifugio-col-alto-2000-mt-corvara-in-badia",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/mappa/rifugio-col-alto-2000-mt-corvara-in-badia",
+    "titolo": "Clic «Mappa»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/rifugio-col-alto-2000-mt-corvara-in-badia",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/rifugio-col-alto-2000-mt-corvara-in-badia",
+    "titolo": "Rifugio \"Col Alto\" (2000 mt) a Corvara in Badia | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-regallo-biella",
+    "titolo": "Ristorante Regallo a Biella: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/gia-sotto-l-arco-carovigno",
+    "titolo": "Già Sotto l'Arco a Carovigno: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/citta/bologna-bo",
+    "titolo": "Ristoranti a Bologna: i 62 migliori | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/prenota/corbezzoli-bologna",
+    "titolo": "Clic «Prenota»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/sito/corbezzoli-bologna",
+    "titolo": "Clic «Sito»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/menu/corbezzoli-bologna",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/corbezzoli-bologna",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/corbezzoli-bologna",
+    "titolo": "Corbezzoli a Bologna: Gambero Rosso Una Forchetta | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/imbufalita-brescia",
+    "titolo": "Imbufalita a Brescia | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/vincenzo-degasperi-enotheque-restaurant-hotel-zur-post-egna",
+    "titolo": "Vincenzo Degasperi Enotheque- Restaurant- Hotel Zur Post a Egna | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/gusto-madre-alba",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/gusto-madre-alba",
+    "titolo": "Gusto madre a Alba: Gambero Rosso Tre Spicchi | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/kurbishof-anterivo",
+    "titolo": "Kürbishof a Anterivo | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/pizzeria-i-masanielli-francesco-martucci-caserta",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/pizzeria-i-masanielli-francesco-martucci-caserta",
+    "titolo": "Pizzeria \"i Masanielli\" - Francesco Martucci a Caserta | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/prenota/trattoria-trebbi-bologna",
+    "titolo": "Clic «Prenota»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/trattoria-trebbi-bologna",
+    "titolo": "Trattoria Trebbi a Bologna | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-del-tempo-perso-ravenna",
+    "titolo": "Osteria Del Tempo Perso a Ravenna | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/oasis-sapori-antichi-vallesaccarda",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/oasis-sapori-antichi-vallesaccarda",
+    "titolo": "Oasis Sapori Antichi a Vallesaccarda: Michelin ★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-biancofiore-bari",
+    "titolo": "Ristorante Biancofiore a Bari | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/menu/lympha-ristorante-soiano-del-lago",
+    "titolo": "Clic «Menu»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/foto/lympha-ristorante-soiano-del-lago",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/mappa/lympha-ristorante-soiano-del-lago",
+    "titolo": "Clic «Mappa»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/lympha-ristorante-soiano-del-lago",
+    "titolo": "Lympha Ristorante a Soiano del Lago | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/ristorante-corteinfiore-trani",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/ristorante-corteinfiore-trani",
+    "titolo": "Ristorante Corteinfiore a Trani | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/inedito-pizzeria-brescia",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/inedito-pizzeria-brescia",
+    "titolo": "Inedito Pizzeria a Brescia: Gambero Rosso Tre Spicchi | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/sito/osteria-amarotto-casale-monferrato",
+    "titolo": "Clic «Sito»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/prenota/osteria-amarotto-casale-monferrato",
+    "titolo": "Clic «Prenota»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "locale/mappa/trattoria-da-amerigo-valsamoggia",
+    "titolo": "Clic «Mappa»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/osteria-amarotto-casale-monferrato",
+    "titolo": "Osteria Amarotto a Casale Monferrato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/trattoria-da-amerigo-valsamoggia",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/ristorante-da-sapi-esine",
+    "titolo": "Ristorante da Sapi a Esine | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/carne-e-spirito-brescia",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/antica-trattoria-la-grotta-sasso-marconi",
+    "titolo": "Antica Trattoria La Grotta a Sasso Marconi | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "locale/foto/consorzio-stoppani-milano",
+    "titolo": "Clic «Foto»",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/locale/consorzio-stoppani-milano",
+    "titolo": "Consorzio Stoppani a Milano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/trattoria-della-santa-bologna",
+    "titolo": "Trattoria Della Santa a Bologna | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-il-saraceno-cavernago",
+    "titolo": "Ristorante Il Saraceno a Cavernago: Michelin ★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/da-vittorio-brusaporto",
+    "titolo": "Da Vittorio a Brusaporto: Michelin ★★★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-buriani-pieve-di-cento",
+    "titolo": "Ristorante Buriani a Pieve di Cento | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-ensama-pesce-sala-bolognese",
+    "titolo": "Ristorante Ensama Pesce a Sala Bolognese | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/casa-serafini-borgo-tossignano",
+    "titolo": "Casa Serafini a Borgo Tossignano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/provincia/bg",
+    "titolo": "Ristoranti in provincia di Bergamo: i 50 migliori | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/terracotta-belluno",
+    "titolo": "Terracotta a Belluno: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/enoteca-baita-fraina-cortina-d-ampezzo",
+    "titolo": "Enoteca Baita Fraina a Cortina d'Ampezzo | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/citta/cortina-d-ampezzo-bl",
+    "titolo": "Ristoranti a Cortina d'Ampezzo: i 8 migliori | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/al-camin-cortina-d-ampezzo",
+    "titolo": "Al Camin a Cortina d'Ampezzo: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/piccolo-brite-cortina-d-ampezzo",
+    "titolo": "Piccolo Brite a Cortina d'Ampezzo | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/contrada-bricconi-oltressenda-alta",
+    "titolo": "Contrada Bricconi a Oltressenda Alta | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-al-gigianca-bergamo",
+    "titolo": "Osteria Al Gigianca a Bergamo: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-ophis-offida",
+    "titolo": "Osteria Ophis a Offida: Michelin Bib Gourmand | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-del-teatro-cortona",
+    "titolo": "Osteria del Teatro a Cortona | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/citta/asti-at",
+    "titolo": "Ristoranti a Asti: i 4 migliori | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/angolo-del-beato-asti",
+    "titolo": "Angolo del Beato a Asti | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/madonna-della-neve-cessole",
+    "titolo": "Madonna della Neve a Cessole | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-del-diavolo-asti",
+    "titolo": "Osteria del Diavolo a Asti | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/la-bucaccia-cortona",
+    "titolo": "La Bucaccia a Cortona: Michelin Bib Gourmand | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/gabbo-arezzo",
+    "titolo": "Gabbo a Arezzo: Gambero Rosso Una Bottiglia | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-grande-arezzo",
+    "titolo": "Osteria Grande a Arezzo: Gambero Rosso Due Forchette | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-mammarossa-avezzano",
+    "titolo": "Osteria Mammarossa a Avezzano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/coeur-de-bois-cogne",
+    "titolo": "Coeur De Bois a Cogne: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/ristorante-il-tiglio-montemonaco",
+    "titolo": "Ristorante Il Tiglio a Montemonaco: Michelin ★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/le-chiavi-d-oro-arezzo",
+    "titolo": "Le Chiavi D'Oro a Arezzo: Gambero Rosso Una Forchetta | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/trattoria-le-nuvole-ferrara",
+    "titolo": "Trattoria Le Nuvole a Ferrara | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/il-moro-capriata-d-orba",
+    "titolo": "Il Moro a Capriata d'Orba | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/bottega-lucia-milano",
+    "titolo": "Bottega Lucia a Milano: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/trattoria-mibabbo-milano",
+    "titolo": "Trattoria Mibabbo a Milano: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/aquanova-hosteria-canicatti",
+    "titolo": "Aquanova Hosteria a Canicattì: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/trattoria-del-nuovo-macello-milano",
+    "titolo": "Trattoria del Nuovo Macello a Milano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/sadler-restaurant-milano",
+    "titolo": "Sadler Restaurant a Milano: Michelin ★ | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/bar-a-fromage-cogne",
+    "titolo": "Bar à Fromage a Cogne: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/dry-milano",
+    "titolo": "Dry a Milano: Gambero Rosso Tre Spicchi | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/l-acciuga-osteria-ravenna",
+    "titolo": "L'Acciuga Osteria a Ravenna: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/me-pizzeria-cocktailroom-ferrara",
+    "titolo": "Me Pizzeria&CocktailRoom a Ferrara | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/bites-milano",
+    "titolo": "Bites a Milano: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/duomo-alessandria",
+    "titolo": "Duomo a Alessandria: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/frades-porto-cervo-milano",
+    "titolo": "Frades Porto Cervo a Milano: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/la-risacca-blu-milano",
+    "titolo": "La Risacca Blu a Milano: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/galeria-antica-trattoria-milano",
+    "titolo": "Galeria Antica Trattoria a Milano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/la-cucina-dei-frigoriferi-milanesi-milano",
+    "titolo": "La Cucina dei Frigoriferi Milanesi a Milano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/yuzuya-bologna",
+    "titolo": "Yuzuya a Bologna: Gambero Rosso Due Gamberi | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/osteria-dell-acquabella-milano",
+    "titolo": "Osteria dell'Acquabella a Milano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/citta/ravenna-ra",
+    "titolo": "Ristoranti a Ravenna: i 15 migliori | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/casa-rizzieri-ferrara",
+    "titolo": "Casa Rizzieri a Ferrara: Gambero Rosso Due Gamberi | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/finger-s-restaurants-milano",
+    "titolo": "Finger's Restaurants a Milano: Michelin selezionato | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/acquacheta-milano",
+    "titolo": "Acquacheta a Milano | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/antica-trattoria-della-gigina-bologna",
+    "titolo": "Antica Trattoria Della Gigina a Bologna | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/provincia/fe",
+    "titolo": "Ristoranti in provincia di Ferrara: i 33 migliori | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/le-due-comari-ferrara",
+    "titolo": "Le Due Comari a Ferrara | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/citta/agrigento-ag",
+    "titolo": "Ristoranti a Agrigento: i 5 migliori | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/locale/il-re-di-girgenti-agrigento",
+    "titolo": "Il Re di Girgenti a Agrigento | Ach’s Dinners",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "app/tocco",
+    "titolo": "Riquadro toccato",
+    "n": 1,
+    "evento": true
+   }
+  ],
+  "toprefs": [
+   {
+    "nome": "(diretto)",
+    "n": 200
+   },
+   {
+    "nome": "P2",
+    "n": 65
+   },
+   {
+    "nome": "P2-E",
+    "n": 39
+   },
+   {
+    "nome": "achplaces.com",
+    "n": 19
+   },
+   {
+    "nome": "achevents.com",
+    "n": 17
+   },
+   {
+    "nome": "achdinners.com",
+    "n": 15
+   },
+   {
+    "nome": "P2-2",
+    "n": 15
+   },
+   {
+    "nome": "Google",
+    "n": 13
+   },
+   {
+    "nome": "P2-E2",
+    "n": 5
+   },
+   {
+    "nome": "achdinners.com/mappa.html",
+    "n": 3
+   },
+   {
+    "nome": "achdinners.com/locale/osteria-della-brughiera-villa-d-alme",
+    "n": 3
+   },
+   {
+    "nome": "achdinners.com/locale/le-due-comari-ferrara",
+    "n": 2
+   }
+  ],
+  "locations": [
+   {
+    "nome": "Italy",
+    "n": 358
+   },
+   {
+    "nome": "United States",
+    "n": 41
+   },
+   {
+    "nome": "France",
+    "n": 5
+   },
+   {
+    "nome": "United Kingdom",
+    "n": 3
+   },
+   {
+    "nome": "Canada",
+    "n": 2
+   },
+   {
+    "nome": "Netherlands",
+    "n": 2
+   },
+   {
+    "nome": "Belgium",
+    "n": 1
+   },
+   {
+    "nome": "Brazil",
+    "n": 1
+   },
+   {
+    "nome": "Switzerland",
+    "n": 1
+   },
+   {
+    "nome": "India",
+    "n": 1
+   },
+   {
+    "nome": "Poland",
+    "n": 1
+   },
+   {
+    "nome": "Taiwan",
+    "n": 1
+   }
+  ],
+  "systems": [
+   {
+    "nome": "iOS",
+    "n": 153
+   },
+   {
+    "nome": "Windows",
+    "n": 127
+   },
+   {
+    "nome": "macOS",
+    "n": 88
+   },
+   {
+    "nome": "Android",
+    "n": 35
+   },
+   {
+    "nome": "Linux",
+    "n": 14
+   }
+  ],
+  "browsers": [
+   {
+    "nome": "Safari",
+    "n": 217
+   },
+   {
+    "nome": "Chrome",
+    "n": 196
+   },
+   {
+    "nome": "Firefox",
+    "n": 4
+   }
+  ],
+  "sizes": [
+   {
+    "nome": "phone",
+    "n": 186
+   },
+   {
+    "nome": "tablet",
+    "n": 58
+   },
+   {
+    "nome": "desktop",
+    "n": 158
+   },
+   {
+    "nome": "desktophd",
+    "n": 15
+   },
+   {
+    "nome": "unknown",
+    "n": 0
+   }
+  ]
+ }
+}

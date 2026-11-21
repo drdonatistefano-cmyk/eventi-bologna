@@ -1,0 +1,218 @@
+[
+ {
+  "periodo": "Settimana 1",
+  "metrica": "Visite",
+  "effettivo": 233,
+  "giorni": 7,
+  "al": "2026-11-10",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Settimana 1",
+  "metrica": "Clic sui biglietti",
+  "effettivo": 15,
+  "giorni": 7,
+  "al": "2026-11-10",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Settimana 1",
+  "metrica": "Clic «Info» sugli spettacoli",
+  "effettivo": 10,
+  "giorni": 7,
+  "al": "2026-11-10",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Settimana 1",
+  "metrica": "Clic sulle mostre",
+  "effettivo": 5,
+  "giorni": 7,
+  "al": "2026-11-10",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Settimana 1",
+  "metrica": "Uso dei filtri",
+  "effettivo": 132,
+  "giorni": 7,
+  "al": "2026-11-10",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Settimana 1",
+  "metrica": "Ricerche",
+  "effettivo": 2,
+  "giorni": 7,
+  "al": "2026-11-10",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Settimana 1",
+  "metrica": "Condivisioni",
+  "effettivo": 4,
+  "giorni": 7,
+  "al": "2026-11-10",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Settimana 1",
+  "metrica": "Ricavo potenziale",
+  "effettivo": 1.77,
+  "giorni": 7,
+  "al": "2026-11-10",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Visite",
+  "effettivo": 136,
+  "giorni": 7,
+  "al": "2026-11-17",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Clic sui biglietti",
+  "effettivo": 15,
+  "giorni": 7,
+  "al": "2026-11-17",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Clic «Info» sugli spettacoli",
+  "effettivo": 10,
+  "giorni": 7,
+  "al": "2026-11-17",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Clic sulle mostre",
+  "effettivo": 0,
+  "giorni": 7,
+  "al": "2026-11-17",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Uso dei filtri",
+  "effettivo": 57,
+  "giorni": 7,
+  "al": "2026-11-17",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Ricerche",
+  "effettivo": 10,
+  "giorni": 7,
+  "al": "2026-11-17",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Condivisioni",
+  "effettivo": 0,
+  "giorni": 7,
+  "al": "2026-11-17",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Settimana 2",
+  "metrica": "Ricavo potenziale",
+  "effettivo": 1.41,
+  "giorni": 7,
+  "al": "2026-11-17",
+  "parziale": false,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Primo mese",
+  "metrica": "Visite",
+  "effettivo": 426,
+  "giorni": 18,
+  "al": "2026-11-21",
+  "parziale": true,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Primo mese",
+  "metrica": "Clic sui biglietti",
+  "effettivo": 30,
+  "giorni": 18,
+  "al": "2026-11-21",
+  "parziale": true,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Primo mese",
+  "metrica": "Clic «Info» sugli spettacoli",
+  "effettivo": 20,
+  "giorni": 18,
+  "al": "2026-11-21",
+  "parziale": true,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Primo mese",
+  "metrica": "Clic sulle mostre",
+  "effettivo": 5,
+  "giorni": 18,
+  "al": "2026-11-21",
+  "parziale": true,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Primo mese",
+  "metrica": "Uso dei filtri",
+  "effettivo": 194,
+  "giorni": 18,
+  "al": "2026-11-21",
+  "parziale": true,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Primo mese",
+  "metrica": "Ricerche",
+  "effettivo": 13,
+  "giorni": 18,
+  "al": "2026-11-21",
+  "parziale": true,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Primo mese",
+  "metrica": "Condivisioni",
+  "effettivo": 4,
+  "giorni": 18,
+  "al": "2026-11-21",
+  "parziale": true,
+  "letto": "2026-11-21T18:54:05+00:00"
+ },
+ {
+  "periodo": "Primo mese",
+  "metrica": "Ricavo potenziale",
+  "effettivo": 3.4,
+  "giorni": 18,
+  "al": "2026-11-21",
+  "parziale": true,
+  "letto": "2026-11-21T18:54:05+00:00"
+ }
+]

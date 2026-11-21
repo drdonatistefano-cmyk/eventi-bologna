@@ -1,0 +1,711 @@
+{
+ "generato": "2026-11-21T18:54:41Z",
+ "stato": {
+  "sito": {
+   "http": 200,
+   "ok": true,
+   "statistiche_attive": true
+  }
+ },
+ "errore": "",
+ "giorni": [
+  {
+   "giorno": "2026-11-08",
+   "visite": 10
+  },
+  {
+   "giorno": "2026-11-09",
+   "visite": 11
+  },
+  {
+   "giorno": "2026-11-10",
+   "visite": 13
+  },
+  {
+   "giorno": "2026-11-11",
+   "visite": 21
+  },
+  {
+   "giorno": "2026-11-12",
+   "visite": 10
+  },
+  {
+   "giorno": "2026-11-13",
+   "visite": 22
+  },
+  {
+   "giorno": "2026-11-14",
+   "visite": 34
+  },
+  {
+   "giorno": "2026-11-15",
+   "visite": 24
+  },
+  {
+   "giorno": "2026-11-16",
+   "visite": 45
+  },
+  {
+   "giorno": "2026-11-17",
+   "visite": 38
+  },
+  {
+   "giorno": "2026-11-18",
+   "visite": 50
+  },
+  {
+   "giorno": "2026-11-19",
+   "visite": 33
+  },
+  {
+   "giorno": "2026-11-20",
+   "visite": 38
+  },
+  {
+   "giorno": "2026-11-21",
+   "visite": 13
+  }
+ ],
+ "totali": {
+  "oggi": {
+   "visite": 13,
+   "eventi": 4
+  },
+  "7g": {
+   "visite": 241,
+   "eventi": 61
+  },
+  "30g": {
+   "visite": 362,
+   "eventi": 89
+  }
+ },
+ "7g": {
+  "percorsi": [
+   {
+    "path": "/?lang=it",
+    "titolo": "Ach's Places Guide",
+    "n": 97,
+    "evento": false
+   },
+   {
+    "path": "/",
+    "titolo": "Ach's Places Guide",
+    "n": 72,
+    "evento": false
+   },
+   {
+    "path": "app/aperta-dall-icona",
+    "titolo": "Aperta dall'icona",
+    "n": 21,
+    "evento": true
+   },
+   {
+    "path": "/?lang=en",
+    "titolo": "Ach's Places Guide",
+    "n": 20,
+    "evento": false
+   },
+   {
+    "path": "/?app=1",
+    "titolo": "Ach's Places Guide",
+    "n": 20,
+    "evento": false
+   },
+   {
+    "path": "guide/vai-dinners",
+    "titolo": "Vai a Ach's Dinners Guide",
+    "n": 18,
+    "evento": true
+   },
+   {
+    "path": "/filtri.html",
+    "titolo": "Luoghi sulla mappa · Ach's Places Guide",
+    "n": 11,
+    "evento": false
+   },
+   {
+    "path": "app/mostrato",
+    "titolo": "Riquadro mostrato",
+    "n": 10,
+    "evento": true
+   },
+   {
+    "path": "guide/vai-events",
+    "titolo": "Vai a Ach's Events Guide",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "/index.html",
+    "titolo": "Ach's Places Guide",
+    "n": 4,
+    "evento": false
+   },
+   {
+    "path": "filtri/azzera-places",
+    "titolo": "Azzera i filtri (in fondo)",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "/comune/agrigento-ag",
+    "titolo": "Cosa vedere a Agrigento (AG): 14 luoghi da visitare",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/?subject=CANCELLA",
+    "titolo": "Ach's Places Guide – what to see in Italy, town by town",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/comune/verbania-vb",
+    "titolo": "Cosa vedere a Verbania (VB): 16 luoghi da visitare | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/prova-filtri/?v=5",
+    "titolo": "Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/prova-filtri/?v=4",
+    "titolo": "Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/comune/lamezia-terme-cz",
+    "titolo": "Cosa vedere a Lamezia Terme (CZ): 3 luoghi da visitare | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "app/chiuso",
+    "titolo": "Riquadro chiuso",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "/luogo/ghilarza-or--casa-museo-di-antonio-gramsci",
+    "titolo": "Casa museo di Antonio Gramsci, Ghilarza (OR): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/firenze-fi--museo-stibbert",
+    "titolo": "Museo Stibbert, Firenze (FI): cosa sapere prima di andarci",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/urbino-pu",
+    "titolo": "Cosa vedere a Urbino (PU): 17 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "app/tocco",
+    "titolo": "Riquadro toccato",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/prova-filtri/?v=3",
+    "titolo": "Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   }
+  ],
+  "toprefs": [
+   {
+    "nome": "(diretto)",
+    "n": 178
+   },
+   {
+    "nome": "P2",
+    "n": 20
+   },
+   {
+    "nome": "achplaces.com",
+    "n": 14
+   },
+   {
+    "nome": "Google",
+    "n": 13
+   },
+   {
+    "nome": "P3-2L",
+    "n": 9
+   },
+   {
+    "nome": "achdinners.com",
+    "n": 7
+   },
+   {
+    "nome": "P3-13",
+    "n": 7
+   },
+   {
+    "nome": "P3-10",
+    "n": 6
+   },
+   {
+    "nome": "P3-15",
+    "n": 5
+   },
+   {
+    "nome": "bing.com",
+    "n": 4
+   },
+   {
+    "nome": "achplaces.com/sostenitori",
+    "n": 4
+   },
+   {
+    "nome": "P3-2L4",
+    "n": 4
+   }
+  ],
+  "locations": [
+   {
+    "nome": "Italy",
+    "n": 236
+   },
+   {
+    "nome": "United States",
+    "n": 49
+   },
+   {
+    "nome": "United Kingdom",
+    "n": 6
+   },
+   {
+    "nome": "France",
+    "n": 3
+   },
+   {
+    "nome": "Mauritius",
+    "n": 2
+   },
+   {
+    "nome": "United Arab Emirates",
+    "n": 1
+   },
+   {
+    "nome": "Brazil",
+    "n": 1
+   },
+   {
+    "nome": "Canada",
+    "n": 1
+   },
+   {
+    "nome": "Germany",
+    "n": 1
+   },
+   {
+    "nome": "Taiwan",
+    "n": 1
+   }
+  ],
+  "systems": [
+   {
+    "nome": "Windows",
+    "n": 157
+   },
+   {
+    "nome": "iOS",
+    "n": 80
+   },
+   {
+    "nome": "macOS",
+    "n": 42
+   },
+   {
+    "nome": "Android",
+    "n": 17
+   },
+   {
+    "nome": "Linux",
+    "n": 5
+   }
+  ],
+  "browsers": [
+   {
+    "nome": "Chrome",
+    "n": 172
+   },
+   {
+    "nome": "Safari",
+    "n": 116
+   },
+   {
+    "nome": "Firefox",
+    "n": 13
+   }
+  ],
+  "sizes": [
+   {
+    "nome": "phone",
+    "n": 95
+   },
+   {
+    "nome": "tablet",
+    "n": 40
+   },
+   {
+    "nome": "desktop",
+    "n": 163
+   },
+   {
+    "nome": "desktophd",
+    "n": 3
+   },
+   {
+    "nome": "unknown",
+    "n": 0
+   }
+  ]
+ },
+ "30g": {
+  "percorsi": [
+   {
+    "path": "/",
+    "titolo": "Ach's Places Guide",
+    "n": 144,
+    "evento": false
+   },
+   {
+    "path": "/?lang=it",
+    "titolo": "Ach's Places Guide",
+    "n": 109,
+    "evento": false
+   },
+   {
+    "path": "guide/vai-dinners",
+    "titolo": "Vai a Ach's Dinners Guide",
+    "n": 28,
+    "evento": true
+   },
+   {
+    "path": "/filtri.html",
+    "titolo": "Luoghi sulla mappa · Ach's Places Guide",
+    "n": 25,
+    "evento": false
+   },
+   {
+    "path": "/?lang=en",
+    "titolo": "Ach's Places Guide",
+    "n": 22,
+    "evento": false
+   },
+   {
+    "path": "app/aperta-dall-icona",
+    "titolo": "Aperta dall'icona",
+    "n": 21,
+    "evento": true
+   },
+   {
+    "path": "/?app=1",
+    "titolo": "Ach's Places Guide",
+    "n": 20,
+    "evento": false
+   },
+   {
+    "path": "/index.html",
+    "titolo": "Ach's Places Guide",
+    "n": 18,
+    "evento": false
+   },
+   {
+    "path": "guide/vai-events",
+    "titolo": "Vai a Ach's Events Guide",
+    "n": 15,
+    "evento": true
+   },
+   {
+    "path": "filtri/azzera-places",
+    "titolo": "Azzera i filtri (in fondo)",
+    "n": 12,
+    "evento": true
+   },
+   {
+    "path": "app/mostrato",
+    "titolo": "Riquadro mostrato",
+    "n": 10,
+    "evento": true
+   },
+   {
+    "path": "/comune/agrigento-ag",
+    "titolo": "Cosa vedere a Agrigento (AG): 14 luoghi da visitare",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/?subject=CANCELLA",
+    "titolo": "Ach's Places Guide – what to see in Italy, town by town",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/comune/verbania-vb",
+    "titolo": "Cosa vedere a Verbania (VB): 16 luoghi da visitare | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/prova-filtri/?v=5",
+    "titolo": "Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/prova-filtri/?v=4",
+    "titolo": "Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/comune/lamezia-terme-cz",
+    "titolo": "Cosa vedere a Lamezia Terme (CZ): 3 luoghi da visitare | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "app/chiuso",
+    "titolo": "Riquadro chiuso",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "/comune/modena-mo",
+    "titolo": "Cosa vedere a Modena (MO): 36 luoghi da visitare | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/en/comuni",
+    "titolo": "All towns | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/comune/firenze-fi",
+    "titolo": "Cosa vedere a Firenze (FI): 59 luoghi da visitare | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/luogo/ghilarza-or--casa-museo-di-antonio-gramsci",
+    "titolo": "Casa museo di Antonio Gramsci, Ghilarza (OR): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/firenze-fi--museo-stibbert",
+    "titolo": "Museo Stibbert, Firenze (FI): cosa sapere prima di andarci",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/urbino-pu",
+    "titolo": "Cosa vedere a Urbino (PU): 17 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "app/tocco",
+    "titolo": "Riquadro toccato",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/prova-filtri/?v=3",
+    "titolo": "Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/firenze-fi--orto-botanico-giardino-dei-semplici",
+    "titolo": "Orto botanico, Giardino dei Semplici, Firenze (FI): cosa sapere prima di andarci | Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   }
+  ],
+  "toprefs": [
+   {
+    "nome": "(diretto)",
+    "n": 292
+   },
+   {
+    "nome": "achplaces.com",
+    "n": 31
+   },
+   {
+    "nome": "P2",
+    "n": 20
+   },
+   {
+    "nome": "Google",
+    "n": 15
+   },
+   {
+    "nome": "achplaces.com/filtri.html",
+    "n": 12
+   },
+   {
+    "nome": "P3-2L",
+    "n": 9
+   },
+   {
+    "nome": "achdinners.com",
+    "n": 8
+   },
+   {
+    "nome": "achevents.com",
+    "n": 7
+   },
+   {
+    "nome": "P3-13",
+    "n": 7
+   },
+   {
+    "nome": "P3-10",
+    "n": 6
+   },
+   {
+    "nome": "P3-15",
+    "n": 5
+   },
+   {
+    "nome": "bing.com",
+    "n": 4
+   }
+  ],
+  "locations": [
+   {
+    "nome": "Italy",
+    "n": 348
+   },
+   {
+    "nome": "United States",
+    "n": 74
+   },
+   {
+    "nome": "United Kingdom",
+    "n": 8
+   },
+   {
+    "nome": "France",
+    "n": 6
+   },
+   {
+    "nome": "Canada",
+    "n": 4
+   },
+   {
+    "nome": "Mauritius",
+    "n": 2
+   },
+   {
+    "nome": "Sweden",
+    "n": 2
+   },
+   {
+    "nome": "United Arab Emirates",
+    "n": 1
+   },
+   {
+    "nome": "Brazil",
+    "n": 1
+   },
+   {
+    "nome": "China",
+    "n": 1
+   },
+   {
+    "nome": "Germany",
+    "n": 1
+   },
+   {
+    "nome": "India",
+    "n": 1
+   }
+  ],
+  "systems": [
+   {
+    "nome": "Windows",
+    "n": 204
+   },
+   {
+    "nome": "iOS",
+    "n": 126
+   },
+   {
+    "nome": "macOS",
+    "n": 86
+   },
+   {
+    "nome": "Android",
+    "n": 23
+   },
+   {
+    "nome": "Linux",
+    "n": 12
+   }
+  ],
+  "browsers": [
+   {
+    "nome": "Chrome",
+    "n": 236
+   },
+   {
+    "nome": "Safari",
+    "n": 201
+   },
+   {
+    "nome": "Firefox",
+    "n": 14
+   }
+  ],
+  "sizes": [
+   {
+    "nome": "phone",
+    "n": 148
+   },
+   {
+    "nome": "tablet",
+    "n": 90
+   },
+   {
+    "nome": "desktop",
+    "n": 210
+   },
+   {
+    "nome": "desktophd",
+    "n": 3
+   },
+   {
+    "nome": "unknown",
+    "n": 0
+   }
+  ]
+ }
+}
