@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-20",
- "giorno_orari": "2026-11-20",
+ "aggiornato": "2026-11-21",
+ "giorno_orari": "2026-11-21",
  "sale": [
   {
    "id": "c004",
@@ -38,9 +38,6 @@
       "18:00"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:00"
-      ],
       "2026-11-21": [
        "18:00"
       ],
@@ -65,10 +62,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:30",
-       "21:30"
-      ],
       "2026-11-21": [
        "18:30",
        "21:30"
@@ -96,11 +89,6 @@
       "21:25"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:05",
-       "20:25",
-       "21:25"
-      ],
       "2026-11-21": [
        "18:05",
        "20:25",
@@ -131,10 +119,6 @@
       "20:35"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:05",
-       "20:35"
-      ],
       "2026-11-21": [
        "18:05",
        "20:35"
@@ -161,9 +145,6 @@
       "17:50"
      ],
      "giorni": {
-      "2026-11-20": [
-       "17:50"
-      ],
       "2026-11-21": [
        "17:50"
       ],
@@ -189,10 +170,6 @@
       "20:45"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:10",
-       "20:45"
-      ],
       "2026-11-21": [
        "18:10",
        "20:45"
@@ -220,10 +197,6 @@
       "21:10"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:10",
-       "21:10"
-      ],
       "2026-11-21": [
        "18:10",
        "21:10"
@@ -251,10 +224,6 @@
       "21:05"
      ],
      "giorni": {
-      "2026-11-20": [
-       "17:35",
-       "21:05"
-      ],
       "2026-11-21": [
        "17:35",
        "21:05"
@@ -281,10 +250,6 @@
       "21:15"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:20",
-       "21:15"
-      ],
       "2026-11-21": [
        "18:20",
        "21:15"
@@ -312,10 +277,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:35",
-       "21:00"
-      ],
       "2026-11-21": [
        "18:35",
        "21:00"
@@ -337,7 +298,9 @@
     },
     {
      "titolo": "Ti presento i Fotter",
-     "orari": [],
+     "orari": [
+      "20:55"
+     ],
      "giorni": {
       "2026-11-21": [
        "20:55"
@@ -347,9 +310,13 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Commedia",
+     "regia": "John Hamburg",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "interpreti": "Robert De Niro, Owen Wilson e Ben Stiller",
+     "durata": 105,
+     "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
@@ -359,10 +326,6 @@
       "20:20"
      ],
      "giorni": {
-      "2026-11-20": [
-       "17:55",
-       "20:20"
-      ],
       "2026-11-21": [
        "17:55",
        "20:20"
@@ -390,10 +353,6 @@
       "20:40"
      ],
      "giorni": {
-      "2026-11-20": [
-       "17:55",
-       "20:40"
-      ],
       "2026-11-21": [
        "17:55",
        "20:40"
@@ -426,23 +385,25 @@
    "fonte": "https://movieplayer.it/cinema/jolly-doc_1126/",
    "film": [
     {
-     "titolo": "Look Back",
+     "titolo": "La Gradiva",
      "orari": [
+      "18:30",
       "21:00"
      ],
-     "versione": "",
+     "versione": "Versione originale",
      "genere": "Drammatico",
-     "regia": "Kore-eda",
-     "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
-     "durata": 100,
+     "regia": "Marine Atlan",
+     "interpreti": "Colas Quignard, Suzanne Gerin, Mitia Capellier e Antonia Buresi",
+     "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-20": [
+      "2026-11-21": [
+       "18:30",
        "21:00"
       ]
      },
-     "paese": "Giappone",
-     "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29"
+     "paese": "Francia",
+     "scheda": "https://it.wikipedia.org/wiki/La_Gradiva"
     }
    ]
   },
@@ -462,10 +423,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:15",
-       "21:00"
-      ],
       "2026-11-21": [
        "18:15",
        "21:00"
@@ -504,9 +461,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-20": [
-       "21:00"
-      ],
       "2026-11-21": [
        "21:00"
       ],
@@ -560,12 +514,10 @@
     {
      "titolo": "Fjord",
      "orari": [
+      "18:00",
       "21:00"
      ],
      "giorni": {
-      "2026-11-20": [
-       "21:00"
-      ],
       "2026-11-21": [
        "18:00",
        "21:00"
@@ -601,17 +553,14 @@
     {
      "titolo": "Come rapinare una banca",
      "orari": [
-      "21:15"
+      "21:45"
      ],
      "giorni": {
-      "2026-11-20": [
-       "21:15"
-      ],
       "2026-11-21": [
        "21:45"
       ],
       "2026-11-22": [
-       "21:15"
+       "21:20"
       ]
      },
      "versione": "",
@@ -625,12 +574,9 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "18:00"
+      "15:30"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:00"
-      ],
       "2026-11-21": [
        "15:30"
       ],
@@ -651,12 +597,10 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "20:50"
+      "20:10",
+      "22:45"
      ],
      "giorni": {
-      "2026-11-20": [
-       "20:50"
-      ],
       "2026-11-21": [
        "20:10",
        "22:45"
@@ -678,16 +622,14 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
-      "17:45",
-      "20:30",
-      "21:10"
+      "15:45",
+      "17:20",
+      "18:00",
+      "20:40",
+      "21:30",
+      "22:20"
      ],
      "giorni": {
-      "2026-11-20": [
-       "17:45",
-       "20:30",
-       "21:10"
-      ],
       "2026-11-21": [
        "15:45",
        "17:20",
@@ -717,18 +659,16 @@
     {
      "titolo": "Il fuoco che ti porti dentro",
      "orari": [
-      "19:25"
+      "15:30",
+      "19:50"
      ],
      "giorni": {
-      "2026-11-20": [
-       "19:25"
-      ],
       "2026-11-21": [
        "15:30",
        "19:50"
       ],
       "2026-11-22": [
-       "15:45",
+       "15:30",
        "19:25"
       ]
      },
@@ -745,12 +685,10 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
+      "15:30",
       "17:50"
      ],
      "giorni": {
-      "2026-11-20": [
-       "17:50"
-      ],
       "2026-11-21": [
        "15:30",
        "17:50"
@@ -773,14 +711,12 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
+      "15:30",
       "17:55",
-      "20:45"
+      "20:20",
+      "22:40"
      ],
      "giorni": {
-      "2026-11-20": [
-       "17:55",
-       "20:45"
-      ],
       "2026-11-21": [
        "15:30",
        "17:55",
@@ -806,14 +742,12 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "18:15",
-      "21:10"
+      "15:30",
+      "17:55",
+      "20:20",
+      "22:40"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:15",
-       "21:10"
-      ],
       "2026-11-21": [
        "15:30",
        "17:55",
@@ -839,14 +773,11 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "18:00",
-      "20:50"
+      "15:40",
+      "17:50",
+      "20:15"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:00",
-       "20:50"
-      ],
       "2026-11-21": [
        "15:40",
        "17:50",
@@ -869,7 +800,9 @@
     },
     {
      "titolo": "Ti presento i Fotter",
-     "orari": [],
+     "orari": [
+      "19:30"
+     ],
      "giorni": {
       "2026-11-21": [
        "19:30"
@@ -879,22 +812,24 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Commedia",
+     "regia": "John Hamburg",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
+     "interpreti": "Robert De Niro, Owen Wilson e Ben Stiller",
+     "durata": 105,
+     "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
      "titolo": "Un weekend artificiale",
      "orari": [
-      "18:00",
-      "20:45"
+      "15:30",
+      "17:40",
+      "21:00",
+      "22:45"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:00",
-       "20:45"
-      ],
       "2026-11-21": [
        "15:30",
        "17:40",
@@ -930,23 +865,22 @@
    "fonte": "https://movieplayer.it/cinema/europa_1118/",
    "film": [
     {
-     "titolo": "La ballata del re delle api",
+     "titolo": "Look Back",
      "orari": [
       "21:00"
      ],
      "versione": "",
-     "genere": "Drammatico, Thriller",
-     "regia": "Andrew Patterson",
-     "interpreti": "Matthew McConaughey, Angelina LookingGlass e Jake Horowitz",
-     "durata": 130,
-     "anno": 2025,
+     "genere": "",
+     "regia": "Kore-eda",
+     "interpreti": "",
+     "durata": null,
+     "anno": 2026,
      "giorni": {
-      "2026-11-20": [
+      "2026-11-21": [
        "21:00"
       ]
      },
-     "paese": "USA",
-     "scheda": "https://it.wikipedia.org/wiki/La_ballata_del_re_delle_api"
+     "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29"
     }
    ]
   },
@@ -962,13 +896,8 @@
    "film": [
     {
      "titolo": "Dio ride",
-     "orari": [
-      "21:00"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-20": [
-       "21:00"
-      ],
       "2026-11-22": [
        "17:00"
       ]
@@ -976,7 +905,7 @@
      "versione": "",
      "genere": "Commedia",
      "regia": "Giovanni Veronesi",
-     "biglietti": "https://www.liveticket.it/evento.aspx?Id=715185",
+     "biglietti": "https://www.liveticket.it/evento.aspx?Id=715187",
      "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
      "durata": 114,
      "anno": 2026,
@@ -997,7 +926,10 @@
    "film": [
     {
      "titolo": "Odissea",
-     "orari": [],
+     "orari": [
+      "17:00",
+      "21:00"
+     ],
      "giorni": {
       "2026-11-21": [
        "17:00",
@@ -1051,7 +983,9 @@
     },
     {
      "titolo": "Frankie e le creature dimenticate",
-     "orari": [],
+     "orari": [
+      "17:00"
+     ],
      "giorni": {
       "2026-11-21": [
        "17:00"
@@ -1064,7 +998,9 @@
     },
     {
      "titolo": "L'essere amato",
-     "orari": [],
+     "orari": [
+      "19:00"
+     ],
      "giorni": {
       "2026-11-21": [
        "19:00"
@@ -1079,12 +1015,9 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "21:00"
+      "21:15"
      ],
      "giorni": {
-      "2026-11-20": [
-       "21:00"
-      ],
       "2026-11-21": [
        "21:15"
       ],

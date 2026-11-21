@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-20",
- "giorno_orari": "2026-11-20",
+ "aggiornato": "2026-11-21",
+ "giorno_orari": "2026-11-21",
  "sale": [
   {
    "id": "c002",
@@ -41,7 +41,9 @@
    "film": [
     {
      "titolo": "Clayface",
-     "orari": [],
+     "orari": [
+      "22:40"
+     ],
      "giorni": {
       "2026-11-21": [
        "22:40"
@@ -62,12 +64,10 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "19:30"
+      "14:50",
+      "17:20"
      ],
      "giorni": {
-      "2026-11-20": [
-       "19:30"
-      ],
       "2026-11-21": [
        "14:50",
        "17:20"
@@ -89,12 +89,10 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "20:45"
+      "19:40",
+      "22:30"
      ],
      "giorni": {
-      "2026-11-20": [
-       "20:45"
-      ],
       "2026-11-21": [
        "19:40",
        "22:30"
@@ -117,20 +115,16 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
-      "18:10",
+      "14:10",
+      "15:00",
+      "17:00",
+      "18:05",
       "18:15",
       "20:30",
-      "21:25",
-      "21:30"
+      "21:30",
+      "22:10"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:10",
-       "18:15",
-       "20:30",
-       "21:25",
-       "21:30"
-      ],
       "2026-11-21": [
        "14:10",
        "15:00",
@@ -138,7 +132,6 @@
        "18:05",
        "18:15",
        "20:30",
-       "21:20",
        "21:30",
        "22:10"
       ],
@@ -153,7 +146,7 @@
        "22:10"
       ]
      },
-     "versione": "Versione originale (solo ore 18:05, 18:10, 21:20, 21:25)",
+     "versione": "Versione originale (solo ore 18:05, 21:20)",
      "genere": "Azione, Avventura, Fantasy",
      "regia": "Francis Lawrence",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
@@ -166,12 +159,10 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "18:05"
+      "14:55",
+      "17:15"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:05"
-      ],
       "2026-11-21": [
        "14:55",
        "17:15"
@@ -194,17 +185,15 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "22:00"
+      "14:40",
+      "17:10",
+      "19:35"
      ],
      "giorni": {
-      "2026-11-20": [
-       "22:00"
-      ],
       "2026-11-21": [
        "14:40",
        "17:10",
-       "19:35",
-       "22:35"
+       "19:35"
       ],
       "2026-11-22": [
        "14:30",
@@ -226,12 +215,10 @@
     {
      "titolo": "Look Back",
      "orari": [
-      "18:40"
+      "14:25",
+      "16:45"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:40"
-      ],
       "2026-11-21": [
        "14:25",
        "16:45"
@@ -252,8 +239,10 @@
      "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29"
     },
     {
-     "titolo": "Ramayana Director's Cut (Hindi)",
-     "orari": [],
+     "titolo": "Ramayana - La nascita di una leggenda",
+     "orari": [
+      "14:30"
+     ],
      "giorni": {
       "2026-11-21": [
        "14:30"
@@ -263,23 +252,23 @@
       ]
      },
      "versione": "Versione originale",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848"
+     "genere": "Azione, Avventura, Drammatico",
+     "regia": "Nitesh Tiwari",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
+     "interpreti": "Ranbir Kapoor, Sai Pallavi, Sunny Deol e Kajal Aggarwal",
+     "paese": "India",
+     "durata": 195,
+     "anno": 2026
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "18:00",
-      "19:35",
-      "22:10"
+      "14:40",
+      "17:30",
+      "20:05",
+      "22:35"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:00",
-       "19:35",
-       "22:10"
-      ],
       "2026-11-21": [
        "14:40",
        "17:30",
@@ -306,14 +295,12 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "18:10",
-      "20:30"
+      "15:05",
+      "17:25",
+      "19:50",
+      "22:00"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:10",
-       "20:30"
-      ],
       "2026-11-21": [
        "15:05",
        "17:25",
@@ -353,12 +340,11 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
-      "21:20"
+      "14:35",
+      "17:30",
+      "19:45"
      ],
      "giorni": {
-      "2026-11-20": [
-       "21:20"
-      ],
       "2026-11-21": [
        "14:35",
        "17:30",
@@ -383,12 +369,9 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "19:15"
+      "20:05"
      ],
      "giorni": {
-      "2026-11-20": [
-       "19:15"
-      ],
       "2026-11-21": [
        "20:05"
       ],
@@ -409,12 +392,9 @@
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
-      "21:10"
+      "22:05"
      ],
      "giorni": {
-      "2026-11-20": [
-       "21:10"
-      ],
       "2026-11-21": [
        "22:05"
       ],
@@ -450,9 +430,6 @@
       "21:15"
      ],
      "giorni": {
-      "2026-11-20": [
-       "21:15"
-      ],
       "2026-11-21": [
        "21:15"
       ],
@@ -483,7 +460,9 @@
    "film": [
     {
      "titolo": "Dio ride",
-     "orari": [],
+     "orari": [
+      "19:15"
+     ],
      "giorni": {
       "2026-11-21": [
        "19:15"
@@ -496,15 +475,17 @@
      "genere": "Commedia",
      "regia": "Giovanni Veronesi",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
+     "anno": 2026,
      "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
      "paese": "Italia",
      "durata": 114,
-     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
     },
     {
      "titolo": "Il canto della foresta",
-     "orari": [],
+     "orari": [
+      "19:00"
+     ],
      "giorni": {
       "2026-11-21": [
        "19:00"
@@ -514,21 +495,21 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221"
+     "genere": "Documentario",
+     "regia": "Vincent Munier",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
+     "interpreti": "Vincent Munier, Simon Munier e Michel Munier",
+     "durata": 95,
+     "anno": 2025,
+     "paese": "Francia"
     },
     {
      "titolo": "Il fuoco che ti porti dentro",
      "orari": [
-      "18:45",
+      "17:00",
       "21:00"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:45",
-       "21:00"
-      ],
       "2026-11-21": [
        "17:00",
        "21:00"
@@ -551,14 +532,11 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
+      "16:30",
       "18:45",
       "21:10"
      ],
      "giorni": {
-      "2026-11-20": [
-       "18:45",
-       "21:10"
-      ],
       "2026-11-21": [
        "16:30",
        "18:45",
@@ -583,14 +561,10 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "19:15",
+      "16:45",
       "21:20"
      ],
      "giorni": {
-      "2026-11-20": [
-       "19:15",
-       "21:20"
-      ],
       "2026-11-21": [
        "16:45",
        "21:20"
@@ -611,7 +585,9 @@
     },
     {
      "titolo": "Un weekend artificiale",
-     "orari": [],
+     "orari": [
+      "18:45"
+     ],
      "giorni": {
       "2026-11-21": [
        "18:45"
@@ -624,23 +600,19 @@
      "genere": "Commedia",
      "regia": "Leonardo Pieraccioni",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
-     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio, Luigi Luciano e Massimo Ceccherini",
+     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio e Herbert Ballerina",
+     "anno": 2026,
      "paese": "Italia",
      "durata": 91,
-     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Un_weekend_artificiale"
     },
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "19:00",
+      "16:45",
       "21:30"
      ],
      "giorni": {
-      "2026-11-20": [
-       "19:00",
-       "21:30"
-      ],
       "2026-11-21": [
        "16:45",
        "21:30"
@@ -673,23 +645,23 @@
    "fonte": "https://movieplayer.it/cinema/s-spirito_415/",
    "film": [
     {
-     "titolo": "La ballata del re delle api",
+     "titolo": "Look Back",
      "orari": [
       "21:00"
      ],
      "versione": "",
-     "genere": "Drammatico, Thriller",
-     "regia": "Andrew Patterson",
-     "interpreti": "Matthew McConaughey, Angelina LookingGlass e Jake Horowitz",
-     "durata": 130,
-     "anno": 2025,
+     "genere": "Drammatico",
+     "regia": "Kore-eda",
+     "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
+     "durata": 100,
+     "anno": 2026,
      "giorni": {
-      "2026-11-20": [
+      "2026-11-21": [
        "21:00"
       ]
      },
-     "paese": "USA",
-     "scheda": "https://it.wikipedia.org/wiki/La_ballata_del_re_delle_api"
+     "paese": "Giappone",
+     "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29"
     }
    ]
   },
@@ -714,7 +686,9 @@
    "film": [
     {
      "titolo": "Se domani non torno",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-21": [
        "21:00"
@@ -728,10 +702,10 @@
      "genere": "Drammatico",
      "regia": "Paola Randi",
      "biglietti": "https://www.teatrodeifluttuanti.com/film-in-prima-visione-e-per-bambini/",
-     "interpreti": "Tommaso Allione, Tecla Bossi, Sabrina Martina e Filippo Timi",
+     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
+     "anno": 2027,
      "paese": "Italia",
-     "durata": 107,
-     "anno": 2026
+     "durata": 107
     },
     {
      "titolo": "Taddeo l’esploratore e la lampada magica",
@@ -764,9 +738,6 @@
       "22:30"
      ],
      "giorni": {
-      "2026-11-20": [
-       "22:30"
-      ],
       "2026-11-21": [
        "22:30"
       ],
@@ -787,14 +758,11 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
+      "17:30",
       "20:30",
       "22:30"
      ],
      "giorni": {
-      "2026-11-20": [
-       "20:30",
-       "22:30"
-      ],
       "2026-11-21": [
        "17:30",
        "20:30",
@@ -819,12 +787,9 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "20:15"
+      "18:00"
      ],
      "giorni": {
-      "2026-11-20": [
-       "20:15"
-      ],
       "2026-11-21": [
        "18:00"
       ],
@@ -845,12 +810,10 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
+      "18:00",
       "20:15"
      ],
      "giorni": {
-      "2026-11-20": [
-       "20:15"
-      ],
       "2026-11-21": [
        "18:00",
        "20:15"
@@ -873,14 +836,11 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
+      "17:45",
       "20:15",
       "22:30"
      ],
      "giorni": {
-      "2026-11-20": [
-       "20:15",
-       "22:30"
-      ],
       "2026-11-21": [
        "17:45",
        "20:15",
@@ -905,14 +865,11 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
+      "18:00",
       "20:15",
       "22:30"
      ],
      "giorni": {
-      "2026-11-20": [
-       "20:15",
-       "22:30"
-      ],
       "2026-11-21": [
        "18:00",
        "20:15",
@@ -949,7 +906,9 @@
     },
     {
      "titolo": "Ti presento i Fotter",
-     "orari": [],
+     "orari": [
+      "20:15"
+     ],
      "giorni": {
       "2026-11-21": [
        "20:15"
@@ -959,22 +918,22 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Commedia",
+     "regia": "John Hamburg",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
+     "interpreti": "Robert De Niro, Owen Wilson e Ben Stiller",
+     "durata": 105,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
      "titolo": "Un weekend artificiale",
      "orari": [
+      "18:30",
       "20:30",
       "22:30"
      ],
      "giorni": {
-      "2026-11-20": [
-       "20:30",
-       "22:30"
-      ],
       "2026-11-21": [
        "18:30",
        "20:30",
@@ -1007,7 +966,26 @@
    "tipo": "Arena",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/cinema-teatro-arena_408/",
-   "film": []
+   "film": [
+    {
+     "titolo": "Se domani non torno",
+     "orari": [
+      "21:00"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Paola Randi",
+     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
+     "durata": 107,
+     "anno": 2027,
+     "giorni": {
+      "2026-11-21": [
+       "21:00"
+      ]
+     },
+     "paese": "Italia"
+    }
+   ]
   },
   {
    "id": "c013",
@@ -1020,23 +998,10 @@
    "cinemap": "https://www.cinemap.it/cento/cinema/donzucchini-cento",
    "film": [
     {
-     "titolo": "#SainteJulie",
+     "titolo": "Fatherland",
      "orari": [
       "21:00"
      ],
-     "giorni": {
-      "2026-11-20": [
-       "21:00"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.cinemadonzucchini.it/programmazione/"
-    },
-    {
-     "titolo": "Fatherland",
-     "orari": [],
      "giorni": {
       "2026-11-21": [
        "21:00"
@@ -1054,7 +1019,9 @@
     },
     {
      "titolo": "Odissea",
-     "orari": [],
+     "orari": [
+      "16:00"
+     ],
      "giorni": {
       "2026-11-21": [
        "16:00"
@@ -1084,9 +1051,6 @@
       "22:30"
      ],
      "giorni": {
-      "2026-11-20": [
-       "22:30"
-      ],
       "2026-11-21": [
        "22:30"
       ],
@@ -1107,14 +1071,11 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
+      "17:30",
       "20:30",
       "22:30"
      ],
      "giorni": {
-      "2026-11-20": [
-       "20:30",
-       "22:30"
-      ],
       "2026-11-21": [
        "17:30",
        "20:30",
@@ -1139,12 +1100,9 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "20:15"
+      "18:00"
      ],
      "giorni": {
-      "2026-11-20": [
-       "20:15"
-      ],
       "2026-11-21": [
        "18:00"
       ],
@@ -1165,12 +1123,10 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
+      "18:00",
       "20:15"
      ],
      "giorni": {
-      "2026-11-20": [
-       "20:15"
-      ],
       "2026-11-21": [
        "18:00",
        "20:15"
@@ -1193,14 +1149,11 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
+      "18:00",
       "20:15",
       "22:30"
      ],
      "giorni": {
-      "2026-11-20": [
-       "20:15",
-       "22:30"
-      ],
       "2026-11-21": [
        "18:00",
        "20:15",
@@ -1225,14 +1178,11 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
+      "18:00",
       "20:15",
       "22:30"
      ],
      "giorni": {
-      "2026-11-20": [
-       "20:15",
-       "22:30"
-      ],
       "2026-11-21": [
        "18:00",
        "20:15",
@@ -1269,7 +1219,9 @@
     },
     {
      "titolo": "Ti presento i Fotter",
-     "orari": [],
+     "orari": [
+      "20:15"
+     ],
      "giorni": {
       "2026-11-21": [
        "20:15"
@@ -1287,14 +1239,11 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
+      "18:30",
       "20:30",
       "22:30"
      ],
      "giorni": {
-      "2026-11-20": [
-       "20:30",
-       "22:30"
-      ],
       "2026-11-21": [
        "18:30",
        "20:30",
