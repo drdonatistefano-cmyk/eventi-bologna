@@ -16,6 +16,7 @@ import json
 import os
 import random
 import re
+import subprocess
 import sys
 import time
 import urllib.parse
@@ -339,7 +340,9 @@ def vista_dati():
 # ---------------------------------------------------------------- 3. servizi e posta
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SOGLIA_PROVINCE = 10000   # business plan (bp_dinamico.py, SOGLIA_APERTURA): visite medie mensili delle tre guide
-STAT_VISITE = "https://raw.githubusercontent.com/drdonatistefano-cmyk/eventi-bologna/statistiche/dati/visite_guide.json"
+# 22/11/2026: account non scritto (progetto trasferibile): dal repository in cui si gira o dall'indirizzo git
+REPO_GH = os.environ.get("GITHUB_REPOSITORY") or re.sub(r"^.*github\.com[:/]+|\.git$", "", subprocess.run(["git", "remote", "get-url", "origin"], cwd=os.path.dirname(os.path.abspath(__file__)), capture_output=True, text=True).stdout.strip())
+STAT_VISITE = f"https://raw.githubusercontent.com/{REPO_GH}/statistiche/dati/visite_guide.json"
 
 
 def visite_ultimi_30(righe, oggi):

@@ -15,7 +15,7 @@ GC, SITE, TOKEN_VAR = {"events": ("eventibologna", "https://achevents.com/", "GO
 API = f"https://{GC}.goatcounter.com/api/v0"
 TOKEN = (os.environ.get(TOKEN_VAR) or os.environ.get("GOATCOUNTER_TOKEN", "")).strip()
 GH = os.environ.get("GITHUB_TOKEN", "")
-REPO = os.environ.get("GITHUB_REPOSITORY", "drdonatistefano-cmyk/eventi-bologna")
+REPO = os.environ.get("GITHUB_REPOSITORY") or __import__("re").sub(r"^.*github\.com[:/]+|\.git$", "", __import__("subprocess").run(["git", "remote", "get-url", "origin"], capture_output=True, text=True).stdout.strip())   # 22/11: account non scritto (progetto trasferibile)
 UA = {"User-Agent": "eventi-bologna-cruscotto"}
 now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
 hour = now.replace(minute=0, second=0)          # GoatCounter vuole orari arrotondati all'ora, non nel futuro
