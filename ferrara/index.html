@@ -796,28 +796,24 @@ footer a{color:var(--blu-scuro)}
 .toast{background:var(--ink)}
 
 /* 22/11/2026: spazio riservato ai filtri rapidi mentre la pagina si carica (evita lo «scatto» dell'elenco, CLS) */
-html body body.nA #qwrap{display:none!important}body.nA{--qh:0px}#nA:empty{display:block;min-height:114px}@media(min-width:760px){#nA:empty{min-height:108px}}
+html body body.nA #qwrap{display:none!important}body.nA{--qh:0px}#nA:empty{display:block;min-height:114px}@media(min-width:760px){#nA:empty{min-height:116px}}
 /* movimento ridotto per chi lo chiede al telefono */
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
 </style>
 <style id="come-recipes">
 /* 22/11/2026 — soluzioni di AchRecipes: icone nelle sezioni e nei filtri, finestre in fondo alla pagina, «mostra altri» */
-/* linguette: tutte uguali, compatte (22/11 19:02) */
-html body .modes{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:6px;overflow:visible}
-html body .modes{-webkit-mask-image:none;mask-image:none}
-html body .modes button{flex:none;width:auto;min-width:0;max-width:none;height:46px;padding:0 10px;border-radius:12px;flex-direction:row;gap:7px;white-space:nowrap;font:600 14.5px var(--sans);letter-spacing:-.005em}
-html body .modes button .mi{display:inline;font-size:17px;line-height:1}
-html body .modes button small{display:inline-block;min-width:3.3ch;text-align:left;font-size:12px;font-variant-numeric:tabular-nums}
-html body .modes button.on small{color:#fff!important;opacity:1!important}
-@media(max-width:759px){html body .modes{gap:5px}html body .modes button{flex-direction:column;justify-content:center;height:58px;padding:4px 2px;gap:3px;font-size:12.5px;border-radius:14px}html body .modes button .mi{font-size:19px}html body .modes button small{display:none}}
-/* periodi (Oggi, Weekend, 7 giorni…): bottoni tutti della stessa misura */
+/* linguette e periodi: tutti uguali, icona sopra il nome, su ogni schermo (22/11 19:41) */
+html body .modes{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:6px;overflow:visible;-webkit-mask-image:none;mask-image:none}
+html body .modes button{flex:none;width:auto;min-width:0;max-width:none;flex-direction:column;justify-content:center;height:60px;padding:4px 2px;gap:3px;border-radius:14px;white-space:nowrap;font:600 13px var(--sans);letter-spacing:-.005em}
+html body .modes button .mi{display:inline;font-size:20px;line-height:1}
+html body .modes button small{display:none}
 html body #nA .rowq{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:6px;padding:10px 0 0}
-html body #nA .ch.q{min-width:0;height:44px;padding:0 6px;justify-content:center;gap:6px;border-radius:12px;font-size:14px}
-html body #nA .ch.q span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-html body #nA .ch.q small{flex:none}
-@media(max-width:759px){html body #nA .ch.q{flex-direction:column;height:50px;gap:1px;font-size:13.5px;line-height:1.1}html body #nA .ch.q small{font-size:11.5px}}
-@media(min-width:760px){html body #nA .rowq{grid-template-columns:repeat(var(--n),minmax(0,170px))}}
-@media(min-width:760px){html body .modes{grid-auto-columns:minmax(0,170px);justify-content:start}html body .modes button{height:44px}}
+html body #nA .ch.q{min-width:0;height:52px;padding:0 4px;flex-direction:column;justify-content:center;gap:1px;border-radius:14px;font-size:13.5px;line-height:1.1}
+html body #nA .ch.q span{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+html body #nA .ch.q small{flex:none;font-size:11.5px}
+@media(max-width:759px){html body .modes{gap:5px}html body .modes button{height:58px;font-size:12.5px}html body #nA .ch.q{height:50px}}
+/* da iPad in su: stessa colonna per linguette e periodi, così stanno incolonnati */
+@media(min-width:760px){html body .modes{grid-auto-columns:minmax(0,140px);justify-content:start}html body #nA .rowq{grid-template-columns:repeat(var(--n),minmax(0,140px))}}
 html body #nAf summary{font:700 16.5px var(--sans);gap:10px}
 html body #nAf summary .si{flex:none;width:26px;font-size:20px;line-height:1;text-align:center}
 html body #nAf .o{border-radius:999px;padding:0 15px;background:var(--paper)}
