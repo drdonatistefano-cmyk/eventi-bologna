@@ -1746,9 +1746,9 @@ body.nA #qwrap{display:none!important} body.nA{--qh:0px}
   const ns=nSel();
   // riga dei chip: Filtri, quando, generi più frequenti
   const m=opts("m"),mq=m.gr?m.gr[0].it:[];const g=opts("g").it.slice().sort((a,b)=>(b.on-a.on)||(b.n-a.n)).slice(0,8);
-  const SHQ=o=>({oggi:"Oggi",weekend:"Weekend","7g":"7 giorni",ultimi:"Ultimi giorni",arrivo:"In arrivo"})[o.v]||o.l.replace(/^(\S{3})\S*\s+(\d+)\s+\S+$/,"$1 $2"); /* 22/11: nomi corti, il nome intero resta per i lettori di schermo */
+  const SHQ=o=>({oggi:"Oggi",weekend:"Weekend","7g":"7 giorni",ultimi:"Ultimi giorni",arrivo:"In arrivo"})[o.v]||o.l.replace(/^(\S{3})\S*\s+(\d+)\s+\S+$/,"$1 $2"); /* 22/11: nomi corti; il nome intero compare passandoci sopra */
   const qs=mq.slice(0,MODE==="c"?3:4);
-  let h='<div class="rowq" style="--n:'+qs.length+'">'+qs.map(o=>'<button type="button" class="ch q" data-k="m" data-v="'+E(o.v)+'" aria-pressed="'+o.on+'" aria-label="'+E(o.l)+', '+o.n+'" '+(o.n||o.on?"":"disabled")+'><span>'+E(SHQ(o))+'</span><small>'+o.n+'</small></button>').join("")+'</div><div class="rowc">'+g.map(o=>btn("g",o,"ch")).join("")+'</div>';
+  let h='<div class="rowq" style="--n:'+qs.length+'">'+qs.map(o=>'<button type="button" class="ch q" data-k="m" data-v="'+E(o.v)+'" aria-pressed="'+o.on+'" title="'+E(o.l)+'" '+(o.n||o.on?"":"disabled")+'><span>'+E(SHQ(o))+'</span><small>'+o.n+'</small></button>').join("")+'</div><div class="rowc">'+g.map(o=>btn("g",o,"ch")).join("")+'</div>';
   // filtri attivi
   const at=[];for(const [k] of SECS){if(!st[k]||!st[k].size)continue;const O=opts(k),all=(O.gr?O.gr.flatMap(x=>x.it):O.it);for(const v of st[k]){const o=all.find(x=>x.v===v);at.push('<button type="button" class="ap" data-k="'+k+'" data-v="'+E(v)+'">'+E(o?o.l:v)+' ✕</button>')}}
   if(at.length)h+='<div class="att">'+at.join("")+'<button type="button" class="lk" data-reset>Azzera tutto</button></div>';
