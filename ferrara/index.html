@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var P={mi:"/milano/",ra:"/ravenna/",fe:"/ferrara/"},m=document.cookie.match(/(?:^|; )citta=(bo|mi|ra|fe)/),q=/[?&]citta=(bo|mi|ra|fe)/.exec(location.search),qui=/^\/(milano|ravenna|ferrara)(\/|$)/.test(location.pathname)?"altra":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||!P[m[1]]||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace(P[m[1]])}catch(_){}})();</script>
-<script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"2b32f668ac","eventi-presto":"d83861702b","serate":"9f1b016ebe","mostre":"9b85022208"}/*V0*/;</script>
+<script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"c9e9699c93","eventi-presto":"6ddd27b34f","serate":"e7f2fa0b3e","mostre":"a6725c5858"}/*V0*/;</script>
 <script>/* anticipo: chiede subito versioni.js (senza bloccare la pagina) e fa partire i file dei dati mentre arriva il resto; più in basso la pagina li usa dalla memoria */(function(){try{var V0=window.ACH_V0||{},fatti={};function pre(f,h){if(!h||fatti[f+h])return;fatti[f+h]=1;var l=document.createElement("link");l.rel="preload";l.as="script";l.href=f+".js?h="+h;document.head.appendChild(l)}["eventi-presto","serate","mostre"].forEach(function(f){pre(f,V0[f])});var s=document.createElement("script");s.async=true;s.src="versioni.js?v="+Math.floor(Date.now()/6e5);s.onload=function(){var V=window.ACH_VERSIONI||{};["eventi-presto","serate","mostre"].forEach(function(f){pre(f,V[f])})};document.head.appendChild(s)}catch(e){}})();</script>
 <title>Ach's Events Guide – concerti, teatro, mostre e cinema a Ferrara</title>
 <meta name="description" content="Ach&#39;s Events Guide: concerti, teatro, mostre e cinema a Ferrara e nella Città metropolitana, con date, orari, luoghi e link ai biglietti.">
@@ -668,8 +668,8 @@ footer{padding:0 0 40px;color:var(--mute);font-size:12.5px;text-align:center}.fu
  <h1>Eventi Ferrara,<br><em>stasera</em> e oltre.</h1>
  <p class="lede">Concerti, teatro, comici, classica e grandi eventi a Ferrara e in tutta la provincia, nei prossimi 12 mesi.</p>
  <nav class="ach-guide" aria-label="Le guide di Ach">
-   <a class="ach-guide__btn" href="https://achdinners.com/" data-goatcounter-click="guide/vai-dinners" data-goatcounter-title="Vai a Ach's Dinners Guide"><span class="ach-guide__ico" aria-hidden="true">🍝</span><span class="ach-guide__txt"><b>Dinners</b><small>dove mangiare</small></span><span class="ach-guide__arr" aria-hidden="true">→</span></a>
-   <a class="ach-guide__btn" href="https://achplaces.com/" data-goatcounter-click="guide/vai-places" data-goatcounter-title="Vai a Ach's Places Guide"><span class="ach-guide__ico" aria-hidden="true">🏛️</span><span class="ach-guide__txt"><b>Places</b><small>cosa visitare</small></span><span class="ach-guide__arr" aria-hidden="true">→</span></a>
+   <a class="ach-guide__btn" href="https://achdinners.com/" data-goatcounter-click="guide/vai-dinners" data-goatcounter-title="Vai a Ach's Dinners Guide"><span class="ach-guide__ico ach-logo" aria-hidden="true"><svg viewBox="0 0 100 100" width="34" height="34"><circle cx="50" cy="50" r="48" fill="#8a6d1f"/><circle cx="50" cy="50" r="44" fill="none" stroke="#f6efe3" stroke-width="1.6"/><circle cx="50" cy="50" r="33" fill="#f6efe3"/><g transform="translate(29 29) scale(.42)" stroke="#8a6d1f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M34 22v18c0 6 4 9 9 9s9-3 9-9V22M43 22v56"/><path d="M66 78V22c-7 6-10 16-10 28h10"/></g></svg></span><span class="ach-guide__txt"><b>Dinners</b><small>dove mangiare</small></span><span class="ach-guide__arr" aria-hidden="true">→</span></a>
+   <a class="ach-guide__btn" href="https://achplaces.com/" data-goatcounter-click="guide/vai-places" data-goatcounter-title="Vai a Ach's Places Guide"><span class="ach-guide__ico ach-logo" aria-hidden="true"><svg viewBox="0 0 100 100" width="34" height="34"><circle cx="50" cy="50" r="48" fill="#2f7a5c"/><circle cx="50" cy="50" r="41" fill="none" stroke="#f6efe4" stroke-width="4"/><g transform="translate(24 22) scale(.52)" stroke="#f6efe4" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M50 86C50 86 24 58 24 40a26 26 0 0 1 52 0C76 58 50 86 50 86Z"/><circle cx="50" cy="40" r="5" fill="#f6efe4"/></g></svg></span><span class="ach-guide__txt"><b>Places</b><small>cosa visitare</small></span><span class="ach-guide__arr" aria-hidden="true">→</span></a>
 <a class="ach-guide__btn ach-guide__coll" href="/collaborano/" data-goatcounter-click="guide/collaborano" data-goatcounter-title="Collaborano con noi"><span class="ach-guide__ico" aria-hidden="true">🤝</span><span class="ach-guide__txt"><b>Collaborano con noi</b></span><span class="ach-guide__arr" aria-hidden="true">→</span></a>
  </nav>
  <div class="stats">
@@ -1643,7 +1643,10 @@ h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.09
 @media(min-width:900px){.hero .stats{grid-template-columns:repeat(2,minmax(130px,1fr));min-width:320px}}
 @media(max-width:560px){.stat{padding:10px 9px}.stat b{font-size:1.15rem}.stat span{font-size:11px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;white-space:normal}}
 
-/* bottoni delle altre guide: sobri, a pastiglia */
+/* bottoni delle altre guide: sobri, a pastiglia, con il loro logo ufficiale (REGOLE 9.5) */
+.ach-guide__ico.ach-logo{display:inline-grid;place-items:center;width:34px;height:34px;font-size:0;line-height:0;flex:none}
+.ach-guide__ico.ach-logo svg{display:block;width:34px;height:34px}
+
 .ach-guide__btn{background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:12px}
 .ach-guide__btn:hover{border-color:color-mix(in srgb,var(--blu) 45%,var(--line))}
 .ach-guide__btn b{font-family:var(--serif);font-weight:700}

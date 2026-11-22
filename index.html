@@ -668,8 +668,8 @@ footer{padding:0 0 40px;color:var(--mute);font-size:12.5px;text-align:center}.fu
  <h1>Eventi Bologna,<br><em>stasera</em> e oltre.</h1>
  <p class="lede">Concerti, teatro, comici, classica e grandi eventi a Bologna e nei comuni della Città metropolitana, nei prossimi 12 mesi.</p>
  <nav class="ach-guide" aria-label="Le guide di Ach">
-   <a class="ach-guide__btn" href="https://achdinners.com/" data-goatcounter-click="guide/vai-dinners" data-goatcounter-title="Vai a Ach's Dinners Guide"><span class="ach-guide__ico" aria-hidden="true">🍝</span><span class="ach-guide__txt"><b>Dinners</b><small>dove mangiare</small></span><span class="ach-guide__arr" aria-hidden="true">→</span></a>
-   <a class="ach-guide__btn" href="https://achplaces.com/" data-goatcounter-click="guide/vai-places" data-goatcounter-title="Vai a Ach's Places Guide"><span class="ach-guide__ico" aria-hidden="true">🏛️</span><span class="ach-guide__txt"><b>Places</b><small>cosa visitare</small></span><span class="ach-guide__arr" aria-hidden="true">→</span></a>
+   <a class="ach-guide__btn" href="https://achdinners.com/" data-goatcounter-click="guide/vai-dinners" data-goatcounter-title="Vai a Ach's Dinners Guide"><span class="ach-guide__ico ach-logo" aria-hidden="true"><svg viewBox="0 0 100 100" width="34" height="34"><circle cx="50" cy="50" r="48" fill="#8a6d1f"/><circle cx="50" cy="50" r="44" fill="none" stroke="#f6efe3" stroke-width="1.6"/><circle cx="50" cy="50" r="33" fill="#f6efe3"/><g transform="translate(29 29) scale(.42)" stroke="#8a6d1f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M34 22v18c0 6 4 9 9 9s9-3 9-9V22M43 22v56"/><path d="M66 78V22c-7 6-10 16-10 28h10"/></g></svg></span><span class="ach-guide__txt"><b>Dinners</b><small>dove mangiare</small></span><span class="ach-guide__arr" aria-hidden="true">→</span></a>
+   <a class="ach-guide__btn" href="https://achplaces.com/" data-goatcounter-click="guide/vai-places" data-goatcounter-title="Vai a Ach's Places Guide"><span class="ach-guide__ico ach-logo" aria-hidden="true"><svg viewBox="0 0 100 100" width="34" height="34"><circle cx="50" cy="50" r="48" fill="#2f7a5c"/><circle cx="50" cy="50" r="41" fill="none" stroke="#f6efe4" stroke-width="4"/><g transform="translate(24 22) scale(.52)" stroke="#f6efe4" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M50 86C50 86 24 58 24 40a26 26 0 0 1 52 0C76 58 50 86 50 86Z"/><circle cx="50" cy="40" r="5" fill="#f6efe4"/></g></svg></span><span class="ach-guide__txt"><b>Places</b><small>cosa visitare</small></span><span class="ach-guide__arr" aria-hidden="true">→</span></a>
 <a class="ach-guide__btn ach-guide__coll" href="/collaborano/" data-goatcounter-click="guide/collaborano" data-goatcounter-title="Collaborano con noi"><span class="ach-guide__ico" aria-hidden="true">🤝</span><span class="ach-guide__txt"><b>Collaborano con noi</b></span><span class="ach-guide__arr" aria-hidden="true">→</span></a>
  </nav>
  <div class="stats">
@@ -1643,7 +1643,10 @@ h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.09
 @media(min-width:900px){.hero .stats{grid-template-columns:repeat(2,minmax(130px,1fr));min-width:320px}}
 @media(max-width:560px){.stat{padding:10px 9px}.stat b{font-size:1.15rem}.stat span{font-size:11px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;white-space:normal}}
 
-/* bottoni delle altre guide: sobri, a pastiglia */
+/* bottoni delle altre guide: sobri, a pastiglia, con il loro logo ufficiale (REGOLE 9.5) */
+.ach-guide__ico.ach-logo{display:inline-grid;place-items:center;width:34px;height:34px;font-size:0;line-height:0;flex:none}
+.ach-guide__ico.ach-logo svg{display:block;width:34px;height:34px}
+
 .ach-guide__btn{background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:12px}
 .ach-guide__btn:hover{border-color:color-mix(in srgb,var(--blu) 45%,var(--line))}
 .ach-guide__btn b{font-family:var(--serif);font-weight:700}
