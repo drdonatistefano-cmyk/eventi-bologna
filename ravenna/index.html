@@ -800,6 +800,26 @@ html body body.nA #qwrap{display:none!important}body.nA{--qh:0px}#nA:empty{displ
 /* movimento ridotto per chi lo chiede al telefono */
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
 </style>
+<style id="come-recipes">
+/* 22/11/2026 — soluzioni di AchRecipes: icone nelle sezioni e nei filtri, finestre in fondo alla pagina, «mostra altri» */
+html body .modes button{border-radius:999px}
+html body .modes button .mi{display:inline;font-size:18px;line-height:1}
+html body .modes button small{display:inline-block;min-width:3.3ch;text-align:left;font-size:12.5px;font-variant-numeric:tabular-nums} /* posto già riservato al numero: niente scatti */
+html body .modes button.on small{color:rgba(255,255,255,.82)}
+html body .modes button{flex-direction:row;white-space:nowrap}
+@media(max-width:759px){html body .modes{overflow-x:auto;scrollbar-width:none;scroll-padding-left:16px}html body .modes button{flex:none;height:44px;padding:0 16px;font-size:15px;letter-spacing:-.005em;gap:7px}}
+html body #nAf summary{font:700 16.5px var(--sans);gap:10px}
+html body #nAf summary .si{flex:none;width:26px;font-size:20px;line-height:1;text-align:center}
+html body #nAf .o{border-radius:999px;padding:0 15px;background:var(--paper)}
+html body #nAf .ft .a1,html body #nAf .ft .a2{border-radius:999px}
+html body #nAf .ft .a2{background:linear-gradient(135deg,var(--blu),var(--blu-scuro));border:0}
+.fabf{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(16px + env(safe-area-inset-bottom));z-index:16;display:inline-flex;align-items:center;gap:8px;height:50px;padding:0 22px;border:0;border-radius:999px;background:linear-gradient(135deg,var(--blu),var(--blu-scuro));color:#fff;font:650 16px var(--sans);box-shadow:0 10px 26px -10px rgba(42,69,96,.9);cursor:pointer}
+.fabf[hidden],.fabf b[hidden]{display:none}
+.fabf b{background:#fff;color:var(--blu-scuro);border-radius:999px;min-width:22px;height:22px;padding:0 6px;font-size:13px;display:inline-flex;align-items:center;justify-content:center}
+@media(min-width:1024px){.fabf{display:none!important}}
+@media(max-width:1023px){html body .bar.stuck #fbtn{display:none}}
+html body #more{border-radius:999px;height:48px;padding:0 26px;font-weight:700;color:var(--blu-scuro);background:var(--paper)}
+</style>
 </head>
 <body class="nA">
 <header class="hero wrap">
@@ -852,7 +872,7 @@ html body body.nA #qwrap{display:none!important}body.nA{--qh:0px}#nA:empty{displ
 </div>
 
 <button class="fab" id="top" aria-label="Torna su"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></button>
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<button type="button" class="fabf" id="fabf" hidden aria-label="Apri i filtri"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filtri <b id="fabfn" hidden></b></button> <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <dialog id="fdlg" aria-label="Filtri"><div class="sheet fsheet">
  <div class="grab"></div>
@@ -1379,7 +1399,7 @@ function renderList(ev){
   const films=[...F.values()].sort((a,b)=>b.r.length-a.r.length||a.t.localeCompare(b.t,"it"));
   const shown=films.slice(0,st.n);
   $("#list").innerHTML=`<h2 class="month nt">${st.venue?"In programma":"Film in sala"}<small>${films.length}</small></h2><div class="cards">${shown.map(miniC).join("")}</div>`;
-  const rest=films.length-shown.length;$("#more").hidden=rest<=0;$("#more").textContent=`Mostra altri ${Math.min(rest,PAGE)} film (${rest} rimanenti)`;return}
+  const rest=films.length-shown.length;$("#more").hidden=rest<=0;$("#more").textContent=`Mostra altri ${Math.min(rest,PAGE)} film · ne restano ${rest}`;return}
  if(MODE==="m"){
   if(!MOSTRE.length){$("#list").innerHTML=`<div class="empty"><b>Elenco delle mostre in preparazione</b>Ricarica la pagina tra qualche istante.</div>`;$("#more").hidden=true;return}
   if(!ev.length){$("#list").innerHTML=EMPTY0();$("#more").hidden=true;return}
@@ -1398,7 +1418,7 @@ function renderList(ev){
   for(const [d,list] of days){const tag=d===today?"Oggi":d===addDays(today,1)?"Domani":"";
    h+=`<section class="day"><div class="dlabel${tag==="Oggi"?" today":""}"><div class="wd">${fmt(d,{weekday:"short"})}</div><div class="n">${D(d).getDate()}</div><div class="mo">${fmt(d,{weekday:"long",day:"numeric",month:"long"})}</div>${tag?`<div class="tg">${tag}</div>`:""}<div class="cv" aria-hidden="true">${CITY.nome}</div></div><div class="cards">${list.map(mini).join("")}</div></section>`}}
  $("#list").innerHTML=h;
- const rest=ev.length-shown.length;$("#more").hidden=rest<=0;$("#more").textContent=`Mostra altri ${Math.min(rest,PAGE)} (${rest} rimanenti)`}
+ const rest=ev.length-shown.length;$("#more").hidden=rest<=0;$("#more").textContent=`Mostra altri ${Math.min(rest,PAGE)} · ne restano ${rest}`}
 
 function renderVenue(n){const l=ALL.filter(e=>e.luogo===st.venue),c=(l[0]||{})._c||CITY.capo,sito=(l.find(e=>/^https:/.test(e.sito_luogo||""))||{}).sito_luogo||"";
  $("#vhead").innerHTML=`<div class="k">${MODE==="m"?"Mostre":MODE==="c"?"Cinema":"Programma"}</div><h2>${esc(st.venue)}</h2><p>${esc(c)} · <b>${n}</b> ${MODE==="m"?nn(n):MODE==="c"?"film":(n===1?"appuntamento":"appuntamenti")}${n!==l.length?` con queste scelte, ${l.length} in tutto`:" nei prossimi mesi"}</p>
@@ -1435,7 +1455,7 @@ function render(resetPage,soloSeCambia){
   if(st.venue)renderVenue(ev.length);
   if(places){const nv=renderPlaces();renderStatus(ev.length,MODE==="c"?`<b>${nv}</b> ${nv===1?"sala":"sale"} · ${new Set(ev.map(e=>norm(e.artista))).size} film`:`<b>${nv}</b> ${nv===1?"luogo":"luoghi"} · ${ev.length} ${nn(ev.length)}`);$("#more").hidden=true;$("#cnote").hidden=true}
   else{const k=MODE+"|"+st.n+"|"+ev.slice(0,st.n).map(e=>e.id+(e.biglietti||"")+(e.chi||"")+(e.disp||"")).join(",");
-   if(soloSeCambia&&MODE==="s"&&k===_listaK&&!$("#list").hidden){const rest=ev.length-Math.min(st.n,ev.length);$("#more").hidden=rest<=0;$("#more").textContent=`Mostra altri ${Math.min(rest,PAGE)} (${rest} rimanenti)`}
+   if(soloSeCambia&&MODE==="s"&&k===_listaK&&!$("#list").hidden){const rest=ev.length-Math.min(st.n,ev.length);$("#more").hidden=rest<=0;$("#more").textContent=`Mostra altri ${Math.min(rest,PAGE)} · ne restano ${rest}`}
    else renderList(ev);_listaK=k;if(MODE==="c"){const nf=new Set(ev.map(e=>norm(e.artista))).size,ns=new Set(ev.map(e=>e.luogo)).size;renderStatus(ev.length,`<b>${nf}</b> film in <b>${ns}</b> ${ns===1?"sala":"sale"}`)}else renderStatus(ev.length,`<b>${ev.length}</b> ${nn(ev.length)}`)}
   const cn=$("#cnote");cn.hidden=MODE!=="c"||!CINEMA.length;if(!cn.hidden){const dk=dayKeys();cn.innerHTML=dk.length>1?`<span>🗓️</span><span><b>Tutta la settimana.</b> Orari esatti per le sale della Cineteca; per le altre sale gli orari di oggi e, negli altri giorni, i film in cartellone: gli orari sono sul sito della sala (<b>Programma</b>).</span>`:dk[0]===today?`<span>🕒</span><span>Orari di <b>oggi, ${esc(fmt(today,{weekday:"long",day:"numeric",month:"long"}))}</b>. Prima di uscire controlla su <b>Programma</b>, il sito della sala.</span>`:`<span>🗓️</span><span><b>${esc(dLab(dk[0],true))}</b>: orari esatti per le sale della Cineteca; per le altre sale il film è in cartellone questa settimana e gli orari di quel giorno sono su <b>Programma</b>.</span>`}
  }catch(err){console.error(err);$("#list").hidden=false;$("#list").innerHTML=`<div class="empty"><b>Qualcosa non ha funzionato</b>Ricarica la pagina.</div>`}}
@@ -1693,6 +1713,8 @@ body.nA #qwrap{display:none!important} body.nA{--qh:0px}
  const F=document.createElement("div");F.id="nAf";F.innerHTML='<div class="scr" data-chiudi="1"></div><section class="sh" role="dialog" aria-modal="true" aria-label="Filtri"><div class="gr" aria-hidden="true"></div><div class="hd"><h2>Filtri</h2><button type="button" class="x" data-chiudi="1" aria-label="Chiudi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div><div class="bd2" id="nAb"></div><div class="ft"><button type="button" class="a1" data-reset>Azzera tutto</button><button type="button" class="a2" data-chiudi="1" id="nAgo">Mostra</button></div></section>';
  document.body.appendChild(F);
  const byN=m=>[...m].sort((a,b)=>b[1]-a[1]);
+ /* 22/11/2026 (come AchRecipes): un'icona per ogni gruppo di filtri */
+ const ICO=k=>({g:MODE==="c"?"🏛️":MODE==="m"?"🖼️":MODE==="i"?"📚":MODE==="p"?"🏟️":"🎭",m:"📅",c:"📍",y:"🏷️",l:MODE==="c"?"🎬":MODE==="p"?"🏟️":"🏛️",t:MODE==="p"?"🏆":MODE==="c"?"🗣️":"🔖",r:MODE==="p"?"👥":MODE==="c"?"🎞️":"🎪",d:"🎫"})[k]||"•";
  function opts(k){
   const on=v=>st[k].has(v);
   if(k==="g"){const gc=(MODE==="c"?cntF:countBy)("g",e=>e.tipo==="Comicità"?[e.genere,"Comici"]:e.genere);return {it:GOPTS.map(o=>({v:o.k,l:(o.em?o.em+" ":"")+o.l,n:gc.get(o.k)||0,on:on(o.k)})).filter(o=>o.n||o.on)}}
@@ -1726,7 +1748,7 @@ body.nA #qwrap{display:none!important} body.nA{--qh:0px}
    let body="";
    if(O.gr)body=O.gr.map(gp=>'<div class="sub">'+E(gp.t)+'</div><div class="ops">'+gp.it.map(o=>btn(k,o,"o")).join("")+'</div>').join("");
    else{const lim=O.lungo&&!TUTTI.has(k)?12:1e9;body='<div class="ops">'+O.it.slice(0,lim).map(o=>btn(k,o,"o")).join("")+'</div>'+(O.it.length>lim?'<button type="button" class="more" data-tutti="'+k+'">Mostra tutti ('+O.it.length+')</button>':"")}
-   return '<details data-sec="'+k+'"'+(OPEN.has(k)?" open":"")+'><summary>'+E(t)+'<span class="sv">'+E(sel.join(", "))+'</span><i class="cv"></i></summary>'+(sel.length?'<div style="display:flex;justify-content:flex-end;margin-top:-6px"><button type="button" class="az" data-clr="'+k+'">Azzera '+E(t.toLowerCase())+'</button></div>':'')+body+'</details>'}).join("");
+   return '<details data-sec="'+k+'"'+(OPEN.has(k)?" open":"")+'><summary><span class="si" aria-hidden="true">'+ICO(k)+'</span>'+E(t)+'<span class="sv">'+E(sel.join(", "))+'</span><i class="cv"></i></summary>'+(sel.length?'<div style="display:flex;justify-content:flex-end;margin-top:-6px"><button type="button" class="az" data-clr="'+k+'">Azzera '+E(t.toLowerCase())+'</button></div>':'')+body+'</details>'}).join("");
   const n=visible().length,N=NOUN();document.getElementById("nAgo").textContent=n?"Mostra "+n+" "+(n===1?N[0]:N[1]):"Nessun risultato";
   F.classList.toggle("op",APERTO);
  }
@@ -1744,6 +1766,23 @@ body.nA #qwrap{display:none!important} body.nA{--qh:0px}
  disegna();
 })();
 
+</script>
+<script>
+/* 22/11/2026 (come AchRecipes): su telefono e iPad, quando la barra resta in alto, «Filtri» scende in basso
+   vicino al pollice; in fondo all'elenco i successivi si caricano da soli poco prima di arrivarci */
+(function(){try{
+ const bar=document.getElementById("bar"),fab=document.getElementById("fabf"),fb=document.getElementById("fbtn"),bd=document.getElementById("fbadge"),fn=document.getElementById("fabfn"),F=()=>document.getElementById("nAf");
+ if(bar&&fab&&fb){
+  const vedi=()=>{const f=F();fab.hidden=!(bar.classList.contains("stuck")&&!(f&&f.classList.contains("op")))};
+  const num=()=>{if(bd&&fn){fn.textContent=bd.textContent;fn.hidden=bd.hidden}};
+  new MutationObserver(vedi).observe(bar,{attributes:true,attributeFilter:["class"]});
+  const wf=()=>{const f=F();if(f)new MutationObserver(vedi).observe(f,{attributes:true,attributeFilter:["class"]});else setTimeout(wf,300)};wf();
+  if(bd)new MutationObserver(num).observe(bd,{attributes:true,childList:true,characterData:true,subtree:true});
+  fab.addEventListener("click",()=>fb.click());vedi();num();
+ }
+ const mo=document.getElementById("more");
+ if(mo&&"IntersectionObserver" in window)new IntersectionObserver(e=>{if(e[0].isIntersecting&&!mo.hidden)mo.click()},{rootMargin:"600px 0px"}).observe(mo);
+}catch(e){}})();
 </script>
 </body>
 </html>
