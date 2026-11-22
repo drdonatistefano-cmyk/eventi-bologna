@@ -683,7 +683,7 @@ footer{padding:0 0 40px;color:var(--mute);font-size:12.5px;text-align:center}.fu
 <nav class="modes wrap" role="tablist" aria-label="Sezione"><button data-mode="s" class="on" role="tab" aria-selected="true"><span class="mi">🎭</span>Spettacoli<small id="nS"></small></button><button data-mode="i" role="tab" aria-selected="false"><span class="mi">📚</span>Incontri<small id="nI"></small></button><button data-mode="m" role="tab" aria-selected="false"><span class="mi">🖼️</span>Mostre<small id="nM"></small></button><button data-mode="c" role="tab" aria-selected="false"><span class="mi">🎬</span>Cinema<small id="nC"></small></button><button data-mode="p" role="tab" aria-selected="false"><span class="mi">🏟️</span>Sport<small id="nP"></small></button></nav>
 <div class="bar" id="bar"><div class="bar-in wrap">
  <div class="row1">
-  <div class="search" id="sw">
+  <div class="search" id="sw" role="search">
    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
    <input type="search" id="q" placeholder="Cerca artista o teatro…" autocomplete="off" enterkeyhint="search" aria-label="Cerca">
    <button class="x" id="qx" aria-label="Cancella ricerca">✕</button>
@@ -712,7 +712,7 @@ footer{padding:0 0 40px;color:var(--mute);font-size:12.5px;text-align:center}.fu
 </div>
 
 <button class="fab" id="top" aria-label="Torna su"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></button>
-<div class="toast" id="toast"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <dialog id="fdlg" aria-label="Filtri"><div class="sheet fsheet">
  <div class="grab"></div>
@@ -1666,7 +1666,7 @@ h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.09
 /* --- barra di ricerca e filtri: vetro chiaro, campi alti 44 px --- */
 .bar{background:color-mix(in srgb,var(--bg) 84%,transparent);backdrop-filter:saturate(1.6) blur(16px);-webkit-backdrop-filter:saturate(1.6) blur(16px)}
 .bar.stuck{border-color:var(--line);box-shadow:0 6px 18px -12px rgba(31,29,26,.25)}
-.search input{border-radius:12px;border-color:var(--line);box-shadow:none;background:var(--paper);font-weight:500}
+.search input{border-radius:12px;border-color:#8f8577;box-shadow:none;background:var(--paper);font-weight:500} /* bordo della ricerca 3:1 (WebAbility 1.4.11, 22/11) */
 .search input:focus{outline:0;border-color:var(--blu);box-shadow:0 0 0 4px color-mix(in srgb,var(--blu) 16%,transparent)}
 .search svg{color:var(--mute)}
 .search input::placeholder{color:var(--faint)}
