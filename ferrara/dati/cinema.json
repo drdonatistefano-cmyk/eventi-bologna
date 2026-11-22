@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-21",
- "giorno_orari": "2026-11-21",
+ "aggiornato": "2026-11-22",
+ "giorno_orari": "2026-11-22",
  "sale": [
   {
    "id": "c002",
@@ -45,9 +45,6 @@
       "22:40"
      ],
      "giorni": {
-      "2026-11-21": [
-       "22:40"
-      ],
       "2026-11-22": [
        "22:40"
       ]
@@ -64,14 +61,9 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "14:50",
-      "17:20"
+      "14:50"
      ],
      "giorni": {
-      "2026-11-21": [
-       "14:50",
-       "17:20"
-      ],
       "2026-11-22": [
        "14:50"
       ]
@@ -93,10 +85,6 @@
       "22:30"
      ],
      "giorni": {
-      "2026-11-21": [
-       "19:40",
-       "22:30"
-      ],
       "2026-11-22": [
        "19:40",
        "22:30"
@@ -118,23 +106,13 @@
       "14:10",
       "15:00",
       "17:00",
-      "18:05",
       "18:15",
       "20:30",
+      "21:20",
       "21:30",
       "22:10"
      ],
      "giorni": {
-      "2026-11-21": [
-       "14:10",
-       "15:00",
-       "17:00",
-       "18:05",
-       "18:15",
-       "20:30",
-       "21:30",
-       "22:10"
-      ],
       "2026-11-22": [
        "14:10",
        "15:00",
@@ -146,7 +124,7 @@
        "22:10"
       ]
      },
-     "versione": "Versione originale (solo ore 18:05, 21:20)",
+     "versione": "Versione originale (solo ore 21:20)",
      "genere": "Azione, Avventura, Fantasy",
      "regia": "Francis Lawrence",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
@@ -163,10 +141,6 @@
       "17:15"
      ],
      "giorni": {
-      "2026-11-21": [
-       "14:55",
-       "17:15"
-      ],
       "2026-11-22": [
        "14:55",
        "17:15"
@@ -185,16 +159,12 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "14:40",
+      "14:30",
       "17:10",
-      "19:35"
+      "19:35",
+      "22:35"
      ],
      "giorni": {
-      "2026-11-21": [
-       "14:40",
-       "17:10",
-       "19:35"
-      ],
       "2026-11-22": [
        "14:30",
        "17:10",
@@ -219,10 +189,6 @@
       "16:45"
      ],
      "giorni": {
-      "2026-11-21": [
-       "14:25",
-       "16:45"
-      ],
       "2026-11-22": [
        "14:25",
        "16:45"
@@ -244,9 +210,6 @@
       "14:30"
      ],
      "giorni": {
-      "2026-11-21": [
-       "14:30"
-      ],
       "2026-11-22": [
        "14:30"
       ]
@@ -256,9 +219,9 @@
      "regia": "Nitesh Tiwari",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
      "interpreti": "Ranbir Kapoor, Sai Pallavi, Sunny Deol e Kajal Aggarwal",
-     "paese": "India",
      "durata": 195,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "India"
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
@@ -269,12 +232,6 @@
       "22:35"
      ],
      "giorni": {
-      "2026-11-21": [
-       "14:40",
-       "17:30",
-       "20:05",
-       "22:35"
-      ],
       "2026-11-22": [
        "14:40",
        "17:30",
@@ -297,16 +254,10 @@
      "orari": [
       "15:05",
       "17:25",
-      "19:50",
+      "20:00",
       "22:00"
      ],
      "giorni": {
-      "2026-11-21": [
-       "15:05",
-       "17:25",
-       "19:50",
-       "22:00"
-      ],
       "2026-11-22": [
        "15:05",
        "17:25",
@@ -325,16 +276,21 @@
     },
     {
      "titolo": "Ti presento i Fotter",
-     "orari": [],
+     "orari": [
+      "17:25"
+     ],
      "giorni": {
       "2026-11-22": [
        "17:25"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Commedia",
+     "regia": "John Hamburg",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
+     "interpreti": "Robert De Niro, Ben Stiller, Skyler Gisondo e Ariana Grande",
+     "paese": "USA",
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
@@ -345,11 +301,6 @@
       "19:45"
      ],
      "giorni": {
-      "2026-11-21": [
-       "14:35",
-       "17:30",
-       "19:45"
-      ],
       "2026-11-22": [
        "14:35",
        "17:30",
@@ -372,9 +323,6 @@
       "20:05"
      ],
      "giorni": {
-      "2026-11-21": [
-       "20:05"
-      ],
       "2026-11-22": [
        "20:05"
       ]
@@ -395,9 +343,6 @@
       "22:05"
      ],
      "giorni": {
-      "2026-11-21": [
-       "22:05"
-      ],
       "2026-11-22": [
        "22:05"
       ]
@@ -427,12 +372,10 @@
     {
      "titolo": "Fjord",
      "orari": [
+      "17:30",
       "21:15"
      ],
      "giorni": {
-      "2026-11-21": [
-       "21:15"
-      ],
       "2026-11-22": [
        "17:30",
        "21:15"
@@ -464,9 +407,6 @@
       "19:15"
      ],
      "giorni": {
-      "2026-11-21": [
-       "19:15"
-      ],
       "2026-11-22": [
        "19:15"
       ]
@@ -487,9 +427,6 @@
       "19:00"
      ],
      "giorni": {
-      "2026-11-21": [
-       "19:00"
-      ],
       "2026-11-22": [
        "19:00"
       ]
@@ -510,10 +447,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-21": [
-       "17:00",
-       "21:00"
-      ],
       "2026-11-22": [
        "17:00",
        "21:00"
@@ -537,11 +470,6 @@
       "21:10"
      ],
      "giorni": {
-      "2026-11-21": [
-       "16:30",
-       "18:45",
-       "21:10"
-      ],
       "2026-11-22": [
        "16:30",
        "18:45",
@@ -565,10 +493,6 @@
       "21:20"
      ],
      "giorni": {
-      "2026-11-21": [
-       "16:45",
-       "21:20"
-      ],
       "2026-11-22": [
        "16:45",
        "21:20"
@@ -589,9 +513,6 @@
       "18:45"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:45"
-      ],
       "2026-11-22": [
        "18:45"
       ]
@@ -613,10 +534,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-21": [
-       "16:45",
-       "21:30"
-      ],
       "2026-11-22": [
        "16:45",
        "21:30"
@@ -645,9 +562,28 @@
    "fonte": "https://movieplayer.it/cinema/s-spirito_415/",
    "film": [
     {
-     "titolo": "Look Back",
+     "titolo": "La ballata del re delle api",
      "orari": [
       "21:00"
+     ],
+     "versione": "",
+     "genere": "Drammatico, Thriller",
+     "regia": "Andrew Patterson",
+     "interpreti": "Matthew McConaughey, Angelina LookingGlass e Jake Horowitz",
+     "durata": 130,
+     "anno": 2025,
+     "giorni": {
+      "2026-11-22": [
+       "21:00"
+      ]
+     },
+     "paese": "USA",
+     "scheda": "https://it.wikipedia.org/wiki/La_ballata_del_re_delle_api"
+    },
+    {
+     "titolo": "Look Back",
+     "orari": [
+      "18:00"
      ],
      "versione": "",
      "genere": "Drammatico",
@@ -656,8 +592,8 @@
      "durata": 100,
      "anno": 2026,
      "giorni": {
-      "2026-11-21": [
-       "21:00"
+      "2026-11-22": [
+       "18:00"
       ]
      },
      "paese": "Giappone",
@@ -687,12 +623,10 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
+      "18:00",
       "21:00"
      ],
      "giorni": {
-      "2026-11-21": [
-       "21:00"
-      ],
       "2026-11-22": [
        "18:00",
        "21:00"
@@ -709,7 +643,9 @@
     },
     {
      "titolo": "Taddeo l’esploratore e la lampada magica",
-     "orari": [],
+     "orari": [
+      "15:30"
+     ],
      "giorni": {
       "2026-11-22": [
        "15:30"
@@ -735,12 +671,9 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "22:30"
+      "20:30"
      ],
      "giorni": {
-      "2026-11-21": [
-       "22:30"
-      ],
       "2026-11-22": [
        "20:30"
       ]
@@ -758,16 +691,11 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
+      "15:45",
       "17:30",
-      "20:30",
-      "22:30"
+      "20:30"
      ],
      "giorni": {
-      "2026-11-21": [
-       "17:30",
-       "20:30",
-       "22:30"
-      ],
       "2026-11-22": [
        "15:45",
        "17:30",
@@ -787,12 +715,9 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "18:00"
+      "16:00"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:00"
-      ],
       "2026-11-22": [
        "16:00"
       ]
@@ -810,14 +735,10 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "18:00",
-      "20:15"
+      "18:45",
+      "21:15"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:00",
-       "20:15"
-      ],
       "2026-11-22": [
        "18:45",
        "21:15"
@@ -836,16 +757,11 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "17:45",
-      "20:15",
-      "22:30"
+      "16:00",
+      "18:15",
+      "21:00"
      ],
      "giorni": {
-      "2026-11-21": [
-       "17:45",
-       "20:15",
-       "22:30"
-      ],
       "2026-11-22": [
        "16:00",
        "18:15",
@@ -865,16 +781,11 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "18:00",
-      "20:15",
-      "22:30"
+      "16:45",
+      "19:00",
+      "21:15"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:00",
-       "20:15",
-       "22:30"
-      ],
       "2026-11-22": [
        "16:45",
        "19:00",
@@ -892,27 +803,28 @@
     },
     {
      "titolo": "Shaun, vita da pecora - Operazione Z.U.C.C.A.",
-     "orari": [],
+     "orari": [
+      "15:45"
+     ],
      "giorni": {
       "2026-11-22": [
        "15:45"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Animazione, Commedia, Ragazzi, Horror",
+     "regia": "Steve Cox e Matthew Walker",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
+     "interpreti": "Justin Fletcher, John Sparkes e Kate Harbour",
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Shaun%2C_vita_da_pecora%3A_Operazione_Z.U.C.C.A."
     },
     {
      "titolo": "Ti presento i Fotter",
      "orari": [
-      "20:15"
+      "18:15"
      ],
      "giorni": {
-      "2026-11-21": [
-       "20:15"
-      ],
       "2026-11-22": [
        "18:15"
       ]
@@ -924,21 +836,17 @@
      "interpreti": "Robert De Niro, Owen Wilson e Ben Stiller",
      "durata": 105,
      "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
      "titolo": "Un weekend artificiale",
      "orari": [
+      "16:30",
       "18:30",
-      "20:30",
-      "22:30"
+      "20:30"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:30",
-       "20:30",
-       "22:30"
-      ],
       "2026-11-22": [
        "16:30",
        "18:30",
@@ -970,6 +878,7 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
+      "17:30",
       "21:00"
      ],
      "versione": "",
@@ -979,7 +888,8 @@
      "durata": 107,
      "anno": 2027,
      "giorni": {
-      "2026-11-21": [
+      "2026-11-22": [
+       "17:30",
        "21:00"
       ]
      },
@@ -1000,12 +910,10 @@
     {
      "titolo": "Fatherland",
      "orari": [
+      "16:00",
       "21:00"
      ],
      "giorni": {
-      "2026-11-21": [
-       "21:00"
-      ],
       "2026-11-22": [
        "16:00",
        "21:00"
@@ -1016,22 +924,6 @@
      "regia": "",
      "biglietti": "https://www.cinemadonzucchini.it/programmazione/",
      "scheda": "https://it.wikipedia.org/wiki/Fatherland_%28film_2026%29"
-    },
-    {
-     "titolo": "Odissea",
-     "orari": [
-      "16:00"
-     ],
-     "giorni": {
-      "2026-11-21": [
-       "16:00"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.cinemadonzucchini.it/programmazione/",
-     "scheda": "https://it.wikipedia.org/wiki/Odissea_%28film%29"
     }
    ]
   },
@@ -1048,12 +940,9 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "22:30"
+      "20:30"
      ],
      "giorni": {
-      "2026-11-21": [
-       "22:30"
-      ],
       "2026-11-22": [
        "20:30"
       ]
@@ -1071,16 +960,11 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
+      "15:45",
       "17:30",
-      "20:30",
-      "22:30"
+      "20:30"
      ],
      "giorni": {
-      "2026-11-21": [
-       "17:30",
-       "20:30",
-       "22:30"
-      ],
       "2026-11-22": [
        "15:45",
        "17:30",
@@ -1100,12 +984,9 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "18:00"
+      "16:00"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:00"
-      ],
       "2026-11-22": [
        "16:00"
       ]
@@ -1123,14 +1004,10 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "18:00",
-      "20:15"
+      "18:45",
+      "21:15"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:00",
-       "20:15"
-      ],
       "2026-11-22": [
        "18:45",
        "21:15"
@@ -1149,16 +1026,11 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "18:00",
-      "20:15",
-      "22:30"
+      "16:00",
+      "18:15",
+      "21:00"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:00",
-       "20:15",
-       "22:30"
-      ],
       "2026-11-22": [
        "16:00",
        "18:15",
@@ -1178,16 +1050,11 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "18:00",
-      "20:15",
-      "22:30"
+      "16:45",
+      "19:00",
+      "21:15"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:00",
-       "20:15",
-       "22:30"
-      ],
       "2026-11-22": [
        "16:45",
        "19:00",
@@ -1205,7 +1072,9 @@
     },
     {
      "titolo": "Shaun, vita da pecora - Operazione Z.U.C.C.A.",
-     "orari": [],
+     "orari": [
+      "15:45"
+     ],
      "giorni": {
       "2026-11-22": [
        "15:45"
@@ -1220,35 +1089,30 @@
     {
      "titolo": "Ti presento i Fotter",
      "orari": [
-      "20:15"
+      "18:15"
      ],
      "giorni": {
-      "2026-11-21": [
-       "20:15"
-      ],
       "2026-11-22": [
        "18:15"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Commedia",
+     "regia": "John Hamburg",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
+     "interpreti": "Robert De Niro, Ben Stiller, Skyler Gisondo e Ariana Grande",
+     "paese": "USA",
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
      "titolo": "Un weekend artificiale",
      "orari": [
+      "16:30",
       "18:30",
-      "20:30",
-      "22:30"
+      "20:30"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:30",
-       "20:30",
-       "22:30"
-      ],
       "2026-11-22": [
        "16:30",
        "18:30",

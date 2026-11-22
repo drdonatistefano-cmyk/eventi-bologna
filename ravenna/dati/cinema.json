@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-21",
- "giorno_orari": "2026-11-21",
+ "aggiornato": "2026-11-22",
+ "giorno_orari": "2026-11-22",
  "sale": [
   {
    "id": "c004",
@@ -35,12 +35,9 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "18:00"
+      "15:20"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:00"
-      ],
       "2026-11-22": [
        "15:20"
       ]
@@ -58,14 +55,10 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "18:30",
+      "15:05",
       "21:30"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:30",
-       "21:30"
-      ],
       "2026-11-22": [
        "15:05",
        "21:30"
@@ -84,16 +77,13 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
+      "15:25",
+      "16:35",
       "18:05",
       "20:25",
       "21:25"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:05",
-       "20:25",
-       "21:25"
-      ],
       "2026-11-22": [
        "15:25",
        "16:35",
@@ -115,14 +105,11 @@
     {
      "titolo": "Il fuoco che ti porti dentro",
      "orari": [
+      "15:45",
       "18:05",
       "20:35"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:05",
-       "20:35"
-      ],
       "2026-11-22": [
        "15:45",
        "18:05",
@@ -142,12 +129,10 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
+      "15:30",
       "17:50"
      ],
      "giorni": {
-      "2026-11-21": [
-       "17:50"
-      ],
       "2026-11-22": [
        "15:30",
        "17:50"
@@ -166,14 +151,11 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
+      "15:35",
       "18:10",
       "20:45"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:10",
-       "20:45"
-      ],
       "2026-11-22": [
        "15:35",
        "18:10",
@@ -193,14 +175,11 @@
     {
      "titolo": "La ballata del re delle api",
      "orari": [
+      "15:15",
       "18:10",
       "21:10"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:10",
-       "21:10"
-      ],
       "2026-11-22": [
        "15:15",
        "18:10",
@@ -220,14 +199,11 @@
     {
      "titolo": "Ramayana - La nascita di una leggenda",
      "orari": [
-      "17:35",
+      "15:10",
+      "18:00",
       "21:05"
      ],
      "giorni": {
-      "2026-11-21": [
-       "17:35",
-       "21:05"
-      ],
       "2026-11-22": [
        "15:10",
        "18:00",
@@ -238,22 +214,19 @@
      "genere": "Azione, Avventura, Drammatico",
      "regia": "Nitesh Tiwari",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
-     "interpreti": "Ranbir Kapoor, Sai Pallavi, Sunny Deol e Kajal Aggarwal",
-     "paese": "India",
+     "interpreti": "Ranbir Kapoor, Yash e Sai Pallavi",
      "durata": 195,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "India"
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
+      "15:40",
       "18:20",
       "21:15"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:20",
-       "21:15"
-      ],
       "2026-11-22": [
        "15:40",
        "18:20",
@@ -273,14 +246,11 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
+      "15:20",
       "18:35",
       "21:00"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:35",
-       "21:00"
-      ],
       "2026-11-22": [
        "15:20",
        "18:35",
@@ -299,12 +269,9 @@
     {
      "titolo": "Ti presento i Fotter",
      "orari": [
-      "20:55"
+      "19:55"
      ],
      "giorni": {
-      "2026-11-21": [
-       "20:55"
-      ],
       "2026-11-22": [
        "19:55"
       ]
@@ -322,14 +289,11 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
+      "15:40",
       "17:55",
       "20:20"
      ],
      "giorni": {
-      "2026-11-21": [
-       "17:55",
-       "20:20"
-      ],
       "2026-11-22": [
        "15:40",
        "17:55",
@@ -353,10 +317,6 @@
       "20:40"
      ],
      "giorni": {
-      "2026-11-21": [
-       "17:55",
-       "20:40"
-      ],
       "2026-11-22": [
        "17:55",
        "20:40"
@@ -387,8 +347,8 @@
     {
      "titolo": "La Gradiva",
      "orari": [
-      "18:30",
-      "21:00"
+      "16:00",
+      "18:30"
      ],
      "versione": "Versione originale",
      "genere": "Drammatico",
@@ -397,13 +357,32 @@
      "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-21": [
-       "18:30",
-       "21:00"
+      "2026-11-22": [
+       "16:00",
+       "18:30"
       ]
      },
      "paese": "Francia",
      "scheda": "https://it.wikipedia.org/wiki/La_Gradiva"
+    },
+    {
+     "titolo": "Look Back",
+     "orari": [
+      "21:00"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Kore-eda",
+     "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
+     "durata": 100,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-22": [
+       "21:00"
+      ]
+     },
+     "paese": "Giappone",
+     "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29"
     }
    ]
   },
@@ -419,14 +398,11 @@
     {
      "titolo": "Fjord",
      "orari": [
+      "15:30",
       "18:15",
       "21:00"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:15",
-       "21:00"
-      ],
       "2026-11-22": [
        "15:30",
        "18:15",
@@ -458,12 +434,10 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
+      "16:00",
       "21:00"
      ],
      "giorni": {
-      "2026-11-21": [
-       "21:00"
-      ],
       "2026-11-22": [
        "16:00",
        "21:00"
@@ -514,14 +488,11 @@
     {
      "titolo": "Fjord",
      "orari": [
+      "15:30",
       "18:00",
-      "21:00"
+      "20:30"
      ],
      "giorni": {
-      "2026-11-21": [
-       "18:00",
-       "21:00"
-      ],
       "2026-11-22": [
        "15:30",
        "18:00",
@@ -553,12 +524,9 @@
     {
      "titolo": "Come rapinare una banca",
      "orari": [
-      "21:45"
+      "21:20"
      ],
      "giorni": {
-      "2026-11-21": [
-       "21:45"
-      ],
       "2026-11-22": [
        "21:20"
       ]
@@ -577,9 +545,6 @@
       "15:30"
      ],
      "giorni": {
-      "2026-11-21": [
-       "15:30"
-      ],
       "2026-11-22": [
        "15:30"
       ]
@@ -597,14 +562,9 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "20:10",
-      "22:45"
+      "20:50"
      ],
      "giorni": {
-      "2026-11-21": [
-       "20:10",
-       "22:45"
-      ],
       "2026-11-22": [
        "20:50"
       ]
@@ -625,19 +585,10 @@
       "15:45",
       "17:20",
       "18:00",
-      "20:40",
-      "21:30",
-      "22:20"
+      "20:30",
+      "21:10"
      ],
      "giorni": {
-      "2026-11-21": [
-       "15:45",
-       "17:20",
-       "18:00",
-       "20:40",
-       "21:30",
-       "22:20"
-      ],
       "2026-11-22": [
        "15:45",
        "17:20",
@@ -660,13 +611,9 @@
      "titolo": "Il fuoco che ti porti dentro",
      "orari": [
       "15:30",
-      "19:50"
+      "19:25"
      ],
      "giorni": {
-      "2026-11-21": [
-       "15:30",
-       "19:50"
-      ],
       "2026-11-22": [
        "15:30",
        "19:25"
@@ -689,10 +636,6 @@
       "17:50"
      ],
      "giorni": {
-      "2026-11-21": [
-       "15:30",
-       "17:50"
-      ],
       "2026-11-22": [
        "15:30",
        "17:50"
@@ -713,16 +656,9 @@
      "orari": [
       "15:30",
       "17:55",
-      "20:20",
-      "22:40"
+      "20:45"
      ],
      "giorni": {
-      "2026-11-21": [
-       "15:30",
-       "17:55",
-       "20:20",
-       "22:40"
-      ],
       "2026-11-22": [
        "15:30",
        "17:55",
@@ -742,18 +678,11 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "15:30",
-      "17:55",
-      "20:20",
-      "22:40"
+      "15:50",
+      "18:15",
+      "21:10"
      ],
      "giorni": {
-      "2026-11-21": [
-       "15:30",
-       "17:55",
-       "20:20",
-       "22:40"
-      ],
       "2026-11-22": [
        "15:50",
        "18:15",
@@ -774,15 +703,10 @@
      "titolo": "Se domani non torno",
      "orari": [
       "15:40",
-      "17:50",
-      "20:15"
+      "18:40",
+      "20:50"
      ],
      "giorni": {
-      "2026-11-21": [
-       "15:40",
-       "17:50",
-       "20:15"
-      ],
       "2026-11-22": [
        "15:40",
        "18:40",
@@ -801,12 +725,9 @@
     {
      "titolo": "Ti presento i Fotter",
      "orari": [
-      "19:30"
+      "18:00"
      ],
      "giorni": {
-      "2026-11-21": [
-       "19:30"
-      ],
       "2026-11-22": [
        "18:00"
       ]
@@ -825,17 +746,10 @@
      "titolo": "Un weekend artificiale",
      "orari": [
       "15:30",
-      "17:40",
-      "21:00",
-      "22:45"
+      "17:35",
+      "21:00"
      ],
      "giorni": {
-      "2026-11-21": [
-       "15:30",
-       "17:40",
-       "21:00",
-       "22:45"
-      ],
       "2026-11-22": [
        "15:30",
        "17:35",
@@ -865,21 +779,41 @@
    "fonte": "https://movieplayer.it/cinema/europa_1118/",
    "film": [
     {
-     "titolo": "Look Back",
+     "titolo": "La ballata del re delle api",
      "orari": [
-      "21:00"
+      "16:30"
      ],
      "versione": "",
-     "genere": "",
-     "regia": "Kore-eda",
-     "interpreti": "",
-     "durata": null,
-     "anno": 2026,
+     "genere": "Drammatico, Thriller",
+     "regia": "Andrew Patterson",
+     "interpreti": "Matthew McConaughey, Angelina LookingGlass e Jake Horowitz",
+     "durata": 130,
+     "anno": 2025,
      "giorni": {
-      "2026-11-21": [
-       "21:00"
+      "2026-11-22": [
+       "16:30"
       ]
      },
+     "paese": "USA",
+     "scheda": "https://it.wikipedia.org/wiki/La_ballata_del_re_delle_api"
+    },
+    {
+     "titolo": "Look Back",
+     "orari": [
+      "18:30"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Kore-eda",
+     "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
+     "durata": 100,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-22": [
+       "18:30"
+      ]
+     },
+     "paese": "Giappone",
      "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29"
     }
    ]
@@ -896,7 +830,9 @@
    "film": [
     {
      "titolo": "Dio ride",
-     "orari": [],
+     "orari": [
+      "17:00"
+     ],
      "giorni": {
       "2026-11-22": [
        "17:00"
@@ -927,14 +863,9 @@
     {
      "titolo": "Odissea",
      "orari": [
-      "17:00",
-      "21:00"
+      "20:00"
      ],
      "giorni": {
-      "2026-11-21": [
-       "17:00",
-       "21:00"
-      ],
       "2026-11-22": [
        "20:00"
       ]
@@ -970,7 +901,9 @@
    "film": [
     {
      "titolo": "Era meglio domani",
-     "orari": [],
+     "orari": [
+      "10:00"
+     ],
      "giorni": {
       "2026-11-22": [
        "10:00"
@@ -982,45 +915,12 @@
      "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=1"
     },
     {
-     "titolo": "Frankie e le creature dimenticate",
-     "orari": [
-      "17:00"
-     ],
-     "giorni": {
-      "2026-11-21": [
-       "17:00"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=1"
-    },
-    {
-     "titolo": "L'essere amato",
-     "orari": [
-      "19:00"
-     ],
-     "giorni": {
-      "2026-11-21": [
-       "19:00"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=1",
-     "scheda": "https://it.wikipedia.org/wiki/L%27essere_amato"
-    },
-    {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "21:15"
+      "16:00",
+      "18:30"
      ],
      "giorni": {
-      "2026-11-21": [
-       "21:15"
-      ],
       "2026-11-22": [
        "16:00",
        "18:30"
