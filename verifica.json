@@ -1,0 +1,449 @@
+{
+ "quando": "2026-11-22T19:55:22Z",
+ "livello": 1,
+ "richiesta": "",
+ "durata_secondi": 14,
+ "esito": "rosso",
+ "controlli": 80,
+ "errori": 70,
+ "avvisi": 8,
+ "noti": 0,
+ "viste": [
+  {
+   "nome": "Pagine e disponibilità",
+   "cosa": "Le pagine principali rispondono, in fretta e con il contenuto giusto",
+   "controlli": [
+    {
+     "esito": "errore",
+     "nome": "Places",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achplaces.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to c"
+    },
+    {
+     "esito": "errore",
+     "nome": "Places, mappa",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achplaces.com', port=443): Max retries exceeded with url: /filtri.html (Caused by ProxyError('"
+    },
+    {
+     "esito": "errore",
+     "nome": "Places, Chi siamo",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achplaces.com', port=443): Max retries exceeded with url: /chi-siamo/ (Caused by ProxyError('U"
+    },
+    {
+     "esito": "errore",
+     "nome": "Places, Privacy",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achplaces.com', port=443): Max retries exceeded with url: /privacy/ (Caused by ProxyError('Una"
+    },
+    {
+     "esito": "errore",
+     "nome": "Places, mappa del sito",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achplaces.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ProxyError('"
+    },
+    {
+     "esito": "errore",
+     "nome": "Places, robots",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achplaces.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ProxyError('U"
+    },
+    {
+     "esito": "errore",
+     "nome": "Places, app: manifesto",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achplaces.com', port=443): Max retries exceeded with url: /app.webmanifest (Caused by ProxyErr"
+    },
+    {
+     "esito": "errore",
+     "nome": "Places, app: pagina per gli ospiti",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achplaces.com', port=443): Max retries exceeded with url: /app/ (Caused by ProxyError('Unable "
+    },
+    {
+     "esito": "errore",
+     "nome": "Dinners, app: manifesto",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achdinners.com', port=443): Max retries exceeded with url: /app.webmanifest (Caused by ProxyEr"
+    },
+    {
+     "esito": "errore",
+     "nome": "Dinners, app: pagina per gli ospiti",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achdinners.com', port=443): Max retries exceeded with url: /app/ (Caused by ProxyError('Unable"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events, app: manifesto",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /app.webmanifest (Caused by ProxyErr"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events, app: pagina per gli ospiti",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /app/ (Caused by ProxyError('Unable "
+    },
+    {
+     "esito": "errore",
+     "nome": "Dinners, tasto WhatsApp",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achdinners.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to "
+    },
+    {
+     "esito": "errore",
+     "nome": "Events, tasto WhatsApp",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to c"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events Milano, tasto WhatsApp",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /milano/ (Caused by ProxyError('Unab"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events, pagina Collaborano con noi",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /collaborano/ (Caused by ProxyError("
+    },
+    {
+     "esito": "errore",
+     "nome": "Events, pulsante Collaborano con noi",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to c"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events, schede piccole accessibili",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to c"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events, comune nelle schede",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to c"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events, clic Biglietti con il sito di arrivo",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to c"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events Ravenna",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /ravenna/ (Caused by ProxyError('Una"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events Ferrara",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /ferrara/ (Caused by ProxyError('Una"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events, filtri nuovi",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to c"
+    },
+    {
+     "esito": "errore",
+     "nome": "Places, riquadro dei filtri che segue",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achplaces.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to c"
+    },
+    {
+     "esito": "errore",
+     "nome": "Places, tasto WhatsApp",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achplaces.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to c"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events Milano, filtri nuovi",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /milano/ (Caused by ProxyError('Unab"
+    },
+    {
+     "esito": "errore",
+     "nome": "Dinners",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achdinners.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to "
+    },
+    {
+     "esito": "errore",
+     "nome": "Dinners, Chi siamo",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achdinners.com', port=443): Max retries exceeded with url: /chi-siamo/ (Caused by ProxyError('"
+    },
+    {
+     "esito": "errore",
+     "nome": "Dinners, Privacy",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achdinners.com', port=443): Max retries exceeded with url: /privacy/ (Caused by ProxyError('Un"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events Bologna",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to c"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events Milano",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /milano/ (Caused by ProxyError('Unab"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events, Chi siamo",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /chi-siamo/ (Caused by ProxyError('U"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events, Privacy",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /privacy/ (Caused by ProxyError('Una"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events, robots",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ProxyError('U"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events, mappa del sito",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ProxyError('"
+    },
+    {
+     "esito": "errore",
+     "nome": "Dinners, robots",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achdinners.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ProxyError('"
+    },
+    {
+     "esito": "errore",
+     "nome": "Dinners, mappa del sito",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achdinners.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ProxyError("
+    },
+    {
+     "esito": "errore",
+     "nome": "Events Bologna, indirizzo canonico",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Unable to c"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events Milano, indirizzo canonico",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /milano/ (Caused by ProxyError('Unab"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events Ravenna, indirizzo canonico",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /ravenna/ (Caused by ProxyError('Una"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events Ferrara, indirizzo canonico",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /ferrara/ (Caused by ProxyError('Una"
+    },
+    {
+     "esito": "errore",
+     "nome": "Statistiche Places",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achplaces.com', port=443): Max retries exceeded with url: /statistiche.html (Caused by ProxyEr"
+    },
+    {
+     "esito": "errore",
+     "nome": "Statistiche Dinners",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achdinners.com', port=443): Max retries exceeded with url: /statistiche.html (Caused by ProxyE"
+    },
+    {
+     "esito": "errore",
+     "nome": "Statistiche Events",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /statistiche.html (Caused by ProxyEr"
+    },
+    {
+     "esito": "errore",
+     "nome": "Velocità",
+     "dettaglio": "non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /velocita.html (Caused by ProxyError"
+    },
+    {
+     "esito": "avviso",
+     "nome": "places: l'indirizzo senza https porta al sito",
+     "dettaglio": "risposta 0"
+    },
+    {
+     "esito": "avviso",
+     "nome": "dinners: l'indirizzo senza https porta al sito",
+     "dettaglio": "risposta 0"
+    },
+    {
+     "esito": "avviso",
+     "nome": "events: l'indirizzo senza https porta al sito",
+     "dettaglio": "risposta 0"
+    },
+    {
+     "esito": "avviso",
+     "nome": "installa.js uguale nelle tre guide",
+     "dettaglio": "lette solo 0 copie su 3"
+    }
+   ]
+  },
+  {
+   "nome": "Dati",
+   "cosa": "I file dei dati esistono, si leggono, sono completi e aggiornati",
+   "controlli": [
+    {
+     "esito": "errore",
+     "nome": "Events Bologna: file degli eventi",
+     "dettaglio": ""
+    },
+    {
+     "esito": "errore",
+     "nome": "Events Milano: file degli eventi",
+     "dettaglio": ""
+    },
+    {
+     "esito": "errore",
+     "nome": "Events Ravenna: file degli eventi",
+     "dettaglio": ""
+    },
+    {
+     "esito": "errore",
+     "nome": "Events Ferrara: file degli eventi",
+     "dettaglio": ""
+    },
+    {
+     "esito": "errore",
+     "nome": "Events: mostre.js",
+     "dettaglio": "manca"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events: serate.js",
+     "dettaglio": "manca"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events: incontri.js",
+     "dettaglio": "manca"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events: sport.js",
+     "dettaglio": "manca"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events: cinema.js",
+     "dettaglio": "manca"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events: impronte dei file (versioni.js)",
+     "dettaglio": ""
+    },
+    {
+     "esito": "errore",
+     "nome": "Dinners: la pagina indica il file dell'indice",
+     "dettaglio": ""
+    },
+    {
+     "esito": "errore",
+     "nome": "Places: la pagina indica i file dei dati",
+     "dettaglio": "0 file"
+    }
+   ]
+  },
+  {
+   "nome": "Città di Events",
+   "cosa": "Ogni città accesa è collegata in tutti i file; soglia per aprire nuove province",
+   "controlli": [
+    {
+     "esito": "ok",
+     "nome": "Città collegate dappertutto",
+     "dettaglio": "bo, mi, ra, fe"
+    },
+    {
+     "esito": "errore",
+     "nome": "Events: pagine dei singoli spettacoli",
+     "dettaglio": "elenco non raggiungibile: HTTPSConnectionPool(host='achevents.com', port=443): Max retries exceeded with url: /evento/elenco.json (Caused by Proxy"
+    },
+    {
+     "esito": "ok",
+     "nome": "Nuove province: soglia del business plan",
+     "dettaglio": "1117 visite delle tre guide negli ultimi 30 giorni (18 giorni con dati), soglia 10000"
+    }
+   ]
+  },
+  {
+   "nome": "Servizi e posta",
+   "cosa": "Disiscrizione, modulo delle correzioni e impostazioni dei domini per la posta",
+   "controlli": [
+    {
+     "esito": "errore",
+     "nome": "Pagina di disiscrizione raggiungibile",
+     "dettaglio": "risposta None"
+    },
+    {
+     "esito": "errore",
+     "nome": "Modulo «Segnala una correzione»",
+     "dettaglio": ""
+    },
+    {
+     "esito": "errore",
+     "nome": "Modulo aperto su un comune",
+     "dettaglio": ""
+    },
+    {
+     "esito": "errore",
+     "nome": "La pagina riservata dei numeri non si apre senza chiave",
+     "dettaglio": "risposta 0"
+    },
+    {
+     "esito": "errore",
+     "nome": "La pagina delle verifiche non si apre senza chiave",
+     "dettaglio": "risposta 0"
+    },
+    {
+     "esito": "errore",
+     "nome": "Le correzioni raccolte non si leggono senza autorizzazione",
+     "dettaglio": "risposta 0"
+    },
+    {
+     "esito": "errore",
+     "nome": "Il modulo rifiuta una correzione vuota",
+     "dettaglio": "risposta 0"
+    },
+    {
+     "esito": "errore",
+     "nome": "I numeri della Dashboard non si possono cambiare da fuori",
+     "dettaglio": "risposta 0"
+    },
+    {
+     "esito": "errore",
+     "nome": "places: si apre dal link tracciato di una lettera",
+     "dettaglio": "risposta None"
+    },
+    {
+     "esito": "errore",
+     "nome": "dinners: si apre dal link tracciato di una lettera",
+     "dettaglio": "risposta None"
+    },
+    {
+     "esito": "errore",
+     "nome": "events: si apre dal link tracciato di una lettera",
+     "dettaglio": "risposta None"
+    },
+    {
+     "esito": "avviso",
+     "nome": "achplaces.com: impostazioni di posta",
+     "dettaglio": "non lette (servizio DNS non raggiungibile)"
+    },
+    {
+     "esito": "avviso",
+     "nome": "achdinners.com: impostazioni di posta",
+     "dettaglio": "non lette (servizio DNS non raggiungibile)"
+    },
+    {
+     "esito": "avviso",
+     "nome": "achevents.com: impostazioni di posta",
+     "dettaglio": "non lette (servizio DNS non raggiungibile)"
+    }
+   ]
+  },
+  {
+   "nome": "Velocità",
+   "cosa": "L'ultima misura fatta come da telefono (4G, 3G, ritorno, tocchi)",
+   "controlli": [
+    {
+     "esito": "errore",
+     "nome": "Misure della velocità disponibili",
+     "dettaglio": ""
+    }
+   ]
+  },
+  {
+   "nome": "Automazioni",
+   "cosa": "I programmi automatici su GitHub (parte pubblica) stanno funzionando",
+   "controlli": [
+    {
+     "esito": "avviso",
+     "nome": "Saltata",
+     "dettaglio": "senza accesso a GitHub"
+    }
+   ]
+  }
+ ]
+}

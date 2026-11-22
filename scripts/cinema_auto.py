@@ -354,7 +354,10 @@ def scopri(d, log):
         ja, jb = "".join(sorted(pa)), "".join(sorted(pb))
         return bool(pa and pb) and (bool(pa & pb) or ja.replace(" ", "") == jb.replace(" ", "")
                                     or "".join(chiave(a).split()).find("".join(sorted(pb))) >= 0)
-    comuni_cm = [(UFFICIALI[0], MP_CITTA)] + ([] if CITTA == "bo" else [(c, slug(c)) for c in UFFICIALI[1:]])
+    # 22/11/2026: per Bologna UFFICIALI sono i comuni della provincia (il primo è Casalecchio), quindi le sale del capoluogo
+    # lette da cinemap non trovavano la loro gemella e finivano due volte (Lumière, Modernissimo, Sala Cervi).
+    capo = "Bologna" if CITTA == "bo" else UFFICIALI[0]
+    comuni_cm = [(capo, MP_CITTA)] + ([] if CITTA == "bo" else [(c, slug(c)) for c in UFFICIALI[1:]])
     cm_note = {s.get("cinemap") for s in d["sale"]}
     for comune, cs in comuni_cm:
         try:

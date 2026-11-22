@@ -766,7 +766,9 @@ html body #nAf .hd h2{font:700 22px var(--serif);letter-spacing:-.015em}
 .card.mini .act.tkt{background:var(--blu)!important;color:#fff;box-shadow:none}
 .card.mini .act.tkt:hover{background:var(--blu-scuro)!important}
 .card.mini .act.tkt.info{background:var(--paper)!important;color:var(--blu-scuro);border-color:color-mix(in srgb,var(--blu) 35%,var(--line))}
-.multi,.vob{color:var(--blu-scuro)}
+.multi{color:var(--blu-scuro)}
+/* 22/11/2026: V.O. leggibile (prima scritta blu scuro su fondo quasi nero: sembrava un punto nero) */
+.vob{background:var(--blu-tenue);color:var(--blu-scuro);border:1px solid color-mix(in srgb,var(--blu) 30%,transparent)}
 .more{border-radius:12px;background:var(--paper);border:1px solid var(--line);color:var(--blu-scuro);font-weight:650;box-shadow:var(--shadow)}
 .more:hover{border-color:var(--blu)}
 
@@ -1260,7 +1262,7 @@ function waEv(e){const u=WEB_URL+"?cerca="+encodeURIComponent(e.artista);
  L.push("",`Da Ach's Events – ${u}`);
  return `<a class="wabtn" title="Condividi su WhatsApp" aria-label="Condividi su WhatsApp" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(L.join("\n"))}">${WAI}</a>`}
 function cardM(e){
- const g=GLAB[e.genere]||{c:"--mute",l:e.genere||"Mostra",em:"🖼️"};
+ const g=GLAB[e.genere]||{c:"--faint",l:e.genere||"Mostra",em:"🖼️"};
  const left=Math.round((D(e.fino)-D(today))/864e5);
  const st0=e.data>today?{c:"soon",l:`Apre il ${fmt(e.data,{day:"numeric",month:"long"})}`}:left<=14?{c:"last",l:left===0?"Ultimo giorno":`Ultimi giorni · chiude il ${fmt(e.fino,{day:"numeric",month:"short"})}`}:{c:"open",l:"In corso"};
  const loc=e._c+(e._c!==CITY.capo&&ZLAB[e._z]?` · ${ZLAB[e._z]}`:"");
@@ -1282,7 +1284,7 @@ function cardM(e){
  </div></article>`}
 function card(e){
  if(e._kind==="m")return cardM(e);
- const g=G[e.genere]||{c:"--mute",l:e.genere};
+ const g=G[e.genere]||{c:"--faint",l:e.genere};
  const t=/\d/.test(e.ora||"")?e.ora:"";
  const multi=e.fino&&e.fino!==e.data?`dal ${fmt(e.data,{day:"numeric",month:"short"})} al ${fmt(e.fino,{day:"numeric",month:"short"})}`:"";
  const loc=e._c+(e._c!==CITY.capo&&ZLAB[e._z]?` · ${ZLAB[e._z]}`:"");
@@ -1338,7 +1340,7 @@ function qSug(){const box=$("#qsug");if(!box)return;const q=norm(($("#q").value|
  box.innerHTML=`<div class="qsh">Artisti, persone e titoli</div>`+hit.map(o=>`<button type="button" role="option" data-qs="${esc(o.n)}"><span>${esc(o.n)}</span><small>${o.c} ${o.c===1?"scheda":"schede"}</small></button>`).join("");box.hidden=false}
 function mini(e){
  if(e._kind==="m")return miniM(e);
- const g=G[e.genere]||{c:"--mute",l:e.genere},tm0=/\d/.test(e.ora||"")?e.ora:"";
+ const g=G[e.genere]||{c:"--faint",l:e.genere},tm0=/\d/.test(e.ora||"")?e.ora:"";
  const multi=e.fino&&e.fino!==e.data?`dal ${fmt(e.data,{day:"numeric",month:"short"})} al ${fmt(e.fino,{day:"numeric",month:"short"})}`:"";
  const inner=`<div class="top">${tm0?`<span class="time">${esc(tm0)}</span>`:""}<span class="gtag">${esc(e.tipo==="Comicità"?"Comici":g.l)}${e.tipo&&e.tipo!=="Comicità"?" · "+esc(e.tipo):""}</span>${multi?`<span class="multi">${multi}</span>`:""}</div><h3 class="title">${esc(e.artista)}</h3>${hitLine(e)}${st.venue?"":`<div class="mloc">${PIN}${conComune(e)?`<span class="mcom">${esc(e._c)}</span><span class="msep" aria-hidden="true">·</span>`:""}<span class="mlg">${esc(e.luogo)}</span></div>`}`;
  const dd=(e.disp||"").toLowerCase(),tk=/^https:/.test(e.biglietti||"")&&e.biglietti_tipo!=="Info"&&dd!=="sold out"&&dd!=="non disponibile";
@@ -1346,7 +1348,7 @@ function mini(e){
  const foot=(tk&&dd==="disponibile"?"":dispPill(e))+(iu?`<a class="act tkt info" data-lab="Info" href="${esc(iu)}" target="_blank" rel="noopener" aria-label="Info: ${esc(e.artista)}">${INF}<span>Info</span></a>`:"")+(tk?`<a class="act tkt" data-lab="Biglietti" href="${esc(e.biglietti)}" target="_blank" rel="noopener" aria-label="Ticket Biglietti ${esc(e.artista)}">${TKT}<span class="lg">Biglietti</span><span class="sm">Ticket</span></a>`:"");
  return miniA(reg({k:"e",e}),e.artista,g.c,inner).replace("%FOOT%",foot)}
 function miniM(e){
- const g=GLAB[e.genere]||{c:"--mute",l:e.genere||"Mostra",em:"🖼️"},left=Math.round((D(e.fino)-D(today))/864e5),fut=e.data>today;
+ const g=GLAB[e.genere]||{c:"--faint",l:e.genere||"Mostra",em:"🖼️"},left=Math.round((D(e.fino)-D(today))/864e5),fut=e.data>today;
  const tot=Math.max(1,Math.round((D(e.fino)-D(e.data))/864e5)+1),pct=fut?0:Math.min(100,Math.max(0,100*(tot-left-1)/tot));
  const st0=fut?{c:"soon",l:`Apre il ${fmt(e.data,{day:"numeric",month:"short"})}`}:left<=14?{c:"last",l:left===0?"Ultimo giorno":"Ultimi giorni"}:{c:"open",l:"In corso"};
  const per=fut?`Dal <b>${fY(e.data)}</b> al ${fY(e.fino)}`:`Fino al <b>${fY(e.fino)}</b> <small>· ${left===0?"oggi l'ultimo giorno":"ancora "+dur(left)}</small>`;
@@ -1354,7 +1356,7 @@ function miniM(e){
  return miniA(reg({k:"m",e}),e.artista,g.c,inner).replace("%FOOT%",`<span class="pill${e._ing==="Ingresso gratuito"?" ok":""}">${esc(e._ing)}</span>`+(e.biglietti?`<a class="act tkt" data-lab="Biglietti" href="${esc(e.biglietti)}" target="_blank" rel="noopener" aria-label="Ticket Biglietti ${esc(e.artista)}">${TKT}<span class="lg">Biglietti</span><span class="sm">Ticket</span></a>`:""))}
 function miniC(f){
  const rows=f.r,vo=rows.some(r=>r._vo),d0=dayKeys()[0],many=dayKeys().length>1,fs=fasSel();
- const byT=new Map();rows.forEach(r=>byT.set(r.genere,(byT.get(r.genere)||0)+1));const g=GLAB[[...byT.entries()].sort((a,b)=>b[1]-a[1])[0][0]]||{c:"--mute"};
+ const byT=new Map();rows.forEach(r=>byT.set(r.genere,(byT.get(r.genere)||0)+1));const g=GLAB[[...byT.entries()].sort((a,b)=>b[1]-a[1])[0][0]]||{c:"--faint"};
  const line=r=>{let s;if(many){const ds=dayKeys().filter(d=>(tOn(r,d)||[]).length);s=ds.length?ds.slice(0,3).map(d=>dLab(d)).join(", ")+(ds.length>3?"…":""):"in cartellone"}else{const x=(tOn(r,d0)||[]).filter(o=>passF(o,d0,fs));s=x.length?x.join(" · "):"orari sul sito"}return `<div class="msr"><b>${esc(r.luogo.replace(/^Cinema /,""))}</b><span>${esc(s)}</span></div>`};
  const inner=`<div class="top"><span class="gtag">🎬 ${rows.length===1?"1 sala":rows.length+" sale"}</span>${vo?'<span class="vob">V.O.</span>':""}</div><h3 class="title">${esc(f.t)}</h3>${fMeta(f.t,false)}${rows.slice(0,2).map(line).join("")}${rows.length>2?`<div class="msr mx">+ altre ${rows.length-2} ${rows.length-2===1?"sala":"sale"}</div>`:""}`;
  return miniA(reg({k:"c",f}),f.t,fcol(f.t),inner).replace("%FOOT%",fScheda(f.t))}
@@ -1383,7 +1385,7 @@ function cTimes(r){const dk=dayKeys(),many=dk.length>1,fs=fasSel(),rows=[];
 const CGEN=[{k:"Commedia",em:"😂",rx:/commedia|comic/i},{k:"Drammatico",s:"Dramma",em:"🎭",rx:/dramm|biograf|storic|guerra/i},{k:"Thriller e giallo",s:"Thriller",em:"🔪",rx:/thriller|giallo|polizi|noir|crime|gangster/i},{k:"Horror",em:"👻",rx:/horror/i},{k:"Animazione",s:"Cartoni",em:"🎨",rx:/animazione|cartoni/i},{k:"Azione e avventura",s:"Azione",em:"💥",rx:/azione|avventura|western/i},{k:"Fantascienza e fantasy",s:"Fantasy",em:"🚀",rx:/fantascienza|fantastic|fantasy/i},{k:"Sentimentale",s:"Amore",em:"❤️",rx:/sentiment|romantic/i},{k:"Documentario",s:"Doc",em:"🎥",rx:/documentar/i},{k:"Famiglia e ragazzi",s:"Famiglia",em:"🧸",rx:/ragazzi|famiglia|family|bambini/i},{k:"Musicale",em:"🎵",rx:/musical/i},{k:"Altri film",s:"Altri",em:"🎞️",rx:null}];
 /* colore delle schede film: per genere (il primo riconosciuto) */
 const FGC={"Commedia":"#c99a2e","Drammatico":"#7a5a8c","Thriller e giallo":"#4c5a6b","Horror":"#9a3b3b","Animazione":"#d9783a","Azione e avventura":"#3d6fa8","Fantascienza e fantasy":"#2a8a8f","Sentimentale":"#c4527c","Documentario":"#6b7d3a","Famiglia e ragazzi":"#4f9e62","Musicale":"#9b5fc0"};
-function fcol(t){for(const p of (fInfo(t).g||"").split(/\s*,\s*/)){const c=CGEN.find(c=>c.rx&&c.rx.test(p));if(c&&FGC[c.k])return FGC[c.k]}return "var(--mute)"}
+function fcol(t){for(const p of (fInfo(t).g||"").split(/\s*,\s*/)){const c=CGEN.find(c=>c.rx&&c.rx.test(p));if(c&&FGC[c.k])return FGC[c.k]}return "var(--faint)"}
 function glist(e){if(e._gl)return e._gl;const g=fInfo(e.artista).g||"";const l=CGEN.filter(c=>c.rx&&c.rx.test(g)).map(c=>c.k);return e._gl=l.length?l:["Altri film"]}
 let FI=null;
 function fInfo(t){if(!FI){FI=new Map();for(const e of CINEMA){const k=norm(e.artista),x=FI.get(k)||{};for(const [a,b] of [["g",e._gen],["r",e._reg],["i",e._int],["d",e._dur],["y",e._anno],["p",e._paese],["u",e._url]])if(b&&!x[a])x[a]=b;FI.set(k,x)}}return FI.get(norm(t))||{}}
@@ -1396,7 +1398,7 @@ function fScheda(t){const x=fInfo(t),u=x.u||"https://www.themoviedb.org/search/m
 function cardC(title,rows){
  const vo=rows.some(r=>r._vo);
  const byT=new Map();rows.forEach(r=>{if(!byT.has(r.genere))byT.set(r.genere,0);byT.set(r.genere,byT.get(r.genere)+1)});
- const g=GLAB[[...byT.entries()].sort((a,b)=>b[1]-a[1])[0][0]]||{c:"--mute",l:"Cinema",em:"🎬"};
+ const g=GLAB[[...byT.entries()].sort((a,b)=>b[1]-a[1])[0][0]]||{c:"--faint",l:"Cinema",em:"🎬"};
  const srow=r=>{return `<div class="srow"><button class="sn where" data-venue="${esc(r.luogo)}" title="Tutti i film di ${esc(r.luogo)}"><b class="wv">${esc(r.luogo)}</b><small>${esc(r._c+(r._c!==CITY.capo&&ZLAB[r._z]?" · "+ZLAB[r._z]:""))}${r._ver?" · "+esc(r._ver):""}</small></button><span class="sacts">${/^https:/.test(r.biglietti||"")?`<a class="act primary tkt" href="${esc(r.biglietti)}" target="_blank" rel="noopener" title="${r._bfilm?"Acquista i biglietti di questo film":"Biglietteria online della sala"}">${TKT}<span>Biglietti</span></a>`:""}${/^https:/.test(r.sito_luogo||r.fonte||"")&&(r.sito_luogo||r.fonte)!==r.biglietti?`<a class="act" href="${esc(r.sito_luogo||r.fonte)}" target="_blank" rel="noopener">Programma</a>`:""}</span>${cTimes(r)}</div>`};
  return `<article class="card cine" style="--g:${fcol(title)}">
  <div class="top"><span class="gtag">🎬 ${rows.length===1?"1 sala":rows.length+" sale"}</span>${vo?'<span class="vob">V.O.</span>':""}</div>
