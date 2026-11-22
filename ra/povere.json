@@ -1,0 +1,117 @@
+[
+ {
+  "id": "e002",
+  "data": "2026-11-22",
+  "artista": "100 Miles For Miles Davis",
+  "luogo": "Teatro Socjale",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.teatrosocjale.it/evento/100-miles-for-miles-davis/",
+  "esito": "letta",
+  "file": "povere/e002.txt"
+ },
+ {
+  "id": "e023",
+  "data": "2026-11-22",
+  "artista": "Re Tutto Cancella",
+  "luogo": "Teatro Masini",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://accademiaperduta.it/produzioni/re-tutto-cancella/",
+  "esito": "letta",
+  "file": "povere/e023.txt"
+ },
+ {
+  "id": "e038",
+  "data": "2026-11-24",
+  "artista": "PanPers",
+  "luogo": "Teatro Alighieri",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://www.ticketone.it/event/panpers-terapia-di-coppia-teatro-alighieri-21757725/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e003",
+  "data": "2026-11-27",
+  "artista": "Abigail Lapell",
+  "luogo": "Teatro Socjale",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.teatrosocjale.it/evento/abigail-lapell/",
+  "esito": "letta",
+  "file": "povere/e003.txt"
+ },
+ {
+  "id": "e004",
+  "data": "2026-11-28",
+  "artista": "Cristian CC Quartet e Phil Palmer",
+  "luogo": "Teatro Socjale",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.teatrosocjale.it/evento/cristian-cc-quartet-e-phil-palmer/",
+  "esito": "letta",
+  "file": "povere/e004.txt"
+ },
+ {
+  "id": "e043",
+  "data": "2026-12-04",
+  "artista": "Balletto dell'Opera di Tbilisi – Il lago dei cigni",
+  "luogo": "Teatro Alighieri",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e094",
+  "data": "2026-12-05",
+  "artista": "Indie Power a Ravenna",
+  "luogo": "Bronson",
+  "mancano": [
+   "ora"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e044",
+  "data": "2026-12-06",
+  "artista": "Trio Hermes",
+  "luogo": "Teatro Alighieri",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e005",
+  "data": "2026-12-11",
+  "artista": "Filippo Graziani",
+  "luogo": "Teatro Socjale",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.teatrosocjale.it/evento/filippo-graziani-2/",
+  "esito": "letta",
+  "file": "povere/e005.txt"
+ },
+ {
+  "id": "e047",
+  "data": "2026-12-13",
+  "artista": "Quartetto Guadagnini",
+  "luogo": "Teatro Alighieri",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ }
+]

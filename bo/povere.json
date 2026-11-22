@@ -1,0 +1,497 @@
+[
+ {
+  "id": "e473",
+  "data": "2026-11-22",
+  "artista": "Classescion",
+  "luogo": "Teatro Fanin",
+  "mancano": [
+   "protagonisti",
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.teatro.it/spettacoli/san-giovanni-in-persiceto/fanin/2026-2027/vito-classescion",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e363",
+  "data": "2026-11-22",
+  "artista": "Coro Grillo D'Oro, Mikrokosmos dei piccoli",
+  "luogo": "Chiesa dei Santi Bartolomeo e Gaetano",
+  "mancano": [
+   "protagonisti",
+   "descrizione"
+  ],
+  "url": "https://cittadellamusica.comune.bologna.it/objects/cantabo-festival-corale-internazionale",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "letta",
+  "file": "povere/e363.txt"
+ },
+ {
+  "id": "e682",
+  "data": "2026-11-22",
+  "artista": "SECRET COMEDY SHOW",
+  "luogo": "APS Efesto House",
+  "mancano": [
+   "protagonisti",
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e492",
+  "data": "2026-11-22",
+  "artista": "Buongiorno Ministro!",
+  "luogo": "Teatro Consorziale",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.teatro.it/spettacoli/budrio/consorziale/2026-2027/enzo-iacchetti-carlotta-proietti-buongiorno-ministro",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e432",
+  "data": "2026-11-22",
+  "artista": "Magma. Un'avventura claustrocomica",
+  "luogo": "Teatro Ebe Stignani",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.teatrostignani.it/spettacoli/famiglie/magma-unavventura-claustrocomica",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "letta",
+  "file": "povere/e432.txt"
+ },
+ {
+  "id": "e292",
+  "data": "2026-11-22",
+  "artista": "Domenica in musica – III appuntamento",
+  "luogo": "Museo della musica (Strada Maggiore 34)",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://www.tcbo.it/evento/accademia/domenica-in-musica-iii-appuntamento-2026/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "titolo non trovato nella pagina comune"
+ },
+ {
+  "id": "e294",
+  "data": "2026-11-22",
+  "artista": "Orchestra Barocca di Bologna – I canti dell'altalena",
+  "luogo": "Palazzo Pepoli",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://www.bolognafestival.it/it/concerti-bologna-2026/palazzo-pepoli-in-musica-2026/i-canti-dell-altalena/",
+  "esito": "letta",
+  "file": "povere/e294.txt"
+ },
+ {
+  "id": "e732",
+  "data": "2026-11-22",
+  "artista": "Les vents d'automne",
+  "luogo": "Rocca di Dozza",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://www.bolognawelcome.com/it/eventi/musica-e-danza/les-vents-dautomne",
+  "esito": "letta",
+  "file": "povere/e732.txt"
+ },
+ {
+  "id": "e727",
+  "data": "2026-11-22",
+  "artista": "Sondre Lerche",
+  "luogo": "Baumhaus",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e068",
+  "data": "2026-11-22",
+  "artista": "Terror + Bane + Start Today + Peace Of Mind",
+  "luogo": "Locomotiv Club",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.ticketone.it/event/terror-bane-start-today-peace-of-mind-locomotiv-club-21946915/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e067",
+  "data": "2026-11-22",
+  "artista": "Francesca Michielin",
+  "luogo": "Teatro EuropAuditorium",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.bolognaweekend.it/articoli/eventi-bologna-novembre-2026/",
+  "esito": "letta",
+  "file": "povere/e067.txt"
+ },
+ {
+  "id": "e896",
+  "data": "2026-11-22",
+  "artista": "Enrico Smiderle Trio",
+  "luogo": "Cantina Bentivoglio",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.cantinabentivoglio.it/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "titolo non trovato nella pagina comune"
+ },
+ {
+  "id": "e406",
+  "data": "2026-11-22",
+  "artista": "Mo quanti busì – Al Nostar Dialatt",
+  "luogo": "ZolAuditorium",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.bologna24ore.it/notizie/cultura-spettacoli/2026/10/14/bologna-zolauditorium-al-via-la-stagione-2026-2027/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e070",
+  "data": "2026-11-23",
+  "artista": "La bisbetica domata",
+  "luogo": "Teatro Duse",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.ticketone.it/event/la-bisbetica-domata-teatro-duse-22374639/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e897",
+  "data": "2026-11-23",
+  "artista": "Menci-Cassanelli-Smiderle Trio",
+  "luogo": "Cantina Bentivoglio",
+  "mancano": [
+   "protagonisti",
+   "ora"
+  ],
+  "url": "https://www.cantinabentivoglio.it/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "titolo non trovato nella pagina comune"
+ },
+ {
+  "id": "e336",
+  "data": "2026-11-23",
+  "artista": "Francesca Dego, Francesca Leonardi",
+  "luogo": "Auditorium Manzoni",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.musicainsiemebologna.it/event/francesca-dego-e-francesca-leonardi/",
+  "esito": "letta",
+  "file": "povere/e336.txt"
+ },
+ {
+  "id": "e728",
+  "data": "2026-11-23",
+  "artista": "Sio e Auroro Borealo Live! - S.A.L.V.E.",
+  "luogo": "Locomotiv Club",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e069",
+  "data": "2026-11-23",
+  "artista": "Coez – From The Rooftop",
+  "luogo": "Teatro EuropAuditorium",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.ticketone.it/event/coez-live-2026-from-the-rooftop-teatro-europauditorium-21716881/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e879",
+  "data": "2026-11-23",
+  "artista": "DisuMana - Stand Up Comedy Open Mic",
+  "luogo": "Mana Brew Pub",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e898",
+  "data": "2026-11-24",
+  "artista": "Abate-Senni-Grillini Trio",
+  "luogo": "Cantina Bentivoglio",
+  "mancano": [
+   "protagonisti",
+   "ora"
+  ],
+  "url": "https://www.cantinabentivoglio.it/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "titolo non trovato nella pagina comune"
+ },
+ {
+  "id": "e072",
+  "data": "2026-11-24",
+  "artista": "Michele Zarrillo",
+  "luogo": "Teatro Duse",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.songkick.com/de/concerts/43067528-michele-zarrillo-at-teatro-duse",
+  "esito": "letta",
+  "file": "povere/e072.txt"
+ },
+ {
+  "id": "e433",
+  "data": "2026-11-24",
+  "artista": "Erano tutti miei figli",
+  "luogo": "Teatro Ebe Stignani",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.teatrostignani.it/spettacoli/prosa/erano-tutti-miei-figli-s24",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "letta",
+  "file": "povere/e433.txt"
+ },
+ {
+  "id": "e510",
+  "data": "2026-11-24",
+  "artista": "Ricordatemi come vi pare",
+  "luogo": "Teatro Spazio Reno",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.bolognateatro.it/home/in-evidenza/teatro-spazio-reno-calderara-di-r-bo-stagione-2026-27",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "letta",
+  "file": "povere/e510.txt"
+ },
+ {
+  "id": "e071",
+  "data": "2026-11-24",
+  "artista": "Legend the Show in Orchestra",
+  "luogo": "Teatro Celebrazioni",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.ticketone.it/artist/ensemble-symphony-orchestra/alla-scoperta-di-morricone-ensemble-symphony-orchestra-3152591/#calendar-start=2026-11",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e073",
+  "data": "2026-11-25",
+  "artista": "Pesche dure",
+  "luogo": "Teatro Celebrazioni",
+  "mancano": [
+   "protagonisti",
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://teatrocelebrazioni.it/stagione-teatrale-2026-27/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e899",
+  "data": "2026-11-25",
+  "artista": "Middelhoff/Bovi Quartet – The Cool Cooking",
+  "luogo": "Cantina Bentivoglio",
+  "mancano": [
+   "protagonisti",
+   "ora"
+  ],
+  "url": "https://www.cantinabentivoglio.it/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "titolo non trovato nella pagina comune"
+ },
+ {
+  "id": "e604",
+  "data": "2026-11-25",
+  "artista": "Non sono capricci - Rosicler Ramirez",
+  "luogo": "Teatro Dehon",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.ticketone.it/eventseries/non-sono-capricci-rosicler-ramirez-4244608/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e751",
+  "data": "2026-11-25",
+  "artista": "Roba Nostra by Jameson",
+  "luogo": "Locomotiv Club",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.locomotivclub.it/event/roba-nostra-by-jameson-ingresso-up-to-you-4/",
+  "esito": "letta",
+  "file": "povere/e751.txt"
+ },
+ {
+  "id": "e074",
+  "data": "2026-11-26",
+  "artista": "Bologna suona Buena Vista Social Club",
+  "luogo": "Teatro Duse",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.ticketone.it/event/bologna-suona-buena-vista-social-club-teatro-duse-21718145/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e075",
+  "data": "2026-11-26",
+  "artista": "Il berretto a sonagli",
+  "luogo": "Arena del Sole",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://bologna.emiliaromagnateatro.com/la-stagione-2026-2027/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "letta",
+  "file": "povere/e075.txt"
+ },
+ {
+  "id": "e076",
+  "data": "2026-11-26",
+  "artista": "Non hanno un amico dubbio",
+  "luogo": "Teatro Celebrazioni",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.ticketone.it/event/luca-bizzarri-non-hanno-un-dubbio-teatro-celebrazioni-21778724/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e741",
+  "data": "2026-11-26",
+  "artista": "BURGEZ Memberz Club",
+  "luogo": "BURGEZ Bologna San Lazzaro",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e729",
+  "data": "2026-11-26",
+  "artista": "Collettivo Soundtracks sonorizza AURORA (F. W. Murnau – USA, 1927)",
+  "luogo": "Locomotiv Club",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e452",
+  "data": "2026-11-26",
+  "artista": "Ivan e i cani",
+  "luogo": "Teatro Alice Zeppilli",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://stagioneagora.it/ivan-e-i-cani/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e900",
+  "data": "2026-11-26",
+  "artista": "Daniele D'Alessandro Quartet",
+  "luogo": "Cantina Bentivoglio",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.cantinabentivoglio.it/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "titolo non trovato nella pagina comune"
+ },
+ {
+  "id": "e474",
+  "data": "2026-11-27",
+  "artista": "Lupin – Il Musical",
+  "luogo": "Teatro Fanin",
+  "mancano": [
+   "protagonisti",
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.teatro.it/spettacoli/san-giovanni-in-persiceto/fanin/2026-2027/lupin-il-musical",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e683",
+  "data": "2026-11-27",
+  "artista": "Elianto \"Falò sulla spiaggia e altri riti pagani\"",
+  "luogo": "APS Efesto House",
+  "mancano": [
+   "protagonisti",
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e409",
+  "data": "2026-11-27",
+  "artista": "Mor. Storia per le mie madri",
+  "luogo": "ZolAuditorium",
+  "mancano": [
+   "protagonisti",
+   "ora"
+  ],
+  "url": "https://www.renonews.it/primo-piano/2026/10/28/dalla-guerra-ai-pregiudizi-allo-zolauditorium-il-teatro-che-fa-pensare/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "letta",
+  "file": "povere/e409.txt"
+ },
+ {
+  "id": "e605",
+  "data": "2026-11-27",
+  "artista": "Morte accidentale di un anarchico",
+  "luogo": "Teatro Duse",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.ticketone.it/eventseries/morte-accidentale-di-un-anarchico-3996719/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e078",
+  "data": "2026-11-27",
+  "artista": "Poetry Event – Carolyn Carlson",
+  "luogo": "MAST.Auditorium",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://bologna.emiliaromagnateatro.com/la-stagione-2026-2027/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "letta",
+  "file": "povere/e078.txt"
+ }
+]

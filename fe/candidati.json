@@ -1,0 +1,252 @@
+{
+ "citta": "Ferrara",
+ "quando": "2026-11-22 23:07 UTC",
+ "pagine": [
+  {
+   "nome": "Teatro Comunale Claudio Abbado",
+   "url": "https://www.teatrocomunaleferrara.it/",
+   "file": "pagine/teatro-comunale-claudio-abbado.txt",
+   "esito": "ok",
+   "caratteri": 13270,
+   "cambiata": true,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "Ferrara Musica – calendario",
+   "url": "https://ferraramusica.it/calendario/",
+   "file": "pagine/ferrara-musica-calendario.txt",
+   "esito": "ok",
+   "caratteri": 4307,
+   "cambiata": true,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "Teatro Nuovo – calendario",
+   "url": "https://www.teatronuovoferrara.com/it/spettacoli/calendario-spettacoli.html",
+   "file": "pagine/teatro-nuovo-calendario.txt",
+   "esito": "ok",
+   "caratteri": 1684,
+   "cambiata": true,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "Jazz Club Ferrara",
+   "url": "https://jazzclubferrara.com/",
+   "file": "pagine/jazz-club-ferrara.txt",
+   "esito": "ok",
+   "caratteri": 2973,
+   "cambiata": true,
+   "eventi_strutturati": 10
+  },
+  {
+   "nome": "Teatro De Micheli (Copparo) – stagione teatrale",
+   "url": "https://www.teatrodemicheli.it/nqcontent.cfm?a_id=14205",
+   "file": "pagine/teatro-de-micheli-copparo-stagione-teatrale.txt",
+   "esito": "ok",
+   "caratteri": 1332,
+   "cambiata": true,
+   "eventi_strutturati": 0
+  },
+  {
+   "nome": "Teatro Borgatti (Cento) – stagione teatrale",
+   "url": "https://www.fondazioneteatroborgatti.it/spettacoli-teatrali/",
+   "file": "pagine/teatro-borgatti-cento-stagione-teatrale.txt",
+   "esito": "ok",
+   "caratteri": 2480,
+   "cambiata": true,
+   "eventi_strutturati": 0
+  }
+ ],
+ "ticketone": {
+  "gruppi": 60,
+  "abbinamento": "eventi con TicketOne: 68 su 170\neventi con TicketOne dopo i controlli: 68\nnuovi da TicketOne: 2 Counter({'Teatro/Prosa': 1, 'Teatro/Comicità': 1})",
+  "link_nuovi": 1,
+  "spettacoli_mancanti": 2,
+  "link_scritti": true
+ },
+ "songkick": {},
+ "errori": [],
+ "controllo_ticketone": {
+  "date_in_vendita": 43,
+  "coperte": 39,
+  "date_mancanti": 0,
+  "senza_link_ticketone": 0,
+  "non_in_guida": 0,
+  "mostre_senza_link": 0,
+  "mostre_non_in_guida": 0,
+  "da_controllare": []
+ },
+ "schede_povere": {
+  "scelte": 16,
+  "lette": 11
+ },
+ "tolti_non_spettacoli": 0,
+ "candidati": [
+  {
+   "data": "2026-11-22",
+   "ora": "21:30",
+   "fino": "2026-11-22",
+   "titolo": "Fabrizio Puglisi - Filippo Giuffrè_Duo",
+   "artisti": [],
+   "luogo": "Torrione San Giovanni",
+   "comune": "Ferrara",
+   "url": "https://jazzclubferrara.com/events/fabrizio-puglisi-filippo-giuffre-duo/",
+   "genere": "",
+   "fonte": "Jazz Club Ferrara",
+   "gia_in_guida": false,
+   "anche_su": [
+    "Jazz Club Ferrara"
+   ]
+  },
+  {
+   "data": "2026-11-26",
+   "ora": "21:30",
+   "fino": "2026-11-26",
+   "titolo": "Franco Fasano 5et - Premio Tutte Le Direzioni",
+   "artisti": [],
+   "luogo": "Torrione San Giovanni",
+   "comune": "Ferrara",
+   "url": "https://jazzclubferrara.com/events/franco-fasano-premio-tutte-le-direzioni/",
+   "genere": "",
+   "fonte": "Jazz Club Ferrara",
+   "gia_in_guida": false,
+   "anche_su": [
+    "Jazz Club Ferrara"
+   ]
+  },
+  {
+   "data": "2026-11-27",
+   "ora": "21:30",
+   "fino": "2026-11-27",
+   "titolo": "Nicola Caminiti Quartet",
+   "artisti": [],
+   "luogo": "Torrione San Giovanni",
+   "comune": "Ferrara",
+   "url": "https://jazzclubferrara.com/events/nicola-caminiti-quartet/",
+   "genere": "",
+   "fonte": "Jazz Club Ferrara",
+   "gia_in_guida": false,
+   "anche_su": [
+    "Jazz Club Ferrara"
+   ]
+  },
+  {
+   "data": "2026-11-28",
+   "ora": "21:30",
+   "fino": "2026-11-28",
+   "titolo": "The Legendary Johnny O’Neal Trio",
+   "artisti": [],
+   "luogo": "Torrione San Giovanni",
+   "comune": "Ferrara",
+   "url": "https://jazzclubferrara.com/events/the-legendary-johnny-oneal-trio/",
+   "genere": "",
+   "fonte": "Jazz Club Ferrara",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-11-6T",
+   "ora": "1:30+",
+   "fino": "2026-11-6T",
+   "titolo": "Matteo Paggi “Giraffe” Special Guest Fabrizio Bosso",
+   "artisti": [],
+   "luogo": "Torrione San Giovanni",
+   "comune": "Ferrara",
+   "url": "https://jazzclubferrara.com/events/matteo-paggi-giraffe/",
+   "genere": "",
+   "fonte": "Jazz Club Ferrara",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-11-7T",
+   "ora": "1:30+",
+   "fino": "2026-11-7T",
+   "titolo": "Trio Grande",
+   "artisti": [],
+   "luogo": "Torrione San Giovanni",
+   "comune": "Ferrara",
+   "url": "https://jazzclubferrara.com/events/trio-grande-2/",
+   "genere": "",
+   "fonte": "Jazz Club Ferrara",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-11-8T",
+   "ora": "1:30+",
+   "fino": "2026-11-8T",
+   "titolo": "Cavicchi-Bianchetti-Santimone Guitar Trio",
+   "artisti": [],
+   "luogo": "Torrione San Giovanni",
+   "comune": "Ferrara",
+   "url": "https://jazzclubferrara.com/events/cavicchi-bianchetti-santimone-guitar-trio/",
+   "genere": "",
+   "fonte": "Jazz Club Ferrara",
+   "gia_in_guida": false
+  },
+  {
+   "data": "2026-12-11",
+   "fino": "2026-12-12",
+   "ora": "n.d.",
+   "titolo": "Duncan Macmillan",
+   "luogo": "Teatro Nuovo",
+   "comune": "Ferrara",
+   "url": "https://www.ticketone.it/eventseries/duncan-macmillan-4256747/",
+   "genere": "Teatro/Prosa",
+   "descrizione": "Spettacolo di prosa.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2026-12-11",
+    "fino": "2026-12-12",
+    "ora": "n.d.",
+    "artista": "Duncan Macmillan",
+    "luogo": "Teatro Nuovo",
+    "citta": "Ferrara",
+    "genere": "Teatro",
+    "tipo": "Prosa",
+    "rassegna": "",
+    "descrizione": "Spettacolo di prosa.",
+    "fonte": "https://www.ticketone.it/eventseries/duncan-macmillan-4256747/",
+    "biglietti": "https://www.ticketone.it/eventseries/duncan-macmillan-4256747/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-22",
+    "sito_luogo": ""
+   }
+  },
+  {
+   "data": "2027-03-25",
+   "fino": "2027-03-25",
+   "ora": "21:00",
+   "titolo": "Xhuliano Dule - REMUNTADA",
+   "luogo": "Sala Estense",
+   "comune": "Ferrara",
+   "url": "https://www.ticketone.it/event/xhuliano-dule-remuntada-sala-estense-22436845/",
+   "genere": "Teatro/Comicità",
+   "descrizione": "Spettacolo che racconta la parabola di vittorie e sconfitte di un perdente.",
+   "fonte": "TicketOne",
+   "gia_in_guida": false,
+   "evento_pronto": {
+    "id": "",
+    "data": "2027-03-25",
+    "fino": "2027-03-25",
+    "ora": "21:00",
+    "artista": "Xhuliano Dule - REMUNTADA",
+    "luogo": "Sala Estense",
+    "citta": "Ferrara",
+    "genere": "Teatro",
+    "tipo": "Comicità",
+    "rassegna": "",
+    "descrizione": "Spettacolo che racconta la parabola di vittorie e sconfitte di un perdente.",
+    "fonte": "https://www.ticketone.it/artist/xhuliano-dule/",
+    "biglietti": "https://www.ticketone.it/event/xhuliano-dule-remuntada-sala-estense-22436845/",
+    "biglietti_tipo": "Acquista",
+    "disp": "disponibile",
+    "disp_nota": "",
+    "disp_verificata": "2026-11-22",
+    "sito_luogo": ""
+   }
+  }
+ ]
+}

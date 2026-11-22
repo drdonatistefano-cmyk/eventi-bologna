@@ -1,0 +1,489 @@
+[
+ {
+  "id": "e1495",
+  "data": "2026-11-22",
+  "artista": "Ma come ho fatto a sopravvivere?",
+  "luogo": "Teatro della Cooperativa",
+  "mancano": [
+   "protagonisti",
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://teatrodellacooperativa.it/eventi/ma-come-ho-fatto-a-sopravvivere-cronache-semiserie-del-mio-teatro-sociale/",
+  "esito": "letta",
+  "file": "povere/e1495.txt"
+ },
+ {
+  "id": "e603",
+  "data": "2026-11-22",
+  "artista": "Piccoli gesti, grandi emozioni",
+  "luogo": "Teatro Franco Parenti",
+  "mancano": [
+   "protagonisti",
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.teatrofrancoparenti.it/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "letta",
+  "file": "povere/e603.txt"
+ },
+ {
+  "id": "e1437",
+  "data": "2026-11-22",
+  "artista": "LELIO MORRA & DAVIDE BRIENZA • LIVEMUSIC!",
+  "luogo": "Ostello Bello Milano Duomo",
+  "mancano": [
+   "protagonisti",
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e640",
+  "data": "2026-11-22",
+  "artista": "OFF VANITY",
+  "luogo": "Teatro Lirico Giorgio Gaber",
+  "mancano": [
+   "protagonisti",
+   "descrizione"
+  ],
+  "url": "https://www.ticketone.it/eventseries/off-vanity-4277155/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e1452",
+  "data": "2026-11-22",
+  "artista": "Anche i Sogni Impossibili",
+  "luogo": "Teatro Elfo Puccini",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.elfo.org/spettacoli/2026-2027/anche-i-sogni-impossibili.htm",
+  "esito": "letta",
+  "file": "povere/e1452.txt"
+ },
+ {
+  "id": "e1453",
+  "data": "2026-11-22",
+  "artista": "Di a da in con su per tra fra Shakespeare",
+  "luogo": "Teatro Elfo Puccini",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.elfo.org/spettacoli/2026-2027/di-a-da-in-con-su-per-tra-fra-shakespeare.htm",
+  "esito": "letta",
+  "file": "povere/e1453.txt"
+ },
+ {
+  "id": "e1478",
+  "data": "2026-11-22",
+  "artista": "Diva",
+  "luogo": "Teatro Elfo Puccini",
+  "mancano": [
+   "protagonisti",
+   "ora"
+  ],
+  "url": "https://www.elfo.org/spettacoli/2025-2026/diva.htm",
+  "esito": "letta",
+  "file": "povere/e1478.txt"
+ },
+ {
+  "id": "e639",
+  "data": "2026-11-22",
+  "artista": "I Piccoli Pomeriggi Musicali 2026-2027",
+  "luogo": "Teatro Dal Verme",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.ticketone.it/eventseries/i-piccoli-pomeriggi-musicali-2026-2027-4208975/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e024",
+  "data": "2026-11-22",
+  "artista": "Jessica Pratt – recital di canto",
+  "luogo": "Teatro alla Scala",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.teatroallascala.org/en/season/2026-2027",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "titolo non trovato nella pagina comune"
+ },
+ {
+  "id": "e1451",
+  "data": "2026-11-22",
+  "artista": "(s)legati",
+  "luogo": "Teatro Elfo Puccini",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.elfo.org/spettacoli/2026-2027/slegati.htm",
+  "esito": "letta",
+  "file": "povere/e1451.txt"
+ },
+ {
+  "id": "e1456",
+  "data": "2026-11-22",
+  "artista": "Un Alt(r)o Everest",
+  "luogo": "Teatro Elfo Puccini",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.elfo.org/spettacoli/2026-2027/un-altro-everest.htm",
+  "esito": "letta",
+  "file": "povere/e1456.txt"
+ },
+ {
+  "id": "e631",
+  "data": "2026-11-22",
+  "artista": "Live In The Lobby",
+  "luogo": "Teatro Arcimboldi",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://www.ticketone.it/eventseries/live-in-the-lobby-4234480/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e1076",
+  "data": "2026-11-22",
+  "artista": "Music Time",
+  "luogo": "Conservatorio – Sala Verdi",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://www.consmi.it/event/music-time-cello-time-22-novembre/",
+  "esito": "letta",
+  "file": "povere/e1076.txt"
+ },
+ {
+  "id": "e353",
+  "data": "2026-11-22",
+  "artista": "Maurice Fulton",
+  "luogo": "Duro",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e1077",
+  "data": "2026-11-22",
+  "artista": "Musica Maestri! Xii edizione",
+  "luogo": "Conservatorio – Sala Verdi",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.consmi.it/event/musica-maestri-xi-edizione-22-novembre/",
+  "esito": "letta",
+  "file": "povere/e1077.txt"
+ },
+ {
+  "id": "e407",
+  "data": "2026-11-22",
+  "artista": "Praying Mantis",
+  "luogo": "Slaughter Club",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e491",
+  "data": "2026-11-22",
+  "artista": "The Witcher",
+  "luogo": "Teatro Arcimboldi",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.songkick.com/concerts/42898271-witcher-at-teatro-arcimboldi",
+  "esito": "letta",
+  "file": "povere/e491.txt"
+ },
+ {
+  "id": "e522",
+  "data": "2026-11-22",
+  "artista": "Zebrahead",
+  "luogo": "Legend Club",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e1458",
+  "data": "2026-11-22",
+  "artista": "Le Due Americhe",
+  "luogo": "Auditorium di Milano",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.sinfonicadimilano.org/it/eventi/2026-27/le-due-americhe/1673",
+  "esito": "letta",
+  "file": "povere/e1458.txt"
+ },
+ {
+  "id": "e226",
+  "data": "2026-11-22",
+  "artista": "Don Joe",
+  "luogo": "Alcatraz",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.songkick.com/concerts/43312658-don-joe-at-alcatraz-milano",
+  "esito": "letta",
+  "file": "povere/e226.txt"
+ },
+ {
+  "id": "e302",
+  "data": "2026-11-22",
+  "artista": "Johnny Marsiglia",
+  "luogo": "Biko",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e500",
+  "data": "2026-11-22",
+  "artista": "Tori Kelly",
+  "luogo": "Fabrique",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.songkick.com/concerts/43210281-tori-kelly-at-fabrique",
+  "esito": "letta",
+  "file": "povere/e500.txt"
+ },
+ {
+  "id": "e517",
+  "data": "2026-11-22",
+  "artista": "Widowspeak",
+  "luogo": "Arci Bellezza",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.arcibellezza.it/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e330",
+  "data": "2026-11-22",
+  "artista": "Levante",
+  "luogo": "Santeria Toscana 31",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.songkick.com/concerts/43427251-levante-at-santeria-toscana-31",
+  "esito": "letta",
+  "file": "povere/e330.txt"
+ },
+ {
+  "id": "e1454",
+  "data": "2026-11-22",
+  "artista": "Madri",
+  "luogo": "Teatro Elfo Puccini",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.elfo.org/spettacoli/2026-2027/madri.htm",
+  "esito": "letta",
+  "file": "povere/e1454.txt"
+ },
+ {
+  "id": "e1455",
+  "data": "2026-11-22",
+  "artista": "Metadietro",
+  "luogo": "Teatro Elfo Puccini",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.elfo.org/spettacoli/2026-2027/metadietro.htm",
+  "esito": "letta",
+  "file": "povere/e1455.txt"
+ },
+ {
+  "id": "e1431",
+  "data": "2026-11-22",
+  "artista": "Physical Tools – masterclass di movimento con Laia Santanach",
+  "luogo": "PimOff",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.pimoff.it/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "titolo non trovato nella pagina comune"
+ },
+ {
+  "id": "e611",
+  "data": "2026-11-23",
+  "artista": "Litanie: Furrer e Donatoni – Sound of Wander",
+  "luogo": "Teatro Elfo Puccini",
+  "mancano": [
+   "protagonisti",
+   "descrizione"
+  ],
+  "url": "https://iltaccodibacco.it/milano/spettacoli/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "titolo non trovato nella pagina comune"
+ },
+ {
+  "id": "e604",
+  "data": "2026-11-23",
+  "artista": "Pinocchio – Una favola alla rovescia",
+  "luogo": "Teatro Franco Parenti",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://iltaccodibacco.it/milano/spettacoli/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "letta",
+  "file": "povere/e604.txt"
+ },
+ {
+  "id": "e1459",
+  "data": "2026-11-23",
+  "artista": "Annodati Open Mic",
+  "luogo": "NODO bar",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e239",
+  "data": "2026-11-23",
+  "artista": "EsDeeKid",
+  "luogo": "Fabrique",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.fabriquemilano.it/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "titolo non trovato nella pagina comune"
+ },
+ {
+  "id": "e960",
+  "data": "2026-11-23",
+  "artista": "Maschi Etero Bianchi [ACCESSO RISERVATO AI TESSERATI ARCA]",
+  "luogo": "ARCA",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e596",
+  "data": "2026-11-23",
+  "artista": "Alessandro Bergonzoni – Voto di vastità",
+  "luogo": "Teatro Carcano",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://iltaccodibacco.it/milano/spettacoli/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "letta",
+  "file": "povere/e596.txt"
+ },
+ {
+  "id": "e961",
+  "data": "2026-11-23",
+  "artista": "Poetry Slam vol. 3",
+  "luogo": "Ostello Bello Milano Centrale",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e452",
+  "data": "2026-11-23",
+  "artista": "Sondre Lerche",
+  "luogo": "Arci Bellezza",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.arcibellezza.it/",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e206",
+  "data": "2026-11-23",
+  "artista": "Chiara Galiazzo",
+  "luogo": "Teatro Manzoni",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.songkick.com/concerts/43219436-chiara-galiazzo-at-teatro-manzoni",
+  "esito": "letta",
+  "file": "povere/e206.txt"
+ },
+ {
+  "id": "e1438",
+  "data": "2026-11-23",
+  "artista": "Comedy Night! | Open Mic",
+  "luogo": "Ostello Bello Milano Duomo",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e344",
+  "data": "2026-11-23",
+  "artista": "Mara Sattei",
+  "luogo": "Santeria Toscana 31",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.songkick.com/concerts/43102770-mara-sattei-at-santeria-toscana-31",
+  "esito": "letta",
+  "file": "povere/e344.txt"
+ },
+ {
+  "id": "e447",
+  "data": "2026-11-23",
+  "artista": "Slow Pilot",
+  "luogo": "Spazio Teatro 89",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "",
+  "esito": "nessuna pagina dell'evento"
+ },
+ {
+  "id": "e1265",
+  "data": "2026-11-24",
+  "artista": "Iliade, la Ballata di Tersite",
+  "luogo": "Teatro Filodrammatici",
+  "mancano": [
+   "protagonisti",
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://teatrofilodrammatici.eu/spettacoli/iliade-la-ballata-di-tersite-matinee/",
+  "esito": "letta",
+  "file": "povere/e1265.txt"
+ }
+]

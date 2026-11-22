@@ -1,0 +1,193 @@
+[
+ {
+  "id": "e054",
+  "data": "2026-11-25",
+  "artista": "Il Lago dei Cigni",
+  "luogo": "Teatro Nuovo",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://www.teatronuovoferrara.com/it/spettacoli/prossimi-spettacoli/danza/il-lago-dei-cigni-2.html",
+  "esito": "letta",
+  "file": "povere/e054.txt"
+ },
+ {
+  "id": "e158",
+  "data": "2026-11-26",
+  "artista": "Chiedi cos’erano i giù box",
+  "luogo": "Auditorium Pandurera",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.fondazioneteatroborgatti.it/tc-events/chiedi-coserano-i-giu-box-marino-bartoletti/",
+  "esito": "letta",
+  "file": "povere/e158.txt"
+ },
+ {
+  "id": "e100",
+  "data": "2026-11-28",
+  "artista": "Omaggio a De André",
+  "luogo": "Sala Estense",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.ticketone.it/eventseries/omaggio-a-de-andre-4137037/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e077",
+  "data": "2026-11-29",
+  "artista": "Artisti cioé Amici 2026",
+  "luogo": "Teatro Comunale Claudio Abbado",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://ferraramusica.it/eventi/artisti-cioe-amici-2026-jennifer-panebianco-karina-tseng/",
+  "esito": "letta",
+  "file": "povere/e077.txt"
+ },
+ {
+  "id": "e101",
+  "data": "2026-11-29",
+  "artista": "BeatleStory – Sgt. Pepper 60th Anniversary",
+  "luogo": "Sala Estense",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.ticketone.it/artist/beatlestory/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e159",
+  "data": "2026-12-02",
+  "artista": "Volpone",
+  "luogo": "Auditorium Pandurera",
+  "mancano": [
+   "descrizione",
+   "ora"
+  ],
+  "url": "https://www.fondazioneteatroborgatti.it/tc-events/volpone-edoardo-siravo/",
+  "esito": "letta",
+  "file": "povere/e159.txt"
+ },
+ {
+  "id": "e058",
+  "data": "2026-12-02",
+  "artista": "Prodigi",
+  "luogo": "Teatro Nuovo",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://www.teatronuovoferrara.com/it/spettacoli/prossimi-spettacoli/teatro-eventi-ospitati/prodigi.html",
+  "esito": "letta",
+  "file": "povere/e058.txt"
+ },
+ {
+  "id": "e059",
+  "data": "2026-12-03",
+  "artista": "Inimitabile",
+  "luogo": "Teatro Nuovo",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://www.teatronuovoferrara.com/it/spettacoli/prossimi-spettacoli/comico/inimitabile.html",
+  "esito": "letta",
+  "file": "povere/e059.txt"
+ },
+ {
+  "id": "e060",
+  "data": "2026-12-04",
+  "artista": "Number 23",
+  "luogo": "Teatro Nuovo",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://www.teatronuovoferrara.com/it/spettacoli/prossimi-spettacoli/spettacolo-e-cultura/number-23-vita-e-splendori-di-michael-jordan.html",
+  "esito": "letta",
+  "file": "povere/e060.txt"
+ },
+ {
+  "id": "e102",
+  "data": "2026-12-05",
+  "artista": "Serena Bongiovanni - Foramalocchiu",
+  "luogo": "Sala Estense",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.ticketone.it/artist/serena-bongiovanni/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e079",
+  "data": "2026-12-06",
+  "artista": "I Solisti dell’Orchestra Città di Ferrara",
+  "luogo": "Teatro Comunale Claudio Abbado",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://ferraramusica.it/eventi/i-solisti-dellorchestra-citta-di-ferrara/",
+  "esito": "letta",
+  "file": "povere/e079.txt"
+ },
+ {
+  "id": "e080",
+  "data": "2026-12-08",
+  "artista": "Tra liturgia e concerto: la due anime dell’Organo",
+  "luogo": "Teatro Comunale Claudio Abbado",
+  "mancano": [
+   "protagonisti"
+  ],
+  "url": "https://ferraramusica.it/eventi/tra-liturgia-e-concerto-la-due-anime-dellorgano/",
+  "esito": "letta",
+  "file": "povere/e080.txt"
+ },
+ {
+  "id": "e103",
+  "data": "2026-12-09",
+  "artista": "Chiara Galiazzo – Nuova Luce",
+  "luogo": "Teatro Nuovo",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.ticketone.it/artist/chiara-galiazzo/",
+  "esito": "errore: RuntimeError"
+ },
+ {
+  "id": "e160",
+  "data": "2026-12-10",
+  "artista": "Venerdì 13",
+  "luogo": "Auditorium Pandurera",
+  "mancano": [
+   "ora"
+  ],
+  "url": "https://www.fondazioneteatroborgatti.it/tc-events/venerdi-13-martina-colombari/",
+  "esito": "letta",
+  "file": "povere/e160.txt"
+ },
+ {
+  "id": "e063",
+  "data": "2026-12-11",
+  "artista": "People, Places and Things",
+  "luogo": "Teatro Nuovo",
+  "mancano": [
+   "protagonisti",
+   "descrizione"
+  ],
+  "url": "https://www.teatronuovoferrara.com/it/spettacoli/prossimi-spettacoli/prosa/people-places-and-things.html",
+  "esito": "letta",
+  "file": "povere/e063.txt"
+ },
+ {
+  "id": "e142",
+  "data": "2026-12-12",
+  "artista": "Antonio Ornano – (In)Grato",
+  "luogo": "Teatro De Micheli",
+  "mancano": [
+   "descrizione"
+  ],
+  "url": "https://www.teatrodemicheli.it/nqcontent.cfm?a_id=14256",
+  "pagina": "comune a più eventi: testo solo intorno al titolo",
+  "esito": "titolo non trovato nella pagina comune"
+ }
+]
