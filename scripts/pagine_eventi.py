@@ -165,7 +165,7 @@ def pagina(k, ev, ind, altri, url):
             f"<meta property=\"og:image\" content=\"{SITO}/anteprima.png\"><link rel=\"stylesheet\" href=\"/evento/pagine.css\">{script_ld}"
             '<script data-goatcounter="https://eventibologna.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head>'
             '<body><header class="top"><div class="w"><a class="marchio" href="/">Ach\'s Events Guide</a><nav class="guide" aria-label="Le guide di Ach">'
-            '<a href="https://achplaces.com">Luoghi</a><a href="https://achdinners.com">Ristoranti</a><a href="https://achevents.com">Eventi</a></nav></div></header>'
+            '<a href="https://achplaces.com">Luoghi</a><a href="https://achdinners.com">Ristoranti</a><a href="https://achevents.com">Eventi</a><a href="https://achdishes.com">Ricette</a></nav></div></header>'
             '<main class="w">' + "".join(corpo) + "</main>" + piede + "</body></html>\n")
 
 

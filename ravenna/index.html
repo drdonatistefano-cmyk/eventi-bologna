@@ -807,7 +807,7 @@ html body body.nA #qwrap{display:none!important}body.nA{--qh:0px}#nA:empty{displ
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
 </style>
 <style id="come-recipes">
-/* 22/11/2026 — soluzioni di AchRecipes: icone nelle sezioni e nei filtri, finestre in fondo alla pagina, «mostra altri» */
+/* 22/11/2026 — soluzioni di Ach's Dishes (già AchRecipes): icone nelle sezioni e nei filtri, finestre in fondo alla pagina, «mostra altri» */
 /* linguette e periodi: tutti uguali, icona sopra il nome, su ogni schermo (22/11 19:41) */
 html body .modes{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:6px;overflow:visible;-webkit-mask-image:none;mask-image:none}
 html body .modes button{flex:none;width:auto;min-width:0;max-width:none;flex-direction:column;justify-content:center;height:60px;padding:4px 2px;gap:3px;border-radius:14px;white-space:nowrap;font:600 13px var(--sans);letter-spacing:-.005em}
@@ -860,6 +860,12 @@ html body #more{border-radius:999px;height:48px;padding:0 26px;font-weight:700;c
 /* iPad in verticale: nella barra non c'è posto anche per «Azzera i filtri» (restano «Azzera tutto» sotto i riquadri e il pulsante in basso) */
 @media(min-width:760px) and (max-width:1023px){body.pcbar #bar .azzera{display:none!important}body.pcbar #share .lbl{display:none}}
 </style>
+<style id="dishes-guide">
+/* 23/11/2026 — quarta guida Ach's Dishes nei collegamenti: «Collaborano con noi» va a capo da sinistra;
+   sotto i 360 px bottoni più stretti perché i tre nomi stiano interi */
+.ach-guide__btn.ach-guide__coll{margin-left:0}
+@media (max-width:359px){.ach-guide{gap:6px}.ach-guide__btn{gap:6px;padding:7px 6px}.ach-guide__ico.ach-logo,.ach-guide__ico.ach-logo svg{width:26px;height:26px}.ach-guide__txt b{font-size:13px}.ach-guide__txt small{font-size:11px}}
+</style>
 </head>
 <body class="nA">
 <header class="hero wrap">
@@ -870,6 +876,7 @@ html body #more{border-radius:999px;height:48px;padding:0 26px;font-weight:700;c
  <nav class="ach-guide" aria-label="Le guide di Ach">
    <a class="ach-guide__btn" href="https://achdinners.com/" data-goatcounter-click="guide/vai-dinners" data-goatcounter-title="Vai a Ach's Dinners Guide"><span class="ach-guide__ico ach-logo" aria-hidden="true"><svg viewBox="0 0 100 100" width="34" height="34"><circle cx="50" cy="50" r="48" fill="#8a6d1f"/><circle cx="50" cy="50" r="44" fill="none" stroke="#f6efe3" stroke-width="1.6"/><circle cx="50" cy="50" r="33" fill="#f6efe3"/><g transform="translate(29 29) scale(.42)" stroke="#8a6d1f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M34 22v18c0 6 4 9 9 9s9-3 9-9V22M43 22v56"/><path d="M66 78V22c-7 6-10 16-10 28h10"/></g></svg></span><span class="ach-guide__txt"><b>Dinners</b><small>dove mangiare</small></span><span class="ach-guide__arr" aria-hidden="true">→</span></a>
    <a class="ach-guide__btn" href="https://achplaces.com/" data-goatcounter-click="guide/vai-places" data-goatcounter-title="Vai a Ach's Places Guide"><span class="ach-guide__ico ach-logo" aria-hidden="true"><svg viewBox="0 0 100 100" width="34" height="34"><circle cx="50" cy="50" r="48" fill="#2f7a5c"/><circle cx="50" cy="50" r="41" fill="none" stroke="#f6efe4" stroke-width="4"/><g transform="translate(24 22) scale(.52)" stroke="#f6efe4" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M50 86C50 86 24 58 24 40a26 26 0 0 1 52 0C76 58 50 86 50 86Z"/><circle cx="50" cy="40" r="5" fill="#f6efe4"/></g></svg></span><span class="ach-guide__txt"><b>Places</b><small>cosa visitare</small></span><span class="ach-guide__arr" aria-hidden="true">→</span></a>
+   <a class="ach-guide__btn" href="https://achdishes.com/" data-goatcounter-click="guide/vai-dishes" data-goatcounter-title="Vai a Ach's Dishes"><span class="ach-guide__ico ach-logo" aria-hidden="true"><svg viewBox="0 0 100 100" width="34" height="34"><circle cx="50" cy="50" r="48" fill="#a4462b"/><circle cx="50" cy="50" r="44" fill="none" stroke="#f6efe4" stroke-width="1.6"/><circle cx="50" cy="50" r="33" fill="#f6efe4"/><g transform="translate(29 30) scale(.42)" stroke="#a4462b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M30 62 C14 60 10 40 24 34 C24 20 40 14 50 22 C60 14 76 20 76 34 C90 40 86 60 70 62"/><path d="M30 62 V80 H70 V62"/><path d="M30 71 H70"/></g></svg></span><span class="ach-guide__txt"><b>Dishes</b><small>cosa cucinare</small></span><span class="ach-guide__arr" aria-hidden="true">→</span></a>
 <a class="ach-guide__btn ach-guide__coll" href="/collaborano/" data-goatcounter-click="guide/collaborano" data-goatcounter-title="Collaborano con noi"><span class="ach-guide__ico" aria-hidden="true">🤝</span><span class="ach-guide__txt"><b>Collaborano con noi</b></span><span class="ach-guide__arr" aria-hidden="true">→</span></a>
  </nav>
  <div class="stats">
@@ -1278,7 +1285,7 @@ function pblock(e,left){const tot=Math.max(1,Math.round((D(e.fino)-D(e.data))/86
  const startIn=Math.round((D(e.data)-D(today))/864e5);
  const sp=e._kind!=="m",note=fut?`${sp?"Inizia":"Apre"} ${startIn===1?"<b>domani</b>":`tra <b>${dur(startIn)}</b>`} · ${sp?"in programma per":"resta aperta"} ${dur(tot)}`:left===0?`<b>Oggi è l'ultimo giorno</b>`:left<=14?`<b>${sp?"Finisce":"Chiude"} tra ${dur(left)}</b>`:`Ancora <b>${left>=60?"circa ":""}${dur(left)}</b> ${sp?"in programma":"di apertura"}`;
  return `<div class="pblock" aria-label="Periodo: dal ${fY(e.data)} al ${fY(e.fino)}"><div class="pdates"><span><small>Dal</small><b>${fY(e.data)}</b></span><span class="arr" aria-hidden="true">→</span><span><small>Al</small><b>${fY(e.fino)}</b></span></div>${fut?"":`<div class="pbar"><i style="width:${pct.toFixed(1)}%"></i></div>`}<div class="pnote">${note}</div></div>`}
-/* 16/11/2026: tasto WhatsApp in ogni scheda aperta, uguale a quello di AchRecipes */
+/* 16/11/2026: tasto WhatsApp in ogni scheda aperta, uguale a quello di Ach's Dishes */
 const WAI='<svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>';
 function waEv(e){const u=WEB_URL+"?cerca="+encodeURIComponent(e.artista);
  const quando=e._kind==="m"?`dal ${fmt(e.data,{day:"numeric",month:"long"})} al ${fmt(e.fino,{day:"numeric",month:"long"})}`:(e.fino&&e.fino!==e.data?`dal ${fmt(e.data,{day:"numeric",month:"long"})} al ${fmt(e.fino,{day:"numeric",month:"long"})}`:fmt(e.data,{weekday:"long",day:"numeric",month:"long"}))+(/\d/.test(e.ora||"")?` · ore ${e.ora}`:"");
@@ -1757,7 +1764,7 @@ body.nA #qwrap{display:none!important} body.nA{--qh:0px}
  const F=document.createElement("div");F.id="nAf";F.innerHTML='<div class="scr" data-chiudi="1"></div><section class="sh" role="dialog" aria-modal="true" aria-label="Filtri"><div class="gr" aria-hidden="true"></div><div class="hd"><h2>Filtri</h2><button type="button" class="x" data-chiudi="1" aria-label="Chiudi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div><div class="bd2" id="nAb"></div><div class="ft"><button type="button" class="a1" data-reset>Azzera tutto</button><button type="button" class="a2" data-chiudi="1" id="nAgo">Mostra</button></div></section>';
  document.body.appendChild(F);
  const byN=m=>[...m].sort((a,b)=>b[1]-a[1]);
- /* 22/11/2026 (come AchRecipes): un'icona per ogni gruppo di filtri */
+ /* 22/11/2026 (come Ach's Dishes): un'icona per ogni gruppo di filtri */
  const ICO=k=>({g:MODE==="c"?"🏛️":MODE==="m"?"🖼️":MODE==="i"?"📚":MODE==="p"?"🏟️":"🎭",m:"📅",c:"📍",y:"🏷️",l:MODE==="c"?"🎬":MODE==="p"?"🏟️":"🏛️",t:MODE==="p"?"🏆":MODE==="c"?"🗣️":"🔖",r:MODE==="p"?"👥":MODE==="c"?"🎞️":"🎪",d:"🎫"})[k]||"•";
  function opts(k){
   const on=v=>st[k].has(v);
@@ -1816,7 +1823,7 @@ body.nA #qwrap{display:none!important} body.nA{--qh:0px}
 
 </script>
 <script>
-/* 22/11/2026 (come AchRecipes): su telefono e iPad, quando la barra resta in alto, «Filtri» scende in basso
+/* 22/11/2026 (come Ach's Dishes): su telefono e iPad, quando la barra resta in alto, «Filtri» scende in basso
    vicino al pollice; in fondo all'elenco i successivi si caricano da soli poco prima di arrivarci */
 (function(){try{
  const bar=document.getElementById("bar"),fab=document.getElementById("fabf"),fb=document.getElementById("fbtn"),bd=document.getElementById("fbadge"),fn=document.getElementById("fabfn"),F=()=>document.getElementById("nAf");
