@@ -67,6 +67,13 @@ GUIDE = {
             "guida": {"url": "index.html", "contenuto": "document.querySelectorAll('#list article.card').length>3",
                       "foto": None, "dati": r"/eventi(-presto)?\.js"},
         },
+    },    # 23/11/2026 (Stefano: «velocizza tutti i siti»): anche Ach's Dishes, i dati leggeri sono dentro la pagina
+    "dishes": {
+        "nome": "Dishes", "base": "https://achdishes.com/",
+        "pagine": {
+            "guida": {"url": "", "contenuto": "document.querySelectorAll('article.card').length>5",
+                      "foto": None, "dati": None},
+        },
     },
 }
 
@@ -249,8 +256,28 @@ def tocchi_events(pg):
     return r
 
 
+def tocchi_dishes(pg):
+    """23/11/2026: Ach's Dishes, come per le altre guide: una portata, una ricerca, lo scorrimento, una scheda."""
+    r = {}
+    bt = pg.locator("button", has_text="Primi")
+    if bt.count():
+        misura(pg, "portata «Primi»", lambda: bt.first.tap(), r)
+        misura(pg, "togli «Primi»", lambda: bt.first.tap(), r)
+    q = pg.locator("input[type=search], input#q, input#cerca").first
+    if q.count() and q.is_visible():
+        misura(pg, "cerca «ragù»", lambda: (q.tap(), pg.keyboard.type("ragù", delay=80)), r)
+        q.fill("")
+        pg.wait_for_timeout(600)
+    misura(pg, "scorri", lambda: [(pg.mouse.wheel(0, 1500), pg.wait_for_timeout(200)) for _ in range(8)], r)
+    pg.mouse.wheel(0, -20000)
+    pg.wait_for_timeout(500)
+    misura(pg, "apri scheda", lambda: pg.locator("article.card a.clink").nth(2).tap(), r)
+    return r
+
+
 TOCCHI = {("places", "guida"): tocchi_places_guida, ("places", "mappa"): tocchi_places_mappa,
-          ("dinners", "guida"): tocchi_dinners, ("events", "guida"): tocchi_events}
+          ("dinners", "guida"): tocchi_dinners, ("events", "guida"): tocchi_events,
+          ("dishes", "guida"): tocchi_dishes}
 
 
 def uso(b, chiave, g, nome_p, p):
