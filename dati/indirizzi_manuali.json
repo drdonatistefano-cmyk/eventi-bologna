@@ -78,5 +78,26 @@
   "cap": "48018",
   "comune": "Faenza",
   "fonte": "sito ufficiale del luogo, letto con il lettore web dell'officina il 19/11/2026: https://accademiaperduta.it/teatro-masini-faenza/ (contatti del teatro)"
+ },
+ "DumBO – Binario Centrale|Bologna": {
+  "via": "Via Camillo Casarini",
+  "civico": "19",
+  "cap": "40131",
+  "comune": "Bologna",
+  "fonte": "mail di DumBO (aleandro.ferrara@dumbospace.it), 23/11/2026"
+ },
+ "DumBO – Acquario|Bologna": {
+  "via": "Via Camillo Casarini",
+  "civico": "19",
+  "cap": "40131",
+  "comune": "Bologna",
+  "fonte": "mail di DumBO (aleandro.ferrara@dumbospace.it), 23/11/2026"
+ },
+ "Test – Nuovo Prototipo Urbano (viale Giosuè Carducci 30)|Bologna": {
+  "via": "Viale Giosuè Carducci",
+  "civico": "30",
+  "cap": "",
+  "comune": "Bologna",
+  "fonte": "mail di DumBO (aleandro.ferrara@dumbospace.it), 23/11/2026"
  }
 }
