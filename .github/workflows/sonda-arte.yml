@@ -1,0 +1,17 @@
+name: Sonda arte.it (temporanea)
+on: { workflow_dispatch: {} }
+permissions: { contents: read }
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: |
+          curl -s -A "Mozilla/5.0 (compatible; AchEvents/1.0)" https://www.arte.it/calendario-arte/milano/2026/11/ -o p.html
+          wc -c p.html
+          python3 - <<'PY'
+          import re
+          s=open('p.html',encoding='utf-8',errors='replace').read()
+          i=s.find('link_mostre_list'); print('POS',i)
+          print(s[max(0,i-600):i+2500])
+          PY
