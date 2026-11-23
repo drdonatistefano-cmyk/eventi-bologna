@@ -95,7 +95,9 @@ def gia(x):
         if stesso_luogo and q > 0: return e
         if q >= 0.8 and e["data"] == x["data"]: return e
         # 23/11/2026: siti con più sale (TCBO, ERT): stesso titolo, date che si toccano, fonte sullo stesso sito di teatro
-        if q >= 0.8 and RA.stesso_organizzatore(x.get("fonte"), e.get("fonte")): return e
+        if q >= 0.8 and (RA.stesso_organizzatore(x.get("fonte"), e.get("fonte")) or RA.stesso_biglietto(x.get("biglietti"), e.get("biglietti"))): return e
+        # titoli fatti di sigle («U.d.o.» / «U.D.O.»): nessuna parola lunga, si confrontano senza punti
+        if stesso_luogo and e["data"] == x["data"] and A.stesso_titolo(e["artista"], x["artista"]): return e
     return None
 
 
@@ -282,6 +284,8 @@ def arte():
             c = comune(b["citta"])
             if not c: scarta("fuori perimetro"); continue
             if fin < OGGI or ini > LIMITE: scarta("finita o troppo lontana"); continue
+            if RA.permanente(ini, fin, OGGI): scarta("permanente o di anni"); continue
+            if re.search(r"(?i)\bfestival\b", tit): scarta("festival, non mostra"); continue
             tt = tok(tit)
             if any((len(tt & tok(x["titolo"])) / max(1, min(len(tt), len(tok(x["titolo"])))) >= 0.6) for x in mo if tok(x["titolo"])):
                 scarta("già in guida"); continue

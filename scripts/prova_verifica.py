@@ -249,6 +249,18 @@ prova("doppioni: due biglietterie generali non bastano a dire «stesso spettacol
       not RAU.stesso_organizzatore("https://www.ticketone.it/event/a/", "https://www.ticketone.it/event/b/"))
 prova("doppioni: Schiaccianoci alla Scala e al Lirico restano due spettacoli",
       not RAU.stesso_organizzatore("https://www.teatroallascala.org/", "https://www.ticketone.it/artist/balletto-milano/"))
+prova("doppioni: fonte su un sottodominio dello stesso teatro (stagione2027.tcbo.it ↔ tcbo.it)",
+      RAU.stesso_organizzatore("https://stagione2027.tcbo.it/", "https://www.tcbo.it/evento/danza/tao-dancetheatre-2027/"))
+prova("doppioni: due articoli di giornale non dicono «stesso spettacolo»",
+      not RAU.stesso_organizzatore("https://www.connessiallopera.it/a/", "https://www.connessiallopera.it/b/"))
+prova("doppioni: stessa pagina d'acquisto dell'evento = stesso spettacolo (Ulisse al Comunale, 23/11)",
+      RAU.stesso_biglietto("https://tcbo.vivaticket.it/it/event/il-ritorno-di-ulisse-in-patria/316600",
+                           "https://tcbo.vivaticket.it/it/event/il-ritorno-di-ulisse-in-patria/316600?x=1"))
+prova("doppioni: la pagina di un luogo su una biglietteria non basta",
+      not RAU.stesso_biglietto("https://www.ticketone.it/city/bologna-218/venue/teatro-duse-16236/", "https://www.ticketone.it/city/bologna-218/venue/teatro-duse-16236/"))
+prova("mostre: allestimenti di anni scartati, mostre vere tenute",
+      RAU.permanente("2013-12-03", "2030-12-31", "2026-11-23") and RAU.permanente("2023-06-20", "2028-06-20", "2026-11-23")
+      and not RAU.permanente("2026-11-20", "2027-02-07", "2026-11-23") and not RAU.permanente("2026-12-11", "2027-05-02", "2026-11-23"))
 _sedi = {"Foyer Rossini": "Teatro Comunale – Foyer Rossini", "Persiceto": ["Teatro Comunale di San Giovanni in Persiceto", "San Giovanni in Persiceto"],
          "Auditorium Manzoni": "Auditorium Manzoni", "Teatro Comunale(?! di)": "Teatro Comunale"}
 prova("sala: «Nabucco … Teatro Comunale» va al Comunale, non all'Auditorium Manzoni",

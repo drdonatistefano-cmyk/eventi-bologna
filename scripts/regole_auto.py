@@ -55,11 +55,30 @@ def dominio(u):
     return d
 
 
+GENERALI = r"ticketone|vivaticket|dice\.fm|songkick|feverup|ticketmaster|eventbrite|arte\.it|teatro\.it|bolognatoday|bolognawelcome|connessiallopera|operapertutti|liveticket|google|facebook|instagram"
+
+
+def base(u):
+    """Dominio registrato: stagione2027.tcbo.it → tcbo.it"""
+    return ".".join(dominio(u).split(".")[-2:])
+
+
 def stesso_organizzatore(f1, f2):
-    """Le due fonti sono pagine dello stesso sito di teatro? (le biglietterie generali non contano)"""
-    a, b = dominio(f1), dominio(f2)
+    """Le due fonti sono pagine dello stesso sito di teatro? (biglietterie generali e giornali non contano)"""
+    a, b = base(f1), base(f2)
     if not a or not b or a != b: return False
-    return not re.search(r"ticketone|vivaticket|dice\.fm|songkick|feverup|ticketmaster|eventbrite|arte\.it|teatro\.it|bolognatoday|bolognawelcome", a)
+    return not re.search(GENERALI, a)
+
+
+def stesso_biglietto(b1, b2):
+    """Stessa pagina d'acquisto di un singolo evento (non la pagina di un luogo o di una biglietteria)."""
+    def n(u):
+        u = re.sub(r"[?#].*$", "", (u or "").strip().lower()).rstrip("/")
+        return re.sub(r"^https?://(www\.)?", "", u)
+    x, y = n(b1), n(b2)
+    if not x or x != y: return False
+    percorso = x.split("/", 1)[1] if "/" in x else ""
+    return percorso.count("/") >= 1 and not re.search(r"/(venue|city|cityd|luogo|location)/|^(biglietti|tickets?|shop)$", percorso)
 
 
 def sala_da_testo(testo, sedi, base):
@@ -71,3 +90,13 @@ def sala_da_testo(testo, sedi, base):
         if m and (pos is None or m.start() < pos): meglio, pos = v, m.start()
     if meglio is None: return (base, None)
     return tuple(meglio) if isinstance(meglio, list) else (meglio, None)
+
+
+def permanente(inizio, fine, oggi):
+    """Allestimenti di anni (2013→2030, 2023→2028): non sono mostre temporanee per la guida."""
+    import datetime as _d
+    try:
+        i, f, o = (_d.date.fromisoformat(x) for x in (inizio, fine, oggi))
+    except ValueError:
+        return False
+    return (f - i).days > 540 or (o - i).days > 365
