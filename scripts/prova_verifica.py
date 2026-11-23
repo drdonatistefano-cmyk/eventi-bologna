@@ -276,5 +276,24 @@ _ea = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "eventi_auto
 prova("eventi_auto usa la lettura nuova di arte.it e la regola dello stesso organizzatore",
       "RA.arte_blocchi(" in _ea and "RA.stesso_organizzatore(" in _ea and 'e.get("luogo") or luogo' in _ea)
 
+# ---------------------------------------------------------------- descrizioni lette dai siti (23/11/2026)
+# Stefano: «usa cobra per cercare descrizioni, link sbagliati da correggere ed ogni azione necessaria per migliorare il
+# sito». Casi veri trovati in guida il 23/11: menu dell'Ecoteatro, intestazioni dei Magazzini Generali, contatti del Bravo.
+prova("descrizioni: il menu del sito non è una descrizione",
+      RAU.pulisci_descrizione("ECOTEATRO THE GALLERY THE FRAME LO STAFF STAGIONE 2026/27 BIGLIETTI E ABBONAMENTI PER LE SCUOLE CORSI DI TEATRO AFFITTA IL TEATRO CONTATTI HOME") == "")
+prova("descrizioni: via l'intestazione «TITOLO | LOCALE | DATA | ORE»",
+      RAU.pulisci_descrizione("SANTI FRANCESI | MAGAZZINI GEENRALI | 01 APRILE 2027 | ORE 20.00 | MAGAZZINI GENERALI Un viaggio sonoro intimo e potente sta per arrivare.")
+      == "Un viaggio sonoro intimo e potente sta per arrivare.")
+prova("descrizioni: mai telefoni ed email in guida",
+      RAU.pulisci_descrizione("Dettagli a breve… ___ INFO & PRENOTAZIONI: 051 266112 / 333 5973089 info@bravocaffe.it PRENOTA QUI IL TUO TAVOLO PER LA CENA") == "")
+prova("descrizioni: la frase tagliata a metà finisce con i puntini, non con «e»",
+      RAU.pulisci_descrizione("Diva è un monologo comico che mescola stand-up comedy, autobiografia e") == "Diva è un monologo comico che mescola stand-up comedy, autobiografia…")
+prova("descrizioni: data, ora e sala in mezzo al testo vanno via",
+      "Sala Puccini" not in RAU.pulisci_descrizione("VOICE TIME I concerti della domenica mattina Domenica 29 novembre ore 11:00 Sala Puccini VOICE TIME Concerti a cura delle classi di canto"))
+prova("descrizioni: quelle buone e quelle generiche restano come sono",
+      all(RAU.pulisci_descrizione(t) == t for t in ("Con Luca Bizzarri.", "I Double Soul propongono un viaggio nella musica soul.",
+                                                   "Serata nel club APOLLO CLUB MILANO.", "Comicità all'ARCA.", "Spettacolo di prosa.")))
+prova("eventi_auto ripulisce le descrizioni lette dai siti", _ea.count("RA.pulisci_descrizione(") >= 2)
+
 print(f"\n{len(FALLITE)} prove fallite" if FALLITE else "\nTutte le prove passano")
 sys.exit(1 if FALLITE else 0)

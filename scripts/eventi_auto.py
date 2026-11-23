@@ -416,7 +416,8 @@ def locali_sito():
                       "sold out" if esaurito else "disponibile" if bl else "da verificare", u)
             det = testo.split("Dettagli", 1)[1] if "Dettagli" in testo else ""
             frase = re.split(r"(?<=[.!?])\s", det.strip())[0] if det.strip() else ""
-            if 30 <= len(frase) <= 260: x["descrizione"] = " ".join(frase.split()[:25]).rstrip(",;:") + ("" if frase.rstrip().endswith((".", "!", "?")) else "…")
+            frase = RA.pulisci_descrizione(frase, tit, nome) if frase else ""                                  # 23/11: niente telefoni ed email
+            if 30 <= len(frase) <= 260: x["descrizione"] = " ".join(frase.split()[:25]).rstrip(",;:") + ("" if frase.rstrip().endswith((".", "!", "?", "…")) else "…")
             n += aggiungi(x, nome)
         R["fonti"][nome] = {"letti": letti, "aggiunti": n, "pagine_evento": len(links), "ultima_data": ultima}
 
@@ -447,7 +448,8 @@ def siti_locali():
             x = nuovo(e["titolo"], e["data"], e["fino"], e["ora"] or "n.d.", e.get("luogo") or luogo, e.get("comune") or com, g, t, bl,
                       "sold out" if e["esaurito"] else ("disponibile" if bl else "da verificare"), e["fonte"] or (c["url"] if isinstance(c["url"], str) else c["url"][0]))
             if bl and re.search(r"/venue/|/biglietti/?$|shop\.", bl): x["biglietti_tipo"] = "Biglietteria"
-            if e["descrizione"] and len(e["descrizione"]) > 30 and not re.match(r"\s*(https?://|www\.)", e["descrizione"]): x["descrizione"] = e["descrizione"]
+            de = RA.pulisci_descrizione(e["descrizione"], e["titolo"], luogo) if e["descrizione"] else ""   # 23/11: menu, contatti, intestazioni via
+            if de and len(de) > 30 and not re.match(r"\s*(https?://|www\.)", de): x["descrizione"] = de
             n += aggiungi(x, c["nome"])
         nostri = sum(1 for e in ev if e["luogo"] == luogo and (e.get("fino") or e["data"]) >= OGGI)
         rep[c["nome"] + ("" if c["nome"] not in rep else " (2)")] = {"sul_sito": len(evs), "in_guida": nostri, "aggiunti": n, "esito": esito, "secondi": round(time.time() - t0)}

@@ -445,7 +445,25 @@ def vista_citta():
         v.se(quota >= 0.5, "Events: spettacoli con indirizzo del luogo", f"{quota:.0%} delle pagine (sotto il 50% Google ne vede pochi: "
              "guardare dati/indirizzi_da_vedere.json)" if quota < 0.5 else f"{quota:.0%} delle pagine", grave=False)
 
+    def descrizioni():
+        """23/11/2026 (Stefano: «cerca descrizioni… ogni azione necessaria per migliorare il sito»): nessuna scheda con un
+        pezzo di pagina al posto della descrizione (menu del sito, telefoni ed email, intestazioni in maiuscolo)."""
+        import regole_auto as RA
+        sporche = []
+        for cart, nome in (("", "Bologna"), ("milano/", "Milano"), ("ravenna/", "Ravenna"), ("ferrara/", "Ferrara")):
+            p = os.path.join(RADICE, cart, "eventi.js")
+            if not os.path.exists(p):
+                continue
+            for e in (js_dati(open(p, encoding="utf-8").read()) or {}).get("eventi", []):
+                if RA.sporca(e.get("descrizione") or ""):
+                    sporche.append(f"{nome} {e.get('id')}")
+        if sporche:
+            v.avviso("Events: descrizioni pulite", f"{len(sporche)} schede con testo preso dalla pagina (python3 scripts/pulisci_descrizioni.py): " + ", ".join(sporche[:8]))
+        else:
+            v.ok("Events: descrizioni pulite", "nessun menu, contatto o intestazione al posto della descrizione")
+
     protetto(v, "Città collegate dappertutto", collegamenti)
+    protetto(v, "Events: descrizioni pulite", descrizioni)
     protetto(v, "Spettacoli in due parti", due_parti)
     protetto(v, "Pagine dei singoli spettacoli", pagine_evento)
     protetto(v, "Nuove province: soglia del business plan", soglia)
