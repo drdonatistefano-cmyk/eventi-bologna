@@ -63,7 +63,7 @@ if not TOKEN:
 else:
     try:
         today = now.date()
-        lancio = dt.date(2026, 11, 4) if GUIDA == "events" else dt.date(2026, 11, 8)  # GoatCounter risponde 404 per periodi prima della nascita del sito
+        lancio = {"events": dt.date(2026, 11, 4), "dishes": dt.date(2026, 11, 24)}.get(GUIDA, dt.date(2026, 11, 8))  # GoatCounter risponde 404 per periodi prima della nascita del sito
         days = [d for d in (today - dt.timedelta(days=i) for i in range(29, -1, -1)) if d >= lancio]
         s30 = dt.datetime.combine(days[0], dt.time(), dt.timezone.utc)
         start = {"oggi": today, "7g": max(today - dt.timedelta(days=6), lancio), "30g": days[0]}

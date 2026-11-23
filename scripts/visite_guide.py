@@ -28,7 +28,7 @@ GUIDE = [
     ("Ach's Places Guide", "achplaces.com", "achplaces", "2026-11-08"),
     # 23/11/2026: Ach's Dishes (ex AchRecipes) online su achdishes.com; finché manca GOATCOUNTER_TOKEN_ACHDISHES scrive
     # una sola riga senza giorno con il motivo (i lettori saltano le righe senza giorno)
-    ("Ach's Dishes Guide", "achdishes.com", "achdishes", "2026-11-23"),
+    ("Ach's Dishes Guide", "achdishes.com", "achdishes", "2026-11-24"),   # contatore nato il 23/11 alle 22:33: GoatCounter dà 404 per periodi che iniziano prima
 ]
 
 
