@@ -43,6 +43,7 @@ jobs:
           GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
           GOATCOUNTER_TOKEN_ACHDINNERS: ${{ secrets.GOATCOUNTER_TOKEN_ACHDINNERS }}
           GOATCOUNTER_TOKEN_ACHPLACES: ${{ secrets.GOATCOUNTER_TOKEN_ACHPLACES }}
+          GOATCOUNTER_TOKEN_ACHDISHES: ${{ secrets.GOATCOUNTER_TOKEN_ACHDISHES }}
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           mkdir -p dati
@@ -55,6 +56,7 @@ jobs:
           python3 scripts/cruscotto.py stats.json
           GUIDA=places python3 scripts/cruscotto.py stats_places.json || echo "::warning::cruscotto Places non letto"
           GUIDA=dinners python3 scripts/cruscotto.py stats_dinners.json || echo "::warning::cruscotto Dinners non letto"
+          if [ -n "$GOATCOUNTER_TOKEN_ACHDISHES" ]; then GUIDA=dishes python3 scripts/cruscotto.py stats_dishes.json || echo "::warning::cruscotto Dishes non letto"; fi
       - name: Salva nel ramo statistiche
         run: |
           set -e

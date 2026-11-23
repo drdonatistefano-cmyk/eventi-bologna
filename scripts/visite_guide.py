@@ -26,6 +26,9 @@ GUIDE = [
     ("Ach's Events Guide", "achevents.com", "eventibologna", "2026-11-04"),
     ("Ach's Dinners Guide", "achdinners.com", "achdinners", "2026-11-08"),
     ("Ach's Places Guide", "achplaces.com", "achplaces", "2026-11-08"),
+    # 23/11/2026: Ach's Dishes (ex AchRecipes) online su achdishes.com; finché manca GOATCOUNTER_TOKEN_ACHDISHES scrive
+    # una sola riga senza giorno con il motivo (i lettori saltano le righe senza giorno)
+    ("Ach's Dishes Guide", "achdishes.com", "achdishes", "2026-11-23"),
 ]
 
 

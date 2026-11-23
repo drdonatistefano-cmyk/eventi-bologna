@@ -11,7 +11,8 @@ import json, os, sys, time, re, collections, datetime as dt, urllib.request, url
 GUIDA = os.environ.get("GUIDA", "events")
 GC, SITE, TOKEN_VAR = {"events": ("eventibologna", "https://achevents.com/", "GOATCOUNTER_TOKEN"),
                        "places": ("achplaces", "https://achplaces.com/", "GOATCOUNTER_TOKEN_ACHPLACES"),
-                       "dinners": ("achdinners", "https://achdinners.com/", "GOATCOUNTER_TOKEN_ACHDINNERS")}[GUIDA]
+                       "dinners": ("achdinners", "https://achdinners.com/", "GOATCOUNTER_TOKEN_ACHDINNERS"),
+                       "dishes": ("achdishes", "https://achdishes.com/", "GOATCOUNTER_TOKEN_ACHDISHES")}[GUIDA]   # 23/11/2026
 API = f"https://{GC}.goatcounter.com/api/v0"
 TOKEN = (os.environ.get(TOKEN_VAR) or os.environ.get("GOATCOUNTER_TOKEN", "")).strip()
 GH = os.environ.get("GITHUB_TOKEN", "")

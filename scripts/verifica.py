@@ -350,7 +350,7 @@ def visite_ultimi_30(righe, oggi):
     da = (oggi - datetime.timedelta(days=30)).isoformat()
     giorni = {}
     for r in righe:
-        g = r.get("giorno", "")
+        g = r.get("giorno") or ""   # 23/11/2026: una guida senza dati scrive giorno null
         if da <= g < oggi.isoformat():
             giorni[g] = giorni.get(g, 0) + int(r.get("visite") or 0)
     return sum(giorni.values()), len(giorni)

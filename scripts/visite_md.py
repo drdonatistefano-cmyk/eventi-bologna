@@ -11,7 +11,7 @@ GIORNI = "lun mar mer gio ven sab dom".split()
 def gg(s):
     d = datetime.date.fromisoformat(s); return f"{GIORNI[d.weekday()]} {d.day} {MESI[d.month-1]} {d.year}"
 
-for guida, file in (("Ach's Events Guide", "dati/visite_events.md"), ("Ach's Dinners Guide", "dati/visite_dinners.md"), ("Ach's Places Guide", "dati/visite_places.md")):
+for guida, file in (("Ach's Events Guide", "dati/visite_events.md"), ("Ach's Dinners Guide", "dati/visite_dinners.md"), ("Ach's Places Guide", "dati/visite_places.md"), ("Ach's Dishes Guide", "dati/visite_dishes.md")):
     r = [x for x in righe if x["guida"] == guida]
     sito = r[0]["sito"] if r else ""
     letto = max((x.get("letto") or "" for x in r), default="")
