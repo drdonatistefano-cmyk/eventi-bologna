@@ -328,6 +328,10 @@ main{min-width:0;padding-bottom:90px}
 .giu.via{transform:translateX(-50%) translateY(90px);opacity:0;pointer-events:none}
 @media(max-width:759px){.status{margin-top:12px}.status .pills{display:flex;flex-wrap:wrap;gap:6px;flex-basis:100%}}
 .cnt{font-size:14px;color:var(--mute);margin-right:2px}
+/* 23/11/2026, Stefano (iPhone): «Calendario» e «Luoghi» salgono sulla riga del conteggio, al posto del numero degli eventi
+   che va tutto a destra; così il mese sale e resta più spazio per gli eventi, in tutte le schede */
+@media(max-width:759px){.cntrow{flex-wrap:wrap;gap:8px 10px}.cntrow .topctl{margin-left:0}.cntrow .cnt{margin-left:auto;margin-right:0;text-align:right}
+ .cntrow .azzera{order:3}.status:not(:has(.pills:not(:empty))){display:none}}
 .cnt b{color:var(--ink);font-size:1.05rem}
 .pills{display:contents}
 .apill{height:32px;max-width:100%;padding:0 5px 0 12px;border-radius:999px;border:1px solid color-mix(in srgb,var(--g,var(--terra)) 35%,transparent);background:color-mix(in srgb,var(--g,var(--terra)) 11%,var(--paper));color:var(--ink);font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
@@ -875,8 +879,8 @@ html body #more{border-radius:999px;height:48px;padding:0 26px;font-weight:700;c
 <div class="wrap" id="nA"></div><div class="wrap qwrap" id="qwrap"><div class="qbar" id="qbar" role="group" aria-label="Filtri rapidi"></div></div>
 <div class="wrap">
  <main>
-  <div class="cntrow" id="status"><span class="cnt" id="count" aria-live="polite"></span><button class="azzera" id="azzSu" type="button" data-reset hidden>✕ Azzera i filtri <span class="n">0</span></button></div>
-  <div class="status"><div class="seg only-phone topctl" role="group" aria-label="Vista"><button data-view="cal" class="on">Calendario</button><button data-view="luoghi">Luoghi</button></div><span class="pills" id="active"></span></div>
+  <div class="cntrow" id="status"><div class="seg only-phone topctl" role="group" aria-label="Vista"><button data-view="cal" class="on">Calendario</button><button data-view="luoghi">Luoghi</button></div><span class="cnt" id="count" aria-live="polite"></span><button class="azzera" id="azzSu" type="button" data-reset hidden>✕ Azzera i filtri <span class="n">0</span></button></div>
+  <div class="status"><span class="pills" id="active"></span></div>
   <div class="cnote" id="cnote" hidden></div>
   <section class="vhead" id="vhead" hidden></section>
   <div id="list"></div>
