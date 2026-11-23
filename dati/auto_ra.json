@@ -1,13 +1,14 @@
 {
  "aggiunti": [
-  "2027-02-05 Bandakadabra – Teatro Socjale (Teatro Socjale)"
+  "mostra 2026-11-22→2026-11-29 Corpo semantico – MAR - Museo d'Arte della Città di Ravenna (turismo.ra.it)",
+  "mostra 2026-12-18→2027-02-21 Anna Capolupo. Tesmoforie, attivazione dello spazio – MAR - Museo d'Arte della Città di Ravenna (turismo.ra.it)"
  ],
  "link_biglietti": 0,
  "fonti": {
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "portale turistico": {
-   "letti": 16,
-   "aggiunti": 0
+   "letti": 18,
+   "aggiunti": 2
   },
   "arte.it": {
    "letti": 4,
@@ -15,32 +16,32 @@
   },
   "siti dei locali": {
    "Teatro Socjale": {
-    "sul_sito": 7,
-    "in_guida": 8,
-    "aggiunti": 1,
+    "sul_sito": 5,
+    "in_guida": 6,
+    "aggiunti": 0,
     "esito": "ok",
     "secondi": 7
    },
    "Mama's Club": {
-    "sul_sito": 14,
-    "in_guida": 14,
+    "sul_sito": 12,
+    "in_guida": 12,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 5
    },
    "Teatro Masini": {
-    "sul_sito": 11,
-    "in_guida": 11,
+    "sul_sito": 10,
+    "in_guida": 10,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 126
+    "secondi": 85
    }
   }
  },
  "errori": [
   "https://dice.fm/browse/ravenna: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-20T09:45",
- "eventi_totali": 103,
- "mostre_totali": 15
+ "data": "2026-11-23T06:13",
+ "eventi_totali": 100,
+ "mostre_totali": 16
 }
