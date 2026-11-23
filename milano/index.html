@@ -849,11 +849,16 @@ html body #more{border-radius:999px;height:48px;padding:0 26px;font-weight:700;c
  html body #nA .rowg .ch.gq{min-width:84px;max-width:124px;padding:0 8px}
  html body #nA .rowq+.rowg{border-left:1px solid var(--line);padding-left:14px}
  html body #nA .att{flex-basis:100%}
+}
+/* iPad (in verticale e in orizzontale) e computer: conteggio e «Azzera i filtri» nella barra ferma in alto */
+@media(min-width:760px){
  body.pcbar .cntrow,body.pcbar main>.status{display:none}  /* le pillole dei filtri sono già sotto i riquadri */
  body.pcbar #bar .cnt{flex:none;white-space:nowrap;margin:0 4px 0 6px}
  body.pcbar #bar .azzera{flex:none}
  body.pcbar .month:first-child,body.pcbar #list>.month:first-of-type{margin-top:18px}
 }
+/* iPad in verticale: nella barra non c'è posto anche per «Azzera i filtri» (restano «Azzera tutto» sotto i riquadri e il pulsante in basso) */
+@media(min-width:760px) and (max-width:1023px){body.pcbar #bar .azzera{display:none!important}body.pcbar #share .lbl{display:none}}
 </style>
 </head>
 <body class="nA">
@@ -1827,8 +1832,8 @@ body.nA #qwrap{display:none!important} body.nA{--qh:0px}
  if(mo&&"IntersectionObserver" in window)new IntersectionObserver(e=>{if(e[0].isIntersecting&&!mo.hidden)mo.click()},{rootMargin:"600px 0px"}).observe(mo);
 }catch(e){}})();
 </script>
-<script>/* 23/11/2026: su computer il conteggio e «Azzera i filtri» stanno nella barra in alto (vedi lo stile «pcbar») */
-(function(){var mq=matchMedia("(min-width:1024px)");function sposta(){var sw=document.getElementById("sw"),st=document.getElementById("status"),c=document.getElementById("count"),a=document.getElementById("azzSu");if(!sw||!st||!c||!a)return;
+<script>/* 23/11/2026: su iPad e computer il conteggio e «Azzera i filtri» stanno nella barra in alto (vedi lo stile «pcbar») */
+(function(){var mq=matchMedia("(min-width:760px)");function sposta(){var sw=document.getElementById("sw"),st=document.getElementById("status"),c=document.getElementById("count"),a=document.getElementById("azzSu");if(!sw||!st||!c||!a)return;
  if(mq.matches){if(c.parentNode!==sw.parentNode){sw.after(c);c.after(a)}document.body.classList.add("pcbar")}
  else{if(c.parentNode!==st){var t=st.querySelector(".topctl");if(t)t.after(c);else st.prepend(c);c.after(a)}document.body.classList.remove("pcbar")}
  try{window.dispatchEvent(new Event("resize"))}catch(e){}}
