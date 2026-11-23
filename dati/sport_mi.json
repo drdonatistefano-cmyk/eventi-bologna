@@ -1,22 +1,22 @@
 {
  "fonti": {
-  "seriea": 27,
+  "seriea": 26,
   "uefa": 4,
   "inter_sito": 9,
-  "superlega": 8,
-  "volleyf": 8,
-  "hockey": 19,
+  "superlega": 7,
+  "volleyf": 7,
+  "hockey": 17,
   "extra": 0,
   "lba": 11,
-  "euroleague": 12
+  "euroleague": 11
  },
  "errori": [],
  "per_sport": {
-  "Basket": 16,
-  "Hockey": 19,
-  "Volley": 16,
-  "Calcio": 40
+  "Hockey": 17,
+  "Calcio": 39,
+  "Volley": 14,
+  "Basket": 15
  },
- "totale": 91,
- "giorno": "2026-11-19"
+ "totale": 85,
+ "giorno": "2026-11-23"
 }

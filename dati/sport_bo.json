@@ -1,21 +1,21 @@
 {
  "fonti": {
-  "seriea": 14,
+  "seriea": 13,
   "uefa": 0,
   "bologna_sito": 1,
-  "volleyf": 12,
+  "volleyf": 11,
   "fortitudo": 13,
   "extra": 7,
-  "lba": 11,
+  "lba": 10,
   "euroleague": 13
  },
  "errori": [],
  "per_sport": {
-  "Calcio": 15,
-  "Volley": 12,
-  "Basket": 29,
-  "Tennis": 7
+  "Tennis": 7,
+  "Basket": 28,
+  "Calcio": 14,
+  "Volley": 11
  },
- "totale": 63,
- "giorno": "2026-11-19"
+ "totale": 60,
+ "giorno": "2026-11-23"
 }
