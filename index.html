@@ -838,6 +838,22 @@ html body #nAf .ft .a2{background:linear-gradient(135deg,var(--blu),var(--blu-sc
 @media(min-width:1024px){.fabf{display:none!important}}
 @media(max-width:1023px){html body .bar.stuck #fbtn{display:none}}
 html body #more{border-radius:999px;height:48px;padding:0 26px;font-weight:700;color:var(--blu-scuro);background:var(--paper)}
+
+/* 23/11/2026, Stefano: «riorganizzare in modo così intelligente anche la vista pc» (dopo Calendario/Luoghi sulla riga
+   del conteggio su iPhone). Computer: periodi e generi su una sola riga; il numero degli eventi (e «Azzera i filtri»)
+   sale nella barra ferma in alto accanto alla ricerca; la riga del conteggio sparisce e il mese sale di due righe. */
+@media(min-width:1024px){
+ html body #nA:not(:empty){display:flex;flex-wrap:wrap;align-items:center;column-gap:14px}
+ html body #nA .rowq{grid-template-columns:repeat(var(--n),104px)}
+ html body #nA .rowg{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:max-content;overflow:visible;padding-top:10px}
+ html body #nA .rowg .ch.gq{min-width:84px;max-width:124px;padding:0 8px}
+ html body #nA .rowq+.rowg{border-left:1px solid var(--line);padding-left:14px}
+ html body #nA .att{flex-basis:100%}
+ body.pcbar .cntrow,body.pcbar main>.status{display:none}  /* le pillole dei filtri sono già sotto i riquadri */
+ body.pcbar #bar .cnt{flex:none;white-space:nowrap;margin:0 4px 0 6px}
+ body.pcbar #bar .azzera{flex:none}
+ body.pcbar .month:first-child,body.pcbar #list>.month:first-of-type{margin-top:18px}
+}
 </style>
 </head>
 <body class="nA">
@@ -1811,5 +1827,11 @@ body.nA #qwrap{display:none!important} body.nA{--qh:0px}
  if(mo&&"IntersectionObserver" in window)new IntersectionObserver(e=>{if(e[0].isIntersecting&&!mo.hidden)mo.click()},{rootMargin:"600px 0px"}).observe(mo);
 }catch(e){}})();
 </script>
+<script>/* 23/11/2026: su computer il conteggio e «Azzera i filtri» stanno nella barra in alto (vedi lo stile «pcbar») */
+(function(){var mq=matchMedia("(min-width:1024px)");function sposta(){var sw=document.getElementById("sw"),st=document.getElementById("status"),c=document.getElementById("count"),a=document.getElementById("azzSu");if(!sw||!st||!c||!a)return;
+ if(mq.matches){if(c.parentNode!==sw.parentNode){sw.after(c);c.after(a)}document.body.classList.add("pcbar")}
+ else{if(c.parentNode!==st){var t=st.querySelector(".topctl");if(t)t.after(c);else st.prepend(c);c.after(a)}document.body.classList.remove("pcbar")}
+ try{window.dispatchEvent(new Event("resize"))}catch(e){}}
+ if(mq.addEventListener)mq.addEventListener("change",sposta);else if(mq.addListener)mq.addListener(sposta);sposta()})();</script>
 </body>
 </html>
