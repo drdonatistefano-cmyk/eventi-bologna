@@ -1,18 +1,21 @@
 {
  "aggiunti": [
-  "mostra 2026-11-22→2026-11-29 Corpo semantico – MAR - Museo d'Arte della Città di Ravenna (turismo.ra.it)",
-  "mostra 2026-12-18→2027-02-21 Anna Capolupo. Tesmoforie, attivazione dello spazio – MAR - Museo d'Arte della Città di Ravenna (turismo.ra.it)"
+  "mostra 2026-11-20→2026-12-08 ANIMA MUNDI. Design per una nuova alleanza – ISIA Faenza (arte.it)"
  ],
  "link_biglietti": 0,
  "fonti": {
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "portale turistico": {
-   "letti": 18,
-   "aggiunti": 2
+   "letti": 17,
+   "aggiunti": 0
   },
   "arte.it": {
    "letti": 4,
-   "aggiunti": 0
+   "aggiunti": 1,
+   "scartate": {
+    "già in guida": 2,
+    "permanente o di anni": 1
+   }
   },
   "siti dei locali": {
    "Teatro Socjale": {
@@ -20,28 +23,28 @@
     "in_guida": 6,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 7
+    "secondi": 4
    },
    "Mama's Club": {
     "sul_sito": 12,
     "in_guida": 12,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 5
+    "secondi": 4
    },
    "Teatro Masini": {
     "sul_sito": 10,
     "in_guida": 10,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 85
+    "secondi": 84
    }
   }
  },
  "errori": [
   "https://dice.fm/browse/ravenna: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-23T06:13",
- "eventi_totali": 100,
- "mostre_totali": 16
+ "data": "2026-11-23T08:53",
+ "eventi_totali": 134,
+ "mostre_totali": 17
 }

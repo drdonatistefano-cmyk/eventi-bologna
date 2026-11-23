@@ -1,7 +1,5 @@
 {
- "aggiunti": [
-  "2027-01-30 Lasciate ogni esperienza voi che entrate – Teatro Nuovo (Teatro Nuovo)"
- ],
+ "aggiunti": [],
  "link_biglietti": 0,
  "fonti": {
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
@@ -11,7 +9,10 @@
   },
   "arte.it": {
    "letti": 2,
-   "aggiunti": 0
+   "aggiunti": 0,
+   "scartate": {
+    "già in guida": 2
+   }
   },
   "siti dei locali": {
    "Jazz Club Ferrara": {
@@ -22,46 +23,46 @@
     "secondi": 2
    },
    "Teatro Comunale Claudio Abbado": {
-    "sul_sito": 49,
-    "in_guida": 68,
+    "sul_sito": 50,
+    "in_guida": 80,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 96
+    "secondi": 99
    },
    "Teatro Nuovo": {
     "sul_sito": 25,
     "in_guida": 58,
-    "aggiunti": 1,
+    "aggiunti": 0,
     "esito": "ok",
-    "secondi": 119
+    "secondi": 118
    },
    "Ferrara Musica": {
     "sul_sito": 22,
-    "in_guida": 68,
+    "in_guida": 80,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 45
+    "secondi": 44
    },
    "Auditorium Pandurera": {
     "sul_sito": 14,
     "in_guida": 14,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 32
+    "secondi": 31
    },
    "Teatro De Micheli": {
     "sul_sito": 12,
     "in_guida": 12,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 7
+    "secondi": 6
    }
   }
  },
  "errori": [
   "https://dice.fm/browse/ferrara: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-23T06:18",
- "eventi_totali": 167,
+ "data": "2026-11-23T08:58",
+ "eventi_totali": 177,
  "mostre_totali": 18
 }

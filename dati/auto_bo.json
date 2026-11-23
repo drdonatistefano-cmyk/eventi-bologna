@@ -1,29 +1,21 @@
 {
  "aggiunti": [
-  "2027-04-01 Stephany Aiello in \"Sboccacciata\" – APS Efesto House (DICE)",
-  "2027-04-15 Andrea Di Castro in \"Innocente\" – APS Efesto House (DICE)",
-  "2027-05-07 Matteo Fallica - TROPPO NOI – Teatro Testoni (DICE)",
-  "2026-12-04 Zara Colombo + The Moonquakes – Covo Club (DICE)",
-  "2026-12-05 Uredda – Baumhaus (DICE)",
-  "2026-12-05 ggiovanni, La Rivoluzione Industriale, Djset(band) – Covo Club (DICE)",
-  "2026-12-07 Föllakzoid – Baumhaus (DICE)",
-  "2026-12-07 Fucksia Live + Collettiva Elettronika Dj Set – TANK serbatoio culturale (DICE)",
-  "2026-12-15 Noma Mamba Band – Bravo Caffè (Bravo Caffè)",
-  "2026-12-31 Bravo Capodanno – Bravo Caffè (Bravo Caffè)",
-  "2026-11-26 Body Sweats (for Elsa) – Arena del Sole (Arena del Sole)",
-  "2027-01-22 Se domani – Arena del Sole (Arena del Sole)",
-  "2027-01-26 Grazie della squisita prova – Arena del Sole (Arena del Sole)"
+  "mostra 2026-11-19→2027-01-10 Chiara Lecca. Garden of Èden – Museo d'Arte Lercaro (arte.it)",
+  "mostra 2026-11-06→2027-03-08 Luigi Serra (1846-1888). «Vorrei un’altra vita per imparare il colore». A 180 anni dalla nascita – Museo Ottocento Bologna (arte.it)"
  ],
- "link_biglietti": 1,
+ "link_biglietti": 0,
  "fonti": {
   "DICE": {
    "letti": 63,
-   "aggiunti": 8
+   "aggiunti": 0
   },
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "arte.it": {
    "letti": 12,
-   "aggiunti": 0
+   "aggiunti": 2,
+   "scartate": {
+    "già in guida": 10
+   }
   },
   "wikiarte": {
    "letti": 2,
@@ -45,35 +37,35 @@
     "in_guida": 22,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 4
+    "secondi": 3
    },
    "Bravo Caffè": {
     "sul_sito": 34,
     "in_guida": 34,
-    "aggiunti": 2,
+    "aggiunti": 0,
     "esito": "ok",
     "secondi": 4
    },
    "Auditorium Manzoni": {
     "sul_sito": 40,
-    "in_guida": 65,
+    "in_guida": 53,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 83
    },
    "Arena del Sole": {
     "sul_sito": 16,
-    "in_guida": 34,
-    "aggiunti": 3,
+    "in_guida": 30,
+    "aggiunti": 0,
     "esito": "ok",
-    "secondi": 35
+    "secondi": 33
    },
    "Teatro Ebe Stignani": {
     "sul_sito": 9,
     "in_guida": 17,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 42
+    "secondi": 37
    },
    "Estragon Club": {
     "sul_sito": 18,
@@ -84,24 +76,24 @@
    },
    "Auditorium Manzoni (2)": {
     "sul_sito": 17,
-    "in_guida": 65,
+    "in_guida": 53,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 37
+    "secondi": 36
    },
    "Accademia Filarmonica": {
     "sul_sito": 2,
     "in_guida": 1,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 27
+    "secondi": 26
    }
   }
  },
  "errori": [
   "https://www.locomotivclub.it/robots.txt: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-23T05:55",
- "eventi_totali": 739,
- "mostre_totali": 22
+ "data": "2026-11-23T08:36",
+ "eventi_totali": 740,
+ "mostre_totali": 24
 }

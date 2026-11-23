@@ -1,80 +1,36 @@
 {
  "aggiunti": [
-  "2026-11-25 B&A presents: &Wax *Free Entry until h20* – Bluesquare Milano (DICE)",
-  "2026-11-25 La Meneghina: Il tango – Club Dept 184 (DICE)",
-  "2026-11-26 Disco Pastrami: Acid Sauce – RAGOO (DICE)",
-  "2026-11-26 Club GIOVedì – Club Giovanile Milano (DICE)",
-  "2026-11-26 Red Bull Turn It Up National Final – APOLLO CLUB MILANO (DICE)",
-  "2026-11-27 GIARDINO DEI VISIONARI | EX OFFICINA LOCOMOTIVE – BASE Milano (DICE)",
-  "2026-11-27 Indie Power – DEPARTMENT 184 (DICE)",
-  "2026-11-27 SOLOHIT Dj set di Marco Manini – mare culturale urbano - cascina torrette (DICE)",
-  "2026-11-27 UNDERPASS - ESTHER BRONCHAL – Tunnel Club (DICE)",
-  "2026-11-27 Puro Perreo – mosso (DICE)",
-  "2026-11-27 QUANDO & SOS at NAMA w/ Anthony Rother – NAMA (indoor) (DICE)",
-  "2026-11-27 Los Locos at Club Dept 184 – Club Dept 184 (DICE)",
-  "2026-11-27 REX CLUB | Chloé | Gabrielle Kwarteng – Duro (DICE)",
-  "2026-11-27 Omar + Dizzy + Giorgio Di Majo b2b Totino – Studionotte (DICE)",
-  "2026-11-27 DOUBLE in the backroom – APOLLO CLUB MILANO (DICE)",
-  "2026-11-27 Comunidad Autonoma w/ Deda aka Katzuma – APOLLO CLUB MILANO (DICE)",
-  "2026-11-27 Gang's Affairs w/ Gladis , Simon Ricci & more.. – Main Club - Club 44 (DICE)",
-  "2026-11-27 VULKANIK Back – Spazio Diaz (DICE)",
-  "2026-11-28 MUTANT – Club Giovanile Milano (DICE)",
-  "2026-11-28 perpetua 04 — saturday day 1 (28.11) – Studionotte (DICE)",
-  "2026-12-11 ACCAPPELLA | Comedy Show – SALONE 14 @ Yellowsquare (DICE)",
-  "2026-12-05 WHAT'S MY AGE?! – BASE Milano (DICE)",
-  "2026-12-06 MILANO ROCK – Alcatraz (DICE)",
-  "2026-12-07 NUEVAYOL – BAD BUNNY LOVERS PARTY – Alcatraz (DICE)",
-  "2026-12-11 WTF x MÁTALO – Alcatraz (DICE)",
-  "2026-12-12 COOLKYDZ – Santeria Toscana 31 (DICE)",
-  "2026-12-12 Puro Perreo | Santa Lucia protegenos – Circolo Magnolia (DICE)",
-  "2026-12-12 Voglio Tornare negli Anni 90 – Alcatraz (DICE)",
-  "2026-12-18 WTF – MERRY REGGAETON – Alcatraz (DICE)",
-  "2026-12-19 SHREK PARTY – BASE Milano (DICE)",
-  "2026-11-24 Midnight Jazz Confidential – 21 House of Stories Navigli (DICE)",
-  "2026-11-24 Labrutepoque Ground - Mike Pastori & His New Dodos – Labrutepoque (DICE)",
-  "2026-11-24 Sessione Sotterranea // Gabriele Spira – Bachelite cLab (DICE)",
-  "2026-11-24 Luca Arduini Trio – mare culturale urbano - cascina torrette (DICE)",
-  "2026-11-25 Carla Fucci & Berlina live – Bachelite cLab (DICE)",
-  "2026-11-26 GIOVANNA SOFIA (JOLLA) + JAM SESSION – GIPSY (DICE)",
-  "2026-11-26 Elettrica // Acustic Session live – Bachelite cLab (DICE)",
-  "2026-11-26 Decreto Dignità - BIETTO Release Party – SALONE 14 @ Yellowsquare (DICE)",
-  "2026-11-26 Strappi - Sonic Music Talk Show – mare culturale urbano - cascina torrette (DICE)",
-  "2027-02-01 U.d.o. – Magazzini Generali (Magazzini Generali)",
-  "2027-04-02 Fumi & Grace Dahl – Gate Milano (Gate Milano)",
-  "2026-11-24 Il Ritratto di Dorian Gray – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-25 Un Marito Ideale – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-29 (s)legati – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-29 Anche i Sogni Impossibili – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-29 Di a da in con su per tra fra Shakespeare – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-29 Madri – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-29 Metadietro – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-29 Parla, Clitemnestra! – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-11-29 Un Alt(r)o Everest – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2027-05-25 Diva – Teatro Elfo Puccini (Teatro Elfo Puccini)",
-  "2026-12-20 Concerto di Natale al Teatro Corvetto – Auditorium di Milano (Auditorium di Milano)"
+  "mostra 2026-11-23→2027-03-06 Titina Maselli. Frammenti di realtà – Galleria M77 (arte.it)",
+  "mostra 2026-10-22→2027-01-25 Un Tiziano per Milano – Museo Poldi Pezzoli (arte.it)"
  ],
  "link_biglietti": 0,
  "fonti": {
   "DICE": {
    "letti": 181,
-   "aggiunti": 39
+   "aggiunti": 0
   },
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "arte.it": {
    "letti": 53,
-   "aggiunti": 0
+   "aggiunti": 2,
+   "scartate": {
+    "già in guida": 43,
+    "fuori perimetro": 2,
+    "festival, non mostra": 1,
+    "permanente o di anni": 5
+   }
   },
   "siti dei locali": {
    "Magazzini Generali": {
     "sul_sito": 26,
-    "in_guida": 36,
-    "aggiunti": 1,
+    "in_guida": 39,
+    "aggiunti": 0,
     "esito": "ok",
-    "secondi": 7
+    "secondi": 8
    },
    "Teatro Principe": {
     "sul_sito": 2,
-    "in_guida": 6,
+    "in_guida": 7,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 3
@@ -84,14 +40,14 @@
     "in_guida": 77,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 9
+    "secondi": 12
    },
    "Gate Milano": {
     "sul_sito": 31,
     "in_guida": 32,
-    "aggiunti": 1,
+    "aggiunti": 0,
     "esito": "ok",
-    "secondi": 8
+    "secondi": 6
    },
    "Teatro Out Off": {
     "sul_sito": 9,
@@ -109,59 +65,59 @@
    },
    "Circolo Magnolia": {
     "sul_sito": 21,
-    "in_guida": 46,
+    "in_guida": 53,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 55
+    "secondi": 47
    },
    "Santeria Toscana 31": {
     "sul_sito": 13,
     "in_guida": 32,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 98
+    "secondi": 97
    },
    "Unipol Dome": {
     "sul_sito": 9,
-    "in_guida": 20,
+    "in_guida": 21,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 27
+    "secondi": 25
    },
    "Teatro Elfo Puccini": {
     "sul_sito": 46,
     "in_guida": 57,
-    "aggiunti": 10,
+    "aggiunti": 0,
     "esito": "ok",
-    "secondi": 190
+    "secondi": 178
    },
    "Teatro Carcano": {
     "sul_sito": 5,
-    "in_guida": 16,
+    "in_guida": 21,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 15
+    "secondi": 14
    },
    "Ecoteatro": {
     "sul_sito": 23,
     "in_guida": 31,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 95
+    "secondi": 89
    },
    "Auditorium di Milano": {
     "sul_sito": 8,
     "in_guida": 10,
-    "aggiunti": 1,
+    "aggiunti": 0,
     "esito": "ok",
-    "secondi": 23
+    "secondi": 22
    },
    "Teatro Filodrammatici": {
     "sul_sito": 26,
     "in_guida": 26,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 133
+    "secondi": 132
    },
    "Teatro della Cooperativa": {
     "sul_sito": 12,
@@ -175,12 +131,12 @@
     "in_guida": 29,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 136
+    "secondi": 125
    }
   }
  },
  "errori": [],
- "data": "2026-11-23T06:11",
- "eventi_totali": 1166,
- "mostre_totali": 45
+ "data": "2026-11-23T08:51",
+ "eventi_totali": 1224,
+ "mostre_totali": 59
 }
