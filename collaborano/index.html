@@ -13,7 +13,7 @@ h2.ct{font-size:1rem;text-transform:uppercase;letter-spacing:.06em;color:#2F5578
 .sost .dove{font-size:14px;opacity:.7;margin:2px 0 10px}
 .sost .link{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:15px;margin:0}
 .sost .link a{color:#2F5578}
-</style><style>
+.griglia{list-style:none;padding:0;margin:14px 0 10px;display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}.griglia li{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:#fff;font-size:13px;line-height:1.4}.griglia .nome{display:block;font-size:15px;font-weight:700;color:var(--ink);text-decoration:none;margin:0 0 3px}.griglia .ind{display:block;color:var(--mute);margin:0 0 5px}.griglia .sito{font-size:13px}.griglia .primo{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--acc);margin:0 0 2px}main.w.largo{max-width:1040px}@media (max-width:420px){.griglia{grid-template-columns:repeat(2,1fr);gap:8px}.griglia li{padding:9px 10px}}</style><style>
 .coll{display:grid;gap:14px;margin:18px 0 26px}
 .cc{border:1px solid rgba(0,0,0,.12);border-radius:16px;padding:16px 18px;background:#fff}
 .cc h3{margin:0 0 4px;font-size:1.25rem}
@@ -25,46 +25,19 @@ h2.ct{font-size:1rem;text-transform:uppercase;letter-spacing:.06em;color:#2F5578
 .bollino{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:700;color:#2F5578;background:#E3ECF4;border-radius:999px;padding:3px 10px;margin-bottom:8px}
 ol.passi li{margin:6px 0}
 </style></head>
-<body><header class="top"><div class="w"><a class="marchio" href="/">Ach's Events Guide</a><nav class="guide" aria-label="Le guide di Ach"><a href="https://achplaces.com">Luoghi</a><a href="https://achdinners.com">Ristoranti</a><a href="https://achevents.com">Eventi</a></nav></div></header><main class="w">
+<body><header class="top"><div class="w"><a class="marchio" href="/">Ach's Events Guide</a><nav class="guide" aria-label="Le guide di Ach"><a href="https://achplaces.com">Luoghi</a><a href="https://achdinners.com">Ristoranti</a><a href="https://achevents.com">Eventi</a></nav></div></header><main class="w largo">
 <p class="briciole"><a href="/">Ach's Events Guide</a> › Collaborano con noi</p>
 <h1>Collaborano con noi</h1>
 <p class="lede">Teatri, locali e organizzatori che ci mandano i loro programmi. Grazie a loro date, orari e biglietti sono giusti e aggiornati. Li ringraziamo, e vi invitiamo ad andarli a trovare.</p>
-<p class="som">6 teatri e locali · 142 appuntamenti dal loro programma</p>
-<h2 class="ct">Milano</h2>
-<ul class="sost">
-<li>
-<p class="nome">Teatro Dal Verme</p>
-<p class="dove">Teatro e concerti · Milano · 48 appuntamenti in guida</p>
-<p class="link"><a href="/milano/?cerca=Teatro%20Dal%20Verme">I loro appuntamenti</a><a href="https://www.ipomeriggi.it/" target="_blank" rel="noopener">Sito ufficiale ↗</a></p>
-</li>
-<li>
-<p class="nome">Teatro Out Off</p>
-<p class="dove">Teatro · Milano · 12 appuntamenti in guida</p>
-<p class="link"><a href="/milano/?cerca=Teatro%20Out%20Off">I loro appuntamenti</a><a href="https://teatrooutoff.it/" target="_blank" rel="noopener">Sito ufficiale ↗</a></p>
-</li>
-<li>
-<p class="nome">Republic Milano</p>
-<p class="dove">Club · Milano · 55 appuntamenti in guida</p>
-<p class="link"><a href="/milano/?cerca=Republic%20Milano">I loro appuntamenti</a><a href="https://www.republicmilano.com/" target="_blank" rel="noopener">Sito ufficiale ↗</a></p>
-</li>
-<li>
-<p class="nome">PimOff</p>
-<p class="dove">Teatro e danza · Milano · 3 appuntamenti in guida</p>
-<p class="link"><a href="/milano/?cerca=PimOff">I loro appuntamenti</a><a href="https://www.pimoff.it/" target="_blank" rel="noopener">Sito ufficiale ↗</a></p>
-</li>
-<li>
-<p class="nome">Teatro Carcano</p>
-<p class="dove">Teatro · Milano · 17 appuntamenti in guida</p>
-<p class="link"><a href="/milano/?cerca=Teatro%20Carcano">I loro appuntamenti</a><a href="https://www.teatrocarcano.com/" target="_blank" rel="noopener">Sito ufficiale ↗</a></p>
-</li>
-</ul>
-<h2 class="ct">Ferrara</h2>
-<ul class="sost">
-<li>
-<p class="nome">Jazz Club Ferrara</p>
-<p class="dove">Jazz club · Ferrara · 7 appuntamenti in guida</p>
-<p class="link"><a href="/ferrara/?cerca=Jazz%20Club%20Ferrara">I loro appuntamenti</a><a href="https://jazzclubferrara.com/" target="_blank" rel="noopener">Sito ufficiale ↗</a></p>
-</li>
+<p class="som">7 teatri e locali</p>
+<ul class="griglia">
+<li><a class="nome" href="/milano/?cerca=Teatro%20Dal%20Verme">Teatro Dal Verme</a><span class="ind">Via San Giovanni sul Muro 2, 20121 Milano</span><a class="sito" href="https://www.ipomeriggi.it/" target="_blank" rel="noopener">Sito ↗</a></li>
+<li><a class="nome" href="/milano/?cerca=Teatro%20Out%20Off">Teatro Out Off</a><a class="sito" href="https://teatrooutoff.it/" target="_blank" rel="noopener">Sito ↗</a></li>
+<li><a class="nome" href="/milano/?cerca=Republic%20Milano">Republic Milano</a><span class="ind">Piazza della Repubblica 12, 20124 Milano</span><a class="sito" href="https://www.republicmilano.com/" target="_blank" rel="noopener">Sito ↗</a></li>
+<li><a class="nome" href="/milano/?cerca=PimOff">PimOff</a><span class="ind">Via Selvanesco 75, Milano</span><a class="sito" href="https://www.pimoff.it/" target="_blank" rel="noopener">Sito ↗</a></li>
+<li><a class="nome" href="/milano/?cerca=Teatro%20Carcano">Teatro Carcano</a><span class="ind">Corso di Porta Romana 63, 20121 Milano</span><a class="sito" href="https://www.teatrocarcano.com/" target="_blank" rel="noopener">Sito ↗</a></li>
+<li><a class="nome" href="/ferrara/?cerca=Jazz%20Club%20Ferrara">Jazz Club Ferrara</a><span class="ind">Rampari di Belfiore 167, 44121 Ferrara</span><a class="sito" href="https://jazzclubferrara.com/" target="_blank" rel="noopener">Sito ↗</a></li>
+<li><a class="nome" href="/?cerca=DumBO">DumBO</a><span class="ind">Via Camillo Casarini 19, 40131 Bologna</span><a class="sito" href="https://www.dumbospace.it/" target="_blank" rel="noopener">Sito ↗</a></li>
 </ul>
 <h2>Volete comparire anche voi?</h2>
 <ol class="passi">
