@@ -40,6 +40,5 @@ jobs:
         run: |
           T="Cinema: aggiornamento automatico non riuscito"
           B="Lettura del $(TZ=Europe/Rome date +%F) non riuscita. Dettagli in dati/cinema_stato.json. Il controllo di riserva di Claude interviene in giornata."
-          n=$(gh issue list --state open --search "$T in:title" --json number -q '.[0].number')
-          if [ -n "$n" ]; then gh issue comment "$n" --body "$B"; else gh issue create --title "$T" --body "$B"; fi
+          bash scripts/allarme.sh "$T" "$B"
           exit 1

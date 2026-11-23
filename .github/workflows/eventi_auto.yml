@@ -46,5 +46,4 @@ jobs:
         if: ${{ !inputs.prova && (steps.bo.outcome == 'failure' || steps.mi.outcome == 'failure') }}
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
-          gh issue list --state open --search "Eventi automatici: errore in:title" --json number --jq '.[0].number' | grep -q . || \
-          gh issue create --title "Eventi automatici: errore" --body "Lo script scripts/eventi_auto.py non ha completato una delle due città (vedi il log del flusso «Eventi e mostre automatici» e dati/auto_bo.json, dati/auto_mi.json). I dati già pubblicati restano invariati."
+          bash scripts/allarme.sh "Eventi automatici: errore" "Lo script scripts/eventi_auto.py non ha completato una delle due città (vedi il log del flusso «Eventi e mostre automatici» e dati/auto_bo.json, dati/auto_mi.json). I dati già pubblicati restano invariati."

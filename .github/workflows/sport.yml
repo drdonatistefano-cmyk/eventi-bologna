@@ -37,5 +37,4 @@ jobs:
         if: ${{ !inputs.prova && (steps.bo.outcome == 'failure' || steps.mi.outcome == 'failure') }}
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
-          gh issue list --state open --search "Sport automatico: errore in:title" --json number --jq '.[0].number' | grep -q . || \
-          gh issue create --title "Sport automatico: errore" --body "Lo script scripts/sport_auto.py non ha completato una delle due città (vedi il log del flusso «Sport automatico»). Le partite già pubblicate restano invariate."
+          bash scripts/allarme.sh "Sport automatico: errore" "Lo script scripts/sport_auto.py non ha completato una delle due città (vedi il log del flusso «Sport automatico»). Le partite già pubblicate restano invariate."

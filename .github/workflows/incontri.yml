@@ -45,5 +45,4 @@ jobs:
         if: ${{ !inputs.prova && (steps.bo.outcome == 'failure' || steps.mi.outcome == 'failure') }}
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
-          gh issue list --state open --search "Incontri automatici: errore in:title" --json number --jq '.[0].number' | grep -q . || \
-          gh issue create --title "Incontri automatici: errore" --body "Lo script scripts/incontri_auto.py non ha completato una delle due città (vedi il log del flusso «Incontri automatici»). Gli incontri già pubblicati restano invariati."
+          bash scripts/allarme.sh "Incontri automatici: errore" "Lo script scripts/incontri_auto.py non ha completato una delle due città (vedi il log del flusso «Incontri automatici»). Gli incontri già pubblicati restano invariati."

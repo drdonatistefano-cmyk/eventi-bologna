@@ -91,8 +91,7 @@ jobs:
           [ -f /tmp/ver/verifica.json ] || exit 0
           python3 -c "import json,sys; d=json.load(open('/tmp/ver/verifica.json')); sys.exit(0 if any(c['nome']=='Nuove province: decisione per Stefano' for v in d['viste'] for c in v['controlli']) else 1)" || exit 0
           T="Decidere: aprire Events in nuove province?"
-          gh issue list -R "${{ github.repository }}" --state all --search "$T in:title" --json title -q '.[].title' | grep -qxF "$T" && exit 0
-          gh issue create -R "${{ github.repository }}" -t "$T" -b "Le visite delle tre guide negli ultimi 30 giorni hanno superato 10.000 (soglia del business plan per la prima ondata di province: Ravenna, Rimini, Modena). Ravenna e Ferrara sono già aperte. La decisione è di Stefano: se sì, la chat di Events segue «Aprire una provincia nuova» in coordinamento/eventi/PROCEDURA.md; se no, chiudere questa segnalazione con il motivo. Dettaglio: verifica.json nel ramo statistiche, vista «Città di Events»." || true
+          bash scripts/allarme.sh --una-volta "$T" "Le visite delle tre guide negli ultimi 30 giorni hanno superato 10.000 (soglia del business plan per la prima ondata di province: Ravenna, Rimini, Modena). Ravenna e Ferrara sono già aperte. La decisione è di Stefano: se sì, la chat di Events segue «Aprire una provincia nuova» in coordinamento/eventi/PROCEDURA.md; se no, lo dice alla chat di coordinamento. Dettaglio: verifica.json nel ramo statistiche, vista «Città di Events»."
       - name: Salva nel ramo statistiche
         if: always()
         run: |

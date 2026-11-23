@@ -23,5 +23,4 @@ jobs:
         if: steps.leggi.outcome == 'failure'
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
-          gh issue list --state open --search "Serate: lettura non riuscita in:title" --json number --jq '.[0].number' | grep -q . || \
-          gh issue create --title "Serate: lettura non riuscita" --body "Lo script scripts/serate.py non è riuscito a leggere una o più pagine di technoairlines.com (vedi il log del flusso «Serate nei club»). Le serate già pubblicate restano finché non scadono."
+          bash scripts/allarme.sh "Serate: lettura non riuscita" "Lo script scripts/serate.py non è riuscito a leggere una o più pagine di technoairlines.com (vedi il log del flusso «Serate nei club»). Le serate già pubblicate restano finché non scadono."
