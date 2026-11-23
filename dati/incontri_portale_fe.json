@@ -130,7 +130,7 @@
   "cat": "meetings_conferences"
  },
  "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/ferrara-delle-scienze-2026": {
-  "modified": "2026-11-14T08:33:04+00:00",
+  "modified": "2026-11-20T13:10:48+00:00",
   "titolo": "Ferrara delle Scienze 2026",
   "start": "2026-10-27T16:30:00+00:00",
   "end": "2026-12-01T18:00:00+00:00",
@@ -233,19 +233,6 @@
   "prezzi": " Ingresso gratuito ",
   "cat": "meetings_conferences"
  },
- "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/cure-poetiche-a-ferrara-off": {
-  "modified": "2026-11-17T09:41:35+00:00",
-  "titolo": "Cure poetiche a Ferrara Off",
-  "start": "2026-11-15T10:00:00+00:00",
-  "end": "2026-11-22T11:00:00+00:00",
-  "rec": "DTSTART:20261115T100000Z\nRRULE:UNTIL=20261122T110000Z;FREQ=WEEKLY;INTERVAL=1;BYDAY=SU,SA",
-  "intero": false,
-  "citta": "Ferrara",
-  "via": "Ferrara Off - Viale Alfonso I d’Este 13",
-  "descr": "Ferrara Off propone tre appuntamenti dedicati alla poesia tra\npresentazioni letterarie e letture sceniche",
-  "prezzi": " L’ingresso è a offerta libera ",
-  "cat": "meetings_conferences"
- },
  "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/incontri-alla-libreria-libraccio": {
   "modified": "2026-11-17T11:19:39+00:00",
   "titolo": "Incontri alla Libreria Libraccio",
@@ -256,32 +243,6 @@
   "citta": "Ferrara",
   "via": "Palazzo San Crispino - Piazza Trento Trieste",
   "descr": "Al 3° piano del Palazzo di San Crispino il pubblico ha la possibilità di assistere alla presentazione delle ultime uscite in libreria. Esponenti della cultura locale e non, dialogano con gli autori.",
-  "prezzi": " Ingresso gratuito ",
-  "cat": "meetings_conferences"
- },
- "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/echo-la-forma-del-sogno": {
-  "modified": "2026-11-16T16:32:52+00:00",
-  "titolo": "Echo. La forma del sogno",
-  "start": "2026-11-19T17:30:00+00:00",
-  "end": "2026-11-19T19:00:00+00:00",
-  "rec": "",
-  "intero": false,
-  "citta": "Ferrara",
-  "via": "Galleria BPER – Palazzo Barbantini-Koch, Corso della Giovecca 108",
-  "descr": "ppuntamento del ciclo ARTalk Fuori Padiglione",
-  "prezzi": " Ingresso gratuito previa prenotazione ",
-  "cat": "meetings_conferences"
- },
- "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/incontri-allaccademia-delle-scienze": {
-  "modified": "2026-11-17T11:22:31+00:00",
-  "titolo": "Incontri all'Accademia delle Scienze",
-  "start": "2026-11-20T08:30:00+00:00",
-  "end": "2026-11-20T16:30:00+00:00",
-  "rec": "",
-  "intero": false,
-  "citta": "Ferrara",
-  "via": "Biblioteca \"Lionello Poletti\" - Via del Gregorio 13 (Piazza Ariostea)",
-  "descr": "Incontri organizzati dall'Accademia delle Scienze\n",
   "prezzi": " Ingresso gratuito ",
   "cat": "meetings_conferences"
  },
@@ -298,16 +259,16 @@
   "prezzi": " Ingresso gratuito ",
   "cat": "meetings_conferences"
  },
- "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/incontri-al-maf": {
-  "modified": "2026-11-16T10:48:07+00:00",
-  "titolo": "Incontri al MAF",
-  "start": "2026-11-22T14:00:00+00:00",
-  "end": "2026-11-22T17:00:00+00:00",
+ "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/storie-dopera-la-lirica-raccontata-nei-libri": {
+  "modified": "2026-11-20T10:06:38+00:00",
+  "titolo": "Storie d'opera. La lirica raccontata nei libri",
+  "start": "2026-11-21T16:00:00+00:00",
+  "end": "2027-04-10T17:00:00+00:00",
   "rec": "",
   "intero": false,
   "citta": "Ferrara",
-  "via": "Mondo Agricolo Ferrarese - Via Imperiale, 263 - Loc. San Bartolomeo in Bosco",
-  "descr": "Fotografia, letteratura e canto corale: una nuova iniziativa del MAF",
+  "via": "Ridotto del Teatro Comunale - Corso Martiri della Libertà 5",
+  "descr": "Ciclo di incontri di approfondimento per raccontare la Lirica attraverso i libri, al Teatro Comunale",
   "prezzi": " Ingresso gratuito ",
   "cat": "meetings_conferences"
  },
@@ -416,7 +377,7 @@
   "cat": "guided_tours"
  },
  "https://www.ferrarainfo.com/it/pianifica-il-viaggio/visite-guidate/escursioni-comacchio/aperi-art-con-gli-antichi": {
-  "modified": "2026-11-08T11:11:45+00:00",
+  "modified": "2026-11-21T09:28:01+00:00",
   "titolo": "Aperi-art con gli antichi",
   "start": "2026-12-07T15:00:00+00:00",
   "end": "2026-12-28T17:00:00+00:00",
@@ -425,7 +386,7 @@
   "citta": "Comacchio",
   "via": "Via Agatopisto, 2 c\\o Museo Delta Antico",
   "descr": "Immergetevi nell’atmosfera più suggestiva delle festività con un’esperienza che unisce creatività, storia e profumi d’altri tempi.",
-  "prezzi": "  Tariffe: intero €15,00     Per i partecipanti all’attività sarà previsto il biglietto ridotto per l’ingresso al Museo.   ",
+  "prezzi": "  Tariffe: intero €15,00 - ridotto da 11 a 18 anni €10,00     Per i partecipanti all’attività sarà previsto il biglietto ridotto per l’ingresso al Museo.   ",
   "cat": "guided_tours"
  },
  "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/amf-showcase": {
