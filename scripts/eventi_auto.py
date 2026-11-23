@@ -94,8 +94,9 @@ def gia(x):
         q = len(tx & te) / max(1, min(len(tx), len(te))) if tx and te else 0
         if stesso_luogo and q > 0: return e
         if q >= 0.8 and e["data"] == x["data"]: return e
-        # 23/11/2026: siti con più sale (TCBO, ERT): stesso titolo, date che si toccano, fonte sullo stesso sito di teatro
-        if q >= 0.8 and (RA.stesso_organizzatore(x.get("fonte"), e.get("fonte")) or RA.stesso_biglietto(x.get("biglietti"), e.get("biglietti"))): return e
+        # 23/11/2026: siti con più sale (TCBO, ERT): titolo quasi uguale («Tao Dance Theatre» / «TAO Dance Theater»), date che si
+        # toccano e la stessa pagina d'acquisto o la fonte sullo stesso sito di teatro
+        if q >= 0.6 and (RA.stesso_organizzatore(x.get("fonte"), e.get("fonte")) or RA.stesso_biglietto(x.get("biglietti"), e.get("biglietti"))): return e
         # titoli fatti di sigle («U.d.o.» / «U.D.O.»): nessuna parola lunga, si confrontano senza punti
         if stesso_luogo and e["data"] == x["data"] and A.stesso_titolo(e["artista"], x["artista"]): return e
     return None
