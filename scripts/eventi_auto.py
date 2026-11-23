@@ -19,6 +19,7 @@ PROVA = "--prova" in sys.argv
 sys.argv = [sys.argv[0]] + (["--citta", CITTA] if CITTA != "bo" else [])
 sys.path.insert(0, QUI)
 import aggiorna as A  # comuni, generi e regole di convalida
+import regole_auto as RA  # regole pure, provate in prova_verifica.py
 
 CFG = {"bo": dict(eventi="eventi.js", mostre="mostre.js", dice="bologna", nome="Bologna", arte="bologna", tm="Bologna"),
        "mi": dict(eventi="milano/eventi.js", mostre="milano/mostre.js", dice="milan", nome="Milano", arte="milano", tm="Milano"),
@@ -93,6 +94,8 @@ def gia(x):
         q = len(tx & te) / max(1, min(len(tx), len(te))) if tx and te else 0
         if stesso_luogo and q > 0: return e
         if q >= 0.8 and e["data"] == x["data"]: return e
+        # 23/11/2026: siti con più sale (TCBO, ERT): stesso titolo, date che si toccano, fonte sullo stesso sito di teatro
+        if q >= 0.8 and RA.stesso_organizzatore(x.get("fonte"), e.get("fonte")): return e
     return None
 
 
@@ -260,38 +263,39 @@ CAT = [(r"fotograf", "Fotografia"), (r"scultur|scultor", "Scultura"), (r"\bdesig
 
 
 def arte():
+    """Mostre dal calendario di arte.it (mese corrente e successivo). Lettura dei riquadri in regole_auto.arte_blocchi:
+    23/11/2026 corretto l'errore per cui nessuna mostra entrava mai (sede non letta)."""
+    import regole_auto as RA
     oggi = datetime.date.today(); mesi = [(oggi.year, oggi.month)]
     mesi.append((oggi.year + (oggi.month == 12), 1 if oggi.month == 12 else oggi.month + 1))
-    letti, n, visti = 0, 0, set()
+    letti, n, visti, scarti = 0, 0, set(), {}
+    def scarta(motivo): scarti[motivo] = scarti.get(motivo, 0) + 1
     for y, m in mesi:
         s = get(f"https://www.arte.it/calendario-arte/{CFG['arte']}/{y}/{m:02d}/")
         if not s: continue
-        for blocco in re.findall(r'<a href="(/calendario-arte/[^"]+)" class="link_mostre_list">(.*?)</a>', s, re.S):
-            href, b = blocco
-            if href in visti: continue
-            visti.add(href); letti += 1
-            def campo(c):
-                x = re.search(r'<span class="%s">(.*?)</span>' % c, b, re.S)
-                return html.unescape(re.sub(r"<[^>]+>|\s+", " ", x.group(1))).strip() if x else ""
-            tit = html.unescape(re.sub(r"<[^>]+>|\s+", " ", (re.search(r"<h2>(.*?)</h2>", b, re.S) or [None, ""])[1])).strip()
-            dd = re.match(r"Dal (.+?) al (.+)$", campo("data"))
-            occ = campo("occhiello").split("|")
-            if not (tit and dd and len(occ) >= 2): continue
-            ini, fin = data_it(dd.group(1)), data_it(dd.group(2))
-            c = comune(occ[0].strip()); sede = occ[1].strip()
-            if not (ini and fin and c and sede) or fin < OGGI or ini > LIMITE: continue
+        blocchi, motivi = RA.arte_blocchi(s)
+        for k, v in motivi.items(): scarta(k)
+        for b in blocchi:
+            if b["href"] in visti: continue
+            visti.add(b["href"]); letti += 1
+            tit, ini, fin, sede = b["titolo"], b["inizio"], b["fine"], b["sede"]
+            c = comune(b["citta"])
+            if not c: scarta("fuori perimetro"); continue
+            if fin < OGGI or ini > LIMITE: scarta("finita o troppo lontana"); continue
             tt = tok(tit)
             if any((len(tt & tok(x["titolo"])) / max(1, min(len(tt), len(tok(x["titolo"])))) >= 0.6) for x in mo if tok(x["titolo"])):
-                continue
-            testo = (tit + " " + campo("sommario")).lower()
+                scarta("già in guida"); continue
+            testo = (tit + " " + b["sommario"]).lower()
             cat = next((v for rx, v in CAT if re.search(rx, testo)), "Pittura")
             al = "all'" if re.match(r"(?i)[aeiou]", sede) else "a "
             mo.append({"id": "", "titolo": tit, "sede": sede, "citta": c, "inizio": ini, "fine": fin, "categoria": cat,
                        "descrizione": f"Mostra {al}{sede}.", "ingresso": "da verificare", "orari": "",
-                       "fonte": "https://www.arte.it" + urllib.parse.quote(href, safe="/-"), "sito": ""})
+                       "fonte": "https://www.arte.it" + urllib.parse.quote(b["href"], safe="/-"), "sito": ""})
             R["aggiunti"].append(f"mostra {ini}→{fin} {tit} – {sede} (arte.it)"); n += 1
         time.sleep(1.5)
-    R["fonti"]["arte.it"] = {"letti": letti, "aggiunti": n}
+    if letti and not n and not scarti.get("già in guida"):
+        R["errori"].append(f"arte.it: {letti} mostre lette e nessuna aggiunta né riconosciuta: controllare la lettura ({scarti})")
+    R["fonti"]["arte.it"] = {"letti": letti, "aggiunti": n, "scartate": scarti}
 
 
 # ---------- Galleria Wikiarte (Bologna, Galleria Falcone e Borsellino 2/D): una mostra personale ogni 2 settimane ----------
@@ -435,7 +439,7 @@ def siti_locali():
             elif (e["ora"] or "") >= "23:00": g, t = "Serate e club", "Serata"
             else: g = genere_mb(e["titolo"]) or "Pop e altra musica"; t = TIPO_G[g]
             bl = e["biglietti"]
-            x = nuovo(e["titolo"], e["data"], e["fino"], e["ora"] or "n.d.", luogo, com, g, t, bl,
+            x = nuovo(e["titolo"], e["data"], e["fino"], e["ora"] or "n.d.", e.get("luogo") or luogo, e.get("comune") or com, g, t, bl,
                       "sold out" if e["esaurito"] else ("disponibile" if bl else "da verificare"), e["fonte"] or (c["url"] if isinstance(c["url"], str) else c["url"][0]))
             if bl and re.search(r"/venue/|/biglietti/?$|shop\.", bl): x["biglietti_tipo"] = "Biglietteria"
             if e["descrizione"] and len(e["descrizione"]) > 30 and not re.match(r"\s*(https?://|www\.)", e["descrizione"]): x["descrizione"] = e["descrizione"]

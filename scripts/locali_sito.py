@@ -10,6 +10,8 @@ Configurazione: dati/locali_sito.json → {"bo": [ {...}, ... ], "mi": [...]}, o
   genere   genere di base (Rock, Jazz, Classica, Pop e altra musica, Teatro, Serate e club) — opzionale
   tipo     tipo di base (es. Prosa) — opzionale
   max      quante pagine evento aprire al massimo (elenco, predefinito 60)
+  sedi     siti con più sale: {"espressione": "luogo"} o {"espressione": ["luogo", "comune"]}; vince la sala nominata
+           per prima nella pagina dell'evento, altrimenti «nome» (23/11/2026, doppioni TCBO ed ERT)
 Metodi:
   tribe   API The Events Calendar (WordPress): /wp-json/tribe/events/v1/events
   ics     calendario ICS (?ical=1)
@@ -267,10 +269,12 @@ def m_elenco(c):
             nucleo = re.sub(r"^www\.|\..*$", "", sito)[:7].lower()
             if cand and not GENERICI.match(cand) and not (nucleo and nucleo in cand.lower().replace(" ", "") and len(cand.split()) <= 4) and re.search(r"[A-Za-zÀ-ÿ]{2}", cand):
                 tit = cand; break
+        i1 = h.find("<h1")
+        dopo_titolo = testo(h[i1:] if i1 > 0 else h)[:1500]   # per riconoscere la sala nei siti con più sale (opzione «sedi»)
         if jl:
             e = jl[0]; ini, ora = data_iso(e["inizio"]); fin, _ = data_iso(e["fine"])
             out.append({"titolo": e["titolo"] or tit, "data": ini, "fino": fin or ini, "ora": ora, "fonte": f,
-                        "biglietti": e["biglietti"] if re.search(BIGL, e["biglietti"], re.I) else link_biglietti(h, sito), "descrizione": testo(e["descrizione"])[:300], "stato": e["stato"]})
+                        "biglietti": e["biglietti"] if re.search(BIGL, e["biglietti"], re.I) else link_biglietti(h, sito), "descrizione": testo(e["descrizione"])[:300], "stato": e["stato"], "testo_sala": dopo_titolo})
             continue
         md = re.search(r'itemprop="startDate"[^>]*content="([^"]+)"', h) or re.search(r'<time[^>]+datetime="(20\d\d-\d\d-\d\d[^"]*)"', h)
         corpo = h
@@ -287,7 +291,7 @@ def m_elenco(c):
         for p in re.findall(r"<p[^>]*>(.*?)</p>", corpo, re.S):
             p = testo(p)
             if len(p) > 60 and not re.search(r"cookie|privacy|newsletter|©", p, re.I): dett = p; break
-        out.append({"titolo": tit, "data": ini, "fino": fin or ini, "ora": ora, "fonte": f, "biglietti": link_biglietti(h, sito), "descrizione": dett[:300]})
+        out.append({"titolo": tit, "data": ini, "fino": fin or ini, "ora": ora, "fonte": f, "biglietti": link_biglietti(h, sito), "descrizione": dett[:300], "testo_sala": dopo_titolo})
     return out
 
 
@@ -321,7 +325,11 @@ def leggi(c):
         d = re.sub(r"\s+", " ", e.get("descrizione") or "").strip()
         frase = re.split(r"(?<=[.!?])\s", d)[0] if d else ""
         frase = " ".join(frase.split()[:25]).rstrip(",;:") if 25 <= len(frase) else ""
-        out.append({"titolo": tit, "data": e["data"], "fino": max(e.get("fino") or e["data"], e["data"]), "ora": e.get("ora") or "",
+        luogo, com = (None, None)
+        if c.get("sedi"):   # 23/11/2026: siti con più sale (TCBO, ERT): la sala si legge dalla pagina dell'evento
+            import regole_auto as RA
+            luogo, com = RA.sala_da_testo(e.get("testo_sala") or e.get("sede") or "", c["sedi"], None)
+        out.append({"luogo": luogo, "comune": com, "titolo": tit, "data": e["data"], "fino": max(e.get("fino") or e["data"], e["data"]), "ora": e.get("ora") or "",
                     "fonte": e.get("fonte") or "", "biglietti": e.get("biglietti") or "", "esaurito": esaurito,
                     "descrizione": frase, "categorie": e.get("categorie", "")})
     out.sort(key=lambda e: (e["titolo"].lower(), e["data"]))

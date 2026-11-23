@@ -20,7 +20,18 @@
    "url": "https://www.tcbo.it",
    "metodo": "elenco",
    "scopri": true,
-   "genere": "Classica"
+   "genere": "Classica",
+   "sedi": {
+    "Foyer Rossini": "Teatro Comunale – Foyer Rossini",
+    "Sala Bibiena": "Teatro Comunale – Sala Bibiena",
+    "Comunale Nouveau": "Comunale Nouveau",
+    "Persiceto": [
+     "Teatro Comunale di San Giovanni in Persiceto",
+     "San Giovanni in Persiceto"
+    ],
+    "Auditorium Manzoni": "Auditorium Manzoni",
+    "Teatro Comunale(?! di)": "Teatro Comunale"
+   }
   },
   {
    "nome": "Arena del Sole",
@@ -28,7 +39,11 @@
    "metodo": "elenco",
    "scopri": true,
    "genere": "Teatro",
-   "tipo": "Prosa"
+   "tipo": "Prosa",
+   "sedi": {
+    "Teatro delle Moline|\\bMoline\\b": "Teatro delle Moline",
+    "Arena del Sole": "Arena del Sole"
+   }
   },
   {
    "nome": "Teatro Ebe Stignani",

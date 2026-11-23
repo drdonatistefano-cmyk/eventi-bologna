@@ -226,5 +226,43 @@ if os.path.exists(_ix):
     _t = open(_ix, encoding="utf-8").read()
     prova("index.html registra il sito di arrivo nei clic Biglietti", "clic-biglietti/${domBigl(a)}" in _t and "function domBigl" in _t)
 
+# ---------------------------------------------------------------- giro automatico: arte.it e siti con più sale (23/11/2026)
+# Stefano: «sistema tutto e fai in modo che non accada più». Riquadro vero di arte.it (23/11/2026): l'occhiello ha
+# dentro <span class="citta">; la vecchia lettura trovava solo «Milano» e scartava tutte le mostre.
+import regole_auto as RAU  # noqa: E402
+_arte = '''<a href="/calendario-arte/milano/mostra-62-wildlife-photographer-of-the-year-104514" class="link_mostre_list">
+ <span class="thumb"><img src="x.jpg" alt="62° Wildlife" /></span><span class="cont_txt">
+ <span class="data">Dal 20 Novembre 2026 al 7 Febbraio 2027</span> <span class="occhiello">
+ <span class="citta">Milano</span> | Museo della Permanente </span> <span class="title"> <h2>62° Wildlife Photographer of The Year</h2>
+ </span> <span class="sommario">Le fotografie naturalistiche pi&ugrave; rinomate...</span> <span class="l_tutto">&nbsp;</span></span></a>'''
+_b, _m = RAU.arte_blocchi(_arte)
+prova("arte.it: la mostra con l'occhiello annidato si legge (sede, città, date)",
+      len(_b) == 1 and _b[0]["sede"] == "Museo della Permanente" and _b[0]["citta"] == "Milano"
+      and _b[0]["inizio"] == "2026-11-20" and _b[0]["fine"] == "2027-02-07" and _b[0]["titolo"].startswith("62°"))
+_vecchio = _arte.replace('<span class="citta">Milano</span>', 'Milano')
+prova("arte.it: anche l'occhiello senza span interno si legge", RAU.arte_blocchi(_vecchio)[0][0]["sede"] == "Museo della Permanente")
+prova("arte.it: riquadro senza date contato come scartato, non ignorato in silenzio",
+      RAU.arte_blocchi(_arte.replace("Dal 20 Novembre 2026 al 7 Febbraio 2027", ""))[1] == {"senza date": 1})
+prova("doppioni: stessa pagina di teatro con più sale = stesso organizzatore",
+      RAU.stesso_organizzatore("https://www.tcbo.it/evento/opera/carmen-2027/", "https://www.tcbo.it/"))
+prova("doppioni: due biglietterie generali non bastano a dire «stesso spettacolo»",
+      not RAU.stesso_organizzatore("https://www.ticketone.it/event/a/", "https://www.ticketone.it/event/b/"))
+prova("doppioni: Schiaccianoci alla Scala e al Lirico restano due spettacoli",
+      not RAU.stesso_organizzatore("https://www.teatroallascala.org/", "https://www.ticketone.it/artist/balletto-milano/"))
+_sedi = {"Foyer Rossini": "Teatro Comunale – Foyer Rossini", "Persiceto": ["Teatro Comunale di San Giovanni in Persiceto", "San Giovanni in Persiceto"],
+         "Auditorium Manzoni": "Auditorium Manzoni", "Teatro Comunale(?! di)": "Teatro Comunale"}
+prova("sala: «Nabucco … Teatro Comunale» va al Comunale, non all'Auditorium Manzoni",
+      RAU.sala_da_testo("Nabucco 3, 4, 5 novembre 2027 Teatro Comunale. Biglietti", _sedi, "Auditorium Manzoni") == ("Teatro Comunale", None))
+prova("sala: Persiceto porta anche il comune",
+      RAU.sala_da_testo("Concerto di Gala 26 novembre Teatro Comunale di San Giovanni in Persiceto", _sedi, "x") == ("Teatro Comunale di San Giovanni in Persiceto", "San Giovanni in Persiceto"))
+prova("sala: senza riscontro resta la sala di base", RAU.sala_da_testo("Concerto da camera", _sedi, "Auditorium Manzoni") == ("Auditorium Manzoni", None))
+import aggiorna as AGG  # noqa: E402
+prova("doppioni: «P.F.M.» e «PFM – Premiata Forneria Marconi» sono lo stesso titolo", AGG.stesso_titolo("P.F.M.", "PFM – Premiata Forneria Marconi"))
+prova("doppioni: «Sottotono» e «Sotto Tono», «Jax» e «J-Ax» uniti", AGG.stesso_titolo("Sottotono", "Sotto Tono") and AGG.stesso_titolo("Jax", "J-Ax"))
+prova("doppioni: titoli diversi restano diversi", not AGG.stesso_titolo("Bonetti", "Bolero") and not AGG.stesso_titolo("Io", "Iosonouncane"))
+_ea = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "eventi_auto.py"), encoding="utf-8").read()
+prova("eventi_auto usa la lettura nuova di arte.it e la regola dello stesso organizzatore",
+      "RA.arte_blocchi(" in _ea and "RA.stesso_organizzatore(" in _ea and 'e.get("luogo") or luogo' in _ea)
+
 print(f"\n{len(FALLITE)} prove fallite" if FALLITE else "\nTutte le prove passano")
 sys.exit(1 if FALLITE else 0)

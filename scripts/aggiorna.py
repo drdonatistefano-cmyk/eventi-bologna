@@ -61,6 +61,16 @@ def norm(s):
     s = unicodedata.normalize("NFD", str(s or "").lower())
     return re.sub(r"[^a-z0-9]+", " ", "".join(c for c in s if not unicodedata.combining(c))).strip()
 
+def stesso_titolo(a, b):
+    """23/11/2026: «P.F.M.», «PFM – On the road again» e «PFM – Premiata Forneria Marconi» lo stesso giorno nello stesso
+    luogo sono lo stesso concerto (prima restavano tre schede). Titoli senza spazi né punti: uno comincia con l'altro."""
+    x, y = re.sub(r"[^a-z0-9]", "", norm(a)), re.sub(r"[^a-z0-9]", "", norm(b))
+    if not x or not y: return False
+    corto, lungo = sorted((x, y), key=len)
+    return len(corto) >= 3 and lungo.startswith(corto)
+
+AFFILIATI = r"ticketone\.it|vivaticket\.|feverup\.com|tiqets\.com|ticketmaster\.it"
+
 def leggi(path):
     txt = open(path, encoding="utf-8").read().strip()
     if path.endswith(".js") or txt.startswith("window."):
@@ -192,15 +202,24 @@ def main():
         puliti.append({k: e[k] for k in CAMPI if k != "chi" or e[k]})   # «chi» (protagonisti, 17/11/2026): solo se c'è
     # doppioni: stesso inizio + stesso titolo + stesso luogo
     visti, unici, doppi = {}, [], 0
+    stessi = {}   # (data, luogo) → schede già tenute, per i titoli scritti in modo diverso
     for e in puliti:
         k = (e["data"], norm(e["artista"]), norm(e["luogo"]))
+        if k not in visti:
+            for t in stessi.get((e["data"], norm(e["luogo"])), []):
+                if stesso_titolo(t["artista"], e["artista"]) and (t["ora"] == e["ora"] or "n.d." in (t["ora"], e["ora"])):
+                    k = (t["data"], norm(t["artista"]), norm(t["luogo"])); break
         if k in visti:
+            t = visti[k]
+            if re.search(AFFILIATI, e.get("biglietti", "")) and not re.search(AFFILIATI, t.get("biglietti", "")):
+                t["biglietti"], t["biglietti_tipo"] = e["biglietti"], e["biglietti_tipo"]
+            if t.get("ora") == "n.d." and e.get("ora") not in ("", "n.d."): t["ora"] = e["ora"]
             doppi += 1
             t = visti[k]
             for f in CAMPI:
                 if not t.get(f) and e.get(f): t[f] = e[f]
             continue
-        visti[k] = e; unici.append(e)
+        visti[k] = e; unici.append(e); stessi.setdefault((e["data"], norm(e["luogo"])), []).append(e)
     # id unici
     usati, mx = set(), 0
     for e in unici:
