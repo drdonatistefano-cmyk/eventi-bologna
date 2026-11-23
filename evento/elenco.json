@@ -86,7 +86,7 @@
 {
 "nome": "bo-e077-cesare-cremonini",
 "citta": "bo",
-"fino": "2026-11-27",
+"fino": "2026-12-06",
 "dati_event": true
 },
 {
@@ -2792,7 +2792,7 @@
 {
 "nome": "bo-e605-morte-accidentale-di-un-anarchico",
 "citta": "bo",
-"fino": "2026-11-28",
+"fino": "2026-11-29",
 "dati_event": true
 },
 {
@@ -2856,7 +2856,7 @@
 "dati_event": true
 },
 {
-"nome": "bo-e616-nathan-kiboba-fiocco-di-cotone",
+"nome": "bo-e616-nathan-kiboba-fiocco-di-neve",
 "citta": "bo",
 "fino": "2027-05-19",
 "dati_event": true
@@ -2864,7 +2864,7 @@
 {
 "nome": "bo-e617-grease-versione-amatoriale-compagnia-la-ragnatela",
 "citta": "bo",
-"fino": "2027-05-22",
+"fino": "2027-05-23",
 "dati_event": true
 },
 {
@@ -3825,72 +3825,24 @@
 "nome": "bo-e829-musica-vocale-da-camera-1",
 "citta": "bo",
 "fino": "2027-02-20",
-"dati_event": true
-},
-{
-"nome": "bo-e830-il-ritorno-di-ulisse-in-patria",
-"citta": "bo",
-"fino": "2027-03-07",
-"dati_event": true
-},
-{
-"nome": "bo-e831-sergio-bernal-dance-company",
-"citta": "bo",
-"fino": "2027-03-14",
-"dati_event": true
+"dati_event": false
 },
 {
 "nome": "bo-e832-musica-vocale-da-camera-2",
 "citta": "bo",
 "fino": "2027-03-20",
-"dati_event": true
-},
-{
-"nome": "bo-e833-madama-butterfly",
-"citta": "bo",
-"fino": "2027-04-04",
-"dati_event": true
-},
-{
-"nome": "bo-e834-querencia",
-"citta": "bo",
-"fino": "2027-04-11",
-"dati_event": true
+"dati_event": false
 },
 {
 "nome": "bo-e835-musica-vocale-da-camera-3",
 "citta": "bo",
 "fino": "2027-04-17",
-"dati_event": true
-},
-{
-"nome": "bo-e836-carmen",
-"citta": "bo",
-"fino": "2027-05-14",
-"dati_event": true
+"dati_event": false
 },
 {
 "nome": "bo-e837-musica-vocale-da-camera-4",
 "citta": "bo",
 "fino": "2027-05-22",
-"dati_event": true
-},
-{
-"nome": "bo-e838-vanessa",
-"citta": "bo",
-"fino": "2027-06-16",
-"dati_event": true
-},
-{
-"nome": "bo-e839-tao-dance-theatre",
-"citta": "bo",
-"fino": "2027-09-18",
-"dati_event": true
-},
-{
-"nome": "bo-e840-tristan-und-isolde",
-"citta": "bo",
-"fino": "2027-10-13",
 "dati_event": true
 },
 {
@@ -3903,7 +3855,7 @@
 "nome": "bo-e842-nabucco",
 "citta": "bo",
 "fino": "2027-11-09",
-"dati_event": true
+"dati_event": false
 },
 {
 "nome": "bo-e843-ceretta-ferrandez",
@@ -3932,19 +3884,7 @@
 {
 "nome": "bo-e847-le-palestriti",
 "citta": "bo",
-"fino": "2026-11-28",
-"dati_event": true
-},
-{
-"nome": "bo-e848-you-elsewhere",
-"citta": "bo",
 "fino": "2026-11-29",
-"dati_event": true
-},
-{
-"nome": "bo-e849-alla-meta",
-"citta": "bo",
-"fino": "2026-12-04",
 "dati_event": true
 },
 {
@@ -4058,8 +3998,8 @@
 {
 "nome": "bo-e871-qui",
 "citta": "bo",
-"fino": "2027-01-14",
-"dati_event": true
+"fino": "2027-01-17",
+"dati_event": false
 },
 {
 "nome": "bo-e872-alla-scoperta-di-morricone-ensemble-symphony-orchestra",
@@ -4310,20 +4250,194 @@
 {
 "nome": "bo-e917-body-sweats-for-elsa",
 "citta": "bo",
-"fino": "2026-11-26",
+"fino": "2026-11-27",
 "dati_event": true
 },
 {
 "nome": "bo-e918-se-domani",
 "citta": "bo",
-"fino": "2027-01-22",
-"dati_event": true
+"fino": "2027-01-24",
+"dati_event": false
 },
 {
 "nome": "bo-e919-grazie-della-squisita-prova",
 "citta": "bo",
 "fino": "2027-01-26",
 "dati_event": true
+},
+{
+"nome": "bo-e920-giuseppe-giacobazzi-osteria-giacobazzi",
+"citta": "bo",
+"fino": "2026-12-15",
+"dati_event": true
+},
+{
+"nome": "bo-e921-giuseppe-giacobazzi-osteria-giacobazzi",
+"citta": "bo",
+"fino": "2027-01-26",
+"dati_event": true
+},
+{
+"nome": "bo-e922-yonaka",
+"citta": "bo",
+"fino": "2027-03-06",
+"dati_event": true
+},
+{
+"nome": "bo-e923-silvia-gavarotti",
+"citta": "bo",
+"fino": "2027-03-11",
+"dati_event": true
+},
+{
+"nome": "bo-e924-ritmo-tribale",
+"citta": "bo",
+"fino": "2027-04-24",
+"dati_event": true
+},
+{
+"nome": "bo-e925-matteo-paolillo",
+"citta": "bo",
+"fino": "2027-04-27",
+"dati_event": true
+},
+{
+"nome": "bo-e926-fiorella-mannoia-anime-salve",
+"citta": "bo",
+"fino": "2027-05-09",
+"dati_event": true
+},
+{
+"nome": "bo-e927-camihawke-adesso-parlo-io",
+"citta": "bo",
+"fino": "2027-10-30",
+"dati_event": true
+},
+{
+"nome": "bo-e928-diodato-tour-teatri-2027",
+"citta": "bo",
+"fino": "2027-11-22",
+"dati_event": true
+},
+{
+"nome": "bo-e929-notre-dame-de-forli",
+"citta": "bo",
+"fino": "2026-11-26",
+"dati_event": true
+},
+{
+"nome": "bo-e930-spring-awakening",
+"citta": "bo",
+"fino": "2027-01-28",
+"dati_event": true
+},
+{
+"nome": "bo-e931-rapsodia-d-amore",
+"citta": "bo",
+"fino": "2027-02-07",
+"dati_event": true
+},
+{
+"nome": "bo-e932-spirito-allegro",
+"citta": "bo",
+"fino": "2027-02-09",
+"dati_event": true
+},
+{
+"nome": "bo-e933-giuseppe-sorgi-io-vergine-tu-pesci",
+"citta": "bo",
+"fino": "2027-02-12",
+"dati_event": true
+},
+{
+"nome": "bo-e934-un-amore-di-peso",
+"citta": "bo",
+"fino": "2027-02-21",
+"dati_event": true
+},
+{
+"nome": "bo-e935-abbiamo-fatto-un-casotto",
+"citta": "bo",
+"fino": "2027-03-07",
+"dati_event": true
+},
+{
+"nome": "bo-e936-vincenzo-comunale-prima-pagina",
+"citta": "bo",
+"fino": "2027-03-10",
+"dati_event": true
+},
+{
+"nome": "bo-e937-la-stranissima-coppia",
+"citta": "bo",
+"fino": "2027-04-17",
+"dati_event": true
+},
+{
+"nome": "bo-e938-little-symphonic-duet",
+"citta": "bo",
+"fino": "2027-05-14",
+"dati_event": true
+},
+{
+"nome": "bo-e939-l-omino-dei-sogni-e-l-omino-delle-nuvole",
+"citta": "bo",
+"fino": "2026-11-28",
+"dati_event": false
+},
+{
+"nome": "bo-e940-ragazza-blu",
+"citta": "bo",
+"fino": "2026-12-02",
+"dati_event": false
+},
+{
+"nome": "bo-e941-superabile",
+"citta": "bo",
+"fino": "2026-12-12",
+"dati_event": false
+},
+{
+"nome": "bo-e942-un-bambino-e-un-bambino",
+"citta": "bo",
+"fino": "2027-01-16",
+"dati_event": false
+},
+{
+"nome": "bo-e943-vent-debout",
+"citta": "bo",
+"fino": "2027-02-20",
+"dati_event": false
+},
+{
+"nome": "bo-e944-la-futura-classe-dirigente",
+"citta": "bo",
+"fino": "2027-04-10",
+"dati_event": false
+},
+{
+"nome": "bo-e945-vicini-ma-non-troppo",
+"citta": "bo",
+"fino": "2026-11-27",
+"dati_event": true
+},
+{
+"nome": "bo-e946-vito-classecion",
+"citta": "bo",
+"fino": "2026-11-29",
+"dati_event": true
+},
+{
+"nome": "bo-e947-il-fantasma-del-natale-migliore",
+"citta": "bo",
+"fino": "2026-12-06",
+"dati_event": true
+},
+{
+"nome": "bo-e948-concerto-di-gala-del-corso-rossiniano",
+"citta": "bo",
+"fino": "2026-11-26",
+"dati_event": false
 },
 {
 "nome": "fe-e005-franco-fasano-5et",
@@ -4400,7 +4514,7 @@
 {
 "nome": "fe-e020-prima-del-temporale-spettacolo-con-umberto-orsini",
 "citta": "fe",
-"fino": "2026-12-18",
+"fino": "2026-12-20",
 "dati_event": true
 },
 {
@@ -4412,7 +4526,7 @@
 {
 "nome": "fe-e022-romeo-e-giulietta",
 "citta": "fe",
-"fino": "2026-12-30",
+"fino": "2026-12-31",
 "dati_event": true
 },
 {
@@ -4442,7 +4556,7 @@
 {
 "nome": "fe-e027-non-si-sa-come-franco-branciaroli-in-pirandello",
 "citta": "fe",
-"fino": "2027-01-22",
+"fino": "2027-01-24",
 "dati_event": true
 },
 {
@@ -4454,7 +4568,7 @@
 {
 "nome": "fe-e029-morte-accidentale-di-un-anarchico-farsa-tragica-di-dario-fo",
 "citta": "fe",
-"fino": "2027-01-29",
+"fino": "2027-01-31",
 "dati_event": true
 },
 {
@@ -4478,7 +4592,7 @@
 {
 "nome": "fe-e033-riccardo-iii-maria-paiato-nel-ruolo-dell-usurpatore",
 "citta": "fe",
-"fino": "2027-02-05",
+"fino": "2027-02-07",
 "dati_event": true
 },
 {
@@ -4514,13 +4628,13 @@
 {
 "nome": "fe-e039-bancal-virginia-raffaele-torna-al-comunale",
 "citta": "fe",
-"fino": "2027-02-24",
+"fino": "2027-02-25",
 "dati_event": true
 },
 {
 "nome": "fe-e040-stato-contro-nolan-un-posto-tranquillo-gassmann-e-massini-pe",
 "citta": "fe",
-"fino": "2027-02-26",
+"fino": "2027-02-28",
 "dati_event": true
 },
 {
@@ -4538,7 +4652,7 @@
 {
 "nome": "fe-e043-falstaff",
 "citta": "fe",
-"fino": "2027-03-06",
+"fino": "2027-03-07",
 "dati_event": true
 },
 {
@@ -4562,7 +4676,7 @@
 {
 "nome": "fe-e047-scheda-bianca-rocco-papaleo-torna-al-teatro-comunale",
 "citta": "fe",
-"fino": "2027-03-19",
+"fino": "2027-03-21",
 "dati_event": true
 },
 {
@@ -4580,7 +4694,7 @@
 {
 "nome": "fe-e050-la-reginetta-di-leenane",
 "citta": "fe",
-"fino": "2027-04-02",
+"fino": "2027-04-04",
 "dati_event": true
 },
 {
@@ -4791,7 +4905,7 @@
 "nome": "fe-e090-nicola-sani-antonioni",
 "citta": "fe",
 "fino": "2027-03-20",
-"dati_event": true
+"dati_event": false
 },
 {
 "nome": "fe-e091-nicola-sani",
@@ -4839,7 +4953,7 @@
 "nome": "fe-e098-odhecaton-paolo-da-col",
 "citta": "fe",
 "fino": "2027-05-28",
-"dati_event": true
+"dati_event": false
 },
 {
 "nome": "fe-e100-omaggio-a-de-andre",
@@ -5298,6 +5412,96 @@
 "dati_event": true
 },
 {
+"nome": "fe-e177-macbeth",
+"citta": "fe",
+"fino": "2026-11-29",
+"dati_event": true
+},
+{
+"nome": "fe-e178-l-anno-che-verra",
+"citta": "fe",
+"fino": "2026-12-12",
+"dati_event": true
+},
+{
+"nome": "fe-e179-il-barbiere-di-siviglia",
+"citta": "fe",
+"fino": "2027-01-17",
+"dati_event": true
+},
+{
+"nome": "fe-e180-nido-di-vespe",
+"citta": "fe",
+"fino": "2027-01-27",
+"dati_event": true
+},
+{
+"nome": "fe-e181-chotto-desh",
+"citta": "fe",
+"fino": "2027-02-03",
+"dati_event": true
+},
+{
+"nome": "fe-e182-dido-aeneas",
+"citta": "fe",
+"fino": "2027-02-21",
+"dati_event": true
+},
+{
+"nome": "fe-e183-la-clemenza-di-tito",
+"citta": "fe",
+"fino": "2027-03-14",
+"dati_event": true
+},
+{
+"nome": "fe-e184-simon-boccanegra",
+"citta": "fe",
+"fino": "2027-04-11",
+"dati_event": true
+},
+{
+"nome": "fe-e185-romeo-e-giulietta",
+"citta": "fe",
+"fino": "2027-04-18",
+"dati_event": true
+},
+{
+"nome": "fe-e186-il-nostro-veleno-quotidiano",
+"citta": "fe",
+"fino": "2027-04-28",
+"dati_event": true
+},
+{
+"nome": "fe-e187-lo-zar",
+"citta": "fe",
+"fino": "2027-05-08",
+"dati_event": true
+},
+{
+"nome": "fe-e188-arrivano-i-dunque",
+"citta": "fe",
+"fino": "2027-05-11",
+"dati_event": true
+},
+{
+"nome": "fe-e189-momo-batsheva-dance-company",
+"citta": "fe",
+"fino": "2027-05-19",
+"dati_event": true
+},
+{
+"nome": "fe-e190-folk-songs-e-procedura-penale",
+"citta": "fe",
+"fino": "2027-05-30",
+"dati_event": true
+},
+{
+"nome": "fe-e191-xhuliano-dule-remuntada",
+"citta": "fe",
+"fino": "2027-03-25",
+"dati_event": true
+},
+{
 "nome": "mi-e018-marco-mengoni-allo-sbagliato",
 "citta": "mi",
 "fino": "2026-12-19",
@@ -5395,12 +5599,6 @@
 },
 {
 "nome": "mi-e040-bilal",
-"citta": "mi",
-"fino": "2026-12-03",
-"dati_event": true
-},
-{
-"nome": "mi-e041-brian-jagde-recital-di-canto",
 "citta": "mi",
 "fino": "2026-12-03",
 "dati_event": true
@@ -5889,12 +6087,6 @@
 "nome": "mi-e104-kalandra",
 "citta": "mi",
 "fino": "2027-03-24",
-"dati_event": true
-},
-{
-"nome": "mi-e105-pfm-on-the-road-again",
-"citta": "mi",
-"fino": "2027-03-25",
 "dati_event": true
 },
 {
@@ -6720,39 +6912,33 @@
 "dati_event": true
 },
 {
-"nome": "mi-e120-eros-ramazzotti",
-"citta": "mi",
-"fino": "2027-05-07",
-"dati_event": true
-},
-{
 "nome": "mi-e1203-io-sono-verticale",
 "citta": "mi",
-"fino": "2026-11-24",
+"fino": "2026-11-29",
 "dati_event": true
 },
 {
 "nome": "mi-e1204-sofonisba",
 "citta": "mi",
-"fino": "2026-11-28",
+"fino": "2026-12-06",
 "dati_event": true
 },
 {
 "nome": "mi-e1205-giuseppe-il-padre-putativo",
 "citta": "mi",
-"fino": "2026-12-01",
+"fino": "2026-12-06",
 "dati_event": true
 },
 {
 "nome": "mi-e1206-a-che-serve-il-petrolio",
 "citta": "mi",
-"fino": "2026-12-10",
+"fino": "2026-12-20",
 "dati_event": true
 },
 {
 "nome": "mi-e1207-salam-shalom-due-padri",
 "citta": "mi",
-"fino": "2026-12-15",
+"fino": "2026-12-20",
 "dati_event": true
 },
 {
@@ -7616,7 +7802,7 @@
 {
 "nome": "mi-e1378-angelo-pintus-loro-non-sanno-niente-capodanno",
 "citta": "mi",
-"fino": "2026-12-31",
+"fino": "2027-01-01",
 "dati_event": true
 },
 {
@@ -8330,13 +8516,13 @@
 {
 "nome": "mi-e1537-il-ritratto-di-dorian-gray",
 "citta": "mi",
-"fino": "2026-11-24",
+"fino": "2026-12-13",
 "dati_event": true
 },
 {
 "nome": "mi-e1538-un-marito-ideale",
 "citta": "mi",
-"fino": "2026-11-25",
+"fino": "2027-01-06",
 "dati_event": true
 },
 {
@@ -8400,9 +8586,201 @@
 "dati_event": false
 },
 {
+"nome": "mi-e1548-diego-abatantuono-in-una-sera-con-diego",
+"citta": "mi",
+"fino": "2026-12-21",
+"dati_event": false
+},
+{
+"nome": "mi-e1549-bonetti",
+"citta": "mi",
+"fino": "2027-01-30",
+"dati_event": true
+},
+{
+"nome": "mi-e1550-west-side-story-un-americano-a-parigi",
+"citta": "mi",
+"fino": "2027-02-06",
+"dati_event": true
+},
+{
+"nome": "mi-e1551-moulin-rouge-il-musical",
+"citta": "mi",
+"fino": "2026-11-25",
+"dati_event": false
+},
+{
+"nome": "mi-e1552-sister-act-il-musical",
+"citta": "mi",
+"fino": "2026-11-26",
+"dati_event": false
+},
+{
+"nome": "mi-e1553-il-piccolo-principe",
+"citta": "mi",
+"fino": "2026-11-28",
+"dati_event": false
+},
+{
+"nome": "mi-e1554-il-piccolo-principe",
+"citta": "mi",
+"fino": "2026-12-05",
+"dati_event": false
+},
+{
+"nome": "mi-e1555-lady-day-billie-holiday",
+"citta": "mi",
+"fino": "2026-12-05",
+"dati_event": true
+},
+{
+"nome": "mi-e1556-a-noi-gli-occhi-por-favor",
+"citta": "mi",
+"fino": "2026-12-09",
+"dati_event": true
+},
+{
+"nome": "mi-e1557-zelig-lab",
+"citta": "mi",
+"fino": "2026-12-16",
+"dati_event": true
+},
+{
+"nome": "mi-e1558-c-e-chi-dice-no-renzo-lucia-i-giovani",
+"citta": "mi",
+"fino": "2026-12-18",
+"dati_event": true
+},
+{
+"nome": "mi-e1559-linus-chiama-deejay",
+"citta": "mi",
+"fino": "2026-12-17",
+"dati_event": false
+},
+{
+"nome": "mi-e1560-tony-colombo",
+"citta": "mi",
+"fino": "2026-12-19",
+"dati_event": false
+},
+{
+"nome": "mi-e1561-b-l-u-e-il-musical-completamente-improvvisato",
+"citta": "mi",
+"fino": "2026-12-20",
+"dati_event": false
+},
+{
+"nome": "mi-e1562-capodanno-2027-big-bang",
+"citta": "mi",
+"fino": "2026-12-31",
+"dati_event": true
+},
+{
+"nome": "mi-e1563-capodanno-ad-area-zelig",
+"citta": "mi",
+"fino": "2026-12-31",
+"dati_event": true
+},
+{
+"nome": "mi-e1564-quinto-potere",
+"citta": "mi",
+"fino": "2027-01-20",
+"dati_event": true
+},
+{
+"nome": "mi-e1565-ghinzu",
+"citta": "mi",
+"fino": "2027-02-11",
+"dati_event": true
+},
+{
+"nome": "mi-e1566-perceval",
+"citta": "mi",
+"fino": "2027-02-12",
+"dati_event": true
+},
+{
+"nome": "mi-e1567-rocco-papaleo-scheda-bianca",
+"citta": "mi",
+"fino": "2027-02-17",
+"dati_event": true
+},
+{
+"nome": "mi-e1568-silvia-gavarotti",
+"citta": "mi",
+"fino": "2027-03-06",
+"dati_event": false
+},
+{
+"nome": "mi-e1569-yonaka",
+"citta": "mi",
+"fino": "2027-03-08",
+"dati_event": true
+},
+{
 "nome": "mi-e157-alex-warren",
 "citta": "mi",
 "fino": "2027-07-11",
+"dati_event": false
+},
+{
+"nome": "mi-e1570-la-favola-del-re-leone",
+"citta": "mi",
+"fino": "2027-03-14",
+"dati_event": true
+},
+{
+"nome": "mi-e1571-paris-jackson",
+"citta": "mi",
+"fino": "2027-04-05",
+"dati_event": true
+},
+{
+"nome": "mi-e1572-matteo-paolillo",
+"citta": "mi",
+"fino": "2027-04-28",
+"dati_event": false
+},
+{
+"nome": "mi-e1573-as-i-lay-dying",
+"citta": "mi",
+"fino": "2027-05-12",
+"dati_event": true
+},
+{
+"nome": "mi-e1574-james-taylor",
+"citta": "mi",
+"fino": "2027-06-13",
+"dati_event": true
+},
+{
+"nome": "mi-e1575-sfera-ebbasta-stadi-2027",
+"citta": "mi",
+"fino": "2027-07-16",
+"dati_event": false
+},
+{
+"nome": "mi-e1576-kpop-demon-hunters-golden-world-tour",
+"citta": "mi",
+"fino": "2027-09-04",
+"dati_event": true
+},
+{
+"nome": "mi-e1577-awed-dadda-e-dose-a-teatro",
+"citta": "mi",
+"fino": "2027-10-01",
+"dati_event": true
+},
+{
+"nome": "mi-e1578-22simba-per-miria",
+"citta": "mi",
+"fino": "2027-10-20",
+"dati_event": true
+},
+{
+"nome": "mi-e1579-antonio-juliano-therapy-di-gruppo",
+"citta": "mi",
+"fino": "2027-10-27",
 "dati_event": false
 },
 {
@@ -8412,9 +8790,189 @@
 "dati_event": true
 },
 {
+"nome": "mi-e1580-camihawke-adesso-parlo-io",
+"citta": "mi",
+"fino": "2027-11-02",
+"dati_event": true
+},
+{
+"nome": "mi-e1581-sarah-toscano",
+"citta": "mi",
+"fino": "2027-11-05",
+"dati_event": true
+},
+{
+"nome": "mi-e1582-purple-disco-machine",
+"citta": "mi",
+"fino": "2027-11-06",
+"dati_event": true
+},
+{
+"nome": "mi-e1583-diodato-tour-teatri-2027",
+"citta": "mi",
+"fino": "2027-11-08",
+"dati_event": true
+},
+{
+"nome": "mi-e1584-la-favolosa-storia-del-grinch",
+"citta": "mi",
+"fino": "2026-12-20",
+"dati_event": true
+},
+{
+"nome": "mi-e1585-cocon-javel",
+"citta": "mi",
+"fino": "2026-11-26",
+"dati_event": false
+},
+{
+"nome": "mi-e1586-il-re-tarantola",
+"citta": "mi",
+"fino": "2026-12-04",
+"dati_event": false
+},
+{
+"nome": "mi-e1587-neptune",
+"citta": "mi",
+"fino": "2026-12-13",
+"dati_event": false
+},
+{
+"nome": "mi-e1588-kokadame",
+"citta": "mi",
+"fino": "2026-12-19",
+"dati_event": false
+},
+{
+"nome": "mi-e1589-rares",
+"citta": "mi",
+"fino": "2027-01-14",
+"dati_event": true
+},
+{
 "nome": "mi-e159-ana-lua-caiano",
 "citta": "mi",
 "fino": "2027-02-07",
+"dati_event": true
+},
+{
+"nome": "mi-e1590-rares",
+"citta": "mi",
+"fino": "2027-01-19",
+"dati_event": true
+},
+{
+"nome": "mi-e1591-rares",
+"citta": "mi",
+"fino": "2027-01-20",
+"dati_event": true
+},
+{
+"nome": "mi-e1592-gaznevada",
+"citta": "mi",
+"fino": "2027-01-15",
+"dati_event": true
+},
+{
+"nome": "mi-e1593-satantango",
+"citta": "mi",
+"fino": "2027-01-21",
+"dati_event": true
+},
+{
+"nome": "mi-e1594-statuto",
+"citta": "mi",
+"fino": "2027-01-22",
+"dati_event": true
+},
+{
+"nome": "mi-e1595-eva-bloo",
+"citta": "mi",
+"fino": "2027-01-23",
+"dati_event": true
+},
+{
+"nome": "mi-e1596-pauli-pocket",
+"citta": "mi",
+"fino": "2027-01-23",
+"dati_event": false
+},
+{
+"nome": "mi-e1597-amari",
+"citta": "mi",
+"fino": "2027-01-24",
+"dati_event": true
+},
+{
+"nome": "mi-e1598-davide-shorty",
+"citta": "mi",
+"fino": "2027-01-29",
+"dati_event": true
+},
+{
+"nome": "mi-e1599-apple-sauce",
+"citta": "mi",
+"fino": "2027-01-29",
+"dati_event": false
+},
+{
+"nome": "mi-e1600-adri",
+"citta": "mi",
+"fino": "2027-01-31",
+"dati_event": true
+},
+{
+"nome": "mi-e1601-hugo-russo",
+"citta": "mi",
+"fino": "2027-02-24",
+"dati_event": true
+},
+{
+"nome": "mi-e1602-gutalax",
+"citta": "mi",
+"fino": "2027-02-25",
+"dati_event": true
+},
+{
+"nome": "mi-e1603-etta",
+"citta": "mi",
+"fino": "2027-02-26",
+"dati_event": true
+},
+{
+"nome": "mi-e1604-canzoniere-grecanico-salentino",
+"citta": "mi",
+"fino": "2027-02-28",
+"dati_event": false
+},
+{
+"nome": "mi-e1605-lello-analfino",
+"citta": "mi",
+"fino": "2027-03-06",
+"dati_event": true
+},
+{
+"nome": "mi-e1606-the-wild-wild",
+"citta": "mi",
+"fino": "2027-03-18",
+"dati_event": true
+},
+{
+"nome": "mi-e1607-nahko",
+"citta": "mi",
+"fino": "2027-03-22",
+"dati_event": true
+},
+{
+"nome": "mi-e1608-despite-exile",
+"citta": "mi",
+"fino": "2027-03-25",
+"dati_event": true
+},
+{
+"nome": "mi-e1609-john-carroll-kirby",
+"citta": "mi",
+"fino": "2027-03-25",
 "dati_event": true
 },
 {
@@ -8424,15 +8982,249 @@
 "dati_event": true
 },
 {
+"nome": "mi-e1610-no-face-no-case",
+"citta": "mi",
+"fino": "2027-03-26",
+"dati_event": true
+},
+{
+"nome": "mi-e1611-airbag",
+"citta": "mi",
+"fino": "2027-04-08",
+"dati_event": true
+},
+{
+"nome": "mi-e1612-dj-gruff",
+"citta": "mi",
+"fino": "2027-04-09",
+"dati_event": true
+},
+{
+"nome": "mi-e1613-underoath",
+"citta": "mi",
+"fino": "2027-04-17",
+"dati_event": false
+},
+{
+"nome": "mi-e1614-deryck-whibley",
+"citta": "mi",
+"fino": "2027-04-18",
+"dati_event": true
+},
+{
+"nome": "mi-e1615-l-entourloop",
+"citta": "mi",
+"fino": "2027-04-30",
+"dati_event": true
+},
+{
+"nome": "mi-e1616-half-me",
+"citta": "mi",
+"fino": "2027-05-06",
+"dati_event": true
+},
+{
+"nome": "mi-e1617-delta-sleep",
+"citta": "mi",
+"fino": "2027-05-14",
+"dati_event": true
+},
+{
+"nome": "mi-e1618-celebrate-studio-54",
+"citta": "mi",
+"fino": "2026-11-24",
+"dati_event": false
+},
+{
+"nome": "mi-e1619-liv-warfield",
+"citta": "mi",
+"fino": "2026-11-25",
+"dati_event": false
+},
+{
+"nome": "mi-e1620-the-legendary-johnny-o-neal-trio",
+"citta": "mi",
+"fino": "2026-11-27",
+"dati_event": false
+},
+{
+"nome": "mi-e1621-tom-s-family-back-in-town",
+"citta": "mi",
+"fino": "2026-11-29",
+"dati_event": false
+},
+{
+"nome": "mi-e1622-simona-molinari-la-donna-e-mobile",
+"citta": "mi",
+"fino": "2026-12-13",
+"dati_event": false
+},
+{
+"nome": "mi-e1623-harlem-gospel-choir",
+"citta": "mi",
+"fino": "2027-01-02",
+"dati_event": false
+},
+{
+"nome": "mi-e1624-billy-cobham-time-machine-band",
+"citta": "mi",
+"fino": "2027-01-16",
+"dati_event": false
+},
+{
+"nome": "mi-e1625-incognito",
+"citta": "mi",
+"fino": "2027-02-28",
+"dati_event": false
+},
+{
+"nome": "mi-e1626-la-lampada-di-aladino",
+"citta": "mi",
+"fino": "2027-01-06",
+"dati_event": false
+},
+{
+"nome": "mi-e1627-cost-of-living",
+"citta": "mi",
+"fino": "2026-11-28",
+"dati_event": false
+},
+{
+"nome": "mi-e1628-pazza",
+"citta": "mi",
+"fino": "2026-11-29",
+"dati_event": false
+},
+{
+"nome": "mi-e1629-lu-santo-jullare-francesco",
+"citta": "mi",
+"fino": "2026-11-29",
+"dati_event": false
+},
+{
 "nome": "mi-e163-angele",
 "citta": "mi",
 "fino": "2027-05-13",
 "dati_event": true
 },
 {
+"nome": "mi-e1630-paura-viaggio-ironico-nella-paura-umana",
+"citta": "mi",
+"fino": "2026-11-29",
+"dati_event": false
+},
+{
+"nome": "mi-e1631-don-milani-la-parola-che-nutre",
+"citta": "mi",
+"fino": "2026-12-12",
+"dati_event": false
+},
+{
+"nome": "mi-e1632-i-virtuosi-del-teatro-alla-scala",
+"citta": "mi",
+"fino": "2026-12-02",
+"dati_event": true
+},
+{
+"nome": "mi-e1633-filarmonica-della-scala-michele-gamba",
+"citta": "mi",
+"fino": "2026-12-14",
+"dati_event": true
+},
+{
+"nome": "mi-e1634-filarmonica-della-scala-riccardo-chailly",
+"citta": "mi",
+"fino": "2027-01-18",
+"dati_event": true
+},
+{
+"nome": "mi-e1635-milano-buenos-aires-tango-nuevo-antico-amore",
+"citta": "mi",
+"fino": "2027-02-01",
+"dati_event": true
+},
+{
+"nome": "mi-e1636-mario-brunello-e-i-violoncelli-della-scala",
+"citta": "mi",
+"fino": "2027-02-22",
+"dati_event": true
+},
+{
+"nome": "mi-e1637-ettore-pagano-naoko-sonoda",
+"citta": "mi",
+"fino": "2027-04-04",
+"dati_event": true
+},
+{
+"nome": "mi-e1638-omaggio-a-maurizio-pollini",
+"citta": "mi",
+"fino": "2027-04-28",
+"dati_event": true
+},
+{
+"nome": "mi-e1639-omaggio-a-luciana-pestalozza-e-claudio-abbado",
+"citta": "mi",
+"fino": "2027-05-16",
+"dati_event": true
+},
+{
 "nome": "mi-e164-angelique-kidjo",
 "citta": "mi",
 "fino": "2027-04-05",
+"dati_event": true
+},
+{
+"nome": "mi-e1640-beethoven-ritratto-tra-gioia-e-dolor",
+"citta": "mi",
+"fino": "2027-05-17",
+"dati_event": true
+},
+{
+"nome": "mi-e1641-e-bravo-figaro",
+"citta": "mi",
+"fino": "2027-05-29",
+"dati_event": true
+},
+{
+"nome": "mi-e1642-piccolo-80-arlecchino-servitore-di-due-padroni",
+"citta": "mi",
+"fino": "2027-07-04",
+"dati_event": true
+},
+{
+"nome": "mi-e1643-philippe-jaroussky",
+"citta": "mi",
+"fino": "2027-11-08",
+"dati_event": true
+},
+{
+"nome": "mi-e1644-myung-whun-chung-beethoven-sinfonia-n-9",
+"citta": "mi",
+"fino": "2027-11-17",
+"dati_event": true
+},
+{
+"nome": "mi-e1645-berliner-philharmoniker-kirill-petrenko",
+"citta": "mi",
+"fino": "2027-11-15",
+"dati_event": true
+},
+{
+"nome": "mi-e1646-il-settecento-milanese-alle-origini-della-sinfonia",
+"citta": "mi",
+"fino": "2027-11-15",
+"dati_event": true
+},
+{
+"nome": "mi-e1647-igor-levit-beethoven-ii",
+"citta": "mi",
+"fino": "2027-11-21",
+"dati_event": true
+},
+{
+"nome": "mi-e1648-jessica-pratt",
+"citta": "mi",
+"fino": "2027-11-22",
 "dati_event": true
 },
 {
@@ -8988,12 +9780,6 @@
 "dati_event": true
 },
 {
-"nome": "mi-e296-jax",
-"citta": "mi",
-"fino": "2027-09-10",
-"dati_event": true
-},
-{
 "nome": "mi-e297-jazzanova",
 "citta": "mi",
 "fino": "2026-11-28",
@@ -9159,12 +9945,6 @@
 "nome": "mi-e343-mai-dire-goku",
 "citta": "mi",
 "fino": "2027-02-27",
-"dati_event": true
-},
-{
-"nome": "mi-e344-mara-sattei",
-"citta": "mi",
-"fino": "2026-11-23",
 "dati_event": true
 },
 {
@@ -9370,12 +10150,6 @@
 "citta": "mi",
 "fino": "2027-05-02",
 "dati_event": false
-},
-{
-"nome": "mi-e393-p-f-m",
-"citta": "mi",
-"fino": "2027-03-25",
-"dati_event": true
 },
 {
 "nome": "mi-e394-paky",
@@ -9681,12 +10455,6 @@
 "nome": "mi-e453-sottotono",
 "citta": "mi",
 "fino": "2027-06-19",
-"dati_event": true
-},
-{
-"nome": "mi-e454-sottotono",
-"citta": "mi",
-"fino": "2027-03-05",
 "dati_event": true
 },
 {
@@ -10268,7 +11036,7 @@
 {
 "nome": "mi-e584-il-badante-paolo-ruffini",
 "citta": "mi",
-"fino": "2027-01-28",
+"fino": "2027-01-29",
 "dati_event": true
 },
 {
@@ -10586,7 +11354,7 @@
 {
 "nome": "mi-e680-la-favolosa-storia-del-grinch",
 "citta": "mi",
-"fino": "2026-12-12",
+"fino": "2026-12-20",
 "dati_event": true
 },
 {
@@ -12652,5 +13420,233 @@
 "citta": "ra",
 "fino": "2027-02-05",
 "dati_event": true
+},
+{
+"nome": "ra-e107-erano-tutti-miei-figli",
+"citta": "ra",
+"fino": "2026-12-13",
+"dati_event": false
+},
+{
+"nome": "ra-e108-light-of-day-rock-benefit",
+"citta": "ra",
+"fino": "2026-12-19",
+"dati_event": false
+},
+{
+"nome": "ra-e109-cameristi-della-scala",
+"citta": "ra",
+"fino": "2026-12-21",
+"dati_event": false
+},
+{
+"nome": "ra-e110-people-places-things",
+"citta": "ra",
+"fino": "2027-01-10",
+"dati_event": false
+},
+{
+"nome": "ra-e111-concerto-lirico-rossiniano",
+"citta": "ra",
+"fino": "2027-01-21",
+"dati_event": false
+},
+{
+"nome": "ra-e112-ti-vedo-la-leggenda-del-basilisco",
+"citta": "ra",
+"fino": "2027-01-24",
+"dati_event": false
+},
+{
+"nome": "ra-e113-se-questo-e-levi",
+"citta": "ra",
+"fino": "2027-01-27",
+"dati_event": false
+},
+{
+"nome": "ra-e114-tre-variazioni-della-vita",
+"citta": "ra",
+"fino": "2027-02-07",
+"dati_event": false
+},
+{
+"nome": "ra-e115-jack-il-ragazzino-che-sorvolo-l-oceano",
+"citta": "ra",
+"fino": "2027-02-14",
+"dati_event": false
+},
+{
+"nome": "ra-e116-moliere-l-arte-della-beffa",
+"citta": "ra",
+"fino": "2027-02-21",
+"dati_event": false
+},
+{
+"nome": "ra-e117-orchestra-cherubini",
+"citta": "ra",
+"fino": "2027-02-27",
+"dati_event": false
+},
+{
+"nome": "ra-e118-nini-e-la-balena",
+"citta": "ra",
+"fino": "2027-03-07",
+"dati_event": false
+},
+{
+"nome": "ra-e119-nico-cerca-un-amico",
+"citta": "ra",
+"fino": "2026-11-29",
+"dati_event": false
+},
+{
+"nome": "ra-e120-dialoghi-con-mia-madre",
+"citta": "ra",
+"fino": "2026-11-30",
+"dati_event": false
+},
+{
+"nome": "ra-e121-la-gallinella-rossa",
+"citta": "ra",
+"fino": "2026-12-08",
+"dati_event": false
+},
+{
+"nome": "ra-e122-magma-un-avventura-claustrocomica",
+"citta": "ra",
+"fino": "2026-12-13",
+"dati_event": false
+},
+{
+"nome": "ra-e123-vito-l-altezza-delle-lasagne",
+"citta": "ra",
+"fino": "2026-12-19",
+"dati_event": false
+},
+{
+"nome": "ra-e124-valentina-vuole",
+"citta": "ra",
+"fino": "2027-01-17",
+"dati_event": false
+},
+{
+"nome": "ra-e125-la-tigre",
+"citta": "ra",
+"fino": "2027-01-21",
+"dati_event": false
+},
+{
+"nome": "ra-e126-maria-pia-timo-in-tutti-i-sensi",
+"citta": "ra",
+"fino": "2027-01-22",
+"dati_event": false
+},
+{
+"nome": "ra-e127-processo-a-elena",
+"citta": "ra",
+"fino": "2027-01-23",
+"dati_event": false
+},
+{
+"nome": "ra-e128-un-modesto-discutibile-genio-qualunque",
+"citta": "ra",
+"fino": "2027-01-29",
+"dati_event": false
+},
+{
+"nome": "ra-e129-simone-cristicchi-sulle-tracce-di-francesco",
+"citta": "ra",
+"fino": "2027-02-08",
+"dati_event": false
+},
+{
+"nome": "ra-e130-vito-l-altezza-delle-lasagne",
+"citta": "ra",
+"fino": "2027-02-19",
+"dati_event": false
+},
+{
+"nome": "ra-e131-le-avventure-di-pulcino",
+"citta": "ra",
+"fino": "2027-02-21",
+"dati_event": false
+},
+{
+"nome": "ra-e132-l-ombra-perduta-di-peter-schlemihl",
+"citta": "ra",
+"fino": "2027-02-23",
+"dati_event": false
+},
+{
+"nome": "ra-e133-il-cotto-e-il-crudo",
+"citta": "ra",
+"fino": "2027-02-28",
+"dati_event": false
+},
+{
+"nome": "ra-e134-lella-costa-se-non-posso-ballare-non-e-la-mia-rivoluzione",
+"citta": "ra",
+"fino": "2027-03-06",
+"dati_event": false
+},
+{
+"nome": "ra-e135-vorrei-una-voce",
+"citta": "ra",
+"fino": "2027-03-09",
+"dati_event": false
+},
+{
+"nome": "ra-e136-san-costanzo-show-del-nostro-peggio-meglio",
+"citta": "ra",
+"fino": "2027-03-12",
+"dati_event": false
+},
+{
+"nome": "ra-e137-hansel-e-gretel",
+"citta": "ra",
+"fino": "2027-03-14",
+"dati_event": false
+},
+{
+"nome": "ra-e138-le-fuggitive",
+"citta": "ra",
+"fino": "2027-03-21",
+"dati_event": false
+},
+{
+"nome": "ra-e139-l-uomo-la-bestia-e-la-virtu",
+"citta": "ra",
+"fino": "2027-04-06",
+"dati_event": false
+},
+{
+"nome": "ra-e140-io-charles",
+"citta": "ra",
+"fino": "2027-04-18",
+"dati_event": false
+},
+{
+"nome": "ra-e141-valeria-graci-volevo-essere-io",
+"citta": "ra",
+"fino": "2027-04-23",
+"dati_event": false
+},
+{
+"nome": "ra-e142-oasi",
+"citta": "ra",
+"fino": "2027-04-27",
+"dati_event": false
+},
+{
+"nome": "ra-e143-contrazioni-pericolose",
+"citta": "ra",
+"fino": "2027-05-19",
+"dati_event": false
+},
+{
+"nome": "ra-e144-stefano-massini-alfabeto-delle-emozioni",
+"citta": "ra",
+"fino": "2027-05-25",
+"dati_event": false
 }
 ]
