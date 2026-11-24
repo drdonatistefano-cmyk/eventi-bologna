@@ -1589,9 +1589,12 @@ const incolla=su=>{bar.classList.toggle("stuck",su);if(cittaV)cittaV.classList.t
 let _ioBar=null;try{if(window.IntersectionObserver){const sp=document.createElement("div");sp.setAttribute("aria-hidden","true");sp.style.cssText="height:0;margin:0;padding:0";bar.parentNode.insertBefore(sp,bar);
  _ioBar=new IntersectionObserver(es=>{for(const x of es)incolla(x.boundingClientRect.top<=0&&!x.isIntersecting||x.boundingClientRect.top<0)},{threshold:[0,1]});_ioBar.observe(sp)}}catch(_){_ioBar=null}
 let _rafS=0;
-function onScroll(){if(_rafS)return;_rafS=requestAnimationFrame(()=>{_rafS=0;if(!_ioBar)incolla(bar.getBoundingClientRect().top<=0);fab.classList.toggle("show",scrollY>900);pillola()})}
+/* 24/11/2026 (velocità): la posizione dello scorrimento si legge solo qui, nel fotogramma dello scorrimento; pillola() usa quella
+   salvata, così dopo ogni lettera della ricerca non obbliga il telefono a rifare l'impaginazione */
+let _sy=scrollY;
+function onScroll(){if(_rafS)return;_rafS=requestAnimationFrame(()=>{_rafS=0;_sy=scrollY;if(!_ioBar)incolla(bar.getBoundingClientRect().top<=0);fab.classList.toggle("show",_sy>900);pillola()})}
 function nAttivi(){return nSel()+(st.q?1:0)}
-function pillola(){const g=$("#azzGiu");if(g&&!g.hidden)g.classList.toggle("via",scrollY<260)}
+function pillola(){const g=$("#azzGiu");if(g&&!g.hidden)g.classList.toggle("via",_sy<260)}
 function mostraAzzera(){if(!$("#azzSu")||!$("#azzGiu"))return;const n=nAttivi();$$("#azzSu .n,#azzGiu .n").forEach(e=>e.textContent=n);$("#azzSu").hidden=$("#azzGiu").hidden=n===0;pillola()}
 addEventListener("scroll",onScroll,{passive:true});addEventListener("keydown",e=>{if(e.key==="Escape"&&popK){popK="";renderFbar()}});
 addEventListener("resize",()=>{scriviBarH();if(popK){popK="";renderFbar()}});
