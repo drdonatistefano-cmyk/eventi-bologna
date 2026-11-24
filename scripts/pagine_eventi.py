@@ -85,7 +85,7 @@ def data_it(s):
     return f"{giorni[d.weekday()]} {d.day} {mesi[d.month - 1]} {d.year}"
 
 
-CSS = (":root{--bg:#f6efe4;--ink:#231d18;--mute:#7a6f63;--line:#e8ddcc;--acc:#2f4d68}*{box-sizing:border-box}"
+CSS = (":root{--bg:#f6efe4;--ink:#231d18;--mute:#6b6156;--line:#e8ddcc;--acc:#2f4d68}*{box-sizing:border-box}"
        "body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Georgia,'Iowan Old Style',serif}"
        ".w{max-width:760px;margin:0 auto;padding:0 20px}header.top{border-bottom:1px solid var(--line);padding:14px 0;margin-bottom:28px}"
        "header.top .w{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:baseline}.marchio{font-weight:700;color:var(--ink);text-decoration:none}"
@@ -109,7 +109,9 @@ def pagina(k, ev, ind, altri, url):
     guida = f"{SITO}/{CARTELLE[k] + '/' if CARTELLE[k] else ''}?cerca={urllib.parse.quote(ev['artista'][:60])}"
     quando = data_it(ev["data"]) + (f" – {data_it(ev['fino'])}" if ev.get("fino") and ev["fino"] != ev["data"] else "")
     indirizzo = f"{ind['via']} {ind['civico']}, {ind.get('cap', '')} {ind['comune']}".replace("  ", " ") if ind else ""
-    corpo = [f'<p class="briciole"><a href="/">Ach\'s Events Guide</a> › <a href="/{CARTELLE[k] + "/" if CARTELLE[k] else ""}">{e(NOMI[k])}</a> › {e(ev.get("genere") or "Spettacoli")}</p>',
+    # 24/11/2026: a Bologna il nome della città non è un link (porterebbe alla stessa pagina di «Ach's Events Guide», WebAbility 3.2.4)
+    citta_bric = '<a href="/%s/">%s</a>' % (CARTELLE[k], e(NOMI[k])) if CARTELLE[k] else e(NOMI[k])
+    corpo = [f'<p class="briciole"><a href="/">Ach\'s Events Guide</a> › {citta_bric} › {e(ev.get("genere") or "Spettacoli")}</p>',
              f"<h1>{e(ev['artista'])}</h1>",
              f'<p class="quando">{e(quando)}{" · ore " + e(ev["ora"]) if re.search(r"\\d", ev.get("ora") or "") else ""}</p>',
              f'<p class="dove"><b>{e(ev.get("luogo"))}</b>, {e(citta)}' + (f"<br>{e(indirizzo)}" if indirizzo else "") + "</p>"]
