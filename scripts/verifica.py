@@ -197,6 +197,9 @@ def vista_pagine():
               # 18/11/2026: la scheda piccola non è un pulsante con dentro altri link (WebAbility); Ravenna e Ferrara
               ("Events, schede piccole accessibili", B["events"], 'class="mopen"'), ("Events, comune nelle schede", B["events"], 'class="mcom"'), ("Events, clic Biglietti con il sito di arrivo", B["events"], "clic-biglietti/"), ("Events Ravenna", B["events"] + "ravenna/", "Events"),
               ("Events Ferrara", B["events"] + "ferrara/", "Events"),
+              # 24/11/2026: quarta guida Ach's Dishes (ex AchRecipes) e il suo bottone fra le guide di Events
+              ("Dishes", "https://achdishes.com/", "Ach's Dishes"), ("Events, bottone Dishes fra le guide", B["events"], "guide/vai-dishes"),
+              ("Events Milano, bottone Dishes fra le guide", B["events"] + "milano/", "guide/vai-dishes"),
               ("Events, filtri nuovi", B["events"], 'F.id="nAf"'), ("Places, riquadro dei filtri che segue", B["places"], 'getElementById("nAm")'), ("Places, tasto WhatsApp", B["places"], "function waPl("), ("Events Milano, filtri nuovi", B["events"] + "milano/", 'F.id="nAf"'),
               ("Dinners", B["dinners"], "Dinners"), ("Dinners, Chi siamo", B["dinners"] + "chi-siamo/", "Chi siamo"),
               ("Dinners, Privacy", B["dinners"] + "privacy/", "privacy"),
