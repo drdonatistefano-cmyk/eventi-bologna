@@ -1845,5 +1845,17 @@ body.nA #qwrap{display:none!important} body.nA{--qh:0px}
  else{if(c.parentNode!==st){var t=st.querySelector(".topctl");if(t)t.after(c);else st.prepend(c);c.after(a)}document.body.classList.remove("pcbar")}
  try{window.dispatchEvent(new Event("resize"))}catch(e){}}
  if(mq.addEventListener)mq.addEventListener("change",sposta);else if(mq.addListener)mq.addListener(sposta);sposta()})();</script>
+<style id="bordi-controlli">
+/* 24/11/2026 — bordi di bottoni, filtri e campi di ricerca più scuri (WebAbility, WCAG 1.4.11: almeno 3 a 1).
+   #928779: 3,47 sul bianco carta, 3,08 sul fondo crema. Restano chiari le schede, i riquadri dei numeri e le righe
+   di separazione, che non sono comandi. Gli stati attivi tengono il loro colore. Stefano: «pubblica». */
+:root{--ctl:#928779}
+.search input,.iconbtn.ghost,.chip,.fbtn,.qc,.mchip,.lsearch,.big,.prange input,.act,.more,.rchip,.sheet.pad input,
+.ach-guide__btn,.modes button,.xbtn,.seg,.city.citta-n .cur,
+#nA .ch:not([aria-pressed=true]):not(.fb):not(:disabled),#nAf .o:not([aria-pressed=true]):not(:disabled),
+#nAf .ft .a1,#nAf .cerca{border-color:var(--ctl)}
+#nA .ch:disabled,#nAf .o:disabled{border-color:#A39C90}
+.ach-guide__btn.ach-guide__coll{border-color:#7a8894!important}
+</style>
 </body>
 </html>
