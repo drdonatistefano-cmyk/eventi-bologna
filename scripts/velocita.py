@@ -353,7 +353,10 @@ def main():
 
     # storico: una riga per guida, pagina e giorno (si tiene un anno)
     sto = os.path.join(os.path.dirname(os.path.abspath(uscita)) or ".", "velocita_storico.csv")
-    righe = open(sto).read().splitlines() if os.path.exists(sto) else ["data,guida,pagina,contenuto_4g,foto_4g,tbt_4g,kb_4g,contenuto_3g,ritorno,pc,tocco_max,giudizio"]
+    TESTA = "data,guida,pagina,contenuto_4g,foto_4g,tbt_4g,kb_4g,contenuto_3g,ritorno,pc,tocco_max,giudizio"
+    # 24/11/2026: la testata si rimette sempre (era andata persa) e lo storico tiene un anno per DATA, non per numero
+    # di righe: con Dishes le righe al giorno sono 5 e «3*366 righe» teneva solo sette mesi.
+    righe = [TESTA] + [r for r in (open(sto).read().splitlines() if os.path.exists(sto) else []) if r[:1].isdigit()]
     oggi = time.strftime("%Y-%m-%d", time.gmtime())
     for chiave in scelte:
         for nome_p, v in R["guide"][chiave]["pagine"].items():
@@ -362,7 +365,8 @@ def main():
             val = [a.get("contenuto"), a.get("foto"), a.get("tbt"), a.get("kb"), v["prima visita 3G"].get("contenuto"),
                    v["ritorno"].get("contenuto"), v["pc"].get("contenuto"), max(t, default=None), v["giudizio"].get("insieme")]
             righe.append(",".join([oggi, chiave, nome_p] + ["" if x is None else str(x) for x in val]))
-    testa, corpo = righe[0], sorted(righe[1:])[-3 * 366:]
+    limite = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 366 * 86400))
+    testa, corpo = righe[0], sorted(r for r in righe[1:] if r[:10] >= limite)
     open(sto, "w").write("\n".join([testa] + corpo) + "\n")
     print("salvato", uscita, "e", sto)
 
