@@ -1,16 +1,13 @@
 {
- "quando": "2026-11-23T11:06+01:00",
- "giorno": "2026-11-23",
+ "quando": "2026-11-24T10:51+01:00",
+ "giorno": "2026-11-24",
  "ok": true,
- "film": 24,
+ "film": 32,
  "sale_con_film": 10,
- "pagine_lette": 15,
- "pagine_fallite": [
-  "Nuovo Cinema Giardino (cinemap): <urlopen error timed out>"
- ],
+ "pagine_lette": 16,
+ "pagine_fallite": [],
  "note": [
-  "sale nuove trovate: 0",
-  "mymovies: 13 schede, 17 film abbinati",
-  "wikipedia: 27 film con la voce, 3 ricerche nuove"
+  "mymovies: 12 schede, 16 film abbinati",
+  "wikipedia: 38 film con la voce, 3 ricerche nuove"
  ]
 }

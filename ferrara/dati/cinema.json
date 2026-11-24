@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-23",
- "giorno_orari": "2026-11-23",
+ "aggiornato": "2026-11-24",
+ "giorno_orari": "2026-11-24",
  "sale": [
   {
    "id": "c002",
@@ -45,9 +45,6 @@
       "19:30"
      ],
      "giorni": {
-      "2026-11-23": [
-       "19:30"
-      ],
       "2026-11-24": [
        "19:30"
       ],
@@ -71,9 +68,6 @@
       "22:15"
      ],
      "giorni": {
-      "2026-11-23": [
-       "22:15"
-      ],
       "2026-11-24": [
        "22:15"
       ],
@@ -126,13 +120,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-23": [
-       "18:15",
-       "19:00",
-       "20:30",
-       "21:00",
-       "21:30"
-      ],
       "2026-11-24": [
        "18:15",
        "19:00",
@@ -148,7 +135,7 @@
        "21:30"
       ]
      },
-     "versione": "Versione originale (solo ore 21:00)",
+     "versione": "",
      "genere": "Azione, Avventura, Fantasy",
      "regia": "Francis Lawrence",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
@@ -164,9 +151,6 @@
       "18:05"
      ],
      "giorni": {
-      "2026-11-23": [
-       "18:05"
-      ],
       "2026-11-24": [
        "18:05"
       ],
@@ -187,12 +171,10 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "21:10"
+      "18:15",
+      "22:00"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:10"
-      ],
       "2026-11-24": [
        "18:15",
        "22:00"
@@ -218,9 +200,6 @@
       "18:40"
      ],
      "giorni": {
-      "2026-11-23": [
-       "18:40"
-      ],
       "2026-11-24": [
        "18:40"
       ],
@@ -271,9 +250,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:00"
-      ],
       "2026-11-24": [
        "21:00"
       ],
@@ -285,9 +261,9 @@
      "genere": "Documentario",
      "regia": "Kasia Smutniak",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
-     "paese": "Italia",
      "durata": 105,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "Italia"
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
@@ -296,10 +272,6 @@
       "21:50"
      ],
      "giorni": {
-      "2026-11-23": [
-       "18:00",
-       "21:50"
-      ],
       "2026-11-24": [
        "18:00",
        "21:50"
@@ -326,11 +298,6 @@
       "20:30"
      ],
      "giorni": {
-      "2026-11-23": [
-       "18:10",
-       "19:15",
-       "20:30"
-      ],
       "2026-11-24": [
        "18:10",
        "19:15",
@@ -373,9 +340,6 @@
       "21:20"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:20"
-      ],
       "2026-11-24": [
        "21:20"
       ],
@@ -399,9 +363,6 @@
       "18:25"
      ],
      "giorni": {
-      "2026-11-23": [
-       "18:25"
-      ],
       "2026-11-24": [
        "18:25"
       ],
@@ -422,12 +383,9 @@
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [
-      "22:00"
+      "21:10"
      ],
      "giorni": {
-      "2026-11-23": [
-       "22:00"
-      ],
       "2026-11-24": [
        "21:10"
       ],
@@ -478,12 +436,15 @@
    "film": [
     {
      "titolo": "Fjord",
-     "orari": [
-      "17:30",
-      "21:15"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-22": [
+      "2026-11-27": [
+       "21:15"
+      ],
+      "2026-11-28": [
+       "21:15"
+      ],
+      "2026-11-29": [
        "17:30",
        "21:15"
       ]
@@ -494,7 +455,6 @@
      "interpreti": "Sebastian Stan, Renate Reinsve, Lisa Carlehed e Lisa Loven Kongsli",
      "durata": 146,
      "anno": 2026,
-     "paese": "Norvegia",
      "scheda": "https://it.wikipedia.org/wiki/Fjord_%28film%29"
     }
    ]
@@ -523,7 +483,9 @@
     },
     {
      "titolo": "Dio ride",
-     "orari": [],
+     "orari": [
+      "19:15"
+     ],
      "giorni": {
       "2026-11-24": [
        "19:15"
@@ -533,10 +495,10 @@
      "genere": "Commedia",
      "regia": "Giovanni Veronesi",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
+     "anno": 2026,
      "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
      "paese": "Italia",
      "durata": 114,
-     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
     },
     {
@@ -545,9 +507,6 @@
       "19:00"
      ],
      "giorni": {
-      "2026-11-23": [
-       "19:00"
-      ],
       "2026-11-24": [
        "19:00"
       ],
@@ -569,9 +528,6 @@
       "19:00"
      ],
      "giorni": {
-      "2026-11-23": [
-       "19:00"
-      ],
       "2026-11-24": [
        "19:00"
       ],
@@ -594,9 +550,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:00"
-      ],
       "2026-11-24": [
        "21:00"
       ],
@@ -620,9 +573,6 @@
       "21:10"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:10"
-      ],
       "2026-11-24": [
        "21:10"
       ],
@@ -643,17 +593,16 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "19:15"
+      "19:15",
+      "21:20"
      ],
      "giorni": {
-      "2026-11-23": [
-       "19:15"
-      ],
       "2026-11-24": [
        "19:15",
        "21:20"
       ],
       "2026-11-25": [
+       "09:30",
        "19:15",
        "21:20"
       ]
@@ -673,9 +622,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:30"
-      ],
       "2026-11-24": [
        "21:30"
       ],
@@ -683,7 +629,7 @@
        "21:30"
       ]
      },
-     "versione": "Versione originale",
+     "versione": "",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
@@ -704,25 +650,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/s-spirito_415/",
-   "film": [
-    {
-     "titolo": "La casa delle donne",
-     "orari": [
-      "21:00"
-     ],
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "interpreti": "",
-     "durata": null,
-     "anno": 2025,
-     "giorni": {
-      "2026-11-23": [
-       "21:00"
-      ]
-     }
-    }
-   ]
+   "film": []
   },
   {
    "id": "c008",
@@ -797,7 +725,9 @@
    "film": [
     {
      "titolo": "Dio ride",
-     "orari": [],
+     "orari": [
+      "19:00"
+     ],
      "giorni": {
       "2026-11-24": [
        "19:00"
@@ -807,23 +737,19 @@
      "genere": "Commedia",
      "regia": "Giovanni Veronesi",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
+     "anno": 2026,
      "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
      "paese": "Italia",
      "durata": 114,
-     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
     },
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
-      "20:45",
+      "18:30",
       "21:00"
      ],
      "giorni": {
-      "2026-11-23": [
-       "20:45",
-       "21:00"
-      ],
       "2026-11-24": [
        "18:30",
        "21:00"
@@ -833,7 +759,7 @@
        "21:00"
       ]
      },
-     "versione": "Versione originale (solo ore 20:45)",
+     "versione": "",
      "genere": "Azione, Avventura, Fantasy",
      "regia": "Francis Lawrence",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
@@ -845,7 +771,9 @@
     },
     {
      "titolo": "Il gatto col cappello",
-     "orari": [],
+     "orari": [
+      "18:45"
+     ],
      "giorni": {
       "2026-11-24": [
        "18:45"
@@ -858,21 +786,19 @@
      "genere": "Animazione",
      "regia": "Alessandro Carloni e Erica Rivinoja",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
-     "interpreti": "Stefano Fresi, Luigi Luciano, Bill Hader e Matt Berry",
+     "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
+     "anno": 2026,
      "paese": "USA",
      "durata": 107,
-     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Il_gatto_col_cappello_%28film%29"
     },
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
+      "19:00",
       "21:15"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:15"
-      ],
       "2026-11-24": [
        "19:00",
        "21:15"
@@ -894,12 +820,10 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
+      "18:45",
       "21:00"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:00"
-      ],
       "2026-11-24": [
        "18:45",
        "21:00"
@@ -922,12 +846,10 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
+      "19:00",
       "21:15"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:15"
-      ],
       "2026-11-24": [
        "19:00",
        "21:15"
@@ -966,9 +888,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:30"
-      ],
       "2026-11-24": [
        "21:30"
       ],
@@ -989,7 +908,9 @@
     },
     {
      "titolo": "Wild Horse Nine",
-     "orari": [],
+     "orari": [
+      "21:15"
+     ],
      "giorni": {
       "2026-11-24": [
        "21:15"
@@ -1002,10 +923,10 @@
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
-     "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
+     "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
+     "anno": 2026,
      "paese": "Regno Unito",
      "durata": 118,
-     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
     }
    ],
@@ -1019,26 +940,7 @@
    "tipo": "Arena",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/cinema-teatro-arena_408/",
-   "film": [
-    {
-     "titolo": "Se domani non torno",
-     "orari": [
-      "21:00"
-     ],
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Paola Randi",
-     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
-     "durata": 107,
-     "anno": 2027,
-     "giorni": {
-      "2026-11-23": [
-       "21:00"
-      ]
-     },
-     "paese": "Italia"
-    }
-   ]
+   "film": []
   },
   {
    "id": "c013",
@@ -1051,26 +953,24 @@
    "cinemap": "https://www.cinemap.it/cento/cinema/donzucchini-cento",
    "film": [
     {
-     "titolo": "Fatherland",
-     "orari": [
-      "21:00"
-     ],
+     "titolo": "Miss Peregrine e la Casa per Ragazzi Special*",
+     "orari": [],
      "giorni": {
-      "2026-11-23": [
-       "21:00"
+      "2026-11-25": [
+       "17:00"
       ]
      },
-     "versione": "Versione originale",
+     "versione": "",
      "genere": "",
      "regia": "",
-     "biglietti": "https://www.cinemadonzucchini.it/programmazione/",
-     "scheda": "https://it.wikipedia.org/wiki/Fatherland_%28film_2026%29"
+     "biglietti": "https://www.cinemadonzucchini.it/programmazione/"
     },
     {
      "titolo": "Ragione e sentimento",
      "orari": [],
      "giorni": {
       "2026-11-27": [
+       "20:30",
        "21:00"
       ],
       "2026-11-28": [
@@ -1114,7 +1014,9 @@
    "film": [
     {
      "titolo": "Dio ride",
-     "orari": [],
+     "orari": [
+      "19:00"
+     ],
      "giorni": {
       "2026-11-24": [
        "19:00"
@@ -1125,22 +1027,18 @@
      "regia": "Giovanni Veronesi",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
      "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "paese": "Italia",
      "durata": 114,
      "anno": 2026,
+     "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
     },
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
-      "20:45",
+      "18:30",
       "21:00"
      ],
      "giorni": {
-      "2026-11-23": [
-       "20:45",
-       "21:00"
-      ],
       "2026-11-24": [
        "18:30",
        "21:00"
@@ -1150,7 +1048,7 @@
        "21:00"
       ]
      },
-     "versione": "Versione originale (solo ore 20:45)",
+     "versione": "",
      "genere": "Azione, Avventura, Fantasy",
      "regia": "Francis Lawrence",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
@@ -1162,7 +1060,9 @@
     },
     {
      "titolo": "Il gatto col cappello",
-     "orari": [],
+     "orari": [
+      "18:45"
+     ],
      "giorni": {
       "2026-11-24": [
        "18:45"
@@ -1187,9 +1087,6 @@
       "21:15"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:15"
-      ],
       "2026-11-24": [
        "21:15"
       ],
@@ -1209,7 +1106,9 @@
     },
     {
      "titolo": "La maison des femmes - La casa delle donne",
-     "orari": [],
+     "orari": [
+      "19:00"
+     ],
      "giorni": {
       "2026-11-24": [
        "19:00"
@@ -1223,19 +1122,16 @@
      "regia": "Melisa Godet",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
      "interpreti": "Karin Viard, Laetitia Dosch, Oulaya Amamra e Eye Haidara",
-     "paese": "Francia",
      "durata": 110,
      "anno": 2025
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
+      "18:45",
       "21:00"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:00"
-      ],
       "2026-11-24": [
        "18:45",
        "21:00"
@@ -1258,12 +1154,10 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
+      "19:00",
       "21:15"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:15"
-      ],
       "2026-11-24": [
        "19:00",
        "21:15"
@@ -1304,9 +1198,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:30"
-      ],
       "2026-11-24": [
        "21:30"
       ],
@@ -1326,7 +1217,9 @@
     },
     {
      "titolo": "Wild Horse Nine",
-     "orari": [],
+     "orari": [
+      "21:15"
+     ],
      "giorni": {
       "2026-11-24": [
        "21:15"
@@ -1340,9 +1233,9 @@
      "regia": "Martin McDonagh",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
      "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
-     "paese": "Regno Unito",
      "durata": 118,
      "anno": 2026,
+     "paese": "Regno Unito",
      "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
     }
    ]

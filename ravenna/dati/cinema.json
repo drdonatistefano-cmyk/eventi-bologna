@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-23",
- "giorno_orari": "2026-11-23",
+ "aggiornato": "2026-11-24",
+ "giorno_orari": "2026-11-24",
  "sale": [
   {
    "id": "c004",
@@ -33,16 +33,93 @@
    "fonte": "https://movieplayer.it/cinema/cinemacity-multiplex_1125/",
    "film": [
     {
+     "titolo": "È andata così",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "17:55",
+       "20:35"
+      ],
+      "2026-11-27": [
+       "17:55",
+       "20:35"
+      ],
+      "2026-11-28": [
+       "15:15",
+       "17:55",
+       "20:35"
+      ],
+      "2026-11-29": [
+       "15:15",
+       "17:55",
+       "20:35"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "scheda": "https://it.wikipedia.org/wiki/%C3%88_andata_cos%C3%AC_%28film%29"
+    },
+    {
+     "titolo": "Godzilla Minus Zero",
+     "orari": [],
+     "giorni": {
+      "2026-11-28": [
+       "15:15"
+      ],
+      "2026-11-29": [
+       "20:40"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "scheda": "https://it.wikipedia.org/wiki/Godzilla_Minus_Zero"
+    },
+    {
+     "titolo": "Hexe - Il regno delle streghe",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "17:35",
+       "18:35",
+       "20:20"
+      ],
+      "2026-11-27": [
+       "17:35",
+       "18:35",
+       "20:20"
+      ],
+      "2026-11-28": [
+       "15:05",
+       "16:05",
+       "17:35",
+       "18:35",
+       "20:20"
+      ],
+      "2026-11-29": [
+       "15:05",
+       "16:05",
+       "17:35",
+       "18:35",
+       "20:20"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "scheda": "https://it.wikipedia.org/wiki/Hexe_-_Il_regno_delle_streghe"
+    },
+    {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
       "21:00",
       "21:10"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:00",
-       "21:10"
-      ],
       "2026-11-24": [
        "21:00",
        "21:10"
@@ -50,6 +127,24 @@
       "2026-11-25": [
        "21:00",
        "21:10"
+      ],
+      "2026-11-26": [
+       "17:25",
+       "20:45"
+      ],
+      "2026-11-27": [
+       "17:25",
+       "20:45"
+      ],
+      "2026-11-28": [
+       "15:05",
+       "18:20",
+       "21:40"
+      ],
+      "2026-11-29": [
+       "15:05",
+       "18:20",
+       "21:40"
       ]
      },
      "versione": "Versione originale (solo ore 21:00)",
@@ -68,14 +163,17 @@
       "20:35"
      ],
      "giorni": {
-      "2026-11-23": [
-       "20:35"
-      ],
       "2026-11-24": [
        "20:35"
       ],
       "2026-11-25": [
        "20:35"
+      ],
+      "2026-11-28": [
+       "18:35"
+      ],
+      "2026-11-29": [
+       "18:35"
       ]
      },
      "versione": "",
@@ -89,19 +187,71 @@
      "scheda": "https://it.wikipedia.org/wiki/Il_fuoco_che_ti_porti_dentro_%28film%29"
     },
     {
+     "titolo": "Il gatto col cappello",
+     "orari": [],
+     "giorni": {
+      "2026-11-28": [
+       "15:05"
+      ],
+      "2026-11-29": [
+       "15:05"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "scheda": "https://it.wikipedia.org/wiki/Il_gatto_col_cappello_%28film%29"
+    },
+    {
+     "titolo": "Il risveglio di Boiúna",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "21:40"
+      ],
+      "2026-11-27": [
+       "21:40"
+      ],
+      "2026-11-28": [
+       "21:40"
+      ],
+      "2026-11-29": [
+       "21:40"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172"
+    },
+    {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
       "20:45"
      ],
      "giorni": {
-      "2026-11-23": [
-       "20:45"
-      ],
       "2026-11-24": [
        "20:45"
       ],
       "2026-11-25": [
        "20:45"
+      ],
+      "2026-11-26": [
+       "18:00",
+       "20:50"
+      ],
+      "2026-11-27": [
+       "18:00",
+       "20:50"
+      ],
+      "2026-11-28": [
+       "18:00",
+       "20:50"
+      ],
+      "2026-11-29": [
+       "15:15",
+       "18:00"
       ]
      },
      "versione": "",
@@ -121,10 +271,6 @@
       "21:10"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:00",
-       "21:10"
-      ],
       "2026-11-24": [
        "21:00",
        "21:10"
@@ -132,6 +278,12 @@
       "2026-11-25": [
        "21:00",
        "21:10"
+      ],
+      "2026-11-28": [
+       "15:10"
+      ],
+      "2026-11-29": [
+       "20:55"
       ]
      },
      "versione": "Versione originale (solo ore 21:00)",
@@ -145,11 +297,62 @@
      "scheda": "https://it.wikipedia.org/wiki/La_ballata_del_re_delle_api"
     },
     {
+     "titolo": "La notte delle fragole",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "17:50",
+       "19:25",
+       "20:40"
+      ],
+      "2026-11-27": [
+       "17:50",
+       "19:25",
+       "20:40"
+      ],
+      "2026-11-28": [
+       "15:25",
+       "17:50",
+       "19:25",
+       "20:40"
+      ],
+      "2026-11-29": [
+       "15:25",
+       "17:50",
+       "19:25",
+       "20:40"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "scheda": "https://it.wikipedia.org/wiki/La_notte_delle_fragole"
+    },
+    {
      "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
      "orari": [],
      "giorni": {
       "2026-11-26": [
+       "18:30",
        "21:10"
+      ],
+      "2026-11-27": [
+       "17:10",
+       "19:25",
+       "21:45"
+      ],
+      "2026-11-28": [
+       "15:10",
+       "17:35",
+       "19:40",
+       "21:45"
+      ],
+      "2026-11-29": [
+       "15:10",
+       "17:35",
+       "19:40",
+       "21:45"
       ]
      },
      "versione": "",
@@ -164,9 +367,6 @@
       "21:05"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:05"
-      ],
       "2026-11-24": [
        "21:05"
       ],
@@ -190,13 +390,28 @@
       "21:15"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:15"
-      ],
       "2026-11-24": [
        "21:15"
       ],
       "2026-11-25": [
+       "21:15"
+      ],
+      "2026-11-26": [
+       "18:40",
+       "21:15"
+      ],
+      "2026-11-27": [
+       "18:40",
+       "21:15"
+      ],
+      "2026-11-28": [
+       "16:00",
+       "18:40",
+       "21:15"
+      ],
+      "2026-11-29": [
+       "16:00",
+       "18:40",
        "21:15"
       ]
      },
@@ -216,14 +431,27 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:00"
-      ],
       "2026-11-24": [
        "21:00"
       ],
       "2026-11-25": [
        "21:00"
+      ],
+      "2026-11-26": [
+       "18:10",
+       "20:45"
+      ],
+      "2026-11-27": [
+       "18:10",
+       "20:45"
+      ],
+      "2026-11-28": [
+       "18:10",
+       "20:45"
+      ],
+      "2026-11-29": [
+       "15:35",
+       "18:10"
       ]
      },
      "versione": "",
@@ -241,6 +469,24 @@
      "giorni": {
       "2026-11-25": [
        "20:55"
+      ],
+      "2026-11-26": [
+       "17:40",
+       "20:25"
+      ],
+      "2026-11-27": [
+       "17:40",
+       "20:25"
+      ],
+      "2026-11-28": [
+       "15:10",
+       "17:40",
+       "20:25"
+      ],
+      "2026-11-29": [
+       "15:10",
+       "17:40",
+       "20:25"
       ]
      },
      "versione": "",
@@ -255,14 +501,23 @@
       "20:20"
      ],
      "giorni": {
-      "2026-11-23": [
-       "20:20"
-      ],
       "2026-11-24": [
        "20:20"
       ],
       "2026-11-25": [
        "20:20"
+      ],
+      "2026-11-26": [
+       "17:15"
+      ],
+      "2026-11-27": [
+       "17:15"
+      ],
+      "2026-11-28": [
+       "17:15"
+      ],
+      "2026-11-29": [
+       "17:15"
       ]
      },
      "versione": "",
@@ -274,6 +529,48 @@
      "paese": "Italia",
      "durata": 91,
      "scheda": "https://it.wikipedia.org/wiki/Un_weekend_artificiale"
+    },
+    {
+     "titolo": "Wild Horse Nine",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "17:40"
+      ],
+      "2026-11-27": [
+       "17:40"
+      ],
+      "2026-11-28": [
+       "16:00"
+      ],
+      "2026-11-29": [
+       "16:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
+    },
+    {
+     "titolo": "You Can See Everything",
+     "orari": [],
+     "giorni": {
+      "2026-11-27": [
+       "20:50"
+      ],
+      "2026-11-28": [
+       "20:50"
+      ],
+      "2026-11-29": [
+       "20:50"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172"
     }
    ],
    "cinemap": "https://www.cinemap.it/ravenna/cinema/cinemacity-ravenna"
@@ -288,23 +585,23 @@
    "fonte": "https://movieplayer.it/cinema/jolly-doc_1126/",
    "film": [
     {
-     "titolo": "Look Back",
+     "titolo": "La Gradiva",
      "orari": [
       "21:00"
      ],
-     "versione": "",
+     "versione": "Versione originale",
      "genere": "Drammatico",
-     "regia": "Kore-eda",
-     "interpreti": "Ryô Ikeda, Miyu Sasaki, Maho Yamada e Natsuki Deguchi",
-     "durata": 100,
+     "regia": "Marine Atlan",
+     "interpreti": "Colas Quignard, Suzanne Gerin, Mitia Capellier e Antonia Buresi",
+     "durata": 145,
      "anno": 2026,
      "giorni": {
-      "2026-11-23": [
+      "2026-11-24": [
        "21:00"
       ]
      },
-     "paese": "Giappone",
-     "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29"
+     "paese": "Francia",
+     "scheda": "https://it.wikipedia.org/wiki/La_Gradiva"
     }
    ]
   },
@@ -347,14 +644,10 @@
     {
      "titolo": "Primetime",
      "orari": [
-      "18:00",
-      "20:30"
+      "18:30",
+      "21:00"
      ],
      "giorni": {
-      "2026-11-23": [
-       "18:00",
-       "20:30"
-      ],
       "2026-11-24": [
        "18:30",
        "21:00"
@@ -408,25 +701,6 @@
      "genere": "",
      "regia": "",
      "biglietti": "https://www.comune.alfonsine.ra.it/Vivere-il-comune/Luoghi/Cineteatro-Gulliver"
-    },
-    {
-     "titolo": "Se domani non torno",
-     "orari": [
-      "21:00"
-     ],
-     "giorni": {
-      "2026-11-23": [
-       "21:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Paola Randi",
-     "biglietti": "https://www.comune.alfonsine.ra.it/Vivere-il-comune/Luoghi/Cineteatro-Gulliver",
-     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
-     "anno": 2027,
-     "paese": "Italia",
-     "durata": 107
     }
    ],
    "cinemap": "https://www.cinemap.it/alfonsine/cinema/gulliver-alfonsine"
@@ -463,18 +737,25 @@
    "film": [
     {
      "titolo": "Fjord",
-     "orari": [
-      "21:00"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-23": [
-       "21:00"
-      ],
       "2026-11-25": [
        "21:00"
+      ],
+      "2026-11-27": [
+       "21:00"
+      ],
+      "2026-11-28": [
+       "18:00",
+       "21:00"
+      ],
+      "2026-11-29": [
+       "15:30",
+       "18:00",
+       "20:30"
       ]
      },
-     "versione": "",
+     "versione": "Versione originale (solo ore 15:30, 18:00, 20:30)",
      "genere": "",
      "regia": "",
      "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=2",
@@ -496,7 +777,10 @@
     },
     {
      "titolo": "Uomini come tanti",
-     "orari": [],
+     "orari": [
+      "20:30",
+      "21:00"
+     ],
      "giorni": {
       "2026-11-24": [
        "20:30",
@@ -521,6 +805,31 @@
    "fonte": "https://movieplayer.it/cinema/cinedream-multiplex_1117/",
    "film": [
     {
+     "titolo": "È andata così",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "20:40"
+      ],
+      "2026-11-27": [
+       "19:20"
+      ],
+      "2026-11-28": [
+       "15:20",
+       "19:20"
+      ],
+      "2026-11-29": [
+       "15:20",
+       "21:20"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
+     "scheda": "https://it.wikipedia.org/wiki/%C3%88_andata_cos%C3%AC_%28film%29"
+    },
+    {
      "titolo": "Godzilla Minus Zero",
      "orari": [],
      "giorni": {
@@ -535,16 +844,40 @@
      "scheda": "https://it.wikipedia.org/wiki/Godzilla_Minus_Zero"
     },
     {
+     "titolo": "Hexe - Il regno delle streghe",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "20:40"
+      ],
+      "2026-11-27": [
+       "17:45",
+       "20:30"
+      ],
+      "2026-11-28": [
+       "15:30",
+       "17:45",
+       "20:20"
+      ],
+      "2026-11-29": [
+       "15:30",
+       "17:45",
+       "20:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
+     "scheda": "https://it.wikipedia.org/wiki/Hexe_-_Il_regno_delle_streghe"
+    },
+    {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
       "20:40",
       "21:10"
      ],
      "giorni": {
-      "2026-11-23": [
-       "20:40",
-       "21:10"
-      ],
       "2026-11-24": [
        "20:40",
        "21:10"
@@ -552,6 +885,25 @@
       "2026-11-25": [
        "20:40",
        "21:10"
+      ],
+      "2026-11-26": [
+       "20:40"
+      ],
+      "2026-11-27": [
+       "17:50",
+       "21:00"
+      ],
+      "2026-11-28": [
+       "15:30",
+       "17:30",
+       "20:40",
+       "21:45",
+       "22:20"
+      ],
+      "2026-11-29": [
+       "15:30",
+       "17:30",
+       "20:40"
       ]
      },
      "versione": "Versione originale (solo ore 20:40)",
@@ -566,13 +918,8 @@
     },
     {
      "titolo": "Il fuoco che ti porti dentro",
-     "orari": [
-      "20:40"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-23": [
-       "20:40"
-      ],
       "2026-11-25": [
        "20:40"
       ]
@@ -581,11 +928,33 @@
      "genere": "Drammatico",
      "regia": "Edoardo De Angelis",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
-     "interpreti": "Vanessa Scalera, Lino Musella e Elena Radonicich",
-     "durata": 93,
-     "anno": 2026,
+     "interpreti": "Vanessa Scalera, Lino Musella, Elena Radonicich e Ivana Lotito",
      "paese": "Italia",
+     "durata": 94,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Il_fuoco_che_ti_porti_dentro_%28film%29"
+    },
+    {
+     "titolo": "Il gatto col cappello",
+     "orari": [],
+     "giorni": {
+      "2026-11-27": [
+       "17:50"
+      ],
+      "2026-11-28": [
+       "15:20",
+       "17:35"
+      ],
+      "2026-11-29": [
+       "15:30",
+       "17:50"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
+     "scheda": "https://it.wikipedia.org/wiki/Il_gatto_col_cappello_%28film%29"
     },
     {
      "titolo": "Il rumore delle cose nuove",
@@ -593,11 +962,17 @@
       "20:45"
      ],
      "giorni": {
-      "2026-11-23": [
-       "20:45"
-      ],
       "2026-11-24": [
        "20:45"
+      ],
+      "2026-11-27": [
+       "21:30"
+      ],
+      "2026-11-28": [
+       "21:30"
+      ],
+      "2026-11-29": [
+       "19:20"
       ]
      },
      "versione": "",
@@ -611,10 +986,51 @@
      "scheda": "https://it.wikipedia.org/wiki/Il_rumore_delle_cose_nuove"
     },
     {
+     "titolo": "La notte delle fragole",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "20:40"
+      ],
+      "2026-11-27": [
+       "17:30",
+       "21:15"
+      ],
+      "2026-11-28": [
+       "16:00",
+       "18:00",
+       "20:30",
+       "22:40"
+      ],
+      "2026-11-29": [
+       "15:20",
+       "17:10",
+       "20:50"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
+     "scheda": "https://it.wikipedia.org/wiki/La_notte_delle_fragole"
+    },
+    {
      "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
      "orari": [],
      "giorni": {
       "2026-11-26": [
+       "21:00"
+      ],
+      "2026-11-27": [
+       "18:10",
+       "21:00"
+      ],
+      "2026-11-28": [
+       "18:30",
+       "20:00"
+      ],
+      "2026-11-29": [
+       "18:30",
        "21:00"
       ]
      },
@@ -630,9 +1046,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:00"
-      ],
       "2026-11-24": [
        "21:00"
       ],
@@ -652,14 +1065,29 @@
       "21:10"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:10"
-      ],
       "2026-11-24": [
        "21:10"
       ],
       "2026-11-25": [
        "21:10"
+      ],
+      "2026-11-26": [
+       "20:50"
+      ],
+      "2026-11-27": [
+       "17:55",
+       "20:50"
+      ],
+      "2026-11-28": [
+       "15:30",
+       "17:55",
+       "20:20",
+       "22:40"
+      ],
+      "2026-11-29": [
+       "15:30",
+       "17:55",
+       "20:50"
       ]
      },
      "versione": "",
@@ -674,26 +1102,60 @@
     },
     {
      "titolo": "Se domani non torno",
-     "orari": [],
+     "orari": [
+      "20:50"
+     ],
      "giorni": {
       "2026-11-24": [
        "20:50"
+      ],
+      "2026-11-26": [
+       "20:45"
+      ],
+      "2026-11-27": [
+       "20:45"
+      ],
+      "2026-11-28": [
+       "15:30",
+       "21:40"
+      ],
+      "2026-11-29": [
+       "15:30",
+       "20:45"
       ]
      },
      "versione": "",
      "genere": "Drammatico",
      "regia": "Paola Randi",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
-     "interpreti": "Tommaso Allione, Tecla Bossi, Sabrina Martina e Filippo Timi",
+     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
+     "anno": 2027,
      "paese": "Italia",
-     "durata": 107,
-     "anno": 2026
+     "durata": 107
     },
     {
      "titolo": "Ti presento i Fotter",
      "orari": [],
      "giorni": {
       "2026-11-25": [
+       "21:00"
+      ],
+      "2026-11-26": [
+       "21:00"
+      ],
+      "2026-11-27": [
+       "18:00",
+       "21:00"
+      ],
+      "2026-11-28": [
+       "15:40",
+       "18:00",
+       "20:20",
+       "22:40"
+      ],
+      "2026-11-29": [
+       "15:40",
+       "18:00",
        "21:00"
       ]
      },
@@ -709,11 +1171,19 @@
       "20:45"
      ],
      "giorni": {
-      "2026-11-23": [
-       "20:45"
-      ],
       "2026-11-24": [
        "20:45"
+      ],
+      "2026-11-27": [
+       "19:20"
+      ],
+      "2026-11-28": [
+       "17:30",
+       "19:50"
+      ],
+      "2026-11-29": [
+       "17:30",
+       "19:00"
       ]
      },
      "versione": "",
@@ -732,9 +1202,6 @@
       "20:50"
      ],
      "giorni": {
-      "2026-11-23": [
-       "20:50"
-      ],
       "2026-11-24": [
        "20:50"
       ],
@@ -743,9 +1210,12 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Animazione, Drammatico, Fantastico, Romantico",
+     "regia": "Makoto Shinkai",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
+     "interpreti": "Ryunosuke Kamiki, Mone Kamishiraishi e Ryô Narita",
+     "durata": 106,
+     "anno": 2016,
      "scheda": "https://it.wikipedia.org/wiki/Your_Name."
     }
    ],
@@ -777,9 +1247,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-23": [
-       "21:00"
-      ],
       "2026-11-24": [
        "21:00"
       ]
@@ -787,7 +1254,7 @@
      "versione": "",
      "genere": "Commedia",
      "regia": "Giovanni Veronesi",
-     "biglietti": "https://www.liveticket.it/evento.aspx?Id=715188",
+     "biglietti": "https://www.liveticket.it/evento.aspx?Id=715189&InstantBuy=1&CallingPageUrl=http%3a%2f%2fwww.liveticket.it%2fcinemasarticervia",
      "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
      "durata": 114,
      "anno": 2026,
@@ -847,11 +1314,78 @@
    "cinemap": "https://www.cinemap.it/faenza/cinema/cinema-italia-faenza",
    "film": [
     {
+     "titolo": "L'essere amato",
+     "orari": [
+      "21:00"
+     ],
+     "giorni": {
+      "2026-11-24": [
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=1",
+     "scheda": "https://it.wikipedia.org/wiki/L%27essere_amato"
+    },
+    {
+     "titolo": "Lorenzo - L'Incredibile Storia di Jovanotti",
+     "orari": [],
+     "giorni": {
+      "2026-11-28": [
+       "21:15"
+      ],
+      "2026-11-29": [
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=1"
+    },
+    {
+     "titolo": "Mustang",
+     "orari": [],
+     "giorni": {
+      "2026-11-27": [
+       "21:00"
+      ],
+      "2026-11-29": [
+       "16:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=1"
+    },
+    {
+     "titolo": "Taddeo l’esploratore e la lampada magica",
+     "orari": [],
+     "giorni": {
+      "2026-11-28": [
+       "17:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=1"
+    },
+    {
      "titolo": "Wild Horse Nine",
      "orari": [],
      "giorni": {
       "2026-11-25": [
        "21:00"
+      ],
+      "2026-11-28": [
+       "18:45"
+      ],
+      "2026-11-29": [
+       "18:30"
       ]
      },
      "versione": "",
@@ -876,20 +1410,21 @@
    "cinemap": "https://www.cinemap.it/brisighella/cinema/nuovo-cinema-giardino-brisighella",
    "film": [
     {
-     "titolo": "Harold e Maude",
-     "orari": [
-      "20:30"
-     ],
+     "titolo": "Dio ride",
+     "orari": [],
      "giorni": {
-      "2026-11-20": [
+      "2026-11-27": [
        "20:30"
+      ],
+      "2026-11-29": [
+       "18:00"
       ]
      },
      "versione": "",
      "genere": "",
      "regia": "",
      "biglietti": "https://www.cinemagiardino.it/cinema/",
-     "scheda": "https://it.wikipedia.org/wiki/Harold_e_Maude"
+     "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
     }
    ]
   }
