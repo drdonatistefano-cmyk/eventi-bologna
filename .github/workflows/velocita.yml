@@ -1,5 +1,5 @@
 name: Velocità delle guide
-# Ogni mattina apre achplaces.com, achdinners.com e achevents.com come le apre una
+# Ogni mattina apre achplaces.com, achdinners.com, achevents.com e achdishes.com come le apre una
 # persona (telefono 4G e 3G, seconda visita, computer, tocchi) e salva i risultati nel
 # ramo «statistiche»: li mostra velocita.html, dai pulsanti della Dashboard di Controllo.
 on:
@@ -9,7 +9,7 @@ on:
     inputs:
       guide:
         description: "Quali guide (places,dinners,events,dishes)"
-        default: "places,dinners,events"
+        default: "places,dinners,events,dishes"
   push:
     branches: [main]
     paths: ["scripts/velocita.py", ".github/workflows/velocita.yml"]
