@@ -44,3 +44,42 @@ jobs:
             fi
           done
           echo "rami tolti: $tolti"
+      # 25/11/2026 (Stefano: «voglio cancellare tutto l'inutile»): anche i rami pubblicati dopo i quali main è andato avanti
+      # (caso claude/events-veloce). Un ramo si toglie solo se OGNI file che ha cambiato è uguale su main oppure main ha
+      # avuto esattamente quel contenuto dopo la nascita del ramo; mai se ha un salvataggio nelle ultime 12 ore. Nel dubbio resta.
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 400
+      - name: Rami claude/ già pubblicati, dopo i quali main è andato avanti
+        env:
+          TOGLI: ${{ github.event_name == 'workflow_dispatch' && inputs.togli || 'si' }}
+        run: |
+          set -u
+          tolti=0
+          git fetch -q --depth=400 origin '+refs/heads/claude/*:refs/remotes/origin/claude/*' || { echo "rami non letti: non tolgo niente"; exit 0; }
+          adesso=$(date +%s)
+          for r in $(git for-each-ref --format='%(refname:short)' refs/remotes/origin/claude/); do
+            b=${r#origin/}
+            quando=$(git log -1 --format=%ct "$r")
+            if [ $((adesso - quando)) -lt 43200 ]; then echo "RESTA: $b (salvato nelle ultime 12 ore)"; continue; fi
+            base=$(git merge-base origin/main "$r" 2>/dev/null) || { echo "RESTA: $b (partenza non trovata)"; continue; }
+            file=$(git diff --name-only "$base" "$r")
+            [ -z "$file" ] && { echo "RESTA: $b (nessun cambiamento: ci pensa il passo sopra)"; continue; }
+            tutto=si
+            for f in $file; do
+              bb=$(git rev-parse "$r:$f" 2>/dev/null) || { tutto=no; echo "  $b: $f tolto nel ramo"; break; }
+              [ "$(git rev-parse "origin/main:$f" 2>/dev/null)" = "$bb" ] && continue
+              git log --format= --raw --no-abbrev "$base..origin/main" -- "$f" | awk '{print $4}' | grep -qx "$bb" && continue
+              tutto=no; echo "  $b: $f non è su main"; break
+            done
+            if [ "$tutto" = "si" ]; then
+              if [ "$TOGLI" = "si" ]; then
+                git push -q origin --delete "$b" && { echo "TOLTO (già pubblicato): $b"; tolti=$((tolti+1)); } || echo "non riuscito: $b"
+              else
+                echo "DA TOGLIERE (prova, non tolto): $b — tutto già pubblicato"
+              fi
+            else
+              echo "RESTA: $b (lavoro non pubblicato)"
+            fi
+          done
+          echo "rami pubblicati tolti: $tolti"
