@@ -220,6 +220,15 @@ for desc, atteso in [
     ("Il conflitto tra Antonio Salieri, musicista stimato, e il giovane Mozart.", ""),
 ]:
     prova(f"protagonisti: «{desc[:40]}» → «{atteso}»", PR.chi({"artista": "Titolo qualsiasi", "descrizione": desc}) == atteso)
+# REGOLA 25/11/2026 (Stefano: «fai in modo che non si verifichi più»): sui dati veri di tutte le città nessuna persona
+# nominata nella descrizione resta senza nome nel riquadro, a meno che sia chiaramente autore o soggetto o stia in
+# dati/nomi_non_protagonisti.txt. Se questa prova fallisce: correggere la regola in protagonisti.py, oppure aggiungere
+# il nome a dati/protagonisti_a_mano.txt (è in scena) o a dati/nomi_non_protagonisti.txt (non lo è). Mai saltarla.
+_sosp = PR.tutti_i_sospetti(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+prova(f"REGOLA dei nomi: nessuna persona in scena senza nome nel riquadro ({len(_sosp)} da sistemare: "
+      + ", ".join(f"{x[0]} {x[1]} {x[3]}" for x in _sosp[:5]) + ")", not _sosp)
+prova("protagonisti: elenco a mano usato quando le regole non trovano nessuno",
+      PR.chi({"artista": "Faust", "descrizione": "Il Faust visionario di Romeo Castellucci."}) == "regia di Romeo Castellucci")
 prova("protagonisti: in un incontro «diretti da» è «a cura di», non «regia di»",
       PR.chi({"id": "i196", "artista": "Seminario", "genere": "Incontri e conferenze", "descrizione": "Seminari di filosofia diretti da Fabio Minazzi."}) == "a cura di Fabio Minazzi")
 

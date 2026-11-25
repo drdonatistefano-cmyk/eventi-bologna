@@ -1,0 +1,6 @@
+# Protagonisti che le regole di scripts/protagonisti.py non possono riconoscere (REGOLA del 25/11/2026, Stefano).
+# Una riga: Nome Cognome<TAB>testo mostrato sotto il titolo (senza «con»: lo aggiunge la pagina; «regia di …» resta com'è).
+# Si aggiunge una riga quando «python3 scripts/protagonisti.py --sospetti» segnala un nome che è davvero in scena.
+Romeo Castellucci	regia di Romeo Castellucci
+Josh Haden	Josh Haden
+Elisa Greco	Elisa Greco

@@ -91,8 +91,24 @@ def buono(n, titolo):
     if norm(w[-1]) and norm(w[-1]) in norm(titolo): return False
     return True
 
+# 25/11/2026: protagonisti che nessuna regola generale può riconoscere («Il Faust visionario di Romeo Castellucci»,
+# «gli Spain di Josh Haden»). dati/protagonisti_a_mano.txt: «Nome Cognome<TAB>testo da mostrare». Vale per ogni evento
+# la cui descrizione nomina quella persona e per cui le regole non trovano nessuno.
+try:
+    A_MANO = [tuple(x.strip() for x in r.split("#")[0].split("\t")[:2]) for r in open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "dati", "protagonisti_a_mano.txt"), encoding="utf-8") if "\t" in r.split("#")[0]]
+except OSError:
+    A_MANO = []
+
 def chi(e):
     if (e.get("chi") or "").strip(): return e["chi"].strip()
+    c = _chi_regole(e)
+    if c: return c
+    d = unicodedata.normalize("NFC", e.get("descrizione") or "")
+    for nome, testo in A_MANO:
+        if nome and nome in d: return testo
+    return ""
+
+def _chi_regole(e):
     d, tit = unicodedata.normalize("NFC", e.get("descrizione") or ""), e.get("artista") or ""   # 20/11: «Acuña» scritto con la tilde staccata
     if not d or d.isupper(): return ""
     nomi, pre, ruolo = [], None, {}
@@ -169,6 +185,53 @@ def mancati(e):
         if PRIMA_NO.search(d[max(0, m.start() - 40):m.start()]) or re.search(rf"[{U}][{L}'’]*\s+$", d[max(0, m.start() - 40):m.start()]): continue
         out.append(n)
     return out
+
+# 25/11/2026 — REGOLA (Stefano: «fai in modo che non si verifichi più, regola ad hoc»): ogni persona nominata nella
+# descrizione o è nel «chi» o è chiaramente l'autore o il soggetto. sospetti(e) restituisce i nomi di persona che il
+# programma ha scartato senza una di queste ragioni: la prova di eventi-bologna fallisce se ce n'è anche uno non
+# messo in dati/nomi_non_protagonisti.txt. Così un nome perso blocca il lavoro invece di passare in silenzio.
+AUTORE = re.compile(r"(?i)\b(?:commedi\w*|tragedi\w*|dramm\w*|classic\w*|capolavor\w*|opera|opere|film|pellicola|romanz\w*|raccont[oi]|"
+                    r"testo|testi|canzon\w*|musiche|music\w*|brani|repertori\w*|omaggi\w*|tribut\w*|dedicat\w*|ispirat\w*|tratt[oa]|adattament\w*|"
+                    r"riscritt\w*|balletto|coreografi\w*|firma|vita|storia|figura|personagg\w*|socio|morte|conflitto|diari|poesi\w*|versi|libro|libri|"
+                    r"saggio|album|programma|compositor\w*|scrittor\w*|autor\w*|regist[ai]|fondat\w*|idea|visione|celebre|onore|racconta|raccontano|parla|parlerà|parleremo|dal|dalla|dai|da|su|sul|sulla|a|ad|al|alla)\b")
+try:
+    ACCETTATI = {r.split("#")[0].strip() for r in open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "dati", "nomi_non_protagonisti.txt"), encoding="utf-8") if r.split("#")[0].strip()}
+except OSError:
+    ACCETTATI = set()
+
+def sospetti(e):
+    if (e.get("chi") or "").strip() or chi(e): return []
+    d = unicodedata.normalize("NFC", e.get("descrizione") or ""); out = []
+    for m in PERSONA.finditer(d):
+        n = m.group(1).strip(); w = n.split()
+        if w[0] not in PROPRI or not buono(n, e.get("artista") or "") or n in ACCETTATI: continue
+        frase = re.split(r"[.;!?|·(]", d[:m.start()])[-1]
+        if AUTORE.search(frase) or SOGGETTO.search(frase) or DOPO_NO.search(d[m.end():m.end() + 30]): continue
+        if re.search(rf"[{U}][{L}'’]*\s+$", d[max(0, m.start() - 40):m.start()]): continue   # dentro un nome di luogo
+        out.append(n)
+    return out
+
+def tutti_i_sospetti(base):
+    import glob as _g
+    out = []
+    for p in [_os.path.join(base, x) for x in ("eventi.js", "incontri.js")] + sorted(_g.glob(_os.path.join(base, "*", "eventi.js"))) + sorted(_g.glob(_os.path.join(base, "*", "incontri.js"))):
+        if not _os.path.exists(p): continue
+        a, d, z = _leggi(p); k = "eventi" if "eventi" in d else "incontri"
+        for e in d[k]:
+            for n in sospetti(e): out.append((_os.path.relpath(p, base), e["id"], e.get("artista", ""), n, (e.get("descrizione") or "")[:100]))
+    return out
+
+if __name__ == "__main__" and "--sospetti" in sys.argv:
+    base = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..")
+    s = tutti_i_sospetti(base)
+    for r in s: print("\t".join(r))
+    print(f"nomi di persona scartati senza motivo: {len(s)}", file=sys.stderr)
+    if "--file" in sys.argv:   # dati/nomi_sospetti.txt, pubblico: la verifica notturna vuole «scartati senza motivo: 0»
+        open(_os.path.join(base, "dati", "nomi_sospetti.txt"), "w", encoding="utf-8").write(
+            f"nomi di persona scartati senza motivo: {len(s)}\n" + "".join("\t".join(r) + "\n" for r in s))
+    if s and "--avvisa" in sys.argv:
+        print(f"::warning::{len(s)} nomi di persona scartati senza motivo (python3 scripts/protagonisti.py --sospetti): " + ", ".join(f"{r[1]} {r[3]}" for r in s[:10]))
+    sys.exit(1 if s and "--avvisa" not in sys.argv else 0)
 
 if __name__ == "__main__" and "--mancati" in sys.argv:
     # python3 scripts/protagonisti.py --mancati eventi.js milano/eventi.js …  → nomi possibili da aggiungere a dati/nomi_propri.txt

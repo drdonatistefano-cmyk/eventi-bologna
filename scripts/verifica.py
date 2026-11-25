@@ -267,6 +267,15 @@ def vista_dati():
             chiavi = [(e.get("data"), e.get("ora"), (e.get("artista") or "").lower(), e.get("luogo")) for e in ev]
             doppi = len(chiavi) - len(set(chiavi))
             v.se(doppi <= len(ev) * 0.01, f"Events {citta}: niente doppioni", f"{doppi} doppioni", grave=False)
+        # 25/11/2026 — REGOLA dei nomi (Stefano: «fai in modo che non si verifichi più»): ogni persona in scena ha il suo
+        # nome nel riquadro dell'elenco. Il guardiano (scripts/protagonisti.py --sospetti) scrive dati/nomi_sospetti.txt.
+        r, _ = prendi(B["events"] + "dati/nomi_sospetti.txt")
+        if r is not None and r.status_code == 200:
+            prima = (r.text.splitlines() or [""])[0]
+            v.se(prima.endswith(": 0"), "Events: protagonisti con il nome nel riquadro (tutte le città)",
+                 prima + ("" if prima.endswith(": 0") else " — " + "; ".join(x.split("\t")[1] + " " + x.split("\t")[3] for x in r.text.splitlines()[1:6] if x.count("\t") >= 3)))
+        else:
+            v.errore("Events: protagonisti con il nome nel riquadro (tutte le città)", "manca dati/nomi_sospetti.txt")
         for f, chiave in (("mostre.js", "mostre"), ("serate.js", "serate"), ("incontri.js", "incontri"), ("sport.js", "eventi"), ("cinema.js", "sale")):
             r, _ = prendi(B["events"] + f)
             if r is None or r.status_code != 200:
