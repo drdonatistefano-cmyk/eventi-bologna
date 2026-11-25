@@ -35,14 +35,22 @@ RUOLI = [  # (espressione prima dei nomi, prefisso mostrato)
     (r"special guest|guest star|ospite speciale|feat\.?|featuring|ft\.", "con"),
     (r"di e con|scritto e interpretato da|ideato e interpretato da|con la partecipazione di|con la voce di|voce di", "con"),
     (r"interpretato da|interpretata da|interpreti|in scena|protagonist[ai]", "con"),
-    (r"regia(?: e drammaturgia)? di|regia|diretto da|diretta da|dirige|direttore|maestro concertatore", "@"),
+    (r"regia(?: e drammaturgia)? di|regia|diretto da|diretta da|diretti da|dirette da|dirige|direttore|maestro concertatore", "@"),
     (r"a cura di|presentato da|presenta|modera|introduce|dialoga con|in dialogo con|conversa con|intervengono|interviene|relatore|relatori|incontro con|guidat[ao] da|racconta|raccontano|ne parlano", "con"),
     (r"pianoforte|piano|violino|violoncello|viola|chitarra|sax|soprano|tenore|baritono|mezzosoprano|contralto|basso|clarinetto|flauto|tromba|voce|batteria|contrabbasso|organo|arpa", "con"),
+    # 25/11/2026 (Stefano: «perché Daniele Tinti non esce nel box in elenco»): forme in cui «di» indica chi va in scena,
+    # non l'autore: «Stand-up di Daniele Tinti», «Reading di …», «Lectio magistralis di …», «presentazione del libro di …»
+    (r"stand[- ]?up(?: comedy)? di|monologo di|one[- ](?:wo)?man[- ]show di|recital(?: pianistico)? di|reading di|"
+     r"lectio(?: magistralis)? di|lezione(?:[- ]concerto)? di|letture di|guida all'ascolto di|"
+     r"presentazione del (?:suo |nuovo |primo )?(?:libro|romanzo|saggio|volume|memoir)(?:\s+[“\"«][^”\"»]{1,60}[”\"»])? di|"
+     r"(?:il )?viaggio live di|la band di|progetto solista di|concerto gospel di", "con"),
+    (r"condott[oaie] da|raccontat[oaie] da|narrat[oaie] da|guidat[ie] da", "con"),
+    (r"pianista|violinista|violoncellista|chitarrista|cantante|cantautore|cantautrice|comico|comica|attore|attrice|narratore|narratrice", "con"),
     (r"con", "con"),
 ]
 RX = [(re.compile(rf"(?<![{L}{U}])(?i:{k})\s*[:,]?\s+({LISTA})"), p) for k, p in RUOLI]
 # «Emanuela Canepa presenta il suo libro», «Marco Paolini racconta»
-VERBO = re.compile(rf"(?:^|[.;:|·]\s*|\b(?:e|con)\s+)({NOME})\s+(?:presenta|presentano|racconta|raccontano|dialoga|dialogano|legge|leggono|porta|portano|interpreta|dirige|guida|accompagna|canta|suona)\b")
+VERBO = re.compile(rf"(?:^|[.;:|·]\s*|\b(?:e|con)\s+)({NOME})\s+(?:presenta|presentano|racconta|raccontano|dialoga|dialogano|legge|leggono|porta|portano|interpreta|dirige|guida|accompagna|canta|suona|parla|parlano|dà voce|danno voce)\b")   # 25/11: «Franco Berrino parla di…», «Andrea Argentieri dà voce a…»
 # 18/11/2026 (Stefano: «perché a Milano non è uscito il nome di Ambra Angiolini?»): la descrizione comincia con il nome,
 # «Ambra Angiolini dal testo di Stefano Benni», «Lella Costa in …», «Toni Servillo torna con …». Solo all'inizio della descrizione.
 INIZIO = re.compile(rf"^\s*({NOME})\s+(?:dal testo|da un testo|dai testi|in scena|in |nel |nella |nei |negli |tra |torna|torneranno|è |sono |e la sua|e il suo|e i suoi|alle prese|al pianoforte|alla chitarra)")
@@ -67,7 +75,7 @@ PRIMA_NO = re.compile(r"(?i)(?:\b(?:di|da|dal|dallo|dalla|dei|degli|delle|del|de
 
 CODA = set("testo testi voce direttore direttrice astrofisico astrofisica evangelista dopo nz sj regista attore attrice autore autrice scrittore scrittrice giornalista".split())
 # nella stessa frase prima del nome: allora è il soggetto o l'autore, non chi è in scena
-SOGGETTO = re.compile(r"(?i)\b(?:film|pellicola|omaggi\w*|tribut\w*|musiche|diari|personaggio|socio|morte|negoziatore|detto|tour|storia|vita|leggend\w*|mito|ricord\w*|dedicat\w*|ispirat\w*|giovane|vecchio|celebre)\b")
+SOGGETTO = re.compile(r"(?i)\b(?:film|pellicola|omaggi\w*|tribut\w*|musiche|diari|personaggio|socio|morte|negoziatore|detto|tour|storia|vita|leggend\w*|mito|ricord\w*|dedicat\w*|ispirat\w*|giovane|vecchio|celebre|conflitto|rivalit\w*|scontro|duello|biografi\w*|personagg\w*)\b")   # 25/11: «Il conflitto tra Antonio Salieri e Mozart»
 DOPO_NO = re.compile(r"(?i)^\W{0,3}(?:detto|detta|un giocatore|una giocatrice|il campione|la campionessa|pittore|pittrice|morto|morta|nato|nata|scomparso|scomparsa)\b")
 
 def buono(n, titolo):
@@ -98,7 +106,8 @@ def chi(e):
                     if p == "@":
                         k = m.group(0).lower()
                         musica = e.get("genere") in ("Classica", "Jazz", "Concerti", "Musica") or re.search(r"(?i)orchestra|sinfoni|filarmonic|coro|ensemble|banda|concerto", d)
-                        ruolo[n] = "dirige" if musica and re.search(r"dirig|diretto|diretta|direttore|concertatore", k) and "regia" not in k else "regia di"   # 20/11: a teatro e nella danza «diretta da» è la regia
+                        ruolo[n] = "dirige" if musica and re.search(r"dirig|diretto|diretta|diretti|dirette|direttore|concertatore", k) and "regia" not in k else "regia di"   # 20/11: a teatro e nella danza «diretta da» è la regia
+                        if str(e.get("id", "")).startswith("i") or e.get("genere") in ("Libri", "Incontri e conferenze", "Incontro"): ruolo[n] = "a cura di"   # 25/11: un seminario «diretto da» non ha una regia
     for m in VERBO.finditer(d):
         n = m.group(1).strip()
         if buono(n, tit) and n not in nomi: nomi.append(n); ruolo[n] = "con"
@@ -167,6 +176,23 @@ if __name__ == "__main__" and "--mancati" in sys.argv:
         a, d, z = _leggi(p); k = "eventi" if "eventi" in d else "incontri"
         for e in d[k]:
             for n in mancati(e): print(f"{p}\t{e['id']}\t{n}\t{(e.get('descrizione') or '')[:80]}")
+    sys.exit(0)
+
+if __name__ == "__main__" and "--tutti" in sys.argv:
+    # 25/11/2026 (Stefano: «Daniele Tinti non esce… occupatene seriamente per tutto il progetto»): gli eventi arrivano
+    # anche da eventi_auto.py e serate.py, che non riempivano «chi». Il flusso «Versioni dei dati» lancia questo passo
+    # su tutti gli eventi e incontri di tutte le città; un file si riscrive solo se un nome è stato aggiunto.
+    base = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..")
+    import glob as _g
+    for p in [_os.path.join(base, x) for x in ("eventi.js", "incontri.js")] + sorted(_g.glob(_os.path.join(base, "*", "eventi.js"))) + sorted(_g.glob(_os.path.join(base, "*", "incontri.js"))):
+        if not _os.path.exists(p) or _os.sep + "evento" + _os.sep in p: continue
+        a, d, z = _leggi(p); k = "eventi" if "eventi" in d else "incontri"; n = 0
+        for e in d[k]:
+            if not (e.get("chi") or "").strip():
+                c = chi(e)
+                if c: e["chi"] = c; n += 1
+        if n: open(p, "w", encoding="utf-8").write(a + json.dumps(d, ensure_ascii=False, separators=(",", ":")) + z)
+        print(f"{_os.path.relpath(p, base)}: {n} nomi aggiunti")
     sys.exit(0)
 
 if __name__ == "__main__":

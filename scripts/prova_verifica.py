@@ -206,8 +206,22 @@ for desc, atteso in [
     ("Omaggio gospel a Whitney Houston e Tina Turner.", ""), ("Al Teatro Gian Carlo Menotti.", ""),
     ("Michael Jordan, un giocatore iconico.", ""), ("Testo di Luigi Pirandello.", ""),
     ("Cosa vede il giovane Michelangelo Merisi, detto il Caravaggio?", ""),
+    # 25/11/2026 (Stefano: «perché Daniele Tinti non esce nel box in elenco»): «di» che indica chi va in scena
+    ("Stand-up di Daniele Tinti.", "Daniele Tinti"), ("Reading di Beatrice Zerbini · Poesia", "Beatrice Zerbini"),
+    ("Lectio magistralis di Aldo Cazzullo · Lectio, Storia", "Aldo Cazzullo"), ("Guida all'ascolto di Luca Rebeggiani.", "Luca Rebeggiani"),
+    ("Presentazione del libro “MONDOMANIA” di Alessandro La Fauci a eXtraBO", "Alessandro La Fauci"),
+    ("Orchestra e Coro della Scala diretti da Myung-Whun Chung.", "dirige Myung-Whun Chung"),
+    ("Lezione-concerto su Hindemith con il pianista Andrea Carcano.", "Andrea Carcano"),
+    ("Il medico ed epidemiologo Franco Berrino parla di alimentazione.", "Franco Berrino"),
+    ("La band di Manuel Agnelli rilegge l'album.", "Manuel Agnelli"),
+    # … e «di» che indica l'autore o il soggetto: il nome resta fuori
+    ("La commedia di Oscar Wilde con la Compagnia La Ragnatela.", ""), ("Dal film di Fausto Brizzi.", ""),
+    ("Sulle canzoni di Umberto Tozzi.", ""), ("Il balletto di Pierre Lacotte.", ""),
+    ("Il conflitto tra Antonio Salieri, musicista stimato, e il giovane Mozart.", ""),
 ]:
     prova(f"protagonisti: «{desc[:40]}» → «{atteso}»", PR.chi({"artista": "Titolo qualsiasi", "descrizione": desc}) == atteso)
+prova("protagonisti: in un incontro «diretti da» è «a cura di», non «regia di»",
+      PR.chi({"id": "i196", "artista": "Seminario", "genere": "Incontri e conferenze", "descrizione": "Seminari di filosofia diretti da Fabio Minazzi."}) == "a cura di Fabio Minazzi")
 
 
 # ---------------------------------------------------------------- clic «Biglietti» con il sito di arrivo (20/11/2026)
