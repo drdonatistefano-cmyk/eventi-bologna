@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-24",
- "giorno_orari": "2026-11-24",
+ "aggiornato": "2026-11-25",
+ "giorno_orari": "2026-11-25",
  "sale": [
   {
    "id": "c001",
@@ -31,25 +31,6 @@
      "regia": "",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5175",
      "scheda": "https://it.wikipedia.org/wiki/La_notte_delle_fragole"
-    },
-    {
-     "titolo": "Se domani non torno",
-     "orari": [
-      "10:00"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "10:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Paola Randi",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5175",
-     "interpreti": "Tommaso Allione, Tecla Bossi, Sabrina Martina e Filippo Timi",
-     "paese": "Italia",
-     "durata": 107,
-     "anno": 2026
     }
    ],
    "cinemap": "https://www.cinemap.it/arese/cinema/cinema-teatro-arese"
@@ -64,14 +45,28 @@
    "fonte": "https://movieplayer.it/cinema/uci-cinemas-milanofiori_2401/",
    "film": [
     {
+     "titolo": "Clayface",
+     "orari": [],
+     "giorni": {
+      "2026-11-27": [
+       "23:40"
+      ],
+      "2026-11-28": [
+       "23:40"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5037",
+     "scheda": "https://it.wikipedia.org/wiki/Clayface_%28film%29"
+    },
+    {
      "titolo": "Fjord",
      "orari": [
       "18:25"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:25"
-      ],
       "2026-11-25": [
        "18:25"
       ]
@@ -91,25 +86,35 @@
      "orari": [],
      "giorni": {
       "2026-11-26": [
+       "15:00",
        "16:40",
+       "17:30",
        "20:00"
       ],
       "2026-11-27": [
+       "15:00",
        "16:40",
+       "17:30",
        "20:00"
       ],
       "2026-11-28": [
        "14:00",
+       "15:00",
        "16:40",
+       "17:30",
        "20:00"
       ],
       "2026-11-29": [
+       "11:20",
+       "12:20",
        "14:00",
+       "15:00",
        "16:40",
+       "17:30",
        "20:00"
       ]
      },
-     "versione": "",
+     "versione": "Versione originale (solo ore 12:20)",
      "genere": "",
      "regia": "",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5037",
@@ -119,7 +124,6 @@
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
       "15:30",
-      "16:40",
       "17:40",
       "18:20",
       "19:10",
@@ -129,17 +133,6 @@
       "22:20"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:30",
-       "16:40",
-       "17:40",
-       "18:20",
-       "19:10",
-       "20:10",
-       "21:10",
-       "21:40",
-       "22:20"
-      ],
       "2026-11-25": [
        "15:30",
        "17:40",
@@ -148,6 +141,42 @@
        "20:10",
        "21:10",
        "21:40",
+       "22:20"
+      ],
+      "2026-11-26": [
+       "15:30",
+       "17:00",
+       "18:20",
+       "20:20",
+       "21:30",
+       "22:20"
+      ],
+      "2026-11-27": [
+       "15:30",
+       "17:00",
+       "18:20",
+       "20:20",
+       "21:30",
+       "22:20",
+       "23:30"
+      ],
+      "2026-11-28": [
+       "14:50",
+       "17:00",
+       "18:20",
+       "20:20",
+       "21:30",
+       "22:20",
+       "23:30"
+      ],
+      "2026-11-29": [
+       "11:30",
+       "13:00",
+       "14:50",
+       "17:00",
+       "18:20",
+       "20:20",
+       "21:30",
        "22:20"
       ]
      },
@@ -168,13 +197,24 @@
       "17:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:20",
-       "17:00"
-      ],
       "2026-11-25": [
        "15:20",
        "17:00"
+      ],
+      "2026-11-26": [
+       "17:50"
+      ],
+      "2026-11-27": [
+       "17:50"
+      ],
+      "2026-11-28": [
+       "14:20",
+       "17:20"
+      ],
+      "2026-11-29": [
+       "11:10",
+       "14:20",
+       "17:50"
       ]
      },
      "versione": "",
@@ -193,9 +233,6 @@
       "15:40"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:40"
-      ],
       "2026-11-25": [
        "15:40"
       ]
@@ -215,20 +252,35 @@
      "orari": [],
      "giorni": {
       "2026-11-26": [
+       "15:15",
+       "17:40",
        "19:10",
-       "21:40"
+       "20:10",
+       "21:40",
+       "22:30"
       ],
       "2026-11-27": [
+       "15:15",
+       "17:40",
        "19:10",
-       "21:40"
+       "21:40",
+       "22:30"
       ],
       "2026-11-28": [
+       "15:10",
+       "16:35",
+       "17:50",
        "19:10",
-       "21:40"
+       "21:40",
+       "22:30"
       ],
       "2026-11-29": [
+       "15:20",
+       "16:35",
+       "17:40",
        "19:10",
-       "21:40"
+       "21:40",
+       "22:30"
       ]
      },
      "versione": "",
@@ -255,23 +307,24 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Documentario",
+     "regia": "Dario Zonta e Carlo Zoratti",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5037",
+     "paese": "Italia",
+     "durata": 84,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
     },
     {
      "titolo": "Mustang",
      "orari": [
+      "15:00",
       "18:00",
       "20:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:00",
-       "20:30"
-      ],
       "2026-11-25": [
+       "15:00",
        "18:00",
        "20:30"
       ]
@@ -285,45 +338,43 @@
      "durata": 105
     },
     {
-     "titolo": "Ragione e sentimento",
-     "orari": [
-      "21:30"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "21:30"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Ang Lee",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5037",
-     "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
-     "durata": 136,
-     "anno": 1995,
-     "paese": "USA",
-     "scheda": "https://it.wikipedia.org/wiki/Ragione_e_sentimento_%28film_1995%29"
-    },
-    {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
       "15:10",
       "17:15",
-      "20:00",
-      "22:30"
+      "21:30",
+      "22:35"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:10",
-       "17:15",
-       "20:00",
-       "22:30"
-      ],
       "2026-11-25": [
        "15:10",
        "17:15",
        "21:30",
        "22:35"
+      ],
+      "2026-11-26": [
+       "15:10",
+       "18:00",
+       "21:30",
+       "22:45"
+      ],
+      "2026-11-27": [
+       "15:10",
+       "18:00",
+       "22:45",
+       "23:50"
+      ],
+      "2026-11-28": [
+       "15:10",
+       "18:00",
+       "22:45",
+       "23:50"
+      ],
+      "2026-11-29": [
+       "11:40",
+       "15:10",
+       "17:50",
+       "22:45"
       ]
      },
      "versione": "",
@@ -344,15 +395,27 @@
       "22:10"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:50",
-       "19:40",
-       "22:10"
-      ],
       "2026-11-25": [
        "15:50",
        "19:40",
        "22:10"
+      ],
+      "2026-11-26": [
+       "15:20",
+       "21:00"
+      ],
+      "2026-11-27": [
+       "15:20",
+       "18:50"
+      ],
+      "2026-11-28": [
+       "15:30",
+       "18:50"
+      ],
+      "2026-11-29": [
+       "12:00",
+       "15:20",
+       "18:50"
       ]
      },
      "versione": "",
@@ -365,8 +428,26 @@
      "durata": 107
     },
     {
-     "titolo": "Ti presento i Fotter",
+     "titolo": "Taddeo l’esploratore e la lampada magica",
      "orari": [],
+     "giorni": {
+      "2026-11-29": [
+       "10:40",
+       "11:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5037"
+    },
+    {
+     "titolo": "Ti presento i Fotter",
+     "orari": [
+      "16:15",
+      "19:00",
+      "21:50"
+     ],
      "giorni": {
       "2026-11-25": [
        "16:15",
@@ -374,23 +455,37 @@
        "21:50"
       ],
       "2026-11-26": [
+       "16:20",
        "18:50",
+       "19:00",
        "21:50"
       ],
       "2026-11-27": [
+       "16:20",
+       "19:00",
        "21:50"
       ],
       "2026-11-28": [
+       "14:00",
+       "16:20",
+       "19:00",
        "21:50"
       ],
       "2026-11-29": [
+       "14:00",
+       "16:20",
+       "19:00",
        "21:50"
       ]
      },
-     "versione": "Versione originale (solo ore 18:50)",
-     "genere": "",
-     "regia": "",
+     "versione": "Versione originale (solo ore 14:00, 18:50)",
+     "genere": "Commedia",
+     "regia": "John Hamburg",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5037",
+     "interpreti": "Robert De Niro, Owen Wilson e Ben Stiller",
+     "durata": 105,
+     "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
@@ -399,9 +494,6 @@
       "15:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:00"
-      ],
       "2026-11-25": [
        "15:00"
       ]
@@ -442,10 +534,6 @@
       "21:20"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:30",
-       "21:20"
-      ],
       "2026-11-25": [
        "18:30",
        "21:20"
@@ -482,26 +570,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/splendor_721/",
-   "film": [
-    {
-     "titolo": "L'Hangar Rosso",
-     "orari": [
-      "21:15"
-     ],
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "interpreti": "",
-     "durata": null,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-24": [
-       "21:15"
-      ]
-     },
-     "scheda": "https://it.wikipedia.org/wiki/L%27hangar_rosso"
-    }
-   ]
+   "film": []
   },
   {
    "id": "c005",
@@ -513,24 +582,42 @@
    "fonte": "https://movieplayer.it/cinema/agora_729/",
    "film": [
     {
-     "titolo": "L'Hangar Rosso",
-     "orari": [
-      "15:30",
-      "21:00"
-     ],
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "interpreti": "",
-     "durata": null,
-     "anno": 2026,
+     "titolo": "Dio ride",
+     "orari": [],
      "giorni": {
-      "2026-11-24": [
-       "15:30",
+      "2026-11-28": [
+       "21:00"
+      ],
+      "2026-11-29": [
        "21:00"
       ]
      },
-     "scheda": "https://it.wikipedia.org/wiki/L%27hangar_rosso"
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Giovanni Veronesi",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5554",
+     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
+     "paese": "Italia",
+     "durata": 114,
+     "anno": 2026,
+     "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
+    },
+    {
+     "titolo": "Hexe - Il regno delle streghe",
+     "orari": [],
+     "giorni": {
+      "2026-11-28": [
+       "15:30"
+      ],
+      "2026-11-29": [
+       "15:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5554",
+     "scheda": "https://it.wikipedia.org/wiki/Hexe_-_Il_regno_delle_streghe"
     }
    ],
    "cinemap": "https://www.cinemap.it/cernusco-sul-naviglio/cinema/agora-cernusco-sul-naviglio"
@@ -545,32 +632,10 @@
    "fonte": "https://movieplayer.it/cinema/cineteatro-di-via-volta_736/",
    "film": [
     {
-     "titolo": "Dio ride",
-     "orari": [
-      "15:00"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "15:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Giovanni Veronesi",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/6304",
-     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "paese": "Italia",
-     "durata": 114,
-     "anno": 2026,
-     "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
-    },
-    {
      "titolo": "Il rumore delle cose nuove",
-     "orari": [
-      "21:00"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-24": [
+      "2026-11-26": [
        "21:00"
       ]
      },
@@ -585,8 +650,29 @@
      "scheda": "https://it.wikipedia.org/wiki/Il_rumore_delle_cose_nuove"
     },
     {
-     "titolo": "Se domani non torno",
+     "titolo": "La notte delle fragole",
      "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "19:15"
+      ],
+      "2026-11-27": [
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/6304",
+     "scheda": "https://it.wikipedia.org/wiki/La_notte_delle_fragole"
+    },
+    {
+     "titolo": "Se domani non torno",
+     "orari": [
+      "15:00",
+      "18:00",
+      "21:00"
+     ],
      "giorni": {
       "2026-11-25": [
        "15:00",
@@ -605,12 +691,10 @@
     },
     {
      "titolo": "Shaun, vita da pecora - Operazione Z.U.C.C.A.",
-     "orari": [
-      "17:15"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-24": [
-       "17:15"
+      "2026-11-26": [
+       "17:30"
       ]
      },
      "versione": "",
@@ -621,12 +705,10 @@
     },
     {
      "titolo": "Wild Horse Nine",
-     "orari": [
-      "18:45"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-24": [
-       "18:45"
+      "2026-11-26": [
+       "15:15"
       ]
      },
      "versione": "",
@@ -650,7 +732,33 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/sala-ratti_749/",
-   "film": [],
+   "film": [
+    {
+     "titolo": "Fjord",
+     "orari": [],
+     "giorni": {
+      "2026-11-27": [
+       "21:00"
+      ],
+      "2026-11-28": [
+       "21:00"
+      ],
+      "2026-11-29": [
+       "17:30",
+       "20:30"
+      ]
+     },
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Cristian Mungiu",
+     "biglietti": "https://www.cinemasalaratti.it/",
+     "interpreti": "Sebastian Stan, Renate Reinsve, Lisa Carlehed e Lisa Loven Kongsli",
+     "paese": "Norvegia",
+     "durata": 146,
+     "anno": 2026,
+     "scheda": "https://it.wikipedia.org/wiki/Fjord_%28film%29"
+    }
+   ],
    "cinemap": "https://www.cinemap.it/legnano/cinema/sala-ratti-legnano"
   },
   {
@@ -665,14 +773,9 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "16:40",
       "22:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "16:40",
-       "22:00"
-      ],
       "2026-11-25": [
        "22:00"
       ]
@@ -692,7 +795,6 @@
      "orari": [],
      "giorni": {
       "2026-11-26": [
-       "14:00",
        "16:40",
        "20:00"
       ],
@@ -727,12 +829,6 @@
       "21:40"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:40",
-       "19:10",
-       "21:10",
-       "21:40"
-      ],
       "2026-11-25": [
        "17:40",
        "19:10",
@@ -757,10 +853,6 @@
       "17:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "16:30",
-       "17:30"
-      ],
       "2026-11-25": [
        "16:30",
        "17:30"
@@ -779,14 +871,9 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "18:30",
-      "22:00"
+      "18:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:30",
-       "22:00"
-      ],
       "2026-11-25": [
        "18:30"
       ]
@@ -846,49 +933,26 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5088",
-     "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
-    },
-    {
-     "titolo": "Mustang",
-     "orari": [
-      "19:50"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "19:50"
-      ]
-     },
-     "versione": "",
      "genere": "Documentario",
-     "regia": "Kasia Smutniak",
+     "regia": "Dario Zonta e Carlo Zoratti",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5088",
-     "anno": 2026,
      "paese": "Italia",
-     "durata": 105
+     "durata": 84,
+     "anno": 2026,
+     "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
       "16:30",
       "19:30",
-      "22:10",
-      "22:45"
+      "22:10"
      ],
      "giorni": {
-      "2026-11-24": [
-       "16:30",
-       "19:30",
-       "22:10",
-       "22:45"
-      ],
       "2026-11-25": [
        "16:30",
        "19:30",
-       "22:10",
-       "22:45"
+       "22:10"
       ]
      },
      "versione": "",
@@ -909,11 +973,6 @@
       "21:20"
      ],
      "giorni": {
-      "2026-11-24": [
-       "16:15",
-       "19:20",
-       "21:20"
-      ],
       "2026-11-25": [
        "16:15",
        "19:20",
@@ -931,7 +990,11 @@
     },
     {
      "titolo": "Ti presento i Fotter",
-     "orari": [],
+     "orari": [
+      "16:10",
+      "19:00",
+      "21:50"
+     ],
      "giorni": {
       "2026-11-25": [
        "16:10",
@@ -953,9 +1016,13 @@
       ]
      },
      "versione": "Versione originale (solo ore 18:50)",
-     "genere": "",
-     "regia": "",
+     "genere": "Commedia",
+     "regia": "John Hamburg",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5088",
+     "interpreti": "Robert De Niro, Owen Wilson e Ben Stiller",
+     "durata": 105,
+     "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
@@ -965,10 +1032,6 @@
       "19:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "16:20",
-       "19:00"
-      ],
       "2026-11-25": [
        "16:20",
        "19:00"
@@ -990,9 +1053,6 @@
       "20:10"
      ],
      "giorni": {
-      "2026-11-24": [
-       "20:10"
-      ],
       "2026-11-25": [
        "20:10"
       ]
@@ -1022,14 +1082,9 @@
     {
      "titolo": "Calle Málaga",
      "orari": [
-      "17:00",
       "21:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:00",
-       "21:00"
-      ],
       "2026-11-25": [
        "21:00"
       ],
@@ -1038,13 +1093,9 @@
       ]
      },
      "versione": "",
-     "genere": "Drammatico",
-     "regia": "Maryam Touzani",
+     "genere": "",
+     "regia": "",
      "biglietti": "https://bandhi.it/bah/film/calle-malaga-rho/",
-     "interpreti": "Carmen Maura, Marta Etura, Ahmed Boulane e María Alfonsa Rosso",
-     "paese": "Spagna",
-     "durata": 116,
-     "anno": 2025,
      "scheda": "https://it.wikipedia.org/wiki/Calle_M%C3%A1laga"
     },
     {
@@ -1080,20 +1131,21 @@
     {
      "titolo": "Come rapinare una banca",
      "orari": [
-      "22:30"
+      "14:10"
      ],
      "giorni": {
-      "2026-11-24": [
-       "22:30"
-      ],
       "2026-11-25": [
        "14:10"
+      ],
+      "2026-11-29": [
+       "00:00",
+       "22:50"
       ]
      },
      "versione": "",
      "genere": "Azione, Thriller",
      "regia": "David Leitch",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003758/92442",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003758/92507",
      "interpreti": "Nicholas Hoult, Christian Slater e Zoë Kravitz",
      "durata": 122,
      "anno": 2026,
@@ -1103,20 +1155,20 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "14:05"
+      "14:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:05"
-      ],
       "2026-11-25": [
        "14:30"
+      ],
+      "2026-11-29": [
+       "13:00"
       ]
      },
      "versione": "",
      "genere": "Commedia",
      "regia": "Giovanni Veronesi",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003797/92444",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003797/92500",
      "anno": 2026,
      "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
      "paese": "Italia",
@@ -1124,22 +1176,54 @@
      "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
     },
     {
+     "titolo": "È andata così",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "22:10"
+      ],
+      "2026-11-27": [
+       "22:10"
+      ],
+      "2026-11-28": [
+       "19:50"
+      ],
+      "2026-11-29": [
+       "22:20"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003518/92618",
+     "scheda": "https://it.wikipedia.org/wiki/%C3%88_andata_cos%C3%AC_%28film%29"
+    },
+    {
      "titolo": "Fjord",
      "orari": [
       "17:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:00"
-      ],
       "2026-11-25": [
        "17:00"
+      ],
+      "2026-11-26": [
+       "15:20"
+      ],
+      "2026-11-27": [
+       "14:20"
+      ],
+      "2026-11-28": [
+       "15:20"
+      ],
+      "2026-11-29": [
+       "20:50"
       ]
      },
      "versione": "",
      "genere": "Drammatico",
      "regia": "Cristian Mungiu",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00004009/92450",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00004009/92516",
      "interpreti": "Sebastian Stan, Renate Reinsve e Lisa Carlehed",
      "durata": 146,
      "anno": 2026,
@@ -1149,26 +1233,27 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "14:15",
-      "15:50",
-      "18:30",
-      "21:40"
+      "15:50"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:15",
-       "15:50",
-       "18:30",
-       "21:40"
-      ],
       "2026-11-25": [
        "15:50"
+      ],
+      "2026-11-27": [
+       "17:10"
+      ],
+      "2026-11-28": [
+       "15:50"
+      ],
+      "2026-11-29": [
+       "00:10",
+       "12:50"
       ]
      },
      "versione": "",
      "genere": "Azione, Avventura, Drammatico",
      "regia": "Takashi Yamazaki",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003849/92439",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003849/92520",
      "interpreti": "Minami Hamabe, Ryunosuke Kamiki e Jun Kunimura",
      "durata": 135,
      "anno": 2026,
@@ -1181,25 +1266,42 @@
      "giorni": {
       "2026-11-26": [
        "14:40",
+       "16:30",
        "17:20",
        "18:20",
-       "20:00"
+       "19:10",
+       "20:00",
+       "21:40"
       ],
       "2026-11-27": [
        "14:40",
+       "15:50",
+       "16:30",
        "17:20",
        "18:20",
-       "20:00"
+       "19:20",
+       "20:00",
+       "21:10"
       ],
       "2026-11-28": [
        "15:00",
+       "16:20",
        "17:20",
-       "20:00"
+       "18:10",
+       "18:50",
+       "20:00",
+       "21:40"
       ],
       "2026-11-29": [
+       "11:30",
+       "12:10",
        "14:30",
+       "15:50",
+       "16:20",
        "17:20",
-       "20:00"
+       "18:40",
+       "20:00",
+       "21:30"
       ]
      },
      "versione": "",
@@ -1209,54 +1311,22 @@
      "scheda": "https://it.wikipedia.org/wiki/Hexe_-_Il_regno_delle_streghe"
     },
     {
-     "titolo": "Hope",
-     "orari": [],
-     "giorni": {
-      "2026-11-25": [
-       "15:10"
-      ]
-     },
-     "versione": "",
-     "genere": "Azione, Fantascienza, Horror",
-     "regia": "Na Hong-jin",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003798/92510",
-     "interpreti": "Hwang Jung-min, In-sung Jo, Alicia Vikander e Michael Fassbender",
-     "paese": "Corea del sud",
-     "durata": 145,
-     "anno": 2026,
-     "scheda": "https://it.wikipedia.org/wiki/Hope_%28film_2026%29"
-    },
-    {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
-      "15:20",
-      "16:00",
-      "16:30",
+      "14:00",
+      "14:40",
+      "15:30",
+      "16:40",
       "17:30",
       "18:20",
-      "18:40",
-      "19:00",
+      "18:50",
+      "19:10",
       "19:40",
-      "20:00",
-      "20:20",
+      "20:15",
       "21:00",
       "21:50"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:20",
-       "16:00",
-       "16:30",
-       "17:30",
-       "18:20",
-       "18:40",
-       "19:00",
-       "19:40",
-       "20:00",
-       "20:20",
-       "21:00",
-       "21:50"
-      ],
       "2026-11-25": [
        "14:00",
        "14:40",
@@ -1273,30 +1343,47 @@
       ],
       "2026-11-26": [
        "14:30",
+       "15:30",
+       "16:40",
+       "18:00",
        "19:00",
+       "19:20",
+       "20:10",
        "21:20"
       ],
       "2026-11-27": [
        "14:30",
+       "15:30",
+       "17:30",
        "19:00",
-       "21:20"
+       "20:20",
+       "21:20",
+       "22:00"
       ],
       "2026-11-28": [
+       "14:30",
+       "16:50",
        "18:00",
        "19:00",
-       "21:50"
+       "20:50",
+       "21:50",
+       "22:40",
+       "23:10"
       ],
       "2026-11-29": [
        "11:10",
+       "14:50",
        "17:30",
+       "18:20",
        "19:00",
+       "20:30",
        "21:20"
       ]
      },
-     "versione": "Versione originale (solo ore 11:10, 16:30, 19:00, 19:10, 20:00, 20:15)",
+     "versione": "Versione originale (solo ore 11:10, 19:00, 19:10, 20:15)",
      "genere": "Azione, Avventura, Fantasy",
      "regia": "Francis Lawrence",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003465/92457",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003465/92549",
      "interpreti": "Joseph Zada, Mckenna Grace e Ralph Fiennes",
      "durata": 158,
      "anno": 2026,
@@ -1306,22 +1393,31 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "14:10",
       "17:10"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:10",
-       "17:10"
-      ],
       "2026-11-25": [
        "17:10"
+      ],
+      "2026-11-26": [
+       "17:10"
+      ],
+      "2026-11-27": [
+       "15:20"
+      ],
+      "2026-11-28": [
+       "16:00",
+       "17:10"
+      ],
+      "2026-11-29": [
+       "11:20",
+       "15:10"
       ]
      },
      "versione": "",
      "genere": "Animazione",
      "regia": "Alessandro Carloni e Erica Rivinoja",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003165/92446",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003165/92501",
      "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
      "anno": 2026,
      "paese": "USA",
@@ -1329,23 +1425,55 @@
      "scheda": "https://it.wikipedia.org/wiki/Il_gatto_col_cappello_%28film%29"
     },
     {
+     "titolo": "Il risveglio di Boiúna",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "22:30"
+      ],
+      "2026-11-27": [
+       "22:20"
+      ],
+      "2026-11-28": [
+       "22:30",
+       "23:10"
+      ],
+      "2026-11-29": [
+       "00:20",
+       "22:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00004014/92589"
+    },
+    {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "22:40"
+      "14:20",
+      "22:10"
      ],
      "giorni": {
-      "2026-11-24": [
-       "22:40"
-      ],
       "2026-11-25": [
        "14:20",
        "22:10"
+      ],
+      "2026-11-27": [
+       "22:40"
+      ],
+      "2026-11-28": [
+       "19:10"
+      ],
+      "2026-11-29": [
+       "13:50",
+       "19:30"
       ]
      },
      "versione": "",
      "genere": "Commedia",
      "regia": "Paolo Genovese",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003861/92467",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003861/92515",
      "interpreti": "Stefano Accorsi, Emanuela Fanelli e Lino Musella",
      "anno": 2026,
      "paese": "Italia",
@@ -1355,12 +1483,9 @@
     {
      "titolo": "La ballata del re delle api",
      "orari": [
-      "15:10"
+      "17:20"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:10"
-      ],
       "2026-11-25": [
        "17:20"
       ]
@@ -1368,7 +1493,7 @@
      "versione": "",
      "genere": "Drammatico, Thriller",
      "regia": "Andrew Patterson",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003953/92460",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003953/92508",
      "interpreti": "Matthew McConaughey, Angelina LookingGlass e Jake Horowitz",
      "durata": 130,
      "anno": 2025,
@@ -1376,39 +1501,93 @@
      "scheda": "https://it.wikipedia.org/wiki/La_ballata_del_re_delle_api"
     },
     {
-     "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
+     "titolo": "La notte delle fragole",
      "orari": [],
      "giorni": {
       "2026-11-26": [
-       "21:00"
+       "14:05",
+       "16:00",
+       "18:30",
+       "19:50",
+       "22:40"
       ],
       "2026-11-27": [
-       "21:00"
+       "14:10",
+       "17:00",
+       "19:10",
+       "20:50"
       ],
       "2026-11-28": [
-       "21:00"
+       "14:15",
+       "16:30",
+       "18:40",
+       "22:20"
       ],
       "2026-11-29": [
-       "21:00"
+       "00:35",
+       "11:05",
+       "15:00",
+       "18:30",
+       "22:10"
       ]
      },
      "versione": "",
      "genere": "",
      "regia": "",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003848/90638",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003833/92622",
+     "scheda": "https://it.wikipedia.org/wiki/La_notte_delle_fragole"
+    },
+    {
+     "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "14:10",
+       "17:40",
+       "21:00"
+      ],
+      "2026-11-27": [
+       "14:00",
+       "16:20",
+       "18:40",
+       "21:00"
+      ],
+      "2026-11-28": [
+       "14:05",
+       "16:40",
+       "18:55",
+       "21:00"
+      ],
+      "2026-11-29": [
+       "00:30",
+       "11:15",
+       "13:30",
+       "16:00",
+       "18:10",
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "Documentario",
+     "regia": "Dario Zonta e Carlo Zoratti",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003848/92573",
+     "paese": "Italia",
+     "durata": 84,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
     },
     {
      "titolo": "Mustang",
      "orari": [
-      "20:30"
+      "16:00",
+      "20:30",
+      "22:10"
      ],
      "giorni": {
-      "2026-11-24": [
-       "20:30"
-      ],
       "2026-11-25": [
-       "20:30"
+       "16:00",
+       "20:30",
+       "22:10"
       ],
       "2026-11-26": [
        "20:30"
@@ -1426,7 +1605,7 @@
      "versione": "",
      "genere": "Documentario",
      "regia": "Kasia Smutniak",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00004016/92213",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00004016/92561",
      "anno": 2026,
      "paese": "Italia",
      "durata": 105
@@ -1448,20 +1627,23 @@
     {
      "titolo": "Ramayana - La nascita di una leggenda",
      "orari": [
-      "14:50"
+      "14:25"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:50"
-      ],
       "2026-11-25": [
        "14:25"
+      ],
+      "2026-11-26": [
+       "14:00"
+      ],
+      "2026-11-29": [
+       "14:20"
       ]
      },
      "versione": "",
      "genere": "Azione, Avventura, Drammatico",
      "regia": "Nitesh Tiwari",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00004018/92454",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00004018/92517",
      "interpreti": "Ranbir Kapoor, Yash e Sai Pallavi",
      "durata": 195,
      "anno": 2026,
@@ -1471,31 +1653,52 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "14:40",
-      "18:10",
-      "21:10",
-      "22:10"
+      "14:00",
+      "18:00",
+      "19:20",
+      "20:50",
+      "22:20"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:40",
-       "18:10",
-       "21:10",
-       "22:10"
-      ],
       "2026-11-25": [
        "14:00",
        "18:00",
        "19:20",
        "20:50",
-       "22:00",
        "22:20"
+      ],
+      "2026-11-26": [
+       "16:20",
+       "19:30",
+       "22:00"
+      ],
+      "2026-11-27": [
+       "14:15",
+       "16:10",
+       "18:30",
+       "20:40",
+       "22:30"
+      ],
+      "2026-11-28": [
+       "14:00",
+       "18:30",
+       "21:10"
+      ],
+      "2026-11-29": [
+       "00:15",
+       "11:25",
+       "13:20",
+       "15:40",
+       "17:50",
+       "19:10",
+       "21:50",
+       "22:40"
       ]
      },
      "versione": "",
      "genere": "Drammatico, Fantasy",
      "regia": "Ti West",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003866/92451",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003866/92503",
      "interpreti": "Johnny Depp, Sam Claflin e Daisy Ridley",
      "anno": 2026,
      "paese": "USA",
@@ -1505,29 +1708,42 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "15:30",
-      "17:40",
+      "14:05",
+      "16:50",
       "19:50",
-      "22:20"
+      "22:40"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:30",
-       "17:40",
-       "19:50",
-       "22:20"
-      ],
       "2026-11-25": [
        "14:05",
        "16:50",
        "19:50",
        "22:40"
+      ],
+      "2026-11-26": [
+       "14:30",
+       "16:50",
+       "18:50",
+       "21:50"
+      ],
+      "2026-11-27": [
+       "14:50",
+       "18:10",
+       "20:10"
+      ],
+      "2026-11-28": [
+       "14:40",
+       "22:00"
+      ],
+      "2026-11-29": [
+       "16:50",
+       "18:00"
       ]
      },
      "versione": "",
      "genere": "Drammatico",
      "regia": "Paola Randi",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003580/92463",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003580/92527",
      "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
      "anno": 2027,
      "paese": "Italia",
@@ -1535,7 +1751,12 @@
     },
     {
      "titolo": "Ti presento i Fotter",
-     "orari": [],
+     "orari": [
+      "16:10",
+      "19:00",
+      "21:30",
+      "22:30"
+     ],
      "giorni": {
       "2026-11-25": [
        "16:10",
@@ -1544,44 +1765,91 @@
        "22:30"
       ],
       "2026-11-26": [
-       "21:30"
+       "14:20",
+       "16:10",
+       "18:40",
+       "21:30",
+       "22:50"
       ],
       "2026-11-27": [
+       "15:40",
+       "17:40",
+       "19:30",
        "21:30"
       ],
       "2026-11-28": [
-       "21:30"
+       "14:25",
+       "17:00",
+       "19:40",
+       "21:30",
+       "22:50"
       ],
       "2026-11-29": [
-       "21:30"
+       "14:10",
+       "16:40",
+       "18:50",
+       "21:40"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Commedia",
+     "regia": "John Hamburg",
      "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003596/92522",
+     "interpreti": "Robert De Niro, Owen Wilson e Ben Stiller",
+     "durata": 105,
+     "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
+    },
+    {
+     "titolo": "Un tranquillo funerale di famiglia",
+     "orari": [],
+     "giorni": {
+      "2026-11-29": [
+       "11:30"
+      ]
+     },
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "Massimiliano Bruno",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003650/92696",
+     "interpreti": "Claudia Pandolfi, Pietro Sermonti, Diego Abatantuono e Stefania Sandrelli",
+     "paese": "Italia",
+     "durata": 98,
+     "anno": 2026,
+     "scheda": "https://it.wikipedia.org/wiki/Un_tranquillo_funerale_di_famiglia"
     },
     {
      "titolo": "Un weekend artificiale",
      "orari": [
-      "16:40",
+      "14:35",
       "22:50"
      ],
      "giorni": {
-      "2026-11-24": [
-       "16:40",
-       "22:50"
-      ],
       "2026-11-25": [
        "14:35",
        "22:50"
+      ],
+      "2026-11-26": [
+       "14:15",
+       "22:20"
+      ],
+      "2026-11-27": [
+       "14:45",
+       "18:00"
+      ],
+      "2026-11-28": [
+       "14:50"
+      ],
+      "2026-11-29": [
+       "14:00",
+       "16:30"
       ]
      },
      "versione": "",
      "genere": "Commedia",
      "regia": "Leonardo Pieraccioni",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003902/92447",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003902/92513",
      "interpreti": "Leonardo Pieraccioni, Giulia Vecchio e Herbert Ballerina",
      "anno": 2026,
      "paese": "Italia",
@@ -1590,22 +1858,23 @@
     },
     {
      "titolo": "Wild Horse Nine",
-     "orari": [
-      "14:20"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-24": [
-       "14:20"
+      "2026-11-26": [
+       "15:10"
+      ],
+      "2026-11-28": [
+       "14:10"
       ]
      },
      "versione": "",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003652/92449",
-     "interpreti": "Sam Rockwell, Parker Posey e Steve Buscemi",
-     "anno": 2026,
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003652/92594",
+     "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
      "paese": "Regno Unito",
      "durata": 118,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
     },
     {
@@ -1616,11 +1885,6 @@
       "20:10"
      ],
      "giorni": {
-      "2026-11-24": [
-       "16:50",
-       "19:30",
-       "20:10"
-      ],
       "2026-11-25": [
        "16:50",
        "19:30",
@@ -1630,7 +1894,7 @@
      "versione": "",
      "genere": "Animazione",
      "regia": "Makoto Shinkai",
-     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003932/91383",
+     "biglietti": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1020/HO00003932/92173",
      "interpreti": "Ryûnosuke Kamiki, Mone Kamishiraishi, Ryô Narita e Aoi Yuki",
      "paese": "Giappone",
      "durata": 106,
@@ -1652,12 +1916,10 @@
     {
      "titolo": "Fjord",
      "orari": [
+      "16:00",
       "21:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "21:00"
-      ],
       "2026-11-25": [
        "16:00",
        "21:00"
@@ -1705,19 +1967,61 @@
    "fonte": "https://movieplayer.it/cinema/multisala-movie-planet_2784/",
    "film": [
     {
+     "titolo": "Hexe - Il regno delle streghe",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "18:00",
+       "20:30"
+      ],
+      "2026-11-27": [
+       "17:10",
+       "19:40"
+      ],
+      "2026-11-28": [
+       "14:45",
+       "17:10",
+       "19:40"
+      ],
+      "2026-11-29": [
+       "14:45",
+       "17:15"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5186",
+     "scheda": "https://it.wikipedia.org/wiki/Hexe_-_Il_regno_delle_streghe"
+    },
+    {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
       "17:45",
       "21:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:45",
-       "21:00"
-      ],
       "2026-11-25": [
        "17:45",
        "21:00"
+      ],
+      "2026-11-26": [
+       "17:45",
+       "21:00"
+      ],
+      "2026-11-27": [
+       "18:00",
+       "21:15"
+      ],
+      "2026-11-28": [
+       "14:45",
+       "18:00",
+       "21:15"
+      ],
+      "2026-11-29": [
+       "14:20",
+       "17:30",
+       "19:40"
       ]
      },
      "versione": "",
@@ -1736,9 +2040,6 @@
       "18:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:30"
-      ],
       "2026-11-25": [
        "18:30"
       ]
@@ -1759,9 +2060,6 @@
       "21:10"
      ],
      "giorni": {
-      "2026-11-24": [
-       "21:10"
-      ],
       "2026-11-25": [
        "21:10"
       ]
@@ -1777,19 +2075,85 @@
      "scheda": "https://it.wikipedia.org/wiki/Il_rumore_delle_cose_nuove"
     },
     {
+     "titolo": "La notte delle fragole",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "18:30",
+       "21:20"
+      ],
+      "2026-11-27": [
+       "17:15",
+       "20:00",
+       "22:20"
+      ],
+      "2026-11-28": [
+       "15:00",
+       "17:15",
+       "20:00",
+       "22:20"
+      ],
+      "2026-11-29": [
+       "15:20",
+       "17:30",
+       "20:40"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5186",
+     "scheda": "https://it.wikipedia.org/wiki/La_notte_delle_fragole"
+    },
+    {
+     "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
+     "orari": [],
+     "giorni": {
+      "2026-11-27": [
+       "22:10"
+      ],
+      "2026-11-28": [
+       "22:10"
+      ],
+      "2026-11-29": [
+       "20:15"
+      ]
+     },
+     "versione": "",
+     "genere": "Documentario",
+     "regia": "Dario Zonta e Carlo Zoratti",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5186",
+     "paese": "Italia",
+     "durata": 84,
+     "anno": 2026,
+     "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
+    },
+    {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
       "18:35",
       "21:10"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:35",
-       "21:10"
-      ],
       "2026-11-25": [
        "18:35",
        "21:10"
+      ],
+      "2026-11-26": [
+       "21:20"
+      ],
+      "2026-11-27": [
+       "17:15",
+       "22:15"
+      ],
+      "2026-11-28": [
+       "14:30",
+       "17:05",
+       "22:15"
+      ],
+      "2026-11-29": [
+       "17:30",
+       "20:15"
       ]
      },
      "versione": "",
@@ -1809,13 +2173,22 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:15",
-       "21:00"
-      ],
       "2026-11-25": [
        "18:15",
        "21:00"
+      ],
+      "2026-11-26": [
+       "19:00"
+      ],
+      "2026-11-27": [
+       "19:40"
+      ],
+      "2026-11-28": [
+       "14:40",
+       "19:40"
+      ],
+      "2026-11-29": [
+       "14:45"
       ]
      },
      "versione": "",
@@ -1828,14 +2201,44 @@
      "anno": 2026
     },
     {
+     "titolo": "Ti presento i Fotter",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "18:20",
+       "21:15"
+      ],
+      "2026-11-27": [
+       "17:00",
+       "19:40",
+       "22:10"
+      ],
+      "2026-11-28": [
+       "17:00",
+       "19:40",
+       "22:10"
+      ],
+      "2026-11-29": [
+       "14:40",
+       "17:15",
+       "20:00"
+      ]
+     },
+     "versione": "",
+     "genere": "Commedia",
+     "regia": "John Hamburg",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5186",
+     "interpreti": "Robert De Niro, Ben Stiller, Skyler Gisondo e Ariana Grande",
+     "paese": "USA",
+     "anno": 2026,
+     "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
+    },
+    {
      "titolo": "Un weekend artificiale",
      "orari": [
       "18:20"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:20"
-      ],
       "2026-11-25": [
        "18:20"
       ]
@@ -1856,9 +2259,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "21:00"
-      ],
       "2026-11-25": [
        "21:00"
       ]
@@ -1891,9 +2291,6 @@
       "22:40"
      ],
      "giorni": {
-      "2026-11-24": [
-       "22:40"
-      ],
       "2026-11-25": [
        "22:40"
       ]
@@ -1913,13 +2310,21 @@
       "19:45"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:10",
-       "19:45"
-      ],
       "2026-11-25": [
        "17:10",
        "19:45"
+      ],
+      "2026-11-26": [
+       "14:20"
+      ],
+      "2026-11-27": [
+       "14:10"
+      ],
+      "2026-11-28": [
+       "14:10"
+      ],
+      "2026-11-29": [
+       "14:10"
       ]
      },
      "versione": "",
@@ -1939,10 +2344,6 @@
       "22:25"
      ],
      "giorni": {
-      "2026-11-24": [
-       "19:40",
-       "22:25"
-      ],
       "2026-11-25": [
        "19:40",
        "22:25"
@@ -1963,20 +2364,33 @@
      "orari": [],
      "giorni": {
       "2026-11-26": [
+       "14:15",
        "14:45",
-       "17:15"
+       "16:40",
+       "17:15",
+       "19:15"
       ],
       "2026-11-27": [
+       "14:15",
        "14:45",
-       "17:15"
+       "16:40",
+       "17:15",
+       "18:45"
       ],
       "2026-11-28": [
+       "14:15",
        "14:45",
-       "17:15"
+       "16:40",
+       "17:15",
+       "18:45"
       ],
       "2026-11-29": [
+       "10:45",
+       "14:15",
        "14:45",
-       "17:15"
+       "16:40",
+       "17:15",
+       "18:45"
       ]
      },
      "versione": "",
@@ -1988,32 +2402,54 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
-      "14:15",
+      "14:10",
       "15:00",
       "17:30",
-      "18:15",
       "19:30",
       "20:35",
-      "21:30",
       "22:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:15",
-       "15:00",
-       "17:30",
-       "18:15",
-       "19:30",
-       "20:35",
-       "21:30",
-       "22:15"
-      ],
       "2026-11-25": [
        "14:10",
        "15:00",
        "17:30",
        "19:30",
        "20:35",
+       "22:15"
+      ],
+      "2026-11-26": [
+       "15:00",
+       "17:00",
+       "19:35",
+       "20:20",
+       "21:35",
+       "21:45",
+       "22:15"
+      ],
+      "2026-11-27": [
+       "15:00",
+       "17:00",
+       "19:35",
+       "20:20",
+       "21:35",
+       "22:15"
+      ],
+      "2026-11-28": [
+       "15:00",
+       "17:00",
+       "19:35",
+       "20:20",
+       "21:35",
+       "22:15"
+      ],
+      "2026-11-29": [
+       "11:00",
+       "15:00",
+       "17:00",
+       "19:35",
+       "20:20",
+       "21:35",
        "22:15"
       ]
      },
@@ -2034,13 +2470,22 @@
       "17:25"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:20",
-       "17:25"
-      ],
       "2026-11-25": [
        "14:20",
        "17:25"
+      ],
+      "2026-11-26": [
+       "14:55"
+      ],
+      "2026-11-27": [
+       "14:55"
+      ],
+      "2026-11-28": [
+       "14:55"
+      ],
+      "2026-11-29": [
+       "10:50",
+       "14:55"
       ]
      },
      "versione": "",
@@ -2062,16 +2507,22 @@
       "22:30"
      ],
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "14:45",
        "17:15",
        "20:00",
        "22:30"
       ],
-      "2026-11-25": [
-       "14:45",
-       "17:15",
-       "20:00",
+      "2026-11-26": [
+       "22:30"
+      ],
+      "2026-11-27": [
+       "22:30"
+      ],
+      "2026-11-28": [
+       "22:30"
+      ],
+      "2026-11-29": [
        "22:30"
       ]
      },
@@ -2086,8 +2537,72 @@
      "scheda": "https://it.wikipedia.org/wiki/Il_rumore_delle_cose_nuove"
     },
     {
-     "titolo": "Le avventure di Cliff Booth",
+     "titolo": "La Bellezza del Gesto",
      "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "19:40"
+      ],
+      "2026-11-27": [
+       "19:40"
+      ],
+      "2026-11-28": [
+       "19:40"
+      ],
+      "2026-11-29": [
+       "19:40"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5446"
+    },
+    {
+     "titolo": "La notte delle fragole",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "14:10",
+       "16:15",
+       "18:20",
+       "20:25",
+       "22:30"
+      ],
+      "2026-11-27": [
+       "14:10",
+       "16:15",
+       "18:20",
+       "20:45",
+       "22:40"
+      ],
+      "2026-11-28": [
+       "14:10",
+       "16:15",
+       "18:20",
+       "20:45",
+       "22:40"
+      ],
+      "2026-11-29": [
+       "14:10",
+       "16:15",
+       "18:20",
+       "20:45",
+       "22:40"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5446",
+     "scheda": "https://it.wikipedia.org/wiki/La_notte_delle_fragole"
+    },
+    {
+     "titolo": "Le avventure di Cliff Booth",
+     "orari": [
+      "18:15",
+      "21:30"
+     ],
      "giorni": {
       "2026-11-25": [
        "18:15",
@@ -2126,10 +2641,6 @@
       "17:10"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:35",
-       "17:10"
-      ],
       "2026-11-25": [
        "14:35",
        "17:10"
@@ -2167,9 +2678,12 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Documentario",
+     "regia": "Dario Zonta e Carlo Zoratti",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5446",
+     "paese": "Italia",
+     "durata": 84,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
     },
     {
@@ -2178,11 +2692,20 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "21:00"
-      ],
       "2026-11-25": [
        "21:00"
+      ],
+      "2026-11-26": [
+       "16:45"
+      ],
+      "2026-11-27": [
+       "16:30"
+      ],
+      "2026-11-28": [
+       "16:30"
+      ],
+      "2026-11-29": [
+       "16:30"
       ]
      },
      "versione": "",
@@ -2199,9 +2722,6 @@
       "15:20"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:20"
-      ],
       "2026-11-25": [
        "15:20"
       ]
@@ -2219,18 +2739,31 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "14:40",
-      "16:50",
-      "22:10"
+      "16:50"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:40",
-       "16:50",
-       "22:10"
-      ],
       "2026-11-25": [
        "16:50"
+      ],
+      "2026-11-26": [
+       "14:25",
+       "16:55",
+       "19:45"
+      ],
+      "2026-11-27": [
+       "14:25",
+       "16:55",
+       "19:45"
+      ],
+      "2026-11-28": [
+       "14:25",
+       "16:55",
+       "19:45"
+      ],
+      "2026-11-29": [
+       "14:25",
+       "16:55",
+       "19:45"
       ]
      },
      "versione": "",
@@ -2251,15 +2784,35 @@
       "19:50"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:05",
-       "17:25",
-       "19:50"
-      ],
       "2026-11-25": [
        "15:05",
        "17:25",
        "19:50"
+      ],
+      "2026-11-26": [
+       "14:35",
+       "17:20",
+       "19:50",
+       "22:10"
+      ],
+      "2026-11-27": [
+       "14:35",
+       "17:20",
+       "19:50",
+       "22:10"
+      ],
+      "2026-11-28": [
+       "14:35",
+       "17:20",
+       "19:50",
+       "22:10"
+      ],
+      "2026-11-29": [
+       "11:15",
+       "14:35",
+       "17:20",
+       "19:50",
+       "22:10"
       ]
      },
      "versione": "",
@@ -2273,17 +2826,52 @@
     },
     {
      "titolo": "Ti presento i Fotter",
-     "orari": [],
+     "orari": [
+      "19:35",
+      "22:10"
+     ],
      "giorni": {
       "2026-11-25": [
        "19:35",
        "22:10"
+      ],
+      "2026-11-26": [
+       "15:10",
+       "17:30",
+       "20:00",
+       "22:20",
+       "22:40"
+      ],
+      "2026-11-27": [
+       "15:10",
+       "17:30",
+       "20:00",
+       "22:20",
+       "22:40"
+      ],
+      "2026-11-28": [
+       "15:10",
+       "17:30",
+       "20:00",
+       "22:20",
+       "22:40"
+      ],
+      "2026-11-29": [
+       "15:10",
+       "17:30",
+       "20:00",
+       "22:20",
+       "22:40"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Commedia",
+     "regia": "John Hamburg",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5446",
+     "interpreti": "Robert De Niro, Owen Wilson e Ben Stiller",
+     "durata": 105,
+     "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
@@ -2293,10 +2881,6 @@
       "22:20"
      ],
      "giorni": {
-      "2026-11-24": [
-       "16:00",
-       "22:20"
-      ],
       "2026-11-25": [
        "16:00",
        "22:20"
@@ -2315,12 +2899,9 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "19:45"
+      "14:40"
      ],
      "giorni": {
-      "2026-11-24": [
-       "19:45"
-      ],
       "2026-11-25": [
        "14:40"
       ]
@@ -2341,9 +2922,6 @@
       "17:45"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:45"
-      ],
       "2026-11-25": [
        "17:45"
       ]
@@ -2384,10 +2962,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:30",
-       "21:00"
-      ],
       "2026-11-25": [
        "18:30",
        "21:00"
@@ -2416,34 +2990,11 @@
    "fonte": "https://movieplayer.it/cinema/rondinella_818/",
    "film": [
     {
-     "titolo": "Dio ride",
-     "orari": [
-      "15:30"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "15:30"
-      ]
-     },
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Giovanni Veronesi",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5503",
-     "anno": 2026,
-     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "paese": "Italia",
-     "durata": 114,
-     "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
-    },
-    {
      "titolo": "Fjord",
      "orari": [
-      "18:30"
+      "21:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:30"
-      ],
       "2026-11-25": [
        "21:00"
       ],
@@ -2469,7 +3020,9 @@
     },
     {
      "titolo": "Il tempo di Anne",
-     "orari": [],
+     "orari": [
+      "15:30"
+     ],
      "giorni": {
       "2026-11-25": [
        "15:30"
@@ -2478,7 +3031,8 @@
      "versione": "",
      "genere": "",
      "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5503"
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5503",
+     "anno": 2026
     },
     {
      "titolo": "L'albero di molto lontano",
@@ -2496,12 +3050,9 @@
     {
      "titolo": "L'essere amato",
      "orari": [
-      "21:15"
+      "18:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "21:15"
-      ],
       "2026-11-25": [
        "18:30"
       ],
@@ -2518,7 +3069,7 @@
        "20:15"
       ]
      },
-     "versione": "Versione originale (solo ore 21:15)",
+     "versione": "",
      "genere": "Drammatico",
      "regia": "Rodrigo Sorogoyen",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5503",
@@ -2594,7 +3145,7 @@
      "durata": 146,
      "anno": 2026,
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "15:00",
        "17:40",
        "20:45"
@@ -2618,7 +3169,7 @@
      "durata": 113,
      "anno": 2026,
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "14:50",
        "16:50",
        "19:20",
@@ -2643,7 +3194,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "14:50",
        "17:00",
        "19:15",
@@ -2682,12 +3233,9 @@
     {
      "titolo": "Il canto della foresta",
      "orari": [
-      "17:15"
+      "14:45"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:15"
-      ],
       "2026-11-25": [
        "14:45"
       ]
@@ -2703,27 +3251,27 @@
     },
     {
      "titolo": "Ingeborg Bachmann: qui non c'è nessuna donna",
-     "orari": [],
+     "orari": [
+      "21:30"
+     ],
      "giorni": {
       "2026-11-25": [
        "21:30"
       ]
      },
      "versione": "Versione originale",
-     "genere": "",
-     "regia": "",
+     "genere": "Documentario",
+     "regia": "Regina Schilling",
      "biglietti": "https://ariosto.spaziocinema.18tickets.it/film/126834",
+     "paese": "Germania",
+     "durata": 98,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Ingeborg_Bachmann_-_Qui_non_c%27%C3%A8_nessuna_donna"
     },
     {
      "titolo": "L'essere amato",
-     "orari": [
-      "21:31"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-24": [
-       "21:31"
-      ],
       "2026-11-27": [
        "21:35"
       ],
@@ -2738,15 +3286,17 @@
      "genere": "Drammatico",
      "regia": "Rodrigo Sorogoyen",
      "biglietti": "https://ariosto.spaziocinema.18tickets.it/film/128354",
-     "interpreti": "Javier Bardem, Melina Matthews e Marina Foïs",
-     "anno": 2026,
+     "interpreti": "Javier Bardem, Vicky Luengo, Melina Matthews e Marina Foïs",
      "paese": "Spagna",
      "durata": 135,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/L%27essere_amato"
     },
     {
      "titolo": "Minotaur",
-     "orari": [],
+     "orari": [
+      "16:35"
+     ],
      "giorni": {
       "2026-11-25": [
        "16:35"
@@ -2765,10 +3315,10 @@
      "genere": "Drammatico, Thriller",
      "regia": "Andrey Zvyagintsev",
      "biglietti": "https://ariosto.spaziocinema.18tickets.it/film/122973",
+     "anno": 2026,
      "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
      "paese": "Francia",
      "durata": 135,
-     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Minotaur"
     },
     {
@@ -2795,25 +3345,6 @@
      "paese": "Italia",
      "durata": 105,
      "anno": 2026
-    },
-    {
-     "titolo": "Nina Roza",
-     "orari": [
-      "19:15"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "19:15"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Drammatico",
-     "regia": "Geneviève Dulude-Decelles",
-     "biglietti": "https://ariosto.spaziocinema.18tickets.it/film/130002",
-     "anno": 2026,
-     "interpreti": "Galin Stoev, Michelle Tzontchev, Chiara Caselli e Ekaterina Stanina",
-     "paese": "Canada",
-     "durata": 103
     },
     {
      "titolo": "Oltre la pelle",
@@ -2845,12 +3376,9 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "15:00"
+      "19:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:00"
-      ],
       "2026-11-25": [
        "19:15"
       ],
@@ -2891,19 +3419,57 @@
    "fonte": "https://movieplayer.it/cinema/arlecchino_761/",
    "film": [
     {
+     "titolo": "È andata così",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "14:45",
+       "21:15"
+      ],
+      "2026-11-27": [
+       "15:45",
+       "21:00"
+      ],
+      "2026-11-28": [
+       "13:00",
+       "20:00"
+      ],
+      "2026-11-29": [
+       "17:15",
+       "22:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://arlecchino.cinetecadimilano.18tickets.it/film/133797",
+     "scheda": "https://it.wikipedia.org/wiki/%C3%88_andata_cos%C3%AC_%28film%29"
+    },
+    {
      "titolo": "Fjord",
      "orari": [
-      "14:00",
-      "19:45"
+      "12:30",
+      "15:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:00",
-       "19:45"
-      ],
       "2026-11-25": [
        "12:30",
        "15:15"
+      ],
+      "2026-11-26": [
+       "11:00"
+      ],
+      "2026-11-27": [
+       "13:00",
+       "18:00"
+      ],
+      "2026-11-28": [
+       "17:15",
+       "22:15"
+      ],
+      "2026-11-29": [
+       "12:15",
+       "19:15"
       ]
      },
      "versione": "Versione originale",
@@ -2917,24 +3483,18 @@
      "scheda": "https://it.wikipedia.org/wiki/Fjord_%28film%29"
     },
     {
-     "titolo": "Gruppo di famiglia in un interno",
-     "orari": [
-      "16:45"
-     ],
+     "titolo": "Innamorarsi",
+     "orari": [],
      "giorni": {
-      "2026-11-24": [
-       "16:45"
+      "2026-11-29": [
+       "10:30"
       ]
      },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Luchino Visconti",
-     "biglietti": "https://arlecchino.cinetecadimilano.18tickets.it/film/58857",
-     "interpreti": "Helmut Berger, Burt Lancaster, Silvana Mangano e Claudia Marsani",
-     "paese": "Italia",
-     "durata": 120,
-     "anno": 1974,
-     "scheda": "https://it.wikipedia.org/wiki/Gruppo_di_famiglia_in_un_interno"
+     "versione": "Versione originale",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://arlecchino.cinetecadimilano.18tickets.it/film/133764",
+     "scheda": "https://it.wikipedia.org/wiki/Innamorarsi"
     },
     {
      "titolo": "L'avventura del Poseidon",
@@ -2981,14 +3541,14 @@
     {
      "titolo": "Mustang",
      "orari": [
-      "12:00"
+      "21:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "12:00"
-      ],
       "2026-11-25": [
        "21:00"
+      ],
+      "2026-11-27": [
+       "11:00"
       ]
      },
      "versione": "",
@@ -3001,17 +3561,37 @@
     },
     {
      "titolo": "Panni Sporchi",
-     "orari": [],
+     "orari": [
+      "18:00"
+     ],
      "giorni": {
       "2026-11-25": [
        "18:00"
       ]
      },
      "versione": "",
+     "genere": "Commedia",
+     "regia": "Mario Monicelli",
+     "biglietti": "https://arlecchino.cinetecadimilano.18tickets.it/film/129903",
+     "interpreti": "Michele Placido, Mariangela Melato, Ornella Muti e Alessandro Haber",
+     "paese": "Italia",
+     "durata": 110,
+     "anno": 1999,
+     "scheda": "https://it.wikipedia.org/wiki/Panni_sporchi_%28film_1999%29"
+    },
+    {
+     "titolo": "Quando la Moglie È in Vacanza",
+     "orari": [],
+     "giorni": {
+      "2026-11-28": [
+       "11:00"
+      ]
+     },
+     "versione": "",
      "genere": "",
      "regia": "",
-     "biglietti": "https://arlecchino.cinetecadimilano.18tickets.it/film/129903",
-     "scheda": "https://it.wikipedia.org/wiki/Panni_sporchi_%28film_1999%29"
+     "biglietti": "https://arlecchino.cinetecadimilano.18tickets.it/film/15050",
+     "scheda": "https://it.wikipedia.org/wiki/Quando_la_moglie_%C3%A8_in_vacanza"
     }
    ],
    "cinemap": "https://www.cinemap.it/milano/cinema/cineteca-arlecchino-milano"
@@ -3043,11 +3623,6 @@
       "18:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:30",
-       "16:30",
-       "18:30"
-      ],
       "2026-11-25": [
        "14:30",
        "16:30",
@@ -3070,10 +3645,6 @@
       "20:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:30",
-       "20:30"
-      ],
       "2026-11-25": [
        "17:30",
        "20:30"
@@ -3096,10 +3667,6 @@
       "20:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:30",
-       "20:30"
-      ],
       "2026-11-25": [
        "14:30",
        "20:30"
@@ -3128,36 +3695,15 @@
    "fonte": "https://movieplayer.it/cinema/citylife-anteo_2951/",
    "film": [
     {
-     "titolo": "Calle Málaga",
-     "orari": [
-      "15:00"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "15:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Maryam Touzani",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/111338",
-     "interpreti": "Carmen Maura",
-     "anno": 2025,
-     "paese": "Spagna",
-     "durata": 116,
-     "scheda": "https://it.wikipedia.org/wiki/Calle_M%C3%A1laga"
-    },
-    {
      "titolo": "Dio ride",
      "orari": [
-      "12:15",
-      "14:30"
+      "12:50",
+      "15:00",
+      "17:10",
+      "19:20",
+      "21:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "12:15",
-       "14:30"
-      ],
       "2026-11-25": [
        "12:50",
        "15:00",
@@ -3175,7 +3721,7 @@
      "versione": "",
      "genere": "Commedia",
      "regia": "Giovanni Veronesi",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/123931",
+     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/130596",
      "anno": 2026,
      "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
      "paese": "Italia",
@@ -3183,32 +3729,14 @@
      "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
     },
     {
-     "titolo": "Godzilla Minus Zero",
-     "orari": [
-      "21:40"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "21:40"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Azione, Avventura, Drammatico",
-     "regia": "Takashi Yamazaki",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/128584",
-     "interpreti": "Minami Hamabe, Ryûnosuke Kamiki, Masami Nagasawa e Jun Kunimura",
-     "paese": "Giappone",
-     "durata": 135,
-     "anno": 2026,
-     "scheda": "https://it.wikipedia.org/wiki/Godzilla_Minus_Zero"
-    },
-    {
-     "titolo": "Hexe",
+     "titolo": "Hexe - Il regno delle streghe",
      "orari": [],
      "giorni": {
       "2026-11-26": [
+       "12:45",
        "15:00",
-       "17:15"
+       "17:15",
+       "19:30"
       ],
       "2026-11-27": [
        "15:00",
@@ -3216,38 +3744,21 @@
        "19:30"
       ],
       "2026-11-28": [
+       "12:45",
        "15:00",
        "16:10",
        "17:15",
        "19:30"
       ],
       "2026-11-29": [
+       "13:00",
        "15:00",
        "16:10",
        "17:15",
        "19:30"
       ]
      },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/133338"
-    },
-    {
-     "titolo": "Hexe - Il regno delle streghe",
-     "orari": [],
-     "giorni": {
-      "2026-11-26": [
-       "12:45"
-      ],
-      "2026-11-28": [
-       "12:45"
-      ],
-      "2026-11-29": [
-       "13:00"
-      ]
-     },
-     "versione": "Versione originale",
+     "versione": "Versione originale (solo ore 12:45, 13:00)",
      "genere": "",
      "regia": "",
      "biglietti": "https://citylife.spaziocinema.18tickets.it/film/133369",
@@ -3256,16 +3767,12 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
-      "15:15",
-      "18:15",
-      "21:15"
+      "12:00",
+      "15:00",
+      "18:00",
+      "21:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:15",
-       "18:15",
-       "21:15"
-      ],
       "2026-11-25": [
        "12:00",
        "15:00",
@@ -3296,7 +3803,7 @@
      "versione": "Versione originale (solo ore 12:00, 18:00, 21:00, 21:15, 21:30)",
      "genere": "Azione, Avventura, Fantasy",
      "regia": "Francis Lawrence",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/130794",
+     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/130795",
      "interpreti": "Joseph Zada, Mckenna Grace e Ralph Fiennes",
      "durata": 158,
      "anno": 2026,
@@ -3306,21 +3813,17 @@
     {
      "titolo": "Il canto della foresta",
      "orari": [
-      "10:30",
-      "13:15",
-      "19:30"
+      "10:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "10:30",
-       "13:15",
-       "19:30"
-      ],
       "2026-11-25": [
        "10:30"
       ],
       "2026-11-26": [
        "10:00"
+      ],
+      "2026-11-28": [
+       "13:10"
       ],
       "2026-11-29": [
        "13:10"
@@ -3337,13 +3840,8 @@
     },
     {
      "titolo": "Il gatto col cappello",
-     "orari": [
-      "17:00"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-24": [
-       "17:00"
-      ],
       "2026-11-28": [
        "14:30"
       ],
@@ -3355,25 +3853,20 @@
      "genere": "Animazione",
      "regia": "Alessandro Carloni e Erica Rivinoja",
      "biglietti": "https://citylife.spaziocinema.18tickets.it/film/124076",
-     "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
-     "anno": 2026,
+     "interpreti": "Stefano Fresi, Luigi Luciano, Bill Hader e Matt Berry",
      "paese": "USA",
      "durata": 107,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Il_gatto_col_cappello_%28film%29"
     },
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "14:45",
-      "19:00",
-      "21:46"
+      "10:15",
+      "17:15",
+      "19:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:45",
-       "19:00",
-       "21:46"
-      ],
       "2026-11-25": [
        "10:15",
        "17:15",
@@ -3448,42 +3941,13 @@
      "scheda": "https://it.wikipedia.org/wiki/L%27essere_amato"
     },
     {
-     "titolo": "L'estranea",
-     "orari": [
-      "10:00"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "10:00"
-      ],
-      "2026-11-28": [
-       "10:00"
-      ],
-      "2026-11-29": [
-       "10:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Thriller",
-     "regia": "Paolo Strippoli",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/117399",
-     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano e Adriano Giannini",
-     "durata": 115,
-     "anno": 2026,
-     "paese": "Italia",
-     "scheda": "https://it.wikipedia.org/wiki/L%27estranea_%28film_2026%29"
-    },
-    {
      "titolo": "La ballata del re delle api",
      "orari": [
-      "16:45",
-      "19:15"
+      "10:00",
+      "14:45",
+      "21:45"
      ],
      "giorni": {
-      "2026-11-24": [
-       "16:45",
-       "19:15"
-      ],
       "2026-11-25": [
        "10:00",
        "14:45",
@@ -3505,7 +3969,7 @@
        "16:30"
       ]
      },
-     "versione": "Versione originale (solo ore 19:15, 21:45)",
+     "versione": "Versione originale (solo ore 21:45)",
      "genere": "Drammatico, Thriller",
      "regia": "Andrew Patterson",
      "biglietti": "https://citylife.spaziocinema.18tickets.it/film/130762",
@@ -3520,6 +3984,7 @@
      "orari": [],
      "giorni": {
       "2026-11-26": [
+       "14:30",
        "17:10",
        "19:20",
        "21:30"
@@ -3531,15 +3996,18 @@
        "21:30"
       ],
       "2026-11-28": [
+       "10:00",
        "15:00",
        "17:10",
        "19:20",
        "21:30"
       ],
       "2026-11-29": [
+       "12:45",
        "15:00",
        "17:00",
-       "19:00"
+       "19:00",
+       "21:15"
       ]
      },
      "versione": "",
@@ -3550,7 +4018,9 @@
     },
     {
      "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-25": [
        "21:00"
@@ -3558,15 +4028,15 @@
       "2026-11-26": [
        "10:15",
        "14:30",
-       "18:20",
-       "20:00",
+       "18:21",
+       "20:01",
        "21:45"
       ],
       "2026-11-27": [
        "10:00",
        "14:20",
-       "20:00",
-       "21:45"
+       "20:01",
+       "21:46"
       ],
       "2026-11-28": [
        "14:30",
@@ -3582,22 +4052,21 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Documentario",
+     "regia": "Dario Zonta e Carlo Zoratti",
      "biglietti": "https://citylife.spaziocinema.18tickets.it/film/126471",
+     "paese": "Italia",
+     "durata": 84,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
     },
     {
      "titolo": "Mustang",
      "orari": [
       "12:30",
-      "19:31"
+      "19:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "12:30",
-       "19:31"
-      ],
       "2026-11-25": [
        "12:30",
        "19:15"
@@ -3625,24 +4094,10 @@
      "durata": 105
     },
     {
-     "titolo": "Night Shift",
-     "orari": [
-      "21:30"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "21:30"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/130464",
-     "scheda": "https://it.wikipedia.org/wiki/Night_Shift"
-    },
-    {
      "titolo": "Primetime",
-     "orari": [],
+     "orari": [
+      "12:30"
+     ],
      "giorni": {
       "2026-11-25": [
        "12:30"
@@ -3652,47 +4107,19 @@
      "genere": "Drammatico",
      "regia": "Drammatico e USA e 2026",
      "biglietti": "https://citylife.spaziocinema.18tickets.it/film/119640",
+     "anno": 2026,
      "interpreti": "Robert Pattinson, Merritt Wever, Skyler Gisondo e Matthew Maher",
      "paese": "USA",
      "durata": 110,
-     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Primetime_%28film%29"
-    },
-    {
-     "titolo": "Ramayana - La nascita di una leggenda",
-     "orari": [
-      "21:15"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "21:15"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Azione, Avventura, Drammatico",
-     "regia": "Nitesh Tiwari",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/130827",
-     "interpreti": "Ranbir Kapoor, Yash e Sai Pallavi",
-     "durata": 195,
-     "anno": 2026,
-     "paese": "India",
-     "scheda": "https://it.wikipedia.org/wiki/Ramayana_-_La_nascita_di_una_leggenda"
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "10:30",
-      "15:00",
-      "17:10",
-      "19:20"
+      "10:00",
+      "19:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "10:30",
-       "15:00",
-       "17:10",
-       "19:20"
-      ],
       "2026-11-25": [
        "10:00",
        "19:15"
@@ -3728,12 +4155,11 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "13:00"
+      "10:20",
+      "12:30",
+      "17:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "13:00"
-      ],
       "2026-11-25": [
        "10:20",
        "12:30",
@@ -3787,7 +4213,10 @@
     },
     {
      "titolo": "Ti presento i Fotter",
-     "orari": [],
+     "orari": [
+      "14:45",
+      "21:45"
+     ],
      "giorni": {
       "2026-11-25": [
        "14:45",
@@ -3811,22 +4240,21 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Commedia",
+     "regia": "John Hamburg",
      "biglietti": "https://citylife.spaziocinema.18tickets.it/film/130860",
+     "interpreti": "Robert De Niro, Owen Wilson e Ben Stiller",
+     "durata": 105,
+     "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
      "titolo": "Un tranquillo funerale di famiglia",
      "orari": [
-      "13:15",
-      "17:00"
+      "15:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "13:15",
-       "17:00"
-      ],
       "2026-11-25": [
        "15:00"
       ]
@@ -3844,12 +4272,10 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
-      "15:10"
+      "10:00",
+      "15:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:10"
-      ],
       "2026-11-25": [
        "10:00",
        "15:00"
@@ -3866,39 +4292,13 @@
      "scheda": "https://it.wikipedia.org/wiki/Un_weekend_artificiale"
     },
     {
-     "titolo": "Una Giornata Maledettamente Buona",
-     "orari": [
-      "21:30"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "21:30"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Andrea Castoldi",
-     "biglietti": "https://citylife.spaziocinema.18tickets.it/film/123105",
-     "interpreti": "Kiko.Co, Alessandra Brambilla e Alessio Binetti",
-     "paese": "Italia",
-     "durata": 82,
-     "anno": 2026
-    },
-    {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "12:45",
-      "17:15",
-      "19:30",
-      "21:45"
+      "12:30",
+      "17:00",
+      "19:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "12:45",
-       "17:15",
-       "19:30",
-       "21:45"
-      ],
       "2026-11-25": [
        "12:30",
        "17:00",
@@ -3921,13 +4321,13 @@
        "21:45"
       ],
       "2026-11-29": [
-       "12:45",
+       "10:00",
        "15:00",
        "19:30",
        "21:45"
       ]
      },
-     "versione": "Versione originale (solo ore 10:30, 12:30, 12:45, 21:45)",
+     "versione": "Versione originale (solo ore 10:00, 10:30, 12:30, 12:45, 21:45)",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "biglietti": "https://citylife.spaziocinema.18tickets.it/film/125679",
@@ -3974,14 +4374,10 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "14:50",
-      "17:00",
       "19:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:50",
-       "17:00",
+      "2026-11-25": [
        "19:15"
       ]
      },
@@ -3999,18 +4395,15 @@
      "titolo": "Fjord",
      "orari": [
       "14:40",
-      "21:15"
+      "21:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:40",
-       "21:15"
-      ],
       "2026-11-25": [
+       "14:40",
        "21:30"
       ]
      },
-     "versione": "Versione originale (solo ore 21:15, 21:30)",
+     "versione": "Versione originale (solo ore 21:30)",
      "genere": "Drammatico",
      "regia": "Cristian Mungiu",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5062",
@@ -4025,18 +4418,33 @@
      "orari": [
       "15:00",
       "18:00",
-      "21:00"
+      "21:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:00",
-       "18:00",
-       "21:00"
-      ],
       "2026-11-25": [
        "15:00",
        "18:00",
        "21:15"
+      ],
+      "2026-11-26": [
+       "15:00",
+       "18:00",
+       "21:00"
+      ],
+      "2026-11-27": [
+       "15:00",
+       "18:00",
+       "21:00"
+      ],
+      "2026-11-28": [
+       "15:00",
+       "18:00",
+       "21:00"
+      ],
+      "2026-11-29": [
+       "15:00",
+       "18:00",
+       "21:00"
       ]
      },
      "versione": "Versione originale (solo ore 21:00, 21:15)",
@@ -4053,15 +4461,15 @@
      "titolo": "Il rumore delle cose nuove",
      "orari": [
       "14:50",
-      "16:55",
-      "19:10",
+      "17:00",
+      "19:15",
       "21:30"
      ],
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "14:50",
-       "16:55",
-       "19:10",
+       "17:00",
+       "19:15",
        "21:30"
       ]
      },
@@ -4090,26 +4498,6 @@
      "scheda": "https://it.wikipedia.org/wiki/Klara_e_il_Sole_%28film%29"
     },
     {
-     "titolo": "L'estranea",
-     "orari": [
-      "21:30"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "21:30"
-      ]
-     },
-     "versione": "",
-     "genere": "Thriller",
-     "regia": "Paolo Strippoli",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5062",
-     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano e Adriano Giannini",
-     "durata": 115,
-     "anno": 2026,
-     "paese": "Italia",
-     "scheda": "https://it.wikipedia.org/wiki/L%27estranea_%28film_2026%29"
-    },
-    {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
       "14:50",
@@ -4118,7 +4506,7 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "14:50",
        "17:00",
        "19:15",
@@ -4138,15 +4526,12 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "17:15",
-      "19:15"
+      "17:00",
+      "19:05"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:15",
-       "19:15"
-      ],
       "2026-11-25": [
+       "17:00",
        "19:05"
       ]
      },
@@ -4160,6 +4545,30 @@
      "durata": 107
     },
     {
+     "titolo": "Ti presento i Fotter",
+     "orari": [
+      "14:50",
+      "17:15",
+      "21:30"
+     ],
+     "giorni": {
+      "2026-11-25": [
+       "14:50",
+       "17:15",
+       "21:30"
+      ]
+     },
+     "versione": "Versione originale (solo ore 21:30)",
+     "genere": "Commedia",
+     "regia": "John Hamburg",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5062",
+     "interpreti": "Robert De Niro, Owen Wilson e Ben Stiller",
+     "durata": 105,
+     "anno": 2026,
+     "paese": "USA",
+     "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
+    },
+    {
      "titolo": "Wild Horse Nine",
      "orari": [
       "14:50",
@@ -4168,12 +4577,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:50",
-       "17:00",
-       "19:15",
-       "21:30"
-      ],
       "2026-11-25": [
        "14:50",
        "17:00",
@@ -4235,7 +4638,7 @@
      "durata": 114,
      "anno": 2026,
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "17:30",
        "21:30"
       ]
@@ -4258,7 +4661,7 @@
      "durata": 146,
      "anno": 2026,
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "14:50",
        "16:45",
        "19:00",
@@ -4281,7 +4684,7 @@
      "durata": 93,
      "anno": 2026,
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "15:00",
        "19:40"
       ]
@@ -4304,7 +4707,7 @@
      "durata": 113,
      "anno": 2026,
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "15:00",
        "17:00",
        "19:20",
@@ -4329,7 +4732,7 @@
      "durata": 118,
      "anno": 2026,
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "15:00",
        "17:10",
        "19:20",
@@ -4357,9 +4760,6 @@
       "19:20"
      ],
      "giorni": {
-      "2026-11-24": [
-       "19:20"
-      ],
       "2026-11-25": [
        "19:20"
       ]
@@ -4375,6 +4775,41 @@
      "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
     },
     {
+     "titolo": "È andata così",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "14:45",
+       "17:00",
+       "19:15",
+       "21:30"
+      ],
+      "2026-11-27": [
+       "14:45",
+       "17:00",
+       "19:15",
+       "21:30"
+      ],
+      "2026-11-28": [
+       "14:45",
+       "17:00",
+       "19:15",
+       "21:30"
+      ],
+      "2026-11-29": [
+       "14:45",
+       "17:00",
+       "19:15",
+       "21:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5064",
+     "scheda": "https://it.wikipedia.org/wiki/%C3%88_andata_cos%C3%AC_%28film%29"
+    },
+    {
      "titolo": "Fjord",
      "orari": [
       "15:00",
@@ -4382,12 +4817,27 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "15:00",
        "18:00",
        "21:00"
       ],
-      "2026-11-25": [
+      "2026-11-26": [
+       "15:00",
+       "18:00",
+       "21:00"
+      ],
+      "2026-11-27": [
+       "15:00",
+       "18:00",
+       "21:00"
+      ],
+      "2026-11-28": [
+       "15:00",
+       "18:00",
+       "21:00"
+      ],
+      "2026-11-29": [
        "15:00",
        "18:00",
        "21:00"
@@ -4411,15 +4861,30 @@
       "19:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:15",
-       "17:10",
-       "19:15"
-      ],
       "2026-11-25": [
        "15:15",
        "17:10",
        "19:15"
+      ],
+      "2026-11-26": [
+       "15:15",
+       "17:20",
+       "19:25"
+      ],
+      "2026-11-27": [
+       "15:15",
+       "17:20",
+       "19:25"
+      ],
+      "2026-11-28": [
+       "15:15",
+       "17:20",
+       "19:25"
+      ],
+      "2026-11-29": [
+       "15:15",
+       "17:20",
+       "19:25"
       ]
      },
      "versione": "",
@@ -4439,10 +4904,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:05",
-       "21:30"
-      ],
       "2026-11-25": [
        "17:05",
        "21:30"
@@ -4465,10 +4926,6 @@
       "21:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:00",
-       "21:15"
-      ],
       "2026-11-25": [
        "15:00",
        "21:15"
@@ -4491,10 +4948,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:30",
-       "21:30"
-      ],
       "2026-11-25": [
        "17:30",
        "21:30"
@@ -4517,13 +4970,21 @@
       "19:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:00",
-       "19:30"
-      ],
       "2026-11-25": [
        "15:00",
        "19:30"
+      ],
+      "2026-11-26": [
+       "21:30"
+      ],
+      "2026-11-27": [
+       "21:30"
+      ],
+      "2026-11-28": [
+       "21:30"
+      ],
+      "2026-11-29": [
+       "21:30"
       ]
      },
      "versione": "",
@@ -4535,6 +4996,37 @@
      "durata": 105
     },
     {
+     "titolo": "Storie parallele",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "15:15",
+       "18:00",
+       "21:00"
+      ],
+      "2026-11-27": [
+       "15:15",
+       "18:00",
+       "21:00"
+      ],
+      "2026-11-28": [
+       "15:15",
+       "18:00",
+       "21:00"
+      ],
+      "2026-11-29": [
+       "15:15",
+       "18:00",
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5064",
+     "scheda": "https://it.wikipedia.org/wiki/Storie_parallele"
+    },
+    {
      "titolo": "Wild Horse Nine",
      "orari": [
       "14:45",
@@ -4543,13 +5035,31 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "14:45",
        "17:00",
        "19:15",
        "21:30"
       ],
-      "2026-11-25": [
+      "2026-11-26": [
+       "14:45",
+       "17:00",
+       "19:15",
+       "21:30"
+      ],
+      "2026-11-27": [
+       "14:45",
+       "17:00",
+       "19:15",
+       "21:30"
+      ],
+      "2026-11-28": [
+       "14:45",
+       "17:00",
+       "19:15",
+       "21:30"
+      ],
+      "2026-11-29": [
        "14:45",
        "17:00",
        "19:15",
@@ -4581,12 +5091,9 @@
     {
      "titolo": "Fjord",
      "orari": [
-      "18:15"
+      "21:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:15"
-      ],
       "2026-11-25": [
        "21:00"
       ]
@@ -4604,12 +5111,9 @@
     {
      "titolo": "Mustang",
      "orari": [
-      "21:00"
+      "16:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "21:00"
-      ],
       "2026-11-25": [
        "16:30"
       ]
@@ -4646,24 +5150,29 @@
    "film": [
     {
      "titolo": "Dio ride",
-     "orari": [
-      "14:40",
-      "17:10"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-24": [
-       "14:40",
-       "17:10"
+      "2026-11-26": [
+       "15:00"
+      ],
+      "2026-11-27": [
+       "14:50"
+      ],
+      "2026-11-28": [
+       "14:50"
+      ],
+      "2026-11-29": [
+       "14:50"
       ]
      },
      "versione": "",
      "genere": "Commedia",
      "regia": "Giovanni Veronesi",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5491",
-     "anno": 2026,
      "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
      "paese": "Italia",
      "durata": 114,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
     },
     {
@@ -4674,12 +5183,26 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "15:00",
        "18:15",
        "21:30"
       ],
-      "2026-11-25": [
+      "2026-11-26": [
+       "18:15",
+       "21:30"
+      ],
+      "2026-11-27": [
+       "15:00",
+       "18:15",
+       "21:30"
+      ],
+      "2026-11-28": [
+       "15:00",
+       "18:15",
+       "21:30"
+      ],
+      "2026-11-29": [
        "15:00",
        "18:15",
        "21:30"
@@ -4702,13 +5225,28 @@
       "21:40"
      ],
      "giorni": {
-      "2026-11-24": [
-       "19:30",
-       "21:40"
-      ],
       "2026-11-25": [
        "19:30",
        "21:40"
+      ],
+      "2026-11-26": [
+       "14:40",
+       "17:00"
+      ],
+      "2026-11-27": [
+       "17:10",
+       "19:30",
+       "21:50"
+      ],
+      "2026-11-28": [
+       "17:10",
+       "19:30",
+       "21:50"
+      ],
+      "2026-11-29": [
+       "17:10",
+       "19:30",
+       "21:50"
       ]
      },
      "versione": "",
@@ -4722,16 +5260,22 @@
     },
     {
      "titolo": "The Echo Chamber",
-     "orari": [],
+     "orari": [
+      "15:30"
+     ],
      "giorni": {
       "2026-11-25": [
        "15:30"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Drammatico",
+     "regia": "Andrea Pallaoro",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5491",
+     "interpreti": "Luca Marinelli, Alicia Vikander e Susan Sarandon",
+     "anno": 2026,
+     "paese": "Italia",
+     "durata": 120,
      "scheda": "https://it.wikipedia.org/wiki/The_Echo_Chamber_%28film%29"
     }
    ],
@@ -4750,13 +5294,8 @@
      "titolo": "Hexe - Il regno delle streghe",
      "orari": [],
      "giorni": {
-      "2026-11-26": [
-       "14:55",
-       "17:05"
-      ],
       "2026-11-27": [
-       "14:55",
-       "17:05"
+       "14:55"
       ],
       "2026-11-28": [
        "14:55",
@@ -4777,9 +5316,6 @@
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [],
      "giorni": {
-      "2026-11-26": [
-       "21:30"
-      ],
       "2026-11-27": [
        "21:30"
       ],
@@ -4808,18 +5344,9 @@
       "19:20"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:00",
-       "17:10",
-       "19:20"
-      ],
       "2026-11-25": [
        "15:00",
        "17:10",
-       "19:20"
-      ],
-      "2026-11-26": [
-       "15:00",
        "19:20"
       ],
       "2026-11-27": [
@@ -4848,21 +5375,11 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "14:55",
-      "17:05",
-      "21:30"
+      "14:55"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:55",
-       "17:05",
-       "21:30"
-      ],
       "2026-11-25": [
        "14:55"
-      ],
-      "2026-11-26": [
-       "17:05"
       ],
       "2026-11-27": [
        "17:05"
@@ -4874,7 +5391,7 @@
        "17:05"
       ]
      },
-     "versione": "Versione originale (solo ore 21:30)",
+     "versione": "",
      "genere": "Drammatico, Fantasy",
      "regia": "Ti West",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5351",
@@ -4888,22 +5405,13 @@
      "titolo": "Se domani non torno",
      "orari": [
       "15:00",
-      "19:20",
+      "17:00",
       "21:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:00",
-       "19:20",
-       "21:30"
-      ],
       "2026-11-25": [
        "15:00",
        "17:00",
-       "21:30"
-      ],
-      "2026-11-26": [
-       "17:10",
        "21:30"
       ],
       "2026-11-27": [
@@ -4930,14 +5438,12 @@
     },
     {
      "titolo": "Ti presento i Fotter",
-     "orari": [],
+     "orari": [
+      "17:05"
+     ],
      "giorni": {
       "2026-11-25": [
        "17:05"
-      ],
-      "2026-11-26": [
-       "15:00",
-       "19:20"
       ],
       "2026-11-27": [
        "15:00",
@@ -4953,29 +5459,23 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Commedia",
+     "regia": "John Hamburg",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5351",
+     "interpreti": "Robert De Niro, Owen Wilson e Ben Stiller",
+     "durata": 105,
+     "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "17:05",
       "19:15",
       "21:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:05",
-       "19:15",
-       "21:30"
-      ],
       "2026-11-25": [
-       "19:15",
-       "21:30"
-      ],
-      "2026-11-26": [
        "19:15",
        "21:30"
       ],
@@ -5013,29 +5513,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/osoppo_788/",
-   "film": [
-    {
-     "titolo": "Che Dio perdona a tutti",
-     "orari": [
-      "15:00",
-      "21:00"
-     ],
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Pierfrancesco Diliberto",
-     "interpreti": "Pierfrancesco Diliberto, Giusy Buscemi e Francesco Scianna",
-     "durata": 117,
-     "anno": 2026,
-     "giorni": {
-      "2026-11-24": [
-       "15:00",
-       "21:00"
-      ]
-     },
-     "paese": "Italia",
-     "scheda": "https://it.wikipedia.org/wiki/...che_Dio_perdona_a_tutti_%28film%29"
-    }
-   ]
+   "film": []
   },
   {
    "id": "c031",
@@ -5049,14 +5527,9 @@
     {
      "titolo": "Fjord",
      "orari": [
-      "15:15",
-      "18:00"
+      "21:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:15",
-       "18:00"
-      ],
       "2026-11-25": [
        "21:00"
       ]
@@ -5073,7 +5546,10 @@
     },
     {
      "titolo": "Il fuoco che ti porti dentro",
-     "orari": [],
+     "orari": [
+      "15:00",
+      "16:45"
+     ],
      "giorni": {
       "2026-11-25": [
        "15:00",
@@ -5084,10 +5560,10 @@
      "genere": "Drammatico",
      "regia": "Edoardo De Angelis",
      "biglietti": "https://www.progettolumiere.it/palestrina/",
-     "interpreti": "Vanessa Scalera, Lino Musella, Elena Radonicich e Ivana Lotito",
-     "paese": "Italia",
-     "durata": 94,
+     "interpreti": "Vanessa Scalera, Lino Musella e Elena Radonicich",
+     "durata": 93,
      "anno": 2026,
+     "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/Il_fuoco_che_ti_porti_dentro_%28film%29"
     }
    ],
@@ -5102,26 +5578,6 @@
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/plinius-multisala_790/",
    "film": [
-    {
-     "titolo": "Dio ride",
-     "orari": [
-      "14:30"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "14:30"
-      ]
-     },
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Giovanni Veronesi",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5094",
-     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "paese": "Italia",
-     "durata": 114,
-     "anno": 2026,
-     "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
-    },
     {
      "titolo": "È andata così",
      "orari": [],
@@ -5184,11 +5640,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:00",
-       "18:15",
-       "21:30"
-      ],
       "2026-11-25": [
        "15:00",
        "18:15",
@@ -5215,7 +5666,7 @@
        "21:30"
       ]
      },
-     "versione": "Versione originale (solo ore 21:30)",
+     "versione": "",
      "genere": "Azione, Avventura, Fantasy",
      "regia": "Francis Lawrence",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5094",
@@ -5228,16 +5679,11 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "16:50",
-      "19:10",
-      "21:30"
+      "17:00",
+      "19:20",
+      "21:40"
      ],
      "giorni": {
-      "2026-11-24": [
-       "16:50",
-       "19:10",
-       "21:30"
-      ],
       "2026-11-25": [
        "17:00",
        "19:20",
@@ -5256,7 +5702,7 @@
        "19:20"
       ]
      },
-     "versione": "Versione originale (solo ore 21:30)",
+     "versione": "",
      "genere": "Drammatico, Fantasy",
      "regia": "Ti West",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5094",
@@ -5268,7 +5714,12 @@
     },
     {
      "titolo": "Ti presento i Fotter",
-     "orari": [],
+     "orari": [
+      "14:50",
+      "16:50",
+      "19:10",
+      "21:30"
+     ],
      "giorni": {
       "2026-11-25": [
        "14:50",
@@ -5294,26 +5745,21 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Commedia",
+     "regia": "John Hamburg",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5094",
+     "interpreti": "Robert De Niro, Owen Wilson e Ben Stiller",
+     "durata": 105,
+     "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "14:30",
-      "16:50",
-      "19:10",
-      "21:30"
+      "14:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:30",
-       "16:50",
-       "19:10",
-       "21:30"
-      ],
       "2026-11-25": [
        "14:30"
       ],
@@ -5330,7 +5776,7 @@
        "21:40"
       ]
      },
-     "versione": "Versione originale (solo ore 21:30)",
+     "versione": "",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5094",
@@ -5363,16 +5809,36 @@
    "fonte": "https://movieplayer.it/cinema/uci-cinemas-bicocca_773/",
    "film": [
     {
+     "titolo": "Clayface",
+     "orari": [],
+     "giorni": {
+      "2026-11-28": [
+       "00:05"
+      ],
+      "2026-11-29": [
+       "00:05"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
+     "scheda": "https://it.wikipedia.org/wiki/Clayface_%28film%29"
+    },
+    {
      "titolo": "Come rapinare una banca",
      "orari": [
       "22:40"
      ],
      "giorni": {
-      "2026-11-24": [
-       "22:40"
-      ],
       "2026-11-25": [
        "22:40"
+      ],
+      "2026-11-27": [
+       "23:45"
+      ],
+      "2026-11-28": [
+       "23:45"
       ]
      },
      "versione": "",
@@ -5391,9 +5857,6 @@
       "16:35"
      ],
      "giorni": {
-      "2026-11-24": [
-       "16:35"
-      ],
       "2026-11-25": [
        "16:35"
       ]
@@ -5409,16 +5872,52 @@
      "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
     },
     {
+     "titolo": "È andata così",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "14:15",
+       "19:05"
+      ],
+      "2026-11-27": [
+       "14:15",
+       "19:05"
+      ],
+      "2026-11-28": [
+       "14:15",
+       "19:05"
+      ],
+      "2026-11-29": [
+       "14:15",
+       "19:05"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
+     "scheda": "https://it.wikipedia.org/wiki/%C3%88_andata_cos%C3%AC_%28film%29"
+    },
+    {
      "titolo": "Fjord",
      "orari": [
       "19:20"
      ],
      "giorni": {
-      "2026-11-24": [
-       "19:20"
-      ],
       "2026-11-25": [
        "19:20"
+      ],
+      "2026-11-26": [
+       "13:10"
+      ],
+      "2026-11-27": [
+       "13:10"
+      ],
+      "2026-11-28": [
+       "13:10"
+      ],
+      "2026-11-29": [
+       "13:10"
       ]
      },
      "versione": "",
@@ -5438,13 +5937,21 @@
       "15:35"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:10",
-       "15:35"
-      ],
       "2026-11-25": [
        "14:10",
        "15:35"
+      ],
+      "2026-11-26": [
+       "11:40",
+       "13:20"
+      ],
+      "2026-11-27": [
+       "11:40",
+       "13:10"
+      ],
+      "2026-11-28": [
+       "11:40",
+       "13:10"
       ]
      },
      "versione": "",
@@ -5462,11 +5969,20 @@
       "22:35"
      ],
      "giorni": {
-      "2026-11-24": [
-       "22:35"
-      ],
       "2026-11-25": [
        "22:35"
+      ],
+      "2026-11-26": [
+       "15:00"
+      ],
+      "2026-11-27": [
+       "15:00"
+      ],
+      "2026-11-28": [
+       "15:05"
+      ],
+      "2026-11-29": [
+       "15:05"
       ]
      },
      "versione": "",
@@ -5485,26 +6001,48 @@
      "giorni": {
       "2026-11-26": [
        "11:30",
+       "13:30",
        "14:00",
-       "16:40"
+       "14:50",
+       "15:40",
+       "16:40",
+       "17:20",
+       "20:00",
+       "21:10"
       ],
       "2026-11-27": [
        "11:30",
+       "13:30",
        "14:00",
-       "16:40"
+       "14:50",
+       "15:40",
+       "16:40",
+       "17:20",
+       "19:00"
       ],
       "2026-11-28": [
        "11:30",
+       "13:30",
        "14:00",
-       "16:40"
+       "14:50",
+       "15:40",
+       "16:40",
+       "17:20",
+       "20:00"
       ],
       "2026-11-29": [
+       "11:20",
        "11:30",
+       "13:30",
        "14:00",
-       "16:40"
+       "14:50",
+       "15:40",
+       "16:40",
+       "17:20",
+       "20:00"
       ]
      },
-     "versione": "",
+     "versione": "Versione originale (solo ore 11:20, 15:40)",
      "genere": "",
      "regia": "",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
@@ -5516,11 +6054,11 @@
       "22:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "22:15"
-      ],
       "2026-11-25": [
        "22:15"
+      ],
+      "2026-11-29": [
+       "12:10"
       ]
      },
      "versione": "",
@@ -5551,21 +6089,6 @@
       "22:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:20",
-       "15:00",
-       "15:30",
-       "16:40",
-       "17:40",
-       "18:15",
-       "18:30",
-       "19:10",
-       "20:10",
-       "20:30",
-       "21:10",
-       "21:50",
-       "22:30"
-      ],
       "2026-11-25": [
        "14:20",
        "15:00",
@@ -5583,22 +6106,74 @@
       ],
       "2026-11-26": [
        "10:30",
-       "11:40"
+       "11:40",
+       "14:10",
+       "15:00",
+       "15:30",
+       "17:30",
+       "18:00",
+       "18:20",
+       "19:00",
+       "20:30",
+       "20:50",
+       "21:00",
+       "21:30",
+       "21:50",
+       "22:20"
       ],
       "2026-11-27": [
        "10:30",
-       "11:40"
+       "11:40",
+       "14:10",
+       "15:00",
+       "15:30",
+       "17:30",
+       "18:00",
+       "18:20",
+       "19:00",
+       "20:30",
+       "20:50",
+       "21:30",
+       "21:50",
+       "22:20",
+       "23:20"
       ],
       "2026-11-28": [
        "10:30",
-       "11:40"
+       "11:40",
+       "14:10",
+       "15:00",
+       "15:30",
+       "17:30",
+       "18:00",
+       "18:20",
+       "19:00",
+       "20:30",
+       "20:50",
+       "21:30",
+       "21:50",
+       "22:20",
+       "23:20"
       ],
       "2026-11-29": [
        "10:30",
-       "11:40"
+       "11:30",
+       "11:40",
+       "14:10",
+       "15:00",
+       "15:30",
+       "17:30",
+       "18:00",
+       "18:20",
+       "19:00",
+       "20:30",
+       "20:50",
+       "21:30",
+       "21:50",
+       "22:20"
       ]
      },
-     "versione": "Versione originale (solo ore 11:40, 15:00, 18:30, 20:30)",
+     "versione": "Versione originale (solo ore 11:30, 11:40, 15:00, 15:30, 18:00, 18:30, 20:30, 20:50, 21:50)",
      "genere": "Azione, Avventura, Fantasy",
      "regia": "Francis Lawrence",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
@@ -5615,12 +6190,28 @@
       "17:50"
      ],
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "15:15",
        "17:50"
       ],
-      "2026-11-25": [
-       "15:15",
+      "2026-11-26": [
+       "16:20",
+       "17:50"
+      ],
+      "2026-11-27": [
+       "14:15",
+       "16:20",
+       "17:50"
+      ],
+      "2026-11-28": [
+       "14:15",
+       "16:20",
+       "17:50"
+      ],
+      "2026-11-29": [
+       "10:30",
+       "14:15",
+       "16:20",
        "17:50"
       ]
      },
@@ -5648,16 +6239,34 @@
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068"
     },
     {
+     "titolo": "Il risveglio di Boiúna",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "22:50"
+      ],
+      "2026-11-27": [
+       "22:50"
+      ],
+      "2026-11-28": [
+       "22:50"
+      ],
+      "2026-11-29": [
+       "22:50"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068"
+    },
+    {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
       "15:25",
       "18:10"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:25",
-       "18:10"
-      ],
       "2026-11-25": [
        "15:25",
        "18:10"
@@ -5676,12 +6285,9 @@
     {
      "titolo": "La ballata del re delle api",
      "orari": [
-      "19:25"
+      "14:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "19:25"
-      ],
       "2026-11-25": [
        "14:15"
       ]
@@ -5702,23 +6308,46 @@
      "giorni": {
       "2026-11-26": [
        "11:00",
+       "15:20",
+       "16:50",
+       "17:40",
        "19:10",
-       "21:40"
+       "20:10",
+       "21:40",
+       "22:30"
       ],
       "2026-11-27": [
        "11:00",
+       "15:20",
+       "16:50",
+       "17:40",
+       "18:30",
        "19:10",
-       "21:40"
+       "20:10",
+       "21:40",
+       "22:30"
       ],
       "2026-11-28": [
+       "00:10",
        "11:00",
+       "15:20",
+       "16:50",
+       "17:40",
        "19:10",
-       "21:40"
+       "20:10",
+       "21:40",
+       "22:30"
       ],
       "2026-11-29": [
+       "00:10",
        "11:00",
+       "15:20",
+       "16:50",
+       "17:40",
        "19:10",
-       "21:40"
+       "20:10",
+       "21:40",
+       "22:30"
       ]
      },
      "versione": "",
@@ -5733,9 +6362,6 @@
       "14:05"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:05"
-      ],
       "2026-11-25": [
        "14:05"
       ]
@@ -5768,25 +6394,38 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Documentario",
+     "regia": "Dario Zonta e Carlo Zoratti",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
+     "paese": "Italia",
+     "durata": 84,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
     },
     {
      "titolo": "Mustang",
      "orari": [
+      "14:00",
       "18:00",
       "20:30"
      ],
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
+       "14:00",
        "18:00",
        "20:30"
       ],
-      "2026-11-25": [
-       "18:00",
-       "20:30"
+      "2026-11-26": [
+       "18:10"
+      ],
+      "2026-11-27": [
+       "18:10"
+      ],
+      "2026-11-28": [
+       "18:10"
+      ],
+      "2026-11-29": [
+       "18:10"
       ]
      },
      "versione": "",
@@ -5798,42 +6437,35 @@
      "durata": 105
     },
     {
-     "titolo": "Ragione e sentimento",
-     "orari": [
-      "21:30"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "21:30"
-      ]
-     },
-     "versione": "",
-     "genere": "Drammatico",
-     "regia": "Ang Lee",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
-     "interpreti": "Emma Thompson, Kate Winslet e Gemma Jones",
-     "durata": 136,
-     "anno": 1995,
-     "paese": "USA",
-     "scheda": "https://it.wikipedia.org/wiki/Ragione_e_sentimento_%28film_1995%29"
-    },
-    {
      "titolo": "Ramayana - La nascita di una leggenda",
      "orari": [
       "14:00",
       "19:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:00",
-       "19:00"
-      ],
       "2026-11-25": [
        "14:00",
        "19:00"
+      ],
+      "2026-11-26": [
+       "14:15",
+       "14:45"
+      ],
+      "2026-11-27": [
+       "14:15",
+       "14:45"
+      ],
+      "2026-11-28": [
+       "14:15",
+       "14:45"
+      ],
+      "2026-11-29": [
+       "11:15",
+       "14:15",
+       "14:45"
       ]
      },
-     "versione": "Versione originale (solo ore 14:00)",
+     "versione": "Versione originale (solo ore 11:15, 14:00, 14:15)",
      "genere": "Azione, Avventura, Drammatico",
      "regia": "Nitesh Tiwari",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
@@ -5846,7 +6478,6 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "14:30",
       "16:30",
       "17:10",
       "19:45",
@@ -5854,20 +6485,43 @@
       "22:20"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:30",
-       "16:30",
-       "17:10",
-       "19:45",
-       "20:00",
-       "22:20"
-      ],
       "2026-11-25": [
        "16:30",
        "17:10",
        "19:45",
        "20:00",
        "22:20"
+      ],
+      "2026-11-26": [
+       "16:20",
+       "18:15",
+       "19:40",
+       "21:20",
+       "22:20",
+       "22:45"
+      ],
+      "2026-11-27": [
+       "16:20",
+       "18:15",
+       "19:40",
+       "21:25",
+       "22:50",
+       "23:50"
+      ],
+      "2026-11-28": [
+       "16:20",
+       "18:15",
+       "19:40",
+       "21:25",
+       "22:45",
+       "23:50"
+      ],
+      "2026-11-29": [
+       "16:20",
+       "18:15",
+       "19:40",
+       "21:25",
+       "22:45"
       ]
      },
      "versione": "Versione originale (solo ore 16:30, 19:45)",
@@ -5889,17 +6543,31 @@
       "22:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:50",
-       "17:20",
-       "19:35",
-       "22:00"
-      ],
       "2026-11-25": [
        "14:50",
        "17:20",
        "19:35",
        "22:00"
+      ],
+      "2026-11-26": [
+       "14:15",
+       "18:25",
+       "21:30"
+      ],
+      "2026-11-27": [
+       "15:40",
+       "18:25",
+       "20:50"
+      ],
+      "2026-11-28": [
+       "15:40",
+       "18:25",
+       "20:50"
+      ],
+      "2026-11-29": [
+       "15:40",
+       "18:25",
+       "21:00"
       ]
      },
      "versione": "",
@@ -5912,8 +6580,30 @@
      "durata": 107
     },
     {
-     "titolo": "Ti presento i Fotter",
+     "titolo": "Taddeo l’esploratore e la lampada magica",
      "orari": [],
+     "giorni": {
+      "2026-11-28": [
+       "10:40",
+       "11:00"
+      ],
+      "2026-11-29": [
+       "10:40",
+       "11:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068"
+    },
+    {
+     "titolo": "Ti presento i Fotter",
+     "orari": [
+      "14:30",
+      "19:25",
+      "21:50"
+     ],
      "giorni": {
       "2026-11-25": [
        "14:30",
@@ -5923,44 +6613,71 @@
       "2026-11-26": [
        "10:40",
        "11:10",
+       "15:10",
+       "17:00",
        "18:50",
+       "19:15",
        "21:50"
       ],
       "2026-11-27": [
        "10:40",
        "11:10",
+       "15:10",
+       "17:00",
+       "18:50",
+       "19:50",
        "21:50"
       ],
       "2026-11-28": [
        "10:40",
        "11:10",
+       "15:10",
+       "17:00",
+       "18:50",
+       "19:15",
        "21:50"
       ],
       "2026-11-29": [
        "10:40",
        "11:10",
+       "15:10",
+       "17:00",
+       "18:50",
+       "19:15",
        "21:50"
       ]
      },
      "versione": "Versione originale (solo ore 11:10, 18:50)",
-     "genere": "",
-     "regia": "",
+     "genere": "Commedia",
+     "regia": "John Hamburg",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5068",
+     "interpreti": "Robert De Niro, Owen Wilson e Ben Stiller",
+     "durata": 105,
+     "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
      "titolo": "Un weekend artificiale",
      "orari": [
-      "14:55",
       "17:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:55",
-       "17:15"
-      ],
       "2026-11-25": [
        "17:15"
+      ],
+      "2026-11-26": [
+       "12:50"
+      ],
+      "2026-11-27": [
+       "12:50"
+      ],
+      "2026-11-28": [
+       "12:50"
+      ],
+      "2026-11-29": [
+       "12:50",
+       "22:20"
       ]
      },
      "versione": "",
@@ -5979,9 +6696,6 @@
       "20:50"
      ],
      "giorni": {
-      "2026-11-24": [
-       "20:50"
-      ],
       "2026-11-25": [
        "20:50"
       ]
@@ -6002,9 +6716,6 @@
       "16:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "16:00"
-      ],
       "2026-11-25": [
        "16:00"
       ]
@@ -6024,6 +6735,7 @@
      "orari": [],
      "giorni": {
       "2026-11-27": [
+       "21:00",
        "21:21"
       ],
       "2026-11-28": [
@@ -6048,11 +6760,6 @@
       "21:20"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:40",
-       "18:40",
-       "21:20"
-      ],
       "2026-11-25": [
        "15:40",
        "18:40",
@@ -6087,9 +6794,6 @@
       "22:40"
      ],
      "giorni": {
-      "2026-11-24": [
-       "22:40"
-      ],
       "2026-11-25": [
        "22:40"
       ]
@@ -6105,16 +6809,39 @@
      "scheda": "https://it.wikipedia.org/wiki/Come_rapinare_una_banca"
     },
     {
+     "titolo": "È andata così",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "17:20",
+       "20:00"
+      ],
+      "2026-11-27": [
+       "17:20",
+       "20:00"
+      ],
+      "2026-11-28": [
+       "17:20",
+       "20:00"
+      ],
+      "2026-11-29": [
+       "17:20",
+       "20:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5868",
+     "scheda": "https://it.wikipedia.org/wiki/%C3%88_andata_cos%C3%AC_%28film%29"
+    },
+    {
      "titolo": "Godzilla Minus Zero",
      "orari": [
       "18:00",
       "21:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:00",
-       "21:00"
-      ],
       "2026-11-25": [
        "18:00",
        "21:00"
@@ -6136,21 +6863,25 @@
      "giorni": {
       "2026-11-26": [
        "17:30",
-       "20:00"
+       "20:00",
+       "22:30"
       ],
       "2026-11-27": [
        "17:30",
-       "20:00"
+       "20:00",
+       "22:30"
       ],
       "2026-11-28": [
        "15:00",
        "17:30",
-       "20:00"
+       "20:00",
+       "22:30"
       ],
       "2026-11-29": [
        "15:00",
        "17:30",
-       "20:00"
+       "20:00",
+       "22:30"
       ]
      },
      "versione": "",
@@ -6166,10 +6897,6 @@
       "20:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:00",
-       "20:30"
-      ],
       "2026-11-25": [
        "18:00",
        "20:30"
@@ -6191,15 +6918,32 @@
       "21:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:10",
-       "20:30",
-       "21:15"
-      ],
       "2026-11-25": [
        "17:10",
        "20:30",
        "21:15"
+      ],
+      "2026-11-26": [
+       "17:10",
+       "20:30",
+       "22:00"
+      ],
+      "2026-11-27": [
+       "17:10",
+       "20:30",
+       "22:00"
+      ],
+      "2026-11-28": [
+       "15:40",
+       "19:00",
+       "21:30",
+       "22:15"
+      ],
+      "2026-11-29": [
+       "14:40",
+       "17:10",
+       "20:30",
+       "21:30"
       ]
      },
      "versione": "",
@@ -6218,11 +6962,22 @@
       "17:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:30"
-      ],
       "2026-11-25": [
        "17:30"
+      ],
+      "2026-11-26": [
+       "17:00"
+      ],
+      "2026-11-27": [
+       "17:00"
+      ],
+      "2026-11-28": [
+       "14:45",
+       "16:00"
+      ],
+      "2026-11-29": [
+       "14:45",
+       "16:00"
       ]
      },
      "versione": "",
@@ -6236,16 +6991,33 @@
      "scheda": "https://it.wikipedia.org/wiki/Il_gatto_col_cappello_%28film%29"
     },
     {
+     "titolo": "Il risveglio di Boiúna",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "22:30"
+      ],
+      "2026-11-27": [
+       "22:30"
+      ],
+      "2026-11-28": [
+       "22:30"
+      ],
+      "2026-11-29": [
+       "22:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5868"
+    },
+    {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "17:20",
-      "22:40"
+      "17:20"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:20",
-       "22:40"
-      ],
       "2026-11-25": [
        "17:20"
       ]
@@ -6298,24 +7070,31 @@
      "orari": [],
      "giorni": {
       "2026-11-26": [
+       "18:00",
        "20:30"
       ],
       "2026-11-27": [
+       "18:00",
        "20:30"
       ],
       "2026-11-28": [
+       "16:00",
        "18:00",
        "20:30"
       ],
       "2026-11-29": [
+       "15:00",
        "18:00",
        "20:30"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Documentario",
+     "regia": "Dario Zonta e Carlo Zoratti",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5868",
+     "paese": "Italia",
+     "durata": 84,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
     },
     {
@@ -6325,10 +7104,6 @@
       "20:20"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:00",
-       "20:20"
-      ],
       "2026-11-25": [
        "18:00",
        "20:20"
@@ -6350,15 +7125,32 @@
       "22:35"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:20",
-       "20:00",
-       "22:35"
-      ],
       "2026-11-25": [
        "17:20",
        "20:00",
        "22:35"
+      ],
+      "2026-11-26": [
+       "17:20",
+       "20:00",
+       "22:40"
+      ],
+      "2026-11-27": [
+       "17:20",
+       "20:00",
+       "22:40"
+      ],
+      "2026-11-28": [
+       "14:40",
+       "17:20",
+       "20:00",
+       "22:40"
+      ],
+      "2026-11-29": [
+       "14:40",
+       "17:20",
+       "20:00",
+       "22:40"
       ]
      },
      "versione": "",
@@ -6379,13 +7171,24 @@
       "22:30"
      ],
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "17:30",
        "20:00",
        "22:30"
       ],
-      "2026-11-25": [
-       "17:30",
+      "2026-11-26": [
+       "20:00",
+       "22:30"
+      ],
+      "2026-11-27": [
+       "20:00",
+       "22:30"
+      ],
+      "2026-11-28": [
+       "20:00",
+       "22:30"
+      ],
+      "2026-11-29": [
        "20:00",
        "22:30"
       ]
@@ -6401,10 +7204,35 @@
     },
     {
      "titolo": "Ti presento i Fotter",
-     "orari": [],
+     "orari": [
+      "20:20",
+      "22:40"
+     ],
      "giorni": {
       "2026-11-25": [
        "20:20",
+       "22:40"
+      ],
+      "2026-11-26": [
+       "17:40",
+       "19:30",
+       "22:40"
+      ],
+      "2026-11-27": [
+       "17:40",
+       "19:30",
+       "22:40"
+      ],
+      "2026-11-28": [
+       "15:10",
+       "17:40",
+       "19:00",
+       "22:40"
+      ],
+      "2026-11-29": [
+       "15:10",
+       "17:40",
+       "19:00",
        "22:40"
       ]
      },
@@ -6414,27 +7242,8 @@
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5868",
      "interpreti": "Robert De Niro, Ben Stiller, Skyler Gisondo e Ariana Grande",
      "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
-    },
-    {
-     "titolo": "Un weekend artificiale",
-     "orari": [
-      "20:20"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "20:20"
-      ]
-     },
-     "versione": "",
-     "genere": "Commedia",
-     "regia": "Leonardo Pieraccioni",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5868",
-     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio, Luigi Luciano e Massimo Ceccherini",
-     "durata": 91,
-     "anno": 2026,
-     "paese": "Italia",
-     "scheda": "https://it.wikipedia.org/wiki/Un_weekend_artificiale"
     }
    ],
    "cinemap": "https://www.cinemap.it/milano/cinema/cinelandia-certosa-milano"
@@ -6494,12 +7303,10 @@
     {
      "titolo": "Dio ride",
      "orari": [
-      "15:15"
+      "14:45",
+      "19:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:15"
-      ],
       "2026-11-25": [
        "14:45",
        "19:30"
@@ -6511,6 +7318,14 @@
       "2026-11-27": [
        "12:40",
        "19:30"
+      ],
+      "2026-11-28": [
+       "15:00",
+       "19:15"
+      ],
+      "2026-11-29": [
+       "15:00",
+       "19:15"
       ]
      },
      "versione": "",
@@ -6541,7 +7356,17 @@
        "21:40"
       ],
       "2026-11-28": [
-       "10:30"
+       "10:30",
+       "14:40",
+       "17:00",
+       "19:20",
+       "21:40"
+      ],
+      "2026-11-29": [
+       "14:40",
+       "17:00",
+       "19:20",
+       "21:40"
       ]
      },
      "versione": "",
@@ -6566,12 +7391,10 @@
     {
      "titolo": "Fatherland",
      "orari": [
-      "10:00"
+      "13:15",
+      "19:50"
      ],
      "giorni": {
-      "2026-11-24": [
-       "10:00"
-      ],
       "2026-11-25": [
        "13:15",
        "19:50"
@@ -6581,6 +7404,12 @@
       ],
       "2026-11-27": [
        "14:30"
+      ],
+      "2026-11-28": [
+       "14:30"
+      ],
+      "2026-11-29": [
+       "13:00"
       ]
      },
      "versione": "Versione originale (solo ore 13:20)",
@@ -6598,20 +7427,12 @@
      "orari": [
       "10:00",
       "12:00",
-      "14:40",
-      "16:30",
-      "19:00",
-      "21:30"
+      "14:50",
+      "16:40",
+      "20:30",
+      "21:45"
      ],
      "giorni": {
-      "2026-11-24": [
-       "10:00",
-       "12:00",
-       "14:40",
-       "16:30",
-       "19:00",
-       "21:30"
-      ],
       "2026-11-25": [
        "10:00",
        "12:00",
@@ -6631,9 +7452,22 @@
        "16:10",
        "19:00",
        "21:45"
+      ],
+      "2026-11-28": [
+       "10:00",
+       "14:30",
+       "16:10",
+       "19:00",
+       "21:45"
+      ],
+      "2026-11-29": [
+       "10:00",
+       "15:20",
+       "18:15",
+       "21:30"
       ]
      },
-     "versione": "Versione originale (solo ore 12:00, 14:30, 15:00, 16:30, 16:40, 19:00, 21:30, 21:45)",
+     "versione": "Versione originale (solo ore 10:00, 12:00, 14:30, 15:00, 16:40, 18:15, 19:00, 21:45)",
      "genere": "Drammatico",
      "regia": "Cristian Mungiu",
      "biglietti": "https://anteo.spaziocinema.18tickets.it/film/126735",
@@ -6646,12 +7480,9 @@
     {
      "titolo": "Il canto della foresta",
      "orari": [
-      "14:40"
+      "14:45"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:40"
-      ],
       "2026-11-25": [
        "14:45"
       ],
@@ -6662,7 +7493,13 @@
        "14:40"
       ],
       "2026-11-28": [
-       "12:30"
+       "12:30",
+       "14:40"
+      ],
+      "2026-11-29": [
+       "14:40",
+       "18:00",
+       "20:00"
       ]
      },
      "versione": "",
@@ -6690,18 +7527,12 @@
     {
      "titolo": "Il fuoco che ti porti dentro",
      "orari": [
-      "12:40",
       "15:00",
-      "17:00",
-      "19:20"
+      "17:40",
+      "19:30",
+      "21:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "12:40",
-       "15:00",
-       "17:00",
-       "19:20"
-      ],
       "2026-11-25": [
        "15:00",
        "17:40",
@@ -6721,6 +7552,20 @@
        "16:00",
        "19:35",
        "21:40"
+      ],
+      "2026-11-28": [
+       "12:45",
+       "14:30",
+       "17:20",
+       "19:20",
+       "21:40"
+      ],
+      "2026-11-29": [
+       "13:00",
+       "15:00",
+       "17:00",
+       "19:30",
+       "21:30"
       ]
      },
      "versione": "",
@@ -6750,12 +7595,9 @@
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "12:40"
+      "17:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "12:40"
-      ],
       "2026-11-25": [
        "17:15"
       ],
@@ -6764,6 +7606,14 @@
        "21:30"
       ],
       "2026-11-27": [
+       "15:00",
+       "19:25"
+      ],
+      "2026-11-28": [
+       "15:00",
+       "19:25"
+      ],
+      "2026-11-29": [
        "15:00",
        "19:25"
       ]
@@ -6777,34 +7627,6 @@
      "anno": 2026,
      "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/Il_rumore_delle_cose_nuove"
-    },
-    {
-     "titolo": "Je so’ pazzo",
-     "orari": [
-      "10:30",
-      "15:00",
-      "17:10",
-      "19:20",
-      "21:30"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "10:30",
-       "15:00",
-       "17:10",
-       "19:20",
-       "21:30"
-      ]
-     },
-     "versione": "",
-     "genere": "Biografico",
-     "regia": "Nicola Prosatore",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/131289",
-     "interpreti": "Massimiliano Caiazzo, Mariasole Pollio, Giovanni Ludeno e Giuseppe Brunetti",
-     "durata": 105,
-     "anno": 2026,
-     "paese": "Italia",
-     "scheda": "https://it.wikipedia.org/wiki/Je_so%27_pazzo_%28film_2026%29"
     },
     {
      "titolo": "Kintsugi… e sono la mia opera",
@@ -6822,16 +7644,11 @@
     {
      "titolo": "L'essere amato",
      "orari": [
-      "10:00",
-      "14:20",
-      "21:40"
+      "14:00",
+      "16:35",
+      "19:10"
      ],
      "giorni": {
-      "2026-11-24": [
-       "10:00",
-       "14:20",
-       "21:40"
-      ],
       "2026-11-25": [
        "14:00",
        "16:35",
@@ -6846,12 +7663,22 @@
        "14:50",
        "16:35",
        "21:40"
+      ],
+      "2026-11-28": [
+       "16:35",
+       "19:10",
+       "21:45"
+      ],
+      "2026-11-29": [
+       "16:35",
+       "19:10",
+       "21:45"
       ]
      },
-     "versione": "Versione originale (solo ore 10:00, 14:00, 14:20, 16:35, 19:10, 21:30, 21:40)",
+     "versione": "Versione originale (solo ore 10:00, 14:00, 16:35, 19:10, 21:30, 21:40, 21:45)",
      "genere": "Drammatico",
      "regia": "Rodrigo Sorogoyen",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/128354",
+     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/128649",
      "interpreti": "Javier Bardem, Vicky Luengo, Melina Matthews e Marina Foïs",
      "durata": 135,
      "anno": 2026,
@@ -6860,18 +7687,19 @@
     },
     {
      "titolo": "L'estranea",
-     "orari": [
-      "10:15"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-24": [
-       "10:15"
-      ],
       "2026-11-26": [
        "10:15"
       ],
       "2026-11-27": [
        "10:00"
+      ],
+      "2026-11-28": [
+       "12:50"
+      ],
+      "2026-11-29": [
+       "12:45"
       ]
      },
      "versione": "",
@@ -6886,10 +7714,19 @@
     },
     {
      "titolo": "La Gradiva",
-     "orari": [],
+     "orari": [
+      "17:00",
+      "21:30"
+     ],
      "giorni": {
       "2026-11-25": [
        "17:00",
+       "21:30"
+      ],
+      "2026-11-28": [
+       "21:30"
+      ],
+      "2026-11-29": [
        "21:30"
       ]
      },
@@ -6920,13 +7757,11 @@
      "titolo": "Look Back",
      "orari": [
       "10:00",
-      "19:40"
+      "15:00",
+      "17:40",
+      "21:45"
      ],
      "giorni": {
-      "2026-11-24": [
-       "10:00",
-       "19:40"
-      ],
       "2026-11-25": [
        "10:00",
        "15:00",
@@ -6941,9 +7776,19 @@
        "12:45",
        "17:30",
        "21:45"
+      ],
+      "2026-11-28": [
+       "13:00",
+       "17:15",
+       "21:40"
+      ],
+      "2026-11-29": [
+       "12:30",
+       "15:00",
+       "17:15"
       ]
      },
-     "versione": "Versione originale (solo ore 10:00, 15:00, 17:15, 17:30, 19:40)",
+     "versione": "Versione originale (solo ore 10:00, 12:30, 15:00, 17:15, 17:30)",
      "genere": "Drammatico",
      "regia": "Kore'eda Hirokazu",
      "biglietti": "https://anteo.spaziocinema.18tickets.it/film/128683",
@@ -6954,29 +7799,12 @@
      "scheda": "https://it.wikipedia.org/wiki/Look_Back_%28film_2026%29"
     },
     {
-     "titolo": "Man and Witch: The Dance of a Thousand Steps",
-     "orari": [
-      "16:30"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "16:30"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/128055"
-    },
-    {
      "titolo": "Minotaur",
      "orari": [
-      "12:00"
+      "10:30",
+      "15:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "12:00"
-      ],
       "2026-11-25": [
        "10:30",
        "15:00"
@@ -6991,7 +7819,7 @@
      "versione": "",
      "genere": "Drammatico, Thriller",
      "regia": "Andrey Zvyagintsev",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/122973",
+     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/131751",
      "interpreti": "Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin e Yuriy Zavalnyouk",
      "durata": 135,
      "anno": 2026,
@@ -7001,18 +7829,13 @@
     {
      "titolo": "Mustang",
      "orari": [
-      "13:00",
+      "12:50",
+      "15:00",
       "17:00",
-      "19:15",
-      "21:40"
+      "19:40",
+      "21:45"
      ],
      "giorni": {
-      "2026-11-24": [
-       "13:00",
-       "17:00",
-       "19:15",
-       "21:40"
-      ],
       "2026-11-25": [
        "12:50",
        "15:00",
@@ -7030,6 +7853,16 @@
        "11:00",
        "17:15",
        "19:30"
+      ],
+      "2026-11-28": [
+       "12:20",
+       "17:15",
+       "19:30"
+      ],
+      "2026-11-29": [
+       "13:15",
+       "17:15",
+       "19:20"
       ]
      },
      "versione": "",
@@ -7042,7 +7875,9 @@
     },
     {
      "titolo": "NAZA",
-     "orari": [],
+     "orari": [
+      "13:10"
+     ],
      "giorni": {
       "2026-11-25": [
        "13:10"
@@ -7054,6 +7889,7 @@
      "biglietti": "https://anteo.spaziocinema.18tickets.it/film/111522",
      "durata": 80,
      "anno": 2026,
+     "paese": "Gran Bretagna",
      "scheda": "https://it.wikipedia.org/wiki/Naza_%28film%29"
     },
     {
@@ -7070,45 +7906,29 @@
      "biglietti": "https://anteo.spaziocinema.18tickets.it/film/123633"
     },
     {
-     "titolo": "Primetime",
-     "orari": [
-      "12:45"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "12:45"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Drammatico",
-     "regia": "Drammatico e USA e 2026",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/119642",
-     "interpreti": "Robert Pattinson, Merritt Wever, Skyler Gisondo e Matthew Maher",
-     "durata": 110,
-     "anno": 2026,
-     "paese": "USA",
-     "scheda": "https://it.wikipedia.org/wiki/Primetime_%28film%29"
-    },
-    {
      "titolo": "Se domani non torno",
      "orari": [
-      "15:00"
+      "20:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:00"
-      ],
       "2026-11-25": [
        "20:00"
       ],
       "2026-11-27": [
        "17:20"
+      ],
+      "2026-11-28": [
+       "17:20"
+      ],
+      "2026-11-29": [
+       "12:45",
+       "17:10"
       ]
      },
      "versione": "",
      "genere": "Drammatico",
      "regia": "Paola Randi",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/125614",
+     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/129474",
      "interpreti": "Tommaso Allione, Tecla Bossi, Sabrina Martina e Filippo Timi",
      "durata": 107,
      "anno": 2026,
@@ -7120,44 +7940,56 @@
      "giorni": {
       "2026-11-26": [
        "10:00",
-       "15:30",
        "16:20",
-       "19:05",
        "21:50"
       ],
       "2026-11-27": [
        "10:00",
        "12:00",
-       "14:00",
        "16:40",
-       "19:10",
        "21:50"
+      ],
+      "2026-11-28": [
+       "10:00",
+       "16:20",
+       "21:50"
+      ],
+      "2026-11-29": [
+       "16:50",
+       "21:40"
       ]
      },
-     "versione": "Versione originale",
+     "versione": "",
      "genere": "",
      "regia": "",
      "biglietti": "https://anteo.spaziocinema.18tickets.it/film/133339",
      "scheda": "https://it.wikipedia.org/wiki/Storie_parallele"
     },
     {
-     "titolo": "Un giorno senza donne",
-     "orari": [
-      "21:15"
-     ],
+     "titolo": "Storie Parallelele",
+     "orari": [],
      "giorni": {
-      "2026-11-24": [
-       "21:15"
+      "2026-11-26": [
+       "15:30",
+       "19:05"
+      ],
+      "2026-11-27": [
+       "14:00",
+       "19:10"
+      ],
+      "2026-11-28": [
+       "14:40",
+       "19:05"
+      ],
+      "2026-11-29": [
+       "14:10",
+       "18:50"
       ]
      },
      "versione": "Versione originale",
-     "genere": "Documentario",
-     "regia": "Pamela Hogan",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/129441",
-     "interpreti": "Vigdís Finnbogadóttir",
-     "paese": "Islanda",
-     "durata": 70,
-     "anno": 2024
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/133337"
     },
     {
      "titolo": "Werner Herzog – Radical Dreamer",
@@ -7175,22 +8007,14 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "10:00",
-      "13:00",
-      "15:15",
-      "17:10",
-      "19:25",
-      "21:45"
+      "12:30",
+      "14:45",
+      "17:00",
+      "19:15",
+      "20:00",
+      "21:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "10:00",
-       "13:00",
-       "15:15",
-       "17:10",
-       "19:25",
-       "21:45"
-      ],
       "2026-11-25": [
        "12:30",
        "14:45",
@@ -7213,17 +8037,29 @@
        "21:30"
       ],
       "2026-11-28": [
+       "10:00",
+       "12:15",
+       "14:45",
+       "17:00",
        "18:30",
-       "21:00"
+       "19:15",
+       "21:00",
+       "21:30"
       ],
       "2026-11-29": [
-       "13:00"
+       "10:00",
+       "12:15",
+       "13:00",
+       "14:45",
+       "17:00",
+       "19:15",
+       "21:30"
       ]
      },
-     "versione": "Versione originale (solo ore 10:00, 12:15, 14:45, 15:15, 17:00, 17:15, 19:15, 19:25, 21:00, 21:30)",
+     "versione": "Versione originale (solo ore 12:15, 14:45, 17:00, 17:15, 19:15, 21:00, 21:30)",
      "genere": "Commedia, Drammatico",
      "regia": "Martin McDonagh",
-     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/125679",
+     "biglietti": "https://anteo.spaziocinema.18tickets.it/film/125680",
      "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
      "durata": 118,
      "anno": 2026,
@@ -7290,12 +8126,9 @@
     {
      "titolo": "Fjord",
      "orari": [
-      "11:30"
+      "15:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "11:30"
-      ],
       "2026-11-25": [
        "15:00"
       ],
@@ -7323,25 +8156,6 @@
      "scheda": "https://it.wikipedia.org/wiki/Fjord_%28film%29"
     },
     {
-     "titolo": "Il canto della foresta",
-     "orari": [
-      "14:00"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "14:00"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Documentario",
-     "regia": "Vincent Munier",
-     "biglietti": "https://bandhi.it/bah/beltrade/",
-     "interpreti": "Vincent Munier, Michel Munier e Simon Munier",
-     "durata": 95,
-     "anno": 2025,
-     "paese": "Francia"
-    },
-    {
      "titolo": "Il gatto col cappello",
      "orari": [],
      "giorni": {
@@ -7361,7 +8175,9 @@
     },
     {
      "titolo": "L'essere amato",
-     "orari": [],
+     "orari": [
+      "17:40"
+     ],
      "giorni": {
       "2026-11-25": [
        "17:40"
@@ -7382,7 +8198,9 @@
     },
     {
      "titolo": "La Rete della Kefiah",
-     "orari": [],
+     "orari": [
+      "20:10"
+     ],
      "giorni": {
       "2026-11-25": [
        "20:10"
@@ -7409,12 +8227,9 @@
     {
      "titolo": "Look Back",
      "orari": [
-      "21:40"
+      "11:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "21:40"
-      ],
       "2026-11-25": [
        "11:30"
       ],
@@ -7434,7 +8249,9 @@
     },
     {
      "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
-     "orari": [],
+     "orari": [
+      "22:00"
+     ],
      "giorni": {
       "2026-11-25": [
        "22:00"
@@ -7450,20 +8267,20 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Documentario",
+     "regia": "Dario Zonta e Carlo Zoratti",
      "biglietti": "https://bandhi.it/bah/beltrade/",
+     "paese": "Italia",
+     "durata": 84,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
     },
     {
      "titolo": "Mustang",
      "orari": [
-      "15:40"
+      "13:10"
      ],
      "giorni": {
-      "2026-11-24": [
-       "15:40"
-      ],
       "2026-11-25": [
        "13:10"
       ],
@@ -7520,21 +8337,6 @@
      "scheda": "https://it.wikipedia.org/wiki/Storie_parallele"
     },
     {
-     "titolo": "Twin Peaks – Stag. 03 Ep 15 e 16",
-     "orari": [
-      "19:30"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "19:30"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://bandhi.it/bah/beltrade/"
-    },
-    {
      "titolo": "Twin Peaks – Stag. 03 Ep 17 e 18",
      "orari": [],
      "giorni": {
@@ -7549,13 +8351,8 @@
     },
     {
      "titolo": "Wild Horse Nine",
-     "orari": [
-      "17:30"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-24": [
-       "17:30"
-      ],
       "2026-11-27": [
        "19:10"
       ],
@@ -7698,30 +8495,41 @@
     },
     {
      "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
-     "orari": [],
+     "orari": [
+      "19:00"
+     ],
      "giorni": {
       "2026-11-25": [
        "19:00"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Documentario",
+     "regia": "Dario Zonta e Carlo Zoratti",
      "biglietti": "https://ticketing.fondazioneprada.org/ticketing/UIPublic/CinemaHome.aspx",
+     "paese": "Italia",
+     "durata": 84,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
     },
     {
      "titolo": "Mimì Metallurgico Ferito Nell'onore",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-25": [
        "21:00"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Commedia",
+     "regia": "Lina Wertmüller",
      "biglietti": "https://ticketing.fondazioneprada.org/ticketing/UIPublic/CinemaHome.aspx",
+     "interpreti": "Giancarlo Giannini, Mariangela Melato, Luigi Diberti e Turi Ferro",
+     "paese": "Italia",
+     "durata": 121,
+     "anno": 1972,
      "scheda": "https://it.wikipedia.org/wiki/Mim%C3%AC_metallurgico_ferito_nell%27onore"
     },
     {
@@ -7770,8 +8578,55 @@
    "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/",
    "film": [
     {
-     "titolo": "La Gradiva",
+     "titolo": "Biografía de Jorge Luis Borges",
      "orari": [],
+     "giorni": {
+      "2026-11-29": [
+       "09:45"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/164996"
+    },
+    {
+     "titolo": "L'estranea",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "19:30"
+      ]
+     },
+     "versione": "",
+     "genere": "Thriller",
+     "regia": "Paolo Strippoli",
+     "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/164404",
+     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano, Adriano Giannini e Valeria Bruni Tedeschi",
+     "paese": "Italia",
+     "durata": 115,
+     "anno": 2026,
+     "scheda": "https://it.wikipedia.org/wiki/L%27estranea_%28film_2026%29"
+    },
+    {
+     "titolo": "L'inquilino del terzo piano",
+     "orari": [],
+     "giorni": {
+      "2026-11-29": [
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/164999",
+     "scheda": "https://it.wikipedia.org/wiki/L%27inquilino_del_terzo_piano"
+    },
+    {
+     "titolo": "La Gradiva",
+     "orari": [
+      "14:30"
+     ],
      "giorni": {
       "2026-11-25": [
        "14:30"
@@ -7782,23 +8637,24 @@
      "regia": "Marine Atlan",
      "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/167438",
      "interpreti": "Colas Quignard, Suzanne Gerin, Mitia Capellier e Antonia Buresi",
-     "paese": "Francia",
      "durata": 145,
      "anno": 2026,
+     "paese": "Francia",
      "scheda": "https://it.wikipedia.org/wiki/La_Gradiva"
     },
     {
-     "titolo": "Le Cri des gardes",
+     "titolo": "Mektoub, My Love: Canto Due",
      "orari": [],
      "giorni": {
-      "2026-11-29": [
-       "18:00"
+      "2026-11-27": [
+       "20:45"
       ]
      },
      "versione": "",
      "genere": "",
      "regia": "",
-     "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/164998"
+     "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/164930",
+     "scheda": "https://it.wikipedia.org/wiki/Mektoub%2C_My_Love_-_Canto_due"
     },
     {
      "titolo": "The Loneliest Man in Town",
@@ -7814,26 +8670,13 @@
      "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/164964"
     },
     {
-     "titolo": "Un bon petit soldat",
-     "orari": [],
-     "giorni": {
-      "2026-11-28": [
-       "21:00"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/164965"
-    },
-    {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "21:30"
+      "19:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "21:30"
+      "2026-11-25": [
+       "19:00"
       ]
      },
      "versione": "Versione originale",
@@ -7841,9 +8684,9 @@
      "regia": "Martin McDonagh",
      "biglietti": "https://ilcinemino.ilcinemino.18tickets.it/film/164270",
      "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
-     "paese": "Regno Unito",
      "durata": 118,
      "anno": 2026,
+     "paese": "Regno Unito",
      "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
     }
    ]
@@ -7860,58 +8703,18 @@
    "biglietti": "https://noise.ilcinemino.18tickets.it/",
    "film": [
     {
-     "titolo": "L'estranea",
-     "orari": [
-      "15:00"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "15:00"
-      ]
-     },
-     "versione": "",
-     "genere": "Thriller",
-     "regia": "Paolo Strippoli",
-     "biglietti": "https://noise.ilcinemino.18tickets.it/film/164404",
-     "interpreti": "Jasmine Trinca, Romana Maggiora Vergano, Adriano Giannini e Valeria Bruni Tedeschi",
-     "paese": "Italia",
-     "durata": 115,
-     "anno": 2026,
-     "scheda": "https://it.wikipedia.org/wiki/L%27estranea_%28film_2026%29"
-    },
-    {
-     "titolo": "L'infernale Quinlan",
+     "titolo": "La storia infinita",
      "orari": [],
      "giorni": {
-      "2026-11-25": [
+      "2026-11-29": [
        "15:00"
       ]
      },
      "versione": "",
      "genere": "",
      "regia": "",
-     "biglietti": "https://noise.ilcinemino.18tickets.it/film/13527",
-     "scheda": "https://it.wikipedia.org/wiki/L%27infernale_Quinlan"
-    },
-    {
-     "titolo": "Wild Horse Nine",
-     "orari": [
-      "19:00"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "19:00"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Commedia, Drammatico",
-     "regia": "Martin McDonagh",
-     "biglietti": "https://noise.ilcinemino.18tickets.it/film/164270",
-     "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
-     "paese": "Regno Unito",
-     "durata": 118,
-     "anno": 2026,
-     "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
+     "biglietti": "https://noise.ilcinemino.18tickets.it/film/164411",
+     "scheda": "https://it.wikipedia.org/wiki/La_storia_infinita_%28film%29"
     }
    ]
   },
@@ -7928,12 +8731,9 @@
     {
      "titolo": "Dal nulla",
      "orari": [
-      "19:40"
+      "18:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "19:40"
-      ],
       "2026-11-25": [
        "18:15"
       ]
@@ -7954,11 +8754,20 @@
       "17:05"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:05"
-      ],
       "2026-11-25": [
        "17:05"
+      ],
+      "2026-11-26": [
+       "14:40"
+      ],
+      "2026-11-27": [
+       "14:40"
+      ],
+      "2026-11-28": [
+       "14:40"
+      ],
+      "2026-11-29": [
+       "14:40"
       ]
      },
      "versione": "",
@@ -7972,16 +8781,39 @@
      "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
     },
     {
+     "titolo": "È andata così",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "17:30",
+       "22:20"
+      ],
+      "2026-11-27": [
+       "17:30",
+       "22:20"
+      ],
+      "2026-11-28": [
+       "17:30",
+       "22:20"
+      ],
+      "2026-11-29": [
+       "17:30",
+       "22:20"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5779",
+     "scheda": "https://it.wikipedia.org/wiki/%C3%88_andata_cos%C3%AC_%28film%29"
+    },
+    {
      "titolo": "Fjord",
      "orari": [
       "14:55",
       "18:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:55",
-       "18:00"
-      ],
       "2026-11-25": [
        "14:55",
        "18:00"
@@ -8000,16 +8832,25 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "18:15",
       "22:30"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:15",
-       "22:30"
-      ],
       "2026-11-25": [
        "22:30"
+      ],
+      "2026-11-26": [
+       "22:25"
+      ],
+      "2026-11-27": [
+       "22:25"
+      ],
+      "2026-11-28": [
+       "11:30",
+       "22:25"
+      ],
+      "2026-11-29": [
+       "11:30",
+       "22:25"
       ]
      },
      "versione": "",
@@ -8027,20 +8868,32 @@
      "orari": [],
      "giorni": {
       "2026-11-26": [
+       "14:15",
        "14:45",
-       "17:15"
+       "16:00",
+       "17:15",
+       "18:45"
       ],
       "2026-11-27": [
+       "14:15",
        "14:45",
-       "17:15"
+       "16:00",
+       "17:15",
+       "18:45"
       ],
       "2026-11-28": [
+       "10:45",
        "14:45",
-       "17:15"
+       "16:05",
+       "17:15",
+       "18:45"
       ],
       "2026-11-29": [
+       "10:45",
        "14:45",
-       "17:15"
+       "16:05",
+       "17:15",
+       "18:45"
       ]
      },
      "versione": "",
@@ -8055,9 +8908,6 @@
       "19:45"
      ],
      "giorni": {
-      "2026-11-24": [
-       "19:45"
-      ],
       "2026-11-25": [
        "19:45"
       ]
@@ -8084,7 +8934,7 @@
       "22:10"
      ],
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "14:15",
        "15:00",
        "17:00",
@@ -8095,18 +8945,53 @@
        "21:30",
        "22:10"
       ],
-      "2026-11-25": [
-       "14:15",
+      "2026-11-26": [
+       "15:00",
        "17:00",
        "18:15",
-       "19:10",
-       "20:30",
-       "21:00",
+       "19:35",
+       "20:20",
+       "21:10",
        "21:30",
+       "22:05",
+       "22:10"
+      ],
+      "2026-11-27": [
+       "15:00",
+       "17:00",
+       "18:15",
+       "19:35",
+       "20:20",
+       "21:30",
+       "22:05",
+       "22:10"
+      ],
+      "2026-11-28": [
+       "10:50",
+       "11:10",
+       "15:00",
+       "17:00",
+       "18:15",
+       "19:35",
+       "20:20",
+       "21:30",
+       "22:05",
+       "22:10"
+      ],
+      "2026-11-29": [
+       "10:50",
+       "11:10",
+       "15:00",
+       "17:00",
+       "18:15",
+       "19:35",
+       "20:20",
+       "21:30",
+       "22:05",
        "22:10"
       ]
      },
-     "versione": "Versione originale (solo ore 19:10)",
+     "versione": "Versione originale (solo ore 10:50, 19:10)",
      "genere": "Azione, Avventura, Fantasy",
      "regia": "Francis Lawrence",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5779",
@@ -8123,13 +9008,23 @@
       "16:45"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:25",
-       "16:45"
-      ],
       "2026-11-25": [
        "14:25",
        "16:45"
+      ],
+      "2026-11-26": [
+       "15:10"
+      ],
+      "2026-11-27": [
+       "15:10"
+      ],
+      "2026-11-28": [
+       "11:00",
+       "15:10"
+      ],
+      "2026-11-29": [
+       "11:00",
+       "15:10"
       ]
      },
      "versione": "",
@@ -8147,18 +9042,29 @@
      "orari": [
       "14:40",
       "17:10",
-      "22:00"
+      "22:10"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:40",
-       "17:10",
-       "22:00"
-      ],
       "2026-11-25": [
        "14:40",
        "17:10",
        "22:10"
+      ],
+      "2026-11-26": [
+       "17:10",
+       "19:35"
+      ],
+      "2026-11-27": [
+       "17:10",
+       "19:35"
+      ],
+      "2026-11-28": [
+       "17:10",
+       "19:35"
+      ],
+      "2026-11-29": [
+       "17:10",
+       "19:35"
       ]
      },
      "versione": "",
@@ -8172,14 +9078,72 @@
      "scheda": "https://it.wikipedia.org/wiki/Il_rumore_delle_cose_nuove"
     },
     {
+     "titolo": "La Bellezza del Gesto",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "17:00"
+      ],
+      "2026-11-27": [
+       "14:40"
+      ],
+      "2026-11-28": [
+       "14:20"
+      ],
+      "2026-11-29": [
+       "14:20"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5779"
+    },
+    {
+     "titolo": "La notte delle fragole",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "14:10",
+       "16:15",
+       "18:20",
+       "20:25",
+       "22:35"
+      ],
+      "2026-11-27": [
+       "14:10",
+       "16:15",
+       "18:20",
+       "20:25",
+       "22:35"
+      ],
+      "2026-11-28": [
+       "14:10",
+       "16:15",
+       "18:20",
+       "20:25",
+       "22:35"
+      ],
+      "2026-11-29": [
+       "14:10",
+       "16:15",
+       "18:20",
+       "20:25",
+       "22:35"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5779",
+     "scheda": "https://it.wikipedia.org/wiki/La_notte_delle_fragole"
+    },
+    {
      "titolo": "Look Back",
      "orari": [
       "14:40"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:40"
-      ],
       "2026-11-25": [
        "14:40"
       ]
@@ -8216,9 +9180,12 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Documentario",
+     "regia": "Dario Zonta e Carlo Zoratti",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5779",
+     "paese": "Italia",
+     "durata": 84,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
     },
     {
@@ -8227,11 +9194,20 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "21:00"
-      ],
       "2026-11-25": [
        "21:00"
+      ],
+      "2026-11-26": [
+       "14:40"
+      ],
+      "2026-11-27": [
+       "16:25"
+      ],
+      "2026-11-28": [
+       "13:50"
+      ],
+      "2026-11-29": [
+       "13:50"
       ]
      },
      "versione": "",
@@ -8248,9 +9224,6 @@
       "14:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:00"
-      ],
       "2026-11-25": [
        "14:00"
       ]
@@ -8272,13 +9245,31 @@
       "20:05"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:30",
-       "20:05"
-      ],
       "2026-11-25": [
        "17:30",
        "20:05"
+      ],
+      "2026-11-26": [
+       "20:05",
+       "22:30"
+      ],
+      "2026-11-27": [
+       "20:05",
+       "22:30"
+      ],
+      "2026-11-28": [
+       "11:10",
+       "14:20",
+       "16:10",
+       "20:05",
+       "22:30"
+      ],
+      "2026-11-29": [
+       "11:10",
+       "14:20",
+       "16:10",
+       "20:05",
+       "22:30"
       ]
      },
      "versione": "",
@@ -8296,17 +9287,30 @@
      "orari": [
       "15:05",
       "17:25",
-      "19:50",
-      "22:10"
+      "19:50"
      ],
      "giorni": {
-      "2026-11-24": [
+      "2026-11-25": [
        "15:05",
        "17:25",
-       "19:50",
-       "22:10"
+       "19:50"
       ],
-      "2026-11-25": [
+      "2026-11-26": [
+       "15:05",
+       "17:25",
+       "19:50"
+      ],
+      "2026-11-27": [
+       "15:05",
+       "17:25",
+       "19:50"
+      ],
+      "2026-11-28": [
+       "15:05",
+       "17:25",
+       "19:50"
+      ],
+      "2026-11-29": [
        "15:05",
        "17:25",
        "19:50"
@@ -8323,11 +9327,38 @@
     },
     {
      "titolo": "Ti presento i Fotter",
-     "orari": [],
+     "orari": [
+      "19:40",
+      "22:10"
+     ],
      "giorni": {
       "2026-11-25": [
        "19:40",
        "22:10"
+      ],
+      "2026-11-26": [
+       "15:10",
+       "17:30",
+       "20:00",
+       "22:45"
+      ],
+      "2026-11-27": [
+       "15:10",
+       "17:30",
+       "20:00",
+       "22:45"
+      ],
+      "2026-11-28": [
+       "15:10",
+       "17:30",
+       "20:00",
+       "22:45"
+      ],
+      "2026-11-29": [
+       "15:10",
+       "17:30",
+       "20:00",
+       "22:45"
       ]
      },
      "versione": "",
@@ -8336,6 +9367,7 @@
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5779",
      "interpreti": "Robert De Niro, Ben Stiller, Skyler Gisondo e Ariana Grande",
      "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
@@ -8345,10 +9377,6 @@
       "22:40"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:25",
-       "22:40"
-      ],
       "2026-11-25": [
        "14:25",
        "22:40"
@@ -8370,9 +9398,6 @@
       "14:15"
      ],
      "giorni": {
-      "2026-11-24": [
-       "14:15"
-      ],
       "2026-11-25": [
        "14:15"
       ]
@@ -8413,10 +9438,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "18:30",
-       "21:00"
-      ],
       "2026-11-25": [
        "18:30",
        "21:00"
@@ -8446,23 +9467,17 @@
    "film": [
     {
      "titolo": "Due Ladri in Fuga",
-     "orari": [
-      "15:00"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-24": [
-       "15:00"
-      ],
       "2026-11-27": [
        "18:30"
       ]
      },
-     "versione": "Versione originale (solo ore 18:30)",
+     "versione": "Versione originale",
      "genere": "Commedia",
      "regia": "Victor Artus Solaro",
-     "biglietti": "https://www.centroasteria.it/events/due-ladri-in-fuga/",
+     "biglietti": "https://www.centroasteria.it/events/due-ladri-in-fuga-2/",
      "interpreti": "Victor Artus Solaro, Clovis Cornillac, Alice Belaïdi e Marc Riso",
-     "paese": "Francia",
      "durata": 99,
      "anno": 2024
     }
@@ -8478,6 +9493,19 @@
    "fonte": "https://www.cinemap.it/milano/cinema/cineteca-mic-milano",
    "cinemap": "https://www.cinemap.it/milano/cinema/cineteca-mic-milano",
    "film": [
+    {
+     "titolo": "Alice nel Paese dei Coloni",
+     "orari": [],
+     "giorni": {
+      "2026-11-29": [
+       "19:15"
+      ]
+     },
+     "versione": "Versione originale",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://mic.cinetecadimilano.18tickets.it/film/134160"
+    },
     {
      "titolo": "Donnie Darko",
      "orari": [],
@@ -8497,12 +9525,16 @@
     },
     {
      "titolo": "Il canto della foresta",
-     "orari": [
-      "15:00"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-24": [
+      "2026-11-26": [
+       "17:00"
+      ],
+      "2026-11-27": [
        "15:00"
+      ],
+      "2026-11-28": [
+       "17:00"
       ]
      },
      "versione": "",
@@ -8515,17 +9547,42 @@
      "paese": "Francia"
     },
     {
+     "titolo": "La Favorita",
+     "orari": [],
+     "giorni": {
+      "2026-11-26": [
+       "20:00"
+      ]
+     },
+     "versione": "Versione originale",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://mic.cinetecadimilano.18tickets.it/film/133896",
+     "scheda": "https://it.wikipedia.org/wiki/La_favorita_%28film_2018%29"
+    },
+    {
      "titolo": "Mustang",
      "orari": [
-      "17:00"
+      "17:00",
+      "19:00"
      ],
      "giorni": {
-      "2026-11-24": [
-       "17:00"
-      ],
       "2026-11-25": [
        "17:00",
        "19:00"
+      ],
+      "2026-11-26": [
+       "15:00"
+      ],
+      "2026-11-27": [
+       "17:00"
+      ],
+      "2026-11-28": [
+       "15:00",
+       "20:00"
+      ],
+      "2026-11-29": [
+       "15:00"
       ]
      },
      "versione": "",
@@ -8538,7 +9595,9 @@
     },
     {
      "titolo": "The Invite - Il piacere è tutto nostro",
-     "orari": [],
+     "orari": [
+      "15:00"
+     ],
      "giorni": {
       "2026-11-25": [
        "15:00"
@@ -8551,6 +9610,7 @@
      "interpreti": "Seth Rogen, Olivia Wilde, Penélope Cruz e Edward Norton",
      "durata": 107,
      "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/The_Invite_-_Il_piacere_%C3%A8_tutto_nostro"
     }
    ]
@@ -8695,25 +9755,6 @@
      "regia": "",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5213",
      "scheda": "https://it.wikipedia.org/wiki/Ostende"
-    },
-    {
-     "titolo": "Trenque Lauquen - Parte 2",
-     "orari": [
-      "20:45"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "20:45"
-      ]
-     },
-     "versione": "Versione originale",
-     "genere": "Drammatico",
-     "regia": "Laura Citarella",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5213",
-     "interpreti": "Laura Paredes, Ezequiel Pierri, Rafael Spregelburd e Cecilia Rainero",
-     "durata": 240,
-     "anno": 2022,
-     "paese": "Argentina"
     }
    ]
   },
@@ -8729,7 +9770,9 @@
    "film": [
     {
      "titolo": "Fatherland",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-25": [
        "21:00"
@@ -8780,7 +9823,6 @@
      "regia": "Georgia Oakley",
      "biglietti": "https://ticket.cinebot.it/cineteatrostella/titolo/726_ragione-e-sentimento",
      "interpreti": "Esme Creed-Miles, Bodhi Rae Breathnach, James Carcaterra e Daisy Edgar-Jones",
-     "paese": "USA",
      "durata": 132,
      "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Ragione_e_sentimento_%28film_1995%29"
@@ -8878,21 +9920,6 @@
    "cinemap": "https://www.cinemap.it/cinisello-balsamo/cinema/cineteatropax-cinisello-balsamo",
    "film": [
     {
-     "titolo": "I Colori della Tempesta",
-     "orari": [
-      "15:30"
-     ],
-     "giorni": {
-      "2026-11-24": [
-       "15:30"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.cineteatropax.it/events/tea-pax-i-colori-della-tempesta/"
-    },
-    {
      "titolo": "Un mondo meraviglioso",
      "orari": [],
      "giorni": {
@@ -8951,14 +9978,15 @@
      "regia": "Nicola Prosatore",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MI/5697",
      "interpreti": "Massimiliano Caiazzo, Mariasole Pollio, Giovanni Ludeno e Giuseppe Brunetti",
-     "paese": "Italia",
      "durata": 105,
      "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Je_so%27_pazzo_%28film_2026%29"
     },
     {
      "titolo": "Se domani non torno",
-     "orari": [],
+     "orari": [
+      "21:15"
+     ],
      "giorni": {
       "2026-11-25": [
        "21:15"
