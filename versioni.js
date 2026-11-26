@@ -1,1 +1,1 @@
-window.ACH_VERSIONI={"eventi":"fa4ad43193","eventi-presto":"a2c22911a3","eventi-resto":"33278aa028","serate":"214cae4c61","mostre":"8100c4ce5a","cinema":"fd3f6958f0","incontri":"e78a8317d9","sport":"e73cf6ac5e"};
+window.ACH_VERSIONI={"eventi":"03c634f4d4","eventi-presto":"291c3274b6","eventi-resto":"07c910da2f","serate":"214cae4c61","mostre":"8100c4ce5a","cinema":"fd3f6958f0","incontri":"e78a8317d9","sport":"e73cf6ac5e"};
