@@ -103,19 +103,6 @@
   "prezzi": "  Quota di partecipazione per le visite guidate € 6,00  Prenotazione obbligatoria  ",
   "cat": "guided_tours"
  },
- "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/conferenze-in-occasione-della-mostra-da-monet-a-van-gogh-a-kandinsky": {
-  "modified": "2026-09-27T13:10:57+00:00",
-  "titolo": "Conferenze in occasione della mostra \"Da Monet a Van Gogh a Kandinsky\"",
-  "start": "2026-10-21T15:00:00+00:00",
-  "end": "2026-11-25T18:00:00+00:00",
-  "rec": "DTSTART:20261021T150000Z\nRRULE:UNTIL=20261125T180000Z;FREQ=WEEKLY;INTERVAL=1;BYDAY=WE\nEXDATE:20261111T150000Z",
-  "intero": false,
-  "citta": "Ferrara",
-  "via": "Palazzo dei Diamanti - Corso Ercole I d'Este, 21",
-  "descr": "Incontri di approfondimento nella Sala Rossetti al Palazzo dei Diamanti",
-  "prezzi": " Ingresso gratuito fino ad esaurimento posti ",
-  "cat": "meetings_conferences"
- },
  "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/ciclo-di-incontri-sullarte-contemporanea": {
   "modified": "2026-10-21T11:15:29+00:00",
   "titolo": "Ciclo di incontri sull’arte contemporanea",
@@ -272,8 +259,60 @@
   "prezzi": " Ingresso gratuito ",
   "cat": "meetings_conferences"
  },
+ "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/marginalita-e-prospettive-di-equita-dalla-preistoria-ai-nostri-giorni": {
+  "modified": "2026-11-23T14:17:59+00:00",
+  "titolo": "Marginalità e prospettive di equità: dalla preistoria ai nostri giorni",
+  "start": "2026-11-24T14:00:00+00:00",
+  "end": "2026-11-28T17:00:00+00:00",
+  "rec": "DTSTART:20261124T130000Z\nRRULE:UNTIL=20261128T140000Z;FREQ=WEEKLY;INTERVAL=1;BYDAY=TU,TH,SA",
+  "intero": false,
+  "citta": "Ferrara",
+  "via": "Palazzo Turchi di Bagno - Corso Ercole I d'Este, 32 e altri luoghi",
+  "descr": "conferenze, dibattiti, performance artistiche e rappresentazioni teatrali che affrontano il tema delle diverse forme di marginalità e prospettive di inclusione ed equità attraverso prospettive storiche, filosofiche, giuridiche, sociali e pedagogiche",
+  "prezzi": " Ingresso gratuito ",
+  "cat": "meetings_conferences"
+ },
+ "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/iniziative-al-centro-studi-bassaniani": {
+  "modified": "2026-11-23T12:11:51+00:00",
+  "titolo": "Iniziative al Centro Studi Bassaniani",
+  "start": "2026-11-25T11:00:00+00:00",
+  "end": "2026-12-12T12:00:00+00:00",
+  "rec": "DTSTART:20261125T110000Z\nRRULE:UNTIL=20261212T120000Z;FREQ=WEEKLY;INTERVAL=1;BYDAY=WE,MO,SA,TU,TH",
+  "intero": false,
+  "citta": "Ferrara",
+  "via": "Centro Studi Bassaniani, Via Giuoco del Pallone, 15",
+  "descr": "",
+  "prezzi": " Ingresso gratuito su prenotazione ",
+  "cat": "meetings_conferences"
+ },
+ "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/giornata-internazionale-contro-la-violenza-sulle-donne": {
+  "modified": "2026-11-23T14:41:26+00:00",
+  "titolo": "Giornata Internazionale contro la violenza sulle donne",
+  "start": "2026-11-25T12:00:00+00:00",
+  "end": "2026-11-28T13:00:00+00:00",
+  "rec": "DTSTART:20261125T120000Z\nRRULE:UNTIL=20261128T130000Z;FREQ=WEEKLY;INTERVAL=1;WKST=MO;BYDAY=WE,SA\nRDATE:20261126T000000Z",
+  "intero": false,
+  "citta": "Ferrara",
+  "via": "Centro Storico- Luoghi diversi",
+  "descr": "",
+  "prezzi": "",
+  "cat": "meetings_conferences"
+ },
+ "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/autori-al-km3": {
+  "modified": "2026-11-23T15:26:43+00:00",
+  "titolo": "Autori al km3",
+  "start": "2026-11-26T15:00:00+00:00",
+  "end": "2026-12-17T16:00:00+00:00",
+  "rec": "DTSTART:20261126T150000Z\nRRULE:UNTIL=20261217T160000Z;FREQ=WEEKLY;INTERVAL=1;BYDAY=TH",
+  "intero": false,
+  "citta": "Ferrara",
+  "via": "Città del Ragazzo Via Don Calabria 13",
+  "descr": "Rassegna letteraria al Km3 Bar Bistrò alla Città del Ragazzo",
+  "prezzi": "",
+  "cat": "meetings_conferences"
+ },
  "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/man-ray-il-maestro-del-surrealismo": {
-  "modified": "2026-11-16T09:34:37+00:00",
+  "modified": "2026-11-24T15:34:40+00:00",
   "titolo": "Nicola Samorì. Supremalia",
   "start": "2026-11-26T16:00:00+00:00",
   "end": "2026-11-26T18:00:00+00:00",
@@ -325,7 +364,7 @@
   "cat": "meetings_conferences"
  },
  "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/classica-dascolto": {
-  "modified": "2026-11-16T14:18:09+00:00",
+  "modified": "2026-11-23T16:05:03+00:00",
   "titolo": "Classica d'ascolto",
   "start": "2026-11-28T14:30:00+00:00",
   "end": "2027-04-11T15:00:00+00:00",
@@ -348,6 +387,19 @@
   "via": "Via Agatopisto, 2 c\\o Museo Delta Antico",
   "descr": "Lettura teatralizzata a cura di Shamira Benetti che indaga la storia e i misteri dell'Anima. ",
   "prezzi": " Ingresso gratuito, prenotazione obbligatoria ",
+  "cat": "meetings_conferences"
+ },
+ "https://www.ferrarainfo.com/it/vivi-gli-eventi/tutti-gli-eventi/incontri-e-conferenze/artalk-vanitas-tra-inquietudini-romantiche-e-suggestioni-simboliste": {
+  "modified": "2026-11-24T10:54:00+00:00",
+  "titolo": "ARTalk VANITAS | Tra inquietudini romantiche e suggestioni simboliste",
+  "start": "2026-12-04T17:30:00+00:00",
+  "end": "2026-12-04T19:30:00+00:00",
+  "rec": "",
+  "intero": false,
+  "citta": "Ferrara",
+  "via": "Palazzo Barbantini-Koch - Corso della Giovecca 108",
+  "descr": "Venerdì 4 dicembre, alle ore 18.30, il nuovo Polo Culturale di Ferrara di Palazzo Barbantini-Koch ospita un nuovo appuntamento di ARTalk dedicato a uno dei temi più affascinanti della storia dell'arte: la Vanitas",
+  "prezzi": " L’ingresso è gratuito, ma i posti sono limitati: è necessario registrare la propria presenza in anticipo al seguente  link&gt;&gt;  ",
   "cat": "meetings_conferences"
  },
  "https://www.ferrarainfo.com/it/pianifica-il-viaggio/visite-guidate/escursioni-comacchio/tra-natura-e-presepi-il-fascino-delle-valli-dinverno": {
