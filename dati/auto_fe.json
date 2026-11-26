@@ -1,5 +1,7 @@
 {
- "aggiunti": [],
+ "aggiunti": [
+  "2026-12-17 Folías Antiguas & Criollas – Teatro Comunale Claudio Abbado (Ferrara Musica)"
+ ],
  "link_biglietti": 0,
  "fonti": {
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
@@ -27,21 +29,21 @@
     "in_guida": 80,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 99
+    "secondi": 98
    },
    "Teatro Nuovo": {
     "sul_sito": 25,
-    "in_guida": 58,
+    "in_guida": 56,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 118
+    "secondi": 115
    },
    "Ferrara Musica": {
     "sul_sito": 22,
-    "in_guida": 80,
-    "aggiunti": 0,
+    "in_guida": 81,
+    "aggiunti": 1,
     "esito": "ok",
-    "secondi": 44
+    "secondi": 45
    },
    "Auditorium Pandurera": {
     "sul_sito": 14,
@@ -55,14 +57,14 @@
     "in_guida": 12,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 6
+    "secondi": 7
    }
   }
  },
  "errori": [
   "https://dice.fm/browse/ferrara: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-23T08:58",
- "eventi_totali": 177,
+ "data": "2026-11-26T06:08",
+ "eventi_totali": 178,
  "mostre_totali": 18
 }

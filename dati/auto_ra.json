@@ -1,19 +1,19 @@
 {
  "aggiunti": [
-  "mostra 2026-11-20→2026-12-08 ANIMA MUNDI. Design per una nuova alleanza – ISIA Faenza (arte.it)"
+  "mostra 2026-12-08→2027-01-17 Presepe di sabbia – Bagno Mèr Amor (turismo.ra.it)"
  ],
  "link_biglietti": 0,
  "fonti": {
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "portale turistico": {
-   "letti": 17,
-   "aggiunti": 0
+   "letti": 19,
+   "aggiunti": 1
   },
   "arte.it": {
    "letti": 4,
-   "aggiunti": 1,
+   "aggiunti": 0,
    "scartate": {
-    "già in guida": 2,
+    "già in guida": 3,
     "permanente o di anni": 1
    }
   },
@@ -23,7 +23,7 @@
     "in_guida": 6,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 4
+    "secondi": 5
    },
    "Mama's Club": {
     "sul_sito": 12,
@@ -37,14 +37,14 @@
     "in_guida": 10,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 84
+    "secondi": 104
    }
   }
  },
  "errori": [
   "https://dice.fm/browse/ravenna: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-23T08:53",
+ "data": "2026-11-26T06:03",
  "eventi_totali": 134,
- "mostre_totali": 17
+ "mostre_totali": 18
 }

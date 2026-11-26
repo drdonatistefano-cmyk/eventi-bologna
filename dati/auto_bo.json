@@ -1,35 +1,48 @@
 {
  "aggiunti": [
-  "mostra 2026-11-19→2027-01-10 Chiara Lecca. Garden of Èden – Museo d'Arte Lercaro (arte.it)",
-  "mostra 2026-11-06→2027-03-08 Luigi Serra (1846-1888). «Vorrei un’altra vita per imparare il colore». A 180 anni dalla nascita – Museo Ottocento Bologna (arte.it)"
+  "2026-11-30 DisuMana - Stand Up Comedy Open Mic – Mana Brew Pub (DICE)",
+  "2026-12-02 L'Open Mic del Laboratorio pt.1 – La Settima Luna (DICE)",
+  "2027-04-14 Pietro Sparacino \"LUCIDO\" Live – Mezz’aria Community Hub (DICE)",
+  "2026-12-05 Otra Noche en Bologna – Lab 16 (DICE)",
+  "2026-12-04 4 Years of Plug Radio – Baumhaus (DICE)",
+  "2026-12-31 31.12 — NEW YEAR’S EVE AT TANK – TANK serbatoio culturale (DICE)",
+  "mostra 2026-11-21→2026-11-29 Flavio Favelli. Cronaca italiana – Palazzo d’Accursio (arte.it)",
+  "mostra 2026-11-07→2027-01-10 Magnus. Eroi e no – Palazzo Fava (arte.it)",
+  "mostra 2026-12-05→2026-12-17 Maria Lo Presti – Marieart – Galleria Wikiarte",
+  "2027-02-22 Auroro: il Musical – Il Film (Live!) – Locomotiv Club (Locomotiv Club)",
+  "2027-03-26 High Fade – Locomotiv Club (Locomotiv Club)",
+  "2026-12-02 Manuel Boni Duo – Bravo Caffè (Bravo Caffè)",
+  "2026-12-08 Valentina Brandani Longo Trio – Bravo Caffè (Bravo Caffè)",
+  "2026-12-18 Party At Hogwarts – Estragon Club (Estragon Club)",
+  "2026-12-16 Una Notte al Museo – Auditorium Manzoni (Auditorium Manzoni)"
  ],
  "link_biglietti": 0,
  "fonti": {
   "DICE": {
-   "letti": 63,
-   "aggiunti": 0
+   "letti": 67,
+   "aggiunti": 6
   },
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "arte.it": {
-   "letti": 12,
+   "letti": 14,
    "aggiunti": 2,
    "scartate": {
-    "già in guida": 10
+    "già in guida": 12
    }
   },
   "wikiarte": {
    "letti": 2,
-   "aggiunti": 0,
+   "aggiunti": 1,
    "trovate": [
-    "2026-11-07→2026-11-19 FAHAD ALIYU E MAURO MARTIN",
-    "2026-11-21→2026-12-03 FEDERICA CHIARENTINI E GERMANO PONTEVICHI"
+    "2026-11-21→2026-12-03 FEDERICA CHIARENTINI E GERMANO PONTEVICHI",
+    "2026-12-05→2026-12-17 MARIA LO PRESTI – MARIEART"
    ]
   },
   "Locomotiv Club": {
    "letti": 112,
-   "aggiunti": 0,
+   "aggiunti": 2,
    "pagine_evento": 112,
-   "ultima_data": "2027-03-21"
+   "ultima_data": "2027-03-26"
   },
   "siti dei locali": {
    "Teatro Comunale Laura Betti": {
@@ -37,49 +50,49 @@
     "in_guida": 22,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 3
+    "secondi": 4
    },
    "Bravo Caffè": {
-    "sul_sito": 34,
-    "in_guida": 34,
-    "aggiunti": 0,
+    "sul_sito": 33,
+    "in_guida": 33,
+    "aggiunti": 2,
     "esito": "ok",
     "secondi": 4
    },
    "Auditorium Manzoni": {
     "sul_sito": 40,
-    "in_guida": 53,
+    "in_guida": 52,
     "aggiunti": 0,
     "esito": "ok",
     "secondi": 83
    },
    "Arena del Sole": {
     "sul_sito": 16,
-    "in_guida": 30,
+    "in_guida": 29,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 33
+    "secondi": 31
    },
    "Teatro Ebe Stignani": {
-    "sul_sito": 9,
+    "sul_sito": 8,
     "in_guida": 17,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 37
+    "secondi": 36
    },
    "Estragon Club": {
-    "sul_sito": 18,
-    "in_guida": 18,
-    "aggiunti": 0,
+    "sul_sito": 19,
+    "in_guida": 19,
+    "aggiunti": 1,
     "esito": "ok",
-    "secondi": 38
+    "secondi": 39
    },
    "Auditorium Manzoni (2)": {
-    "sul_sito": 17,
+    "sul_sito": 21,
     "in_guida": 53,
-    "aggiunti": 0,
+    "aggiunti": 1,
     "esito": "ok",
-    "secondi": 36
+    "secondi": 41
    },
    "Accademia Filarmonica": {
     "sul_sito": 2,
@@ -93,7 +106,7 @@
  "errori": [
   "https://www.locomotivclub.it/robots.txt: HTTP Error 404: Not Found"
  ],
- "data": "2026-11-23T08:36",
- "eventi_totali": 740,
- "mostre_totali": 24
+ "data": "2026-11-26T05:46",
+ "eventi_totali": 756,
+ "mostre_totali": 27
 }

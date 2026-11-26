@@ -1,20 +1,54 @@
 {
  "aggiunti": [
-  "mostra 2026-11-23→2027-03-06 Titina Maselli. Frammenti di realtà – Galleria M77 (arte.it)",
-  "mostra 2026-10-22→2027-01-25 Un Tiziano per Milano – Museo Poldi Pezzoli (arte.it)"
+  "2026-11-27 RIFUGIO CGM PARTY – Club Giovanile Milano (DICE)",
+  "2026-11-28 Alzaya x Serendeepity x Synergy at NAMA – NAMA (indoor) (DICE)",
+  "2026-11-29 Buonasera Cretinɜ | Millenials Optimism – Ostello Bello Milano Duomo (DICE)",
+  "2026-11-30 Dolori di circostanza, Luigi Gigliobianco, ANNODATI Comedy Night – NODO bar (DICE)",
+  "2026-11-30 English stand-up comedy by Delia – Ostello Bello Milano Duomo (DICE)",
+  "2026-12-01 mosso comedy – mosso (DICE)",
+  "2026-12-01 English stand-up comedy by Delia – Ostello Bello Milano Centrale (DICE)",
+  "2026-12-01 CANTERA | Stand-up Satira Lab – SALONE 14 @ Yellowsquare (DICE)",
+  "2026-12-02 PRESENTAZIONE DEL LIBRO \"POVERITIVO\" – Ostello Bello Milano Duomo (DICE)",
+  "2026-12-02 Stand-up Comedy – Cascina Nascosta (DICE)",
+  "2026-12-09 Pescato del Giorno XMAS EDITION | Comedy Show - primo turno – SALONE 14 @ Yellowsquare (DICE)",
+  "2026-12-05 DER TECHNO CLUB EXPERIENCE – Alcatraz (DICE)",
+  "2026-12-11 SHARE ME PARTY con Marketing Espresso | Karaoke Night – SALONE 14 @ Yellowsquare (DICE)",
+  "2026-12-12 THIS IS INDIE – BASE Milano (DICE)",
+  "2026-11-26 Blue Nights pres. ANDREA DOMINONI TRIO *live* – Bluesquare Milano (DICE)",
+  "2026-11-27 NEW RESONANCES | Musica contemporanea, elettronica – Alveare Culturale Studio Ets (DICE)",
+  "2026-11-27 \"KICK\" - Chris Laraffe LIVE + Dj Set – Spazio Lambrate (DICE)",
+  "2026-11-27 The Blues Ensemble // La Jam Blues – Bachelite cLab (DICE)",
+  "2026-11-27 Toni Zeno + Gentle T & Zeboh + Brattini – Biko (DICE)",
+  "2026-11-27 Jazz Night + Jam Session – Cascina Nascosta (DICE)",
+  "2026-11-27 Hi-Fi Weekends with MAGICA MOVIDA *Free Entry* – Bluesquare Milano (DICE)",
+  "2026-11-28 UNLOAD x NOKIA ANGEL – Q-HUB (DICE)",
+  "mostra 2026-11-26→2027-03-07 Correspondences. Soundwalk Collective & Patti Smith – Triennale Milano (arte.it)",
+  "mostra 2026-11-25→2027-03-21 Sandro Gorra. L’ultima goccia – Acquario Civico I Museo di Storia Naturale (arte.it)",
+  "mostra 2026-11-19→2027-02-19 Mario Carrieri. Il teatro della fotografia. Milano, Italia – Centro Culturale di Milano (arte.it)",
+  "2026-11-28 Pre Exams Xmas – Magazzini Generali (Magazzini Generali)",
+  "2027-04-09 Nilny – Magazzini Generali (Magazzini Generali)",
+  "2026-12-22 Boom Xmas School Party – Teatro Principe (Teatro Principe)",
+  "2026-12-08 Sace6 – Gate Milano (Gate Milano)",
+  "2026-12-19 Nameless ON Tour – Gate Milano (Gate Milano)",
+  "2026-12-25 Perreo XL presents BICHOTA – Gate Milano (Gate Milano)",
+  "2027-02-05 Aerea – Gate Milano (Gate Milano)",
+  "2027-03-24 Nesli – Santeria Toscana 31 (Santeria Toscana 31)",
+  "2026-11-30 Paolo Colombo – Teatro Carcano (Teatro Carcano)",
+  "2026-12-01 Viva V.e.r.d.i. – Teatro Carcano (Teatro Carcano)",
+  "2026-12-08 Tributo a Nanni Svampa – Ecoteatro (Ecoteatro)"
  ],
  "link_biglietti": 0,
  "fonti": {
   "DICE": {
-   "letti": 181,
-   "aggiunti": 0
+   "letti": 180,
+   "aggiunti": 22
   },
   "Ticketmaster": "manca la chiave TICKETMASTER_KEY",
   "arte.it": {
-   "letti": 53,
-   "aggiunti": 2,
+   "letti": 57,
+   "aggiunti": 3,
    "scartate": {
-    "già in guida": 43,
+    "già in guida": 46,
     "fuori perimetro": 2,
     "festival, non mostra": 1,
     "permanente o di anni": 5
@@ -23,15 +57,15 @@
   "siti dei locali": {
    "Magazzini Generali": {
     "sul_sito": 26,
-    "in_guida": 39,
-    "aggiunti": 0,
+    "in_guida": 38,
+    "aggiunti": 2,
     "esito": "ok",
-    "secondi": 8
+    "secondi": 13
    },
    "Teatro Principe": {
-    "sul_sito": 2,
-    "in_guida": 7,
-    "aggiunti": 0,
+    "sul_sito": 3,
+    "in_guida": 8,
+    "aggiunti": 1,
     "esito": "ok",
     "secondi": 3
    },
@@ -40,14 +74,14 @@
     "in_guida": 77,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 12
+    "secondi": 8
    },
    "Gate Milano": {
-    "sul_sito": 31,
-    "in_guida": 32,
-    "aggiunti": 0,
+    "sul_sito": 34,
+    "in_guida": 35,
+    "aggiunti": 4,
     "esito": "ok",
-    "secondi": 6
+    "secondi": 11
    },
    "Teatro Out Off": {
     "sul_sito": 9,
@@ -57,7 +91,7 @@
     "secondi": 3
    },
    "BASE Milano": {
-    "sul_sito": 2,
+    "sul_sito": 1,
     "in_guida": 7,
     "aggiunti": 0,
     "esito": "ok",
@@ -65,17 +99,17 @@
    },
    "Circolo Magnolia": {
     "sul_sito": 21,
-    "in_guida": 53,
+    "in_guida": 50,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 47
+    "secondi": 50
    },
    "Santeria Toscana 31": {
     "sul_sito": 13,
-    "in_guida": 32,
-    "aggiunti": 0,
+    "in_guida": 31,
+    "aggiunti": 1,
     "esito": "ok",
-    "secondi": 97
+    "secondi": 81
    },
    "Unipol Dome": {
     "sul_sito": 9,
@@ -86,24 +120,24 @@
    },
    "Teatro Elfo Puccini": {
     "sul_sito": 46,
-    "in_guida": 57,
+    "in_guida": 55,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 178
+    "secondi": 181
    },
    "Teatro Carcano": {
     "sul_sito": 5,
-    "in_guida": 21,
-    "aggiunti": 0,
+    "in_guida": 20,
+    "aggiunti": 2,
     "esito": "ok",
     "secondi": 14
    },
    "Ecoteatro": {
-    "sul_sito": 23,
-    "in_guida": 31,
-    "aggiunti": 0,
+    "sul_sito": 22,
+    "in_guida": 30,
+    "aggiunti": 1,
     "esito": "ok",
-    "secondi": 89
+    "secondi": 92
    },
    "Auditorium di Milano": {
     "sul_sito": 8,
@@ -113,30 +147,30 @@
     "secondi": 22
    },
    "Teatro Filodrammatici": {
-    "sul_sito": 26,
-    "in_guida": 26,
+    "sul_sito": 25,
+    "in_guida": 25,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 132
+    "secondi": 107
    },
    "Teatro della Cooperativa": {
     "sul_sito": 12,
     "in_guida": 12,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 40
+    "secondi": 39
    },
    "Teatro Gerolamo": {
     "sul_sito": 30,
     "in_guida": 29,
     "aggiunti": 0,
     "esito": "ok",
-    "secondi": 125
+    "secondi": 142
    }
   }
  },
  "errori": [],
- "data": "2026-11-23T08:51",
- "eventi_totali": 1224,
- "mostre_totali": 59
+ "data": "2026-11-26T06:00",
+ "eventi_totali": 1251,
+ "mostre_totali": 62
 }
