@@ -99,6 +99,12 @@ CSS = (":root{--bg:#f6efe4;--ink:#231d18;--mute:#6b6156;--line:#e8ddcc;--acc:#2f
        "footer{border-top:1px solid var(--line);margin-top:40px;padding:18px 0;font-size:14px;color:var(--mute)}footer a{color:var(--mute)}")
 
 
+def via_civico(ind):
+    """27/11/2026: «Via Cartoleria 42»; per i luoghi che non hanno numero civico (Largo Gustav Mahler dell'Auditorium di
+    Milano) solo la via, senza lo spazio vuoto prima della virgola."""
+    return " ".join(x for x in (ind.get("via", "").strip(), str(ind.get("civico") or "").strip()) if x)
+
+
 def pagina(k, ev, ind, altri, url):
     citta = ev.get("citta") or NOMI[k]
     titolo = f"{ev['artista']} a {citta}, {data_it(ev['data'])}"
@@ -108,7 +114,7 @@ def pagina(k, ev, ind, altri, url):
     descr = descr if len(descr) <= 160 else descr[:157].rsplit(" ", 1)[0] + "…"
     guida = f"{SITO}/{CARTELLE[k] + '/' if CARTELLE[k] else ''}?cerca={urllib.parse.quote(ev['artista'][:60])}"
     quando = data_it(ev["data"]) + (f" – {data_it(ev['fino'])}" if ev.get("fino") and ev["fino"] != ev["data"] else "")
-    indirizzo = f"{ind['via']} {ind['civico']}, {ind.get('cap', '')} {ind['comune']}".replace("  ", " ") if ind else ""
+    indirizzo = f"{via_civico(ind)}, {ind.get('cap', '')} {ind['comune']}".replace("  ", " ") if ind else ""
     # 24/11/2026: a Bologna il nome della città non è un link (porterebbe alla stessa pagina di «Ach's Events Guide», WebAbility 3.2.4)
     citta_bric = '<a href="/%s/">%s</a>' % (CARTELLE[k], e(NOMI[k])) if CARTELLE[k] else e(NOMI[k])
     corpo = [f'<p class="briciole"><a href="/">Ach\'s Events Guide</a> › {citta_bric} › {e(ev.get("genere") or "Spettacoli")}</p>',
@@ -139,7 +145,7 @@ def pagina(k, ev, ind, altri, url):
         ld = {"@context": "https://schema.org", "@type": "Event", "name": ev["artista"], "startDate": inizio(ev),
               "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
               "location": {"@type": "Place", "name": ev.get("luogo"),
-                           "address": {"@type": "PostalAddress", "streetAddress": f"{ind['via']} {ind['civico']}",
+                           "address": {"@type": "PostalAddress", "streetAddress": via_civico(ind),
                                        "addressLocality": ind["comune"], "postalCode": ind.get("cap") or None, "addressCountry": "IT"}},
               "description": ev.get("descrizione") or None, "url": url}
         if ev.get("fino") and ev["fino"] != ev["data"]:
