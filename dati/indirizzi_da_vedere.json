@@ -2,21 +2,7 @@
  {
   "luogo": "Teatro Comunale Laura Betti",
   "citta": "Casalecchio di Reno",
-  "eventi": 23,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "ZolAuditorium",
-  "citta": "Zola Predosa",
-  "eventi": 14,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Teatro Comunale di Castiglione dei Pepoli",
-  "citta": "Castiglione dei Pepoli",
-  "eventi": 13,
+  "eventi": 22,
   "citta_guida": "bo",
   "candidati": []
  },
@@ -35,37 +21,16 @@
   ]
  },
  {
-  "luogo": "Teatro Spazio Reno",
-  "citta": "Calderara di Reno",
-  "eventi": 11,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Spazio Reno",
-    "indirizzo": "senza via e numero",
-    "osm": "node/2661914449"
-   }
-  ]
- },
- {
-  "luogo": "Teatro San Leonardo",
-  "citta": "Bologna",
-  "eventi": 9,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Teatro Comunale Cassero",
-  "citta": "Castel San Pietro Terme",
-  "eventi": 8,
+  "luogo": "Teatro Comunale di Castiglione dei Pepoli",
+  "citta": "Castiglione dei Pepoli",
+  "eventi": 12,
   "citta_guida": "bo",
   "candidati": []
  },
  {
   "luogo": "Teatro Comunale",
   "citta": "Bologna",
-  "eventi": 8,
+  "eventi": 9,
   "citta_guida": "bo",
   "candidati": [
    {
@@ -89,24 +54,25 @@
   ]
  },
  {
-  "luogo": "Teatro Testoni",
+  "luogo": "Teatro San Leonardo",
   "citta": "Bologna",
-  "eventi": 7,
+  "eventi": 8,
   "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 0.972,
-    "nome": "Testoni Ragazzi",
-    "indirizzo": "Via Giacomo Matteotti 16, Bologna",
-    "osm": "node/1623615533"
-   },
-   {
-    "punteggio": 0.942,
-    "nome": "Biblioteca Universitaria Giuseppe Testoni del Dipartimento di Scienze Aziendali",
-    "indirizzo": "Piazza Antonino Scaravilli 1, Bologna",
-    "osm": "node/9781360643"
-   }
-  ]
+  "candidati": []
+ },
+ {
+  "luogo": "Teatro Comunale Cassero",
+  "citta": "Castel San Pietro Terme",
+  "eventi": 8,
+  "citta_guida": "bo",
+  "candidati": []
+ },
+ {
+  "luogo": "Teatro Comunale – Foyer Rossini",
+  "citta": "Bologna",
+  "eventi": 8,
+  "citta_guida": "bo",
+  "candidati": []
  },
  {
   "luogo": "Teatro Biagi D'Antona",
@@ -129,41 +95,6 @@
   ]
  },
  {
-  "luogo": "Baumhaus",
-  "citta": "Bologna",
-  "eventi": 5,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Baumhaus",
-    "indirizzo": "senza via e numero",
-    "osm": "node/13570998867"
-   }
-  ]
- },
- {
-  "luogo": "Teatro Comunale – Foyer Rossini",
-  "citta": "Bologna",
-  "eventi": 5,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Stadio Renato Dall'Ara",
-  "citta": "Bologna",
-  "eventi": 5,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Stadio Renato Dall'Ara",
-    "indirizzo": "senza via e numero",
-    "osm": "way/823094953"
-   }
-  ]
- },
- {
   "luogo": "Sequoie Music Park - Parco Caserme Rosse",
   "citta": "Bologna",
   "eventi": 5,
@@ -171,11 +102,18 @@
   "candidati": []
  },
  {
-  "luogo": "Camera Jazz & Music Club",
+  "luogo": "Teatro delle Moline",
   "citta": "Bologna",
   "eventi": 4,
   "citta_guida": "bo",
-  "candidati": []
+  "candidati": [
+   {
+    "punteggio": 1.0,
+    "nome": "Teatro delle Moline",
+    "indirizzo": "senza via e numero",
+    "osm": "node/4708352692"
+   }
+  ]
  },
  {
   "luogo": "Teatro La Casa del Popolo",
@@ -185,9 +123,23 @@
   "candidati": []
  },
  {
+  "luogo": "Teatro Comunale di Argelato",
+  "citta": "Argelato",
+  "eventi": 3,
+  "citta_guida": "bo",
+  "candidati": []
+ },
+ {
+  "luogo": "Camera Jazz & Music Club",
+  "citta": "Bologna",
+  "eventi": 2,
+  "citta_guida": "bo",
+  "candidati": []
+ },
+ {
   "luogo": "Teatri di Vita",
   "citta": "Bologna",
-  "eventi": 3,
+  "eventi": 2,
   "citta_guida": "bo",
   "candidati": [
    {
@@ -201,180 +153,19 @@
  {
   "luogo": "Accademia del Teatro Comunale",
   "citta": "Bologna",
-  "eventi": 3,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Teatro Alice Zeppilli",
-  "citta": "Pieve di Cento",
-  "eventi": 3,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 0.974,
-    "nome": "Teatro comunale Alice Zeppilli",
-    "indirizzo": "senza via e numero",
-    "osm": "node/441130619"
-   }
-  ]
- },
- {
-  "luogo": "Teatro Comunale di Argelato",
-  "citta": "Argelato",
-  "eventi": 3,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "ITC Teatro",
-  "citta": "San Lazzaro di Savena",
-  "eventi": 3,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "ITC Teatro",
-    "indirizzo": "senza via e numero",
-    "osm": "way/150829773"
-   }
-  ]
- },
- {
-  "luogo": "DumBO",
-  "citta": "Bologna",
   "eventi": 2,
   "citta_guida": "bo",
   "candidati": []
  },
  {
-  "luogo": "ATELIERsì",
-  "citta": "Bologna",
-  "eventi": 2,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Palazzo Pepoli",
-  "citta": "Bologna",
-  "eventi": 2,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Teatro delle Moline",
-  "citta": "Bologna",
-  "eventi": 2,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro delle Moline",
-    "indirizzo": "senza via e numero",
-    "osm": "node/4708352692"
-   }
-  ]
- },
- {
-  "luogo": "ExDynamo",
-  "citta": "Bologna",
-  "eventi": 2,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "DAMSLab",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "SpazioLoft54",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "serra madre",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Chiesa di Santa Cristina della Fondazza",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Sala Giulietta Masina",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Museo della musica (Strada Maggiore 34)",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Chiesa dei Santi Bartolomeo e Gaetano",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Chiesa dei Santi Bartolomeo e Gaetano",
-    "indirizzo": "senza via e numero",
-    "osm": "way/148889161"
-   }
-  ]
- },
- {
-  "luogo": "Rocca di Dozza",
-  "citta": "Dozza",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Sala Prof. Marco Biagi (via Santo Stefano 119)",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "BURGEZ Bologna San Lazzaro",
-  "citta": "San Lazzaro di Savena",
+  "luogo": "Teatro Comunale di San Giovanni in Persiceto",
+  "citta": "San Giovanni in Persiceto",
   "eventi": 1,
   "citta_guida": "bo",
   "candidati": []
  },
  {
   "luogo": "OfficinAcrobatica",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Chiesa di Santa Maria della Pietà",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "La Cava delle Arti (via Cavazzoni 2/G)",
   "citta": "Bologna",
   "eventi": 1,
   "citta_guida": "bo",
@@ -388,13 +179,6 @@
   "candidati": []
  },
  {
-  "luogo": "Palazzo Carrati (Accademia Filarmonica)",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
   "luogo": "Accademia Filarmonica",
   "citta": "Bologna",
   "eventi": 1,
@@ -402,7 +186,7 @@
   "candidati": []
  },
  {
-  "luogo": "Circolo lirico bolognese (via Calari 4/2)",
+  "luogo": "Palazzo Pepoli",
   "citta": "Bologna",
   "eventi": 1,
   "citta_guida": "bo",
@@ -484,60 +268,11 @@
   "candidati": []
  },
  {
-  "luogo": "Gate Milano",
-  "citta": "Milano",
-  "eventi": 32,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
   "luogo": "Teatro Nazionale Italiana Assicurazioni",
   "citta": "Milano",
-  "eventi": 27,
+  "eventi": 30,
   "citta_guida": "mi",
   "candidati": []
- },
- {
-  "luogo": "Spazio Teatro 89",
-  "citta": "Milano",
-  "eventi": 18,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Spazio Teatro 89",
-    "indirizzo": "senza via e numero",
-    "osm": "node/9386578405"
-   }
-  ]
- },
- {
-  "luogo": "Teatro Repower",
-  "citta": "Milano",
-  "eventi": 13,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Repower",
-    "indirizzo": "senza via e numero",
-    "osm": "way/61071939"
-   }
-  ]
- },
- {
-  "luogo": "Stadio San Siro",
-  "citta": "Milano",
-  "eventi": 13,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.022,
-    "nome": "Stadio San Siro Milano",
-    "indirizzo": "senza via e numero",
-    "osm": "way/1389243680"
-   }
-  ]
  },
  {
   "luogo": "Teatro della Cooperativa",
@@ -554,9 +289,30 @@
   ]
  },
  {
+  "luogo": "Stadio San Siro",
+  "citta": "Milano",
+  "eventi": 12,
+  "citta_guida": "mi",
+  "candidati": [
+   {
+    "punteggio": 1.022,
+    "nome": "Stadio San Siro Milano",
+    "indirizzo": "senza via e numero",
+    "osm": "way/1389243680"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Out Off",
+  "citta": "Milano",
+  "eventi": 10,
+  "citta_guida": "mi",
+  "candidati": []
+ },
+ {
   "luogo": "Auditorium di Milano",
   "citta": "Milano",
-  "eventi": 11,
+  "eventi": 10,
   "citta_guida": "mi",
   "candidati": [
    {
@@ -580,65 +336,9 @@
   ]
  },
  {
-  "luogo": "Teatro Out Off",
+  "luogo": "Blue Note Milano",
   "citta": "Milano",
-  "eventi": 11,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Teatro Principe",
-  "citta": "Milano",
-  "eventi": 7,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Fabbrica del Vapore",
-  "citta": "Milano",
-  "eventi": 6,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 0.989,
-    "nome": "La Fabbrica del Vapore",
-    "indirizzo": "senza via e numero",
-    "osm": "way/357794273"
-   }
-  ]
- },
- {
-  "luogo": "Teatro Repower",
-  "citta": "Assago",
-  "eventi": 6,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Repower",
-    "indirizzo": "senza via e numero",
-    "osm": "way/61071939"
-   }
-  ]
- },
- {
-  "luogo": "Teatro Franco Parenti",
-  "citta": "Milano",
-  "eventi": 5,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Franco Parenti",
-    "indirizzo": "senza via e numero",
-    "osm": "node/2065222330"
-   }
-  ]
- },
- {
-  "luogo": "SALONE 14 @ Yellowsquare",
-  "citta": "Milano",
-  "eventi": 5,
+  "eventi": 9,
   "citta_guida": "mi",
   "candidati": []
  },
@@ -664,99 +364,23 @@
   ]
  },
  {
-  "luogo": "Q-HUB",
+  "luogo": "Fabbrica del Vapore",
   "citta": "Milano",
   "eventi": 4,
   "citta_guida": "mi",
   "candidati": [
    {
-    "punteggio": 0.962,
-    "nome": "HUB",
-    "indirizzo": " , ",
-    "osm": "node/14189572752"
-   },
-   {
-    "punteggio": 0.93,
-    "nome": "Cake l’HUB",
-    "indirizzo": "Via Luigi Mengoni 3, ",
-    "osm": "node/5540802921"
+    "punteggio": 0.989,
+    "nome": "La Fabbrica del Vapore",
+    "indirizzo": "senza via e numero",
+    "osm": "way/357794273"
    }
   ]
- },
- {
-  "luogo": "Station Live Club",
-  "citta": "Paderno Dugnano",
-  "eventi": 4,
-  "citta_guida": "mi",
-  "candidati": []
  },
  {
   "luogo": "Fiera Milano Live",
   "citta": "Rho",
   "eventi": 4,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Alveare Culturale Studio Ets",
-  "citta": "Milano",
-  "eventi": 3,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Cinema Teatro Wagner",
-  "citta": "Milano",
-  "eventi": 3,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Bluesquare Milano",
-  "citta": "Milano",
-  "eventi": 3,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "APOLLO CLUB MILANO",
-  "citta": "Milano",
-  "eventi": 3,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "NAMA (indoor)",
-  "citta": "Milano",
-  "eventi": 3,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Duro",
-  "citta": "Milano",
-  "eventi": 3,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Ostello Bello Milano Duomo",
-  "citta": "Milano",
-  "eventi": 3,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "PimOff",
-  "citta": "Milano",
-  "eventi": 3,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Blue Note Milano",
-  "citta": "Milano",
-  "eventi": 3,
   "citta_guida": "mi",
   "candidati": []
  },
@@ -782,151 +406,18 @@
   ]
  },
  {
-  "luogo": "NODO bar",
+  "luogo": "NAMA (indoor)",
   "citta": "Milano",
   "eventi": 2,
   "citta_guida": "mi",
   "candidati": []
  },
  {
-  "luogo": "Ostello Bello Milano Centrale",
+  "luogo": "PimOff",
   "citta": "Milano",
   "eventi": 2,
   "citta_guida": "mi",
   "candidati": []
- },
- {
-  "luogo": "mare culturale urbano - cascina torrette",
-  "citta": "Milano",
-  "eventi": 2,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Club Giovanile Milano",
-  "citta": "Milano",
-  "eventi": 2,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "ARCA",
-  "citta": "Milano",
-  "eventi": 2,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.02,
-    "nome": "l'Arca",
-    "indirizzo": "Via Carlo Osma 5, Milano",
-    "osm": "node/651860101"
-   },
-   {
-    "punteggio": 1.0,
-    "nome": "Lab Arca",
-    "indirizzo": "Via Marco d'Oggiono 1an07, Milano",
-    "osm": "node/9790406283"
-   },
-   {
-    "punteggio": 1.0,
-    "nome": "Bar Arca",
-    "indirizzo": "Via Rimini 38, Milano",
-    "osm": "node/12875290990"
-   }
-  ]
- },
- {
-  "luogo": "Tunnel Club",
-  "citta": "Milano",
-  "eventi": 2,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Tunnel Club",
-    "indirizzo": "senza via e numero",
-    "osm": "node/5728779222"
-   }
-  ]
- },
- {
-  "luogo": "Studionotte",
-  "citta": "Milano",
-  "eventi": 2,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Circolo Agorà",
-  "citta": "Cusano Milanino",
-  "eventi": 2,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 0.95,
-    "nome": "Cine Teatro Agorà",
-    "indirizzo": " , ",
-    "osm": "node/445325846"
-   },
-   {
-    "punteggio": 0.944,
-    "nome": "Centro Civico Agorà",
-    "indirizzo": " , ",
-    "osm": "way/993633156"
-   },
-   {
-    "punteggio": 0.933,
-    "nome": "Agorà",
-    "indirizzo": "Via Giampietrino 21, ",
-    "osm": "node/4472738198"
-   }
-  ]
- },
- {
-  "luogo": "Chiesa dei Santi Gervaso & Protaso",
-  "citta": "Milano",
-  "eventi": 2,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 0.995,
-    "nome": "Chiesa dei Santi Gervaso e Protaso",
-    "indirizzo": " , ",
-    "osm": "way/915102666"
-   },
-   {
-    "punteggio": 0.972,
-    "nome": "Chiesa parrocchiale dei Santi Gervaso e Protaso",
-    "indirizzo": " , ",
-    "osm": "way/398892600"
-   },
-   {
-    "punteggio": 0.967,
-    "nome": "Chiesa dei Santi Gervaso e Protaso in Romano Banco",
-    "indirizzo": " , ",
-    "osm": "way/399719641"
-   }
-  ]
- },
- {
-  "luogo": "Auditorium San Fedele",
-  "citta": "Milano",
-  "eventi": 2,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Auditorium San Fedele",
-    "indirizzo": " , ",
-    "osm": "node/442587179"
-   },
-   {
-    "punteggio": 0.952,
-    "nome": "Chiesa di San Fedele",
-    "indirizzo": " , ",
-    "osm": "way/23227442"
-   }
-  ]
  },
  {
   "luogo": "Teatro della Quattordicesima",
@@ -934,20 +425,6 @@
   "eventi": 2,
   "citta_guida": "mi",
   "candidati": []
- },
- {
-  "luogo": "Teatro Martinitt",
-  "citta": "Milano",
-  "eventi": 2,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Martinitt",
-    "indirizzo": "senza via e numero",
-    "osm": "node/4056006505"
-   }
-  ]
  },
  {
   "luogo": "Parco della Musica di Milano",
@@ -971,131 +448,7 @@
   ]
  },
  {
-  "luogo": "Il Sistina Chapiteau",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Lento",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "StrafBAR",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Club House",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.011,
-    "nome": "Muu House",
-    "indirizzo": "Via Alfredo Cappellini , Milano",
-    "osm": "node/9074527200"
-   },
-   {
-    "punteggio": 1.005,
-    "nome": "Beda House",
-    "indirizzo": "Via Gioacchino Murat 2, Milano",
-    "osm": "node/4985229451"
-   },
-   {
-    "punteggio": 0.995,
-    "nome": "Golden House",
-    "indirizzo": "Corso di Porta Ticinese 106, Milano",
-    "osm": "node/2529853660"
-   }
-  ]
- },
- {
-  "luogo": "Homis - Record Store Bar",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "21 House of Stories Navigli",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "GIPSY",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Bachelite cLab",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Germi-luogo Di Contaminazione",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Centro de Incubazione Artistica & Culturale",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "AiMi Club Milano",
-  "citta": "Segrate",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "LUME",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Sam - Sampling Moods",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Armani / Silos",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Teatro del Borgo Milano TdB",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "La Birrofila Brewpub",
+  "luogo": "Exalge",
   "citta": "Milano",
   "eventi": 1,
   "citta_guida": "mi",
@@ -1128,13 +481,6 @@
   ]
  },
  {
-  "luogo": "Q Club",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
   "luogo": "Chiesa Sant Angelo",
   "citta": "Milano",
   "eventi": 1,
@@ -1155,46 +501,6 @@
   ]
  },
  {
-  "luogo": "10 Gradi Nord",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Spazio Pontano",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Chiesa dei Santi Gervaso e Protaso",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Chiesa dei Santi Gervaso e Protaso",
-    "indirizzo": " , ",
-    "osm": "way/915102666"
-   },
-   {
-    "punteggio": 0.976,
-    "nome": "Chiesa parrocchiale dei Santi Gervaso e Protaso",
-    "indirizzo": " , ",
-    "osm": "way/398892600"
-   },
-   {
-    "punteggio": 0.971,
-    "nome": "Chiesa dei Santi Gervaso e Protaso in Romano Banco",
-    "indirizzo": " , ",
-    "osm": "way/399719641"
-   }
-  ]
- },
- {
   "luogo": "Teatro dell'Arte – Triennale",
   "citta": "Milano",
   "eventi": 1,
@@ -1202,46 +508,18 @@
   "candidati": []
  },
  {
-  "luogo": "DEPARTMENT 184",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Labrutepoque",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Tempio Civico di San Sebastiano",
+  "luogo": "Circolo Anarchico Ponte della Ghisolfa",
   "citta": "Milano",
   "eventi": 1,
   "citta_guida": "mi",
   "candidati": [
    {
-    "punteggio": 0.966,
-    "nome": "Civico Tempio di San Sebastiano",
+    "punteggio": 1.0,
+    "nome": "Circolo anarchico Ponte della Ghisolfa",
     "indirizzo": "senza via e numero",
-    "osm": "way/45672228"
+    "osm": "way/407179912"
    }
   ]
- },
- {
-  "luogo": "Villa Venino",
-  "citta": "Novate Milanese",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Gemma Club",
-  "citta": "Sesto San Giovanni",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
  },
  {
   "luogo": "MTM - Teatro Leonardo Da Vinci",
@@ -1251,20 +529,6 @@
   "candidati": []
  },
  {
-  "luogo": "Sala Argentia Cinema Teatro",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 0.933,
-    "nome": "Cinema Sala Argentia",
-    "indirizzo": "senza via e numero",
-    "osm": "node/544451639"
-   }
-  ]
- },
- {
   "luogo": "Teatro Guanella",
   "citta": "Milano",
   "eventi": 1,
@@ -1272,24 +536,11 @@
   "candidati": []
  },
  {
-  "luogo": "Sala Argentia",
+  "luogo": "MTM - Teatro Leonardo",
   "citta": "Milano",
   "eventi": 1,
   "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 0.968,
-    "nome": "Cinema Sala Argentia",
-    "indirizzo": " , ",
-    "osm": "node/544451639"
-   },
-   {
-    "punteggio": 0.938,
-    "nome": "US Argentia Pallavolo",
-    "indirizzo": " , ",
-    "osm": "way/168849420"
-   }
-  ]
+  "candidati": []
  },
  {
   "luogo": "CineTeatro Stella",
@@ -1297,26 +548,6 @@
   "eventi": 1,
   "citta_guida": "mi",
   "candidati": []
- },
- {
-  "luogo": "Aula Magna",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 0.933,
-    "nome": "Aula magna Carassa e Dadda",
-    "indirizzo": " , ",
-    "osm": "node/5738939735"
-   },
-   {
-    "punteggio": 0.929,
-    "nome": "Aula Magna \"Luigi Mangiagalli\"",
-    "indirizzo": "Via Festa del Perdono 7, ",
-    "osm": "way/1317124535"
-   }
-  ]
  },
  {
   "luogo": "Auditorium",
@@ -1362,7 +593,7 @@
  {
   "luogo": "Bronson",
   "citta": "Ravenna",
-  "eventi": 15,
+  "eventi": 14,
   "citta_guida": "ra",
   "candidati": [
    {
@@ -1374,9 +605,88 @@
   ]
  },
  {
+  "luogo": "Teatro San Giuseppe",
+  "citta": "Faenza",
+  "eventi": 13,
+  "citta_guida": "ra",
+  "candidati": [
+   {
+    "punteggio": 0.966,
+    "nome": "San Giuseppe",
+    "indirizzo": " , ",
+    "osm": "way/158764430"
+   },
+   {
+    "punteggio": 0.96,
+    "nome": "Chiesa di San Giuseppe Artigiano",
+    "indirizzo": " , ",
+    "osm": "way/203377737"
+   },
+   {
+    "punteggio": 0.948,
+    "nome": "Chiesa San Giuseppe Operaio",
+    "indirizzo": " , ",
+    "osm": "way/1472985051"
+   }
+  ]
+ },
+ {
   "luogo": "Mama's Club",
   "citta": "Ravenna",
-  "eventi": 14,
+  "eventi": 12,
+  "citta_guida": "ra",
+  "candidati": []
+ },
+ {
+  "luogo": "Casa del Teatro",
+  "citta": "Faenza",
+  "eventi": 5,
+  "citta_guida": "ra",
+  "candidati": [
+   {
+    "punteggio": 0.946,
+    "nome": "Biblioteca della Casa Editrice Faenza",
+    "indirizzo": "Via De Crescenzi 44, Faenza",
+    "osm": "node/6544362104"
+   },
+   {
+    "punteggio": 0.902,
+    "nome": "Base scout Casa Olmatelli",
+    "indirizzo": " , ",
+    "osm": "way/1330202852"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Sarti",
+  "citta": "Faenza",
+  "eventi": 4,
+  "citta_guida": "ra",
+  "candidati": [
+   {
+    "punteggio": 0.95,
+    "nome": "Cinema Sarti",
+    "indirizzo": "Via Venti Settembre 98/a, ",
+    "osm": "node/667881374"
+   },
+   {
+    "punteggio": 0.938,
+    "nome": "Sarti",
+    "indirizzo": " , ",
+    "osm": "node/2313747051"
+   },
+   {
+    "punteggio": 0.893,
+    "nome": "Biblioteca della Scuola Comunale di Musica Giuseppe Sarti",
+    "indirizzo": " , ",
+    "osm": "node/14249319771"
+   }
+  ]
+ },
+ {
+  "luogo": "Teatro Veritas",
+  "citta": "Faenza",
+  "eventi": 3,
   "citta_guida": "ra",
   "candidati": []
  },
@@ -1388,23 +698,23 @@
   "candidati": []
  },
  {
-  "luogo": "Teatro De Micheli",
-  "citta": "Copparo",
-  "eventi": 13,
-  "citta_guida": "fe",
+  "luogo": "Duomo di Faenza",
+  "citta": "Faenza",
+  "eventi": 1,
+  "citta_guida": "ra",
   "candidati": [
    {
-    "punteggio": 0.969,
-    "nome": "Teatro Comunale De Micheli",
+    "punteggio": 1.0,
+    "nome": "Cattedrale di San Pietro Apostolo",
     "indirizzo": "senza via e numero",
-    "osm": "node/11917831212"
+    "osm": "way/151920334"
    }
   ]
  },
  {
   "luogo": "Auditorium Pandurera",
   "citta": "Cento",
-  "eventi": 8,
+  "eventi": 14,
   "citta_guida": "fe",
   "candidati": [
    {
@@ -1416,7 +726,35 @@
   ]
  },
  {
+  "luogo": "Teatro De Micheli",
+  "citta": "Copparo",
+  "eventi": 12,
+  "citta_guida": "fe",
+  "candidati": [
+   {
+    "punteggio": 0.969,
+    "nome": "Teatro Comunale De Micheli",
+    "indirizzo": "senza via e numero",
+    "osm": "node/11917831212"
+   }
+  ]
+ },
+ {
   "luogo": "Ferrara Fiere e Congressi",
+  "citta": "Ferrara",
+  "eventi": 1,
+  "citta_guida": "fe",
+  "candidati": []
+ },
+ {
+  "luogo": "Spazio Antonioni",
+  "citta": "Ferrara",
+  "eventi": 1,
+  "citta_guida": "fe",
+  "candidati": []
+ },
+ {
+  "luogo": "Palazzo Schifanoia",
   "citta": "Ferrara",
   "eventi": 1,
   "citta_guida": "fe",
