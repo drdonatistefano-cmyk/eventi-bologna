@@ -1,26 +1,5 @@
 [
  {
-  "luogo": "Camera Jazz & Music Club",
-  "citta": "Bologna",
-  "eventi": 2,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Teatro Comunale di San Giovanni in Persiceto",
-  "citta": "San Giovanni in Persiceto",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "OfficinAcrobatica",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
   "luogo": "Porretta Terme (sedi varie)",
   "citta": "Alto Reno Terme",
   "eventi": 1,
@@ -28,36 +7,8 @@
   "candidati": []
  },
  {
-  "luogo": "Accademia Filarmonica",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Palazzo Pepoli",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
   "luogo": "da definire",
   "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Piazza Maggiore",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Villa Smeraldi",
-  "citta": "Bentivoglio",
   "eventi": 1,
   "citta_guida": "bo",
   "candidati": []
@@ -89,88 +40,11 @@
   ]
  },
  {
-  "luogo": "Biblioteca Giovanna Zangrandi",
-  "citta": "Galliera",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 0.98,
-    "nome": "Biblioteca Comunale \"Giovanna Zangrandi\"",
-    "indirizzo": "senza via e numero",
-    "osm": "node/1655794720"
-   }
-  ]
- },
- {
-  "luogo": "Sala Giulietta Masina",
-  "citta": "San Giorgio di Piano",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Chiesa di San Vincenzo in Prato",
-  "citta": "Milano",
-  "eventi": 3,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Basilica di San Vittore al Corpo",
-  "citta": "Milano",
-  "eventi": 3,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Basilica di San Vittore al Corpo",
-    "indirizzo": "senza via e numero",
-    "osm": "way/45420079"
-   }
-  ]
- },
- {
-  "luogo": "NAMA (indoor)",
-  "citta": "Milano",
-  "eventi": 2,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "PimOff",
-  "citta": "Milano",
-  "eventi": 2,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Teatro della Quattordicesima",
-  "citta": "Milano",
-  "eventi": 2,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
   "luogo": "Parco della Musica di Milano",
   "citta": "Segrate",
   "eventi": 2,
   "citta_guida": "mi",
   "candidati": []
- },
- {
-  "luogo": "Atelier Carlo Colla & Figli",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Atelier Carlo Colla & Figli",
-    "indirizzo": "senza via e numero",
-    "osm": "node/13296917816"
-   }
-  ]
  },
  {
   "luogo": "Exalge",
@@ -204,75 +78,6 @@
     "osm": "node/8930864270"
    }
   ]
- },
- {
-  "luogo": "Chiesa Sant Angelo",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 0.988,
-    "nome": "Chiesa di Sant'Angelo",
-    "indirizzo": " , ",
-    "osm": "way/406574184"
-   },
-   {
-    "punteggio": 0.954,
-    "nome": "Chiesa parrocchiale di Sant’Angelo",
-    "indirizzo": " , ",
-    "osm": "way/329568750"
-   }
-  ]
- },
- {
-  "luogo": "Teatro dell'Arte – Triennale",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Circolo Anarchico Ponte della Ghisolfa",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Circolo anarchico Ponte della Ghisolfa",
-    "indirizzo": "senza via e numero",
-    "osm": "way/407179912"
-   }
-  ]
- },
- {
-  "luogo": "MTM - Teatro Leonardo Da Vinci",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Teatro Guanella",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "MTM - Teatro Leonardo",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Auditorium",
-  "citta": "Settala",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
  },
  {
   "luogo": "Auditorium",
@@ -309,13 +114,6 @@
   "candidati": []
  },
  {
-  "luogo": "Teatro Veritas",
-  "citta": "Faenza",
-  "eventi": 3,
-  "citta_guida": "ra",
-  "candidati": []
- },
- {
   "luogo": "Duomo di Faenza",
   "citta": "Faenza",
   "eventi": 1,
@@ -328,26 +126,5 @@
     "osm": "way/151920334"
    }
   ]
- },
- {
-  "luogo": "Ferrara Fiere e Congressi",
-  "citta": "Ferrara",
-  "eventi": 1,
-  "citta_guida": "fe",
-  "candidati": []
- },
- {
-  "luogo": "Spazio Antonioni",
-  "citta": "Ferrara",
-  "eventi": 1,
-  "citta_guida": "fe",
-  "candidati": []
- },
- {
-  "luogo": "Palazzo Schifanoia",
-  "citta": "Ferrara",
-  "eventi": 1,
-  "citta_guida": "fe",
-  "candidati": []
  }
 ]

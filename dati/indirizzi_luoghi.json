@@ -25,6 +25,13 @@
   "punteggio": 1.05,
   "fonte": "OpenStreetMap"
  },
+ "Accademia Filarmonica|Bologna": {
+  "via": "Via Guerrazzi",
+  "civico": "13",
+  "cap": "40125",
+  "comune": "Bologna",
+  "fonte": "Bologna Welcome e italia.it (Sala Mozart, Palazzo Carrati); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
  "Accademia del Teatro Comunale|Bologna": {
   "via": "Via Guglielmo Oberdan",
   "civico": "24",
@@ -96,6 +103,13 @@
   "comune": "Bologna",
   "fonte": "Bologna Welcome; cercato con WebSearch dalla chat di coordinamento il 18/11/2026"
  },
+ "Atelier Carlo Colla & Figli|Milano": {
+  "via": "Via Lodovico Montegani",
+  "civico": "35",
+  "cap": "20141",
+  "comune": "Milano",
+  "fonte": "Zero; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
  "Auditorium Manzoni|Bologna": {
   "via": "Via de' Monari",
   "civico": "2",
@@ -128,6 +142,13 @@
   "cap": "20136",
   "comune": "Milano",
   "fonte": "TicketOne, Bachtrack e Orchestra Sinfonica di Milano: il luogo non ha numero civico; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Auditorium|Settala": {
+  "via": "Largo Gustav Mahler",
+  "civico": "",
+  "cap": "20136",
+  "comune": "Milano",
+  "fonte": "pagina dell'evento letta con Scrape il 27/11/2026 (contatti/letture/2026-11-27-events-indirizzi-e.md): Songkick scrive «Settala» ma l'indirizzo del luogo è quello dell'Auditorium di Milano"
  },
  "Aula Magna|Milano": {
   "via": "Via Röntgen",
@@ -162,12 +183,26 @@
   "comune": "Milano",
   "fonte": "pagina DICE dell'evento (dati strutturati del luogo), letta con Scrape il 27/11/2026"
  },
+ "Basilica di San Vittore al Corpo|Milano": {
+  "via": "Via San Vittore",
+  "civico": "25",
+  "cap": "20122",
+  "comune": "Milano",
+  "fonte": "pagina dell'evento letta con Scrape il 27/11/2026 (contatti/letture/2026-11-27-events-indirizzi-e.md) (Songkick)"
+ },
  "Baumhaus|Bologna": {
   "via": "Via Iacopo Barozzi",
   "civico": "3/P",
   "cap": "40128",
   "comune": "Bologna",
   "fonte": "pagina DICE dell'evento (dati strutturati del luogo), letta con Scrape il 27/11/2026"
+ },
+ "Biblioteca Giovanna Zangrandi|Galliera": {
+  "via": "Via della Pace",
+  "civico": "2",
+  "cap": "40015",
+  "comune": "Galliera",
+  "fonte": "programma ufficiale della stagione Agorà e catalogo delle biblioteche (San Venanzio di Galliera); cercato con WebSearch dalla chat Events il 27/11/2026"
  },
  "Biko|Milano": {
   "via": "Via Ettore Ponti",
@@ -233,6 +268,13 @@
   "comune": "Milano",
   "fonte": "pagina DICE dell'evento (dati strutturati del luogo), letta con Scrape il 27/11/2026"
  },
+ "Camera Jazz & Music Club|Bologna": {
+  "via": "Vicolo Alemagna",
+  "civico": "",
+  "cap": "40125",
+  "comune": "Bologna",
+  "fonte": "pagina dell'evento letta con Scrape il 27/11/2026 (contatti/letture/2026-11-27-events-indirizzi-e.md) (dati strutturati del sito ufficiale; Vicolo Alemagna snc, senza numero civico)"
+ },
  "Cantina Bentivoglio|Bologna": {
   "via": "Via Mascarella",
   "civico": "4b",
@@ -271,6 +313,13 @@
   "comune": "Milano",
   "fonte": "pagina DICE dell'evento (dati strutturati del luogo), letta con Scrape il 27/11/2026"
  },
+ "Chiesa Sant Angelo|Milano": {
+  "via": "Piazza Sant'Angelo",
+  "civico": "2",
+  "cap": "20121",
+  "comune": "Milano",
+  "fonte": "Zero e Diocesi di Milano; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
  "Chiesa dei Santi Gervaso & Protaso|Milano": {
   "via": "Via Osoppo",
   "civico": "2",
@@ -284,6 +333,13 @@
   "cap": "20148",
   "comune": "Milano",
   "fonte": "pagina ufficiale dell'evento o del luogo, letta con Scrape il 27/11/2026"
+ },
+ "Chiesa di San Vincenzo in Prato|Milano": {
+  "via": "Via Daniele Crespi",
+  "civico": "6",
+  "cap": "20123",
+  "comune": "Milano",
+  "fonte": "pagina dell'evento letta con Scrape il 27/11/2026 (contatti/letture/2026-11-27-events-indirizzi-e.md) (Songkick)"
  },
  "Chiesa di Santa Maria della Pietà|Bologna": {
   "via": "Via San Vitale",
@@ -317,6 +373,13 @@
   "cap": "20095",
   "comune": "Cusano Milanino",
   "fonte": "pagina DICE dell'evento (dati strutturati del luogo), letta con Scrape il 27/11/2026"
+ },
+ "Circolo Anarchico Ponte della Ghisolfa|Milano": {
+  "via": "Viale Monza",
+  "civico": "255",
+  "cap": "",
+  "comune": "Milano",
+  "fonte": "Zero e mentelocale; cercato con WebSearch dalla chat Events il 27/11/2026"
  },
  "Circolo Magnolia|Segrate": {
   "via": "Via Circonvallazione Idroscalo",
@@ -449,6 +512,13 @@
   "nome": "Fabrique",
   "punteggio": 1.05,
   "fonte": "OpenStreetMap"
+ },
+ "Ferrara Fiere e Congressi|Ferrara": {
+  "via": "Via della Fiera",
+  "civico": "11",
+  "cap": "44124",
+  "comune": "Ferrara",
+  "fonte": "Comune di Ferrara e Ferrara Terra e Acqua; cercato con WebSearch dalla chat Events il 27/11/2026"
  },
  "Fiera Milano Live|Rho": {
   "via": "Strada Statale del Sempione",
@@ -609,6 +679,20 @@
   "punteggio": 0.94,
   "fonte": "OpenStreetMap"
  },
+ "MTM - Teatro Leonardo Da Vinci|Milano": {
+  "via": "Via Andrea Maria Ampère",
+  "civico": "1",
+  "cap": "20131",
+  "comune": "Milano",
+  "fonte": "sito di MTM e MITO SettembreMusica; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "MTM - Teatro Leonardo|Milano": {
+  "via": "Via Andrea Maria Ampère",
+  "civico": "1",
+  "cap": "20131",
+  "comune": "Milano",
+  "fonte": "sito di MTM e MITO SettembreMusica; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
  "Magazzini Generali|Milano": {
   "via": "Via Pietrasanta",
   "civico": "16",
@@ -661,12 +745,26 @@
   "comune": "Bologna",
   "fonte": "pagina DICE dell'evento (dati strutturati del luogo), letta con Scrape il 27/11/2026"
  },
+ "NAMA (indoor)|Milano": {
+  "via": "Parco dei Martiri della Libertà Iracheni Vittime del Terrorismo",
+  "civico": "",
+  "cap": "20127",
+  "comune": "Milano",
+  "fonte": "pagine DICE degli eventi (dati strutturati del luogo), lette con Scrape il 27/11/2026: è un parco, senza numero civico"
+ },
  "NODO bar|Milano": {
   "via": "Via Marco Aurelio",
   "civico": "8",
   "cap": "20127",
   "comune": "Milano",
   "fonte": "pagina DICE dell'evento (dati strutturati del luogo), letta con Scrape il 27/11/2026"
+ },
+ "OfficinAcrobatica|Bologna": {
+  "via": "Via Stalingrado",
+  "civico": "12",
+  "cap": "40128",
+  "comune": "Bologna",
+  "fonte": "pagina dell'evento letta con Scrape il 27/11/2026 (contatti/letture/2026-11-27-events-indirizzi-e.md) (pagina dello spettacolo sul sito ufficiale e Bologna Welcome)"
  },
  "Oratorio di San Filippo Neri|Bologna": {
   "via": "Via Manzoni",
@@ -695,6 +793,27 @@
   "cap": "",
   "comune": "Ravenna",
   "fonte": "Rockol (scheda del luogo); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Palazzo Pepoli|Bologna": {
+  "via": "Via Castiglione",
+  "civico": "8",
+  "cap": "40124",
+  "comune": "Bologna",
+  "fonte": "Bologna Welcome e Genus Bononiae; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Palazzo Schifanoia|Ferrara": {
+  "via": "Via Scandiana",
+  "civico": "23",
+  "cap": "44121",
+  "comune": "Ferrara",
+  "fonte": "cultura.gov.it, italia.it e catalogo della Regione; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Piazza Maggiore|Bologna": {
+  "via": "Piazza Maggiore",
+  "civico": "",
+  "cap": "",
+  "comune": "Bologna",
+  "fonte": "è la piazza stessa (Capodanno in Piazza Maggiore), senza numero civico"
  },
  "Piccolo Teatro Grassi|Milano": {
   "via": "Via Rovello",
@@ -726,6 +845,13 @@
   "nome": "Piccolo Teatro Studio Melato",
   "punteggio": 1.0,
   "fonte": "OpenStreetMap"
+ },
+ "PimOff|Milano": {
+  "via": "Via Selvanesco",
+  "civico": "75",
+  "cap": "20142",
+  "comune": "Milano",
+  "fonte": "Comune di Milano (Municipio 5) e Università Bocconi; cercato con WebSearch dalla chat Events il 27/11/2026"
  },
  "Q Club|Milano": {
   "via": "Via Padova",
@@ -781,6 +907,13 @@
   "punteggio": 1.05,
   "fonte": "OpenStreetMap"
  },
+ "Sala Giulietta Masina|San Giorgio di Piano": {
+  "via": "Via Melloni",
+  "civico": "2",
+  "cap": "",
+  "comune": "San Giorgio di Piano",
+  "fonte": "Bologna Welcome (stagione Agorà, Sala Polivalente di via Melloni 2); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
  "Santeria Toscana 31|Milano": {
   "via": "Viale Toscana",
   "civico": "31",
@@ -823,6 +956,13 @@
   "nome": "Slaughter Club",
   "punteggio": 1.05,
   "fonte": "OpenStreetMap"
+ },
+ "Spazio Antonioni|Ferrara": {
+  "via": "Corso Porta Mare",
+  "civico": "5",
+  "cap": "44121",
+  "comune": "Ferrara",
+  "fonte": "catalogo della Regione e Ferrara Terra e Acqua (Palazzo Massari); cercato con WebSearch dalla chat Events il 27/11/2026"
  },
  "Spazio Diaz|Milano": {
   "via": "Piazza Armando Diaz",
@@ -996,6 +1136,13 @@
   "comune": "Castiglione dei Pepoli",
   "fonte": "Bologna Welcome (schede degli spettacoli del teatro); cercato con WebSearch dalla chat Events il 27/11/2026"
  },
+ "Teatro Comunale di San Giovanni in Persiceto|San Giovanni in Persiceto": {
+  "via": "Corso Italia",
+  "civico": "72",
+  "cap": "40017",
+  "comune": "San Giovanni in Persiceto",
+  "fonte": "Città metropolitana di Bologna (turismo in pianura) e catalogo della Regione; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
  "Teatro Comunale – Foyer Rossini|Bologna": {
   "via": "Largo Respighi",
   "civico": "1",
@@ -1164,6 +1311,13 @@
   "nome": "Piccolo Teatro Grassi",
   "punteggio": 1.015,
   "fonte": "OpenStreetMap"
+ },
+ "Teatro Guanella|Milano": {
+  "via": "Via Dupré",
+  "civico": "19",
+  "cap": "",
+  "comune": "Milano",
+  "fonte": "mentelocale (Teatro Guanella, via Duprè 19); cercato con WebSearch dalla chat Events il 27/11/2026"
  },
  "Teatro La Casa del Popolo|Castello d'Argile": {
   "via": "Via Giacomo Matteotti",
@@ -1361,6 +1515,13 @@
   "punteggio": 1.018,
   "fonte": "OpenStreetMap"
  },
+ "Teatro Veritas|Faenza": {
+  "via": "Via Basiago",
+  "civico": "136",
+  "cap": "48018",
+  "comune": "Faenza",
+  "fonte": "Cylex (Cinema Teatro Veritas, località Reda) e il Resto del Carlino; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
  "Teatro alla Scala|Milano": {
   "via": "Largo Antonio Ghiringhelli",
   "civico": "1",
@@ -1373,12 +1534,26 @@
   "punteggio": 1.0,
   "fonte": "OpenStreetMap"
  },
+ "Teatro dell'Arte – Triennale|Milano": {
+  "via": "Viale Emilio Alemagna",
+  "civico": "6",
+  "cap": "20121",
+  "comune": "Milano",
+  "fonte": "pagina dell'evento letta con Scrape il 27/11/2026 (contatti/letture/2026-11-27-events-indirizzi-e.md) (Songkick)"
+ },
  "Teatro della Cooperativa|Milano": {
   "via": "Via privata Hermada",
   "civico": "8",
   "cap": "20162",
   "comune": "Milano",
   "fonte": "YesMilano (Comune di Milano) e programma del teatro; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro della Quattordicesima|Milano": {
+  "via": "Via Oglio",
+  "civico": "18",
+  "cap": "",
+  "comune": "Milano",
+  "fonte": "Il Giorno e mentelocale (centro civico del Municipio 4); cercato con WebSearch dalla chat Events il 27/11/2026"
  },
  "Teatro delle Moline|Bologna": {
   "via": "Via delle Moline",
@@ -1455,6 +1630,13 @@
   "nome": "Unipol Forum",
   "punteggio": 1.05,
   "fonte": "OpenStreetMap"
+ },
+ "Villa Smeraldi|Bentivoglio": {
+  "via": "Via Sammarina",
+  "civico": "35",
+  "cap": "40010",
+  "comune": "Bentivoglio",
+  "fonte": "cultura.gov.it e catalogo della Regione (San Marino di Bentivoglio); cercato con WebSearch dalla chat Events il 27/11/2026"
  },
  "Villa Venino|Novate Milanese": {
   "via": "Largo Padre Ambrogio Fumagalli",
