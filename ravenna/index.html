@@ -1233,6 +1233,20 @@ html body .time,html body .stat b,html body .modes small{font-variant-numeric:ta
 }
 html.beta-scuro::after{background:color-mix(in srgb,#0f1216 94%,transparent);border-top-color:#2a313b}
 @media(min-width:1024px){html::after{display:none!important}}
+/* ===== 27/11 19:24, Stefano: scritte delle schede più grandi e leggibili, schede della stessa misura ===== */
+html body .card.mini .top{font-size:13px}
+html body .card.mini .time{font-size:13.5px}
+html body .card.mini .gtag{font-size:11.5px;letter-spacing:.05em}
+html body .card.mini .multi{font-size:12.5px}
+html body .card.mini .title{font-size:1.1rem;line-height:1.22}
+html body .card.mini .mhit,html body .card.mini .mper{font-size:14px}
+html body .card.mini .mloc{font-size:13.5px}
+html body .card.mini .msr{font-size:13.5px}
+html body .card.mini:has(.msr)>.msr.mx{font-size:13px}
+html body .card.mini .act.tkt,html body .card.mini .act.tkt.info{font-size:13px}
+html body .card.mini .mfoot .pill{font-size:12px}
+html body .card.mini .mloc .mlg{margin-left:0!important}
+@media(max-width:380px){html body .card.mini .title{font-size:1.05rem}html body .card.mini .mloc{font-size:13px}}
 </style>
 </head>
 <body class="nA">
