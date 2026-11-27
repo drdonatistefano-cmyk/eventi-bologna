@@ -869,7 +869,7 @@ html body #more{border-radius:999px;height:48px;padding:0 26px;font-weight:700;c
 <script id="beta-2030-tema">/* beta 2030: tema scuro se il telefono è in modalità scura, o con ?tema=scuro (?tema=chiaro per forzare il chiaro) */
 (function(){try{var q=location.search,d=/[?&]tema=scuro/.test(q)||(!/[?&]tema=chiaro/.test(q)&&window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches);if(d)document.documentElement.classList.add("beta-scuro")}catch(_){}})();</script>
 <style id="beta-2030">
-/* 27/11/2026, Stefano: versione beta «Events 2030» da NON pubblicare. Solo grafica, nessuna funzione cambiata.
+/* 27/11/2026, Stefano: grafica «Events 2030» (nata come beta; pubblicata il 27/11 alle 19:04 col «pubblica e sostituisci» di Stefano). Solo grafica, nessuna funzione cambiata.
    12:16 «riprendi la grafica del prototipo, più snello»; 12:21 «le scritte strabordano, le icone si sovrappongono:
    cura cornici e dettagli, più bello, elegante, moderno». */
 html body{--beta-a:var(--a,#2F5578);--beta-r:18px;--beta-ombra:0 1px 2px rgba(31,29,26,.04),0 2px 8px rgba(31,29,26,.04)}
@@ -1129,7 +1129,6 @@ html.beta-scuro #betaGen .ch,html.beta-scuro #betaGen .bg-x{background:#1d222a;b
 @media(hover:hover){html.beta-scuro #betaGen .ch:hover:not([aria-pressed="true"]):not(:disabled){background:#232a34;border-color:#33404f}}
 html.beta-scuro body .city .k{background:var(--beta-grad)!important}
 html.beta-scuro body .att .lk,html.beta-scuro body .lk{color:#a9c3dc}
-html.beta-scuro body::after{background:#e9ecf1;color:#0f1216}
 /* ===== 27/11 17:51: correzioni dal controllo di accessibilità WebAbility (contrasti WCAG AA) ===== */
 html body .card.mini .multi{opacity:1!important;color:#364658}
 html body .pill.ok{color:#1d6b3f!important}
@@ -1222,8 +1221,6 @@ html body .modes button:active,html body .seg button:active,html body .act:activ
 html body :focus-visible{outline:2px solid var(--beta-a);outline-offset:2px}
 html body .time,html body .stat b,html body .modes small{font-variant-numeric:tabular-nums}
 @media(prefers-reduced-motion:reduce){html body *{transition:none!important}}
-html body::after{content:"Beta 2030";position:absolute;left:16px;top:calc(18px + env(safe-area-inset-top));z-index:30;
- font:700 10px/1 Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border-radius:999px;background:#231d18;color:#fffdf9;opacity:.75;pointer-events:none}
 /* ===== 27/11 18:50: in fondo alla pagina niente più bottoni sopra le schede: barra di fondo piena (telefono e iPad) ===== */
 @media(max-width:1023px){
  html::after{content:"";position:fixed;left:0;right:0;bottom:0;height:calc(72px + env(safe-area-inset-bottom));z-index:15;pointer-events:none;
