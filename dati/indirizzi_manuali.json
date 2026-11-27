@@ -547,5 +547,138 @@
   "cap": "20134",
   "comune": "Milano",
   "fonte": "sito ufficiale del luogo, letto con Scrape il 27/11/2026"
+ },
+ "Teatro Comunale|Bologna": {
+  "via": "Largo Respighi",
+  "civico": "1",
+  "cap": "40126",
+  "comune": "Bologna",
+  "fonte": "sito ufficiale tcbo.it (contatti, letto con Scrape) e Bologna Welcome; sede storica, riapre il 14/02/2027 e in guida ha solo spettacoli da quella data; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro Comunale – Foyer Rossini|Bologna": {
+  "via": "Largo Respighi",
+  "civico": "1",
+  "cap": "40126",
+  "comune": "Bologna",
+  "fonte": "sede storica del Teatro Comunale (tcbo.it, Bologna Welcome); spettacoli dal 20/02/2027; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro Comunale – Sala Bibiena|Bologna": {
+  "via": "Largo Respighi",
+  "civico": "1",
+  "cap": "40126",
+  "comune": "Bologna",
+  "fonte": "sede storica del Teatro Comunale (tcbo.it, Bologna Welcome); concerto di riapertura del 14/02/2027; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro Nazionale Italiana Assicurazioni|Milano": {
+  "via": "Via Giordano Rota",
+  "civico": "1",
+  "cap": "20145",
+  "comune": "Milano",
+  "fonte": "TicketOne (scheda del luogo); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro Comunale Laura Betti|Casalecchio di Reno": {
+  "via": "Piazza del Popolo",
+  "civico": "1",
+  "cap": "40033",
+  "comune": "Casalecchio di Reno",
+  "fonte": "Bologna Welcome e cultura.gov.it; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Bronson|Ravenna": {
+  "via": "Via Cella",
+  "civico": "50",
+  "cap": "48124",
+  "comune": "Ravenna",
+  "fonte": "Songkick e Zero (località Madonna dell'Albero); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Mama's Club|Ravenna": {
+  "via": "Via San Mama",
+  "civico": "75",
+  "cap": "",
+  "comune": "Ravenna",
+  "fonte": "pieghevole ufficiale del Mama's Club (turismo.ra.it); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Pala De André|Ravenna": {
+  "via": "Viale Europa",
+  "civico": "1",
+  "cap": "",
+  "comune": "Ravenna",
+  "fonte": "Rockol (scheda del luogo); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro della Cooperativa|Milano": {
+  "via": "Via privata Hermada",
+  "civico": "8",
+  "cap": "20162",
+  "comune": "Milano",
+  "fonte": "YesMilano (Comune di Milano) e programma del teatro; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro Out Off|Milano": {
+  "via": "Via Mac Mahon",
+  "civico": "16",
+  "cap": "20155",
+  "comune": "Milano",
+  "fonte": "MITO SettembreMusica e Università Bocconi; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Blue Note Milano|Milano": {
+  "via": "Via Pietro Borsieri",
+  "civico": "37",
+  "cap": "20159",
+  "comune": "Milano",
+  "fonte": "italia.it e MITO SettembreMusica; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro De Micheli|Copparo": {
+  "via": "Piazza del Popolo",
+  "civico": "11/A",
+  "cap": "44034",
+  "comune": "Copparo",
+  "fonte": "catalogo dei beni culturali della Regione Emilia-Romagna; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Oratorio di San Filippo Neri|Bologna": {
+  "via": "Via Manzoni",
+  "civico": "5",
+  "cap": "40121",
+  "comune": "Bologna",
+  "fonte": "Bologna Welcome e Bologna Convention Bureau; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro Comunale di Castiglione dei Pepoli|Castiglione dei Pepoli": {
+  "via": "Via Aldo Moro",
+  "civico": "2",
+  "cap": "40035",
+  "comune": "Castiglione dei Pepoli",
+  "fonte": "Bologna Welcome (schede degli spettacoli del teatro); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro San Leonardo|Bologna": {
+  "via": "Via San Vitale",
+  "civico": "63",
+  "cap": "40125",
+  "comune": "Bologna",
+  "fonte": "Bologna Welcome e Bologna Convention Bureau; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro Comunale Cassero|Castel San Pietro Terme": {
+  "via": "Via Giacomo Matteotti",
+  "civico": "1",
+  "cap": "40024",
+  "comune": "Castel San Pietro Terme",
+  "fonte": "Bologna Welcome e catalogo della Regione Emilia-Romagna; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro Biagi D'Antona|Castel Maggiore": {
+  "via": "Via Giorgio La Pira",
+  "civico": "54",
+  "cap": "",
+  "comune": "Castel Maggiore",
+  "fonte": "programma ufficiale della stagione Agorà (Unione Reno Galliera); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro La Casa del Popolo|Castello d'Argile": {
+  "via": "Via Giacomo Matteotti",
+  "civico": "150",
+  "cap": "",
+  "comune": "Castello d'Argile",
+  "fonte": "programma ufficiale della stagione Agorà (Unione Reno Galliera); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro Comunale di Argelato|Argelato": {
+  "via": "Via Centese",
+  "civico": "50",
+  "cap": "40050",
+  "comune": "Argelato",
+  "fonte": "programma ufficiale della stagione Agorà (Unione Reno Galliera); cercato con WebSearch dalla chat Events il 27/11/2026"
  }
 }

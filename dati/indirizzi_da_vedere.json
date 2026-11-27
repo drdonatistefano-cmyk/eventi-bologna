@@ -1,100 +1,5 @@
 [
  {
-  "luogo": "Teatro Comunale Laura Betti",
-  "citta": "Casalecchio di Reno",
-  "eventi": 22,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Oratorio di San Filippo Neri",
-  "citta": "Bologna",
-  "eventi": 12,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Oratorio di San Filippo Neri",
-    "indirizzo": "senza via e numero",
-    "osm": "way/156374232"
-   }
-  ]
- },
- {
-  "luogo": "Teatro Comunale di Castiglione dei Pepoli",
-  "citta": "Castiglione dei Pepoli",
-  "eventi": 12,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Teatro Comunale",
-  "citta": "Bologna",
-  "eventi": 9,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Comunale",
-    "indirizzo": " , ",
-    "osm": "node/4825515122"
-   },
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Comunale",
-    "indirizzo": " , ",
-    "osm": "node/13994328490"
-   },
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Comunale",
-    "indirizzo": " , ",
-    "osm": "way/148753535"
-   }
-  ]
- },
- {
-  "luogo": "Teatro San Leonardo",
-  "citta": "Bologna",
-  "eventi": 8,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Teatro Comunale Cassero",
-  "citta": "Castel San Pietro Terme",
-  "eventi": 8,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Teatro Comunale – Foyer Rossini",
-  "citta": "Bologna",
-  "eventi": 8,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Teatro Biagi D'Antona",
-  "citta": "Castel Maggiore",
-  "eventi": 7,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Biagi D'Antona",
-    "indirizzo": " , ",
-    "osm": "node/1312812764"
-   },
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro Biagi D'Antona",
-    "indirizzo": " , ",
-    "osm": "way/152374545"
-   }
-  ]
- },
- {
   "luogo": "Sequoie Music Park - Parco Caserme Rosse",
   "citta": "Bologna",
   "eventi": 5,
@@ -114,20 +19,6 @@
     "osm": "node/4708352692"
    }
   ]
- },
- {
-  "luogo": "Teatro La Casa del Popolo",
-  "citta": "Castello d'Argile",
-  "eventi": 4,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Teatro Comunale di Argelato",
-  "citta": "Argelato",
-  "eventi": 3,
-  "citta_guida": "bo",
-  "candidati": []
  },
  {
   "luogo": "Camera Jazz & Music Club",
@@ -240,13 +131,6 @@
   ]
  },
  {
-  "luogo": "Teatro Comunale – Sala Bibiena",
-  "citta": "Bologna",
-  "eventi": 1,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
   "luogo": "Biblioteca Giovanna Zangrandi",
   "citta": "Galliera",
   "eventi": 1,
@@ -268,27 +152,6 @@
   "candidati": []
  },
  {
-  "luogo": "Teatro Nazionale Italiana Assicurazioni",
-  "citta": "Milano",
-  "eventi": 30,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Teatro della Cooperativa",
-  "citta": "Milano",
-  "eventi": 12,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro della Cooperativa",
-    "indirizzo": "senza via e numero",
-    "osm": "node/7707210113"
-   }
-  ]
- },
- {
   "luogo": "Stadio San Siro",
   "citta": "Milano",
   "eventi": 12,
@@ -301,13 +164,6 @@
     "osm": "way/1389243680"
    }
   ]
- },
- {
-  "luogo": "Teatro Out Off",
-  "citta": "Milano",
-  "eventi": 10,
-  "citta_guida": "mi",
-  "candidati": []
  },
  {
   "luogo": "Auditorium di Milano",
@@ -334,13 +190,6 @@
     "osm": "way/1273344467"
    }
   ]
- },
- {
-  "luogo": "Blue Note Milano",
-  "citta": "Milano",
-  "eventi": 9,
-  "citta_guida": "mi",
-  "candidati": []
  },
  {
   "luogo": "Ippodromo SNAI San Siro",
@@ -591,20 +440,6 @@
   "candidati": []
  },
  {
-  "luogo": "Bronson",
-  "citta": "Ravenna",
-  "eventi": 14,
-  "citta_guida": "ra",
-  "candidati": [
-   {
-    "punteggio": 0.961,
-    "nome": "Bronson Club",
-    "indirizzo": "senza via e numero",
-    "osm": "node/4752831462"
-   }
-  ]
- },
- {
   "luogo": "Teatro San Giuseppe",
   "citta": "Faenza",
   "eventi": 13,
@@ -629,13 +464,6 @@
     "osm": "way/1472985051"
    }
   ]
- },
- {
-  "luogo": "Mama's Club",
-  "citta": "Ravenna",
-  "eventi": 12,
-  "citta_guida": "ra",
-  "candidati": []
  },
  {
   "luogo": "Casa del Teatro",
@@ -691,13 +519,6 @@
   "candidati": []
  },
  {
-  "luogo": "Pala De André",
-  "citta": "Ravenna",
-  "eventi": 2,
-  "citta_guida": "ra",
-  "candidati": []
- },
- {
   "luogo": "Duomo di Faenza",
   "citta": "Faenza",
   "eventi": 1,
@@ -722,20 +543,6 @@
     "nome": "Centro Polifunzionale Pandurera",
     "indirizzo": "senza via e numero",
     "osm": "way/72311793"
-   }
-  ]
- },
- {
-  "luogo": "Teatro De Micheli",
-  "citta": "Copparo",
-  "eventi": 12,
-  "citta_guida": "fe",
-  "candidati": [
-   {
-    "punteggio": 0.969,
-    "nome": "Teatro Comunale De Micheli",
-    "indirizzo": "senza via e numero",
-    "osm": "node/11917831212"
    }
   ]
  },

@@ -172,6 +172,13 @@
   "punteggio": 0.961,
   "fonte": "OpenStreetMap"
  },
+ "Blue Note Milano|Milano": {
+  "via": "Via Pietro Borsieri",
+  "civico": "37",
+  "cap": "20159",
+  "comune": "Milano",
+  "fonte": "italia.it e MITO SettembreMusica; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
  "Bluesquare Milano|Milano": {
   "via": "Via Tortona",
   "civico": "33",
@@ -190,6 +197,13 @@
   "nome": "Bravo Caffè",
   "punteggio": 1.05,
   "fonte": "OpenStreetMap"
+ },
+ "Bronson|Ravenna": {
+  "via": "Via Cella",
+  "civico": "50",
+  "cap": "48124",
+  "comune": "Ravenna",
+  "fonte": "Songkick e Zero (località Madonna dell'Albero); cercato con WebSearch dalla chat Events il 27/11/2026"
  },
  "C.I.Q.|Milano": {
   "via": "Via Fabio Massimo",
@@ -558,6 +572,13 @@
   "comune": "Milano",
   "fonte": "pagina DICE dell'evento (dati strutturati del luogo), letta con Scrape il 27/11/2026"
  },
+ "Mama's Club|Ravenna": {
+  "via": "Via San Mama",
+  "civico": "75",
+  "cap": "",
+  "comune": "Ravenna",
+  "fonte": "pieghevole ufficiale del Mama's Club (turismo.ra.it); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
  "Mana Brew Pub|Bologna": {
   "via": "Via Aurelio Saffi",
   "civico": "1/A",
@@ -591,6 +612,13 @@
   "comune": "Milano",
   "fonte": "pagina DICE dell'evento (dati strutturati del luogo), letta con Scrape il 27/11/2026"
  },
+ "Oratorio di San Filippo Neri|Bologna": {
+  "via": "Via Manzoni",
+  "civico": "5",
+  "cap": "40121",
+  "comune": "Bologna",
+  "fonte": "Bologna Welcome e Bologna Convention Bureau; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
  "Ostello Bello Milano Centrale|Milano": {
   "via": "Via Roberto Lepetit",
   "civico": "33",
@@ -604,6 +632,13 @@
   "cap": "20123",
   "comune": "Milano",
   "fonte": "pagina DICE dell'evento (dati strutturati del luogo), letta con Scrape il 27/11/2026"
+ },
+ "Pala De André|Ravenna": {
+  "via": "Viale Europa",
+  "civico": "1",
+  "cap": "",
+  "comune": "Ravenna",
+  "fonte": "Rockol (scheda del luogo); cercato con WebSearch dalla chat Events il 27/11/2026"
  },
  "Piccolo Teatro Grassi|Milano": {
   "via": "Via Rovello",
@@ -811,6 +846,13 @@
   "punteggio": 0.978,
   "fonte": "OpenStreetMap"
  },
+ "Teatro Biagi D'Antona|Castel Maggiore": {
+  "via": "Via Giorgio La Pira",
+  "civico": "54",
+  "cap": "",
+  "comune": "Castel Maggiore",
+  "fonte": "programma ufficiale della stagione Agorà (Unione Reno Galliera); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
  "Teatro Carcano|Milano": {
   "via": "Corso di Porta Romana",
   "civico": "63",
@@ -835,12 +877,61 @@
   "punteggio": 0.974,
   "fonte": "OpenStreetMap"
  },
+ "Teatro Comunale Cassero|Castel San Pietro Terme": {
+  "via": "Via Giacomo Matteotti",
+  "civico": "1",
+  "cap": "40024",
+  "comune": "Castel San Pietro Terme",
+  "fonte": "Bologna Welcome e catalogo della Regione Emilia-Romagna; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
  "Teatro Comunale Claudio Abbado|Ferrara": {
   "via": "Corso Martiri della Libertà",
   "civico": "5",
   "cap": "44121",
   "comune": "Ferrara",
   "fonte": "sito ufficiale del luogo, letto con il lettore web dell'officina il 19/11/2026: https://www.teatrocomunaleferrara.it/contatti/"
+ },
+ "Teatro Comunale Laura Betti|Casalecchio di Reno": {
+  "via": "Piazza del Popolo",
+  "civico": "1",
+  "cap": "40033",
+  "comune": "Casalecchio di Reno",
+  "fonte": "Bologna Welcome e cultura.gov.it; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro Comunale di Argelato|Argelato": {
+  "via": "Via Centese",
+  "civico": "50",
+  "cap": "40050",
+  "comune": "Argelato",
+  "fonte": "programma ufficiale della stagione Agorà (Unione Reno Galliera); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro Comunale di Castiglione dei Pepoli|Castiglione dei Pepoli": {
+  "via": "Via Aldo Moro",
+  "civico": "2",
+  "cap": "40035",
+  "comune": "Castiglione dei Pepoli",
+  "fonte": "Bologna Welcome (schede degli spettacoli del teatro); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro Comunale – Foyer Rossini|Bologna": {
+  "via": "Largo Respighi",
+  "civico": "1",
+  "cap": "40126",
+  "comune": "Bologna",
+  "fonte": "sede storica del Teatro Comunale (tcbo.it, Bologna Welcome); spettacoli dal 20/02/2027; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro Comunale – Sala Bibiena|Bologna": {
+  "via": "Largo Respighi",
+  "civico": "1",
+  "cap": "40126",
+  "comune": "Bologna",
+  "fonte": "sede storica del Teatro Comunale (tcbo.it, Bologna Welcome); concerto di riapertura del 14/02/2027; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro Comunale|Bologna": {
+  "via": "Largo Respighi",
+  "civico": "1",
+  "cap": "40126",
+  "comune": "Bologna",
+  "fonte": "sito ufficiale tcbo.it (contatti, letto con Scrape) e Bologna Welcome; sede storica, riapre il 14/02/2027 e in guida ha solo spettacoli da quella data; cercato con WebSearch dalla chat Events il 27/11/2026"
  },
  "Teatro Consorziale|Budrio": {
   "via": "Via Giuseppe Garibaldi",
@@ -860,6 +951,13 @@
   "cap": "20121",
   "comune": "Milano",
   "fonte": "YesMilano (Comune di Milano); cercato con WebSearch dalla chat di coordinamento il 18/11/2026"
+ },
+ "Teatro De Micheli|Copparo": {
+  "via": "Piazza del Popolo",
+  "civico": "11/A",
+  "cap": "44034",
+  "comune": "Copparo",
+  "fonte": "catalogo dei beni culturali della Regione Emilia-Romagna; cercato con WebSearch dalla chat Events il 27/11/2026"
  },
  "Teatro Dehon|Bologna": {
   "via": "Via Libia",
@@ -983,6 +1081,13 @@
   "punteggio": 1.015,
   "fonte": "OpenStreetMap"
  },
+ "Teatro La Casa del Popolo|Castello d'Argile": {
+  "via": "Via Giacomo Matteotti",
+  "civico": "150",
+  "cap": "",
+  "comune": "Castello d'Argile",
+  "fonte": "programma ufficiale della stagione Agorà (Unione Reno Galliera); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
  "Teatro Lirico Giorgio Gaber|Milano": {
   "via": "Via Larga",
   "civico": "14",
@@ -1021,6 +1126,13 @@
   "comune": "Faenza",
   "fonte": "sito ufficiale del luogo, letto con il lettore web dell'officina il 19/11/2026: https://accademiaperduta.it/teatro-masini-faenza/ (contatti del teatro)"
  },
+ "Teatro Nazionale Italiana Assicurazioni|Milano": {
+  "via": "Via Giordano Rota",
+  "civico": "1",
+  "cap": "20145",
+  "comune": "Milano",
+  "fonte": "TicketOne (scheda del luogo); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
  "Teatro Nuovo|Ferrara": {
   "via": "Piazza Trento e Trieste",
   "civico": "52",
@@ -1039,6 +1151,13 @@
   "nome": "Teatro Oscar DeSidera",
   "punteggio": 1.009,
   "fonte": "OpenStreetMap"
+ },
+ "Teatro Out Off|Milano": {
+  "via": "Via Mac Mahon",
+  "civico": "16",
+  "cap": "20155",
+  "comune": "Milano",
+  "fonte": "MITO SettembreMusica e Università Bocconi; cercato con WebSearch dalla chat Events il 27/11/2026"
  },
  "Teatro Pime|Milano": {
   "via": "Via Mosè Bianchi",
@@ -1091,6 +1210,13 @@
   "nome": "Teatro San Babila",
   "punteggio": 1.05,
   "fonte": "OpenStreetMap"
+ },
+ "Teatro San Leonardo|Bologna": {
+  "via": "Via San Vitale",
+  "civico": "63",
+  "cap": "40125",
+  "comune": "Bologna",
+  "fonte": "Bologna Welcome e Bologna Convention Bureau; cercato con WebSearch dalla chat Events il 27/11/2026"
  },
  "Teatro Socjale|Ravenna": {
   "via": "Via Piangipane",
@@ -1148,6 +1274,13 @@
   "nome": "Teatro alla Scala",
   "punteggio": 1.0,
   "fonte": "OpenStreetMap"
+ },
+ "Teatro della Cooperativa|Milano": {
+  "via": "Via privata Hermada",
+  "civico": "8",
+  "cap": "20162",
+  "comune": "Milano",
+  "fonte": "YesMilano (Comune di Milano) e programma del teatro; cercato con WebSearch dalla chat Events il 27/11/2026"
  },
  "Tempio Civico di San Sebastiano|Milano": {
   "via": "Via Torino",
