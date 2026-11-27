@@ -1,48 +1,6 @@
 [
  {
-  "luogo": "Sequoie Music Park - Parco Caserme Rosse",
-  "citta": "Bologna",
-  "eventi": 5,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Teatro delle Moline",
-  "citta": "Bologna",
-  "eventi": 4,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatro delle Moline",
-    "indirizzo": "senza via e numero",
-    "osm": "node/4708352692"
-   }
-  ]
- },
- {
   "luogo": "Camera Jazz & Music Club",
-  "citta": "Bologna",
-  "eventi": 2,
-  "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Teatri di Vita",
-  "citta": "Bologna",
-  "eventi": 2,
-  "citta_guida": "bo",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Teatri di Vita",
-    "indirizzo": "senza via e numero",
-    "osm": "node/13430135465"
-   }
-  ]
- },
- {
-  "luogo": "Accademia del Teatro Comunale",
   "citta": "Bologna",
   "eventi": 2,
   "citta_guida": "bo",
@@ -149,88 +107,6 @@
   "citta": "San Giorgio di Piano",
   "eventi": 1,
   "citta_guida": "bo",
-  "candidati": []
- },
- {
-  "luogo": "Stadio San Siro",
-  "citta": "Milano",
-  "eventi": 12,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.022,
-    "nome": "Stadio San Siro Milano",
-    "indirizzo": "senza via e numero",
-    "osm": "way/1389243680"
-   }
-  ]
- },
- {
-  "luogo": "Auditorium di Milano",
-  "citta": "Milano",
-  "eventi": 10,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Auditorium di Milano",
-    "indirizzo": " , ",
-    "osm": "way/460773978"
-   },
-   {
-    "punteggio": 0.99,
-    "nome": "DRK Milano",
-    "indirizzo": "Via Merano 18, Milano",
-    "osm": "node/12392583731"
-   },
-   {
-    "punteggio": 0.986,
-    "nome": "PadeLand Milano",
-    "indirizzo": "Via Vincenzo Toffetti 17, Milano",
-    "osm": "way/1273344467"
-   }
-  ]
- },
- {
-  "luogo": "Ippodromo SNAI San Siro",
-  "citta": "Milano",
-  "eventi": 5,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
-  "luogo": "Piccolo Teatro Strehler",
-  "citta": "Milano",
-  "eventi": 4,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 1.0,
-    "nome": "Piccolo Teatro Strehler",
-    "indirizzo": "senza via e numero",
-    "osm": "way/4998830"
-   }
-  ]
- },
- {
-  "luogo": "Fabbrica del Vapore",
-  "citta": "Milano",
-  "eventi": 4,
-  "citta_guida": "mi",
-  "candidati": [
-   {
-    "punteggio": 0.989,
-    "nome": "La Fabbrica del Vapore",
-    "indirizzo": "senza via e numero",
-    "osm": "way/357794273"
-   }
-  ]
- },
- {
-  "luogo": "Fiera Milano Live",
-  "citta": "Rho",
-  "eventi": 4,
-  "citta_guida": "mi",
   "candidati": []
  },
  {
@@ -392,13 +268,6 @@
   "candidati": []
  },
  {
-  "luogo": "CineTeatro Stella",
-  "citta": "Milano",
-  "eventi": 1,
-  "citta_guida": "mi",
-  "candidati": []
- },
- {
   "luogo": "Auditorium",
   "citta": "Settala",
   "eventi": 1,
@@ -440,78 +309,6 @@
   "candidati": []
  },
  {
-  "luogo": "Teatro San Giuseppe",
-  "citta": "Faenza",
-  "eventi": 13,
-  "citta_guida": "ra",
-  "candidati": [
-   {
-    "punteggio": 0.966,
-    "nome": "San Giuseppe",
-    "indirizzo": " , ",
-    "osm": "way/158764430"
-   },
-   {
-    "punteggio": 0.96,
-    "nome": "Chiesa di San Giuseppe Artigiano",
-    "indirizzo": " , ",
-    "osm": "way/203377737"
-   },
-   {
-    "punteggio": 0.948,
-    "nome": "Chiesa San Giuseppe Operaio",
-    "indirizzo": " , ",
-    "osm": "way/1472985051"
-   }
-  ]
- },
- {
-  "luogo": "Casa del Teatro",
-  "citta": "Faenza",
-  "eventi": 5,
-  "citta_guida": "ra",
-  "candidati": [
-   {
-    "punteggio": 0.946,
-    "nome": "Biblioteca della Casa Editrice Faenza",
-    "indirizzo": "Via De Crescenzi 44, Faenza",
-    "osm": "node/6544362104"
-   },
-   {
-    "punteggio": 0.902,
-    "nome": "Base scout Casa Olmatelli",
-    "indirizzo": " , ",
-    "osm": "way/1330202852"
-   }
-  ]
- },
- {
-  "luogo": "Teatro Sarti",
-  "citta": "Faenza",
-  "eventi": 4,
-  "citta_guida": "ra",
-  "candidati": [
-   {
-    "punteggio": 0.95,
-    "nome": "Cinema Sarti",
-    "indirizzo": "Via Venti Settembre 98/a, ",
-    "osm": "node/667881374"
-   },
-   {
-    "punteggio": 0.938,
-    "nome": "Sarti",
-    "indirizzo": " , ",
-    "osm": "node/2313747051"
-   },
-   {
-    "punteggio": 0.893,
-    "nome": "Biblioteca della Scuola Comunale di Musica Giuseppe Sarti",
-    "indirizzo": " , ",
-    "osm": "node/14249319771"
-   }
-  ]
- },
- {
   "luogo": "Teatro Veritas",
   "citta": "Faenza",
   "eventi": 3,
@@ -529,20 +326,6 @@
     "nome": "Cattedrale di San Pietro Apostolo",
     "indirizzo": "senza via e numero",
     "osm": "way/151920334"
-   }
-  ]
- },
- {
-  "luogo": "Auditorium Pandurera",
-  "citta": "Cento",
-  "eventi": 14,
-  "citta_guida": "fe",
-  "candidati": [
-   {
-    "punteggio": 0.915,
-    "nome": "Centro Polifunzionale Pandurera",
-    "indirizzo": "senza via e numero",
-    "osm": "way/72311793"
    }
   ]
  },

@@ -680,5 +680,110 @@
   "cap": "40050",
   "comune": "Argelato",
   "fonte": "programma ufficiale della stagione Agorà (Unione Reno Galliera); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Auditorium Pandurera|Cento": {
+  "via": "Via XXV Aprile",
+  "civico": "11",
+  "cap": "44042",
+  "comune": "Cento",
+  "fonte": "cartellone della Regione Emilia-Romagna e Fondazione Teatro Borgatti; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Auditorium di Milano|Milano": {
+  "via": "Largo Gustav Mahler",
+  "civico": "",
+  "cap": "20136",
+  "comune": "Milano",
+  "fonte": "TicketOne, Bachtrack e Orchestra Sinfonica di Milano: il luogo non ha numero civico; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Accademia del Teatro Comunale|Bologna": {
+  "via": "Via Guglielmo Oberdan",
+  "civico": "24",
+  "cap": "",
+  "comune": "Bologna",
+  "fonte": "sede operativa della Scuola dell'Opera/Accademia del Teatro Comunale (bandi e schede della Regione); la pagina dello spettacolo su tcbo.it non dice la sala; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatri di Vita|Bologna": {
+  "via": "Piazzetta Sergio Secci",
+  "civico": "1",
+  "cap": "",
+  "comune": "Bologna",
+  "fonte": "sito ufficiale, pagina «Dove siamo» (ex Via Emilia Ponente 485, nel Parco Pierangelo Bertoli); letto con Scrape il 27/11/2026"
+ },
+ "CineTeatro Stella|Milano": {
+  "via": "Via Giovanni Pezzotti",
+  "civico": "53",
+  "cap": "20141",
+  "comune": "Milano",
+  "fonte": "sito ufficiale; letto con Scrape il 27/11/2026"
+ },
+ "Piccolo Teatro Strehler|Milano": {
+  "via": "Largo Greppi",
+  "civico": "1",
+  "cap": "20121",
+  "comune": "Milano",
+  "fonte": "sito del Piccolo Teatro e italia.it; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro delle Moline|Bologna": {
+  "via": "Via delle Moline",
+  "civico": "1/B",
+  "cap": "40126",
+  "comune": "Bologna",
+  "fonte": "Bologna Welcome; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro Sarti|Faenza": {
+  "via": "Via Carlo Cesare Scaletta",
+  "civico": "10",
+  "cap": "",
+  "comune": "Faenza",
+  "fonte": "catalogo dei teatri storici della Regione Emilia-Romagna; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Teatro San Giuseppe|Faenza": {
+  "via": "Via Dal Pozzo",
+  "civico": "19",
+  "cap": "48018",
+  "comune": "Faenza",
+  "fonte": "teatro della parrocchia di San Giuseppe Artigiano (il Resto del Carlino); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Stadio San Siro|Milano": {
+  "via": "Piazzale Angelo Moratti",
+  "civico": "",
+  "cap": "20151",
+  "comune": "Milano",
+  "fonte": "sito ufficiale dell'Inter (Piazzale Angelo Moratti snc, senza numero civico); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Ippodromo SNAI San Siro|Milano": {
+  "via": "Piazzale dello Sport",
+  "civico": "16",
+  "cap": "20151",
+  "comune": "Milano",
+  "fonte": "brochure ufficiale Ippodromi Snai e italia.it; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Fabbrica del Vapore|Milano": {
+  "via": "Via Giulio Cesare Procaccini",
+  "civico": "4",
+  "cap": "20154",
+  "comune": "Milano",
+  "fonte": "YesMilano (Comune di Milano) e italia.it; cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Casa del Teatro|Faenza": {
+  "via": "Via Oberdan",
+  "civico": "7",
+  "cap": "",
+  "comune": "Faenza",
+  "fonte": "il Resto del Carlino (stagione della Casa del Teatro); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Sequoie Music Park - Parco Caserme Rosse|Bologna": {
+  "via": "Via di Corticella",
+  "civico": "147",
+  "cap": "40128",
+  "comune": "Bologna",
+  "fonte": "Songkick e il Resto del Carlino (Parco delle Caserme Rosse); cercato con WebSearch dalla chat Events il 27/11/2026"
+ },
+ "Fiera Milano Live|Rho": {
+  "via": "Strada Statale del Sempione",
+  "civico": "28",
+  "cap": "20017",
+  "comune": "Rho",
+  "fonte": "italia.it e TicketOne (quartiere Fiera Milano, area Cargo 1); cercato con WebSearch dalla chat Events il 27/11/2026"
  }
 }

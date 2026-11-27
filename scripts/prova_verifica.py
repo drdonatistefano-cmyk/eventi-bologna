@@ -318,5 +318,11 @@ prova("descrizioni: quelle buone e quelle generiche restano come sono",
                                                    "Serata nel club APOLLO CLUB MILANO.", "Comicità all'ARCA.", "Spettacolo di prosa.")))
 prova("eventi_auto ripulisce le descrizioni lette dai siti", _ea.count("RA.pulisci_descrizione(") >= 2)
 
+# ---------------------------------------------------------------- indirizzi senza numero civico (27/11/2026)
+import pagine_eventi as PE  # noqa: E402
+prova("indirizzi: via e numero insieme", PE.via_civico({"via": "Via Cartoleria", "civico": "42"}) == "Via Cartoleria 42")
+prova("indirizzi: senza numero civico solo la via, senza spazio in più",
+      PE.via_civico({"via": "Largo Gustav Mahler", "civico": ""}) == "Largo Gustav Mahler")
+
 print(f"\n{len(FALLITE)} prove fallite" if FALLITE else "\nTutte le prove passano")
 sys.exit(1 if FALLITE else 0)
