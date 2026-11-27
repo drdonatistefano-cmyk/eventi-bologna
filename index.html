@@ -866,6 +866,8 @@ html body #more{border-radius:999px;height:48px;padding:0 26px;font-weight:700;c
 .ach-guide__btn.ach-guide__coll{margin-left:0}
 @media (max-width:359px){.ach-guide{gap:6px}.ach-guide__btn{gap:6px;padding:7px 6px}.ach-guide__ico.ach-logo,.ach-guide__ico.ach-logo svg{width:26px;height:26px}.ach-guide__txt b{font-size:13px}.ach-guide__txt small{font-size:11px}}
 </style>
+<script id="beta-2030-tema">/* beta 2030: tema scuro se il telefono è in modalità scura, o con ?tema=scuro (?tema=chiaro per forzare il chiaro) */
+(function(){try{var q=location.search,d=/[?&]tema=scuro/.test(q)||(!/[?&]tema=chiaro/.test(q)&&window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches);if(d)document.documentElement.classList.add("beta-scuro")}catch(_){}})();</script>
 <style id="beta-2030">
 /* 27/11/2026, Stefano: versione beta «Events 2030» da NON pubblicare. Solo grafica, nessuna funzione cambiata.
    12:16 «riprendi la grafica del prototipo, più snello»; 12:21 «le scritte strabordano, le icone si sovrappongono:
@@ -1068,7 +1070,7 @@ html body .card.mini:has(.msr)>.msr.mx{margin-top:auto;color:var(--mute);font-si
 html body .card.mini .msr{display:flex;gap:8px;font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 html body .card.mini .msr b{font-weight:800}
 /* ===== 27/11 15:18: colori più moderni, blu del simbolo (#3d5f7d) come colore principale ===== */
-@media not (prefers-color-scheme:dark){
+
  html:root{--bg:#f5f3ef;--paper:#ffffff;--ink:#1c1f24;--mute:#5d6470;--faint:#8b919b;--line:#e6e2db;
   --terra:#3d5f7d;--blu:#3d5f7d;--blu-scuro:#2c4a66;--blu-tenue:#e8eef4;--terra-soft:#e8eef4;--terra-ink:#2c4a66;
   --rock:#4f6bed;--jazz:#0f9488;--pop:#8b5cf6;--teatro:#129a63;--classica:#b7791f;--club:#e0457b;--libri:#d97706;--ochre:#ef8a00;
@@ -1089,7 +1091,45 @@ html body .card.mini .msr b{font-weight:800}
  html body #nA{background:color-mix(in srgb,#f5f3ef 92%,transparent)}
  html body .dlabel{background:#f5f3ef}
  html body .vtile .vbadge{background:color-mix(in srgb,var(--g,#3d5f7d) 12%,#fff)!important}
-}
+
+/* ===== 27/11 15:33: tema scuro della beta (telefono in modalità scura, o ?tema=scuro nell'indirizzo) ===== */
+html.beta-scuro:root{color-scheme:dark;--bg:#0f1216;--paper:#171b21;--ink:#e9ecf1;--mute:#a0a8b5;--faint:#7c8492;--line:#272d36;
+ --terra:#7fa3c7;--blu:#7fa3c7;--blu-scuro:#a9c3dc;--blu-tenue:#1c2633;--terra-soft:#1c2633;--terra-ink:#a9c3dc;--on:#fff;
+ --rock:#8ea2ff;--jazz:#3cc7b9;--pop:#b69bff;--teatro:#3ecf8e;--classica:#e3ab52;--club:#ff6f9c;--libri:#f5a524;--ochre:#ffad33;
+ --calcio:#4ade80;--basket:#ff8a4c;--volley:#60a5fa;--tennis:#eab308;--hockey:#38bdf8;--confer:#82a7e0;--visite:#3fd0d0;
+ --shadow:none;--shadow-alta:0 8px 30px rgba(0,0,0,.45)}
+html.beta-scuro body{--beta-a:#4f7aa3;--beta-grad:linear-gradient(180deg,#5b87b1,#3d5f7d);--beta-ombra:0 1px 0 rgba(255,255,255,.03),0 6px 18px rgba(0,0,0,.28);background:var(--bg);color:var(--ink)}
+html.beta-scuro body .modes button:not(.on),html.beta-scuro body .iconbtn:not(#share),html.beta-scuro body .search input,html.beta-scuro body #q,
+html.beta-scuro body .seg,html.beta-scuro body .vtile,html.beta-scuro body .city,html.beta-scuro body .ach-guide__btn,html.beta-scuro body .act{background:#171b21!important;border-color:#2a313b!important;color:var(--ink)}
+html.beta-scuro body .seg button:not(.on){color:#b3bac6}
+html.beta-scuro body .bar{background:rgba(15,18,22,.86)}
+html.beta-scuro body #nA{background:rgba(15,18,22,.92)}
+html.beta-scuro body .dlabel,html.beta-scuro body .cntrow{background:#0f1216}
+html.beta-scuro body .card.mini{background:color-mix(in srgb,var(--g,transparent) 8%,#171b21);border-color:#262c35;box-shadow:inset 3px 0 0 var(--g,var(--line)),0 1px 0 rgba(255,255,255,.03)}
+html.beta-scuro body .card:not(.mini){background:#171b21;border-color:#262c35}
+html.beta-scuro body #nA .rowq::before{background:#1c2633 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a9c3dc' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z'/%3E%3Ccircle cx='12' cy='10' r='2.6'/%3E%3C/svg%3E") 10px 50%/15px no-repeat;color:#a9c3dc}
+html.beta-scuro body #nA .rowq .ch,html.beta-scuro body #nA .rowq .ch.q{background:#1d222a;color:var(--ink)}
+html.beta-scuro body #nA .ch{background:#171b21;border-color:#2a313b;color:var(--ink)}
+html.beta-scuro body .card.mini .act.tkt.info{background:#171b21!important;color:#a9c3dc;border-color:#2c3a4a!important}
+html.beta-scuro body .card.mini .mloc,html.beta-scuro body .card.mini .mloc .mlg{color:var(--ink)}
+html.beta-scuro body .card.mini .mloc .mcom,html.beta-scuro body .card.mini .mhit,html.beta-scuro body .month small,html.beta-scuro body .cnt,html.beta-scuro body .lede,html.beta-scuro body .vnext,html.beta-scuro body .mper small{color:#a9b1bd}
+html.beta-scuro body .card.mini .multi,html.beta-scuro body .card.mini .time,html.beta-scuro body .card.mini .mloc svg{color:#a9c3dc}
+html.beta-scuro body .card.mini .gtag{color:color-mix(in srgb,var(--g,#a9c3dc) 85%,#fff)}
+html.beta-scuro body .card.mini .title,html.beta-scuro body .dlabel .mo,html.beta-scuro body .month,html.beta-scuro body .kick b,html.beta-scuro body .vname{color:#f2f4f7}
+html.beta-scuro body .pill,html.beta-scuro body .mst{background:#1d222a!important;color:#b3bac6!important;border-color:#2a313b!important}
+html.beta-scuro body .pill.ok{background:#14271d!important;color:#6fe0a3!important;border-color:#1f3a2a!important}
+html.beta-scuro body .mst.last{background:var(--beta-grad)!important;color:#fff!important}
+html.beta-scuro body .att .ap,html.beta-scuro body .ap{background:#1c2633;color:#a9c3dc;border-color:#2c3a4a}
+html.beta-scuro body .vtile .vbadge{background:color-mix(in srgb,var(--g,#7fa3c7) 18%,#171b21)!important;color:color-mix(in srgb,var(--g,#7fa3c7) 80%,#fff)}
+html.beta-scuro body .mbar,html.beta-scuro body .vbar{background:#262c35}
+@media(hover:hover){html.beta-scuro body #nA .ch:hover:not([aria-pressed="true"]),html.beta-scuro body .modes button:hover:not(.on){background:#1f2731!important;border-color:#33404f!important}}
+html.beta-scuro #betaGen .bg-fondo{background:rgba(0,0,0,.55)}
+html.beta-scuro #betaGen .bg-pan{background:#171b21;box-shadow:0 -12px 40px rgba(0,0,0,.5)}
+html.beta-scuro #betaGen .ch,html.beta-scuro #betaGen .bg-x{background:#1d222a;border-color:#2a313b;color:var(--ink)}
+@media(hover:hover){html.beta-scuro #betaGen .ch:hover:not([aria-pressed="true"]):not(:disabled){background:#232a34;border-color:#33404f}}
+html.beta-scuro body .city .k{background:var(--beta-grad)!important}
+html.beta-scuro body .att .lk,html.beta-scuro body .lk{color:#a9c3dc}
+html.beta-scuro body::after{background:#e9ecf1;color:#0f1216}
 /* ===== mesi e giorni ===== */
 html body .month{font-size:1.25rem;margin:18px 0 2px;padding-bottom:7px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
 html body .day{display:block;padding:2px 0 8px;border-top:0}
