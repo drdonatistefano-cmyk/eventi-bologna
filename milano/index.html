@@ -1067,6 +1067,29 @@ html body .card.mini:has(.msr)>.mfoot{position:absolute;top:10px;right:12px;over
 html body .card.mini:has(.msr)>.msr.mx{margin-top:auto;color:var(--mute);font-size:12px}
 html body .card.mini .msr{display:flex;gap:8px;font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 html body .card.mini .msr b{font-weight:800}
+/* ===== 27/11 15:18: colori più moderni, blu del simbolo (#3d5f7d) come colore principale ===== */
+@media not (prefers-color-scheme:dark){
+ html:root{--bg:#f5f3ef;--paper:#ffffff;--ink:#1c1f24;--mute:#5d6470;--faint:#8b919b;--line:#e6e2db;
+  --terra:#3d5f7d;--blu:#3d5f7d;--blu-scuro:#2c4a66;--blu-tenue:#e8eef4;--terra-soft:#e8eef4;--terra-ink:#2c4a66;
+  --rock:#4f6bed;--jazz:#0f9488;--pop:#8b5cf6;--teatro:#129a63;--classica:#b7791f;--club:#e0457b;--libri:#d97706;--ochre:#ef8a00;
+  --calcio:#16a34a;--basket:#ea6a2a;--volley:#3b82f6;--tennis:#ca8a04;--hockey:#0891b2;--confer:#4f7cc4;--visite:#0ea5a4;
+  --shadow:0 1px 2px rgba(23,32,48,.05),0 2px 8px rgba(23,32,48,.04);--shadow-alta:0 4px 10px rgba(23,32,48,.06),0 16px 36px rgba(23,32,48,.10)}
+ html body{--beta-a:#3d5f7d;--beta-grad:linear-gradient(180deg,#4a7096,#3d5f7d);--beta-ombra:0 1px 2px rgba(23,32,48,.05),0 2px 10px rgba(23,32,48,.05)}
+ html body .modes button.on,html body .seg button.on,html body #nA .rowq .ch[aria-pressed="true"],html body #nA .ch[aria-pressed="true"],
+ html body .card.mini .act.tkt,html body #betaGen .ch[aria-pressed="true"],html body .dlabel .tg,html body .fabf{background:var(--beta-grad)!important;border-color:#3d5f7d!important}
+ html body .modes button.on{box-shadow:0 8px 20px rgba(61,95,125,.28)}
+ html body .card.mini{background:color-mix(in srgb,var(--g,transparent) 3.5%,#fff)}
+ html body #nA .rowq::before{background-color:#e8eef4;color:#3d5f7d}
+ html body #nA .rowq .ch,html body #nA .rowq .ch.q{background:#ecebe7}
+ html body .card.mini .act.tkt.info{background:#fff!important;color:#3d5f7d;border-color:#cfdbe7!important}
+ html body .card.mini .mloc svg,html body .card.mini .time{color:#3d5f7d}
+ html body .modes button:not(.on),html body .iconbtn:not(#share),html body .search input,html body #q,html body .seg,html body .vtile,html body .city{background:#fff}
+ html body #share{background:var(--beta-grad)!important;color:#fff!important;border-color:#3d5f7d!important}
+ html body .bar{background:color-mix(in srgb,#f5f3ef 86%,transparent)}
+ html body #nA{background:color-mix(in srgb,#f5f3ef 92%,transparent)}
+ html body .dlabel{background:#f5f3ef}
+ html body .vtile .vbadge{background:color-mix(in srgb,var(--g,#3d5f7d) 12%,#fff)!important}
+}
 /* ===== mesi e giorni ===== */
 html body .month{font-size:1.25rem;margin:18px 0 2px;padding-bottom:7px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
 html body .day{display:block;padding:2px 0 8px;border-top:0}
