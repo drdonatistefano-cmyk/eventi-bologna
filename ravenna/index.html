@@ -970,6 +970,24 @@ html body #nA .rowq{border-right:0!important}
 @media(min-width:760px){#betaGen .bg-pan{left:50%;right:auto;bottom:auto;top:14vh;transform:translateX(-50%);width:min(600px,92vw);border-radius:24px;padding:18px 22px 22px;animation:bgIn .2s ease}#betaGen .bg-pan::before{display:none}}
 @keyframes bgIn{from{opacity:0}to{opacity:1}}
 @keyframes bgSu{from{transform:translateY(40px);opacity:.4}to{transform:none;opacity:1}}
+/* ===== «quando» e città sempre visibili scorrendo, data in un selettore a misure uguali ===== */
+html body #nA{position:-webkit-sticky;position:sticky;top:var(--barh,0px);z-index:18;background:color-mix(in srgb,var(--bg) 94%,transparent);
+ -webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px)}
+html body #nA .rowq{position:relative;isolation:isolate;display:grid!important;grid-template-columns:auto repeat(var(--n),minmax(0,1fr))!important;align-items:center;gap:4px;padding:8px 0!important;max-width:620px}
+html body #nA .rowq::before{content:var(--beta-citta,"");display:inline-flex;align-items:center;height:36px;padding:0 12px 0 30px;margin-right:6px;border-radius:999px;
+ background:#e7edf3 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232F5578' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z'/%3E%3Ccircle cx='12' cy='10' r='2.6'/%3E%3C/svg%3E") 10px 50%/15px no-repeat;
+ color:#2F5578;font:700 13px var(--sans);white-space:nowrap}
+html body #nA .rowq::after{content:"";position:absolute;z-index:-1;top:8px;bottom:8px;right:0;left:var(--beta-cw,110px);border-radius:999px;background:color-mix(in srgb,var(--line) 55%,var(--paper))}
+html body #nA .rowq .ch,html body #nA .rowq .ch.q{height:36px;min-height:36px;width:100%;justify-content:center;padding:0 6px;border:0;background:transparent;border-radius:999px;font-weight:600;font-size:13.5px;color:var(--ink)}
+html body #nA .rowq .ch small{font-size:11px}
+html body #nA .rowq .ch[aria-pressed="true"]{background:var(--beta-a);color:#fff;box-shadow:0 2px 8px color-mix(in srgb,var(--beta-a) 30%,transparent)}
+@media(hover:hover){html body #nA .rowq .ch:hover:not([aria-pressed="true"]):not(:disabled){background:rgba(255,255,255,.7)}}
+html body .cntrow{top:calc(var(--barh,0px) + var(--qh,0px) + var(--nah,0px))!important}
+html body .dlabel{top:calc(var(--barh,0px) + var(--qh,0px) + var(--sth,0px) + var(--nah,0px))!important}
+html body .citta-v{display:none!important}
+@media(max-width:759px){html body .cntrow{position:static!important;border-bottom:0;min-height:0;padding-top:2px;padding-bottom:0}
+ html body .dlabel{top:calc(var(--barh,0px) + var(--nah,0px))!important}
+ html body #nA .rowq .ch,html body #nA .rowq .ch.q{font-size:13px;padding:0 4px}}
 /* ===== mesi e giorni ===== */
 html body .month{font-size:1.25rem;margin:18px 0 2px;padding-bottom:7px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
 html body .day{display:block;padding:2px 0 8px;border-top:0}
@@ -2055,6 +2073,13 @@ body.nA #qwrap{display:none!important} body.nA{--qh:0px}
   document.body.appendChild(box);riempi();
   var nA=document.getElementById("nA");if(nA&&window.MutationObserver){obs=new MutationObserver(riempi);obs.observe(nA,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]})}
   var x=box.querySelector(".bg-x");if(x)x.focus()}
+ /* città nella riga fissa del «quando» e altezza di quella riga per le righe ferme sotto */
+ try{var R=document.documentElement,nm=(typeof CITY!=="undefined"&&CITY&&CITY.nome)||"";R.style.setProperty("--beta-citta",JSON.stringify(nm));
+  var misura=function(){var a=document.getElementById("nA");if(!a)return;R.style.setProperty("--nah",a.offsetHeight+"px");
+   var q=a.querySelector(".rowq");if(q){var f=q.querySelector(".ch");if(f)R.style.setProperty("--beta-cw",(f.offsetLeft-2)+"px")}};
+  misura();if(window.ResizeObserver){var a0=document.getElementById("nA");if(a0)new ResizeObserver(misura).observe(a0)}
+  if(window.MutationObserver){var a1=document.getElementById("nA");if(a1)new MutationObserver(misura).observe(a1,{childList:true})}
+  addEventListener("resize",misura)}catch(_){}
  window.BETA_GEN={apri:apri,chiudi:chiudi};
  /* in cattura: la pagina ridisegna i pulsanti subito dopo il tocco */
  document.addEventListener("click",function(e){var t=e.target;if(!t||!t.closest)return;
