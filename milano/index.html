@@ -878,27 +878,26 @@ html body .hero .kick .arches{display:none}
 html body .hero h1{font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.12;letter-spacing:-.02em;margin:4px 0 0}
 html body .hero .lede{font-size:14.5px;line-height:1.5;margin-top:6px;max-width:62ch}
 html body .city{border-radius:999px;box-shadow:var(--beta-ombra)}
-html body .ach-guide{display:flex;flex-wrap:nowrap;gap:8px;margin:12px 0 4px;overflow-x:auto;scrollbar-width:none;padding:2px 0}
-html body .ach-guide::-webkit-scrollbar{display:none}
-html body .ach-guide .ach-guide__btn,html body .ach-guide .ach-guide__btn.ach-guide__coll{flex:0 0 auto;min-width:0;width:auto;max-width:none;display:inline-flex;align-items:center;gap:8px;
- height:40px;padding:0 14px 0 6px;border-radius:999px;box-shadow:none;white-space:nowrap;margin:0}
+html body .hero{position:relative}
+html body .ach-guide{position:absolute;top:max(10px,env(safe-area-inset-top));right:16px;display:flex;flex-wrap:nowrap;gap:6px;margin:0;padding:0;overflow:visible;z-index:6}
+html body .ach-guide .ach-guide__btn,html body .ach-guide .ach-guide__btn.ach-guide__coll{flex:0 0 auto;width:34px;height:34px;min-width:0;padding:0;margin:0;border-radius:50%;
+ display:inline-flex;align-items:center;justify-content:center;box-shadow:none;border:1px solid var(--line);background:var(--paper)}
 html body .ach-guide__ico,html body .ach-guide__ico svg{width:28px!important;height:28px!important;flex:none}
-html body .ach-guide__coll .ach-guide__ico{font-size:17px;display:inline-flex;align-items:center;justify-content:center}
-html body .ach-guide__txt{display:block;white-space:nowrap}
-html body .ach-guide__txt b{font-size:13.5px;font-weight:600}
-html body .ach-guide__txt small,html body .ach-guide__arr{display:none!important}
+html body .ach-guide__txt,html body .ach-guide__arr{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important}
+html body .ach-guide__coll .ach-guide__ico{width:26px!important;height:26px!important}
+@media(hover:hover){html body .ach-guide .ach-guide__btn:hover{border-color:#c9d5e2;transform:translateY(-1px)}}
+html body .hero{padding-top:max(52px,calc(env(safe-area-inset-top) + 44px))}
+html body .city{top:max(56px,calc(env(safe-area-inset-top) + 48px))!important;right:16px!important}
 html body .hero .stats{box-shadow:none;border-radius:16px;overflow:hidden}
 html body .hero .stats .stat b{font-size:1.25rem;letter-spacing:-.01em}
 html body .hero .stats .stat span{font-size:11.5px}
 @media(max-width:759px){
  html body .hero h1,html body .hero .lede{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
  html body .hero .stats{display:none}
- html body .citta-v{display:none!important}
 }
 @media(min-width:900px){
- html body .hero{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"kick kick" "h1 stats" "guide stats";align-items:center;column-gap:32px}
+ html body .hero{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"kick kick" "h1 stats";align-items:center;column-gap:32px}
  html body .hero .lede{display:none}
- html body .hero .ach-guide{grid-area:guide}
  html body .hero .stats{grid-template-columns:repeat(4,auto);min-width:0;margin:0;padding:0}
  html body .hero .stats .stat{padding:10px 16px}
 }
@@ -938,16 +937,43 @@ html body #nA .rowg .ch.gq{flex:0 0 auto}
 html body #nA .ch .gi{display:none}
 html body #nA .ch.gq::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gc,var(--beta-a));flex:none}
 html body #nA .ch.gq[aria-pressed="true"]::before{background:#fff}
-html body #nA .ch.gq[data-v="Arena"]{--gc:var(--pop)}html body #nA .ch.gq[data-v="Arte contemporanea e installazioni"]{--gc:var(--pop)}html body #nA .ch.gq[data-v="Basket"]{--gc:var(--basket)}html body #nA .ch.gq[data-v="Calcio"]{--gc:var(--calcio)}html body #nA .ch.gq[data-v="Cinema e spettacolo"]{--gc:var(--terra)}html body #nA .ch.gq[data-v="Cineteca"]{--gc:var(--classica)}html body #nA .ch.gq[data-v="Classica"]{--gc:var(--classica)}html body #nA .ch.gq[data-v="Comici"]{--gc:var(--ochre)}html body #nA .ch.gq[data-v="D\'essai"]{--gc:var(--jazz)}html body #nA .ch.gq[data-v="Design e moda"]{--gc:var(--ochre)}html body #nA .ch.gq[data-v="Disegno, grafica e illustrazione"]{--gc:var(--rock)}html body #nA .ch.gq[data-v="Esperienze immersive"]{--gc:var(--pop)}html body #nA .ch.gq[data-v="Fotografia"]{--gc:var(--jazz)}html body #nA .ch.gq[data-v="Hockey"]{--gc:var(--hockey)}html body #nA .ch.gq[data-v="Incontri e conferenze"]{--gc:var(--confer)}html body #nA .ch.gq[data-v="Jazz"]{--gc:var(--jazz)}html body #nA .ch.gq[data-v="Libri"]{--gc:var(--libri)}html body #nA .ch.gq[data-v="Multisala"]{--gc:var(--rock)}html body #nA .ch.gq[data-v="Pittura"]{--gc:var(--classica)}html body #nA .ch.gq[data-v="Pop e altra musica"]{--gc:var(--pop)}html body #nA .ch.gq[data-v="Rock"]{--gc:var(--rock)}html body #nA .ch.gq[data-v="Sala di comunità"]{--gc:var(--teatro)}html body #nA .ch.gq[data-v="Scienza e tecnica"]{--gc:var(--rock)}html body #nA .ch.gq[data-v="Scultura"]{--gc:var(--teatro)}html body #nA .ch.gq[data-v="Serate e club"]{--gc:var(--club)}html body #nA .ch.gq[data-v="Storia e archeologia"]{--gc:var(--classica)}html body #nA .ch.gq[data-v="Teatro"]{--gc:var(--teatro)}html body #nA .ch.gq[data-v="Tennis"]{--gc:var(--tennis)}html body #nA .ch.gq[data-v="Visite guidate"]{--gc:var(--visite)}html body #nA .ch.gq[data-v="Volley"]{--gc:var(--volley)}
+html body #nA .ch.gq[data-v="Arena"],#betaGen .ch.gq[data-v="Arena"]{--gc:var(--pop)}html body #nA .ch.gq[data-v="Arte contemporanea e installazioni"],#betaGen .ch.gq[data-v="Arte contemporanea e installazioni"]{--gc:var(--pop)}html body #nA .ch.gq[data-v="Basket"],#betaGen .ch.gq[data-v="Basket"]{--gc:var(--basket)}html body #nA .ch.gq[data-v="Calcio"],#betaGen .ch.gq[data-v="Calcio"]{--gc:var(--calcio)}html body #nA .ch.gq[data-v="Cinema e spettacolo"],#betaGen .ch.gq[data-v="Cinema e spettacolo"]{--gc:var(--terra)}html body #nA .ch.gq[data-v="Cineteca"],#betaGen .ch.gq[data-v="Cineteca"]{--gc:var(--classica)}html body #nA .ch.gq[data-v="Classica"],#betaGen .ch.gq[data-v="Classica"]{--gc:var(--classica)}html body #nA .ch.gq[data-v="Comici"],#betaGen .ch.gq[data-v="Comici"]{--gc:var(--ochre)}html body #nA .ch.gq[data-v="D\'essai"],#betaGen .ch.gq[data-v="D\'essai"]{--gc:var(--jazz)}html body #nA .ch.gq[data-v="Design e moda"],#betaGen .ch.gq[data-v="Design e moda"]{--gc:var(--ochre)}html body #nA .ch.gq[data-v="Disegno, grafica e illustrazione"],#betaGen .ch.gq[data-v="Disegno, grafica e illustrazione"]{--gc:var(--rock)}html body #nA .ch.gq[data-v="Esperienze immersive"],#betaGen .ch.gq[data-v="Esperienze immersive"]{--gc:var(--pop)}html body #nA .ch.gq[data-v="Fotografia"],#betaGen .ch.gq[data-v="Fotografia"]{--gc:var(--jazz)}html body #nA .ch.gq[data-v="Hockey"],#betaGen .ch.gq[data-v="Hockey"]{--gc:var(--hockey)}html body #nA .ch.gq[data-v="Incontri e conferenze"],#betaGen .ch.gq[data-v="Incontri e conferenze"]{--gc:var(--confer)}html body #nA .ch.gq[data-v="Jazz"],#betaGen .ch.gq[data-v="Jazz"]{--gc:var(--jazz)}html body #nA .ch.gq[data-v="Libri"],#betaGen .ch.gq[data-v="Libri"]{--gc:var(--libri)}html body #nA .ch.gq[data-v="Multisala"],#betaGen .ch.gq[data-v="Multisala"]{--gc:var(--rock)}html body #nA .ch.gq[data-v="Pittura"],#betaGen .ch.gq[data-v="Pittura"]{--gc:var(--classica)}html body #nA .ch.gq[data-v="Pop e altra musica"],#betaGen .ch.gq[data-v="Pop e altra musica"]{--gc:var(--pop)}html body #nA .ch.gq[data-v="Rock"],#betaGen .ch.gq[data-v="Rock"]{--gc:var(--rock)}html body #nA .ch.gq[data-v="Sala di comunità"],#betaGen .ch.gq[data-v="Sala di comunità"]{--gc:var(--teatro)}html body #nA .ch.gq[data-v="Scienza e tecnica"],#betaGen .ch.gq[data-v="Scienza e tecnica"]{--gc:var(--rock)}html body #nA .ch.gq[data-v="Scultura"],#betaGen .ch.gq[data-v="Scultura"]{--gc:var(--teatro)}html body #nA .ch.gq[data-v="Serate e club"],#betaGen .ch.gq[data-v="Serate e club"]{--gc:var(--club)}html body #nA .ch.gq[data-v="Storia e archeologia"],#betaGen .ch.gq[data-v="Storia e archeologia"]{--gc:var(--classica)}html body #nA .ch.gq[data-v="Teatro"],#betaGen .ch.gq[data-v="Teatro"]{--gc:var(--teatro)}html body #nA .ch.gq[data-v="Tennis"],#betaGen .ch.gq[data-v="Tennis"]{--gc:var(--tennis)}html body #nA .ch.gq[data-v="Visite guidate"],#betaGen .ch.gq[data-v="Visite guidate"]{--gc:var(--visite)}html body #nA .ch.gq[data-v="Volley"],#betaGen .ch.gq[data-v="Volley"]{--gc:var(--volley)}
 html body .ach-guide__coll .ach-guide__ico{font-size:0!important;background:#eef2f7;border-radius:50%;position:relative}
 html body .ach-guide__coll .ach-guide__ico::after{content:"";position:absolute;inset:6px;background:var(--beta-a);
  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='9' cy='8' r='3.5'/%3E%3Cpath d='M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5'/%3E%3Cpath d='M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c1.8.7 3 2.5 3.5 5.2'/%3E%3C/svg%3E") center/contain no-repeat;
  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='9' cy='8' r='3.5'/%3E%3Cpath d='M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5'/%3E%3Cpath d='M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c1.8.7 3 2.5 3.5 5.2'/%3E%3C/svg%3E") center/contain no-repeat}
 html body .cnote>span:first-child{display:none}
+/* ===== esperimento: i filtri tematici escono in una finestra toccando la sezione ===== */
+html body #nA .rowg{display:none!important}
+html body #nA .rowq{border-right:0!important}
+#betaGen{position:fixed;inset:0;z-index:9995;font-family:var(--sans)}
+#betaGen .bg-fondo{position:absolute;inset:0;background:rgba(20,24,30,.34);animation:bgIn .18s ease}
+#betaGen .bg-pan{position:absolute;left:0;right:0;bottom:0;max-height:78vh;overflow:auto;background:var(--paper);border-radius:24px 24px 0 0;
+ padding:10px 18px calc(22px + env(safe-area-inset-bottom));box-shadow:0 -12px 40px rgba(20,24,30,.18);animation:bgSu .22s cubic-bezier(.2,.8,.2,1)}
+#betaGen .bg-pan::before{content:"";display:block;width:38px;height:4px;border-radius:2px;background:var(--line);margin:0 auto 10px}
+#betaGen .bg-testa{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+#betaGen .bg-testa b{display:block;font:700 1.25rem/1.1 var(--serif);color:var(--ink)}
+#betaGen .bg-testa small{display:block;font-size:13px;color:var(--mute);margin-top:3px}
+#betaGen .bg-x{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--paper);color:var(--ink);font-size:22px;line-height:1;cursor:pointer}
+#betaGen .bg-list{display:flex;flex-wrap:wrap;gap:8px}
+#betaGen .ch{display:inline-flex;align-items:center;gap:7px;height:40px;padding:0 15px;border-radius:999px;border:1px solid var(--line);background:var(--paper);
+ color:var(--ink);font:600 14px var(--sans);white-space:nowrap;cursor:pointer}
+#betaGen .ch .gi{display:none}
+#betaGen .ch.gq::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gc,var(--beta-a))}
+#betaGen .ch small{font-size:12px;opacity:.6;font-weight:600}
+#betaGen .ch[aria-pressed="true"]{background:var(--beta-a);border-color:var(--beta-a);color:#fff}
+#betaGen .ch[aria-pressed="true"]::before{background:#fff}
+#betaGen .ch[aria-pressed="true"] small{color:#fff;opacity:.85}
+#betaGen .ch:disabled{opacity:.45;cursor:default}
+#betaGen .bg-tutto{font-weight:700}
+@media(hover:hover){#betaGen .ch:hover:not([aria-pressed="true"]):not(:disabled){background:#eef2f7;border-color:#c9d5e2}}
+@media(min-width:760px){#betaGen .bg-pan{left:50%;right:auto;bottom:auto;top:14vh;transform:translateX(-50%);width:min(600px,92vw);border-radius:24px;padding:18px 22px 22px;animation:bgIn .2s ease}#betaGen .bg-pan::before{display:none}}
+@keyframes bgIn{from{opacity:0}to{opacity:1}}
+@keyframes bgSu{from{transform:translateY(40px);opacity:.4}to{transform:none;opacity:1}}
 /* ===== mesi e giorni ===== */
 html body .month{font-size:1.25rem;margin:18px 0 2px;padding-bottom:7px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
 html body .day{display:block;padding:2px 0 8px;border-top:0}
-html body .dlabel{display:flex;align-items:center;gap:8px;text-align:left;padding:10px 2px 7px;background:var(--bg);z-index:5}
+html body .dlabel{display:flex;align-items:center;gap:8px;text-align:left;padding:10px 2px 7px;background:var(--bg);z-index:12;position:-webkit-sticky;position:sticky;top:calc(var(--barh,0px) + var(--qh,0px) + var(--sth,0px));margin:0 -2px;box-shadow:0 1px 0 var(--line)}
 html body .dlabel .wd,html body .dlabel .n,html body .dlabel .cv{display:none}
 html body .dlabel .mo{display:block;font-family:var(--serif);font-size:1.05rem;font-weight:700;color:var(--ink)}
 html body .dlabel .mo::first-letter{text-transform:uppercase}
@@ -1013,7 +1039,7 @@ html body .modes button:active,html body .seg button:active,html body .act:activ
 html body :focus-visible{outline:2px solid var(--beta-a);outline-offset:2px}
 html body .time,html body .stat b,html body .modes small{font-variant-numeric:tabular-nums}
 @media(prefers-reduced-motion:reduce){html body *{transition:none!important}}
-html body::after{content:"Beta 2030";position:absolute;right:14px;top:calc(10px + env(safe-area-inset-top));z-index:30;
+html body::after{content:"Beta 2030";position:absolute;left:16px;top:calc(18px + env(safe-area-inset-top));z-index:30;
  font:700 10px/1 Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border-radius:999px;background:#231d18;color:#fffdf9;opacity:.75;pointer-events:none}
 </style>
 </head>
@@ -1127,7 +1153,8 @@ const CITTA_CFG={
    ["Copparese","Copparese e Po",["Copparo","Riva del Po","Tresignana","Jolanda di Savoia"]],
    ["Delta","Delta e costa",["Comacchio","Codigoro","Goro","Mesola","Lagosanto","Fiscaglia","Ostellato"]],
    ["Argentano","Argentano",["Argenta","Portomaggiore","Masi Torello","Voghiera"]]]}};
-const CITY=Object.values(CITTA_CFG).find(c=>c.k!=="bo"&&new RegExp("^"+c.path.replace(/\/$/,"")+"(/|$)").test(location.pathname))||CITTA_CFG.bo;
+/* beta 2030 (27/11/2026): nell'anteprima dei rami (/anteprima/events/claude/RAMO/) la città si legge dopo il prefisso */const BETA_BASE=(location.pathname.match(/^\/anteprima\/[^/]+\/claude\/[^/]+/)||[""])[0];
+const CITY=Object.values(CITTA_CFG).find(c=>c.k!=="bo"&&new RegExp("^"+c.path.replace(/\/$/,"")+"(/|$)").test(location.pathname.slice(BETA_BASE.length)||"/"))||CITTA_CFG.bo;
 /* ---------- dati ---------- */
 const DATA=(window.EVENTI_DATA&&typeof window.EVENTI_DATA==="object")?window.EVENTI_DATA:{aggiornato:"",eventi:[]};
 const ISO=/^\d{4}-\d{2}-\d{2}$/;
@@ -1784,7 +1811,7 @@ notaAff();
 /* ---------- selettore città e testi della città ---------- */
 (function(){const h=document.querySelector(".hero h1");
  if(CITY.k!=="bo"){h.innerHTML=`Eventi ${CITY.nome},<br><em>stasera</em> e oltre.`;document.querySelector(".arches").hidden=true;const sy=document.querySelector(`.msym[data-s="${CITY.k}"]`);if(sy)sy.removeAttribute("hidden")}
- const b=$("#city");if(!ON_WEB||CITTA_ATTIVE.length<2||!CITTA_ATTIVE.includes(CITY.k))return;b.hidden=false;b.dataset.c=CITY.k;
+ const b=$("#city");if(!(ON_WEB||BETA_BASE)||CITTA_ATTIVE.length<2||!CITTA_ATTIVE.includes(CITY.k))return;b.hidden=false;b.dataset.c=CITY.k;
  if(CITTA_ATTIVE.length>2){   /* tre o più città: una sigla per città, tocchi quella che vuoi */
   const box=document.createElement("div");box.className="city citta-n";box.id="city";box.setAttribute("role","group");box.setAttribute("aria-label","Città");
   box.style.setProperty("--n",CITTA_ATTIVE.length);box.style.setProperty("--i",Math.max(0,CITTA_ATTIVE.indexOf(CITY.k)));
@@ -1795,7 +1822,7 @@ notaAff();
   document.addEventListener("click",e=>{if(!box.contains(e.target))chiudi()});document.addEventListener("keydown",e=>{if(e.key==="Escape")chiudi()});
   box.addEventListener("click",e=>{const t=e.target.closest(".cb");if(!t)return;if(t.dataset.k===CITY.k){chiudi();return}const c=CITTA_CFG[t.dataset.k];
    box.style.setProperty("--i",CITTA_ATTIVE.indexOf(c.k));box.querySelectorAll(".cb").forEach(x=>x.toggleAttribute("aria-current",x===t));
-   try{localStorage.setItem("citta",c.k)}catch(_){}document.cookie="citta="+c.k+";path=/;max-age=31536000;SameSite=Lax";setTimeout(()=>{location.href=c.path},240)});
+   try{localStorage.setItem("citta",c.k)}catch(_){}document.cookie="citta="+c.k+";path=/;max-age=31536000;SameSite=Lax";setTimeout(()=>{location.href=BETA_BASE+c.path},240)});
   return}
  const other=CITTA_CFG[CITTA_ATTIVE.find(k=>k!==CITY.k)];b.setAttribute("aria-label",`Città: ${CITY.nome}. Tocca per ${other.nome}`);
  const go=()=>{b.dataset.c=other.k;try{localStorage.setItem("citta",other.k)}catch(_){}document.cookie="citta="+other.k+";path=/;max-age=31536000;SameSite=Lax";setTimeout(()=>{location.href=other.path},240)};
@@ -2010,5 +2037,32 @@ body.nA #qwrap{display:none!important} body.nA{--qh:0px}
 #nA .ch:disabled,#nAf .o:disabled{border-color:#A39C90}
 .ach-guide__btn.ach-guide__coll{border-color:#7a8894!important}
 </style>
+<script id="beta-2030-js">
+/* 27/11/2026, Stefano: «esperimento: togliere i filtri tematici; quando spingi ad esempio Spettacoli esce un pop up con i
+   filtri, tra cui Tutto (di default)». Solo nella beta. La finestra copia i pulsanti dei generi che la pagina disegna
+   (nascosti) e li fa usare alla pagina stessa: stessi filtri, stessi conteggi. «Tutto» toglie la scelta del genere. */
+(function(){try{
+ var N={s:"Spettacoli",i:"Incontri",m:"Mostre",c:"Cinema",p:"Sport"},box=null,obs=null;
+ function chips(){return Array.prototype.slice.call(document.querySelectorAll("#nA .rowg .ch"))}
+ function chiudi(){if(obs){obs.disconnect();obs=null}if(box){box.remove();box=null}}
+ function riempi(){if(!box)return;var L=box.querySelector(".bg-list"),cs=chips();L.innerHTML="";
+  if(!cs.length){L.innerHTML='<p style="margin:0;color:var(--mute)">Per questa sezione non ci sono filtri tematici.</p>';return}
+  var k=cs[0].getAttribute("data-k"),scelto=cs.some(function(c){return c.getAttribute("aria-pressed")==="true"});
+  var t=document.createElement("button");t.type="button";t.className="ch bg-tutto";t.setAttribute("data-qclr",k);t.setAttribute("aria-pressed",String(!scelto));t.textContent="Tutto";L.appendChild(t);
+  cs.forEach(function(c){var x=c.cloneNode(true);x.removeAttribute("id");L.appendChild(x)})}
+ function apri(m){chiudi();box=document.createElement("div");box.id="betaGen";box.setAttribute("role","dialog");box.setAttribute("aria-modal","true");box.setAttribute("aria-label","Filtri: "+(N[m]||""));
+  box.innerHTML='<div class="bg-fondo" data-bgclose></div><div class="bg-pan"><div class="bg-testa"><div><b>'+(N[m]||"")+'</b><small>Scegli che cosa vedere</small></div><button type="button" class="bg-x" data-bgclose aria-label="Chiudi">×</button></div><div class="bg-list"></div></div>';
+  document.body.appendChild(box);riempi();
+  var nA=document.getElementById("nA");if(nA&&window.MutationObserver){obs=new MutationObserver(riempi);obs.observe(nA,{childList:true,subtree:true,attributes:true,attributeFilter:["aria-pressed"]})}
+  var x=box.querySelector(".bg-x");if(x)x.focus()}
+ window.BETA_GEN={apri:apri,chiudi:chiudi};
+ /* in cattura: la pagina ridisegna i pulsanti subito dopo il tocco */
+ document.addEventListener("click",function(e){var t=e.target;if(!t||!t.closest)return;
+  if(t.closest("[data-bgclose]")){chiudi();return}
+  if(box&&t.closest("#betaGen .ch")){setTimeout(chiudi,200);return}
+  var mo=t.closest(".modes [data-mode]");if(mo){var m=mo.getAttribute("data-mode");setTimeout(function(){apri(m)},60)}},true);
+ document.addEventListener("keydown",function(e){if(e.key==="Escape")chiudi()});
+}catch(_){}})();
+</script>
 </body>
 </html>
