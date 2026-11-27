@@ -5,6 +5,9 @@ name: Velocità delle guide
 on:
   schedule:
     - cron: "23 4 * * *"      # ogni giorno alle 5:23 (ora italiana d'inverno)
+    # 27/11/2026 (Stefano: «fai in modo che non accada più»): anche alle 13:23, così una guida resa più veloce in mattinata
+    # non resta rossa sulla pagina Cobra fino al giorno dopo (subito: strumenti/rimisura.py velocita <guida> nel privato)
+    - cron: "23 12 * * *"
   workflow_dispatch:
     inputs:
       guide:
