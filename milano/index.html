@@ -1224,6 +1224,18 @@ html body .time,html body .stat b,html body .modes small{font-variant-numeric:ta
 @media(prefers-reduced-motion:reduce){html body *{transition:none!important}}
 html body::after{content:"Beta 2030";position:absolute;left:16px;top:calc(18px + env(safe-area-inset-top));z-index:30;
  font:700 10px/1 Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border-radius:999px;background:#231d18;color:#fffdf9;opacity:.75;pointer-events:none}
+/* ===== 27/11 18:50: in fondo alla pagina niente più bottoni sopra le schede: barra di fondo piena (telefono e iPad) ===== */
+@media(max-width:1023px){
+ html::after{content:"";position:fixed;left:0;right:0;bottom:0;height:calc(72px + env(safe-area-inset-bottom));z-index:15;pointer-events:none;
+  background:color-mix(in srgb,var(--bg) 94%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--line)}
+ html body main{padding-bottom:20px!important}
+ html body footer,html body .foot{margin-bottom:calc(76px + env(safe-area-inset-bottom))}
+ html body .cntrow .seg.only-phone{bottom:calc(9px + env(safe-area-inset-bottom))!important;box-shadow:none!important}
+ html body .fabf{bottom:calc(9px + env(safe-area-inset-bottom))!important;right:max(14px,env(safe-area-inset-right))!important;width:54px!important;height:54px!important;box-shadow:none!important}
+ html body .fab{left:max(14px,env(safe-area-inset-left))!important;right:auto!important;bottom:calc(14px + env(safe-area-inset-bottom))!important;width:44px!important;height:44px!important;z-index:16}
+}
+html.beta-scuro::after{background:color-mix(in srgb,#0f1216 94%,transparent);border-top-color:#2a313b}
+@media(min-width:1024px){html::after{display:none!important}}
 </style>
 </head>
 <body class="nA">
