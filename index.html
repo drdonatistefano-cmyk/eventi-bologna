@@ -1045,6 +1045,28 @@ html body .hero .kick{margin-bottom:6px}
 html body #nA .rowq{justify-content:start}
 @media(min-width:760px) and (max-width:1023px){html body .fabf{left:auto;right:max(14px,env(safe-area-inset-right));transform:none;width:50px;height:50px;padding:0;justify-content:center;font-size:0;gap:0;bottom:calc(68px + env(safe-area-inset-bottom))}
  html body .fabf b{font-size:11px;position:absolute;top:0;right:0}}
+/* ===== 27/11 15:09: tutte le schede dell'elenco della stessa misura ===== */
+html body .card.mini{height:142px;grid-template-rows:auto auto auto auto minmax(0,1fr) 32px;align-content:start;row-gap:4px}
+html body .card.mini>.top{grid-row:1;flex-wrap:nowrap;overflow:hidden;white-space:nowrap;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 18px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 18px),transparent)}
+html body .card.mini>.title{grid-row:2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+html body .card.mini>.mhit,html body .card.mini>.mper{grid-row:3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html body .card.mini>.mbar{grid-row:4;margin:2px 0 0}
+html body .card.mini>.mloc{grid-row:6;align-self:center;margin:0!important;padding:0!important;display:flex;align-items:center;gap:5px;line-height:1.2}
+html body .card.mini>.mfoot{grid-row:6;align-self:center;margin:0!important}
+html body .card.mini:has(.mper){height:158px}
+html body .card.mini .mper{font-size:13px}
+html body .card.mini .mst{flex:none}
+html body .card.mini:has(.msr){display:flex;flex-direction:column;align-items:stretch;text-align:left;gap:4px;height:196px;padding-right:14px}
+html body .card.mini:has(.msr)>*{text-align:left;justify-content:flex-start;margin-left:0;margin-right:0}
+html body .card.mini:has(.msr) .msr b{flex:0 1 auto;width:auto;max-width:62%;overflow:hidden;text-overflow:ellipsis}
+html body .card.mini:has(.msr) .msr span{flex:none}
+html body .card.mini:has(.msr)>*{min-width:0;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html body .card.mini:has(.msr)>.title{white-space:normal;-webkit-line-clamp:1;padding-right:92px}
+html body .card.mini:has(.msr)>.top{padding-right:92px}
+html body .card.mini:has(.msr)>.mfoot{position:absolute;top:10px;right:12px;overflow:visible;padding:0!important}
+html body .card.mini:has(.msr)>.msr.mx{margin-top:auto;color:var(--mute);font-size:12px}
+html body .card.mini .msr{display:flex;gap:8px;font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html body .card.mini .msr b{font-weight:800}
 /* ===== mesi e giorni ===== */
 html body .month{font-size:1.25rem;margin:18px 0 2px;padding-bottom:7px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
 html body .day{display:block;padding:2px 0 8px;border-top:0}
