@@ -867,102 +867,140 @@ html body #more{border-radius:999px;height:48px;padding:0 26px;font-weight:700;c
 @media (max-width:359px){.ach-guide{gap:6px}.ach-guide__btn{gap:6px;padding:7px 6px}.ach-guide__ico.ach-logo,.ach-guide__ico.ach-logo svg{width:26px;height:26px}.ach-guide__txt b{font-size:13px}.ach-guide__txt small{font-size:11px}}
 </style>
 <style id="beta-2030">
-/* 27/11/2026, Stefano: «versione beta da non pubblicare con tutto anche per iPad e pc»; 12:16: «riprendi la grafica
-   della prima versione [il prototipo «Events 2030»], più snello, più compatto». Solo grafica: nessuna funzione cambiata. */
-html body{--beta-r:16px;--beta-a:var(--a,#2F5578)}
-.vh-beta{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important}
-/* ---------- testata: una barra sola, come nel prototipo ---------- */
-html body .hero{padding-top:max(14px,env(safe-area-inset-top));padding-bottom:6px}
+/* 27/11/2026, Stefano: versione beta «Events 2030» da NON pubblicare. Solo grafica, nessuna funzione cambiata.
+   12:16 «riprendi la grafica del prototipo, più snello»; 12:21 «le scritte strabordano, le icone si sovrappongono:
+   cura cornici e dettagli, più bello, elegante, moderno». */
+html body{--beta-a:var(--a,#2F5578);--beta-r:18px;--beta-ombra:0 1px 2px rgba(31,29,26,.04),0 2px 8px rgba(31,29,26,.04)}
+/* ===== testata ===== */
+html body .hero{padding-top:max(30px,env(safe-area-inset-top));padding-bottom:4px}
+html body .hero .kick{margin-bottom:10px}
 html body .hero .kick .arches{display:none}
-html body .hero h1{font-size:clamp(1.35rem,2.4vw,2rem);line-height:1.1;letter-spacing:-.02em;margin:8px 0 0}
-html body .hero h1 br{display:none}
-html body .hero .lede{font-size:14px;line-height:1.45;margin-top:4px}
-html body .ach-guide{gap:6px;margin:10px 0 2px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+html body .hero h1{font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.12;letter-spacing:-.02em;margin:4px 0 0}
+html body .hero .lede{font-size:14.5px;line-height:1.5;margin-top:6px;max-width:62ch}
+html body .city{border-radius:999px;box-shadow:var(--beta-ombra)}
+html body .ach-guide{display:flex;flex-wrap:nowrap;gap:8px;margin:12px 0 4px;overflow-x:auto;scrollbar-width:none;padding:2px 0}
 html body .ach-guide::-webkit-scrollbar{display:none}
-html body .ach-guide__btn{flex:0 0 auto;border-radius:999px;padding:4px 12px 4px 4px;box-shadow:none;min-height:40px}
-html body .ach-guide__btn .ach-guide__ico svg{width:28px;height:28px}
-html body .ach-guide__txt small,html body .ach-guide__arr{display:none}
-html body .city{border-radius:999px;box-shadow:none}
-html body .hero .stats{box-shadow:none;border-radius:14px}
+html body .ach-guide .ach-guide__btn,html body .ach-guide .ach-guide__btn.ach-guide__coll{flex:0 0 auto;min-width:0;width:auto;max-width:none;display:inline-flex;align-items:center;gap:8px;
+ height:40px;padding:0 14px 0 6px;border-radius:999px;box-shadow:none;white-space:nowrap;margin:0}
+html body .ach-guide__ico,html body .ach-guide__ico svg{width:28px!important;height:28px!important;flex:none}
+html body .ach-guide__coll .ach-guide__ico{font-size:17px;display:inline-flex;align-items:center;justify-content:center}
+html body .ach-guide__txt{display:block;white-space:nowrap}
+html body .ach-guide__txt b{font-size:13.5px;font-weight:600}
+html body .ach-guide__txt small,html body .ach-guide__arr{display:none!important}
+html body .hero .stats{box-shadow:none;border-radius:16px;overflow:hidden}
+html body .hero .stats .stat b{font-size:1.25rem;letter-spacing:-.01em}
+html body .hero .stats .stat span{font-size:11.5px}
 @media(max-width:759px){
  html body .hero h1,html body .hero .lede{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
  html body .hero .stats{display:none}
+ html body .citta-v{display:none!important}
 }
 @media(min-width:900px){
- html body .hero{grid-template-areas:"kick stats" "h1 stats" "guide stats";align-items:center;column-gap:32px}
- html body .hero .stats{grid-template-columns:repeat(4,minmax(84px,auto));min-width:0;padding:0;gap:1px}
- html body .hero .stats .stat{padding:10px 14px}
+ html body .hero{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"kick kick" "h1 stats" "guide stats";align-items:center;column-gap:32px}
  html body .hero .lede{display:none}
  html body .hero .ach-guide{grid-area:guide}
+ html body .hero .stats{grid-template-columns:repeat(4,auto);min-width:0;margin:0;padding:0}
+ html body .hero .stats .stat{padding:10px 16px}
 }
-/* ---------- sezioni a pillola con il pallino del colore ---------- */
-html body .modes{gap:6px;overflow-x:auto;scrollbar-width:none;padding-top:6px;padding-bottom:6px}
+/* ===== sezioni: pillole in riga, pallino del colore ===== */
+html body .modes{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
 html body .modes::-webkit-scrollbar{display:none}
-html body .modes button{flex:0 0 auto;max-width:none;border-radius:999px;height:44px;box-shadow:none;padding:0 14px 0 12px;gap:7px;font-size:14.5px;font-weight:600}
+html body .modes button,html body .modes button.on{flex:0 0 auto;width:auto;min-width:0;max-width:none;flex-direction:row;align-items:center;justify-content:center;
+ height:42px;padding:0 16px 0 14px;gap:8px;border-radius:999px;white-space:nowrap;font:600 14.5px var(--sans);box-shadow:none}
 html body .modes button .mi{display:none}
-html body .modes button::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--md,#4f5fb0);flex:none}
+html body .modes button::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--md);flex:none}
 html body .modes [data-mode="s"]{--md:#4f5fb0}html body .modes [data-mode="i"]{--md:#2a7f7a}html body .modes [data-mode="m"]{--md:#8a7356}
-html body .modes [data-mode="c"]{--md:#8a4b2a}html body .modes [data-mode="p"]{--md:#9a8a1e}
+html body .modes [data-mode="c"]{--md:#8a4b2a}html body .modes [data-mode="p"]{--md:#8a7a1a}
 html body .modes button.on{background:var(--md);border-color:var(--md);color:#fff}
-html body .modes button.on::before{background:#fff}
-html body .modes button.on small{color:rgba(255,255,255,.8)}
-/* ---------- ricerca, filtri, vista: pillole ---------- */
+html body .modes button.on::before{background:rgba(255,255,255,.9)}
+html body .modes button small{font-size:12px;font-weight:600;opacity:.75}
+html body .modes button.on small{color:#fff}
+/* ===== barra: ricerca e comandi a pillola ===== */
 html body .search input,html body #q{border-radius:999px}
-html body .iconbtn{border-radius:999px}
-html body .seg{border-radius:999px;padding:3px}
-html body .seg button{border-radius:999px}
+html body .iconbtn{border-radius:999px;box-shadow:none}
+html body .seg{border-radius:999px;padding:3px;box-shadow:none}
+html body .seg button{border-radius:999px;white-space:nowrap}
 html body .seg button.on{background:var(--ink);color:var(--bg);box-shadow:none}
-html body .qbar button,html body .qbar .ch{border-radius:999px}
-/* ---------- giorni: titolo in riga con «Oggi» ---------- */
-html body .month{font-size:1.3rem;margin:18px 0 2px;letter-spacing:-.01em}
-html body .day{display:block;padding:4px 0 6px;border-top:0}
-html body .dlabel{display:flex;align-items:baseline;gap:8px;text-align:left;padding:8px 2px 6px;background:var(--bg);z-index:5}
-html body .dlabel .wd,html body .dlabel .n{display:none}
-html body .dlabel .mo{display:block;font-family:var(--serif);font-size:1.12rem;font-weight:700;color:var(--ink)}
-html body .dlabel .tg{font-family:var(--sans);font-size:11px;padding:3px 8px;border-radius:999px;background:var(--beta-a);color:#fff;letter-spacing:.06em}
-html body .dlabel .cv{display:none}
-/* ---------- schede compatte: filetto del genere, fondo appena tinto ---------- */
-html body .cards{gap:6px}
-html body .card.mini{border-radius:var(--beta-r);border:1px solid var(--line);border-left:4px solid var(--g,var(--line));
- background:color-mix(in srgb,var(--g,transparent) 6%,var(--paper));box-shadow:none;padding:9px 12px 8px 12px}
-html body .card.mini .title{font-size:1.04rem;line-height:1.22;letter-spacing:-.005em}
+/* ===== filtri rapidi: pillole in riga ===== */
+html body #nA .ch,html body #nA .ch.q,html body #nA .rowg .ch.gq{flex-direction:row;height:38px;min-height:38px;min-width:0;max-width:none;padding:0 14px;gap:6px;
+ border-radius:999px;font-size:13.5px;line-height:1;white-space:nowrap;box-shadow:none}
+html body #nA .ch.q small,html body #nA .ch small{font-size:11.5px;opacity:.65;font-weight:600}
+html body #nA .ch[aria-pressed="true"],html body #nA .ch.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+html body #nA .rowg,html body #nA .rowq{gap:6px}
+html body .modes{padding-top:8px;padding-bottom:8px}
+html body #nA .ch span,html body #nA .ch.q span{max-width:none;overflow:visible;text-overflow:clip}
+html body #nA .rowg{display:flex;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+html body #nA .rowg::-webkit-scrollbar{display:none}
+html body #nA .rowg .ch.gq{flex:0 0 auto}
+/* ===== mesi e giorni ===== */
+html body .month{font-size:1.3rem;margin:22px 0 2px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.01em}
+html body .day{display:block;padding:2px 0 8px;border-top:0}
+html body .dlabel{display:flex;align-items:center;gap:8px;text-align:left;padding:12px 2px 8px;background:var(--bg);z-index:5}
+html body .dlabel .wd,html body .dlabel .n,html body .dlabel .cv{display:none}
+html body .dlabel .mo{display:block;font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--ink)}
+html body .dlabel .mo::first-letter{text-transform:uppercase}
+html body .dlabel .tg{font-family:var(--sans);font-size:10.5px;font-weight:700;padding:4px 9px;border-radius:999px;background:var(--beta-a);color:#fff;letter-spacing:.07em}
+/* ===== schede compatte: cornice pulita, filetto del genere, spazio per freccia e biglietti ===== */
+html body .cards{gap:10px}
+html body .card.mini{position:relative;border-radius:var(--beta-r);border:1px solid var(--line);
+ background:color-mix(in srgb,var(--g,transparent) 4%,var(--paper));box-shadow:inset 4px 0 0 var(--g,var(--line)),var(--beta-ombra);
+ padding:14px 40px 14px 18px;display:flex;flex-direction:column;gap:5px;overflow:hidden;min-width:0}
+html body .card.mini .top{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;font-size:12.5px;line-height:1.3;min-width:0}
+html body .card.mini .time{font-size:13px}
+html body .card.mini .gtag{font-size:11px;letter-spacing:.05em}
 html body .card.mini .gtag::before{display:none}
-html body .card.mini .act.tkt{height:30px;border-radius:999px;font-size:12.5px;background:var(--beta-a);box-shadow:none}
-html body .card.mini .act.tkt.info{background:var(--paper);color:var(--ink);border:1px solid var(--line)}
-@media(hover:hover){html body .card.mini:hover{transform:translateY(-1px);border-color:color-mix(in srgb,var(--g,var(--line)) 50%,var(--line));border-left-color:var(--g,var(--line))}}
-html body .card:not(.mini){border-radius:20px}
+html body .card.mini .multi{font-size:12px;font-weight:500}
+html body .card.mini .title{font-size:1.06rem;line-height:1.25;letter-spacing:-.005em;margin:0;overflow-wrap:anywhere}
+html body .card.mini .mhit{font-size:13px;margin:0}
+html body .card.mini .mloc{font-size:13px;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html body .mgo{top:20px;right:16px;margin-top:0}
+html body .card.mini .mfoot{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:6px;padding:4px 0 0;margin:0}
+html body .card.mini .mfoot:empty{display:none}
+html body .card.mini .mfoot .pill{margin-right:auto}
+html body .card.mini:has(.act.tkt) .mloc,html body .card.mini:has(.act.tkt) .mfoot{padding-right:0}
+html body .card.mini .act.tkt,html body .card.mini .act.tkt.info{position:static;margin:0;height:32px;padding:0 13px 0 10px;gap:6px;border-radius:999px;font-size:13px;font-weight:700;box-shadow:none;transform:none}
+html body .card.mini .act.tkt{background:var(--beta-a)!important;color:#fff}
+html body .card.mini .act.tkt.info{background:var(--paper)!important;color:var(--ink);border:1px solid var(--line)}
+html body .card.mini .act.tkt svg{width:16px;height:16px}
+html body .card.mini .mfoot{margin-right:-28px}
+@media(hover:hover){html body .card.mini:hover{border-color:color-mix(in srgb,var(--g,var(--line)) 45%,var(--line));box-shadow:inset 4px 0 0 var(--g,var(--line)),0 2px 4px rgba(31,29,26,.05),0 10px 24px rgba(31,29,26,.08);transform:translateY(-1px)}}
+html body .card:not(.mini){border-radius:22px}
 html body .act{border-radius:999px}
-/* ---------- teatri e luoghi ---------- */
-html body .ptitle{font-size:1.25rem;margin:18px 0 8px;letter-spacing:-.01em}
-html body .vgrid{gap:6px;grid-template-columns:repeat(2,minmax(0,1fr))}
-html body .vtile{border-radius:var(--beta-r);box-shadow:none;padding:10px 11px 9px}
-html body .vtile .vname{font-size:.98rem}
-html body .vnext{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:12px}
-html body .vbar{height:4px}
-/* ---------- telefono: Calendario | Luoghi in basso, sotto il pollice; Filtri tondo a destra ---------- */
+/* ===== teatri e luoghi ===== */
+html body .ptitle{font-size:1.25rem;margin:22px 0 10px;letter-spacing:-.01em}
+html body .vgrid{gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}
+html body .vtile{border-radius:var(--beta-r);box-shadow:var(--beta-ombra);padding:12px 12px 11px;min-width:0;overflow:hidden}
+html body .vtile .vtop{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+html body .vtile .vbadge{width:34px;height:34px;border-radius:11px}
+html body .vtile .vbadge svg{width:19px;height:19px}
+html body .vtile .vtt{display:flex;flex-direction:column;gap:2px;min-width:0;width:100%}
+html body .vtile .vname{font-size:.98rem;line-height:1.2;overflow-wrap:break-word;hyphens:auto}
+html body .vtile .vn{font-size:12.5px}
+html body .vnext{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:12px;line-height:1.35}
+html body .vbar{height:4px;border-radius:2px}
+/* ===== telefono: Calendario | Luoghi in basso, Filtri tondo a destra ===== */
 @media(max-width:759px){
  html body .cntrow .seg.only-phone{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom));z-index:17;
-  height:54px;padding:4px;background:var(--paper);border:1px solid var(--line);box-shadow:0 12px 32px rgba(31,29,26,.16);margin:0}
- html body .cntrow .seg.only-phone button{height:44px;padding:0 18px;font-size:14px;font-weight:700}
- html body .fabf{left:auto;right:14px;transform:none;width:54px;height:54px;padding:0;justify-content:center;bottom:calc(18px + env(safe-area-inset-bottom))}
- html body .fabf{font-size:0;gap:0}
- html body .fabf b{font-size:12px;position:absolute;top:4px;right:4px}
- html body main{padding-bottom:90px}
+  height:54px;padding:4px;background:var(--paper);border:1px solid var(--line);box-shadow:0 12px 32px rgba(31,29,26,.16);margin:0;grid-template-columns:auto auto}
+ html body .cntrow .seg.only-phone button{height:44px;padding:0 20px;font-size:14px;font-weight:700}
+ html body .fabf{left:auto;right:14px;transform:none;width:54px;height:54px;padding:0;justify-content:center;font-size:0;gap:0;bottom:calc(18px + env(safe-area-inset-bottom))}
+ html body .fabf b{font-size:11px;position:absolute;top:2px;right:2px}
+ html body main{padding-bottom:96px}
+ html body .cntrow{justify-content:flex-end}
 }
-/* ---------- iPad e computer: più colonne ---------- */
-@media(min-width:760px){html body .cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}html body .vgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* ===== iPad e computer ===== */
+@media(min-width:760px){html body .cards{grid-template-columns:repeat(2,minmax(0,1fr))}html body .vgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(min-width:1100px){html body .wrap{max-width:1240px}html body .cards{grid-template-columns:repeat(3,minmax(0,1fr))}html body .vgrid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(min-width:1500px){html body .wrap{max-width:1440px}html body .cards{grid-template-columns:repeat(4,minmax(0,1fr))}}
-/* ---------- rifiniture da app recente: tocco che risponde, fuoco visibile, movimento leggero ---------- */
-html body .card.mini,html body .vtile,html body .modes button,html body .seg button,html body .act,html body .iconbtn,html body .qbar button{transition:transform .14s ease,background-color .18s ease,border-color .18s ease,color .18s ease}
+/* ===== rifiniture ===== */
+html body .card.mini,html body .vtile,html body .modes button,html body .seg button,html body .act,html body .iconbtn,html body #nA .ch{transition:transform .14s ease,background-color .18s ease,border-color .18s ease,color .18s ease,box-shadow .2s ease}
 html body .card.mini:active,html body .vtile:active{transform:scale(.985)}
-html body .modes button:active,html body .seg button:active,html body .act:active,html body .iconbtn:active,html body .qbar button:active{transform:scale(.96)}
+html body .modes button:active,html body .seg button:active,html body .act:active,html body .iconbtn:active,html body #nA .ch:active{transform:scale(.96)}
 html body :focus-visible{outline:2px solid var(--beta-a);outline-offset:2px}
 html body .time,html body .stat b,html body .modes small{font-variant-numeric:tabular-nums}
 @media(prefers-reduced-motion:reduce){html body *{transition:none!important}}
-/* ---------- segno della versione di prova ---------- */
-html body::after{content:"Beta 2030";position:fixed;left:10px;top:calc(6px + env(safe-area-inset-top));z-index:30;
- font:700 10px/1 Inter,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:5px 8px;border-radius:999px;background:#231d18;color:#fffdf9;opacity:.8;pointer-events:none}
+html body::after{content:"Beta 2030";position:absolute;right:14px;top:calc(10px + env(safe-area-inset-top));z-index:30;
+ font:700 10px/1 Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border-radius:999px;background:#231d18;color:#fffdf9;opacity:.75;pointer-events:none}
 </style>
 </head>
 <body class="nA">
