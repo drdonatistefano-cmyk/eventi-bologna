@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-26",
- "giorno_orari": "2026-11-26",
+ "aggiornato": "2026-11-27",
+ "giorno_orari": "2026-11-27",
  "sale": [
   {
    "id": "c004",
@@ -39,10 +39,6 @@
       "20:35"
      ],
      "giorni": {
-      "2026-11-26": [
-       "17:55",
-       "20:35"
-      ],
       "2026-11-27": [
        "17:55",
        "20:35"
@@ -93,11 +89,6 @@
       "20:20"
      ],
      "giorni": {
-      "2026-11-26": [
-       "17:35",
-       "18:35",
-       "20:20"
-      ],
       "2026-11-27": [
        "17:35",
        "18:35",
@@ -135,10 +126,6 @@
       "20:45"
      ],
      "giorni": {
-      "2026-11-26": [
-       "17:25",
-       "20:45"
-      ],
       "2026-11-27": [
        "17:25",
        "20:45"
@@ -204,9 +191,6 @@
       "21:40"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:40"
-      ],
       "2026-11-27": [
        "21:40"
       ],
@@ -233,10 +217,6 @@
       "20:50"
      ],
      "giorni": {
-      "2026-11-26": [
-       "18:00",
-       "20:50"
-      ],
       "2026-11-27": [
        "18:00",
        "20:50"
@@ -285,11 +265,6 @@
       "20:40"
      ],
      "giorni": {
-      "2026-11-26": [
-       "17:50",
-       "19:25",
-       "20:40"
-      ],
       "2026-11-27": [
        "17:50",
        "19:25",
@@ -321,14 +296,11 @@
     {
      "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
      "orari": [
-      "18:30",
-      "21:10"
+      "17:10",
+      "19:25",
+      "21:45"
      ],
      "giorni": {
-      "2026-11-26": [
-       "18:30",
-       "21:10"
-      ],
       "2026-11-27": [
        "17:10",
        "19:25",
@@ -363,10 +335,6 @@
       "21:15"
      ],
      "giorni": {
-      "2026-11-26": [
-       "18:40",
-       "21:15"
-      ],
       "2026-11-27": [
        "18:40",
        "21:15"
@@ -399,10 +367,6 @@
       "20:45"
      ],
      "giorni": {
-      "2026-11-26": [
-       "18:10",
-       "20:45"
-      ],
       "2026-11-27": [
        "18:10",
        "20:45"
@@ -432,10 +396,6 @@
       "20:25"
      ],
      "giorni": {
-      "2026-11-26": [
-       "17:40",
-       "20:25"
-      ],
       "2026-11-27": [
        "17:40",
        "20:25"
@@ -467,9 +427,6 @@
       "17:15"
      ],
      "giorni": {
-      "2026-11-26": [
-       "17:15"
-      ],
       "2026-11-27": [
        "17:15"
       ],
@@ -496,9 +453,6 @@
       "17:40"
      ],
      "giorni": {
-      "2026-11-26": [
-       "17:40"
-      ],
       "2026-11-27": [
        "17:40"
       ],
@@ -521,7 +475,9 @@
     },
     {
      "titolo": "You Can See Everything",
-     "orari": [],
+     "orari": [
+      "20:50"
+     ],
      "giorni": {
       "2026-11-27": [
        "20:50"
@@ -534,9 +490,13 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172"
+     "genere": "Documentario",
+     "regia": "Nathan Fielder e Lance Oppenheim",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "interpreti": "Billy Evans, Nathan Fielder e Elizabeth Holmes",
+     "durata": 174,
+     "anno": 2026,
+     "paese": "USA"
     }
    ],
    "cinemap": "https://www.cinemap.it/ravenna/cinema/cinemacity-ravenna"
@@ -562,7 +522,10 @@
    "film": [
     {
      "titolo": "Fjord",
-     "orari": [],
+     "orari": [
+      "18:15",
+      "21:00"
+     ],
      "giorni": {
       "2026-11-27": [
        "18:15",
@@ -579,45 +542,14 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/7546",
-     "scheda": "https://it.wikipedia.org/wiki/Fjord_%28film%29"
-    },
-    {
-     "titolo": "La vita segreta dei giocattoli",
-     "orari": [
-      "18:30"
-     ],
-     "giorni": {
-      "2026-11-26": [
-       "18:30"
-      ]
-     },
-     "versione": "",
-     "genere": "Documentario",
-     "regia": "Alexandra D'Onofrio e Sara Zavarise",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/7546",
-     "anno": 2026
-    },
-    {
-     "titolo": "Trainspotting",
-     "orari": [
-      "21:00"
-     ],
-     "giorni": {
-      "2026-11-26": [
-       "21:00"
-      ]
-     },
-     "versione": "Versione originale",
      "genere": "Drammatico",
-     "regia": "Danny Boyle",
+     "regia": "Cristian Mungiu",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/7546",
-     "interpreti": "Ewan McGregor, Ewen Bremner e Jonny Lee Miller",
-     "durata": 94,
-     "anno": 1996,
-     "scheda": "https://it.wikipedia.org/wiki/Trainspotting_%28film%29"
+     "interpreti": "Sebastian Stan, Renate Reinsve e Lisa Carlehed",
+     "durata": 146,
+     "anno": 2026,
+     "paese": "Norvegia",
+     "scheda": "https://it.wikipedia.org/wiki/Fjord_%28film%29"
     }
    ],
    "cinemap": "https://www.cinemap.it/ravenna/cinema/mariani-ravenna"
@@ -632,19 +564,30 @@
    "fonte": "https://movieplayer.it/cinema/gulliver_1109/",
    "film": [
     {
-     "titolo": "La maison des femmes - La casa delle donne",
+     "titolo": "Se domani non torno",
      "orari": [
       "21:00"
      ],
      "giorni": {
-      "2026-11-26": [
+      "2026-11-27": [
+       "21:00"
+      ],
+      "2026-11-28": [
+       "21:00"
+      ],
+      "2026-11-29": [
+       "16:00",
        "21:00"
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.comune.alfonsine.ra.it/Vivere-il-comune/Luoghi/Cineteatro-Gulliver"
+     "genere": "Drammatico",
+     "regia": "Paola Randi",
+     "biglietti": "https://www.comune.alfonsine.ra.it/Vivere-il-comune/Luoghi/Cineteatro-Gulliver",
+     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
+     "anno": 2027,
+     "paese": "Italia",
+     "durata": 107
     }
    ],
    "cinemap": "https://www.cinemap.it/alfonsine/cinema/gulliver-alfonsine"
@@ -681,7 +624,9 @@
    "film": [
     {
      "titolo": "Fjord",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-27": [
        "21:00"
@@ -697,9 +642,13 @@
       ]
      },
      "versione": "Versione originale (solo ore 15:30, 18:00, 20:30)",
-     "genere": "",
-     "regia": "",
+     "genere": "Drammatico",
+     "regia": "Cristian Mungiu",
      "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=2",
+     "interpreti": "Sebastian Stan, Renate Reinsve, Lisa Carlehed e Lisa Loven Kongsli",
+     "paese": "Norvegia",
+     "durata": 146,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Fjord_%28film%29"
     },
     {
@@ -730,12 +679,9 @@
     {
      "titolo": "È andata così",
      "orari": [
-      "20:40"
+      "19:20"
      ],
      "giorni": {
-      "2026-11-26": [
-       "20:40"
-      ],
       "2026-11-27": [
        "19:20"
       ],
@@ -761,12 +707,10 @@
     {
      "titolo": "Hexe - Il regno delle streghe",
      "orari": [
-      "20:40"
+      "17:45",
+      "20:30"
      ],
      "giorni": {
-      "2026-11-26": [
-       "20:40"
-      ],
       "2026-11-27": [
        "17:45",
        "20:30"
@@ -795,12 +739,10 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
-      "20:40"
+      "17:50",
+      "21:00"
      ],
      "giorni": {
-      "2026-11-26": [
-       "20:40"
-      ],
       "2026-11-27": [
        "17:50",
        "21:00"
@@ -830,7 +772,9 @@
     },
     {
      "titolo": "Il gatto col cappello",
-     "orari": [],
+     "orari": [
+      "17:50"
+     ],
      "giorni": {
       "2026-11-27": [
        "17:50"
@@ -845,14 +789,18 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Animazione, Ragazzi, Commedia, Avventura, Fantastico",
+     "regia": "Alessandro Carloni e Erica Rivinoja",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
+     "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Il_gatto_col_cappello_%28film%29"
     },
     {
      "titolo": "Il rumore delle cose nuove",
-     "orari": [],
+     "orari": [
+      "21:30"
+     ],
      "giorni": {
       "2026-11-27": [
        "21:30"
@@ -868,21 +816,19 @@
      "genere": "Commedia",
      "regia": "Paolo Genovese",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
-     "interpreti": "Emanuela Fanelli, Edoardo Pesce, Claudia Pandolfi e Lino Musella",
+     "interpreti": "Stefano Accorsi, Emanuela Fanelli e Lino Musella",
+     "anno": 2026,
      "paese": "Italia",
      "durata": 113,
-     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Il_rumore_delle_cose_nuove"
     },
     {
      "titolo": "La notte delle fragole",
      "orari": [
-      "20:40"
+      "17:30",
+      "21:15"
      ],
      "giorni": {
-      "2026-11-26": [
-       "20:40"
-      ],
       "2026-11-27": [
        "17:30",
        "21:15"
@@ -912,12 +858,10 @@
     {
      "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
      "orari": [
+      "18:10",
       "21:00"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:00"
-      ],
       "2026-11-27": [
        "18:10",
        "21:00"
@@ -943,12 +887,10 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
+      "17:55",
       "20:50"
      ],
      "giorni": {
-      "2026-11-26": [
-       "20:50"
-      ],
       "2026-11-27": [
        "17:55",
        "20:50"
@@ -981,9 +923,6 @@
       "20:45"
      ],
      "giorni": {
-      "2026-11-26": [
-       "20:45"
-      ],
       "2026-11-27": [
        "20:45"
       ],
@@ -1008,12 +947,10 @@
     {
      "titolo": "Ti presento i Fotter",
      "orari": [
+      "18:00",
       "21:00"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:00"
-      ],
       "2026-11-27": [
        "18:00",
        "21:00"
@@ -1042,7 +979,9 @@
     },
     {
      "titolo": "Un weekend artificiale",
-     "orari": [],
+     "orari": [
+      "19:20"
+     ],
      "giorni": {
       "2026-11-27": [
        "19:20"
@@ -1060,10 +999,10 @@
      "genere": "Commedia",
      "regia": "Leonardo Pieraccioni",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
-     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio, Luigi Luciano e Massimo Ceccherini",
+     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio e Herbert Ballerina",
+     "anno": 2026,
      "paese": "Italia",
      "durata": 91,
-     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Un_weekend_artificiale"
     }
    ],
@@ -1077,26 +1016,7 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/europa_1118/",
-   "film": [
-    {
-     "titolo": "La ballata del re delle api",
-     "orari": [
-      "21:00"
-     ],
-     "versione": "Versione originale",
-     "genere": "Poliziesco, Thriller, Drammatico",
-     "regia": "Andrew Patterson",
-     "interpreti": "Matthew McConaughey, Angelina LookingGlass e Jake Horowitz",
-     "durata": 130,
-     "anno": 2025,
-     "giorni": {
-      "2026-11-26": [
-       "21:00"
-      ]
-     },
-     "scheda": "https://it.wikipedia.org/wiki/La_ballata_del_re_delle_api"
-    }
-   ]
+   "film": []
   },
   {
    "id": "c015",
@@ -1109,23 +1029,25 @@
    "cinemap": "https://www.cinemap.it/cervia/cinema/cinema-sarti-cervia",
    "film": [
     {
-     "titolo": "Dio ride",
-     "orari": [
-      "21:00"
-     ],
+     "titolo": "Wild Horse Nine",
+     "orari": [],
      "giorni": {
-      "2026-11-24": [
+      "2026-11-28": [
        "21:00"
+      ],
+      "2026-11-29": [
+       "17:00"
       ]
      },
      "versione": "",
-     "genere": "Commedia",
-     "regia": "Giovanni Veronesi",
-     "biglietti": "https://www.liveticket.it/evento.aspx?Id=715189&InstantBuy=1&CallingPageUrl=http%3a%2f%2fwww.liveticket.it%2fcinemasarticervia",
-     "interpreti": "Pierfrancesco Favino, Silvio Orlando, Alma Noce e Francesco Gheghi",
-     "durata": 114,
+     "genere": "Commedia, Drammatico",
+     "regia": "Martin McDonagh",
+     "biglietti": "https://www.liveticket.it/evento.aspx?Id=717283",
+     "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
+     "paese": "Regno Unito",
+     "durata": 118,
      "anno": 2026,
-     "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
+     "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
     }
    ]
   },
@@ -1215,14 +1137,16 @@
      "genere": "Documentario",
      "regia": "Dario Zonta e Carlo Zoratti",
      "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=1",
-     "paese": "Italia",
      "durata": 84,
      "anno": 2026,
+     "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
     },
     {
      "titolo": "Mustang",
-     "orari": [],
+     "orari": [
+      "18:30"
+     ],
      "giorni": {
       "2026-11-27": [
        "18:30"
@@ -1235,7 +1159,9 @@
     },
     {
      "titolo": "Wild Horse Nine",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-27": [
        "21:00"
@@ -1271,7 +1197,9 @@
    "film": [
     {
      "titolo": "Dio ride",
-     "orari": [],
+     "orari": [
+      "20:30"
+     ],
      "giorni": {
       "2026-11-27": [
        "20:30"

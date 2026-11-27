@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-26",
- "giorno_orari": "2026-11-26",
+ "aggiornato": "2026-11-27",
+ "giorno_orari": "2026-11-27",
  "sale": [
   {
    "id": "c002",
@@ -42,17 +42,11 @@
     {
      "titolo": "Godzilla Minus Zero",
      "orari": [
-      "20:45"
+      "18:15"
      ],
      "giorni": {
-      "2026-11-26": [
-       "20:45"
-      ],
       "2026-11-27": [
        "18:15"
-      ],
-      "2026-11-29": [
-       "22:20"
       ]
      },
      "versione": "",
@@ -72,27 +66,21 @@
       "19:15"
      ],
      "giorni": {
-      "2026-11-26": [
-       "18:15",
-       "19:15"
-      ],
       "2026-11-27": [
        "18:15",
        "19:15"
       ],
       "2026-11-28": [
-       "14:15",
        "14:45",
        "16:20",
        "17:15",
        "18:45"
       ],
       "2026-11-29": [
-       "14:00",
        "14:45",
-       "16:20",
+       "16:30",
        "17:15",
-       "18:45"
+       "18:50"
       ]
      },
      "versione": "",
@@ -100,26 +88,19 @@
      "regia": "Jason Hand e Fawn Veerasunthorn",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
      "interpreti": "Mariasole Pollio, Claudia Pandolfi, Isabella Ferrari e Hailee Steinfeld",
-     "paese": "USA",
      "durata": 103,
      "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Hexe_-_Il_regno_delle_streghe"
     },
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
-      "18:15",
       "20:30",
       "21:00",
       "21:50"
      ],
      "giorni": {
-      "2026-11-26": [
-       "18:15",
-       "20:30",
-       "21:00",
-       "21:50"
-      ],
       "2026-11-27": [
        "20:30",
        "21:00",
@@ -158,9 +139,6 @@
       "18:10"
      ],
      "giorni": {
-      "2026-11-26": [
-       "18:10"
-      ],
       "2026-11-27": [
        "18:10"
       ],
@@ -182,14 +160,36 @@
      "scheda": "https://it.wikipedia.org/wiki/Il_gatto_col_cappello_%28film%29"
     },
     {
-     "titolo": "Il rumore delle cose nuove",
+     "titolo": "Il risveglio di Boiúna",
      "orari": [
-      "19:15"
+      "22:00"
      ],
      "giorni": {
-      "2026-11-26": [
-       "19:15"
+      "2026-11-27": [
+       "22:00"
       ],
+      "2026-11-28": [
+       "22:20"
+      ],
+      "2026-11-29": [
+       "22:30"
+      ]
+     },
+     "versione": "",
+     "genere": "Horror",
+     "regia": "Mike P. Nelson",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
+     "interpreti": "Logan Marshall-Green, Jessica Rothe, Kiana Madeira e Jackson Bews",
+     "paese": "USA",
+     "durata": 104,
+     "anno": 2026
+    },
+    {
+     "titolo": "Il rumore delle cose nuove",
+     "orari": [
+      "19:35"
+     ],
+     "giorni": {
       "2026-11-27": [
        "19:35"
       ],
@@ -220,7 +220,7 @@
        "14:30"
       ],
       "2026-11-29": [
-       "14:30"
+       "14:20"
       ]
      },
      "versione": "",
@@ -236,11 +236,6 @@
       "22:30"
      ],
      "giorni": {
-      "2026-11-26": [
-       "18:20",
-       "20:25",
-       "22:30"
-      ],
       "2026-11-27": [
        "18:20",
        "20:25",
@@ -266,9 +261,9 @@
      "regia": "Alessandro Genovesi",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
      "interpreti": "Valentino Picone, Salvo Ficarra, Anna Foglietta e Vittoria Puccini",
-     "paese": "Italia",
      "durata": 92,
      "anno": 2026,
+     "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/La_notte_delle_fragole"
     },
     {
@@ -278,10 +273,6 @@
       "20:30"
      ],
      "giorni": {
-      "2026-11-26": [
-       "18:30",
-       "20:30"
-      ],
       "2026-11-27": [
        "18:30",
        "20:30"
@@ -299,22 +290,17 @@
      "genere": "Documentario",
      "regia": "Dario Zonta e Carlo Zoratti",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
-     "paese": "Italia",
      "durata": 84,
      "anno": 2026,
+     "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "18:00",
-      "21:40"
+      "18:00"
      ],
      "giorni": {
-      "2026-11-26": [
-       "18:00",
-       "21:40"
-      ],
       "2026-11-27": [
        "18:00"
       ],
@@ -341,19 +327,17 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "21:30"
+      "21:00"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:30"
-      ],
       "2026-11-27": [
        "21:00"
       ],
       "2026-11-28": [
        "15:05",
        "17:25",
-       "19:50"
+       "19:50",
+       "22:15"
       ],
       "2026-11-29": [
        "15:05",
@@ -377,10 +361,6 @@
       "22:20"
      ],
      "giorni": {
-      "2026-11-26": [
-       "20:00",
-       "22:20"
-      ],
       "2026-11-27": [
        "20:00",
        "22:20"
@@ -403,9 +383,9 @@
      "regia": "John Hamburg",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
      "interpreti": "Robert De Niro, Ben Stiller, Skyler Gisondo e Ariana Grande",
+     "durata": 105,
      "anno": 2026,
      "paese": "USA",
-     "durata": 105,
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
@@ -414,15 +394,11 @@
       "22:25"
      ],
      "giorni": {
-      "2026-11-26": [
-       "22:25"
-      ],
       "2026-11-27": [
        "22:25"
       ],
       "2026-11-28": [
-       "14:35",
-       "22:10"
+       "14:35"
       ],
       "2026-11-29": [
        "14:35",
@@ -440,8 +416,27 @@
      "scheda": "https://it.wikipedia.org/wiki/Un_weekend_artificiale"
     },
     {
-     "titolo": "You Can See Everything",
+     "titolo": "Wildwood - I segreti del bosco proibito",
      "orari": [],
+     "giorni": {
+      "2026-11-28": [
+       "14:30"
+      ],
+      "2026-11-29": [
+       "14:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
+     "scheda": "https://it.wikipedia.org/wiki/Wildwood_-_I_segreti_del_bosco_proibito"
+    },
+    {
+     "titolo": "You Can See Everything",
+     "orari": [
+      "21:10"
+     ],
      "giorni": {
       "2026-11-27": [
        "21:10"
@@ -454,9 +449,13 @@
       ]
      },
      "versione": "Versione originale",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848"
+     "genere": "Documentario",
+     "regia": "Nathan Fielder e Lance Oppenheim",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
+     "interpreti": "Nathan Fielder, Elizabeth Holmes e Amanda Seyfried",
+     "paese": "USA",
+     "durata": 174,
+     "anno": 2026
     }
    ]
   },
@@ -472,7 +471,9 @@
    "film": [
     {
      "titolo": "Fjord",
-     "orari": [],
+     "orari": [
+      "21:15"
+     ],
      "giorni": {
       "2026-11-27": [
        "21:15"
@@ -491,6 +492,7 @@
      "interpreti": "Sebastian Stan, Renate Reinsve, Lisa Carlehed e Lisa Loven Kongsli",
      "durata": 146,
      "anno": 2026,
+     "paese": "Norvegia",
      "scheda": "https://it.wikipedia.org/wiki/Fjord_%28film%29"
     }
    ]
@@ -507,12 +509,10 @@
     {
      "titolo": "È andata così",
      "orari": [
+      "18:45",
       "21:00"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:00"
-      ],
       "2026-11-27": [
        "18:45",
        "21:00"
@@ -540,7 +540,9 @@
     },
     {
      "titolo": "Hexe - Il regno delle streghe",
-     "orari": [],
+     "orari": [
+      "18:30"
+     ],
      "giorni": {
       "2026-11-27": [
        "18:30"
@@ -557,12 +559,12 @@
      },
      "versione": "",
      "genere": "Animazione",
-     "regia": "Jason Hand e Fawn Veerasunthorn",
+     "regia": "Jason Hand e Josie Trinidad",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
-     "interpreti": "Mariasole Pollio, Claudia Pandolfi, Isabella Ferrari e Hailee Steinfeld",
+     "interpreti": "Hailee Steinfeld e Rashida Jones",
+     "anno": 2026,
      "paese": "USA",
      "durata": 103,
-     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Hexe_-_Il_regno_delle_streghe"
     },
     {
@@ -589,9 +591,6 @@
       "21:20"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:20"
-      ],
       "2026-11-27": [
        "21:20"
       ],
@@ -618,12 +617,10 @@
     {
      "titolo": "La notte delle fragole",
      "orari": [
+      "19:00",
       "21:10"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:10"
-      ],
       "2026-11-27": [
        "19:00",
        "21:10"
@@ -676,9 +673,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:30"
-      ],
       "2026-11-27": [
        "21:30"
       ],
@@ -712,18 +706,18 @@
    "fonte": "https://movieplayer.it/cinema/s-spirito_415/",
    "film": [
     {
-     "titolo": "With Hasan in Gaza",
+     "titolo": "La casa delle donne",
      "orari": [
       "21:00"
      ],
      "versione": "",
-     "genere": "Documentario",
-     "regia": "Kamal Aljafari",
+     "genere": "",
+     "regia": "",
      "interpreti": "",
-     "durata": 106,
+     "durata": null,
      "anno": 2025,
      "giorni": {
-      "2026-11-26": [
+      "2026-11-27": [
        "21:00"
       ]
      }
@@ -800,12 +794,9 @@
     {
      "titolo": "È andata così",
      "orari": [
-      "21:15"
+      "20:15"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:15"
-      ],
       "2026-11-27": [
        "20:15"
       ],
@@ -831,12 +822,9 @@
     {
      "titolo": "Hexe - Il regno delle streghe",
      "orari": [
-      "21:00"
+      "20:15"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:00"
-      ],
       "2026-11-27": [
        "20:15"
       ],
@@ -865,12 +853,10 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
-      "21:00"
+      "21:00",
+      "22:30"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:00"
-      ],
       "2026-11-27": [
        "21:00",
        "22:30"
@@ -917,12 +903,10 @@
     {
      "titolo": "La notte delle fragole",
      "orari": [
-      "21:30"
+      "20:30",
+      "22:30"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:30"
-      ],
       "2026-11-27": [
        "20:30",
        "22:30"
@@ -951,7 +935,9 @@
     },
     {
      "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
-     "orari": [],
+     "orari": [
+      "22:30"
+     ],
      "giorni": {
       "2026-11-27": [
        "22:30"
@@ -975,12 +961,10 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "21:15"
+      "20:00",
+      "22:30"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:15"
-      ],
       "2026-11-27": [
        "20:00",
        "22:30"
@@ -1030,12 +1014,10 @@
     {
      "titolo": "Ti presento i Fotter",
      "orari": [
-      "21:30"
+      "20:30",
+      "22:30"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:30"
-      ],
       "2026-11-27": [
        "20:30",
        "22:30"
@@ -1106,7 +1088,10 @@
    "film": [
     {
      "titolo": "Ragione e sentimento",
-     "orari": [],
+     "orari": [
+      "20:30",
+      "21:00"
+     ],
      "giorni": {
       "2026-11-27": [
        "20:30",
@@ -1141,12 +1126,9 @@
     {
      "titolo": "Hexe - Il regno delle streghe",
      "orari": [
-      "21:00"
+      "20:15"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:00"
-      ],
       "2026-11-27": [
        "20:15"
       ],
@@ -1167,20 +1149,18 @@
      "regia": "Jason Hand e Fawn Veerasunthorn",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
      "interpreti": "Mariasole Pollio, Claudia Pandolfi, Isabella Ferrari e Hailee Steinfeld",
-     "paese": "USA",
      "durata": 103,
      "anno": 2026,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/Hexe_-_Il_regno_delle_streghe"
     },
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
-      "21:00"
+      "20:30",
+      "22:30"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:00"
-      ],
       "2026-11-27": [
        "20:30",
        "22:30"
@@ -1226,12 +1206,10 @@
     {
      "titolo": "La notte delle fragole",
      "orari": [
-      "21:15"
+      "20:30",
+      "22:30"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:15"
-      ],
       "2026-11-27": [
        "20:30",
        "22:30"
@@ -1252,20 +1230,17 @@
      "regia": "Alessandro Genovesi",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
      "interpreti": "Valentino Picone, Salvo Ficarra, Anna Foglietta e Vittoria Puccini",
-     "paese": "Italia",
      "durata": 92,
      "anno": 2026,
+     "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/La_notte_delle_fragole"
     },
     {
      "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
      "orari": [
-      "21:30"
+      "22:30"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:30"
-      ],
       "2026-11-27": [
        "22:30"
       ],
@@ -1280,20 +1255,18 @@
      "genere": "Documentario",
      "regia": "Dario Zonta e Carlo Zoratti",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
-     "paese": "Italia",
      "durata": 84,
      "anno": 2026,
+     "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
     },
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "21:15"
+      "20:15",
+      "22:30"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:15"
-      ],
       "2026-11-27": [
        "20:15",
        "22:30"
@@ -1321,7 +1294,9 @@
     },
     {
      "titolo": "Se domani non torno",
-     "orari": [],
+     "orari": [
+      "20:30"
+     ],
      "giorni": {
       "2026-11-27": [
        "20:30"
@@ -1345,12 +1320,10 @@
     {
      "titolo": "Ti presento i Fotter",
      "orari": [
-      "21:30"
+      "20:30",
+      "22:30"
      ],
      "giorni": {
-      "2026-11-26": [
-       "21:30"
-      ],
       "2026-11-27": [
        "20:30",
        "22:30"
@@ -1370,9 +1343,9 @@
      "regia": "John Hamburg",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5106",
      "interpreti": "Robert De Niro, Ben Stiller, Skyler Gisondo e Ariana Grande",
+     "durata": 105,
      "anno": 2026,
      "paese": "USA",
-     "durata": 105,
      "scheda": "https://it.wikipedia.org/wiki/Ti_presento_i_Fotter"
     },
     {
@@ -1406,7 +1379,27 @@
    "tipo": "Sala di comunità",
    "sito": "",
    "fonte": "https://movieplayer.it/cinema/s-benedetto_414/",
-   "film": [],
+   "film": [
+    {
+     "titolo": "Fjord",
+     "orari": [
+      "21:15"
+     ],
+     "versione": "",
+     "genere": "Drammatico",
+     "regia": "Cristian Mungiu",
+     "interpreti": "Sebastian Stan, Renate Reinsve e Lisa Carlehed",
+     "durata": 146,
+     "anno": 2026,
+     "giorni": {
+      "2026-11-27": [
+       "21:15"
+      ]
+     },
+     "paese": "Norvegia",
+     "scheda": "https://it.wikipedia.org/wiki/Fjord_%28film%29"
+    }
+   ],
    "auto": true
   },
   {
