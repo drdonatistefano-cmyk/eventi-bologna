@@ -17,6 +17,9 @@ on:
       - "milano/cinema.js"
       - "ravenna/*.js"
       - "ferrara/*.js"
+      - "modena/*.js"
+      - "forli-cesena/*.js"
+      - "firenze/*.js"
   schedule:
     - cron: "43 * * * *"   # riserva: ogni ora, salva solo se qualcosa è cambiato (e a mezzanotte sposta i 14 giorni di eventi-presto.js)
   workflow_dispatch:
@@ -55,7 +58,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          for f in eventi.js incontri.js versioni.js index.html eventi-presto.js eventi-resto.js milano/versioni.js milano/index.html milano/eventi-presto.js milano/eventi-resto.js ravenna/versioni.js ravenna/index.html ravenna/eventi-presto.js ravenna/eventi-resto.js ferrara/versioni.js ferrara/index.html ferrara/eventi-presto.js ferrara/eventi-resto.js; do [ -e "$f" ] && git add "$f"; done; git add -A evento sitemap.xml milano ravenna ferrara robots.txt dati/nomi_sospetti.txt   # 18/11: anche i due pezzi di eventi.js e le pagine dei singoli spettacoli
+          for f in eventi.js incontri.js versioni.js index.html eventi-presto.js eventi-resto.js milano/versioni.js milano/index.html milano/eventi-presto.js milano/eventi-resto.js ravenna/versioni.js ravenna/index.html ravenna/eventi-presto.js ravenna/eventi-resto.js ferrara/versioni.js ferrara/index.html ferrara/eventi-presto.js ferrara/eventi-resto.js modena/versioni.js modena/index.html modena/eventi-presto.js modena/eventi-resto.js forli-cesena/versioni.js forli-cesena/index.html forli-cesena/eventi-presto.js forli-cesena/eventi-resto.js firenze/versioni.js firenze/index.html firenze/eventi-presto.js firenze/eventi-resto.js; do [ -e "$f" ] && git add "$f"; done; git add -A evento sitemap.xml milano ravenna ferrara robots.txt dati/nomi_sospetti.txt   # 18/11: anche i due pezzi di eventi.js e le pagine dei singoli spettacoli
           git diff --cached --quiet && { echo "nessuna modifica"; exit 0; }
           git commit -m "Versioni dei dati"
           # 23/11/2026: il giro delle 7:49 è fallito qui (altro salvataggio nello stesso momento): più tentativi, distanziati

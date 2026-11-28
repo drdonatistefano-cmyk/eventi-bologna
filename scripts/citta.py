@@ -7,6 +7,7 @@ funzioni) è identico: la città la sceglie la pagina stessa leggendo l'indirizz
 I dati di ogni città stanno nella sua cartella: milano/eventi.js, milano/mostre.js, milano/cinema.js, milano/incontri.js.
 """
 import os
+import re
 
 CITTA = {
     "milano": {
@@ -27,6 +28,26 @@ CITTA = {
         "meta": "Ferrara e provincia",
         "url": "https://achevents.com/ferrara/",
     },
+    # 28/11/2026: preparate (Stefano: «Preparati per inserire Modena Forlì e Firenze»); finché non sono in CITTA_ATTIVE
+    # la pagina c'è ma non compare nel selettore né nella mappa del sito e dice ai motori di ricerca di non indicizzarla
+    "modena": {
+        "nome": "Modena",
+        "area": "a Modena e in tutta la provincia",
+        "meta": "Modena e provincia",
+        "url": "https://achevents.com/modena/",
+    },
+    "forli-cesena": {
+        "nome": "Forlì-Cesena",
+        "area": "a Forlì, a Cesena e in tutta la provincia",
+        "meta": "Forlì, Cesena e provincia",
+        "url": "https://achevents.com/forli-cesena/",
+    },
+    "firenze": {
+        "nome": "Firenze",
+        "area": "a Firenze e in tutta la Città metropolitana",
+        "meta": "Firenze e Città metropolitana",
+        "url": "https://achevents.com/firenze/",
+    },
 }
 VUOTI = {
     "eventi.js": 'window.EVENTI_DATA={"aggiornato":"","eventi":[]};\n',
@@ -40,6 +61,9 @@ VUOTI = {
 
 def main():
     base = open("index.html", encoding="utf-8").read()
+    m = re.search(r"const CITTA_ATTIVE=\[([^\]]*)\]", base)
+    attive_path = set(re.findall(r'"([a-z]{2})"', m.group(1))) if m else set()
+    cartelle_attive = {p for k, p in re.findall(r'\b([a-z]{2}):\{k:"[a-z]{2}"[^}]*?path:"/([a-z-]+)/"', base) if k in attive_path}
     for cartella, c in CITTA.items():
         s = base
         for a, b in [
@@ -54,6 +78,8 @@ def main():
             if a not in s:
                 raise SystemExit(f"ERRORE: testo non trovato in index.html: {a}")
             s = s.replace(a, b)
+        if cartella not in cartelle_attive:   # città preparata ma spenta: niente motori di ricerca
+            s = s.replace("<head>", '<head>\n<meta name="robots" content="noindex">', 1)
         os.makedirs(cartella, exist_ok=True)
         open(os.path.join(cartella, "index.html"), "w", encoding="utf-8").write(s)
         for f, v in VUOTI.items():  # dati vuoti finché la città non è caricata

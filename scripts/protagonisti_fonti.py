@@ -9,12 +9,15 @@ uso: python3 scripts/protagonisti_fonti.py [bo mi ra fe] [--max 150]
 """
 import json, os, re, sys, time, html, urllib.request, urllib.robotparser
 from urllib.parse import urlsplit
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import citta_cfg as _CC  # noqa: E402  (28/11/2026: elenco unico delle città)
 QUI = os.path.dirname(os.path.abspath(__file__)); RADICE = os.path.dirname(QUI)
 sys.path.insert(0, QUI)
 import protagonisti as P
 
 UA = "Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
-FILE = {"bo": "eventi.js", "mi": "milano/eventi.js", "ra": "ravenna/eventi.js", "fe": "ferrara/eventi.js"}
+FILE = {k: _CC.file_di(k, "eventi.js") for k in _CC.TUTTE
+        if os.path.exists(os.path.join(RADICE, _CC.file_di(k, "eventi.js")))}   # 28/11/2026: tutte le città che hanno dati
 CACHE = os.path.join(RADICE, "dati", "chi_pagine.json")
 MAI = ("ticketone.", "eventim.", "dice.fm", "songkick.", "facebook.", "instagram.", "vivaticket.", "ticketmaster.", "fever")
 GENERI = {"Teatro", "Classica", "Jazz"}   # dove il titolo spesso non dice chi va in scena

@@ -11,10 +11,12 @@ Uso: python3 scripts/pulisci_descrizioni.py            mostra che cosa cambiereb
 """
 import json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import citta_cfg as _CC  # noqa: E402  (28/11/2026: elenco unico delle città)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import regole_auto as RA  # noqa: E402
 
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CITTA = ["", "milano", "ferrara", "ravenna"]
+CITTA = [c for n, c in _CC.TUTTE.values()]   # 28/11/2026: tutte le città
 GENERICA = {"Serate e club": "Serata nel club {l}.", "Teatro": "{t} {al}{l}.", "Classica": "Concerto di musica classica {al}{l}.",
             "Jazz": "Concerto jazz {al}{l}.", "Rock": "Concerto rock {al}{l}."}
 
@@ -42,6 +44,8 @@ def main(a):
     tot = 0
     for c in CITTA:
         p = os.path.join(RADICE, c, "eventi.js")
+        if not os.path.exists(p):
+            continue
         s = open(p, encoding="utf-8").read()
         dati = json.loads(s[s.index("=") + 1:].rstrip().rstrip(";"))
         ch = pulisci(dati["eventi"])

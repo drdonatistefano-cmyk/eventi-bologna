@@ -10,6 +10,8 @@ pagine ed eventi (clic, filtri, ricerche, condivisioni) e scrive:
 Senza GOATCOUNTER_TOKEN non scrive nulla ed esce senza errore.
 """
 import json, os, sys, re, datetime, urllib.request, urllib.parse, urllib.error, collections
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import citta_cfg as _CC  # noqa: E402  (28/11/2026: elenco unico delle città)
 
 SITO = os.environ.get("GOATCOUNTER_SITE", "eventibologna")
 LANCIO = "2026-11-04"
@@ -40,7 +42,7 @@ def ora_iso(giorno, fine=False):
 def tipo_evento(path):
     """Raggruppa i percorsi degli eventi registrati da index.html."""
     p = path.strip("/").lower()
-    p = re.sub(r"^(milano|ferrara|ravenna)/", "", p)  # gli eventi delle città diverse da Bologna hanno il prefisso della città (Ferrara e Ravenna dal 20/11/2026: prima finivano in «altro»)
+    p = re.sub(r"^(" + "|".join(c for n, c in _CC.TUTTE.values() if c) + r")/", "", p)  # gli eventi delle città diverse da Bologna hanno il prefisso della città (Ferrara e Ravenna dal 20/11/2026: prima finivano in «altro»)
     if p.startswith("condividi/"): return "condivisioni"
     if p.startswith("scheda/"): return "cambio scheda"
     m = re.match(r"^(spettacoli|mostre|cinema)/(.+)$", p)

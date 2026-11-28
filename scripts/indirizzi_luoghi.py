@@ -23,12 +23,16 @@ import time
 import unicodedata
 import urllib.parse
 import urllib.request
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import citta_cfg as _CC  # noqa: E402  (28/11/2026: elenco unico delle città)
 
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATI = os.path.join(RADICE, "dati")
 OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]
 # provincia (nome dell'area amministrativa di livello 6 in OpenStreetMap) e cartella dei dati di ogni città
-CITTA = {"bo": ("Bologna", "."), "mi": ("Milano", "milano"), "ra": ("Ravenna", "ravenna"), "fe": ("Ferrara", "ferrara")}
+CITTA = {k: (n, c or ".") for k, (n, c) in _CC.TUTTE.items()}   # 28/11/2026: tutte le città di citta_cfg.py
+# OpenStreetMap chiama la provincia di Forlì-Cesena così
+CITTA["fc"] = ("Forlì-Cesena", CITTA["fc"][1])
 # luoghi di spettacolo in tutta la provincia; bar, pub e ristoranti (tantissimi) solo nel comune capoluogo
 TIPI = ("theatre|arts_centre|cinema|nightclub|music_venue|concert_hall|events_venue|community_centre|social_centre|"
         "conference_centre|library|place_of_worship|exhibition_centre")

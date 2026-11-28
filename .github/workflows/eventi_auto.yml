@@ -39,9 +39,21 @@ jobs:
         id: fe
         run: python3 scripts/eventi_auto.py fe $PROVA
         continue-on-error: true
+      - name: Modena
+        id: mo
+        run: python3 scripts/eventi_auto.py mo $PROVA
+        continue-on-error: true
+      - name: Forlì-Cesena
+        id: fc
+        run: python3 scripts/eventi_auto.py fc $PROVA
+        continue-on-error: true
+      - name: Firenze
+        id: fi
+        run: python3 scripts/eventi_auto.py fi $PROVA
+        continue-on-error: true
       - name: Salva il risultato
         if: ${{ !inputs.prova }}
-        run: bash scripts/salva.sh "Eventi e mostre automatici $(date +%F)" eventi.js mostre.js milano/eventi.js milano/mostre.js ravenna/eventi.js ravenna/mostre.js ferrara/eventi.js ferrara/mostre.js dati/auto_bo.json dati/auto_mi.json dati/auto_ra.json dati/auto_fe.json dati/portale_fe.json dati/portale_ra.json dati/generi_artisti.json
+        run: bash scripts/salva.sh "Eventi e mostre automatici $(date +%F)" eventi.js mostre.js milano/eventi.js milano/mostre.js ravenna/eventi.js ravenna/mostre.js ferrara/eventi.js ferrara/mostre.js modena/eventi.js modena/mostre.js forli-cesena/eventi.js forli-cesena/mostre.js firenze/eventi.js firenze/mostre.js dati/auto_bo.json dati/auto_mi.json dati/auto_ra.json dati/auto_fe.json dati/auto_mo.json dati/auto_fc.json dati/auto_fi.json dati/portale_fe.json dati/portale_ra.json dati/generi_artisti.json
       - name: Segnala se qualcosa non è andato
         if: ${{ !inputs.prova && (steps.bo.outcome == 'failure' || steps.mi.outcome == 'failure') }}
         env: { GH_TOKEN: "${{ github.token }}" }

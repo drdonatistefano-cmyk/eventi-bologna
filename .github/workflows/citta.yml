@@ -17,7 +17,7 @@ jobs:
       - run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add milano ravenna ferrara index.html robots.txt sitemap.xml versioni.js eventi-presto.js eventi-resto.js
+          git add milano ravenna ferrara modena forli-cesena firenze index.html robots.txt sitemap.xml versioni.js eventi-presto.js eventi-resto.js
           git diff --cached --quiet || (git commit -m "Pagine delle città da index.html" && git push)
       - name: Le città accese sono collegate dappertutto? (18/11/2026)
         # se una città è accesa in CITTA_ATTIVE ma manca in un file, il flusso diventa rosso e GitHub manda un'email a Stefano

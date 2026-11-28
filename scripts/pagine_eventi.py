@@ -20,12 +20,14 @@ import sys
 import unicodedata
 import urllib.parse
 from zoneinfo import ZoneInfo
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import citta_cfg as _CC  # noqa: E402  (28/11/2026: elenco unico delle città)
 
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITO = "https://achevents.com"
 ROMA = ZoneInfo("Europe/Rome")
-CARTELLE = {"bo": "", "mi": "milano", "ra": "ravenna", "fe": "ferrara"}
-NOMI = {"bo": "Bologna", "mi": "Milano", "ra": "Ravenna", "fe": "Ferrara"}
+CARTELLE = {k: c for k, (n, c) in _CC.TUTTE.items()}   # 28/11/2026: tutte le città (le pagine si fanno solo per quelle accese)
+NOMI = {k: n for k, (n, c) in _CC.TUTTE.items()}
 # stesse affiliazioni della guida (index.html, AFF): 0 = programma non approvato, link invariato
 AWIN, MID = "3146807", {"ticketone.it": 9567, "tiqets.com": 12427}
 MARGINE_GIORNI = 3

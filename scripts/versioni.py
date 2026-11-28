@@ -14,11 +14,14 @@ import hashlib
 import json
 import os
 import re
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import citta_cfg as _CC  # noqa: E402  (28/11/2026: elenco unico delle città)
 
 FILE = ["eventi", "eventi-presto", "eventi-resto", "serate", "mostre", "cinema", "incontri", "sport"]
 PRIMA = ["eventi", "eventi-presto", "serate", "mostre"]
 GIORNI_PRESTO = 14   # 18/11/2026: all'apertura arrivano solo i prossimi 14 giorni (eventi-presto.js), il resto dopo   # dal 14/11/2026 le loro impronte stanno anche in index.html (marcatore /*V0*/…/*V0*/)
-CARTELLE = [".", "milano", "ravenna", "ferrara"]
+CARTELLE = [c or "." for n, c in _CC.TUTTE.values()]   # 28/11/2026: tutte le città
 
 
 def impronta(percorso):

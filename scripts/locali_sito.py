@@ -23,6 +23,8 @@ Rispetta robots.txt, una pagina ogni 1,5 secondi per sito.
 Prova senza toccare i dati:  python3 scripts/locali_sito.py --prova bo|mi [nome]
 """
 import datetime, html, json, os, re, sys, time, urllib.parse, urllib.request, urllib.robotparser
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import citta_cfg as _CC  # noqa: E402  (28/11/2026: elenco unico delle città)
 
 UA = "Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
 OGGI = datetime.date.today().isoformat()
@@ -355,7 +357,7 @@ if __name__ == "__main__":
     if len(sys.argv) >= 3 and sys.argv[1] == "--prova":
         citta = sys.argv[2]; solo = sys.argv[3].lower() if len(sys.argv) > 3 else ""
         rad = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        f = os.path.join(rad, {"bo": "eventi.js", "mi": "milano/eventi.js", "ra": "ravenna/eventi.js", "fe": "ferrara/eventi.js"}[citta])
+        f = os.path.join(rad, _CC.file_di(citta, "eventi.js"))
         s = open(f).read(); G = json.loads(s[s.index("=") + 1:].rstrip().rstrip(";"))["eventi"]
         for c in config(citta):
             if solo and solo not in c["nome"].lower(): continue

@@ -21,7 +21,7 @@ universita centro casa circolo produzioni produzione cooperativa sociale notte u
 premio cinema film libro libri edizioni editore editrice ensemble filarmonica sinfonica orchestra symphony orchestra quartet big
 choir chorus opera balletto ballet dance company teatrale project records music live tour show special guest guests dj
 natale capodanno ottobre novembre dicembre gennaio febbraio marzo aprile maggio giugno luglio agosto settembre
-bologna milano ravenna ferrara italia italiana italiano europa roma napoli torino firenze venezia emilia romagna
+bologna milano ravenna ferrara modena forlì forli cesena firenze italia italiana italiano europa roma napoli torino firenze venezia emilia romagna
 ideato ideazione biglietti biglietto coreografie coreografia scene scenografia costumi luci musiche drammaturgia produzione coproduzione
 testo testi traduzione adattamento durata info prenota prenotazioni acquista regia con assistente aiuto disegno suono video foto
 librerie libreria coop kollettivo collettivo invisibile

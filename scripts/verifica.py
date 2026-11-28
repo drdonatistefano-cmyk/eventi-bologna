@@ -19,6 +19,10 @@ import re
 import subprocess
 import sys
 import time
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import citta_cfg as _CC  # noqa: E402  (28/11/2026: elenco unico delle città)
+# città accese (CITTA_ATTIVE in index.html) con (cartella con la barra, nome): ogni città nuova entra da sola nei controlli
+EV_CITTA = [((_CC.TUTTE[k][1] + "/") if _CC.TUTTE[k][1] else "", _CC.TUTTE[k][0]) for k in _CC.attive() if k in _CC.TUTTE]
 import urllib.parse
 
 import requests
@@ -214,6 +218,11 @@ def vista_pagine():
               ("Events Ferrara, indirizzo canonico", B["events"] + "ferrara/", '<link rel="canonical" href="https://achevents.com/ferrara/">'),
               ("Statistiche Places", B["places"] + "statistiche.html", "<html"), ("Statistiche Dinners", B["dinners"] + "statistiche.html", "<html"),
               ("Statistiche Events", B["events"] + "statistiche.html", "<html"), ("Velocità", B["events"] + "velocita.html", "<html")]
+    # 28/11/2026: le città accese dopo Ferrara (Modena, Forlì-Cesena, Firenze, ...) entrano da sole
+    for cart, nome in EV_CITTA:
+        if nome not in ("Bologna", "Milano", "Ravenna", "Ferrara"):
+            pagine += [(f"Events {nome}", B["events"] + cart, "Events"),
+                       (f"Events {nome}, indirizzo canonico", B["events"] + cart, f'<link rel="canonical" href="https://achevents.com/{cart}">')]
     with cf.ThreadPoolExecutor(8) as ex:
         ris = list(ex.map(lambda p: prendi(p[1]), pagine))
     for (nome, url, segno), (r, t) in zip(pagine, ris):
@@ -251,7 +260,8 @@ def vista_dati():
 
     def events():
         for citta, base, minimo in (("Bologna", B["events"], 150), ("Milano", B["events"] + "milano/", 200),
-                                    ("Ravenna", B["events"] + "ravenna/", 40), ("Ferrara", B["events"] + "ferrara/", 40)):   # RA e FE dal 18/11/2026
+                                    ("Ravenna", B["events"] + "ravenna/", 40), ("Ferrara", B["events"] + "ferrara/", 40),   # RA e FE dal 18/11/2026
+                                    *[(n, B["events"] + c, 40) for c, n in EV_CITTA if n not in ("Bologna", "Milano", "Ravenna", "Ferrara")]):
             r, _ = prendi(base + "eventi.js")
             if not v.se(r is not None and r.status_code == 200, f"Events {citta}: file degli eventi"):
                 continue
@@ -399,7 +409,7 @@ def vista_citta():
     def due_parti():
         """18/11/2026: eventi-presto.js (prossimi 14 giorni, all'apertura) + eventi-resto.js (dopo) = eventi.js, in ogni città.
         Se non tornano, chi apre la pagina vede spettacoli in meno o doppi."""
-        for cart, nome in (("", "Bologna"), ("milano/", "Milano"), ("ravenna/", "Ravenna"), ("ferrara/", "Ferrara")):
+        for cart, nome in EV_CITTA:   # 28/11/2026: tutte le città accese
             pezzi = {}
             for f in ("eventi", "eventi-presto", "eventi-resto"):
                 r, _ = prendi(B["events"] + cart + f + ".js")
@@ -462,7 +472,7 @@ def vista_citta():
         pezzo di pagina al posto della descrizione (menu del sito, telefoni ed email, intestazioni in maiuscolo)."""
         import regole_auto as RA
         sporche = []
-        for cart, nome in (("", "Bologna"), ("milano/", "Milano"), ("ravenna/", "Ravenna"), ("ferrara/", "Ferrara")):
+        for cart, nome in EV_CITTA:   # 28/11/2026: tutte le città accese
             p = os.path.join(RADICE, cart, "eventi.js")
             if not os.path.exists(p):
                 continue

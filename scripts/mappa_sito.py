@@ -8,9 +8,12 @@ Riscrive i file solo se il contenuto cambia, così una pubblicazione normale non
 import json
 import os
 import re
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import citta_cfg as _CC  # noqa: E402  (28/11/2026: elenco unico delle città)
 
 SITO = "https://achevents.com/"
-CARTELLE = {"bo": "", "mi": "milano/", "ra": "ravenna/", "fe": "ferrara/"}
+CARTELLE = {k: (c + "/" if c else "") for k, (n, c) in _CC.TUTTE.items()}
 FISSE = ["collaborano/", "chi-siamo/", "privacy/"]
 
 

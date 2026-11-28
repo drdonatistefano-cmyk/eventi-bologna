@@ -24,8 +24,9 @@ sys.argv = [sys.argv[0]] + (["--citta", CITTA] if CITTA != "bo" else [])
 sys.path.insert(0, QUI)
 import aggiorna as A  # elenco dei comuni della città
 
-FILE = {"bo": "incontri.js", "mi": "milano/incontri.js", "ra": "ravenna/incontri.js", "fe": "ferrara/incontri.js"}[CITTA]
-CAPO = {"bo": "Bologna", "mi": "Milano", "ra": "Ravenna", "fe": "Ferrara"}[CITTA]
+import citta_cfg as _CC  # noqa: E402  (28/11/2026: elenco unico delle città)
+FILE = _CC.file_di(CITTA, "incontri.js")
+CAPO = _CC.CITTA[CITTA].get("capo", _CC.CITTA[CITTA]["nome"]) if CITTA in _CC.CITTA else _CC.TUTTE[CITTA][0]
 UA = "Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
 OGGI = datetime.date.today()
 FINE = OGGI + datetime.timedelta(days=45)

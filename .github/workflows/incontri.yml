@@ -38,9 +38,21 @@ jobs:
         id: ra
         run: python3 scripts/incontri_auto.py ra $PROVA
         continue-on-error: true
+      - name: Modena
+        id: mo
+        run: python3 scripts/incontri_auto.py mo $PROVA
+        continue-on-error: true
+      - name: Forlì-Cesena
+        id: fc
+        run: python3 scripts/incontri_auto.py fc $PROVA
+        continue-on-error: true
+      - name: Firenze
+        id: fi
+        run: python3 scripts/incontri_auto.py fi $PROVA
+        continue-on-error: true
       - name: Salva il risultato
         if: ${{ !inputs.prova }}
-        run: bash scripts/salva.sh "Incontri automatici $(date +%F)" incontri.js milano/incontri.js dati/incontri_bo.json dati/incontri_mi.json dati/incontri_schede.json ferrara/incontri.js dati/incontri_fe.json dati/incontri_portale_fe.json ravenna/incontri.js dati/incontri_ra.json dati/incontri_portale_ra.json
+        run: bash scripts/salva.sh "Incontri automatici $(date +%F)" incontri.js milano/incontri.js dati/incontri_bo.json dati/incontri_mi.json dati/incontri_schede.json ferrara/incontri.js dati/incontri_fe.json dati/incontri_portale_fe.json ravenna/incontri.js dati/incontri_ra.json dati/incontri_portale_ra.json modena/incontri.js dati/incontri_mo.json forli-cesena/incontri.js dati/incontri_fc.json firenze/incontri.js dati/incontri_fi.json
       - name: Segnala se qualcosa non è andato
         if: ${{ !inputs.prova && (steps.bo.outcome == 'failure' || steps.mi.outcome == 'failure') }}
         env: { GH_TOKEN: "${{ github.token }}" }

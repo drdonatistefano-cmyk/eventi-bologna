@@ -19,6 +19,8 @@ Dal 19/11/2026:
 Scrive dati/controllo_biglietti.json (riepilogo + elenco dei casi da correggere)."""
 import html, unicodedata, urllib.error, json, re, sys, os, time, datetime, urllib.request, urllib.robotparser, collections, concurrent.futures, threading
 from urllib.parse import urlparse
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import citta_cfg as _CC  # noqa: E402  (28/11/2026: elenco unico delle città)
 
 RADICE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UA = "Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
@@ -32,7 +34,7 @@ def carica(f):
     return json.loads(s[s.index("=") + 1:].rstrip().rstrip(";"))
 
 
-CARTELLE = {"": "bo", "milano/": "mi", "ferrara/": "fe", "ravenna/": "ra"}   # 19/11: anche Ferrara e Ravenna
+CARTELLE = {(c + "/" if c else ""): k for k, (n, c) in _CC.TUTTE.items()}   # 19/11: anche Ferrara e Ravenna; 28/11: tutte le città
 MAI = ("ticketone.it", "eventim.")          # il loro robots.txt vieta tutti i programmi: mai aprirli da GitHub (si controllano a mano)
 PAUSA = {"18tickets.it": 6.0}               # secondi tra due pagine dello stesso dominio (18tickets risponde 429 se si va più veloci)
 

@@ -124,7 +124,7 @@ if os.path.exists(os.path.join(RAD, "index.html")) and os.path.isdir(os.path.joi
             _sh.copytree(os.path.join(RAD, sub), os.path.join(d, sub))
         os.makedirs(os.path.join(d, "dati"))
         _sh.copy(os.path.join(RAD, "dati", "sentinella.json"), os.path.join(d, "dati"))
-        for c in ("milano", "ravenna", "ferrara"):
+        for c in ("milano", "ravenna", "ferrara", "modena", "forli-cesena", "firenze"):
             os.makedirs(os.path.join(d, c))
             for f in CC.DATI_PAGINA:
                 if os.path.exists(os.path.join(RAD, c, f)):
@@ -141,7 +141,7 @@ if os.path.exists(os.path.join(RAD, "index.html")) and os.path.isdir(os.path.joi
 
     d = copia()
     prova("città: le città di oggi sono collegate (nessun errore)", errori(d) == [])
-    cambia(d, "scripts/versioni.py", '"ferrara"', '"x"')
+    cambia(d, "scripts/versioni.py", 'CARTELLE = [c or "." for n, c in _CC.TUTTE.values()]', 'CARTELLE = [".", "milano", "ravenna"]')
     prova("città: una città tolta da versioni.py si vede", any("versioni.py" in e for e in errori(d)))
     d = copia()
     open(os.path.join(d, "ravenna", "eventi.js"), "w").write('window.EVENTI_DATA={"aggiornato":"","eventi":[]};')
@@ -161,6 +161,24 @@ if os.path.exists(os.path.join(RAD, "index.html")) and os.path.isdir(os.path.joi
     cambia(d, ".github/workflows/eventi_auto.yml", "ravenna/", "x/")
     cambia(d, ".github/workflows/eventi_auto.yml", "ravenna/", "x/")
     prova("città: un flusso che non salva più la città si vede", any("eventi_auto.yml" in x for x in errori(d)))
+    # 28/11/2026: Modena, Forlì-Cesena e Firenze preparate ma spente
+    d = copia()
+    avv = [(n, cosa) for liv, n, cosa in CC.controlla(d) if liv == "avviso" and "non accesa" in cosa]
+    prova("città: le tre province preparate e spente sono solo avvisi, col nome giusto",
+          errori(d) == [] and {n for n, _ in avv} >= {"Modena", "Forlì-Cesena", "Firenze"})
+    d = copia()
+    s = open(os.path.join(d, "index.html"), encoding="utf-8").read()
+    s = _re.sub(r"const CITTA_ATTIVE=\[[^\]]*\]", 'const CITTA_ATTIVE=["bo","mi","ra","fe","mo","fc","fi"]', s)
+    open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(s)
+    e = errori(d)
+    prova("città: accese, le tre province sono collegate dappertutto (manca solo il minimo di eventi)",
+          e != [] and all("ha 0 eventi" in x or "eventi.js" in x for x in e))
+    import subprocess as _sp
+    d = copia()
+    _sp.run([sys.executable, os.path.join(d, "scripts", "citta.py")], cwd=d, capture_output=True)
+    leggi = lambda c: open(os.path.join(d, c, "index.html"), encoding="utf-8").read()[:400]  # noqa: E731
+    prova("città: una città preparata e spenta ha noindex, una accesa no",
+          'name="robots" content="noindex"' in leggi("modena") and 'noindex' not in leggi("ferrara"))
 else:
     print("(prove delle città saltate: file del repository non presenti)")
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var P={mi:"/milano/",ra:"/ravenna/",fe:"/ferrara/"},m=document.cookie.match(/(?:^|; )citta=(bo|mi|ra|fe)/),q=/[?&]citta=(bo|mi|ra|fe)/.exec(location.search),qui=/^\/(milano|ravenna|ferrara)(\/|$)/.test(location.pathname)?"altra":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||!P[m[1]]||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace(P[m[1]])}catch(_){}})();</script>
+<script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var P={mi:"/milano/",ra:"/ravenna/",fe:"/ferrara/",mo:"/modena/",fc:"/forli-cesena/",fi:"/firenze/"},m=document.cookie.match(/(?:^|; )citta=([a-z]{2})\b/),q=/[?&]citta=([a-z]{2})\b/.exec(location.search),qui=Object.keys(P).some(function(k){return location.pathname.indexOf(P[k])===0})?"altra":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||!P[m[1]]||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace(P[m[1]])}catch(_){}})();</script>
 <script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"03c634f4d4","eventi-presto":"9ca73ad47a","serate":"214cae4c61","mostre":"8100c4ce5a"}/*V0*/;</script>
 <script>/* anticipo: chiede subito versioni.js (senza bloccare la pagina) e fa partire i file dei dati mentre arriva il resto; più in basso la pagina li usa dalla memoria */(function(){try{var V0=window.ACH_V0||{},fatti={};function pre(f,h){if(!h||fatti[f+h])return;fatti[f+h]=1;var l=document.createElement("link");l.rel="preload";l.as="script";l.href=f+".js?h="+h;document.head.appendChild(l)}["eventi-presto","serate","mostre"].forEach(function(f){pre(f,V0[f])});var s=document.createElement("script");s.async=true;s.src="versioni.js?v="+Math.floor(Date.now()/6e5);s.onload=function(){var V=window.ACH_VERSIONI||{};["eventi-presto","serate","mostre"].forEach(function(f){pre(f,V[f])})};document.head.appendChild(s)}catch(e){}})();</script>
 <title>Ach's Events Guide – concerti, teatro, mostre e cinema a Bologna</title>
@@ -1358,7 +1358,28 @@ const CITTA_CFG={
   zone:[["Ferrara","Ferrara",["Ferrara"]],["Alto","Alto Ferrarese",["Cento","Bondeno","Terre del Reno","Poggio Renatico","Vigarano Mainarda"]],
    ["Copparese","Copparese e Po",["Copparo","Riva del Po","Tresignana","Jolanda di Savoia"]],
    ["Delta","Delta e costa",["Comacchio","Codigoro","Goro","Mesola","Lagosanto","Fiscaglia","Ostellato"]],
-   ["Argentano","Argentano",["Argenta","Portomaggiore","Masi Torello","Voghiera"]]]}};
+   ["Argentano","Argentano",["Argenta","Portomaggiore","Masi Torello","Voghiera"]]]},
+ mo:{k:"mo",sigla:"MO",nome:"Modena",capo:"Modena",area:"a Modena e in tutta la provincia",path:"/modena/",url:"https://achevents.com/modena/",
+  zone:[["Modena","Modena",["Modena"]],
+   ["Bassa","Carpi e Bassa",["Carpi","Campogalliano","Novi di Modena","Soliera","Mirandola","Camposanto","Cavezzo","Concordia sulla Secchia","Finale Emilia","Medolla","San Felice sul Panaro","San Possidonio","San Prospero"]],
+   ["Sorbara","Castelfranco e Sorbara",["Castelfranco Emilia","Bastiglia","Bomporto","Nonantola","Ravarino","San Cesario sul Panaro"]],
+   ["Ceramiche","Sassuolo e Ceramiche",["Sassuolo","Fiorano Modenese","Formigine","Maranello","Frassinoro","Montefiorino","Palagano","Prignano sulla Secchia"]],
+   ["Castelli","Vignola e Castelli",["Vignola","Castelnuovo Rangone","Castelvetro di Modena","Guiglia","Marano sul Panaro","Savignano sul Panaro","Spilamberto","Zocca","Montese"]],
+   ["Frignano","Frignano",["Pavullo nel Frignano","Fanano","Fiumalbo","Lama Mocogno","Montecreto","Pievepelago","Polinago","Riolunato","Serramazzoni","Sestola"]]]},
+ fc:{k:"fc",sigla:"FC",nome:"Forlì-Cesena",capo:"Forlì",area:"a Forlì, a Cesena e in tutta la provincia",path:"/forli-cesena/",url:"https://achevents.com/forli-cesena/",
+  zone:[["Forli","Forlì",["Forlì"]],
+   ["Cesena","Cesena",["Cesena"]],
+   ["Forlivese","Forlivese e Appennino",["Forlimpopoli","Bertinoro","Castrocaro Terme e Terra del Sole","Civitella di Romagna","Dovadola","Galeata","Meldola","Modigliana","Portico e San Benedetto","Predappio","Premilcuore","Rocca San Casciano","Santa Sofia","Tredozio"]],
+   ["Savio","Valle del Savio",["Bagno di Romagna","Mercato Saraceno","Montiano","Sarsina","Verghereto"]],
+   ["Rubicone","Rubicone e costa",["Cesenatico","Gambettola","Gatteo","Longiano","Roncofreddo","San Mauro Pascoli","Savignano sul Rubicone","Sogliano al Rubicone","Borghi"]]]},
+ fi:{k:"fi",sigla:"FI",nome:"Firenze",capo:"Firenze",area:"a Firenze e in tutta la Città metropolitana",path:"/firenze/",url:"https://achevents.com/firenze/",
+  zone:[["Firenze","Firenze",["Firenze"]],
+   ["Piana","Piana e Colline",["Sesto Fiorentino","Calenzano","Campi Bisenzio","Signa","Lastra a Signa","Scandicci","Fiesole","Vaglia"]],
+   ["Chianti","Chianti",["Bagno a Ripoli","Impruneta","Greve in Chianti","San Casciano in Val di Pesa","Barberino Tavarnelle"]],
+   ["Valdarno","Valdarno e Valdisieve",["Figline e Incisa Valdarno","Reggello","Rignano sull'Arno","Pontassieve","Pelago","Rufina","Londa","San Godenzo"]],
+   ["Mugello","Mugello",["Borgo San Lorenzo","Barberino di Mugello","Scarperia e San Piero","Vicchio","Dicomano","Firenzuola","Marradi","Palazzuolo sul Senio"]],
+   ["Empolese","Empolese Valdelsa",["Empoli","Capraia e Limite","Castelfiorentino","Cerreto Guidi","Certaldo","Fucecchio","Gambassi Terme","Montaione","Montelupo Fiorentino","Montespertoli","Vinci"]]]}};
+/* 28/11/2026: Modena, Forlì-Cesena e Firenze preparate; si accendono aggiungendole a CITTA_ATTIVE */
 /* beta 2030 (27/11/2026): nell'anteprima dei rami (/anteprima/events/claude/RAMO/) la città si legge dopo il prefisso */const BETA_BASE=(location.pathname.match(/^\/anteprima\/[^/]+\/claude\/[^/]+/)||[""])[0];
 const CITY=Object.values(CITTA_CFG).find(c=>c.k!=="bo"&&new RegExp("^"+c.path.replace(/\/$/,"")+"(/|$)").test(location.pathname.slice(BETA_BASE.length)||"/"))||CITTA_CFG.bo;
 /* ---------- dati ---------- */

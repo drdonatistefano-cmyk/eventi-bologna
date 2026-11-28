@@ -71,7 +71,8 @@ def controlla(rad="."):
         if not c:
             out.append(("errore", k, "index.html: manca la città in CITTA_CFG (con path)"))
             continue
-        nome = c.capitalize()
+        mn = re.search(r'"' + c + r'": \{\s*"nome": "([^"]+)"', citta_py)
+        nome = mn.group(1) if mn else c.capitalize()   # 28/11/2026: «Forlì-Cesena», non «Forli-cesena»
 
         def err(cosa): out.append(("errore", nome, cosa))
         def avv(cosa): out.append(("avviso", nome, cosa))
@@ -82,7 +83,7 @@ def controlla(rad="."):
             err("scripts/citta.py: manca in CITTA (la pagina della città non viene rigenerata)")
         if k != "mi" and f'"{k}"' not in cfg:
             err("scripts/citta_cfg.py: manca il perimetro (zone e comuni)")
-        if f'"{c}"' not in versioni:
+        if f'"{c}"' not in versioni and not ("_CC.TUTTE" in versioni and (k == "mi" or f'"{k}"' in cfg)):
             err("scripts/versioni.py: manca in CARTELLE (i dati nuovi non arrivano a chi ha già aperto la pagina)")
         if f"{c}/index.html" not in salva:
             err("scripts/salva.sh: manca fra i file fissi")
@@ -104,7 +105,7 @@ def controlla(rad="."):
                     err(f"{c}/eventi.js ha {n} eventi: la città è accesa ma vuota")
             except ValueError:
                 err(f"{c}/eventi.js non si legge")
-        if not re.search(r'"' + nome + r'"', verifica):
+        if not re.search(r'"' + nome + r'"', verifica) and "EV_CITTA" not in verifica:   # dal 28/11 verifica.py le prende da sola
             err("scripts/verifica.py: la città non è nei controlli dei dati di ogni mattina")
         # fonti: senza, la città va avanti solo con i flussi automatici (DICE, arte.it, Ticketmaster, portali)
         if f'"{k}"' not in cartelloni:
@@ -118,7 +119,8 @@ def controlla(rad="."):
     # al contrario: città preparate ma non accese (normale mentre si prepara, da non dimenticare)
     for c in re.findall(r'^    "([a-z-]+)": \{', citta_py, re.M):
         if not any(cartella_di(index, k) == c for k in att):
-            out.append(("avviso", c.capitalize(), "preparata in scripts/citta.py ma non accesa in CITTA_ATTIVE"))
+            mn = re.search(r'"' + c + r'": \{\s*"nome": "([^"]+)"', citta_py)
+            out.append(("avviso", mn.group(1) if mn else c.capitalize(), "preparata in scripts/citta.py ma non accesa in CITTA_ATTIVE"))
     return out
 
 
