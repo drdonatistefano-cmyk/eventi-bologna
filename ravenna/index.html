@@ -1366,6 +1366,16 @@ html.beta-scuro body #nAf .hd h2,html.beta-scuro body #nAf summary,html.beta-scu
 html.beta-scuro body #nAf .hd button{background:linear-gradient(180deg,#232932,#1c2129)!important;border-color:#2f3742!important;color:#e8ebf0!important}
 html.beta-scuro body #nAf .ft .a1{border-color:#2f3742!important}
 html.beta-scuro body #nAf .ft .a2{background:linear-gradient(180deg,#4f7aa3,#34597d)!important;color:#fff!important}
+
+/* ===== 28/11 19:40, Stefano: «numeri e descrizioni dei bottoni non centrati su iPad» — da 760px tessere con icona, nome e numero centrati in colonna ===== */
+@media(min-width:760px){
+  html body .modes{grid-template-columns:repeat(5,minmax(0,190px))}
+  html body .modes button,html body .modes button.on{height:98px;flex-direction:column;justify-content:flex-start;align-items:center;padding:17px 6px 8px;gap:3px;border-radius:22px;text-align:center}
+  html body .modes button::before{margin-bottom:11px}
+  html body .modes button::after{left:50%;top:9px;transform:translateX(-50%)}
+  html body .modes button.on::after{transform:translateX(-50%) scale(1.06)}
+  html body .modes button small{display:block;font-size:12.5px;line-height:1.2;margin:0}
+}
 </style>
 </head>
 <body class="nA">
