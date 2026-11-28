@@ -22,7 +22,9 @@ QUI = os.path.dirname(os.path.abspath(__file__))
 RADICE = os.path.dirname(QUI)
 CITTA = sys.argv[1] if len(sys.argv) > 1 else "bo"
 PROVA = "--prova" in sys.argv
-FILE = {"bo": "sport.js", "mi": "milano/sport.js"}[CITTA]
+sys.path.insert(0, QUI)
+import citta_cfg as _CC  # noqa: E402
+FILE = _CC.file_di(CITTA, "sport.js")   # 28/11/2026: anche Modena e Firenze
 UA = "Mozilla/5.0 (compatible; AchEventsGuide/1.0; +https://achevents.com)"
 OGGI = datetime.date.today()
 FINE = OGGI + datetime.timedelta(days=366)
@@ -50,13 +52,22 @@ SQUADRE = {
         {"nome": "Vero Volley Milano", "sport": "Volley", "lvf": "Numia Vero Volley Milano", "sito": "https://www.verovolley.com/",
          "biglietti": "https://verovolley.vivaticket.it/"},
     ],
-}[CITTA]
+    # 28/11/2026 (Stefano: «cita mostre concerti sport»): le province nuove. Il Sassuolo gioca al Mapei Stadium di Reggio Emilia,
+    # fuori provincia: non c'è. Forlì-Cesena non ha squadre nelle leghe che queste fonti leggono (Cesena in Serie B).
+    "mo": [
+        {"nome": "Modena Volley", "sport": "Volley", "lvm": "Valsa Group Modena", "sito": "https://www.modenavolley.it/"},
+    ],
+    "fi": [
+        {"nome": "Fiorentina", "sport": "Calcio", "of": "ACF Fiorentina", "uefa": "Fiorentina",
+         "stadio": "Stadio Artemio Franchi", "citta": "Firenze", "sito": "https://www.acffiorentina.com/"},
+    ],
+}.get(CITTA, [])
 
 # nomi degli impianti come li scrivono le fonti → nome e comune per la guida
 IMPIANTI = {
     "PALADOZZA": ("PalaDozza", "Bologna"), "VIRTUS ARENA": ("Virtus Arena", "Bologna"),
     "UNIPOL FORUM": ("Unipol Forum", "Assago"), "ALLIANZ CLOUD": ("Allianz Cloud", "Milano"),
-    "SEGAFREDO ARENA": ("Virtus Arena", "Bologna"), "PALARUGGI": ("PalaRuggi", "Imola"), "PALA RUGGI": ("PalaRuggi", "Imola"),
+    "SEGAFREDO ARENA": ("Virtus Arena", "Bologna"), "PALASPORT G.PANINI": ("PalaPanini", "Modena"), "PALAPANINI": ("PalaPanini", "Modena"), "PALARUGGI": ("PalaRuggi", "Imola"), "PALA RUGGI": ("PalaRuggi", "Imola"),
 }
 MESI = {m: i + 1 for i, m in enumerate("gennaio febbraio marzo aprile maggio giugno luglio agosto settembre ottobre novembre dicembre".split())}
 GIORNATA = lambda n: f"{n}ª giornata" if n else ""
@@ -112,7 +123,7 @@ def breve(n):
     return re.sub(r"^(AC|AS|SS|SSC|US|ACF|FC|UC)\s+|\s+(FC|Calcio|BC|CFC|1909|1913|1907)$", "", n).strip()
 
 
-FXD = {"Bologna FC 1909": "Bologna", "FC Internazionale Milano": "Internazionale", "AC Milan": "Milan"}
+FXD = {"Bologna FC 1909": "Bologna", "FC Internazionale Milano": "Internazionale", "AC Milan": "Milan", "ACF Fiorentina": "Fiorentina"}
 FXD_NOMI = {"Internazionale": "Inter", "Hellas Verona": "Verona"}
 
 
@@ -423,7 +434,7 @@ def superlega():
                 if not dentro(d): continue
                 imp = tds[6]
                 mm = re.match(r"(.+?)\s+([A-ZÀ-Ü][\w' ]+?)\s+\(([A-Z]{2})\)$", imp)
-                luogo, citta = impianto(mm.group(1) if mm else imp, mm.group(2) if mm else "Milano")
+                luogo, citta = impianto(mm.group(1) if mm else imp, mm.group(2) if mm else "Milano")   # «Modena (MO)» → Modena
                 if re.search(r"(?i)allianz cloud", imp): luogo, citta = "Allianz Cloud", "Milano"
                 out.append(partita("superlega", sq, d, ora, sq["nome"], tds[4], luogo, citta,
                                    "SuperLega", f"SuperLega di volley maschile, {GIORNATA(giornata)} ({'andata' if fase == 1 else 'ritorno'})." + ("" if m else " Data ufficiale da confermare."),

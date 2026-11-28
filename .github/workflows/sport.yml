@@ -30,9 +30,17 @@ jobs:
         id: mi
         run: python3 scripts/sport_auto.py mi $PROVA
         continue-on-error: true
+      - name: Modena
+        id: mo
+        run: python3 scripts/sport_auto.py mo $PROVA
+        continue-on-error: true
+      - name: Firenze
+        id: fi
+        run: python3 scripts/sport_auto.py fi $PROVA
+        continue-on-error: true
       - name: Salva il risultato
         if: ${{ !inputs.prova }}
-        run: bash scripts/salva.sh "Sport automatico $(date +%F)" sport.js milano/sport.js dati/sport_bo.json dati/sport_mi.json
+        run: bash scripts/salva.sh "Sport automatico $(date +%F)" sport.js milano/sport.js modena/sport.js firenze/sport.js dati/sport_bo.json dati/sport_mi.json dati/sport_mo.json dati/sport_fi.json
       - name: Segnala se qualcosa non è andato
         if: ${{ !inputs.prova && (steps.bo.outcome == 'failure' || steps.mi.outcome == 'failure') }}
         env: { GH_TOKEN: "${{ github.token }}" }

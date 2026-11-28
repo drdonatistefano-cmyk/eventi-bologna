@@ -354,5 +354,18 @@ _r1 = _sp2.run([sys.executable, _ag, "mostre.json", "--mostre", "--citta", "fc",
 _r2 = _sp2.run([sys.executable, _ag, "mostre.json", "--mostre", "--citta", "fc", "--oggi", "2026-11-28", "--minimo", "3"], cwd=_d, capture_output=True)
 prova("mostre: 3 mostre senza --minimo non si scrivono, con --minimo 3 sì", _r1.returncode == 1 and _r2.returncode == 0)
 
+# ---------------------------------------------------------------- sport delle province nuove (28/11/2026)
+_r = _sp2.run([sys.executable, "-c", """
+import sys, datetime; sys.argv = ['x', 'fi']; sys.path.insert(0, %r)
+import sport_auto as S
+S.OGGI = datetime.date(2026, 11, 28); S.FINE = datetime.date(2027, 11, 28)
+S.get = lambda u, tent=3, js=False: [{"RoundNumber": 14, "DateUtc": "2026-12-07 19:45:00Z", "HomeTeam": "Fiorentina", "AwayTeam": "Cagliari", "HomeTeamScore": None},
+                                     {"RoundNumber": 15, "DateUtc": "2026-12-13 14:00:00Z", "HomeTeam": "Lazio", "AwayTeam": "Fiorentina", "HomeTeamScore": None}] if 'fixturedownload' in u else None
+p = S.serie_a()
+print(S.FILE, len(p), p[0]['artista'], p[0]['ora'], p[0]['luogo'])
+""" % os.path.dirname(os.path.abspath(__file__))], capture_output=True, text=True)
+prova("sport: Firenze scrive firenze/sport.js e prende solo le partite in casa della Fiorentina",
+      _r.stdout.strip() == "firenze/sport.js 1 Fiorentina – Cagliari 20:45 Stadio Artemio Franchi")
+
 print(f"\n{len(FALLITE)} prove fallite" if FALLITE else "\nTutte le prove passano")
 sys.exit(1 if FALLITE else 0)

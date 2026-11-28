@@ -1,1 +1,985 @@
-{"aggiornato": "", "giorno_orari": "", "sale": []}
+{
+ "aggiornato": "2026-11-28",
+ "giorno_orari": "2026-11-28",
+ "sale": [
+  {
+   "id": "c001",
+   "nome": "Cinema Teatro Ariston",
+   "citta": "Carpi",
+   "indirizzo": "Via Boccaletti 3/B (San Marino), Carpi",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://www.cinemap.it/carpi/cinema/ariston-san-marino-carpi",
+   "cinemap": "https://www.cinemap.it/carpi/cinema/ariston-san-marino-carpi",
+   "film": [
+    {
+     "titolo": "Zustìssia",
+     "orari": [
+      "21:00"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "21:00"
+      ],
+      "2026-11-29": [
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.aristoncinemacarpi.it/2026/10/09/zustissia/"
+    }
+   ]
+  },
+  {
+   "id": "c002",
+   "nome": "Cinema Corso",
+   "citta": "Carpi",
+   "indirizzo": "Corso Fanti 92, Carpi",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://www.cinemap.it/carpi/cinema/corso-carpi",
+   "cinemap": "https://www.cinemap.it/carpi/cinema/corso-carpi",
+   "film": [
+    {
+     "titolo": "La notte delle fragole",
+     "orari": [
+      "15:00",
+      "17:00",
+      "19:00",
+      "21:00"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "15:00",
+       "17:00",
+       "19:00",
+       "21:00"
+      ],
+      "2026-11-29": [
+       "15:00",
+       "17:00",
+       "19:00",
+       "21:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MO/5336"
+    },
+    {
+     "titolo": "Mustang",
+     "orari": [],
+     "giorni": {
+      "2026-11-29": [
+       "11:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MO/5336"
+    }
+   ]
+  },
+  {
+   "id": "c003",
+   "nome": "Cinema Eden",
+   "citta": "Carpi",
+   "indirizzo": "Corso Fanti 91, Carpi",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://www.cinemap.it/carpi/cinema/eden-carpi",
+   "cinemap": "https://www.cinemap.it/carpi/cinema/eden-carpi",
+   "film": [
+    {
+     "titolo": "È andata così",
+     "orari": [
+      "16:00",
+      "21:15"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "16:00",
+       "21:15"
+      ],
+      "2026-11-29": [
+       "16:00",
+       "21:15"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MO/5154"
+    },
+    {
+     "titolo": "Fjord",
+     "orari": [
+      "18:30"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "18:30"
+      ],
+      "2026-11-29": [
+       "18:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MO/5154"
+    }
+   ]
+  },
+  {
+   "id": "c004",
+   "nome": "Space City Multisala",
+   "citta": "Carpi",
+   "indirizzo": "Viale dell'Industria 9, Carpi",
+   "tipo": "Multisala",
+   "sito": "",
+   "fonte": "https://www.cinemap.it/carpi/cinema/spacecity-carpi",
+   "cinemap": "https://www.cinemap.it/carpi/cinema/spacecity-carpi",
+   "film": [
+    {
+     "titolo": "Fammi il piacere",
+     "orari": [],
+     "giorni": {
+      "2026-11-29": [
+       "09:15"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Hexe - Il regno delle streghe",
+     "orari": [
+      "15:00",
+      "17:00"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "15:00",
+       "17:00"
+      ],
+      "2026-11-29": [
+       "09:00",
+       "15:00",
+       "17:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Hunger Games - L'alba sulla mietitura",
+     "orari": [
+      "17:00",
+      "20:00",
+      "21:00"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "17:00",
+       "20:00",
+       "21:00"
+      ],
+      "2026-11-29": [
+       "17:00",
+       "19:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
+     "orari": [
+      "17:00"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "17:00"
+      ],
+      "2026-11-29": [
+       "20:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Scrooge e gli spiriti del Natale",
+     "orari": [
+      "19:00",
+      "21:15"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "19:00",
+       "21:15"
+      ],
+      "2026-11-29": [
+       "09:00",
+       "17:15",
+       "19:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Se domani non torno",
+     "orari": [
+      "15:00"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "15:00"
+      ],
+      "2026-11-29": [
+       "15:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Ti presento i Fotter",
+     "orari": [
+      "15:00",
+      "19:00"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "15:00",
+       "19:00"
+      ],
+      "2026-11-29": [
+       "15:15"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    }
+   ]
+  },
+  {
+   "id": "c005",
+   "nome": "Cinema Astra",
+   "citta": "Modena",
+   "indirizzo": "Via Francesco Rismondo 21, Modena",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://www.cinemap.it/modena/cinema/astra-modena",
+   "cinemap": "https://www.cinemap.it/modena/cinema/astra-modena",
+   "film": [
+    {
+     "titolo": "Il fuoco che ti porti dentro",
+     "orari": [
+      "19:15",
+      "21:15"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "19:15",
+       "21:15"
+      ],
+      "2026-11-29": [
+       "16:15",
+       "18:40",
+       "20:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MO/5542"
+    },
+    {
+     "titolo": "Il rumore delle cose nuove",
+     "orari": [
+      "21:15"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "21:15"
+      ],
+      "2026-11-29": [
+       "16:20",
+       "20:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MO/5542"
+    },
+    {
+     "titolo": "Look Back",
+     "orari": [
+      "19:15"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "19:15"
+      ],
+      "2026-11-29": [
+       "18:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MO/5542"
+    },
+    {
+     "titolo": "Storie parallele",
+     "orari": [
+      "18:40",
+      "21:00"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "18:40",
+       "21:00"
+      ],
+      "2026-11-29": [
+       "16:00",
+       "18:10",
+       "20:45"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/MO/5542"
+    }
+   ]
+  },
+  {
+   "id": "c006",
+   "nome": "Cinema Raffaello",
+   "citta": "Modena",
+   "indirizzo": "Via Formigina 380, Modena",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://www.cinemap.it/modena/cinema/raffaello-modena",
+   "cinemap": "https://www.cinemap.it/modena/cinema/raffaello-modena",
+   "film": [
+    {
+     "titolo": "È andata così",
+     "orari": [
+      "16:45",
+      "19:00",
+      "21:15"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "16:45",
+       "19:00",
+       "21:15"
+      ],
+      "2026-11-29": [
+       "09:30",
+       "15:10",
+       "17:30",
+       "19:50"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Fjord",
+     "orari": [
+      "17:30",
+      "20:15"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "17:30",
+       "20:15"
+      ],
+      "2026-11-29": [
+       "09:30",
+       "15:00",
+       "17:45",
+       "19:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Hexe - Il regno delle streghe",
+     "orari": [
+      "16:00"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "16:00"
+      ],
+      "2026-11-29": [
+       "15:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Hunger Games - L'alba sulla mietitura",
+     "orari": [
+      "15:50",
+      "18:15",
+      "20:30"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "15:50",
+       "18:15",
+       "20:30"
+      ],
+      "2026-11-29": [
+       "17:10",
+       "20:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Il fuoco che ti porti dentro",
+     "orari": [],
+     "giorni": {
+      "2026-11-29": [
+       "09:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "La notte delle fragole",
+     "orari": [
+      "15:50",
+      "18:45",
+      "21:10"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "15:50",
+       "18:45",
+       "21:10"
+      ],
+      "2026-11-29": [
+       "09:30",
+       "15:50",
+       "17:40",
+       "20:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Storie parallele",
+     "orari": [],
+     "giorni": {
+      "2026-11-29": [
+       "09:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Ti presento i Fotter",
+     "orari": [
+      "16:10",
+      "18:10",
+      "20:20"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "16:10",
+       "18:10",
+       "20:20"
+      ],
+      "2026-11-29": [
+       "15:30",
+       "18:00",
+       "20:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Wild Horse Nine",
+     "orari": [
+      "16:00",
+      "18:15",
+      "20:30"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "16:00",
+       "18:15",
+       "20:30"
+      ],
+      "2026-11-29": [
+       "09:30",
+       "15:30",
+       "17:45",
+       "20:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    }
+   ]
+  },
+  {
+   "id": "c007",
+   "nome": "Sala Truffaut",
+   "citta": "Modena",
+   "indirizzo": "Via degli Adelardi 4, Modena",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://www.cinemap.it/modena/cinema/truffaut-modena",
+   "cinemap": "https://www.cinemap.it/modena/cinema/truffaut-modena",
+   "film": [
+    {
+     "titolo": "Il canto della foresta",
+     "orari": [
+      "21:15"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "21:15"
+      ],
+      "2026-11-29": [
+       "19:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.liveticket.it/evento.aspx?Id=716064"
+    },
+    {
+     "titolo": "L'essere amato",
+     "orari": [
+      "18:30"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "18:30"
+      ],
+      "2026-11-29": [
+       "16:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://www.liveticket.it/evento.aspx?Id=716062"
+    }
+   ]
+  },
+  {
+   "id": "c008",
+   "nome": "Victoria Cinema",
+   "citta": "Modena",
+   "indirizzo": "Via Sergio Ramelli 101, Modena",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://www.cinemap.it/modena/cinema/victoria-modena",
+   "cinemap": "https://www.cinemap.it/modena/cinema/victoria-modena",
+   "film": [
+    {
+     "titolo": "Chi ha incastrato Roger Rabbit",
+     "orari": [],
+     "giorni": {
+      "2026-11-29": [
+       "08:00",
+       "10:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Come rapinare una banca",
+     "orari": [
+      "21:40"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "21:40"
+      ],
+      "2026-11-29": [
+       "09:15"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Godzilla Minus Zero",
+     "orari": [
+      "21:40"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "21:40"
+      ],
+      "2026-11-29": [
+       "20:20"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Hexe - Il regno delle streghe",
+     "orari": [
+      "14:30",
+      "15:10",
+      "16:45",
+      "19:20"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "14:30",
+       "15:10",
+       "16:45",
+       "19:20"
+      ],
+      "2026-11-29": [
+       "09:30",
+       "09:45",
+       "14:30",
+       "15:00",
+       "16:45",
+       "19:40"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Hunger Games - L'alba sulla mietitura",
+     "orari": [
+      "14:30",
+      "16:45",
+      "17:40",
+      "20:00",
+      "20:45",
+      "21:30",
+      "21:35"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "14:30",
+       "16:45",
+       "17:40",
+       "20:00",
+       "20:45",
+       "21:30",
+       "21:35"
+      ],
+      "2026-11-29": [
+       "08:45",
+       "14:30",
+       "16:30",
+       "17:15",
+       "19:30",
+       "20:10"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Il gatto col cappello",
+     "orari": [
+      "14:30",
+      "16:50"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "14:30",
+       "16:50"
+      ],
+      "2026-11-29": [
+       "14:30",
+       "16:50"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Il rumore delle cose nuove",
+     "orari": [
+      "14:30",
+      "20:30"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "14:30",
+       "20:30"
+      ],
+      "2026-11-29": [
+       "14:30",
+       "18:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "La notte delle fragole",
+     "orari": [
+      "15:00",
+      "17:00",
+      "19:40",
+      "21:40"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "15:00",
+       "17:00",
+       "19:40",
+       "21:40"
+      ],
+      "2026-11-29": [
+       "14:30",
+       "17:00",
+       "20:10"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
+     "orari": [
+      "17:45",
+      "19:40"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "17:45",
+       "19:40"
+      ],
+      "2026-11-29": [
+       "16:15",
+       "20:15"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Love Actually - L'amore davvero",
+     "orari": [],
+     "giorni": {
+      "2026-11-29": [
+       "09:50"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Scrooge e gli spiriti del Natale",
+     "orari": [
+      "14:30",
+      "16:55",
+      "19:25",
+      "21:40"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "14:30",
+       "16:55",
+       "19:25",
+       "21:40"
+      ],
+      "2026-11-29": [
+       "09:45",
+       "14:30",
+       "16:55",
+       "19:45"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Se domani non torno",
+     "orari": [
+      "17:20",
+      "19:30"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "17:20",
+       "19:30"
+      ],
+      "2026-11-29": [
+       "14:45",
+       "17:40",
+       "19:50"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Ti presento i Fotter",
+     "orari": [
+      "14:40",
+      "17:00",
+      "19:20",
+      "21:40"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "14:40",
+       "17:00",
+       "19:20",
+       "21:40"
+      ],
+      "2026-11-29": [
+       "09:15",
+       "14:40",
+       "17:00",
+       "20:00"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "Un weekend artificiale",
+     "orari": [
+      "14:40",
+      "16:40",
+      "19:40"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "14:40",
+       "16:40",
+       "19:40"
+      ],
+      "2026-11-29": [
+       "14:30",
+       "16:40",
+       "18:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    },
+    {
+     "titolo": "You Can See Everything",
+     "orari": [
+      "14:30"
+     ],
+     "giorni": {
+      "2026-11-28": [
+       "14:30"
+      ],
+      "2026-11-29": [
+       "08:45",
+       "19:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": ""
+    }
+   ]
+  },
+  {
+   "id": "c009",
+   "nome": "Teatro Carani",
+   "citta": "Sassuolo",
+   "indirizzo": "Via Giuseppe Mazzini 28, Sassuolo",
+   "tipo": "Sala di comunità",
+   "sito": "",
+   "fonte": "https://www.cinemap.it/sassuolo/cinema/carani-sassuolo",
+   "cinemap": "https://www.cinemap.it/sassuolo/cinema/carani-sassuolo",
+   "film": [
+    {
+     "titolo": "Dio ride",
+     "orari": [],
+     "giorni": {
+      "2026-11-29": [
+       "18:00",
+       "20:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://teatrocarani.vivaticket.it/it/event/dio-ride/323176"
+    },
+    {
+     "titolo": "Taddeo l’esploratore e la lampada magica",
+     "orari": [],
+     "giorni": {
+      "2026-11-29": [
+       "15:30"
+      ]
+     },
+     "versione": "",
+     "genere": "",
+     "regia": "",
+     "biglietti": "https://teatrocarani.vivaticket.it/it/event/taddeo-l-esploratore-e-la-lampada-magica/323182"
+    }
+   ]
+  }
+ ],
+ "fonte_aggiornamento": "a mano dalla chat (cinemap.it via officina), poi automatico"
+}

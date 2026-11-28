@@ -1,0 +1,21 @@
+{
+ "fonti": {
+  "seriea": 13,
+  "uefa": 0,
+  "extra": 0,
+  "lba": 0,
+  "euroleague": 0
+ },
+ "errori": [
+  "non letto dalla chat: https://match.uefa.com/v5/matches?competitionId=1&seasonYear=2027&limit=200&offs",
+  "non letto dalla chat: https://match.uefa.com/v5/matches?competitionId=14&seasonYear=2027&limit=200&off",
+  "non letto dalla chat: https://match.uefa.com/v5/matches?competitionId=2019&seasonYear=2027&limit=200&o",
+  "non letto dalla chat: https://www.legabasket.it/calendario",
+  "non letto dalla chat: https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/games"
+ ],
+ "per_sport": {
+  "Calcio": 13
+ },
+ "totale": 13,
+ "giorno": "2026-11-28"
+}
