@@ -1300,6 +1300,17 @@ html.beta-scuro body .modes button.on small{color:#a0a8b5!important}
 html:not(.beta-scuro) body .bar{background:color-mix(in srgb,#eef1f4 80%,transparent)!important;backdrop-filter:blur(16px) saturate(1.5);-webkit-backdrop-filter:blur(16px) saturate(1.5)}
 html:not(.beta-scuro) body #nA{background:color-mix(in srgb,#eef1f4 86%,transparent)!important;backdrop-filter:blur(16px) saturate(1.5);-webkit-backdrop-filter:blur(16px) saturate(1.5)}
 html:not(.beta-scuro) body .dlabel{background:color-mix(in srgb,#eef1f4 90%,transparent)!important}
+/* ===== 28/11 17:15, Stefano: «colori più in sintonia con il blu e i box elenco ancora più in rilievo» ===== */
+html body .modes [data-mode="s"]{--chip:#2f557a;--chip2:#5f8bb5}html body .modes [data-mode="i"]{--chip:#2c6f86;--chip2:#5ea7bf}
+html body .modes [data-mode="m"]{--chip:#3d4f8f;--chip2:#7286c9}html body .modes [data-mode="c"]{--chip:#24476b;--chip2:#4f7aa6}
+html body .modes [data-mode="p"]{--chip:#2a6b73;--chip2:#5aa4ab}
+html:not(.beta-scuro) body{--ril-1:0 1px 1px rgba(16,32,56,.08),0 3px 8px -2px rgba(16,32,56,.12),0 16px 32px -12px rgba(16,32,56,.30),0 28px 48px -28px rgba(30,60,100,.35);
+ --ril-2:0 2px 3px rgba(16,32,56,.10),0 22px 44px -14px rgba(16,32,56,.38)}
+html:not(.beta-scuro) body .card.mini{border:1px solid rgba(20,40,70,.07);border-bottom-color:rgba(20,40,70,.13);background:linear-gradient(180deg,#ffffff 0%,#fdfeff 55%,#f4f7fb 100%)}
+html:not(.beta-scuro) body .cards{gap:12px}
+html:not(.beta-scuro) body .vtile{border-bottom-color:rgba(20,40,70,.13);background:linear-gradient(180deg,#fff,#f4f7fb)}
+html.beta-scuro body{--ril-1:inset 0 1px 0 rgba(255,255,255,.06),0 2px 4px rgba(0,0,0,.5),0 18px 36px -12px rgba(0,0,0,.85)}
+html.beta-scuro body .cards{gap:12px}
 </style>
 </head>
 <body class="nA">
