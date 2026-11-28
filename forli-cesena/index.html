@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var P={mi:"/milano/",ra:"/ravenna/",fe:"/ferrara/",mo:"/modena/",fc:"/forli-cesena/",fi:"/firenze/"},m=document.cookie.match(/(?:^|; )citta=([a-z]{2})\b/),q=/[?&]citta=([a-z]{2})\b/.exec(location.search),qui=Object.keys(P).some(function(k){return location.pathname.indexOf(P[k])===0})?"altra":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||!P[m[1]]||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace(P[m[1]])}catch(_){}})();</script>
-<script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"99d500e0ba","eventi-presto":"17667cab80","serate":"9f1b016ebe","mostre":"dcd0f797ac"}/*V0*/;</script>
+<script>/* impronte della prima scheda scritte qui da scripts/versioni.py (le stesse di versioni.js): i file dei dati partono subito, senza aspettare versioni.js */window.ACH_V0=/*V0*/{"eventi":"03c634f4d4","eventi-presto":"9ca73ad47a","serate":"214cae4c61","mostre":"8100c4ce5a"}/*V0*/;</script>
 <script>/* anticipo: chiede subito versioni.js (senza bloccare la pagina) e fa partire i file dei dati mentre arriva il resto; più in basso la pagina li usa dalla memoria */(function(){try{var V0=window.ACH_V0||{},fatti={};function pre(f,h){if(!h||fatti[f+h])return;fatti[f+h]=1;var l=document.createElement("link");l.rel="preload";l.as="script";l.href=f+".js?h="+h;document.head.appendChild(l)}["eventi-presto","serate","mostre"].forEach(function(f){pre(f,V0[f])});var s=document.createElement("script");s.async=true;s.src="versioni.js?v="+Math.floor(Date.now()/6e5);s.onload=function(){var V=window.ACH_VERSIONI||{};["eventi-presto","serate","mostre"].forEach(function(f){pre(f,V[f])})};document.head.appendChild(s)}catch(e){}})();</script>
 <title>Ach's Events Guide – concerti, teatro, mostre e cinema a Forlì-Cesena</title>
 <meta name="description" content="Ach&#39;s Events Guide: concerti, teatro, mostre e cinema a Forlì-Cesena e nella Città metropolitana, con date, orari, luoghi e link ai biglietti.">
@@ -1248,6 +1248,9 @@ html body .card.mini .act.tkt,html body .card.mini .act.tkt.info{font-size:13px}
 html body .card.mini .mfoot .pill{font-size:12px}
 html body .card.mini .mloc .mlg{margin-left:0!important}
 @media(max-width:380px){html body .card.mini .title{font-size:1.05rem}html body .card.mini .mloc{font-size:13px}}
+/* ===== 28/11: selettore con più città (Modena, Forlì-Cesena, Firenze): nomi su una riga ===== */
+html body .city.citta-n .menu{min-width:206px;max-height:calc(100vh - 120px);overflow-y:auto}
+html body .city.citta-n .cb{white-space:nowrap;flex:none}
 </style>
 </head>
 <body class="nA">
@@ -2058,7 +2061,7 @@ notaAff();
  b.addEventListener("touchstart",e=>{x0=e.touches[0].clientX},{passive:true});
  b.addEventListener("touchend",e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;x0=null;if(Math.abs(dx)>18&&((dx>0)===(other.k==="mi"))){e.preventDefault();go()}});
 })();
-function track(path,title){if(CITY.k!=="bo")path=CITY.nome.toLowerCase()+"/"+path;try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:String(path).slice(0,180),title:title||path,event:true})}catch(_){}}
+function track(path,title){if(CITY.k!=="bo")path=CITY.path.replace(/\//g,"")+"/"+path;try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:String(path).slice(0,180),title:title||path,event:true})}catch(_){}}
 const tTitle=el=>{const c=el.closest(".card");return c&&c.querySelector(".title")?c.querySelector(".title").textContent.trim():""};
 const tm=()=>MODE==="m"?"mostre":MODE==="c"?"cinema":"spettacoli";
 /* 20/11/2026: nei clic «Biglietti» si registra anche il sito di arrivo (senza «www.»; per i link Awin quello dentro ued), per sapere quali partner portano i clic */

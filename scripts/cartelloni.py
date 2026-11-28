@@ -35,6 +35,11 @@ CITTA = {
     # solo gli spettacoli in provincia di Ravenna (location.state = RA): copre anche Faenza, Lugo, Cervia.
     "ra": {"nome": "Ravenna", "eventi": "ravenna/eventi.js", "eventim": 1137, "cerca": "Ravenna", "provincia": "RA", "songkick": None},
     "fe": {"nome": "Ferrara", "eventi": "ferrara/eventi.js", "eventim": 2136, "songkick": None},
+    # 28/11/2026: preparate (spente). Senza id città sicuro: ricerca per nome, tenendo solo le date in provincia (come Ravenna)
+    "mo": {"nome": "Modena", "eventi": "modena/eventi.js", "eventim": None, "cerca": ["Modena", "Carpi", "Sassuolo"], "provincia": "MO", "songkick": None},
+    "fc": {"nome": "Forlì-Cesena", "eventi": "forli-cesena/eventi.js", "eventim": None, "cerca": ["Forlì", "Cesena", "Cesenatico"], "provincia": "FC",
+           "songkick": None},
+    "fi": {"nome": "Firenze", "eventi": "firenze/eventi.js", "eventim": None, "cerca": ["Firenze", "Empoli"], "provincia": "FI", "songkick": None},
 }
 CATEGORIE = ["Concerti", "Teatro", "Mostre e Musei"]
 BLOCCO = re.compile(r"(?i)502 bad gateway|503 service|504 gateway|verifica di sicurezza|just a moment|checking your browser|attention required"
@@ -219,10 +224,10 @@ def cartelloni(c, cart, cand, ev):
 # ---------------------------------------------------------------- 2. TicketOne
 def ticketone(c, cart, cand):
     cid = CITTA[c].get("eventim")
-    if not cid:
+    if not cid and not CITTA[c].get("cerca"):
         REP["ticketone"] = {"esito": "manca l'id città Eventim"}; return
     gruppi = {}
-    for cid, cat in [(i, k) for i in (cid if isinstance(cid, list) else [cid]) for k in CATEGORIE]:
+    for cid, cat in [(i, k) for i in (cid if isinstance(cid, list) else [cid] if cid else []) for k in CATEGORIE]:
         for pag in range(1, 9):
             u = ("https://public-api.eventim.com/websearch/search/api/exploration/v2/productGroups?webId=web__ticketone-it&language=it"
                  f"&city_ids={cid}&page={pag}&sort=DateAsc&in_stock=true&categories={urllib.parse.quote(cat)}")
@@ -234,10 +239,11 @@ def ticketone(c, cart, cand):
             time.sleep(1.5)
     if not gruppi and CITTA[c].get("cerca"):   # l'id non ha dato nulla: ricerca per nome, filtrata per provincia
         pr = CITTA[c].get("provincia")
-        for cat in CATEGORIE:
+        cerche = CITTA[c]["cerca"] if isinstance(CITTA[c]["cerca"], list) else [CITTA[c]["cerca"]]   # 28/11: anche più nomi (Forlì, Cesena)
+        for termine, cat in [(t, k) for t in cerche for k in CATEGORIE]:
             for pag in range(1, 9):
                 u = ("https://public-api.eventim.com/websearch/search/api/exploration/v2/productGroups?webId=web__ticketone-it&language=it"
-                     f"&search_term={urllib.parse.quote(CITTA[c]['cerca'])}&page={pag}&sort=DateAsc&in_stock=true&categories={urllib.parse.quote(cat)}")
+                     f"&search_term={urllib.parse.quote(termine)}&page={pag}&sort=DateAsc&in_stock=true&categories={urllib.parse.quote(cat)}")
                 try: d = json.loads(get(u))
                 except Exception as e:
                     REP["errori"].append(f"TicketOne ricerca {cat} p.{pag}: {e}"); break

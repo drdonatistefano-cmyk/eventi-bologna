@@ -1247,6 +1247,9 @@ html body .card.mini .act.tkt,html body .card.mini .act.tkt.info{font-size:13px}
 html body .card.mini .mfoot .pill{font-size:12px}
 html body .card.mini .mloc .mlg{margin-left:0!important}
 @media(max-width:380px){html body .card.mini .title{font-size:1.05rem}html body .card.mini .mloc{font-size:13px}}
+/* ===== 28/11: selettore con più città (Modena, Forlì-Cesena, Firenze): nomi su una riga ===== */
+html body .city.citta-n .menu{min-width:206px;max-height:calc(100vh - 120px);overflow-y:auto}
+html body .city.citta-n .cb{white-space:nowrap;flex:none}
 </style>
 </head>
 <body class="nA">
@@ -2057,7 +2060,7 @@ notaAff();
  b.addEventListener("touchstart",e=>{x0=e.touches[0].clientX},{passive:true});
  b.addEventListener("touchend",e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;x0=null;if(Math.abs(dx)>18&&((dx>0)===(other.k==="mi"))){e.preventDefault();go()}});
 })();
-function track(path,title){if(CITY.k!=="bo")path=CITY.nome.toLowerCase()+"/"+path;try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:String(path).slice(0,180),title:title||path,event:true})}catch(_){}}
+function track(path,title){if(CITY.k!=="bo")path=CITY.path.replace(/\//g,"")+"/"+path;try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:String(path).slice(0,180),title:title||path,event:true})}catch(_){}}
 const tTitle=el=>{const c=el.closest(".card");return c&&c.querySelector(".title")?c.querySelector(".title").textContent.trim():""};
 const tm=()=>MODE==="m"?"mostre":MODE==="c"?"cinema":"spettacoli";
 /* 20/11/2026: nei clic «Biglietti» si registra anche il sito di arrivo (senza «www.»; per i link Awin quello dentro ued), per sapere quali partner portano i clic */
