@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-27",
- "giorno_orari": "2026-11-27",
+ "aggiornato": "2026-11-28",
+ "giorno_orari": "2026-11-28",
  "sale": [
   {
    "id": "c002",
@@ -40,36 +40,14 @@
    "cinemap": "https://www.cinemap.it/ferrara/cinema/notorious-ferrara",
    "film": [
     {
-     "titolo": "Godzilla Minus Zero",
-     "orari": [
-      "18:15"
-     ],
-     "giorni": {
-      "2026-11-27": [
-       "18:15"
-      ]
-     },
-     "versione": "",
-     "genere": "Azione, Avventura, Drammatico",
-     "regia": "Takashi Yamazaki",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
-     "interpreti": "Minami Hamabe, Ryûnosuke Kamiki, Masami Nagasawa e Jun Kunimura",
-     "durata": 135,
-     "anno": 2026,
-     "paese": "Giappone",
-     "scheda": "https://it.wikipedia.org/wiki/Godzilla_Minus_Zero"
-    },
-    {
      "titolo": "Hexe - Il regno delle streghe",
      "orari": [
-      "18:15",
-      "19:15"
+      "14:45",
+      "16:20",
+      "17:15",
+      "18:45"
      ],
      "giorni": {
-      "2026-11-27": [
-       "18:15",
-       "19:15"
-      ],
       "2026-11-28": [
        "14:45",
        "16:20",
@@ -96,16 +74,14 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
-      "20:30",
-      "21:00",
-      "21:50"
+      "15:15",
+      "17:00",
+      "19:35",
+      "20:20",
+      "21:35",
+      "22:20"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:30",
-       "21:00",
-       "21:50"
-      ],
       "2026-11-28": [
        "15:15",
        "17:00",
@@ -136,12 +112,9 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "18:10"
+      "14:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "18:10"
-      ],
       "2026-11-28": [
        "14:30"
       ],
@@ -162,12 +135,9 @@
     {
      "titolo": "Il risveglio di Boiúna",
      "orari": [
-      "22:00"
+      "22:20"
      ],
      "giorni": {
-      "2026-11-27": [
-       "22:00"
-      ],
       "2026-11-28": [
        "22:20"
       ],
@@ -180,19 +150,17 @@
      "regia": "Mike P. Nelson",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
      "interpreti": "Logan Marshall-Green, Jessica Rothe, Kiana Madeira e Jackson Bews",
-     "paese": "USA",
      "durata": 104,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "USA"
     },
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
-      "19:35"
+      "16:40",
+      "19:10"
      ],
      "giorni": {
-      "2026-11-27": [
-       "19:35"
-      ],
       "2026-11-28": [
        "16:40",
        "19:10"
@@ -214,7 +182,9 @@
     },
     {
      "titolo": "La Bellezza del Gesto",
-     "orari": [],
+     "orari": [
+      "14:30"
+     ],
      "giorni": {
       "2026-11-28": [
        "14:30"
@@ -224,23 +194,23 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848"
+     "genere": "Drammatico",
+     "regia": "Teresa Nerozzi",
+     "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
+     "interpreti": "Isacco Salvi e Jenny Matai",
+     "paese": "Italia",
+     "anno": 2021
     },
     {
      "titolo": "La notte delle fragole",
      "orari": [
+      "14:10",
+      "16:15",
       "18:20",
       "20:25",
       "22:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "18:20",
-       "20:25",
-       "22:30"
-      ],
       "2026-11-28": [
        "14:10",
        "16:15",
@@ -273,10 +243,6 @@
       "20:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "18:30",
-       "20:30"
-      ],
       "2026-11-28": [
        "18:30",
        "20:30"
@@ -298,12 +264,11 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
-      "18:00"
+      "17:30",
+      "20:05",
+      "22:35"
      ],
      "giorni": {
-      "2026-11-27": [
-       "18:00"
-      ],
       "2026-11-28": [
        "17:30",
        "20:05",
@@ -327,12 +292,12 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "21:00"
+      "15:05",
+      "17:25",
+      "19:50",
+      "22:15"
      ],
      "giorni": {
-      "2026-11-27": [
-       "21:00"
-      ],
       "2026-11-28": [
        "15:05",
        "17:25",
@@ -342,7 +307,8 @@
       "2026-11-29": [
        "15:05",
        "17:25",
-       "19:50"
+       "19:50",
+       "22:15"
       ]
      },
      "versione": "",
@@ -357,14 +323,12 @@
     {
      "titolo": "Ti presento i Fotter",
      "orari": [
+      "15:10",
+      "17:30",
       "20:00",
-      "22:20"
+      "22:45"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:00",
-       "22:20"
-      ],
       "2026-11-28": [
        "15:10",
        "17:30",
@@ -391,12 +355,9 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
-      "22:25"
+      "14:35"
      ],
      "giorni": {
-      "2026-11-27": [
-       "22:25"
-      ],
       "2026-11-28": [
        "14:35"
       ],
@@ -417,7 +378,9 @@
     },
     {
      "titolo": "Wildwood - I segreti del bosco proibito",
-     "orari": [],
+     "orari": [
+      "14:30"
+     ],
      "giorni": {
       "2026-11-28": [
        "14:30"
@@ -427,9 +390,13 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Animazione, Avventura, Drammatico",
+     "regia": "Travis Knight",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
+     "interpreti": "Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan e Mahershala Ali",
+     "paese": "USA",
+     "durata": 139,
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Wildwood_-_I_segreti_del_bosco_proibito"
     },
     {
@@ -438,9 +405,6 @@
       "21:10"
      ],
      "giorni": {
-      "2026-11-27": [
-       "21:10"
-      ],
       "2026-11-28": [
        "21:10"
       ],
@@ -453,9 +417,9 @@
      "regia": "Nathan Fielder e Lance Oppenheim",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5848",
      "interpreti": "Nathan Fielder, Elizabeth Holmes e Amanda Seyfried",
-     "paese": "USA",
      "durata": 174,
-     "anno": 2026
+     "anno": 2026,
+     "paese": "USA"
     }
    ]
   },
@@ -475,9 +439,6 @@
       "21:15"
      ],
      "giorni": {
-      "2026-11-27": [
-       "21:15"
-      ],
       "2026-11-28": [
        "21:15"
       ],
@@ -509,14 +470,11 @@
     {
      "titolo": "È andata così",
      "orari": [
+      "16:30",
       "18:45",
       "21:00"
      ],
      "giorni": {
-      "2026-11-27": [
-       "18:45",
-       "21:00"
-      ],
       "2026-11-28": [
        "16:30",
        "18:45",
@@ -541,12 +499,10 @@
     {
      "titolo": "Hexe - Il regno delle streghe",
      "orari": [
+      "15:45",
       "18:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "18:30"
-      ],
       "2026-11-28": [
        "15:45",
        "18:30"
@@ -569,7 +525,9 @@
     },
     {
      "titolo": "Il fuoco che ti porti dentro",
-     "orari": [],
+     "orari": [
+      "17:45"
+     ],
      "giorni": {
       "2026-11-28": [
        "17:45"
@@ -580,20 +538,22 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Drammatico",
+     "regia": "Edoardo De Angelis",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
+     "interpreti": "Vanessa Scalera, Lino Musella e Elena Radonicich",
+     "durata": 93,
+     "anno": 2026,
+     "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/Il_fuoco_che_ti_porti_dentro_%28film%29"
     },
     {
      "titolo": "Il rumore delle cose nuove",
      "orari": [
+      "16:00",
       "21:20"
      ],
      "giorni": {
-      "2026-11-27": [
-       "21:20"
-      ],
       "2026-11-28": [
        "16:00",
        "21:20"
@@ -617,14 +577,11 @@
     {
      "titolo": "La notte delle fragole",
      "orari": [
+      "16:45",
       "19:00",
       "21:10"
      ],
      "giorni": {
-      "2026-11-27": [
-       "19:00",
-       "21:10"
-      ],
       "2026-11-28": [
        "16:45",
        "19:00",
@@ -648,7 +605,9 @@
     },
     {
      "titolo": "Se domani non torno",
-     "orari": [],
+     "orari": [
+      "19:30"
+     ],
      "giorni": {
       "2026-11-28": [
        "19:30"
@@ -662,10 +621,10 @@
      "genere": "Drammatico",
      "regia": "Paola Randi",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5221",
-     "interpreti": "Tommaso Allione, Tecla Bossi, Sabrina Martina e Filippo Timi",
+     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
+     "anno": 2027,
      "paese": "Italia",
-     "durata": 107,
-     "anno": 2026
+     "durata": 107
     },
     {
      "titolo": "Wild Horse Nine",
@@ -673,9 +632,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "21:30"
-      ],
       "2026-11-28": [
        "21:30"
       ],
@@ -717,7 +673,7 @@
      "durata": null,
      "anno": 2025,
      "giorni": {
-      "2026-11-27": [
+      "2026-11-28": [
        "21:00"
       ]
      }
@@ -745,7 +701,9 @@
    "film": [
     {
      "titolo": "Dio ride",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-28": [
        "21:00"
@@ -757,8 +715,9 @@
      },
      "versione": "",
      "genere": "",
-     "regia": "",
+     "regia": "Giovanni Veronesi",
      "biglietti": "https://www.teatrodeifluttuanti.com/film-in-prima-visione-e-per-bambini/",
+     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Dio_ride"
     },
     {
@@ -794,12 +753,10 @@
     {
      "titolo": "È andata così",
      "orari": [
+      "18:00",
       "20:15"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:15"
-      ],
       "2026-11-28": [
        "18:00",
        "20:15"
@@ -822,12 +779,11 @@
     {
      "titolo": "Hexe - Il regno delle streghe",
      "orari": [
+      "17:45",
+      "18:45",
       "20:15"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:15"
-      ],
       "2026-11-28": [
        "17:45",
        "18:45",
@@ -853,14 +809,11 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
+      "17:15",
       "21:00",
       "22:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "21:00",
-       "22:30"
-      ],
       "2026-11-28": [
        "17:15",
        "21:00",
@@ -903,14 +856,11 @@
     {
      "titolo": "La notte delle fragole",
      "orari": [
+      "18:30",
       "20:30",
       "22:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:30",
-       "22:30"
-      ],
       "2026-11-28": [
        "18:30",
        "20:30",
@@ -936,12 +886,9 @@
     {
      "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
      "orari": [
-      "22:30"
+      "17:15"
      ],
      "giorni": {
-      "2026-11-27": [
-       "22:30"
-      ],
       "2026-11-28": [
        "17:15"
       ],
@@ -965,10 +912,6 @@
       "22:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:00",
-       "22:30"
-      ],
       "2026-11-28": [
        "20:00",
        "22:30"
@@ -992,7 +935,9 @@
     },
     {
      "titolo": "Se domani non torno",
-     "orari": [],
+     "orari": [
+      "18:15"
+     ],
      "giorni": {
       "2026-11-28": [
        "18:15"
@@ -1006,10 +951,10 @@
      "genere": "Drammatico",
      "regia": "Paola Randi",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
-     "interpreti": "Tommaso Allione, Tecla Bossi, Sabrina Martina e Filippo Timi",
+     "interpreti": "Filippo Timi, Tecla Bossi e Tommaso Allione",
+     "anno": 2027,
      "paese": "Italia",
-     "durata": 107,
-     "anno": 2026
+     "durata": 107
     },
     {
      "titolo": "Ti presento i Fotter",
@@ -1018,10 +963,6 @@
       "22:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:30",
-       "22:30"
-      ],
       "2026-11-28": [
        "20:30",
        "22:30"
@@ -1044,7 +985,9 @@
     },
     {
      "titolo": "Un weekend artificiale",
-     "orari": [],
+     "orari": [
+      "22:30"
+     ],
      "giorni": {
       "2026-11-28": [
        "22:30"
@@ -1057,10 +1000,10 @@
      "genere": "Commedia",
      "regia": "Leonardo Pieraccioni",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/FE/5105",
-     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio, Luigi Luciano e Massimo Ceccherini",
+     "interpreti": "Leonardo Pieraccioni, Giulia Vecchio e Herbert Ballerina",
+     "anno": 2026,
      "paese": "Italia",
      "durata": 91,
-     "anno": 2026,
      "scheda": "https://it.wikipedia.org/wiki/Un_weekend_artificiale"
     }
    ],
@@ -1089,14 +1032,9 @@
     {
      "titolo": "Ragione e sentimento",
      "orari": [
-      "20:30",
       "21:00"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:30",
-       "21:00"
-      ],
       "2026-11-28": [
        "21:00"
       ],
@@ -1126,12 +1064,11 @@
     {
      "titolo": "Hexe - Il regno delle streghe",
      "orari": [
+      "17:30",
+      "18:00",
       "20:15"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:15"
-      ],
       "2026-11-28": [
        "17:30",
        "18:00",
@@ -1157,14 +1094,11 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
+      "17:30",
       "20:30",
       "22:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:30",
-       "22:30"
-      ],
       "2026-11-28": [
        "17:30",
        "20:30",
@@ -1206,14 +1140,11 @@
     {
      "titolo": "La notte delle fragole",
      "orari": [
+      "18:30",
       "20:30",
       "22:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:30",
-       "22:30"
-      ],
       "2026-11-28": [
        "18:30",
        "20:30",
@@ -1241,9 +1172,6 @@
       "22:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "22:30"
-      ],
       "2026-11-28": [
        "22:30"
       ],
@@ -1263,14 +1191,11 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
+      "18:00",
       "20:15",
       "22:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:15",
-       "22:30"
-      ],
       "2026-11-28": [
        "18:00",
        "20:15",
@@ -1295,12 +1220,9 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "20:30"
+      "18:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:30"
-      ],
       "2026-11-28": [
        "18:30"
       ],
@@ -1324,10 +1246,6 @@
       "22:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:30",
-       "22:30"
-      ],
       "2026-11-28": [
        "20:30",
        "22:30"
@@ -1350,7 +1268,9 @@
     },
     {
      "titolo": "Un weekend artificiale",
-     "orari": [],
+     "orari": [
+      "20:30"
+     ],
      "giorni": {
       "2026-11-28": [
        "20:30"
@@ -1392,7 +1312,7 @@
      "durata": 146,
      "anno": 2026,
      "giorni": {
-      "2026-11-27": [
+      "2026-11-28": [
        "21:15"
       ]
      },

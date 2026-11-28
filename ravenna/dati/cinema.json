@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-27",
- "giorno_orari": "2026-11-27",
+ "aggiornato": "2026-11-28",
+ "giorno_orari": "2026-11-28",
  "sale": [
   {
    "id": "c004",
@@ -35,14 +35,11 @@
     {
      "titolo": "È andata così",
      "orari": [
+      "15:15",
       "17:55",
       "20:35"
      ],
      "giorni": {
-      "2026-11-27": [
-       "17:55",
-       "20:35"
-      ],
       "2026-11-28": [
        "15:15",
        "17:55",
@@ -66,7 +63,9 @@
     },
     {
      "titolo": "Godzilla Minus Zero",
-     "orari": [],
+     "orari": [
+      "15:15"
+     ],
      "giorni": {
       "2026-11-28": [
        "15:15"
@@ -76,24 +75,25 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Azione, Avventura, Drammatico",
+     "regia": "Takashi Yamazaki",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "interpreti": "Minami Hamabe, Ryunosuke Kamiki e Jun Kunimura",
+     "durata": 135,
+     "anno": 2026,
+     "paese": "Giappone",
      "scheda": "https://it.wikipedia.org/wiki/Godzilla_Minus_Zero"
     },
     {
      "titolo": "Hexe - Il regno delle streghe",
      "orari": [
+      "15:05",
+      "16:05",
       "17:35",
       "18:35",
       "20:20"
      ],
      "giorni": {
-      "2026-11-27": [
-       "17:35",
-       "18:35",
-       "20:20"
-      ],
       "2026-11-28": [
        "15:05",
        "16:05",
@@ -122,23 +122,22 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
-      "17:25",
-      "20:45"
+      "15:05",
+      "18:20",
+      "21:05",
+      "21:40"
      ],
      "giorni": {
-      "2026-11-27": [
-       "17:25",
-       "20:45"
-      ],
       "2026-11-28": [
        "15:05",
        "18:20",
+       "21:05",
        "21:40"
       ],
       "2026-11-29": [
        "15:05",
        "18:20",
-       "21:40"
+       "21:05"
       ]
      },
      "versione": "",
@@ -153,7 +152,9 @@
     },
     {
      "titolo": "Il fuoco che ti porti dentro",
-     "orari": [],
+     "orari": [
+      "18:35"
+     ],
      "giorni": {
       "2026-11-28": [
        "18:35"
@@ -163,14 +164,20 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Drammatico",
+     "regia": "Edoardo De Angelis",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "interpreti": "Vanessa Scalera, Lino Musella e Elena Radonicich",
+     "durata": 93,
+     "anno": 2026,
+     "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/Il_fuoco_che_ti_porti_dentro_%28film%29"
     },
     {
      "titolo": "Il gatto col cappello",
-     "orari": [],
+     "orari": [
+      "15:05"
+     ],
      "giorni": {
       "2026-11-28": [
        "15:05"
@@ -180,9 +187,13 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Animazione",
+     "regia": "Alessandro Carloni e Erica Rivinoja",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
+     "anno": 2026,
+     "paese": "USA",
+     "durata": 107,
      "scheda": "https://it.wikipedia.org/wiki/Il_gatto_col_cappello_%28film%29"
     },
     {
@@ -191,9 +202,6 @@
       "21:40"
      ],
      "giorni": {
-      "2026-11-27": [
-       "21:40"
-      ],
       "2026-11-28": [
        "21:40"
       ],
@@ -217,10 +225,6 @@
       "20:50"
      ],
      "giorni": {
-      "2026-11-27": [
-       "18:00",
-       "20:50"
-      ],
       "2026-11-28": [
        "18:00",
        "20:50"
@@ -242,7 +246,9 @@
     },
     {
      "titolo": "La ballata del re delle api",
-     "orari": [],
+     "orari": [
+      "15:10"
+     ],
      "giorni": {
       "2026-11-28": [
        "15:10"
@@ -252,24 +258,24 @@
       ]
      },
      "versione": "",
-     "genere": "",
-     "regia": "",
+     "genere": "Drammatico, Thriller",
+     "regia": "Andrew Patterson",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5172",
+     "interpreti": "Matthew McConaughey, Angelina LookingGlass e Jake Horowitz",
+     "durata": 130,
+     "anno": 2025,
+     "paese": "USA",
      "scheda": "https://it.wikipedia.org/wiki/La_ballata_del_re_delle_api"
     },
     {
      "titolo": "La notte delle fragole",
      "orari": [
+      "15:25",
       "17:50",
       "19:25",
       "20:40"
      ],
      "giorni": {
-      "2026-11-27": [
-       "17:50",
-       "19:25",
-       "20:40"
-      ],
       "2026-11-28": [
        "15:25",
        "17:50",
@@ -296,16 +302,12 @@
     {
      "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
      "orari": [
-      "17:10",
-      "19:25",
+      "15:10",
+      "17:35",
+      "19:40",
       "21:45"
      ],
      "giorni": {
-      "2026-11-27": [
-       "17:10",
-       "19:25",
-       "21:45"
-      ],
       "2026-11-28": [
        "15:10",
        "17:35",
@@ -331,14 +333,11 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
+      "16:00",
       "18:40",
       "21:15"
      ],
      "giorni": {
-      "2026-11-27": [
-       "18:40",
-       "21:15"
-      ],
       "2026-11-28": [
        "16:00",
        "18:40",
@@ -367,10 +366,6 @@
       "20:45"
      ],
      "giorni": {
-      "2026-11-27": [
-       "18:10",
-       "20:45"
-      ],
       "2026-11-28": [
        "18:10",
        "20:45"
@@ -392,14 +387,11 @@
     {
      "titolo": "Ti presento i Fotter",
      "orari": [
+      "15:10",
       "17:40",
       "20:25"
      ],
      "giorni": {
-      "2026-11-27": [
-       "17:40",
-       "20:25"
-      ],
       "2026-11-28": [
        "15:10",
        "17:40",
@@ -427,9 +419,6 @@
       "17:15"
      ],
      "giorni": {
-      "2026-11-27": [
-       "17:15"
-      ],
       "2026-11-28": [
        "17:15"
       ],
@@ -450,12 +439,9 @@
     {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "17:40"
+      "16:00"
      ],
      "giorni": {
-      "2026-11-27": [
-       "17:40"
-      ],
       "2026-11-28": [
        "16:00"
       ],
@@ -479,9 +465,6 @@
       "20:50"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:50"
-      ],
       "2026-11-28": [
        "20:50"
       ],
@@ -527,10 +510,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-27": [
-       "18:15",
-       "21:00"
-      ],
       "2026-11-28": [
        "18:15",
        "21:00"
@@ -569,9 +548,6 @@
       "21:00"
      ],
      "giorni": {
-      "2026-11-27": [
-       "21:00"
-      ],
       "2026-11-28": [
        "21:00"
       ],
@@ -625,12 +601,10 @@
     {
      "titolo": "Fjord",
      "orari": [
-      "21:00"
+      "18:30",
+      "21:15"
      ],
      "giorni": {
-      "2026-11-27": [
-       "21:00"
-      ],
       "2026-11-28": [
        "18:30",
        "21:15"
@@ -653,7 +627,9 @@
     },
     {
      "titolo": "Taddeo l’esploratore e la lampada magica",
-     "orari": [],
+     "orari": [
+      "17:00"
+     ],
      "giorni": {
       "2026-11-28": [
        "17:00"
@@ -679,12 +655,10 @@
     {
      "titolo": "È andata così",
      "orari": [
+      "15:20",
       "19:20"
      ],
      "giorni": {
-      "2026-11-27": [
-       "19:20"
-      ],
       "2026-11-28": [
        "15:20",
        "19:20"
@@ -707,14 +681,11 @@
     {
      "titolo": "Hexe - Il regno delle streghe",
      "orari": [
+      "15:30",
       "17:45",
-      "20:30"
+      "20:20"
      ],
      "giorni": {
-      "2026-11-27": [
-       "17:45",
-       "20:30"
-      ],
       "2026-11-28": [
        "15:30",
        "17:45",
@@ -739,14 +710,13 @@
     {
      "titolo": "Hunger Games - L'alba sulla mietitura",
      "orari": [
-      "17:50",
-      "21:00"
+      "15:30",
+      "17:30",
+      "20:40",
+      "21:45",
+      "22:20"
      ],
      "giorni": {
-      "2026-11-27": [
-       "17:50",
-       "21:00"
-      ],
       "2026-11-28": [
        "15:30",
        "17:30",
@@ -773,12 +743,10 @@
     {
      "titolo": "Il gatto col cappello",
      "orari": [
-      "17:50"
+      "15:20",
+      "17:35"
      ],
      "giorni": {
-      "2026-11-27": [
-       "17:50"
-      ],
       "2026-11-28": [
        "15:20",
        "17:35"
@@ -789,11 +757,13 @@
       ]
      },
      "versione": "",
-     "genere": "Animazione, Ragazzi, Commedia, Avventura, Fantastico",
+     "genere": "Animazione",
      "regia": "Alessandro Carloni e Erica Rivinoja",
      "biglietti": "https://www.webtic.it/app/shopping/loadLocal/RA/5104",
      "interpreti": "Quinta Brunson, Matt Berry e Bill Hader",
      "anno": 2026,
+     "paese": "USA",
+     "durata": 107,
      "scheda": "https://it.wikipedia.org/wiki/Il_gatto_col_cappello_%28film%29"
     },
     {
@@ -802,9 +772,6 @@
       "21:30"
      ],
      "giorni": {
-      "2026-11-27": [
-       "21:30"
-      ],
       "2026-11-28": [
        "21:30"
       ],
@@ -825,14 +792,12 @@
     {
      "titolo": "La notte delle fragole",
      "orari": [
-      "17:30",
-      "21:15"
+      "16:00",
+      "18:00",
+      "20:30",
+      "22:40"
      ],
      "giorni": {
-      "2026-11-27": [
-       "17:30",
-       "21:15"
-      ],
       "2026-11-28": [
        "16:00",
        "18:00",
@@ -858,14 +823,10 @@
     {
      "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
      "orari": [
-      "18:10",
-      "21:00"
+      "18:30",
+      "20:00"
      ],
      "giorni": {
-      "2026-11-27": [
-       "18:10",
-       "21:00"
-      ],
       "2026-11-28": [
        "18:30",
        "20:00"
@@ -887,14 +848,12 @@
     {
      "titolo": "Scrooge e gli spiriti del Natale",
      "orari": [
+      "15:30",
       "17:55",
-      "20:50"
+      "20:20",
+      "22:40"
      ],
      "giorni": {
-      "2026-11-27": [
-       "17:55",
-       "20:50"
-      ],
       "2026-11-28": [
        "15:30",
        "17:55",
@@ -920,12 +879,10 @@
     {
      "titolo": "Se domani non torno",
      "orari": [
-      "20:45"
+      "15:30",
+      "21:40"
      ],
      "giorni": {
-      "2026-11-27": [
-       "20:45"
-      ],
       "2026-11-28": [
        "15:30",
        "21:40"
@@ -947,14 +904,12 @@
     {
      "titolo": "Ti presento i Fotter",
      "orari": [
+      "15:40",
       "18:00",
-      "21:00"
+      "20:20",
+      "22:40"
      ],
      "giorni": {
-      "2026-11-27": [
-       "18:00",
-       "21:00"
-      ],
       "2026-11-28": [
        "15:40",
        "18:00",
@@ -980,12 +935,10 @@
     {
      "titolo": "Un weekend artificiale",
      "orari": [
-      "19:20"
+      "17:30",
+      "19:50"
      ],
      "giorni": {
-      "2026-11-27": [
-       "19:20"
-      ],
       "2026-11-28": [
        "17:30",
        "19:50"
@@ -1030,7 +983,9 @@
    "film": [
     {
      "titolo": "Wild Horse Nine",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-28": [
        "21:00"
@@ -1044,9 +999,9 @@
      "regia": "Martin McDonagh",
      "biglietti": "https://www.liveticket.it/evento.aspx?Id=717283",
      "interpreti": "John Malkovich, Sam Rockwell, Steve Buscemi e Bastián Bodenhöfer",
-     "paese": "Regno Unito",
      "durata": 118,
      "anno": 2026,
+     "paese": "Regno Unito",
      "scheda": "https://it.wikipedia.org/wiki/Wild_Horse_Nine"
     }
    ]
@@ -1063,7 +1018,9 @@
    "film": [
     {
      "titolo": "Dio ride",
-     "orari": [],
+     "orari": [
+      "21:00"
+     ],
      "giorni": {
       "2026-11-28": [
        "21:00"
@@ -1104,7 +1061,9 @@
    "film": [
     {
      "titolo": "Il fuoco che ti porti dentro",
-     "orari": [],
+     "orari": [
+      "17:00"
+     ],
      "giorni": {
       "2026-11-28": [
        "17:00"
@@ -1120,11 +1079,14 @@
      "interpreti": "Vanessa Scalera, Lino Musella, Elena Radonicich e Ivana Lotito",
      "durata": 94,
      "anno": 2026,
+     "paese": "Italia",
      "scheda": "https://it.wikipedia.org/wiki/Il_fuoco_che_ti_porti_dentro_%28film%29"
     },
     {
      "titolo": "Lorenzo - L’incredibile avventura di Jovanotti",
-     "orari": [],
+     "orari": [
+      "21:15"
+     ],
      "giorni": {
       "2026-11-28": [
        "21:15"
@@ -1143,29 +1105,11 @@
      "scheda": "https://it.wikipedia.org/wiki/Lorenzo_-_L%27incredibile_avventura_di_Jovanotti"
     },
     {
-     "titolo": "Mustang",
-     "orari": [
-      "18:30"
-     ],
-     "giorni": {
-      "2026-11-27": [
-       "18:30"
-      ]
-     },
-     "versione": "",
-     "genere": "",
-     "regia": "",
-     "biglietti": "https://www.cinemaincentro.com/programmazione-sala.php?id=1"
-    },
-    {
      "titolo": "Wild Horse Nine",
      "orari": [
-      "21:00"
+      "18:45"
      ],
      "giorni": {
-      "2026-11-27": [
-       "21:00"
-      ],
       "2026-11-28": [
        "18:45"
       ],
@@ -1197,13 +1141,8 @@
    "film": [
     {
      "titolo": "Dio ride",
-     "orari": [
-      "20:30"
-     ],
+     "orari": [],
      "giorni": {
-      "2026-11-27": [
-       "20:30"
-      ],
       "2026-11-29": [
        "18:00"
       ]
