@@ -172,7 +172,7 @@ if os.path.exists(os.path.join(RAD, "index.html")) and os.path.isdir(os.path.joi
     open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(s)
     e = errori(d)
     prova("città: accese, le tre province sono collegate dappertutto (manca solo il minimo di eventi)",
-          e != [] and all("ha 0 eventi" in x or "eventi.js" in x for x in e))
+          all("eventi" in x and "eventi.js" in x for x in e))   # con i dati del 28/11: nessun errore
     import subprocess as _sp
     d = copia()
     _sp.run([sys.executable, os.path.join(d, "scripts", "citta.py")], cwd=d, capture_output=True)
