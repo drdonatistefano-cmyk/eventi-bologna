@@ -1376,6 +1376,10 @@ html.beta-scuro body #nAf .ft .a2{background:linear-gradient(180deg,#4f7aa3,#345
   html body .modes button.on::after{transform:translateX(-50%) scale(1.06)}
   html body .modes button small{display:block;font-size:12.5px;line-height:1.2;margin:0}
 }
+
+/* ===== 28/11 20:24, Stefano: «la descrizione non si legge» nel tema scuro — il colore fisso #3b352f restava scuro su fondo scuro; ora segue il tema ===== */
+html body .dbody .desc{color:color-mix(in srgb,var(--ink) 86%,var(--mute))}
+html.beta-scuro body .dbody .desc{color:#d9dee6}
 </style>
 </head>
 <body class="nA">
