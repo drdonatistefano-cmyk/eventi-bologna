@@ -1250,6 +1250,10 @@ html body .card.mini .mloc .mlg{margin-left:0!important}
 /* ===== 28/11: selettore con più città (Modena, Forlì-Cesena, Firenze): nomi su una riga ===== */
 html body .city.citta-n .menu{min-width:206px;max-height:calc(100vh - 120px);overflow-y:auto}
 html body .city.citta-n .cb{white-space:nowrap;flex:none}
+
+/* 28/11/2026 (velocità): le schede fuori dallo schermo non si impaginano finché non servono (content-visibility); 
+   l'altezza di riserva è quella ricordata dal browser, altrimenti 150px: la pagina resta identica */
+#list article.card{content-visibility:auto;contain-intrinsic-size:auto 150px}
 </style>
 </head>
 <body class="nA">
@@ -2208,13 +2212,15 @@ body.nA #qwrap{display:none!important} body.nA{--qh:0px}
   box.innerHTML=h;
   // foglio
   if(!OPEN.size)SECS.slice(0,2).forEach(([k])=>OPEN.add(k));
-  document.getElementById("nAb").innerHTML=SECS.map(([k,t])=>{const O=opts(k);const all=O.gr?O.gr.flatMap(x=>x.it):O.it;if(!all.length)return "";
+  /* 28/11/2026 (velocità, Stefano «velocizza tutti i siti»): il foglio dei filtri si costruisce solo quando è aperto
+     (prima a ogni tocco, anche chiuso: metà del tempo di «Oggi»); aprendolo, disegna() lo costruisce identico */
+  if(APERTO){document.getElementById("nAb").innerHTML=SECS.map(([k,t])=>{const O=opts(k);const all=O.gr?O.gr.flatMap(x=>x.it):O.it;if(!all.length)return "";
    const sel=all.filter(o=>o.on).map(o=>o.l.replace(/^\S+\s(?=\S)/,(x)=>/\p{Extended_Pictographic}/u.test(x)?"":x));
    let body="";
    if(O.gr)body=O.gr.map(gp=>'<div class="sub">'+E(gp.t)+'</div><div class="ops">'+gp.it.map(o=>btn(k,o,"o")).join("")+'</div>').join("");
    else{const lim=O.lungo&&!TUTTI.has(k)?12:1e9;body='<div class="ops">'+O.it.slice(0,lim).map(o=>btn(k,o,"o")).join("")+'</div>'+(O.it.length>lim?'<button type="button" class="more" data-tutti="'+k+'">Mostra tutti ('+O.it.length+')</button>':"")}
    return '<details data-sec="'+k+'"'+(OPEN.has(k)?" open":"")+'><summary><span class="si" aria-hidden="true">'+ICO(k)+'</span>'+E(t)+'<span class="sv">'+E(sel.join(", "))+'</span><i class="cv"></i></summary>'+(sel.length?'<div style="display:flex;justify-content:flex-end;margin-top:-6px"><button type="button" class="az" data-clr="'+k+'">Azzera '+E(t.toLowerCase())+'</button></div>':'')+body+'</details>'}).join("");
-  const n=visible().length,N=NOUN();document.getElementById("nAgo").textContent=n?"Mostra "+n+" "+(n===1?N[0]:N[1]):"Nessun risultato";
+  const n=visible().length,N=NOUN();document.getElementById("nAgo").textContent=n?"Mostra "+n+" "+(n===1?N[0]:N[1]):"Nessun risultato";}
   F.classList.toggle("op",APERTO);
  }
  const _r=render;render=function(){const x=_r.apply(this,arguments);try{disegna()}catch(e){console.error(e)}return x};
@@ -2287,10 +2293,14 @@ body.nA #qwrap{display:none!important} body.nA{--qh:0px}
   var x=box.querySelector(".bg-x");if(x)x.focus()}
  /* città nella riga fissa del «quando» e altezza di quella riga per le righe ferme sotto */
  try{var R=document.documentElement,nm=(typeof CITY!=="undefined"&&CITY&&CITY.nome)||"";R.style.setProperty("--beta-citta",JSON.stringify(nm));
-  var misura=function(){var a=document.getElementById("nA");if(!a)return;R.style.setProperty("--nah",a.offsetHeight+"px");
-   var q=a.querySelector(".rowq");if(q){var f=q.querySelector(".ch");if(f)R.style.setProperty("--beta-cw",(f.offsetLeft-2)+"px")}};
+  /* 28/11/2026 (velocità): si scrive solo se il valore cambia (ogni scrittura faceva ricalcolare tutta la pagina) e i cambi
+     della riga si misurano al fotogramma successivo, una volta sola (prima: subito, a ogni ridisegno, forzando l'impaginazione) */
+  var V1="",V2="",FS=0,setv=function(k,v,o){if(v!==o)R.style.setProperty(k,v);return v};
+  var misura=function(){var a=document.getElementById("nA");if(!a)return;V1=setv("--nah",a.offsetHeight+"px",V1);
+   var q=a.querySelector(".rowq");if(q){var f=q.querySelector(".ch");if(f)V2=setv("--beta-cw",(f.offsetLeft-2)+"px",V2)}},
+  misuraPoi=function(){if(FS)return;FS=1;requestAnimationFrame(function(){FS=0;misura()})};
   misura();if(window.ResizeObserver){var a0=document.getElementById("nA");if(a0)new ResizeObserver(misura).observe(a0)}
-  if(window.MutationObserver){var a1=document.getElementById("nA");if(a1)new MutationObserver(misura).observe(a1,{childList:true})}
+  if(window.MutationObserver){var a1=document.getElementById("nA");if(a1)new MutationObserver(misuraPoi).observe(a1,{childList:true})}
   addEventListener("resize",misura)}catch(_){}
  window.BETA_GEN={apri:apri,chiudi:chiudi};
  /* in cattura: la pagina ridisegna i pulsanti subito dopo il tocco */

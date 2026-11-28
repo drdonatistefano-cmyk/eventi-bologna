@@ -231,12 +231,23 @@ def tocchi_dinners(pg):
     return r
 
 
+def chiudi_pannello_events(pg):
+    """28/11/2026: con la grafica «Events 2030» (27/11) il tocco su una scheda apre il pannello «Scegli che cosa vedere»
+    (#betaGen), che copre la pagina: la misura del 28/11 non riusciva più a toccare nient'altro e segnava giallo.
+    Come farebbe una persona, lo si chiude con «Chiudi» (la scelta resta «Tutto»)."""
+    x = pg.locator('#betaGen button[data-bgclose]')
+    if x.count() and x.first.is_visible():
+        x.first.tap()
+        pg.wait_for_timeout(400)
+
+
 def tocchi_events(pg):
     r = {}
     for nome in ("Mostre", "Spettacoli"):
         bt = pg.locator("button", has_text=nome)
         if bt.count():
             misura(pg, f"scheda «{nome}»", lambda bt=bt: bt.first.tap(), r)
+            chiudi_pannello_events(pg)
     # 18/11/2026: con i filtri nuovi (16/11) «Oggi» visibile è la chip in alto (button.ch); button.qc sta nel foglio chiuso
     oggi = pg.locator('button.ch[data-v="oggi"]').first
     if not oggi.count() or not oggi.is_visible():
