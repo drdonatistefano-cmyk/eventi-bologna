@@ -24,6 +24,9 @@ jobs:
             dati
             milano/dati
             ferrara/dati
+            modena/dati
+            forli-cesena/dati
+            firenze/dati
             ravenna/dati
       - name: Controlla e rilancia
         env:
@@ -59,7 +62,7 @@ jobs:
 
           # Cinema: ogni città deve avere gli orari di oggi
           vecchie = []
-          for c in ["dati", "milano/dati", "ferrara/dati", "ravenna/dati"]:
+          for c in ["dati", "milano/dati", "ferrara/dati", "ravenna/dati", "modena/dati", "forli-cesena/dati", "firenze/dati"]:
               p = f"{c}/cinema_stato.json"
               if not os.path.exists(p):
                   continue

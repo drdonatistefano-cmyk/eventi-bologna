@@ -163,6 +163,8 @@ if os.path.exists(os.path.join(RAD, "index.html")) and os.path.isdir(os.path.joi
     prova("città: un flusso che non salva più la città si vede", any("eventi_auto.yml" in x for x in errori(d)))
     # 28/11/2026: Modena, Forlì-Cesena e Firenze preparate ma spente
     d = copia()
+    _t = _re.sub(r"const CITTA_ATTIVE=\[[^\]]*\]", 'const CITTA_ATTIVE=["bo","mi","ra","fe"]', open(os.path.join(d, "index.html"), encoding="utf-8").read())
+    open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(_t)   # 28/11: dalla pubblicazione sono accese; la prova le spegne nella copia
     avv = [(n, cosa) for liv, n, cosa in CC.controlla(d) if liv == "avviso" and "non accesa" in cosa]
     prova("città: le tre province preparate e spente sono solo avvisi, col nome giusto",
           errori(d) == [] and {n for n, _ in avv} >= {"Modena", "Forlì-Cesena", "Firenze"})
@@ -175,6 +177,8 @@ if os.path.exists(os.path.join(RAD, "index.html")) and os.path.isdir(os.path.joi
           all("eventi" in x and "eventi.js" in x for x in e))   # con i dati del 28/11: nessun errore
     import subprocess as _sp
     d = copia()
+    _spegni_mo = open(os.path.join(d, "index.html"), encoding="utf-8").read().replace('"fe","mo","fc","fi"]', '"fe","fc","fi"]')
+    open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(_spegni_mo)
     _sp.run([sys.executable, os.path.join(d, "scripts", "citta.py")], cwd=d, capture_output=True)
     leggi = lambda c: open(os.path.join(d, c, "index.html"), encoding="utf-8").read()[:400]  # noqa: E731
     prova("città: una città preparata e spenta ha noindex, una accesa no",

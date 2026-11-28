@@ -10,7 +10,7 @@ on:
     inputs:
       citta:
         description: "Città (bo mi ...)"
-        default: "bo mi ra fe"
+        default: "bo mi ra fe mo fc fi"
 permissions:
   contents: write
 concurrency: { group: cartelloni, cancel-in-progress: false }
@@ -30,7 +30,7 @@ jobs:
           if git fetch -q --depth=1 origin cartelloni; then git archive FETCH_HEAD | tar -x -C /tmp/car; fi
       - name: Leggi
         run: |
-          for c in ${{ github.event.inputs.citta || 'bo mi ra fe' }}; do
+          for c in ${{ github.event.inputs.citta || 'bo mi ra fe mo fc fi' }}; do
             python3 scripts/cartelloni.py "$c" /tmp/car || echo "::warning::$c non completata"
           done
       - name: Salva i link TicketOne nella guida

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta name="robots" content="noindex">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>/* apre l'ultima città scelta (cookie impostato dal pulsante BO|MI) */(function(){try{var P={mi:"/milano/",ra:"/ravenna/",fe:"/ferrara/",mo:"/modena/",fc:"/forli-cesena/",fi:"/firenze/"},m=document.cookie.match(/(?:^|; )citta=([a-z]{2})\b/),q=/[?&]citta=([a-z]{2})\b/.exec(location.search),qui=Object.keys(P).some(function(k){return location.pathname.indexOf(P[k])===0})?"altra":"bo";if(q){document.cookie="citta="+q[1]+";path=/;max-age=31536000;SameSite=Lax";return}if(!m||!P[m[1]]||qui!=="bo"||location.hash||!/(^|\.)achevents\.com$/.test(location.hostname))return;if(document.referrer&&new URL(document.referrer).host===location.host)return;location.replace(P[m[1]])}catch(_){}})();</script>
@@ -1338,7 +1337,7 @@ html body .city.citta-n .cb{white-space:nowrap;flex:none}
 /* ---------- città: un solo motore per tutte le città ----------
    Bologna = "/", Milano = "/milano/". Ogni cartella ha i suoi eventi.js, mostre.js, cinema.js.
    CITTA_ATTIVE: le città che compaiono nel selettore (aggiungere "mi" quando i dati di Milano sono pronti). */
-const CITTA_ATTIVE=["bo","mi","ra","fe"];
+const CITTA_ATTIVE=["bo","mi","ra","fe","mo","fc","fi"];
 const CITTA_CFG={
  bo:{k:"bo",sigla:"BO",nome:"Bologna",capo:"Bologna",area:"a Bologna e nei comuni della Città metropolitana",path:"/",url:"https://achevents.com/",
   zone:[
