@@ -1,0 +1,287 @@
+{
+ "generato": "2026-11-28T18:59:33Z",
+ "stato": {
+  "sito": {
+   "http": 200,
+   "ok": false,
+   "statistiche_attive": true
+  }
+ },
+ "errore": "",
+ "giorni": [
+  {
+   "giorno": "2026-11-24",
+   "visite": 9
+  },
+  {
+   "giorno": "2026-11-25",
+   "visite": 16
+  },
+  {
+   "giorno": "2026-11-26",
+   "visite": 6
+  },
+  {
+   "giorno": "2026-11-27",
+   "visite": 6
+  },
+  {
+   "giorno": "2026-11-28",
+   "visite": 6
+  }
+ ],
+ "totali": {
+  "oggi": {
+   "visite": 6,
+   "eventi": 0
+  },
+  "7g": {
+   "visite": 43,
+   "eventi": 0
+  },
+  "30g": {
+   "visite": 43,
+   "eventi": 0
+  }
+ },
+ "7g": {
+  "percorsi": [
+   {
+    "path": "/",
+    "titolo": "Ach's Dishes — Le ricette d'Italia",
+    "n": 43,
+    "evento": false
+   }
+  ],
+  "toprefs": [
+   {
+    "nome": "(diretto)",
+    "n": 33
+   },
+   {
+    "nome": "achdinners.com",
+    "n": 5
+   },
+   {
+    "nome": "achplaces.com",
+    "n": 4
+   },
+   {
+    "nome": "achevents.com",
+    "n": 1
+   }
+  ],
+  "locations": [
+   {
+    "nome": "Italy",
+    "n": 22
+   },
+   {
+    "nome": "United States",
+    "n": 8
+   },
+   {
+    "nome": "Canada",
+    "n": 3
+   },
+   {
+    "nome": "Netherlands",
+    "n": 3
+   },
+   {
+    "nome": "Germany",
+    "n": 2
+   },
+   {
+    "nome": "Austria",
+    "n": 1
+   },
+   {
+    "nome": "France",
+    "n": 1
+   },
+   {
+    "nome": "United Kingdom",
+    "n": 1
+   },
+   {
+    "nome": "India",
+    "n": 1
+   },
+   {
+    "nome": "Poland",
+    "n": 1
+   }
+  ],
+  "systems": [
+   {
+    "nome": "iOS",
+    "n": 13
+   },
+   {
+    "nome": "Linux",
+    "n": 11
+   },
+   {
+    "nome": "Windows",
+    "n": 11
+   },
+   {
+    "nome": "macOS",
+    "n": 8
+   }
+  ],
+  "browsers": [
+   {
+    "nome": "Chrome",
+    "n": 23
+   },
+   {
+    "nome": "Safari",
+    "n": 20
+   }
+  ],
+  "sizes": [
+   {
+    "nome": "phone",
+    "n": 14
+   },
+   {
+    "nome": "tablet",
+    "n": 15
+   },
+   {
+    "nome": "desktop",
+    "n": 14
+   },
+   {
+    "nome": "desktophd",
+    "n": 0
+   },
+   {
+    "nome": "unknown",
+    "n": 0
+   }
+  ]
+ },
+ "30g": {
+  "percorsi": [
+   {
+    "path": "/",
+    "titolo": "Ach's Dishes — Le ricette d'Italia",
+    "n": 43,
+    "evento": false
+   }
+  ],
+  "toprefs": [
+   {
+    "nome": "(diretto)",
+    "n": 33
+   },
+   {
+    "nome": "achdinners.com",
+    "n": 5
+   },
+   {
+    "nome": "achplaces.com",
+    "n": 4
+   },
+   {
+    "nome": "achevents.com",
+    "n": 1
+   }
+  ],
+  "locations": [
+   {
+    "nome": "Italy",
+    "n": 22
+   },
+   {
+    "nome": "United States",
+    "n": 8
+   },
+   {
+    "nome": "Canada",
+    "n": 3
+   },
+   {
+    "nome": "Netherlands",
+    "n": 3
+   },
+   {
+    "nome": "Germany",
+    "n": 2
+   },
+   {
+    "nome": "Austria",
+    "n": 1
+   },
+   {
+    "nome": "France",
+    "n": 1
+   },
+   {
+    "nome": "United Kingdom",
+    "n": 1
+   },
+   {
+    "nome": "India",
+    "n": 1
+   },
+   {
+    "nome": "Poland",
+    "n": 1
+   }
+  ],
+  "systems": [
+   {
+    "nome": "iOS",
+    "n": 13
+   },
+   {
+    "nome": "Linux",
+    "n": 11
+   },
+   {
+    "nome": "Windows",
+    "n": 11
+   },
+   {
+    "nome": "macOS",
+    "n": 8
+   }
+  ],
+  "browsers": [
+   {
+    "nome": "Chrome",
+    "n": 23
+   },
+   {
+    "nome": "Safari",
+    "n": 20
+   }
+  ],
+  "sizes": [
+   {
+    "nome": "phone",
+    "n": 14
+   },
+   {
+    "nome": "tablet",
+    "n": 15
+   },
+   {
+    "nome": "desktop",
+    "n": 14
+   },
+   {
+    "nome": "desktophd",
+    "n": 0
+   },
+   {
+    "nome": "unknown",
+    "n": 0
+   }
+  ]
+ }
+}

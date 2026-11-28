@@ -1,0 +1,1575 @@
+{
+ "generato": "2026-11-28T18:59:03Z",
+ "stato": {
+  "sito": {
+   "http": 200,
+   "ok": true,
+   "statistiche_attive": true
+  }
+ },
+ "errore": "",
+ "giorni": [
+  {
+   "giorno": "2026-11-08",
+   "visite": 10
+  },
+  {
+   "giorno": "2026-11-09",
+   "visite": 11
+  },
+  {
+   "giorno": "2026-11-10",
+   "visite": 13
+  },
+  {
+   "giorno": "2026-11-11",
+   "visite": 21
+  },
+  {
+   "giorno": "2026-11-12",
+   "visite": 10
+  },
+  {
+   "giorno": "2026-11-13",
+   "visite": 22
+  },
+  {
+   "giorno": "2026-11-14",
+   "visite": 34
+  },
+  {
+   "giorno": "2026-11-15",
+   "visite": 24
+  },
+  {
+   "giorno": "2026-11-16",
+   "visite": 45
+  },
+  {
+   "giorno": "2026-11-17",
+   "visite": 38
+  },
+  {
+   "giorno": "2026-11-18",
+   "visite": 50
+  },
+  {
+   "giorno": "2026-11-19",
+   "visite": 33
+  },
+  {
+   "giorno": "2026-11-20",
+   "visite": 38
+  },
+  {
+   "giorno": "2026-11-21",
+   "visite": 16
+  },
+  {
+   "giorno": "2026-11-22",
+   "visite": 23
+  },
+  {
+   "giorno": "2026-11-23",
+   "visite": 48
+  },
+  {
+   "giorno": "2026-11-24",
+   "visite": 27
+  },
+  {
+   "giorno": "2026-11-25",
+   "visite": 35
+  },
+  {
+   "giorno": "2026-11-26",
+   "visite": 45
+  },
+  {
+   "giorno": "2026-11-27",
+   "visite": 29
+  },
+  {
+   "giorno": "2026-11-28",
+   "visite": 12
+  }
+ ],
+ "totali": {
+  "oggi": {
+   "visite": 12,
+   "eventi": 3
+  },
+  "7g": {
+   "visite": 219,
+   "eventi": 44
+  },
+  "30g": {
+   "visite": 584,
+   "eventi": 135
+  }
+ },
+ "7g": {
+  "percorsi": [
+   {
+    "path": "/",
+    "titolo": "Ach's Places Guide",
+    "n": 49,
+    "evento": false
+   },
+   {
+    "path": "/?lang=it",
+    "titolo": "Ach's Places Guide",
+    "n": 34,
+    "evento": false
+   },
+   {
+    "path": "app/aperta-dall-icona",
+    "titolo": "Aperta dall'icona",
+    "n": 21,
+    "evento": true
+   },
+   {
+    "path": "/?app=1",
+    "titolo": "Ach's Places Guide",
+    "n": 21,
+    "evento": false
+   },
+   {
+    "path": "/filtri.html",
+    "titolo": "Luoghi sulla mappa · Ach's Places Guide",
+    "n": 7,
+    "evento": false
+   },
+   {
+    "path": "app/mostrato",
+    "titolo": "Riquadro mostrato",
+    "n": 7,
+    "evento": true
+   },
+   {
+    "path": "/?lang=en",
+    "titolo": "Ach's Places Guide",
+    "n": 6,
+    "evento": false
+   },
+   {
+    "path": "guide/vai-dinners",
+    "titolo": "Vai a Ach's Dinners Guide",
+    "n": 5,
+    "evento": true
+   },
+   {
+    "path": "guide/vai-events",
+    "titolo": "Vai a Ach's Events Guide",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "/luogo/merate-lc--osservatorio-astronomico-di-brera-sede-d",
+    "titolo": "Osservatorio Astronomico di Brera, sede di Merate, Merate (LC)",
+    "n": 4,
+    "evento": false
+   },
+   {
+    "path": "/luogo/rocca-di-papa-rm--museo-di-geoscienze-mugeos-museo-geofisi",
+    "titolo": "Museo di Geoscienze MUGEOS (Museo Geofisico), Rocca di Papa (RM)",
+    "n": 4,
+    "evento": false
+   },
+   {
+    "path": "guide/vai-dishes",
+    "titolo": "Vai a Ach's Dishes",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "/anteprima/places/claude/places-testata",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 4,
+    "evento": false
+   },
+   {
+    "path": "/index.html",
+    "titolo": "Ach's Places Guide",
+    "n": 3,
+    "evento": false
+   },
+   {
+    "path": "filtri/azzera-places",
+    "titolo": "Azzera i filtri (in fondo)",
+    "n": 3,
+    "evento": true
+   },
+   {
+    "path": "/luogo/san-romano-in-garfagnana-lu--parco-dell-orecchiella",
+    "titolo": "Parco dell'Orecchiella, San Romano in Garfagnana (LU)",
+    "n": 3,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-proto-schede",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 3,
+    "evento": false
+   },
+   {
+    "path": "/luogo/ghilarza-or--casa-museo-di-antonio-gramsci",
+    "titolo": "Casa museo di Antonio Gramsci, Ghilarza (OR): cosa sapere",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-moderna",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/comune/mompantero-to",
+    "titolo": "Cosa vedere a Mompantero (TO): 7 luoghi da visitare",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/luogo/pieve-santo-stefano-ar--piccolo-museo-del-diario",
+    "titolo": "Piccolo Museo del Diario, Pieve Santo Stefano (AR): cosa sapere",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/luogo/isera-tn--villa-romana-di-isera",
+    "titolo": "Villa romana di Isera, Isera (TN): cosa sapere prima di andarci",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/luogo/modena-mo--collezione-maserati-umberto-panini",
+    "titolo": "Collezione Maserati Umberto Panini, Modena (MO): cosa sapere",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/luogo/abetone-cutigliano-pt--orto-botanico-forestale-dell-abetone",
+    "titolo": "Orto Botanico Forestale dell'Abetone, Abetone Cutigliano (PT)",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-proto-app/prova-comuni.html",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/finestre-recipes",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/grafica-istituzionale",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-moderna/index.html",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-moderna/filtri.html",
+    "titolo": "Mappa · Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-fai",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/baselga-di-pine-tn",
+    "titolo": "Cosa vedere a Baselga di Pinè (TN): 8 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/pergine-valsugana-tn--castel-pergine",
+    "titolo": "Castel Pergine, Pergine Valsugana (TN): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/monselice-pd--castello-di-monselice-castello-cini",
+    "titolo": "Castello di Monselice (Castello Cini), Monselice (PD)",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/valenza-al--palazzo-valentino",
+    "titolo": "Palazzo Valentino, Valenza (AL): cosa sapere prima di andarci",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/valenza-al--duomo-di-santa-maria-maggiore",
+    "titolo": "Duomo di Santa Maria Maggiore, Valenza (AL): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/pino-d-asti-at--castello-gavotti",
+    "titolo": "Castello Gavotti, Pino d'Asti (AT): cosa sapere prima di andarci",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/reana-del-rojale-ud--mostra-del-cartoccio-e-del-vimine",
+    "titolo": "Mostra del cartoccio e del vimine, Reana del Rojale (UD)",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/mineo-ct--casa-museo-luigi-capuana",
+    "titolo": "Casa museo Luigi Capuana, Mineo (CT): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/mineo-ct--area-archeologica-di-palike",
+    "titolo": "Area archeologica di Palikè, Mineo (CT): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/mereto-di-tomba-ud",
+    "titolo": "Cosa vedere a Mereto di Tomba (UD): 4 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/andezeno-to",
+    "titolo": "Cosa vedere a Andezeno (TO): 5 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/cuorgne-to",
+    "titolo": "Cosa vedere a Cuorgnè (TO): 8 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/villa-d-alme-bg",
+    "titolo": "Cosa vedere a Villa d'Almè (BG): 3 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/piacenza-pc--kronos-museo-della-cattedrale-e-salita-a",
+    "titolo": "Kronos, Museo della Cattedrale e salita alla cupola, Piacenza (PC)",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/polla-sa--convento-e-santuario-di-sant-antonio",
+    "titolo": "Convento e santuario di Sant'Antonio, Polla (SA): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/san-tammaro-ce--boschi-di-carditello-e-area-pic-nic-don-",
+    "titolo": "Boschi di Carditello e area pic-nic Don Peppe Diana, San Tammaro (CE)",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/tesero-tn--centro-di-documentazione-stava-1985",
+    "titolo": "Centro di documentazione Stava 1985, Tesero (TN): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/reggiolo-re--teatro-comunale-giovanni-rinaldi",
+    "titolo": "Teatro comunale Giovanni Rinaldi, Reggiolo (RE): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/montecatini-val-di-cecina-pi--museo-delle-miniere",
+    "titolo": "Museo delle Miniere, Montecatini Val di Cecina (PI): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/rocca-pietore-bl--serrai-di-sottoguda",
+    "titolo": "Serrai di Sottoguda, Rocca Pietore (BL): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/dalmine-bg--museo-del-presepio",
+    "titolo": "Museo del Presepio, Dalmine (BG): cosa sapere prima di andarci",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/predazzo-tn--centro-visitatori-di-paneveggio",
+    "titolo": "Centro visitatori di Paneveggio, Predazzo (TN): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/troina-en--complesso-museale-torre-capitania",
+    "titolo": "Complesso Museale Torre Capitania, Troina (EN): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/troina-en--museo-della-fotografia-di-robert-capa",
+    "titolo": "Museo della Fotografia di Robert Capa, Troina (EN): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/cavalese-tn--palazzo-della-magnifica-comunita-di-fiem",
+    "titolo": "Palazzo della Magnifica Comunità di Fiemme e Pinacoteca, Cavalese (TN)",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/attimis-ud--museo-archeologico-medioevale",
+    "titolo": "Museo archeologico medioevale, Attimis (UD): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/quistello-mn--museo-diffuso-giuseppe-gorni",
+    "titolo": "Museo diffuso Giuseppe Gorni, Quistello (MN): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/comacchio-fe--museo-delta-antico",
+    "titolo": "Museo Delta Antico, Comacchio (FE): cosa sapere prima di andarci",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/san-secondo-di-pinerolo-to--castello-e-parco-di-miradolo",
+    "titolo": "Castello e Parco di Miradolo, San Secondo di Pinerolo (TO)",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/almese-to",
+    "titolo": "Cosa vedere a Almese (TO): 5 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/vermiglio-tn",
+    "titolo": "Cosa vedere a Vermiglio (TN): 5 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/vermiglio-tn--forte-strino",
+    "titolo": "Forte Strino, Vermiglio (TN): cosa sapere prima di andarci",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/corte-franca-bs--chiesa-di-san-salvatore",
+    "titolo": "Chiesa di San Salvatore, Corte Franca (BS): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/firenze-fi--museo-la-specola",
+    "titolo": "Museo La Specola, Firenze (FI): cosa sapere prima di andarci",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-scheda-turista",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-grafica-dinners/filtri.html",
+    "titolo": "Mappa · Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/regione/toscana",
+    "titolo": "Cosa vedere in Toscana: 1294 luoghi in 218 comuni",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/napoli-na",
+    "titolo": "Cosa vedere a Napoli (NA): 74 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/cervia-ra",
+    "titolo": "Cosa vedere a Cervia (RA): 7 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-sostenitori-scuro",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-pm-fondo/index.html",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-pm-fondo/filtri.html",
+    "titolo": "Mappa · Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-pm-fondo",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-zone-menu",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-testata/filtri.html",
+    "titolo": "Mappa · Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/pino-torinese-to--infini-to-planetario-di-torino-museo-del",
+    "titolo": "Infini.to - Planetario di Torino, Museo dell'Astronomia e dello Spazio, Pino Torinese (TO)",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/siligo-ss",
+    "titolo": "Cosa vedere a Siligo (SS): 6 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-proto-app/index.html",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-proto-app/prova-mappa.html",
+    "titolo": "Mappa · Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/firenze-fi--basilica-di-santa-croce",
+    "titolo": "Basilica di Santa Croce, Firenze (FI): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-proto-app/filtri.html",
+    "titolo": "Mappa · Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-link-osm",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-link-23-11",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-proto-comune/comune/gallipoli-le",
+    "titolo": "Cosa vedere a Gallipoli (LE): 11 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/bergamo-bg--basilica-di-santa-maria-maggiore",
+    "titolo": "Basilica di Santa Maria Maggiore, Bergamo (BG): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/morrovalle-mc",
+    "titolo": "Cosa vedere a Morrovalle (MC): 13 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/grafica-istituzionale/filtri.html",
+    "titolo": "Mappa · Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/massa-marittima-gr",
+    "titolo": "Cosa vedere a Massa Marittima (GR): 12 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   }
+  ],
+  "toprefs": [
+   {
+    "nome": "(diretto)",
+    "n": 120
+   },
+   {
+    "nome": "P3-1L",
+    "n": 35
+   },
+   {
+    "nome": "P3-1LC",
+    "n": 18
+   },
+   {
+    "nome": "achplaces.com",
+    "n": 10
+   },
+   {
+    "nome": "achdinners.com",
+    "n": 8
+   },
+   {
+    "nome": "P2",
+    "n": 8
+   },
+   {
+    "nome": "achevents.com",
+    "n": 7
+   },
+   {
+    "nome": "P3-2L",
+    "n": 7
+   },
+   {
+    "nome": "P3-2L4",
+    "n": 6
+   },
+   {
+    "nome": "Google",
+    "n": 5
+   },
+   {
+    "nome": "P3-17",
+    "n": 4
+   },
+   {
+    "nome": "achplaces.com/filtri.html",
+    "n": 3
+   }
+  ],
+  "locations": [
+   {
+    "nome": "Italy",
+    "n": 248
+   },
+   {
+    "nome": "United States",
+    "n": 5
+   },
+   {
+    "nome": "Albania",
+    "n": 2
+   },
+   {
+    "nome": "Germany",
+    "n": 2
+   },
+   {
+    "nome": "Israel",
+    "n": 2
+   },
+   {
+    "nome": "Australia",
+    "n": 1
+   },
+   {
+    "nome": "Canada",
+    "n": 1
+   },
+   {
+    "nome": "United Kingdom",
+    "n": 1
+   },
+   {
+    "nome": "Malaysia",
+    "n": 1
+   }
+  ],
+  "systems": [
+   {
+    "nome": "Windows",
+    "n": 123
+   },
+   {
+    "nome": "iOS",
+    "n": 76
+   },
+   {
+    "nome": "macOS",
+    "n": 49
+   },
+   {
+    "nome": "Android",
+    "n": 10
+   },
+   {
+    "nome": "Linux",
+    "n": 5
+   }
+  ],
+  "browsers": [
+   {
+    "nome": "Chrome",
+    "n": 142
+   },
+   {
+    "nome": "Safari",
+    "n": 116
+   },
+   {
+    "nome": "Firefox",
+    "n": 5
+   }
+  ],
+  "sizes": [
+   {
+    "nome": "phone",
+    "n": 83
+   },
+   {
+    "nome": "tablet",
+    "n": 42
+   },
+   {
+    "nome": "desktop",
+    "n": 132
+   },
+   {
+    "nome": "desktophd",
+    "n": 6
+   },
+   {
+    "nome": "unknown",
+    "n": 0
+   }
+  ]
+ },
+ "30g": {
+  "percorsi": [
+   {
+    "path": "/",
+    "titolo": "Ach's Places Guide",
+    "n": 194,
+    "evento": false
+   },
+   {
+    "path": "/?lang=it",
+    "titolo": "Ach's Places Guide",
+    "n": 145,
+    "evento": false
+   },
+   {
+    "path": "app/aperta-dall-icona",
+    "titolo": "Aperta dall'icona",
+    "n": 43,
+    "evento": true
+   },
+   {
+    "path": "/?app=1",
+    "titolo": "Ach's Places Guide",
+    "n": 41,
+    "evento": false
+   },
+   {
+    "path": "guide/vai-dinners",
+    "titolo": "Vai a Ach's Dinners Guide",
+    "n": 33,
+    "evento": true
+   },
+   {
+    "path": "/filtri.html",
+    "titolo": "Luoghi sulla mappa · Ach's Places Guide",
+    "n": 32,
+    "evento": false
+   },
+   {
+    "path": "/?lang=en",
+    "titolo": "Ach's Places Guide",
+    "n": 28,
+    "evento": false
+   },
+   {
+    "path": "/index.html",
+    "titolo": "Ach's Places Guide",
+    "n": 21,
+    "evento": false
+   },
+   {
+    "path": "guide/vai-events",
+    "titolo": "Vai a Ach's Events Guide",
+    "n": 19,
+    "evento": true
+   },
+   {
+    "path": "app/mostrato",
+    "titolo": "Riquadro mostrato",
+    "n": 18,
+    "evento": true
+   },
+   {
+    "path": "filtri/azzera-places",
+    "titolo": "Azzera i filtri (in fondo)",
+    "n": 15,
+    "evento": true
+   },
+   {
+    "path": "/luogo/merate-lc--osservatorio-astronomico-di-brera-sede-d",
+    "titolo": "Osservatorio Astronomico di Brera, sede di Merate, Merate (LC)",
+    "n": 4,
+    "evento": false
+   },
+   {
+    "path": "/luogo/rocca-di-papa-rm--museo-di-geoscienze-mugeos-museo-geofisi",
+    "titolo": "Museo di Geoscienze MUGEOS (Museo Geofisico), Rocca di Papa (RM)",
+    "n": 4,
+    "evento": false
+   },
+   {
+    "path": "guide/vai-dishes",
+    "titolo": "Vai a Ach's Dishes",
+    "n": 4,
+    "evento": true
+   },
+   {
+    "path": "/anteprima/places/claude/places-testata",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 4,
+    "evento": false
+   },
+   {
+    "path": "/luogo/san-romano-in-garfagnana-lu--parco-dell-orecchiella",
+    "titolo": "Parco dell'Orecchiella, San Romano in Garfagnana (LU)",
+    "n": 3,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-proto-schede",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 3,
+    "evento": false
+   },
+   {
+    "path": "/luogo/ghilarza-or--casa-museo-di-antonio-gramsci",
+    "titolo": "Casa museo di Antonio Gramsci, Ghilarza (OR): cosa sapere",
+    "n": 3,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-moderna",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/comune/mompantero-to",
+    "titolo": "Cosa vedere a Mompantero (TO): 7 luoghi da visitare",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/luogo/pieve-santo-stefano-ar--piccolo-museo-del-diario",
+    "titolo": "Piccolo Museo del Diario, Pieve Santo Stefano (AR): cosa sapere",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/luogo/isera-tn--villa-romana-di-isera",
+    "titolo": "Villa romana di Isera, Isera (TN): cosa sapere prima di andarci",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/luogo/modena-mo--collezione-maserati-umberto-panini",
+    "titolo": "Collezione Maserati Umberto Panini, Modena (MO): cosa sapere",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/luogo/abetone-cutigliano-pt--orto-botanico-forestale-dell-abetone",
+    "titolo": "Orto Botanico Forestale dell'Abetone, Abetone Cutigliano (PT)",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-proto-app/prova-comuni.html",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/finestre-recipes",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/grafica-istituzionale",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/comune/agrigento-ag",
+    "titolo": "Cosa vedere a Agrigento (AG): 14 luoghi da visitare",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/?subject=CANCELLA",
+    "titolo": "Ach's Places Guide – what to see in Italy, town by town",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/comune/verbania-vb",
+    "titolo": "Cosa vedere a Verbania (VB): 16 luoghi da visitare | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/prova-filtri/?v=5",
+    "titolo": "Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/prova-filtri/?v=4",
+    "titolo": "Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/comune/lamezia-terme-cz",
+    "titolo": "Cosa vedere a Lamezia Terme (CZ): 3 luoghi da visitare | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "app/chiuso",
+    "titolo": "Riquadro chiuso",
+    "n": 2,
+    "evento": true
+   },
+   {
+    "path": "/comune/modena-mo",
+    "titolo": "Cosa vedere a Modena (MO): 36 luoghi da visitare | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/en/comuni",
+    "titolo": "All towns | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/comune/firenze-fi",
+    "titolo": "Cosa vedere a Firenze (FI): 59 luoghi da visitare | Ach's Places Guide",
+    "n": 2,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-moderna/index.html",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-moderna/filtri.html",
+    "titolo": "Mappa · Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-fai",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/baselga-di-pine-tn",
+    "titolo": "Cosa vedere a Baselga di Pinè (TN): 8 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/pergine-valsugana-tn--castel-pergine",
+    "titolo": "Castel Pergine, Pergine Valsugana (TN): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/monselice-pd--castello-di-monselice-castello-cini",
+    "titolo": "Castello di Monselice (Castello Cini), Monselice (PD)",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/valenza-al--palazzo-valentino",
+    "titolo": "Palazzo Valentino, Valenza (AL): cosa sapere prima di andarci",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/valenza-al--duomo-di-santa-maria-maggiore",
+    "titolo": "Duomo di Santa Maria Maggiore, Valenza (AL): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/pino-d-asti-at--castello-gavotti",
+    "titolo": "Castello Gavotti, Pino d'Asti (AT): cosa sapere prima di andarci",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/reana-del-rojale-ud--mostra-del-cartoccio-e-del-vimine",
+    "titolo": "Mostra del cartoccio e del vimine, Reana del Rojale (UD)",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/mineo-ct--casa-museo-luigi-capuana",
+    "titolo": "Casa museo Luigi Capuana, Mineo (CT): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/mineo-ct--area-archeologica-di-palike",
+    "titolo": "Area archeologica di Palikè, Mineo (CT): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/mereto-di-tomba-ud",
+    "titolo": "Cosa vedere a Mereto di Tomba (UD): 4 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/andezeno-to",
+    "titolo": "Cosa vedere a Andezeno (TO): 5 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/cuorgne-to",
+    "titolo": "Cosa vedere a Cuorgnè (TO): 8 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/villa-d-alme-bg",
+    "titolo": "Cosa vedere a Villa d'Almè (BG): 3 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/piacenza-pc--kronos-museo-della-cattedrale-e-salita-a",
+    "titolo": "Kronos, Museo della Cattedrale e salita alla cupola, Piacenza (PC)",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/polla-sa--convento-e-santuario-di-sant-antonio",
+    "titolo": "Convento e santuario di Sant'Antonio, Polla (SA): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/san-tammaro-ce--boschi-di-carditello-e-area-pic-nic-don-",
+    "titolo": "Boschi di Carditello e area pic-nic Don Peppe Diana, San Tammaro (CE)",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/tesero-tn--centro-di-documentazione-stava-1985",
+    "titolo": "Centro di documentazione Stava 1985, Tesero (TN): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/reggiolo-re--teatro-comunale-giovanni-rinaldi",
+    "titolo": "Teatro comunale Giovanni Rinaldi, Reggiolo (RE): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/montecatini-val-di-cecina-pi--museo-delle-miniere",
+    "titolo": "Museo delle Miniere, Montecatini Val di Cecina (PI): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/rocca-pietore-bl--serrai-di-sottoguda",
+    "titolo": "Serrai di Sottoguda, Rocca Pietore (BL): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/dalmine-bg--museo-del-presepio",
+    "titolo": "Museo del Presepio, Dalmine (BG): cosa sapere prima di andarci",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/predazzo-tn--centro-visitatori-di-paneveggio",
+    "titolo": "Centro visitatori di Paneveggio, Predazzo (TN): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/troina-en--complesso-museale-torre-capitania",
+    "titolo": "Complesso Museale Torre Capitania, Troina (EN): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/troina-en--museo-della-fotografia-di-robert-capa",
+    "titolo": "Museo della Fotografia di Robert Capa, Troina (EN): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/cavalese-tn--palazzo-della-magnifica-comunita-di-fiem",
+    "titolo": "Palazzo della Magnifica Comunità di Fiemme e Pinacoteca, Cavalese (TN)",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/attimis-ud--museo-archeologico-medioevale",
+    "titolo": "Museo archeologico medioevale, Attimis (UD): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/quistello-mn--museo-diffuso-giuseppe-gorni",
+    "titolo": "Museo diffuso Giuseppe Gorni, Quistello (MN): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/comacchio-fe--museo-delta-antico",
+    "titolo": "Museo Delta Antico, Comacchio (FE): cosa sapere prima di andarci",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/san-secondo-di-pinerolo-to--castello-e-parco-di-miradolo",
+    "titolo": "Castello e Parco di Miradolo, San Secondo di Pinerolo (TO)",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/almese-to",
+    "titolo": "Cosa vedere a Almese (TO): 5 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/vermiglio-tn",
+    "titolo": "Cosa vedere a Vermiglio (TN): 5 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/vermiglio-tn--forte-strino",
+    "titolo": "Forte Strino, Vermiglio (TN): cosa sapere prima di andarci",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/corte-franca-bs--chiesa-di-san-salvatore",
+    "titolo": "Chiesa di San Salvatore, Corte Franca (BS): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/firenze-fi--museo-la-specola",
+    "titolo": "Museo La Specola, Firenze (FI): cosa sapere prima di andarci",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-scheda-turista",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-grafica-dinners/filtri.html",
+    "titolo": "Mappa · Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/regione/toscana",
+    "titolo": "Cosa vedere in Toscana: 1294 luoghi in 218 comuni",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/napoli-na",
+    "titolo": "Cosa vedere a Napoli (NA): 74 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/cervia-ra",
+    "titolo": "Cosa vedere a Cervia (RA): 7 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-sostenitori-scuro",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-pm-fondo/index.html",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-pm-fondo/filtri.html",
+    "titolo": "Mappa · Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-pm-fondo",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-zone-menu",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-testata/filtri.html",
+    "titolo": "Mappa · Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/pino-torinese-to--infini-to-planetario-di-torino-museo-del",
+    "titolo": "Infini.to - Planetario di Torino, Museo dell'Astronomia e dello Spazio, Pino Torinese (TO)",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/siligo-ss",
+    "titolo": "Cosa vedere a Siligo (SS): 6 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-proto-app/index.html",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-proto-app/prova-mappa.html",
+    "titolo": "Mappa · Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/firenze-fi--basilica-di-santa-croce",
+    "titolo": "Basilica di Santa Croce, Firenze (FI): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-proto-app/filtri.html",
+    "titolo": "Mappa · Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-link-osm",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-link-23-11",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/places-proto-comune/comune/gallipoli-le",
+    "titolo": "Cosa vedere a Gallipoli (LE): 11 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/bergamo-bg--basilica-di-santa-maria-maggiore",
+    "titolo": "Basilica di Santa Maria Maggiore, Bergamo (BG): cosa sapere",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/morrovalle-mc",
+    "titolo": "Cosa vedere a Morrovalle (MC): 13 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima/places/claude/grafica-istituzionale/filtri.html",
+    "titolo": "Mappa · Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/massa-marittima-gr",
+    "titolo": "Cosa vedere a Massa Marittima (GR): 12 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/firenze-fi--museo-stibbert",
+    "titolo": "Museo Stibbert, Firenze (FI): cosa sapere prima di andarci",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/anteprima",
+    "titolo": "Ach's Places Guide – cosa vedere in Italia, comune per comune",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/comune/urbino-pu",
+    "titolo": "Cosa vedere a Urbino (PU): 17 luoghi da visitare",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "app/tocco",
+    "titolo": "Riquadro toccato",
+    "n": 1,
+    "evento": true
+   },
+   {
+    "path": "/prova-filtri/?v=3",
+    "titolo": "Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   },
+   {
+    "path": "/luogo/firenze-fi--orto-botanico-giardino-dei-semplici",
+    "titolo": "Orto botanico, Giardino dei Semplici, Firenze (FI): cosa sapere prima di andarci | Ach's Places Guide",
+    "n": 1,
+    "evento": false
+   }
+  ],
+  "toprefs": [
+   {
+    "nome": "(diretto)",
+    "n": 413
+   },
+   {
+    "nome": "achplaces.com",
+    "n": 42
+   },
+   {
+    "nome": "P3-1L",
+    "n": 37
+   },
+   {
+    "nome": "P2",
+    "n": 28
+   },
+   {
+    "nome": "Google",
+    "n": 20
+   },
+   {
+    "nome": "P3-1LC",
+    "n": 18
+   },
+   {
+    "nome": "achdinners.com",
+    "n": 17
+   },
+   {
+    "nome": "P3-2L",
+    "n": 16
+   },
+   {
+    "nome": "achplaces.com/filtri.html",
+    "n": 15
+   },
+   {
+    "nome": "achevents.com",
+    "n": 14
+   },
+   {
+    "nome": "P3-2L4",
+    "n": 10
+   },
+   {
+    "nome": "P3-13",
+    "n": 7
+   }
+  ],
+  "locations": [
+   {
+    "nome": "Italy",
+    "n": 601
+   },
+   {
+    "nome": "United States",
+    "n": 79
+   },
+   {
+    "nome": "United Kingdom",
+    "n": 9
+   },
+   {
+    "nome": "France",
+    "n": 6
+   },
+   {
+    "nome": "Canada",
+    "n": 5
+   },
+   {
+    "nome": "Germany",
+    "n": 3
+   },
+   {
+    "nome": "Albania",
+    "n": 2
+   },
+   {
+    "nome": "Israel",
+    "n": 2
+   },
+   {
+    "nome": "Mauritius",
+    "n": 2
+   },
+   {
+    "nome": "Sweden",
+    "n": 2
+   },
+   {
+    "nome": "United Arab Emirates",
+    "n": 1
+   },
+   {
+    "nome": "Australia",
+    "n": 1
+   }
+  ],
+  "systems": [
+   {
+    "nome": "Windows",
+    "n": 328
+   },
+   {
+    "nome": "iOS",
+    "n": 204
+   },
+   {
+    "nome": "macOS",
+    "n": 135
+   },
+   {
+    "nome": "Android",
+    "n": 35
+   },
+   {
+    "nome": "Linux",
+    "n": 17
+   }
+  ],
+  "browsers": [
+   {
+    "nome": "Chrome",
+    "n": 381
+   },
+   {
+    "nome": "Safari",
+    "n": 319
+   },
+   {
+    "nome": "Firefox",
+    "n": 19
+   }
+  ],
+  "sizes": [
+   {
+    "nome": "phone",
+    "n": 235
+   },
+   {
+    "nome": "tablet",
+    "n": 132
+   },
+   {
+    "nome": "desktop",
+    "n": 344
+   },
+   {
+    "nome": "desktophd",
+    "n": 9
+   },
+   {
+    "nome": "unknown",
+    "n": 0
+   }
+  ]
+ }
+}
