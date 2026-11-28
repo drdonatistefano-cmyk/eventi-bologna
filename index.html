@@ -1311,6 +1311,15 @@ html:not(.beta-scuro) body .cards{gap:12px}
 html:not(.beta-scuro) body .vtile{border-bottom-color:rgba(20,40,70,.13);background:linear-gradient(180deg,#fff,#f4f7fb)}
 html.beta-scuro body{--ril-1:inset 0 1px 0 rgba(255,255,255,.06),0 2px 4px rgba(0,0,0,.5),0 18px 36px -12px rgba(0,0,0,.85)}
 html.beta-scuro body .cards{gap:12px}
+/* ===== 28/11 17:18, Stefano: «i colori di mostre ecc. meno vivi, più in linea con il tema blu» ===== */
+html:not(.beta-scuro):root{--rock:#4a5f9e;--jazz:#2f7a80;--pop:#6a5c9c;--teatro:#3f7f6a;--classica:#8c6d3f;--club:#9a4f6e;--libri:#9a6a35;--ochre:#a8742d;
+ --calcio:#3f7d55;--basket:#a8643a;--volley:#4a6fa5;--tennis:#8f7a35;--hockey:#2f6f8a;--confer:#4f6f9e;--visite:#2f7f80}
+html.beta-scuro:root{--rock:#9aaee6;--jazz:#7fc3c6;--pop:#b3a8de;--teatro:#8fc7b0;--classica:#d4b58a;--club:#d7a0b7;--libri:#dab48a;--ochre:#dfb07a;
+ --calcio:#8fc79f;--basket:#dfa27f;--volley:#9ab7e0;--tennis:#d2c07f;--hockey:#86bcd4;--confer:#9fb6db;--visite:#86c7c7}
+html body .modes [data-mode="s"]{--chip:#34597d;--chip2:#6b8fb2}html body .modes [data-mode="i"]{--chip:#3a6578;--chip2:#7099ab}
+html body .modes [data-mode="m"]{--chip:#47557e;--chip2:#7d89b0}html body .modes [data-mode="c"]{--chip:#2e4a66;--chip2:#60809f}
+html body .modes [data-mode="p"]{--chip:#3b6a6e;--chip2:#70999c}
+html body .card.mini::before{box-shadow:none;background:var(--g,var(--beta-a))}
 </style>
 </head>
 <body class="nA">
