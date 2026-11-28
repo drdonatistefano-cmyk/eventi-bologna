@@ -1320,6 +1320,52 @@ html body .modes [data-mode="s"]{--chip:#34597d;--chip2:#6b8fb2}html body .modes
 html body .modes [data-mode="m"]{--chip:#47557e;--chip2:#7d89b0}html body .modes [data-mode="c"]{--chip:#2e4a66;--chip2:#60809f}
 html body .modes [data-mode="p"]{--chip:#3b6a6e;--chip2:#70999c}
 html body .card.mini::before{box-shadow:none;background:var(--g,var(--beta-a))}
+/* ===== 28/11 17:33, Stefano: «abbellisci anche i sotto menu» (finestra dei generi, foglio dei filtri, date, Calendario/Luoghi) ===== */
+html body #nAf details[data-sec="g"]{--sic:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.5 12.5l8-8H20v8.5l-8 8z M15.5 8.5h.01'/%3E%3C/svg%3E")}html body #nAf details[data-sec="m"]{--sic:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 6h16v14H4z M4 10h16 M8 3v4 M16 3v4'/%3E%3C/svg%3E")}html body #nAf details[data-sec="c"]{--sic:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z M12 10h.01'/%3E%3C/svg%3E")}html body #nAf details[data-sec="y"]{--sic:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 21V9l8-5 8 5v12 M9 21v-6h6v6'/%3E%3C/svg%3E")}html body #nAf details[data-sec="l"]{--sic:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 20h18 M5 20V10l7-5 7 5v10 M9 13h6'/%3E%3C/svg%3E")}html body #nAf details[data-sec="t"]{--sic:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 6h12 M8 12h12 M8 18h12 M4 6h.01 M4 12h.01 M4 18h.01'/%3E%3C/svg%3E")}html body #nAf details[data-sec="r"]{--sic:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.5 6.7 19.4l1.2-6L3.4 9.3l6-.7z'/%3E%3C/svg%3E")}html body #nAf details[data-sec="d"]{--sic:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 8.5V7h16v1.5a2.5 2.5 0 0 0 0 5V17H4v-3.5a2.5 2.5 0 0 0 0-5z'/%3E%3C/svg%3E")}html body #nAf details[data-sec="z"]{--sic:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v18 M3 12h18'/%3E%3C/svg%3E")}
+/* foglio dei filtri */
+html:not(.beta-scuro) body #nAf .sh{background:linear-gradient(180deg,#f7f9fc,#eef2f6)!important;color:var(--ink)}
+html body #nAf .sh{box-shadow:0 -18px 50px -10px rgba(16,32,56,.35);border-top:1px solid rgba(255,255,255,.7)}
+html body #nAf .hd h2{font:800 22px var(--sans)!important;letter-spacing:-.02em}
+html body #nAf details{background:linear-gradient(180deg,#fff,#fbfcfe);border:1px solid rgba(20,40,70,.07);border-radius:18px;margin:0 0 12px;padding:4px 14px 2px;box-shadow:inset 0 1px 0 #fff,var(--ril-1)}
+html body #nAf summary{font:700 16px var(--sans)!important;padding:10px 0!important;border:0!important}
+html body #nAf summary .si{font-size:0!important;width:30px!important;height:30px;border-radius:10px;position:relative;flex:none;
+ background:linear-gradient(145deg,#6b8fb2,#34597d);box-shadow:inset 0 1px 0 rgba(255,255,255,.4),0 4px 10px -3px rgba(52,89,125,.6)}
+html body #nAf summary .si::after{content:"";position:absolute;inset:7px;background:#fff;-webkit-mask:var(--sic) center/contain no-repeat;mask:var(--sic) center/contain no-repeat}
+html body #nAf .o{min-height:40px;border-radius:999px!important;border:1px solid rgba(20,40,70,.09)!important;background:linear-gradient(180deg,#fff,#f6f8fb)!important;color:var(--ink)!important;
+ font-weight:600!important;box-shadow:inset 0 1px 0 #fff,0 1px 2px rgba(16,32,56,.08),0 4px 10px -6px rgba(16,32,56,.25);transition:transform .12s ease}
+html body #nAf .o:active{transform:scale(.97)}
+html body #nAf .o[aria-pressed=true]{background:linear-gradient(180deg,#4a7096,#34597d)!important;border-color:#34597d!important;color:#fff!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 6px 14px -6px rgba(52,89,125,.7)}
+html body #nAf .o:disabled{box-shadow:none;background:transparent!important}
+html body #nAf .sub{font:700 11px var(--sans);letter-spacing:.09em;color:var(--mute)}
+html body #nAf .ft{background:color-mix(in srgb,#eef2f6 85%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid rgba(20,40,70,.08)}
+html body #nAf .ft .a2{box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 8px 18px -8px rgba(52,89,125,.8)}
+html body #nAf .ft .a1{background:linear-gradient(180deg,#fff,#f4f6f9);box-shadow:var(--ril-1)}
+/* finestra dei generi (tocco su una sezione) */
+html body #betaGen .bg-pan{background:linear-gradient(180deg,#f8fafc,#eef2f6)!important;box-shadow:0 -18px 50px -10px rgba(16,32,56,.35);border-top:1px solid rgba(255,255,255,.8)}
+html body #betaGen .bg-fondo{background:rgba(16,28,44,.38);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+html body #betaGen .bg-testa b{font:800 1.3rem/1.1 var(--sans)!important;letter-spacing:-.02em}
+html body #betaGen .bg-x{background:linear-gradient(180deg,#fff,#f3f5f8);border-color:rgba(20,40,70,.1);box-shadow:var(--ril-1)}
+html body #betaGen .ch.gq{background:linear-gradient(180deg,#fff,#f7f9fb)!important;border:1px solid rgba(20,40,70,.08)!important;box-shadow:inset 0 1px 0 #fff,0 1px 2px rgba(16,32,56,.07),0 8px 16px -10px rgba(16,32,56,.3);border-radius:16px!important}
+html body #betaGen .ch.gq::before{width:12px!important;height:12px!important;border-radius:50%;background:radial-gradient(circle at 35% 30%,color-mix(in srgb,var(--gc,#3d5f7d) 55%,#fff),var(--gc,#3d5f7d))!important;box-shadow:0 2px 5px -1px color-mix(in srgb,var(--gc,#3d5f7d) 60%,transparent)}
+html body #betaGen .ch.gq[aria-pressed="true"]{background:linear-gradient(180deg,#4a7096,#34597d)!important;color:#fff!important;border-color:#34597d!important}
+html body #betaGen .bg-tutto{border-radius:16px!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 8px 18px -8px rgba(52,89,125,.8)}
+/* riga delle date e della città, Calendario/Luoghi */
+html:not(.beta-scuro) body #nA .rowq .ch:not([aria-pressed="true"]){background:linear-gradient(180deg,#fff,#f5f7fa)!important;border:1px solid rgba(20,40,70,.07)!important;box-shadow:inset 0 1px 0 #fff,0 1px 2px rgba(16,32,56,.07),0 4px 10px -6px rgba(16,32,56,.25)}
+html body #nA .rowq .ch[aria-pressed="true"]{box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 6px 14px -6px rgba(52,89,125,.7)}
+html:not(.beta-scuro) body .cntrow .seg{background:linear-gradient(180deg,#fff,#f4f6f9)!important;box-shadow:inset 0 1px 0 #fff,var(--ril-1)!important;border:1px solid rgba(20,40,70,.07)!important}
+html body .cntrow .seg button.on{box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 4px 10px -4px rgba(52,89,125,.7)}
+html body .fabf{box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 10px 22px -8px rgba(52,89,125,.8)!important}
+/* scuro */
+html.beta-scuro body #nAf .sh,html.beta-scuro body #betaGen .bg-pan{background:linear-gradient(180deg,#1a1f27,#12161c)!important;border-top-color:rgba(255,255,255,.06)}
+html.beta-scuro body #nAf details{background:linear-gradient(180deg,#1f242c,#1a1e25);border-color:#2c333d}
+html.beta-scuro body #nAf .o:not([aria-pressed=true]),html.beta-scuro body #betaGen .ch.gq:not([aria-pressed="true"]),html.beta-scuro body #betaGen .bg-x{background:linear-gradient(180deg,#232932,#1c2129)!important;border-color:#2f3742!important;color:#e8ebf0!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 6px 14px -8px rgba(0,0,0,.8)}
+html.beta-scuro body #nAf .ft{background:color-mix(in srgb,#12161c 85%,transparent);border-top-color:#2a313b}
+html.beta-scuro body #nAf .ft .a1{background:linear-gradient(180deg,#232932,#1c2129)}
+html body #nAf .hd button{background:linear-gradient(180deg,#fff,#f3f5f8)!important;border:1px solid rgba(20,40,70,.1)!important;box-shadow:var(--ril-1);color:var(--ink)!important}
+html.beta-scuro body #nAf .hd h2,html.beta-scuro body #nAf summary,html.beta-scuro body #nAf .ft .a1{color:#e8ebf0!important}
+html.beta-scuro body #nAf .hd button{background:linear-gradient(180deg,#232932,#1c2129)!important;border-color:#2f3742!important;color:#e8ebf0!important}
+html.beta-scuro body #nAf .ft .a1{border-color:#2f3742!important}
+html.beta-scuro body #nAf .ft .a2{background:linear-gradient(180deg,#4f7aa3,#34597d)!important;color:#fff!important}
 </style>
 </head>
 <body class="nA">
@@ -2375,6 +2421,11 @@ body.nA #qwrap{display:none!important} body.nA{--qh:0px}
   if(box&&t.closest("#betaGen .ch")){setTimeout(chiudi,200);return}
   var mo=t.closest(".modes [data-mode]");if(mo){var m=mo.getAttribute("data-mode");setTimeout(function(){apri(m)},60)}},true);
  document.addEventListener("keydown",function(e){if(e.key==="Escape")chiudi()});
+ /* 28/11/2026 (Stefano: «abbellisci anche i sotto menu»): niente emoji nei pulsanti del foglio dei filtri, solo testo */
+ var EMO=/^(?:\p{Extended_Pictographic}|\p{Regional_Indicator})+\uFE0F?\s*/u,mo2=null;
+ function pul(r){r.querySelectorAll(".o").forEach(function(b){var n=b.firstChild;if(n&&n.nodeType===3&&EMO.test(n.nodeValue))n.nodeValue=n.nodeValue.replace(EMO,"")})}
+ function aggancia(){var f=document.getElementById("nAf");if(!f)return;pul(f);if(!mo2){mo2=new MutationObserver(function(){pul(f)});mo2.observe(f,{childList:true,subtree:true})}}
+ aggancia();document.addEventListener("click",function(){setTimeout(aggancia,30);setTimeout(aggancia,300)},true);
 }catch(_){}})();
 </script>
 </body>
