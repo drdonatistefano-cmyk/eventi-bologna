@@ -342,5 +342,17 @@ prova("indirizzi: via e numero insieme", PE.via_civico({"via": "Via Cartoleria",
 prova("indirizzi: senza numero civico solo la via, senza spazio in più",
       PE.via_civico({"via": "Largo Gustav Mahler", "civico": ""}) == "Largo Gustav Mahler")
 
+# ---------------------------------------------------------------- mostre: minimo a mano (28/11/2026)
+import json, subprocess as _sp2, tempfile as _tf2
+_d = _tf2.mkdtemp()
+_m = [dict(titolo=f"Mostra {i}", sede="Museo Civico San Domenico", citta="Forlì", inizio="2026-11-01", fine="2027-01-10",
+           categoria="Pittura", descrizione="Mostra di pittura", ingresso="da verificare", orari="", fonte="https://example.org/" + str(i),
+           sito="", biglietti="", biglietti_tipo="") for i in range(3)]
+json.dump(_m, open(os.path.join(_d, "mostre.json"), "w"))
+_ag = os.path.join(os.path.dirname(os.path.abspath(__file__)), "aggiorna.py")
+_r1 = _sp2.run([sys.executable, _ag, "mostre.json", "--mostre", "--citta", "fc", "--oggi", "2026-11-28"], cwd=_d, capture_output=True)
+_r2 = _sp2.run([sys.executable, _ag, "mostre.json", "--mostre", "--citta", "fc", "--oggi", "2026-11-28", "--minimo", "3"], cwd=_d, capture_output=True)
+prova("mostre: 3 mostre senza --minimo non si scrivono, con --minimo 3 sì", _r1.returncode == 1 and _r2.returncode == 0)
+
 print(f"\n{len(FALLITE)} prove fallite" if FALLITE else "\nTutte le prove passano")
 sys.exit(1 if FALLITE else 0)

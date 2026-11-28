@@ -140,7 +140,9 @@ def mostre(src, oggi, out):
     for x in avvisi[:40]: print("  avviso:", x)
     if errori:
         print(f"\n{len(errori)} ERRORI – niente è stato scritto:"); [print("  errore:", x) for x in errori]; sys.exit(1)
-    if len(unici) < 5: print("\nERRORE: meno di 5 mostre, elenco probabilmente incompleto – niente è stato scritto."); sys.exit(1)
+    # 28/11/2026: --minimo N per le province nuove con poche mostre vere (Forlì-Cesena ne ha 3): si scrive solo a mano, mai nei flussi
+    min_m = int(sys.argv[sys.argv.index("--minimo") + 1]) if "--minimo" in sys.argv else 5
+    if len(unici) < min_m: print(f"\nERRORE: meno di {min_m} mostre, elenco probabilmente incompleto – niente è stato scritto."); sys.exit(1)
     blob = json.dumps({"aggiornato": oggi, "mostre": unici}, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     open(out, "w", encoding="utf-8").write("window.MOSTRE_DATA=" + blob + ";\n")
     json.dump(unici, open("mostre.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
