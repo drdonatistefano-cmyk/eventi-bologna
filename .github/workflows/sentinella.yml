@@ -2,6 +2,7 @@ name: Sentinella cartelloni
 on:
   schedule:
     - cron: "17 21 * * 0"   # domenica sera, prima del giro del lunedì
+    - cron: "17 21 * * 3"   # 28/11/2026: anche mercoledì sera (gratis: repository pubblico, un minuto di giro)
   workflow_dispatch:
 permissions:
   contents: write
@@ -10,10 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: python3 scripts/fonti.py --scrivi   # 28/11/2026: l'elenco viene dalla mappa delle fonti (dati/fonti.json)
       - run: python3 scripts/sentinella.py
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dati/sentinella_stato.json
+          git add dati/sentinella_stato.json dati/sentinella.json
           git commit -m "Sentinella $(TZ=Europe/Rome date +%F)" || echo "nessuna modifica"
           git pull --rebase && git push

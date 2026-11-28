@@ -1,0 +1,892 @@
+{
+ "nota": "Mappa delle fonti di Events (28/11/2026, Stefano: «mappare tutte le fonti affinché possano essere consultate agevolmente ogni volta che si cerca aggiornamenti… controllo gratis o super economico»). È l'elenco unico: le pagine con «sorveglia»: true le controllano gratis la sentinella e il flusso Cartelloni (GitHub, repository pubblico: minuti gratuiti); le altre si leggono a mano dall'officina quando servono. Consultazione: python3 scripts/fonti.py (riepilogo), --citta XX, --novita, --url XX, --md. dati/sentinella.json è generato da qui (python3 scripts/fonti.py --scrivi): non si cambia a mano.",
+ "segnaposti": {
+  "arte": "codice arte.it della città (citta_cfg.py)",
+  "movieplayer": "codice movieplayer (citta_cfg.py)",
+  "aaaa": "anno",
+  "mm": "mese a due cifre",
+  "mese_nome": "mese in lettere",
+  "provincia": "forli-cesena, modena, firenze…",
+  "comune": "nome del comune come in cinemap",
+  "stagione": "anno d'inizio della stagione"
+ },
+ "pagine": [
+  {
+   "citta": "bo",
+   "nome": "Bologna Welcome – eventi",
+   "url": "https://www.bolognawelcome.com/it/eventi",
+   "tipo": "portale",
+   "copre": [
+    "spettacoli",
+    "mostre",
+    "incontri"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Bologna Teatro",
+   "url": "https://www.bolognateatro.it/home",
+   "tipo": "portale",
+   "copre": [
+    "spettacoli",
+    "mostre",
+    "incontri"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Duse",
+   "url": "https://teatroduse.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Comunale (TCBO)",
+   "url": "https://www.tcbo.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "ERT – Arena del Sole e Moline",
+   "url": "https://bologna.emiliaromagnateatro.com/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Celebrazioni",
+   "url": "https://teatrocelebrazioni.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Dehon",
+   "url": "https://www.teatrodehon.it/index.php",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Testoni Ragazzi",
+   "url": "https://www.testoniragazzi.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Unipol Arena",
+   "url": "https://www.unipolarena.it/",
+   "tipo": "palazzetto",
+   "copre": [
+    "concerti",
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Stignani (Imola)",
+   "url": "https://www.teatrostignani.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Laura Betti (Casalecchio)",
+   "url": "https://www.teatrocasalecchio.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Consorziale (Budrio)",
+   "url": "https://www.teatroconsorzialebudrio.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Stagione Agorà (Reno Galliera)",
+   "url": "https://stagioneagora.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Cassero (Castel San Pietro)",
+   "url": "https://www.labottegadelbuonumore.it/teatro-comunale-cassero/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Teatro Spazio Reno (Calderara)",
+   "url": "https://www.culturara.it/",
+   "tipo": "portale",
+   "copre": [
+    "spettacoli",
+    "mostre",
+    "incontri"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "ITC Teatro (San Lazzaro)",
+   "url": "https://www.teatrodellargine.org/itcteatro",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Appennino bolognese – eventi",
+   "url": "https://appenninobolognese.cittametropolitana.bo.it/it/eventi",
+   "tipo": "portale",
+   "copre": [
+    "spettacoli",
+    "mostre",
+    "incontri"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Cultura Imola",
+   "url": "https://www.culturaimola.it/",
+   "tipo": "portale",
+   "copre": [
+    "spettacoli",
+    "mostre",
+    "incontri"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Porretta Cinema",
+   "url": "https://porrettacinema.com/",
+   "tipo": "cinema",
+   "copre": [
+    "cinema"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "mi",
+   "nome": "Songkick – concerti Milano",
+   "url": "https://www.songkick.com/metro-areas/30338-italy-milan",
+   "tipo": "aggregatore",
+   "copre": [
+    "concerti"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "mi",
+   "nome": "Teatro alla Scala – stagione",
+   "url": "https://www.teatroallascala.org/it/stagione/2026-2027",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli",
+    "concerti"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "mi",
+   "nome": "Piccolo Teatro",
+   "url": "https://www.piccoloteatro.org/it",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "mi",
+   "nome": "Teatro Manzoni",
+   "url": "https://www.teatromanzoni.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "mi",
+   "nome": "Teatro Arcimboldi",
+   "url": "https://www.teatroarcimboldi.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "mi",
+   "nome": "Teatro dal Verme – I Pomeriggi Musicali",
+   "url": "https://www.ipomeriggi.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli",
+    "concerti"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "mi",
+   "nome": "Teatro Franco Parenti",
+   "url": "https://www.teatrofrancoparenti.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "mi",
+   "nome": "Teatro Elfo Puccini",
+   "url": "https://www.elfo.org/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "mi",
+   "nome": "Blue Note Milano",
+   "url": "https://www.bluenotemilano.com/",
+   "tipo": "locale",
+   "copre": [
+    "concerti"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "mi",
+   "nome": "arte.it – mostre a Milano",
+   "url": "https://www.arte.it/calendario-arte/milano",
+   "tipo": "aggregatore",
+   "copre": [
+    "mostre"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "ra",
+   "nome": "Ravenna – eventi del sito turistico del Comune (Alighieri, Ravenna Festival e altri)",
+   "url": "https://www.turismo.ra.it/eventi/",
+   "tipo": "portale",
+   "copre": [
+    "spettacoli",
+    "mostre",
+    "incontri"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "ra",
+   "nome": "Mama's Club – eventi",
+   "url": "https://www.mamasclub.it/eventi/",
+   "tipo": "locale",
+   "copre": [
+    "concerti"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "ra",
+   "nome": "Teatro Socjale (Piangipane) – programma",
+   "url": "https://www.teatrosocjale.it/programma-eventi/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "ra",
+   "nome": "Teatro Masini (Faenza) – Accademia Perduta",
+   "url": "https://accademiaperduta.it/teatro-masini-faenza/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "ra",
+   "nome": "Ravenna Teatro – Teatro Rasi",
+   "url": "https://www.ravennateatro.com/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "ra",
+   "nome": "Teatro Rossini (Lugo) – spettacoli",
+   "url": "https://www.teatrorossini.it/spettacoli/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "fe",
+   "nome": "Teatro Comunale Claudio Abbado",
+   "url": "https://www.teatrocomunaleferrara.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "fe",
+   "nome": "Ferrara Musica – calendario",
+   "url": "https://ferraramusica.it/calendario/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli",
+    "concerti"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "fe",
+   "nome": "Teatro Nuovo – calendario",
+   "url": "https://www.teatronuovoferrara.com/it/spettacoli/calendario-spettacoli.html",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "fe",
+   "nome": "Jazz Club Ferrara",
+   "url": "https://jazzclubferrara.com/",
+   "tipo": "locale",
+   "copre": [
+    "concerti"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "fe",
+   "nome": "Teatro De Micheli (Copparo) – stagione teatrale",
+   "url": "https://www.teatrodemicheli.it/nqcontent.cfm?a_id=14205",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "fe",
+   "nome": "Teatro Borgatti (Cento) – stagione teatrale",
+   "url": "https://www.fondazioneteatroborgatti.it/spettacoli-teatrali/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "bo",
+   "nome": "Cantina Bentivoglio – programma del mese (PDF)",
+   "url": "https://www.cantinabentivoglio.it/",
+   "tipo": "locale",
+   "copre": [
+    "concerti"
+   ],
+   "sorveglia": true,
+   "pdf": "progr|calendario|programma"
+  },
+  {
+   "citta": "mo",
+   "nome": "Teatro Comunale Pavarotti-Freni",
+   "url": "https://www.teatrocomunalemodena.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "mo",
+   "nome": "ERT Emilia Romagna Teatro (Storchi, Passioni)",
+   "url": "https://emiliaromagnateatro.com/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "mo",
+   "nome": "VisitModena – eventi",
+   "url": "https://www.visitmodena.it/it/eventi",
+   "tipo": "portale",
+   "copre": [
+    "spettacoli",
+    "mostre",
+    "incontri"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "fc",
+   "nome": "Accademia Perduta Romagna Teatri (Teatro Diego Fabbri, Forlì)",
+   "url": "https://www.accademiaperduta.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "fc",
+   "nome": "ERT a Cesena (Teatro Bonci)",
+   "url": "https://www.teatrobonci.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "fi",
+   "nome": "Fondazione Teatro della Toscana (Pergola, Niccolini, Era)",
+   "url": "https://www.teatrodellatoscana.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "fi",
+   "nome": "Teatro Verdi Firenze",
+   "url": "https://www.teatroverdifirenze.it/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "fi",
+   "nome": "Maggio Musicale Fiorentino",
+   "url": "https://www.maggiofiorentino.com/",
+   "tipo": "teatro",
+   "copre": [
+    "spettacoli",
+    "concerti"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "fi",
+   "nome": "Destination Florence – eventi",
+   "url": "https://www.feelflorence.it/it/eventi",
+   "tipo": "portale",
+   "copre": [
+    "spettacoli",
+    "mostre",
+    "incontri"
+   ],
+   "sorveglia": true
+  },
+  {
+   "citta": "mo",
+   "nome": "Mentelocale – cosa fare a Modena (aggregatore con schede JSON-LD)",
+   "url": "https://www.mentelocale.it/modena/",
+   "tipo": "aggregatore",
+   "copre": [
+    "spettacoli",
+    "concerti",
+    "mostre"
+   ],
+   "sorveglia": true,
+   "note": "Schede degli eventi con dati strutturati (data, luogo, link HappyTicket). Le schede senza testo della redazione vengono dal feed HappyTicket: comprendono anche film nei cinema-teatro, da scartare. In pagina i primi 120 appuntamenti per data."
+  },
+  {
+   "citta": "fi",
+   "nome": "Mentelocale – cosa fare a Firenze",
+   "url": "https://www.mentelocale.it/firenze/",
+   "tipo": "aggregatore",
+   "copre": [
+    "spettacoli",
+    "concerti",
+    "mostre"
+   ],
+   "sorveglia": true,
+   "note": "Come Modena; molte schede di musei e visite da scartare. In pagina i primi 120 appuntamenti per data."
+  },
+  {
+   "citta": "fc",
+   "nome": "Mentelocale – cosa fare a Forlì-Cesena",
+   "url": "https://www.mentelocale.it/forli-cesena/",
+   "tipo": "aggregatore",
+   "copre": [
+    "spettacoli",
+    "concerti",
+    "mostre"
+   ],
+   "sorveglia": true,
+   "note": "Come Modena: la fonte principale dei teatri della provincia (Bonci, Fabbri, Piccolo, Testori, Dragoni, Cesenatico). In pagina i primi 120 appuntamenti per data."
+  },
+  {
+   "citta": "fi",
+   "nome": "Teatro Cartiere Carrara – tutti gli eventi",
+   "url": "https://www.teatrocartierecarrara.it/eventi/",
+   "tipo": "teatro",
+   "copre": [
+    "concerti",
+    "spettacoli"
+   ],
+   "sorveglia": true,
+   "note": "Ogni evento ha la sua pagina con «#### giorno data ore»; tuscanyhall.it porta qui."
+  },
+  {
+   "citta": "fi",
+   "nome": "Viper Theatre – concerti",
+   "url": "https://www.viperclub.eu/",
+   "tipo": "locale",
+   "copre": [
+    "concerti"
+   ],
+   "sorveglia": true,
+   "note": "Elenco dei concerti nei dati strutturati della pagina (nome e data)."
+  },
+  {
+   "citta": "fi",
+   "nome": "Mandela Forum – eventi",
+   "url": "https://www.mandelaforum.it/",
+   "tipo": "palazzetto",
+   "copre": [
+    "concerti",
+    "spettacoli"
+   ],
+   "sorveglia": true,
+   "note": "Prossimi concerti e date in prima pagina."
+  },
+  {
+   "citta": "tutte",
+   "nome": "arte.it – calendario mostre del mese",
+   "url": "https://www.arte.it/calendario-arte/{arte}/{aaaa}/{mm}/",
+   "tipo": "aggregatore",
+   "copre": [
+    "mostre"
+   ],
+   "sorveglia": false,
+   "note": "Lo legge già il flusso Eventi automatici (mese corrente e prossimo). A mano: le aperture dei mesi dopo. Nel testo la riga «Dal … al … Comune | Sede» viene prima del titolo."
+  },
+  {
+   "citta": "tutte",
+   "nome": "Cose di Casa – mostre del mese in provincia",
+   "url": "https://www.cosedicasa.com/mostre/provincia/{provincia}/mese/{mese_nome}-{aaaa}",
+   "tipo": "aggregatore",
+   "copre": [
+    "mostre"
+   ],
+   "sorveglia": false,
+   "note": "Utile per le province con poche mostre (Forlì-Cesena, Modena)."
+  },
+  {
+   "citta": "tutte",
+   "nome": "CineMap – cinema del comune",
+   "url": "https://www.cinemap.it/{comune}/cinema",
+   "tipo": "cinema",
+   "copre": [
+    "cinema"
+   ],
+   "sorveglia": false,
+   "note": "Lo usa il flusso Cinema (sale nuove il lunedì). Dall'officina: più di 10 pagine di fila → risponde «troppo lento»: leggere a gruppi di 9 con una pausa."
+  },
+  {
+   "citta": "tutte",
+   "nome": "movieplayer – cinema della provincia",
+   "url": "https://movieplayer.it/cinema/{movieplayer}/",
+   "tipo": "cinema",
+   "copre": [
+    "cinema"
+   ],
+   "sorveglia": false,
+   "note": "Lo usa il flusso Cinema (orari di oggi)."
+  },
+  {
+   "citta": "mo",
+   "nome": "Lega Volley – calendario SuperLega (Modena Volley)",
+   "url": "https://www.legavolley.it/calendario/",
+   "tipo": "sport",
+   "copre": [
+    "sport"
+   ],
+   "sorveglia": false,
+   "note": "Lo legge il flusso Sport (HTML). Il lettore dell'officina perde i nomi delle squadre: non usarlo per lo sport."
+  },
+  {
+   "citta": "fi",
+   "nome": "fixturedownload – Serie A (Fiorentina)",
+   "url": "https://fixturedownload.com/feed/json/serie-a-{stagione}",
+   "tipo": "sport",
+   "copre": [
+    "sport"
+   ],
+   "sorveglia": false,
+   "note": "JSON pubblico, lo legge il flusso Sport; si legge anche dall'officina."
+  },
+  {
+   "citta": "fi",
+   "nome": "Mentelocale – Teatro della Pergola, abbonamenti (date di tutta la stagione)",
+   "url": "https://www.mentelocale.it/firenze/",
+   "tipo": "aggregatore",
+   "copre": [
+    "spettacoli"
+   ],
+   "sorveglia": false,
+   "note": "Le pagine «PERGOLA 14 SPETTACOLI <giorno>» elencano titoli e date della stagione intera."
+  },
+  {
+   "citta": "bo",
+   "nome": "Mentelocale – cosa fare a Bologna (aggregatore con schede JSON-LD)",
+   "url": "https://www.mentelocale.it/bologna/",
+   "tipo": "aggregatore",
+   "copre": [
+    "spettacoli",
+    "concerti",
+    "mostre"
+   ],
+   "sorveglia": true,
+   "note": "In pagina i primi 120 appuntamenti per data (sui tanti in programma): la sentinella vede quelli nuovi della settimana."
+  },
+  {
+   "citta": "mi",
+   "nome": "Mentelocale – cosa fare a Milano (aggregatore con schede JSON-LD)",
+   "url": "https://www.mentelocale.it/milano/",
+   "tipo": "aggregatore",
+   "copre": [
+    "spettacoli",
+    "concerti",
+    "mostre"
+   ],
+   "sorveglia": true,
+   "note": "In pagina i primi 120 appuntamenti per data (sui tanti in programma): la sentinella vede quelli nuovi della settimana."
+  },
+  {
+   "citta": "ra",
+   "nome": "Mentelocale – cosa fare a Ravenna (aggregatore con schede JSON-LD)",
+   "url": "https://www.mentelocale.it/ravenna/",
+   "tipo": "aggregatore",
+   "copre": [
+    "spettacoli",
+    "concerti",
+    "mostre"
+   ],
+   "sorveglia": true,
+   "note": "In pagina i primi 120 appuntamenti per data (sui tanti in programma): la sentinella vede quelli nuovi della settimana."
+  },
+  {
+   "citta": "fe",
+   "nome": "Mentelocale – cosa fare a Ferrara (aggregatore con schede JSON-LD)",
+   "url": "https://www.mentelocale.it/ferrara/",
+   "tipo": "aggregatore",
+   "copre": [
+    "spettacoli",
+    "concerti",
+    "mostre"
+   ],
+   "sorveglia": true,
+   "note": "In pagina i primi 120 appuntamenti per data (sui tanti in programma): la sentinella vede quelli nuovi della settimana."
+  }
+ ],
+ "flussi": [
+  {
+   "flusso": "eventi_auto.yml",
+   "script": "scripts/eventi_auto.py",
+   "quando": "lunedì e giovedì 6:23",
+   "citta": "tutte",
+   "copre": [
+    "spettacoli",
+    "concerti",
+    "mostre"
+   ],
+   "fonti": [
+    "DICE (solo Bologna e Milano: le altre città danno 404)",
+    "arte.it (mostre del mese e del prossimo)",
+    "portali turistici: ferrarainfo.com (Ferrara), turismo.ra.it (Ravenna)",
+    "Galleria Wikiarte (Bologna)",
+    "Ticketmaster solo con la chiave TICKETMASTER_KEY (oggi assente)"
+   ]
+  },
+  {
+   "flusso": "cartelloni.yml",
+   "script": "scripts/cartelloni.py",
+   "quando": "domenica sera, dopo la sentinella",
+   "citta": "tutte",
+   "copre": [
+    "spettacoli",
+    "concerti"
+   ],
+   "fonti": [
+    "le pagine «sorveglia» di questa mappa, aperte con un browser vero",
+    "API Eventim/TicketOne (id città o ricerca per nome e provincia)",
+    "Songkick (Milano)"
+   ]
+  },
+  {
+   "flusso": "sentinella.yml",
+   "script": "scripts/sentinella.py",
+   "quando": "domenica 21:17",
+   "citta": "tutte",
+   "copre": [
+    "segnale"
+   ],
+   "fonti": [
+    "le pagine «sorveglia»: dice quali sono cambiate e quali link sono comparsi"
+   ]
+  },
+  {
+   "flusso": "cinema.yml",
+   "script": "scripts/cinema_auto.py",
+   "quando": "ogni giorno",
+   "citta": "tutte",
+   "copre": [
+    "cinema"
+   ],
+   "fonti": [
+    "movieplayer.it (orari di oggi)",
+    "cinemap.it (prossimi giorni, link d'acquisto)",
+    "Cineteca di Bologna"
+   ]
+  },
+  {
+   "flusso": "incontri.yml",
+   "script": "scripts/incontri_auto.py",
+   "quando": "lunedì e giovedì",
+   "citta": "bo mi ra fe (e le nuove quando avranno fonti)",
+   "copre": [
+    "incontri"
+   ],
+   "fonti": [
+    "culturabologna.it",
+    "ferrarainfo.com",
+    "Casa della Cultura, BookCity, Fondazione Feltrinelli (Milano)",
+    "portale di Ravenna"
+   ]
+  },
+  {
+   "flusso": "sport.yml",
+   "script": "scripts/sport_auto.py",
+   "quando": "lunedì e giovedì",
+   "citta": "bo mi mo fi",
+   "copre": [
+    "sport"
+   ],
+   "fonti": [
+    "fixturedownload.com (Serie A)",
+    "UEFA (coppe)",
+    "legabasket.it, EuroLeague",
+    "legavolley.it, legavolleyfemminile.it",
+    "siti di Inter, Bologna FC, Fortitudo, Milano Hockey"
+   ]
+  },
+  {
+   "flusso": "serate.yml",
+   "script": "scripts/serate.py",
+   "quando": "lunedì e giovedì 6:23",
+   "citta": "bo mi",
+   "copre": [
+    "serate"
+   ],
+   "fonti": [
+    "technoairlines.com (calendari mensili)"
+   ]
+  },
+  {
+   "flusso": "protagonisti.yml",
+   "script": "scripts/protagonisti_fonti.py",
+   "quando": "lunedì e giovedì 7:23",
+   "citta": "tutte",
+   "copre": [
+    "nomi in scena"
+   ],
+   "fonti": [
+    "la pagina fonte di ogni spettacolo senza nomi (mai TicketOne né DICE)"
+   ]
+  }
+ ],
+ "buchi": [
+  {
+   "citta": "mo",
+   "cosa": "Vox Club (Nonantola): il sito non scrive il nome degli artisti nelle pagine delle serate"
+  },
+  {
+   "citta": "fc",
+   "cosa": "Vidia (Cesena): vidiaclub.it non risponde (nome a dominio)"
+  },
+  {
+   "citta": "fc",
+   "cosa": "Sport: il Cesena gioca in Serie B, che le fonti del flusso non leggono"
+  },
+  {
+   "citta": "mo",
+   "cosa": "Sport: il Sassuolo gioca al Mapei Stadium (provincia di Reggio Emilia), fuori perimetro"
+  },
+  {
+   "citta": "tutte",
+   "cosa": "DICE non ha pagine per Ravenna, Ferrara, Modena, Forlì-Cesena, Firenze"
+  },
+  {
+   "citta": "tutte",
+   "cosa": "TicketOne: il sito vieta i programmi; si usa solo la sua API pubblica dal flusso Cartelloni"
+  }
+ ]
+}

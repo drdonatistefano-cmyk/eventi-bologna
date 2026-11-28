@@ -371,5 +371,24 @@ print(S.FILE, len(p), p[0]['artista'], p[0]['ora'], p[0]['luogo'])
 prova("sport: Firenze scrive firenze/sport.js e prende solo le partite in casa della Fiorentina",
       _r.stdout.strip() == "firenze/sport.js 1 Fiorentina – Cagliari 20:45 Stadio Artemio Franchi")
 
+# ---------------------------------------------------------------- mappa delle fonti (28/11/2026)
+import fonti as _FO  # noqa: E402
+prova("fonti: la mappa vera è in ordine", _FO.controlla() == [])
+prova("fonti: dati/sentinella.json è quello generato dalla mappa",
+      json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "dati", "sentinella.json"), encoding="utf-8"))
+      == _FO.sentinella_da_mappa(_FO.carica()))
+prova("fonti: i segnaposti si riempiono per città e mese",
+      _FO.riempi("https://www.arte.it/calendario-arte/{arte}/{aaaa}/{mm}/", "fc", datetime.date(2027, 1, 5)) == "https://www.arte.it/calendario-arte/forli-cesena/2027/01/"
+      and _FO.riempi("https://x.it/{mese_nome}-{aaaa}", "mo", datetime.date(2026, 12, 1)) == "https://x.it/dicembre-2026")
+if os.path.exists(os.path.join(RAD, "index.html")) and os.path.isdir(os.path.join(RAD, ".github")):
+    _d3 = copia()
+    os.makedirs(os.path.join(_d3, "dati"), exist_ok=True)
+    _m3 = _FO.carica()
+    _m3["pagine"] = [x for x in _m3["pagine"] if x["citta"] != "fc"] + [dict(citta="xx", nome="prova", url="http://a", tipo="boh", copre=["x"], sorveglia=True)]
+    json.dump(_m3, open(os.path.join(_d3, "dati", "fonti.json"), "w"))
+    _e3 = _FO.controlla(_d3)
+    prova("fonti: il controllo prende città accesa senza pagine, città sconosciuta, tipo sbagliato e indirizzo non https",
+          any("Forlì-Cesena" in x for x in _e3) and any("sconosciuta" in x for x in _e3) and any("tipo" in x for x in _e3) and any("https" in x for x in _e3))
+
 print(f"\n{len(FALLITE)} prove fallite" if FALLITE else "\nTutte le prove passano")
 sys.exit(1 if FALLITE else 0)

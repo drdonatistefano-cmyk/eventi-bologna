@@ -1,5 +1,5 @@
 {
- "nota": "Pagine controllate ogni settimana dalla sentinella (scripts/sentinella.py). Aggiungi qui i cartelloni dei luoghi che NON vendono sulle biglietterie dei feed.",
+ "nota": "GENERATO da dati/fonti.json con python3 scripts/fonti.py --scrivi: non cambiarlo a mano. Pagine controllate ogni settimana dalla sentinella (scripts/sentinella.py) e aperte dal flusso Cartelloni.",
  "pagine": [
   {
    "citta": "bo",
@@ -256,6 +256,56 @@
    "citta": "fi",
    "nome": "Destination Florence – eventi",
    "url": "https://www.feelflorence.it/it/eventi"
+  },
+  {
+   "citta": "mo",
+   "nome": "Mentelocale – cosa fare a Modena (aggregatore con schede JSON-LD)",
+   "url": "https://www.mentelocale.it/modena/"
+  },
+  {
+   "citta": "fi",
+   "nome": "Mentelocale – cosa fare a Firenze",
+   "url": "https://www.mentelocale.it/firenze/"
+  },
+  {
+   "citta": "fc",
+   "nome": "Mentelocale – cosa fare a Forlì-Cesena",
+   "url": "https://www.mentelocale.it/forli-cesena/"
+  },
+  {
+   "citta": "fi",
+   "nome": "Teatro Cartiere Carrara – tutti gli eventi",
+   "url": "https://www.teatrocartierecarrara.it/eventi/"
+  },
+  {
+   "citta": "fi",
+   "nome": "Viper Theatre – concerti",
+   "url": "https://www.viperclub.eu/"
+  },
+  {
+   "citta": "fi",
+   "nome": "Mandela Forum – eventi",
+   "url": "https://www.mandelaforum.it/"
+  },
+  {
+   "citta": "bo",
+   "nome": "Mentelocale – cosa fare a Bologna (aggregatore con schede JSON-LD)",
+   "url": "https://www.mentelocale.it/bologna/"
+  },
+  {
+   "citta": "mi",
+   "nome": "Mentelocale – cosa fare a Milano (aggregatore con schede JSON-LD)",
+   "url": "https://www.mentelocale.it/milano/"
+  },
+  {
+   "citta": "ra",
+   "nome": "Mentelocale – cosa fare a Ravenna (aggregatore con schede JSON-LD)",
+   "url": "https://www.mentelocale.it/ravenna/"
+  },
+  {
+   "citta": "fe",
+   "nome": "Mentelocale – cosa fare a Ferrara (aggregatore con schede JSON-LD)",
+   "url": "https://www.mentelocale.it/ferrara/"
   }
  ]
 }
