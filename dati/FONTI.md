@@ -8,98 +8,98 @@ Generata da `dati/fonti.json` con `python3 scripts/fonti.py --md`: si cambia la 
 
 | fonte | tipo | copre | controllo |
 |---|---|---|---|
-| [Bologna Welcome – eventi](https://www.bolognawelcome.com/it/eventi) | portale | spettacoli, mostre, incontri | ogni domenica |
-| [Bologna Teatro](https://www.bolognateatro.it/home) | portale | spettacoli, mostre, incontri | ogni domenica |
-| [Teatro Duse](https://teatroduse.it/) | teatro | spettacoli | ogni domenica |
-| [Teatro Comunale (TCBO)](https://www.tcbo.it/) | teatro | spettacoli | ogni domenica |
-| [ERT – Arena del Sole e Moline](https://bologna.emiliaromagnateatro.com/) | teatro | spettacoli | ogni domenica |
-| [Teatro Celebrazioni](https://teatrocelebrazioni.it/) | teatro | spettacoli | ogni domenica |
-| [Teatro Dehon](https://www.teatrodehon.it/index.php) | teatro | spettacoli | ogni domenica |
-| [Teatro Testoni Ragazzi](https://www.testoniragazzi.it/) | teatro | spettacoli | ogni domenica |
-| [Unipol Arena](https://www.unipolarena.it/) | palazzetto | concerti, spettacoli | ogni domenica |
-| [Teatro Stignani (Imola)](https://www.teatrostignani.it/) | teatro | spettacoli | ogni domenica |
-| [Teatro Laura Betti (Casalecchio)](https://www.teatrocasalecchio.it/) | teatro | spettacoli | ogni domenica |
-| [Teatro Consorziale (Budrio)](https://www.teatroconsorzialebudrio.it/) | teatro | spettacoli | ogni domenica |
-| [Stagione Agorà (Reno Galliera)](https://stagioneagora.it/) | teatro | spettacoli | ogni domenica |
-| [Teatro Cassero (Castel San Pietro)](https://www.labottegadelbuonumore.it/teatro-comunale-cassero/) | teatro | spettacoli | ogni domenica |
-| [Teatro Spazio Reno (Calderara)](https://www.culturara.it/) | portale | spettacoli, mostre, incontri | ogni domenica |
-| [ITC Teatro (San Lazzaro)](https://www.teatrodellargine.org/itcteatro) | teatro | spettacoli | ogni domenica |
-| [Appennino bolognese – eventi](https://appenninobolognese.cittametropolitana.bo.it/it/eventi) | portale | spettacoli, mostre, incontri | ogni domenica |
-| [Cultura Imola](https://www.culturaimola.it/) | portale | spettacoli, mostre, incontri | ogni domenica |
-| [Porretta Cinema](https://porrettacinema.com/) | cinema | cinema | ogni domenica |
-| [Cantina Bentivoglio – programma del mese (PDF)](https://www.cantinabentivoglio.it/) | locale | concerti | ogni domenica |
-| [Mentelocale – cosa fare a Bologna (aggregatore con schede JSON-LD)](https://www.mentelocale.it/bologna/) | aggregatore | spettacoli, concerti, mostre | ogni domenica |
+| [Bologna Welcome – eventi](https://www.bolognawelcome.com/it/eventi) | portale | spettacoli, mostre, incontri | domenica e mercoledì |
+| [Bologna Teatro](https://www.bolognateatro.it/home) | portale | spettacoli, mostre, incontri | domenica e mercoledì |
+| [Teatro Duse](https://teatroduse.it/) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro Comunale (TCBO)](https://www.tcbo.it/) | teatro | spettacoli | domenica e mercoledì |
+| [ERT – Arena del Sole e Moline](https://bologna.emiliaromagnateatro.com/) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro Celebrazioni](https://teatrocelebrazioni.it/) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro Dehon](https://www.teatrodehon.it/index.php) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro Testoni Ragazzi](https://www.testoniragazzi.it/) | teatro | spettacoli | domenica e mercoledì |
+| [Unipol Arena](https://www.unipolarena.it/) | palazzetto | concerti, spettacoli | domenica e mercoledì |
+| [Teatro Stignani (Imola)](https://www.teatrostignani.it/) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro Laura Betti (Casalecchio)](https://www.teatrocasalecchio.it/) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro Consorziale (Budrio)](https://www.teatroconsorzialebudrio.it/) | teatro | spettacoli | domenica e mercoledì |
+| [Stagione Agorà (Reno Galliera)](https://stagioneagora.it/) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro Cassero (Castel San Pietro)](https://www.labottegadelbuonumore.it/teatro-comunale-cassero/) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro Spazio Reno (Calderara)](https://www.culturara.it/) | portale | spettacoli, mostre, incontri | domenica e mercoledì |
+| [ITC Teatro (San Lazzaro)](https://www.teatrodellargine.org/itcteatro) | teatro | spettacoli | domenica e mercoledì |
+| [Appennino bolognese – eventi](https://appenninobolognese.cittametropolitana.bo.it/it/eventi) | portale | spettacoli, mostre, incontri | domenica e mercoledì |
+| [Cultura Imola](https://www.culturaimola.it/) | portale | spettacoli, mostre, incontri | domenica e mercoledì |
+| [Porretta Cinema](https://porrettacinema.com/) | cinema | cinema | domenica e mercoledì |
+| [Cantina Bentivoglio – programma del mese (PDF)](https://www.cantinabentivoglio.it/) | locale | concerti | domenica e mercoledì |
+| [Mentelocale – cosa fare a Bologna (aggregatore con schede JSON-LD)](https://www.mentelocale.it/bologna/) | aggregatore | spettacoli, concerti, mostre | domenica e mercoledì |
 
 ## Milano
 
 | fonte | tipo | copre | controllo |
 |---|---|---|---|
-| [Songkick – concerti Milano](https://www.songkick.com/metro-areas/30338-italy-milan) | aggregatore | concerti | ogni domenica |
-| [Teatro alla Scala – stagione](https://www.teatroallascala.org/it/stagione/2026-2027) | teatro | spettacoli, concerti | ogni domenica |
-| [Piccolo Teatro](https://www.piccoloteatro.org/it) | teatro | spettacoli | ogni domenica |
-| [Teatro Manzoni](https://www.teatromanzoni.it/) | teatro | spettacoli | ogni domenica |
-| [Teatro Arcimboldi](https://www.teatroarcimboldi.it/) | teatro | spettacoli | ogni domenica |
-| [Teatro dal Verme – I Pomeriggi Musicali](https://www.ipomeriggi.it/) | teatro | spettacoli, concerti | ogni domenica |
-| [Teatro Franco Parenti](https://www.teatrofrancoparenti.it/) | teatro | spettacoli | ogni domenica |
-| [Teatro Elfo Puccini](https://www.elfo.org/) | teatro | spettacoli | ogni domenica |
-| [Blue Note Milano](https://www.bluenotemilano.com/) | locale | concerti | ogni domenica |
-| [arte.it – mostre a Milano](https://www.arte.it/calendario-arte/milano) | aggregatore | mostre | ogni domenica |
-| [Mentelocale – cosa fare a Milano (aggregatore con schede JSON-LD)](https://www.mentelocale.it/milano/) | aggregatore | spettacoli, concerti, mostre | ogni domenica |
+| [Songkick – concerti Milano](https://www.songkick.com/metro-areas/30338-italy-milan) | aggregatore | concerti | domenica e mercoledì |
+| [Teatro alla Scala – stagione](https://www.teatroallascala.org/it/stagione/2026-2027) | teatro | spettacoli, concerti | domenica e mercoledì |
+| [Piccolo Teatro](https://www.piccoloteatro.org/it) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro Manzoni](https://www.teatromanzoni.it/) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro Arcimboldi](https://www.teatroarcimboldi.it/) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro dal Verme – I Pomeriggi Musicali](https://www.ipomeriggi.it/) | teatro | spettacoli, concerti | domenica e mercoledì |
+| [Teatro Franco Parenti](https://www.teatrofrancoparenti.it/) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro Elfo Puccini](https://www.elfo.org/) | teatro | spettacoli | domenica e mercoledì |
+| [Blue Note Milano](https://www.bluenotemilano.com/) | locale | concerti | domenica e mercoledì |
+| [arte.it – mostre a Milano](https://www.arte.it/calendario-arte/milano) | aggregatore | mostre | domenica e mercoledì |
+| [Mentelocale – cosa fare a Milano (aggregatore con schede JSON-LD)](https://www.mentelocale.it/milano/) | aggregatore | spettacoli, concerti, mostre | domenica e mercoledì |
 
 ## Ravenna
 
 | fonte | tipo | copre | controllo |
 |---|---|---|---|
-| [Ravenna – eventi del sito turistico del Comune (Alighieri, Ravenna Festival e altri)](https://www.turismo.ra.it/eventi/) | portale | spettacoli, mostre, incontri | ogni domenica |
-| [Mama's Club – eventi](https://www.mamasclub.it/eventi/) | locale | concerti | ogni domenica |
-| [Teatro Socjale (Piangipane) – programma](https://www.teatrosocjale.it/programma-eventi/) | teatro | spettacoli | ogni domenica |
-| [Teatro Masini (Faenza) – Accademia Perduta](https://accademiaperduta.it/teatro-masini-faenza/) | teatro | spettacoli | ogni domenica |
-| [Ravenna Teatro – Teatro Rasi](https://www.ravennateatro.com/) | teatro | spettacoli | ogni domenica |
-| [Teatro Rossini (Lugo) – spettacoli](https://www.teatrorossini.it/spettacoli/) | teatro | spettacoli | ogni domenica |
-| [Mentelocale – cosa fare a Ravenna (aggregatore con schede JSON-LD)](https://www.mentelocale.it/ravenna/) | aggregatore | spettacoli, concerti, mostre | ogni domenica |
+| [Ravenna – eventi del sito turistico del Comune (Alighieri, Ravenna Festival e altri)](https://www.turismo.ra.it/eventi/) | portale | spettacoli, mostre, incontri | domenica e mercoledì |
+| [Mama's Club – eventi](https://www.mamasclub.it/eventi/) | locale | concerti | domenica e mercoledì |
+| [Teatro Socjale (Piangipane) – programma](https://www.teatrosocjale.it/programma-eventi/) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro Masini (Faenza) – Accademia Perduta](https://accademiaperduta.it/teatro-masini-faenza/) | teatro | spettacoli | domenica e mercoledì |
+| [Ravenna Teatro – Teatro Rasi](https://www.ravennateatro.com/) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro Rossini (Lugo) – spettacoli](https://www.teatrorossini.it/spettacoli/) | teatro | spettacoli | domenica e mercoledì |
+| [Mentelocale – cosa fare a Ravenna (aggregatore con schede JSON-LD)](https://www.mentelocale.it/ravenna/) | aggregatore | spettacoli, concerti, mostre | domenica e mercoledì |
 
 ## Ferrara
 
 | fonte | tipo | copre | controllo |
 |---|---|---|---|
-| [Teatro Comunale Claudio Abbado](https://www.teatrocomunaleferrara.it/) | teatro | spettacoli | ogni domenica |
-| [Ferrara Musica – calendario](https://ferraramusica.it/calendario/) | teatro | spettacoli, concerti | ogni domenica |
-| [Teatro Nuovo – calendario](https://www.teatronuovoferrara.com/it/spettacoli/calendario-spettacoli.html) | teatro | spettacoli | ogni domenica |
-| [Jazz Club Ferrara](https://jazzclubferrara.com/) | locale | concerti | ogni domenica |
-| [Teatro De Micheli (Copparo) – stagione teatrale](https://www.teatrodemicheli.it/nqcontent.cfm?a_id=14205) | teatro | spettacoli | ogni domenica |
-| [Teatro Borgatti (Cento) – stagione teatrale](https://www.fondazioneteatroborgatti.it/spettacoli-teatrali/) | teatro | spettacoli | ogni domenica |
-| [Mentelocale – cosa fare a Ferrara (aggregatore con schede JSON-LD)](https://www.mentelocale.it/ferrara/) | aggregatore | spettacoli, concerti, mostre | ogni domenica |
+| [Teatro Comunale Claudio Abbado](https://www.teatrocomunaleferrara.it/) | teatro | spettacoli | domenica e mercoledì |
+| [Ferrara Musica – calendario](https://ferraramusica.it/calendario/) | teatro | spettacoli, concerti | domenica e mercoledì |
+| [Teatro Nuovo – calendario](https://www.teatronuovoferrara.com/it/spettacoli/calendario-spettacoli.html) | teatro | spettacoli | domenica e mercoledì |
+| [Jazz Club Ferrara](https://jazzclubferrara.com/) | locale | concerti | domenica e mercoledì |
+| [Teatro De Micheli (Copparo) – stagione teatrale](https://www.teatrodemicheli.it/nqcontent.cfm?a_id=14205) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro Borgatti (Cento) – stagione teatrale](https://www.fondazioneteatroborgatti.it/spettacoli-teatrali/) | teatro | spettacoli | domenica e mercoledì |
+| [Mentelocale – cosa fare a Ferrara (aggregatore con schede JSON-LD)](https://www.mentelocale.it/ferrara/) | aggregatore | spettacoli, concerti, mostre | domenica e mercoledì |
 
 ## Modena
 
 | fonte | tipo | copre | controllo |
 |---|---|---|---|
-| [Teatro Comunale Pavarotti-Freni](https://www.teatrocomunalemodena.it/) | teatro | spettacoli | ogni domenica |
-| [ERT Emilia Romagna Teatro (Storchi, Passioni)](https://emiliaromagnateatro.com/) | teatro | spettacoli | ogni domenica |
-| [VisitModena – eventi](https://www.visitmodena.it/it/eventi) | portale | spettacoli, mostre, incontri | ogni domenica |
-| [Mentelocale – cosa fare a Modena (aggregatore con schede JSON-LD)](https://www.mentelocale.it/modena/) | aggregatore | spettacoli, concerti, mostre | ogni domenica |
+| [Teatro Comunale Pavarotti-Freni](https://www.teatrocomunalemodena.it/) | teatro | spettacoli | domenica e mercoledì |
+| [ERT Emilia Romagna Teatro (Storchi, Passioni)](https://emiliaromagnateatro.com/) | teatro | spettacoli | domenica e mercoledì |
+| [VisitModena – eventi](https://www.visitmodena.it/it/eventi) | portale | spettacoli, mostre, incontri | domenica e mercoledì |
+| [Mentelocale – cosa fare a Modena (aggregatore con schede JSON-LD)](https://www.mentelocale.it/modena/) | aggregatore | spettacoli, concerti, mostre | domenica e mercoledì |
 | [Lega Volley – calendario SuperLega (Modena Volley)](https://www.legavolley.it/calendario/) | sport | sport | a mano |
 
 ## Forlì-cesena
 
 | fonte | tipo | copre | controllo |
 |---|---|---|---|
-| [Accademia Perduta Romagna Teatri (Teatro Diego Fabbri, Forlì)](https://www.accademiaperduta.it/) | teatro | spettacoli | ogni domenica |
-| [ERT a Cesena (Teatro Bonci)](https://www.teatrobonci.it/) | teatro | spettacoli | ogni domenica |
-| [Mentelocale – cosa fare a Forlì-Cesena](https://www.mentelocale.it/forli-cesena/) | aggregatore | spettacoli, concerti, mostre | ogni domenica |
+| [Accademia Perduta Romagna Teatri (Teatro Diego Fabbri, Forlì)](https://www.accademiaperduta.it/) | teatro | spettacoli | domenica e mercoledì |
+| [ERT a Cesena (Teatro Bonci)](https://www.teatrobonci.it/) | teatro | spettacoli | domenica e mercoledì |
+| [Mentelocale – cosa fare a Forlì-Cesena](https://www.mentelocale.it/forli-cesena/) | aggregatore | spettacoli, concerti, mostre | domenica e mercoledì |
 
 ## Firenze
 
 | fonte | tipo | copre | controllo |
 |---|---|---|---|
-| [Fondazione Teatro della Toscana (Pergola, Niccolini, Era)](https://www.teatrodellatoscana.it/) | teatro | spettacoli | ogni domenica |
-| [Teatro Verdi Firenze](https://www.teatroverdifirenze.it/) | teatro | spettacoli | ogni domenica |
-| [Maggio Musicale Fiorentino](https://www.maggiofiorentino.com/) | teatro | spettacoli, concerti | ogni domenica |
-| [Destination Florence – eventi](https://www.feelflorence.it/it/eventi) | portale | spettacoli, mostre, incontri | ogni domenica |
-| [Mentelocale – cosa fare a Firenze](https://www.mentelocale.it/firenze/) | aggregatore | spettacoli, concerti, mostre | ogni domenica |
-| [Teatro Cartiere Carrara – tutti gli eventi](https://www.teatrocartierecarrara.it/eventi/) | teatro | concerti, spettacoli | ogni domenica |
-| [Viper Theatre – concerti](https://www.viperclub.eu/) | locale | concerti | ogni domenica |
-| [Mandela Forum – eventi](https://www.mandelaforum.it/) | palazzetto | concerti, spettacoli | ogni domenica |
+| [Fondazione Teatro della Toscana (Pergola, Niccolini, Era)](https://www.teatrodellatoscana.it/) | teatro | spettacoli | domenica e mercoledì |
+| [Teatro Verdi Firenze](https://www.teatroverdifirenze.it/) | teatro | spettacoli | domenica e mercoledì |
+| [Maggio Musicale Fiorentino](https://www.maggiofiorentino.com/) | teatro | spettacoli, concerti | domenica e mercoledì |
+| [Destination Florence – eventi](https://www.feelflorence.it/it/eventi) | portale | spettacoli, mostre, incontri | domenica e mercoledì |
+| [Mentelocale – cosa fare a Firenze](https://www.mentelocale.it/firenze/) | aggregatore | spettacoli, concerti, mostre | domenica e mercoledì |
+| [Teatro Cartiere Carrara – tutti gli eventi](https://www.teatrocartierecarrara.it/eventi/) | teatro | concerti, spettacoli | domenica e mercoledì |
+| [Viper Theatre – concerti](https://www.viperclub.eu/) | locale | concerti | domenica e mercoledì |
+| [Mandela Forum – eventi](https://www.mandelaforum.it/) | palazzetto | concerti, spettacoli | domenica e mercoledì |
 | [fixturedownload – Serie A (Fiorentina)](https://fixturedownload.com/feed/json/serie-a-{stagione}) | sport | sport | a mano |
 | [Mentelocale – Teatro della Pergola, abbonamenti (date di tutta la stagione)](https://www.mentelocale.it/firenze/) | aggregatore | spettacoli | a mano |
 

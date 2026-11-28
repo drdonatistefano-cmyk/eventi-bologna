@@ -175,7 +175,7 @@ def markdown(m):
             continue
         r += [f"## {nome_citta(k).capitalize()}", "", "| fonte | tipo | copre | controllo |", "|---|---|---|---|"]
         for p in ps:
-            r.append(f"| [{p['nome']}]({p['url']}) | {p['tipo']} | {', '.join(p['copre'])} | {'ogni domenica' if p.get('sorveglia') else "a mano"} |")
+            r.append(f"| [{p['nome']}]({p['url']}) | {p['tipo']} | {', '.join(p['copre'])} | {'domenica e mercoledì' if p.get('sorveglia') else "a mano"} |")
         r.append("")
     r += ["## Flussi automatici", "", "| flusso | quando | città | fonti |", "|---|---|---|---|"]
     for f in m["flussi"]:
